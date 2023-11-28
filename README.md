@@ -7,11 +7,16 @@
 2: Download & Install [Git](https://gitforwindows.org)
 3: Make a folder for the github
 4: Clone the github
+
       ![image](https://github.com/yairme/Atlas-RP/assets/35409296/c01b6994-5915-4a24-bd09-854ade5119a0)
       ![image](https://github.com/yairme/Atlas-RP/assets/35409296/d8aa6772-0682-4e93-bf47-5100cd82d602)
+      
 5: Open the folder with Visual Studio Code
+
       ![image](https://github.com/yairme/Atlas-RP/assets/35409296/00ed8f82-b135-4289-b0fa-e5a852b1ab18)
-6: Go to the extentions tab and search up Lua and install the first 4 extentions
+      
+6: Go to the extentions tab and search up Lua and install the first 4 extentions 
+
       ![image](https://github.com/yairme/Atlas-RP/assets/35409296/04200611-20ea-4088-b2a9-cd2e2b9aebc5)
       ![image](https://github.com/yairme/Atlas-RP/assets/35409296/57c8f493-79f9-4df5-9d3a-bc0f59b2f2bc)
       
