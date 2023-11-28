@@ -23,6 +23,11 @@ Optional: This is a [cheat sheet](https://github.com/adam-p/markdown-here/wiki/M
 #### No one will directly change anything of the main branch, until it passes through a [pull request](https://github.com/yairme/Atlas-RP/pulls)
 #### We will document things of what we have in the [wiki](https://github.com/yairme/Atlas-RP/wiki)
 
+## When making new code/adding new code
+
+#### If you add a new folder or file we will be using a format, the format will be alway lowercase and and underscore for and space, this is used to keep it from having merge comflicts when trying to merge to the main branch 
+#### Example: emenu_sucks.lua
+
 ## Important!!
 
 ### When going to work anything to do with programming either adding or removing code, make a [branch](https://github.com/yairme/Atlas-RP/branches) then work on the branch, to add it then make a pull request.
