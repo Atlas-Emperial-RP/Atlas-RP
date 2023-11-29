@@ -1,0 +1,7 @@
+PROJECT0.FUNC.SQLCreateTable( "projectzero_players", [[
+	userID INTEGER PRIMARY KEY AUTOINCREMENT,
+	steamID64 varchar(20) NOT NULL UNIQUE
+]], [[
+	userID INTEGER PRIMARY KEY AUTO_INCREMENT,
+	steamID64 varchar(20) NOT NULL UNIQUE
+]] )
