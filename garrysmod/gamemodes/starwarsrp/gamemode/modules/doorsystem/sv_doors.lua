@@ -107,7 +107,7 @@ end
 
 function pmeta:keysUnOwnAll()
     for entIndex, ent in pairs(self.Ownedz or {}) do
-        if not IsValid(ent) or not ent:isKeysOwnable() then self.Ownedz[entIndex] = nil continue end
+        if not IsValid(ent) or not ent:isKeysOwnable() then self.Ownedz[entIndex] = nil goto continue end
         if ent:isMasterOwner(self) then
             ent:Fire("unlock", "", 0.6)
         end
@@ -115,7 +115,7 @@ function pmeta:keysUnOwnAll()
     end
 
     for _, ply in ipairs(player.GetAll()) do
-        if ply == self then continue end
+        if ply == self then goto continue end
 
         for _, ent in pairs(ply.Ownedz or {}) do
             if IsValid(ent) and ent:isKeysAllowedToOwn(self) then
@@ -144,22 +144,22 @@ function pmeta:doPropertyTax()
     local taxables = {}
 
     for entIndex, ent in pairs(self.Ownedz or {}) do
-        if not IsValid(ent) or not ent:isKeysOwnable() then self.Ownedz[entIndex] = nil continue end
+        if not IsValid(ent) or not ent:isKeysOwnable() then self.Ownedz[entIndex] = nil goto continue end
         local isAllowed = hook.Call("canTaxEntity", nil, self, ent)
-        if isAllowed == false then continue end
+        if isAllowed == false then goto continue end
 
         table.insert(taxables, ent)
     end
 
     -- co-owned doors
     for _, ply in ipairs(player.GetAll()) do
-        if ply == self then continue end
+        if ply == self then goto continue end
 
         for _, ent in pairs(ply.Ownedz or {}) do
-            if not IsValid(ent) or not ent:isKeysOwnedBy(self) then continue end
+            if not IsValid(ent) or not ent:isKeysOwnedBy(self) then goto continue end
 
             local isAllowed = hook.Call("canTaxEntity", nil, self, ent)
-            if isAllowed == false then continue end
+            if isAllowed == false then goto continue end
 
             table.insert(taxables, ent)
         end
@@ -430,12 +430,12 @@ local function UnOwnAll(ply, cmd, args)
 
     local unownables = {}
     for entIndex, ent in pairs(ply.Ownedz or {}) do
-        if not IsValid(ent) or not ent:isKeysOwnable() then ply.Ownedz[entIndex] = nil continue end
+        if not IsValid(ent) or not ent:isKeysOwnable() then ply.Ownedz[entIndex] = nil goto continue end
         table.insert(unownables, ent)
     end
 
     for _, otherPly in ipairs(player.GetAll()) do
-        if ply == otherPly then continue end
+        if ply == otherPly then goto continue end
 
         for _, ent in pairs(otherPly.Ownedz or {}) do
             if IsValid(ent) and ent:isKeysOwnedBy(ply) then
@@ -447,7 +447,7 @@ local function UnOwnAll(ply, cmd, args)
     for entIndex, ent in pairs(unownables) do
         local bAllowed, _strReason = hook.Call("playerSell" .. (ent:IsVehicle() and "Vehicle" or "Door"), GAMEMODE, ply, ent)
 
-        if bAllowed == false then continue end
+        if bAllowed == false then goto continue end
 
         if ent:isMasterOwner(ply) then
             ent:Fire("unlock", "", 0)

@@ -89,7 +89,7 @@ local EntityPhysics =
 		for objectid = 0, num-1 do
 
 			local obj = Entity:GetPhysicsObjectNum( objectid )
-			if ( !IsValid( obj ) ) then continue end
+			if ( !IsValid( obj ) ) then goto continue end
 
 			data[ objectid ] = {}
 			PhysicsObject.Save( data[ objectid ], obj )
@@ -108,7 +108,7 @@ local EntityPhysics =
 		for objectid, objectdata in pairs( data ) do
 
 			local Phys = Entity:GetPhysicsObjectNum( objectid )
-			if ( !IsValid( Phys ) ) then continue end
+			if ( !IsValid( Phys ) ) then goto continue end
 
 			PhysicsObject.Load( objectdata, Phys )
 
@@ -574,8 +574,8 @@ function WorkoutSize( Ents )
 
 	for k, v in pairs( Ents ) do
 
-		if ( !v.Mins or !v.Maxs ) then continue end
-		if ( !v.Angle or !v.Pos ) then continue end
+		if ( !v.Mins or !v.Maxs ) then goto continue end
+		if ( !v.Angle or !v.Pos ) then goto continue end
 
 		--
 		-- Rotate according to the entity!
@@ -785,7 +785,7 @@ function Paste( Player, EntityList, ConstraintList )
 
 		local e = nil
 		local b = ProtectedCall( function() e = CreateEntityFromTable( Player, v ) end )
-		if ( !b ) then continue end
+		if ( !b ) then goto continue end
 
 		if ( IsValid( e ) ) then
 
@@ -890,7 +890,7 @@ function ApplyBoneModifiers( Player, Ent )
 	for Bone, Types in pairs( Ent.BoneMods ) do
 
 		-- The physics object isn't valid, skip it.
-		if ( !Ent.PhysicsObjects[ Bone ] ) then continue end
+		if ( !Ent.PhysicsObjects[ Bone ] ) then goto continue end
 
 		-- Loop through each modifier on this bone
 		for Type, Data in pairs( Types ) do

@@ -13,7 +13,7 @@ function WorkshopFileBase( namespace, requiredtags )
 
 		local tags = table.Copy( requiredtags )
 		for k, v in pairs( extratags ) do
-			if ( v == "" ) then continue end
+			if ( v == "" ) then goto continue end
 			table.insert( tags, v )
 		end
 
@@ -91,18 +91,18 @@ function WorkshopFileBase( namespace, requiredtags )
 			for id, tag in pairs( tags ) do
 				if ( !item.tags:lower():find( tag, 1, true ) ) then found = false end
 			end
-			if ( !found ) then continue end
+			if ( !found ) then goto continue end
 
 			-- Search for searchText
 			if ( searchText:Trim() ~= "" ) then
-				if ( !item.title:lower():find( searchText:lower(), 1, true ) ) then continue end
+				if ( !item.title:lower():find( searchText:lower(), 1, true ) ) then goto continue end
 			end
 
 			if ( filter and filter == "enabledonly" ) then
-				if ( !steamworks.ShouldMountAddon( item.wsid ) ) then continue end
+				if ( !steamworks.ShouldMountAddon( item.wsid ) ) then goto continue end
 			end
 			if ( filter and filter == "disabledonly" ) then
-				if ( steamworks.ShouldMountAddon( item.wsid ) ) then continue end
+				if ( steamworks.ShouldMountAddon( item.wsid ) ) then goto continue end
 			end
 
 			searchedItems[ #searchedItems + 1 ] = item
@@ -198,7 +198,7 @@ function WorkshopFileBase( namespace, requiredtags )
 				self.HTML:Call( namespace .. ".ReceiveImage( \"" .. v .. "\", \"html/img/localaddon.png\" )" )
 
 				-- Do not try to get votes for this one
-				continue
+				goto continue
 
 			elseif ( InfoCache[ v ] ) then
 

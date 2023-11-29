@@ -88,7 +88,7 @@ function dragndrop.StartDragging()
 
 		for k, v in pairs( canvas:GetSelectedChildren() ) do
 
-			if ( !v.m_DragSlot ) then continue end
+			if ( !v.m_DragSlot ) then goto continue end
 
 			table.insert( dragndrop.m_Dragging, v )
 
@@ -98,7 +98,7 @@ function dragndrop.StartDragging()
 
 	for k, v in pairs( dragndrop.m_Dragging ) do
 
-		if ( !IsValid( v ) ) then continue end
+		if ( !IsValid( v ) ) then goto continue end
 
 		v:OnStartDragging()
 
@@ -119,7 +119,7 @@ function dragndrop.StopDragging()
 
 	for k, v in pairs( dragndrop.m_Dragging or {} ) do
 
-		if ( !IsValid( v ) ) then continue end
+		if ( !IsValid( v ) ) then goto continue end
 		v:OnStopDragging()
 
 	end
@@ -242,7 +242,7 @@ hook.Add( "DrawOverlay", "DragNDropPaint", function()
 	-- Find the top, left most panel
 	for k, v in pairs( dragndrop.m_Dragging ) do
 
-		if ( !IsValid( v ) ) then continue end
+		if ( !IsValid( v ) ) then goto continue end
 
 		hold_offset_x = math.min( hold_offset_x, v.x )
 		hold_offset_y = math.min( hold_offset_y, v.y )
@@ -260,11 +260,11 @@ hook.Add( "DrawOverlay", "DragNDropPaint", function()
 
 			for k, v in pairs( dragndrop.m_Dragging ) do
 
-				if ( !IsValid( v ) ) then continue end
+				if ( !IsValid( v ) ) then goto continue end
 
 				local dist = 512 - v:Distance( dragndrop.m_DraggingMain )
 
-				if ( dist < 0 ) then continue end
+				if ( dist < 0 ) then goto continue end
 
 				dist = dist / 512
 				surface.SetAlphaMultiplier( Alpha * dist )
@@ -339,10 +339,10 @@ function meta:GetValidReceiverSlot()
 		-- Find matching slot..
 		for k, v in pairs( self.m_ReceiverSlot ) do
 
-			if ( !dragndrop.m_DraggingMain.m_DragSlot ) then continue end
+			if ( !dragndrop.m_DraggingMain.m_DragSlot ) then goto continue end
 
 			local slot = dragndrop.m_DraggingMain.m_DragSlot[ k ]
-			if ( !slot ) then continue end
+			if ( !slot ) then goto continue end
 
 			return self, v
 

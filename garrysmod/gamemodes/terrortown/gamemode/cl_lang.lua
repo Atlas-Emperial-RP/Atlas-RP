@@ -275,7 +275,7 @@ function LANG.ProcessMsg(name, params)
       for k, v in pairs(params) do
          if isstring(v) then
             local name = LANG.GetNameParam(v)
-            if not name then continue end
+            if not name then goto continue end
 
             params[k] = LANG.GetTranslation(name)
          end

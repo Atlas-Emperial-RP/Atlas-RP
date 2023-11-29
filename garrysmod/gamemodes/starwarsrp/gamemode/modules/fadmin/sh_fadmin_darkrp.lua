@@ -29,7 +29,7 @@ function FAdmin.FindPlayer(info)
             if IsValid(Player(PlayerInfo)) and not found[Player(PlayerInfo)] then
                 found[Player(PlayerInfo)] = true
             end
-            continue
+            goto continue
         end
 
         for _, v in ipairs(pls) do

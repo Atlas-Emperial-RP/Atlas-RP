@@ -84,7 +84,7 @@ local function ScaleBone( ent, bone, scale, type )
 	local physBone = ent:TranslateBoneToPhysBone( bone )
 	for i = 0, ent:GetBoneCount() do
 
-		if ( ent:TranslateBoneToPhysBone( i ) ~= physBone ) then continue end
+		if ( ent:TranslateBoneToPhysBone( i ) ~= physBone ) then goto continue end
 
 		-- Some bones are scaled only in certain directions (like legs don't scale on length)
 		local v = GetNiceBoneScale( ent:GetBoneName( i ), scale ) * 0.1

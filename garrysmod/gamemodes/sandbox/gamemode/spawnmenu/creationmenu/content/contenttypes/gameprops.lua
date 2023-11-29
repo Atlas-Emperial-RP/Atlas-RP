@@ -139,7 +139,7 @@ local function RefreshGames( MyNode )
 	-- Create a list of mounted games, allowing us to browse them
 	for _, game in SortedPairsByMemberValue( games, "title" ) do
 
-		if ( !game.mounted ) then continue end
+		if ( !game.mounted ) then goto continue end
 
 		AddBrowseContent( MyNode.ViewPanel, MyNode, game.title, "games/16/" .. ( game.icon or game.folder ) .. ".png", "", game.folder, MyNode.pnlContent, game.depot )
 

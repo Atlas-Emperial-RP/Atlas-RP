@@ -126,7 +126,7 @@ function PANEL:DoRightClick()
 
 	local tabs = DermaMenu()
 	for k, v in pairs( self:GetPropertySheet().Items ) do
-		if ( !v || !IsValid( v.Tab ) || !v.Tab:IsVisible() ) then continue end
+		if ( !v || !IsValid( v.Tab ) || !v.Tab:IsVisible() ) then goto continue end
 		local option = tabs:AddOption( v.Tab:GetText(), function()
 			if ( !v || !IsValid( v.Tab ) || !IsValid( self:GetPropertySheet() ) || !IsValid( self:GetPropertySheet().tabScroller ) ) then return end
 			v.Tab:DoClick()
@@ -406,7 +406,7 @@ function PANEL:CloseTab( tab, bRemovePanelToo )
 
 	for k, v in pairs( self.Items ) do
 
-		if ( v.Tab ~= tab ) then continue end
+		if ( v.Tab ~= tab ) then goto continue end
 
 		table.remove( self.Items, k )
 
@@ -414,7 +414,7 @@ function PANEL:CloseTab( tab, bRemovePanelToo )
 
 	for k, v in pairs( self.tabScroller.Panels ) do
 
-		if ( v ~= tab ) then continue end
+		if ( v ~= tab ) then goto continue end
 
 		table.remove( self.tabScroller.Panels, k )
 

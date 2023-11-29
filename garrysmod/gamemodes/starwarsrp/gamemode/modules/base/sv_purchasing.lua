@@ -384,7 +384,7 @@ local function BuyAmmo(ply, args)
         found = GAMEMODE.AmmoTypes[num]
     else
         for _, v in pairs(GAMEMODE.AmmoTypes) do
-            if v.ammoType ~= args then continue end
+            if v.ammoType ~= args then goto continue end
 
             found = v
             break

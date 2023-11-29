@@ -64,7 +64,7 @@ local function drawChatReceivers()
         if not IsValid(receivers[i]) then
             receivers[i] = receivers[#receivers]
             receivers[#receivers] = nil
-            continue
+            goto continue
         end
 
         draw.WordBox(2, x, y - (i - 1) * (fontHeight + 4), receivers[i]:Nick(), "DarkRPHUD1", Color(0, 0, 0, 160), color_white)
@@ -80,7 +80,7 @@ local function chatGetRecipients()
     receivers = {}
     for _, ply in ipairs(player.GetAll()) do
         local hidePly = hook.Run("chatHideRecipient", ply)
-        if not IsValid(ply) or ply == LocalPlayer() or ply:GetNoDraw() or hidePly then continue end
+        if not IsValid(ply) or ply == LocalPlayer() or ply:GetNoDraw() or hidePly then goto continue end
 
         local val = currentConfig.hearFunc(ply, currentChatText)
 

@@ -186,7 +186,7 @@ local function PrettifyName( name )
 			local c = str[ i ]
 			if ( c:upper() == c ) then
 				local toAdd = str:sub(wordStart, i - 1)
-				if ( toAdd:upper() == toAdd ) then continue end
+				if ( toAdd:upper() == toAdd ) then goto continue end
 				table.insert( newParts, toAdd )
 				wordStart = i
 			end
@@ -198,7 +198,7 @@ local function PrettifyName( name )
 
 	-- Uppercase all first characters
 	for id, str in ipairs( newParts ) do
-		if ( str:len() < 2 ) then continue end
+		if ( str:len() < 2 ) then goto continue end
 		newParts[ id ] = str:Left( 1 ):upper() .. str:sub( 2 )
 	end
 

@@ -229,7 +229,7 @@ hook.Add("PlayerDeath", "DarkRP Hitman System", function(ply, inflictor, attacke
     end
 
     for hitman in pairs(hits) do
-        if not hitman or not IsValid(hitman) then hits[hitman] = nil continue end
+        if not hitman or not IsValid(hitman) then hits[hitman] = nil goto continue end
         if hitman:getHitTarget() == ply then
             hitman:abortHit(DarkRP.getPhrase("target_died"))
         end
@@ -256,7 +256,7 @@ hook.Add("playerArrested", "Hitman system", function(ply)
     if not hits[ply] or not IsValid(hits[ply].customer) then return end
 
     for _, v in ipairs(player.GetAll()) do
-        if not v:isCP() then continue end
+        if not v:isCP() then goto continue end
 
         DarkRP.notify(v, 0, 8, DarkRP.getPhrase("x_had_hit_ordered_by_y", ply:Nick(), hits[ply].customer:Nick()))
     end

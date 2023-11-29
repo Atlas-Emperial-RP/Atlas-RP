@@ -137,10 +137,10 @@ function SWEP:GetStrippableWeapons(ent, callback)
             if GAMEMODE.Config.weaponCheckerHideDefault and (table.HasValue(GAMEMODE.Config.DefaultWeapons, class) or
                 access and table.HasValue(GAMEMODE.Config.AdminWeapons, class) or
                 ent:getJobTable() and ent:getJobTable().weapons and table.HasValue(ent:getJobTable().weapons, class)) then
-                continue
+                goto continue
             end
 
-            if (GAMEMODE.Config.weaponCheckerHideNoLicense and GAMEMODE.NoLicense[class]) or GAMEMODE.Config.noStripWeapons[class] then continue end
+            if (GAMEMODE.Config.weaponCheckerHideNoLicense and GAMEMODE.NoLicense[class]) or GAMEMODE.Config.noStripWeapons[class] then goto continue end
 
             callback(v)
         end
@@ -236,7 +236,7 @@ function SWEP:Reload()
 
             -- :Give returns NULL when the player already has the weapon
             wep = IsValid(wep) and wep or ent:GetWeapon(v.class)
-            if not IsValid(wep) then continue end
+            if not IsValid(wep) then goto continue end
 
             ent:GiveAmmo(v.primaryAmmoCount, v.primaryAmmoType, true)
             ent:GiveAmmo(v.secondaryAmmoCount, v.secondaryAmmoType, true)
@@ -292,7 +292,7 @@ function SWEP:Succeed()
     else
         -- Merge stripped weapons into confiscated weapons
         for k,v in pairs(stripped) do
-            if ent.ConfiscatedWeapons[k] then continue end
+            if ent.ConfiscatedWeapons[k] then goto continue end
 
             ent.ConfiscatedWeapons[k] = v
         end

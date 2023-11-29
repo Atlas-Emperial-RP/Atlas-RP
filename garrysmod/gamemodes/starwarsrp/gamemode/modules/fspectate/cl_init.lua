@@ -139,19 +139,19 @@ local function findNearestObject()
     local foundPly, foundDot = nil, 0
 
     for _, ply in ipairs(player.GetAll()) do
-        if not IsValid(ply) or ply == LocalPlayer() then continue end
+        if not IsValid(ply) or ply == LocalPlayer() then goto continue end
 
         local pos = ply:GetShootPos()
         local dot = (pos - fromPos):GetNormalized():Dot(aimvec)
 
         -- Discard players you're not looking at
-        if dot < 0.97 then continue end
+        if dot < 0.97 then goto continue end
         -- not a better alternative
-        if dot < foundDot then continue end
+        if dot < foundDot then goto continue end
 
         local trace = util.QuickTrace(fromPos, pos - fromPos, ply)
 
-        if trace.Hit then continue end
+        if trace.Hit then goto continue end
 
         foundPly, foundDot = ply, dot
     end
@@ -277,8 +277,8 @@ local function specThink()
     local skip = 0
     for i = 0, #pls - 1 do
         local p = pls[i + 1]
-        if not IsValid(p) then continue end
-        if not isRoaming and p == specEnt and not thirdperson then skip = skip + 3 continue end
+        if not IsValid(p) then goto continue end
+        if not isRoaming and p == specEnt and not thirdperson then skip = skip + 3 goto continue end
 
         local tr = p:GetEyeTrace()
         local sp = gunpos(p)
@@ -348,11 +348,11 @@ local function drawHelp()
     local pls = player.GetAll()
     for i = 1, #pls do
         local ply = pls[i]
-        if not IsValid(ply) then continue end
-        if not isRoaming and ply == specEnt then continue end
+        if not IsValid(ply) then goto continue end
+        if not isRoaming and ply == specEnt then goto continue end
 
         local pos = ply:GetShootPos():ToScreen()
-        if not pos.visible then continue end
+        if not pos.visible then goto continue end
 
         local x, y = pos.x, pos.y
 

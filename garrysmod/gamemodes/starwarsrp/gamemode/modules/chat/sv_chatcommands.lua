@@ -188,7 +188,7 @@ local function GroupMsg(ply, args)
         local groupChats = {}
         for _, func in pairs(GAMEMODE.DarkRPGroupChats) do
             -- not the group of the player
-            if not func(ply) then continue end
+            if not func(ply) then goto continue end
 
             table.insert(groupChats, func)
         end
@@ -201,7 +201,7 @@ local function GroupMsg(ply, args)
         for _, target in ipairs(player.GetAll()) do
             -- The target is in any of the group chats
             for _, func in ipairs(groupChats) do
-                if not func(target, ply) then continue end
+                if not func(target, ply) then goto continue end
 
                 DarkRP.talkToPerson(target, col, phrase .. " " .. name, color, text, ply)
                 break

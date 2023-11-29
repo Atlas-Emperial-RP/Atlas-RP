@@ -75,7 +75,7 @@ hook.Add("loadCustomDarkRPItems", "CAMI privs", function()
     }
 
     for _, v in pairs(RPExtraTeams) do
-        if not v.vote or v.admin and v.admin > 1 then continue end
+        if not v.vote or v.admin and v.admin > 1 then goto continue end
 
         local toAdmin = {[0] = "admin", [1] = "superadmin"}
         CAMI.RegisterPrivilege{

@@ -24,7 +24,7 @@ function PANEL:Rebuild()
     end
 
     for _, item in pairs(self.Items) do
-        if not item:IsVisible() then continue end
+        if not item:IsVisible() then goto continue end
         k = k + 1
         local goRight = k % 2 == 0
 

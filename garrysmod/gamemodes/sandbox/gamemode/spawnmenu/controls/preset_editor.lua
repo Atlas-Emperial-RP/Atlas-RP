@@ -159,7 +159,7 @@ end
 function PANEL:SelectPresetByName( name )
 
 	for id, line in pairs( self.PresetList:GetLines() ) do
-		if ( line:GetValue( 1 ) ~= name ) then continue end
+		if ( line:GetValue( 1 ) ~= name ) then goto continue end
 		self.PresetList:SelectItem( line )
 	end
 

@@ -151,7 +151,7 @@ local function FilterEntityTable(eyepos, t)
 
     for i, ent in ipairs(t) do
         local class = ent:GetClass()
-        if ent:IsWeapon() or ent:IsPlayer() or class == "viewmodel" then continue end
+        if ent:IsWeapon() or ent:IsPlayer() or class == "viewmodel" then goto continue end
 
         -- Get the entity that is closest by
         local distance = ent:NearestPoint(eyepos):DistToSqr(eyepos)

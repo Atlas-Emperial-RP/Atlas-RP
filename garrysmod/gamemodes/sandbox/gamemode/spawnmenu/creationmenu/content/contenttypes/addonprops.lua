@@ -8,7 +8,7 @@ local function AddRecursive( pnl, folder, path, wildcard )
 
 	for k, v in ipairs( files ) do
 
-		if ( !string.EndsWith( v, ".mdl" ) ) then continue end
+		if ( !string.EndsWith( v, ".mdl" ) ) then goto continue end
 
 		local cp = spawnmenu.GetContentType( "model" )
 		if ( cp ) then
@@ -48,8 +48,8 @@ local function RefreshAddons( MyNode )
 
 	for _, addon in SortedPairsByMemberValue( engine.GetAddons(), "title" ) do
 
-		if ( !addon.downloaded or !addon.mounted ) then continue end
-		if ( addon.models <= 0 ) then continue end
+		if ( !addon.downloaded or !addon.mounted ) then goto continue end
+		if ( addon.models <= 0 ) then goto continue end
 
 		local models = MyNode:AddNode( addon.title .. " (" .. addon.models .. ")", "icon16/bricks.png" )
 		models.DoClick = function()

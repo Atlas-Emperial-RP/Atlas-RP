@@ -203,7 +203,7 @@ search.AddProvider( function( str )
 		local niceName = v.Name or "#" .. k
 		if ( niceName:StartWith( "#" ) ) then niceName = language.GetPhrase( niceName:sub( 2 ) ) end
 
-		if ( !k:lower():find( str, nil, true ) and !niceName:lower():find( str, nil, true ) ) then continue end
+		if ( !k:lower():find( str, nil, true ) and !niceName:lower():find( str, nil, true ) ) then goto continue end
 
 		local entry = {
 			text = niceName,

@@ -78,7 +78,7 @@ function GM:canDropWeapon(ply, weapon)
     if not GAMEMODE.Config.restrictdrop then return true end
 
     for _, v in pairs(CustomShipments) do
-        if v.entity ~= class then continue '=' end
+        if v.entity ~= class then goto continue '=' end
 
         return true
     end
@@ -382,10 +382,10 @@ timer.Create("DarkRPCanHearPlayersVoice", DarkRP.voiceCheckTimeDelay, 0, functio
             local y = gridY + vOffset
 
             local row = grid[x]
-            if not row then continue end
+            if not row then goto continue end
 
             local cell = row[y]
-            if not cell then continue end
+            if not cell then goto continue end
 
             for _, ply2 in ipairs(cell) do
                 local canTalk =
@@ -688,7 +688,7 @@ local function restoreReconnectedEnts(ply)
     timer.Remove("DarkRP_removeDisconnected_" .. sid)
 
     for _, e in pairs(queuedForRemoval[sid]) do
-        if not IsValid(e) then continue end
+        if not IsValid(e) then goto continue end
 
         e.SID = ply.SID
 
@@ -975,7 +975,7 @@ local function collectRemoveEntities(ply)
 
     local sid = ply.SID
     for _, v in ipairs(ents.GetAll()) do
-        if v.SID ~= sid or not v:IsVehicle() and not remClasses[string.lower(v:GetClass() or "")] then continue end
+        if v.SID ~= sid or not v:IsVehicle() and not remClasses[string.lower(v:GetClass() or "")] then goto continue end
 
         table.insert(collect, v)
     end
@@ -983,7 +983,7 @@ local function collectRemoveEntities(ply)
     if not ply:isMayor() then return collect end
 
     for _, ent in pairs(ply.lawboards or {}) do
-        if not IsValid(ent) then continue end
+        if not IsValid(ent) then goto continue end
         table.insert(collect, ent)
     end
 
@@ -1024,7 +1024,7 @@ function GM:PlayerDisconnected(ply)
     if agenda and ply:Team() == agenda.Manager and team.NumPlayers(ply:Team()) <= 1 then
         agenda.text = nil
         for _, v in ipairs(player.GetAll()) do
-            if v:getAgendaTable() ~= agenda then continue end
+            if v:getAgendaTable() ~= agenda then goto continue end
             v:setSelfDarkRPVar("agenda", agenda.text)
         end
     end
@@ -1074,7 +1074,7 @@ function GM:InitPostEntity()
 
     if GAMEMODE.Config.unlockdoorsonstart then
         for _, v in ipairs(ents.GetAll()) do
-            if not v:isDoor() then continue end
+            if not v:isDoor() then goto continue end
             v:Fire("unlock", "", 0)
         end
     end

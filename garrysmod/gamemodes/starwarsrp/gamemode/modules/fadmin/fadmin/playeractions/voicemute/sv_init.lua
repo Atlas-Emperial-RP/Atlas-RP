@@ -14,7 +14,7 @@ local function MuteVoice(ply, cmd, args)
         if IsValid(target) and not target:FAdmin_GetGlobal("FAdmin_voicemuted") then
             target:FAdmin_SetGlobal("FAdmin_voicemuted", true)
 
-            if time == 0 then continue end
+            if time == 0 then goto continue end
 
             timer.Simple(time, function()
                 if not IsValid(target) or not target:FAdmin_GetGlobal("FAdmin_voicemuted") then return false end

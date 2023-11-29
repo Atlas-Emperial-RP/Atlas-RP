@@ -66,7 +66,7 @@ function PANEL:PerformLayout()
 
 	for k, panel in pairs( self.Items ) do
 
-		if ( !panel:IsVisible() ) then continue end
+		if ( !panel:IsVisible() ) then goto continue end
 
 		local x = ( i % self.m_iCols ) * self.m_iColWide
 		local y = math.floor( i / self.m_iCols ) * self.m_iRowHeight

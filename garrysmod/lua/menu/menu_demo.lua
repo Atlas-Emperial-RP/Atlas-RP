@@ -9,7 +9,7 @@ function demo:FetchLocal( offset, perpage )
 
 	for k, v in ipairs( f ) do
 
-		if ( k <= offset ) then continue end
+		if ( k <= offset ) then goto continue end
 		if ( k > offset + perpage ) then break end
 
 		local entry = {

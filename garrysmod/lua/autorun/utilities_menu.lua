@@ -122,7 +122,7 @@ local function SandboxSettings( pnl )
 	local ConVarsLimits = {}
 	for id, str in pairs( cleanup.GetTable() ) do
 		local cvar = GetConVar( "sbox_max" .. str )
-		if ( !cvar ) then continue end
+		if ( !cvar ) then goto continue end
 
 		ConVarsDefault[ "sbox_max" .. str ] = cvar:GetDefault()
 		table.insert( ConVarsLimits, {

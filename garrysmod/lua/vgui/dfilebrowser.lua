@@ -227,7 +227,7 @@ function PANEL:ShowFolder( path )
 	for _, filter in ipairs( string.Explode( " ", filters ) ) do
 
 		local files = file.Find( string.Trim( path .. "/" .. ( filter || "*.*" ), "/" ), self.m_strPath )
-		if ( !istable( files ) ) then continue end
+		if ( !istable( files ) ) then goto continue end
 
 		for _, v in ipairs( files ) do
 

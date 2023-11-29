@@ -166,7 +166,7 @@ function UpdateServerSettings()
 			array.settings = {}
 			for k, v in pairs( Settings.settings ) do
 				local cvar = GetConVar( v.name )
-				if ( !cvar ) then continue end
+				if ( !cvar ) then goto continue end
 
 				array.settings[ k ] = v
 				array.settings[ k ].Value = cvar:GetString()

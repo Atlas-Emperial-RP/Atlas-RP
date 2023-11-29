@@ -77,8 +77,8 @@ function OpenEntityMenu( ent, tr )
 
 	for k, v in SortedPairsByMemberValue( List, "Order" ) do
 
-		if ( !v.Filter ) then continue end
-		if ( !v:Filter( ent, LocalPlayer() ) ) then continue end
+		if ( !v.Filter ) then goto continue end
+		if ( !v:Filter( ent, LocalPlayer() ) ) then goto continue end
 
 		local option = AddOption( v, menu, ent, LocalPlayer(), tr )
 

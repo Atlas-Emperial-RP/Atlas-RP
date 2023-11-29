@@ -59,14 +59,14 @@ hook.Add("PlayerInitialSpawn", "FAdmin_ChangelevelInfo", function(ply)
 
     for _, v in ipairs(maps) do
         local name = string.lower(string.gsub(v, "%.bsp$", ""))
-        if ignoreMaps[name] then continue end
+        if ignoreMaps[name] then goto continue end
 
         local prefix = string.match(name, "^(.-_)")
-        if ignoreMaps[prefix] then continue end
+        if ignoreMaps[prefix] then goto continue end
 
         for _, ignore in ipairs(ignorePatterns) do
             if string.find(name, ignore) then
-                goto mapContinue
+                goto mapgoto continue
             end
         end
 
@@ -86,7 +86,7 @@ hook.Add("PlayerInitialSpawn", "FAdmin_ChangelevelInfo", function(ply)
         mapCategory = mapCategory or "Other"
         -- Don't show CS:GO maps
         if mapCategory == "Counter-Strike" and not file.Exists("maps/" .. name .. ".bsp", "cstrike") then
-            continue
+            goto continue
         end
 
         if not mapList[mapCategory] then
@@ -94,7 +94,7 @@ hook.Add("PlayerInitialSpawn", "FAdmin_ChangelevelInfo", function(ply)
         end
 
         table.insert(mapList[mapCategory], name)
-        ::mapContinue::
+        ::mapgoto continue::
     end
 
     local gamemodeList = engine.GetGamemodes()

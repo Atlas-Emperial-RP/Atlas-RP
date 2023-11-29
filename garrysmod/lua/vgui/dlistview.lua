@@ -283,7 +283,7 @@ function PANEL:DataLayout()
 	local alt = false
 	for k, Line in ipairs( self.Sorted ) do
 
-		if ( !Line:IsVisible() ) then continue end
+		if ( !Line:IsVisible() ) then goto continue end
 
 		Line:SetPos( 1, y )
 		Line:SetSize( self:GetWide() - 2, h )
