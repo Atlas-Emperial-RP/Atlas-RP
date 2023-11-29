@@ -1,0 +1,173 @@
+Sun Nov  5 01:18:13 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Sun Nov  5 01:18:13 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) spawned
+Sun Nov  5 01:20:01 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) spawned
+Sun Nov  5 01:20:15 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /isbchief
+Sun Nov  5 01:20:17 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) spawned
+Sun Nov  5 01:20:27 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /fleetaf
+Sun Nov  5 01:20:29 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) spawned
+Sun Nov  5 01:20:41 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /fleetrv
+Sun Nov  5 01:20:44 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) spawned
+Sun Nov  5 01:20:55 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): 
+Sun Nov  5 01:20:59 2023	eggs (STEAM_0:0:55135130) has joined the game
+Sun Nov  5 01:20:59 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov  5 01:21:56 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sun Nov  5 01:23:00 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): 
+Sun Nov  5 01:23:55 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov  5 01:24:14 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): 
+Sun Nov  5 01:24:53 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov  5 01:24:55 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sun Nov  5 01:24:55 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Nov  5 01:25:51 2023	IA Commander Demo (STEAM_0:0:29212178): /job Staff on Duty 
+Sun Nov  5 01:25:57 2023	IA Commander Demo (STEAM_0:0:29212178): /name Demo on Duty
+Sun Nov  5 01:26:00 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:26:20 2023	Shadow Whelm (STEAM_0:0:503446630) has joined the game
+Sun Nov  5 01:26:20 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sun Nov  5 01:26:54 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sun Nov  5 01:27:04 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov  5 01:27:11 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:27:25 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov  5 01:27:28 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:27:30 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Sun Nov  5 01:27:30 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov  5 01:27:51 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): // im fixing / testing stuff and now people join
+Sun Nov  5 01:28:04 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): 
+Sun Nov  5 01:28:33 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /addspawn Rear Admiral/Vice Admiral
+Sun Nov  5 01:28:48 2023	Demo on Duty (STEAM_0:0:29212178) spawned
+Sun Nov  5 01:28:48 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) arrested Demo on Duty
+Sun Nov  5 01:28:49 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sun Nov  5 01:28:52 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /addspawn RearAdmiral/ViceAdmiral
+Sun Nov  5 01:28:54 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:29:04 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) unarrested Demo on Duty
+Sun Nov  5 01:29:07 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /addspawn rearadmiral/viceadmiral
+Sun Nov  5 01:29:08 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:29:57 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /addspawn Rear Admiral/Vice Admiral
+Sun Nov  5 01:30:43 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc where tf is everyone
+Sun Nov  5 01:30:51 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /addspawn Rear Admiral/Vice Admiral
+Sun Nov  5 01:31:03 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sun Nov  5 01:31:14 2023	DT O1 S05 (STEAM_0:0:503446630): shadow shadow
+Sun Nov  5 01:31:49 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): // fixing stuff been working on the server and everyone rejoins when i need to make/ restart the server :unhappy:
+Sun Nov  5 01:31:51 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sun Nov  5 01:32:00 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov  5 01:32:16 2023	DT O1 S05 (STEAM_0:0:503446630): /rpname SHW MSGT 5126 Shadow
+Sun Nov  5 01:32:23 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /addspawn fleetRV
+Sun Nov  5 01:32:40 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) spawned
+Sun Nov  5 01:32:45 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): 
+Sun Nov  5 01:32:54 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:32:55 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): 
+Sun Nov  5 01:33:00 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:33:01 2023	1LO94G (STEAM_0:0:580928495) has joined the game
+Sun Nov  5 01:33:01 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov  5 01:33:02 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): 
+Sun Nov  5 01:33:08 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:33:23 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): 
+Sun Nov  5 01:33:23 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:33:36 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:33:56 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /addspawn fleetCC
+Sun Nov  5 01:34:11 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /addspawn fleetCM
+Sun Nov  5 01:34:23 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /addspawn fleetGA
+Sun Nov  5 01:34:36 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /addspawn fleetAF
+Sun Nov  5 01:34:51 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /addspawn fleetl
+Sun Nov  5 01:34:56 2023	SHW MSGT 5126 Shadow (STEAM_0:0:503446630) disconnected
+Sun Nov  5 01:35:16 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) spawned
+Sun Nov  5 01:35:29 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) spawned
+Sun Nov  5 01:35:40 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) spawned
+Sun Nov  5 01:35:46 2023	Shadow Whelm (STEAM_0:0:503446630) has joined the game
+Sun Nov  5 01:35:46 2023	SHW MSGT 5126 Shadow (STEAM_0:0:503446630) spawned
+Sun Nov  5 01:35:56 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov  5 01:36:07 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): !model ^ models/defcon/repcomm/executiveofficer/executiveofficer.mdl
+Sun Nov  5 01:36:20 2023	Demo on Duty (STEAM_0:0:29212178): models/nada/pms/male/army.mdl
+Sun Nov  5 01:36:26 2023	Demo on Duty (STEAM_0:0:29212178): models/defcon/repcomm/executiveofficer/executiveofficer.mdl
+Sun Nov  5 01:36:40 2023	Demo on Duty (STEAM_0:0:29212178):  !model ^ models/defcon/repcomm/executiveofficer/executiveofficer.mdl\
+Sun Nov  5 01:36:48 2023	Demo on Duty (STEAM_0:0:29212178): !model ^ models/defcon/repcomm/executiveofficer/executiveofficer.mdl
+Sun Nov  5 01:37:02 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:37:09 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:37:14 2023	SHW MSGT 5126 Shadow (STEAM_0:0:503446630) spawned
+Sun Nov  5 01:37:20 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:37:24 2023	Lord FireBall (STEAM_0:1:129278369) has joined the game
+Sun Nov  5 01:37:24 2023	DT L21 B29 (STEAM_0:1:129278369) spawned
+Sun Nov  5 01:37:24 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:37:41 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Nov  5 01:37:42 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov  5 01:38:02 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) disconnected
+Sun Nov  5 01:38:22 2023	DT L21 B29 (STEAM_0:1:129278369) spawned
+Sun Nov  5 01:38:39 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov  5 01:38:39 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov  5 01:38:39 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) arrested Shock Vice Commander Jack
+Sun Nov  5 01:38:43 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sun Nov  5 01:38:45 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) unarrested Shock Vice Commander Jack
+Sun Nov  5 01:38:46 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sun Nov  5 01:38:50 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Sun Nov  5 01:38:50 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) spawned
+Sun Nov  5 01:38:58 2023	DT L21 B29 (STEAM_0:1:129278369): /name DT L21 X29
+Sun Nov  5 01:39:25 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov  5 01:40:39 2023	SHW MSGT 5126 Shadow (STEAM_0:0:503446630) spawned
+Sun Nov  5 01:40:49 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Sun Nov  5 01:40:49 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) arrested DT L21 X29
+Sun Nov  5 01:40:52 2023	SHW MSGT 5126 Shadow (STEAM_0:0:503446630): /rpname DT O1 S04
+Sun Nov  5 01:41:01 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc OI! Grimmy~
+Sun Nov  5 01:41:19 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) unarrested DT L21 X29
+Sun Nov  5 01:41:22 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): // hello
+Sun Nov  5 01:41:29 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): 
+Sun Nov  5 01:41:43 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc remove e-11 from all shadow and give them all T-21s
+Sun Nov  5 01:42:00 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sun Nov  5 01:42:07 2023	DT O1 S04 (STEAM_0:0:503446630): /ooc give shadow the ablility to fly
+Sun Nov  5 01:42:19 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): alright gotcha pip
+Sun Nov  5 01:42:28 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc i'd hold off on that, but in lore they did have jumppacks
+Sun Nov  5 01:42:34 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): // also whats this about DT having spawn problems
+Sun Nov  5 01:42:41 2023	DT O1 S04 (STEAM_0:0:503446630): /ooc idk
+Sun Nov  5 01:42:48 2023	DT O1 S04 (STEAM_0:0:503446630): /ooc officers spawn fine
+Sun Nov  5 01:42:50 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): // yeah Jetpacks are gonna have to wait
+Sun Nov  5 01:43:03 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): // aight imma just treat it as misinfo then
+Sun Nov  5 01:43:18 2023	SHW Commander Pip was killed by Entity [2910][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Nov  5 01:43:18 2023	Fleet Captain Scratchma was killed by Entity [2910][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Nov  5 01:43:18 2023	DT L21 X29 was killed by Entity [2910][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Nov  5 01:43:25 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov  5 01:43:26 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov  5 01:43:26 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sun Nov  5 01:43:30 2023	Shock Vice Commander Jack was killed by Themself with a suicide trick
+Sun Nov  5 01:43:30 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sun Nov  5 01:43:32 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Sun Nov  5 01:43:37 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov  5 01:43:44 2023	DT O1 S04 was killed by SHW Commander Pip with a rw_sw_dl44
+Sun Nov  5 01:43:52 2023	DT O1 S04 (STEAM_0:0:503446630) spawned
+Sun Nov  5 01:44:00 2023	Shock Vice Commander Jack was killed by SHW Commander Pip with a rw_sw_dl44
+Sun Nov  5 01:44:06 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov  5 01:45:02 2023	Shock Vice Commander Jack was killed by DT O1 S04 with a rw_sw_dlt19
+Sun Nov  5 01:45:07 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov  5 01:45:24 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /fleetaf
+Sun Nov  5 01:45:25 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov  5 01:45:25 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) arrested SHW Commander Pip
+Sun Nov  5 01:45:26 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) spawned
+Sun Nov  5 01:45:34 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sun Nov  5 01:45:34 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sun Nov  5 01:46:10 2023	DT O1 S04 (STEAM_0:0:503446630): /advert yes
+Sun Nov  5 01:46:19 2023	DT L21 X29 was killed by SHW Commander Pip with a rw_sw_e11s
+Sun Nov  5 01:46:22 2023	Shock Vice Commander Jack was killed by DT O1 S04 with a rw_sw_se14r
+Sun Nov  5 01:46:25 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Sun Nov  5 01:46:27 2023	Fleet Captain Scratchma was killed by SHW Commander Pip with a rw_sw_e11s
+Sun Nov  5 01:46:33 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov  5 01:46:49 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sun Nov  5 01:46:55 2023	Fleet Captain Scratchma was killed by Themself with a suicide trick
+Sun Nov  5 01:46:55 2023	Demo on Duty was killed by Themself with a suicide trick
+Sun Nov  5 01:46:55 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Sun Nov  5 01:46:55 2023	DT O1 S04 was killed by Themself with a suicide trick
+Sun Nov  5 01:46:55 2023	DT L21 X29 was killed by Themself with a suicide trick
+Sun Nov  5 01:46:55 2023	Fleet Admiral Nobody was killed by Themself with a suicide trick
+Sun Nov  5 01:46:57 2023	Fleet Captain Scratchma was killed by Themself with a suicide trick
+Sun Nov  5 01:46:57 2023	Demo on Duty was killed by Themself with a suicide trick
+Sun Nov  5 01:46:57 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Sun Nov  5 01:46:57 2023	Shock Vice Commander Jack was killed by Themself with a suicide trick
+Sun Nov  5 01:46:57 2023	DT O1 S04 was killed by Themself with a suicide trick
+Sun Nov  5 01:46:57 2023	DT L21 X29 was killed by Themself with a suicide trick
+Sun Nov  5 01:46:57 2023	Fleet Admiral Nobody was killed by Themself with a suicide trick
+Sun Nov  5 01:46:58 2023	Fleet Captain Scratchma was killed by Themself with a suicide trick
+Sun Nov  5 01:46:58 2023	Demo on Duty was killed by Themself with a suicide trick
+Sun Nov  5 01:46:58 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Sun Nov  5 01:46:58 2023	Shock Vice Commander Jack was killed by Themself with a suicide trick
+Sun Nov  5 01:46:58 2023	DT O1 S04 was killed by Themself with a suicide trick
+Sun Nov  5 01:46:58 2023	DT L21 X29 was killed by Themself with a suicide trick
+Sun Nov  5 01:46:58 2023	Fleet Admiral Nobody was killed by Themself with a suicide trick
+Sun Nov  5 01:47:04 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov  5 01:47:06 2023	DT O1 S04 (STEAM_0:0:503446630) spawned
+Sun Nov  5 01:47:07 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): /advert RESTART INCOMING
+Sun Nov  5 01:47:09 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) spawned

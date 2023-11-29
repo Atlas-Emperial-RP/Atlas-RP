@@ -1,0 +1,745 @@
+Sun Oct 29 01:05:38 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Sun Oct 29 01:05:38 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:05:59 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sun Oct 29 01:05:59 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:06:23 2023	Vex (STEAM_0:0:440286446) has joined the game
+Sun Oct 29 01:06:23 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:06:46 2023	IA Commander Demo (STEAM_0:0:29212178) disconnected
+Sun Oct 29 01:07:15 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:07:58 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:08:26 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:08:36 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT hb_extended_missile_moskit
+Sun Oct 29 01:08:40 2023	ISB Chief Grimjaw was killed by Themself with a suicide trick
+Sun Oct 29 01:08:40 2023	Shore Commander Vex was killed by Themself with a suicide trick
+Sun Oct 29 01:08:56 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sun Oct 29 01:08:56 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:08:56 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:08:57 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:09:00 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:09:18 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_nebelwerfer
+Sun Oct 29 01:09:28 2023	Shore Commander Vex was killed by Entity [2886][gb_rocket_nebel] with a gb_rocket_nebel
+Sun Oct 29 01:09:28 2023	IA Commander Demo was killed by Entity [2886][gb_rocket_nebel] with a gb_rocket_nebel
+Sun Oct 29 01:09:44 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:09:45 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:09:52 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:09:59 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 01:10:11 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_gau19
+Sun Oct 29 01:10:15 2023	Shore Commander Vex was killed by ISB Chief Grimjaw with a unknown
+Sun Oct 29 01:10:25 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_m134
+Sun Oct 29 01:10:30 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_phalanx
+Sun Oct 29 01:10:35 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:11:05 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_gpf155
+Sun Oct 29 01:11:48 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned NPC npc_combine_s
+Sun Oct 29 01:12:05 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_zis3
+Sun Oct 29 01:12:05 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned NPC npc_combine_s
+Sun Oct 29 01:12:10 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned NPC npc_combine_s
+Sun Oct 29 01:12:11 2023	ISB Chief Grimjaw was killed by Themself with a suicide trick
+Sun Oct 29 01:12:11 2023	IA Commander Demo was killed by ISB Chief Grimjaw with a base_shell
+Sun Oct 29 01:12:17 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:12:17 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:12:23 2023	Shore Commander Vex was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 01:12:24 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_3inchmortar
+Sun Oct 29 01:12:26 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:12:28 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 01:12:40 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:12:42 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_flakvierling38
+Sun Oct 29 01:12:50 2023	Shore Commander Vex was killed by ISB Chief Grimjaw with a unknown
+Sun Oct 29 01:12:57 2023	ISB Chief Grimjaw was killed by IA Commander Demo with a unknown
+Sun Oct 29 01:13:01 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:13:01 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:13:05 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:13:09 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_breda35
+Sun Oct 29 01:13:41 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_flak36
+Sun Oct 29 01:14:20 2023	ISB Chief Grimjaw was killed by Shore Commander Vex with a gred_emp_flak36
+Sun Oct 29 01:14:24 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:14:24 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:15:11 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT munificent
+Sun Oct 29 01:15:24 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:15:27 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 01:15:34 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT munificent
+Sun Oct 29 01:15:59 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:16:10 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:16:40 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT republic_cruiser
+Sun Oct 29 01:17:09 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:17:12 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:17:27 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:17:34 2023	IA Commander Demo was killed by Themself with a suicide trick
+Sun Oct 29 01:17:34 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 01:17:49 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:17:52 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 01:18:16 2023	IA Commander Demo was killed by Shore Commander Vex with a tfa_cadbane_rifle
+Sun Oct 29 01:18:20 2023	Shore Commander Vex was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 01:18:32 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:18:37 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:18:37 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 01:19:03 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT acclamator
+Sun Oct 29 01:19:29 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT blockade
+Sun Oct 29 01:19:43 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT imp_itt
+Sun Oct 29 01:19:59 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT y-wing
+Sun Oct 29 01:20:11 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:20:16 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:20:17 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT n-1
+Sun Oct 29 01:20:20 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:20:21 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:20:30 2023	Shore Commander Vex (STEAM_0:0:440286446): /me strips weapons and coms
+Sun Oct 29 01:20:43 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:20:43 2023	Shore Commander Vex was killed by Entity [2911][n-1] with a n-1
+Sun Oct 29 01:20:50 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT n-1
+Sun Oct 29 01:20:54 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:20:57 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:20:57 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 01:21:06 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT podracer
+Sun Oct 29 01:21:14 2023	ISB Chief Grimjaw was killed by Themself with a suicide trick
+Sun Oct 29 01:21:18 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:21:18 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:21:19 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:21:21 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:21:32 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT star_destroyer
+Sun Oct 29 01:21:43 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:22:02 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 01:22:28 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:22:37 2023	Shore Commander Vex was killed by ISB Chief Grimjaw with a rw_sw_e11d
+Sun Oct 29 01:22:44 2023	ISB Chief Grimjaw was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 01:22:48 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:22:48 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 01:22:54 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:23:01 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:23:01 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:23:04 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 01:23:20 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT tie_striker
+Sun Oct 29 01:23:41 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 01:23:51 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 01:23:57 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:24:06 2023	Shore Commander Vex was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 01:24:09 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:24:09 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 01:24:25 2023	ISB Chief Grimjaw was killed by IA Commander Demo with a npc_satchel
+Sun Oct 29 01:24:31 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:24:31 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:24:32 2023	IA Commander Demo was killed by Shore Commander Vex with a iqa11_sniper_rifle
+Sun Oct 29 01:24:43 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:24:43 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) arrested Shore Commander Vex
+Sun Oct 29 01:24:47 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:24:50 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 01:25:06 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT hb_extended_missile_amg88
+Sun Oct 29 01:25:08 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT hb_extended_missile_amg88
+Sun Oct 29 01:25:25 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT hb_extended_main_t12
+Sun Oct 29 01:25:39 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 01:25:46 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 01:25:49 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:25:57 2023	Shore Commander Vex was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 01:26:07 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:26:07 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 01:26:31 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT hb_main_blu82
+Sun Oct 29 01:26:36 2023	IA Commander Demo was killed by ISB Chief Grimjaw with a unknown
+Sun Oct 29 01:26:46 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT hb_main_moab
+Sun Oct 29 01:26:51 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:27:04 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT hb_misc_volcano
+Sun Oct 29 01:27:12 2023	Shore Commander Vex was killed by ISB Chief Grimjaw with a unknown
+Sun Oct 29 01:27:17 2023	IA Commander Demo was killed by ISB Chief Grimjaw with a unknown
+Sun Oct 29 01:27:20 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:27:28 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:27:31 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 01:27:32 2023	ISB Chief Grimjaw was killed by Themself with a suicide trick
+Sun Oct 29 01:27:33 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:27:43 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 01:27:43 2023	Shore Commander Vex (STEAM_0:0:440286446) disconnected
+Sun Oct 29 01:27:47 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:27:52 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:27:58 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT hb_main_bigjdam
+Sun Oct 29 01:28:05 2023	IA Commander Demo was killed by ISB Chief Grimjaw with a unknown
+Sun Oct 29 01:28:20 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:28:33 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT hb_nuclear_castlebravo
+Sun Oct 29 01:28:44 2023	ISB Chief Grimjaw was killed by Themself with a suicide trick
+Sun Oct 29 01:28:44 2023	IA Commander Demo was killed by Themself with a suicide trick
+Sun Oct 29 01:28:59 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:28:59 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:29:30 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:29:39 2023	IA Commander Demo (STEAM_0:0:29212178): /advert NEW PERSON
+Sun Oct 29 01:29:40 2023	IA Commander Demo (STEAM_0:0:29212178): /cheer
+Sun Oct 29 01:30:20 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_flak40z
+Sun Oct 29 01:30:25 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:30:42 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 01:31:24 2023	IA Commander Demo was killed by Entity [3375][base_shell] with a base_shell
+Sun Oct 29 01:31:40 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:32:18 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT aat
+Sun Oct 29 01:32:24 2023	IA Commander Demo (STEAM_0:0:29212178): lvs_walker_atte
+Sun Oct 29 01:32:53 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT lvs_walker_atte
+Sun Oct 29 01:33:01 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_flak40z
+Sun Oct 29 01:33:55 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_2a65
+Sun Oct 29 01:35:22 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gb_rocket_hydra
+Sun Oct 29 01:35:42 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT gred_emp_flak37
+Sun Oct 29 01:35:59 2023	ISB Chief Grimjaw was killed by Entity [3374][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Oct 29 01:36:04 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:36:04 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:36:51 2023	ISB Chief Grimjaw was killed by Entity [3372][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Oct 29 01:36:54 2023	IA Commander Demo was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 01:36:55 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:36:55 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 01:37:09 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:37:12 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 01:37:20 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT or_artillery_incoming_shell_medusa_he
+Sun Oct 29 01:37:24 2023	ISB Chief Grimjaw was killed by Themself with a suicide trick
+Sun Oct 29 01:37:24 2023	IA Commander Demo was killed by ISB Chief Grimjaw with a or_artillery_incoming_shell_medusa_he
+Sun Oct 29 01:37:39 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:37:40 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 01:37:46 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) disconnected
+Sun Oct 29 01:38:09 2023	IA Commander Demo (STEAM_0:0:29212178): /cheer
+Sun Oct 29 01:39:06 2023	Guardill The Battle Magician (STEAM_0:1:527268587) has joined the game
+Sun Oct 29 01:39:06 2023	Guardill The Battle Magician (STEAM_0:1:527268587) spawned
+Sun Oct 29 01:39:13 2023	IA Commander Demo (STEAM_0:0:29212178): /cheer
+Sun Oct 29 01:41:00 2023	IA Commander Demo (STEAM_0:0:29212178): https://discord.gg/cFcGM2Kg
+Sun Oct 29 01:41:09 2023	IA Commander Demo (STEAM_0:0:29212178): /job Staff on Duty
+Sun Oct 29 01:41:20 2023	IA Commander Demo (STEAM_0:0:29212178): /name Demo on Duty
+Sun Oct 29 01:41:37 2023	Demo on Duty (STEAM_0:0:29212178): https://discord.gg/cFcGM2Kg
+Sun Oct 29 01:42:26 2023	Demo on Duty (STEAM_0:0:29212178) spawned
+Sun Oct 29 01:44:14 2023	Demo on Duty (STEAM_0:0:29212178): /job Staff on Duty
+Sun Oct 29 01:45:52 2023	Demo on Duty (STEAM_0:0:29212178): v
+Sun Oct 29 01:45:54 2023	Demo on Duty (STEAM_0:0:29212178): blackmesasecurityguard
+Sun Oct 29 01:51:26 2023	Demo on Duty (STEAM_0:0:29212178): SHUT UP WE GOT A NEW PLAYER
+Sun Oct 29 01:51:46 2023	Demo on Duty (STEAM_0:0:29212178): love you :3
+Sun Oct 29 01:52:13 2023	Demo on Duty (STEAM_0:0:29212178): that you spark
+Sun Oct 29 01:52:23 2023	Demo on Duty (STEAM_0:0:29212178): or grain?
+Sun Oct 29 01:53:50 2023	Demo on Duty (STEAM_0:0:29212178): 2 CONSOLES?
+Sun Oct 29 01:54:43 2023	Guardill The Battle Magician (STEAM_0:1:527268587) disconnected
+Sun Oct 29 01:56:01 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sun Oct 29 01:56:01 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 01:57:07 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 01:57:20 2023	ST Commander Spark (STEAM_0:1:460412980) spawned SENT drug_medicmod
+Sun Oct 29 01:57:29 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Oct 29 01:57:33 2023	ST Commander Spark (STEAM_0:1:460412980) spawned SENT drug_medicmod
+Sun Oct 29 01:58:00 2023	ST Commander Spark (STEAM_0:1:460412980): !model demo models/billy/mcdonalds/mcdonaldscommander.mdl
+Sun Oct 29 01:58:06 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:01:10 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:02:04 2023	Demo on Duty (STEAM_0:0:29212178): e60r_rocket_launcher
+Sun Oct 29 02:02:30 2023	poopin on mic (STEAM_0:0:631269172) has joined the game
+Sun Oct 29 02:02:30 2023	IC 9123 Sarge (STEAM_0:0:631269172) spawned
+Sun Oct 29 02:03:42 2023	IC 9123 Sarge (STEAM_0:0:631269172): 
+Sun Oct 29 02:03:58 2023	Odds (STEAM_0:1:650128783) has joined the game
+Sun Oct 29 02:03:58 2023	DT 09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 02:04:19 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:04:29 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:04:31 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:04:33 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Oct 29 02:04:55 2023	DT 09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 02:04:58 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:05:02 2023	IC 9123 Sarge (STEAM_0:0:631269172): 
+Sun Oct 29 02:05:04 2023	IC 9123 Sarge (STEAM_0:0:631269172): 
+Sun Oct 29 02:05:06 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:05:07 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Oct 29 02:05:49 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:05:52 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Oct 29 02:05:55 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:05:56 2023	IC 9123 Sarge (STEAM_0:0:631269172): 
+Sun Oct 29 02:06:01 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:06:16 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:06:21 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:06:31 2023	DT 09 was killed by Entity [3397][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Oct 29 02:06:40 2023	Demo on Duty was killed by ST Commander Spark with a rw_sw_nt242c
+Sun Oct 29 02:06:49 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:06:51 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:06:55 2023	Demo on Duty (STEAM_0:0:29212178) spawned
+Sun Oct 29 02:06:58 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Oct 29 02:07:04 2023	IC 9123 Sarge (STEAM_0:0:631269172): 
+Sun Oct 29 02:07:08 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:07:37 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:07:37 2023	ST Commander Spark was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 02:07:39 2023	DT 09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 02:07:42 2023	IC 9123 Sarge (STEAM_0:0:631269172) spawned SENT gred_emp_gpf155
+Sun Oct 29 02:07:44 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sun Oct 29 02:07:53 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 02:07:54 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:07:58 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:08:22 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:08:35 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:08:38 2023	DT 09 was killed by IC 9123 Sarge with a base_shell
+Sun Oct 29 02:08:38 2023	ST Commander Spark was killed by IC 9123 Sarge with a base_shell
+Sun Oct 29 02:08:38 2023	Demo on Duty was killed by IC 9123 Sarge with a base_shell
+Sun Oct 29 02:08:38 2023	IC 9123 Sarge was killed by Themself with a suicide trick
+Sun Oct 29 02:08:44 2023	IC 9123 Sarge (STEAM_0:0:631269172) spawned
+Sun Oct 29 02:08:44 2023	IC 9123 Sarge (STEAM_0:0:631269172): 
+Sun Oct 29 02:08:53 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 02:08:54 2023	DT 09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 02:08:58 2023	Demo on Duty (STEAM_0:0:29212178) spawned
+Sun Oct 29 02:09:07 2023	IC 9123 Sarge was killed by ST Commander Spark with a ven_riddick_dlt23v
+Sun Oct 29 02:09:11 2023	IC 9123 Sarge (STEAM_0:0:631269172) spawned
+Sun Oct 29 02:09:11 2023	IC 9123 Sarge (STEAM_0:0:631269172): 
+Sun Oct 29 02:09:16 2023	IC 9123 Sarge (STEAM_0:0:631269172) spawned SENT gred_emp_nebelwerfer
+Sun Oct 29 02:09:23 2023	IC 9123 Sarge (STEAM_0:0:631269172) spawned SENT gred_emp_nebelwerfer
+Sun Oct 29 02:09:32 2023	ST Commander Spark (STEAM_0:1:460412980) spawned SENT npc_health_seller_medicmod
+Sun Oct 29 02:09:41 2023	IC 9123 Sarge (STEAM_0:0:631269172) spawned SENT gred_emp_2a65
+Sun Oct 29 02:10:10 2023	ST Commander Spark (STEAM_0:1:460412980) spawned SENT ent_lightsaber
+Sun Oct 29 02:10:12 2023	ST Commander Spark (STEAM_0:1:460412980) spawned SENT ent_lightsaber
+Sun Oct 29 02:10:13 2023	ST Commander Spark (STEAM_0:1:460412980) spawned SENT ent_lightsaber
+Sun Oct 29 02:10:13 2023	DT 09 was killed by Entity [3413][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Oct 29 02:10:14 2023	ST Commander Spark (STEAM_0:1:460412980) spawned SENT ent_lightsaber
+Sun Oct 29 02:10:14 2023	ST Commander Spark (STEAM_0:1:460412980) spawned SENT ent_lightsaber
+Sun Oct 29 02:10:17 2023	ST Commander Spark was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 02:10:24 2023	IC 9123 Sarge (STEAM_0:0:631269172) spawned SENT gred_emp_phalanx
+Sun Oct 29 02:10:32 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 02:10:34 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:10:41 2023	DT 09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 02:10:41 2023	ST Commander Spark was killed by IC 9123 Sarge with a unknown
+Sun Oct 29 02:10:41 2023	IC 9123 Sarge was killed by Themself with a suicide trick
+Sun Oct 29 02:10:44 2023	IC 9123 Sarge (STEAM_0:0:631269172) spawned
+Sun Oct 29 02:10:44 2023	IC 9123 Sarge (STEAM_0:0:631269172): 
+Sun Oct 29 02:10:56 2023	Demo on Duty (STEAM_0:0:29212178) spawned
+Sun Oct 29 02:10:56 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 02:10:57 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:11:03 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:11:28 2023	IC 9123 Sarge (STEAM_0:0:631269172) spawned SENT gred_emp_mg42_alt
+Sun Oct 29 02:11:35 2023	IC 9123 Sarge (STEAM_0:0:631269172) spawned SENT gred_emp_m134
+Sun Oct 29 02:11:46 2023	IC 9123 Sarge (STEAM_0:0:631269172) spawned SENT gred_emp_flak36
+Sun Oct 29 02:12:05 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:12:16 2023	IC 9123 Sarge (STEAM_0:0:631269172): /pm demo
+Sun Oct 29 02:12:25 2023	IC 9123 Sarge (STEAM_0:0:631269172): /pm demo who gave him dt tryouts?
+Sun Oct 29 02:12:35 2023	Demo on Duty (STEAM_0:0:29212178): idk
+Sun Oct 29 02:12:44 2023	Demo on Duty (STEAM_0:0:29212178): /name IA Commander Demo
+Sun Oct 29 02:12:47 2023	DT 09 was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 02:12:48 2023	IC 9123 Sarge (STEAM_0:0:631269172): /pm erm cuz he's in none of the discords
+Sun Oct 29 02:12:54 2023	IC 9123 Sarge (STEAM_0:0:631269172): /pm demo erm cuz he's in none of the discords
+Sun Oct 29 02:13:02 2023	DT 09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 02:13:07 2023	IA Commander Demo was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 02:13:07 2023	IC 9123 Sarge (STEAM_0:0:631269172): 
+Sun Oct 29 02:13:23 2023	IA Commander Demo (STEAM_0:0:29212178): /pm hes in vc rn though
+Sun Oct 29 02:13:24 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 02:13:24 2023	ST Commander Spark (STEAM_0:1:460412980) spawned SENT pfx3_00
+Sun Oct 29 02:13:31 2023	IC 9123 Sarge (STEAM_0:0:631269172): /pm spark who gave that dt his tryout?
+Sun Oct 29 02:13:35 2023	IA Commander Demo (STEAM_0:0:29212178): /pm sarge hes in vc on main discord rn?
+Sun Oct 29 02:13:52 2023	IC 9123 Sarge (STEAM_0:0:631269172): /pm demo not in the dt discord is what i mean
+Sun Oct 29 02:14:18 2023	IA Commander Demo (STEAM_0:0:29212178): /pm sarge want me to invite him
+Sun Oct 29 02:14:32 2023	IC 9123 Sarge (STEAM_0:0:631269172): /pm spark did you fact check it???
+Sun Oct 29 02:14:34 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:14:44 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:15:26 2023	IA Commander Demo was killed by ST Commander Spark with a rw_sw_nt242c
+Sun Oct 29 02:15:41 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 02:16:08 2023	IC 9123 Sarge (STEAM_0:0:631269172): /pm demo also is this guy muted in game for u too?
+Sun Oct 29 02:16:47 2023	DT 09 was killed by Entity [3414][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Oct 29 02:16:47 2023	IA Commander Demo was killed by Entity [3414][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Oct 29 02:17:02 2023	IC 9123 Sarge (STEAM_0:0:631269172): /name Naval Director Grain
+Sun Oct 29 02:17:03 2023	Naval Director Grain (STEAM_0:0:631269172) spawned
+Sun Oct 29 02:17:03 2023	DT 09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 02:17:03 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 02:18:03 2023	eggs (STEAM_0:0:55135130) has joined the game
+Sun Oct 29 02:18:03 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130) spawned
+Sun Oct 29 02:23:04 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 02:26:01 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:26:06 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130) spawned
+Sun Oct 29 02:26:16 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /name Fleet Something Scratchma
+Sun Oct 29 02:26:20 2023	Fleet Something Scratchma (STEAM_0:0:55135130): /name Fleet Something
+Sun Oct 29 02:27:53 2023	Guardill The Battle Magician (STEAM_0:1:527268587) has joined the game
+Sun Oct 29 02:27:53 2023	Guardill The Battle Magician (STEAM_0:1:527268587) spawned
+Sun Oct 29 02:28:04 2023	Naval Director Grain (STEAM_0:0:631269172): // scratchma fix name.
+Sun Oct 29 02:28:48 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 02:28:49 2023	ST Commander Spark (STEAM_0:1:460412980) disconnected
+Sun Oct 29 02:29:12 2023	Guardill The Battle Magician (STEAM_0:1:527268587) disconnected
+Sun Oct 29 02:31:14 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sun Oct 29 02:31:14 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 02:32:25 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 02:38:28 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:40:46 2023	Fleet Something Scratchma (STEAM_0:0:55135130): // i was afk but what do i change my name to?
+Sun Oct 29 02:41:15 2023	Naval Director Grain (STEAM_0:0:631269172): // erm whatever fleet rank u are, so probably lieutenant
+Sun Oct 29 02:41:23 2023	Fleet Something Scratchma (STEAM_0:0:55135130): // i have no idea what rank i am
+Sun Oct 29 02:44:23 2023	Fleet Something Scratchma (STEAM_0:0:55135130): /name Fleet Lieutenant Scratchma
+Sun Oct 29 02:46:06 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:46:13 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:46:27 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:47:58 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 02:48:24 2023	Fleet Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Sun Oct 29 02:48:25 2023	DT 09 (STEAM_0:1:650128783): /OOC can some one give me the DT officer
+Sun Oct 29 02:48:47 2023	DT 09 (STEAM_0:1:650128783): /name DT 04 I09
+Sun Oct 29 02:48:54 2023	Fleet Lieutenant Scratchma (STEAM_0:0:55135130): /name IA Vice Commander Scratchma
+Sun Oct 29 02:49:18 2023	ST Commander Spark (STEAM_0:1:460412980): !unbanid STEAM_0:0:197465498 
+Sun Oct 29 02:49:25 2023	DT 04 I09 (STEAM_0:1:650128783): /OOC BRB
+Sun Oct 29 02:49:28 2023	DT 04 I09 (STEAM_0:1:650128783) disconnected
+Sun Oct 29 02:49:31 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 02:50:56 2023	Odds (STEAM_0:1:650128783) has joined the game
+Sun Oct 29 02:50:56 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 02:51:23 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 02:52:24 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc GRAIn
+Sun Oct 29 02:52:34 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc IM FUCKING BANNED FROM THE DC
+Sun Oct 29 02:52:40 2023	IA Commander Demo (STEAM_0:0:29212178): GRAIN????
+Sun Oct 29 02:53:47 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:53:47 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:53:56 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:54:56 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 02:54:56 2023	Naval Director Grain (STEAM_0:0:631269172) arrested IA Commander Demo
+Sun Oct 29 02:55:09 2023	Naval Director Grain (STEAM_0:0:631269172): /ADVERT RFA Demo Tresspassing
+Sun Oct 29 02:55:17 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 02:55:17 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 02:55:21 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 02:55:21 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 02:55:25 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:55:25 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:55:33 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:55:33 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:55:44 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 02:55:47 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 02:55:47 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 02:55:59 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 02:55:59 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 02:56:10 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:56:10 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:56:34 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:56:34 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:56:40 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:56:55 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc IM UNBANNED FUCKERS LETS GOOOOOOOO
+Sun Oct 29 02:57:04 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): i cant hear you speak
+Sun Oct 29 02:57:07 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): can you type?
+Sun Oct 29 02:57:21 2023	Guardill The Battle Magician (STEAM_0:1:527268587) has joined the game
+Sun Oct 29 02:57:21 2023	Guardill The Battle Magician (STEAM_0:1:527268587) spawned
+Sun Oct 29 02:57:40 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:57:40 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:58:21 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 02:58:30 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 02:58:30 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 02:58:39 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:58:39 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:58:45 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:58:45 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:58:48 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:58:48 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 02:58:50 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 02:58:50 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 03:00:13 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 03:00:18 2023	Vex (STEAM_0:0:440286446) has joined the game
+Sun Oct 29 03:00:18 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 03:01:03 2023	DT 04 I09 (STEAM_0:1:650128783): /OOC vex
+Sun Oct 29 03:01:10 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 03:01:52 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /sleep
+Sun Oct 29 03:01:56 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /sleep
+Sun Oct 29 03:01:57 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /sleep
+Sun Oct 29 03:01:58 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /sleep
+Sun Oct 29 03:01:58 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Sun Oct 29 03:02:21 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): .@ pls whitelist me to DT officer
+Sun Oct 29 03:02:35 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 03:02:37 2023	DT 04 I09 (STEAM_0:1:650128783): 
+Sun Oct 29 03:02:37 2023	DT 04 I09 (STEAM_0:1:650128783): 
+Sun Oct 29 03:02:58 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:03:02 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 03:03:02 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 03:03:06 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 03:03:06 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 03:03:11 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 03:03:11 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 03:03:12 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 03:03:12 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 03:03:19 2023	Guardill The Battle Magician (STEAM_0:1:527268587): /ooc everyone is A posing xD
+Sun Oct 29 03:03:22 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 03:03:22 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 03:03:47 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 03:04:30 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:04:33 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:04:54 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 03:06:02 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 03:06:13 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 03:07:39 2023	DT 04 I09 (STEAM_0:1:650128783): /comms test
+Sun Oct 29 03:07:43 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:07:47 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:08:07 2023	IA Vice Commander Scratchma was killed by Entity [2188][trigger_hurt] with a trigger_hurt
+Sun Oct 29 03:08:09 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Sun Oct 29 03:08:09 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 03:08:14 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Sun Oct 29 03:08:14 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 03:08:32 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): ./advert test
+Sun Oct 29 03:08:39 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): .// test\
+Sun Oct 29 03:08:40 2023	Shore Commander Vex (STEAM_0:0:440286446): ./ooc
+Sun Oct 29 03:08:44 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): // man
+Sun Oct 29 03:09:14 2023	DT 04 I09 (STEAM_0:1:650128783): /advert [SC Comms] Director Location
+Sun Oct 29 03:09:15 2023	Shore Commander Vex (STEAM_0:0:440286446): // <avatar>
+Sun Oct 29 03:09:22 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /yes
+Sun Oct 29 03:09:22 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:09:40 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc grimjaw type in ooc rq
+Sun Oct 29 03:09:44 2023	DT 04 I09 (STEAM_0:1:650128783) disconnected
+Sun Oct 29 03:09:45 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // hello
+Sun Oct 29 03:09:59 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 03:10:00 2023	Guardill The Battle Magician (STEAM_0:1:527268587): IA PVT 4391 Steve
+Sun Oct 29 03:10:00 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc now again
+Sun Oct 29 03:10:01 2023	IA Commander Demo (STEAM_0:0:29212178): IA "rank" #### "name"
+Sun Oct 29 03:10:04 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // hi
+Sun Oct 29 03:10:10 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // oh pog
+Sun Oct 29 03:10:16 2023	Guardill The Battle Magician (STEAM_0:1:527268587): /name IA PVT 4391 Steve
+Sun Oct 29 03:10:57 2023	IA PVT 4391 Steve (STEAM_0:1:527268587): /name IA PVT 4391 Guardill The Battle Magician
+Sun Oct 29 03:10:59 2023	Odds (STEAM_0:1:650128783) has joined the game
+Sun Oct 29 03:10:59 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 03:11:17 2023	IA PVT 4391 Steve (STEAM_0:1:527268587): /name IA PVT 4391 Guardill
+Sun Oct 29 03:11:19 2023	IA Commander Demo (STEAM_0:0:29212178): /cheer
+Sun Oct 29 03:11:37 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 03:12:26 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Sun Oct 29 03:12:37 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /job ISB Head Agent
+Sun Oct 29 03:12:43 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /name ISB Head Agent Scratchma
+Sun Oct 29 03:13:12 2023	DT 04 I09 (STEAM_0:1:650128783): 
+Sun Oct 29 03:13:33 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): HELLO ISB
+Sun Oct 29 03:14:01 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:14:56 2023	IA Commander Demo (STEAM_0:0:29212178): !sam
+Sun Oct 29 03:14:57 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:15:08 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:15:42 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /me dramatically rubs chin
+Sun Oct 29 03:16:03 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /me puts resting hand on chin
+Sun Oct 29 03:16:35 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 03:16:43 2023	DT 04 I09 (STEAM_0:1:650128783): /me nods
+Sun Oct 29 03:16:44 2023	DT 04 I09 (STEAM_0:1:650128783): Adjust Gloves
+Sun Oct 29 03:16:45 2023	DT 04 I09 (STEAM_0:1:650128783): Put ur gun down befor mine comes up! 1/2/3
+Sun Oct 29 03:16:47 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /me makes thinking face
+Sun Oct 29 03:16:47 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:16:53 2023	DT 04 I09 (STEAM_0:1:650128783): /me nods
+Sun Oct 29 03:16:58 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 03:16:59 2023	DT 04 I09 (STEAM_0:1:650128783): Adjust Gloves
+Sun Oct 29 03:17:04 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /me takes out magnifying glass
+Sun Oct 29 03:17:14 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /me looks through magnifying glass
+Sun Oct 29 03:17:25 2023	IA PVT 4391 Guardill was killed by IA Commander Demo with a rw_sw_dlt19x
+Sun Oct 29 03:17:32 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 03:17:32 2023	IA Commander Demo (STEAM_0:0:29212178) arrested DT 04 I09
+Sun Oct 29 03:17:39 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:17:39 2023	DT 04 I09 (STEAM_0:1:650128783): /ooc bro what????
+Sun Oct 29 03:17:40 2023	ST Commander Spark (STEAM_0:1:460412980) disconnected
+Sun Oct 29 03:17:41 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) spawned
+Sun Oct 29 03:17:59 2023	IA Commander Demo was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 03:18:03 2023	DT 04 I09 (STEAM_0:1:650128783): /ooc gotta protect my vip
+Sun Oct 29 03:18:12 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 03:18:32 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /me shakes awake
+Sun Oct 29 03:18:42 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /me charges tazer
+Sun Oct 29 03:19:20 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) disconnected
+Sun Oct 29 03:19:56 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 03:20:40 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sun Oct 29 03:20:40 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 03:20:43 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /me rases eyebrow
+Sun Oct 29 03:21:30 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): we cant hear you
+Sun Oct 29 03:21:33 2023	DT 04 I09 (STEAM_0:1:650128783): /ooc ik
+Sun Oct 29 03:21:36 2023	IA Commander Demo (STEAM_0:0:29212178): /name SHRT PVT 7567 Deemo
+Sun Oct 29 03:21:37 2023	SHRT PVT 7567 Deemo (STEAM_0:0:29212178) spawned
+Sun Oct 29 03:21:37 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): h
+Sun Oct 29 03:21:40 2023	SHRT PVT 7567 Deemo (STEAM_0:0:29212178): 
+Sun Oct 29 03:22:16 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 03:22:19 2023	ST Commander Spark (STEAM_0:1:460412980): /name Chimaera High Overseer Spark
+Sun Oct 29 03:23:37 2023	DT 04 I09 (STEAM_0:1:650128783): /me pulls out knife
+Sun Oct 29 03:23:48 2023	DT 04 I09 (STEAM_0:1:650128783): /me grabs arm
+Sun Oct 29 03:24:05 2023	DT 04 I09 (STEAM_0:1:650128783): /me starts rubing knife on arm
+Sun Oct 29 03:24:27 2023	DT 04 I09 (STEAM_0:1:650128783): /me cuts of 1 finger
+Sun Oct 29 03:25:22 2023	DT 04 I09 (STEAM_0:1:650128783) disconnected
+Sun Oct 29 03:25:53 2023	SHRT PVT 7567 Deemo (STEAM_0:0:29212178) disconnected
+Sun Oct 29 03:25:58 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /sleep
+Sun Oct 29 03:26:01 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /sleep
+Sun Oct 29 03:26:02 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /sleep
+Sun Oct 29 03:26:03 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /sleep
+Sun Oct 29 03:26:04 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /sleep
+Sun Oct 29 03:26:04 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /sleep
+Sun Oct 29 03:26:04 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130) spawned
+Sun Oct 29 03:26:37 2023	Odds (STEAM_0:1:650128783) has joined the game
+Sun Oct 29 03:26:37 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 03:26:47 2023	ISB Head Agent Scratchma (STEAM_0:0:55135130): /name ISB Captain Scratchma
+Sun Oct 29 03:26:52 2023	ISB Captain Scratchma (STEAM_0:0:55135130): /job ISB Captain
+Sun Oct 29 03:27:07 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 03:27:18 2023	DT 04 I09 (STEAM_0:1:650128783): /ooc need tp
+Sun Oct 29 03:27:45 2023	DT 04 I09 (STEAM_0:1:650128783): /ooc why is my ping up there
+Sun Oct 29 03:27:56 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): /ooc no idea
+Sun Oct 29 03:28:13 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:28:14 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:29:04 2023	ISB Captain Scratchma (STEAM_0:0:55135130): 
+Sun Oct 29 03:29:53 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sun Oct 29 03:29:53 2023	SHRT PVT 7567 Deemo (STEAM_0:0:29212178) spawned
+Sun Oct 29 03:30:34 2023	DT 04 I09 (STEAM_0:1:650128783): 
+Sun Oct 29 03:30:39 2023	DT 04 I09 (STEAM_0:1:650128783): 
+Sun Oct 29 03:31:07 2023	SHRT PVT 7567 Deemo (STEAM_0:0:29212178): /name sHOre previte deamo
+Sun Oct 29 03:31:18 2023	sHOre previte deamo (STEAM_0:0:29212178) spawned
+Sun Oct 29 03:31:21 2023	sHOre previte deamo (STEAM_0:0:29212178): 
+Sun Oct 29 03:31:48 2023	ISB Captain Scratchma (STEAM_0:0:55135130): /id
+Sun Oct 29 03:31:50 2023	sHOre previte deamo (STEAM_0:0:29212178): /me shows id
+Sun Oct 29 03:32:00 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:32:06 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:32:11 2023	ISB Captain Scratchma (STEAM_0:0:55135130): /me sqints at id
+Sun Oct 29 03:32:32 2023	sHOre previte deamo (STEAM_0:0:29212178): /job shor speicl tropa
+Sun Oct 29 03:32:59 2023	sHOre previte deamo was killed by DT 04 I09 with a rw_sw_e11d
+Sun Oct 29 03:33:17 2023	sHOre previte deamo (STEAM_0:0:29212178): /name IA Commander Demo
+Sun Oct 29 03:33:26 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 03:34:55 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /me fakes holo call
+Sun Oct 29 03:35:20 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:35:32 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:35:36 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:37:53 2023	DT 04 I09 (STEAM_0:1:650128783) disconnected
+Sun Oct 29 03:39:05 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /me plants coke on demo
+Sun Oct 29 03:39:11 2023	Odds (STEAM_0:1:650128783) has joined the game
+Sun Oct 29 03:39:11 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 03:39:20 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) disconnected
+Sun Oct 29 03:39:46 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 03:39:50 2023	DT 04 I09 (STEAM_0:1:650128783): /ooc THE LAG
+Sun Oct 29 03:39:51 2023	DT 04 I09 (STEAM_0:1:650128783): /OOC THE LAG
+Sun Oct 29 03:39:56 2023	ISB Captain Scratchma was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 03:40:04 2023	ISB Chief Grimjaw was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 03:40:11 2023	ISB Captain Scratchma (STEAM_0:0:55135130) spawned
+Sun Oct 29 03:40:15 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // idk whats happening
+Sun Oct 29 03:40:17 2023	DT 04 I09 (STEAM_0:1:650128783): /OOC tp isb pls
+Sun Oct 29 03:40:19 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 03:40:27 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 03:40:36 2023	ISB Captain Scratchma (STEAM_0:0:55135130): // use advert to ask for our location 
+Sun Oct 29 03:40:47 2023	ISB Captain Scratchma (STEAM_0:0:55135130): // we do a little roleplay
+Sun Oct 29 03:41:06 2023	DT 04 I09 (STEAM_0:1:650128783): 
+Sun Oct 29 03:41:13 2023	DT 04 I09 (STEAM_0:1:650128783): 
+Sun Oct 29 03:41:17 2023	DT 04 I09 (STEAM_0:1:650128783): 
+Sun Oct 29 03:42:19 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sun Oct 29 03:42:19 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 03:42:48 2023	ISB Captain Scratchma (STEAM_0:0:55135130): /me takes out notebook
+Sun Oct 29 03:42:57 2023	DT 04 I09 (STEAM_0:1:650128783): /advet [Comms] IA location
+Sun Oct 29 03:43:01 2023	IA Commander Demo (STEAM_0:0:29212178): /advert I'VE RIGGED THE HOSPITAL TO BLOW! DOWN WITH THE EMPIRE! FIGHT THEIR LIES!
+Sun Oct 29 03:43:14 2023	IA Commander Demo (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Oct 29 03:43:26 2023	DT 04 I09 (STEAM_0:1:650128783): /advert [Comms] IA location
+Sun Oct 29 03:43:30 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /advert AOS Commander Demo Treason
+Sun Oct 29 03:43:46 2023	IA Commander Demo (STEAM_0:0:29212178): !advert I'VE STILL GOT MY COMMS TRAITORS
+Sun Oct 29 03:43:51 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 03:45:03 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:45:07 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:45:37 2023	IA Commander Demo (STEAM_0:0:29212178): /advert YOU'LL NEVER TAKE ME ALIVE!!!!
+Sun Oct 29 03:45:39 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT lvs_imperial_dropship
+Sun Oct 29 03:45:46 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT lvs_imperial_dropship
+Sun Oct 29 03:45:48 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT lvs_imperial_dropship
+Sun Oct 29 03:46:01 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT lvs_imperial_transport
+Sun Oct 29 03:46:24 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:46:27 2023	Guardill The Battle Magician (STEAM_0:1:527268587) has joined the game
+Sun Oct 29 03:46:27 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) spawned
+Sun Oct 29 03:46:31 2023	ISB Captain Scratchma (STEAM_0:0:55135130) disconnected
+Sun Oct 29 03:47:04 2023	DT 04 I09 was killed by IA Commander Demo with a tfa_e11d
+Sun Oct 29 03:47:12 2023	DT 04 I09 (STEAM_0:1:650128783): /ooc bruh
+Sun Oct 29 03:47:28 2023	DT 04 I09 (STEAM_0:1:650128783): /ooc how are you able to shoot thro a wall
+Sun Oct 29 03:47:28 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 03:47:29 2023	ISB Chief Grimjaw was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 03:47:35 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:47:39 2023	IA Commander Demo (STEAM_0:0:29212178): /ooc the weapons shoot trhough all walls grain has to fix it
+Sun Oct 29 03:47:40 2023	DT 04 I09 (STEAM_0:1:650128783): /ooc isb tp
+Sun Oct 29 03:47:44 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 03:47:44 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 03:47:49 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:48:32 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned SENT firstaidkit_medicmod
+Sun Oct 29 03:48:36 2023	Chimaera High Overseer Spark was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 03:48:44 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 03:48:44 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:48:50 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:49:01 2023	IA Commander Demo (STEAM_0:0:29212178): they not out there?
+Sun Oct 29 03:49:02 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:49:19 2023	Naval Director Grain (STEAM_0:0:631269172) spawned SENT wii music background
+Sun Oct 29 03:49:20 2023	Chimaera High Overseer Spark was killed by IA Commander Demo with a tfa_e11d
+Sun Oct 29 03:49:23 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 03:49:23 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:49:29 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT landspeeder
+Sun Oct 29 03:49:41 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 03:49:50 2023	ISB Chief Grimjaw was killed by Themself with a suicide trick
+Sun Oct 29 03:49:50 2023	DT 04 I09 was killed by Themself with a suicide trick
+Sun Oct 29 03:50:05 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 03:50:05 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 03:50:16 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 03:50:53 2023	IA Commander Demo (STEAM_0:0:29212178): /advert WE HAVE MEDIC HOSTAGES AND WE WILL BLOW UP THIS PALCE
+Sun Oct 29 03:51:08 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /advert what are your demands
+Sun Oct 29 03:51:20 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:51:25 2023	IA Commander Demo (STEAM_0:0:29212178): /ADVERT A SPACECRAFT AND SAFE PASSGE OUT OF HERE
+Sun Oct 29 03:51:34 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:52:00 2023	Chimaera High Overseer Spark was killed by IA Commander Demo with a rw_sw_z6i
+Sun Oct 29 03:52:27 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 03:52:27 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:52:34 2023	Chimaera High Overseer Spark was killed by IA Commander Demo with a rw_sw_z6i
+Sun Oct 29 03:52:49 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 03:52:51 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:52:59 2023	IA PVT 4391 Guardill was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 03:53:05 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:53:06 2023	DT 04 I09 was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 03:53:09 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) spawned
+Sun Oct 29 03:53:52 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 03:53:52 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 03:54:00 2023	DT 04 I09 was killed by IA PVT 4391 Guardill with a rw_sw_z6i
+Sun Oct 29 03:54:13 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 03:54:13 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 03:54:24 2023	Chimaera High Overseer Spark was killed by Themself with a suicide trick
+Sun Oct 29 03:54:27 2023	IA PVT 4391 Guardill was killed by DT 04 I09 with a rw_sw_nade
+Sun Oct 29 03:54:38 2023	DT 04 I09 was killed by IA Commander Demo with a rw_sw_dual_e5bx
+Sun Oct 29 03:54:39 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 03:54:41 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:54:43 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) spawned
+Sun Oct 29 03:54:50 2023	DT 04 I09 (STEAM_0:1:650128783): /ooc HOW ARE YOU NOT DEAD
+Sun Oct 29 03:54:53 2023	Naval Director Grain (STEAM_0:0:631269172) spawned SENT lvs_starfighter_consulcharger
+Sun Oct 29 03:54:54 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:54:59 2023	ISB Chief Grimjaw was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 03:55:08 2023	DT 04 I09 (STEAM_0:1:650128783): /ooc isb tp 
+Sun Oct 29 03:55:09 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 03:55:16 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 03:55:31 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): !tpto spark
+Sun Oct 29 03:55:39 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): !tpto sp
+Sun Oct 29 03:55:41 2023	Naval Director Grain (STEAM_0:0:631269172) spawned SENT lvs_laatle_gunship
+Sun Oct 29 03:55:43 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 03:55:44 2023	Naval Director Grain (STEAM_0:0:631269172) spawned SENT lvs_imperial_dropship
+Sun Oct 29 03:55:46 2023	Naval Director Grain (STEAM_0:0:631269172) spawned SENT lvs_dx9_transport
+Sun Oct 29 03:55:51 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 03:55:51 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 03:56:05 2023	IA Commander Demo was killed by Shore Commander Vex with a rw_sw_z6i
+Sun Oct 29 03:56:05 2023	Shore Commander Vex was killed by IA Commander Demo with a npc_satchel
+Sun Oct 29 03:56:18 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 03:56:20 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 03:56:38 2023	Naval Director Grain was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 03:57:03 2023	IA PVT 4391 Guardill was killed by DT 04 I09 with a rw_sw_e11d
+Sun Oct 29 03:57:34 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 03:57:37 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) spawned
+Sun Oct 29 03:57:48 2023	DT 04 I09 (STEAM_0:1:650128783): /me nods
+Sun Oct 29 03:58:02 2023	Naval Director Grain (STEAM_0:0:631269172) spawned
+Sun Oct 29 03:58:15 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:58:46 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 03:58:46 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 03:58:51 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 03:58:51 2023	Naval Director Grain (STEAM_0:0:631269172): 
+Sun Oct 29 03:59:00 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 03:59:00 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 03:59:18 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:59:20 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 03:59:20 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 03:59:22 2023	IA Commander Demo was killed by Themself with a suicide trick
+Sun Oct 29 03:59:22 2023	Chimaera High Overseer Spark was killed by IA Commander Demo with a npc_satchel
+Sun Oct 29 03:59:38 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 03:59:40 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 03:59:41 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 03:59:53 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 04:00:28 2023	DT 04 I09 (STEAM_0:1:650128783) disconnected
+Sun Oct 29 04:00:43 2023	Naval Director Grain (STEAM_0:0:631269172) spawned SENT mega_bomb
+Sun Oct 29 04:00:44 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 04:00:47 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) spawned
+Sun Oct 29 04:00:50 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 04:01:07 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) disconnected
+Sun Oct 29 04:01:53 2023	Odds (STEAM_0:1:650128783) has joined the game
+Sun Oct 29 04:01:53 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 04:02:24 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 04:02:31 2023	Chimaera High Overseer Spark was killed by IA Commander Demo with a rw_sw_dual_e5bx
+Sun Oct 29 04:02:41 2023	DT 04 I09 (STEAM_0:1:650128783): /ooc need tp
+Sun Oct 29 04:02:49 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Sun Oct 29 04:02:50 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 04:02:58 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 04:03:03 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sun Oct 29 04:03:44 2023	DT 04 I09 (STEAM_0:1:650128783): 
+Sun Oct 29 04:03:50 2023	DT 04 I09 (STEAM_0:1:650128783): 
+Sun Oct 29 04:03:52 2023	IA Commander Demo was killed by Themself with a suicide trick
+Sun Oct 29 04:04:02 2023	DT 04 I09 (STEAM_0:1:650128783): 
+Sun Oct 29 04:04:07 2023	DT 04 I09 (STEAM_0:1:650128783): 
+Sun Oct 29 04:04:07 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 04:04:13 2023	IA Commander Demo (STEAM_0:0:29212178): /ooc rping is goofy lmao
+Sun Oct 29 04:04:27 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Oct 29 04:06:12 2023	Shore Commander Vex was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 04:06:25 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sun Oct 29 04:06:26 2023	Naval Director Grain (STEAM_0:0:631269172) disconnected
+Sun Oct 29 04:06:46 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): /advert I WONT GO DOWN WITHOUT A FIGHT
+Sun Oct 29 04:07:02 2023	Chimaera High Overseer Spark was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 04:07:03 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) disconnected
+Sun Oct 29 04:07:05 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /advert AOS Spark At.murder
+Sun Oct 29 04:07:23 2023	DT 04 I09 (STEAM_0:1:650128783): /ooc IM POSEND
+Sun Oct 29 04:08:18 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sun Oct 29 04:09:41 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) disconnected
+Sun Oct 29 04:09:58 2023	IA Commander Demo (STEAM_0:0:29212178): /cheer
+Sun Oct 29 04:10:28 2023	IA Commander Demo was killed by Shore Commander Vex with a weapon_ak472
+Sun Oct 29 04:10:43 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 04:12:30 2023	Guardill The Battle Magician (STEAM_0:1:527268587) has joined the game
+Sun Oct 29 04:12:30 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) spawned
+Sun Oct 29 04:12:39 2023	Shore Commander Vex was killed by IA Commander Demo with a weapon_shotgun
+Sun Oct 29 04:12:48 2023	Shore Commander Vex (STEAM_0:0:440286446) disconnected
+Sun Oct 29 04:13:17 2023	IA Commander Demo (STEAM_0:0:29212178) disconnected
+Sun Oct 29 04:13:43 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) disconnected
+Sun Oct 29 04:25:43 2023	DT 04 I09 (STEAM_0:1:650128783) disconnected
+Sun Oct 29 05:10:28 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sun Oct 29 05:10:28 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 05:13:47 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 05:23:16 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 05:28:03 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 05:28:59 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 05:33:27 2023	Grand Admiral Jinn (STEAM_0:0:649439720) disconnected

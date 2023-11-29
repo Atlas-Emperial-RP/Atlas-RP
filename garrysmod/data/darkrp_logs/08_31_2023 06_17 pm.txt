@@ -1,0 +1,21 @@
+Thu Aug 31 18:17:56 2023	Spark (STEAM_0:1:460412980) has joined the game
+Thu Aug 31 18:17:56 2023	Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 18:19:19 2023	Spark (STEAM_0:1:460412980): /setmoney spark 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Thu Aug 31 18:19:19 2023	Spark (STEAM_0:1:460412980) set Spark's money to $1e+109
+Thu Aug 31 18:19:22 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
+Thu Aug 31 18:19:22 2023	im in graves' basement help (STEAM_0:0:631269172) spawned
+Thu Aug 31 18:19:40 2023	Spark (STEAM_0:1:460412980): /givemoney spark 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Thu Aug 31 18:19:47 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 18:21:01 2023	im in graves' basement help (STEAM_0:0:631269172) spawned SENT brickscrafting_garbage
+Thu Aug 31 18:21:03 2023	im in graves' basement help (STEAM_0:0:631269172) spawned SENT brickscrafting_resourcediamond
+Thu Aug 31 18:21:07 2023	im in graves' basement help (STEAM_0:0:631269172) spawned SENT brickscrafting_resourceplastic
+Thu Aug 31 18:21:09 2023	im in graves' basement help (STEAM_0:0:631269172) spawned SENT brickscrafting_npc
+Thu Aug 31 18:21:21 2023	im in graves' basement help (STEAM_0:0:631269172) spawned SENT brickscrafting_npc
+Thu Aug 31 18:21:30 2023	im in graves' basement help (STEAM_0:0:631269172) spawned SENT bricks_server_armory
+Thu Aug 31 18:21:32 2023	im in graves' basement help (STEAM_0:0:631269172) spawned SENT bricks_server_bank_vault
+Thu Aug 31 18:47:28 2023	Spark (STEAM_0:1:460412980) disconnected
+Thu Aug 31 18:48:24 2023	Spark (STEAM_0:1:460412980) has joined the game
+Thu Aug 31 18:48:24 2023	Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 19:02:40 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 19:02:42 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 19:03:22 2023	Spark (STEAM_0:1:460412980): 

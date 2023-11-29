@@ -1,0 +1,155 @@
+Sat Sep 23 01:28:21 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sat Sep 23 01:28:21 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 01:36:06 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep 23 01:38:29 2023	ICSL 0001 Jinn was killed by Entity [0][worldspawn] with a unknown
+Sat Sep 23 01:38:48 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 01:38:50 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep 23 01:40:06 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep 23 01:43:27 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep 23 01:44:43 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep 23 01:45:21 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep 23 02:17:34 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Sat Sep 23 02:36:39 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sat Sep 23 02:36:39 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 03:02:54 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Sat Sep 23 04:26:11 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sat Sep 23 04:26:11 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 04:28:19 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 04:29:40 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 04:30:35 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): /addspwan vader
+Sat Sep 23 04:30:49 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): /addspwan darthvader
+Sat Sep 23 04:31:07 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): /addspawn darthvader
+Sat Sep 23 04:35:38 2023	ICSL 0001 Jinn was killed by Themself with a suicide trick
+Sat Sep 23 04:35:38 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep 23 04:35:42 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 04:35:42 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep 23 04:36:49 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 04:39:02 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 04:40:31 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 04:41:53 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): /addspawn scout
+Sat Sep 23 04:41:58 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): /addspawn scouttrooper
+Sat Sep 23 04:42:33 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): /addspawn scouttroopers
+Sat Sep 23 04:44:28 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sat Sep 23 04:44:28 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned
+Sat Sep 23 04:46:03 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned
+Sat Sep 23 04:46:46 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:47:21 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 04:48:52 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Sat Sep 23 04:52:46 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:52:49 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:52:52 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:52:52 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:53:05 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:53:06 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:53:07 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:53:08 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:53:09 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:53:10 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:53:14 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:53:15 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:54:09 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sat Sep 23 04:54:09 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 04:56:53 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:56:56 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 04:57:00 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:00:44 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:00:53 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:00:54 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:00:55 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:00:55 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:00:56 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:28 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:38 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:39 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:39 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:40 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:40 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:41 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:41 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:42 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:42 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:43 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:44 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:44 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:45 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:45 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:47 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:48 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:48 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:49 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:50 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:51 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:51 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:52 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:53 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:53 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:54 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:55 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:55 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:56 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:57 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:57 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:58 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:58 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:01:59 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:02:00 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc PTS
+Sat Sep 23 05:02:52 2023	ST COmmander Spark (STEAM_0:1:460412980): YOU STAY THE HELL AWAY FROM MY COCK
+Sat Sep 23 05:02:57 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc YOU STAY THE HELL AWAY FROM MY COCK
+Sat Sep 23 05:03:44 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:04:48 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:08:30 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:08:31 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:08:32 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:08:33 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:09:07 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:09:26 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT lfs_speederbike
+Sat Sep 23 05:09:34 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT lfs-jsec-laat
+Sat Sep 23 05:09:36 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT lfs-imperial-laat
+Sat Sep 23 05:09:39 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT lunasflightschool_niksacokica_tx-427_imperial
+Sat Sep 23 05:09:53 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT lvs_starfighter_consulcharger
+Sat Sep 23 05:10:03 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT or_artillery_incoming_shell_basilisk_inc
+Sat Sep 23 05:10:06 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT or_artillery_incoming_shell_basilisk_inc
+Sat Sep 23 05:10:09 2023	ST COmmander Spark was killed by Themself with a suicide trick
+Sat Sep 23 05:10:25 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned
+Sat Sep 23 05:10:27 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:10:51 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT or_artillery_incoming_shell_medusa_inc
+Sat Sep 23 05:10:53 2023	ICSL 0001 Jinn was killed by ST COmmander Spark with a or_artillery_incoming_shell_medusa_inc
+Sat Sep 23 05:11:05 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:11:07 2023	ST COmmander Spark was killed by Entity [0][worldspawn] with a unknown
+Sat Sep 23 05:11:11 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep 23 05:11:16 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 05:11:16 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep 23 05:11:23 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned
+Sat Sep 23 05:11:24 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:11:50 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT wii music background
+Sat Sep 23 05:12:07 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:12:47 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT star wars battle of heroes v2
+Sat Sep 23 05:12:53 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT we are soldiers
+Sat Sep 23 05:13:12 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT pfx3_00
+Sat Sep 23 05:13:24 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT witcher_gateway
+Sat Sep 23 05:13:26 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT witcher_gateway
+Sat Sep 23 05:13:55 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT lazer_cannon
+Sat Sep 23 05:14:01 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT lazer3_grenade
+Sat Sep 23 05:14:05 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT lazer3_grenade
+Sat Sep 23 05:14:08 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT lazer_cannon
+Sat Sep 23 05:14:21 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT superswaypoints_waypoint
+Sat Sep 23 05:14:33 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned SENT atst
+Sat Sep 23 05:15:44 2023	ICSL 0001 Jinn was killed by Entity [2886][point_hurt] with a point_hurt
+Sat Sep 23 05:16:04 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:16:10 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 05:16:14 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:16:16 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep 23 05:19:14 2023	ST COmmander Spark (STEAM_0:1:460412980) disconnected
+Sat Sep 23 05:25:33 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Sat Sep 23 05:25:33 2023	Dishwasher (STEAM_0:1:169781558) spawned
+Sat Sep 23 05:28:58 2023	Dishwasher (STEAM_0:1:169781558) spawned
+Sat Sep 23 05:32:23 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Sat Sep 23 05:33:32 2023	Dishwasher (STEAM_0:1:169781558) spawned
+Sat Sep 23 05:37:35 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sat Sep 23 05:37:35 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep 23 05:40:51 2023	Dishwasher (STEAM_0:1:169781558) spawned SENT firstaidkit_medicmod
+Sat Sep 23 05:40:54 2023	Dishwasher (STEAM_0:1:169781558) spawned SENT npc_health_seller_medicmod
+Sat Sep 23 05:40:59 2023	Dishwasher (STEAM_0:1:169781558) spawned SENT stretcher_medicmod
+Sat Sep 23 05:41:53 2023	Dishwasher (STEAM_0:1:169781558) spawned SENT drip_medicmod
+Sat Sep 23 05:42:02 2023	Dishwasher (STEAM_0:1:169781558) spawned SENT npc_health_seller_medicmod
+Sat Sep 23 05:44:41 2023	Dishwasher (STEAM_0:1:169781558) disconnected

@@ -1,0 +1,38 @@
+Wed Sep  6 09:15:53 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
+Wed Sep  6 09:15:53 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Wed Sep  6 09:16:33 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT geralts_augmentations_npc
+Wed Sep  6 09:24:05 2023	IC 1854 Sarge (STEAM_0:0:631269172) disconnected
+Thu Sep  7 03:09:36 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Thu Sep  7 03:09:36 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Thu Sep  7 03:15:18 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Thu Sep  7 04:19:43 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Thu Sep  7 04:19:43 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Thu Sep  7 04:22:17 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Thu Sep  7 04:28:13 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Thu Sep  7 04:28:13 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Thu Sep  7 04:33:38 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Thu Sep  7 04:34:29 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Thu Sep  7 04:35:13 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Thu Sep  7 04:36:40 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Thu Sep  7 04:37:14 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Thu Sep  7 04:39:36 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Thu Sep  7 04:40:02 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Thu Sep  7 04:40:34 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Thu Sep  7 04:41:24 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Thu Sep  7 04:42:35 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Thu Sep  7 04:43:33 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Fri Sep  8 01:32:26 2023	VibrantHealer35 (STEAM_0:0:161241684) has joined the game
+Fri Sep  8 01:32:26 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Sep  8 01:35:51 2023	Purge Commander Badger (STEAM_0:0:161241684) disconnected
+Fri Sep  8 03:43:06 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Fri Sep  8 03:43:06 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Fri Sep  8 03:48:03 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Fri Sep  8 03:53:02 2023	VibrantHealer35 (STEAM_0:0:161241684) has joined the game
+Fri Sep  8 03:53:02 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Sep  8 03:58:51 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Sep  8 03:59:36 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Fri Sep  8 03:59:42 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Sep  8 03:59:50 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Sep  8 04:01:11 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Fri Sep  8 04:14:58 2023	Purge Commander Badger (STEAM_0:0:161241684): /me Strips weapons and comms
+Fri Sep  8 04:16:07 2023	Purge Commander Badger (STEAM_0:0:161241684) disconnected

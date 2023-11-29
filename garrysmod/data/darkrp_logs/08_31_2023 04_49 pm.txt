@@ -1,0 +1,167 @@
+Thu Aug 31 16:49:42 2023	Spark (STEAM_0:1:460412980) has joined the game
+Thu Aug 31 16:49:42 2023	Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 16:50:09 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
+Thu Aug 31 16:50:09 2023	im in graves' basement help (STEAM_0:0:631269172) spawned
+Thu Aug 31 16:50:22 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 16:50:29 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:50:46 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 16:51:47 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:51:53 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Thu Aug 31 16:51:53 2023	vogjin (STEAM_0:0:649439720) spawned
+Thu Aug 31 16:52:01 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 16:52:47 2023	Spark (STEAM_0:1:460412980) disconnected
+Thu Aug 31 16:52:47 2023	vogjin (STEAM_0:0:649439720): 
+Thu Aug 31 16:53:40 2023	Spark (STEAM_0:1:460412980) has joined the game
+Thu Aug 31 16:53:40 2023	Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 16:54:15 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:54:55 2023	vogjin (STEAM_0:0:649439720): 
+Thu Aug 31 16:55:16 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:56:18 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:56:21 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:56:24 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:56:26 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:56:27 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:56:28 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:56:46 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:57:01 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:57:02 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:57:03 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:57:04 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:57:05 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 16:57:17 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printer_black
+Thu Aug 31 16:57:20 2023	vogjin was killed by Entity [0][worldspawn] with a unknown
+Thu Aug 31 16:57:22 2023	vogjin (STEAM_0:0:649439720) spawned
+Thu Aug 31 16:57:28 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printer_vip
+Thu Aug 31 16:57:30 2023	vogjin was killed by Entity [0][worldspawn] with a unknown
+Thu Aug 31 16:57:32 2023	vogjin (STEAM_0:0:649439720) spawned
+Thu Aug 31 16:57:37 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_upgrade_storage
+Thu Aug 31 16:57:47 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_upgrade_speed
+Thu Aug 31 16:57:51 2023	Spark (STEAM_0:1:460412980) spawned SENT bricks_server_ink
+Thu Aug 31 16:57:58 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_ink
+Thu Aug 31 16:58:02 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_ink
+Thu Aug 31 16:58:22 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_upgrade_storage
+Thu Aug 31 16:58:38 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_upgrade_storage
+Thu Aug 31 16:58:41 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_upgrade_storage
+Thu Aug 31 16:58:53 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_ink
+Thu Aug 31 16:59:00 2023	Spark (STEAM_0:1:460412980) spawned SENT bricks_server_ink
+Thu Aug 31 16:59:03 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_ink
+Thu Aug 31 16:59:07 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_ink
+Thu Aug 31 16:59:16 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_upgrade_amount
+Thu Aug 31 16:59:24 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_upgrade_speed
+Thu Aug 31 16:59:29 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_ink
+Thu Aug 31 16:59:34 2023	vogjin (STEAM_0:0:649439720) spawned SENT sent_vj_ply_spawnpoint
+Thu Aug 31 16:59:35 2023	vogjin (STEAM_0:0:649439720) spawned SENT sent_vj_ply_spawnpoint
+Thu Aug 31 16:59:35 2023	vogjin (STEAM_0:0:649439720) spawned SENT sent_vj_ply_spawnpoint
+Thu Aug 31 16:59:36 2023	vogjin (STEAM_0:0:649439720) spawned SENT sent_vj_ply_spawnpoint
+Thu Aug 31 16:59:36 2023	vogjin (STEAM_0:0:649439720) spawned SENT sent_vj_ply_spawnpoint
+Thu Aug 31 16:59:37 2023	vogjin (STEAM_0:0:649439720) spawned SENT sent_vj_ply_spawnpoint
+Thu Aug 31 16:59:38 2023	vogjin (STEAM_0:0:649439720) spawned SENT sent_vj_ply_spawnpoint
+Thu Aug 31 16:59:39 2023	vogjin (STEAM_0:0:649439720) spawned SENT sent_vj_ply_spawnpoint
+Thu Aug 31 16:59:40 2023	Spark (STEAM_0:1:460412980) spawned SENT drpf_printeritem_repair
+Thu Aug 31 16:59:59 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:00:02 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:00:09 2023	Spark was killed by Themself with a suicide trick
+Thu Aug 31 17:00:09 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:00:10 2023	Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 17:00:22 2023	vogjin was killed by Themself with a suicide trick
+Thu Aug 31 17:00:22 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 17:00:23 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:00:24 2023	vogjin (STEAM_0:0:649439720) spawned
+Thu Aug 31 17:00:34 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:00:38 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 17:00:39 2023	vogjin (STEAM_0:0:649439720): 
+Thu Aug 31 17:00:43 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:00:49 2023	im in graves' basement help (STEAM_0:0:631269172): /addmoney @ 999999999
+Thu Aug 31 17:00:52 2023	Spark (STEAM_0:1:460412980): /addmoney ^ 10000000000
+Thu Aug 31 17:00:59 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 17:01:03 2023	Spark (STEAM_0:1:460412980): /addmoney spark 10000000000000000000000000000
+Thu Aug 31 17:01:03 2023	Spark (STEAM_0:1:460412980) added $1e+28 to Spark's wallet
+Thu Aug 31 17:01:17 2023	vogjin (STEAM_0:0:649439720): 
+Thu Aug 31 17:01:35 2023	vogjin (STEAM_0:0:649439720) spawned SENT sent_vj_ply_spawnpoint
+Thu Aug 31 17:01:35 2023	vogjin (STEAM_0:0:649439720) spawned SENT sent_vj_ply_spawnpoint
+Thu Aug 31 17:01:46 2023	Spark (STEAM_0:1:460412980): /addmoney spark 100000000000000000000000000000000000000000000000000000000000000000000000000000
+Thu Aug 31 17:01:46 2023	Spark (STEAM_0:1:460412980) added $1e+77 to Spark's wallet
+Thu Aug 31 17:01:47 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 17:02:11 2023	Spark (STEAM_0:1:460412980): /addmoney spark -10000000000000000000000000000000000000
+Thu Aug 31 17:02:11 2023	Spark (STEAM_0:1:460412980) added -$1e+37 to Spark's wallet
+Thu Aug 31 17:02:25 2023	Spark (STEAM_0:1:460412980): /addmoney spark -100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Thu Aug 31 17:02:25 2023	Spark (STEAM_0:1:460412980) added -$1e+95 to Spark's wallet
+Thu Aug 31 17:02:54 2023	Spark (STEAM_0:1:460412980): /addmoney spark 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Thu Aug 31 17:02:54 2023	Spark (STEAM_0:1:460412980) added $1e+109 to Spark's wallet
+Thu Aug 31 17:03:17 2023	Spark (STEAM_0:1:460412980): /addmoney spark 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Thu Aug 31 17:03:17 2023	Spark (STEAM_0:1:460412980) added $1e+109 to Spark's wallet
+Thu Aug 31 17:03:58 2023	vogjin (STEAM_0:0:649439720): 
+Thu Aug 31 17:04:16 2023	Spark (STEAM_0:1:460412980) spawned SENT battle for camelot
+Thu Aug 31 17:04:41 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:04:43 2023	Spark (STEAM_0:1:460412980) spawned SENT dewitsenate
+Thu Aug 31 17:04:48 2023	Spark (STEAM_0:1:460412980) spawned SENT starwarsthat
+Thu Aug 31 17:04:51 2023	Spark (STEAM_0:1:460412980) spawned SENT starwarsthat
+Thu Aug 31 17:05:15 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:05:22 2023	vogjin (STEAM_0:0:649439720): !sam
+Thu Aug 31 17:05:26 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 17:05:29 2023	vogjin (STEAM_0:0:649439720): 
+Thu Aug 31 17:06:56 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:08:15 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:08:17 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:09:04 2023	Spark was killed by Themself with a suicide trick
+Thu Aug 31 17:09:04 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:09:05 2023	Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 17:09:08 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:09:19 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:09:24 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:09:27 2023	vogjin (STEAM_0:0:649439720): 
+Thu Aug 31 17:09:30 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:09:32 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:09:34 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:09:45 2023	Spark was killed by Themself with a suicide trick
+Thu Aug 31 17:09:45 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 17:09:46 2023	vogjin (STEAM_0:0:649439720): 
+Thu Aug 31 17:09:47 2023	Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 17:09:52 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 17:10:21 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 17:10:25 2023	vogjin (STEAM_0:0:649439720): 
+Thu Aug 31 17:10:41 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:10:47 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 17:10:47 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:11:25 2023	vogjin (STEAM_0:0:649439720): 
+Thu Aug 31 17:11:31 2023	vogjin (STEAM_0:0:649439720): 
+Thu Aug 31 17:11:37 2023	vogjin was killed by Themself with a suicide trick
+Thu Aug 31 17:11:37 2023	vogjin (STEAM_0:0:649439720): 
+Thu Aug 31 17:11:38 2023	vogjin (STEAM_0:0:649439720) spawned
+Thu Aug 31 17:11:50 2023	vogjin (STEAM_0:0:649439720): 
+Thu Aug 31 17:12:19 2023	Spark (STEAM_0:1:460412980): /ooc management
+Thu Aug 31 17:12:42 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:12:50 2023	vogjin (STEAM_0:0:649439720) spawned SENT wk_heavyweapons_tripod_b
+Thu Aug 31 17:12:53 2023	vogjin (STEAM_0:0:649439720) spawned SENT wk_heavyweapons_tripod_s
+Thu Aug 31 17:13:10 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:13:27 2023	im in graves' basement help (STEAM_0:0:631269172): 
+Thu Aug 31 17:14:13 2023	Spark was killed by vogjin with a rw_sw_shield_cg_dc15s
+Thu Aug 31 17:14:15 2023	Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 17:14:16 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:15:01 2023	Spark was killed by vogjin with a at_sw_dc17m
+Thu Aug 31 17:15:02 2023	Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 17:15:03 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:15:26 2023	vogjin was killed by Spark with a prop_physics
+Thu Aug 31 17:15:29 2023	vogjin (STEAM_0:0:649439720) spawned
+Thu Aug 31 17:15:40 2023	im in graves' basement help was killed by Spark with a prop_physics
+Thu Aug 31 17:15:54 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:16:20 2023	Spark was killed by Entity [2150][entityflame] with a entityflame
+Thu Aug 31 17:16:22 2023	Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 17:16:23 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:16:34 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:16:37 2023	Spark was killed by Entity [1404][point_hurt] with a point_hurt
+Thu Aug 31 17:16:38 2023	Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 17:16:42 2023	vogjin was killed by Entity [0][worldspawn] with a unknown
+Thu Aug 31 17:16:43 2023	vogjin (STEAM_0:0:649439720) spawned
+Thu Aug 31 17:17:43 2023	vogjin was killed by Entity [1408][point_hurt] with a point_hurt
+Thu Aug 31 17:17:46 2023	vogjin (STEAM_0:0:649439720) spawned
+Thu Aug 31 17:17:53 2023	vogjin was killed by Spark with a weapon_752_bowcaster
+Thu Aug 31 17:17:54 2023	vogjin (STEAM_0:0:649439720) spawned
+Thu Aug 31 17:17:59 2023	Spark was killed by vogjin with a at_sw_dc17m
+Thu Aug 31 17:17:59 2023	Spark (STEAM_0:1:460412980): 
+Thu Aug 31 17:18:04 2023	Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 17:18:15 2023	Spark was killed by vogjin with a at_sw_dc17m
+Thu Aug 31 17:18:17 2023	Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 17:18:31 2023	Spark was killed by vogjin with a at_sw_dc17m
+Thu Aug 31 17:19:10 2023	im in graves' basement help (STEAM_0:0:631269172) spawned
+Thu Aug 31 17:21:18 2023	vogjin (STEAM_0:0:649439720) disconnected

@@ -1,0 +1,818 @@
+Sun Nov 19 15:51:36 2023	Xain (STEAM_0:0:231680469) has joined the game
+Sun Nov 19 15:51:36 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Sun Nov 19 16:24:20 2023	Luna Tess (STEAM_0:1:84791284) has joined the game
+Sun Nov 19 16:24:20 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Sun Nov 19 16:26:52 2023	NOVA CMD Heretic (STEAM_0:1:84791284): !novacommander
+Sun Nov 19 16:26:58 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /novacommander
+Sun Nov 19 16:27:00 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Sun Nov 19 16:28:01 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): !comms test
+Sun Nov 19 16:28:05 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_starfighter_vulturedroid
+Sun Nov 19 16:28:14 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Sun Nov 19 16:28:17 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): !comms test
+Sun Nov 19 16:28:40 2023	NOVA CMD Heretic was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 19 16:28:46 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Sun Nov 19 16:30:09 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_fakehover_aat
+Sun Nov 19 16:31:27 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_starfighter_consulradiance
+Sun Nov 19 16:32:15 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_starfighter_peltaclass
+Sun Nov 19 16:32:19 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_starfighter_consulcharger
+Sun Nov 19 16:32:34 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_ywing
+Sun Nov 19 16:32:35 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_xwing
+Sun Nov 19 16:32:38 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_uwing
+Sun Nov 19 16:32:40 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_bwing
+Sun Nov 19 16:32:42 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_awing
+Sun Nov 19 16:32:52 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_imperial_transport
+Sun Nov 19 16:32:55 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_laatle_gunship
+Sun Nov 19 16:32:58 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_lambda_shuttle
+Sun Nov 19 16:32:59 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_tie_interceptor
+Sun Nov 19 16:33:01 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_tie_fighter
+Sun Nov 19 16:33:02 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_tie_defender
+Sun Nov 19 16:33:03 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_tie_bomber
+Sun Nov 19 16:33:05 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_tie_boarding_craft
+Sun Nov 19 16:33:06 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_tie_advanced_x1
+Sun Nov 19 16:33:07 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_tie_reaper
+Sun Nov 19 16:33:10 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_zeta_shuttle
+Sun Nov 19 16:35:33 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT snowspeeder
+Sun Nov 19 16:35:34 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT y-wing
+Sun Nov 19 16:35:40 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT podracer
+Sun Nov 19 16:36:00 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT storm
+Sun Nov 19 16:36:02 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT xj6
+Sun Nov 19 16:36:06 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT imp_itt
+Sun Nov 19 16:36:11 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT tx225normal
+Sun Nov 19 16:36:14 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT tx225lights
+Sun Nov 19 16:36:19 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT tie_striker
+Sun Nov 19 16:36:24 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT tie_striker
+Sun Nov 19 16:36:34 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT speeder_bike
+Sun Nov 19 16:39:07 2023	NOVA CMD Heretic was killed by Themself with a suicide trick
+Sun Nov 19 16:39:13 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Sun Nov 19 16:39:25 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT republic_cruiser
+Sun Nov 19 16:39:30 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT delta7
+Sun Nov 19 16:39:33 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT millenium_falcon
+Sun Nov 19 16:39:35 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT blockade
+Sun Nov 19 16:39:37 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT calamari
+Sun Nov 19 16:39:41 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT calamari
+Sun Nov 19 16:39:44 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT snowspeeder
+Sun Nov 19 16:39:49 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT star_destroyer
+Sun Nov 19 16:39:53 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lambda
+Sun Nov 19 16:39:58 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT krennic_shuttle
+Sun Nov 19 16:40:02 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT imp_speeder
+Sun Nov 19 16:40:12 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT slave
+Sun Nov 19 16:40:19 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT sith_speeder
+Sun Nov 19 16:40:21 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT geonosis
+Sun Nov 19 16:40:22 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT mtt
+Sun Nov 19 16:40:23 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT munificent
+Sun Nov 19 16:40:26 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT stap
+Sun Nov 19 16:40:27 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT soulless
+Sun Nov 19 16:40:33 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT acclamator
+Sun Nov 19 16:40:37 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT republic_speeder
+Sun Nov 19 16:40:42 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT delta
+Sun Nov 19 16:40:54 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Sun Nov 19 16:40:56 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT delta
+Sun Nov 19 16:41:15 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Sun Nov 19 16:41:25 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT v19torrent
+Sun Nov 19 16:41:26 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT v-wing
+Sun Nov 19 16:41:28 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT headhunter
+Sun Nov 19 16:41:33 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT eta2
+Sun Nov 19 16:41:41 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT storm
+Sun Nov 19 16:41:43 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT xj6
+Sun Nov 19 16:41:44 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT landspeeder
+Sun Nov 19 16:41:47 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT republic_speeder
+Sun Nov 19 16:43:50 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT tx130
+Sun Nov 19 16:43:53 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT tx130
+Sun Nov 19 16:44:08 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT n-1
+Sun Nov 19 16:44:12 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT v-wing
+Sun Nov 19 16:44:15 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT arc170
+Sun Nov 19 16:44:33 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT lvs_walker_atte
+Sun Nov 19 16:46:57 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_citizen
+Sun Nov 19 16:47:21 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_combine_s
+Sun Nov 19 16:50:01 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_metropolice
+Sun Nov 19 16:50:38 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_citizen
+Sun Nov 19 16:51:00 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Sun Nov 19 16:51:10 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_citizen
+Sun Nov 19 16:51:34 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_combine_s
+Sun Nov 19 16:52:16 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_clawscanner
+Sun Nov 19 16:52:52 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_rollermine
+Sun Nov 19 16:53:08 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_turret_ceiling
+Sun Nov 19 16:53:29 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_combine_camera
+Sun Nov 19 16:53:48 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_combine_s
+Sun Nov 19 16:54:00 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_combine_s
+Sun Nov 19 16:54:02 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_combine_s
+Sun Nov 19 16:54:12 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_swdt_zombie_imp_lieutenant
+Sun Nov 19 16:54:22 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_combine_s
+Sun Nov 19 16:54:25 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_citizen
+Sun Nov 19 16:54:29 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_citizen
+Sun Nov 19 16:54:40 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_combine_s
+Sun Nov 19 16:54:51 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_combine_s
+Sun Nov 19 16:55:01 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_headcrab_fast
+Sun Nov 19 16:55:08 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_fastzombie
+Sun Nov 19 16:55:18 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_poisonzombie
+Sun Nov 19 16:55:32 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_antlionguard
+Sun Nov 19 16:57:36 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) disconnected
+Sun Nov 19 16:58:46 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_citizen
+Sun Nov 19 16:59:09 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_combine_s
+Sun Nov 19 17:00:11 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_combine_s
+Sun Nov 19 17:00:17 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_helicopter
+Sun Nov 19 17:04:52 2023	NOVA CMD Heretic was killed by Themself with a suicide trick
+Sun Nov 19 17:04:52 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Sun Nov 19 17:04:57 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Sun Nov 19 17:07:31 2023	NOVA CMD Heretic was killed by Entity [1002][trigger_hurt] with a trigger_hurt
+Sun Nov 19 17:07:37 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Sun Nov 19 17:10:12 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_pigeon
+Sun Nov 19 17:10:15 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_seagull
+Sun Nov 19 17:10:17 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Sun Nov 19 17:18:26 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT mediaplayer_tv
+Sun Nov 19 17:18:42 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT mediaplayer_tv
+Sun Nov 19 17:18:44 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT mediaplayer_tv
+Sun Nov 19 17:20:13 2023	eggs (STEAM_0:0:55135130) has joined the game
+Sun Nov 19 17:20:13 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 19 17:21:29 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // jeryy mode
+Sun Nov 19 17:33:41 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // when the roleplayers
+Sun Nov 19 17:34:59 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // bird
+Sun Nov 19 17:35:11 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // pidgeon
+Sun Nov 19 17:36:53 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 19 17:46:53 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 17:47:13 2023	NOVA CMD Heretic (STEAM_0:1:84791284): hi
+Sun Nov 19 17:47:23 2023	NOVA CMD Heretic (STEAM_0:1:84791284): nova bird
+Sun Nov 19 17:47:33 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Sun Nov 19 17:47:35 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Sun Nov 19 17:47:35 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Sun Nov 19 17:47:36 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Sun Nov 19 17:47:37 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Sun Nov 19 17:48:04 2023	NOVA CMD Heretic (STEAM_0:1:84791284): hh12
+Sun Nov 19 17:48:04 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Sun Nov 19 17:48:08 2023	NOVA CMD Heretic (STEAM_0:1:84791284): and thermal dets
+Sun Nov 19 17:48:12 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Sun Nov 19 17:48:21 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Sun Nov 19 17:48:29 2023	NOVA CMD Heretic (STEAM_0:1:84791284): im editting bunks an stuff to get it changed later
+Sun Nov 19 17:48:47 2023	NOVA CMD Heretic (STEAM_0:1:84791284): ye
+Sun Nov 19 17:49:27 2023	NOVA CMD Heretic (STEAM_0:1:84791284): this room sucks for DB
+Sun Nov 19 17:49:41 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned NPC npc_monk
+Sun Nov 19 17:49:52 2023	NOVA CMD Heretic (STEAM_0:1:84791284): bruh
+Sun Nov 19 17:50:12 2023	NOVA CMD Heretic (STEAM_0:1:84791284): its small as hell
+Sun Nov 19 17:50:24 2023	NOVA CMD Heretic (STEAM_0:1:84791284): theres definately someplace better tbh
+Sun Nov 19 17:50:35 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 17:50:39 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 17:50:42 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 17:50:46 2023	NOVA CMD Heretic (STEAM_0:1:84791284): unironically
+Sun Nov 19 17:50:53 2023	NOVA CMD Heretic (STEAM_0:1:84791284): this is a nice room for it
+Sun Nov 19 17:51:13 2023	NOVA CMD Heretic (STEAM_0:1:84791284): probably just build a prop catwalk
+Sun Nov 19 17:51:44 2023	NOVA CMD Heretic (STEAM_0:1:84791284): yeah
+Sun Nov 19 17:52:31 2023	NOVA CMD Heretic (STEAM_0:1:84791284): yeah
+Sun Nov 19 17:53:29 2023	NOVA CMD Heretic (STEAM_0:1:84791284): how spray 
+Sun Nov 19 17:53:40 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /me <flash c=183,202,113>Naval Warrant Officer | Numbers | Real ID | Bagel Enthusiast | Heretic</flash>
+Sun Nov 19 17:54:16 2023	NOVA CMD Heretic (STEAM_0:1:84791284): LMAO
+Sun Nov 19 17:57:46 2023	NOVA CMD Heretic (STEAM_0:1:84791284) disconnected
+Sun Nov 19 17:57:48 2023	Lieutenant Scratchma (STEAM_0:0:55135130) disconnected
+Sun Nov 19 18:25:51 2023	Luna Tess (STEAM_0:1:84791284) has joined the game
+Sun Nov 19 18:25:51 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Sun Nov 19 18:26:43 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /novacommand
+Sun Nov 19 18:26:47 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /novacommander
+Sun Nov 19 18:26:59 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Sun Nov 19 18:28:34 2023	NOVA CMD Heretic was killed by Entity [2854][prop_physics] with a prop_physics
+Sun Nov 19 18:28:39 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Sun Nov 19 18:30:10 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Sun Nov 19 19:00:02 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT cantina_band
+Sun Nov 19 19:02:37 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT gmt_instrument_piano
+Sun Nov 19 19:07:43 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT gmt_instrument_piano
+Sun Nov 19 19:09:17 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT gmt_instrument_piano
+Sun Nov 19 19:09:26 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT gmt_instrument_piano
+Sun Nov 19 19:10:25 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT gmt_instrument_piano
+Sun Nov 19 19:32:15 2023	NOVA CMD Heretic (STEAM_0:1:84791284) disconnected
+Sun Nov 19 19:49:17 2023	eggs (STEAM_0:0:55135130) has joined the game
+Sun Nov 19 19:49:17 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 19 19:52:09 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 19 19:52:23 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /job Fleet Lieutenant
+Sun Nov 19 20:14:53 2023	Willisepic66 (STEAM_0:1:460210970) has joined the game
+Sun Nov 19 20:14:53 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 19 20:15:22 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 19 20:20:51 2023	SHRT SGT 4201 Billy was killed by Lieutenant Scratchma with a tfa_dt29
+Sun Nov 19 20:20:56 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 19 20:25:13 2023	SHRT SGT 4201 Billy was killed by Entity [2188][trigger_hurt] with a trigger_hurt
+Sun Nov 19 20:25:17 2023	Lieutenant Scratchma was killed by Entity [2188][trigger_hurt] with a trigger_hurt
+Sun Nov 19 20:25:18 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 19 20:25:23 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 19 20:29:48 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:31:39 2023	Lieutenant Scratchma was killed by SHRT SGT 4201 Billy with a weapon_lightsaber
+Sun Nov 19 20:31:45 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 19 20:31:45 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:31:49 2023	SHRT SGT 4201 Billy was killed by Lieutenant Scratchma with a tfa_dt29
+Sun Nov 19 20:31:53 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 19 20:31:53 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:33:12 2023	SHRT SGT 4201 Billy was killed by Lieutenant Scratchma with a tfa_dt29
+Sun Nov 19 20:33:17 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 19 20:45:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // FUCK
+Sun Nov 19 20:45:59 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:51:35 2023	Lieutenant Scratchma (STEAM_0:0:55135130): im
+Sun Nov 19 20:51:38 2023	Lieutenant Scratchma (STEAM_0:0:55135130): im
+Sun Nov 19 20:51:41 2023	Lieutenant Scratchma (STEAM_0:0:55135130): iomamsa imaf unjJIBSDHJBdfjas hk
+Sun Nov 19 20:53:10 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:53:46 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:54:38 2023	SHRT SGT 4201 Billy was killed by Lieutenant Scratchma with a tfa_t21_extended
+Sun Nov 19 20:54:42 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 19 20:54:42 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:54:48 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:55:52 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:56:03 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:56:10 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:56:17 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:56:23 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970): /buyammo 4
+Sun Nov 19 20:57:05 2023	SHRT SGT 4201 Billy was killed by Lieutenant Scratchma with a rw_sw_tl50
+Sun Nov 19 20:57:09 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 19 20:57:09 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:57:42 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 19 20:57:42 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:57:43 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /name ISB Deputy Chief Scratchma
+Sun Nov 19 20:58:10 2023	SHRT SGT 4201 Billy was killed by ISB Deputy Chief Scratchma with a rw_sw_se14c
+Sun Nov 19 20:58:15 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 19 20:58:15 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:58:29 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:58:32 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:58:38 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /name IA Vice Commander Scratchma
+Sun Nov 19 20:58:46 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:58:52 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:58:58 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 20:59:30 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /buyammo 3
+Sun Nov 19 21:00:43 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 21:00:45 2023	SHRT SGT 4201 Billy was killed by IA Vice Commander Scratchma with a rw_sw_dlt19x
+Sun Nov 19 21:00:47 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 21:01:10 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 19 21:01:10 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 21:01:13 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Sun Nov 19 21:02:40 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /buyammo 3
+Sun Nov 19 21:04:48 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) disconnected
+Sun Nov 19 21:06:33 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /buyammo 3
+Sun Nov 19 21:06:47 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /buyammo 3
+Sun Nov 19 21:06:55 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /buyammo 3
+Sun Nov 19 21:19:19 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) disconnected
+Mon Nov 20 00:05:30 2023	the gunk (STEAM_0:1:98581856) has joined the game
+Mon Nov 20 00:05:30 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Mon Nov 20 00:10:41 2023	Xain (STEAM_0:0:231680469) has joined the game
+Mon Nov 20 00:10:41 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Mon Nov 20 00:11:51 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): It's pretty lit huh
+Mon Nov 20 00:12:53 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Mon Nov 20 00:12:59 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Mon Nov 20 00:13:20 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 00:13:25 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): sup
+Mon Nov 20 00:13:45 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): Yeah I've been doing that for the past couple of days
+Mon Nov 20 00:13:59 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): only seen scratchma and the Nova commander
+Mon Nov 20 00:14:14 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): Yup
+Mon Nov 20 00:14:34 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): Little by little people will come
+Mon Nov 20 01:09:35 2023	cstorie11 (STEAM_0:1:580951214) has joined the game
+Mon Nov 20 01:09:35 2023	cstorie11 (STEAM_0:1:580951214) spawned
+Mon Nov 20 01:13:22 2023	cstorie11 (STEAM_0:1:580951214): /advert I need a trainer
+Mon Nov 20 01:13:34 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // On my way
+Mon Nov 20 01:14:38 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /pm gunk can you tp me to him
+Mon Nov 20 01:15:42 2023	cstorie11 (STEAM_0:1:580951214): /ooc how long willyou be?
+Mon Nov 20 01:15:47 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // 1 minute
+Mon Nov 20 01:15:58 2023	cstorie11 (STEAM_0:1:580951214): // k
+Mon Nov 20 01:17:33 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): can you hear me
+Mon Nov 20 01:17:46 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): ok...great...my mic isn't set up rn I guess
+Mon Nov 20 01:17:50 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): welcome to the server
+Mon Nov 20 01:18:01 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): I'll be giving you a quick run through
+Mon Nov 20 01:18:06 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): before I begin
+Mon Nov 20 01:18:33 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): I just want to let you know the server has been live for about a few weeks and we do have a handful of players they are just 
+Mon Nov 20 01:18:37 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): not on at this time
+Mon Nov 20 01:19:24 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): Do me a favor and change your name to TR #### {your name}
+Mon Nov 20 01:19:29 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): four numbers of your choice
+Mon Nov 20 01:19:44 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): ####*
+Mon Nov 20 01:19:47 2023	cstorie11 (STEAM_0:1:580951214): /name TR 6272 C. Storie
+Mon Nov 20 01:19:51 2023	cstorie11 (STEAM_0:1:580951214): /name TR 6272 C Storie
+Mon Nov 20 01:20:16 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): ok for the mean time thats ok just make sure it's one word and not a letter and a word seperate
+Mon Nov 20 01:20:19 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): but let us begin
+Mon Nov 20 01:20:28 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): Do you know basic faces
+Mon Nov 20 01:20:32 2023	TR 6272 C Storie (STEAM_0:1:580951214): /name TR 6272 CStorie
+Mon Nov 20 01:20:36 2023	TR 6272 CStorie (STEAM_0:1:580951214): /name TR 6272 Cstorie
+Mon Nov 20 01:20:41 2023	TR 6272 CStorie (STEAM_0:1:580951214): /name TR 6272 Cstorie11
+Mon Nov 20 01:20:53 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): Do you know basic faces
+Mon Nov 20 01:21:04 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): ok
+Mon Nov 20 01:21:05 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): great
+Mon Nov 20 01:21:19 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): please demostrate on the wall the following: Left, Right, About, Front
+Mon Nov 20 01:21:28 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): great next
+Mon Nov 20 01:21:34 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): single column on me
+Mon Nov 20 01:21:42 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): double column on me
+Mon Nov 20 01:21:50 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): tight double column
+Mon Nov 20 01:22:20 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): so of course a double column would require more ppl but for this example it would basically be a tight wedge
+Mon Nov 20 01:22:38 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): since in this case they are technically the same next loose wedge
+Mon Nov 20 01:22:50 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): prisoner diamond
+Mon Nov 20 01:22:57 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): with /me 
+Mon Nov 20 01:22:57 2023	TR 6272 Cstorie11 (STEAM_0:1:580951214): /me Strips Weapons, Comms, Gear, Pills and Illegal Items
+Mon Nov 20 01:23:00 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): great
+Mon Nov 20 01:23:26 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): vip diamon is the opposite. You would face the opposite direction on either side of me and say "clear"
+Mon Nov 20 01:23:52 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): well
+Mon Nov 20 01:24:04 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): vip box I'm not sure they just added this so well skip that
+Mon Nov 20 01:24:07 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): I get it
+Mon Nov 20 01:24:10 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): So have I
+Mon Nov 20 01:24:18 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): just following the requirements
+Mon Nov 20 01:24:33 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): do me a favor and just show me the rest and call out what your doing to speed this up
+Mon Nov 20 01:26:00 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): cool
+Mon Nov 20 01:26:10 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): let me see if I can get someone to whitelist you real quick
+Mon Nov 20 01:26:46 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): in the mean time feel free to join the discord via F4 or just copy the link
+Mon Nov 20 01:27:03 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): Chimaera are a spec force unit on the server
+Mon Nov 20 01:27:09 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 01:27:14 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): I don't have much info on them unfortunately
+Mon Nov 20 01:28:24 2023	TR 6272 Cstorie11 (STEAM_0:1:580951214): /name IA PVT 6272 Cstorie11
+Mon Nov 20 01:28:29 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): There are a few on this server. They are working on several things still since the server is still in a "beta" phase
+Mon Nov 20 01:29:06 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): thanks gunk
+Mon Nov 20 01:29:07 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 01:29:10 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): yes there are a few
+Mon Nov 20 01:29:13 2023	eggs (STEAM_0:0:55135130) has joined the game
+Mon Nov 20 01:29:13 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 01:29:13 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): however
+Mon Nov 20 01:29:27 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): like I said they are working on things
+Mon Nov 20 01:29:29 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): ok
+Mon Nov 20 01:29:34 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): one second please
+Mon Nov 20 01:29:50 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): https://discord.gg/8vKCwvy8
+Mon Nov 20 01:29:55 2023	MyTankHasAFlat (STEAM_0:1:152928599) has joined the game
+Mon Nov 20 01:29:55 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 01:30:10 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): https://steamcommunity.com/sharedfiles/filedetails/?id=3023459068
+Mon Nov 20 01:30:15 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): that's the content pack
+Mon Nov 20 01:30:23 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): as well as the one at the bottom of the list
+Mon Nov 20 01:30:43 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) disconnected
+Mon Nov 20 01:31:06 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): say again
+Mon Nov 20 01:31:24 2023	MyTankHasAFlat (STEAM_0:1:152928599) has joined the game
+Mon Nov 20 01:31:24 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 01:31:32 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): opinion noted
+Mon Nov 20 01:31:57 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): same here
+Mon Nov 20 01:32:04 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): Purge does a mixture of both
+Mon Nov 20 01:32:35 2023	IA PVT 6272 Cstorie11 was killed by SHW SGT 8008 UniTankk with a weapon_fists
+Mon Nov 20 01:32:40 2023	IA PVT 6272 Cstorie11 (STEAM_0:1:580951214) spawned
+Mon Nov 20 01:32:56 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): You should have your whitelist
+Mon Nov 20 01:32:58 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 01:33:08 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): I belive he gave you IA
+Mon Nov 20 01:33:24 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): Which your name should be IA PVT 6272 Cstorie
+Mon Nov 20 01:33:35 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): so your all set
+Mon Nov 20 01:33:41 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): whenever you want to switch
+Mon Nov 20 01:34:30 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): alright see you at the base
+Mon Nov 20 01:35:38 2023	IA PVT 6272 Cstorie11 (STEAM_0:1:580951214) disconnected
+Mon Nov 20 01:39:03 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 01:42:08 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 01:43:10 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 01:43:24 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) disconnected
+Mon Nov 20 01:54:40 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) disconnected
+Mon Nov 20 01:55:08 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Mon Nov 20 01:55:08 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 01:56:42 2023	eggs (STEAM_0:0:55135130) has joined the game
+Mon Nov 20 01:56:42 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 01:57:25 2023	IA Vice Commander Scratchma was killed by SHW Commander Pip with a weapon_fists
+Mon Nov 20 01:57:32 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc boob haver down
+Mon Nov 20 01:57:35 2023	ARC Commander Gunk was killed by SHW Commander Pip with a weapon_fists
+Mon Nov 20 01:57:41 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 01:57:44 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc anti boob haver down
+Mon Nov 20 01:57:56 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) disconnected
+Mon Nov 20 01:58:55 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 01:58:57 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): +
+Mon Nov 20 01:59:03 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): sup
+Mon Nov 20 01:59:46 2023	eggs (STEAM_0:0:55135130) has joined the game
+Mon Nov 20 01:59:46 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:00:13 2023	DOHEAD (STEAM_0:0:581098097) has joined the game
+Mon Nov 20 02:00:13 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Mon Nov 20 02:01:30 2023	SHW Commander Pip was killed by IA Vice Commander Scratchma with a weapon_fists
+Mon Nov 20 02:01:33 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): !slaz ＆
+Mon Nov 20 02:01:35 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:01:41 2023	IA Vice Commander Scratchma was killed by Themself with a suicide trick
+Mon Nov 20 02:01:41 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:01:47 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:03:43 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /sleep
+Mon Nov 20 02:03:48 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /sleep
+Mon Nov 20 02:03:48 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:03:54 2023	IA Vice Commander Scratchma was killed by SHW Commander Pip with a rpg_missile
+Mon Nov 20 02:03:58 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:03:58 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:04:00 2023	SHW Commander Pip was killed by IA Vice Commander Scratchma with a weapon_fists
+Mon Nov 20 02:04:03 2023	IA Vice Commander Scratchma was killed by Themself with a suicide trick
+Mon Nov 20 02:04:03 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:04:05 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:04:09 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:04:28 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Mon Nov 20 02:04:33 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:04:35 2023	IA Vice Commander Scratchma was killed by Themself with a suicide trick
+Mon Nov 20 02:04:41 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:04:47 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Mon Nov 20 02:04:48 2023	IA Vice Commander Scratchma was killed by Entity [0][worldspawn] with a unknown
+Mon Nov 20 02:04:53 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:04:54 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:05:16 2023	IA Vice Commander Scratchma was killed by SHW Commander Pip with a dc17m_at_rocket2
+Mon Nov 20 02:05:16 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Mon Nov 20 02:05:16 2023	ISB Director Dohead was killed by SHW Commander Pip with a dc17m_at_rocket2
+Mon Nov 20 02:05:21 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:05:21 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:05:22 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Mon Nov 20 02:05:43 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Mon Nov 20 02:05:49 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:05:57 2023	IA Vice Commander Scratchma was killed by Themself with a suicide trick
+Mon Nov 20 02:06:03 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:06:17 2023	ISB Director Dohead was killed by Themself with a suicide trick
+Mon Nov 20 02:06:17 2023	SHW Commander Pip was killed by ISB Director Dohead with a dc17m_at_rocket2
+Mon Nov 20 02:06:17 2023	IA Vice Commander Scratchma was killed by Entity [0][worldspawn] with a unknown
+Mon Nov 20 02:06:22 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:06:22 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:06:23 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Mon Nov 20 02:06:27 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:06:38 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 02:06:45 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:06:52 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Mon Nov 20 02:06:59 2023	IA Vice Commander Scratchma was killed by Entity [0][worldspawn] with a unknown
+Mon Nov 20 02:07:05 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Mon Nov 20 02:07:07 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:07:13 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /name Lieutenant Scratchma
+Mon Nov 20 02:07:16 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:07:19 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // where everyone at?
+Mon Nov 20 02:07:38 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // near civ spawn
+Mon Nov 20 02:07:46 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Mon Nov 20 02:07:49 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT item_rpg_round
+Mon Nov 20 02:07:51 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): boom
+Mon Nov 20 02:07:51 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 02:08:10 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Mon Nov 20 02:08:15 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:08:27 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 02:08:55 2023	Lieutenant Scratchma was killed by Themself with a suicide trick
+Mon Nov 20 02:09:00 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:09:00 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:09:04 2023	ARC Commander Gunk was killed by SHW Commander Pip with a dc17m_at_rocket2
+Mon Nov 20 02:09:05 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 02:09:10 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Mon Nov 20 02:09:10 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 02:09:14 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:09:40 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 02:09:42 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 02:09:56 2023	Lieutenant Scratchma was killed by Themself with a suicide trick
+Mon Nov 20 02:09:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:10:01 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:10:47 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 02:10:48 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Mon Nov 20 02:10:53 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:11:53 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Mon Nov 20 02:11:55 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Mon Nov 20 02:11:56 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 
+Mon Nov 20 02:11:58 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:12:35 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // ouch
+Mon Nov 20 02:12:36 2023	Purge Vice Commander Xain was killed by ISB Director Dohead with a iqa11_sniper_rifle
+Mon Nov 20 02:12:49 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // time to run all the way back /me sad
+Mon Nov 20 02:12:51 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Mon Nov 20 02:12:59 2023	ARC Commander Gunk (STEAM_0:1:98581856): /advert dish come here
+Mon Nov 20 02:13:04 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc /me sigh
+Mon Nov 20 02:13:04 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // im near globe
+Mon Nov 20 02:13:54 2023	MyTankHasAFlat (STEAM_0:1:152928599) has joined the game
+Mon Nov 20 02:13:54 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 02:14:43 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 02:14:46 2023	SHW Commander Pip was killed by Lieutenant Scratchma with a tfa_dt29
+Mon Nov 20 02:16:05 2023	SHW SGT 8008 UniTankk was killed by ISB Director Dohead with a dc17m_at_rocket2
+Mon Nov 20 02:16:10 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 02:16:59 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Mon Nov 20 02:18:47 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): the body
+Mon Nov 20 02:18:48 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): yes
+Mon Nov 20 02:20:10 2023	ARC Commander Gunk was killed by SHW SGT 8008 UniTankk with a rw_sw_t21
+Mon Nov 20 02:20:16 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Mon Nov 20 02:20:28 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): WE GOTTA RUN PIP RUN
+Mon Nov 20 02:20:39 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): cheese
+Mon Nov 20 02:21:08 2023	ISB Director Dohead was killed by ARC Commander Gunk with a rw_sw_dual_dc17s
+Mon Nov 20 02:21:20 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Mon Nov 20 02:21:50 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): I'm not here either
+Mon Nov 20 02:22:01 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /advert womp womp
+Mon Nov 20 02:22:04 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /ooc <hsv>wow, iphone</hsv>
+Mon Nov 20 02:22:06 2023	ARC Commander Gunk (STEAM_0:1:98581856): /a <hsv>wow, iphone</hsv> 
+Mon Nov 20 02:22:16 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 
+Mon Nov 20 02:22:58 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:22:58 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:23:02 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:23:02 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:23:05 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 02:23:05 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 02:23:07 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:23:07 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:24:56 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): damn
+Mon Nov 20 02:25:04 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): welp
+Mon Nov 20 02:25:07 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): no more ammo
+Mon Nov 20 02:25:14 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:25:14 2023	ARC Commander Gunk (STEAM_0:1:98581856) arrested Lieutenant Scratchma
+Mon Nov 20 02:25:22 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:25:26 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:26:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /me :3
+Mon Nov 20 02:28:02 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /ooc help i am stuck outside 
+Mon Nov 20 02:28:09 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // big rip
+Mon Nov 20 02:28:11 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 02:28:21 2023	SHW SGT 8008 UniTankk was killed by ISB Director Dohead with a rw_sw_se14r
+Mon Nov 20 02:28:27 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 02:29:02 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:29:04 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): what are ammo dispenser?
+Mon Nov 20 02:29:14 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 02:29:15 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): someone is delusional
+Mon Nov 20 02:29:49 2023	SHW Commander Pip was killed by ARC Commander Gunk with a stunstick
+Mon Nov 20 02:29:59 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:29:59 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 02:30:09 2023	Lieutenant Scratchma was killed by Entity [3492][point_hurt] with a point_hurt
+Mon Nov 20 02:30:11 2023	SHW Commander Pip was killed by Purge Vice Commander Xain with a flamethrower_basic
+Mon Nov 20 02:30:16 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:30:19 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /me roasts marshmellows
+Mon Nov 20 02:30:30 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:30:37 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Nuh uh bitch
+Mon Nov 20 02:30:42 2023	ARC Commander Gunk (STEAM_0:1:98581856): /advert <hscan c=255,0,0>AAAAAAAAAAAAAAAAAAAAAAAA</hscan> (enroute) 
+Mon Nov 20 02:30:51 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert I will kill you bitch
+Mon Nov 20 02:30:57 2023	SHW SGT 8008 UniTankk was killed by SHW Commander Pip with a dc17m_at_rocket2
+Mon Nov 20 02:31:03 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:31:03 2023	ARC Commander Gunk (STEAM_0:1:98581856) arrested SHW Commander Pip
+Mon Nov 20 02:31:03 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 02:31:09 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:31:10 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /name ISB Deputy Chief Scratchma
+Mon Nov 20 02:31:13 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc I'm in jail
+Mon Nov 20 02:31:15 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:31:32 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc Jeffrey Epstein POV
+Mon Nov 20 02:31:52 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /ooc i do not consent to this
+Mon Nov 20 02:32:03 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc Yes sir o7
+Mon Nov 20 02:32:09 2023	ARC Commander Gunk (STEAM_0:1:98581856) unarrested SHW Commander Pip
+Mon Nov 20 02:33:16 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /ooc dohead shidded himself
+Mon Nov 20 02:33:22 2023	SHW SGT 8008 UniTankk was killed by ARC Commander Gunk with a ven_riddick_dlt23v
+Mon Nov 20 02:33:33 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 02:34:14 2023	SHW Commander Pip was killed by Entity [2833][point_hurt] with a point_hurt
+Mon Nov 20 02:34:21 2023	ISB Director Dohead (STEAM_0:0:581098097) disconnected
+Mon Nov 20 02:34:21 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /buyammo 3
+Mon Nov 20 02:34:51 2023	SHW SGT 8008 UniTankk was killed by ARC Commander Gunk with a rw_sw_huntershotgun
+Mon Nov 20 02:34:59 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 02:35:56 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT drip_medicmod
+Mon Nov 20 02:35:57 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT bloodbag_medicmod
+Mon Nov 20 02:36:01 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me checks pockets
+Mon Nov 20 02:36:20 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /roll
+Mon Nov 20 02:36:29 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /denies roll
+Mon Nov 20 02:36:31 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /roll
+Mon Nov 20 02:36:32 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:36:32 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /roll
+Mon Nov 20 02:36:34 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /roll
+Mon Nov 20 02:36:36 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /oroll
+Mon Nov 20 02:36:37 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:36:38 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /roll
+Mon Nov 20 02:36:39 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:36:41 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /roll
+Mon Nov 20 02:36:41 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:36:42 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /roll
+Mon Nov 20 02:36:43 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:36:44 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:36:44 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /roll
+Mon Nov 20 02:36:44 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /roll
+Mon Nov 20 02:36:45 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:36:45 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /roll
+Mon Nov 20 02:36:46 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:36:48 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /roll
+Mon Nov 20 02:36:48 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:36:49 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:36:51 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:36:52 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /me has rolled 1,000,000,000,000.
+Mon Nov 20 02:36:53 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:36:57 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:36:59 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:37:00 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:37:02 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:37:03 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:37:05 2023	ARC Commander Gunk (STEAM_0:1:98581856): /roll
+Mon Nov 20 02:37:05 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /roll
+Mon Nov 20 02:37:07 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /roll
+Mon Nov 20 02:37:09 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /rolll
+Mon Nov 20 02:37:10 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /roll
+Mon Nov 20 02:37:13 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /roll
+Mon Nov 20 02:37:36 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:37:36 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 02:37:49 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 02:37:49 2023	ARC Commander Gunk (STEAM_0:1:98581856) arrested ISB Deputy Chief Scratchma
+Mon Nov 20 02:37:56 2023	SHW SGT 8008 UniTankk was killed by Entity [3433][point_hurt] with a point_hurt
+Mon Nov 20 02:37:57 2023	ARC Commander Gunk was killed by Entity [3412][point_hurt] with a point_hurt
+Mon Nov 20 02:37:59 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:38:02 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 02:38:05 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:38:08 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Mon Nov 20 02:38:08 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 02:38:48 2023	SHW Commander Pip was killed by Purge Vice Commander Xain with a rw_sw_z6
+Mon Nov 20 02:38:57 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:39:29 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:39:29 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) arrested SHW Commander Pip
+Mon Nov 20 02:39:36 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert RFA Pip Att murder
+Mon Nov 20 02:39:54 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // what does rfa mean
+Mon Nov 20 02:39:58 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // reason for arrest
+Mon Nov 20 02:39:59 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert RFR Pip He's Cool
+Mon Nov 20 02:40:07 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // so no normal AOS?
+Mon Nov 20 02:40:14 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:40:14 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) arrested SHW Commander Pip
+Mon Nov 20 02:40:24 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:40:24 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) arrested SHW Commander Pip
+Mon Nov 20 02:40:24 2023	ARC Commander Gunk (STEAM_0:1:98581856): // AOS is arrest on sight
+Mon Nov 20 02:40:31 2023	ARC Commander Gunk (STEAM_0:1:98581856): // thats not the same thing
+Mon Nov 20 02:40:50 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // So was he arrested already hence the ad? Or was it in the process....
+Mon Nov 20 02:40:50 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // rfa name reason
+Mon Nov 20 02:40:52 2023	ARC Commander Gunk (STEAM_0:1:98581856): // ROA is said after the arrest is made to tell people why the arrest was made
+Mon Nov 20 02:41:07 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc RFA
+Mon Nov 20 02:41:09 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // Makes sense didn't see him get arrested
+Mon Nov 20 02:41:12 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // rfa is what you say for the name of the person and the reason they were arrested
+Mon Nov 20 02:41:32 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:41:32 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) arrested SHW Commander Pip
+Mon Nov 20 02:41:49 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:41:49 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) arrested SHW Commander Pip
+Mon Nov 20 02:41:54 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:41:54 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) arrested SHW Commander Pip
+Mon Nov 20 02:42:01 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:42:01 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) arrested SHW Commander Pip
+Mon Nov 20 02:42:13 2023	SHW SGT 8008 UniTankk was killed by Entity [0][worldspawn] with a unknown
+Mon Nov 20 02:42:17 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): kobe
+Mon Nov 20 02:42:20 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 02:42:23 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:42:23 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) arrested SHW Commander Pip
+Mon Nov 20 02:43:13 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:43:14 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // alright I'm hopping off ciao
+Mon Nov 20 02:43:23 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) disconnected
+Mon Nov 20 02:43:42 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:43:57 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 02:43:57 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) arrested SHW Commander Pip
+Mon Nov 20 02:44:27 2023	ARC Commander Gunk (STEAM_0:1:98581856): /advert AOS uni tressapassing
+Mon Nov 20 02:44:46 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /advert nuh uh
+Mon Nov 20 02:45:13 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): !menu\
+Mon Nov 20 02:45:15 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 02:45:47 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 02:46:02 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /advert I am freeman
+Mon Nov 20 02:47:06 2023	Willisepic66 (STEAM_0:1:460210970) has joined the game
+Mon Nov 20 02:47:06 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Mon Nov 20 02:47:45 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Mon Nov 20 02:47:48 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 02:47:48 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) arrested SHW SGT 8008 UniTankk
+Mon Nov 20 02:47:51 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /ooc maaaaan
+Mon Nov 20 02:47:56 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert RFA Unitankk AOS
+Mon Nov 20 02:49:04 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 02:57:04 2023	ARC Commander Gunk was killed by Entity [0][worldspawn] with a unknown
+Mon Nov 20 02:57:08 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Mon Nov 20 02:57:08 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 02:57:10 2023	1LO94G (STEAM_0:0:580928495) has joined the game
+Mon Nov 20 02:57:10 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Mon Nov 20 02:58:16 2023	ARC Commander Gunk (STEAM_0:1:98581856): !giveitem ^ realistic_hook
+Mon Nov 20 02:58:21 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 03:03:08 2023	ARC Commander Gunk was killed by Themself with a suicide trick
+Mon Nov 20 03:03:08 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 03:03:14 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /ooc womp
+Mon Nov 20 03:03:16 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Mon Nov 20 03:04:23 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Mon Nov 20 03:07:35 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Mon Nov 20 03:08:51 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // HELLO ROLEPLAYERS
+Mon Nov 20 03:09:29 2023	SHW SGT 8008 UniTankk was killed by Inquisitor Acolyte Jack with a weapon_lightsaber
+Mon Nov 20 03:09:36 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 03:11:13 2023	ARC Commander Gunk (STEAM_0:1:98581856): /sleep
+Mon Nov 20 03:11:14 2023	ARC Commander Gunk (STEAM_0:1:98581856) disconnected
+Mon Nov 20 03:11:40 2023	Inquisitor Acolyte Jack was killed by SHW SGT 8008 UniTankk with a rw_sw_t21
+Mon Nov 20 03:11:46 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Mon Nov 20 03:12:26 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // good night roleplayers
+Mon Nov 20 03:12:37 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495): // bye
+Mon Nov 20 03:12:37 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) disconnected
+Mon Nov 20 03:14:28 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Mon Nov 20 03:14:37 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) disconnected
+Mon Nov 20 03:16:05 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) disconnected
+Mon Nov 20 03:20:28 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495): /advert THE CUP
+Mon Nov 20 03:36:44 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT rw_sw_dispencer
+Mon Nov 20 03:36:56 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT rw_sw_dispencer_grenade
+Mon Nov 20 03:37:20 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT rw_sw_dispencer
+Mon Nov 20 03:37:23 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT rw_sw_dispencer
+Mon Nov 20 03:37:33 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT rw_sw_dispencer
+Mon Nov 20 03:38:00 2023	Poo_Dinkle (STEAM_0:0:649439720) has joined the game
+Mon Nov 20 03:38:00 2023	ISB Colonel Jinn (STEAM_0:0:649439720) spawned
+Mon Nov 20 03:40:41 2023	ISB Colonel Jinn (STEAM_0:0:649439720) spawned
+Mon Nov 20 03:43:27 2023	ISB Colonel Jinn (STEAM_0:0:649439720) spawned SENT gb_rocket_nebel
+Mon Nov 20 03:43:30 2023	ISB Colonel Jinn was killed by Themself with a suicide trick
+Mon Nov 20 03:43:35 2023	ISB Colonel Jinn (STEAM_0:0:649439720) spawned
+Mon Nov 20 03:44:12 2023	ISB Colonel Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_mg81z
+Mon Nov 20 03:44:25 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) disconnected
+Mon Nov 20 03:45:24 2023	ISB Colonel Jinn (STEAM_0:0:649439720): /me stripes comms and weapons
+Mon Nov 20 03:45:45 2023	ISB Colonel Jinn (STEAM_0:0:649439720) disconnected
+Mon Nov 20 03:47:44 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 03:50:09 2023	Lucy is Bae (STEAM_0:1:76110013) has joined the game
+Mon Nov 20 03:50:09 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013) spawned
+Mon Nov 20 03:50:59 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Mon Nov 20 03:50:59 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Mon Nov 20 03:52:07 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013) spawned
+Mon Nov 20 03:58:07 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 03:59:44 2023	Grand Admiral Somebody (STEAM_0:0:197465498): // still want me to reset map?
+Mon Nov 20 03:59:51 2023	Grand Admiral Somebody (STEAM_0:0:197465498): // sorry was alt tabbed
+Mon Nov 20 04:00:05 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Mon Nov 20 04:00:13 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc come to shock bunks rq
+Mon Nov 20 04:00:17 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /name ISB Chief Grimjaw
+Mon Nov 20 04:00:21 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Mon Nov 20 04:04:09 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): 
+Mon Nov 20 04:04:19 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): 
+Mon Nov 20 04:11:28 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT mediaplayer_tv
+Mon Nov 20 04:23:27 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned SENT weirdyankovic
+Mon Nov 20 04:24:00 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // omg we have a weird al song on the server
+Mon Nov 20 04:36:01 2023	Willisepic66 (STEAM_0:1:460210970) has joined the game
+Mon Nov 20 04:36:01 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Mon Nov 20 04:36:47 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Mon Nov 20 04:37:07 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) disconnected
+Mon Nov 20 04:38:51 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // you still there dish?
+Mon Nov 20 04:38:59 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc yep
+Mon Nov 20 04:39:06 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Mon Nov 20 04:56:11 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Mon Nov 20 04:56:11 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Mon Nov 20 05:06:15 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) disconnected
+Mon Nov 20 05:06:15 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /ooc i forgot i was on the server
+Mon Nov 20 05:07:42 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013) disconnected
+Mon Nov 20 05:17:03 2023	Emperor Butter (STEAM_0:1:78700995): /name SHW LTCOL Ares
+Mon Nov 20 05:17:04 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Mon Nov 20 05:17:29 2023	SHW LTCOL Ares (STEAM_0:1:78700995): /name Shadow Colonel Butter
+Mon Nov 20 05:20:50 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 05:21:30 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 05:21:31 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 05:21:56 2023	Shadow Colonel Butter (STEAM_0:1:78700995) disconnected
+Mon Nov 20 05:23:03 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Mon Nov 20 05:23:03 2023	Shadow Colonel Butter (STEAM_0:1:78700995) spawned
+Mon Nov 20 05:23:19 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 05:24:45 2023	Shadow Colonel Butter (STEAM_0:1:78700995) spawned
+Mon Nov 20 05:36:00 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected
+Mon Nov 20 05:41:55 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Mon Nov 20 05:41:55 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 05:45:51 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 05:46:17 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 05:47:58 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 05:48:12 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 05:49:47 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 05:53:11 2023	Luna Tess (STEAM_0:1:84791284) has joined the game
+Mon Nov 20 05:53:11 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Mon Nov 20 05:59:18 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /novacommander
+Mon Nov 20 05:59:20 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Mon Nov 20 06:04:52 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Mon Nov 20 06:06:51 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Mon Nov 20 06:07:21 2023	Shadow Colonel Butter (STEAM_0:1:78700995): // im reloading rq
+Mon Nov 20 06:07:24 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc kk
+Mon Nov 20 06:07:37 2023	Shadow Colonel Butter (STEAM_0:1:78700995) disconnected
+Mon Nov 20 06:08:32 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_combine_s
+Mon Nov 20 06:08:53 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Mon Nov 20 06:08:53 2023	Shadow Colonel Butter (STEAM_0:1:78700995) spawned
+Mon Nov 20 06:08:59 2023	NOVA CMD Heretic was killed by Entity [3441][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Mon Nov 20 06:09:08 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Mon Nov 20 06:10:57 2023	Shadow Colonel Butter (STEAM_0:1:78700995) spawned
+Mon Nov 20 06:10:59 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:11:14 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Mon Nov 20 06:11:37 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Mon Nov 20 06:11:42 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Mon Nov 20 06:14:04 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Mon Nov 20 06:14:17 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned NPC npc_crow
+Mon Nov 20 06:15:18 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT witcher_gateway
+Mon Nov 20 06:15:24 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT witcher_gateway
+Mon Nov 20 06:21:21 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:22:40 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT bed_medicmod
+Mon Nov 20 06:22:43 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT bed_medicmod
+Mon Nov 20 06:28:56 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Mon Nov 20 06:29:01 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 06:29:15 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:29:18 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:29:22 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:29:36 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 06:29:41 2023	Shadow Colonel Butter was killed by Entity [2836][prop_physics] with a prop_physics
+Mon Nov 20 06:29:49 2023	Shadow Colonel Butter (STEAM_0:1:78700995) spawned
+Mon Nov 20 06:29:49 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:31:45 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:32:22 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:33:34 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:34:00 2023	NOVA CMD Heretic (STEAM_0:1:84791284): !unmodel ^
+Mon Nov 20 06:34:00 2023	Shadow Colonel Butter (STEAM_0:1:78700995): !model ^  models/morganicism/empireatwar/death_star/death_star_mapsize02.mdl.
+Mon Nov 20 06:34:08 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:34:12 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:34:28 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:34:44 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:35:07 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:35:29 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:36:26 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:37:42 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:38:03 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:38:45 2023	NOVA CMD Heretic (STEAM_0:1:84791284): !unsetmodel ^
+Mon Nov 20 06:38:52 2023	NOVA CMD Heretic (STEAM_0:1:84791284): !unmodel ^
+Mon Nov 20 06:38:57 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:39:07 2023	NOVA CMD Heretic was killed by Themself with a suicide trick
+Mon Nov 20 06:39:07 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:39:12 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:39:13 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Mon Nov 20 06:39:34 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:39:35 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:43:09 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned NPC npc_citizen
+Mon Nov 20 06:44:57 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:44:57 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /advert OI You are loitering! Feck Off then Lads or I'll arrest ye in 5 seconds. Don't come back for 5 minutes!
+Mon Nov 20 06:45:02 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:45:05 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:45:08 2023	Shadow Colonel Butter (STEAM_0:1:78700995): 
+Mon Nov 20 06:45:16 2023	Shadow Colonel Butter was killed by Entity [3512][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Mon Nov 20 06:45:21 2023	Shadow Colonel Butter (STEAM_0:1:78700995) spawned
+Mon Nov 20 06:45:30 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:45:34 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 06:46:13 2023	Shadow Colonel Butter (STEAM_0:1:78700995) disconnected
+Mon Nov 20 06:46:43 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT mediaplayer_tv
+Mon Nov 20 06:53:45 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT mediaplayer_tv
+Mon Nov 20 06:54:15 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT mediaplayer_tv
+Mon Nov 20 07:25:26 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Mon Nov 20 07:25:26 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 07:25:31 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 07:25:36 2023	NOVA CMD Heretic was killed by Themself with a suicide trick
+Mon Nov 20 07:25:36 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 07:25:41 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Mon Nov 20 07:25:41 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 07:25:42 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Mon Nov 20 07:25:46 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 07:25:48 2023	NOVA CMD Heretic was killed by Themself with a suicide trick
+Mon Nov 20 07:25:48 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 07:25:51 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 07:25:54 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Mon Nov 20 07:25:55 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Mon Nov 20 07:25:55 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 07:25:58 2023	NOVA CMD Heretic was killed by Themself with a suicide trick
+Mon Nov 20 07:25:58 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 07:26:01 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 07:26:03 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Mon Nov 20 07:34:12 2023	NOVA CMD Heretic (STEAM_0:1:84791284) disconnected
+Mon Nov 20 07:38:09 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected

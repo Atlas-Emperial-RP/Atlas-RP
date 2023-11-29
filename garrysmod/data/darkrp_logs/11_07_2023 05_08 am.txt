@@ -1,0 +1,52 @@
+Tue Nov  7 05:08:19 2023	Lord FireBall (STEAM_0:1:129278369) has joined the game
+Tue Nov  7 05:08:19 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Tue Nov  7 05:08:47 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Tue Nov  7 05:10:44 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Tue Nov  7 05:10:44 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov  7 05:11:44 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Tue Nov  7 05:11:44 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov  7 05:12:10 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Tue Nov  7 05:12:15 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov  7 05:12:22 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /g hi
+Tue Nov  7 05:12:35 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /isbchief
+Tue Nov  7 05:12:37 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov  7 05:12:42 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov  7 05:12:58 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov  7 05:13:01 2023	SHW Commander Pip (STEAM_0:1:169781558): Hi
+Tue Nov  7 05:13:01 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /g hi
+Tue Nov  7 05:13:19 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov  7 05:13:25 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov  7 05:13:30 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov  7 05:13:36 2023	SHW Commander Pip (STEAM_0:1:169781558): hello
+Tue Nov  7 05:13:39 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /g hi
+Tue Nov  7 05:14:09 2023	Spark (STEAM_0:1:460412980) has joined the game
+Tue Nov  7 05:14:09 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Tue Nov  7 05:15:39 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Tue Nov  7 05:15:43 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): /name ST Commander Spark
+Tue Nov  7 05:16:05 2023	SHW Commander Pip was killed by DT L21 X29 with a rw_sw_dlt19x
+Tue Nov  7 05:16:07 2023	ST Commander Spark (STEAM_0:1:460412980): fsafg
+Tue Nov  7 05:16:10 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov  7 05:16:17 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov  7 05:16:36 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov  7 05:16:40 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov  7 05:19:00 2023	ST Commander Spark was killed by Themself with a suicide trick
+Tue Nov  7 05:19:03 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov  7 05:19:05 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Tue Nov  7 05:19:13 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov  7 05:19:18 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov  7 05:19:19 2023	DT L21 X29 was killed by SHW Commander Pip with a weapon_ak472
+Tue Nov  7 05:19:24 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Tue Nov  7 05:19:24 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov  7 05:19:28 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov  7 05:19:36 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov  7 05:19:43 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov  7 05:19:59 2023	DT L21 X29 (STEAM_0:1:129278369) disconnected
+Tue Nov  7 05:20:34 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /g hi
+Tue Nov  7 05:21:02 2023	Lord FireBall (STEAM_0:1:129278369) has joined the game
+Tue Nov  7 05:21:02 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Tue Nov  7 05:24:18 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov  7 05:25:20 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Tue Nov  7 05:26:04 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov  7 05:26:06 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov  7 05:26:08 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov  7 05:26:40 2023	ST Commander Spark (STEAM_0:1:460412980): 

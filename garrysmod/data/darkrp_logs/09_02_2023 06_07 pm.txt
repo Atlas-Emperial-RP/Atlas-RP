@@ -1,0 +1,150 @@
+Sat Sep  2 18:07:10 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
+Sat Sep  2 18:07:10 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 18:07:44 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 18:08:42 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 18:08:55 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 18:12:23 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sat Sep  2 18:12:23 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 18:13:26 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 18:13:27 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 18:13:51 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 18:14:30 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep  2 18:15:18 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 18:15:18 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 18:15:18 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 18:15:28 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 18:15:35 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 18:15:37 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep  2 18:16:16 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 18:16:44 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 18:17:50 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT hb_nuclear_castlebravo_noflash
+Sat Sep  2 18:18:11 2023	VibrantHealer35 (STEAM_0:0:161241684) has joined the game
+Sat Sep  2 18:18:11 2023	IC 1262 Scorch (STEAM_0:0:161241684) spawned
+Sat Sep  2 18:18:51 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT hb_main_500lb
+Sat Sep  2 18:19:43 2023	IC 1262 Scorch (STEAM_0:0:161241684) spawned
+Sat Sep  2 18:19:52 2023	ICSL 0001 Jinn was killed by IC 1854 Sarge with a at_sw_dc17m
+Sat Sep  2 18:20:07 2023	IC 1262 Scorch (STEAM_0:0:161241684): 
+Sat Sep  2 18:20:32 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 18:21:00 2023	IC 1262 Scorch was killed by Entity [615][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Sep  2 18:21:00 2023	IC 1854 Sarge was killed by Entity [615][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Sep  2 18:21:10 2023	ICSL 0001 Jinn was killed by Entity [615][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Sep  2 18:21:20 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep  2 18:21:25 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 18:21:25 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 18:21:25 2023	IC 1262 Scorch (STEAM_0:0:161241684) spawned
+Sat Sep  2 18:21:25 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep  2 18:22:05 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bed_medicmod
+Sat Sep  2 18:22:06 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT npc_health_seller_medicmod
+Sat Sep  2 18:23:27 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT npc_health_seller_medicmod
+Sat Sep  2 18:23:30 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bed_medicmod
+Sat Sep  2 18:23:40 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT bed_medicmod
+Sat Sep  2 18:23:48 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT npc_health_seller_medicmod
+Sat Sep  2 18:24:29 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT stretcher_medicmod
+Sat Sep  2 18:24:33 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sat Sep  2 18:24:59 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sat Sep  2 18:26:57 2023	IC 1262 Scorch (STEAM_0:0:161241684): 
+Sat Sep  2 18:27:05 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sat Sep  2 18:27:21 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sat Sep  2 18:27:23 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sat Sep  2 18:27:26 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sat Sep  2 18:27:27 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sat Sep  2 18:27:28 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sat Sep  2 18:29:25 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 18:29:31 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep  2 18:29:36 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep  2 18:34:14 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sat Sep  2 18:34:14 2023	Chimaera Overseer Spark (STEAM_0:1:460412980) spawned
+Sat Sep  2 18:35:29 2023	Chimaera Overseer Spark (STEAM_0:1:460412980): /name ST COmmander Spark
+Sat Sep  2 18:35:30 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned
+Sat Sep  2 18:35:44 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:35:49 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:35:50 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:35:52 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:35:54 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:35:54 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:35:58 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:35:59 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:36:00 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:36:05 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:37:06 2023	IC 1262 Scorch was killed by ICSL 0001 Jinn with a tfa_e11d_sv
+Sat Sep  2 18:37:15 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Sat Sep  2 18:38:49 2023	IC 1262 Scorch (STEAM_0:0:161241684) spawned
+Sat Sep  2 18:39:05 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT radio_medicmod
+Sat Sep  2 18:39:18 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT electrocardiogram_medicmod
+Sat Sep  2 18:39:41 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT mural_defib_medicmod
+Sat Sep  2 18:39:47 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT stretcher_medicmod
+Sat Sep  2 18:40:15 2023	IC 1262 Scorch was killed by IC 1854 Sarge with a at_sw_dc17m
+Sat Sep  2 18:40:47 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sat Sep  2 18:40:47 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 18:41:13 2023	IC 1262 Scorch (STEAM_0:0:161241684) disconnected
+Sat Sep  2 18:42:07 2023	ICSL 0001 Jinn was killed by Entity [0][worldspawn] with a unknown
+Sat Sep  2 18:42:36 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned NPC npc_barney
+Sat Sep  2 18:44:28 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 18:44:38 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Sat Sep  2 18:44:48 2023	VibrantHealer35 (STEAM_0:0:161241684) has joined the game
+Sat Sep  2 18:44:48 2023	IC 1262 Scorch (STEAM_0:0:161241684) spawned
+Sat Sep  2 18:45:34 2023	IC 1262 Scorch (STEAM_0:0:161241684) spawned
+Sat Sep  2 18:45:45 2023	IC 1262 Scorch (STEAM_0:0:161241684): 
+Sat Sep  2 18:45:57 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc IM BLEEDING 
+Sat Sep  2 18:46:00 2023	ST COmmander Spark (STEAM_0:1:460412980): /ooc AHHHHHHHHHHH
+Sat Sep  2 18:47:03 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 18:47:14 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sat Sep  2 18:47:14 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 18:47:25 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:47:44 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:47:56 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:48:04 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:48:07 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:48:10 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:48:22 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:49:09 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 18:49:34 2023	IC 1262 Scorch was killed by IC 1854 Sarge with a at_sw_dc17m
+Sat Sep  2 18:52:25 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep  2 18:52:43 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bloodbag_medicmod
+Sat Sep  2 18:52:48 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT drip_medicmod
+Sat Sep  2 18:52:50 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bloodbag_medicmod
+Sat Sep  2 18:52:57 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bed_medicmod
+Sat Sep  2 18:53:00 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT stretcher_medicmod
+Sat Sep  2 18:53:17 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT drug_medicmod
+Sat Sep  2 18:53:26 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT bloodbag_medicmod
+Sat Sep  2 18:53:32 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT mural_defib_medicmod
+Sat Sep  2 18:53:40 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bloodbag_medicmod
+Sat Sep  2 18:53:41 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT mural_defib_medicmod
+Sat Sep  2 18:53:57 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT radio_medicmod
+Sat Sep  2 18:53:57 2023	IC 1262 Scorch (STEAM_0:0:161241684) spawned
+Sat Sep  2 18:54:11 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT radio_medicmod
+Sat Sep  2 18:54:23 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT mural_defib_medicmod
+Sat Sep  2 18:54:26 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT electrocardiogram_medicmod
+Sat Sep  2 18:54:39 2023	ICSL 0001 Jinn was killed by IC 1262 Scorch with a at_sw_dc17m
+Sat Sep  2 18:54:39 2023	ICSL 0001 Jinn was killed by Themself with a suicide trick
+Sat Sep  2 18:54:39 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 18:54:45 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 18:54:45 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep  2 18:54:53 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:55:05 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:55:21 2023	ST COmmander Spark was killed by Themself with a suicide trick
+Sat Sep  2 18:55:21 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 18:55:33 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bed_medicmod
+Sat Sep  2 18:55:37 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT drip_medicmod
+Sat Sep  2 18:55:38 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bloodbag_medicmod
+Sat Sep  2 18:56:17 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT electrocardiogram_medicmod
+Sat Sep  2 18:56:19 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 18:56:24 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT electrocardiogram_medicmod
+Sat Sep  2 18:56:35 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT electrocardiogram_medicmod
+Sat Sep  2 18:56:39 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Sat Sep  2 18:57:43 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sat Sep  2 18:57:43 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 18:58:08 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned
+Sat Sep  2 18:58:27 2023	IC 1854 Sarge was killed by Entity [1365][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Sep  2 18:58:27 2023	IC 1262 Scorch was killed by Entity [1365][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Sep  2 18:58:41 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sat Sep  2 18:58:57 2023	IC 1262 Scorch (STEAM_0:0:161241684) spawned
+Sat Sep  2 18:58:59 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 18:59:00 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 18:59:05 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 18:59:22 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 19:00:11 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sat Sep  2 19:00:20 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT npc_health_seller_medicmod
+Sat Sep  2 19:01:03 2023	IC 1262 Scorch (STEAM_0:0:161241684): 
+Sat Sep  2 19:01:56 2023	IC 1854 Sarge (STEAM_0:0:631269172) disconnected
+Sat Sep  2 19:02:23 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected

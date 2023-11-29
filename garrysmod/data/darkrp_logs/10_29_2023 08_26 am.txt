@@ -1,0 +1,71 @@
+Sun Oct 29 08:26:30 2023	Lucy is Bae (STEAM_0:1:76110013) has joined the game
+Sun Oct 29 08:26:30 2023	Emperor Palpatine (STEAM_0:1:76110013) spawned
+Sun Oct 29 08:28:25 2023	Emperor Palpatine (STEAM_0:1:76110013) spawned
+Sun Oct 29 08:28:36 2023	Emperor Palpatine (STEAM_0:1:76110013): 
+Sun Oct 29 08:28:37 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sun Oct 29 08:28:37 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 08:29:41 2023	Emperor Palpatine (STEAM_0:1:76110013): /ooc how is the girl going so far Vogjin
+Sun Oct 29 08:31:06 2023	Grand Admiral Jinn (STEAM_0:0:649439720): 
+Sun Oct 29 08:31:35 2023	Emperor Palpatine (STEAM_0:1:76110013): /ooc huh i didnt know palpy made the first order
+Sun Oct 29 08:33:48 2023	Emperor Palpatine (STEAM_0:1:76110013): 
+Sun Oct 29 08:34:04 2023	Emperor Palpatine (STEAM_0:1:76110013): 
+Sun Oct 29 08:35:23 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 08:36:09 2023	Grand Admiral Jinn (STEAM_0:0:649439720): /addspawn isbcol
+Sun Oct 29 08:45:05 2023	Grand Admiral Jinn (STEAM_0:0:649439720) disconnected
+Sun Oct 29 08:53:45 2023	Emperor Palpatine (STEAM_0:1:76110013) disconnected
+Sun Oct 29 16:54:11 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sun Oct 29 16:54:11 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Oct 29 16:58:14 2023	IA Commander Demo (STEAM_0:0:29212178) disconnected
+Sun Oct 29 17:11:57 2023	Guardill The Battle Magician (STEAM_0:1:527268587) has joined the game
+Sun Oct 29 17:11:57 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) spawned
+Sun Oct 29 17:16:22 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) disconnected
+Sun Oct 29 18:51:49 2023	Guardill The Battle Magician (STEAM_0:1:527268587) has joined the game
+Sun Oct 29 18:51:49 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) spawned
+Sun Oct 29 18:53:04 2023	IA PVT 4391 Guardill (STEAM_0:1:527268587) disconnected
+Sun Oct 29 19:18:09 2023	Odds (STEAM_0:1:650128783) has joined the game
+Sun Oct 29 19:18:09 2023	DT 04 I09 (STEAM_0:1:650128783) spawned
+Sun Oct 29 19:18:34 2023	DT 04 I09 (STEAM_0:1:650128783) disconnected
+Sun Oct 29 20:05:41 2023	Lord FireBall (STEAM_0:1:129278369) has joined the game
+Sun Oct 29 20:05:41 2023	DT VICE Commander Fire (STEAM_0:1:129278369) spawned
+Sun Oct 29 20:12:06 2023	DT VICE Commander Fire (STEAM_0:1:129278369) spawned
+Sun Oct 29 20:26:47 2023	DT VICE Commander Fire (STEAM_0:1:129278369) disconnected
+Sun Oct 29 20:29:39 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Sun Oct 29 20:29:39 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 20:30:16 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /isbchief
+Sun Oct 29 20:30:19 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 20:30:49 2023	Lord FireBall (STEAM_0:1:129278369) has joined the game
+Sun Oct 29 20:30:49 2023	DT VICE Commander Fire (STEAM_0:1:129278369) spawned
+Sun Oct 29 20:31:00 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sun Oct 29 20:31:01 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 20:31:39 2023	DT VICE Commander Fire (STEAM_0:1:129278369) spawned
+Sun Oct 29 20:31:51 2023	DT VICE Commander Fire (STEAM_0:1:129278369): 
+Sun Oct 29 20:32:13 2023	Grand Admiral Jinn was killed by DT VICE Commander Fire with a rw_sw_e11d
+Sun Oct 29 20:32:41 2023	DT VICE Commander Fire was killed by Entity [2861][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Oct 29 20:32:52 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 20:33:08 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 20:33:09 2023	DT VICE Commander Fire (STEAM_0:1:129278369) spawned
+Sun Oct 29 20:33:45 2023	DT VICE Commander Fire (STEAM_0:1:129278369): 
+Sun Oct 29 20:34:00 2023	Grand Admiral Jinn (STEAM_0:0:649439720): 
+Sun Oct 29 20:35:10 2023	DT VICE Commander Fire (STEAM_0:1:129278369): 
+Sun Oct 29 20:36:29 2023	DT VICE Commander Fire was killed by Grand Admiral Jinn with a rw_sw_e11d
+Sun Oct 29 20:36:45 2023	DT VICE Commander Fire (STEAM_0:1:129278369) spawned
+Sun Oct 29 20:36:50 2023	DT VICE Commander Fire (STEAM_0:1:129278369): 
+Sun Oct 29 20:36:54 2023	DT VICE Commander Fire was killed by Entity [2903][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Oct 29 20:36:58 2023	Grand Admiral Jinn was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 20:36:58 2023	ISB Chief Grimjaw was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 20:37:10 2023	DT VICE Commander Fire (STEAM_0:1:129278369) spawned
+Sun Oct 29 20:37:13 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 20:37:15 2023	DT VICE Commander Fire (STEAM_0:1:129278369): 
+Sun Oct 29 20:38:17 2023	Grand Admiral Jinn was killed by Entity [2881][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Oct 29 20:38:32 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 20:38:32 2023	DT VICE Commander Fire was killed by Entity [0][worldspawn] with a unknown
+Sun Oct 29 20:38:48 2023	DT VICE Commander Fire (STEAM_0:1:129278369) spawned
+Sun Oct 29 20:39:44 2023	Grand Admiral Jinn (STEAM_0:0:649439720) disconnected
+Sun Oct 29 20:39:45 2023	DT VICE Commander Fire (STEAM_0:1:129278369): 
+Sun Oct 29 20:39:50 2023	DT VICE Commander Fire (STEAM_0:1:129278369): 
+Sun Oct 29 20:41:35 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sun Oct 29 20:41:35 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 20:42:17 2023	Grand Admiral Jinn was killed by Themself with a suicide trick
+Sun Oct 29 20:43:31 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 20:44:18 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 20:46:46 2023	DT VICE Commander Fire (STEAM_0:1:129278369) disconnected

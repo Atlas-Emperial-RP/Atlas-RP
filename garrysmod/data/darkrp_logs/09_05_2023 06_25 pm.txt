@@ -1,0 +1,13 @@
+Tue Sep  5 18:25:41 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
+Tue Sep  5 18:25:41 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Tue Sep  5 18:26:34 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT geralts_augmentations_npc
+Tue Sep  5 18:26:59 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Tue Sep  5 18:35:13 2023	IC 1854 Sarge (STEAM_0:0:631269172): /deathtrooper
+Tue Sep  5 18:35:18 2023	IC 1854 Sarge (STEAM_0:0:631269172): /navaldirector
+Tue Sep  5 18:35:20 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Tue Sep  5 18:44:55 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned NPC npc_crow
+Tue Sep  5 18:45:34 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT geralts_augmentations_npc
+Tue Sep  5 18:48:02 2023	DOHEAD (STEAM_0:0:581098097) has joined the game
+Tue Sep  5 18:48:02 2023	ISB Chief Dohead (STEAM_0:0:581098097) spawned
+Tue Sep  5 18:51:21 2023	ISB Chief Dohead (STEAM_0:0:581098097): 
+Tue Sep  5 18:51:49 2023	ISB Chief Dohead (STEAM_0:0:581098097) disconnected

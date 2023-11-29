@@ -1,0 +1,135 @@
+Wed Nov 22 22:41:39 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Wed Nov 22 22:41:39 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Wed Nov 22 22:42:10 2023	Croc (STEAM_0:1:161014837) has joined the game
+Wed Nov 22 22:42:10 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Wed Nov 22 22:42:15 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Wed Nov 22 22:46:56 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Wed Nov 22 22:46:56 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Wed Nov 22 22:58:31 2023	PlushBerry (STEAM_0:1:525736108) has joined the game
+Wed Nov 22 22:58:31 2023	ST PVT 1121 Husker (STEAM_0:1:525736108) spawned
+Wed Nov 22 23:00:44 2023	ST PVT 1121 Husker (STEAM_0:1:525736108) spawned
+Wed Nov 22 23:04:49 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Wed Nov 22 23:04:49 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 23:04:56 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc yes
+Wed Nov 22 23:06:29 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc whats the addon that makes these npc's?
+Wed Nov 22 23:09:09 2023	ST PVT 1121 Husker (STEAM_0:1:525736108) disconnected
+Wed Nov 22 23:10:33 2023	MyTankHasAFlat (STEAM_0:1:152928599) has joined the game
+Wed Nov 22 23:10:33 2023	ST VCMD UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 23:10:40 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Wed Nov 22 23:10:45 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 23:10:58 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Wed Nov 22 23:11:04 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 23:11:33 2023	ST VCMD UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 23:14:59 2023	Inquisitor Ares (STEAM_0:1:78700995): /name Ensign Butter
+Wed Nov 22 23:15:00 2023	Ensign Butter (STEAM_0:1:78700995) spawned
+Wed Nov 22 23:15:08 2023	ST VCMD UniTankk (STEAM_0:1:152928599) disconnected
+Wed Nov 22 23:15:23 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) disconnected
+Wed Nov 22 23:21:56 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Wed Nov 22 23:22:01 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 23:25:48 2023	Lucy is Bae (STEAM_0:1:76110013) has joined the game
+Wed Nov 22 23:25:48 2023	ARC SSGT Kaiser (STEAM_0:1:76110013) spawned
+Wed Nov 22 23:26:03 2023	Ensign Butter (STEAM_0:1:78700995): /name Inquisitor Ares
+Wed Nov 22 23:26:09 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Wed Nov 22 23:28:49 2023	ARC SSGT Kaiser (STEAM_0:1:76110013) spawned
+Wed Nov 22 23:33:53 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Wed Nov 22 23:33:58 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 23:42:50 2023	PlushBerry (STEAM_0:1:525736108) has joined the game
+Wed Nov 22 23:42:50 2023	ST PVT 1121 Husker (STEAM_0:1:525736108) spawned
+Wed Nov 22 23:44:59 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc :0
+Wed Nov 22 23:45:07 2023	ST PVT 1121 Husker (STEAM_0:1:525736108) spawned
+Wed Nov 22 23:47:43 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 23:47:50 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc new it XD
+Wed Nov 22 23:47:51 2023	SHW Commander Pip (STEAM_0:1:169781558): /name SHOCK Commander Diswasher
+Wed Nov 22 23:48:03 2023	SHOCK Commander Diswasher (STEAM_0:1:169781558): /name SHOCK Commander Dishwasher
+Wed Nov 22 23:56:54 2023	AHHHH (STEAM_0:1:189494712) has joined the game
+Wed Nov 22 23:56:54 2023	Shore VCMD Hawking (STEAM_0:1:189494712) spawned
+Wed Nov 22 23:59:02 2023	Shore VCMD Hawking (STEAM_0:1:189494712) spawned
+Wed Nov 22 23:59:12 2023	Screen_wolf75 (STEAM_0:0:231421928) has joined the game
+Wed Nov 22 23:59:12 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Thu Nov 23 00:03:05 2023	ST PVT 1121 Husker (STEAM_0:1:525736108) disconnected
+Thu Nov 23 00:03:15 2023	Shore VCMD Hawking (STEAM_0:1:189494712) disconnected
+Thu Nov 23 00:04:45 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): /ooc WOMAN
+Thu Nov 23 00:04:56 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Thu Nov 23 00:05:55 2023	First Order Commander Pretzel (STEAM_0:0:231421928): h
+Thu Nov 23 00:08:13 2023	PlushBerry (STEAM_0:1:525736108) has joined the game
+Thu Nov 23 00:08:13 2023	ST PVT 1121 Husker (STEAM_0:1:525736108) spawned
+Thu Nov 23 00:08:20 2023	Inquisitor Ares (STEAM_0:1:78700995): // really dish?
+Thu Nov 23 00:08:24 2023	SHOCK Commander Dishwasher was killed by Entity [0][worldspawn] with a unknown
+Thu Nov 23 00:08:33 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558) spawned
+Thu Nov 23 00:08:33 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): 
+Thu Nov 23 00:08:59 2023	First Order Commander Pretzel was killed by Themself with a suicide trick
+Thu Nov 23 00:09:07 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Thu Nov 23 00:09:16 2023	Inquisitor Ares was killed by SHOCK Commander Dishwasher with a rw_sw_dlt19
+Thu Nov 23 00:09:21 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Thu Nov 23 00:09:50 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): /ooc I'm gonna kill breadstick
+Thu Nov 23 00:10:57 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): /ooc I'm staring at breadstick rn
+Thu Nov 23 00:11:20 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc back my game crashed and am eating fried rice
+Thu Nov 23 00:11:29 2023	ST PVT 1121 Husker (STEAM_0:1:525736108) spawned
+Thu Nov 23 00:11:39 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): /ooc You're telling me a shrimp fried this rice?
+Thu Nov 23 00:13:36 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558) spawned NPC npc_vjks_imp_army_trooper_medic
+Thu Nov 23 00:14:33 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc mhm
+Thu Nov 23 00:14:41 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc where u at?
+Thu Nov 23 00:14:49 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): /ooc isb hq
+Thu Nov 23 00:15:36 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc am near bunks
+Thu Nov 23 00:15:42 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc am eatting
+Thu Nov 23 00:16:02 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): 
+Thu Nov 23 00:16:15 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): 
+Thu Nov 23 00:16:17 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): /me strips weapons and comms
+Thu Nov 23 00:16:22 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): 
+Thu Nov 23 00:18:05 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc brush am dieing from eatting this orange chicken
+Thu Nov 23 00:18:15 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): 
+Thu Nov 23 00:18:19 2023	First Order Commander Pretzel was killed by Entity [1002][trigger_hurt] with a trigger_hurt
+Thu Nov 23 00:18:24 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Thu Nov 23 00:18:37 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc ama look for ya dish washer to ask question
+Thu Nov 23 00:19:09 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): /ooc go to cave and into isb only area
+Thu Nov 23 00:19:21 2023	First Order Commander Pretzel (STEAM_0:0:231421928): had to stop xray and zulu from fightinng
+Thu Nov 23 00:19:51 2023	SHOCK Commander Dishwasher was killed by First Order Commander Pretzel with a rw_sw_stw48
+Thu Nov 23 00:19:59 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558) spawned
+Thu Nov 23 00:20:02 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): 
+Thu Nov 23 00:20:24 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558) spawned NPC sent_vj_test
+Thu Nov 23 00:20:29 2023	First Order Commander Pretzel (STEAM_0:0:231421928): also what is the error?
+Thu Nov 23 00:20:33 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558) spawned NPC npc_vjks_imp_army_officer_f
+Thu Nov 23 00:20:35 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc dam u gone XD
+Thu Nov 23 00:21:33 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558) spawned NPC npc_vj_test_humanply
+Thu Nov 23 00:21:58 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558) spawned NPC npc_vjks_sitheternal_crew
+Thu Nov 23 00:22:02 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558) spawned NPC npc_vjks_sitheternal_officer_f
+Thu Nov 23 00:22:11 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558) spawned NPC npc_vjks_sitheternal_trooper_f
+Thu Nov 23 00:22:22 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558) spawned NPC npc_vjks_reb_senate_security_officerf
+Thu Nov 23 00:22:32 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558) spawned NPC npc_vjks_reb_senate_securityf
+Thu Nov 23 00:23:40 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Thu Nov 23 00:24:25 2023	First Order Commander Pretzel (STEAM_0:0:231421928): those are errors not bodues
+Thu Nov 23 00:24:32 2023	First Order Commander Pretzel (STEAM_0:0:231421928): fuck you
+Thu Nov 23 00:25:05 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558) spawned NPC npc_vjks_imp_army_officer_staff_f
+Thu Nov 23 00:25:38 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): 
+Thu Nov 23 00:25:55 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned NPC npc_vjks_imp_royal_trooper_f
+Thu Nov 23 00:26:09 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned NPC npc_vjks_sitheternal_trooper_f
+Thu Nov 23 00:26:12 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned NPC npc_vjks_sitheternal_officer_f
+Thu Nov 23 00:26:15 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned NPC npc_vjks_sitheternal_crew_f
+Thu Nov 23 00:33:18 2023	Terta_ (STEAM_0:1:128681061) has joined the game
+Thu Nov 23 00:33:18 2023	Med SGT 8675 Tracy (STEAM_0:1:128681061) spawned
+Thu Nov 23 00:33:21 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Thu Nov 23 00:33:34 2023	ST PVT 1121 Husker (STEAM_0:1:525736108) disconnected
+Thu Nov 23 00:34:35 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558) spawned NPC npc_vjks_imp_army_officer_staff_f
+Thu Nov 23 00:34:38 2023	Med SGT 8675 Tracy (STEAM_0:1:128681061) disconnected
+Thu Nov 23 00:49:48 2023	PlushBerry (STEAM_0:1:525736108) has joined the game
+Thu Nov 23 00:49:48 2023	ST PVT 1121 Husker (STEAM_0:1:525736108) spawned
+Thu Nov 23 00:50:54 2023	ARC SSGT Kaiser (STEAM_0:1:76110013): /ooc what yall up to
+Thu Nov 23 00:51:45 2023	ST PVT 1121 Husker (STEAM_0:1:525736108) spawned
+Thu Nov 23 00:55:08 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc am back
+Thu Nov 23 00:55:18 2023	Inquisitor Ares (STEAM_0:1:78700995): // welcome back
+Thu Nov 23 00:56:28 2023	ST PVT 1121 Husker (STEAM_0:1:525736108) spawned
+Thu Nov 23 00:57:17 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): /ooc I'm doing some dev work Kaiser
+Thu Nov 23 00:57:43 2023	SHOCK Commander Dishwasher (STEAM_0:1:169781558): 
+Thu Nov 23 00:58:55 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc :0
+Thu Nov 23 01:00:42 2023	ARC SSGT Kaiser (STEAM_0:1:76110013) disconnected
+Thu Nov 23 01:02:07 2023	Willisepic66 (STEAM_0:1:460210970) has joined the game
+Thu Nov 23 01:02:07 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Thu Nov 23 01:02:34 2023	First Order Commander Pretzel was killed by Entity [1002][trigger_hurt] with a trigger_hurt
+Thu Nov 23 01:02:40 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Thu Nov 23 01:02:43 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Thu Nov 23 01:04:37 2023	ST PVT 1121 Husker (STEAM_0:1:525736108): /ooc ever eat the paper from your cookie at chinase food places?
+Thu Nov 23 01:04:39 2023	Inquisitor Ares (STEAM_0:1:78700995) disconnected
+Thu Nov 23 01:04:57 2023	ST PVT 1121 Husker was killed by Entity [1002][trigger_hurt] with a trigger_hurt
+Thu Nov 23 01:05:02 2023	ST PVT 1121 Husker (STEAM_0:1:525736108) spawned
+Thu Nov 23 01:05:43 2023	First Order Commander Pretzel (STEAM_0:0:231421928) disconnected
+Thu Nov 23 01:05:46 2023	Shore Colonel Billy (STEAM_0:1:460210970) disconnected

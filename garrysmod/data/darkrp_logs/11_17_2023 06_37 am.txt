@@ -1,0 +1,70 @@
+Fri Nov 17 06:37:00 2023	Luna Tess (STEAM_0:1:84791284) has joined the game
+Fri Nov 17 06:37:00 2023	Salmon (STEAM_0:1:84791284) spawned
+Fri Nov 17 06:39:40 2023	Salmon (STEAM_0:1:84791284) spawned
+Fri Nov 17 06:41:35 2023	Salmon (STEAM_0:1:84791284) spawned
+Fri Nov 17 06:41:54 2023	joey (STEAM_0:0:527442974) has joined the game
+Fri Nov 17 06:41:54 2023	joey (STEAM_0:0:527442974) spawned
+Fri Nov 17 06:44:41 2023	Salmon (STEAM_0:1:84791284): !help
+Fri Nov 17 06:44:53 2023	Salmon (STEAM_0:1:84791284): !whitelist joey novatrooper
+Fri Nov 17 06:45:19 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 06:45:38 2023	Salmon (STEAM_0:1:84791284): !givewhitelist joey novaofficer
+Fri Nov 17 06:45:51 2023	Salmon (STEAM_0:1:84791284): !job joey novaofficer
+Fri Nov 17 06:46:13 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 06:47:53 2023	joey (STEAM_0:0:527442974) spawned
+Fri Nov 17 06:47:53 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 06:47:57 2023	Salmon (STEAM_0:1:84791284): !to joey
+Fri Nov 17 06:48:03 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 06:48:09 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 06:48:19 2023	Salmon (STEAM_0:1:84791284): !job joey novatrooper
+Fri Nov 17 06:48:30 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 06:48:32 2023	joey (STEAM_0:0:527442974) spawned
+Fri Nov 17 06:48:39 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 06:48:54 2023	Salmon (STEAM_0:1:84791284): !givejob joey novaofficer
+Fri Nov 17 06:49:06 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 06:49:12 2023	Salmon (STEAM_0:1:84791284): !invis
+Fri Nov 17 06:49:15 2023	Salmon (STEAM_0:1:84791284): !invisible
+Fri Nov 17 06:49:18 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 06:50:26 2023	Salmon (STEAM_0:1:84791284): /forward
+Fri Nov 17 06:50:27 2023	Salmon (STEAM_0:1:84791284): /forward
+Fri Nov 17 06:50:28 2023	Salmon (STEAM_0:1:84791284): /forward
+Fri Nov 17 06:50:41 2023	Salmon (STEAM_0:1:84791284): /forward
+Fri Nov 17 06:52:45 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 06:54:46 2023	Salmon (STEAM_0:1:84791284): !whitelist
+Fri Nov 17 06:55:14 2023	Salmon (STEAM_0:1:84791284): !addwhitelist joey novaofficer
+Fri Nov 17 06:56:30 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 06:56:55 2023	Salmon (STEAM_0:1:84791284): /buyammo 4
+Fri Nov 17 06:57:03 2023	Salmon (STEAM_0:1:84791284) disconnected
+Fri Nov 17 06:57:16 2023	GrimH (STEAM_0:1:613222498) has joined the game
+Fri Nov 17 06:57:16 2023	GrimH (STEAM_0:1:613222498) spawned
+Fri Nov 17 06:59:02 2023	Luna Tess (STEAM_0:1:84791284) has joined the game
+Fri Nov 17 06:59:02 2023	Salmon (STEAM_0:1:84791284) spawned
+Fri Nov 17 07:01:02 2023	Salmon (STEAM_0:1:84791284): /staffonduty
+Fri Nov 17 07:01:18 2023	Salmon (STEAM_0:1:84791284) spawned
+Fri Nov 17 07:01:24 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 07:01:28 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 07:01:32 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 07:01:34 2023	GrimH (STEAM_0:1:613222498) disconnected
+Fri Nov 17 07:01:40 2023	Salmon (STEAM_0:1:84791284): !whitelist
+Fri Nov 17 07:01:55 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 07:02:19 2023	Salmon (STEAM_0:1:84791284): !whitelist STEAM_0:0:527442974 novatrooper
+Fri Nov 17 07:02:27 2023	Salmon (STEAM_0:1:84791284): !whitelist STEAM_0:0:527442974 novaofficer
+Fri Nov 17 07:04:34 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 07:06:25 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 07:07:32 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 07:07:58 2023	joey (STEAM_0:0:527442974) spawned
+Fri Nov 17 07:08:02 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 07:08:21 2023	joey (STEAM_0:0:527442974) spawned
+Fri Nov 17 07:08:28 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 07:08:36 2023	Salmon (STEAM_0:1:84791284): /novacommander
+Fri Nov 17 07:08:38 2023	Salmon (STEAM_0:1:84791284) spawned
+Fri Nov 17 07:08:44 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 07:08:46 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 07:08:49 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 07:08:53 2023	Salmon (STEAM_0:1:84791284): 
+Fri Nov 17 07:09:17 2023	joey (STEAM_0:0:527442974) disconnected
+Fri Nov 17 07:16:29 2023	Salmon (STEAM_0:1:84791284) disconnected
+Fri Nov 17 16:47:40 2023	Luna Tess (STEAM_0:1:84791284) has joined the game
+Fri Nov 17 16:47:40 2023	Salmon (STEAM_0:1:84791284) spawned
+Fri Nov 17 16:49:13 2023	Salmon (STEAM_0:1:84791284): /staffonduty
+Fri Nov 17 16:49:20 2023	Salmon (STEAM_0:1:84791284): /staff
+Fri Nov 17 16:49:22 2023	Salmon (STEAM_0:1:84791284) spawned

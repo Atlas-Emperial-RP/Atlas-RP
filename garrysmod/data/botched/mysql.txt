@@ -1,0 +1,8 @@
+{
+	"Host": "localhost",
+	"Password": "",
+	"DatabaseName": "garrysmod",
+	"Enabled": false,
+	"DatabasePort": 3306.0,
+	"Username": "root"
+}

@@ -1,0 +1,41 @@
+Thu Aug 31 22:32:14 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
+Thu Aug 31 22:32:14 2023	Naval Director Magic Mike (STEAM_0:0:631269172) spawned
+Thu Aug 31 22:33:33 2023	DOHEAD (STEAM_0:0:581098097) has joined the game
+Thu Aug 31 22:33:33 2023	DOHEAD (STEAM_0:0:581098097) spawned
+Thu Aug 31 22:35:01 2023	Naval Director Magic Mike (STEAM_0:0:631269172): /addjailpos
+Thu Aug 31 22:35:32 2023	Spark (STEAM_0:1:460412980) has joined the game
+Thu Aug 31 22:35:32 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 22:36:31 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Thu Aug 31 22:36:33 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Thu Aug 31 22:36:34 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Thu Aug 31 22:36:35 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Thu Aug 31 22:36:37 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Thu Aug 31 22:36:38 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Thu Aug 31 22:36:40 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Thu Aug 31 22:36:41 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Thu Aug 31 22:36:42 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Thu Aug 31 22:37:47 2023	Naval Director Magic Mike (STEAM_0:0:631269172): /setjail
+Thu Aug 31 22:37:48 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Thu Aug 31 22:37:57 2023	Naval Director Magic Mike (STEAM_0:0:631269172): /jailpos
+Thu Aug 31 22:38:14 2023	Naval Director Magic Mike (STEAM_0:0:631269172): /addjailpos
+Thu Aug 31 22:38:20 2023	Naval Director Magic Mike (STEAM_0:0:631269172): /addjailpos
+Thu Aug 31 22:38:27 2023	Naval Director Magic Mike (STEAM_0:0:631269172): /addjailpos
+Thu Aug 31 22:38:32 2023	Naval Director Magic Mike (STEAM_0:0:631269172): /addjailpos
+Thu Aug 31 22:38:35 2023	Naval Director Magic Mike (STEAM_0:0:631269172): /addjailpos
+Thu Aug 31 22:38:38 2023	Naval Director Magic Mike (STEAM_0:0:631269172): /addjailpos
+Thu Aug 31 22:38:40 2023	Naval Director Magic Mike (STEAM_0:0:631269172): /addjailpos
+Thu Aug 31 22:39:11 2023	Naval Director Magic Mike (STEAM_0:0:631269172): 
+Thu Aug 31 22:39:32 2023	Naval Director Magic Mike (STEAM_0:0:631269172): 
+Thu Aug 31 22:41:05 2023	DOHEAD (STEAM_0:0:581098097): 
+Thu Aug 31 22:41:10 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Thu Aug 31 22:41:29 2023	ST Commander Spark (STEAM_0:1:460412980): /c Code Dumbass
+Thu Aug 31 22:41:32 2023	ST Commander Spark (STEAM_0:1:460412980): /advert {pink Chimaera Spark Reporting in!} {red For Fleet} {pink Protection or Assistance} {red Let Me Know!}
+Thu Aug 31 22:41:46 2023	DOHEAD (STEAM_0:0:581098097): 
+Thu Aug 31 22:41:51 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Thu Aug 31 22:42:02 2023	ST Commander Spark (STEAM_0:1:460412980): /c Code Dumbass
+Thu Aug 31 22:42:03 2023	ST Commander Spark (STEAM_0:1:460412980): /c Code Dumbass
+Thu Aug 31 22:42:04 2023	ST Commander Spark (STEAM_0:1:460412980): /advert {pink Chimaera Spark Reporting in!} {red For Fleet} {pink Protection or Assistance} {red Let Me Know!}
+Thu Aug 31 22:42:13 2023	Naval Director Magic Mike (STEAM_0:0:631269172): /advert
+Thu Aug 31 22:42:29 2023	ST Commander Spark (STEAM_0:1:460412980): /c <hsv> Negative [False/Defective</hsv>
+Thu Aug 31 22:42:40 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Thu Aug 31 22:43:43 2023	DOHEAD (STEAM_0:0:581098097): 

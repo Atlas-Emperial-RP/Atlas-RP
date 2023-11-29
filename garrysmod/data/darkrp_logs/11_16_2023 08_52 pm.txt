@@ -1,0 +1,1210 @@
+Thu Nov 16 20:52:11 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Thu Nov 16 20:52:11 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Thu Nov 16 20:52:11 2023	Xain (STEAM_0:0:231680469) has joined the game
+Thu Nov 16 20:52:11 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Thu Nov 16 20:53:05 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Thu Nov 16 20:53:08 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Thu Nov 16 20:53:12 2023	THESEXMAN(real) (STEAM_0:1:181505447) has joined the game
+Thu Nov 16 20:53:12 2023	NOVA CPT THEXAN (STEAM_0:1:181505447) spawned
+Thu Nov 16 20:54:16 2023	NOVA CPT THEXAN (STEAM_0:1:181505447) spawned
+Thu Nov 16 20:57:05 2023	1LO94G (STEAM_0:0:580928495) has joined the game
+Thu Nov 16 20:57:05 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Thu Nov 16 21:00:26 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Thu Nov 16 21:00:33 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 21:02:32 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Thu Nov 16 21:02:45 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 21:03:33 2023	NOVA CPT THEXAN (STEAM_0:1:181505447): /comms you can bounce rockets
+Thu Nov 16 21:04:52 2023	NOVA CPT THEXAN was killed by Entity [2858][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Thu Nov 16 21:04:57 2023	NOVA CPT THEXAN (STEAM_0:1:181505447) spawned
+Thu Nov 16 21:05:26 2023	Croc (STEAM_0:1:161014837) has joined the game
+Thu Nov 16 21:05:26 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Thu Nov 16 21:05:49 2023	DT E5 O30 (STEAM_0:1:161014837) disconnected
+Thu Nov 16 21:05:52 2023	Inquisitor Acolyte Jack was killed by Grand Admiral Somebody with a weapon_lightsaber
+Thu Nov 16 21:06:14 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Thu Nov 16 21:07:22 2023	Grand Admiral Somebody was killed by Themself with a suicide trick
+Thu Nov 16 21:07:22 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 21:07:27 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Thu Nov 16 21:08:12 2023	Inquisitor Acolyte Jack was killed by Grand Admiral Somebody with a sfw_estaffdual
+Thu Nov 16 21:08:18 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Thu Nov 16 21:08:21 2023	Croc (STEAM_0:1:161014837) has joined the game
+Thu Nov 16 21:08:21 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Thu Nov 16 21:08:40 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 21:09:57 2023	Purge Vice Commander Xain was killed by Inquisitor Acolyte Jack with a sfw_estaffdual
+Thu Nov 16 21:10:03 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Thu Nov 16 21:10:03 2023	Inquisitor Acolyte Jack was killed by Grand Admiral Somebody with a sfw_eblade
+Thu Nov 16 21:10:08 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Thu Nov 16 21:10:36 2023	Grand Admiral Somebody was killed by Themself with a suicide trick
+Thu Nov 16 21:10:36 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 21:10:41 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Thu Nov 16 21:10:46 2023	Inquisitor Acolyte Jack was killed by Themself with a suicide trick
+Thu Nov 16 21:10:46 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 21:10:53 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Thu Nov 16 21:12:47 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 
+Thu Nov 16 21:12:48 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned SENT item_box_buckshot
+Thu Nov 16 21:12:48 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned SENT item_box_buckshot
+Thu Nov 16 21:12:56 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 
+Thu Nov 16 21:13:12 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned SENT npc_grenade_frag
+Thu Nov 16 21:14:25 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned SENT or_artillery_incoming_shell_medusa_cm
+Thu Nov 16 21:14:28 2023	Inquisitor Acolyte Jack was killed by Grand Admiral Somebody with a unknown
+Thu Nov 16 21:14:28 2023	Purge Vice Commander Xain was killed by Grand Admiral Somebody with a unknown
+Thu Nov 16 21:14:36 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Thu Nov 16 21:14:54 2023	Grand Admiral Somebody was killed by Themself with a suicide trick
+Thu Nov 16 21:14:59 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Thu Nov 16 21:15:01 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Thu Nov 16 21:15:28 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned SENT or_str_tray_1
+Thu Nov 16 21:15:36 2023	Inquisitor Acolyte Jack was killed by Purge Vice Commander Xain with a or_str_tray_1
+Thu Nov 16 21:15:36 2023	Grand Admiral Somebody was killed by Purge Vice Commander Xain with a or_str_tray_1
+Thu Nov 16 21:15:36 2023	Purge Vice Commander Xain was killed by Themself with a suicide trick
+Thu Nov 16 21:15:42 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Thu Nov 16 21:15:43 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Thu Nov 16 21:15:45 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Thu Nov 16 21:16:12 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Thu Nov 16 21:16:44 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 21:16:51 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 21:16:56 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 21:17:46 2023	Inquisitor Acolyte Jack was killed by Entity [2949][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Thu Nov 16 21:18:00 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Thu Nov 16 21:18:05 2023	Purge Vice Commander Xain was killed by Entity [2834][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Thu Nov 16 21:18:20 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Thu Nov 16 21:19:10 2023	NOVA CPT THEXAN (STEAM_0:1:181505447) disconnected
+Thu Nov 16 21:19:55 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 21:20:07 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 21:20:45 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned SENT star_destroyer
+Thu Nov 16 21:20:53 2023	THESEXMAN(real) (STEAM_0:1:181505447) has joined the game
+Thu Nov 16 21:20:53 2023	NOVA CPT THEXAN (STEAM_0:1:181505447) spawned
+Thu Nov 16 21:20:54 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Thu Nov 16 21:21:14 2023	Grand Admiral Somebody was killed by Entity [2837][star_destroyer] with a star_destroyer
+Thu Nov 16 21:21:19 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Thu Nov 16 21:21:32 2023	NOVA CPT THEXAN (STEAM_0:1:181505447) spawned
+Thu Nov 16 21:22:13 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 
+Thu Nov 16 21:22:15 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /fleetga
+Thu Nov 16 21:22:17 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Thu Nov 16 21:22:32 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 
+Thu Nov 16 21:23:09 2023	NOVA CPT THEXAN was killed by Inquisitor Acolyte Jack with a unknown
+Thu Nov 16 21:23:13 2023	Inquisitor Acolyte Jack was killed by Themself with a suicide trick
+Thu Nov 16 21:23:19 2023	NOVA CPT THEXAN (STEAM_0:1:181505447) spawned
+Thu Nov 16 21:23:20 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 
+Thu Nov 16 21:23:21 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Thu Nov 16 21:24:04 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) disconnected
+Thu Nov 16 21:25:47 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 
+Thu Nov 16 21:25:53 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 
+Thu Nov 16 21:26:14 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Thu Nov 16 21:26:14 2023	SCOUT SGT 2321 Jerrod (STEAM_0:0:29212178) spawned
+Thu Nov 16 21:27:01 2023	SCOUT SGT 2321 Jerrod (STEAM_0:0:29212178): /name Demo on Duty
+Thu Nov 16 21:27:08 2023	Demo on Duty (STEAM_0:0:29212178) spawned
+Thu Nov 16 21:27:20 2023	Demo on Duty (STEAM_0:0:29212178): 
+Thu Nov 16 21:27:26 2023	Demo on Duty (STEAM_0:0:29212178): 
+Thu Nov 16 21:27:32 2023	Demo on Duty (STEAM_0:0:29212178): 
+Thu Nov 16 21:27:37 2023	Demo on Duty (STEAM_0:0:29212178): 
+Thu Nov 16 21:28:06 2023	Kalani (STEAM_0:1:100059404) has joined the game
+Thu Nov 16 21:28:06 2023	Kalani (STEAM_0:1:100059404) spawned
+Thu Nov 16 21:28:36 2023	NOVA CPT THEXAN (STEAM_0:1:181505447) disconnected
+Thu Nov 16 21:34:50 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Thu Nov 16 21:35:31 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Thu Nov 16 21:37:55 2023	Kalani (STEAM_0:1:100059404): // hello
+Thu Nov 16 21:38:28 2023	Demo on Duty (STEAM_0:0:29212178): /ooc Hello 
+Thu Nov 16 21:39:45 2023	Kalani (STEAM_0:1:100059404): // what is a chimera Stormtrooper?
+Thu Nov 16 21:40:10 2023	Demo on Duty (STEAM_0:0:29212178): /ooc bomb defusers and stealth
+Thu Nov 16 21:40:12 2023	Kalani (STEAM_0:1:100059404): // Chimaera*
+Thu Nov 16 21:40:17 2023	Kalani (STEAM_0:1:100059404): // ah fair fair
+Thu Nov 16 21:40:19 2023	Demo on Duty (STEAM_0:0:29212178): /ooc for the most part
+Thu Nov 16 21:40:48 2023	Demo on Duty (STEAM_0:0:29212178): /ooc are you new to the server?
+Thu Nov 16 21:41:05 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /pm demo I can train them if they are new
+Thu Nov 16 21:41:17 2023	Demo on Duty (STEAM_0:0:29212178): /pm xain nah dont worry I have this
+Thu Nov 16 21:42:16 2023	Demo on Duty (STEAM_0:0:29212178): /name IA Commander Demi
+Thu Nov 16 21:42:21 2023	IA Commander Demi (STEAM_0:0:29212178): /name IA Commander Demo
+Thu Nov 16 21:42:22 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Thu Nov 16 21:42:30 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Thu Nov 16 21:46:17 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 
+Thu Nov 16 21:47:21 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): +
+Thu Nov 16 21:47:59 2023	Kalani (STEAM_0:1:100059404): // yes i am
+Thu Nov 16 21:48:25 2023	Kalani (STEAM_0:1:100059404): huh
+Thu Nov 16 21:48:40 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Thu Nov 16 21:48:43 2023	Kalani (STEAM_0:1:100059404): im unsure tbh, still considering if this server is right for me lol
+Thu Nov 16 21:49:02 2023	Kalani (STEAM_0:1:100059404): don't want to waste ur time incase i won be staying xD
+Thu Nov 16 21:49:05 2023	Kalani (STEAM_0:1:100059404): US server?
+Thu Nov 16 21:49:10 2023	Kalani (STEAM_0:1:100059404): ahhhh
+Thu Nov 16 21:49:22 2023	Kalani (STEAM_0:1:100059404): well im from Norway, so our time zones are different
+Thu Nov 16 21:49:43 2023	Kalani (STEAM_0:1:100059404): I wish you all the best of luck!
+Thu Nov 16 21:49:57 2023	DT E5 O30 was killed by IA Commander Demo with a weapon_shotgun
+Thu Nov 16 21:50:03 2023	Kalani (STEAM_0:1:100059404) disconnected
+Thu Nov 16 21:50:10 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Thu Nov 16 21:51:05 2023	IA Commander Demo (STEAM_0:0:29212178) disconnected
+Thu Nov 16 22:01:17 2023	eggs (STEAM_0:0:55135130) has joined the game
+Thu Nov 16 22:01:17 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Thu Nov 16 22:02:50 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Thu Nov 16 22:02:50 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Thu Nov 16 22:04:53 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Thu Nov 16 22:11:54 2023	Kenji (STEAM_0:1:508032827) has joined the game
+Thu Nov 16 22:11:54 2023	IA PVT 6765 Kenji (STEAM_0:1:508032827) spawned
+Thu Nov 16 22:13:19 2023	Grand Admiral Somebody (STEAM_0:0:197465498): '
+Thu Nov 16 22:13:42 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /name IA MSGT 1936 Grimjaw
+Thu Nov 16 22:13:50 2023	IA MSGT 1936 Grimjaw (STEAM_0:0:197465498): /iasergeant
+Thu Nov 16 22:14:00 2023	IA MSGT 1936 Grimjaw (STEAM_0:0:197465498): /imperialarmysergeant
+Thu Nov 16 22:14:12 2023	IA MSGT 1936 Grimjaw (STEAM_0:0:197465498) spawned
+Thu Nov 16 22:15:09 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /sleep
+Thu Nov 16 22:15:14 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /sleep
+Thu Nov 16 22:15:16 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /sleep
+Thu Nov 16 22:15:16 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Thu Nov 16 22:15:20 2023	IA PVT 6765 Kenji (STEAM_0:1:508032827) spawned
+Thu Nov 16 22:16:38 2023	Xanderr (STEAM_0:0:63471237) has joined the game
+Thu Nov 16 22:16:38 2023	Shadow Colonel Furboy (STEAM_0:0:63471237) spawned
+Thu Nov 16 22:17:37 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): /shadowcommand
+Thu Nov 16 22:17:40 2023	Shadow Colonel Furboy (STEAM_0:0:63471237) spawned
+Thu Nov 16 22:18:00 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /name John
+Thu Nov 16 22:19:35 2023	John (STEAM_0:0:55135130): /y can you hear me?
+Thu Nov 16 22:19:40 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): no
+Thu Nov 16 22:19:44 2023	John (STEAM_0:0:55135130): /y fuck
+Thu Nov 16 22:19:55 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Thu Nov 16 22:19:56 2023	IA PVT 6765 Kenji (STEAM_0:1:508032827): /ooc yes we can 
+Thu Nov 16 22:20:01 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): there we go
+Thu Nov 16 22:20:13 2023	John (STEAM_0:0:55135130): /y greetings how can i help you?
+Thu Nov 16 22:20:23 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Now, why is a citizen in base?
+Thu Nov 16 22:20:25 2023	John (STEAM_0:0:55135130) disconnected
+Thu Nov 16 22:20:58 2023	DT E5 O30 (STEAM_0:1:161014837) disconnected
+Thu Nov 16 22:21:07 2023	IA MSGT 1936 Grimjaw (STEAM_0:0:197465498): 
+Thu Nov 16 22:21:17 2023	IA MSGT 1936 Grimjaw (STEAM_0:0:197465498): 
+Thu Nov 16 22:21:26 2023	IA MSGT 1936 Grimjaw (STEAM_0:0:197465498): 
+Thu Nov 16 22:21:39 2023	IA MSGT 1936 Grimjaw (STEAM_0:0:197465498): 
+Thu Nov 16 22:22:21 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): no where
+Thu Nov 16 22:22:24 2023	eggs (STEAM_0:0:55135130) has joined the game
+Thu Nov 16 22:22:24 2023	John (STEAM_0:0:55135130) spawned
+Thu Nov 16 22:23:03 2023	Croc (STEAM_0:1:161014837) has joined the game
+Thu Nov 16 22:23:03 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Thu Nov 16 22:23:45 2023	John (STEAM_0:0:55135130) spawned
+Thu Nov 16 22:23:45 2023	John (STEAM_0:0:55135130): /name Lieutenant Scratchma
+Thu Nov 16 22:24:31 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Thu Nov 16 22:25:25 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Thu Nov 16 22:25:25 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Thu Nov 16 22:25:41 2023	DT E5 O30 (STEAM_0:1:161014837): /advert Disperse from the area immediately, failure to do so will result in termination. [Only Warning]
+Thu Nov 16 22:26:59 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): /roll
+Thu Nov 16 22:27:35 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Thu Nov 16 22:28:42 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /pm pip Question: How long do staff apps typically take to finish being reviewed?
+Thu Nov 16 22:29:14 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): uwu
+Thu Nov 16 22:29:28 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): uwu
+Thu Nov 16 22:29:30 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): ye
+Thu Nov 16 22:31:03 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): /me picks pockets (rolling)
+Thu Nov 16 22:32:40 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): bonjour
+Thu Nov 16 22:33:29 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Thu Nov 16 22:33:32 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Thu Nov 16 22:33:34 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Thu Nov 16 22:33:34 2023	Lieutenant Scratchma was killed by SHW Commander Pip with a stunstick
+Thu Nov 16 22:33:40 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Thu Nov 16 22:34:21 2023	IA MSGT 1936 Grimjaw (STEAM_0:0:197465498): /name Grand Admiral Somebody
+Thu Nov 16 22:34:29 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /fleetGA
+Thu Nov 16 22:34:31 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Thu Nov 16 22:34:45 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 22:35:06 2023	Lieutenant Scratchma (STEAM_0:0:55135130): weapon_cuff_elastic
+Thu Nov 16 22:35:24 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Thu Nov 16 22:35:54 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /name Inquisitor Acolyte Ares
+Thu Nov 16 22:36:21 2023	1LO94G (STEAM_0:0:580928495) has joined the game
+Thu Nov 16 22:36:21 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Thu Nov 16 22:37:14 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Thu Nov 16 22:37:17 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Thu Nov 16 22:39:20 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Thu Nov 16 22:41:32 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 22:42:56 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 22:43:18 2023	IA PVT 6765 Kenji (STEAM_0:1:508032827): /charfallover
+Thu Nov 16 22:45:25 2023	DT E5 O30 (STEAM_0:1:161014837): /pm somebody i say 7 min
+Thu Nov 16 22:45:35 2023	Atlas (STEAM_0:0:190051560) has joined the game
+Thu Nov 16 22:45:35 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Thu Nov 16 22:47:03 2023	DT E5 O30 (STEAM_0:1:161014837): /pm somebody okay now iast it takes 30min
+Thu Nov 16 22:47:48 2023	DT E5 O30 (STEAM_0:1:161014837): /pm somebody fr they just going have to guess the code
+Thu Nov 16 22:49:52 2023	DT E5 O30 (STEAM_0:1:161014837): /pm some how long as it been
+Thu Nov 16 22:50:28 2023	DT E5 O30 (STEAM_0:1:161014837): /pm some yeah
+Thu Nov 16 22:50:38 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Thu Nov 16 22:50:53 2023	DT E5 O30 (STEAM_0:1:161014837): /pm some yeah it going to be fun to wach
+Thu Nov 16 22:50:59 2023	Medical Commander Jason (STEAM_0:0:190051560): // is the guy who wanted tryouts still here>
+Thu Nov 16 22:51:03 2023	IA PVT 6765 Kenji (STEAM_0:1:508032827): /ooc yes 
+Thu Nov 16 22:51:34 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 12 3 2 16
+Thu Nov 16 22:51:46 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 12_3_2_16
+Thu Nov 16 22:51:47 2023	DT E5 O30 (STEAM_0:1:161014837): 
+Thu Nov 16 22:51:58 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 12_3_2_16_14_7
+Thu Nov 16 22:52:02 2023	Medical Commander Jason (STEAM_0:0:190051560): /advert come to medbay for med tryouts
+Thu Nov 16 22:52:09 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 12_3_2_16_14_7_23_9
+Thu Nov 16 22:52:15 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 12_3_2_16_14_7_23_9_1_11
+Thu Nov 16 22:52:26 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 12_3_2_16_14_7_23_9_1_11
+Thu Nov 16 22:54:05 2023	IA PVT 6765 Kenji (STEAM_0:1:508032827) spawned
+Thu Nov 16 22:54:16 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 12_3_2_16_14_7_23_9_1_11
+Thu Nov 16 22:54:25 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 12_3_2_16_14_7_23_9_1_11
+Thu Nov 16 22:54:28 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 12_3_2_16_14_7_23_9_1_11
+Thu Nov 16 22:54:58 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /pm DT xander is the smartest he figure it out lmao
+Thu Nov 16 22:55:26 2023	DT E5 O30 (STEAM_0:1:161014837): /pm somebody oh okay how fare did he get?
+Thu Nov 16 22:55:32 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 12_3_2_16_14_7_23_9_1_11
+Thu Nov 16 22:55:46 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /pm dt he figured out the code lmao
+Thu Nov 16 22:55:59 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /pm dt he just arrived and put everyone to shame
+Thu Nov 16 22:56:15 2023	DT E5 O30 (STEAM_0:1:161014837): /pm some fr he show them all up lol
+Thu Nov 16 22:56:32 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): 16_2_12_1_3_11_23_11_14_7
+Thu Nov 16 22:56:45 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /pm dt but they are gonna yeet themselves cause they have to press several hidden buttons after lmao
+Thu Nov 16 22:57:09 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): 16 2 12 1 3 11 23 9 14 7
+Thu Nov 16 22:57:17 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): P B L A C K W I N G
+Thu Nov 16 22:57:19 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): 16_2_12_1_3_11_23_9_14_7
+Thu Nov 16 22:57:37 2023	DT E5 O30 (STEAM_0:1:161014837): /pm some there hidden ones damn it really going to take them a bit now lol
+Thu Nov 16 22:57:37 2023	Medical Commander Jason (STEAM_0:0:190051560): // he needs med whitelist
+Thu Nov 16 22:57:53 2023	IA PVT 6765 Kenji (STEAM_0:1:508032827): /name Med PVT 6765 Kenji 
+Thu Nov 16 22:58:03 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /pm dt yeah lmao
+Thu Nov 16 22:58:25 2023	Med PVT 6765 Kenji (STEAM_0:1:508032827): 
+Thu Nov 16 22:58:25 2023	Med PVT 6765 Kenji (STEAM_0:1:508032827): 
+Thu Nov 16 22:58:30 2023	Medical Commander Jason (STEAM_0:0:190051560): 
+Thu Nov 16 22:58:30 2023	Medical Commander Jason (STEAM_0:0:190051560): 
+Thu Nov 16 22:58:33 2023	DT E5 O30 (STEAM_0:1:161014837): /pm some what are they at for time
+Thu Nov 16 22:58:55 2023	Med PVT 6765 Kenji (STEAM_0:1:508032827) spawned
+Thu Nov 16 22:58:57 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Thu Nov 16 22:58:58 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /pm dt just trying to enter the code
+Thu Nov 16 22:59:07 2023	Med PVT 6765 Kenji (STEAM_0:1:508032827) spawned
+Thu Nov 16 22:59:14 2023	DT E5 O30 (STEAM_0:1:161014837): /pm some okay
+Thu Nov 16 22:59:15 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): I got it
+Thu Nov 16 22:59:42 2023	Med PVT 6765 Kenji (STEAM_0:1:508032827) spawned
+Thu Nov 16 23:00:46 2023	DT E5 O30 (STEAM_0:1:161014837): /pm some oh okay maybe i will be right if were at 15 min now
+Thu Nov 16 23:00:59 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): // We figuring power out, don't press anything in the power area please
+Thu Nov 16 23:01:21 2023	DT E5 O30 (STEAM_0:1:161014837): shold we give them clues even 10 min
+Thu Nov 16 23:01:26 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 16,2,6,1,3,11,23,9,14,7
+Thu Nov 16 23:01:31 2023	DT E5 O30 (STEAM_0:1:161014837): oh okay
+Thu Nov 16 23:01:56 2023	DT E5 O30 (STEAM_0:1:161014837): will at lest they are git it
+Thu Nov 16 23:02:00 2023	Medical Commander Jason (STEAM_0:0:190051560): // where be everybody?
+Thu Nov 16 23:02:23 2023	Shadow Colonel Furboy was killed by Entity [2188][trigger_hurt] with a trigger_hurt
+Thu Nov 16 23:02:29 2023	Shadow Colonel Furboy (STEAM_0:0:63471237) spawned
+Thu Nov 16 23:02:32 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 12_3_2_16_14_7_23_9_1_11
+Thu Nov 16 23:02:39 2023	DT E5 O30 (STEAM_0:1:161014837): /ooc engine room
+Thu Nov 16 23:02:49 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 16,2,6,1,3,11,23,9,14,7
+Thu Nov 16 23:02:56 2023	Grand Admiral Somebody (STEAM_0:0:197465498): // they trying to figure out how to turn off the power
+Thu Nov 16 23:03:11 2023	Med PVT 6765 Kenji (STEAM_0:1:508032827) spawned
+Thu Nov 16 23:03:14 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 12_3_2_16_14_7_23_9_1_11
+Thu Nov 16 23:06:12 2023	SHW Commander Pip was killed by Entity [2188][trigger_hurt] with a trigger_hurt
+Thu Nov 16 23:06:17 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Thu Nov 16 23:06:45 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): 16_2_12_1_3_11_23_9_14_7
+Thu Nov 16 23:07:17 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 16 2 12 1 3 11 23 9 14 7
+Thu Nov 16 23:12:55 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /y I NEED HEALING
+Thu Nov 16 23:13:06 2023	Lieutenant Scratchma (STEAM_0:0:55135130): burh
+Thu Nov 16 23:13:35 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): I am interested in medics as my second primary
+Thu Nov 16 23:13:39 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): :3
+Thu Nov 16 23:13:52 2023	Medical Commander Jason (STEAM_0:0:190051560): /y hmm]
+Thu Nov 16 23:14:07 2023	Medical Commander Jason (STEAM_0:0:190051560): /y get n its discord and I will do more tryouts to0morroqw
+Thu Nov 16 23:14:13 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): I'm in it
+Thu Nov 16 23:14:18 2023	Medical Commander Jason (STEAM_0:0:190051560): /y alrighty
+Thu Nov 16 23:14:32 2023	Grand Admiral Somebody was killed by Themself with a suicide trick
+Thu Nov 16 23:14:32 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Thu Nov 16 23:14:37 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Thu Nov 16 23:14:48 2023	Medical Commander Jason (STEAM_0:0:190051560): /y hey you two should kiss
+Thu Nov 16 23:15:04 2023	Medical Commander Jason (STEAM_0:0:190051560): /y bitch
+Thu Nov 16 23:15:26 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /advert Inq to DB
+Thu Nov 16 23:15:32 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /advert enroute
+Thu Nov 16 23:15:49 2023	Medical Commander Jason (STEAM_0:0:190051560): // one of the INQ be homophobic
+Thu Nov 16 23:16:12 2023	Grand Admiral Somebody (STEAM_0:0:197465498): // actually or jokingly
+Thu Nov 16 23:16:23 2023	Grand Admiral Somebody (STEAM_0:0:197465498): // what they do?
+Thu Nov 16 23:16:28 2023	Medical Commander Jason (STEAM_0:0:190051560): // I suggested they should kiss and he tried stabbing me through the glass
+Thu Nov 16 23:16:40 2023	Grand Admiral Somebody (STEAM_0:0:197465498): // lmao bruh
+Thu Nov 16 23:16:43 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): force related things...
+Thu Nov 16 23:16:47 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): thats there job
+Thu Nov 16 23:17:06 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): their*
+Thu Nov 16 23:18:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /y open the doors
+Thu Nov 16 23:18:56 2023	Medical Commander Jason (STEAM_0:0:190051560): /comms Enroute
+Thu Nov 16 23:19:02 2023	Medical Commander Jason (STEAM_0:0:190051560): /y why
+Thu Nov 16 23:19:18 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /y i will explain when you open them
+Thu Nov 16 23:20:26 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): 
+Thu Nov 16 23:20:26 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): 
+Thu Nov 16 23:20:52 2023	Medical Commander Jason (STEAM_0:0:190051560) disconnected
+Thu Nov 16 23:20:53 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /advert If you don't come
+Thu Nov 16 23:20:57 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /advert I will find you
+Thu Nov 16 23:21:07 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): /advert Cool story bro
+Thu Nov 16 23:21:49 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Pip stop being a dipshit
+Thu Nov 16 23:21:58 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): make me
+Thu Nov 16 23:22:15 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Yes?
+Thu Nov 16 23:22:51 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Okay.
+Thu Nov 16 23:23:01 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Too many things
+Thu Nov 16 23:23:12 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): My father existing, somehow
+Thu Nov 16 23:23:27 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Random things getting thrown at me in school
+Thu Nov 16 23:23:35 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Nah
+Thu Nov 16 23:23:50 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): I hear things that aren't there
+Thu Nov 16 23:24:01 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Thank you.
+Thu Nov 16 23:24:16 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:24:16 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:24:17 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Ah
+Thu Nov 16 23:24:47 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /me takes gun
+Thu Nov 16 23:25:06 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): I need schitzophenic meds according the the inqisitor, but the other voices said to not take them
+Thu Nov 16 23:25:29 2023	Orthodox (STEAM_0:1:159554328) has joined the game
+Thu Nov 16 23:25:29 2023	Orthodox (STEAM_0:1:159554328) spawned
+Thu Nov 16 23:25:38 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 
+Thu Nov 16 23:25:56 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /me writes spice awakening down
+Thu Nov 16 23:26:03 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): I don't know
+Thu Nov 16 23:26:15 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Pip is inside I believe
+Thu Nov 16 23:26:48 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc harry hoodini who?
+Thu Nov 16 23:26:50 2023	Med PVT 6765 Kenji (STEAM_0:1:508032827) disconnected
+Thu Nov 16 23:27:31 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): skill issue
+Thu Nov 16 23:27:37 2023	Orthodox (STEAM_0:1:159554328): /ooc hello
+Thu Nov 16 23:27:50 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): psst
+Thu Nov 16 23:27:57 2023	Lieutenant Scratchma (STEAM_0:0:55135130): yes?
+Thu Nov 16 23:27:58 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): might want to come in
+Thu Nov 16 23:28:20 2023	Orthodox (STEAM_0:1:159554328): /ooc when did this server open?
+Thu Nov 16 23:28:44 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // hello
+Thu Nov 16 23:28:50 2023	Orthodox (STEAM_0:1:159554328): /ooc hi
+Thu Nov 16 23:28:52 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /my turns pale
+Thu Nov 16 23:28:55 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc a few weeks ago
+Thu Nov 16 23:28:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /me turns pale
+Thu Nov 16 23:29:07 2023	Orthodox (STEAM_0:1:159554328): /ooc over a month?
+Thu Nov 16 23:29:15 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc no
+Thu Nov 16 23:29:28 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc only about a month so far
+Thu Nov 16 23:29:28 2023	Orthodox (STEAM_0:1:159554328): /ooc how many ppl do you get?
+Thu Nov 16 23:29:43 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): ./ooc wanna tp me to him someone...
+Thu Nov 16 23:29:45 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc 35+ ish
+Thu Nov 16 23:30:02 2023	Orthodox (STEAM_0:1:159554328): /ooc when do they join?
+Thu Nov 16 23:30:05 2023	SHW Commander Pip (STEAM_0:1:169781558): !send xain ortho
+Thu Nov 16 23:30:28 2023	Orthodox (STEAM_0:1:159554328): /ooc like at what time?
+Thu Nov 16 23:30:50 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc it's different everyday but usually after 2pm
+Thu Nov 16 23:31:01 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc and obviously better on weekends
+Thu Nov 16 23:31:02 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:31:15 2023	Orthodox (STEAM_0:1:159554328): /ooc what timezone after 2pm?
+Thu Nov 16 23:31:18 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Oh for fuck sake
+Thu Nov 16 23:31:20 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:31:21 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): again?
+Thu Nov 16 23:31:22 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:31:24 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc central
+Thu Nov 16 23:31:47 2023	Orthodox (STEAM_0:1:159554328): /ooc usa?
+Thu Nov 16 23:31:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:31:57 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc yeah, should've said cst
+Thu Nov 16 23:32:00 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:32:09 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:32:11 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:32:17 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): I wanna see my commander
+Thu Nov 16 23:32:21 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): hes a bit special
+Thu Nov 16 23:32:27 2023	Shadow Colonel Furboy was killed by Inquisitor Acolyte Jack with a weapon_lightsaber
+Thu Nov 16 23:33:02 2023	Orthodox (STEAM_0:1:159554328) disconnected
+Thu Nov 16 23:33:03 2023	Shadow Colonel Furboy (STEAM_0:0:63471237) spawned
+Thu Nov 16 23:33:04 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Thu Nov 16 23:33:11 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Thu Nov 16 23:33:11 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Thu Nov 16 23:33:57 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:34:15 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /me takes a blood sample
+Thu Nov 16 23:34:44 2023	SHW Commander Pip (STEAM_0:1:169781558): /y I can't hear you btw
+Thu Nov 16 23:34:53 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): ye we can't hear through walls
+Thu Nov 16 23:35:02 2023	SHW Commander Pip (STEAM_0:1:169781558): /y what did he say
+Thu Nov 16 23:35:10 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /pm xain bring him out here
+Thu Nov 16 23:35:13 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): idk they're talking about something
+Thu Nov 16 23:35:15 2023	SHW Commander Pip (STEAM_0:1:169781558): cheese
+Thu Nov 16 23:35:23 2023	Atlas (STEAM_0:0:190051560) has joined the game
+Thu Nov 16 23:35:23 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Thu Nov 16 23:35:28 2023	SHW Commander Pip (STEAM_0:1:169781558): shut up
+Thu Nov 16 23:36:07 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Uh
+Thu Nov 16 23:36:21 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Is everything good?
+Thu Nov 16 23:36:29 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): I heard gunfire
+Thu Nov 16 23:36:41 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Thats the 3rd time this week
+Thu Nov 16 23:36:54 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): I told him to take his meds
+Thu Nov 16 23:37:00 2023	SHW Commander Pip was killed by Purge Vice Commander Xain with a rw_sw_e11d
+Thu Nov 16 23:37:14 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /advert Shadow Commander Pip Has Been Terminated
+Thu Nov 16 23:38:28 2023	SHW Commander Pip (STEAM_0:1:169781558): /me moves
+Thu Nov 16 23:38:49 2023	SHW Commander Pip (STEAM_0:1:169781558): /me starts shaking
+Thu Nov 16 23:39:06 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Thu Nov 16 23:39:24 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Again?
+Thu Nov 16 23:39:40 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Thu Nov 16 23:40:02 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert My hobo powers are too powerful!!!
+Thu Nov 16 23:40:13 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): /advert Not that damn hobo again
+Thu Nov 16 23:40:25 2023	Medical Commander Jason (STEAM_0:0:190051560): // the fuck?
+Thu Nov 16 23:40:30 2023	SHW Commander Pip was killed by Inquisitor Acolyte Ares with a weapon_lightsaber
+Thu Nov 16 23:40:36 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): // What a thing to rejoin to
+Thu Nov 16 23:40:47 2023	Medical Commander Jason (STEAM_0:0:190051560): // where is bridge?
+Thu Nov 16 23:41:00 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc I'm fucking GONE
+Thu Nov 16 23:41:04 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /me kicks body to see if he's still alive
+Thu Nov 16 23:41:11 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Thu Nov 16 23:41:26 2023	Medical Commander Jason (STEAM_0:0:190051560): // where is bridge?
+Thu Nov 16 23:41:26 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): That fucking hobo is involved in too much
+Thu Nov 16 23:41:27 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // bridge is the elevator that goes up
+Thu Nov 16 23:41:43 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): I thought we already killed him.
+Thu Nov 16 23:42:20 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) disconnected
+Thu Nov 16 23:42:28 2023	SHW Commander Pip was killed by Shadow Colonel Furboy with a rw_sw_t21
+Thu Nov 16 23:43:08 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): They are my friends though
+Thu Nov 16 23:43:28 2023	SHW Commander Pip (STEAM_0:1:169781558): /me starts shaking and convulsing
+Thu Nov 16 23:43:41 2023	Medical Commander Jason (STEAM_0:0:190051560): 
+Thu Nov 16 23:43:41 2023	Medical Commander Jason (STEAM_0:0:190051560): 
+Thu Nov 16 23:43:46 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:43:46 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:43:51 2023	Medical Commander Jason (STEAM_0:0:190051560): /me does drug scan
+Thu Nov 16 23:43:53 2023	Medical Commander Jason (STEAM_0:0:190051560): /roll
+Thu Nov 16 23:43:58 2023	SHW Commander Pip (STEAM_0:1:169781558): /roll 
+Thu Nov 16 23:44:03 2023	SHW Commander Pip (STEAM_0:1:169781558): NOPE 
+Thu Nov 16 23:44:08 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:44:18 2023	SHW Commander Pip (STEAM_0:1:169781558): HOL UP
+Thu Nov 16 23:44:23 2023	SHW Commander Pip (STEAM_0:1:169781558): /y ONE SEC FELLAS
+Thu Nov 16 23:44:28 2023	SHW Commander Pip (STEAM_0:1:169781558): /roll
+Thu Nov 16 23:44:32 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Thu Nov 16 23:44:35 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /me places blood sample down
+Thu Nov 16 23:44:43 2023	Medical Commander Jason (STEAM_0:0:190051560): /me tests blood
+Thu Nov 16 23:44:44 2023	Medical Commander Jason (STEAM_0:0:190051560): /roll
+Thu Nov 16 23:45:24 2023	SHW Commander Pip (STEAM_0:1:169781558): /y We're all drugged up
+Thu Nov 16 23:45:33 2023	SHW Commander Pip (STEAM_0:1:169781558): /y Before we get shipped out
+Thu Nov 16 23:45:49 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): how much midi-chlorian is in his blood medic?
+Thu Nov 16 23:45:49 2023	SHW Commander Pip (STEAM_0:1:169781558): /y So I learned some hobo arts
+Thu Nov 16 23:45:52 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): who's doing these drug testing on you?
+Thu Nov 16 23:46:11 2023	Grand Admiral Somebody (STEAM_0:0:197465498): // JAMMING IS NO MORE POGGGG
+Thu Nov 16 23:46:14 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /me shakes head
+Thu Nov 16 23:46:16 2023	SHW Commander Pip (STEAM_0:1:169781558): /y All the Shadow Commanders are dating that one commander with the chrome
+Thu Nov 16 23:46:17 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // YOOOO
+Thu Nov 16 23:46:32 2023	Medical Commander Jason (STEAM_0:0:190051560): /me gets blood sample
+Thu Nov 16 23:46:34 2023	Medical Commander Jason (STEAM_0:0:190051560): /roll
+Thu Nov 16 23:46:35 2023	SHW Commander Pip (STEAM_0:1:169781558): /roll
+Thu Nov 16 23:46:44 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): so the secret sector commander is giving you drugs?
+Thu Nov 16 23:46:58 2023	SHW Commander Pip (STEAM_0:1:169781558): ?y Yeah
+Thu Nov 16 23:47:11 2023	SHW Commander Pip (STEAM_0:1:169781558): /y We aren't allowed to know her name or what she does
+Thu Nov 16 23:47:35 2023	Medical Commander Jason (STEAM_0:0:190051560): // who is fucking shooting
+Thu Nov 16 23:47:59 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /pm jason what for?
+Thu Nov 16 23:48:10 2023	Medical Commander Jason (STEAM_0:0:190051560): // that frustrated grumble was so high pitched
+Thu Nov 16 23:48:12 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /me checks in with lord vader regarding force sensitive commander
+Thu Nov 16 23:48:24 2023	Medical Commander Jason (STEAM_0:0:190051560): /pm grand admiral its very loud
+Thu Nov 16 23:48:43 2023	SHW Commander Pip (STEAM_0:1:169781558): /y Think Eska and Bolin from Legend of Korra, but like a thousand Shadow Commanders and one Chrome Lady
+Thu Nov 16 23:48:50 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /pm jason okay and why do you need a flame nade for that?
+Thu Nov 16 23:49:05 2023	Medical Commander Jason (STEAM_0:0:190051560): /pm grand I dont right now
+Thu Nov 16 23:49:12 2023	Medical Commander Jason (STEAM_0:0:190051560): /y hold on you need to explain that one to me
+Thu Nov 16 23:49:19 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /pm jason aight
+Thu Nov 16 23:49:26 2023	SHW Commander Pip (STEAM_0:1:169781558): /y We are all force fully engaged to her
+Thu Nov 16 23:49:37 2023	Medical Commander Jason (STEAM_0:0:190051560): /y damn she is one kinky bitch
+Thu Nov 16 23:49:54 2023	SHW Commander Pip (STEAM_0:1:169781558): /y It's not a kink, she's just psychotic
+Thu Nov 16 23:50:00 2023	Grand Admiral Somebody (STEAM_0:0:197465498) disconnected
+Thu Nov 16 23:50:10 2023	Medical Commander Jason (STEAM_0:0:190051560): /y the amount of dick she takes is wild
+Thu Nov 16 23:50:20 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): would you happen to know how many of you there are?
+Thu Nov 16 23:50:22 2023	SHW Commander Pip (STEAM_0:1:169781558): /y She doesn't take any
+Thu Nov 16 23:50:30 2023	Medical Commander Jason (STEAM_0:0:190051560): /y damn yall just simps
+Thu Nov 16 23:50:34 2023	SHW Commander Pip (STEAM_0:1:169781558): /y No clue, but we're all Shadow Commanders
+Thu Nov 16 23:50:50 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc Forced into simphood I guess
+Thu Nov 16 23:50:56 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): no clue as in you've never met them or just too many to count
+Thu Nov 16 23:51:04 2023	SHW Commander Pip (STEAM_0:1:169781558): /y Both
+Thu Nov 16 23:51:08 2023	1LO94G (STEAM_0:0:580928495) has joined the game
+Thu Nov 16 23:51:08 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Thu Nov 16 23:52:24 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned NPC npc_crow
+Thu Nov 16 23:52:37 2023	SHW Commander Pip (STEAM_0:1:169781558): /y Um, there's a bird in here
+Thu Nov 16 23:52:46 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): i dont know what you mean
+Thu Nov 16 23:52:57 2023	SHW Commander Pip (STEAM_0:1:169781558): /y poor bird
+Thu Nov 16 23:53:30 2023	SHW Commander Pip (STEAM_0:1:169781558): /y I want food
+Thu Nov 16 23:53:37 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /y ill go get some
+Thu Nov 16 23:53:41 2023	SHW Commander Pip (STEAM_0:1:169781558): /y Thank you
+Thu Nov 16 23:53:59 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gmt_instrument_piano
+Thu Nov 16 23:54:25 2023	SHW Commander Pip was killed by Purge Vice Commander Xain with a rw_sw_electrohammer
+Thu Nov 16 23:54:46 2023	Medical Commander Jason (STEAM_0:0:190051560): // bro started playing megalovania and we all started shouting for him to die
+Thu Nov 16 23:55:18 2023	Medical Commander Jason (STEAM_0:0:190051560): /me gets blood sample
+Thu Nov 16 23:55:18 2023	Medical Commander Jason (STEAM_0:0:190051560): /roll
+Thu Nov 16 23:55:18 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT bloodbag_medicmod
+Thu Nov 16 23:55:55 2023	SHW Commander Pip (STEAM_0:1:169781558): Give him one
+Thu Nov 16 23:55:59 2023	SHW Commander Pip (STEAM_0:1:169781558): He's a commander
+Thu Nov 16 23:56:03 2023	SHW Commander Pip (STEAM_0:1:169781558): Give him a phys
+Thu Nov 16 23:56:09 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): // that is either a big coincidence or we are getting a minge squad
+Thu Nov 16 23:56:30 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT bloodbag_medicmod
+Thu Nov 16 23:56:42 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) disconnected
+Thu Nov 16 23:56:44 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /me grabs body off
+Thu Nov 16 23:56:46 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:56:46 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:57:10 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /pm pip respawn
+Thu Nov 16 23:57:14 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Thu Nov 16 23:57:14 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Thu Nov 16 23:57:41 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT bloodbag_medicmod
+Thu Nov 16 23:57:42 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT bloodbag_medicmod
+Thu Nov 16 23:57:42 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT bloodbag_medicmod
+Thu Nov 16 23:57:52 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT drip_medicmod
+Thu Nov 16 23:58:48 2023	Medical Commander Jason (STEAM_0:0:190051560): /roll
+Thu Nov 16 23:58:53 2023	Medical Commander Jason (STEAM_0:0:190051560): a
+Thu Nov 16 23:58:55 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Thu Nov 16 23:58:55 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Thu Nov 16 23:59:10 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Thu Nov 16 23:59:10 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Thu Nov 16 23:59:24 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc jason, use defib
+Thu Nov 16 23:59:34 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Thu Nov 16 23:59:35 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:59:35 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Thu Nov 16 23:59:40 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 00:00:47 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 00:00:49 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Fri Nov 17 00:00:49 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 00:00:55 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 00:00:58 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 00:01:05 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 00:01:05 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 00:01:15 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 00:01:15 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 00:01:16 2023	Medical Commander Jason (STEAM_0:0:190051560) disconnected
+Fri Nov 17 00:01:17 2023	2011 Hide N Seek Champion (STEAM_0:0:132620146) has joined the game
+Fri Nov 17 00:01:17 2023	2011 Hide N Seek Champion (STEAM_0:0:132620146) spawned
+Fri Nov 17 00:01:33 2023	Xain (STEAM_0:0:231680469) has joined the game
+Fri Nov 17 00:01:33 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Fri Nov 17 00:01:43 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 00:01:43 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 00:01:53 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Fri Nov 17 00:01:53 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 00:02:43 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Fri Nov 17 00:02:46 2023	Driplock (STEAM_0:0:69862229) has joined the game
+Fri Nov 17 00:02:46 2023	Driplock (STEAM_0:0:69862229) spawned
+Fri Nov 17 00:03:10 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /pm scratchma could I get a tp back. I'm across the map
+Fri Nov 17 00:03:13 2023	Shadow Colonel Furboy (STEAM_0:0:63471237) disconnected
+Fri Nov 17 00:04:27 2023	Driplock (STEAM_0:0:69862229) disconnected
+Fri Nov 17 00:04:27 2023	2011 Hide N Seek Champion (STEAM_0:0:132620146) disconnected
+Fri Nov 17 00:04:34 2023	Lieutenant Scratchma (STEAM_0:0:55135130) disconnected
+Fri Nov 17 00:04:40 2023	DT E5 O30 (STEAM_0:1:161014837) disconnected
+Fri Nov 17 00:05:36 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): I crashed
+Fri Nov 17 00:05:49 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 00:07:01 2023	SHW Commander Pip was killed by Inquisitor Acolyte Jack with a or_gun_platform_artillery
+Fri Nov 17 00:07:03 2023	Purge Vice Commander Xain was killed by Inquisitor Acolyte Jack with a unknown
+Fri Nov 17 00:07:07 2023	Inquisitor Acolyte Ares was killed by Inquisitor Acolyte Jack with a unknown
+Fri Nov 17 00:07:07 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 00:07:24 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Fri Nov 17 00:07:35 2023	SHW Commander Pip was killed by Inquisitor Acolyte Jack with a weapon_lightsaber
+Fri Nov 17 00:07:40 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 00:08:51 2023	SHW Commander Pip (STEAM_0:1:169781558): 1bwhitelist
+Fri Nov 17 00:08:57 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 00:09:26 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 00:09:30 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Fri Nov 17 00:09:42 2023	SHW Commander Pip (STEAM_0:1:169781558): /name Second Sister
+Fri Nov 17 00:10:29 2023	Second Sister (STEAM_0:1:169781558): /advert Inquistors, location?
+Fri Nov 17 00:10:40 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /advert Hangar bay
+Fri Nov 17 00:11:21 2023	Second Sister was killed by Inquisitor Acolyte Jack with a or_gun_platform_artillery
+Fri Nov 17 00:11:21 2023	Inquisitor Acolyte Ares was killed by Inquisitor Acolyte Jack with a or_gun_platform_artillery
+Fri Nov 17 00:11:26 2023	Second Sister (STEAM_0:1:169781558) spawned
+Fri Nov 17 00:11:29 2023	Second Sister (STEAM_0:1:169781558): 
+Fri Nov 17 00:11:32 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Fri Nov 17 00:12:01 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) disconnected
+Fri Nov 17 00:12:52 2023	Inquisitor Acolyte Ares was killed by Second Sister with a weapon_lightsaber
+Fri Nov 17 00:12:58 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Fri Nov 17 00:14:38 2023	Second Sister (STEAM_0:1:169781558) spawned
+Fri Nov 17 00:14:54 2023	Second Sister (STEAM_0:1:169781558): /name Janbo Fatt
+Fri Nov 17 00:15:04 2023	Inquisitor Acolyte Jack was killed by Entity [0][worldspawn] with a unknown
+Fri Nov 17 00:15:11 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 00:15:17 2023	Atlas (STEAM_0:0:190051560) has joined the game
+Fri Nov 17 00:15:17 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Fri Nov 17 00:15:22 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) disconnected
+Fri Nov 17 00:16:22 2023	Hitman Janbo Fatt accepted a hit on Medical Commander Jason, ordered by Inquisitor Acolyte Ares for $200
+Fri Nov 17 00:16:43 2023	Hitman Janbo Fatt finished a hit on Medical Commander Jason, ordered by Inquisitor Acolyte Ares for $200
+Fri Nov 17 00:16:43 2023	Medical Commander Jason was killed by Janbo Fatt with a rw_sw_westar11
+Fri Nov 17 00:17:04 2023	Inquisitor Acolyte Ares was killed by Janbo Fatt with a rw_sw_dual_ib94
+Fri Nov 17 00:17:36 2023	Janbo Fatt (STEAM_0:1:169781558) disconnected
+Fri Nov 17 00:18:05 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Fri Nov 17 00:18:15 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) disconnected
+Fri Nov 17 00:19:50 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Fri Nov 17 00:20:02 2023	Medical Commander Jason (STEAM_0:0:190051560) disconnected
+Fri Nov 17 00:32:27 2023	VibrantHealer35 (STEAM_0:0:161241684) has joined the game
+Fri Nov 17 00:32:27 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 00:35:20 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 00:35:36 2023	Purge Commander Badger (STEAM_0:0:161241684) disconnected
+Fri Nov 17 00:53:02 2023	the gunk (STEAM_0:1:98581856) has joined the game
+Fri Nov 17 00:53:02 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 00:55:20 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 01:03:37 2023	ARC Commander Gunk (STEAM_0:1:98581856) disconnected
+Fri Nov 17 01:04:48 2023	Xain (STEAM_0:0:231680469) has joined the game
+Fri Nov 17 01:04:48 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Fri Nov 17 01:16:26 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) disconnected
+Fri Nov 17 02:17:44 2023	the gunk (STEAM_0:1:98581856) has joined the game
+Fri Nov 17 02:17:44 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 02:35:48 2023	VibrantHealer35 (STEAM_0:0:161241684) has joined the game
+Fri Nov 17 02:35:48 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 02:36:59 2023	reqxi (STEAM_0:1:801452651) has joined the game
+Fri Nov 17 02:36:59 2023	reqxi (STEAM_0:1:801452651) spawned
+Fri Nov 17 02:38:25 2023	reqxi (STEAM_0:1:801452651) disconnected
+Fri Nov 17 02:39:41 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 02:39:53 2023	eggs (STEAM_0:0:55135130) has joined the game
+Fri Nov 17 02:39:53 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 02:40:59 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 02:42:05 2023	Lieutenant Scratchma was killed by ARC Commander Gunk with a rw_sw_huntershotgun
+Fri Nov 17 02:42:38 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 02:43:20 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 02:43:28 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Fri Nov 17 02:43:35 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Fri Nov 17 02:43:38 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Fri Nov 17 02:43:43 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Fri Nov 17 02:44:12 2023	Poo_Dinkle (STEAM_0:0:649439720) has joined the game
+Fri Nov 17 02:44:12 2023	ISB Colonel Jinn (STEAM_0:0:649439720) spawned
+Fri Nov 17 02:50:38 2023	Lieutenant Scratchma (STEAM_0:0:55135130): act forward
+Fri Nov 17 02:51:02 2023	Lieutenant Scratchma (STEAM_0:0:55135130): act halt
+Fri Nov 17 02:55:03 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 02:55:06 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 02:55:07 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 02:55:15 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 02:55:15 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 02:58:15 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Fri Nov 17 02:58:24 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Fri Nov 17 02:58:27 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Fri Nov 17 02:59:29 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Fri Nov 17 02:59:29 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:00:17 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Fri Nov 17 03:00:41 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /name Inquisitor Acolyte Ares
+Fri Nov 17 03:01:34 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Fri Nov 17 03:01:58 2023	Lieutenant Scratchma was killed by Purge Commander Badger with a rw_sw_electrohammer
+Fri Nov 17 03:02:05 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:02:05 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:02:23 2023	ISB Colonel Jinn (STEAM_0:0:649439720) disconnected
+Fri Nov 17 03:02:34 2023	Inquisitor Acolyte Ares was killed by Purge Commander Badger with a rw_sw_dc15x
+Fri Nov 17 03:02:39 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:03:35 2023	Inquisitor Acolyte Ares was killed by Purge Commander Badger with a stunstick
+Fri Nov 17 03:03:45 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:03:48 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:03:48 2023	ARC Commander Gunk (STEAM_0:1:98581856) arrested Purge Commander Badger
+Fri Nov 17 03:03:54 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:04:00 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:04:03 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:05:11 2023	Lieutenant Scratchma (STEAM_0:0:55135130) unarrested Purge Commander Badger
+Fri Nov 17 03:05:15 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:05:17 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:05:17 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:05:20 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:05:20 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:05:29 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 03:05:33 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:05:33 2023	Purge Commander Badger (STEAM_0:0:161241684) arrested ARC Commander Gunk
+Fri Nov 17 03:05:34 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 03:05:37 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 03:05:37 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:05:49 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:05:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130) unarrested ARC Commander Gunk
+Fri Nov 17 03:06:00 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:06:13 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:06:13 2023	Lieutenant Scratchma (STEAM_0:0:55135130) arrested Purge Commander Badger
+Fri Nov 17 03:06:14 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:06:14 2023	Lieutenant Scratchma (STEAM_0:0:55135130) arrested ARC Commander Gunk
+Fri Nov 17 03:06:16 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:06:16 2023	Lieutenant Scratchma (STEAM_0:0:55135130) arrested Inquisitor Acolyte Ares
+Fri Nov 17 03:06:20 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:06:20 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:06:25 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:06:25 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:06:34 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:06:34 2023	Purge Commander Badger (STEAM_0:0:161241684) arrested Lieutenant Scratchma
+Fri Nov 17 03:06:37 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:06:40 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:06:45 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:06:45 2023	Purge Commander Badger (STEAM_0:0:161241684) arrested Inquisitor Acolyte Ares
+Fri Nov 17 03:06:50 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:07:10 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 03:07:13 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 03:07:15 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 03:07:15 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:07:19 2023	Purge Commander Badger (STEAM_0:0:161241684): !sleep
+Fri Nov 17 03:07:24 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): its /
+Fri Nov 17 03:07:24 2023	Lieutenant Scratchma (STEAM_0:0:55135130): ./sleep
+Fri Nov 17 03:07:30 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /sleep
+Fri Nov 17 03:07:33 2023	Purge Commander Badger (STEAM_0:0:161241684): /sleep
+Fri Nov 17 03:07:34 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /sleep
+Fri Nov 17 03:07:36 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /sleep
+Fri Nov 17 03:07:37 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /sleep
+Fri Nov 17 03:07:37 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:07:49 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:07:49 2023	Purge Commander Badger was killed by Lieutenant Scratchma with a stunstick
+Fri Nov 17 03:07:49 2023	1LO94G (STEAM_0:0:580928495) has joined the game
+Fri Nov 17 03:07:49 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 03:07:54 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /name Inquisitor Acolyte Ares
+Fri Nov 17 03:07:57 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:07:57 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:08:12 2023	Inquisitor Acolyte Jack was killed by Purge Commander Badger with a rw_sw_electrohammer
+Fri Nov 17 03:08:22 2023	ARC Commander Gunk was killed by Lieutenant Scratchma with a tfa_dt29
+Fri Nov 17 03:08:26 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:08:26 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:09:11 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /name Emperor Butter
+Fri Nov 17 03:09:12 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:09:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT duel_of_the_fates
+Fri Nov 17 03:10:01 2023	Purge Commander Badger was killed by Emperor Butter with a weapon_lightsaber
+Fri Nov 17 03:10:08 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:10:08 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:10:08 2023	ARC Commander Gunk was killed by Emperor Butter with a weapon_lightsaber
+Fri Nov 17 03:10:15 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:10:15 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:10:16 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:10:18 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:10:23 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:10:27 2023	Lieutenant Scratchma (STEAM_0:0:55135130): .!hp ^ 1000
+Fri Nov 17 03:10:35 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 03:10:43 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:10:53 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:10:56 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 03:11:38 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT cantina_band
+Fri Nov 17 03:11:58 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT imp_speeder
+Fri Nov 17 03:12:02 2023	Emperor Butter was killed by Purge Commander Badger with a weapon_lightsaber
+Fri Nov 17 03:12:07 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:12:18 2023	ARC Commander Gunk was killed by Lieutenant Scratchma with a tfa_dt29
+Fri Nov 17 03:12:23 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:12:29 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:12:53 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT sent_ball
+Fri Nov 17 03:12:59 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT gmt_instrument_piano
+Fri Nov 17 03:13:13 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT kingpommes_lfs_tie_fighter
+Fri Nov 17 03:13:15 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT kingpommes_lfs_tie_fighter
+Fri Nov 17 03:13:22 2023	ARC Commander Gunk was killed by Entity [2851][heart_turbolaser] with a heart_turbolaser
+Fri Nov 17 03:13:22 2023	Emperor Butter was killed by Entity [2851][heart_turbolaser] with a heart_turbolaser
+Fri Nov 17 03:13:22 2023	Inquisitor Acolyte Jack was killed by Entity [2851][heart_turbolaser] with a heart_turbolaser
+Fri Nov 17 03:13:22 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT kingpommes_lfs_tie_fighter
+Fri Nov 17 03:13:22 2023	Purge Commander Badger was killed by Entity [0][worldspawn] with a unknown
+Fri Nov 17 03:13:25 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT kingpommes_lfs_tie_fighter
+Fri Nov 17 03:13:27 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:13:27 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:13:28 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 03:13:30 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT kingpommes_lfs_tie_defender
+Fri Nov 17 03:13:32 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT kingpommes_lfs_tie_fighter
+Fri Nov 17 03:13:36 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:13:38 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:13:44 2023	Emperor Butter (STEAM_0:1:78700995): // im at spawn
+Fri Nov 17 03:13:44 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:13:49 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:13:57 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT turret_bullets
+Fri Nov 17 03:14:02 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT turret_grenade
+Fri Nov 17 03:14:18 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT tfa_ammo_pistol
+Fri Nov 17 03:14:20 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT tfa_ammo_buckshot
+Fri Nov 17 03:14:22 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:14:23 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT tfa_ammo_smg1_grenade_large
+Fri Nov 17 03:14:26 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT tfa_ammo_smg1_grenade
+Fri Nov 17 03:14:26 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:14:31 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT tfa_ammo_sniper_rounds
+Fri Nov 17 03:14:35 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT taser_ammo
+Fri Nov 17 03:14:43 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT bodyman_closet
+Fri Nov 17 03:15:12 2023	Stick (STEAM_0:0:120598015) has joined the game
+Fri Nov 17 03:15:12 2023	Stick (STEAM_0:0:120598015) spawned
+Fri Nov 17 03:16:00 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT witcher_gateway
+Fri Nov 17 03:16:04 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:16:14 2023	Stick (STEAM_0:0:120598015): Getting content
+Fri Nov 17 03:16:16 2023	Stick (STEAM_0:0:120598015): I'll be back
+Fri Nov 17 03:16:25 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:16:52 2023	ARC Commander Gunk was killed by Inquisitor Acolyte Jack with a weapon_lightsaber
+Fri Nov 17 03:16:56 2023	Lieutenant Scratchma was killed by Inquisitor Acolyte Jack with a weapon_lightsaber
+Fri Nov 17 03:16:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:17:00 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:17:00 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:17:05 2023	Stick (STEAM_0:0:120598015) disconnected
+Fri Nov 17 03:17:07 2023	Inquisitor Acolyte Jack was killed by Lieutenant Scratchma with a rw_sw_e11d
+Fri Nov 17 03:17:17 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:17:21 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 03:17:23 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:17:31 2023	Emperor Butter was killed by Purge Commander Badger with a tfa_swch_alphablaster
+Fri Nov 17 03:17:38 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:18:38 2023	Purge Commander Badger was killed by Entity [0][worldspawn] with a unknown
+Fri Nov 17 03:18:42 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:18:42 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:18:47 2023	ARC Commander Gunk was killed by Purge Commander Badger with a dc17m_at_rocket2
+Fri Nov 17 03:18:48 2023	Emperor Butter was killed by Lieutenant Scratchma with a tfa_dt29
+Fri Nov 17 03:18:53 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:18:53 2023	Inquisitor Acolyte Jack was killed by Purge Commander Badger with a dc17m_at_rocket2
+Fri Nov 17 03:18:58 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 03:18:58 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:19:07 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Fri Nov 17 03:19:14 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:19:19 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:19:32 2023	Lieutenant Scratchma was killed by Inquisitor Acolyte Jack with a weapon_lightsaber
+Fri Nov 17 03:19:33 2023	Purge Commander Badger was killed by Inquisitor Acolyte Jack with a weapon_lightsaber
+Fri Nov 17 03:19:38 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:19:38 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:19:40 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:19:40 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:20:01 2023	Inquisitor Acolyte Jack was killed by Lieutenant Scratchma with a tfa_dt29
+Fri Nov 17 03:20:23 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 03:20:29 2023	Emperor Butter was killed by Purge Commander Badger with a ent_rw_rocket
+Fri Nov 17 03:20:29 2023	Lieutenant Scratchma was killed by Purge Commander Badger with a ent_rw_rocket
+Fri Nov 17 03:20:29 2023	Purge Commander Badger was killed by Themself with a suicide trick
+Fri Nov 17 03:20:33 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:20:33 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:20:34 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:20:34 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:20:34 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:21:05 2023	Emperor Butter was killed by Purge Commander Badger with a ent_rw_rocket
+Fri Nov 17 03:21:11 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:21:52 2023	Lieutenant Scratchma was killed by ARC Commander Gunk with a rw_sw_t21
+Fri Nov 17 03:21:55 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:21:55 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:22:30 2023	Inquisitor Acolyte Jack was killed by Entity [2999][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov 17 03:22:30 2023	Lieutenant Scratchma was killed by Entity [2999][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov 17 03:22:39 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:22:39 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:22:51 2023	Lieutenant Scratchma was killed by Entity [2937][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov 17 03:22:51 2023	Emperor Butter was killed by Entity [2937][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov 17 03:22:54 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:22:54 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:22:59 2023	Purge Commander Badger was killed by ARC Commander Gunk with a rw_sw_huntershotgun
+Fri Nov 17 03:23:02 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:23:03 2023	ARC Commander Gunk was killed by Lieutenant Scratchma with a rw_sw_dlt20a
+Fri Nov 17 03:23:05 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:23:05 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:23:09 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:23:09 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:23:44 2023	Purge Commander Badger was killed by Emperor Butter with a weapon_lightsaber
+Fri Nov 17 03:23:47 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:23:47 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:24:09 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:24:11 2023	ARC Commander Gunk was killed by Emperor Butter with a weapon_lightsaber
+Fri Nov 17 03:24:34 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:24:34 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:24:40 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:24:48 2023	Emperor Butter was killed by Entity [2937][23v_lafette] with a 23v_lafette
+Fri Nov 17 03:24:53 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:24:56 2023	Lieutenant Scratchma was killed by Purge Commander Badger with a rw_sw_nt242
+Fri Nov 17 03:25:02 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:25:02 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:25:07 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:25:07 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:25:07 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:25:08 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:25:36 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:25:55 2023	Lieutenant Scratchma was killed by Entity [2900][23v_lafette] with a 23v_lafette
+Fri Nov 17 03:25:58 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:25:58 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:26:01 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:26:08 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:26:36 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:26:51 2023	Lieutenant Scratchma was killed by Entity [2898][23v_lafette] with a 23v_lafette
+Fri Nov 17 03:26:57 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:26:57 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:27:49 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 03:27:52 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 03:27:53 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 03:27:57 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 03:27:57 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:28:06 2023	Lieutenant Scratchma was killed by Purge Commander Badger with a rw_sw_dual_dc17s
+Fri Nov 17 03:28:09 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:28:09 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:30:04 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 03:30:04 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:30:58 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Fri Nov 17 03:30:58 2023	Janbo Fatt (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:31:38 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Fri Nov 17 03:32:00 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:32:00 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:32:28 2023	ARC Commander Gunk (STEAM_0:1:98581856): !resethealth ^
+Fri Nov 17 03:32:41 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:32:41 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:32:42 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:32:44 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:32:45 2023	Janbo Fatt was killed by Inquisitor Acolyte Jack with a weapon_lightsaber
+Fri Nov 17 03:32:47 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:32:51 2023	Janbo Fatt (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:33:10 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:33:10 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:33:40 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 03:33:40 2023	Lieutenant Scratchma (STEAM_0:0:55135130) arrested Inquisitor Acolyte Jack
+Fri Nov 17 03:33:44 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:33:45 2023	Lieutenant Scratchma (STEAM_0:0:55135130) unarrested Inquisitor Acolyte Jack
+Fri Nov 17 03:33:47 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:34:03 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:34:03 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:34:30 2023	Lieutenant Scratchma was killed by Entity [3014][ent_baby_explosive2] with a ent_baby_explosive2
+Fri Nov 17 03:34:33 2023	Janbo Fatt was killed by ARC Commander Gunk with a env_explosion
+Fri Nov 17 03:34:34 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:34:34 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:34:42 2023	Janbo Fatt (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:35:12 2023	Janbo Fatt (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:35:16 2023	Janbo Fatt (STEAM_0:1:169781558): 
+Fri Nov 17 03:36:53 2023	Lieutenant Scratchma was killed by ARC Commander Gunk with a weapon_lightsaber
+Fri Nov 17 03:36:56 2023	Purge Commander Badger was killed by Inquisitor Acolyte Jack with a weapon_lightsaber
+Fri Nov 17 03:36:58 2023	ARC Commander Gunk was killed by Inquisitor Acolyte Jack with a weapon_lightsaber
+Fri Nov 17 03:36:59 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:36:59 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:37:00 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:37:00 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:37:02 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:37:05 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:37:05 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:37:13 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:37:58 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:38:01 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:38:02 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:38:10 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:38:11 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:38:12 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:38:16 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:38:17 2023	Emperor Butter was killed by Entity [0][worldspawn] with a unknown
+Fri Nov 17 03:38:18 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:38:27 2023	Lieutenant Scratchma was killed by Entity [2833][ent_baby_explosive2] with a ent_baby_explosive2
+Fri Nov 17 03:38:30 2023	Inquisitor Acolyte Jack was killed by ARC Commander Gunk with a env_explosion
+Fri Nov 17 03:38:32 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:38:36 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 03:38:58 2023	Purge Commander Badger was killed by Emperor Butter with a weapon_lightsaber
+Fri Nov 17 03:38:58 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:39:02 2023	Janbo Fatt was killed by Entity [2835][ent_baby_explosive2] with a ent_baby_explosive2
+Fri Nov 17 03:39:02 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:39:02 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:39:03 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:39:03 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:39:07 2023	Janbo Fatt (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:39:11 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:39:12 2023	Janbo Fatt (STEAM_0:1:169781558): 
+Fri Nov 17 03:39:17 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:39:17 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:39:18 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT 23v_lafette
+Fri Nov 17 03:39:22 2023	ARC Commander Gunk was killed by Janbo Fatt with a weapon_lightsaber
+Fri Nov 17 03:39:27 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:39:27 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:39:33 2023	Purge Commander Badger was killed by Entity [3027][ent_baby_explosive2] with a ent_baby_explosive2
+Fri Nov 17 03:39:38 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:39:38 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:40:06 2023	ARC Commander Gunk was killed by Janbo Fatt with a weapon_lightsaber
+Fri Nov 17 03:40:07 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:40:07 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:40:12 2023	Purge Commander Badger was killed by Entity [3027][ent_baby_explosive2] with a ent_baby_explosive2
+Fri Nov 17 03:40:19 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:40:19 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:40:23 2023	ARC Commander Gunk was killed by Entity [3035][ent_baby_explosive2] with a ent_baby_explosive2
+Fri Nov 17 03:40:25 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:40:28 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:40:28 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:40:29 2023	Purge Commander Badger was killed by Entity [2856][ent_baby_explosive2] with a ent_baby_explosive2
+Fri Nov 17 03:40:30 2023	Emperor Butter was killed by Lieutenant Scratchma with a env_explosion
+Fri Nov 17 03:40:34 2023	Janbo Fatt was killed by ARC Commander Gunk with a env_explosion
+Fri Nov 17 03:40:34 2023	Lieutenant Scratchma was killed by ARC Commander Gunk with a env_explosion
+Fri Nov 17 03:40:34 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:40:34 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:40:35 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:40:39 2023	Janbo Fatt (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:40:41 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:40:41 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Fri Nov 17 03:40:47 2023	ARC Commander Gunk was killed by Themself with a suicide trick
+Fri Nov 17 03:40:47 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:40:52 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:40:52 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:41:21 2023	Inquisitor Acolyte Jack was killed by Entity [0][worldspawn] with a unknown
+Fri Nov 17 03:41:23 2023	Lieutenant Scratchma was killed by Janbo Fatt with a weapon_lightsaber
+Fri Nov 17 03:41:30 2023	Xain (STEAM_0:0:231680469) has joined the game
+Fri Nov 17 03:41:30 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Fri Nov 17 03:41:31 2023	Emperor Butter was killed by Themself with a suicide trick
+Fri Nov 17 03:41:31 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:41:35 2023	ARC Commander Gunk (STEAM_0:1:98581856): *** ERROR: C_ServerRagdoll::InitModel: models/player/xozz/hydra/inquisitor/inquisitormale_07.mdl missing vcollide data ***
+Fri Nov 17 03:41:41 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov 17 03:41:47 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // someone is here
+Fri Nov 17 03:41:51 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // off hours is joever
+Fri Nov 17 03:41:51 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 03:42:00 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // we have seven people
+Fri Nov 17 03:42:01 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:42:04 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // waaa
+Fri Nov 17 03:42:14 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:42:26 2023	Purge Commander Badger was killed by Janbo Fatt with a weapon_lightsaber
+Fri Nov 17 03:42:31 2023	Janbo Fatt was killed by ARC Commander Gunk with a rw_sw_huntershotgun
+Fri Nov 17 03:42:35 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Fri Nov 17 03:42:36 2023	Janbo Fatt (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:42:36 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:42:36 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:42:41 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // tp?
+Fri Nov 17 03:42:49 2023	Purge Commander Badger (STEAM_0:0:161241684): Bring xain
+Fri Nov 17 03:42:55 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:44:48 2023	Inquisitor Acolyte Jack was killed by Themself with a suicide trick
+Fri Nov 17 03:44:48 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:45:02 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 03:45:59 2023	Purge Vice Commander Xain was killed by Janbo Fatt with a rw_sw_nn14
+Fri Nov 17 03:46:13 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Fri Nov 17 03:46:13 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:46:18 2023	Janbo Fatt was killed by Inquisitor Acolyte Jack with a weapon_lightsaber
+Fri Nov 17 03:46:23 2023	Janbo Fatt (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:46:40 2023	Purge Commander Badger was killed by Inquisitor Acolyte Jack with a weapon_lightsaber
+Fri Nov 17 03:46:48 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:46:48 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:47:13 2023	Janbo Fatt was killed by Purge Vice Commander Xain with a rw_sw_z6
+Fri Nov 17 03:47:18 2023	Janbo Fatt (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:47:37 2023	Purge Vice Commander Xain was killed by Purge Commander Badger with a rw_sw_e11t
+Fri Nov 17 03:47:46 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Fri Nov 17 03:47:46 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:47:57 2023	Janbo Fatt (STEAM_0:1:169781558): 
+Fri Nov 17 03:48:08 2023	Janbo Fatt was killed by Purge Vice Commander Xain with a rw_sw_z6
+Fri Nov 17 03:48:13 2023	Janbo Fatt (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:48:25 2023	Janbo Fatt (STEAM_0:1:169781558): 
+Fri Nov 17 03:48:28 2023	Janbo Fatt was killed by Entity [3039][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov 17 03:48:28 2023	Purge Commander Badger was killed by Entity [3039][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov 17 03:48:28 2023	ARC Commander Gunk was killed by Entity [3039][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov 17 03:48:28 2023	Inquisitor Acolyte Jack was killed by Entity [3039][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov 17 03:48:35 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:48:35 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:48:40 2023	Janbo Fatt (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:48:43 2023	Janbo Fatt (STEAM_0:1:169781558): 
+Fri Nov 17 03:48:48 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:48:50 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) spawned
+Fri Nov 17 03:48:56 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:49:10 2023	Purge Vice Commander Xain was killed by Purge Commander Badger with a env_explosion
+Fri Nov 17 03:49:11 2023	Janbo Fatt (STEAM_0:1:169781558): /name SHW Commander Pip
+Fri Nov 17 03:49:16 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Fri Nov 17 03:49:17 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:49:54 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:50:03 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:50:10 2023	SHW Commander Pip was killed by Entity [3043][ent_baby_explosive2] with a ent_baby_explosive2
+Fri Nov 17 03:50:16 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:50:24 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 03:50:30 2023	Purge Commander Badger was killed by Themself with a suicide trick
+Fri Nov 17 03:50:30 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 03:50:39 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:50:39 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:50:45 2023	Inquisitor Acolyte Jack (STEAM_0:0:580928495) disconnected
+Fri Nov 17 03:50:54 2023	SHW Commander Pip was killed by Purge Commander Badger with a env_explosion
+Fri Nov 17 03:50:59 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:51:05 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 03:51:06 2023	Purge Commander Badger was killed by SHW Commander Pip with a rw_sw_t21b
+Fri Nov 17 03:51:10 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:51:10 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:51:26 2023	Purge Commander Badger was killed by SHW Commander Pip with a rw_sw_t21b
+Fri Nov 17 03:51:29 2023	Emperor Butter was killed by SHW Commander Pip with a rw_sw_t21b
+Fri Nov 17 03:51:30 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Fri Nov 17 03:51:30 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:51:49 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Fri Nov 17 03:51:51 2023	Purge Vice Commander Xain was killed by SHW Commander Pip with a rw_sw_t21b
+Fri Nov 17 03:51:54 2023	ARC Commander Gunk was killed by SHW Commander Pip with a rw_sw_t21b
+Fri Nov 17 03:52:04 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Fri Nov 17 03:52:09 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 03:52:09 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:52:14 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:52:17 2023	Poo_Dinkle (STEAM_0:0:649439720) has joined the game
+Fri Nov 17 03:52:17 2023	ISB Colonel Jinn (STEAM_0:0:649439720) spawned
+Fri Nov 17 03:52:31 2023	Purge Commander Badger (STEAM_0:0:161241684) disconnected
+Fri Nov 17 03:52:51 2023	Emperor Butter was killed by Entity [2866][ent_baby_explosive2] with a ent_baby_explosive2
+Fri Nov 17 03:52:57 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:55:30 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 
+Fri Nov 17 03:55:31 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): 
+Fri Nov 17 03:55:36 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) disconnected
+Fri Nov 17 03:56:12 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // i go sleepy
+Fri Nov 17 03:56:17 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_bomb_mk77
+Fri Nov 17 03:56:17 2023	Emperor Butter (STEAM_0:1:78700995): // gn
+Fri Nov 17 03:56:18 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:56:21 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // goog nide guys
+Fri Nov 17 03:56:43 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov 17 03:56:46 2023	Lieutenant Scratchma (STEAM_0:0:55135130) disconnected
+Fri Nov 17 03:58:03 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 03:58:18 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_bomb_sc250
+Fri Nov 17 03:58:20 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_bomb_sc250
+Fri Nov 17 03:58:21 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_bomb_sc250
+Fri Nov 17 03:58:21 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_bomb_sc250
+Fri Nov 17 03:58:22 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_bomb_sc250
+Fri Nov 17 03:58:24 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_bomb_sc250
+Fri Nov 17 03:58:25 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_bomb_sc250
+Fri Nov 17 03:58:27 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_bomb_sc250
+Fri Nov 17 03:58:39 2023	SHW Commander Pip was killed by Entity [2847][gb_bomb_sc250] with a gb_bomb_sc250
+Fri Nov 17 03:58:39 2023	Emperor Butter was killed by Entity [2847][gb_bomb_sc250] with a gb_bomb_sc250
+Fri Nov 17 03:58:44 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 03:58:45 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 03:58:58 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_flak40z
+Fri Nov 17 04:00:06 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_flak40z
+Fri Nov 17 04:00:17 2023	Emperor Butter was killed by SHW Commander Pip with a base_shell
+Fri Nov 17 04:00:24 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 04:00:49 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_lefh18
+Fri Nov 17 04:01:12 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_nebelwerfer
+Fri Nov 17 04:01:21 2023	Emperor Butter was killed by Entity [2848][gb_rocket_nebel] with a gb_rocket_nebel
+Fri Nov 17 04:01:29 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 04:01:58 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 04:01:58 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 04:02:03 2023	SHW Commander Pip was killed by Entity [2848][gb_rocket_nebel] with a gb_rocket_nebel
+Fri Nov 17 04:02:08 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 04:02:19 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_flak38
+Fri Nov 17 04:02:58 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_m60
+Fri Nov 17 04:03:01 2023	ISB Colonel Jinn (STEAM_0:0:649439720) spawned
+Fri Nov 17 04:03:18 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_mg34
+Fri Nov 17 04:03:58 2023	Emperor Butter was killed by SHW Commander Pip with a unknown
+Fri Nov 17 04:04:03 2023	ISB Colonel Jinn (STEAM_0:0:649439720) disconnected
+Fri Nov 17 04:04:09 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 04:04:13 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_mg15_alt
+Fri Nov 17 04:04:18 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_vickers
+Fri Nov 17 04:04:22 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Fri Nov 17 04:04:27 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 04:04:41 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_zpu4_1931
+Fri Nov 17 04:05:11 2023	ARC Commander Gunk was killed by SHW Commander Pip with a unknown
+Fri Nov 17 04:05:16 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 04:05:17 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_m2_low
+Fri Nov 17 04:05:20 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 04:05:23 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_m2_low
+Fri Nov 17 04:06:21 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_m2
+Fri Nov 17 04:06:42 2023	Emperor Butter was killed by SHW Commander Pip with a unknown
+Fri Nov 17 04:06:47 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 04:07:03 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_kord
+Fri Nov 17 04:07:37 2023	ARC Commander Gunk was killed by SHW Commander Pip with a unknown
+Fri Nov 17 04:08:04 2023	SHW Commander Pip was killed by Emperor Butter with a unknown
+Fri Nov 17 04:08:09 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 04:08:15 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Fri Nov 17 04:08:35 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_fakehover_iftx
+Fri Nov 17 04:08:54 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_fakehover_iftx
+Fri Nov 17 04:08:56 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_fakehover_iftx
+Fri Nov 17 04:09:22 2023	Emperor Butter was killed by Entity [2926][lvs_fakehover_iftx] with a lvs_fakehover_iftx
+Fri Nov 17 04:09:28 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 04:09:28 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_fakehover_iftx
+Fri Nov 17 04:09:29 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_fakehover_iftx
+Fri Nov 17 04:17:29 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_starfighter_n1
+Fri Nov 17 04:17:49 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_starfighter_n1
+Fri Nov 17 04:17:52 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_starfighter_n1
+Fri Nov 17 04:17:54 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_starfighter_n1
+Fri Nov 17 04:18:08 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_walker_hsd
+Fri Nov 17 04:18:15 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_walker_hsd
+Fri Nov 17 04:18:25 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_walker_atte
+Fri Nov 17 04:18:39 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_repulsorlift_gunship
+Fri Nov 17 04:18:53 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Fri Nov 17 04:18:58 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Fri Nov 17 04:19:20 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT star_destroyer
+Fri Nov 17 04:19:33 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 04:19:39 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT sentinel
+Fri Nov 17 04:19:53 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_lambda_shuttle
+Fri Nov 17 04:19:55 2023	SHW Commander Pip was killed by Entity [2868][lvs_lambda_shuttle] with a lvs_lambda_shuttle
+Fri Nov 17 04:20:00 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 04:20:07 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_lambda_shuttle
+Fri Nov 17 04:20:21 2023	SHW Commander Pip was killed by Entity [2876][lvs_lambda_shuttle] with a lvs_lambda_shuttle
+Fri Nov 17 04:20:26 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 04:20:38 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_delta_shuttle
+Fri Nov 17 04:20:41 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_dx9_transport
+Fri Nov 17 04:20:59 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_dx9_transport
+Fri Nov 17 04:21:22 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_laatle_gunship
+Fri Nov 17 04:21:40 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_starfighter_peltaclass
+Fri Nov 17 04:22:03 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_starfighter_peltaclass
+Fri Nov 17 04:22:23 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_starfighter_consulradiance
+Fri Nov 17 04:22:45 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT pfx5_01
+Fri Nov 17 04:22:50 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT pfx5_01
+Fri Nov 17 04:22:53 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT pfx5_01
+Fri Nov 17 04:22:55 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT pfx5_01
+Fri Nov 17 04:23:19 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT pfx5_00
+Fri Nov 17 04:23:33 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT pfx5_00_alt_ss
+Fri Nov 17 04:23:44 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT pfx1_06
+Fri Nov 17 04:26:57 2023	Stick (STEAM_0:0:120598015) has joined the game
+Fri Nov 17 04:26:57 2023	Stick (STEAM_0:0:120598015) spawned
+Fri Nov 17 04:27:10 2023	Emperor Butter was killed by SHW Commander Pip with a rw_sw_tl50
+Fri Nov 17 04:27:19 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 04:28:08 2023	Emperor Butter was killed by SHW Commander Pip with a rw_sw_tl50
+Fri Nov 17 04:28:12 2023	Stick (STEAM_0:0:120598015) disconnected
+Fri Nov 17 04:28:14 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 04:28:59 2023	Emperor Butter was killed by SHW Commander Pip with a rw_sw_dlt19x
+Fri Nov 17 04:29:08 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 04:29:08 2023	Stick (STEAM_0:0:120598015) has joined the game
+Fri Nov 17 04:29:08 2023	Stick (STEAM_0:0:120598015) spawned
+Fri Nov 17 04:32:42 2023	SHW Commander Pip was killed by Emperor Butter with a weapon_lightsaber
+Fri Nov 17 04:34:01 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 04:39:05 2023	Stick (STEAM_0:0:120598015) disconnected
+Fri Nov 17 04:42:38 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Fri Nov 17 04:43:23 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 04:45:25 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Fri Nov 17 04:45:31 2023	ARC Commander Gunk (STEAM_0:1:98581856) disconnected
+Fri Nov 17 04:47:54 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected
+Fri Nov 17 04:48:44 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Fri Nov 17 04:48:44 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Fri Nov 17 04:51:29 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Fri Nov 17 04:51:29 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 04:53:08 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 04:53:32 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 04:53:34 2023	Emperor Butter (STEAM_0:1:78700995): 
+Fri Nov 17 04:55:05 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 04:57:03 2023	Emperor Butter (STEAM_0:1:78700995): 
+Fri Nov 17 04:57:15 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 04:59:05 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 04:59:10 2023	Emperor Butter (STEAM_0:1:78700995): 
+Fri Nov 17 04:59:45 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 04:59:46 2023	Emperor Butter (STEAM_0:1:78700995): 
+Fri Nov 17 05:01:46 2023	Emperor Butter (STEAM_0:1:78700995): 
+Fri Nov 17 05:04:57 2023	SHW Commander Pip (STEAM_0:1:169781558): /staff
+Fri Nov 17 05:04:58 2023	Emperor Butter (STEAM_0:1:78700995): /staff
+Fri Nov 17 05:05:01 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Fri Nov 17 05:07:05 2023	SHW Commander Pip (STEAM_0:1:169781558): !menu!
+Fri Nov 17 05:07:08 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 05:07:25 2023	Emperor Butter (STEAM_0:1:78700995) spawned
+Fri Nov 17 05:07:46 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 05:07:47 2023	Emperor Butter (STEAM_0:1:78700995): 
+Fri Nov 17 05:07:57 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 05:08:05 2023	SHW Commander Pip (STEAM_0:1:169781558): ~! wad wda
+Fri Nov 17 05:08:10 2023	Emperor Butter (STEAM_0:1:78700995): 
+Fri Nov 17 05:08:10 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 05:08:21 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 05:08:57 2023	SHW Commander Pip (STEAM_0:1:169781558): !menui
+Fri Nov 17 05:08:59 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 05:09:14 2023	Grand Admiral Somebody (STEAM_0:0:197465498): !model ^ 
+Fri Nov 17 05:09:18 2023	Grand Admiral Somebody (STEAM_0:0:197465498): !model ^ models/npc/hostile/syntheticgaming/characters/sithassassin/sithassassin.mdl
+Fri Nov 17 05:09:25 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Fri Nov 17 05:09:38 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Fri Nov 17 05:09:59 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Fri Nov 17 05:10:08 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Fri Nov 17 05:10:12 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 05:10:20 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Fri Nov 17 05:10:29 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Fri Nov 17 05:10:44 2023	Emperor Butter (STEAM_0:1:78700995): 
+Fri Nov 17 05:10:47 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Fri Nov 17 05:11:07 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 05:11:10 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Fri Nov 17 05:11:10 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Fri Nov 17 05:11:24 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 05:11:24 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 05:11:29 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Fri Nov 17 05:11:29 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Fri Nov 17 05:11:39 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Fri Nov 17 05:11:39 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Fri Nov 17 05:12:24 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Fri Nov 17 05:12:45 2023	Emperor Butter (STEAM_0:1:78700995): 
+Fri Nov 17 05:14:37 2023	Grand Admiral Somebody (STEAM_0:0:197465498) disconnected
