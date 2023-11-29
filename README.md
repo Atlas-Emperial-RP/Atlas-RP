@@ -13,10 +13,10 @@
 
 5. Open the folder with Visual Studio Code.
 6. Now use the terminal in Visual Studio Code to log into [Git](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
-7. 
+
 ![image](https://github.com/yairme/Atlas-RP/assets/35409296/bf16e832-751e-47f7-ac2c-44beab725ecd)
 
-8. Go to the extentions tab and search up Lua and install the first 5 extentions.
+7. Go to the extentions tab and search up Lua and install the first 5 extentions.
    
 Optional: Scroll throught th extentions and see what you think will be the most useful for yourself.
 Optional: This is a [cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to make readme better looking in your own branch.
