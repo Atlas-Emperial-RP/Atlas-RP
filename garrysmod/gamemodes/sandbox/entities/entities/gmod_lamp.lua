@@ -60,7 +60,7 @@ if ( SERVER ) then
 
 		self.BaseClass.Think( self )
 
-		if ( !IsValid( self.flashlight ) ) then return end
+		if ( not IsValid( self.flashlight ) ) then return end
 
 		if ( string.FromColor( self.flashlight:GetColor() ) ~= string.FromColor( self:GetColor() ) ) then
 			self.flashlight:SetColor( self:GetColor() )
@@ -86,7 +86,7 @@ if ( SERVER ) then
 
 		if ( bOn and IsValid( self.flashlight ) ) then return end
 
-		if ( !bOn ) then
+		if ( not bOn ) then
 
 			SafeRemoveEntity( self.flashlight )
 			self.flashlight = nil
@@ -106,12 +106,12 @@ if ( SERVER ) then
 		self.flashlight:SetKeyValue( "lightfov", math.Clamp( self:GetLightFOV(), 10, 170 ) ) 
 
 		local dist = self:GetDistance()
-		if ( !game.SinglePlayer() ) then dist = math.Clamp( dist, 64, 2048 ) end
+		if ( not game.SinglePlayer() ) then dist = math.Clamp( dist, 64, 2048 ) end
 		self.flashlight:SetKeyValue( "farz", dist )
 
 		local c = self:GetColor()
 		local b = self:GetBrightness()
-		if ( !game.SinglePlayer() ) then b = math.Clamp( b, 0, 8 ) end
+		if ( not game.SinglePlayer() ) then b = math.Clamp( b, 0, 8 ) end
 		self.flashlight:SetKeyValue( "lightcolor", Format( "%i %i %i 255", c.r * b, c.g * b, c.b * b ) )
 
 		self.flashlight:Spawn()
@@ -122,7 +122,7 @@ if ( SERVER ) then
 
 	function ENT:Toggle()
 
-		self:SetOn( !self:GetOn() )
+		self:SetOn( not self:GetOn() )
 
 	end
 
@@ -132,17 +132,17 @@ if ( SERVER ) then
 			self:OnSwitch( new )
 		end
 
-		if ( !IsValid( self.flashlight ) ) then return end
+		if ( not IsValid( self.flashlight ) ) then return end
 
 		if ( name == "LightFOV" ) then
 			self.flashlight:Input( "FOV", NULL, NULL, tostring( math.Clamp( new, 10, 170 ) ) )
 		elseif ( name == "Distance" ) then
-			if ( !game.SinglePlayer() ) then new = math.Clamp( new, 64, 2048 ) end
+			if ( not game.SinglePlayer() ) then new = math.Clamp( new, 64, 2048 ) end
 			self.flashlight:SetKeyValue( "farz", new )
 		elseif ( name == "Brightness" ) then
 			local c = self:GetColor()
 			local b = new
-			if ( !game.SinglePlayer() ) then b = math.Clamp( b, 0, 8 ) end
+			if ( not game.SinglePlayer() ) then b = math.Clamp( b, 0, 8 ) end
 			self.flashlight:SetKeyValue( "lightcolor", Format( "%i %i %i 255", c.r * b, c.g * b, c.b * b ) )
 		end
 
@@ -150,18 +150,18 @@ if ( SERVER ) then
 
 	function ENT:UpdateLight()
 
-		if ( !IsValid( self.flashlight ) ) then return end
+		if ( not IsValid( self.flashlight ) ) then return end
 
 		self.flashlight:Input( "SpotlightTexture", NULL, NULL, self:GetFlashlightTexture() )
 		self.flashlight:Input( "FOV", NULL, NULL, tostring( math.Clamp( self:GetLightFOV(), 10, 170 ) ) )
 
 		local dist = self:GetDistance()
-		if ( !game.SinglePlayer() ) then dist = math.Clamp( dist, 64, 2048 ) end
+		if ( not game.SinglePlayer() ) then dist = math.Clamp( dist, 64, 2048 ) end
 		self.flashlight:SetKeyValue( "farz", dist )
 
 		local c = self:GetColor()
 		local b = self:GetBrightness()
-		if ( !game.SinglePlayer() ) then b = math.Clamp( b, 0, 8 ) end
+		if ( not game.SinglePlayer() ) then b = math.Clamp( b, 0, 8 ) end
 		self.flashlight:SetKeyValue( "lightcolor", Format( "%i %i %i 255", c.r * b, c.g * b, c.b * b ) )
 
 	end
@@ -180,7 +180,7 @@ local matLight = Material( "sprites/light_ignorez" )
 function ENT:DrawEffects()
 
 	-- No glow if we're not switched on!
-	if ( !self:GetOn() ) then return end
+	if (  not self:GetOn() ) then return end
 
 	local LightNrm = self:GetAngles():Forward()
 	local ViewNormal = self:GetPos() - EyePos()
@@ -207,7 +207,7 @@ function ENT:DrawEffects()
 		render.SetMaterial( matLight )
 		local Visibile = util.PixelVisible( LightPos, 16, self.PixVis )
 
-		if ( !Visibile ) then return end
+		if ( not Visibile ) then return end
 
 		local Size = math.Clamp( Distance * Visibile * ViewDot * 2, 64, 512 )
 

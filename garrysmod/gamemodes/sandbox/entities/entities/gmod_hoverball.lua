@@ -57,7 +57,7 @@ end
 
 function ENT:GetSpeed()
 
-	if ( !game.SinglePlayer() ) then return math.Clamp( self:GetSpeedVar(), 0, 10 ) end
+	if ( not game.SinglePlayer() ) then return math.Clamp( self:GetSpeedVar(), 0, 10 ) end
 
 	return self:GetSpeedVar()
 
@@ -80,7 +80,7 @@ function ENT:UpdateLabel()
 end
 
 function ENT:DrawEffects()
-	if ( !self:GetEnabled() ) then return end
+	if ( not self:GetEnabled() ) then return end
 
 	local vOffset = self:GetPos()
 	local vPlayerEyes = LocalPlayer():EyePos()
@@ -108,7 +108,7 @@ end
 
 function ENT:PhysicsSimulate( phys, deltatime )
 
-	if ( !self:GetEnabled() ) then return end
+	if ( not self:GetEnabled() ) then return end
 
 	if ( self.ZVelocity ~= 0 ) then
 
@@ -168,7 +168,7 @@ end
 
 function ENT:Toggle()
 
-	self:SetEnabled( !self:GetEnabled() )
+	self:SetEnabled( not self:GetEnabled() )
 
 	if ( self:GetEnabled() ) then
 		self:SetTargetZ( self:GetPos().z )
@@ -176,7 +176,7 @@ function ENT:Toggle()
 
 	local phys = self:GetPhysicsObject()
 	if ( IsValid( phys ) ) then
-		phys:EnableGravity( !self:GetEnabled() )
+		phys:EnableGravity( not self:GetEnabled() )
 		phys:Wake()
 
 		-- Make the mass not insane when they are turned off
@@ -223,7 +223,7 @@ function ENT:OnDuplicated( v )
 	self:SetTargetZ( v.Pos.z )
 
 	local phys = self:GetPhysicsObject()
-	if ( IsValid( phys ) and !self:GetEnabled() ) then
+	if ( IsValid( phys ) and not self:GetEnabled() ) then
 		phys:SetMass( 15 )
 	end
 
@@ -233,7 +233,7 @@ if ( SERVER ) then
 
 	numpad.Register( "Hoverball_Up", function( pl, ent, keydown, idx )
 
-		if ( !IsValid( ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
 
 		if ( keydown ) then ent:SetZVelocity( 1 ) else ent:SetZVelocity( 0 ) end
 		return true
@@ -242,7 +242,7 @@ if ( SERVER ) then
 
 	numpad.Register( "Hoverball_Down", function( pl, ent, keydown )
 
-		if ( !IsValid( ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
 
 		if ( keydown ) then ent:SetZVelocity( -1 ) else ent:SetZVelocity( 0 ) end
 		return true
@@ -251,7 +251,7 @@ if ( SERVER ) then
 
 	numpad.Register( "Hoverball_Toggle", function( pl, ent, keydown )
 
-		if ( !IsValid( ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
 
 		ent:Toggle()
 		return true

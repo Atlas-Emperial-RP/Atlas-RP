@@ -119,18 +119,19 @@ function ENT:Think()
 
 		self.ShouldDraw = GetConVarNumber( "cl_drawthrusterseffects" ) ~= 0
 
-		if ( !self:IsOn() ) then self.OnStart = nil return end
+		if (  not self:IsOn() ) then self.OnStart = nil return end
 		self.OnStart = self.OnStart or CurTime()
 
 		if ( self.ShouldDraw == false ) then return end
 		if ( self:GetEffect() == "" or self:GetEffect() == "none" ) then return end
 
 		for id, t in pairs( list.GetForEdit( "ThrusterEffects" ) ) do
-			if ( t.thruster_effect ~= self:GetEffect() or !t.effectThink ) then continue end
+			if ( t.thruster_effect ~= self:GetEffect() or not t.effectThink ) then goto continue end
 
 			t.effectThink( self )
 
 			break
+			::continue::
 		end
 
 	end
