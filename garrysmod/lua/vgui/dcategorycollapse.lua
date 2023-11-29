@@ -80,13 +80,13 @@ function PANEL:Add( strName )
 
 		if ( button.AltLine ) then
 
-			if ( button.Depressed || button.m_bSelected ) then	return button:SetTextStyleColor( skin.Colours.Category.LineAlt.Text_Selected ) end
+			if ( button.Depressed or button.m_bSelected ) then	return button:SetTextStyleColor( skin.Colours.Category.LineAlt.Text_Selected ) end
 			if ( button.Hovered ) then							return button:SetTextStyleColor( skin.Colours.Category.LineAlt.Text_Hover ) end
 			return button:SetTextStyleColor( skin.Colours.Category.LineAlt.Text )
 
 		end
 
-		if ( button.Depressed || button.m_bSelected ) then	return button:SetTextStyleColor( skin.Colours.Category.Line.Text_Selected ) end
+		if ( button.Depressed or button.m_bSelected ) then	return button:SetTextStyleColor( skin.Colours.Category.Line.Text_Selected ) end
 		if ( button.Hovered ) then							return button:SetTextStyleColor( skin.Colours.Category.Line.Text_Hover ) end
 		return button:SetTextStyleColor( skin.Colours.Category.Line.Text )
 
@@ -282,7 +282,7 @@ function PANEL:AnimSlide( anim, delta, data )
 	self:InvalidateParent()
 
 	if ( anim.Started ) then
-		if ( !IsValid( self.Contents ) and ( self.OldHeight || 0 ) < self.Header:GetTall() ) then
+		if ( !IsValid( self.Contents ) and ( self.OldHeight or 0 ) < self.Header:GetTall() ) then
 			-- We are not using self.Contents and our designated height is less
 			-- than the header size, something is clearly wrong, try to rectify
 			self.OldHeight = 0

@@ -94,7 +94,7 @@ function PANEL:Fill()
 
 			end
 
-			if ( !self.m_pSelectedIcon || self.m_strSelectedIcon == btn:GetImage() ) then
+			if ( !self.m_pSelectedIcon or self.m_strSelectedIcon == btn:GetImage() ) then
 				self.m_pSelectedIcon = btn
 				--self:ScrollToChild( btn )
 			end

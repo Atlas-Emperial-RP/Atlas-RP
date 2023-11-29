@@ -21,7 +21,7 @@ function Derma_OpenIconBrowser()
 	-- Remember the user's custom size for the icon browser
 	-- If any dimension of the custom size is bigger than the screen bounds, or smaller than the minimum bounds, forget about it
 	local frameW, frameH = cookie.GetNumber( "Derma_IconBrowser_W", 400 ), cookie.GetNumber( "Derma_IconBrowser_H", 400 )
-	if ( frameW > ScrW() || frameH > ScrH() ) then
+	if ( frameW > ScrW() or frameH > ScrH() ) then
 		frameW, frameH = 400, 400
 		cookie.Delete( "Derma_IconBrowser_W" )
 		cookie.Delete( "Derma_IconBrowser_H" )

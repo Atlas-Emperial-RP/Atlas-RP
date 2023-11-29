@@ -41,11 +41,11 @@ end
 
 local function hook_PlayerOptionInput( pl, bind, down )
 
-	if (!down || !bindTranslation[bind]) then return end
+	if (!down or !bindTranslation[bind]) then return end
 	
 	for k, v in pairs( playerOptions ) do
 	
-		if ( v.timeout == -1 || v.timeout > CurTime() ) then
+		if ( v.timeout == -1 or v.timeout > CurTime() ) then
 		
 			-- If the function returns true then remove this player option
 			if ( v.in_func( bindTranslation[bind] ) ) then

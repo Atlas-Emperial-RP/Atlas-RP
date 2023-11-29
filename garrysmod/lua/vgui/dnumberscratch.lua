@@ -194,7 +194,7 @@ function PANEL:DrawNotches( level, x, y, w, h, range, value, min, max )
 
 		local nx = mid + n * size
 
-		if ( nx > x + w || nx < x ) then goto continue end
+		if ( nx > x + w or nx < x ) then goto continue end
 
 		local dist = 1 - ( math.abs( halfw - nx + x ) / w )
 

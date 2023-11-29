@@ -143,7 +143,7 @@ function PANEL:UpdateHovered()
 
 	end
 
-	if ( !hovered || hovered ~= self.HoveredPanel ) then
+	if ( !hovered or hovered ~= self.HoveredPanel ) then
 
 		if ( IsValid( self.HoveredPanel ) ) then
 			self.HoveredPanel.HoveredFingerVar = nil

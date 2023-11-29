@@ -15,7 +15,7 @@ function DrawMaterialOverlay( texture, refractamount )
 		lastTexture = texture
 	end
 
-	if ( mat_Overlay == nil || mat_Overlay:IsError() ) then return end
+	if ( mat_Overlay == nil or mat_Overlay:IsError() ) then return end
 
 	render.UpdateScreenEffectTexture()
 

@@ -134,7 +134,7 @@ function PANEL:Paint( w, h )
 
 	surface.SetMaterial( arrowMat )
 	surface.SetDrawColor( white )
-	surface.DrawTexturedRectRotated( w - 20, 18, 20, 12, self.Collapsed and 180 || 0 )
+	surface.DrawTexturedRectRotated( w - 20, 18, 20, 12, self.Collapsed and 180 or 0 )
 
 	local h2 = self.LuaErrorList:GetTall()
 	local _, lY = self.LuaErrorList:GetPos()

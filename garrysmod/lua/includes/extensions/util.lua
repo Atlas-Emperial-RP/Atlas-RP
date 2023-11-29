@@ -14,7 +14,7 @@ end
 function util.IsValidPhysicsObject( ent, num )
 
 	-- Make sure the entity is valid
-	if ( !ent || ( !ent:IsValid() and !ent:IsWorld() ) ) then return false end
+	if ( !ent or ( !ent:IsValid() and !ent:IsWorld() ) ) then return false end
 
 	-- This is to stop attaching to walking NPCs.
 	-- Although this is possible and `works', it can severly reduce the
@@ -204,7 +204,7 @@ local T =
 	--
 	Elapsed = function( self )
 
-		return self.endtime == nil || self.endtime <= CurTime()
+		return self.endtime == nil or self.endtime <= CurTime()
 
 	end
 }
@@ -239,7 +239,7 @@ local function PopStack( self, num )
 	local len = self[ 0 ]
 
 	if ( num > len ) then
-		error( string.format( "attempted to pop %u element%s in stack of length %u", num, num == 1 and "" || "s", len ), 3 )
+		error( string.format( "attempted to pop %u element%s in stack of length %u", num, num == 1 and "" or "s", len ), 3 )
 	end
 
 	return num, len
@@ -371,12 +371,12 @@ end
 	Desc: Returns whether a binary module with the given name is present on disk
 -----------------------------------------------------------]]
 local suffix = ({"osx64","osx","linux64","linux","win64","win32"})[
-	( system.IsWindows() and 4 || 0 )
-	+ ( system.IsLinux() and 2 || 0 )
-	+ ( jit.arch == "x86" and 1 || 0 )
+	( system.IsWindows() and 4 or 0 )
+	+ ( system.IsLinux() and 2 or 0 )
+	+ ( jit.arch == "x86" and 1 or 0 )
 	+ 1
 ]
-local fmt = "lua/bin/gm" .. ((CLIENT and !MENU_DLL) and "cl" || "sv") .. "_%s_%s.dll"
+local fmt = "lua/bin/gm" .. ((CLIENT and !MENU_DLL) and "cl" or "sv") .. "_%s_%s.dll"
 function util.IsBinaryModuleInstalled( name )
 	if ( !isstring( name ) ) then
 		error( "bad argument #1 to 'IsBinaryModuleInstalled' (string expected, got " .. type( name ) .. ")" )

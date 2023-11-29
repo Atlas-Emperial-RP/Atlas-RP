@@ -561,7 +561,7 @@ function dragndrop.HoverThink()
 	local y = gui.MouseY()
 
 	-- Hovering a different panel
-	if ( LastHoverThink ~= hovered || x ~= LastX || y ~= LastY ) then
+	if ( LastHoverThink ~= hovered or x ~= LastX or y ~= LastY ) then
 
 		LastHoverChangeTime = SysTime()
 		LastHoverThink = hovered

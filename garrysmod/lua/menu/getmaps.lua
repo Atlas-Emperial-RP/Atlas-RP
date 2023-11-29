@@ -223,7 +223,7 @@ local favmaps
 local function LoadFavourites()
 
 	local cookiestr = cookie.GetString( "favmaps" )
-	favmaps = favmaps || ( cookiestr and string.Explode( ";", cookiestr ) || {} )
+	favmaps = favmaps or ( cookiestr and string.Explode( ";", cookiestr ) or {} )
 
 end
 

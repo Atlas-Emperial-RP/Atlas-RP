@@ -66,7 +66,7 @@ function GetMethod( ply )
 	--
 	-- Entity is invalid or mode isn't set - return out
 	--
-	if ( !IsValid( ent ) || modeid == 0 ) then return end
+	if ( !IsValid( ent ) or modeid == 0 ) then return end
 
 	--
 	-- Have we already got a drive method? If so then reuse.

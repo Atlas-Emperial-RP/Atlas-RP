@@ -5,11 +5,11 @@ local meta = FindMetaTable( "Entity" )
 if ( !meta ) then return end
 
 function meta:GetShouldPlayPickupSound()
-	return self.m_bPlayPickupSound || false
+	return self.m_bPlayPickupSound or false
 end
 
 function meta:SetShouldPlayPickupSound( bPlaySound )
-	self.m_bPlayPickupSound = tobool( bPlaySound ) || false
+	self.m_bPlayPickupSound = tobool( bPlaySound ) or false
 end
 
 --
@@ -67,7 +67,7 @@ if ( SERVER ) then
 	end
 
 	function meta:GetCreator()
-		return self.m_PlayerCreator || NULL
+		return self.m_PlayerCreator or NULL
 	end
 
 end
@@ -136,7 +136,7 @@ end
 -----------------------------------------------------------]]
 local function DoDieFunction( ent )
 
-	if ( !ent || !ent.OnDieFunctions ) then return end
+	if ( !ent or !ent.OnDieFunctions ) then return end
 
 	for k, v in pairs( ent.OnDieFunctions ) do
 
@@ -196,7 +196,7 @@ end
 function meta:GetChildBones( bone )
 
 	local bonecount = self:GetBoneCount()
-	if ( bonecount == 0 || bonecount < bone ) then return end
+	if ( bonecount == 0 or bonecount < bone ) then return end
 
 	local bones = {}
 
@@ -246,7 +246,7 @@ function meta:InstallDataTable()
 		local SetFunc = ent[ "SetDT" .. typename ]
 		local GetFunc = ent[ "GetDT" .. typename ]
 
-		if ( !SetFunc || !GetFunc ) then
+		if ( !SetFunc or !GetFunc ) then
 			MsgN( "Couldn't addvar " , name, " - type ", typename," is invalid!" )
 			return
 		end
@@ -454,7 +454,7 @@ function meta:InstallDataTable()
 			if ( tab[ k ] == nil ) then goto continue end
 
 			-- Support old saves/dupes with incorrectly saved data
-			if ( v.element and ( isangle( tab[ k ] ) || isvector( tab[ k ] ) ) ) then
+			if ( v.element and ( isangle( tab[ k ] ) or isvector( tab[ k ] ) ) ) then
 				tab[ k ] = tab[ k ][ v.element ]
 			end
 
@@ -525,7 +525,7 @@ if ( SERVER ) then
 
 		if ( !IsValid( ent ) ) then return end
 		if ( !isfunction( ent.GetEditingData ) ) then return end
-		if ( ent.AdminOnly and !( client:IsAdmin() || game.SinglePlayer() ) ) then return end
+		if ( ent.AdminOnly and !( client:IsAdmin() or game.SinglePlayer() ) ) then return end
 
 		local key = net.ReadString()
 
@@ -539,11 +539,11 @@ if ( SERVER ) then
 	end )
 
 	function meta:GetUnFreezable()
-		return self.m_bUnFreezable || false
+		return self.m_bUnFreezable or false
 	end
 
 	function meta:SetUnFreezable( bFreeze )
-		self.m_bUnFreezable = tobool( bFreeze ) || false
+		self.m_bUnFreezable = tobool( bFreeze ) or false
 	end
 
 end

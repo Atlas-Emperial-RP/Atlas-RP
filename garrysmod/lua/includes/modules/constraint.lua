@@ -353,7 +353,7 @@ function AddConstraintTable( Ent, Constraint, Ent2, Ent3, Ent4 )
 
 	if ( !IsValid( Constraint ) ) then return end
 
-	if ( IsValid( Ent ) || ( Ent and Ent:IsWorld() ) ) then
+	if ( IsValid( Ent ) or ( Ent and Ent:IsWorld() ) ) then
 
 		Ent.Constraints = Ent.Constraints or {}
 		table.insert( Ent.Constraints, Constraint )
@@ -375,7 +375,7 @@ function AddConstraintTableNoDelete( Ent, Constraint, Ent2, Ent3, Ent4 )
 
 	if ( !IsValid( Constraint ) ) then return end
 
-	if ( IsValid( Ent ) || ( Ent and Ent:IsWorld() ) ) then
+	if ( IsValid( Ent ) or ( Ent and Ent:IsWorld() ) ) then
 
 		Ent.Constraints = Ent.Constraints or {}
 		table.insert( Ent.Constraints, Constraint )

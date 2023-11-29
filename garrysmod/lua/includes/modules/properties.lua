@@ -127,7 +127,7 @@ function GetHovered( eyepos, eyevec )
 	if ( filter == ply ) then
 		local veh = ply:GetVehicle()
 
-		if ( veh:IsValid() and ( !veh:IsVehicle() || !veh:GetThirdPersonMode() ) ) then
+		if ( veh:IsValid() and ( !veh:IsVehicle() or !veh:GetThirdPersonMode() ) ) then
 			-- A dirty hack for prop_vehicle_crane. util.TraceLine returns the vehicle but it hits phys_bone_follower - something that needs looking into
 			filter = { filter, veh, unpack( ents.FindByClass( "phys_bone_follower" ) ) }
 		end
@@ -140,7 +140,7 @@ function GetHovered( eyepos, eyevec )
 	} )
 
 	-- Hit COLLISION_GROUP_DEBRIS and stuff
-	if ( !trace.Hit || !IsValid( trace.Entity ) ) then
+	if ( !trace.Hit or !IsValid( trace.Entity ) ) then
 		trace = util.TraceLine( {
 			start = eyepos,
 			endpos = eyepos + eyevec * 1024,
@@ -149,7 +149,7 @@ function GetHovered( eyepos, eyevec )
 		} )
 	end
 
-	if ( !trace.Hit || !IsValid( trace.Entity ) ) then return end
+	if ( !trace.Hit or !IsValid( trace.Entity ) ) then return end
 
 	return trace.Entity, trace
 
@@ -187,7 +187,7 @@ if ( CLIENT ) then
 	
 	hook.Add( "PreDrawHalos", "PropertiesHover", function()
 
-		if ( !IsValid( vgui.GetHoveredPanel() ) || !vgui.GetHoveredPanel():IsWorldClicker() ) then return end
+		if ( !IsValid( vgui.GetHoveredPanel() ) or !vgui.GetHoveredPanel():IsWorldClicker() ) then return end
 
 		UpdateEyePos()
 
@@ -211,7 +211,7 @@ if ( CLIENT ) then
 
 	hook.Add( "GUIMousePressed", "PropertiesClick", function( code, vector )
 
-		if ( !IsValid( vgui.GetHoveredPanel() ) || !vgui.GetHoveredPanel():IsWorldClicker() ) then return end
+		if ( !IsValid( vgui.GetHoveredPanel() ) or !vgui.GetHoveredPanel():IsWorldClicker() ) then return end
 
 		if ( code == MOUSE_RIGHT and !input.IsButtonDown( MOUSE_LEFT ) ) then
 			OnScreenClick( lastEyePos, vector )
@@ -226,7 +226,7 @@ if ( CLIENT ) then
 
 		if ( wasPressed and input.IsButtonDown( MOUSE_RIGHT ) and !input.IsButtonDown( MOUSE_LEFT ) ) then return true end
 
-		if ( !IsValid( vgui.GetHoveredPanel() ) || !vgui.GetHoveredPanel():IsWorldClicker() ) then return end
+		if ( !IsValid( vgui.GetHoveredPanel() ) or !vgui.GetHoveredPanel():IsWorldClicker() ) then return end
 
 		local ply = LocalPlayer()
 		if ( !IsValid( ply ) ) then return end

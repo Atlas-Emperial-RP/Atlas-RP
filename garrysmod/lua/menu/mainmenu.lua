@@ -82,7 +82,7 @@ function PANEL:Paint()
 
 	local canAdd = CanAddServerToFavorites()
 	local isFav = serverlist.IsCurrentServerFavorite()
-	if ( self.CanAddServerToFavorites ~= canAdd || self.IsCurrentServerFavorite ~= isFav ) then
+	if ( self.CanAddServerToFavorites ~= canAdd or self.IsCurrentServerFavorite ~= isFav ) then
 
 		self.CanAddServerToFavorites = canAdd
 		self.IsCurrentServerFavorite = isFav
@@ -170,7 +170,7 @@ function UpdateServerSettings()
 
 				array.settings[ k ] = v
 				array.settings[ k ].Value = cvar:GetString()
-				array.settings[ k ].Singleplayer = v.singleplayer and true || false
+				array.settings[ k ].Singleplayer = v.singleplayer and true or false
 			end
 
 		end
@@ -216,7 +216,7 @@ GetAPIManifest( function( result )
 	for k, v in pairs( result.Servers and result.Servers.Banned or {} ) do
 		if ( v:StartWith( "map:" ) ) then
 			table.insert( BlackList.Maps, v:sub( 5 ) )
-		elseif ( v:StartWith( "host:" ) || v:StartWith( "name:" ) ) then
+		elseif ( v:StartWith( "host:" ) or v:StartWith( "name:" ) ) then
 			table.insert( BlackList.Hostnames, v:sub( 6 ) )
 		elseif ( v:StartWith( "desc:" ) ) then
 			table.insert( BlackList.Descripts, v:sub( 6 ) )
@@ -245,7 +245,7 @@ function IsServerBlacklisted( address, hostname, description, gm, map )
 	local addressNoPort = address:match( "[^:]*" )
 
 	for k, v in ipairs( BlackList.Addresses ) do
-		if ( address == v || addressNoPort == v ) then
+		if ( address == v or addressNoPort == v ) then
 			return v
 		end
 
@@ -266,25 +266,25 @@ function IsServerBlacklisted( address, hostname, description, gm, map )
 	end
 
 	for k, v in ipairs( BlackList.Hostnames ) do
-		if ( string.match( hostname, v ) || string.match( hostname:lower(), v ) ) then
+		if ( string.match( hostname, v ) or string.match( hostname:lower(), v ) ) then
 			return "host: " .. v
 		end
 	end
 
 	for k, v in ipairs( BlackList.Descripts ) do
-		if ( string.match( description, v ) || string.match( description:lower(), v ) ) then
+		if ( string.match( description, v ) or string.match( description:lower(), v ) ) then
 			return "desc: " .. v
 		end
 	end
 
 	for k, v in ipairs( BlackList.Gamemodes ) do
-		if ( string.match( gm, v ) || string.match( gm:lower(), v ) ) then
+		if ( string.match( gm, v ) or string.match( gm:lower(), v ) ) then
 			return "gm: " .. v
 		end
 	end
 
 	for k, v in ipairs( BlackList.Maps ) do
-		if ( string.match( map, v ) || string.match( map:lower(), v ) ) then
+		if ( string.match( map, v ) or string.match( map:lower(), v ) ) then
 			return "map: " .. v
 		end
 	end

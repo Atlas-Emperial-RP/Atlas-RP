@@ -236,7 +236,7 @@ function PANEL:SetType( t )
 	self:SetTitle( "#" .. t .. ".title" )
 	self.Garble:SetText( "#" .. t .. ".text" )
 
-	if ( self.Type == "permission" || self.Type == "askconnect" ) then
+	if ( self.Type == "permission" or self.Type == "askconnect" ) then
 		self.YesPerma:SetVisible( true )
 	end
 

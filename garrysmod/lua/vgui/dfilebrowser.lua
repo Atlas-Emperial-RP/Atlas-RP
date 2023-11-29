@@ -67,7 +67,7 @@ end
 
 function PANEL:SetSearch( strSearch )
 
-	if ( !strSearch || strSearch == "" ) then
+	if ( !strSearch or strSearch == "" ) then
 		strSearch = "*"
 	end
 
@@ -80,7 +80,7 @@ end
 
 function PANEL:SetFileTypes( strTypes )
 
-	self.m_strFilter = tostring( strTypes || "*.*" )
+	self.m_strFilter = tostring( strTypes or "*.*" )
 	if ( !self.bSetup ) then return end
 
 	if ( self.m_strCurrentFolder ) then
@@ -126,7 +126,7 @@ function PANEL:SetOpen( bOpen, bAnim )
 
 	self.FolderNode:SetExpanded( bOpen, !bAnim )
 	self.m_bOpen = bOpen
-	self:SetCookie( "Open", bOpen and "1" || "0" )
+	self:SetCookie( "Open", bOpen and "1" or "0" )
 
 end
 
@@ -143,7 +143,7 @@ end
 function PANEL:SetupTree()
 
 	local name = self.m_strName
-	if ( !name ) then name = string.Trim( string.match( self.m_strBaseFolder, "/.+$" ) || self.m_strBaseFolder, "/" ) end
+	if ( !name ) then name = string.Trim( string.match( self.m_strBaseFolder, "/.+$" ) or self.m_strBaseFolder, "/" ) end
 
 	local children = self.Tree.RootNode.ChildNodes
 	if ( IsValid( children ) ) then
@@ -154,11 +154,11 @@ function PANEL:SetupTree()
 	self.Tree.RootNode.ChildExpanded = function( node, bExpand )
 		DTree_Node.ChildExpanded( node, bExpand )
 		self.m_bOpen = tobool( self.FolderNode.m_bExpanded )
-		self:SetCookie( "Open", self.m_bOpen and "1" || "0" )
+		self:SetCookie( "Open", self.m_bOpen and "1" or "0" )
 	end
 
 	self.FolderNode:SetExpanded( self.m_bOpen, true )
-	self:SetCookie( "Open", self.m_bOpen and "1" || "0" )
+	self:SetCookie( "Open", self.m_bOpen and "1" or "0" )
 
 	self:ShowFolder()
 
@@ -214,19 +214,19 @@ function PANEL:ShowFolder( path )
 	self.Files:Clear()
 
 	if ( IsValid( self.FileHeader ) ) then
-		self.FileHeader:SetText( path || "Files" )
+		self.FileHeader:SetText( path or "Files" )
 	end
 
 	if ( !path ) then return end
 
 	local filters = self.m_strFilter
-	if ( !filters || filters == "" ) then
+	if ( !filters or filters == "" ) then
 		filters = "*.*"
 	end
 
 	for _, filter in ipairs( string.Explode( " ", filters ) ) do
 
-		local files = file.Find( string.Trim( path .. "/" .. ( filter || "*.*" ), "/" ), self.m_strPath )
+		local files = file.Find( string.Trim( path .. "/" .. ( filter or "*.*" ), "/" ), self.m_strPath )
 		if ( !istable( files ) ) then goto continue end
 
 		for _, v in ipairs( files ) do

@@ -108,7 +108,7 @@ function PANEL:AddItem( item, strLineState )
 
 	item:SetVisible( true )
 	item:SetParent( self:GetCanvas() )
-	item.m_strLineState = strLineState || item.m_strLineState
+	item.m_strLineState = strLineState or item.m_strLineState
 	table.insert( self.Items, item )
 
 	--[[if ( self.m_bSortable ) then
@@ -184,7 +184,7 @@ function PANEL.DropAction( Slot, RcvSlot )
 
 	PanelToMove:SetPos( RcvSlot.Data.pnlCanvas:ScreenToLocal( gui.MouseX() - dragndrop.m_MouseLocalX, gui.MouseY() - dragndrop.m_MouseLocalY ) )
 
-	if ( dragndrop.DropPos == 4 || dragndrop.DropPos == 8 ) then
+	if ( dragndrop.DropPos == 4 or dragndrop.DropPos == 8 ) then
 		RcvSlot.Data:InsertBefore( RcvSlot.Panel, PanelToMove )
 	else
 		RcvSlot.Data:InsertAfter( RcvSlot.Panel, PanelToMove )
@@ -216,7 +216,7 @@ function PANEL:CleanList()
 
 	for k, panel in pairs( self.Items ) do
 
-		if ( !IsValid( panel ) || panel:GetParent() ~= self.pnlCanvas ) then
+		if ( !IsValid( panel ) or panel:GetParent() ~= self.pnlCanvas ) then
 			self.Items[k] = nil
 		end
 
@@ -243,7 +243,7 @@ function PANEL:Rebuild()
 				local w = panel:GetWide()
 				local h = panel:GetTall()
 
-				if ( x > self.Padding and ( x + w > self:GetWide() || OwnLine ) ) then
+				if ( x > self.Padding and ( x + w > self:GetWide() or OwnLine ) ) then
 
 					x = self.Padding
 					y = y + h + self.Spacing
@@ -402,7 +402,7 @@ end
 
 function PANEL:SortByMember( key, desc )
 
-	desc = desc || true
+	desc = desc or true
 
 	table.sort( self.Items, function( a, b )
 

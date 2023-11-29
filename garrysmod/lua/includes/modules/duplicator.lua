@@ -745,7 +745,7 @@ function CreateConstraintFromTable( Constraint, EntityList, Player )
 		end
 
 		-- A little hack to give the duped constraints the correct player object
-		if ( Key:lower() == "pl" || Key:lower() == "ply" || Key:lower() == "player" ) then Val = Player end
+		if ( Key:lower() == "pl" or Key:lower() == "ply" or Key:lower() == "player" ) then Val = Player end
 
 		-- If there's a missing argument then unpack will stop sending at that argument
 		if ( Val == nil ) then Val = false end
@@ -827,7 +827,7 @@ function Paste( Player, EntityList, ConstraintList )
 		ApplyBoneModifiers( Player, Ent )
 
 		if ( Ent.PostEntityPaste ) then
-			Ent:PostEntityPaste( Player || NULL, Ent, CreatedEntities )
+			Ent:PostEntityPaste( Player or NULL, Ent, CreatedEntities )
 		end
 
 	end

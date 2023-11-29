@@ -115,12 +115,12 @@ function PANEL:PropSelect( label, convar, models, height )
 
 		local tmp = {} -- HACK: Order by skin too
 		for k, v in SortedPairsByMemberValue( models, "model" ) do
-			tmp[ k ] = v.model:lower() .. ( v.skin || 0 )
+			tmp[ k ] = v.model:lower() .. ( v.skin or 0 )
 		end
 
 		for k, v in SortedPairsByValue( tmp ) do
 			v = models[ k ]
-			local icon = props:AddModelEx( k, v.model, v.skin || 0 )
+			local icon = props:AddModelEx( k, v.model, v.skin or 0 )
 			if ( v.tooltip ) then icon:SetToolTip( v.tooltip ) end
 		end
 

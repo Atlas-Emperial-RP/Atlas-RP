@@ -107,8 +107,8 @@ function PANEL:NetworkColorChange()
 	end
 
 	for id, pnl in pairs( g_ColorPalettePanels ) do
-		if ( !IsValid( pnl ) || pnl == self ) then goto continue end
-		if ( pnl:GetNumRows() ~= self:GetNumRows() || pnl:GetCookieName() ~= self:GetCookieName() ) then goto continue end
+		if ( !IsValid( pnl ) or pnl == self ) then goto continue end
+		if ( pnl:GetNumRows() ~= self:GetNumRows() or pnl:GetCookieName() ~= self:GetCookieName() ) then goto continue end
 		local tab = {}
 		for id, p in ipairs( self:GetChildren() ) do
 			tab[ p:GetID() ] = p:GetColor()

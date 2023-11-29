@@ -221,7 +221,7 @@ end
 
 function IsInLoading()
 
-	if ( !IsValid( pnlLoading ) || !IsValid( pnlLoading.HTML ) ) then
+	if ( !IsValid( pnlLoading ) or !IsValid( pnlLoading.HTML ) ) then
 		return false
 	end
 

@@ -46,7 +46,7 @@ function PANEL:Think()
 
 	self.OverlayFade = math.Clamp( self.OverlayFade - RealFrameTime() * 640 * 2, 0, 255 )
 
-	if ( dragndrop.IsDragging() || !self:IsHovered() ) then return end
+	if ( dragndrop.IsDragging() or !self:IsHovered() ) then return end
 
 	self.OverlayFade = math.Clamp( self.OverlayFade + RealFrameTime() * 640 * 8, 0, 255 )
 

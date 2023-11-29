@@ -420,7 +420,7 @@ function PANEL:OnClickLine( Line, bClear )
 	--
 	-- Check for double click
 	--
-	if ( Line:IsSelected() and Line.m_fClickTime and ( !bMultiSelect || bClear ) ) then
+	if ( Line:IsSelected() and Line.m_fClickTime and ( !bMultiSelect or bClear ) ) then
 
 		local fTimeDistance = SysTime() - Line.m_fClickTime
 
@@ -435,7 +435,7 @@ function PANEL:OnClickLine( Line, bClear )
 	-- If it's a new mouse click, or this isn't
 	-- multiselect we clear the selection
 	--
-	if ( !bMultiSelect || bClear ) then
+	if ( !bMultiSelect or bClear ) then
 		self:ClearSelection()
 	end
 
@@ -495,8 +495,8 @@ function PANEL:SortByColumn( ColumnID, Desc )
 			a, b = b, a
 		end
 
-		local aval = a:GetSortValue( ColumnID ) || a:GetColumnText( ColumnID )
-		local bval = b:GetSortValue( ColumnID ) || b:GetColumnText( ColumnID )
+		local aval = a:GetSortValue( ColumnID ) or a:GetColumnText( ColumnID )
+		local bval = b:GetSortValue( ColumnID ) or b:GetColumnText( ColumnID )
 
 		-- Maintain nicer sorting for numbers
 		if ( isnumber( aval ) and isnumber( bval ) ) then return aval < bval end

@@ -120,7 +120,7 @@ function SWEP:DealDamage()
 	local hit = false
 	local scale = phys_pushscale:GetFloat()
 
-	if ( SERVER and IsValid( tr.Entity ) and ( tr.Entity:IsNPC() || tr.Entity:IsPlayer() || tr.Entity:Health() > 0 ) ) then
+	if ( SERVER and IsValid( tr.Entity ) and ( tr.Entity:IsNPC() or tr.Entity:IsPlayer() or tr.Entity:Health() > 0 ) ) then
 		local dmginfo = DamageInfo()
 
 		local attacker = owner

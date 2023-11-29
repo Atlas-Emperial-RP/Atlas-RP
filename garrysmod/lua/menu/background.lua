@@ -136,7 +136,7 @@ function ChangeBackground( currentgm )
 	end
 
 	local mat = CreateBackgroundMaterial( img )
-	if ( !mat || mat:IsError() ) then
+	if ( !mat or mat:IsError() ) then
 		print( "Failed to create material for background ", img )
 		table.RemoveByValue( Images, img )
 		ChangeBackground()

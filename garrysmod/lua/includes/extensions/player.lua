@@ -114,7 +114,7 @@ if ( CLIENT ) then
 
 	function meta:ConCommand( command, bSkipQueue )
 
-		if ( bSkipQueue || IsConCommandBlocked( command ) ) then
+		if ( bSkipQueue or IsConCommandBlocked( command ) ) then
 			SendConCommand( self, command )
 		else
 			CommandList = CommandList or {}

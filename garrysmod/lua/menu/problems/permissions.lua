@@ -99,7 +99,7 @@ function PANEL:Paint( w, h )
 
 	surface.SetMaterial( arrowMat )
 	surface.SetDrawColor( white )
-	surface.DrawTexturedRectRotated( w - 20, 20, 20, 20, self.Collapsed and 180 || 0 )
+	surface.DrawTexturedRectRotated( w - 20, 20, 20, 20, self.Collapsed and 180 or 0 )
 
 end
 

@@ -108,7 +108,7 @@ frame_blend.ShouldSkipFrame = function()
 
 	local padding = math.floor( pp_fb_frames:GetInt() * pp_fb_shutter:GetFloat() * 0.5 )
 
-	if ( NumFramesTaken < padding || NumFramesTaken >= pp_fb_frames:GetInt() - padding ) then
+	if ( NumFramesTaken < padding or NumFramesTaken >= pp_fb_frames:GetInt() - padding ) then
 		return true
 	end
 

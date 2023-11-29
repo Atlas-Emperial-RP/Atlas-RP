@@ -19,7 +19,7 @@ end
 
 function GetResults( str, types, maxResults )
 
-	if ( !maxResults || maxResults < 1 ) then maxResults = 1024 end
+	if ( !maxResults or maxResults < 1 ) then maxResults = 1024 end
 
 	local str = str:lower()
 	if ( str == "" ) then return {} end
