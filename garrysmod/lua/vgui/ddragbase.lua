@@ -72,7 +72,7 @@ end
 function PANEL:DropAction_Normal( Drops, bDoDrop, Command, x, y )
 
 	local closest = self:GetClosestChild( x, y )
-	if ( !IsValid( closest ) ) then
+	if ( not IsValid( closest ) ) then
 		return self:DropAction_Simple( Drops, bDoDrop, Command, x, y )
 	end
 
@@ -97,7 +97,7 @@ function PANEL:DropAction_Normal( Drops, bDoDrop, Command, x, y )
 
 	if ( table.HasValue( Drops, closest ) ) then return end
 
-	if ( !bDoDrop and !self:GetUseLiveDrag() ) then return end
+	if ( not bDoDrop and not self:GetUseLiveDrag() ) then return end
 
 	-- This keeps the drop order the same,
 	-- whether we add it before an object or after
@@ -130,6 +130,7 @@ function PANEL:DropAction_Normal( Drops, bDoDrop, Command, x, y )
 			v:MoveToAfter( closest )
 		end
 
+		::continue::
 	end
 
 	self:OnModified()

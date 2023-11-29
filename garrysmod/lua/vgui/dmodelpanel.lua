@@ -49,10 +49,10 @@ function PANEL:SetModel( strModelName )
 	end
 
 	-- Note: Not in menu dll
-	if ( !ClientsideModel ) then return end
+	if ( not ClientsideModel ) then return end
 
 	self.Entity = ClientsideModel( strModelName, RENDERGROUP_OTHER )
-	if ( !IsValid( self.Entity ) ) then return end
+	if ( not IsValid( self.Entity ) ) then return end
 
 	self.Entity:SetNoDraw( true )
 	self.Entity:SetIK( false )
@@ -68,7 +68,7 @@ end
 
 function PANEL:GetModel()
 
-	if ( !IsValid( self.Entity ) ) then return end
+	if ( not IsValid( self.Entity ) ) then return end
 
 	return self.Entity:GetModel()
 
@@ -117,14 +117,14 @@ end
 
 function PANEL:Paint( w, h )
 
-	if ( !IsValid( self.Entity ) ) then return end
+	if ( not IsValid( self.Entity ) ) then return end
 
 	local x, y = self:LocalToScreen( 0, 0 )
 
 	self:LayoutEntity( self.Entity )
 
 	local ang = self.aLookAngle
-	if ( !ang ) then
+	if ( not ang ) then
 		ang = ( self.vLookatPos - self.vCamPos ):Angle()
 	end
 

@@ -22,7 +22,7 @@ local ConVars = {}
 function GetConVarCallbacks( name, createIfNotFound )
 
 	local tab = ConVars[ name ]
-	if ( createIfNotFound and !tab ) then
+	if ( createIfNotFound and not tab ) then
 		tab = {}
 		ConVars[ name ] = tab
 	end
@@ -38,7 +38,7 @@ end
 function OnConVarChanged( name, old, new )
 
 	local tab = GetConVarCallbacks( name )
-	if ( !tab ) then return end
+	if ( not tab ) then return end
 
 	for i = 1, #tab do
 		local callback = tab[ i ]
@@ -63,7 +63,7 @@ function AddChangeCallback( name, func, identifier )
 
 	local tab = GetConVarCallbacks( name, true )
 
-	if ( !identifier ) then
+	if ( not identifier ) then
 		table.insert( tab, func )
 		return
 	end

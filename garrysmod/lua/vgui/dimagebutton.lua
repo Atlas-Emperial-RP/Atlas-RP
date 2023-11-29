@@ -71,7 +71,7 @@ end
 
 function PANEL:DepressImage()
 
-	if ( !self.m_bDepressImage ) then return end
+	if ( not self.m_bDepressImage ) then return end
 
 	self.m_bImageDepressed = true
 

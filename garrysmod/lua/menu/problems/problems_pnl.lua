@@ -90,7 +90,7 @@ function PANEL:ReceivedError( uid, err )
 
 	local groupID = err.type or "Other"
 	local pnl = self.ErrorPanels[ groupID ]
-	if ( !IsValid( pnl ) ) then
+	if ( not IsValid( pnl ) ) then
 		pnl = self.LuaErrorList:Add( "LuaProblemGroup" )
 		pnl:SetTitleAndID( err.title, err.addonid, groupID )
 		self.ErrorPanels[ groupID ] = pnl
@@ -114,7 +114,7 @@ function PANEL:ReceivedProblem( uid, prob )
 
 	local groupID = prob.type or "other"
 	local pnl = self.ProblemPanels[ groupID ]
-	if ( !IsValid( pnl ) ) then
+	if ( not IsValid( pnl ) ) then
 		pnl = self.ProblemsList:Add( "GenericProblemGroup" )
 		pnl:SetGroup( groupID )
 		self.ProblemPanels[ groupID ] = pnl

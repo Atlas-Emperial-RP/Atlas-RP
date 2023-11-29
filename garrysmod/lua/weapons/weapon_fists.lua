@@ -101,7 +101,7 @@ function SWEP:DealDamage()
 		mask = MASK_SHOT_HULL
 	} )
 
-	if ( !IsValid( tr.Entity ) ) then
+	if ( not IsValid( tr.Entity ) ) then
 		tr = util.TraceHull( {
 			start = owner:GetShootPos(),
 			endpos = owner:GetShootPos() + owner:GetAimVector() * self.HitDistance,
@@ -113,7 +113,7 @@ function SWEP:DealDamage()
 	end
 
 	-- We need the second part for single player because SWEP:Think is ran shared in SP
-	if ( tr.Hit and !( game.SinglePlayer() and CLIENT ) ) then
+	if ( tr.Hit and not ( game.SinglePlayer() and CLIENT ) ) then
 		self:EmitSound( HitSound )
 	end
 
@@ -124,7 +124,7 @@ function SWEP:DealDamage()
 		local dmginfo = DamageInfo()
 
 		local attacker = owner
-		if ( !IsValid( attacker ) ) then attacker = self end
+		if ( not IsValid( attacker ) ) then attacker = self end
 		dmginfo:SetAttacker( attacker )
 
 		dmginfo:SetInflictor( self )

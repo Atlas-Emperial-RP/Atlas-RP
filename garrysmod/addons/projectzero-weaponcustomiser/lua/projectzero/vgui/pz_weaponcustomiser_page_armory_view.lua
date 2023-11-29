@@ -348,9 +348,9 @@ function PANEL:SetWeaponClass( weaponClass )
     
                 local startX = self2:LocalToScreen( 0, 0 )
                 for k, v in ipairs( self2.pnlCanvas:GetChildren() ) do
-                    if( not v.SetShadowBounds ) then goto continue end
+                    if( not v.SetShadowBounds ) then goto continue_1 end
                     v:SetShadowBounds( startX, 0, startX+w, ScrH() )
-                    ::continue::
+                    ::continue_1::
                 end
             end
 

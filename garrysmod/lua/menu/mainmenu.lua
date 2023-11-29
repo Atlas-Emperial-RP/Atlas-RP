@@ -78,7 +78,7 @@ function PANEL:Paint()
 		end
 	end
 
-	if ( !self.IsInGame ) then return end
+	if ( not self.IsInGame ) then return end
 
 	local canAdd = CanAddServerToFavorites()
 	local isFav = serverlist.IsCurrentServerFavorite()
@@ -123,7 +123,7 @@ function PANEL:UpdateBackgroundImages()
 	--
 	-- If there's screenshots in gamemodes/<gamemode>/backgrounds/*.jpg use them
 	--
-	if ( !self:ScreenshotScan( "gamemodes/" .. engine.ActiveGamemode() .. "/backgrounds/" ) ) then
+	if ( not self:ScreenshotScan( "gamemodes/" .. engine.ActiveGamemode() .. "/backgrounds/" ) ) then
 
 		--
 		-- If there's no gamemode specific here we'll use the default backgrounds
@@ -166,11 +166,13 @@ function UpdateServerSettings()
 			array.settings = {}
 			for k, v in pairs( Settings.settings ) do
 				local cvar = GetConVar( v.name )
-				if ( !cvar ) then goto continue end
+				if ( not cvar ) then goto continue end
 
 				array.settings[ k ] = v
 				array.settings[ k ].Value = cvar:GetString()
 				array.settings[ k ].Singleplayer = v.singleplayer and true or false
+
+				::continue::
 			end
 
 		end
@@ -208,7 +210,7 @@ local NewsList = {}
 
 GetAPIManifest( function( result )
 	result = util.JSONToTable( result )
-	if ( !result ) then return end
+	if ( not result ) then return end
 
 	NewsList = result.News and result.News.Blogs or {}
 	LoadNewsList()
@@ -229,7 +231,7 @@ GetAPIManifest( function( result )
 end )
 
 function LoadNewsList()
-	if ( !pnlMainMenu ) then return end
+	if ( not pnlMainMenu ) then return end
 
 	local json = util.TableToJSON( NewsList )
 	local bHide = cookie.GetString( "hide_newslist", "false" ) == "true"
@@ -331,13 +333,13 @@ function GetServers( category, id )
 
 			end
 
-			return !ShouldStop[ category ]
+			return not ShouldStop[ category ]
 
 		end,
 
 		CallbackFailed = function( address )
 
-			if ( Servers[ category ] and Servers[ category ][ address ] ) then print( "Server Browser Error!", address, category ) return end
+			if ( Servers[ category ] and Servers[ category ][ address ] ) then print( "Server Browser Errornot ", address, category ) return end
 			Servers[ category ][ address ] = true
 
 			local version = string.JavascriptSafe( tostring( VERSION ) )
@@ -345,7 +347,7 @@ function GetServers( category, id )
 			pnlMainMenu:Call( string.format( 'AddServer( "%s", "%s", %i, "%s", "%s", "%s", %i, %i, %i, %s, %i, "%s", "%s", "%s", %s, "%s", "%s", "%s", "%s" );',
 					category, id, 2000, "The server at address " .. address .. " failed to respond", "Unreachable Servers", "no_map", 0, 2, 0, 'false', 0, address, 'unkn', '0', 'true', version, tostring( serverlist.IsServerFavorite( address ) ), "", "" ) )
 
-			return !ShouldStop[ category ]
+			return not ShouldStop[ category ]
 
 		end,
 
@@ -385,7 +387,7 @@ end
 --
 function LanguageChanged( lang )
 
-	if ( !IsValid( pnlMainMenu ) ) then return end
+	if ( not IsValid( pnlMainMenu ) ) then return end
 
 	UpdateLanguages()
 	pnlMainMenu:Call( "UpdateLanguage( \"" .. lang:JavascriptSafe() .. "\" )" )
@@ -459,7 +461,7 @@ end )
 
 hook.Add( "GameContentChanged", "RefreshMainMenu", function()
 
-	if ( !IsValid( pnlMainMenu ) ) then return end
+	if ( not IsValid( pnlMainMenu ) ) then return end
 
 	pnlMainMenu:RefreshContent()
 

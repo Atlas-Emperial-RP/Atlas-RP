@@ -69,7 +69,7 @@ function PANEL:OnKeyCodeTyped( code )
 
 	self:OnKeyCode( code )
 
-	if ( code == KEY_ENTER and !self:IsMultiline() and self:GetEnterAllowed() ) then
+	if ( code == KEY_ENTER and not self:IsMultiline() and self:GetEnterAllowed() ) then
 
 		if ( IsValid( self.Menu ) ) then
 			self.Menu:Remove()
@@ -144,7 +144,7 @@ function PANEL:UpdateFromHistory()
 	if ( pos > #self.History ) then pos = 0 end
 
 	local text = self.History[ pos ]
-	if ( !text ) then text = "" end
+	if ( not text ) then text = "" end
 
 	self:SetText( text )
 	self:SetCaretPos( text:len() )
@@ -166,7 +166,7 @@ function PANEL:UpdateFromMenu()
 	if ( pos > num ) then pos = 0 end
 
 	local item = self.Menu:GetChild( pos )
-	if ( !item ) then
+	if ( not item ) then
 		self:SetText( "" )
 		self.HistoryPos = pos
 		return
@@ -194,7 +194,7 @@ function PANEL:OnTextChanged( noMenuRemoval )
 		self:OnValueChange( self:GetText() )
 	end
 
-	if ( IsValid( self.Menu ) and !noMenuRemoval ) then
+	if ( IsValid( self.Menu ) and not noMenuRemoval ) then
 		self.Menu:Remove()
 	end
 
@@ -212,7 +212,7 @@ end
 
 function PANEL:OpenAutoComplete( tab )
 
-	if ( !tab ) then return end
+	if ( not tab ) then return end
 	if ( #tab == 0 ) then return end
 
 	self.Menu = DermaMenu()
@@ -296,10 +296,10 @@ end
 function PANEL:CheckNumeric( strValue )
 
 	-- Not purely numeric, don't run the check
-	if ( !self:GetNumeric() ) then return false end
+	if ( not self:GetNumeric() ) then return false end
 
 	-- God I hope numbers look the same in every language
-	if ( !string.find( strAllowedNumericCharacters, strValue, 1, true ) ) then
+	if ( not string.find( strAllowedNumericCharacters, strValue, 1, true ) ) then
 
 		-- Noisy Error?
 		return true
@@ -311,11 +311,11 @@ function PANEL:CheckNumeric( strValue )
 end
 
 function PANEL:SetDisabled( bDisabled )
-	self:SetEnabled( !bDisabled )
+	self:SetEnabled( not bDisabled )
 end
 
 function PANEL:GetDisabled( bDisabled )
-	return !self:IsEnabled()
+	return not self:IsEnabled()
 end
 
 function PANEL:AllowInput( strValue )
@@ -365,7 +365,7 @@ end
 
 function PANEL:AddHistory( txt )
 
-	if ( !txt or txt == "" ) then return end
+	if ( not txt or txt == "" ) then return end
 
 	table.RemoveByValue( self.History, txt )
 	table.insert( self.History, txt )
@@ -379,7 +379,7 @@ end
 function PANEL:GetInt()
 
 	local num = tonumber( self:GetText() )
-	if ( !num ) then return nil end
+	if ( not num ) then return nil end
 
 	return math.Round( num )
 
@@ -410,9 +410,9 @@ derma.DefineControl( "DTextEntry", "A simple TextEntry control", PANEL, "TextEnt
 function TextEntryLoseFocus( panel, mcode )
 
 	local pnl = vgui.GetKeyboardFocus()
-	if ( !pnl ) then return end
+	if ( not pnl ) then return end
 	if ( pnl == panel ) then return end
-	if ( !pnl.m_bLoseFocusOnClickAway ) then return end
+	if ( not pnl.m_bLoseFocusOnClickAway ) then return end
 
 	-- We gotta find the EdtiablePanel parent and call KillFocus on it
 	-- We do it from the panel clicked, not the KB focus, which is necessary for DTextEntry autocomplete to not break

@@ -1,5 +1,5 @@
 
-if ( !IsMounted( "ep2" ) ) then return end
+if ( not IsMounted( "ep2" ) ) then return end
 
 AddCSLuaFile()
 
@@ -60,7 +60,7 @@ function SWEP:PrimaryAttack()
 	SuppressHostEvents( NULL ) -- Do not suppress the flechette effects
 
 	local ent = ents.Create( "hunter_flechette" )
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	local owner = self:GetOwner()
 

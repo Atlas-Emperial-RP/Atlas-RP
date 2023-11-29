@@ -66,7 +66,7 @@ end
 --
 function Contains( list, value )
 
-	if ( !g_Lists[ list ] ) then return false end
+	if ( not g_Lists[ list ] ) then return false end
 
 	for k, v in pairs( g_Lists[ list ] ) do
 
@@ -84,7 +84,7 @@ end
 --
 function HasEntry( list, key )
 
-	if ( !g_Lists[ list ] ) then return false end
+	if ( not g_Lists[ list ] ) then return false end
 	return g_Lists[ list ][ key ] ~= nil
 
 end

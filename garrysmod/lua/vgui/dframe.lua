@@ -120,11 +120,11 @@ end
 
 function PANEL:SetIcon( str )
 
-	if ( !str and IsValid( self.imgIcon ) ) then
+	if ( not str and IsValid( self.imgIcon ) ) then
 		return self.imgIcon:Remove() -- We are instructed to get rid of the icon, do it and bail.
 	end
 
-	if ( !IsValid( self.imgIcon ) ) then
+	if ( not IsValid( self.imgIcon ) ) then
 		self.imgIcon = vgui.Create( "DImage", self )
 	end
 

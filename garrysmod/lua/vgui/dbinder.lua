@@ -15,7 +15,7 @@ end
 function PANEL:UpdateText()
 
 	local str = input.GetKeyName( self:GetSelectedNumber() )
-	if ( !str ) then str = "NONE" end
+	if ( not str ) then str = "NONE" end
 
 	str = language.GetPhrase( str )
 

@@ -31,7 +31,7 @@ end
 -----------------------------------------------------------]]
 function IsBasedOn( name, base )
 	local t = GetStored( name )
-	if ( !t ) then return false end
+	if ( not t ) then return false end
 	if ( t.Base == name ) then return false end
 
 	if ( t.Base == base ) then return true end
@@ -64,7 +64,7 @@ function Register( t, name )
 	} )
 
 	-- Allow all SWEPS to be duplicated, unless specified
-	if ( !t.DisableDuplicator ) then
+	if ( not t.DisableDuplicator ) then
 		duplicator.Allow( name )
 	end
 
@@ -130,7 +130,7 @@ end
 function Get( name, retval )
 
 	local Stored = GetStored( name )
-	if ( !Stored ) then return nil end
+	if ( not Stored ) then return nil end
 
 	-- Create/copy a new table
 	local retval = retval or {}
@@ -149,7 +149,7 @@ function Get( name, retval )
 
 		local base = Get( retval.Base )
 
-		if ( !base ) then
+		if ( not base ) then
 			Msg( "ERROR: Trying to derive weapon " .. tostring( name ) .. " from non existant SWEP " .. tostring( retval.Base ) .. "!\n" )
 		else
 			retval = TableInherit( retval, base )

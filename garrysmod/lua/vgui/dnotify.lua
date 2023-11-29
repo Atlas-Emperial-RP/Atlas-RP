@@ -27,7 +27,7 @@ end
 
 function PANEL:AddItem( item, LifeLength )
 
-	if ( !IsValid( item ) ) then return end
+	if ( not IsValid( item ) ) then return end
 	LifeLength = LifeLength or self.m_fLifeLength
 
 	item:SetVisible( true )
@@ -47,7 +47,7 @@ function PANEL:Think()
 	local bChange = false
 	for k, panel in pairs( self.Items ) do
 
-		if ( !IsValid( panel ) ) then
+		if ( not IsValid( panel ) ) then
 
 			self.Items[ k ] = false
 			bChange = true

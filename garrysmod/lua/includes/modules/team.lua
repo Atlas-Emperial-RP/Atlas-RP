@@ -39,21 +39,21 @@ end
 
 function Valid( id )
 
-	if ( !TeamInfo[id] ) then return false end
+	if ( not TeamInfo[id] ) then return false end
 	return true
 
 end
 
 function Joinable( id )
 
-	if ( !TeamInfo[id] ) then return false end
+	if ( not TeamInfo[id] ) then return false end
 	return TeamInfo[id].Joinable
 
 end
 
 function GetSpawnPoint( id )
 
-	if ( !TeamInfo[id] ) then return end
+	if ( not TeamInfo[id] ) then return end
 	return TeamInfo[id].SpawnPointTable
 
 end
@@ -63,7 +63,7 @@ function GetSpawnPoints( id )
 	if ( IsTableOfEntitiesValid( TeamInfo[id].SpawnPoints ) ) then return TeamInfo[id].SpawnPoints end
 
 	local SpawnPointTable = team.GetSpawnPoint( id )
-	if ( !SpawnPointTable ) then return end
+	if ( not SpawnPointTable ) then return end
 
 	TeamInfo[id].SpawnPoints = {}
 
@@ -79,8 +79,8 @@ end
 
 function SetSpawnPoint( id, ent_name )
 
-	if ( !TeamInfo[id] ) then return end
-	if ( !istable( ent_name ) ) then ent_name = {ent_name} end
+	if ( not TeamInfo[id] ) then return end
+	if ( not istable( ent_name ) ) then ent_name = {ent_name} end
 
 	TeamInfo[id].SpawnPointTable = ent_name
 
@@ -88,8 +88,8 @@ end
 
 function SetClass( id, classtable )
 
-	if ( !TeamInfo[id] ) then return end
-	if ( !istable( classtable ) ) then classtable = {classtable} end
+	if ( not TeamInfo[id] ) then return end
+	if ( not istable( classtable ) ) then classtable = {classtable} end
 
 	TeamInfo[id].SelectableClasses = classtable
 
@@ -97,7 +97,7 @@ end
 
 function GetClass( id )
 
-	if ( !TeamInfo[id] ) then return end
+	if ( not TeamInfo[id] ) then return end
 	return TeamInfo[id].SelectableClasses
 
 end
@@ -154,14 +154,14 @@ end
 
 function GetName( index )
 
-	if (!TeamInfo[index]) then return "" end
+	if (not TeamInfo[index]) then return "" end
 	return TeamInfo[index].Name
 
 end
 
 function SetColor( index, color )
 
-	if ( !TeamInfo[ index ] ) then return false; end
+	if ( not TeamInfo[ index ] ) then return false; end
 	TeamInfo[ index ].Color = color
 
 	return color
@@ -170,7 +170,7 @@ end
 
 function GetColor( index )
 
-	if (!TeamInfo[index]) then return DefaultColor end
+	if (not TeamInfo[index]) then return DefaultColor end
 	return table.Copy( TeamInfo[index].Color )
 
 end

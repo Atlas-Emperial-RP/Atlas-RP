@@ -21,6 +21,7 @@ function ws_dupe:FetchLocal( offset, perpage )
 
 		table.insert( saves, entry )
 
+		::continue::
 	end
 
 	local results = {

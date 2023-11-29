@@ -55,7 +55,7 @@ function Register( t, name )
 	if ( hook.Run( "PreRegisterSENT", t, name ) == false ) then return end
 
 	local Base = t.Base
-	if ( !Base ) then Base = BaseClasses[ t.Type ] end
+	if ( not Base ) then Base = BaseClasses[ t.Type ] end
 
 	local old = SEntList[ name ]
 	local tab = {}
@@ -66,14 +66,14 @@ function Register( t, name )
 	tab.Base		= Base
 	tab.t.ClassName	= name
 
-	if ( !Base ) then
+	if ( not Base ) then
 		Msg( "WARNING: Scripted entity " .. name .. " has an invalid base entity!\n" )
 	end
 
 	SEntList[ name ] = tab
 
 	-- Allow all SENTS to be duplicated, unless specified
-	if ( !t.DisableDuplicator ) then
+	if ( not t.DisableDuplicator ) then
 		duplicator.Allow( name )
 	end
 
@@ -116,7 +116,7 @@ function Register( t, name )
 
 	end
 
-	if ( !t.Spawnable ) then return end
+	if ( not t.Spawnable ) then return end
 
 	list.Set( "SpawnableEntities", name, {
 		-- Required information
@@ -178,7 +178,7 @@ function Get( name, retval )
 
 		local base = Get( SEntList[ name ].Base )
 
-		if ( !base ) then
+		if ( not base ) then
 			Msg("ERROR: Trying to derive entity " .. tostring( name ) .. " from non existant entity " .. tostring( SEntList[ name ].Base ) .. "!\n" )
 		else
 			retval = TableInherit( retval, base )
@@ -259,11 +259,11 @@ end
 
 function GetMember( entity_name, membername )
 
-	if ( !entity_name ) then return end
+	if ( not entity_name ) then return end
 
 	local ent = SEntList[ entity_name ]
 
-	if ( !ent ) then return end
+	if ( not ent ) then return end
 
 	local member = ent.t[ membername ]
 	if ( member ~= nil ) then return member end

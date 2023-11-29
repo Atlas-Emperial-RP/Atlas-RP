@@ -69,27 +69,27 @@ motionsensor.ProcessAngle = function( translator, sensor, pos, ang, special_vect
 	-- we will be added to the list to process again.
 	--
 	if ( v.up_up ) then	
-		if ( !ang[ v.up_up ] ) then return end			
+		if ( not ang[ v.up_up ] ) then return end			
 		up = ang[ v.up_up ]:Up()			
 	end
 
 	if ( v.up_dn ) then	
-		if ( !ang[ v.up_dn ] ) then return end			
+		if ( not ang[ v.up_dn ] ) then return end			
 		up = ang[ v.up_dn ]:Up() * -1			
 	end
 
 	if ( v.up_fwd ) then		
-		if ( !ang[ v.up_fwd ] ) then return end		
+		if ( not ang[ v.up_fwd ] ) then return end		
 		up = ang[ v.up_fwd ]:Forward()		
 	end
 
 	if ( v.up_lft ) then			
-		if ( !ang[ v.up_lft ] ) then return end	
+		if ( not ang[ v.up_lft ] ) then return end	
 		up = ang[ v.up_lft ]:Right() * -1	
 	end
 
 	if ( v.up_rgt ) then	
-		if ( !ang[ v.up_rgt ] ) then return end			
+		if ( not ang[ v.up_rgt ] ) then return end			
 		up = ang[ v.up_rgt ]:Right()		
 	end
 
@@ -125,7 +125,7 @@ end
 --
 motionsensor.ProcessAnglesTable = function( translator, sensor, pos, rotation )
 
-	if ( !translator.AnglesTable ) then return {} end
+	if ( not translator.AnglesTable ) then return {} end
 
 	local ang = {}
 
@@ -167,7 +167,7 @@ motionsensor.ProcessAnglesTable = function( translator, sensor, pos, rotation )
 
 		for k, v in pairs( cur_process ) do
 
-			if ( !motionsensor.ProcessAngle( translator, sensor, pos, ang, special_vectors, v, translator.AnglesTable[v] ) ) then
+			if ( not motionsensor.ProcessAngle( translator, sensor, pos, ang, special_vectors, v, translator.AnglesTable[v] ) ) then
 				table.insert( reprocess, v )
 			end
 
@@ -194,7 +194,7 @@ end
 --
 motionsensor.ProcessPositionTable = function( translator, sensor )
 
-	if ( !translator.PositionTable ) then return {} end
+	if ( not translator.PositionTable ) then return {} end
 
 	local pos = {}
 

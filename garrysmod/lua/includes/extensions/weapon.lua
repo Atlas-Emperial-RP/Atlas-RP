@@ -5,7 +5,7 @@ local meta		= FindMetaTable( "Weapon" )
 local entity	= FindMetaTable( "Entity" )
 
 -- Return if there's nothing to add on to
-if ( !meta ) then return end
+if ( not meta ) then return end
 
 --
 -- Entity index accessor. This used to be done in engine, but it's done in Lua now because it's faster

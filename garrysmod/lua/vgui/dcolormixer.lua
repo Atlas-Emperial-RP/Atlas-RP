@@ -141,7 +141,7 @@ end
 
 function PANEL:SetLabel( text )
 
-	if ( !text or text == "" ) then
+	if ( not text or text == "" ) then
 		self.label:SetVisible( false )
 
 		return
@@ -232,7 +232,7 @@ function PANEL:SetBaseColor( color )
 end
 
 function PANEL:UpdateConVar( strName, strKey, color )
-	if ( !strName ) then return end
+	if ( not strName ) then return end
 	local col = color[ strKey ]
 
 	RunConsoleCommand( strName, tostring( col ) )
@@ -338,7 +338,7 @@ end
 
 function PANEL:DoConVarThink( convar )
 
-	if ( !convar ) then return end
+	if ( not convar ) then return end
 
 	local fValue = GetConVarNumber( convar )
 	local fOldValue = self[ "ConVarOld" .. convar ]

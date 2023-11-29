@@ -62,8 +62,8 @@ end
 
 hook.Add( "RenderScreenspaceEffects", "RenderMotionBlur", function()
 
-	if ( !pp_motionblur:GetBool() ) then return end
-	if ( !GAMEMODE:PostProcessPermitted( "motion blur" ) ) then return end
+	if ( not pp_motionblur:GetBool() ) then return end
+	if ( not GAMEMODE:PostProcessPermitted( "motion blur" ) ) then return end
 
 	DrawMotionBlur( pp_motionblur_addalpha:GetFloat(), pp_motionblur_drawalpha:GetFloat(), pp_motionblur_delay:GetFloat() )
 

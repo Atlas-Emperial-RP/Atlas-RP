@@ -50,7 +50,7 @@ end )
 
 cvars.AddChangeCallback( "pp_dof", function( name, oldvalue, newvalue )
 
-	if ( !GAMEMODE:PostProcessPermitted( "dof" ) ) then return end
+	if ( not GAMEMODE:PostProcessPermitted( "dof" ) ) then return end
 
 	if ( newvalue ~= "0" ) then
 		DOF_Start()

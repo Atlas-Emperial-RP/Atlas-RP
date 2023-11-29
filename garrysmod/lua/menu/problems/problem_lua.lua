@@ -21,7 +21,7 @@ function PANEL:Init()
 	self.CopyBtn:SetImage( "icon16/page_copy.png" )
 	self.CopyBtn:SetSize( 16, 16 )
 	self.CopyBtn.DoClick = function( btm )
-		if ( !self.Problem ) then return end
+		if ( not self.Problem ) then return end
 
 		local prepend = ""
 		if ( self.Problem.title and self.Problem.title:len() > 0 and self.Problem.title ~= "Other" ) then prepend = "[" .. self.Problem.title .. "] " end
@@ -51,7 +51,7 @@ function PANEL:Paint( w, h )
 	bgClr.a = self:GetAlpha()
 
 	-- No info yet
-	if ( !self.Problem ) then
+	if ( not self.Problem ) then
 		draw.RoundedBox( 0, 0, 0, w, h, bgClr )
 		return
 	end
@@ -153,7 +153,7 @@ function PANEL:OnMousePressed( code )
 
 	if ( code ~= MOUSE_LEFT ) then return end
 
-	self.Collapsed = !self.Collapsed
+	self.Collapsed = not self.Collapsed
 	self:InvalidateLayout()
 
 	collapsedCache[ self.Title ] = self.Collapsed
@@ -258,7 +258,7 @@ function PANEL:ReceivedError( uid, err )
 	local pnl = self.ErrorPanels[ uid ]
 
 	local shouldSort = false
-	if ( !IsValid( pnl ) ) then
+	if ( not IsValid( pnl ) ) then
 		pnl = self.LuaErrorList:Add( "LuaProblem" )
 		self.ErrorPanels[ uid ] = pnl
 		self:InvalidateLayout()

@@ -154,8 +154,9 @@ function PANEL:Init()
             if( val.Type == PROJECT0.TYPE.Table ) then goto continue end
 
             createVariablesPage = true
-            break
+
             ::continue::
+            break
         end
 
         if( createVariablesPage ) then
@@ -177,7 +178,7 @@ function PANEL:Init()
                     local headerH = PROJECT0.FUNC.ScreenScale( 75 )
                     local customElement = val.Type == PROJECT0.TYPE.Table and val.VguiElement
 
-                    if( val.Type == PROJECT0.TYPE.Table ) then goto continue end
+                    if( val.Type == PROJECT0.TYPE.Table ) then goto continue_1 end
 
                     local variablePanel = vgui.Create( "DPanel", scrollPanel )
                     variablePanel:Dock( TOP )
@@ -243,7 +244,7 @@ function PANEL:Init()
                             PROJECT0.FUNC.RequestConfigChange( configMetaKey, val.Key, textEntry:GetValue() )
                         end
                     end
-                    ::continue::
+                    ::continue_1::
                 end
             end
         end

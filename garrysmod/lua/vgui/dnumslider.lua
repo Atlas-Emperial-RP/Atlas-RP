@@ -94,13 +94,13 @@ function PANEL:GetRange()
 end
 
 function PANEL:ResetToDefaultValue()
-	if ( !self:GetDefaultValue() ) then return end
+	if ( not self:GetDefaultValue() ) then return end
 	self:SetValue( self:GetDefaultValue() )
 end
 
 function PANEL:SetMin( min )
 
-	if ( !min ) then min = 0 end
+	if ( not min ) then min = 0 end
 
 	self.Scratch:SetMin( tonumber( min ) )
 	self:UpdateNotches()
@@ -109,7 +109,7 @@ end
 
 function PANEL:SetMax( max )
 
-	if ( !max ) then max = 0 end
+	if ( not max ) then max = 0 end
 
 	self.Scratch:SetMax( tonumber( max ) )
 	self:UpdateNotches()

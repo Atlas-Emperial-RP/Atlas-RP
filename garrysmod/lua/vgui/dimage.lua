@@ -36,7 +36,7 @@ end
 
 function PANEL:LoadMaterial()
 
-	if ( !self:Unloaded() ) then return end
+	if ( not self:Unloaded() ) then return end
 
 	self:DoLoadMaterial()
 
@@ -75,7 +75,7 @@ function PANEL:SetMaterial( Mat )
 
 	self.m_Material = Mat
 
-	if ( !self.m_Material ) then return end
+	if ( not self.m_Material ) then return end
 
 	local Texture = self.m_Material:GetTexture( "$basetexture" )
 	if ( Texture ) then
@@ -90,7 +90,7 @@ end
 
 function PANEL:SetImage( strImage, strBackup )
 
-	if ( strBackup and !file.Exists( "materials/" .. strImage .. ".vmt", "GAME" ) and !file.Exists( "materials/" .. strImage, "GAME" ) ) then
+	if ( strBackup and not file.Exists( "materials/" .. strImage .. ".vmt", "GAME" ) and not file.Exists( "materials/" .. strImage, "GAME" ) ) then
 		strImage = strBackup
 	end
 
@@ -156,7 +156,7 @@ function PANEL:PaintAt( x, y, dw, dh )
 	dw, dh = dw or self:GetWide(), dh or self:GetTall()
 	self:LoadMaterial()
 
-	if ( !self.m_Material ) then return true end
+	if ( not self.m_Material ) then return true end
 
 	surface.SetMaterial( self.m_Material )
 	surface.SetDrawColor( self.m_Color.r, self.m_Color.g, self.m_Color.b, self.m_Color.a )

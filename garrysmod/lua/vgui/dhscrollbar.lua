@@ -29,7 +29,7 @@ end
 
 function PANEL:SetEnabled( b )
 
-	if ( !b ) then
+	if ( not b ) then
 
 		self.Offset = 0
 		self:SetScroll( 0 )
@@ -83,7 +83,7 @@ end
 
 function PANEL:OnMouseWheeled( dlta )
 
-	if ( !self:IsVisible() ) then return false end
+	if ( not self:IsVisible() ) then return false end
 
 	-- We return true if the scrollbar changed.
 	-- If it didn't, we feed the mousehweeling to the parent panel
@@ -105,7 +105,7 @@ end
 
 function PANEL:SetScroll( scrll )
 
-	if ( !self.Enabled ) then self.Scroll = 0 return end
+	if ( not self.Enabled ) then self.Scroll = 0 return end
 
 	self.Scroll = math.Clamp( scrll, 0, self.CanvasSize )
 
@@ -142,14 +142,14 @@ end
 
 function PANEL:GetScroll()
 
-	if ( !self.Enabled ) then self.Scroll = 0 end
+	if ( not self.Enabled ) then self.Scroll = 0 end
 	return self.Scroll
 
 end
 
 function PANEL:GetOffset()
 
-	if ( !self.Enabled ) then return 0 end
+	if ( not self.Enabled ) then return 0 end
 	return self.Scroll * -1
 
 end
@@ -191,8 +191,8 @@ end
 
 function PANEL:OnCursorMoved( x, y )
 
-	if ( !self.Enabled ) then return end
-	if ( !self.Dragging ) then return end
+	if ( not self.Enabled ) then return end
+	if ( not self.Dragging ) then return end
 
 	x, y = self:ScreenToLocal( gui.MouseX(), 0 )
 
@@ -213,7 +213,7 @@ end
 
 function PANEL:Grip()
 
-	if ( !self.Enabled ) then return end
+	if ( not self.Enabled ) then return end
 	if ( self.BarSize == 0 ) then return end
 
 	self:MouseCapture( true )

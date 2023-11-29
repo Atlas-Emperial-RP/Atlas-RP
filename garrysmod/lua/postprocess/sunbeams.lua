@@ -13,7 +13,7 @@ local pp_sunbeams_sunsize = CreateClientConVar( "pp_sunbeams_sunsize", "0.075", 
 
 function DrawSunbeams( darken, multiply, sunsize, sunx, suny )
 
-	if ( !render.SupportsPixelShaders_2_0() ) then return end
+	if ( not render.SupportsPixelShaders_2_0() ) then return end
 
 	render.CopyRenderTargetToTexture( render.GetScreenEffectTexture() )
 
@@ -30,13 +30,13 @@ end
 
 hook.Add( "RenderScreenspaceEffects", "RenderSunbeams", function()
 
-	if ( !pp_sunbeams:GetBool() ) then return end
-	if ( !GAMEMODE:PostProcessPermitted( "sunbeams" ) ) then return end
-	if ( !render.SupportsPixelShaders_2_0() ) then return end
+	if ( not pp_sunbeams:GetBool() ) then return end
+	if ( not GAMEMODE:PostProcessPermitted( "sunbeams" ) ) then return end
+	if ( not render.SupportsPixelShaders_2_0() ) then return end
 
 	local sun = util.GetSunInfo()
 
-	if ( !sun ) then return end
+	if ( not sun ) then return end
 	if ( sun.obstruction == 0 ) then return end
 
 	local sunpos = EyePos() + sun.direction * 4096

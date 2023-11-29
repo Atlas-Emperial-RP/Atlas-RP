@@ -57,7 +57,7 @@ end
 
 function PANEL:SetBackground( img )
 
-	if ( !self.BGImage ) then
+	if ( not self.BGImage ) then
 		self.BGImage = vgui.Create( "DImage", self )
 	end
 
@@ -68,12 +68,12 @@ end
 
 function PANEL:SetEnabled( b )
 	self.Knob:SetEnabled( b )
-	FindMetaTable( "Panel" ).SetEnabled( self, b ) -- There has to be a better way!
+	FindMetaTable( "Panel" ).SetEnabled( self, b ) -- There has to be a better waynot 
 end
 
 function PANEL:OnCursorMoved( x, y )
 
-	if ( !self.Dragging and !self.Knob.Depressed ) then return end
+	if ( not self.Dragging and not self.Knob.Depressed ) then return end
 
 	local w, h = self:GetSize()
 	local iw, ih = self.Knob:GetSize()
@@ -105,7 +105,7 @@ end
 
 function PANEL:OnMousePressed( mcode )
 
-	if ( !self:IsEnabled() ) then return true end
+	if ( not self:IsEnabled() ) then return true end
 
 	-- When starting dragging with not pressing on the knob.
 	self.Knob.Hovered = true
@@ -206,7 +206,7 @@ function PANEL:SetConVarY( strConVar )
 end
 function PANEL:ConVarChanged( newValue, cvar )
 
-	if ( !cvar or cvar:len() < 2 ) then return end
+	if ( not cvar or cvar:len() < 2 ) then return end
 
 	GetConVar( cvar ):SetFloat( newValue )
 
@@ -217,7 +217,7 @@ function PANEL:ConVarChanged( newValue, cvar )
 end
 function PANEL:ConVarXNumberThink()
 
-	if ( !self.m_strConVarX or #self.m_strConVarX < 2 ) then return end
+	if ( not self.m_strConVarX or #self.m_strConVarX < 2 ) then return end
 
 	local numValue = GetConVarNumber( self.m_strConVarX )
 
@@ -231,7 +231,7 @@ function PANEL:ConVarXNumberThink()
 end
 function PANEL:ConVarYNumberThink()
 
-	if ( !self.m_strConVarY or #self.m_strConVarY < 2 ) then return end
+	if ( not self.m_strConVarY or #self.m_strConVarY < 2 ) then return end
 
 	local numValue = GetConVarNumber( self.m_strConVarY )
 

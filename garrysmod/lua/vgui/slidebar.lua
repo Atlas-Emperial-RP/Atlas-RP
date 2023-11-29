@@ -16,7 +16,7 @@ function PANEL:SetEnabled( b )
 
 	self.Enabled = b
 
-	if ( !b ) then
+	if ( not b ) then
 
 		self:SetScroll( 0 )
 		self.HasChanged = true
@@ -89,7 +89,7 @@ end
 
 function PANEL:OnMouseWheeled( dlta )
 
-	if ( !self.Enabled ) then return end
+	if ( not self.Enabled ) then return end
 
 	self:AddVelocity( dlta )
 	return true
@@ -159,7 +159,7 @@ end
 
 function PANEL:Paint()
 
-	if ( !self.Enabled or self.BarScale <= 0 ) then	return true	end
+	if ( not self.Enabled or self.BarScale <= 0 ) then	return true	end
 
 	draw.RoundedBox( 4, 0, 0, self:GetWide(), self:GetTall(), Color( 200, 200, 200, 100 ) )
 
@@ -179,7 +179,7 @@ end
 
 function PANEL:Grip( direction )
 
-	if ( !self.Enabled ) then return end
+	if ( not self.Enabled ) then return end
 
 	self:MouseCapture( true )
 	self.DragDirection = direction or ( -1 / self.BarScale )

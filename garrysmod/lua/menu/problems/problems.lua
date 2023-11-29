@@ -78,7 +78,7 @@ end
 
 function ClearProblem( id )
 
-	if ( !Problems[ id ] ) then return end
+	if ( not Problems[ id ] ) then return end
 
 	Problems[ id ] = nil
 
@@ -92,7 +92,7 @@ function FireProblem( prob )
 
 	local probID = prob.id or prob.text
 
-	if ( !Problems[ probID ] ) then
+	if ( not Problems[ probID ] ) then
 		CountProblem( prob.severity )
 	end
 
@@ -108,16 +108,16 @@ local function FireError( str, realm, stack, addontitle, addonid )
 	errorText = string.Replace( errorText, "\t", ( " " ):rep( 12 ) ) -- Ew
 
 	for i, t in pairs( stack ) do
-		if ( !t.Function or t.Function == "" ) then t.Function = "unknown" end
+		if ( not t.Function or t.Function == "" ) then t.Function = "unknown" end
 
 		errorText = errorText .. "\n" .. ("    "):rep( i ) .. i .. ". " .. t.Function .. " - " .. t.File .. ":" .. t.Line
 	end
 
 	local errorUniqueID = errorText .. realm
 
-	if ( !addontitle or addontitle == "" ) then addontitle = "Other" end
+	if ( not addontitle or addontitle == "" ) then addontitle = "Other" end
 
-	if ( !ErrorLog[ errorUniqueID ] ) then
+	if ( not ErrorLog[ errorUniqueID ] ) then
 		local newErr = {
 			text = errorText,
 			realm = realm,
@@ -147,8 +147,8 @@ hook.Add( "OnLuaError", "MenuErrorLogger", function( str, realm, stack, addontit
 		FireError( str, realm, stack, addontitle, addonid )
 	end )
 
-	if ( !good ) then
-		print( "Failed to log a Lua error!\n", err)
+	if ( not good ) then
+		print( "Failed to log a Lua errornot \n", err)
 	end
 
 end )
@@ -169,7 +169,7 @@ function OpenProblemsPanel()
 		ProblemsPanel:ReceivedProblem( id, prob )
 	end
 
-	if ( !anyErrors ) then
+	if ( not anyErrors ) then
 		ProblemsPanel.Tabs:SwitchToName( "#problems.problems" )
 	end
 
@@ -248,10 +248,10 @@ timer.Create( "menu_check_for_problems", 1, 0, function()
 end )
 
 -- Problems that we only need to check on startup
-if ( !render.SupportsHDR() ) then FireProblem( { text = "#problem.no_hdr", type = "hardware" } ) end
-if ( !render.SupportsPixelShaders_1_4() ) then FireProblem( { text = "#problem.no_ps14", type = "hardware" } ) end
-if ( !render.SupportsPixelShaders_2_0() ) then FireProblem( { text = "#problem.no_ps20", type = "hardware" } ) end
-if ( !render.SupportsVertexShaders_2_0() ) then FireProblem( { text = "#problem.no_vs20", type = "hardware" } ) end
+if ( not render.SupportsHDR() ) then FireProblem( { text = "#problem.no_hdr", type = "hardware" } ) end
+if ( not render.SupportsPixelShaders_1_4() ) then FireProblem( { text = "#problem.no_ps14", type = "hardware" } ) end
+if ( not render.SupportsPixelShaders_2_0() ) then FireProblem( { text = "#problem.no_ps20", type = "hardware" } ) end
+if ( not render.SupportsVertexShaders_2_0() ) then FireProblem( { text = "#problem.no_vs20", type = "hardware" } ) end
 
 
 
@@ -272,7 +272,7 @@ hook.Add( "OnNotifyAddonConflict", "AddonConflictNotification", function( addon1
 
 		steamworks.FileInfo( addon1, function( result )
 
-			if ( !result ) then return end
+			if ( not result ) then return end
 
 			AddonConflicts[ id ].addon1 = result.title
 			RefreshAddonConflicts()
@@ -281,7 +281,7 @@ hook.Add( "OnNotifyAddonConflict", "AddonConflictNotification", function( addon1
 
 		steamworks.FileInfo( addon2, function( result )
 
-			if ( !result ) then return end
+			if ( not result ) then return end
 
 			AddonConflicts[ id ].addon2 = result.title
 			RefreshAddonConflicts()

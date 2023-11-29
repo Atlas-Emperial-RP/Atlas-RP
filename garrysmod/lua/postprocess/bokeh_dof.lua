@@ -24,7 +24,7 @@ end
 
 local function OnChange( name, oldvalue, newvalue )
 
-	if ( !GAMEMODE:PostProcessPermitted( "bokeh" ) ) then return end
+	if ( not GAMEMODE:PostProcessPermitted( "bokeh" ) ) then return end
 
 	if ( newvalue ~= "0" ) then
 		DOFModeHack( true )
@@ -37,8 +37,8 @@ cvars.AddChangeCallback( "pp_bokeh", OnChange )
 
 hook.Add( "RenderScreenspaceEffects", "RenderBokeh", function()
 
-	if ( !pp_bokeh:GetBool() ) then return end
-	if ( !GAMEMODE:PostProcessPermitted( "bokeh" ) ) then return end
+	if ( not pp_bokeh:GetBool() ) then return end
+	if ( not GAMEMODE:PostProcessPermitted( "bokeh" ) ) then return end
 
 	DrawBokehDOF( pp_bokeh_blur:GetFloat(), pp_bokeh_distance:GetFloat(), pp_bokeh_focus:GetFloat() )
 

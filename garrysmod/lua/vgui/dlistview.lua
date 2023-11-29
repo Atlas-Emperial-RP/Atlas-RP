@@ -125,7 +125,7 @@ end
 function PANEL:ColumnWidth( i )
 
 	local ctrl = self.Columns[ i ]
-	if ( !ctrl ) then return 0 end
+	if ( not ctrl ) then return 0 end
 
 	return ctrl:GetWide()
 
@@ -187,7 +187,7 @@ function PANEL:FixColumnsLayout()
 		x = x + math.ceil( Column:GetWide() )
 
 		Column:SetTall( math.ceil( self:GetHeaderHeight() ) )
-		Column:SetVisible( !self:GetHideHeaders() )
+		Column:SetVisible( not self:GetHideHeaders() )
 
 	end
 
@@ -283,17 +283,18 @@ function PANEL:DataLayout()
 	local alt = false
 	for k, Line in ipairs( self.Sorted ) do
 
-		if ( !Line:IsVisible() ) then goto continue end
+		if ( not Line:IsVisible() ) then goto continue end
 
 		Line:SetPos( 1, y )
 		Line:SetSize( self:GetWide() - 2, h )
 		Line:DataLayout( self )
 
 		Line:SetAltLine( alt )
-		alt = !alt
+		alt = not alt
 
 		y = y + Line:GetTall()
 
+		::continue::
 	end
 
 	return y
@@ -333,7 +334,7 @@ end
 
 function PANEL:OnMouseWheeled( dlta )
 
-	if ( !IsValid( self.VBar ) ) then return end
+	if ( not IsValid( self.VBar ) ) then return end
 
 	return self.VBar:OnMouseWheeled( dlta )
 
@@ -374,7 +375,7 @@ end
 function PANEL:OnClickLine( Line, bClear )
 
 	local bMultiSelect = self:GetMultiSelect()
-	if ( !bMultiSelect and !bClear ) then return end
+	if ( not bMultiSelect and not bClear ) then return end
 
 	--
 	-- Control, multi select
@@ -399,7 +400,7 @@ function PANEL:OnClickLine( Line, bClear )
 			-- Fire off OnRowSelected for each non selected row
 			for id = First, Last do
 				local line = self.Sorted[ id ]
-				if ( !line:IsLineSelected() ) then self:OnRowSelected( line:GetID(), line ) end
+				if ( not line:IsLineSelected() ) then self:OnRowSelected( line:GetID(), line ) end
 				line:SetSelected( true )
 			end
 
@@ -420,7 +421,7 @@ function PANEL:OnClickLine( Line, bClear )
 	--
 	-- Check for double click
 	--
-	if ( Line:IsSelected() and Line.m_fClickTime and ( !bMultiSelect or bClear ) ) then
+	if ( Line:IsSelected() and Line.m_fClickTime and ( not bMultiSelect or bClear ) ) then
 
 		local fTimeDistance = SysTime() - Line.m_fClickTime
 
@@ -435,7 +436,7 @@ function PANEL:OnClickLine( Line, bClear )
 	-- If it's a new mouse click, or this isn't
 	-- multiselect we clear the selection
 	--
-	if ( !bMultiSelect or bClear ) then
+	if ( not bMultiSelect or bClear ) then
 		self:ClearSelection()
 	end
 
@@ -454,8 +455,8 @@ function PANEL:SortByColumns( c1, d1, c2, d2, c3, d3, c4, d4 )
 
 	table.sort( self.Sorted, function( a, b )
 
-		if ( !IsValid( a ) ) then return true end
-		if ( !IsValid( b ) ) then return false end
+		if ( not IsValid( a ) ) then return true end
+		if ( not IsValid( b ) ) then return false end
 
 		if ( c1 and a:GetColumnText( c1 ) ~= b:GetColumnText( c1 ) ) then
 			if ( d1 ) then a, b = b, a end
@@ -512,7 +513,7 @@ end
 
 function PANEL:SelectItem( Item )
 
-	if ( !Item ) then return end
+	if ( not Item ) then return end
 
 	Item:SetSelected( true )
 	self:OnRowSelected( Item:GetID(), Item )

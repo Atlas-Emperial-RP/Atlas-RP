@@ -8,7 +8,7 @@ local TooltippedPanel = nil
 -----------------------------------------------------------]]
 function RemoveTooltip()
 
-	if ( !IsValid( Tooltip ) ) then return true end
+	if ( not IsValid( Tooltip ) ) then return true end
 
 	Tooltip:Close()
 	Tooltip = nil
@@ -44,7 +44,7 @@ function ChangeTooltip( panel )
 	RemoveTooltip()
 
 	local Text, ContentPanel, PositionPanel, PanelOverride = FindTooltip( panel )
-	if ( !Text and !IsValid( ContentPanel ) and !PanelOverride ) then return end
+	if ( not Text and not IsValid( ContentPanel ) and not PanelOverride ) then return end
 
 	Tooltip = vgui.Create( PanelOverride or "DTooltip" )
 

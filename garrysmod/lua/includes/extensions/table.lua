@@ -31,7 +31,7 @@ function table.Copy( t, lookup_table )
 	local copy = {}
 	setmetatable( copy, debug.getmetatable( t ) )
 	for i, v in pairs( t ) do
-		if ( !istable( v ) ) then
+		if ( not istable( v ) ) then
 			copy[ i ] = v
 		else
 			lookup_table = lookup_table or {}
@@ -116,8 +116,8 @@ end
 function table.Add( dest, source )
 
 	-- At least one of them needs to be a table or this whole thing will fall on its ass
-	if ( !istable( source ) ) then return dest end
-	if ( !istable( dest ) ) then dest = {} end
+	if ( not istable( source ) ) then return dest end
+	if ( not istable( dest ) ) then dest = {} end
 
 	for k, v in pairs( source ) do
 		table.insert( dest, v )
@@ -224,7 +224,7 @@ local function MakeTable( t, nice, indent, done )
 
 		str = str .. idt .. tab .. tab
 
-		if !sequential then
+		if not sequential then
 			if ( isnumber( key ) or isbool( key ) ) then
 				key = "[" .. tostring( key ) .. "]" .. tab .. "="
 			else
@@ -234,7 +234,7 @@ local function MakeTable( t, nice, indent, done )
 			key = ""
 		end
 
-		if ( istable( value ) and !done[ value ] ) then
+		if ( istable( value ) and not done[ value ] ) then
 
 			if ( IsColor( value ) ) then
 				done[ value ] = true
@@ -286,7 +286,7 @@ function table.Sanitise( t, done )
 
 	for k, v in pairs ( t ) do
 
-		if ( istable( v ) and not IsColor( v ) and !done[ v ] ) then
+		if ( istable( v ) and not IsColor( v ) and not done[ v ] ) then
 
 			done[ v ] = true
 			tbl[ k ] = table.Sanitise( v, done )
@@ -346,7 +346,7 @@ function table.DeSanitise( t, done )
 
 	for k, v in pairs ( t ) do
 
-		if ( istable( v ) and not IsColor(v) and !done[ v ] ) then
+		if ( istable( v ) and not IsColor(v) and not done[ v ] ) then
 
 			done[ v ] = true
 
@@ -409,10 +409,10 @@ function table.SortByMember( Table, MemberName, bAsc )
 		--
 		-- All this error checking kind of sucks, but really is needed
 		--
-		if ( !istable( a ) ) then return !bReverse end
-		if ( !istable( b ) ) then return bReverse end
-		if ( !a[ MemberName ] ) then return !bReverse end
-		if ( !b[ MemberName ] ) then return bReverse end
+		if ( not istable( a ) ) then return not bReverse end
+		if ( not istable( b ) ) then return bReverse end
+		if ( not a[ MemberName ] ) then return not bReverse end
+		if ( not b[ MemberName ] ) then return bReverse end
 
 		if ( isstring( a[ MemberName ] ) ) then
 
@@ -514,7 +514,7 @@ local function keyValuePairs( state )
 	state.Index = state.Index + 1
 
 	local keyValue = state.KeyValues[ state.Index ]
-	if ( !keyValue ) then return end
+	if ( not keyValue ) then return end
 
 	return keyValue.key, keyValue.val
 
@@ -570,7 +570,7 @@ end
 
 --[[---------------------------------------------------------
 	A Pairs function
-		Sorted by Member Value (All table entries must be a table!)
+		Sorted by Member Value (All table entries must be a tablenot )
 -----------------------------------------------------------]]
 function SortedPairsByMemberValue( pTable, pValueName, Desc )
 
@@ -580,7 +580,7 @@ function SortedPairsByMemberValue( pTable, pValueName, Desc )
 		v.member = v.val[ pValueName ]
 	end
 
-	table.SortByMember( sortedTbl, "member", !Desc )
+	table.SortByMember( sortedTbl, "member", not Desc )
 
 	return keyValuePairs, { Index = 0, KeyValues = sortedTbl }
 
@@ -678,7 +678,7 @@ end
 function table.RemoveByValue( tbl, val )
 
 	local key = table.KeyFromValue( tbl, val )
-	if ( !key ) then return false end
+	if ( not key ) then return false end
 
 	if ( isnumber( key ) ) then
 		table.remove( tbl, key )

@@ -16,7 +16,7 @@ local C_Material = Material
 
 function Material( name, words )
 
-	if ( !words ) then return C_Material( name ) end
+	if ( not words ) then return C_Material( name ) end
 
 	local str = (words:find("vertexlitgeneric") and "1" or "0")
 	str = str .. (words:find("nocull") and "1" or "0")
@@ -35,10 +35,10 @@ end
 -----------------------------------------------------------]]
 function IsTableOfEntitiesValid( tab )
 
-	if ( !tab ) then return false end
+	if ( not tab ) then return false end
 
 	for k, v in pairs( tab ) do
-		if ( !IsValid( v ) ) then return false end
+		if ( not IsValid( v ) ) then return false end
 	end
 
 	return true
@@ -75,7 +75,7 @@ function PrintTable( t, indent, done )
 		local value = t[ key ]
 		Msg( string.rep( "\t", indent ) )
 
-		if  ( istable( value ) and !done[ value ] ) then
+		if  ( istable( value ) and not done[ value ] ) then
 
 			done[ value ] = true
 			Msg( key, ":\n" )
@@ -180,7 +180,7 @@ FORCE_VECTOR	= 6
 -----------------------------------------------------------]]
 function AccessorFunc( tab, varname, name, iForce )
 
-	if ( !tab ) then debug.Trace() end
+	if ( not tab ) then debug.Trace() end
 
 	tab[ "Get" .. name ] = function( self ) return self[ varname ] end
 
@@ -223,10 +223,10 @@ end
 -----------------------------------------------------------]]
 function IsValid( object )
 
-	if ( !object ) then return false end
+	if ( not object ) then return false end
 
 	local isvalid = object.IsValid
-	if ( !isvalid ) then return false end
+	if ( not isvalid ) then return false end
 
 	return isvalid( object )
 
@@ -237,7 +237,7 @@ end
 -----------------------------------------------------------]]
 function SafeRemoveEntity( ent )
 
-	if ( !IsValid( ent ) or ent:IsPlayer() ) then return end
+	if ( not IsValid( ent ) or ent:IsPlayer() ) then return end
 
 	ent:Remove()
 
@@ -248,7 +248,7 @@ end
 -----------------------------------------------------------]]
 function SafeRemoveEntityDelayed( ent, timedelay )
 
-	if ( !IsValid( ent ) or ent:IsPlayer() ) then return end
+	if ( not IsValid( ent ) or ent:IsPlayer() ) then return end
 
 	timer.Simple( timedelay, function() SafeRemoveEntity( ent ) end )
 
@@ -286,7 +286,7 @@ function IsUselessModel( modelname )
 
 	local modelname = modelname:lower()
 
-	if ( !modelname:find( ".mdl", 1, true ) ) then return true end
+	if ( not modelname:find( ".mdl", 1, true ) ) then return true end
 
 	for k, v in ipairs( UselessModels ) do
 		if ( modelname:find( v, 1, true ) ) then
@@ -380,11 +380,12 @@ function IsMounted( name )
 
 	for k, v in pairs( games ) do
 
-		if ( !v.mounted ) then goto continue end
+		if ( not v.mounted ) then goto continue end
 
 		if ( v.depot == name ) then return true end
 		if ( v.folder == name ) then return true end
 
+		::continue::
 	end
 
 	return false
@@ -436,7 +437,7 @@ if ( CLIENT ) then
 
 	function RestoreCursorPosition()
 
-		if ( !StoredCursorPos.x or !StoredCursorPos.y ) then return end
+		if ( not StoredCursorPos.x or not StoredCursorPos.y ) then return end
 		input.SetCursorPos( StoredCursorPos.x, StoredCursorPos.y )
 
 	end

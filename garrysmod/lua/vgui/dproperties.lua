@@ -31,7 +31,7 @@ local tblRow = vgui.RegisterTable( {
 		local Name = "DProperty_" .. rowType
 
 		-- Nice shortcuts for Entity:NetworkVar()
-		if ( !vgui.GetControlTable( Name ) ) then
+		if ( not vgui.GetControlTable( Name ) ) then
 			if ( rowType == "Bool" ) then rowType = "Boolean" end
 			if ( rowType == "Vector" ) then rowType = "Generic" end
 			if ( rowType == "Angle" ) then rowType = "Generic" end
@@ -45,7 +45,7 @@ local tblRow = vgui.RegisterTable( {
 		else
 			print( "DProperties: Failed to create panel (" .. Name .. ")" )
 		end
-		if ( !IsValid( self.Inner ) ) then self.Inner = self.Container:Add( "DProperty_Generic" ) end
+		if ( not IsValid( self.Inner ) ) then self.Inner = self.Container:Add( "DProperty_Generic" ) end
 
 		self.Inner:SetRow( self )
 		self.Inner:Dock( FILL )
@@ -85,11 +85,11 @@ local tblRow = vgui.RegisterTable( {
 
 	Paint = function( self, w, h )
 
-		if ( !IsValid( self.Inner ) ) then return end
+		if ( not IsValid( self.Inner ) ) then return end
 
 		local Skin = self:GetSkin()
 		local editing = self.Inner:IsEditing()
-		local disabled = !self.Inner:IsEnabled() or !self:IsEnabled()
+		local disabled = not self.Inner:IsEnabled() or not self:IsEnabled()
 
 		if ( disabled ) then
 			surface.SetDrawColor( Skin.Colours.Properties.Column_Disabled )
@@ -139,7 +139,7 @@ local tblCategory = vgui.RegisterTable( {
 		self.Expand:SetExpanded( true )
 		self.Expand.DoClick = function()
 
-			self.Container:SetVisible( !self.Container:IsVisible() )
+			self.Container:SetVisible( not self.Container:IsVisible() )
 			self.Expand:SetExpanded( self.Container:IsVisible() )
 			self:InvalidateLayout()
 
@@ -171,7 +171,7 @@ local tblCategory = vgui.RegisterTable( {
 	GetRow = function( self, name, bCreate )
 
 		if ( IsValid( self.Rows[ name ] ) ) then return self.Rows[ name ] end
-		if ( !bCreate ) then return end
+		if ( not bCreate ) then return end
 
 		local row = self.Container:Add( tblRow )
 
@@ -220,7 +220,7 @@ end
 
 function PANEL:GetCanvas()
 
-	if ( !IsValid( self.Canvas ) ) then
+	if ( not IsValid( self.Canvas ) ) then
 
 		self.Canvas = self:Add( "DScrollPanel" )
 		self.Canvas:Dock( FILL )
@@ -239,7 +239,7 @@ function PANEL:GetCategory( name, bCreate )
 	local cat = self.Categories[ name ]
 	if ( IsValid( cat ) ) then return cat end
 
-	if ( !bCreate ) then return end
+	if ( not bCreate ) then return end
 
 	cat = self:GetCanvas():Add( tblCategory )
 	cat.Label:SetText( name )

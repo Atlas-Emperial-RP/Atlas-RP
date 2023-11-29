@@ -264,8 +264,8 @@ else
 			if (#category.members == 0) then goto continue end
 			for _,job in ipairs(category.members) do
 				local job_index = job.team
-				if (job_index == (GM or GAMEMODE).DefaultTeam) then goto continue end
-				if (not GAS.JobWhitelist:IsWhitelistEnabled(job_index)) then goto continue end
+				if (job_index == (GM or GAMEMODE).DefaultTeam) then goto continue_1 end
+				if (not GAS.JobWhitelist:IsWhitelistEnabled(job_index)) then goto continue_1 end
 
 				local is_whitelisted = false
 				if (GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()]) then
@@ -276,13 +276,13 @@ else
 				if (not is_operator) then
 					local job_id = OpenPermissions:GetTeamIdentifier(job_index)
 					if (not OpenPermissions:HasPermission(ply, {"gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/add_to/steamids", "gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/remove_from/steamids"})) then
-						goto continue
+						goto continue_1
 					end
 				end
 
 				data[category_index] = data[category_index] or {}
 				data[category_index][job_index] = is_whitelisted
-				::continue::
+				::continue_1::
 			end
 			::continue::
 		end
@@ -314,8 +314,8 @@ else
 			if (#category.members == 0) then goto continue end
 			for _,job in ipairs(category.members) do
 				local job_index = job.team
-				if (job_index == (GM or GAMEMODE).DefaultTeam) then goto continue end
-				if (not GAS.JobWhitelist:IsBlacklistEnabled(job_index)) then goto continue end
+				if (job_index == (GM or GAMEMODE).DefaultTeam) then goto continue_1 end
+				if (not GAS.JobWhitelist:IsBlacklistEnabled(job_index)) then goto continue_1 end
 
 				local is_blacklisted = false
 				if (GAS.JobWhitelist.Blacklists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()]) then
@@ -326,13 +326,13 @@ else
 				if (not is_operator) then
 					local job_id = OpenPermissions:GetTeamIdentifier(job_index)
 					if (not OpenPermissions:HasPermission(ply, {"gmodadminsuite_jobwhitelist/" .. job_id .. "/blacklist/add_to/steamids", "gmodadminsuite_jobwhitelist/" .. job_id .. "/blacklist/remove_from/steamids"})) then
-						goto continue
+						goto continue_1
 					end
 				end
 
 				data[category_index] = data[category_index] or {}
 				data[category_index][job_index] = is_blacklisted
-				::continue::
+				::continue_1::
 			end
 			::continue::
 		end

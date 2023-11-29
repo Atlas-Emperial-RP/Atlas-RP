@@ -76,7 +76,7 @@ end
 
 frame_blend.IsLastFrame = function()
 
-	if ( !frame_blend.IsActive() ) then return true end
+	if ( not frame_blend.IsActive() ) then return true end
 
 	local padding = math.floor( pp_fb_frames:GetInt() * pp_fb_shutter:GetFloat() * 0.5 )
 
@@ -155,7 +155,7 @@ frame_blend.BlendFrame = function()
 
 	local delta = ( NumFramesTaken - padding ) / ( frames - padding * 2 )
 	local curve = FrameCurve( NumFramesTaken - padding, frames-padding * 2 )
-	if ( !curve ) then return end
+	if ( not curve ) then return end
 
 	curve = ( 1 / ( NumFramesTaken - padding ) ) * curve
 
@@ -176,9 +176,9 @@ if ( engine.IsPlayingDemo() ) then return end
 
 hook.Add( "PostRender", "RenderFrameBlend", function()
 
-	if ( !frame_blend.IsActive() ) then return end
+	if ( not frame_blend.IsActive() ) then return end
 
-	if ( !frame_blend.ShouldSkipFrame() ) then
+	if ( not frame_blend.ShouldSkipFrame() ) then
 		render.CopyRenderTargetToTexture( texFB )
 		frame_blend.BlendFrame()
 	end

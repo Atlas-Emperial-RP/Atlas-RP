@@ -13,8 +13,10 @@ function WorkshopFileBase( namespace, requiredtags )
 
 		local tags = table.Copy( requiredtags )
 		for k, v in pairs( extratags ) do
-			if ( v == "" ) then goto continue end
+			if ( v == "" ) then goto continue_1 end
 			table.insert( tags, v )
+
+			::continue_1::
 		end
 
 		if ( type == "local" ) then
@@ -89,17 +91,17 @@ function WorkshopFileBase( namespace, requiredtags )
 			-- Search for tags
 			local found = true
 			for id, tag in pairs( tags ) do
-				if ( !item.tags:lower():find( tag, 1, true ) ) then found = false end
+				if ( not item.tags:lower():find( tag, 1, true ) ) then found = false end
 			end
-			if ( !found ) then goto continue end
+			if ( not found ) then goto continue end
 
 			-- Search for searchText
 			if ( searchText:Trim() ~= "" ) then
-				if ( !item.title:lower():find( searchText:lower(), 1, true ) ) then goto continue end
+				if ( not item.title:lower():find( searchText:lower(), 1, true ) ) then goto continue end
 			end
 
 			if ( filter and filter == "enabledonly" ) then
-				if ( !steamworks.ShouldMountAddon( item.wsid ) ) then goto continue end
+				if ( not steamworks.ShouldMountAddon( item.wsid ) ) then goto continue end
 			end
 			if ( filter and filter == "disabledonly" ) then
 				if ( steamworks.ShouldMountAddon( item.wsid ) ) then goto continue end
@@ -107,6 +109,7 @@ function WorkshopFileBase( namespace, requiredtags )
 
 			searchedItems[ #searchedItems + 1 ] = item
 
+			::continue::
 		end
 
 		-- Build the page!
@@ -155,7 +158,7 @@ function WorkshopFileBase( namespace, requiredtags )
 		--
 		-- File info failed..
 		--
-		if ( !results ) then return end
+		if ( not results ) then return end
 
 		--
 		-- Send the file index..
@@ -186,7 +189,7 @@ function WorkshopFileBase( namespace, requiredtags )
 
 				-- Local addon
 				local extra = results.extraresults[ k ]
-				if ( !extra ) then extra = {} end
+				if ( not extra ) then extra = {} end
 
 				extra.ownername = "Local"
 				extra.description = "Non workshop .gma addon. (" .. extra.file .. ")"
@@ -208,7 +211,7 @@ function WorkshopFileBase( namespace, requiredtags )
 
 				steamworks.FileInfo( v, function( result )
 
-					if ( !result or result.error ~= nil ) then
+					if ( not result or result.error ~= nil ) then
 						-- Try to get the title from the GetAddons(), this probably could be done more efficiently
 						local title = "Offline addon"
 						for id, t in pairs( isUGC and engine.GetUserContent() or engine.GetAddons() ) do
@@ -226,7 +229,7 @@ function WorkshopFileBase( namespace, requiredtags )
 						result.description = string.Trim( result.description )
 					end
 
-					if ( result.owner and ( !result.ownername or result.ownername == "" or result.ownername == "[unknown]" ) ) then
+					if ( result.owner and ( not result.ownername or result.ownername == "" or result.ownername == "[unknown]" ) ) then
 						self:RetrieveUserName( result.owner, function( name )
 							result.ownername = name
 
@@ -240,14 +243,14 @@ function WorkshopFileBase( namespace, requiredtags )
 					self.HTML:Call( namespace .. ".ReceiveFileInfo( \"" .. v .. "\", " .. json .. " )" )
 
 					--
-					-- Now we have the preview id - get the preview image!
+					-- Now we have the preview id - get the preview imagenot 
 					--
-					if ( !PreviewCache[ v ] and result.previewid ) then
+					if ( not PreviewCache[ v ] and result.previewid ) then
 
 						steamworks.Download( result.previewid, false, function( name )
 
 							-- Download failed
-							if ( !name ) then return end
+							if ( not name ) then return end
 
 							PreviewCache[ v ] = name:JavascriptSafe()
 							self.HTML:Call( namespace .. ".ReceiveImage( \"" .. v .. "\", \"" .. PreviewCache[ v ] .. "\" )" )
@@ -258,7 +261,7 @@ function WorkshopFileBase( namespace, requiredtags )
 
 				end )
 			end
-
+			::continue::
 		end
 
 	end

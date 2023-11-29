@@ -7,7 +7,7 @@ function PANEL:Init()
 	self.HTML = vgui.Create( "Chromium", self )
 
 	-- Trying to open credits on a non-cef build?
-	if ( !self.HTML ) then
+	if ( not self.HTML ) then
 		self:Remove()
 		return
 	end

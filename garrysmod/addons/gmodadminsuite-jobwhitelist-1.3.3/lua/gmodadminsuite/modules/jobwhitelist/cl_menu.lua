@@ -505,11 +505,11 @@ GAS:hook("gmodadminsuite:ModuleFrame:jobwhitelist", "jobwhitelist:menu", functio
 			for _,job in ipairs(category.members) do
 				local job_index = job.team
 				local perms_job_identifier = OpenPermissions:GetTeamIdentifier(job_index)
-				if (not GAS.JobWhitelist:CanAccessJob(LocalPlayer(), perms_job_identifier)) then goto continue end
+				if (not GAS.JobWhitelist:CanAccessJob(LocalPlayer(), perms_job_identifier)) then goto continue_1 end
 				category_vgui = category_vgui or jobs_tab_content.Categories:AddCategory(category.name, category.color)
 				if (duplicate_job_names_check[job.name]) then
 					duplicate_jobs[job.name] = true
-					goto continue
+					goto continue_1
 				else
 					duplicate_job_names_check[job.name] = true
 				end
@@ -764,7 +764,7 @@ GAS:hook("gmodadminsuite:ModuleFrame:jobwhitelist", "jobwhitelist:menu", functio
 						end
 					end)
 				end
-				::continue::
+				::continue_1::
 			end
 			::continue::
 		end

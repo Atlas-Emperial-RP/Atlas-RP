@@ -113,7 +113,7 @@ end
 
 function PANEL:GetFloatValue( max )
 
-	if ( !self.m_fFloatValue ) then self.m_fFloatValue = 0 end
+	if ( not self.m_fFloatValue ) then self.m_fFloatValue = 0 end
 
 	return tonumber( self.m_fFloatValue ) or 0
 
@@ -155,7 +155,7 @@ function PANEL:SetValue( val )
 	-- Don't change the value while we're typing into it!
 	-- It causes confusion!
 	--
-	if ( !self:HasFocus() ) then
+	if ( not self:HasFocus() ) then
 		self:SetText( val )
 		self:ConVarChanged( val )
 	end

@@ -30,7 +30,7 @@ end
 
 function PANEL:Paint()
 
-	if ( !self.Material ) then return end
+	if ( not self.Material ) then return end
 
 	local angle = 0
 
@@ -59,7 +59,7 @@ function PANEL:Charging( id, iImageID )
 	steamworks.Download( iImageID, false, function( name )
 
 		if ( name == nil ) then return end
-		if ( !IsValid( self ) ) then return end
+		if ( not IsValid( self ) ) then return end
 
 		self.Material = AddonMaterial( name )
 

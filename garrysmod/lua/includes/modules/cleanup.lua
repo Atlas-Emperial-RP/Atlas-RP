@@ -58,16 +58,16 @@ if ( SERVER ) then
 
 	function Add( pl, type, ent )
 
-		if ( !ent ) then return end
+		if ( not ent ) then return end
 
-		if ( !IsType( type ) ) then return end
+		if ( not IsType( type ) ) then return end
 
 		local id = pl:UniqueID()
 
 		cleanup_list[ id ] = cleanup_list[ id ] or {}
 		cleanup_list[ id ][ type ] = cleanup_list[ id ][ type ] or {}
 
-		if ( !IsValid( ent ) ) then return end
+		if ( not IsValid( ent ) ) then return end
 
 		table.insert( cleanup_list[ id ][ type ], ent )
 
@@ -97,13 +97,13 @@ if ( SERVER ) then
 
 	function CC_Cleanup( pl, command, args )
 
-		if ( !IsValid( pl ) ) then return end
+		if ( not IsValid( pl ) ) then return end
 
 		local id = pl:UniqueID()
 
-		if ( !cleanup_list[ id ] ) then return end
+		if ( not cleanup_list[ id ] ) then return end
 
-		if ( !args[ 1 ] ) then
+		if ( not args[ 1 ] ) then
 
 			local count = 0
 
@@ -129,8 +129,8 @@ if ( SERVER ) then
 
 		end
 
-		if ( !IsType( args[1] ) ) then return end
-		if ( !cleanup_list[id][ args[1] ] ) then return end
+		if ( not IsType( args[1] ) ) then return end
+		if ( not cleanup_list[id][ args[1] ] ) then return end
 
 		for key, ent in pairs( cleanup_list[id][ args[1] ] ) do
 
@@ -147,9 +147,9 @@ if ( SERVER ) then
 
 	function CC_AdminCleanup( pl, command, args )
 
-		if ( IsValid( pl ) and !pl:IsAdmin() ) then return end
+		if ( IsValid( pl ) and not pl:IsAdmin() ) then return end
 
-		if ( !args[ 1 ] ) then
+		if ( not args[ 1 ] ) then
 
 			for key, ply in pairs( cleanup_list ) do
 
@@ -176,7 +176,7 @@ if ( SERVER ) then
 
 		end
 
-		if ( !IsType( args[ 1 ] ) ) then return end
+		if ( not IsType( args[ 1 ] ) ) then return end
 
 		for key, ply in pairs( cleanup_list ) do
 

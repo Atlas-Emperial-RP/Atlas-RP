@@ -32,7 +32,7 @@ end
 
 function PANEL:DoDoubleClick()
 
-	if ( !self:IsEnabled() ) then return end
+	if ( not self:IsEnabled() ) then return end
 
 	local TextEdit = vgui.Create( "DTextEntry", self )
 	TextEdit:Dock( FILL )
@@ -64,7 +64,7 @@ function PANEL:DoDoubleClick()
 	end
 
 	TextEdit:RequestFocus()
-	TextEdit:OnGetFocus() -- Because the keyboard input might not be enabled yet! (spawnmenu)
+	TextEdit:OnGetFocus() -- Because the keyboard input might not be enabled yetnot  (spawnmenu)
 	TextEdit:SelectAllText( true )
 
 	self._TextEdit = TextEdit
@@ -73,7 +73,7 @@ end
 
 function PANEL:IsEditing()
 
-	if ( !IsValid( self._TextEdit ) ) then return false end
+	if ( not IsValid( self._TextEdit ) ) then return false end
 
 	return self._TextEdit:IsEditing()
 

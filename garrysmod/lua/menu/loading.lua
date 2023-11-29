@@ -20,7 +20,7 @@ function PANEL:ShowURL( url, force )
 	end
 
 	if ( IsValid( self.HTML ) ) then
-		if ( !force ) then return end
+		if ( not force ) then return end
 		self.HTML:Remove()
 	end
 
@@ -48,7 +48,7 @@ function PANEL:Paint()
 	surface.SetDrawColor( 30, 30, 30, 255 )
 	surface.DrawRect( 0, 0, self:GetWide(), self:GetTall() )
 
-	if ( self.JavascriptRun and IsValid( self.HTML ) and !self.HTML:IsLoading() ) then
+	if ( self.JavascriptRun and IsValid( self.HTML ) and not self.HTML:IsLoading() ) then
 
 		self:RunJavascript( self.JavascriptRun )
 		self.JavascriptRun = nil
@@ -59,7 +59,7 @@ end
 
 function PANEL:RunJavascript( str )
 
-	if ( !IsValid( self.HTML ) ) then return end
+	if ( not IsValid( self.HTML ) ) then return end
 	if ( self.HTML:IsLoading() ) then return end
 
 	self.HTML:RunJavascript( str )
@@ -141,7 +141,7 @@ end
 function PANEL:CheckForStatusChanges()
 
 	local str = GetLoadStatus()
-	if ( !str ) then return end
+	if ( not str ) then return end
 
 	str = string.Trim( str )
 	str = string.Trim( str, "\n" )
@@ -161,7 +161,7 @@ end
 function PANEL:RefreshDownloadables()
 
 	self.Downloadables = GetDownloadables()
-	if ( !self.Downloadables ) then return end
+	if ( not self.Downloadables ) then return end
 
 	local iDownloading = 0
 	local iFileCount = 0
@@ -195,7 +195,7 @@ end
 function PANEL:CheckDownloadTables()
 
 	local NumDownloadables = NumDownloadables()
-	if ( !NumDownloadables ) then return end
+	if ( not NumDownloadables ) then return end
 
 	if ( self.NumDownloadables and NumDownloadables == self.NumDownloadables ) then return end
 
@@ -210,7 +210,7 @@ local pnlLoading = nil
 
 function GetLoadPanel()
 
-	if ( !IsValid( pnlLoading ) ) then
+	if ( not IsValid( pnlLoading ) ) then
 		pnlLoading = vgui.CreateFromTable( PanelType_Loading )
 	end
 
@@ -221,7 +221,7 @@ end
 
 function IsInLoading()
 
-	if ( !IsValid( pnlLoading ) or !IsValid( pnlLoading.HTML ) ) then
+	if ( not IsValid( pnlLoading ) or not IsValid( pnlLoading.HTML ) ) then
 		return false
 	end
 
@@ -231,7 +231,7 @@ end
 
 function UpdateLoadPanel( strJavascript )
 
-	if ( !pnlLoading ) then return end
+	if ( not pnlLoading ) then return end
 
 	pnlLoading:RunJavascript( strJavascript )
 

@@ -269,7 +269,7 @@ function ReadTable( restore )
 	if ( name == "TableRef" ) then
 
 		local ref = restore:ReadInt()
-		if ( !TableRefs[ ref ] ) then
+		if ( not TableRefs[ ref ] ) then
 			TableRefs[ ref ] = {}
 			return
 		end

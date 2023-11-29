@@ -10,14 +10,14 @@ function PANEL:Init()
 	self.CopyBtn:SetImage( "icon16/page_copy.png" )
 	self.CopyBtn:SetSize( 16, 16 )
 	self.CopyBtn.DoClick = function( btm )
-		if ( !self.Problem ) then return end
+		if ( not self.Problem ) then return end
 
 		SetClipboardText( language.GetPhrase( self.Problem.text ) )
 	end
 
 	self.FixBtn = self:Add( "DButton" )
 	self.FixBtn.DoClick = function( btm )
-		if ( !self.Problem or !self.Problem.fix ) then return end
+		if ( not self.Problem or not self.Problem.fix ) then return end
 
 		self.Problem.fix()
 	end
@@ -62,7 +62,7 @@ function PANEL:Paint( w, h )
 	bgClr.a = self:GetAlpha()
 
 	-- No info yet
-	if ( !self.Problem ) then
+	if ( not self.Problem ) then
 		draw.RoundedBox( 0, 0, 0, w, h, bgClr )
 		return
 	end
@@ -144,7 +144,7 @@ end
 
 function PANEL:OnMousePressed()
 
-	self.Collapsed = !self.Collapsed
+	self.Collapsed = not self.Collapsed
 	self:InvalidateLayout()
 
 	collapsedCache[ self.Title ] = self.Collapsed
@@ -181,7 +181,7 @@ function PANEL:ReceivedProblem( uid, prob )
 
 	local pnl = self.ProblemPanels[ uid ]
 
-	if ( !IsValid( pnl ) ) then
+	if ( not IsValid( pnl ) ) then
 		pnl = self.ProblemList:Add( "GenericProblem" )
 		self.ProblemPanels[ uid ] = pnl
 		self:InvalidateLayout()

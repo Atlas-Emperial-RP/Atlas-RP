@@ -34,8 +34,8 @@ end
 
 hook.Add( "RenderScreenspaceEffects", "RenderColorModify", function()
 
-	if ( !pp_colormod:GetBool() ) then return end
-	if ( !GAMEMODE:PostProcessPermitted( "color mod" ) ) then return end
+	if ( not pp_colormod:GetBool() ) then return end
+	if ( not GAMEMODE:PostProcessPermitted( "color mod" ) ) then return end
 
 	local tab = {}
 

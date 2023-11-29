@@ -230,7 +230,7 @@ end
 function UpdateAddonMapList()
 
 	local json = util.TableToJSON( AddonMaps )
-	if ( !json ) then return end
+	if ( not json ) then return end
 
 	pnlMainMenu:Call( "UpdateAddonMaps(" .. json .. ")" )
 
@@ -242,10 +242,10 @@ function UpdateMapList()
 	UpdateAddonMapList()
 
 	local mapList = GetMapList()
-	if ( !mapList ) then return end
+	if ( not mapList ) then return end
 
 	local json = util.TableToJSON( mapList )
-	if ( !json ) then return end
+	if ( not json ) then return end
 
 	pnlMainMenu:Call( "UpdateMaps(" .. json .. ")" )
 
@@ -280,7 +280,7 @@ local MapList = {}
 
 local function RefreshMaps( skip )
 
-	if ( !skip ) then UpdateMaps() end
+	if ( not skip ) then UpdateMaps() end
 
 	MapList = {}
 
@@ -310,7 +310,7 @@ local function RefreshMaps( skip )
 		local Category = MapNames[ name ] or MapNames[ prefix ]
 
 		-- Check if the map has an embedded prefix, or is TTT/Sandbox
-		if ( !Category ) then
+		if ( not Category ) then
 			for pattern, category in pairs( MapPatterns ) do
 				if ( string.find( name, pattern ) ) then
 					Category = category
@@ -339,14 +339,14 @@ local function RefreshMaps( skip )
 			end
 		end
 
-		if ( !MapList[ Category ] ) then
+		if ( not MapList[ Category ] ) then
 			MapList[ Category ] = {}
 		end
 
 		table.insert( MapList[ Category ], name )
 
 		if ( fav ) then
-			if ( !MapList[ "Favourites" ] ) then
+			if ( not MapList[ "Favourites" ] ) then
 				MapList[ "Favourites" ] = {}
 			end
 
@@ -354,13 +354,14 @@ local function RefreshMaps( skip )
 		end
 
 		if ( csgo ) then
-			if ( !MapList[ "Counter-Strike: GO" ] ) then
+			if ( not MapList[ "Counter-Strike: GO" ] ) then
 				MapList[ "Counter-Strike: GO" ] = {}
 			end
 			-- HACK: We have to make the CS:GO name different from the CS:S name to prevent Favourites conflicts
 			table.insert( MapList[ "Counter-Strike: GO" ], name .. " " )
 		end
 
+		::continue::
 	end
 
 	-- Send the new list to the HTML menu
@@ -402,8 +403,8 @@ end
 function SaveLastMap( map, cat )
 
 	local t = string.Explode( ";", cookie.GetString( "lastmap", "" ) )
-	if ( !map ) then map = t[ 1 ] or "gm_flatgrass" end
-	if ( !cat ) then cat = t[ 2 ] or "Sandbox" end
+	if ( not map ) then map = t[ 1 ] or "gm_flatgrass" end
+	if ( not cat ) then cat = t[ 2 ] or "Sandbox" end
 
 	cookie.Set( "lastmap", map .. ";" .. cat )
 
@@ -418,7 +419,7 @@ function LoadLastMap()
 
 	cat = string.gsub( cat, "'", "\\'" )
 
-	if ( !file.Exists( "maps/" .. map .. ".bsp", "GAME" ) ) then return end
+	if ( not file.Exists( "maps/" .. map .. ".bsp", "GAME" ) ) then return end
 
 	pnlMainMenu:Call( "SetLastMap('" .. map:JavascriptSafe() .. "','" .. cat:JavascriptSafe() .. "')" )
 

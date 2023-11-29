@@ -48,7 +48,7 @@ end
 
 function PANEL:UpdateConVar()
 
-	if ( !self.VarName ) then return end
+	if ( not self.VarName ) then return end
 	if ( self.NextUpdate > CurTime() ) then return end
 
 	local Val = Format( "%.2f %.2f", self.Value[1], self.Value[2] )
@@ -96,7 +96,7 @@ end
 
 function PANEL:OnCursorMoved( x, y )
 
-	if ( !self.Dragging ) then return end
+	if ( not self.Dragging ) then return end
 
 	local w = self:GetWide()
 	local h = self:GetTall()
@@ -136,13 +136,13 @@ function PANEL:Paint( w, h )
 
 	-- This part is dirty, the whole fingerposer needs redoing, it's messy
 	local wep = LocalPlayer():GetWeapon( "gmod_tool" )
-	if ( !IsValid( wep ) ) then return end
+	if ( not IsValid( wep ) ) then return end
 
 	local ent = wep:GetNWEntity( "HandEntity" )
-	if ( !IsValid( ent ) or !ent.FingerIndex ) then return end
+	if ( not IsValid( ent ) or not ent.FingerIndex ) then return end
 
 	local boneid = ent.FingerIndex[ tonumber( self.VarName:sub( 8 ) ) + 1 + 15 * wep:GetNWInt( "HandNum", 0 ) ]
-	if ( !boneid or ent:GetBoneName( boneid ) == "__INVALIDBONE__" ) then return end
+	if ( not boneid or ent:GetBoneName( boneid ) == "__INVALIDBONE__" ) then return end
 
 	local v = self:GetValue()
 

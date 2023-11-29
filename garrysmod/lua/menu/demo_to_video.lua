@@ -14,7 +14,7 @@ local stats = {
 concommand.Add( "gm_demo_to_video", function( ply, cmd, args )
 
 	local demoname = args[ 1 ]
-	if ( !demoname ) then return end
+	if ( not demoname ) then return end
 
 	local settings = {
 		name		= "filled_in_later",
@@ -145,7 +145,7 @@ concommand.Add( "gm_demo_to_video", function( ply, cmd, args )
 		PrintTable( settings )
 		ActiveVideo, error = video.Record( settings )
 
-		if ( !ActiveVideo ) then
+		if ( not ActiveVideo ) then
 			MsgN( "Couldn't record video: ", error )
 			return
 		end
@@ -182,15 +182,15 @@ end
 
 local function UpdateFrame()
 
-	if ( !engine.IsPlayingDemo() ) then
+	if ( not engine.IsPlayingDemo() ) then
 
-		if ( !VideoSettings.started ) then return end
+		if ( not VideoSettings.started ) then return end
 		FinishRecording()
 		return
 
 	end
 
-	if ( !VideoSettings.started ) then
+	if ( not VideoSettings.started ) then
 
 		if ( gui.IsGameUIVisible() ) then return end
 
@@ -205,7 +205,7 @@ end
 
 local function DrawOverlay()
 
-	if ( !VideoSettings ) then return end
+	if ( not VideoSettings ) then return end
 
 	local complete = engine.GetDemoPlaybackTick() / engine.GetDemoPlaybackTotalTicks()
 
@@ -280,8 +280,8 @@ end
 
 hook.Add( "CaptureVideo", "CaptureDemoFrames", function()
 
-	if ( !ActiveVideo ) then return end
-	if ( !VideoSettings ) then return end
+	if ( not ActiveVideo ) then return end
+	if ( not VideoSettings ) then return end
 
 	UpdateFrame()
 
@@ -306,7 +306,7 @@ end )
 
 function RecordDemoFrame()
 
-	if ( !VideoSettings.started ) then return end
+	if ( not VideoSettings.started ) then return end
 
 	ActiveVideo:AddFrame( 1 / VideoSettings.fps, true )
 	VideoSettings.framecount = VideoSettings.framecount + 1

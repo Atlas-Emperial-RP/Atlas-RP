@@ -19,8 +19,8 @@ end
 
 hook.Add( "RenderScreenspaceEffects", "RenderSobel", function()
 
-	if ( !pp_sobel:GetBool() ) then return end
-	if ( !GAMEMODE:PostProcessPermitted( "sobel" ) ) then return end
+	if ( not pp_sobel:GetBool() ) then return end
+	if ( not GAMEMODE:PostProcessPermitted( "sobel" ) ) then return end
 
 	DrawSobel( pp_sobel_threshold:GetFloat() )
 

@@ -428,9 +428,9 @@ function PANEL:Setup( ParentVGUI )
 						self2.PopUp:AddOption( "Transfer", function() 
 							local Options = {}
 							for k, v in pairs( player.GetHumans() ) do
-								if( v == LocalPlayer() ) then goto continue end
+								if( v == LocalPlayer() ) then goto continue_1 end
 								Options[v:SteamID64()] = v:Nick()
-								::continue::
+								::continue_1::
 							end
 
 							if( table.Count( Options ) <= 0 ) then

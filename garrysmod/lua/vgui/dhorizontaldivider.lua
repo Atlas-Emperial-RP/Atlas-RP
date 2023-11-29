@@ -120,7 +120,7 @@ end
 
 function PANEL:OnCursorMoved( x, y )
 
-	if ( !self:GetDragging() ) then return end
+	if ( not self:GetDragging() ) then return end
 
 	local oldLeftWidth = self:GetLeftWidth()
 
@@ -134,7 +134,7 @@ end
 function PANEL:Think()
 
 	-- If 2 or more panels use the same cookie name, make every panel resize automatically to the same size
-	if ( self._OldCookieW ~= self:GetCookieNumber( "LeftWidth", self:GetLeftWidth() ) and !self:GetDragging() ) then
+	if ( self._OldCookieW ~= self:GetCookieNumber( "LeftWidth", self:GetLeftWidth() ) and not self:GetDragging() ) then
 		self:LoadCookies()
 		self:InvalidateLayout()
 	end

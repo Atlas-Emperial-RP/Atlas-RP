@@ -25,7 +25,7 @@ local pp_bloom_passes = CreateClientConVar( "pp_bloom_passes", "4", true, false 
 function DrawBloom( darken, multiply, sizex, sizey, passes, color, colr, colg, colb )
 
 	-- No bloom for crappy gpus
-	if ( !render.SupportsPixelShaders_2_0() ) then return end
+	if ( not render.SupportsPixelShaders_2_0() ) then return end
 
 	-- Copy the backbuffer to the screen effect texture
 	render.CopyRenderTargetToTexture( render.GetScreenEffectTexture() )
@@ -65,9 +65,9 @@ hook.Add( "RenderScreenspaceEffects", "RenderBloom", function()
 
 	-- No bloom for crappy gpus
 
-	if ( !render.SupportsPixelShaders_2_0() ) then return end
-	if ( !pp_bloom:GetBool() ) then return end
-	if ( !GAMEMODE:PostProcessPermitted( "bloom" ) ) then return end
+	if ( not render.SupportsPixelShaders_2_0() ) then return end
+	if ( not pp_bloom:GetBool() ) then return end
+	if ( not GAMEMODE:PostProcessPermitted( "bloom" ) ) then return end
 
 	DrawBloom( pp_bloom_darken:GetFloat(), pp_bloom_multiply:GetFloat(),
 				pp_bloom_sizex:GetFloat(), pp_bloom_sizey:GetFloat(),

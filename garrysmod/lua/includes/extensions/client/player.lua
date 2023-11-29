@@ -41,7 +41,7 @@ end
 
 local function hook_PlayerOptionInput( pl, bind, down )
 
-	if (!down or !bindTranslation[bind]) then return end
+	if (not down or not bindTranslation[bind]) then return end
 	
 	for k, v in pairs( playerOptions ) do
 	

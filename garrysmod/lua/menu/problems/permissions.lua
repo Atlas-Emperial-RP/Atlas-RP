@@ -10,7 +10,7 @@ function PANEL:Init()
 	self.RemoveBtn:SetImage( "icon16/cross.png" )
 	self.RemoveBtn:SetSize( 16, 16 )
 	self.RemoveBtn.DoClick = function( btm )
-		if ( !self.Permission ) then return end
+		if ( not self.Permission ) then return end
 
 		permissions.Revoke( self.Permission, self:GetParent():GetParent().Title )
 	end
@@ -41,7 +41,7 @@ function PANEL:Paint( w, h )
 	draw.RoundedBox( 0, 0, 0, w, h, bgClr )
 
 	-- No info yet
-	if ( !self.Permission ) then return end
+	if ( not self.Permission ) then return end
 
 	-- The error
 	self.Markup:Draw( textPaddingX, textPaddingY, nil, nil, self:GetAlpha() )
@@ -105,7 +105,7 @@ end
 
 function PANEL:OnMousePressed()
 
-	self.Collapsed = !self.Collapsed
+	self.Collapsed = not self.Collapsed
 	self:InvalidateLayout()
 
 	collapsedCache[ self.Title ] = self.Collapsed
@@ -141,7 +141,7 @@ end
 function PANEL:ReceivePerm( perm, temp )
 	local pnl = self.PermissionPanels[ perm ]
 
-	if ( !IsValid( pnl ) ) then
+	if ( not IsValid( pnl ) ) then
 		pnl = self.PermissionList:Add( "Permission" )
 		self.PermissionPanels[ perm ] = pnl
 		self:InvalidateLayout()
@@ -182,7 +182,7 @@ end
 function PANEL:AddServerGroup( address, perms, temp )
 	local pnl = self.ServerPanels[ address ]
 
-	if ( !IsValid( pnl ) ) then
+	if ( not IsValid( pnl ) ) then
 		pnl = self:Add( "ServerPermissionsPanel" )
 		pnl:SetGroup( address )
 		self.ServerPanels[ address ] = pnl
@@ -211,7 +211,7 @@ end
 
 function PANEL:Think()
 
-	if ( self:GetCanvas():ChildCount() < 1 and !IsValid( self.NoPermissionsLabel ) ) then
+	if ( self:GetCanvas():ChildCount() < 1 and not IsValid( self.NoPermissionsLabel ) ) then
 		self.NoPermissionsLabel = self.ParentFrame:AddEmptyWarning( "#permissions.none", self )
 	elseif ( self:GetCanvas():ChildCount() > 1 and IsValid( self.NoPermissionsLabel ) ) then
 		self.NoPermissionsLabel:Remove()

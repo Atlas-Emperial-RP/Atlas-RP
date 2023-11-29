@@ -21,7 +21,7 @@ end
 
 function PANEL:Think()
 
-	if ( self.JS and !self:IsLoading() ) then
+	if ( self.JS and not self:IsLoading() ) then
 
 		for k, v in pairs( self.JS ) do
 
@@ -48,7 +48,7 @@ function PANEL:QueueJavascript( js )
 	--
 	-- Can skip using the queue if there's nothing else in it
 	--
-	if ( !self.JS and !self:IsLoading() ) then
+	if ( not self.JS and not self:IsLoading() ) then
 		return self:RunJavascript( js )
 	end
 
@@ -65,7 +65,7 @@ end
 
 function PANEL:ConsoleMessage( msg, file, line )
 
-	if ( !isstring( msg ) ) then msg = "*js variable*" end
+	if ( not isstring( msg ) ) then msg = "*js variable*" end
 
 	--
 	-- Handle error messages
@@ -128,7 +128,7 @@ function PANEL:AddFunction( obj, funcname, func )
 	--
 	-- Create the `object` if it doesn't exist
 	--
-	if ( !self.Callbacks[ obj ] ) then
+	if ( not self.Callbacks[ obj ] ) then
 		self:NewObject( obj )
 		self.Callbacks[ obj ] = true
 	end

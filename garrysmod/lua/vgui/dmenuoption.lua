@@ -17,7 +17,7 @@ function PANEL:SetSubMenu( menu )
 
 	self.SubMenu = menu
 
-	if ( !IsValid( self.SubMenuArrow ) ) then
+	if ( not IsValid( self.SubMenuArrow ) ) then
 
 		self.SubMenuArrow = vgui.Create( "DPanel", self )
 		self.SubMenuArrow.Paint = function( panel, w, h ) derma.SkinHook( "Paint", "MenuRightArrow", panel, w, h ) end
@@ -108,7 +108,7 @@ end
 
 function PANEL:ToggleCheck()
 
-	self:SetChecked( !self:GetChecked() )
+	self:SetChecked( not self:GetChecked() )
 	self:OnChecked( self:GetChecked() )
 
 end

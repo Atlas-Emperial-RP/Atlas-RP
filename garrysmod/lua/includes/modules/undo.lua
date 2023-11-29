@@ -28,7 +28,7 @@ if ( CLIENT ) then
 	local function UpdateUI()
 
 		local Panel = controlpanel.Get( "Undo" )
-		if ( !IsValid( Panel ) ) then return end
+		if ( not IsValid( Panel ) ) then return end
 
 		Panel:Clear()
 		Panel:AddControl( "Header", { Description = "#spawnmenu.utilities.undo.help" } )
@@ -149,7 +149,7 @@ if ( CLIENT ) then
 	function SetupUI()
 
 		local UndoPanel = controlpanel.Get( "Undo" )
-		if ( !IsValid( UndoPanel ) ) then return end
+		if ( not IsValid( UndoPanel ) ) then return end
 
 		-- Mark as dirty please
 		MakeUIDirty()
@@ -164,7 +164,7 @@ if ( CLIENT ) then
 end
 
 
-if ( !SERVER ) then return end
+if ( not SERVER ) then return end
 
 local PlayerUndo = {}
 -- PlayerUndo
@@ -225,7 +225,7 @@ end
 -----------------------------------------------------------]]
 function SetCustomUndoText( CustomUndoText )
 
-	if ( !Current_Undo ) then return end
+	if ( not Current_Undo ) then return end
 
 	Current_Undo.CustomUndoText = CustomUndoText
 
@@ -236,8 +236,8 @@ end
 -----------------------------------------------------------]]
 function AddEntity( ent )
 
-	if ( !Current_Undo ) then return end
-	if ( !IsValid( ent ) ) then return end
+	if ( not Current_Undo ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	table.insert( Current_Undo.Entities, ent )
 
@@ -248,8 +248,8 @@ end
 -----------------------------------------------------------]]
 function AddFunction( func, ... )
 
-	if ( !Current_Undo ) then return end
-	if ( !func ) then return end
+	if ( not Current_Undo ) then return end
+	if ( not func ) then return end
 
 	table.insert( Current_Undo.Functions, { func, {...} } )
 
@@ -287,8 +287,8 @@ end
 -----------------------------------------------------------]]
 function SetPlayer( ply )
 
-	if ( !Current_Undo ) then return end
-	if ( !IsValid( ply ) ) then return end
+	if ( not Current_Undo ) then return end
+	if ( not IsValid( ply ) ) then return end
 
 	Current_Undo.Owner = ply
 
@@ -301,7 +301,7 @@ end
 -----------------------------------------------------------]]
 local function SendUndoneMessage( ent, id, ply )
 
-	if ( !IsValid( ply ) ) then return end
+	if ( not IsValid( ply ) ) then return end
 
 	-- For further optimization we could queue up the ids and send them
 	-- in one batch every 0.5 seconds or something along those lines.
@@ -317,10 +317,10 @@ end
 -----------------------------------------------------------]]
 function Finish( NiceText )
 
-	if ( !Current_Undo ) then return end
+	if ( not Current_Undo ) then return end
 
 	-- Do not add undos that have no owner or anything to undo
-	if ( !IsValid( Current_Undo.Owner ) or ( table.IsEmpty( Current_Undo.Entities ) and table.IsEmpty( Current_Undo.Functions ) ) ) then
+	if ( not IsValid( Current_Undo.Owner ) or ( table.IsEmpty( Current_Undo.Entities ) and table.IsEmpty( Current_Undo.Functions ) ) ) then
 		Current_Undo = nil
 		return
 	end
@@ -354,7 +354,7 @@ end
 -----------------------------------------------------------]]
 function Do_Undo( undo )
 
-	if ( !undo ) then return false end
+	if ( not undo ) then return false end
 
 	if ( hook.Run( "PreUndo", undo ) == false ) then return end
 
@@ -430,14 +430,14 @@ local function CC_UndoLast( pl, command, args )
 	end
 
 	-- No undos
-	if ( !last ) then return end
+	if ( not last ) then return end
 
 	-- This is quite messy, but if the player rejoined the server
 	-- 'Owner' might no longer be a valid entity. So replace the Owner
 	-- with the player that is doing the undoing
 	last.Owner = pl
 
-	if ( !Can_Undo( pl, last ) ) then return end
+	if ( not Can_Undo( pl, last ) ) then return end
 
 	local count = Do_Undo( last )
 
@@ -460,7 +460,7 @@ end
 -----------------------------------------------------------]]
 local function CC_UndoNum( ply, command, args )
 
-	if ( !args[ 1 ] ) then return end
+	if ( not args[ 1 ] ) then return end
 
 	local index = ply:UniqueID()
 	PlayerUndo[ index ] = PlayerUndo[ index ] or {}
@@ -468,12 +468,12 @@ local function CC_UndoNum( ply, command, args )
 	local UndoNum = tonumber( args[ 1 ] )
 
 	local TheUndo = PlayerUndo[ index ][ UndoNum ]
-	if ( !TheUndo ) then return end
+	if ( not TheUndo ) then return end
 
 	-- Do the same as above
 	TheUndo.Owner = ply
 
-	if ( !Can_Undo( ply, TheUndo ) ) then return end
+	if ( not Can_Undo( ply, TheUndo ) ) then return end
 
 	-- Undo!
 	Do_Undo( TheUndo )

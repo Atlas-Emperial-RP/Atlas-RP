@@ -4,7 +4,7 @@
 --
 AddCSLuaFile()
 
-if ( !coroutine ) then return end
+if ( not coroutine ) then return end
 
 --
 -- Name: coroutine.wait

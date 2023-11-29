@@ -36,7 +36,7 @@ function PANEL:Init()
 	self.Label.DragHover = function( s, t ) self:DragHover( t ) end
 
 	self.Expander = vgui.Create( "DExpandButton", self )
-	self.Expander.DoClick = function() self:SetExpanded( !self:GetExpanded() ) end
+	self.Expander.DoClick = function() self:SetExpanded( not self:GetExpanded() ) end
 	self.Expander:SetVisible( false )
 
 	self.Icon = vgui.Create( "DImage", self )
@@ -63,8 +63,8 @@ function PANEL:InternalDoClick()
 	if ( self:DoClick() ) then return end
 	if ( self:GetRoot():DoClick( self ) ) then return end
 
-	if ( !self.m_bDoubleClickToOpen or ( SysTime() - self.fLastClick < 0.3 ) ) then
-		self:SetExpanded( !self:GetExpanded() )
+	if ( not self.m_bDoubleClickToOpen or ( SysTime() - self.fLastClick < 0.3 ) ) then
+		self:SetExpanded( not self:GetExpanded() )
 	end
 
 	self.fLastClick = SysTime()
@@ -105,7 +105,7 @@ end
 
 function PANEL:AnimSlide( anim, delta, data )
 
-	if ( !IsValid( self.ChildNodes ) ) then anim:Stop() return end
+	if ( not IsValid( self.ChildNodes ) ) then anim:Stop() return end
 
 	if ( anim.Started ) then
 		data.To = self:GetTall()
@@ -129,7 +129,7 @@ function PANEL:AnimSlide( anim, delta, data )
 end
 
 function PANEL:SetIcon( str )
-	if ( !str or str == "" ) then return end
+	if ( not str or str == "" ) then return end
 
 	self.Icon:SetImage( str )
 end
@@ -156,7 +156,7 @@ function PANEL:ExpandRecurse( bExpand )
 
 	self:SetExpanded( bExpand, true )
 
-	if ( !IsValid( self.ChildNodes ) ) then return end
+	if ( not IsValid( self.ChildNodes ) ) then return end
 
 	for k, Child in pairs( self.ChildNodes:GetChildren() ) do
 		if ( Child.ExpandRecurse ) then
@@ -180,7 +180,7 @@ function PANEL:SetExpanded( bExpand, bSurpressAnimation )
 	self.m_bExpanded = bExpand
 	self:InvalidateLayout( true )
 
-	if ( !IsValid( self.ChildNodes ) ) then return end
+	if ( not IsValid( self.ChildNodes ) ) then return end
 
 	local StartTall = self:GetTall()
 	self.animSlide:Stop()
@@ -201,7 +201,7 @@ function PANEL:SetExpanded( bExpand, bSurpressAnimation )
 	self:InvalidateLayout( true )
 
 	-- Do animation..
-	if ( !bSurpressAnimation ) then
+	if ( not bSurpressAnimation ) then
 		self.animSlide:Start( 0.3, { From = StartTall } )
 		self.animSlide:Run()
 	end
@@ -221,14 +221,14 @@ end
 
 function PANEL:HasChildren()
 
-	if ( !IsValid( self.ChildNodes ) ) then return false end
+	if ( not IsValid( self.ChildNodes ) ) then return false end
 	return self.ChildNodes:HasChildren()
 
 end
 
 function PANEL:DoChildrenOrder()
 
-	if ( !IsValid( self.ChildNodes ) ) then return end
+	if ( not IsValid( self.ChildNodes ) ) then return end
 
 	local children = self.ChildNodes:GetChildren()
 	local last = #children
@@ -292,7 +292,7 @@ function PANEL:PerformLayout()
 		self.Label:SetTextInset( self.Expander.x + self.Expander:GetWide() + 4, 0 )
 	end
 
-	if ( !IsValid( self.ChildNodes ) or !self.ChildNodes:IsVisible() ) then
+	if ( not IsValid( self.ChildNodes ) or not self.ChildNodes:IsVisible() ) then
 		self:SetTall( LineHeight )
 		return
 	end
@@ -318,7 +318,7 @@ function PANEL:CreateChildNodes()
 		self.ChildNodes:InvalidateLayout()
 
 		-- Root node should never be closed
-		if ( !self.ChildNodes:HasChildren() and !self:IsRootNode() ) then
+		if ( not self.ChildNodes:HasChildren() and not self:IsRootNode() ) then
 			self:SetExpanded( false )
 		end
 
@@ -353,7 +353,7 @@ function PANEL:AddNode( strName, strIcon )
 	pNode:SetTall( self:GetLineHeight() )
 	pNode:SetRoot( self:GetRoot() )
 	pNode:SetIcon( strIcon )
-	pNode:SetDrawLines( !self:IsRootNode() )
+	pNode:SetDrawLines( not self:IsRootNode() )
 
 	self:InstallDraggable( pNode )
 
@@ -385,7 +385,7 @@ end
 function PANEL:InstallDraggable( pNode )
 
 	local DragName = self:GetDraggableName()
-	if ( !DragName ) then return end
+	if ( not DragName ) then return end
 
 	-- Make this node draggable
 	pNode:SetDraggableName( DragName )
@@ -423,7 +423,7 @@ function PANEL:MakeFolder( strFolder, strPath, bShowFiles, strWildCard, bDontFor
 	self:CreateChildNodes()
 	self:SetNeedsChildSearch( true )
 
-	if ( !bDontForceExpandable ) then
+	if ( not bDontForceExpandable ) then
 		self:SetForceShowExpander( true )
 	end
 
@@ -431,7 +431,7 @@ function PANEL:MakeFolder( strFolder, strPath, bShowFiles, strWildCard, bDontFor
 	if ( self:GetParentNode():GetExpanded() ) then
 		-- Yuck! This is basically a hack for gameprops.lua
 		timer.Simple( 0, function()
-			if ( !IsValid( self ) ) then return end
+			if ( not IsValid( self ) ) then return end
 			self:PopulateChildrenAndSelf()
 		end )
 	end
@@ -493,13 +493,13 @@ end
 
 function PANEL:FilePopulate( bAndChildren, bExpand )
 
-	if ( !self:GetNeedsPopulating() ) then return end
+	if ( not self:GetNeedsPopulating() ) then return end
 
 	local folder = self:GetFolder()
 	local path = self:GetPathID()
 	local wildcard = self:GetWildCard()
 
-	if ( !folder or !wildcard or !path ) then return false end
+	if ( not folder or not wildcard or not path ) then return false end
 
 	local files, folders = file.Find( string.Trim( folder .. "/" .. wildcard, "/" ), path )
 	if ( folders and folders[ 1 ] == "/" ) then table.remove( folders, 1 ) end
@@ -519,7 +519,7 @@ end
 
 function PANEL:PopulateChildren()
 
-	if ( !IsValid( self.ChildNodes ) ) then return end
+	if ( not IsValid( self.ChildNodes ) ) then return end
 
 	for k, v in ipairs( self.ChildNodes:GetChildren() ) do
 		timer.Simple( k * 0.1, function()
@@ -561,7 +561,7 @@ end
 --
 function PANEL:DragHoverClick( HoverTime )
 
-	if ( !self:GetExpanded() ) then
+	if ( not self:GetExpanded() ) then
 		self:SetExpanded( true )
 	end
 
@@ -576,7 +576,7 @@ end
 function PANEL:MoveToTop()
 
 	local parent = self:GetParentNode()
-	if ( !IsValid(parent) ) then return end
+	if ( not IsValid(parent) ) then return end
 
 	self:GetParentNode():MoveChildTo( self, 1 )
 
@@ -600,7 +600,7 @@ function PANEL:CleanList()
 
 	for k, panel in pairs( self.Items ) do
 
-		if ( !IsValid( panel ) or panel:GetParent() ~= self.pnlCanvas ) then
+		if ( not IsValid( panel ) or panel:GetParent() ~= self.pnlCanvas ) then
 			self.Items[k] = nil
 		end
 
@@ -640,21 +640,21 @@ end
 
 function PANEL:GetChildNode( iNum )
 
-	if ( !IsValid( self.ChildNodes ) ) then return end
+	if ( not IsValid( self.ChildNodes ) ) then return end
 	return self.ChildNodes:GetChild( iNum )
 
 end
 
 function PANEL:GetChildNodes()
 
-	if ( !IsValid( self.ChildNodes ) ) then return {} end
+	if ( not IsValid( self.ChildNodes ) ) then return {} end
 	return self.ChildNodes:GetChildren()
 
 end
 
 function PANEL:GetChildNodeCount()
 
-	if ( !IsValid( self.ChildNodes ) ) then return 0 end
+	if ( not IsValid( self.ChildNodes ) ) then return 0 end
 	return self.ChildNodes:ChildCount()
 
 end

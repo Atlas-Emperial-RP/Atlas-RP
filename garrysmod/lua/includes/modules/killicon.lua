@@ -50,7 +50,7 @@ end
 
 function GetSize( name )
 
-	if (!Icons[name]) then 
+	if (not Icons[name]) then 
 		Msg("Warning: killicon not found '"..name.."'\n")
 		Icons[name] = Icons["default"]
 	end
@@ -98,14 +98,14 @@ function Draw( x, y, name, alpha )
 
 	alpha = alpha or 255
 
-	if (!Icons[name]) then 
+	if (not Icons[name]) then 
 		Msg("Warning: killicon not found '"..name.."'\n")
 		Icons[name] = Icons["default"]
 	end
 	
 	local t = Icons[name]
 	
-	if ( !t.size ) then	GetSize( name )	end
+	if ( not t.size ) then	GetSize( name )	end
 	
 	local w = t.size.w
 	local h = t.size.h

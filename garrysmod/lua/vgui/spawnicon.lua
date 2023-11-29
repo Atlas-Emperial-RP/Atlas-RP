@@ -46,7 +46,7 @@ function PANEL:Think()
 
 	self.OverlayFade = math.Clamp( self.OverlayFade - RealFrameTime() * 640 * 2, 0, 255 )
 
-	if ( dragndrop.IsDragging() or !self:IsHovered() ) then return end
+	if ( dragndrop.IsDragging() or not self:IsHovered() ) then return end
 
 	self.OverlayFade = math.Clamp( self.OverlayFade + RealFrameTime() * 640 * 8, 0, 255 )
 
@@ -69,7 +69,7 @@ end
 
 function PANEL:PerformLayout()
 
-	if ( self:IsDown() and !self.Dragging ) then
+	if ( self:IsDown() and not self.Dragging ) then
 		self.Icon:StretchToParent( 6, 6, 6, 6 )
 	else
 		self.Icon:StretchToParent( 0, 0, 0, 0 )
@@ -99,7 +99,7 @@ end
 
 function PANEL:SetModel( mdl, iSkin, BodyGroups )
 
-	if ( !mdl ) then debug.Trace() return end
+	if ( not mdl ) then debug.Trace() return end
 
 	self:SetModelName( mdl )
 	self:SetSkinID( iSkin or 0 )

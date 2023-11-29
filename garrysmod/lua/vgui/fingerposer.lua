@@ -143,7 +143,7 @@ function PANEL:UpdateHovered()
 
 	end
 
-	if ( !hovered or hovered ~= self.HoveredPanel ) then
+	if ( not hovered or hovered ~= self.HoveredPanel ) then
 
 		if ( IsValid( self.HoveredPanel ) ) then
 			self.HoveredPanel.HoveredFingerVar = nil
@@ -163,7 +163,7 @@ function PANEL:OnMousePressed( mousecode )
 
 	self:UpdateHovered()
 
-	if ( !IsValid( self.HoveredPanel ) ) then return end
+	if ( not IsValid( self.HoveredPanel ) ) then return end
 
 	self.HoveredPanel:OnMousePressed( mousecode )
 

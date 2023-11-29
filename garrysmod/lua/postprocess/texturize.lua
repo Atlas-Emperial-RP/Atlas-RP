@@ -23,7 +23,7 @@ hook.Add( "RenderScreenspaceEffects", "RenderTexturize", function()
 	local texturize = pp_texturize:GetString()
 
 	if ( texturize == "" ) then return end
-	if ( !GAMEMODE:PostProcessPermitted( "texurize" ) ) then return end
+	if ( not GAMEMODE:PostProcessPermitted( "texurize" ) ) then return end
 
 	DrawTexturize( pp_texturize_scale:GetFloat(), Material( texturize ) )
 

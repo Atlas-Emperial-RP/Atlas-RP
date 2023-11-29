@@ -13,8 +13,8 @@ end
 
 function menubar.ParentTo( pnl )
 
-	// I don't like this
-	if ( !IsValid( menubar.Control ) ) then
+	-- I don't like this
+	if ( not IsValid( menubar.Control ) ) then
 		menubar.Init()
 	end
 

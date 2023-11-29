@@ -92,7 +92,7 @@ end
 function PANEL:DoClick()
 
 	self:GetParent():SortByColumn( self:GetColumnID(), self:GetDescending() )
-	self:SetDescending( !self:GetDescending() )
+	self:SetDescending( not self:GetDescending() )
 
 end
 

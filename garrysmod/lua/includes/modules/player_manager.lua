@@ -321,13 +321,13 @@ local function LookupPlayerClass( ply )
 	-- No class, lets create one
 	--
 	local classname = util.NetworkIDToString( id )
-	if ( !classname ) then return end
+	if ( not classname ) then return end
 
 	--
 	-- Get that type. Fail if we don't have the type.
 	--
 	local t = Type[ classname ]
-	if ( !t ) then return end
+	if ( not t ) then return end
 
 	local method = {}
 	method.Player	= ply
@@ -356,7 +356,7 @@ function RegisterClass( name, table, base )
 	--
 	if ( base ) then
 
-		if ( !Type[ name ] ) then ErrorNoHalt( "RegisterClass - deriving " .. name .. " from unknown class " .. base .. "!\n" ) end
+		if ( not Type[ name ] ) then ErrorNoHalt( "RegisterClass - deriving " .. name .. " from unknown class " .. base .. "!\n" ) end
 		setmetatable( Type[ name ], { __index = Type[ base ] } )
 
 	end
@@ -376,7 +376,7 @@ end
 function SetPlayerClass( ply, classname )
 
 	local t = Type[ classname ]
-	if ( !Type[ classname ] ) then ErrorNoHalt( "SetPlayerClass - attempt to use unknown player class " .. classname .. "!\n" ) end
+	if ( not Type[ classname ] ) then ErrorNoHalt( "SetPlayerClass - attempt to use unknown player class " .. classname .. "!\n" ) end
 
 	local id = util.NetworkStringToID( classname )
 	ply:SetClassID( id )
@@ -405,10 +405,10 @@ end
 function RunClass( ply, funcname, ... )
 
 	local class = LookupPlayerClass( ply )
-	if ( !class ) then return end
+	if ( not class ) then return end
 
 	local func = class[ funcname ]
-	if ( !func ) then ErrorNoHalt( "Function " .. funcname .. " not found on player class!\n" ) return end
+	if ( not func ) then ErrorNoHalt( "Function " .. funcname .. " not found on player class!\n" ) return end
 
 	return func( class, ... )
 
@@ -421,7 +421,7 @@ end
 function OnPlayerSpawn( ply, transiton )
 
 	local class = LookupPlayerClass( ply )
-	if ( !class ) then return end
+	if ( not class ) then return end
 
 	ply:SetSlowWalkSpeed( class.SlowWalkSpeed )
 	ply:SetWalkSpeed( class.WalkSpeed )
@@ -435,7 +435,7 @@ function OnPlayerSpawn( ply, transiton )
 	ply:SetNoCollideWithTeammates( class.TeammateNoCollide )
 	ply:SetAvoidPlayers( class.AvoidPlayers )
 
-	if ( !transiton ) then 
+	if ( not transiton ) then 
 		ply:SetMaxHealth( class.MaxHealth )
 		ply:SetMaxArmor( class.MaxArmor )
 		ply:SetHealth( class.StartHealth )

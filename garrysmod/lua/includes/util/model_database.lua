@@ -8,7 +8,7 @@
 
 local DatabasedModels = {}
 
-if ( !sql.TableExists( "modelinfo" ) ) then
+if ( not sql.TableExists( "modelinfo" ) ) then
 
 	sql.Query( [[CREATE TABLE IF NOT EXISTS modelinfo ( name TEXT NOT NULL PRIMARY KEY, 
 														poseparams INTEGER,
@@ -36,7 +36,7 @@ function OnModelLoaded( ModelName, NumPoseParams, NumSeq, NumAttachments, NumBon
 	
 	-- Just in case. Don't want errors spewing all over 
 	--  the place every time a model loads.
-	if ( !sql.TableExists( "modelinfo" ) ) then return end
+	if ( not sql.TableExists( "modelinfo" ) ) then return end
 	
 	local safeModelName = SQLStr( ModelName )
 	

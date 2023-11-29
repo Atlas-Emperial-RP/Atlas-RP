@@ -631,11 +631,11 @@ GAS:hook("Tick", "logging:ExtraProcessingQueue", function()
 					local pvp_events = GAS.Logging.PvP.PlayerEvents[replacement[2]]
 					if (pvp_events) then
 						for i,pvp_event in pairs(pvp_events) do
-							if (processed_pvp_events[i]) then goto continue end
+							if (processed_pvp_events[i]) then goto continue_1 end
 							processed_pvp_events[i] = true
 
 							pvp_event:AddLog(logtbl)
-							::continue::
+							::continue_1::
 						end
 					end
 				end

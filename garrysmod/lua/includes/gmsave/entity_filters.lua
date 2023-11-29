@@ -57,11 +57,11 @@ function gmsave.ShouldSaveEntity( ent, t )
 
 	--
 	-- Should we save the parent entity?
-	-- If not, don't save this!
+	-- If not, don't save thisnot 
 	--
 	local parent = ent:GetParent()
 	if ( IsValid( parent ) ) then
-		if ( !gmsave.ShouldSaveEntity( parent, parent:GetSaveTable() ) ) then return false end
+		if ( not gmsave.ShouldSaveEntity( parent, parent:GetSaveTable() ) ) then return false end
 	end
 
 	--

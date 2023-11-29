@@ -23,8 +23,8 @@ end
 
 hook.Add( "RenderScreenspaceEffects", "RenderSharpen", function()
 
-	if ( !pp_sharpen:GetBool() ) then return end
-	if ( !GAMEMODE:PostProcessPermitted( "sharpen" ) ) then return end
+	if ( not pp_sharpen:GetBool() ) then return end
+	if ( not GAMEMODE:PostProcessPermitted( "sharpen" ) ) then return end
 
 	DrawSharpen( pp_sharpen_contrast:GetFloat(), pp_sharpen_distance:GetFloat() )
 

@@ -88,7 +88,7 @@ function PANEL:Clear( bDelete )
 
 	for k, panel in pairs( self.Items ) do
 
-		if ( !IsValid( panel ) ) then goto continue end
+		if ( not IsValid( panel ) ) then goto continue end
 
 		panel:SetVisible( false )
 
@@ -96,6 +96,7 @@ function PANEL:Clear( bDelete )
 			panel:Remove()
 		end
 
+		::continue::
 	end
 
 	self.Items = {}
@@ -104,7 +105,7 @@ end
 
 function PANEL:AddItem( item, strLineState )
 
-	if ( !IsValid( item ) ) then return end
+	if ( not IsValid( item ) ) then return end
 
 	item:SetVisible( true )
 	item:SetParent( self:GetCanvas() )
@@ -200,7 +201,7 @@ function PANEL:RemoveItem( item, bDontDelete )
 
 			self.Items[ k ] = nil
 
-			if ( !bDontDelete ) then
+			if ( not bDontDelete ) then
 				panel:Remove()
 			end
 
@@ -216,7 +217,7 @@ function PANEL:CleanList()
 
 	for k, panel in pairs( self.Items ) do
 
-		if ( !IsValid( panel ) or panel:GetParent() ~= self.pnlCanvas ) then
+		if ( not IsValid( panel ) or panel:GetParent() ~= self.pnlCanvas ) then
 			self.Items[k] = nil
 		end
 
@@ -346,7 +347,7 @@ function PANEL:PerformLayout()
 	local Tall = self.pnlCanvas:GetTall()
 	local YPos = 0
 
-	if ( !self.Rebuild ) then
+	if ( not self.Rebuild ) then
 		debug.Trace()
 	end
 
@@ -375,7 +376,7 @@ function PANEL:PerformLayout()
 
 	end
 
-	if ( self.VBar and !self:GetAutoSize() and Tall ~= self.pnlCanvas:GetTall() ) then
+	if ( self.VBar and not self:GetAutoSize() and Tall ~= self.pnlCanvas:GetTall() ) then
 		self.VBar:SetScroll( self.VBar:GetScroll() ) -- Make sure we are not too far down!
 	end
 

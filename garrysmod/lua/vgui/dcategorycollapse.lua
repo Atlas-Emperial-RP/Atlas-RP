@@ -17,7 +17,7 @@ local PANEL = {
 
 	UpdateColours = function( self, skin )
 
-		if ( !self:GetParent():GetExpanded() ) then
+		if ( not self:GetParent():GetExpanded() ) then
 			self:SetExpensiveShadow( 0, Color( 0, 0, 0, 200 ) )
 			return self:SetTextStyleColor( skin.Colours.Category.Header_Closed )
 		end
@@ -177,7 +177,7 @@ function PANEL:SetContents( pContents )
 	self.Contents:SetParent( self )
 	self.Contents:Dock( FILL )
 
-	if ( !self:GetExpanded() ) then
+	if ( not self:GetExpanded() ) then
 
 		self.OldHeight = self:GetTall()
 
@@ -197,8 +197,8 @@ function PANEL:SetExpanded( expanded )
 
 	self.m_bSizeExpanded = tobool( expanded )
 
-	if ( !self:GetExpanded() ) then
-		if ( !self.animSlide.Finished and self.OldHeight ) then return end
+	if ( not self:GetExpanded() ) then
+		if ( not self.animSlide.Finished and self.OldHeight ) then return end
 		self.OldHeight = self:GetTall()
 	end
 
@@ -206,7 +206,7 @@ end
 
 function PANEL:Toggle()
 
-	self:SetExpanded( !self:GetExpanded() )
+	self:SetExpanded( not self:GetExpanded() )
 
 	self.animSlide:Start( self:GetAnimTime(), { From = self:GetTall() } )
 
@@ -215,7 +215,7 @@ function PANEL:Toggle()
 	self:GetParent():GetParent():InvalidateLayout()
 
 	local open = "1"
-	if ( !self:GetExpanded() ) then open = "0" end
+	if ( not self:GetExpanded() ) then open = "0" end
 	self:SetCookie( "Open", open )
 
 	self:OnToggle( self:GetExpanded() )
@@ -255,7 +255,7 @@ function PANEL:PerformLayout()
 
 	else
 
-		if ( IsValid( self.Contents ) and !self.OldHeight ) then self.OldHeight = self.Contents:GetTall() end
+		if ( IsValid( self.Contents ) and not self.OldHeight ) then self.OldHeight = self.Contents:GetTall() end
 		self:SetTall( self:GetHeaderHeight() )
 
 	end
@@ -270,7 +270,7 @@ end
 
 function PANEL:OnMousePressed( mcode )
 
-	if ( !self:GetParent().OnMousePressed ) then return end
+	if ( not self:GetParent().OnMousePressed ) then return end
 
 	return self:GetParent():OnMousePressed( mcode )
 
@@ -282,7 +282,7 @@ function PANEL:AnimSlide( anim, delta, data )
 	self:InvalidateParent()
 
 	if ( anim.Started ) then
-		if ( !IsValid( self.Contents ) and ( self.OldHeight or 0 ) < self.Header:GetTall() ) then
+		if ( not IsValid( self.Contents ) and ( self.OldHeight or 0 ) < self.Header:GetTall() ) then
 			-- We are not using self.Contents and our designated height is less
 			-- than the header size, something is clearly wrong, try to rectify
 			self.OldHeight = 0

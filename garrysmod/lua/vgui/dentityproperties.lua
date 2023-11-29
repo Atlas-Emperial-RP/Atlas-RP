@@ -33,8 +33,8 @@ function PANEL:RebuildControls()
 	--
 	-- It's kewl to return here - because it will leave an empty property sheet.
 	--
-	if ( !IsValid( self.m_Entity ) ) then return end
-	if ( !isfunction( self.m_Entity.GetEditingData ) ) then return end
+	if ( not IsValid( self.m_Entity ) ) then return end
+	if ( not isfunction( self.m_Entity.GetEditingData ) ) then return end
 
 	--
 	-- Call EditVariable for each entry in the entity's EditingData
@@ -58,8 +58,8 @@ end
 --
 function PANEL:EditVariable( varname, editdata )
 
-	if ( !istable( editdata ) ) then return end
-	if ( !isstring( editdata.type ) ) then return end
+	if ( not istable( editdata ) ) then return end
+	if ( not isstring( editdata.type ) ) then return end
 
 	--
 	-- Create a property row in the specified category.
@@ -78,7 +78,7 @@ function PANEL:EditVariable( varname, editdata )
 	-- but only when it's not being edited.
 	--
 	row.DataUpdate = function( _ )
-		if ( !IsValid( self.m_Entity ) ) then self:EntityLost() return end
+		if ( not IsValid( self.m_Entity ) ) then self:EntityLost() return end
 		row:SetValue( self.m_Entity:GetNetworkKeyValue( varname ) )
 	end
 
@@ -87,7 +87,7 @@ function PANEL:EditVariable( varname, editdata )
 	-- We use it to edit the value on the entity itself.
 	--
 	row.DataChanged = function( _, val )
-		if ( !IsValid( self.m_Entity ) ) then self:EntityLost() return end
+		if ( not IsValid( self.m_Entity ) ) then self:EntityLost() return end
 		self.m_Entity:EditValue( varname, tostring( val ) )
 	end
 

@@ -45,7 +45,7 @@ end
 local function RenderSpawnIcon_Ragdoll( model, pos, middle, size )
 
 	local at = model:GetAttachment( model:LookupAttachment( "eyes" ) )
-	if ( !at ) then at = { Pos = model:GetPos(), Ang = model:GetAngles() } end
+	if ( not at ) then at = { Pos = model:GetPos(), Ang = model:GetAngles() } end
 
 	local ViewAngle = at.Ang + Angle( -10, 160, 0 )
 	local ViewPos = at.Pos + ViewAngle:Forward() * -60 + ViewAngle:Up() * -2
@@ -67,7 +67,7 @@ end
 local function RenderSpawnIcon_Ragdoll_Head( model, pos, middle, size )
 
 	local at = model:GetAttachment( model:LookupAttachment( "head" ) )
-	if ( !at ) then at = { Pos = model:GetPos(), Ang = model:GetAngles() } end
+	if ( not at ) then at = { Pos = model:GetPos(), Ang = model:GetAngles() } end
 
 	local ViewAngle = at.Ang + Angle( -10, 160, 0 )
 	local ViewPos = at.Pos + ViewAngle:Forward() * -67 + ViewAngle:Up() * -7 + ViewAngle:Right() * 1.5
@@ -86,7 +86,7 @@ end
 local function RenderSpawnIcon_Ragdoll_Facemask( model, pos, middle, size )
 
 	local at = model:GetAttachment( model:LookupAttachment( "facemask" ) )
-	if ( !at ) then at = { Pos = model:GetPos(), Ang = model:GetAngles() } end
+	if ( not at ) then at = { Pos = model:GetPos(), Ang = model:GetAngles() } end
 
 	local ViewAngle = at.Ang
 	ViewAngle:RotateAroundAxis( ViewAngle:Right(), -10 )
@@ -107,7 +107,7 @@ end
 local function RenderSpawnIcon_Ragdoll_Forward( model, pos, middle, size )
 
 	local at = model:GetAttachment( model:LookupAttachment( "forward" ) )
-	if ( !at ) then at = { Pos = model:GetPos(), Ang = model:GetAngles() } end
+	if ( not at ) then at = { Pos = model:GetPos(), Ang = model:GetAngles() } end
 
 	local ViewAngle = at.Ang + Angle( 10, -20, 0 )
 	local ViewPos = at.Pos + ViewAngle:Forward() * -67 + ViewAngle:Up() * -1 + ViewAngle:Right() * 2.5
@@ -183,7 +183,7 @@ function PositionSpawnIcon( model, pos, noAngles )
 	size = math.max( size, math.abs( mn.z ) + math.abs( mx.z ) )
 
 	model:SetPos( pos )
-	if ( !noAngles ) then model:SetAngles( angle_zero ) end
+	if ( not noAngles ) then model:SetAngles( angle_zero ) end
 
 	local ModelName = model:GetModel()
 	ModelName = string.Replace( ModelName, "--", "/" )
@@ -250,7 +250,7 @@ SpawniconGenFunctions[ "models/infected/boomer.mdl" ] = function( a, b, c, d ) r
 SpawniconGenFunctions[ "models/infected/common_female01.mdl" ] = function ( model, pos, middle, size )
 
 	local at = model:GetAttachment( model:LookupAttachment( "forward" ) )
-	if ( !at ) then at = { Pos = model:GetPos(), Ang = model:GetAngles() } end
+	if ( not at ) then at = { Pos = model:GetPos(), Ang = model:GetAngles() } end
 
 	local ViewAngle = at.Ang + Angle( 180, 180, 0 ) + Angle( 10, -85, -85 )
 	local ViewPos = at.Pos + ViewAngle:Forward() * -76 + ViewAngle:Up() * -1.5 + ViewAngle:Right() * 0
@@ -263,8 +263,8 @@ SpawniconGenFunctions[ "models/infected/common_female_rural01.mdl" ] = Spawnicon
 
 SpawniconGenFunctions[ "models/infected/common_male01.mdl" ] = SpawniconGenFunctions[ "models/infected/common_female01.mdl" ]
 SpawniconGenFunctions[ "models/infected/common_test.mdl" ] = SpawniconGenFunctions[ "models/infected/common_female01.mdl" ]
-SpawniconGenFunctions[ "models/infected/common_morph_test.mdl" ] = SpawniconGenFunctions[ "models/infected/common_female01.mdl" ] // Bad start animation
-SpawniconGenFunctions[ "models/infected/common_male_fallen_survivor.mdl" ] = SpawniconGenFunctions[ "models/infected/common_female01.mdl" ] // Bad start animation
+SpawniconGenFunctions[ "models/infected/common_morph_test.mdl" ] = SpawniconGenFunctions[ "models/infected/common_female01.mdl" ] -- Bad start animation
+SpawniconGenFunctions[ "models/infected/common_male_fallen_survivor.mdl" ] = SpawniconGenFunctions[ "models/infected/common_female01.mdl" ] -- Bad start animation
 
 SpawniconGenFunctions[ "models/infected/common_male_baggagehandler_01.mdl" ] = SpawniconGenFunctions[ "models/infected/common_male01.mdl" ]
 SpawniconGenFunctions[ "models/infected/common_male_pilot.mdl" ] = SpawniconGenFunctions[ "models/infected/common_male01.mdl" ]
@@ -273,7 +273,7 @@ SpawniconGenFunctions[ "models/infected/common_male_suit.mdl" ] = SpawniconGenFu
 SpawniconGenFunctions[ "models/infected/common_military_male01.mdl" ] = SpawniconGenFunctions[ "models/infected/common_male01.mdl" ]
 SpawniconGenFunctions[ "models/infected/common_police_male01.mdl" ] = SpawniconGenFunctions[ "models/infected/common_male01.mdl" ]
 SpawniconGenFunctions[ "models/infected/common_patient_male01.mdl" ] = SpawniconGenFunctions[ "models/infected/common_male01.mdl" ]
-SpawniconGenFunctions[ "models/infected/common_surgeon_male01.mdl" ] = SpawniconGenFunctions[ "models/infected/common_male01.mdl" ] // Bad start animation
+SpawniconGenFunctions[ "models/infected/common_surgeon_male01.mdl" ] = SpawniconGenFunctions[ "models/infected/common_male01.mdl" ] -- Bad start animation
 SpawniconGenFunctions[ "models/infected/common_tsaagent_male01.mdl" ] = SpawniconGenFunctions[ "models/infected/common_male01.mdl" ]
 SpawniconGenFunctions[ "models/infected/common_worker_male01.mdl" ] = SpawniconGenFunctions[ "models/infected/common_male01.mdl" ]
 
@@ -289,5 +289,5 @@ SpawniconGenFunctions[ "models/zombies/zombie5/zombie5.mdl" ] = function( a, b, 
 SpawniconGenFunctions[ "models/infected/boomette.mdl" ] = function( a, b, c, d ) return RenderSpawnIcon_Special( a, b, c, d, -50, 28, 0 ) end
 SpawniconGenFunctions[ "models/infected/charger.mdl" ] = function( a, b, c, d ) return RenderSpawnIcon_Special( a, b, c, d, -70, 14, 20 ) end
 SpawniconGenFunctions[ "models/infected/jockey.mdl" ] = function( a, b, c, d ) return RenderSpawnIcon_Special( a, b, c, d, -50, 0, 7 ) end
-SpawniconGenFunctions[ "models/infected/spitter.mdl" ] = function( a, b, c, d ) return RenderSpawnIcon_Special( a, b, c, d, -1, 0, -70 ) end // as good as deleted
+SpawniconGenFunctions[ "models/infected/spitter.mdl" ] = function( a, b, c, d ) return RenderSpawnIcon_Special( a, b, c, d, -1, 0, -70 ) end -- as good as deleted
 SpawniconGenFunctions[ "models/infected/hulk_dlc3.mdl" ] = SpawniconGenFunctions[ "models/infected/hulk.mdl" ]

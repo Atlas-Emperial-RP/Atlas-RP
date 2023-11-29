@@ -38,7 +38,7 @@ function gmsave.LoadMap( strMapContents, ply, callback )
 
 	local tab = util.JSONToTable( strMapContents )
 
-	if ( !istable( tab ) ) then
+	if ( not istable( tab ) ) then
 		-- Error loading save!
 		MsgN( "gm_load: Couldn't decode from json!" )
 		return false
@@ -91,7 +91,7 @@ function gmsave.SaveMap( ply )
 
 	for k, v in ipairs( Ents ) do
 
-		if ( !gmsave.ShouldSaveEntity( v, v:GetSaveTable() ) or v:IsConstraint() ) then
+		if ( not gmsave.ShouldSaveEntity( v, v:GetSaveTable() ) or v:IsConstraint() ) then
 			Ents[ k ] = nil
 		end
 
@@ -102,7 +102,7 @@ function gmsave.SaveMap( ply )
 	table.insert( Ents, game.GetWorld() )
 
 	local tab = duplicator.CopyEnts( Ents )
-	if ( !tab ) then return end
+	if ( not tab ) then return end
 
 	tab.Player = gmsave.PlayerSave( ply )
 

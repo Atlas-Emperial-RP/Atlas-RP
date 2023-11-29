@@ -3,7 +3,7 @@ local g_Progress = nil
 
 hook.Add( "SpawniconGenerated", "SpawniconGenerated", function( lastmodel, imagename, modelsleft )
 
-	if ( !IsValid( g_Progress ) ) then
+	if ( not IsValid( g_Progress ) ) then
 
 		g_Progress = vgui.Create( "DPanel" )
 		g_Progress:SetSize( 64+10, 64+10+20 )

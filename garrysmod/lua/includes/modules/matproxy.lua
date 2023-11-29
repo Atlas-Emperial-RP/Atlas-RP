@@ -19,8 +19,8 @@ end
 --
 function Add( tbl )
 
-	if ( !tbl.name ) then return; end
-	if ( !tbl.bind ) then return; end
+	if ( not tbl.name ) then return; end
+	if ( not tbl.bind ) then return; end
 
 	local bReloading = ProxyList[ tbl.name ] ~= nil
 
@@ -38,6 +38,7 @@ function Add( tbl )
 			Msg( "Reloading: ", v.Material, "\n" )
 			Init( tbl.name, k, v.Material, v.Values )
 
+			::continue::
 		end
 
 	end
@@ -50,8 +51,8 @@ end
 function Call( name, mat, ent )
 
 	local proxy = ActiveList[ name ]
-	if ( !proxy ) then return end
-	if ( !proxy.bind ) then return end
+	if ( not proxy ) then return end
+	if ( not proxy.bind ) then return end
 
 	proxy:bind( mat, ent )
 
@@ -63,12 +64,12 @@ end
 function Init( name, uname, mat, values )
 
 	local proxy = ProxyList[ name ]
-	if ( !proxy ) then return end
+	if ( not proxy ) then return end
 
 	ActiveList[ uname ] = table.Copy( proxy )
 	local proxy = ActiveList[ uname ];
 
-	if ( !proxy.init ) then return end
+	if ( not proxy.init ) then return end
 
 	proxy:init( mat, values )
 

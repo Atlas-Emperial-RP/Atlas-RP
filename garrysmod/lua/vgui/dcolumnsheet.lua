@@ -23,7 +23,7 @@ end
 
 function PANEL:AddSheet( label, panel, material )
 
-	if ( !IsValid( panel ) ) then return end
+	if ( not IsValid( panel ) ) then return end
 
 	local Sheet = {}
 
@@ -54,7 +54,7 @@ function PANEL:AddSheet( label, panel, material )
 
 	table.insert( self.Items, Sheet )
 
-	if ( !IsValid( self.ActiveButton ) ) then
+	if ( not IsValid( self.ActiveButton ) ) then
 		self:SetActiveButton( Sheet.Button )
 	end
 	

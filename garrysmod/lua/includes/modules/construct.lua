@@ -12,10 +12,10 @@ if SERVER then
 
 	function SetPhysProp( Player, Entity, BoneID, Bone, Data )
 
-		if ( !IsValid( Bone ) ) then
+		if ( not IsValid( Bone ) ) then
 
 			Bone = Entity:GetPhysicsObjectNum( BoneID )
-			if ( !IsValid( Bone ) ) then
+			if ( not IsValid( Bone ) ) then
 				Msg( "SetPhysProp: Error applying attributes to invalid physics object!\n" )
 				return
 			end
@@ -39,7 +39,7 @@ if SERVER then
 		-- HACK HACK
 		-- If we don't do this the prop will be motion enabled and will
 		-- slide through the world with no gravity.
-		if ( !Bone:IsMoveable() ) then
+		if ( not Bone:IsMoveable() ) then
 
 			Bone:EnableMotion( true )
 			Bone:EnableMotion( false )
@@ -55,7 +55,7 @@ if SERVER then
 
 	local function MagnetOff( pl, magnet )
 
-		if ( !IsValid( magnet ) ) then return false end
+		if ( not IsValid( magnet ) ) then return false end
 		if ( magnet:GetTable().toggle ~= 0 ) then return true end
 
 		magnet:Fire( "TurnOff", "" , 0 )
@@ -67,11 +67,11 @@ if SERVER then
 
 	local function MagnetOn( pl, magnet )
 
-		if ( !IsValid( magnet ) ) then return false end
+		if ( not IsValid( magnet ) ) then return false end
 
 		if ( magnet:GetTable().toggle ~= 0 ) then
 
-			magnet:GetTable().toggle_state = !magnet:GetTable().toggle_state
+			magnet:GetTable().toggle_state = not magnet:GetTable().toggle_state
 
 			if ( magnet:GetTable().toggle_state ) then
 				magnet:Fire( "TurnOn", "" , 0 )

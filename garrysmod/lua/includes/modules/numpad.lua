@@ -7,7 +7,7 @@
 	a certain key on the numpad is pressed or released.
 -----------------------------------------------------------]]
 
-if ( !SERVER ) then return end
+if ( not SERVER ) then return end
 
 local tonumber		= tonumber
 local pairs			= pairs
@@ -57,7 +57,7 @@ saverestore.AddRestoreHook( "NumpadModule", Restore )
 -----------------------------------------------------------]]
 local function GetPlayerIndex( ply )
 
-	if ( !IsValid( ply ) ) then return 0 end
+	if ( not IsValid( ply ) ) then return 0 end
 
 	return ply:SteamID64()
 
@@ -72,8 +72,8 @@ local function FireImpulse( tab, pl, idx )
 		idx = GetPlayerIndex( pl )
 	end
 
-	if ( !tab ) then return end
-	if ( !tab[ idx ] ) then return end
+	if ( not tab ) then return end
+	if ( not tab[ idx ] ) then return end
 
 	for k, v in pairs( tab[ idx ] ) do
 
@@ -173,7 +173,7 @@ end
 -----------------------------------------------------------]]
 function OnDown( ply, key, name, ... )
 
-	if ( !key or key ~= key ) then ErrorNoHaltWithStack( "bad argument #2 to 'numpad.OnDown' (number expected, got ", type( key ), ")" ) return end
+	if ( not key or key ~= key ) then ErrorNoHaltWithStack( "bad argument #2 to 'numpad.OnDown' (number expected, got ", type( key ), ")" ) return end
 	keys_in[ key ] = keys_in[ key ] or {}
 
 	local impulse = {}
@@ -191,7 +191,7 @@ end
 -----------------------------------------------------------]]
 function OnUp( ply, key, name, ... )
 
-	if ( !key or key ~= key ) then ErrorNoHaltWithStack( "bad argument #2 to 'numpad.OnUp' (number expected, got ", type( key ), ")" ) return end
+	if ( not key or key ~= key ) then ErrorNoHaltWithStack( "bad argument #2 to 'numpad.OnUp' (number expected, got ", type( key ), ")" ) return end
 	keys_out[ key ] = keys_out[ key ] or {}
 
 	local impulse = {}
@@ -228,7 +228,7 @@ end
 -----------------------------------------------------------]]
 function Remove( idx )
 
-	if ( !idx ) then return end
+	if ( not idx ) then return end
 
 	RemoveFromKeyTable( keys_out, idx )
 	RemoveFromKeyTable( keys_in, idx )

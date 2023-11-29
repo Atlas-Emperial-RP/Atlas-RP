@@ -1,6 +1,6 @@
 
 -- Return if there's nothing to add on to
-if ( !util ) then return end
+if ( not util ) then return end
 
 if ( CLIENT ) then
 	include( "util/worldpicker.lua" )
@@ -14,7 +14,7 @@ end
 function util.IsValidPhysicsObject( ent, num )
 
 	-- Make sure the entity is valid
-	if ( !ent or ( !ent:IsValid() and !ent:IsWorld() ) ) then return false end
+	if ( not ent or ( not ent:IsValid() and not ent:IsWorld() ) ) then return false end
 
 	-- This is to stop attaching to walking NPCs.
 	-- Although this is possible and `works', it can severly reduce the
@@ -22,7 +22,7 @@ function util.IsValidPhysicsObject( ent, num )
 	-- anyway - so we're not really losing anything.
 
 	local MoveType = ent:GetMoveType()
-	if ( !ent:IsWorld() and MoveType ~= MOVETYPE_VPHYSICS and !( ent:GetModel() and ent:GetModel():StartWith( "*" ) ) ) then return false end
+	if ( not ent:IsWorld() and MoveType ~= MOVETYPE_VPHYSICS and not ( ent:GetModel() and ent:GetModel():StartWith( "*" ) ) ) then return false end
 
 	local Phys = ent:GetPhysicsObjectNum( num )
 	return IsValid( Phys )
@@ -376,9 +376,9 @@ local suffix = ({"osx64","osx","linux64","linux","win64","win32"})[
 	+ ( jit.arch == "x86" and 1 or 0 )
 	+ 1
 ]
-local fmt = "lua/bin/gm" .. ((CLIENT and !MENU_DLL) and "cl" or "sv") .. "_%s_%s.dll"
+local fmt = "lua/bin/gm" .. ((CLIENT and not MENU_DLL) and "cl" or "sv") .. "_%s_%s.dll"
 function util.IsBinaryModuleInstalled( name )
-	if ( !isstring( name ) ) then
+	if ( not isstring( name ) ) then
 		error( "bad argument #1 to 'IsBinaryModuleInstalled' (string expected, got " .. type( name ) .. ")" )
 	elseif ( #name == 0 ) then
 		error( "bad argument #1 to 'IsBinaryModuleInstalled' (string cannot be empty)" )

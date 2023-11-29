@@ -37,7 +37,7 @@ end
 
 local function AddToggleOption( data, menu, ent, ply, tr )
 
-	if ( !menu.ToggleSpacer ) then
+	if ( not menu.ToggleSpacer ) then
 		menu.ToggleSpacer = menu:AddSpacer()
 		menu.ToggleSpacer:SetZPos( 500 )
 	end
@@ -77,13 +77,14 @@ function OpenEntityMenu( ent, tr )
 
 	for k, v in SortedPairsByMemberValue( List, "Order" ) do
 
-		if ( !v.Filter ) then goto continue end
-		if ( !v:Filter( ent, LocalPlayer() ) ) then goto continue end
+		if ( not v.Filter ) then goto continue end
+		if ( not v:Filter( ent, LocalPlayer() ) ) then goto continue end
 
 		local option = AddOption( v, menu, ent, LocalPlayer(), tr )
 
 		if ( v.OnCreate ) then v:OnCreate( menu, option ) end
 
+		::continue::
 	end
 
 	menu:Open()
@@ -93,7 +94,7 @@ end
 function OnScreenClick( eyepos, eyevec )
 
 	local ent, tr = GetHovered( eyepos, eyevec )
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	OpenEntityMenu( ent, tr )
 
@@ -102,7 +103,7 @@ end
 -- Use this check in your properties to see if given entity can be affected by it
 -- Ideally this should be done automatically for you, but due to how this system was set up, its now impossible
 function CanBeTargeted( ent, ply )
-	if ( !IsValid( ent ) ) then return false end
+	if ( not IsValid( ent ) ) then return false end
 	if ( ent:IsPlayer() ) then return false end
 
 	-- Check the range if player object is given
@@ -116,7 +117,7 @@ function CanBeTargeted( ent, ply )
 		if ( pos:Distance( ply:GetShootPos() ) > maxRange + 1024 ) then return false end
 	end
 
-	return !( ent:GetPhysicsObjectCount() < 1 and ent:GetSolid() == SOLID_NONE and bit.band( ent:GetSolidFlags(), FSOLID_USE_TRIGGER_BOUNDS ) == 0 and bit.band( ent:GetSolidFlags(), FSOLID_CUSTOMRAYTEST ) == 0 )
+	return not ( ent:GetPhysicsObjectCount() < 1 and ent:GetSolid() == SOLID_NONE and bit.band( ent:GetSolidFlags(), FSOLID_USE_TRIGGER_BOUNDS ) == 0 and bit.band( ent:GetSolidFlags(), FSOLID_CUSTOMRAYTEST ) == 0 )
 end
 
 function GetHovered( eyepos, eyevec )
@@ -127,7 +128,7 @@ function GetHovered( eyepos, eyevec )
 	if ( filter == ply ) then
 		local veh = ply:GetVehicle()
 
-		if ( veh:IsValid() and ( !veh:IsVehicle() or !veh:GetThirdPersonMode() ) ) then
+		if ( veh:IsValid() and ( not veh:IsVehicle() or not veh:GetThirdPersonMode() ) ) then
 			-- A dirty hack for prop_vehicle_crane. util.TraceLine returns the vehicle but it hits phys_bone_follower - something that needs looking into
 			filter = { filter, veh, unpack( ents.FindByClass( "phys_bone_follower" ) ) }
 		end
@@ -140,7 +141,7 @@ function GetHovered( eyepos, eyevec )
 	} )
 
 	-- Hit COLLISION_GROUP_DEBRIS and stuff
-	if ( !trace.Hit or !IsValid( trace.Entity ) ) then
+	if ( not trace.Hit or not IsValid( trace.Entity ) ) then
 		trace = util.TraceLine( {
 			start = eyepos,
 			endpos = eyepos + eyevec * 1024,
@@ -149,7 +150,7 @@ function GetHovered( eyepos, eyevec )
 		} )
 	end
 
-	if ( !trace.Hit or !IsValid( trace.Entity ) ) then return end
+	if ( not trace.Hit or not IsValid( trace.Entity ) ) then return end
 
 	return trace.Entity, trace
 
@@ -161,14 +162,14 @@ if ( SERVER ) then
 	util.AddNetworkString( "properties" )
 
 	net.Receive( "properties", function( len, client )
-		if ( !IsValid( client ) ) then return end
+		if ( not IsValid( client ) ) then return end
 
 		local name = net.ReadString()
-		if ( !name ) then return end
+		if ( not name ) then return end
 
 		local prop = List[ name ]
-		if ( !prop ) then return end
-		if ( !prop.Receive ) then return end
+		if ( not prop ) then return end
+		if ( not prop.Receive ) then return end
 
 		prop:Receive( len, client )
 
@@ -187,12 +188,12 @@ if ( CLIENT ) then
 	
 	hook.Add( "PreDrawHalos", "PropertiesHover", function()
 
-		if ( !IsValid( vgui.GetHoveredPanel() ) or !vgui.GetHoveredPanel():IsWorldClicker() ) then return end
+		if ( not IsValid( vgui.GetHoveredPanel() ) or not vgui.GetHoveredPanel():IsWorldClicker() ) then return end
 
 		UpdateEyePos()
 
 		local ent = GetHovered( lastEyePos, LocalPlayer():GetAimVector() )
-		if ( !IsValid( ent ) ) then return end
+		if ( not IsValid( ent ) ) then return end
 
 		local c = Color( 255, 255, 255, 255 )
 		c.r = 200 + math.sin( RealTime() * 50 ) * 55
@@ -211,9 +212,9 @@ if ( CLIENT ) then
 
 	hook.Add( "GUIMousePressed", "PropertiesClick", function( code, vector )
 
-		if ( !IsValid( vgui.GetHoveredPanel() ) or !vgui.GetHoveredPanel():IsWorldClicker() ) then return end
+		if ( not IsValid( vgui.GetHoveredPanel() ) or not vgui.GetHoveredPanel():IsWorldClicker() ) then return end
 
-		if ( code == MOUSE_RIGHT and !input.IsButtonDown( MOUSE_LEFT ) ) then
+		if ( code == MOUSE_RIGHT and not input.IsButtonDown( MOUSE_LEFT ) ) then
 			OnScreenClick( lastEyePos, vector )
 		end
 
@@ -222,20 +223,20 @@ if ( CLIENT ) then
 	local wasPressed = false
 	hook.Add( "PreventScreenClicks", "PropertiesPreventClicks", function()
 
-		if ( !input.IsButtonDown( MOUSE_RIGHT ) ) then wasPressed = false end
+		if ( not input.IsButtonDown( MOUSE_RIGHT ) ) then wasPressed = false end
 
-		if ( wasPressed and input.IsButtonDown( MOUSE_RIGHT ) and !input.IsButtonDown( MOUSE_LEFT ) ) then return true end
+		if ( wasPressed and input.IsButtonDown( MOUSE_RIGHT ) and not input.IsButtonDown( MOUSE_LEFT ) ) then return true end
 
-		if ( !IsValid( vgui.GetHoveredPanel() ) or !vgui.GetHoveredPanel():IsWorldClicker() ) then return end
+		if ( not IsValid( vgui.GetHoveredPanel() ) or not vgui.GetHoveredPanel():IsWorldClicker() ) then return end
 
 		local ply = LocalPlayer()
-		if ( !IsValid( ply ) ) then return end
+		if ( not IsValid( ply ) ) then return end
 
 		--
 		-- Are we pressing the right mouse button?
 		-- (We check whether we're pressing the left too, to allow for physgun freezes)
 		--
-		if ( input.IsButtonDown( MOUSE_RIGHT ) and !input.IsButtonDown( MOUSE_LEFT ) ) then
+		if ( input.IsButtonDown( MOUSE_RIGHT ) and not input.IsButtonDown( MOUSE_LEFT ) ) then
 
 			--
 			-- Are we hovering an entity? If so, then stomp the action

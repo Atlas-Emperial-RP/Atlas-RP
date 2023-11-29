@@ -31,7 +31,7 @@ end
 
 function PANEL:SetImage( img )
 
-	if ( !img ) then
+	if ( not img ) then
 
 		if ( IsValid( self.m_Image ) ) then
 			self.m_Image:Remove()
@@ -40,7 +40,7 @@ function PANEL:SetImage( img )
 		return
 	end
 
-	if ( !IsValid( self.m_Image ) ) then
+	if ( not IsValid( self.m_Image ) ) then
 		self.m_Image = vgui.Create( "DImage", self )
 	end
 
@@ -53,7 +53,7 @@ PANEL.SetIcon = PANEL.SetImage
 
 function PANEL:SetMaterial( mat )
 
-	if ( !mat ) then
+	if ( not mat ) then
 
 		if ( IsValid( self.m_Image ) ) then
 			self.m_Image:Remove()
@@ -62,7 +62,7 @@ function PANEL:SetMaterial( mat )
 		return
 	end
 
-	if ( !IsValid( self.m_Image ) ) then
+	if ( not IsValid( self.m_Image ) ) then
 		self.m_Image = vgui.Create( "DImage", self )
 	end
 
@@ -85,7 +85,7 @@ end
 
 function PANEL:UpdateColours( skin )
 
-	if ( !self:IsEnabled() )					then return self:SetTextStyleColor( skin.Colours.Button.Disabled ) end
+	if ( not self:IsEnabled() )					then return self:SetTextStyleColor( skin.Colours.Button.Disabled ) end
 	if ( self:IsDown() or self.m_bSelected )	then return self:SetTextStyleColor( skin.Colours.Button.Down ) end
 	if ( self.Hovered )							then return self:SetTextStyleColor( skin.Colours.Button.Hover ) end
 

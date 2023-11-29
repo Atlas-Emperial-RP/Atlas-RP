@@ -41,7 +41,7 @@ end
 -----------------------------------------------------------]]
 hook.Add( "RenderScene", "RenderStereoscopy", function( ViewOrigin, ViewAngles, ViewFOV )
 
-	if ( !pp_stereoscopy:GetBool() ) then return end
+	if ( not pp_stereoscopy:GetBool() ) then return end
 
 	RenderStereoscopy( ViewOrigin, ViewAngles )
 

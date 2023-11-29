@@ -117,7 +117,7 @@ function PANEL:OpenSubMenu( item, menu )
 
 	end
 
-	if ( !IsValid( menu ) ) then return end
+	if ( not IsValid( menu ) ) then return end
 
 	local x, y = item:LocalToScreen( self:GetWide(), 0 )
 	menu:Open( x - 3, y, false, item )
@@ -135,7 +135,7 @@ end
 
 function PANEL:Paint( w, h )
 
-	if ( !self:GetPaintBackground() ) then return end
+	if ( not self:GetPaintBackground() ) then return end
 
 	derma.SkinHook( "Paint", "Menu", self, w, h )
 	return true

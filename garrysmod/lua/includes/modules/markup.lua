@@ -300,7 +300,7 @@ function Parse( ml, maxwidth )
 	font_stack = { "DermaDefault" }
 	blocks = {}
 
-	if ( !string.find( ml, "<" ) ) then
+	if ( not string.find( ml, "<" ) ) then
 		ml = ml .. "<nop>"
 	end
 
