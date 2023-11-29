@@ -42,7 +42,7 @@ function PANEL:Init()
 				if ( str:StartWith( "#" ) ) then str = str:sub( 2 ) end
 				str = language.GetPhrase( str )
 
-				if ( !category_matched && !string.find( str:lower(), text, nil, true ) ) then
+				if ( !category_matched and !string.find( str:lower(), text, nil, true ) ) then
 					item:SetVisible( false )
 				else
 					item:SetVisible( true )
@@ -51,14 +51,14 @@ function PANEL:Init()
 				item:InvalidateLayout()
 			end
 
-			if ( count < 1 && !category_matched ) then
+			if ( count < 1 and !category_matched ) then
 				category:SetVisible( false )
 			else
 				category:SetVisible( true )
 
 				 -- Make sure the category is expanded, but restore the state when we quit searching
 				if ( text == "" ) then
-					if ( category._preSearchState != nil ) then
+					if ( category._preSearchState ~= nil ) then
 						category:SetExpanded( category._preSearchState )
 						category._preSearchState = nil
 					end

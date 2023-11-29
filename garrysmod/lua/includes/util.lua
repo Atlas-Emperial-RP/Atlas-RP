@@ -64,7 +64,7 @@ function PrintTable( t, indent, done )
 	local keys = table.GetKeys( t )
 
 	table.sort( keys, function( a, b )
-		if ( isnumber( a ) && isnumber( b ) ) then return a < b end
+		if ( isnumber( a ) and isnumber( b ) ) then return a < b end
 		return tostring( a ) < tostring( b )
 	end )
 
@@ -75,7 +75,7 @@ function PrintTable( t, indent, done )
 		local value = t[ key ]
 		Msg( string.rep( "\t", indent ) )
 
-		if  ( istable( value ) && !done[ value ] ) then
+		if  ( istable( value ) and !done[ value ] ) then
 
 			done[ value ] = true
 			Msg( key, ":\n" )
@@ -428,7 +428,7 @@ if ( CLIENT ) then
 		local x, y = gui.MousePos()
 
 		-- If the cursor isn't visible it will return 0,0 ignore it.
-		if ( x == 0 && y == 0 ) then return end
+		if ( x == 0 and y == 0 ) then return end
 
 		StoredCursorPos.x, StoredCursorPos.y = x, y
 

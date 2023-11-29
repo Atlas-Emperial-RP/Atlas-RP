@@ -73,7 +73,7 @@ function SWEP:Reload()
 
 	local owner = self:GetOwner()
 
-	if ( !owner:KeyDown( IN_ATTACK2 ) ) then self:SetZoom( owner:IsBot() && 75 || owner:GetInfoNum( "fov_desired", 75 ) ) end
+	if ( !owner:KeyDown( IN_ATTACK2 ) ) then self:SetZoom( owner:IsBot() and 75 or owner:GetInfoNum( "fov_desired", 75 ) ) end
 	self:SetRoll( 0 )
 
 end
@@ -86,8 +86,8 @@ function SWEP:PrimaryAttack()
 	self:DoShootEffect()
 
 	-- If we're multiplayer this can be done totally clientside
-	if ( !game.SinglePlayer() && SERVER ) then return end
-	if ( CLIENT && !IsFirstTimePredicted() ) then return end
+	if ( !game.SinglePlayer() and SERVER ) then return end
+	if ( CLIENT and !IsFirstTimePredicted() ) then return end
 
 	self:GetOwner():ConCommand( "jpeg" )
 
@@ -106,7 +106,7 @@ function SWEP:Tick()
 
 	local owner = self:GetOwner()
 
-	if ( CLIENT && owner != LocalPlayer() ) then return end -- If someone is spectating a player holding this weapon, bail
+	if ( CLIENT and owner ~= LocalPlayer() ) then return end -- If someone is spectating a player holding this weapon, bail
 
 	local cmd = owner:GetCurrentCommand()
 
@@ -142,7 +142,7 @@ function SWEP:Equip()
 
 	local owner = self:GetOwner()
 
-	if ( self:GetZoom() == 70 && owner:IsPlayer() && !owner:IsBot() ) then
+	if ( self:GetZoom() == 70 and owner:IsPlayer() and !owner:IsBot() ) then
 		self:SetZoom( owner:GetInfoNum( "fov_desired", 75 ) )
 	end
 
@@ -161,7 +161,7 @@ function SWEP:DoShootEffect()
 	self:SendWeaponAnim( ACT_VM_PRIMARYATTACK )
 	owner:SetAnimation( PLAYER_ATTACK1 )
 
-	if ( SERVER && !game.SinglePlayer() ) then
+	if ( SERVER and !game.SinglePlayer() ) then
 
 		--
 		-- Note that the flash effect is only
@@ -209,7 +209,7 @@ function SWEP:FreezeMovement()
 	local owner = self:GetOwner()
 
 	-- Don't aim if we're holding the right mouse button
-	if ( owner:KeyDown( IN_ATTACK2 ) || owner:KeyReleased( IN_ATTACK2 ) ) then
+	if ( owner:KeyDown( IN_ATTACK2 ) or owner:KeyReleased( IN_ATTACK2 ) ) then
 		return true
 	end
 
@@ -219,7 +219,7 @@ end
 
 function SWEP:CalcView( ply, origin, angles, fov )
 
-	if ( self:GetRoll() != 0 ) then
+	if ( self:GetRoll() ~= 0 ) then
 		angles.Roll = self:GetRoll()
 	end
 

@@ -85,7 +85,7 @@ end
 function table.Merge( dest, source )
 
 	for k, v in pairs( source ) do
-		if ( istable( v ) && istable( dest[ k ] ) ) then
+		if ( istable( v ) and istable( dest[ k ] ) ) then
 			-- don't overwrite one table with another
 			-- instead merge them recurisvely
 			table.Merge( dest[ k ], v )
@@ -234,7 +234,7 @@ local function MakeTable( t, nice, indent, done )
 			key = ""
 		end
 
-		if ( istable( value ) && !done[ value ] ) then
+		if ( istable( value ) and !done[ value ] ) then
 
 			if ( IsColor( value ) ) then
 				done[ value ] = true
@@ -701,7 +701,7 @@ end
 function table.MemberValuesFromKey( tab, key )
 	local res = {}
 	for k, v in pairs( tab ) do
-		if ( istable( v ) && v[ key ] != nil ) then res[ #res + 1 ] = v[ key ] end
+		if ( istable( v ) and v[ key ] ~= nil ) then res[ #res + 1 ] = v[ key ] end
 	end
 	return res
 end

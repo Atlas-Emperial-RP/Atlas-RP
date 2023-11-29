@@ -88,16 +88,16 @@ function PANEL:DropAction_Normal( Drops, bDoDrop, Command, x, y )
 	local drop = 0
 	if ( self.bDropCenter ) then drop = 5 end
 
-	if ( disty < 0 && self.bDropTop && ( drop == 0 || math.abs( disty ) > h * 0.1 ) ) then drop = 8 end
-	if ( disty >= 0 && self.bDropBottom && ( drop == 0 || math.abs( disty ) > h * 0.1 ) ) then drop = 2 end
-	if ( distx < 0 && self.bDropLeft && ( drop == 0 || math.abs( distx ) > w * 0.1 ) ) then drop = 4 end
-	if ( distx >= 0 && self.bDropRight && ( drop == 0 || math.abs( distx ) > w * 0.1 ) ) then drop = 6 end
+	if ( disty < 0 and self.bDropTop and ( drop == 0 || math.abs( disty ) > h * 0.1 ) ) then drop = 8 end
+	if ( disty >= 0 and self.bDropBottom and ( drop == 0 || math.abs( disty ) > h * 0.1 ) ) then drop = 2 end
+	if ( distx < 0 and self.bDropLeft and ( drop == 0 || math.abs( distx ) > w * 0.1 ) ) then drop = 4 end
+	if ( distx >= 0 and self.bDropRight and ( drop == 0 || math.abs( distx ) > w * 0.1 ) ) then drop = 6 end
 
 	self:UpdateDropTarget( drop, closest )
 
 	if ( table.HasValue( Drops, closest ) ) then return end
 
-	if ( !bDoDrop && !self:GetUseLiveDrag() ) then return end
+	if ( !bDoDrop and !self:GetUseLiveDrag() ) then return end
 
 	-- This keeps the drop order the same,
 	-- whether we add it before an object or after
@@ -112,7 +112,7 @@ function PANEL:DropAction_Normal( Drops, bDoDrop, Command, x, y )
 		if ( v:IsOurChild( self ) ) then continue end
 
 		-- Copy the panel if we are told to from the DermaMenu(), or if we are moving from a read only panel to a not read only one.
-		if ( ( Command && Command == "copy" || ( IsValid( v:GetParent() ) && v:GetParent().GetReadOnly && v:GetParent():GetReadOnly() && v:GetParent():GetReadOnly() != self:GetReadOnly() ) ) && v.Copy ) then v = v:Copy() end
+		if ( ( Command and Command == "copy" || ( IsValid( v:GetParent() ) and v:GetParent().GetReadOnly and v:GetParent():GetReadOnly() and v:GetParent():GetReadOnly() ~= self:GetReadOnly() ) ) and v.Copy ) then v = v:Copy() end
 
 		v = v:OnDrop( self )
 

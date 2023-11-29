@@ -82,7 +82,7 @@ function Call( name, gm, ... )
 	-- Run hooks
 	--
 	local HookTable = Hooks[ name ]
-	if ( HookTable != nil ) then
+	if ( HookTable ~= nil ) then
 
 		local a, b, c, d, e, f;
 
@@ -117,7 +117,7 @@ function Call( name, gm, ... )
 			--
 			-- Hook returned a value - it overrides the gamemode function
 			--
-			if ( a != nil ) then
+			if ( a ~= nil ) then
 				return a, b, c, d, e, f
 			end
 

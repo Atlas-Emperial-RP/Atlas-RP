@@ -47,7 +47,7 @@ end
 -----------------------------------------------------------]]
 function TranslatePlayerModel( name )
 
-	if ( ModelList[ name ] != nil ) then
+	if ( ModelList[ name ] ~= nil ) then
 		return ModelList[ name ]
 	end
 
@@ -59,7 +59,7 @@ function TranslateToPlayerModelName( model )
 
 	model = string.lower( model )
 
-	if ( ModelListRev[ model ] != nil ) then
+	if ( ModelListRev[ model ] ~= nil ) then
 		return ModelListRev[ model ]
 	end
 
@@ -71,7 +71,7 @@ end
 --
 function TranslatePlayerHands( name )
 
-	if ( HandNames[ name ] != nil ) then
+	if ( HandNames[ name ] ~= nil ) then
 		return HandNames[ name ]
 	end
 
@@ -312,8 +312,8 @@ local function LookupPlayerClass( ply )
 	-- Check the cache
 	--
 	local method = ply.m_CurrentPlayerClass
-	if ( method && method.Player == ply ) then
-		if ( method.ClassID == id && method.Func ) then return method end -- current class is still good, behave normally
+	if ( method and method.Player == ply ) then
+		if ( method.ClassID == id and method.Func ) then return method end -- current class is still good, behave normally
 		if ( method.ClassChanged ) then method:ClassChanged() end -- the class id changed, remove the old class
 	end
 

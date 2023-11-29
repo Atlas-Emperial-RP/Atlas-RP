@@ -29,7 +29,7 @@ function TOOL:Think()
 
 	local CurrentEditing = self.Weapon:GetTargetEntity1()
 
-	if ( CLIENT && self.LastEditing != CurrentEditing ) then
+	if ( CLIENT and self.LastEditing ~= CurrentEditing ) then
 
 		self.LastEditing = CurrentEditing
 

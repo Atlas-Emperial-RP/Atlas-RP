@@ -121,7 +121,7 @@ function SWEP:Think()
 
 	-- SWEP:Think is called one more time clientside
 	-- after holstering using Player:SelectWeapon in multiplayer
-	if ( CLIENT && self.m_uHolsterFrame == FrameNumber() ) then return end
+	if ( CLIENT and self.m_uHolsterFrame == FrameNumber() ) then return end
 
 	local owner = self:GetOwner()
 	if ( !owner:IsPlayer() ) then return end
@@ -151,7 +151,7 @@ function SWEP:Think()
 		return
 	end
 
-	if ( lastmode && lastmode != curmode ) then
+	if ( lastmode and lastmode ~= curmode ) then
 		local lastmode_obj = self:GetToolObject( lastmode )
 
 		if ( lastmode_obj ) then
@@ -160,9 +160,9 @@ function SWEP:Think()
 		end
 	end
 
-	self.Primary.Automatic = tool.LeftClickAutomatic || false
-	self.Secondary.Automatic = tool.RightClickAutomatic || false
-	self.RequiresTraceHit = tool.RequiresTraceHit || true
+	self.Primary.Automatic = tool.LeftClickAutomatic or false
+	self.Secondary.Automatic = tool.RightClickAutomatic or false
+	self.RequiresTraceHit = tool.RequiresTraceHit or true
 
 	tool:Think()
 
@@ -301,7 +301,7 @@ function SWEP:Holster()
 
 	-- Save the frame the weapon was holstered on to prevent
 	-- the extra Think call after calling Player:SelectWeapon in multiplayer
-	if ( CLIENT && CanHolster == true ) then self.m_uHolsterFrame = FrameNumber() end
+	if ( CLIENT and CanHolster == true ) then self.m_uHolsterFrame = FrameNumber() end
 
 	if ( CanHolster == true and toolobj ) then toolobj:ReleaseGhostEntity() end
 

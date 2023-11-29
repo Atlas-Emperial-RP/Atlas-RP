@@ -28,7 +28,7 @@ function GetResults( str, types, maxResults )
 
 	for k, v in pairs( Providers ) do
 		if ( isstring( types ) ) then
-			if ( types != k ) then continue end
+			if ( types ~= k ) then continue end
 		elseif ( istable( types ) ) then
 			if ( !table.HasValue( types, k ) ) then continue end
 		end

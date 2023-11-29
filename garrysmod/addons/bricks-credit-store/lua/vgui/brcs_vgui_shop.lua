@@ -71,9 +71,9 @@ function PANEL:Init()
 	CloseButton:SetText( "" )
 	local CloseMat = Material( "materials/brickscreditstore/close.png", "noclamp smooth" )
 	CloseButton.Paint = function( self2, w, h )
-		if( self2:IsHovered() and !self2:IsDown() ) then
+		if( self2:IsHovered() and not self2:IsDown() ) then
 			surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
-		elseif( self2:IsDown() || self2.m_bSelected ) then
+		elseif( self2:IsDown() or self2.m_bSelected ) then
 			surface.SetDrawColor( BRICKSCREDITSTORE.LUACONFIG.Themes.Accent )
 		else
 			surface.SetDrawColor( 52, 55, 76 )
@@ -313,10 +313,10 @@ function PANEL:Setup( ParentVGUI )
 				CreatedToggles[v[1]].Paint = function( self2, w, h )
 					draw.RoundedBox( 3, 0, 0, w, h, BRICKSCREDITSTORE.LUACONFIG.Themes.Secondary )
 			
-					if( self2:IsHovered() and !self2:IsDown() and not Toggled[v[1]] ) then
+					if( self2:IsHovered() and not self2:IsDown() and not Toggled[v[1]] ) then
 						surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
 						draw.SimpleText( label, "BRCS_MP_22", 10, h/2, Color( 101*1.35, 107*1.35, 145*1.35 ), 0, 1 )
-					elseif( self2:IsDown() || Toggled[v[1]] ) then
+					elseif( self2:IsDown() or Toggled[v[1]] ) then
 						surface.SetDrawColor( BRICKSCREDITSTORE.LUACONFIG.Themes.Accent )
 						draw.SimpleText( label, "BRCS_MP_22", 10, h/2, BRICKSCREDITSTORE.LUACONFIG.Themes.White, 0, 1 )
 					else
@@ -337,7 +337,7 @@ function PANEL:Setup( ParentVGUI )
 				end
 			end
 
-			if( not Toggled[v[1] or ""] or not v[1] or not BRICKSCREDITSTORE.LOCKERTYPES[v[1] or ""] ) then continue end
+			if( not Toggled[v[1] or ""] or not v[1] or not BRICKSCREDITSTORE.LOCKERTYPES[v[1] or ""] ) then goto continue end
 
 			local LockerType = BRICKSCREDITSTORE.LOCKERTYPES[v[1] or ""]
 			
@@ -428,8 +428,9 @@ function PANEL:Setup( ParentVGUI )
 						self2.PopUp:AddOption( "Transfer", function() 
 							local Options = {}
 							for k, v in pairs( player.GetHumans() ) do
-								if( v == LocalPlayer() ) then continue end
+								if( v == LocalPlayer() ) then goto continue end
 								Options[v:SteamID64()] = v:Nick()
+								::continue::
 							end
 
 							if( table.Count( Options ) <= 0 ) then
@@ -469,7 +470,7 @@ function PANEL:Setup( ParentVGUI )
 			ItemToggle:SetPos( ItemEntry:GetWide()-10-IconSize, 10 )
 			ItemToggle:SetText( "" )
 			ItemToggle.Paint = function( self2, w, h )
-				if( self2:IsHovered() and !self2:IsDown() and not v.Active ) then
+				if( self2:IsHovered() and not self2:IsDown() and not v.Active ) then
 					surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
 				elseif( v.Active ) then
 					surface.SetDrawColor( BRICKSCREDITSTORE.LUACONFIG.Themes.Accent )
@@ -493,6 +494,7 @@ function PANEL:Setup( ParentVGUI )
 					net.WriteInt( k, 32 )
 				net.SendToServer()
 			end
+			::continue::
 		end
 		
 		IconLayout:SizeToContents()
@@ -524,13 +526,13 @@ function PANEL:Init()
 			gui.OpenURL( BRICKSCREDITSTORE.LUACONFIG.DonationURL )
 		end
 	}
-	/*Buttons[2] = {
+	--[[---Buttons[2] = {
 		Name = "Enter code",
 		Icon = "materials/brickscreditstore/donate.png",
 		doClick = function()
 			
 		end
-	}*/
+	}*/ ---]]
 
 	for k, v in pairs( Buttons ) do
 		local ButtonEntry = vgui.Create( "DButton", ToggleBar )
@@ -545,7 +547,7 @@ function PANEL:Init()
 		ButtonEntry.Paint = function( self2, w, h )
 			draw.RoundedBox( 3, 0, 0, w, h, BRICKSCREDITSTORE.LUACONFIG.Themes.Secondary )
 
-			if( self2:IsHovered() and !self2:IsDown() ) then
+			if( self2:IsHovered() and not self2:IsDown() ) then
 				surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
 				draw.SimpleText( v.Name, "BRCS_MP_22", w-10, h/2, Color( 101*1.35, 107*1.35, 145*1.35 ), TEXT_ALIGN_RIGHT, 1 )
 			elseif( self2:IsDown() ) then

@@ -54,7 +54,7 @@ function ENT:Initialize()
 
 		-- Get the attached entity so that clientside functions like properties can interact with it
 		local tab = ents.FindByClassAndParent( "prop_dynamic", self )
-		if ( tab && IsValid( tab[ 1 ] ) ) then self.AttachedEntity = tab[ 1 ] end
+		if ( tab and IsValid( tab[ 1 ] ) ) then self.AttachedEntity = tab[ 1 ] end
 
 	end
 
@@ -75,11 +75,11 @@ function ENT:Draw()
 	-- Don't draw the grip if there's no chance of us picking it up
 	local ply = LocalPlayer()
 	local wep = ply:GetActiveWeapon()
-	if ( !IsValid( wep ) ) then return end
+	if ( not IsValid( wep ) ) then return end
 
 	local weapon_name = wep:GetClass()
 
-	if ( weapon_name != "weapon_physgun" && weapon_name != "weapon_physcannon" && weapon_name != "gmod_tool" ) then
+	if ( weapon_name ~= "weapon_physgun" and weapon_name ~= "weapon_physcannon" and weapon_name ~= "gmod_tool" ) then
 		return
 	end
 
@@ -97,7 +97,7 @@ end
 ENT.MaxWorldTipDistance = 256
 function ENT:BeingLookedAtByLocalPlayer()
 	local ply = LocalPlayer()
-	if ( !IsValid( ply ) ) then return false end
+	if ( not IsValid( ply ) ) then return false end
 
 	local view = ply:GetViewEntity()
 	local dist = self.MaxWorldTipDistance
@@ -105,7 +105,7 @@ function ENT:BeingLookedAtByLocalPlayer()
 
 	-- If we're spectating a player, perform an eye trace
 	if ( view:IsPlayer() ) then
-		return view:EyePos():DistToSqr( self:GetPos() ) <= dist && view:GetEyeTrace().Entity == self
+		return view:EyePos():DistToSqr( self:GetPos() ) <= dist and view:GetEyeTrace().Entity == self
 	end
 
 	-- If we're not spectating a player, perform a manual trace from the entity's position
@@ -127,7 +127,7 @@ function ENT:PhysicsUpdate( physobj )
 	if ( CLIENT ) then return end
 
 	-- Don't do anything if the player isn't holding us
-	if ( !self:IsPlayerHolding() && !self:IsConstrained() ) then
+	if ( not self:IsPlayerHolding() and not self:IsConstrained() ) then
 
 		physobj:SetVelocity( vector_origin )
 		physobj:Sleep()
@@ -156,7 +156,7 @@ end
 function ENT:PostEntityPaste( ply )
 
 	-- Restore the attached entity using the information we've saved
-	if ( IsValid( self.AttachedEntity ) && self.AttachedEntityInfo ) then
+	if ( IsValid( self.AttachedEntity ) and self.AttachedEntityInfo ) then
 
 		-- Apply skin, bodygroups, bone manipulator, etc.
 		duplicator.DoGeneric( self.AttachedEntity, self.AttachedEntityInfo )

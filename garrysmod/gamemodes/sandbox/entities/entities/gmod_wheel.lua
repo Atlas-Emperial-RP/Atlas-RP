@@ -101,14 +101,14 @@ function ENT:Forward( onoff, mul )
 	-- If we're toggle mode and the key has been
 	-- released then just return.
 	--
-	if ( toggle && !onoff ) then return true end
+	if ( toggle and !onoff ) then return true end
 
 	mul = mul or 1
 	local Speed = Motor.direction * mul * self.TorqueScale
 
 	if ( !onoff ) then Speed = 0 end
 
-	if ( toggle && onoff ) then
+	if ( toggle and onoff ) then
 
 		self.ToggleState = !self.ToggleState
 

@@ -105,7 +105,7 @@ end
 ----------------------------------------------------------------------
 
 local function ExtractColor(color)
-	if (!color or color == "") then
+	if (not color or color == "") then
 		return color_white
 	else
 		if (string.sub(color, 0, 2) == "c=") then
@@ -411,7 +411,7 @@ function expression:Execute(base, font, text)
 	local ok = pcall(draw.SimpleText, text, font, 0, 0, color_transparent, 1, 1)
 	local font = font
 	
-	if (!ok) then
+	if (not ok) then
 		local eugh = font
 		
 		timer.Simple(0.05, function() chat.AddText(":exclamation: The font \"" .. eugh .. "\" is invalid!") end)
@@ -520,7 +520,7 @@ function expression:Execute(base, text)
 	label:SetMouseInputEnabled(true)
 	
 	function label:PaintOver(w, h)
-		if (!self.clicked) then
+		if (not self.clicked) then
 			draw.SimpleRect(0, 0, w, h, color_black)
 		end
 	end
@@ -540,7 +540,7 @@ function expression:GetExample(base)
 	label:SetMouseInputEnabled(true)
 	
 	function label:PaintOver(w, h)
-		if (!self.clicked) then
+		if (not self.clicked) then
 			draw.SimpleRect(0, 0, w, h, color_black)
 		end
 	end

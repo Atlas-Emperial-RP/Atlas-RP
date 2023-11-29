@@ -81,7 +81,7 @@ end
 
 function PANEL:QuickSavePreset()
 	Derma_StringRequest( "#preset.saveas_title", "#preset.saveas_desc", "", function( text )
-		if ( !text || text:Trim() == "" ) then presets.BadNameAlert() return end
+		if ( !text or text:Trim() == "" ) then presets.BadNameAlert() return end
 
 		if ( presets.Exists( self.m_strPreset, text ) ) then
 			presets.OverwritePresetPrompt( function()

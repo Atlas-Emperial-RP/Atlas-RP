@@ -65,7 +65,7 @@ function SWEP:PrimaryAttack()
 			ent:GetOwner():MedicalRespawn()			
 		end
 		
-	elseif IsValid(ent.ragdoll) && ent.ragdoll:IsDeathRagdoll() then
+	elseif IsValid(ent.ragdoll) and ent.ragdoll:IsDeathRagdoll() then
 		
 		self.Weapon:SendWeaponAnim( ACT_VM_PRIMARYATTACK )
 		

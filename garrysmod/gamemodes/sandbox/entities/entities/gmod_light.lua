@@ -110,7 +110,7 @@ function ENT:DrawEffects()
 	local LightPos = self:GetPos()
 
 	local Visibile = util.PixelVisible( LightPos, 4, self.PixVis )
-	if ( !Visibile || Visibile < 0.1 ) then return end
+	if ( !Visibile or Visibile < 0.1 ) then return end
 
 	local c = self:GetColor()
 	local Alpha = 255 * Visibile

@@ -21,7 +21,7 @@ local function SetColour( ply, ent, data )
 	-- If we're trying to make them transparent them make the render mode
 	-- a transparent type. This used to fix in the engine - but made HL:S props invisible(!)
 	--
-	if ( data.Color && data.Color.a < 255 && data.RenderMode == RENDERMODE_NORMAL ) then
+	if ( data.Color and data.Color.a < 255 and data.RenderMode == RENDERMODE_NORMAL ) then
 		data.RenderMode = RENDERMODE_TRANSCOLOR
 	end
 

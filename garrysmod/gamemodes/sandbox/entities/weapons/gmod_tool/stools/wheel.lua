@@ -32,10 +32,10 @@ end
 -- Places a wheel
 function TOOL:LeftClick( trace )
 
-	if ( trace.Entity && trace.Entity:IsPlayer() ) then return false end
+	if ( trace.Entity and trace.Entity:IsPlayer() ) then return false end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER && !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+	if ( SERVER and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 	if ( CLIENT ) then return true end
 
@@ -43,14 +43,14 @@ function TOOL:LeftClick( trace )
 
 	-- Check the model's validity
 	local model = self:GetClientInfo( "model" )
-	if ( !util.IsValidModel( model ) || !util.IsValidProp( model ) || !IsValidWheelModel( model ) ) then return false end
+	if ( !util.IsValidModel( model ) or !util.IsValidProp( model ) or !IsValidWheelModel( model ) ) then return false end
 
 	-- Get client's CVars
 	local torque = self:GetClientNumber( "torque" )
 	local friction = self:GetClientNumber( "friction" )
 	local nocollide = self:GetClientNumber( "nocollide" )
 	local limit = self:GetClientNumber( "forcelimit" )
-	local toggle = self:GetClientNumber( "toggle" ) != 0
+	local toggle = self:GetClientNumber( "toggle" ) ~= 0
 
 	local fwd = self:GetClientNumber( "fwd" )
 	local bck = self:GetClientNumber( "bck" )
@@ -106,19 +106,19 @@ end
 -- Apply new values to the wheel
 function TOOL:RightClick( trace )
 
-	if ( trace.Entity && trace.Entity:GetClass() != "gmod_wheel" ) then return false end
+	if ( trace.Entity and trace.Entity:GetClass() ~= "gmod_wheel" ) then return false end
 	if ( CLIENT ) then return true end
 
 	local wheelEnt = trace.Entity
 
 	-- Only change your own wheels..
-	if ( IsValid( wheelEnt:GetPlayer() ) && wheelEnt:GetPlayer() != self:GetOwner() ) then
+	if ( IsValid( wheelEnt:GetPlayer() ) and wheelEnt:GetPlayer() ~= self:GetOwner() ) then
 		return false
 	end
 
 	-- Get client's CVars
 	local torque = self:GetClientNumber( "torque" )
-	local toggle = self:GetClientNumber( "toggle" ) != 0
+	local toggle = self:GetClientNumber( "toggle" ) ~= 0
 	local fwd = self:GetClientNumber( "fwd" )
 	local bck = self:GetClientNumber( "bck" )
 
@@ -153,7 +153,7 @@ if ( SERVER ) then
 	-- For duplicator, creates the wheel.
 	function MakeWheel( pl, pos, ang, model, key_f, key_r, axis, direction, toggle, BaseTorque, Data )
 
-		if ( IsValid( pl ) && !pl:CheckLimit( "wheels" ) ) then return false end
+		if ( IsValid( pl ) and !pl:CheckLimit( "wheels" ) ) then return false end
 		if ( !IsValidWheelModel( model ) ) then return false end
 
 		local wheel = ents.Create( "gmod_wheel" )
@@ -208,7 +208,7 @@ function TOOL:UpdateGhostWheel( ent, ply )
 	if ( !IsValid( ent ) ) then return end
 
 	local trace = ply:GetEyeTrace()
-	if ( !trace.Hit || IsValid( trace.Entity ) && ( trace.Entity:IsPlayer() /*|| trace.Entity:GetClass() == "gmod_wheel"*/ ) ) then
+	if ( !trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:IsPlayer() /*or trace.Entity:GetClass() == "gmod_wheel"*/ ) ) then
 
 		ent:SetNoDraw( true )
 		return
@@ -233,7 +233,7 @@ function TOOL:Think()
 	local mdl = self:GetClientInfo( "model" )
 	if ( !IsValidWheelModel( mdl ) ) then self:ReleaseGhostEntity() return end
 
-	if ( !IsValid( self.GhostEntity ) || self.GhostEntity:GetModel() != mdl ) then
+	if ( !IsValid( self.GhostEntity ) or self.GhostEntity:GetModel() ~= mdl ) then
 		self.wheelAngle = Angle( math.NormalizeAngle( self:GetClientNumber( "rx" ) ), math.NormalizeAngle( self:GetClientNumber( "ry" ) ), math.NormalizeAngle( self:GetClientNumber( "rz" ) ) )
 		self:MakeGhostEntity( mdl, vector_origin, angle_zero )
 	end

@@ -85,7 +85,7 @@ local function loadAddon( )
 					--Attempt to convert the result to a boolean.
 					local jsonTbl = util.JSONToTable(result or "")
 
-					if !jsonTbl or jsonTbl["Outdated"] == nil or !jsonTbl["Latest"] then return end
+					if not jsonTbl or jsonTbl["Outdated"] == nil or not jsonTbl["Latest"] then return end
 
 					--Check if there is an update available.
 					if jsonTbl["Outdated"] == true then
@@ -110,7 +110,7 @@ local function loadAddon( )
 		--Load serversided files.
 		include("edgehud/sv_hud.lua")
 
-		if !DarkRP then
+		if not DarkRP then
 			print("[EdgeHUD] : [" .. EdgeHUD.Version .. "] : EdgeHUD requires DarkRP to work correctly. Please install the DarkRP gamemode to use EdgeHUD.")
 		end
 
@@ -136,7 +136,7 @@ local function loadAddon( )
 
 			timer.Create("EdgeHUD:LoadFallback", 0, 0, function(  )
 
-				if table.Count(EdgeHUD.Configuration.Config) != 0 then
+				if table.Count(EdgeHUD.Configuration.Config) ~= 0 then
 
 					timer.Remove("EdgeHUD:LoadFallback")
 

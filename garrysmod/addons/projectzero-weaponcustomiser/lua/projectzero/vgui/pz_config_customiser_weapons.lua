@@ -193,8 +193,9 @@ function PANEL:Refresh()
         local function getEnabledWeapons()
             local enabledWeapons = 0
             for k, v in pairs( weaponPack.Weapons ) do
-                if( values[k] and values[k].Disabled ) then continue end
+                if( values[k] and values[k].Disabled ) then goto continue end
                 enabledWeapons = enabledWeapons+1
+                ::continue::
             end
 
             return enabledWeapons
@@ -214,7 +215,7 @@ function PANEL:Refresh()
             end
         end )
 
-        if( categoryDisabled ) then continue end
+        if( categoryDisabled ) then goto continue end
 
         for weaponClass, weaponData in pairs( weaponPack.Weapons ) do
             local weaponEntry = self:CreateWeaponPanel( categoryPanel, weaponData.Name, weaponClass, weaponData.Model )
@@ -263,12 +264,13 @@ function PANEL:Refresh()
 
             categoryPanel:SetExtraHeight( categoryPanel:GetExtraHeight()+weaponEntry:GetTall()+PROJECT0.UI.Margin5 )
 		end
+        ::continue::
 	end
 
     local customCategoryPanel = self:CreateCategoryPanel( "custom", "Custom" )
 
     for k, v in pairs( values ) do
-        if( weaponsList[k] ) then continue end
+        if( weaponsList[k] ) then goto continue end
         weaponsList[k] = v
 
         local weaponEntry = self:CreateWeaponPanel( customCategoryPanel, v.Name, k, v.Model )
@@ -297,6 +299,7 @@ function PANEL:Refresh()
         end )
 
         customCategoryPanel:SetExtraHeight( customCategoryPanel:GetExtraHeight()+weaponEntry:GetTall()+PROJECT0.UI.Margin5 )
+        ::continue::
     end
 
     local addNewButton = customCategoryPanel:Add( "DButton" )
@@ -332,8 +335,9 @@ function PANEL:Refresh()
         
         local options = {}
         for k, v in ipairs( weapons.GetList() ) do
-            if( weaponsList[v.ClassName] ) then continue end
+            if( weaponsList[v.ClassName] ) then goto continue end
             options[v.ClassName] = PROJECT0.FUNC.GetWeaponName( v.ClassName )
+            ::continue::
         end
 
         PROJECT0.FUNC.DermaComboRequest( "What weapon would you like to add?", "WEAPON EDITOR", options, false, true, false, function( value, data )

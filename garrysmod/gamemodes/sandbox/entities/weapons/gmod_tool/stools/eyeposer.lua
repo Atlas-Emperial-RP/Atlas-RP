@@ -82,7 +82,7 @@ function TOOL:SetSelectedEntity( ent )
 
 	if ( !IsValid( ent ) ) then self:SetOperation( 0 ) end
 
-	if ( IsValid( ent ) && ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
+	if ( IsValid( ent ) and ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
 	return self:GetWeapon():SetNWEntity( "eyeposer_ent", ent )
 end
 
@@ -93,7 +93,7 @@ function TOOL:LeftClick( trace )
 		return self:MakeLookAtMe( trace )
 	end
 
-	if ( !IsValid( self:GetSelectedEntity() ) or self:GetOperation() != 1 ) then
+	if ( !IsValid( self:GetSelectedEntity() ) or self:GetOperation() ~= 1 ) then
 
 		self:SetSelectedEntity( trace.Entity )
 		if ( !IsValid( self:GetSelectedEntity() ) ) then return false end
@@ -158,7 +158,7 @@ function TOOL:MakeLookAtMe( trace )
 	self:SetOperation( 0 )
 
 	local ent = trace.Entity
-	if ( IsValid( ent ) && ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
+	if ( IsValid( ent ) and ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
 	if ( !IsValid( ent ) ) then return false end
 
 	if ( CLIENT ) then return true end
@@ -181,7 +181,7 @@ function TOOL:Reload( trace )
 	self:SetOperation( 0 )
 
 	local ent = trace.Entity
-	if ( IsValid( ent ) && ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
+	if ( IsValid( ent ) and ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
 	if ( !IsValid( ent ) ) then return false end
 
 	if ( CLIENT ) then return true end
@@ -209,7 +209,7 @@ function TOOL:Think()
 
 	if ( !IsValid( ent ) ) then self:SetOperation( 0 ) return end
 	
-	if ( self:GetOperation() != 2 ) then return end
+	if ( self:GetOperation() ~= 2 ) then return end
 
 	-- On the server we continually set the eye position
 	SetEyeTarget( self:GetOwner(), ent, { EyeTarget = self:CalculateEyeTarget() } )

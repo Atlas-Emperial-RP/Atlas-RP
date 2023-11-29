@@ -27,7 +27,7 @@ local function GetTrace( ply )
 	end
 end
 
-// Convars //
+-- [[ Convars ]] --
 CreateConVar( "cuffs_restrictvehicle", 0, {FCVAR_ARCHIVE,FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED} )
 
 CreateConVar( "cuffs_restrictsuicide", 1, {FCVAR_ARCHIVE,FCVAR_SERVER_CAN_EXECUTE} )
@@ -37,7 +37,7 @@ CreateConVar( "cuffs_restrictwarrant", 1, {FCVAR_ARCHIVE,FCVAR_SERVER_CAN_EXECUT
 CreateConVar( "cuffs_autoarrest", 0, {FCVAR_ARCHIVE,FCVAR_SERVER_CAN_EXECUTE} )
 CreateConVar( "cuffs_restrictarrest", 1, {FCVAR_ARCHIVE,FCVAR_SERVER_CAN_EXECUTE} )
 
-// Standard hooks //
+-- [[ Standard hooks ]] --
 hook.Add( "CanPlayerSuicide", "Cuffs RestrictSuicide", function( ply )
 	if ply:IsHandcuffed() and cvars.Bool("cuffs_restrictsuicide") then return false end
 end)
@@ -57,7 +57,7 @@ hook.Add( "PlayerCanHearPlayersVoice", "Cuffs VoiceGag", function( _, ply )
 	if cuffed and wep:GetIsGagged() then return false end
 end)
 
-// Sandbox //
+-- [[ Sandbox ]] --
 hook.Add( "PlayerSpawnProp", "Cuffs PreventPropSpawn", function( ply, mdl )
 	if IsValid(ply) and ply:IsHandcuffed() then
 		return false
@@ -65,7 +65,7 @@ hook.Add( "PlayerSpawnProp", "Cuffs PreventPropSpawn", function( ply, mdl )
 end)
 
 
-// DarkRP //
+-- [[ DarkRP ]] --
 hook.Add( "canRequestWarrant", "Cuffs PreventWarrant", function( crim, cop, reason ) if cvars.Bool("cuffs_restrictwarrant") and cop:IsHandcuffed() then return false,"You can't issue warrants when restrained!" end end)
 hook.Add( "canWanted", "Cuffs PreventWarrant", function( crim, cop, reason ) if cvars.Bool("cuffs_restrictwarrant") and cop:IsHandcuffed() then return false,"You can't issue warrants when restrained!" end end)
 
@@ -77,7 +77,7 @@ hook.Add( "CanChangeRPName", "Cuffs RestrictName", function( ply )
 end)
 
 
-// Cuffed player interaction //
+-- [[ Cuffed player interaction ]] --
 net.Receive( "Cuffs_GagPlayer", function(_,ply)
 	if (not IsValid(ply)) or ply:IsHandcuffed() then return end
 	if ply:GetObserverMode()~=OBS_MODE_NONE then return end
@@ -171,7 +171,7 @@ net.Receive( "Cuffs_TiePlayers", function(_,ply)
 	local tr = util.TraceLine( {start=ply:EyePos(), endpos=ply:EyePos()+(ply:GetAimVector()*100), filter=ply} )
 	if not tr.Hit then return end
 	
-	if IsValid(tr.Entity) then // Pass to another player
+	if IsValid(tr.Entity) then -- Pass to another player
 		if tr.Entity:IsPlayer() then
 			for i=1,#DraggedCuffs do
 				if DraggedCuffs[i].Owner==tr.Entity then
@@ -243,11 +243,12 @@ end)
 
 local function DoUntie( ply, ent )
 	for i=1,#ent.TiedHandcuffs do
-		if not IsValid(ent.TiedHandcuffs[i]) then continue end
+		if not IsValid(ent.TiedHandcuffs[i]) then goto continue end
 		
 		ent.TiedHandcuffs[i]:SetKidnapper( ply )
 		hook.Call( "OnHandcuffUnTied", GAMEMODE, ply, ent.TiedHandcuffs[i].Owner, ent.TiedHandcuffs[i], ent )
 		hook.Call( "OnHandcuffStartDragging", GAMEMODE, ply, ent.TiedHandcuffs[i].Owner, ent.TiedHandcuffs[i] )
+		::continue::
 	end
 	
 	ent:Remove()
@@ -271,7 +272,7 @@ hook.Add( "AllowPlayerPickup", "Cuffs UntieHook", function(ply,ent)
 end)
 
 
-// Admin Uncuff //
+-- [[ Admin Uncuff ]] --
 local UncuffCommands = {
 	["!uncuff"] = true, ["/uncuff"] = true,
 }
@@ -288,7 +289,7 @@ hook.Add( "PlayerSay", "Cuffs AdminUncuff", function( ply, str )
 	end
 end)
 
-// Anti-Physgun //
+-- [[ Anti-Physgun ]] --
 local function killTie(ent)
 	local eff = EffectData()
 	eff:SetOrigin( ent:GetPos() )
@@ -320,8 +321,8 @@ hook.Add( "PhysgunPickup", "Cuffs AntiPhysgunTies", function( ply, ent )
 end)
 
 
-// GmodDayZ support //
-// Created by and added with permission of Phoenix129 ( http://steamcommunity.com/profiles/76561198039440140/ )
+-- [[ GmodDayZ support ]] --
+-- [[ Created by and added with permission of Phoenix129 ( http://steamcommunity.com/profiles/76561198039440140/ ) ]] --
 hook.Add("OnHandcuffed", "DayZCuffs RemoveInventoryItem", function(ply, cuffedply, handcuffs)
 	if engine.ActiveGamemode() == "dayz" then
 		ply:TakeCharItem( handcuffs.CuffType )
@@ -338,7 +339,7 @@ end)
 
 hook.Add( "CuffsCanHandcuff", "DayZCuffs SafezoneProtectCuffs", function( ply, target )
 	if engine.ActiveGamemode() == "dayz" then
-		if target:GetSafeZone() or target:GetSafeZoneEdge() or target.Loading or !target.Ready then
+		if target:GetSafeZone() or target:GetSafeZoneEdge() or target.Loading or not target.Ready then
 			return false
 		end
 	end

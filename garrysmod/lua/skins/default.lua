@@ -470,7 +470,7 @@ function SKIN:PaintTextEntry( panel, w, h )
 	end
 
 	-- Hack on a hack, but this produces the most close appearance to what it will actually look if text was actually there
-	if ( panel.GetPlaceholderText && panel.GetPlaceholderColor && panel:GetPlaceholderText() && panel:GetPlaceholderText():Trim() != "" && panel:GetPlaceholderColor() && ( !panel:GetText() || panel:GetText() == "" ) ) then
+	if ( panel.GetPlaceholderText and panel.GetPlaceholderColor and panel:GetPlaceholderText() and panel:GetPlaceholderText():Trim() ~= "" and panel:GetPlaceholderColor() and ( !panel:GetText() || panel:GetText() == "" ) ) then
 
 		local oldText = panel:GetText()
 
@@ -517,12 +517,12 @@ end
 -----------------------------------------------------------]]
 function SKIN:PaintMenuOption( panel, w, h )
 
-	if ( panel.m_bBackground && !panel:IsEnabled() ) then
+	if ( panel.m_bBackground and !panel:IsEnabled() ) then
 		surface.SetDrawColor( Color( 0, 0, 0, 50 ) )
 		surface.DrawRect( 0, 0, w, h )
 	end
 
-	if ( panel.m_bBackground && ( panel.Hovered || panel.Highlight) ) then
+	if ( panel.m_bBackground and ( panel.Hovered || panel.Highlight) ) then
 		self.tex.MenuBG_Hover( 0, 0, w, h )
 	end
 

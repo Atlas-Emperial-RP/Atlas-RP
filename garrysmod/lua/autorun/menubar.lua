@@ -5,7 +5,7 @@ if ( SERVER ) then return end
 
 local function InstallSVCheatsEnable( pnl )
 	local think = pnl.Think
-	pnl.Think = function( s ) think( s ) if ( GetConVarNumber( "sv_cheats" ) != 0 ) then s:SetEnabled( true ) else s:SetEnabled( false ) end end
+	pnl.Think = function( s ) think( s ) if ( GetConVarNumber( "sv_cheats" ) ~= 0 ) then s:SetEnabled( true ) else s:SetEnabled( false ) end end
 	pnl:SetToolTip( "#menubar.cheatstip" )
 end
 

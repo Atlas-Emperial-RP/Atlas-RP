@@ -25,7 +25,7 @@ end
 function PANEL:DoRightClick()
 
 	local pCanvas = self:GetSelectionCanvas()
-	if ( IsValid( pCanvas ) && pCanvas:NumSelectedChildren() > 0 && self:IsSelected() ) then
+	if ( IsValid( pCanvas ) and pCanvas:NumSelectedChildren() > 0 and self:IsSelected() ) then
 		return hook.Run( "SpawnlistOpenGenericMenu", pCanvas )
 	end
 
@@ -69,7 +69,7 @@ end
 
 function PANEL:PerformLayout()
 
-	if ( self:IsDown() && !self.Dragging ) then
+	if ( self:IsDown() and !self.Dragging ) then
 		self.Icon:StretchToParent( 6, 6, 6, 6 )
 	else
 		self.Icon:StretchToParent( 0, 0, 0, 0 )
@@ -104,7 +104,7 @@ function PANEL:SetModel( mdl, iSkin, BodyGroups )
 	self:SetModelName( mdl )
 	self:SetSkinID( iSkin or 0 )
 
-	if ( tostring( BodyGroups ):len() != 9 ) then
+	if ( tostring( BodyGroups ):len() ~= 9 ) then
 		BodyGroups = "000000000"
 	end
 
@@ -112,7 +112,7 @@ function PANEL:SetModel( mdl, iSkin, BodyGroups )
 
 	self.Icon:SetModel( mdl, iSkin, BodyGroups )
 
-	if ( iSkin && iSkin > 0 ) then
+	if ( iSkin and iSkin > 0 ) then
 		self:SetTooltip( Format( "%s (Skin %i)", mdl, iSkin + 1 ) )
 	else
 		self:SetTooltip( Format( "%s", mdl ) )
@@ -139,19 +139,19 @@ function PANEL:ToTable( bigtable )
 	tab.type = "model"
 	tab.model = self:GetModelName()
 
-	if ( self:GetSkinID() != 0 ) then
+	if ( self:GetSkinID() ~= 0 ) then
 		tab.skin = self:GetSkinID()
 	end
 
-	if ( self:GetBodyGroup() != "000000000" ) then
+	if ( self:GetBodyGroup() ~= "000000000" ) then
 		tab.body = "B" .. self:GetBodyGroup()
 	end
 
-	if ( self:GetWide() != 64 ) then
+	if ( self:GetWide() ~= 64 ) then
 		tab.wide = self:GetWide()
 	end
 
-	if ( self:GetTall() != 64 ) then
+	if ( self:GetTall() ~= 64 ) then
 		tab.tall = self:GetTall()
 	end
 
@@ -205,7 +205,7 @@ function PANEL:InternalAddResizeMenu( menu, callback, label )
 	local function AddSizeOption( submenu_r, w, h, curW, curH )
 
 		local p = submenu_r:AddOption( w .. " x " .. h, function() callback( w, h ) end )
-		if ( w == ( curW or 64 ) && h == ( curH or 64 ) ) then p:SetIcon( "icon16/accept.png" ) end
+		if ( w == ( curW or 64 ) and h == ( curH or 64 ) ) then p:SetIcon( "icon16/accept.png" ) end
 
 	end
 	local sizes = { 64, 128, 256, 512 }
@@ -255,7 +255,7 @@ spawnmenu.AddContentType( "model", function( container, obj )
 	icon.OpenMenu = function( icon )
 
 		-- Use the containter that we are dragged onto, not the one we were created on
-		if ( icon:GetParent() && icon:GetParent().ContentContainer ) then
+		if ( icon:GetParent() and icon:GetParent().ContentContainer ) then
 			container = icon:GetParent().ContentContainer
 		end
 
@@ -279,7 +279,7 @@ spawnmenu.AddContentType( "model", function( container, obj )
 		end ):SetIcon( "icon16/pencil.png" )
 
 		-- Do not allow removal/size changes from read only panels
-		if ( IsValid( icon:GetParent() ) && icon:GetParent().GetReadOnly && icon:GetParent():GetReadOnly() ) then menu:Open() return end
+		if ( IsValid( icon:GetParent() ) and icon:GetParent().GetReadOnly and icon:GetParent():GetReadOnly() ) then menu:Open() return end
 
 		icon:InternalAddResizeMenu( menu, function( w, h )
 
@@ -304,7 +304,7 @@ spawnmenu.AddContentType( "model", function( container, obj )
 	end
 
 --[[
-	if ( iSkin != 0 ) then return end
+	if ( iSkin ~= 0 ) then return end
 
 	local iSkinCount = NumModelSkins( strModel )
 	if ( iSkinCount <= 1 ) then return end

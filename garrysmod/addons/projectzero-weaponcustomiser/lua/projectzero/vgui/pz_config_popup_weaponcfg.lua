@@ -432,7 +432,7 @@ function PANEL:FinishSetup( weaponConfig, weaponClass )
     modelPanel.Paint = function( self2, w, h )
         oldPaint( self2, w, h )
 
-        if( (self2.actualW or 0) != w or (self2.actualH or 0) != h ) then
+        if( (self2.actualW or 0) ~= w or (self2.actualH or 0) ~= h ) then
             self2.actualW, self2.actualH = w, h
         end
     end
@@ -558,7 +558,7 @@ end
 function PANEL:UpdateModel()
     local weaponConfig = self.configTable
 
-    if( weaponConfig.Model != self.currentModel ) then
+    if( weaponConfig.Model ~= self.currentModel ) then
         self.modelPanel:SetModel( weaponConfig.Model or "" )
         if( IsValid( self.modelPanel.Entity ) ) then self.modelPanel.Entity:SetAngles( Angle( 0, 90, 0 ) ) end
     end

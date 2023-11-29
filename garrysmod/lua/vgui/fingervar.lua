@@ -36,7 +36,7 @@ end
 
 function PANEL:IsRestricted()
 
-	return self.RestrictX && ConVar_RestrictFingers:GetBool()
+	return self.RestrictX and ConVar_RestrictFingers:GetBool()
 
 end
 
@@ -115,7 +115,7 @@ end
 function PANEL:Think()
 
 	-- Update shift state change when cursor not moving
-	if ( self.Dragging && self.LastShiftState != input.IsShiftDown() ) then
+	if ( self.Dragging and self.LastShiftState ~= input.IsShiftDown() ) then
 
 		self.LastShiftState = input.IsShiftDown()
 		self:OnCursorMoved( self:LocalCursorPos() )

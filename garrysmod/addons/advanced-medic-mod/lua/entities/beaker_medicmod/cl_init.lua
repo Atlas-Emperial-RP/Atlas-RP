@@ -38,13 +38,13 @@ function ENT:Draw()
 		font3 = "MedicModFont10"
 	end
 	
-	if self:GetProduct1() != ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] then
+	if self:GetProduct1() ~= ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] then
 		color1 = Color(ConfigurationMedicMod.Reagents[self:GetProduct1()].color.r,ConfigurationMedicMod.Reagents[self:GetProduct1()].color.g,ConfigurationMedicMod.Reagents[self:GetProduct1()].color.b,200)
 	end
-	if self:GetProduct2() != ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] then
+	if self:GetProduct2() ~= ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] then
 		color2 = Color(ConfigurationMedicMod.Reagents[self:GetProduct2()].color.r,ConfigurationMedicMod.Reagents[self:GetProduct2()].color.g,ConfigurationMedicMod.Reagents[self:GetProduct2()].color.b,200)
 	end
-	if self:GetProduct3() != ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] then
+	if self:GetProduct3() ~= ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] then
 		color3 = Color(ConfigurationMedicMod.Reagents[self:GetProduct3()].color.r,ConfigurationMedicMod.Reagents[self:GetProduct3()].color.g,ConfigurationMedicMod.Reagents[self:GetProduct3()].color.b,200)
 	end
 	

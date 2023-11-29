@@ -16,11 +16,11 @@ TOOL.Information = {
 
 local function PlaceDecal( ply, ent, data )
 
-	if ( !IsValid( ent ) && !ent:IsWorld() ) then return end
+	if ( !IsValid( ent ) and !ent:IsWorld() ) then return end
 	if ( CLIENT ) then return end
 
 	local bone
-	if ( data.bone && data.bone < ent:GetPhysicsObjectCount() ) then bone = ent:GetPhysicsObjectNum( data.bone ) end
+	if ( data.bone and data.bone < ent:GetPhysicsObjectCount() ) then bone = ent:GetPhysicsObjectNum( data.bone ) end
 	if ( !IsValid( bone ) ) then bone = ent:GetPhysicsObject() end
 	if ( !IsValid( bone ) ) then bone = ent end
 
@@ -74,7 +74,7 @@ function TOOL:RightClick( trace, bNoDelay )
 	local Pos2 = trace.HitPos - trace.HitNormal
 
 	local Bone
-	if ( trace.PhysicsBone && trace.PhysicsBone < trace.Entity:GetPhysicsObjectCount() ) then Bone = trace.Entity:GetPhysicsObjectNum( trace.PhysicsBone ) end
+	if ( trace.PhysicsBone and trace.PhysicsBone < trace.Entity:GetPhysicsObjectCount() ) then Bone = trace.Entity:GetPhysicsObjectNum( trace.PhysicsBone ) end
 	if ( !IsValid( Bone ) ) then Bone = trace.Entity:GetPhysicsObject() end
 	if ( !IsValid( Bone ) ) then Bone = trace.Entity end
 

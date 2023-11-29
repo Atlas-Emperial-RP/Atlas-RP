@@ -84,7 +84,7 @@ local function IconForInfoType(t, data)
 
    -- ugly special casing for weapons, because they are more likely to be
    -- customized and hence need more freedom in their icon filename
-   if t != "wep" then
+   if t ~= "wep" then
       return base .. mat
    else
       return mat
@@ -112,9 +112,9 @@ function PreprocSearch(raw)
 
          search[t].p = 2
       elseif t == "words" then
-         if d != "" then
+         if d ~= "" then
             -- only append "--" if there's no ending interpunction
-            local final = string.match(d, "[\\.\\!\\?]$") != nil
+            local final = string.match(d, "[\\.\\!\\?]$") ~= nil
 
             search[t].text = PT("search_words", {lastwords = d .. (final and "" or "--.")})
          end
@@ -154,7 +154,7 @@ function PreprocSearch(raw)
          end
          search[t].p = 15
       elseif t == "dtime" then
-         if d != 0 then
+         if d ~= 0 then
             local ftime = util.SimpleTime(d, "%02i:%02i")
             search[t].text = PT("search_time", {time = ftime})
 
@@ -196,7 +196,7 @@ function PreprocSearch(raw)
 
          search[t].p = 30
       elseif t == "lastid" then
-         if d and d.idx != -1 then
+         if d and d.idx ~= -1 then
             local ent = Entity(d.idx)
             if IsValid(ent) and ent:IsPlayer() then
                search[t].text = PT("search_eyes", {player = ent:Nick()})

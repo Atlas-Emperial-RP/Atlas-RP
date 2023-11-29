@@ -139,7 +139,7 @@ function PANEL:Think()
 		return
 	end
 
-	if ( self.Velocity != 0 ) then
+	if ( self.Velocity ~= 0 ) then
 
 		self.HasChanged = true
 		self.Pos = self.Pos + ( self.Velocity / self.BarScale ) * FrameTime()

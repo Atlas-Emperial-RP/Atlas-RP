@@ -94,7 +94,7 @@ if ( CLIENT ) then
 		local i = 1
 		for k, v in ipairs( ClientUndos ) do
 
-			if ( v.Key != key ) then
+			if ( v.Key ~= key ) then
 				NewUndo [ i ] = v
 				i = i + 1
 			end
@@ -320,7 +320,7 @@ function Finish( NiceText )
 	if ( !Current_Undo ) then return end
 
 	-- Do not add undos that have no owner or anything to undo
-	if ( !IsValid( Current_Undo.Owner ) or ( table.IsEmpty( Current_Undo.Entities ) && table.IsEmpty( Current_Undo.Functions ) ) ) then
+	if ( !IsValid( Current_Undo.Owner ) or ( table.IsEmpty( Current_Undo.Entities ) and table.IsEmpty( Current_Undo.Functions ) ) ) then
 		Current_Undo = nil
 		return
 	end
@@ -365,7 +365,7 @@ function Do_Undo( undo )
 		for index, func in pairs( undo.Functions ) do
 
 			local success = func[ 1 ]( undo, unpack( func[ 2 ] ) )
-			if ( success != false ) then
+			if ( success ~= false ) then
 				count = count + 1
 			end
 
@@ -387,8 +387,8 @@ function Do_Undo( undo )
 	if ( count > 0 ) then
 		net.Start( "Undo_FireUndo" )
 			net.WriteString( undo.Name )
-			net.WriteBool( undo.CustomUndoText != nil )
-			if ( undo.CustomUndoText != nil ) then
+			net.WriteBool( undo.CustomUndoText ~= nil )
+			if ( undo.CustomUndoText ~= nil ) then
 				net.WriteString( undo.CustomUndoText )
 			end
 		net.Send( undo.Owner )

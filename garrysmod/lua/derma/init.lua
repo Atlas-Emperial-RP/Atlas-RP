@@ -110,7 +110,7 @@ function Derma_Install_Convar_Functions( PANEL )
 		local numValue = GetConVarNumber( self.m_strConVar )
 
 		-- In case the convar is a "nan"
-		if ( numValue != numValue ) then return end
+		if ( numValue ~= numValue ) then return end
 		if ( self.m_strConVarValue == numValue ) then return end
 
 		self.m_strConVarValue = numValue

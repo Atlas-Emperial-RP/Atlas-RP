@@ -87,7 +87,7 @@ function PANEL:Setup( name, icon, label )
 
 			for k, v in pairs( self.ConVars ) do
 
-				if ( GetConVarString( k ) != v.on ) then
+				if ( GetConVarString( k ) ~= v.on ) then
 					good = false
 				end
 
@@ -106,7 +106,7 @@ end
 function PANEL:DoRightClick()
 
 	local pCanvas = self:GetSelectionCanvas()
-	if ( IsValid( pCanvas ) && pCanvas:NumSelectedChildren() > 0 && self:IsSelected() ) then
+	if ( IsValid( pCanvas ) and pCanvas:NumSelectedChildren() > 0 and self:IsSelected() ) then
 		return hook.Run( "SpawnlistOpenGenericMenu", pCanvas )
 	end
 
@@ -120,7 +120,7 @@ end
 function PANEL:OpenMenu()
 
 	-- Do not allow removal from read only panels
-	if ( IsValid( self:GetParent() ) && self:GetParent().GetReadOnly && self:GetParent():GetReadOnly() ) then return end
+	if ( IsValid( self:GetParent() ) and self:GetParent().GetReadOnly and self:GetParent():GetReadOnly() ) then return end
 
 	local menu = DermaMenu()
 		menu:AddOption( "#spawnmenu.menu.delete", function()

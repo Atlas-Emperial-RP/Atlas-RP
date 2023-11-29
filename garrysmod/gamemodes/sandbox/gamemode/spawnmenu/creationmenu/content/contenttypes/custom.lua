@@ -6,7 +6,7 @@ local function SetupCustomNode( node, pnlContent, needsapp )
 	node.CustomSpawnlist = !node.AddonSpawnlist -- Used to determine which nodes ContentSidebarToolBox can edit
 
 	-- This spawnlist needs a certain app mounted before it will show up.
-	if ( needsapp && needsapp != "" ) then
+	if ( needsapp and needsapp ~= "" ) then
 		node:SetVisible( IsMounted( needsapp ) )
 		node.NeedsApp = needsapp
 
@@ -142,7 +142,7 @@ function AddPropsOfParent( pnlContent, node, parentid, customProps )
 
 	for FileName, Info in SortedPairs( Props ) do
 
-		if ( parentid != Info.parentid ) then continue end
+		if ( parentid ~= Info.parentid ) then continue end
 
 		local pnlnode = AddCustomizableNode( pnlContent, Info.name, Info.icon, node, Info.needsapp )
 		pnlnode:SetExpanded( true )

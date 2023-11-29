@@ -10,7 +10,7 @@ function TOOL:LeftClick( trace )
 		return
 	end
 	
-	if( !trace.HitPos or IsValid( trace.Entity ) ) then return false end
+	if( not trace.HitPos or IsValid( trace.Entity ) ) then return false end
 	if( CLIENT ) then return true end
 
 	local ent = ents.Create( "pz_menu_npc" )
@@ -28,7 +28,7 @@ if( SERVER ) then
 		if( not PROJECT0.FUNC.HasAdminAccess( ply ) ) then return end
 	
 		local traceEntity = ply:GetEyeTrace().Entity
-		if( not IsValid( traceEntity ) or traceEntity:GetClass() != "pz_menu_npc" ) then return end
+		if( not IsValid( traceEntity ) or traceEntity:GetClass() ~= "pz_menu_npc" ) then return end
 	
 		traceEntity:Remove()
 		PROJECT0.FUNC.SendNotification( ply, "NPC TOOL", "Menu NPC successfully removed.", "admin" )
@@ -42,7 +42,7 @@ function TOOL:Think()
 	if( CurTime() < (self.lastRightClick or 0)+0.5 or not input.IsMouseDown( MOUSE_RIGHT ) ) then return end
 
 	local traceEntity = (LocalPlayer():GetEyeTrace() or {}).Entity
-	if( not IsValid( traceEntity ) or traceEntity:GetClass() != "pz_menu_npc" ) then return end
+	if( not IsValid( traceEntity ) or traceEntity:GetClass() ~= "pz_menu_npc" ) then return end
 
 	self.lastRightClick = CurTime()
 

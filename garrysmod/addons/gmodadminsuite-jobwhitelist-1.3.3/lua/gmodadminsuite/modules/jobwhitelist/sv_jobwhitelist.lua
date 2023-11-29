@@ -58,9 +58,9 @@ function GAS.JobWhitelist:CachePlayerAccessData(ply, callback)
 	GAS.Database:Query("SELECT * FROM `" .. GAS.Database.ServerTablePrefix .. "gas_jobwhitelist_listing` WHERE `account_id`=" .. ply:AccountID(), function(rows)
 		if (rows) then
 			for _,v in ipairs(rows) do
-				if (not tonumber(v.job_id)) then continue end
+				if (not tonumber(v.job_id)) then goto continue end
 				local job_index = OpenPermissions:GetTeamFromIdentifier(tonumber(v.job_id))
-				if (not job_index) then continue end
+				if (not job_index) then goto continue end
 				if (tostring(v.blacklist) == "1") then
 					GAS.JobWhitelist.Blacklists[GAS.JobWhitelist.LIST_TYPE_STEAMID][ply:AccountID()] = GAS.JobWhitelist.Blacklists[GAS.JobWhitelist.LIST_TYPE_STEAMID][ply:AccountID()] or {}
 					GAS.JobWhitelist.Blacklists[GAS.JobWhitelist.LIST_TYPE_STEAMID][ply:AccountID()][job_index] = true
@@ -68,6 +68,7 @@ function GAS.JobWhitelist:CachePlayerAccessData(ply, callback)
 					GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_STEAMID][ply:AccountID()] = GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_STEAMID][ply:AccountID()] or {}
 					GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_STEAMID][ply:AccountID()][job_index] = true
 				end
+				::continue::
 			end
 		end
 
@@ -90,22 +91,23 @@ function GAS.JobWhitelist:CacheListData()
 	GAS.Database:Query("SELECT * FROM `" .. GAS.Database.ServerTablePrefix .. "gas_jobwhitelist_enabled_lists`", function(rows)
 		if (not rows) then return end
 		for _,v in ipairs(rows) do
-			if (not tonumber(v.job_id)) then continue end
+			if (not tonumber(v.job_id)) then goto continue end
 			local job_index = OpenPermissions:GetTeamFromIdentifier(tonumber(v.job_id))
-			if (not job_index) then continue end
+			if (not job_index) then goto continue end
 			if (tostring(v.blacklist) == "1") then
 				GAS.JobWhitelist.EnabledBlacklists[job_index] = true
 			else
 				GAS.JobWhitelist.EnabledWhitelists[job_index] = true
 			end
+			::continue::
 		end
 	end)
 	GAS.Database:Query("SELECT * FROM `" .. GAS.Database.ServerTablePrefix .. "gas_jobwhitelist_listing` WHERE `usergroup` IS NOT NULL OR `lua_function` IS NOT NULL", function(rows)
 		if (not rows) then return end
 		for _,v in ipairs(rows) do
-			if (not tonumber(v.job_id)) then continue end
+			if (not tonumber(v.job_id)) then goto continue end
 			local job_index = OpenPermissions:GetTeamFromIdentifier(tonumber(v.job_id))
-			if (not job_index) then continue end
+			if (not job_index) then goto continue end
 			if (tostring(v.blacklist) == "1") then
 				if (v.usergroup ~= nil) then
 					GAS.JobWhitelist.Blacklists[GAS.JobWhitelist.LIST_TYPE_USERGROUP][v.usergroup] = GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_USERGROUP][v.usergroup] or {}
@@ -123,6 +125,7 @@ function GAS.JobWhitelist:CacheListData()
 					GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_LUA_FUNCTION][job_index][v.lua_function] = true
 				end
 			end
+			::continue::
 		end
 	end)
 
@@ -947,12 +950,13 @@ GAS:netReceive("jobwhitelist:enable_all_whitelists", function(ply)
 
 	for _,job in ipairs(RPExtraTeams) do
 		local job_index = job.team
-		if ((GM or GAMEMODE).DefaultTeam == job_index) then continue end
+		if ((GM or GAMEMODE).DefaultTeam == job_index) then goto continue end
 
 		GAS.JobWhitelist.EnabledWhitelists[job_index] = true
 		GAS.Database:Prepare("REPLACE INTO `" .. GAS.Database.ServerTablePrefix .. "gas_jobwhitelist_enabled_lists` (`blacklist`, `job_id`) VALUES(0, ?)", {OpenPermissions:GetTeamIdentifier(job_index)})
 
 		hook.Run("bWhitelist:WhitelistEnabled", job_index)
+		::continue::
 	end
 
 	GAS.Database:CommitTransaction(function()
@@ -970,12 +974,13 @@ GAS:netReceive("jobwhitelist:enable_all_blacklists", function(ply)
 
 	for _,job in ipairs(RPExtraTeams) do
 		local job_index = job.team
-		if ((GM or GAMEMODE).DefaultTeam == job_index) then continue end
+		if ((GM or GAMEMODE).DefaultTeam == job_index) then goto continue end
 
 		GAS.JobWhitelist.EnabledWhitelists[job_index] = true
 		GAS.Database:Prepare("REPLACE INTO `" .. GAS.Database.ServerTablePrefix .. "gas_jobwhitelist_enabled_lists` (`blacklist`, `job_id`) VALUES(1, ?)", {OpenPermissions:GetTeamIdentifier(job_index)})
 
 		hook.Run("bWhitelist:BlacklistEnabled", job_index)
+		::continue::
 	end
 
 	GAS.Database:CommitTransaction(function()

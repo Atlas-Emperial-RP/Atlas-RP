@@ -64,13 +64,12 @@ local LEASH = {}
 
 CreateConVar( "cuffs_allowbreakout", 1, {FCVAR_ARCHIVE,FCVAR_SERVER_CAN_EXECUTE,FCVAR_REPLICATED,FCVAR_NOTIFY} )
 
-// For anything that might try to drop this
+ -- [[ For anything that might try to drop this ]] --
 SWEP.CanDrop = false
 SWEP.PreventDrop = true
 -- Missing anything?
 
-//
-// DataTables
+-- [[ DataTables ]] --
 function SWEP:SetupDataTables()
 	self:NetworkVar( "Entity", 0, "Kidnapper" )
 	self:NetworkVar( "Entity", 1, "FriendBreaking" )
@@ -93,10 +92,9 @@ function SWEP:SetupDataTables()
 	self:NetworkVar( "Bool", 5, "IsUnbreakable" )
 end
 
-//
-// Initialize
+-- [[ Initialize ]] --
 function SWEP:Initialize()
-	hook.Add( "canDropWeapon", self, function(self, ply, wep) if wep==self then return false end end) // Thank you DarkRP, your code is terrible
+	hook.Add( "canDropWeapon", self, function(self, ply, wep) if wep==self then return false end end)  -- Thank you DarkRP, your code is terrible
 	
 	if SERVER then
 		hook.Add( "Think", self, self.BreakThink )
@@ -113,20 +111,18 @@ function SWEP:Initialize()
 	self:SetHoldType( self.HoldType )
 end
 
-//
-// Standard SWEP functions
+-- [[ Standard SWEP functions ]] --
 function SWEP:PrimaryAttack()
 	if SERVER then self:AttemptBreak() end
 end
 function SWEP:SecondaryAttack() end
 function SWEP:Reload() end
 
-//
-// Equip and Holster
+-- [[ Equip and Holster ]] --
 function SWEP:Equip( newOwner )
 	newOwner:SelectWeapon( self:GetClass() )
 	
-	timer.Simple( 0.1, function() // Fucking FA:S
+	timer.Simple( 0.1, function() -- Fucking FA:S
 		if IsValid(self) and  IsValid(newOwner) and newOwner:GetActiveWeapon()~=self then
 			local wep = newOwner:GetActiveWeapon()
 			if not IsValid(wep) then return end
@@ -144,8 +140,7 @@ function SWEP:Holster()
 	return self:GetIsLeash()
 end
 
-//
-// Deploy
+-- [[ Deploy ]] --
 function SWEP:Deploy()
 	local viewModel = self.Owner:GetViewModel()
 	viewModel:SendViewModelMatchingSequence( viewModel:LookupSequence("fists_idle_01") )
@@ -154,7 +149,7 @@ function SWEP:Deploy()
 	
 	return true
 end
-function SWEP:PreDrawViewModel( viewModel ) // Fixes visible base hands
+function SWEP:PreDrawViewModel( viewModel ) -- Fixes visible base hands
 	viewModel:SetMaterial( "engine/occlusionproxy" )
 end
 if CLIENT then
@@ -175,7 +170,7 @@ if CLIENT then
 	end)
 end
 
-function SWEP:OnRemove() // Fixes invisible other weapons
+function SWEP:OnRemove() -- Fixes invisible other weapons
 	if IsValid(self.Owner) then
 		local viewModel = self.Owner:GetViewModel()
 		if IsValid(viewModel) then viewModel:SetMaterial("") end
@@ -185,8 +180,7 @@ function SWEP:OnRemove() // Fixes invisible other weapons
 	return true
 end
 
-//
-// Release
+-- [[ Release ]] --
 function SWEP:Uncuff()
 	local ply = IsValid(self.Owner) and self.Owner
 	
@@ -195,8 +189,7 @@ function SWEP:Uncuff()
 	if ply then ply:ConCommand( "lastinv" ) end
 end
 
-//
-// Breakout
+-- [[ Breakout ]] --
 if SERVER then
 	local BreakSound = Sound( "physics/metal/metal_barrel_impact_soft4.wav" )
 	local ResistSounds = {
@@ -270,13 +263,12 @@ if SERVER then
 			self:SetKidnapper( nil )
 		end
 		if IsValid(self.Owner) then
-			self.Owner.KnockoutTimer = CurTime()+10 // Fucking DarkRP
+			self.Owner.KnockoutTimer = CurTime()+10 -- Fucking DarkRP
 		end
 	end
 end
 
-//
-// UI
+-- [[ UI ]] --
 if CLIENT then
 	surface.CreateFont( "HandcuffsText", {
 		font = "Arial",
@@ -361,8 +353,7 @@ if CLIENT then
 	end
 end
 
-//
-// Rendering
+-- [[ Rendering ]] --
 local renderpos = {
 	left = {bone = "ValveBiped.Bip01_L_Wrist", pos=Vector(0.4,-0.15,-0.45), ang=Angle(90,0,0), scale = Vector(0.035,0.035,0.015)},
 	right = {bone = "ValveBiped.Bip01_R_Wrist", pos=Vector(0.2,-0.15,0.35), ang=Angle(100,0,0), scale = Vector(0.035,0.035,0.015)},
@@ -382,7 +373,7 @@ function SWEP:ViewModelDrawn( vm )
 	
 	if not IsValid(self.cmdl_LeftCuff) then
 		self.cmdl_LeftCuff = ClientsideModel( CuffMdl, RENDER_GROUP_VIEW_MODEL_OPAQUE )
-		if not IsValid( self.cmdl_LeftCuff ) then return end // What
+		if not IsValid( self.cmdl_LeftCuff ) then return end -- What
 		self.cmdl_LeftCuff:SetNoDraw( true )
 		self.cmdl_LeftCuff:SetParent( vm )
 	end
@@ -397,9 +388,9 @@ function SWEP:ViewModelDrawn( vm )
 	local rpos, rang = self:GetBonePos( renderpos.right.bone, vm )
 	if not (lpos and rpos and lang and rang) then return end
 	
-	// Left
+	 -- [[ Left ]] --
 	self.cmdl_LeftCuff:SetPos( lpos + (lang:Forward()*renderpos.left.pos.x) + (lang:Right()*renderpos.left.pos.y) + (lang:Up()*renderpos.left.pos.z) )
-	local u,r,f = lang:Up(), lang:Right(), lang:Forward() // Prevents moving axes
+	local u,r,f = lang:Up(), lang:Right(), lang:Forward() -- Prevents moving axes
 	lang:RotateAroundAxis( u, renderpos.left.ang.y )
 	lang:RotateAroundAxis( r, renderpos.left.ang.p )
 	lang:RotateAroundAxis( f, renderpos.left.ang.r )
@@ -412,9 +403,9 @@ function SWEP:ViewModelDrawn( vm )
 	self.cmdl_LeftCuff:SetMaterial( self:GetCuffMaterial() or "" )
 	self.cmdl_LeftCuff:DrawModel()
 	
-	// Right
+	-- [[ Right ]] --
 	self.cmdl_RightCuff:SetPos( rpos + (rang:Forward()*renderpos.right.pos.x) + (rang:Right()*renderpos.right.pos.y) + (rang:Up()*renderpos.right.pos.z) )
-	local u,r,f = rang:Up(), rang:Right(), rang:Forward() // Prevents moving axes
+	local u,r,f = rang:Up(), rang:Right(), rang:Forward() -- Prevents moving axes
 	rang:RotateAroundAxis( u, renderpos.right.ang.y )
 	rang:RotateAroundAxis( r, renderpos.right.ang.p )
 	rang:RotateAroundAxis( f, renderpos.right.ang.r )
@@ -427,7 +418,7 @@ function SWEP:ViewModelDrawn( vm )
 	self.cmdl_RightCuff:SetMaterial( self:GetCuffMaterial() or "" )
 	self.cmdl_RightCuff:DrawModel()
 	
-	// Rope
+	-- [[ Rope ]] --
 	if self:GetRopeMaterial()~=self.LastMatStr then
 		self.RopeMat = Material( self:GetRopeMaterial() )
 		self.LastMatStr = self:GetRopeMaterial()
@@ -473,9 +464,9 @@ function SWEP:DrawWorldModel()
 	local rpos, rang = self:GetBonePos( wrender.right.bone, self.Owner )
 	if not (lpos and rpos and lang and rang) then return end
 	
-	// Left
+	-- [[ Left ]] --
 	self.cmdl_LeftCuff:SetPos( lpos + (lang:Forward()*wrender.left.pos.x) + (lang:Right()*wrender.left.pos.y) + (lang:Up()*wrender.left.pos.z) )
-	local u,r,f = lang:Up(), lang:Right(), lang:Forward() // Prevents moving axes
+	local u,r,f = lang:Up(), lang:Right(), lang:Forward() -- Prevents moving axes
 	lang:RotateAroundAxis( u, wrender.left.ang.y )
 	lang:RotateAroundAxis( r, wrender.left.ang.p )
 	lang:RotateAroundAxis( f, wrender.left.ang.r )
@@ -488,9 +479,9 @@ function SWEP:DrawWorldModel()
 	self.cmdl_LeftCuff:SetMaterial( self:GetCuffMaterial() or "" )
 	self.cmdl_LeftCuff:DrawModel()
 	
-	// Right
+	-- [[ Right ]] --
 	self.cmdl_RightCuff:SetPos( rpos + (rang:Forward()*wrender.right.pos.x) + (rang:Right()*wrender.right.pos.y) + (rang:Up()*wrender.right.pos.z) )
-	local u,r,f = rang:Up(), rang:Right(), rang:Forward() // Prevents moving axes
+	local u,r,f = rang:Up(), rang:Right(), rang:Forward() -- Prevents moving axes
 	rang:RotateAroundAxis( u, wrender.right.ang.y )
 	rang:RotateAroundAxis( r, wrender.right.ang.p )
 	rang:RotateAroundAxis( f, wrender.right.ang.r )
@@ -503,8 +494,8 @@ function SWEP:DrawWorldModel()
 	self.cmdl_RightCuff:SetMaterial( self:GetCuffMaterial() or "" )
 	self.cmdl_RightCuff:DrawModel()
 	
-	// Rope
-	if (lpos.x==0 and lpos.y==0 and lpos.z==0) or (rpos.x==0 and rpos.y==0 and rpos.z==0) then return end // Rope accross half the map...
+	-- [[ Rope ]] --
+	if (lpos.x==0 and lpos.y==0 and lpos.z==0) or (rpos.x==0 and rpos.y==0 and rpos.z==0) then return end -- Rope accross half the map...
 	
 	if self:GetRopeMaterial()~=self.LastMatStr then
 		self.RopeMat = Material( self:GetRopeMaterial() )
@@ -518,8 +509,7 @@ function SWEP:DrawWorldModel()
 		0.7, 0, 5, RopeCol )
 end
 
-//
-// Bones
+-- [[ Bones ]] --
 function SWEP:GetBonePos( bonename, vm )
 	local bone = vm:LookupBone( bonename )
 	if not bone then return end
@@ -537,12 +527,10 @@ function SWEP:GetBonePos( bonename, vm )
 	return pos, ang
 end
 
-//
-// Leash
+-- [[ Leash ]] --
 LEASH.HoldType = "normal"
 
-//
-// Rendering
+-- [[ Rendering ]] --
 local vrender = {
 	bone = "ValveBiped.Bip01_L_Wrist",
 	pos=Vector(0,0,-1.5),
@@ -567,7 +555,7 @@ function LEASH:ViewModelDrawn( vm )
 	-- lang = Angle(0,0,0)
 	
 	self.cmdl_LeftCuff:SetPos( lpos + (lang:Forward()*vrender.pos.x) + (lang:Right()*vrender.pos.y) + (lang:Up()*vrender.pos.z) )
-	local u,r,f = lang:Up(), lang:Right(), lang:Forward() // Prevents moving axes
+	local u,r,f = lang:Up(), lang:Right(), lang:Forward() -- Prevents moving axes
 	lang:RotateAroundAxis( u, vrender.ang.y )
 	lang:RotateAroundAxis( r, vrender.ang.p )
 	lang:RotateAroundAxis( f, vrender.ang.r )
@@ -594,7 +582,7 @@ local lrender = {
 		ang=Angle(70,90,90),
 		scale = Vector(0.06,0.06,0.05),
 	},
-	alt = { // Eeveelotions models
+	alt = { -- Eeveelotions models
 		bone = "Neck",
 		pos=Vector(1,0.5,-0.2),
 		ang=Angle(100,90,90),
@@ -624,7 +612,7 @@ function LEASH.DrawWorldModel(self)
 	end
 	
 	self.cmdl_LeftCuff:SetPos( lpos + (lang:Forward()*tbl.pos.x) + (lang:Right()*tbl.pos.y) + (lang:Up()*tbl.pos.z) )
-	local u,r,f = lang:Up(), lang:Right(), lang:Forward() // Prevents moving axes
+	local u,r,f = lang:Up(), lang:Right(), lang:Forward() -- Prevents moving axes
 	lang:RotateAroundAxis( u, tbl.ang.y )
 	lang:RotateAroundAxis( r, tbl.ang.p )
 	lang:RotateAroundAxis( f, tbl.ang.r )

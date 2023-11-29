@@ -69,7 +69,7 @@ function PANEL:Init()
 	--
 	hook.Add( "ContentSidebarSelection", "SidebarToolboxSelection", function( pnlContent, node )
 
-		if ( !IsValid( node ) || !IsValid( label ) || !IsValid( icons ) ) then return end
+		if ( !IsValid( node ) or !IsValid( label ) or !IsValid( icons ) ) then return end
 
 		if ( node.CustomSpawnlist ) then
 			label:SetText( node:GetText() )

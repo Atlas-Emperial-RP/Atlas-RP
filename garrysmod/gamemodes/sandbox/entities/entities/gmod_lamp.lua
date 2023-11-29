@@ -62,7 +62,7 @@ if ( SERVER ) then
 
 		if ( !IsValid( self.flashlight ) ) then return end
 
-		if ( string.FromColor( self.flashlight:GetColor() ) != string.FromColor( self:GetColor() ) ) then
+		if ( string.FromColor( self.flashlight:GetColor() ) ~= string.FromColor( self:GetColor() ) ) then
 			self.flashlight:SetColor( self:GetColor() )
 			self:UpdateLight()
 		end
@@ -84,7 +84,7 @@ if ( SERVER ) then
 
 	function ENT:OnSwitch( bOn )
 
-		if ( bOn && IsValid( self.flashlight ) ) then return end
+		if ( bOn and IsValid( self.flashlight ) ) then return end
 
 		if ( !bOn ) then
 

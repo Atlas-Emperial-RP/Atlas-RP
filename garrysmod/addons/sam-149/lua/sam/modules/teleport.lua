@@ -93,7 +93,7 @@ command.new("bring")
 				if not all then
 					ply:sam_send_message(target:sam_get_exclusive(ply))
 				end
-				continue
+				goto continue
 			end
 
 			if not target:Alive() then
@@ -108,6 +108,7 @@ command.new("bring")
 			target:SetEyeAngles((ply:EyePos() - target:EyePos()):Angle())
 
 			table.insert(teleported, target)
+			::continue::
 		end
 
 		if #teleported > 0 then

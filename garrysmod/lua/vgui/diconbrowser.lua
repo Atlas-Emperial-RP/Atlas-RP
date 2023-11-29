@@ -88,7 +88,7 @@ function PANEL:Fill()
 
 			btn.Paint = function( btn, w, h )
 
-				if ( self.m_pSelectedIcon != btn ) then return end
+				if ( self.m_pSelectedIcon ~= btn ) then return end
 
 				derma.SkinHook( "Paint", "Selection", btn, w, h )
 
@@ -113,7 +113,7 @@ function PANEL:FilterByText( text )
 
 	for k, v in ipairs( self.IconLayout:GetChildren() ) do
 
-		v:SetVisible( v.FilterText:find( text ) != nil )
+		v:SetVisible( v.FilterText:find( text ) ~= nil )
 
 	end
 

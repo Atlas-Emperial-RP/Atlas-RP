@@ -142,14 +142,14 @@ function LANG.SetActiveLanguage(lang_name)
       SetFallback(cached_active)
 
       -- some interface elements will want to know so they can update themselves
-      if old_name != lang_name then
+      if old_name ~= lang_name then
          hook.Call("TTTLanguageChanged", GAMEMODE, old_name, lang_name)
       end
    else
       MsgN(Format("The language '%s' does not exist on this server. Falling back to English...", lang_name))
 
       -- fall back to default if possible
-      if lang_name != LANG.DefaultLanguage then
+      if lang_name ~= LANG.DefaultLanguage then
          LANG.SetActiveLanguage(LANG.DefaultLanguage)
       end
    end
@@ -178,7 +178,7 @@ function LANG.IsLanguage(lang_name)
 end
 
 local function LanguageChanged(cv, old, new)
-   if new and new != LANG.ActiveLanguage then
+   if new and new ~= LANG.ActiveLanguage then
 
       if LANG.IsServerDefault(new) then
          new = LANG.ServerLanguage

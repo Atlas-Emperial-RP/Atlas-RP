@@ -22,7 +22,7 @@ local commands = {
 }
 
 hook.Add( "OnPlayerChat", "Project0.OnPlayerChat.OpenMenu", function( ply, strText, bTeam, bDead ) 
-    if( ply != LocalPlayer() ) then return end
+    if( ply ~= LocalPlayer() ) then return end
 
 	strText = string.lower( strText )
 	if( not commands[strText] ) then return end
@@ -89,17 +89,18 @@ local function updateViewmodelWeapon( viewmodel, weapon, weaponClass, isDelayed 
     if( oldWeaponCfg ) then
         for k, v in ipairs( oldWeaponCfg.Skin.ViewModelMats ) do
             if( isstring( v ) ) then
-                if( not (weapon.Customization or {})[v] or not IsValid( weapon.Customization[v].m_Model ) ) then continue end
+                if( not (weapon.Customization or {})[v] or not IsValid( weapon.Customization[v].m_Model ) ) then goto continue end
 
                 local modelEnt = weapon.Customization[v].m_Model
                 for i = 0, #modelEnt:GetMaterials()-1 do
                     modelEnt:SetSubMaterial( i )
                 end
     
-                continue
+                goto continue
             end
 
             viewmodel:SetSubMaterial( v )
+            ::continue::
         end
     end
 
@@ -109,21 +110,22 @@ local function updateViewmodelWeapon( viewmodel, weapon, weaponClass, isDelayed 
     local playerMeta = LocalPlayer():Project0()
     
     local equippedSkin = playerMeta:GetEquippedCosmetic( "Skin", weaponClass )
-    if( equippedSkin != 0 ) then
+    if( equippedSkin ~= 0 ) then
         local skinMat = PROJECT0.DEVCONFIG.WeaponSkins[equippedSkin].Material
         for k, v in ipairs( weaponCfg.Skin.ViewModelMats ) do
             if( isstring( v ) ) then
-                if( not (weapon.Customization or {})[v] or not IsValid( weapon.Customization[v].m_Model ) ) then continue end
+                if( not (weapon.Customization or {})[v] or not IsValid( weapon.Customization[v].m_Model ) ) then goto continue end
 
                 local modelEnt = weapon.Customization[v].m_Model
                 for i = 0, #modelEnt:GetMaterials()-1 do
                     modelEnt:SetSubMaterial( i, skinMat )
                 end
     
-                continue
+                goto continue
             end
     
             viewmodel:SetSubMaterial( v, skinMat )
+            ::continue::
         end
     end
 end
@@ -144,7 +146,7 @@ hook.Add( "PreDrawViewModel", "Project0.PreDrawViewModel.WeaponCosmetics", funct
     if( PROJECT0.TEMP.ViewmodelMode ) then return end
 
     local weaponClass = weapon:GetClass()
-    if( (PROJECT0.TEMP.ViewmodelActiveWeapon or "") != weaponClass ) then
+    if( (PROJECT0.TEMP.ViewmodelActiveWeapon or "") ~= weaponClass ) then
         updateViewmodelWeapon( viewmodel, weapon, weaponClass )
     end
 
@@ -163,7 +165,7 @@ hook.Add( "PreDrawViewModel", "Project0.PreDrawViewModel.WeaponCosmetics", funct
     -- Trinket
     local equippedCharm = playerMeta:GetEquippedCosmetic( "Charm", weaponClass )
     local charmConfig = PROJECT0.CONFIG.CUSTOMISER.Charms[equippedCharm]
-    if( not weaponCfg.Charm.Disabled and equippedCharm != 0 and charmConfig ) then
+    if( not weaponCfg.Charm.Disabled and equippedCharm ~= 0 and charmConfig ) then
         if( not IsValid( PROJECT0.TEMP.WeaponTrinketBase ) ) then
             local trinketBase = ClientsideModel( "models/sterling/smodel_c_tinket.mdl" )
             trinketBase:SetParent( viewmodel )
@@ -200,7 +202,7 @@ hook.Add( "PreDrawViewModel", "Project0.PreDrawViewModel.WeaponCosmetics", funct
 
         local trinket = PROJECT0.TEMP.WeaponTrinketBase.Trinket
 
-        if( trinket:GetModel() != charmConfig.Model ) then
+        if( trinket:GetModel() ~= charmConfig.Model ) then
             trinket:SetModel( charmConfig.Model )
         end
 
@@ -233,7 +235,7 @@ hook.Add( "PostDrawViewModel", "Project0.PostDrawViewModel.WeaponCosmetics", fun
     local equippedSticker = LocalPlayer():Project0():GetEquippedCosmetic( "Sticker", weaponClass )
     local stickerConfig = PROJECT0.CONFIG.CUSTOMISER.Stickers[equippedSticker]
     if( stickerConfig ) then
-        if( not calledGetImage and (not stickerMat or equippedSticker != currentSticker) ) then
+        if( not calledGetImage and (not stickerMat or equippedSticker ~= currentSticker) ) then
             calledGetImage = true
             currentSticker = equippedSticker
             PROJECT0.FUNC.GetImage( stickerConfig.Icon, function( mat )
@@ -322,7 +324,7 @@ hook.Add( "PostPlayerDraw", "Project0.PostPlayerDraw.WeaponCosmetics", function(
     -- end
 
     local weaponClass = activeWeapon:GetClass()
-    if( ((PROJECT0.TEMP.RequestedWeapons or {})[ply] or {}).ActiveWeapon != weaponClass ) then
+    if( ((PROJECT0.TEMP.RequestedWeapons or {})[ply] or {}).ActiveWeapon ~= weaponClass ) then
         updatePlyWeaponSkin( ply )
     end
 

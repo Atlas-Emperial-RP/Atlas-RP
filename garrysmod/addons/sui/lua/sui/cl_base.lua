@@ -459,13 +459,14 @@ sui.Material = Material
 
 local function prepare_theme(theme)
 	for k, v in pairs(theme) do
-		if IsColor(v) then continue end
+		if IsColor(v) then goto continue end
 
 		if istable(v) then
 			prepare_theme(v)
 		elseif isstring(v) and v:sub(1, 1) == "#" then
 			theme[k] = sui.hex_rgb(v:sub(2))
 		end
+		::continue::
 	end
 end
 

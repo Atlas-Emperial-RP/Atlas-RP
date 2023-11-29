@@ -24,7 +24,7 @@ local function DoGenericSpawnmenuRightclickMenu( self )
 			self:OpenMenuExtra( menu )
 		end
 
-		if ( !IsValid( self:GetParent() ) || !self:GetParent().GetReadOnly || !self:GetParent():GetReadOnly() ) then
+		if ( !IsValid( self:GetParent() ) or !self:GetParent().GetReadOnly or !self:GetParent():GetReadOnly() ) then
 			menu:AddSpacer()
 			menu:AddOption( "#spawnmenu.menu.delete", function() self:Remove() hook.Run( "SpawnlistContentChanged" ) end ):SetIcon( "icon16/bin_closed.png" )
 		end
@@ -70,7 +70,7 @@ function PANEL:SetMaterial( name )
 	local mat = Material( name )
 
 	-- Look for the old style material
-	if ( !mat || mat:IsError() ) then
+	if ( !mat or mat:IsError() ) then
 
 		name = name:Replace( "entities/", "VGUI/entities/" )
 		name = name:Replace( ".png", "" )
@@ -79,7 +79,7 @@ function PANEL:SetMaterial( name )
 	end
 
 	-- Couldn't find any material.. just return
-	if ( !mat || mat:IsError() ) then
+	if ( !mat or mat:IsError() ) then
 		return
 	end
 
@@ -90,7 +90,7 @@ end
 function PANEL:DoRightClick()
 
 	local pCanvas = self:GetSelectionCanvas()
-	if ( IsValid( pCanvas ) && pCanvas:NumSelectedChildren() > 0 && self:IsSelected() ) then
+	if ( IsValid( pCanvas ) and pCanvas:NumSelectedChildren() > 0 and self:IsSelected() ) then
 		return hook.Run( "SpawnlistOpenGenericMenu", pCanvas )
 	end
 
@@ -109,13 +109,13 @@ end
 
 function PANEL:Paint( w, h )
 
-	if ( self.Depressed && !self.Dragging ) then
-		if ( self.Border != 8 ) then
+	if ( self.Depressed and !self.Dragging ) then
+		if ( self.Border ~= 8 ) then
 			self.Border = 8
 			self:OnDepressionChanged( true )
 		end
 	else
-		if ( self.Border != 0 ) then
+		if ( self.Border ~= 0 ) then
 			self.Border = 0
 			self:OnDepressionChanged( false )
 		end
@@ -131,7 +131,7 @@ function PANEL:Paint( w, h )
 
 	surface.SetDrawColor( 255, 255, 255, 255 )
 
-	if ( !dragndrop.IsDragging() && ( self:IsHovered() || self.Depressed || self:IsChildHovered() ) ) then
+	if ( !dragndrop.IsDragging() and ( self:IsHovered() or self.Depressed or self:IsChildHovered() ) ) then
 
 		surface.SetMaterial( matOverlay_Hovered )
 		self.Label:Hide()
@@ -299,7 +299,7 @@ spawnmenu.AddContentType( "npc", function( container, obj )
 
 	icon.DoClick = function()
 		local weapon = table.Random( obj.weapon ) or ""
-		if ( gmod_npcweapon:GetString() != "" ) then weapon = gmod_npcweapon:GetString() end
+		if ( gmod_npcweapon:GetString() ~= "" ) then weapon = gmod_npcweapon:GetString() end
 
 		RunConsoleCommand( "gmod_spawnnpc", obj.spawnname, weapon )
 		surface.PlaySound( "ui/buttonclickrelease.wav" )
@@ -307,7 +307,7 @@ spawnmenu.AddContentType( "npc", function( container, obj )
 
 	icon.OpenMenuExtra = function( self, menu )
 		local weapon = table.Random( obj.weapon ) or ""
-		if ( gmod_npcweapon:GetString() != "" ) then weapon = gmod_npcweapon:GetString() end
+		if ( gmod_npcweapon:GetString() ~= "" ) then weapon = gmod_npcweapon:GetString() end
 
 		menu:AddOption( "#spawnmenu.menu.spawn_with_toolgun", function()
 			RunConsoleCommand( "gmod_tool", "creator" ) RunConsoleCommand( "creator_type", "2" )

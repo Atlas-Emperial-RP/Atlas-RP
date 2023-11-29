@@ -104,7 +104,7 @@ function WSWITCH:DrawWeapon(x, y, c, wep)
 
    -- Clip1 will be -1 if a melee weapon
    -- Ammo1 will be false if weapon has no owner (was just dropped)
-   if cl1 != -1 and am1 != false then
+   if cl1 ~= -1 and am1 ~= false then
       ammo = Format("%i + %02i", cl1, am1)
    end
 
@@ -317,7 +317,7 @@ function WSWITCH:SelectAndConfirm(slot)
 end
 
 local function QuickSlot(ply, cmd, args)
-   if (not IsValid(ply)) or (not args) or #args != 1 then return end
+   if (not IsValid(ply)) or (not args) or #args ~= 1 then return end
 
    local slot = tonumber(args[1])
    if not slot then return end

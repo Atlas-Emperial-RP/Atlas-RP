@@ -116,7 +116,7 @@ function CanBeTargeted( ent, ply )
 		if ( pos:Distance( ply:GetShootPos() ) > maxRange + 1024 ) then return false end
 	end
 
-	return !( ent:GetPhysicsObjectCount() < 1 && ent:GetSolid() == SOLID_NONE && bit.band( ent:GetSolidFlags(), FSOLID_USE_TRIGGER_BOUNDS ) == 0 && bit.band( ent:GetSolidFlags(), FSOLID_CUSTOMRAYTEST ) == 0 )
+	return !( ent:GetPhysicsObjectCount() < 1 and ent:GetSolid() == SOLID_NONE and bit.band( ent:GetSolidFlags(), FSOLID_USE_TRIGGER_BOUNDS ) == 0 and bit.band( ent:GetSolidFlags(), FSOLID_CUSTOMRAYTEST ) == 0 )
 end
 
 function GetHovered( eyepos, eyevec )
@@ -127,7 +127,7 @@ function GetHovered( eyepos, eyevec )
 	if ( filter == ply ) then
 		local veh = ply:GetVehicle()
 
-		if ( veh:IsValid() && ( !veh:IsVehicle() || !veh:GetThirdPersonMode() ) ) then
+		if ( veh:IsValid() and ( !veh:IsVehicle() || !veh:GetThirdPersonMode() ) ) then
 			-- A dirty hack for prop_vehicle_crane. util.TraceLine returns the vehicle but it hits phys_bone_follower - something that needs looking into
 			filter = { filter, veh, unpack( ents.FindByClass( "phys_bone_follower" ) ) }
 		end
@@ -200,7 +200,7 @@ if ( CLIENT ) then
 		c.b = 200 + math.cos( RealTime() * 60 ) * 55
 
 		local t = { ent }
-		if ( ent.GetActiveWeapon && IsValid( ent:GetActiveWeapon() ) ) then table.insert( t, ent:GetActiveWeapon() ) end
+		if ( ent.GetActiveWeapon and IsValid( ent:GetActiveWeapon() ) ) then table.insert( t, ent:GetActiveWeapon() ) end
 		halo.Add( t, c, 2, 2, 2, true, false )
 
 	end )
@@ -213,7 +213,7 @@ if ( CLIENT ) then
 
 		if ( !IsValid( vgui.GetHoveredPanel() ) || !vgui.GetHoveredPanel():IsWorldClicker() ) then return end
 
-		if ( code == MOUSE_RIGHT && !input.IsButtonDown( MOUSE_LEFT ) ) then
+		if ( code == MOUSE_RIGHT and !input.IsButtonDown( MOUSE_LEFT ) ) then
 			OnScreenClick( lastEyePos, vector )
 		end
 
@@ -224,7 +224,7 @@ if ( CLIENT ) then
 
 		if ( !input.IsButtonDown( MOUSE_RIGHT ) ) then wasPressed = false end
 
-		if ( wasPressed && input.IsButtonDown( MOUSE_RIGHT ) && !input.IsButtonDown( MOUSE_LEFT ) ) then return true end
+		if ( wasPressed and input.IsButtonDown( MOUSE_RIGHT ) and !input.IsButtonDown( MOUSE_LEFT ) ) then return true end
 
 		if ( !IsValid( vgui.GetHoveredPanel() ) || !vgui.GetHoveredPanel():IsWorldClicker() ) then return end
 
@@ -235,7 +235,7 @@ if ( CLIENT ) then
 		-- Are we pressing the right mouse button?
 		-- (We check whether we're pressing the left too, to allow for physgun freezes)
 		--
-		if ( input.IsButtonDown( MOUSE_RIGHT ) && !input.IsButtonDown( MOUSE_LEFT ) ) then
+		if ( input.IsButtonDown( MOUSE_RIGHT ) and !input.IsButtonDown( MOUSE_LEFT ) ) then
 
 			--
 			-- Are we hovering an entity? If so, then stomp the action

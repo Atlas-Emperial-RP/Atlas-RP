@@ -158,7 +158,7 @@ if (CLIENT) then
 	local function derive(unique, from)
 		local base = stored[from]
 
-		if (base.base and !base.derived) then
+		if (base.base and not base.derived) then
 			derive(base.unique, base.base)
 		end
 		

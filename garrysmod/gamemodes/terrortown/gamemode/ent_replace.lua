@@ -527,7 +527,7 @@ local function ImportEntities(map)
 
    local num = 0
    for k, line in ipairs(string.Explode("\n", file.Read(fname, "GAME"))) do
-      if (not string.match(line, "^#")) and (not string.match(line, "^setting")) and line != "" and string.byte(line) != 0 then
+      if (not string.match(line, "^#")) and (not string.match(line, "^setting")) and line ~= "" and string.byte(line) ~= 0 then
          local data = string.Explode("\t", line)
 
          local fail = true -- pessimism

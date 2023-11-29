@@ -41,7 +41,7 @@ local PhysicsObject =
 
 	Load = function( data, phys )
 
-		if ( isvector( data.Pos ) && isangle( data.Angle ) ) then
+		if ( isvector( data.Pos ) and isangle( data.Angle ) ) then
 
 			local pos, ang = LocalToWorld( data.Pos, data.Angle, LocalPos, LocalAng )
 			phys:SetPos( pos )
@@ -173,7 +173,7 @@ local EntitySaver =
 		for i = 0, ent:GetFlexNum() do
 
 			local w = ent:GetFlexWeight( i )
-			if ( w != 0 ) then
+			if ( w ~= 0 ) then
 				data.Flex = data.Flex or {}
 				data.Flex[ i ] = w
 			end
@@ -201,8 +201,8 @@ local EntitySaver =
 		end
 
 		-- Non Sandbox tool set color and materials
-		if ( ent:GetColor() != color_white ) then data._DuplicatedColor = ent:GetColor() end
-		if ( ent:GetMaterial() != "" ) then data._DuplicatedMaterial = ent:GetMaterial() end
+		if ( ent:GetColor() ~= color_white ) then data._DuplicatedColor = ent:GetColor() end
+		if ( ent:GetMaterial() ~= "" ) then data._DuplicatedMaterial = ent:GetMaterial() end
 
 		-- Sub materials
 		local subMaterials = {}
@@ -232,9 +232,9 @@ local EntitySaver =
 				local a = ent:GetManipulateBoneAngles( i )
 				local p = ent:GetManipulateBonePosition( i )
 
-				if ( s != Vector( 1, 1, 1 ) ) then t[ 's' ] = s end -- scale
-				if ( a != angle_zero ) then t[ 'a' ] = a end -- angle
-				if ( p != vector_origin ) then t[ 'p' ] = p end -- position
+				if ( s ~= Vector( 1, 1, 1 ) ) then t[ 's' ] = s end -- scale
+				if ( a ~= angle_zero ) then t[ 'a' ] = a end -- angle
+				if ( p ~= vector_origin ) then t[ 'p' ] = p end -- position
 
 				if ( !table.IsEmpty( t ) ) then
 					data.BoneManip[ i ] = t
@@ -283,7 +283,7 @@ local EntitySaver =
 
 		-- We do the second check for models because apparently setting the model on an NPC causes some position changes
 		-- And to prevent NPCs going into T-pose briefly upon duplicating
-		if ( data.Model && data.Model != ent:GetModel() ) then ent:SetModel( data.Model ) end
+		if ( data.Model and data.Model ~= ent:GetModel() ) then ent:SetModel( data.Model ) end
 		if ( data.Angle ) then ent:SetAngles( data.Angle ) end
 		if ( data.Pos ) then ent:SetPos( data.Pos ) end
 		if ( data.Skin ) then ent:SetSkin( data.Skin ) end
@@ -479,7 +479,7 @@ function GenericDuplicatorFunction( Player, data )
 	--
 	-- Is this entity 'admin only'?
 	--
-	if ( IsValid( Player ) && !Player:IsAdmin() ) then
+	if ( IsValid( Player ) and !Player:IsAdmin() ) then
 
 		if ( !scripted_ents.GetMember( data.Class, "Spawnable" ) ) then return end
 		if ( scripted_ents.GetMember( data.Class, "AdminOnly" ) ) then return end
@@ -620,14 +620,14 @@ function Copy( Ent, AddToTable )
 	GetAllConstrainedEntitiesAndConstraints( Ent, Ents, Constraints )
 
 	local EntTables = {}
-	if ( AddToTable != nil ) then EntTables = AddToTable.Entities or {} end
+	if ( AddToTable ~= nil ) then EntTables = AddToTable.Entities or {} end
 
 	for k, v in pairs( Ents ) do
 		EntTables[ k ] = CopyEntTable( v )
 	end
 
 	local ConstraintTables = {}
-	if ( AddToTable != nil ) then ConstraintTables = AddToTable.Constraints or {} end
+	if ( AddToTable ~= nil ) then ConstraintTables = AddToTable.Constraints or {} end
 
 	for k, v in pairs( Constraints ) do
 		ConstraintTables[ k ] = v
@@ -666,7 +666,7 @@ function CreateEntityFromTable( Player, EntTable )
 	--
 	-- Convert position/angle to `local`
 	--
-	if ( EntTable.Pos && EntTable.Angle ) then
+	if ( EntTable.Pos and EntTable.Angle ) then
 
 		EntTable.Pos, EntTable.Angle = LocalToWorld( EntTable.Pos, EntTable.Angle, LocalPos, LocalAng )
 
@@ -916,14 +916,14 @@ end
 --
 function GetAllConstrainedEntitiesAndConstraints( ent, EntTable, ConstraintTable )
 
-	if ( !IsValid( ent ) && !ent:IsWorld() ) then return end
+	if ( !IsValid( ent ) and !ent:IsWorld() ) then return end
 
 	-- Translate the class name
 	local classname = ent:GetClass()
 	if ( ent.ClassOverride ) then classname = ent.ClassOverride end
 
 	-- Is the entity in the dupe whitelist?
-	if ( !IsAllowed( classname ) && !ent:IsWorld() ) then
+	if ( !IsAllowed( classname ) and !ent:IsWorld() ) then
 		-- MsgN( "duplicator: ", classname, " isn't allowed to be duplicated!" )
 		return
 	end
@@ -990,7 +990,7 @@ function RemoveMapCreatedEntities()
 
 	for k, v in ipairs( ents.GetAll() ) do
 
-		if ( v:CreatedByMap() && ShouldMapEntityBeRemoved( v, v:GetClass() ) ) then
+		if ( v:CreatedByMap() and ShouldMapEntityBeRemoved( v, v:GetClass() ) ) then
 			v:Remove()
 		end
 

@@ -13,8 +13,8 @@ Subscriptions.prototype.Init = function( scope )
 Subscriptions.prototype.Contains = function( id )
 {
 	id = String( id );
-	if ( this.FilesUGC[ id ] != null ) return true;
-	return this.Files[ id ] != null;
+	if ( this.FilesUGC[ id ] ~= null ) return true;
+	return this.Files[ id ] ~= null;
 }
 
 Subscriptions.prototype.Enabled = function( id )

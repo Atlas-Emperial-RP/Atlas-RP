@@ -9,7 +9,7 @@ if ( CLIENT ) then
 
 	function ENT:BeingLookedAtByLocalPlayer()
 		local ply = LocalPlayer()
-		if ( !IsValid( ply ) ) then return false end
+		if ( not IsValid( ply ) ) then return false end
 
 		local view = ply:GetViewEntity()
 		local dist = self.MaxWorldTipDistance
@@ -17,7 +17,7 @@ if ( CLIENT ) then
 
 		-- If we're spectating a player, perform an eye trace
 		if ( view:IsPlayer() ) then
-			return view:EyePos():DistToSqr( self:GetPos() ) <= dist && view:GetEyeTrace().Entity == self
+			return view:EyePos():DistToSqr( self:GetPos() ) <= dist and view:GetEyeTrace().Entity == self
 		end
 
 		-- If we're not spectating a player, perform a manual trace from the entity's position
@@ -37,7 +37,7 @@ if ( CLIENT ) then
 	function ENT:Think()
 		local text = self:GetOverlayText()
 
-		if ( text != "" && self:BeingLookedAtByLocalPlayer() && !self:GetNoDraw() ) then
+		if ( text ~= "" and self:BeingLookedAtByLocalPlayer() and not self:GetNoDraw() ) then
 			AddWorldTip( self:EntIndex(), text, 0.5, self:GetPos(), self )
 
 			halo.Add( { self }, color_white, 1, 1, 1, true, true )
@@ -63,7 +63,7 @@ function ENT:GetOverlayText()
 
 	local PlayerName = self:GetPlayerName()
 
-	if ( !PlayerName or PlayerName == "" ) then
+	if ( not PlayerName or PlayerName == "" ) then
 		return txt
 	end
 

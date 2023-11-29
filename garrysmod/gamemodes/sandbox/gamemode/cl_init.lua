@@ -135,7 +135,7 @@ end
 
 hook.Add( "PreDrawHalos", "AddPhysgunHalos", function()
 
-	if ( !PhysgunHalos || table.IsEmpty( PhysgunHalos ) ) then return end
+	if ( !PhysgunHalos or table.IsEmpty( PhysgunHalos ) ) then return end
 
 	for k, v in pairs( PhysgunHalos ) do
 
@@ -166,7 +166,7 @@ function GM:NetworkEntityCreated( ent )
 	-- on every entity when joining a server)
 	--
 
-	if ( ent:GetSpawnEffect() && ent:GetCreationTime() > ( CurTime() - 1.0 ) ) then
+	if ( ent:GetSpawnEffect() and ent:GetCreationTime() > ( CurTime() - 1.0 ) ) then
 
 		local ed = EffectData()
 			ed:SetOrigin( ent:GetPos() )

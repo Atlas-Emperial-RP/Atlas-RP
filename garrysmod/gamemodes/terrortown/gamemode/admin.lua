@@ -105,7 +105,7 @@ local dmglog_save    = CreateConVar("ttt_damagelog_save", "0")
 local function PrintDamageLog(ply)
    local pr = GetPrintFn(ply)
 
-   if (not IsValid(ply)) or ply:IsSuperAdmin() or GetRoundState() != ROUND_ACTIVE then
+   if (not IsValid(ply)) or ply:IsSuperAdmin() or GetRoundState() ~= ROUND_ACTIVE then
       ServerLog(Format("%s used ttt_print_damagelog\n", IsValid(ply) and ply:Nick() or "console"))
       pr("*** Damage log:\n")
 

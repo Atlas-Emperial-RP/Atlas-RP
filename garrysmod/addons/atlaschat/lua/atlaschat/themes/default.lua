@@ -94,8 +94,7 @@ atlaschat.messageFadeIn 		= atlaschat.config.New("Chat message fade in", 				"fa
 function atlaschat.font:OnChange(value)
 	local invalid = atlaschat.FixInvalidFont()
 	
-	if (!invalid) then
-		atlaschat.fontHeight = draw.GetFontHeight(value)
+	if (not invalid) then atlaschat.fontHeight = draw.GetFontHeight(value)
 		
 		atlaschat.BuildFontCache(" - ")
 		atlaschat.BuildFontCache("ACCEPTED")
@@ -168,14 +167,14 @@ function theme:Initialize()
 	self.settingsIcon = panel:AddIcon("atlaschat/settings.png", function() atlaschat.theme.Call("ToggleConfigPanel") end, "Configuration")
 	
 	self.informationIcon = panel:AddIcon("atlaschat/emotes.png", function()
-		if (!ValidPanel(self.expressionPanel)) then
+		if (not ValidPanel(self.expressionPanel)) then
 			self.expressionPanel = vgui.Create("atlaschat.expressionlist")
 			self.expressionPanel:SetSize(374, 460)
 			self.expressionPanel:Center()
 			self.expressionPanel:SetDeleteOnClose(false)
 			self.expressionPanel:MakePopup()
 		else
-			self.expressionPanel:SetVisible(!self.expressionPanel:IsVisible())
+			self.expressionPanel:SetVisible(not self.expressionPanel:IsVisible())
 		end
 	end, "Expressions")
 	
@@ -288,7 +287,7 @@ function theme:PaintPanel(w, h)
 	
 	local hostName = GetHostName():upper()
 
-	if (ValidPanel(self.panel.hostName) and self.panel.hostName:GetText() != hostName) then
+	if (ValidPanel(self.panel.hostName) and self.panel.hostName:GetText() ~= hostName) then
 		self.panel.hostName:SetText(hostName)
 		self.panel.hostName:SizeToContents()
 	end
@@ -663,7 +662,7 @@ local adminSorted = {}
 local generalSorted = {}
 
 for name, object in pairs(config) do
-	if (object:GetText() and !object.server) then
+	if (object:GetText() and not object.server) then
 		local value = object:GetValue()
 		local isNumber, isBool = int(value), bool(value)
 		local index
@@ -672,7 +671,7 @@ for name, object in pairs(config) do
 		if (isNumber) then index = 2 end
 		
 		-- It has to be a string!
-		if (!isBool and !isNumber) then index = 3 end
+		if (not isBool and not isNumber) then index = 3 end
 		
 		table.insert(generalSorted, {name = name, index = index})
 	end
@@ -688,7 +687,7 @@ for name, object in pairs(config) do
 		if (isNumber) then index = 2 end
 		
 		-- It has to be a string!
-		if (!isBool and !isNumber) then index = 3 end
+		if (not isBool and not isNumber) then index = 3 end
 		
 		table.insert(adminSorted, {name = name, index = index})
 	end
@@ -703,7 +702,7 @@ table.sort(generalSorted, function(a, b) return a.index < b.index end)
 ----------------------------------------------------------------------
 
 function theme:ToggleConfigPanel()
-	if (!ValidPanel(self.config)) then
+	if (not ValidPanel(self.config)) then
 		self.config = vgui.Create("atlaschat.config")
 		self.config:SetSize(400, 492)
 		self.config:Center()
@@ -776,7 +775,7 @@ function theme:ToggleConfigPanel()
 		self.config:ToggleVisible()
 		
 		if (LocalPlayer():IsSuperAdmin()) then
-			if (!self.config.admin) then
+			if (not self.config.admin) then
 				self.config:AddButton("Reset everyone's configuration", true, function()
 					net.Start("atlaschat.rqclrcfg")
 					net.SendToServer()
@@ -828,7 +827,7 @@ end
 ----------------------------------------------------------------------
 
 function theme:ToggleUserList()
-	if (!ValidPanel(self.userListBase)) then
+	if (not ValidPanel(self.userListBase)) then
 		self.userListBase = vgui.Create("Panel")
 		self.userListBase:DockPadding(6, 32, 6, 6)
 
@@ -881,7 +880,7 @@ function theme:ToggleUserList()
 			for i = 1, #data do
 				local player = data[i]
 				
-				if (IsValid(player) and player != data.creator) then
+				if (IsValid(player) and player ~= data.creator) then
 					local nick = player:Nick()
 					
 					local base = vgui.Create("Panel")
@@ -949,7 +948,7 @@ function theme:ToggleUserList()
 				
 				local menu = DermaMenu()
 					for k, player in pairs(players) do
-						if (player != LocalPlayer()) then
+						if (player ~= LocalPlayer()) then
 							local nick = player:Nick()
 							local steamID = player:SteamID()
 							
@@ -965,7 +964,7 @@ function theme:ToggleUserList()
 			end
 		end
 	else
-		self.userListBase:SetVisible(!self.userListBase:IsVisible())
+		self.userListBase:SetVisible(not self.userListBase:IsVisible())
 		
 		if (self.userListBase:IsVisible()) then
 			local x, y = self.panel:GetPos()
@@ -988,7 +987,7 @@ end
 ----------------------------------------------------------------------
 
 function theme:ToggleRankMenu()
-	if (!ValidPanel(self.rankMenu)) then
+	if (not ValidPanel(self.rankMenu)) then
 		self.rankMenu = vgui.Create("atlaschat.ranks")
 		self.rankMenu:SetSize(466, 400)
 		self.rankMenu:Center()
@@ -1061,7 +1060,7 @@ function theme:OnToggle(show)
 		local children = list:GetCanvas():GetChildren()
 		
 		for k, child in pairs(children) do
-			if (ValidPanel(child) and (child.fade and child.fade <= CurTime()) or !child.fade) then
+			if (ValidPanel(child) and (child.fade and child.fade <= CurTime()) or not child.fade) then
 				child:SetAlpha(0)
 			end
 		end
@@ -1211,7 +1210,7 @@ function theme:ParseExpressions(data, panel, player, title)
 						panelObject:SizeToContents()
 					end
 					
-					if (panelObject != nil) then
+					if (panelObject ~= nil) then
 						local startPos, endPos = found[1], found[2]
 						
 						data[i] = string.sub(value, 1, startPos -1)
@@ -1220,7 +1219,7 @@ function theme:ParseExpressions(data, panel, player, title)
 						
 						local text = string.sub(value, endPos +1)
 						
-						if (text != "") then
+						if (text ~= "") then
 							table.insert(data, i +2, text)	
 						end
 					end
@@ -1254,7 +1253,7 @@ function theme:ParseData(data, list, isTitle)
 				darkrpAllChat = atlaschat.darkrpChat:GetBool()
 			end
 			
-			if (!DarkRP or (DarkRP and (string.lower(isstring(data[2]) and data[2] or "") == "(ooc) " or i == 1 or darkrpAllChat))) then
+			if (not DarkRP or (DarkRP and (string.lower(isstring(data[2]) and data[2] or "") == "(ooc) " or i == 1 or darkrpAllChat))) then
 				if (avatarsEnabledLocal and avatarsEnabled) then
 					local canUse = hook.Run("AtlasChatCanUseExpression", value, "<avatar=" .. value:SteamID() .. ">", "avatar_steamid")
 					
@@ -1293,7 +1292,7 @@ function theme:ParseData(data, list, isTitle)
 				if (wyozite and wyoziteEnabled) then
 					local tag = value:GetNetworkedString("wte_sbtstr", "")
 					
-					if (tag != "") then
+					if (tag ~= "") then
 						local color = value:GetNetworkedVector("wte_sbtclr")
 						
 						color = Color(color.x, color.y, color.z)
@@ -1309,7 +1308,7 @@ function theme:ParseData(data, list, isTitle)
 					for userGroup, data in pairs(atlaschat.ranks) do
 						local isUserGroup = value:IsUserGroup(userGroup)
 						
-						if (isUserGroup and data.tag != "") then
+						if (isUserGroup and data.tag ~= "") then
 							local tagData = {data.tag}
 					
 							self:ParseExpressions(tagData, parseBase, value, true)
@@ -1320,7 +1319,7 @@ function theme:ParseData(data, list, isTitle)
 				
 				if (rankIconsEnabled) then
 					for userGroup, data in pairs(atlaschat.ranks) do
-						if (data.icon != "") then
+						if (data.icon ~= "") then
 							local isUserGroup = value:IsUserGroup(userGroup)
 							
 							if (isUserGroup) then
@@ -1342,7 +1341,7 @@ function theme:ParseData(data, list, isTitle)
 				
 				local title = value:GetNetworkedString("ac_title", "")
 				
-				if (title != "") then
+				if (title ~= "") then
 					local titleData = {title}
 		
 					self:ParseExpressions(titleData, parseBase, value, true)
@@ -1543,7 +1542,7 @@ function theme:ParseData(data, list, isTitle)
 						
 						-- We're at the end.
 						if (ending > #exploded) then
-							if (text != "") then
+							if (text ~= "") then
 								label:SetText(text)
 								label:SizeToContents()
 								
@@ -1559,7 +1558,7 @@ function theme:ParseData(data, list, isTitle)
 		
 		if (type == "Panel") then
 			-- Lol hacky.
-			if (parseBase != value:GetParent()) then
+			if (parseBase ~= value:GetParent()) then
 				value:SetParent(parseBase)
 			end
 			
@@ -1675,7 +1674,7 @@ function theme:ParseData(data, list, isTitle)
 						
 						-- We're at the end.
 						if (ending > #exploded) then
-							if (text != "") then
+							if (text ~= "") then
 								label:SetText(text)
 								label:SizeToContents()
 								
@@ -1741,13 +1740,13 @@ function theme:ParseText(list, ...)
 					table.insert(data, 3, color)
 					table.insert(data, 4, player)
 					
-					if (leftOver and leftOver != "") then
+					if (leftOver and leftOver ~= "") then
 						table.insert(data, 5, leftOver)
 					end
 				else
 					table.insert(data, 3, player)
 					
-					if (leftOver and leftOver != "") then
+					if (leftOver and leftOver ~= "") then
 						table.insert(data, 4, leftOver)
 					end
 				end
@@ -1793,7 +1792,7 @@ function theme:ParseText(list, ...)
 		end
 	
 	-- Hide and Seek support.
-	elseif (SeekerBlinded != nil) then
+	elseif (SeekerBlinded ~= nil) then
 		if (GetType(data[2]) == "string" and IsColor(data[1]) and IsColor(data[3])) then
 			local player = util.FindPlayerAtlaschat(data[2])
 	
@@ -1881,7 +1880,7 @@ function theme:ParseText(list, ...)
 	self:ParseData(data, list)
 	
 	-- Make the chat category blink.
-	if (self.panel:GetActiveList() != list) then
+	if (self.panel:GetActiveList() ~= list) then
 		self.mainChat:SetNew(true)
 	end
 	

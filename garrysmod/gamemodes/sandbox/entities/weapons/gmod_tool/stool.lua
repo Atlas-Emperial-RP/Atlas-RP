@@ -90,7 +90,7 @@ function ToolObj:GetClientBool( property, default )
 		return self.ClientConVars[ property ]:GetBool()
 	end
 
-	return math.floor( self:GetOwner():GetInfoNum( self:GetMode() .. "_" .. property, tonumber( default ) or 0 ) ) != 0
+	return math.floor( self:GetOwner():GetInfoNum( self:GetMode() .. "_" .. property, tonumber( default ) or 0 ) ) ~= 0
 
 end
 
@@ -135,7 +135,7 @@ function ToolObj:CheckObjects()
 
 	for k, v in pairs( self.Objects ) do
 
-		if ( !v.Ent:IsWorld() && !v.Ent:IsValid() ) then
+		if ( !v.Ent:IsWorld() and !v.Ent:IsValid() ) then
 			self:ClearObjects()
 		end
 
@@ -173,7 +173,7 @@ hook.Add( "PopulateToolMenu", "AddSToolsToMenu", function()
 
 	for ToolName, TOOL in pairs( TOOLS_LIST ) do
 
-		if ( TOOL.AddToMenu != false ) then
+		if ( TOOL.AddToMenu ~= false ) then
 
 			spawnmenu.AddToolMenuOption(
 				TOOL.Tab or "Main",
@@ -203,7 +203,7 @@ search.AddProvider( function( str )
 		local niceName = v.Name or "#" .. k
 		if ( niceName:StartWith( "#" ) ) then niceName = language.GetPhrase( niceName:sub( 2 ) ) end
 
-		if ( !k:lower():find( str, nil, true ) && !niceName:lower():find( str, nil, true ) ) then continue end
+		if ( !k:lower():find( str, nil, true ) and !niceName:lower():find( str, nil, true ) ) then continue end
 
 		local entry = {
 			text = niceName,
@@ -248,7 +248,7 @@ spawnmenu.AddContentType( "tool", function( container, obj )
 	icon.OpenMenu = function( icon )
 
 		-- Do not allow removal from read only panels
-		if ( IsValid( icon:GetParent() ) && icon:GetParent().GetReadOnly && icon:GetParent():GetReadOnly() ) then return end
+		if ( IsValid( icon:GetParent() ) and icon:GetParent().GetReadOnly and icon:GetParent():GetReadOnly() ) then return end
 
 		local menu = DermaMenu()
 			menu:AddOption( "#spawnmenu.menu.delete", function()

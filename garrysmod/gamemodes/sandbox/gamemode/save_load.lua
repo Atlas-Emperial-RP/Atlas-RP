@@ -15,9 +15,9 @@ if ( SERVER ) then
 
 		-- gmsave.SaveMap is very expensive for big maps/lots of entities. Do not allow random ppl to save the map in multiplayer!
 		-- TODO: Actually do proper hooks for this
-		if ( !game.SinglePlayer() && !ply:IsAdmin() ) then return end
+		if ( !game.SinglePlayer() and !ply:IsAdmin() ) then return end
 
-		if ( ply.m_NextSave && ply.m_NextSave > CurTime() && !game.SinglePlayer() ) then
+		if ( ply.m_NextSave and ply.m_NextSave > CurTime() and !game.SinglePlayer() ) then
 			ServerLog( tostring( ply ) ..  " tried to save too quickly!\n" )
 			return
 		end
@@ -61,7 +61,7 @@ if ( SERVER ) then
 	local function LoadGModSave( savedata )
 
 		-- If we loaded the save from main menu and the player entity is not ready yet
-		if ( game.SinglePlayer() && !IsValid( Entity( 1 ) ) ) then
+		if ( game.SinglePlayer() and !IsValid( Entity( 1 ) ) ) then
 
 			timer.Create( "LoadGModSave_WaitForPlayer", 0.1, 0, function()
 				if ( !IsValid( Entity( 1 ) ) ) then return end
@@ -75,8 +75,8 @@ if ( SERVER ) then
 		end
 
 		local ply = nil
-		if ( IsValid( Entity( 1 ) ) && ( game.SinglePlayer() || Entity( 1 ):IsListenServerHost() ) ) then ply = Entity( 1 ) end
-		if ( !IsValid( ply ) && #player.GetHumans() == 1 ) then ply = player.GetHumans()[ 1 ] end
+		if ( IsValid( Entity( 1 ) ) and ( game.SinglePlayer() or Entity( 1 ):IsListenServerHost() ) ) then ply = Entity( 1 ) end
+		if ( !IsValid( ply ) and #player.GetHumans() == 1 ) then ply = player.GetHumans()[ 1 ] end
 
 		gmsave.LoadMap( savedata, ply )
 

@@ -195,7 +195,7 @@ local GifReaderLZWOutputIndexStream = function(this, output, output_length)
 			code_mask = lshift(1, cur_code_size) - 1
 
 			prev_code = null
-			continue
+			goto continue
 		elseif code == eoi_code then
 			break
 		end
@@ -245,6 +245,7 @@ local GifReaderLZWOutputIndexStream = function(this, output, output_length)
 		end
 
 		prev_code = code
+		::continue::
 	end
 
 	if op ~= output_length then

@@ -130,7 +130,7 @@ function GM:CreateTeams()
 	-- create a few teams here as an example. If you're making a teambased
 	-- gamemode you should override this function in your gamemode
 
-	if ( !GAMEMODE.TeamBased ) then return end
+	if ( not GAMEMODE.TeamBased ) then return end
 
 	TEAM_BLUE = 1
 	team.SetUp( TEAM_BLUE, "Blue Team", Color( 0, 0, 255 ) )

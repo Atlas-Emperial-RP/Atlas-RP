@@ -12,7 +12,7 @@ if( SERVER ) then
 end
 
 function TOOL:LeftClick( trace )
-	if( !trace.HitPos || IsValid( trace.Entity ) && trace.Entity:IsPlayer() ) then return false end
+	if( not trace.HitPos or IsValid( trace.Entity ) and trace.Entity:IsPlayer() ) then return false end
 	if( CLIENT ) then return true end
 
 	local ply = self:GetOwner()
@@ -23,7 +23,7 @@ function TOOL:LeftClick( trace )
 
 	if( BRICKSCREDITSTORE.CONFIG.NPCs[ply:GetNWString( "brcs_stoolcmd_npctype" )] ) then
 		local Ent = ents.Create( "brickscreditstore_npc" )
-		if( !IsValid( Ent ) ) then
+		if( not IsValid( Ent ) ) then
 			ply:NotifyBRCS( "This is not a valid NPC!" )
 			return
 		end
@@ -43,8 +43,8 @@ function TOOL:LeftClick( trace )
 end
  
 function TOOL:RightClick( trace )
-	if( !trace.HitPos ) then return false end
-	if( !IsValid( trace.Entity ) or trace.Entity:IsPlayer() ) then return false end
+	if( not trace.HitPos ) then return false end
+	if( not IsValid( trace.Entity ) or trace.Entity:IsPlayer() ) then return false end
 	if( CLIENT ) then return true end
 
 	local ply = self:GetOwner()

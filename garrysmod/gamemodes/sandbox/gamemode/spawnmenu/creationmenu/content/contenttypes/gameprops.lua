@@ -55,7 +55,7 @@ local function GamePropsRightClick( self )
 		end
 
 		local name = parent:GetText()
-		if ( self:GetFolder() != "models" ) then
+		if ( self:GetFolder() ~= "models" ) then
 			name = name .. " - " .. self:GetFolder():sub( 8 )
 		end
 
@@ -86,8 +86,8 @@ local function AddBrowseContent( ViewPanel, node, name, icon, path, pathid, pnlC
 	models.OnNodeSelected = function( slf, node )
 
 		-- Already viewing this panel
-		if ( ViewPanel && ViewPanel.CurrentNode && ViewPanel.CurrentNode == node ) then
-			if ( pnlContent.SelectedPanel != ViewPanel ) then pnlContent:SwitchPanel( ViewPanel ) end
+		if ( ViewPanel and ViewPanel.CurrentNode and ViewPanel.CurrentNode == node ) then
+			if ( pnlContent.SelectedPanel ~= ViewPanel ) then pnlContent:SwitchPanel( ViewPanel ) end
 			return
 		end
 

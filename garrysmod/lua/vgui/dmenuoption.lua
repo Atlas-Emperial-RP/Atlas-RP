@@ -75,7 +75,7 @@ function PANEL:OnMouseReleased( mousecode )
 
 	DButton.OnMouseReleased( self, mousecode )
 
-	if ( self.m_MenuClicking && mousecode == MOUSE_LEFT ) then
+	if ( self.m_MenuClicking and mousecode == MOUSE_LEFT ) then
 
 		self.m_MenuClicking = false
 		CloseDermaMenus()

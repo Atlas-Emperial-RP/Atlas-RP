@@ -111,8 +111,8 @@ if ( SERVER ) then
 
 	numpad.Register( "Camera_On", function( pl, ent )
 
-		if ( !IsValid( ent ) ) then return false end
-		if ( !IsValid( pl ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
+		if ( not IsValid( pl ) ) then return false end
 
 		pl:SetViewEntity( ent )
 		pl.UsingCamera = ent
@@ -123,16 +123,16 @@ if ( SERVER ) then
 	numpad.Register( "Camera_Toggle", function( pl, ent, idx, buttoned )
 
 		-- The camera was deleted or something - return false to remove this entry
-		if ( !IsValid( ent ) ) then return false end
-		if ( !IsValid( pl ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
+		if ( not IsValid( pl ) ) then return false end
 
 		-- Something else changed players view entity
-		if ( pl.UsingCamera && pl.UsingCamera == ent && pl:GetViewEntity() != ent ) then
+		if ( pl.UsingCamera and pl.UsingCamera == ent and pl:GetViewEntity() ~= ent ) then
 			pl.UsingCamera = nil
 			ent.UsingPlayer = nil
 		end
 
-		if ( pl.UsingCamera && pl.UsingCamera == ent ) then
+		if ( pl.UsingCamera and pl.UsingCamera == ent ) then
 
 			pl:SetViewEntity( pl )
 			pl.UsingCamera = nil
@@ -150,10 +150,10 @@ if ( SERVER ) then
 
 	numpad.Register( "Camera_Off", function( pl, ent )
 
-		if ( !IsValid( ent ) ) then return false end
-		if ( !IsValid( pl ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
+		if ( not IsValid( pl ) ) then return false end
 
-		if ( pl.UsingCamera && pl.UsingCamera == ent ) then
+		if ( pl.UsingCamera and pl.UsingCamera == ent ) then
 			pl:SetViewEntity( pl )
 			pl.UsingCamera = nil
 			ent.UsingPlayer = nil
@@ -175,7 +175,7 @@ end
 
 function ENT:TrackEntity( ent, lpos )
 
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	local WPos = ent:LocalToWorld( lpos )
 

@@ -69,7 +69,7 @@ function PANEL:OnKeyCodeTyped( code )
 
 	self:OnKeyCode( code )
 
-	if ( code == KEY_ENTER && !self:IsMultiline() && self:GetEnterAllowed() ) then
+	if ( code == KEY_ENTER and !self:IsMultiline() and self:GetEnterAllowed() ) then
 
 		if ( IsValid( self.Menu ) ) then
 			self.Menu:Remove()
@@ -194,7 +194,7 @@ function PANEL:OnTextChanged( noMenuRemoval )
 		self:OnValueChange( self:GetText() )
 	end
 
-	if ( IsValid( self.Menu ) && !noMenuRemoval ) then
+	if ( IsValid( self.Menu ) and !noMenuRemoval ) then
 		self.Menu:Remove()
 	end
 

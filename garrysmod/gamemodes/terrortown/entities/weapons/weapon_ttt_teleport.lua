@@ -103,10 +103,10 @@ end
 
 local function ShouldCollide(ent)
    local g = ent:GetCollisionGroup()
-   return (g != COLLISION_GROUP_WEAPON and
-           g != COLLISION_GROUP_DEBRIS and
-           g != COLLISION_GROUP_DEBRIS_TRIGGER and
-           g != COLLISION_GROUP_INTERACTIVE_DEBRIS)
+   return (g ~= COLLISION_GROUP_WEAPON and
+           g ~= COLLISION_GROUP_DEBRIS and
+           g ~= COLLISION_GROUP_DEBRIS_TRIGGER and
+           g ~= COLLISION_GROUP_INTERACTIVE_DEBRIS)
 end
 
 -- Teleport a player to a {pos, ang}
@@ -179,7 +179,7 @@ local function CanTeleportToPos(ply, pos)
 
       for _, block in ipairs(blockers) do
          if IsValid(block) then
-            if block:IsPlayer() and block != ply then
+            if block:IsPlayer() and block ~= ply then
                if block:IsTerror() and block:Alive() then
                   table.insert(blocking_plys, block)
                   -- telefrag blocker
@@ -266,7 +266,7 @@ function SWEP:TeleportRecall()
       if mark then
 
          local g = ply:GetGroundEntity()
-         if g != game.GetWorld() and not IsValid(g) then
+         if g ~= game.GetWorld() and not IsValid(g) then
             LANG.Msg(ply, "tele_no_ground")
             return
          end
@@ -289,7 +289,7 @@ end
 
 local function CanStoreTeleportPos(ply, pos)
    local g = ply:GetGroundEntity()
-   if g != game.GetWorld() or (IsValid(g) and g:GetMoveType() != MOVETYPE_NONE) then
+   if g ~= game.GetWorld() or (IsValid(g) and g:GetMoveType() ~= MOVETYPE_NONE) then
       return false, "tele_no_mark_ground"
    elseif ply:Crouching() then
       return false, "tele_no_mark_crouch"

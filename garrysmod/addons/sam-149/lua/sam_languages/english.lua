@@ -111,7 +111,7 @@ return {
 	bring = "{A} teleported {T}.",
 	bring_help = "Bring a player.",
 
-	goto = "{A} teleported to {T}.",
+	--goto = "{A} teleported to {T}.",
 	goto_help = "Goto a player.",
 
 	no_location = "No previous location to return {T} to.",

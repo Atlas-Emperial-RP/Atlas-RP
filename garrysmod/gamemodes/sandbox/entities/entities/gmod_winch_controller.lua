@@ -56,7 +56,7 @@ function ENT:Think()
 
 		current_length = current_length + dist
 
-		if ( self.min_length && current_length < self.min_length ) then
+		if ( self.min_length and current_length < self.min_length ) then
 
 			current_length = self.min_length
 			if ( self.toggle ) then self.direction = DIR_NONE end
@@ -91,7 +91,7 @@ function ENT:Think()
 		if ( spos > amp ) then spos = amp end
 		if ( spos < 0 ) then spos = 0 end
 
-		if ( self.direction != DIR_NONE ) then
+		if ( self.direction ~= DIR_NONE ) then
 			current_length = self.min_length + spos
 		end
 		self.ctime = self.ctime + TimeDiff

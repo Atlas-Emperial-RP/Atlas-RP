@@ -66,7 +66,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 
 		SearchBar.OnValueChange = function( s, str )
 			for id, pnl in pairs( PanelSelect:GetItems() ) do
-				if ( !pnl.playermodel:find( str, 1, true ) && !pnl.model_path:find( str, 1, true ) ) then
+				if ( !pnl.playermodel:find( str, 1, true ) and !pnl.model_path:find( str, 1, true ) ) then
 					pnl:SetVisible( false )
 				else
 					pnl:SetVisible( true )
@@ -250,7 +250,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 
 		function PanelSelect:OnActivePanelChanged( old, new )
 
-			if ( old != new ) then -- Only reset if we changed the model
+			if ( old ~= new ) then -- Only reset if we changed the model
 				RunConsoleCommand( "cl_playerbodygroups", "0" )
 				RunConsoleCommand( "cl_playerskin", "0" )
 			end

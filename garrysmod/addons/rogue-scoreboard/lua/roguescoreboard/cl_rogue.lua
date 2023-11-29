@@ -118,7 +118,7 @@ local function initCommandTable()
 				Func = function(cmdPly)
 
 					if cmdPly == LocalPlayer() then LocalPlayer():ChatPrint( Configuration.TargetSelfCheck  ) return end
-					Configuration.Administration[Configuration.AdministrationMod].goto( cmdPly )
+					-- Configuration.Administration[ Configuration.AdministrationMod].goto( cmdPly ) todo: fix this
 
 				end
 			})

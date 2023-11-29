@@ -213,7 +213,7 @@ local function RemoveFromKeyTable( tab, idx )
 
 		for k_, v_player in pairs( v_key ) do
 
-			if ( v_player[ idx ] != nil ) then
+			if ( v_player[ idx ] ~= nil ) then
 				v_player[ idx ] = nil
 			end
 

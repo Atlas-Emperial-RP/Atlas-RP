@@ -25,11 +25,11 @@ end
 ----------------------------------------------------------------------
 
 function panel:Clear(value)
-	if (value != nil) then
+	if (value ~= nil) then
 		local children = self.list:GetCanvas():GetChildren()
 		
 		for k, child in pairs(children) do
-			if (child[value] != nil) then
+			if (child[value] ~= nil) then
 				child:Remove()
 			end
 		end
@@ -121,7 +121,7 @@ function panel:AddCategory(name, value)
 	
 	panel.name = name
 	
-	if (value != nil) then
+	if (value ~= nil) then
 		panel[value] = true
 	end
 	

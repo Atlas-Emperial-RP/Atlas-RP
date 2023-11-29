@@ -431,7 +431,7 @@ function Parse( ml, maxwidth )
 						end
 
 						local previous_block = new_block_list[ #new_block_list ]
-						local wrap = lastSpacePos == string.len( curString ) && lastSpacePos > 0
+						local wrap = lastSpacePos == string.len( curString ) and lastSpacePos > 0
 						if ( previous_block and previous_block.text:match(" $") and wrap and surface.GetTextSize( blk.text ) < maxwidth ) then
 							-- If the block was preceded by a space, wrap the block onto the next line first, as we can probably fit it there
 							local trimmed, trimCharNum = previous_block.text:gsub(" +$", "")

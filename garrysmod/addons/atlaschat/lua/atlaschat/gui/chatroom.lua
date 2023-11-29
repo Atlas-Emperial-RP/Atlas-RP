@@ -182,8 +182,8 @@ function panel:AddPlayer(player, creator)
 		end
 	end
 
-	if (!exists or creator) then
-		if (!ValidPanel(self.label)) then
+	if (not exists or creator) then
+		if (not ValidPanel(self.label)) then
 			self.label = self:Add("DLabel")
 			self.label:SetFont("atlaschat.theme.list.name")
 			self.label:SetColor(color_white)
@@ -220,7 +220,7 @@ function panel:RemovePlayer(player, left)
 	if (player == LocalPlayer()) then
 
 		-- I WAS KICKED :((
-		if (!left) then
+		if (not left) then
 			self:ThrowIntoBlackHole()
 
 			chat.AddText(color_red, ":exclamation: You have been kicked from the chatroom!")
@@ -271,7 +271,7 @@ function panel:PerformLayout()
 			if (IsValid(player)) then
 				local name = player:Nick()
 
-				text = text .. name .. (i != #self.players and ", " or "")
+				text = text .. name .. (i ~= #self.players and ", " or "")
 			end
 		end
 
@@ -317,7 +317,7 @@ function panel:OnMousePressed(code)
 				userListBase:SetVisible(false)
 			end
 		end
-	elseif (code == MOUSE_RIGHT and !self.name) then
+	elseif (code == MOUSE_RIGHT and not self.name) then
 		local menu = DermaMenu()
 			local option = menu:AddOption("Leave chatroom", function()
 				net.Start("atlaschat.lvpm")
@@ -488,7 +488,7 @@ function panel:PerformLayout()
 		end
 
 		self.grip:SetSize(w -4, math.max(h -(math.abs(h -tallest)), 32))
-		self.grip:SetVisible(!disable)
+		self.grip:SetVisible(not disable)
 	else
 		local widest = 0
 		local disable = false
@@ -510,10 +510,10 @@ function panel:PerformLayout()
 			end
 		end
 
-		self:SetMouseInputEnabled(!disable)
+		self:SetMouseInputEnabled(not disable)
 
 		self.grip:SetSize(math.max(w -(math.abs(w -widest)), 32), h)
-		self.grip:SetVisible(!disable)
+		self.grip:SetVisible(not disable)
 	end
 end
 

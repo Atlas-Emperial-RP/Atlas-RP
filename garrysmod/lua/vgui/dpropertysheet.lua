@@ -258,7 +258,7 @@ function PANEL:CrossFade( anim, delta, data )
 	local old = data.OldTab:GetPanel()
 	local new = data.NewTab:GetPanel()
 
-	if ( !IsValid( old ) && !IsValid( new ) ) then return end
+	if ( !IsValid( old ) and !IsValid( new ) ) then return end
 
 	if ( anim.Finished ) then
 		if ( IsValid( old ) ) then
@@ -406,7 +406,7 @@ function PANEL:CloseTab( tab, bRemovePanelToo )
 
 	for k, v in pairs( self.Items ) do
 
-		if ( v.Tab != tab ) then continue end
+		if ( v.Tab ~= tab ) then continue end
 
 		table.remove( self.Items, k )
 
@@ -414,7 +414,7 @@ function PANEL:CloseTab( tab, bRemovePanelToo )
 
 	for k, v in pairs( self.tabScroller.Panels ) do
 
-		if ( v != tab ) then continue end
+		if ( v ~= tab ) then continue end
 
 		table.remove( self.tabScroller.Panels, k )
 

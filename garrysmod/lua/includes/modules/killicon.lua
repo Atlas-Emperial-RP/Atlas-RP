@@ -44,7 +44,7 @@ end
 
 function Exists( name )
 
-	return Icons[name] != nil
+	return Icons[name] ~= nil
 
 end
 

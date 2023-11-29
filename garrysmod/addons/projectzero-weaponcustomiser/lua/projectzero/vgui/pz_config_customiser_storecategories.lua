@@ -13,8 +13,11 @@ function PANEL:Refresh()
 
     local function GetCategoryFromOrder( order )
         for k, v in pairs( values ) do
-            if( v.Order != order ) then continue end
-            return k
+            if( v.Order ~= order ) then goto continue end
+            
+            do return k end
+            
+            ::continue::
         end
 
         return nil
@@ -300,7 +303,7 @@ function PANEL:CreateConfigPopup( valueKey, values )
     imageHint:SetTall( select( 2, surface.GetTextSize( "Press enter to update image" ) ) )
     imageHint.Paint = function( self2, w, h ) 
         local text = "Image loaded"
-        if( IsValid( imageEntry ) and imageEntry:GetValue() != configItem.Icon ) then
+        if( IsValid( imageEntry ) and imageEntry:GetValue() ~= configItem.Icon ) then
             text = "Press enter to update image"
         elseif( imageTexture.loadingImage ) then
             text = "Loading image..."

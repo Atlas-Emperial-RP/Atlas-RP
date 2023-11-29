@@ -110,7 +110,7 @@ function PANEL:Shuffle()
 
 	-- By only removing them when the list is empty
 	-- we keep the order.
-	if ( Count == 0 && #self.Items > 0 ) then
+	if ( Count == 0 and #self.Items > 0 ) then
 		self.Items = {}
 	end
 

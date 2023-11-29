@@ -84,10 +84,10 @@ if ( CLIENT ) then
 		if ( !self:IsOn() ) then return	end
 		if ( self.ShouldDraw == false ) then return end
 
-		if ( self:GetEffect() == "" || self:GetEffect() == "none" ) then return end
+		if ( self:GetEffect() == "" or self:GetEffect() == "none" ) then return end
 
 		for id, t in pairs( list.GetForEdit( "ThrusterEffects" ) ) do
-			if ( t.thruster_effect != self:GetEffect() || !t.effectDraw ) then continue end
+			if ( t.thruster_effect ~= self:GetEffect() or !t.effectDraw ) then continue end
 
 			t.effectDraw( self )
 
@@ -110,23 +110,23 @@ function ENT:Think()
 
 	BaseClass.Think( self )
 
-	if ( SERVER && self.SwitchOffTime && self.SwitchOffTime < CurTime() ) then
+	if ( SERVER and self.SwitchOffTime and self.SwitchOffTime < CurTime() ) then
 		self.SwitchOffTime = nil
 		self:Switch( false )
 	end
 
 	if ( CLIENT ) then
 
-		self.ShouldDraw = GetConVarNumber( "cl_drawthrusterseffects" ) != 0
+		self.ShouldDraw = GetConVarNumber( "cl_drawthrusterseffects" ) ~= 0
 
 		if ( !self:IsOn() ) then self.OnStart = nil return end
 		self.OnStart = self.OnStart or CurTime()
 
 		if ( self.ShouldDraw == false ) then return end
-		if ( self:GetEffect() == "" || self:GetEffect() == "none" ) then return end
+		if ( self:GetEffect() == "" or self:GetEffect() == "none" ) then return end
 
 		for id, t in pairs( list.GetForEdit( "ThrusterEffects" ) ) do
-			if ( t.thruster_effect != self:GetEffect() || !t.effectThink ) then continue end
+			if ( t.thruster_effect ~= self:GetEffect() or !t.effectThink ) then continue end
 
 			t.effectThink( self )
 
@@ -145,7 +145,7 @@ if ( CLIENT ) then
 	function ENT:GetEmitter( Pos, b3D )
 
 		if ( self.Emitter ) then
-			if ( self.EmitterIs3D == b3D && self.EmitterTime > CurTime() ) then
+			if ( self.EmitterIs3D == b3D and self.EmitterTime > CurTime() ) then
 				return self.Emitter
 			end
 		end
@@ -233,7 +233,7 @@ if ( SERVER ) then
 		end
 
 		self:SetForce( nil, self.Multiply )
-		self:Switch( self.Multiply != 0 )
+		self:Switch( self.Multiply ~= 0 )
 
 	end
 
@@ -309,7 +309,7 @@ if ( SERVER ) then
 	-- Starts the looping sound
 	function ENT:StartThrustSound()
 
-		if ( !self.SoundName || self.SoundName == "" ) then return end
+		if ( !self.SoundName or self.SoundName == "" ) then return end
 
 		local valid = false
 		for _, v in pairs( list.Get( "ThrusterSounds" ) ) do

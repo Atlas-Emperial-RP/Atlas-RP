@@ -109,7 +109,7 @@ function PANEL:Open()
 	self.m_bHangOpen = false
 
 	-- If the context menu is open, try to close it..
-	if ( IsValid( g_ContextMenu ) && g_ContextMenu:IsVisible() ) then
+	if ( IsValid( g_ContextMenu ) and g_ContextMenu:IsVisible() ) then
 		g_ContextMenu:Close( true )
 	end
 
@@ -125,7 +125,7 @@ function PANEL:Open()
 
 	achievements.SpawnMenuOpen()
 
-	if ( IsValid( self.StartupTool ) && self.StartupTool.Name ) then
+	if ( IsValid( self.StartupTool ) and self.StartupTool.Name ) then
 		self.StartupTool:SetSelected( true )
 		spawnmenu.ActivateTool( self.StartupTool.Name, true )
 		self.StartupTool = nil
@@ -159,7 +159,7 @@ function PANEL:PerformLayout()
 	local MarginY = math.Clamp( ( ScrH() - 768 ) * spawnmenu_border:GetFloat(), 25, 256 )
 
 	-- At this size we can't spare any space for emptiness
-	if ( ScrW() < 1024 || ScrH() < 768 ) then
+	if ( ScrW() < 1024 or ScrH() < 768 ) then
 		MarginX = 0
 		MarginY = 0
 	end
@@ -183,7 +183,7 @@ end
 
 function PANEL:EndKeyFocus( pPanel )
 
-	if ( self.m_pKeyFocus != pPanel ) then return end
+	if ( self.m_pKeyFocus ~= pPanel ) then return end
 	self:SetKeyboardInputEnabled( false )
 
 end
@@ -194,7 +194,7 @@ function PANEL:OnSizeChanged( newW, newH )
 	self:InvalidateLayout( true )
 	local divWnew = self.HorizontalDivider:GetWide()
 
-	if ( divW > divL && divW < divWnew ) then
+	if ( divW > divL and divW < divWnew ) then
 		local ratio = divL / divW
 		self.HorizontalDivider:SetLeftWidth( ratio * divWnew )
 	end
@@ -283,10 +283,10 @@ end
 -----------------------------------------------------------]]
 local function SpawnMenuKeyboardFocusOn( pnl )
 
-	if ( IsValid( g_SpawnMenu ) && IsValid( pnl ) && pnl:HasParent( g_SpawnMenu ) ) then
+	if ( IsValid( g_SpawnMenu ) and IsValid( pnl ) and pnl:HasParent( g_SpawnMenu ) ) then
 		g_SpawnMenu:StartKeyFocus( pnl )
 	end
-	if ( IsValid( g_ContextMenu ) && IsValid( pnl ) && pnl:HasParent( g_ContextMenu ) ) then
+	if ( IsValid( g_ContextMenu ) and IsValid( pnl ) and pnl:HasParent( g_ContextMenu ) ) then
 		g_ContextMenu:StartKeyFocus( pnl )
 	end
 
@@ -299,11 +299,11 @@ hook.Add( "OnTextEntryGetFocus", "SpawnMenuKeyboardFocusOn", SpawnMenuKeyboardFo
 -----------------------------------------------------------]]
 local function SpawnMenuKeyboardFocusOff( pnl )
 
-	if ( IsValid( g_SpawnMenu ) && IsValid( pnl ) && pnl:HasParent( g_SpawnMenu ) ) then
+	if ( IsValid( g_SpawnMenu ) and IsValid( pnl ) and pnl:HasParent( g_SpawnMenu ) ) then
 		g_SpawnMenu:EndKeyFocus( pnl )
 	end
 
-	if ( IsValid( g_ContextMenu ) && IsValid( pnl ) && pnl:HasParent( g_ContextMenu ) ) then
+	if ( IsValid( g_ContextMenu ) and IsValid( pnl ) and pnl:HasParent( g_ContextMenu ) ) then
 		g_ContextMenu:EndKeyFocus( pnl )
 	end
 
@@ -356,7 +356,7 @@ hook.Add( "GUIMouseReleased", "SpawnMenuOpenGUIMouseReleased", SpawnMenuOpenGUIM
 local function SpawnMenuLanguageChanged()
 	if ( !IsValid( g_SpawnMenu ) ) then return end
 
-	if ( g_SpawnMenu.m_UnsavedModifications || g_SpawnMenu:IsVisible() ) then
+	if ( g_SpawnMenu.m_UnsavedModifications or g_SpawnMenu:IsVisible() ) then
 		-- If there are unsaved modifications, or the spawn menu is somehow open, mark the spawn menu for recreation when the opportunity arises
 		g_SpawnMenu.m_NeedsLanguageRefresh = true
 	else
@@ -388,7 +388,7 @@ local function SpawnMenuLanguageRefresh()
 	if ( !IsValid( g_SpawnMenu ) ) then return end
 
 	-- When the spawn menu is closed, check if it needs a language refresh. If it has no unsaved modifications, refresh it!
-	if ( !g_SpawnMenu.m_UnsavedModifications && g_SpawnMenu.m_NeedsLanguageRefresh ) then
+	if ( !g_SpawnMenu.m_UnsavedModifications and g_SpawnMenu.m_NeedsLanguageRefresh ) then
 		g_SpawnMenu.m_NeedsLanguageRefresh = nil
 		CreateSpawnMenu()
 	end

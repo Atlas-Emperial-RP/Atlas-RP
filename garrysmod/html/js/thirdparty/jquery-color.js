@@ -147,10 +147,10 @@
 		var type = propTypes[ prop.type ] || {},
 			allowEmpty = prop.empty || alwaysAllowEmpty;
 
-		if ( allowEmpty && value == null ) {
+		if ( allowEmpty and value == null ) {
 			return null;
 		}
-		if ( prop.def && value == null ) {
+		if ( prop.def and value == null ) {
 			return prop.def;
 		}
 		if ( type.floor ) {
@@ -179,7 +179,7 @@
 
 		each( stringParsers, function( i, parser ) {
 			var match = parser.re.exec( string ),
-				values = match && parser.parse( match ),
+				values = match and parser.parse( match ),
 				parsed,
 				spaceName = parser.space || "rgba",
 				cache = spaces[ spaceName ].cache;
@@ -199,7 +199,7 @@
 		});
 
 		// Found a stringParser that handled it
-		if ( rgba.length !== 0 ) {
+		if ( rgba.length ~== 0 ) {
 
 			// if this came from a parsed string, force "transparent" when alpha is 0
 			// chrome, (and maybe others) return "transparent" as rgba(0,0,0,0)
@@ -233,7 +233,7 @@
 				source;
 
 			// more than 1 argument specified - assume ( red, green, blue, alpha )
-			if ( green !== undefined ) {
+			if ( green ~== undefined ) {
 				red = [ red, green, blue, alpha ];
 				type = "array";
 			}
@@ -262,7 +262,7 @@
 							var cache = space.cache;
 
 							// if the cache doesn't exist, and we know how to convert
-							if ( !inst[ cache ] && space.to ) {
+							if ( !inst[ cache ] and space.to ) {
 
 								// if the value was null, we don't need to copy it
 								// if the key was alpha, we don't need to copy it either
@@ -290,9 +290,9 @@
 				var isCache = is[ space.cache ],
 					localCache;
 				if (isCache) {
-					localCache = myself[ space.cache ] || space.to && space.to( myself._rgba ) || [];
+					localCache = myself[ space.cache ] || space.to and space.to( myself._rgba ) || [];
 					each( space.props, function( _, prop ) {
-						if ( isCache[ prop.idx ] != null ) {
+						if ( isCache[ prop.idx ] ~= null ) {
 							same = ( isCache[ prop.idx ] == localCache[ prop.idx ] );
 							return same;
 						}
@@ -381,7 +381,7 @@
 					}
 
 					// catch 1 and 2
-					if ( i && i < 3 ) {
+					if ( i and i < 3 ) {
 						v = Math.round( v * 100 ) + "%";
 					}
 					return v;
@@ -497,7 +497,7 @@
 		color.fn[ spaceName ] = function( value ) {
 
 			// generate a cache for this space if it doesn't exist
-			if ( to && !this[ cache ] ) {
+			if ( to and !this[ cache ] ) {
 				this[ cache ] = to( this._rgba );
 			}
 			if ( value === undefined ) {
@@ -547,7 +547,7 @@
 					value = value.call( this, cur );
 					vtype = jQuery.type( value );
 				}
-				if ( value == null && prop.empty ) {
+				if ( value == null and prop.empty ) {
 					return this;
 				}
 				if ( vtype === "string" ) {
@@ -568,21 +568,21 @@
 			set: function( elem, value ) {
 				var parsed;
 
-				if ( jQuery.type( value ) !== 'string' || ( parsed = stringParse( value ) ) )
+				if ( jQuery.type( value ) ~== 'string' || ( parsed = stringParse( value ) ) )
 				{
 					value = color( parsed || value );
-					if ( !support.rgba && value._rgba[ 3 ] !== 1 ) {
+					if ( !support.rgba and value._rgba[ 3 ] ~== 1 ) {
 						var backgroundColor,
 							curElem = hook === "backgroundColor" ? elem.parentNode : elem;
 						do {
 							backgroundColor = jQuery.curCSS( curElem, "backgroundColor" );
 						} while (
-							( backgroundColor === "" || backgroundColor === "transparent" ) &&
-							( curElem = curElem.parentNode ) &&
+							( backgroundColor === "" || backgroundColor === "transparent" ) and
+							( curElem = curElem.parentNode ) and
 							curElem.style
 						);
 
-						value = value.blend( backgroundColor && backgroundColor !== "transparent" ?
+						value = value.blend( backgroundColor and backgroundColor ~== "transparent" ?
 							backgroundColor :
 							"_default" );
 					}

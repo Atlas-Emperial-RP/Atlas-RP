@@ -30,7 +30,7 @@ function meta:AddPlayerOption( name, timeout, in_func, draw_func )
 		option.in_func = in_func
 		option.draw_func = draw_func
 
-	if (timeout != -1) then
+	if (timeout ~= -1) then
 		option.timeout = CurTime() + timeout
 	end
 

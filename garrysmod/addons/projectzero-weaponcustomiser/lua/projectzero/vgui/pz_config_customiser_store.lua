@@ -361,7 +361,7 @@ function PANEL:CreateConfigPopup( valueKey, values )
             weaponField:Remove() 
         end
 
-        if( configItem.Type != 3 ) then return end
+        if( configItem.Type ~= 3 ) then return end
 
         local weaponEntryH = PROJECT0.FUNC.ScreenScale( 30 )
 
@@ -470,8 +470,9 @@ function PANEL:CreateConfigPopup( valueKey, values )
         buttonRow:AddButton( "ADD NEW", Material( "project0/icons/add.png", "noclamp smooth" ), function()
             local options = {}
             for k, v in pairs( PROJECT0.FUNC.GetConfiguredWeapons() ) do
-                if( table.HasValue( configItem.Weapons, k ) ) then continue end
+                if( table.HasValue( configItem.Weapons, k ) ) then goto continue end
                 options[k] = v.Name
+                ::continue::
             end
     
             PROJECT0.FUNC.DermaComboRequest( "What weapon would you like to add?", "WEAPON EDITOR", options, false, true, false, function( value, data )
@@ -501,7 +502,7 @@ function PANEL:CreateConfigPopup( valueKey, values )
         local items = cosmeticTypes[configItem.Type].GetItemList()
         ChangeItemVariable( "ItemID", items[1][1] )
 
-        if( index != 3 and configItem.Weapons ) then
+        if( index ~= 3 and configItem.Weapons ) then
             ChangeItemVariable( "Weapons", nil )
         elseif( index == 3 and not configItem.Weapons ) then
             ChangeItemVariable( "Weapons", {} )

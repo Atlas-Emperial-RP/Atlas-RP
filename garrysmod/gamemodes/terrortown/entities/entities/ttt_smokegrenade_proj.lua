@@ -62,7 +62,7 @@ function ENT:Explode(tr)
       self:SetSolid(SOLID_NONE)
 
       -- pull out of the surface
-      if tr.Fraction != 1.0 then
+      if tr.Fraction ~= 1.0 then
          self:SetPos(tr.HitPos + tr.HitNormal * 0.6)
       end
 
@@ -76,7 +76,7 @@ function ENT:Explode(tr)
 
       self:SetDetonateExact(0)
 
-      if tr.Fraction != 1.0 then
+      if tr.Fraction ~= 1.0 then
          spos = tr.HitPos + tr.HitNormal * 0.6
       end
 

@@ -23,7 +23,7 @@ function ENT:RunAI( strExp )
 
 	-- If we have no schedule (schedule is finished etc)
 	-- Then get the derived NPC to select what we should be doing
-	if ( !self.CurrentSchedule ) then
+	if ( not self.CurrentSchedule ) then
 		self:SelectSchedule()
 	end
 

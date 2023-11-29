@@ -56,12 +56,12 @@ end
 
 function ENT:Use( activator, caller, type, value )
 
-	if ( !activator:IsPlayer() ) then return end -- Who the frig is pressing this shit!?
+	if ( not activator:IsPlayer() ) then return end -- Who the frig is pressing this shit!?
 
 	if ( self:GetIsToggle() ) then
 
 		if ( type == USE_ON ) then
-			self:Toggle( !self:GetOn(), activator )
+			self:Toggle( not self:GetOn(), activator )
 		end
 		return
 
@@ -102,9 +102,9 @@ function ENT:Think()
 	-- If the player looks away while holding down use it will stay on
 	-- Lets fix that..
 	--
-	if ( SERVER && self:GetOn() && !self:GetIsToggle() ) then
+	if ( SERVER and self:GetOn() and not self:GetIsToggle() ) then
 
-		if ( !IsValid( self.LastUser ) || !self.LastUser:KeyDown( IN_USE ) ) then
+		if ( not IsValid( self.LastUser ) or not self.LastUser:KeyDown( IN_USE ) ) then
 
 			self:Toggle( false, self.LastUser )
 			self.LastUser = nil
@@ -124,7 +124,7 @@ function ENT:Toggle( bEnable, ply )
 
 	-- If a button has a valid player on it, use that, if not, use activator
 	local targetPly = self:GetPlayer()
-	if ( !IsValid( targetPly ) ) then targetPly = ply end
+	if ( not IsValid( targetPly ) ) then targetPly = ply end
 
 	if ( bEnable ) then
 

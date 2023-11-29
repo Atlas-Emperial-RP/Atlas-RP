@@ -15,7 +15,7 @@ end)
 util.GetPlayers = player.GetAll
 
 function util.FindPlayerAtlaschat(name, user)
-	if (!name) then return nil end
+	if (not name) then return nil end
 
 	local output = {}
 
@@ -36,13 +36,13 @@ function util.FindPlayerAtlaschat(name, user)
 			found = true
 		end
 		
-		if (v.SteamName and !found) then
+		if (v.SteamName and not found) then
 			if (string.find(string.lower(name), string.lower(v:SteamName()), 0, true)) then
 				table.insert(output, v)
 			end
 		end
 		
-		if (GAMEMODE.GetAmMurderer and !found) then
+		if (GAMEMODE.GetAmMurderer and not found) then
 			if (string.find(string.lower(name), string.lower(v:GetBystanderName()), 0, true)) then
 				table.insert(output, v)
 			end
@@ -233,8 +233,8 @@ elseif (CLIENT) then
 		end
 		
 		function panel.VBar:OnCursorMoved(x, y)
-			if (!self.Enabled) then return end
-			if (!self.Dragging) then return end
+			if (not self.Enabled) then return end
+			if (not self.Dragging) then return end
 		
 			local x = 0
 			local y = gui.MouseY()
@@ -311,7 +311,7 @@ elseif (CLIENT) then
 			local x = 0.5 * scrW + camAng:Right():Dot( vProj )
 			local y = 0.5 * scrH - camAng:Up():Dot( vProj )
 			
-			return x, y, ( 0 < x && x < scrW && 0 < y && y < scrH ) && fdp < 0, fdp > 0
+			return x, y, ( 0 < x and x < scrW and 0 < y and y < scrH ) and fdp < 0, fdp > 0
 		end
 		
 	end

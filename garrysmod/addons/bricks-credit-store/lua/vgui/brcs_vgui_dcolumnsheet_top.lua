@@ -24,7 +24,7 @@ end
 
 function PANEL:AddSheet( label, panel, IconMat )
 
-	if ( !IsValid( panel ) ) then return end
+	if ( not IsValid( panel ) ) then return end
 
 	local Sheet = {}
 	Sheet.Button = vgui.Create( "DButton", self.Navigation )
@@ -39,10 +39,10 @@ function PANEL:AddSheet( label, panel, IconMat )
 	Sheet.Button.Paint = function( self2, w, h )
 		draw.RoundedBox( 3, 0, 0, w, h, BRICKSCREDITSTORE.LUACONFIG.Themes.Secondary )
 
-		if( self2:IsHovered() and !self2:IsDown() and !self2.m_bSelected ) then
+		if( self2:IsHovered() and not self2:IsDown() and not self2.m_bSelected ) then
 			surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
 			draw.SimpleText( label, "BRCS_MP_22", w-10, h/2, Color( 101*1.35, 107*1.35, 145*1.35 ), TEXT_ALIGN_RIGHT, 1 )
-		elseif( self2:IsDown() || self2.m_bSelected ) then
+		elseif( self2:IsDown() or self2.m_bSelected ) then
 			surface.SetDrawColor( BRICKSCREDITSTORE.LUACONFIG.Themes.Accent )
 			draw.SimpleText( label, "BRCS_MP_22", w-10, h/2, BRICKSCREDITSTORE.LUACONFIG.Themes.White, TEXT_ALIGN_RIGHT, 1 )
 		else
@@ -67,7 +67,7 @@ function PANEL:AddSheet( label, panel, IconMat )
 
 	table.insert( self.Items, Sheet )
 
-	if ( !IsValid( self.ActiveButton ) ) then
+	if ( not IsValid( self.ActiveButton ) ) then
 		self:SetActiveButton( Sheet.Button )
 	end
 	
@@ -89,10 +89,10 @@ function PANEL:AddButton( label, onClick, IconMat )
 		Sheet.Button.Paint = function( self2, w, h )
 			draw.RoundedBox( 3, 0, 0, w, h, BRICKSCREDITSTORE.LUACONFIG.Themes.Secondary )
 
-			if( self2:IsHovered() and !self2:IsDown() and !self2.m_bSelected ) then
+			if( self2:IsHovered() and not self2:IsDown() and not self2.m_bSelected ) then
 				surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
 				draw.SimpleText( label, "BRCS_MP_22", w-10, h/2, Color( 101*1.35, 107*1.35, 145*1.35 ), TEXT_ALIGN_RIGHT, 1 )
-			elseif( self2:IsDown() || self2.m_bSelected ) then
+			elseif( self2:IsDown() or self2.m_bSelected ) then
 				surface.SetDrawColor( BRICKSCREDITSTORE.LUACONFIG.Themes.Accent )
 				draw.SimpleText( label, "BRCS_MP_22", w-10, h/2, BRICKSCREDITSTORE.LUACONFIG.Themes.White, TEXT_ALIGN_RIGHT, 1 )
 			else
@@ -108,9 +108,9 @@ function PANEL:AddButton( label, onClick, IconMat )
 		Sheet.Button.Paint = function( self2, w, h )
 			draw.RoundedBox( 3, 0, 0, w, h, BRICKSCREDITSTORE.LUACONFIG.Themes.Secondary )
 
-			if( self2:IsHovered() and !self2:IsDown() and !self2.m_bSelected ) then
+			if( self2:IsHovered() and not self2:IsDown() and not self2.m_bSelected ) then
 				draw.SimpleText( label, "BRCS_MP_22", w/2, h/2, Color( 101*1.35, 107*1.35, 145*1.35 ), 1, 1 )
-			elseif( self2:IsDown() || self2.m_bSelected ) then
+			elseif( self2:IsDown() or self2.m_bSelected ) then
 				draw.SimpleText( label, "BRCS_MP_22", w/2, h/2, BRICKSCREDITSTORE.LUACONFIG.Themes.White, 1, 1 )
 			else
 				draw.SimpleText( label, "BRCS_MP_22", w/2, h/2, Color( 101, 107, 145 ), 1, 1 )
@@ -128,7 +128,7 @@ function PANEL:SetActiveButton( active )
 
 	if ( self.ActiveButton == active ) then return end
 
-	if ( self.ActiveButton && self.ActiveButton.Target ) then
+	if ( self.ActiveButton and self.ActiveButton.Target ) then
 		self.ActiveButton.Target:SetVisible( false )
 		self.ActiveButton:SetSelected( false )
 		self.ActiveButton:SetToggle( false )

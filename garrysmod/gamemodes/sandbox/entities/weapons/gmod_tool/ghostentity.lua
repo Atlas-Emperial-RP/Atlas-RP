@@ -9,8 +9,8 @@ function ToolObj:MakeGhostEntity( model, pos, angle )
 
 	-- We do ghosting serverside in single player
 	-- It's done clientside in multiplayer
-	if ( SERVER && !game.SinglePlayer() ) then return end
-	if ( CLIENT && game.SinglePlayer() ) then return end
+	if ( SERVER and !game.SinglePlayer() ) then return end
+	if ( CLIENT and game.SinglePlayer() ) then return end
 
 	-- The reason we need this is because in multiplayer, when you holster a tool serverside,
 	-- either by using the spawnnmenu's Weapons tab or by simply entering a vehicle,
@@ -60,8 +60,8 @@ function ToolObj:StartGhostEntity( ent )
 
 	-- We do ghosting serverside in single player
 	-- It's done clientside in multiplayer
-	if ( SERVER && !game.SinglePlayer() ) then return end
-	if ( CLIENT && game.SinglePlayer() ) then return end
+	if ( SERVER and !game.SinglePlayer() ) then return end
+	if ( CLIENT and game.SinglePlayer() ) then return end
 
 	self:MakeGhostEntity( ent:GetModel(), ent:GetPos(), ent:GetAngles() )
 

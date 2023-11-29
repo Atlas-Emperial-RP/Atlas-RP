@@ -22,7 +22,7 @@ function ENT:TaskStart_PlaySequence( data )
 
 	local Duration = self:SequenceDuration()
 
-	if ( data.Speed && data.Speed > 0 ) then
+	if ( data.Speed and data.Speed > 0 ) then
 
 		SequenceID = self:SetPlaybackRate( data.Speed )
 		Duration = Duration / data.Speed
@@ -62,7 +62,7 @@ function ENT:TaskStart_FindEnemy( data )
 
 	for k, v in ipairs( ents.FindInSphere( self:GetPos(), data.Radius or 512 ) ) do
 
-		if ( v:IsValid() && v != self && v:GetClass() == data.Class ) then
+		if ( v:IsValid() and v ~= self and v:GetClass() == data.Class ) then
 
 			self:SetEnemy( v, true )
 			self:UpdateEnemyMemory( v, v:GetPos() )

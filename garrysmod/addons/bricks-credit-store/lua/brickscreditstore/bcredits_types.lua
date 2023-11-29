@@ -171,7 +171,7 @@ BRICKSCREDITSTORE.ITEMTYPES["Entity"] = {
     },
     UseFunction = function( ply, typeInfo )
         local entity = ents.Create( typeInfo[1] )
-        if ( !IsValid( entity ) ) then return end
+        if ( not IsValid( entity ) ) then return end
         entity:SetPos( ply:GetPos()+ply:GetForward()*25 )
         entity:Spawn()
     end

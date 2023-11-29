@@ -25,14 +25,14 @@ function PANEL:Init()
 
 		-- A bit of a hack
 		s:EndBoxSelection()
-		if ( btn != MOUSE_RIGHT ) then DPanel.OnMousePressed( s, btn ) end
+		if ( btn ~= MOUSE_RIGHT ) then DPanel.OnMousePressed( s, btn ) end
 
 	end
 	self.IconList.OnMouseReleased = function( s, btn )
 
 		DPanel.OnMouseReleased( s, btn )
 
-		if ( btn != MOUSE_RIGHT || s:GetReadOnly() ) then return end
+		if ( btn ~= MOUSE_RIGHT or s:GetReadOnly() ) then return end
 
 		local menu = DermaMenu()
 		menu:AddOption( "#spawnmenu.newlabel", function()

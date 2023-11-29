@@ -30,7 +30,7 @@ end
 
 local function GenerateDefaultFlexValue( ent, flexID )
 	local min, max = ent:GetFlexBounds( flexID )
-	if ( !max || max - min == 0 ) then return 0 end
+	if ( !max or max - min == 0 ) then return 0 end
 	return ( 0 - min ) / ( max - min )
 end
 
@@ -39,7 +39,7 @@ function TOOL:FacePoserEntity()
 end
 
 function TOOL:SetFacePoserEntity( ent )
-	if ( IsValid( ent ) && ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
+	if ( IsValid( ent ) and ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
 	return self:GetWeapon():SetNWEntity( 1, ent )
 end
 
@@ -86,7 +86,7 @@ end
 function TOOL:RightClick( trace )
 
 	local ent = trace.Entity
-	if ( IsValid( ent ) && ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
+	if ( IsValid( ent ) and ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
 
 	if ( SERVER ) then
 		self:SetFacePoserEntity( ent )
@@ -136,7 +136,7 @@ end
 function TOOL:LeftClick( trace )
 
 	local ent = trace.Entity
-	if ( IsValid( ent ) && ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
+	if ( IsValid( ent ) and ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
 
 	if ( !IsValid( ent ) ) then return false end
 	if ( ent:GetFlexNum() == 0 ) then return false end
@@ -209,7 +209,7 @@ function TOOL.BuildCPanel( CPanel, FaceEntity )
 
 	CPanel:AddControl( "Header", { Description = "#tool.faceposer.desc" } )
 
-	if ( !IsValid( FaceEntity ) || FaceEntity:GetFlexNum() == 0 ) then return end
+	if ( !IsValid( FaceEntity ) or FaceEntity:GetFlexNum() == 0 ) then return end
 
 	CPanel:AddControl( "ComboBox", { MenuButton = 1, Folder = "face", Options = { [ "#preset.default" ] = ConVarsDefault }, CVars = table.GetKeys( ConVarsDefault ) } )
 
@@ -399,7 +399,7 @@ function TOOL.BuildCPanel( CPanel, FaceEntity )
 	-- Actual searching
 	filter.OnValueChange = function( pnl, txt )
 		for id, flxpnl in ipairs( flexControllers ) do
-			if ( !flxpnl:GetText():lower():find( txt:lower(), nil, true ) && !flxpnl.originalName:lower():find( txt:lower(), nil, true ) ) then
+			if ( !flxpnl:GetText():lower():find( txt:lower(), nil, true ) and !flxpnl.originalName:lower():find( txt:lower(), nil, true ) ) then
 				flxpnl:SetVisible( false )
 			else
 				flxpnl:SetVisible( true )
@@ -418,17 +418,17 @@ function TOOL:DrawHUD()
 
 	local selected = self:FacePoserEntity()
 
-	if ( !IsValid( selected ) || selected:IsWorld() || selected:GetFlexNum() == 0 ) then return end
+	if ( !IsValid( selected ) or selected:IsWorld() or selected:GetFlexNum() == 0 ) then return end
 
 	local pos = selected:GetPos()
 	local eyeattachment = selected:LookupAttachment( "eyes" )
-	if ( eyeattachment != 0 ) then
+	if ( eyeattachment ~= 0 ) then
 		local attachment = selected:GetAttachment( eyeattachment )
 		pos = attachment.Pos
 	else
 		-- The model has no "eyes" attachment, try to find a bone with "head" in its name
 		for i = 0, selected:GetBoneCount() - 1 do
-			if ( selected:GetBoneName( i ) && selected:GetBoneName( i ):lower():find( "head" ) ) then
+			if ( selected:GetBoneName( i ) and selected:GetBoneName( i ):lower():find( "head" ) ) then
 				pos = selected:GetBonePosition( i )
 			end
 		end

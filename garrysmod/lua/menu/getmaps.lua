@@ -195,7 +195,7 @@ local function UpdateMaps()
 		local Name = gm.title or "Unnammed Gamemode"
 		local Maps = string.Split( gm.maps, "|" )
 
-		if ( Maps && gm.maps != "" ) then
+		if ( Maps and gm.maps ~= "" ) then
 
 			for k, pattern in ipairs( Maps ) do
 				-- When in doubt, just try to match it with string.find
@@ -223,7 +223,7 @@ local favmaps
 local function LoadFavourites()
 
 	local cookiestr = cookie.GetString( "favmaps" )
-	favmaps = favmaps || ( cookiestr && string.Explode( ";", cookiestr ) || {} )
+	favmaps = favmaps || ( cookiestr and string.Explode( ";", cookiestr ) || {} )
 
 end
 

@@ -125,7 +125,7 @@ end
 
 function PANEL:SelectItem( item, onlyme )
 
-	if ( !onlyme && item:IsSelected() ) then return end
+	if ( !onlyme and item:IsSelected() ) then return end
 
 	-- Unselect old items
 	if ( onlyme || !self.m_bSelectMultiple ) then

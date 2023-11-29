@@ -18,7 +18,7 @@ cleanup.Register( "balloons" )
 
 function TOOL:LeftClick( trace, attach )
 
-	if ( IsValid( trace.Entity ) && trace.Entity:IsPlayer() ) then return false end
+	if ( IsValid( trace.Entity ) and trace.Entity:IsPlayer() ) then return false end
 	if ( CLIENT ) then return true end
 
 	--
@@ -29,7 +29,7 @@ function TOOL:LeftClick( trace, attach )
 	end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER && attach && !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then
+	if ( SERVER and attach and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then
 		return false
 	end
 
@@ -62,7 +62,7 @@ function TOOL:LeftClick( trace, attach )
 	--
 	-- Clicked on a balloon - modify the force/color/whatever
 	--
-	if	( IsValid( trace.Entity ) && trace.Entity:GetClass() == "gmod_balloon" && trace.Entity.Player == ply ) then
+	if	( IsValid( trace.Entity ) and trace.Entity:GetClass() == "gmod_balloon" and trace.Entity.Player == ply ) then
 
 		if ( IsValid( trace.Entity:GetPhysicsObject() ) ) then trace.Entity:GetPhysicsObject():Wake() end
 		trace.Entity:SetColor( Color( r, g, b, 255 ) )
@@ -134,7 +134,7 @@ if ( SERVER ) then
 
 	function MakeBalloon( pl, r, g, b, force, Data )
 
-		if ( IsValid( pl ) && !pl:CheckLimit( "balloons" ) ) then return end
+		if ( IsValid( pl ) and !pl:CheckLimit( "balloons" ) ) then return end
 
 		local balloon = ents.Create( "gmod_balloon" )
 		if ( !IsValid( balloon ) ) then return end
@@ -177,7 +177,7 @@ function TOOL:UpdateGhostBalloon( ent, ply )
 	if ( !IsValid( ent ) ) then return end
 
 	local trace = ply:GetEyeTrace()
-	if ( !trace.Hit || IsValid( trace.Entity ) && ( trace.Entity:IsPlayer() || trace.Entity:GetClass() == "gmod_balloon" ) ) then
+	if ( !trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:IsPlayer() or trace.Entity:GetClass() == "gmod_balloon" ) ) then
 		ent:SetNoDraw( true )
 		return
 	end
@@ -200,7 +200,7 @@ end
 
 function TOOL:Think()
 
-	if ( !IsValid( self.GhostEntity ) || self.GhostEntity.model != self:GetClientInfo( "model" ) ) then
+	if ( !IsValid( self.GhostEntity ) or self.GhostEntity.model ~= self:GetClientInfo( "model" ) ) then
 
 		local modeltable = list.Get( "BalloonModels" )[ self:GetClientInfo( "model" ) ]
 		if ( !modeltable ) then self:ReleaseGhostEntity() return end

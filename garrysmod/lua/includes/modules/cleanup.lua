@@ -147,7 +147,7 @@ if ( SERVER ) then
 
 	function CC_AdminCleanup( pl, command, args )
 
-		if ( IsValid( pl ) && !pl:IsAdmin() ) then return end
+		if ( IsValid( pl ) and !pl:IsAdmin() ) then return end
 
 		if ( !args[ 1 ] ) then
 
@@ -180,7 +180,7 @@ if ( SERVER ) then
 
 		for key, ply in pairs( cleanup_list ) do
 
-			if ( ply[ args[ 1 ] ] != nil ) then
+			if ( ply[ args[ 1 ] ] ~= nil ) then
 
 				for key, ent in pairs( ply[ args[ 1 ] ] ) do
 

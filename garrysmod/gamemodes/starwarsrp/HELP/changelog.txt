@@ -175,7 +175,7 @@ Updated by: FPtje Falco
 [ADD] rp_resetallmoney: Reset EVERY SINGLE stored money on the server(not only of the people who are in the server)(Superadmin only)
 [ADD] Players can now see how long before they get unarrested.
 [ADD] Phone! You can call people for 1$ per 20 seconds!
-[ADD] DarkRP map pattern(in create server/start singleplayer) THANKS \/\/()?|\/|Š
+[ADD] DarkRP map pattern(in create server/start singleplayer) THANKS \/\/()?|\/|ï¿½
 [ADD] rp_lookup command, look players up(nick, steam name, steam ID)
 [ADD] Custom vehicle support!
 [ADD] Logging system toggle on/off by doing rp_logging 1/0(superadmin only command)
@@ -596,7 +596,7 @@ Updated by: philxyz
 [Changed by philxyz] Remove rp_add temporary admin maker command (see below)
 [Changed by philxyz] Recode the admin system so that you no longer have to restart DarkRP to add privileges for players (rp_grant and rp_revoke)
 [Changed by philxyz] Merge rplol.lua and rprofl.lua into main.lua and merge commands.lua into admincc.lua
-[Changed by philxyz] Make all "&&", "||" and "!" into "and", "or" and "not" (pure lua)
+[Changed by philxyz] Make all "and", "or" and "!" into "and", "or" and "not" (pure lua)
 [Changed by philxyz] Arresting an NPC will now send it to the jailpos. Fun when it's a zombie and there are already prisoners in there!
 [Changed by philxyz] Prevent the use of toolgun on drug labs. Suggested by Chuteuk
 [Changed by philxyz] Prevent duplication of items that should never be duplicated

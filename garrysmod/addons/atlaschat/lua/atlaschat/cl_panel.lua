@@ -131,7 +131,7 @@ function panel:ChangeList(key, list)
 	self.entry.key = key
 	
 	if (key) then
-		if (!ValidPanel(self.userList)) then
+		if (not ValidPanel(self.userList)) then
 			self.userList = self:AddIcon("atlaschat/users.png", function() atlaschat.theme.Call("ToggleUserList") end, "Chat Userlist")
 		end
 		
@@ -187,7 +187,7 @@ end
 function panel:Think()
 	local mousex, mousey = gui.MousePos()
 	
-	if (self.Dragging[1] != 0) then
+	if (self.Dragging[1] ~= 0) then
 		local x = mousex -self.Dragging[1]
 		local y = mousey -self.Dragging[2]
 		
@@ -331,7 +331,7 @@ function panel:Init()
 	local parent = self
 	
 	function self.VBar:SetScroll(scroll)
-		if ( !self.Enabled ) then self.Scroll = 0 return end
+		if ( not self.Enabled ) then self.Scroll = 0 return end
 		
 		if (scroll < self.CanvasSize) then
 			if (parent.m_bScroll) then
@@ -341,7 +341,7 @@ function panel:Init()
 			self.__scroll = scroll
 		else
 			if (scroll >= self.CanvasSize) then
-				if (!parent.m_bScroll) then
+				if (not parent.m_bScroll) then
 					parent:SetShouldScroll(true)
 					
 					self.__scroll = nil
@@ -417,7 +417,7 @@ function panel:AddItem(panel)
 		end
 	end
 	
-	if (!self.m_bBottomUp) then
+	if (not self.m_bBottomUp) then
 		panel:SetZPos(zPosition)
 	end
 end
@@ -530,7 +530,7 @@ function panel:OnKeyCodeTyped(code)
 		-- The "&" character has no size. So let's fix that.
 		value = string.gsub(value, "&", "＆")
 		
-		if (value != "") then
+		if (value ~= "") then
 			if (self.key) then
 				net.Start("atlaschat.txpm")
 					net.WriteUInt(self.key, 8)
@@ -578,7 +578,7 @@ end
 function panel:SetText(text, limit)
 	DTextEntry.SetText(self, text)
 	
-	if (!limit) then
+	if (not limit) then
 		self:OnChange()
 	end
 end

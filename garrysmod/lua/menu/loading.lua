@@ -48,7 +48,7 @@ function PANEL:Paint()
 	surface.SetDrawColor( 30, 30, 30, 255 )
 	surface.DrawRect( 0, 0, self:GetWide(), self:GetTall() )
 
-	if ( self.JavascriptRun && IsValid( self.HTML ) && !self.HTML:IsLoading() ) then
+	if ( self.JavascriptRun and IsValid( self.HTML ) and !self.HTML:IsLoading() ) then
 
 		self:RunJavascript( self.JavascriptRun )
 		self.JavascriptRun = nil
@@ -151,7 +151,7 @@ function PANEL:CheckForStatusChanges()
 	str = string.gsub( str, ".ztmp", "" )
 	str = string.gsub( str, "\\", "/" )
 
-	if ( self.OldStatus && self.OldStatus == str ) then return end
+	if ( self.OldStatus and self.OldStatus == str ) then return end
 
 	self.OldStatus = str
 	self:StatusChanged( str )
@@ -197,7 +197,7 @@ function PANEL:CheckDownloadTables()
 	local NumDownloadables = NumDownloadables()
 	if ( !NumDownloadables ) then return end
 
-	if ( self.NumDownloadables && NumDownloadables == self.NumDownloadables ) then return end
+	if ( self.NumDownloadables and NumDownloadables == self.NumDownloadables ) then return end
 
 	self.NumDownloadables = NumDownloadables
 	self:RefreshDownloadables()
@@ -258,7 +258,7 @@ function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamem
 	serverurl = serverurl:Replace( "%s", steamid )
 	serverurl = serverurl:Replace( "%m", mapname )
 
-	if ( maxplayers > 1 && GetConVar( "cl_enable_loadingurl" ):GetBool() && serverurl:StartWith( "http" ) ) then
+	if ( maxplayers > 1 and GetConVar( "cl_enable_loadingurl" ):GetBool() and serverurl:StartWith( "http" ) ) then
 		pnlLoading:ShowURL( serverurl, true )
 	end
 

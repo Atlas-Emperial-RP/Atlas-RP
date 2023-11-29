@@ -10,7 +10,7 @@ local function ShouldReCreate( pnl )
 
 	local p = pnl
 	-- Can't use IsValid because it's false for marked for deletion panels
-	while ( IsValid( p ) && p:GetParent() != nil ) do
+	while ( IsValid( p ) and p:GetParent() ~= nil ) do
 		if ( p:GetParent():IsMarkedForDeletion() ) then return true end
 		p = p:GetParent()
 	end

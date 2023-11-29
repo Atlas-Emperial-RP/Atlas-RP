@@ -67,7 +67,7 @@ function SWEP:SetupWeaponHoldTypeForAI( t )
 	self.ActivityTranslateAI[ ACT_READINESS_AGITATED_TO_STIMULATED ]		= ACT_READINESS_PISTOL_AGITATED_TO_STIMULATED
 	self.ActivityTranslateAI[ ACT_READINESS_STIMULATED_TO_RELAXED ]			= ACT_READINESS_PISTOL_STIMULATED_TO_RELAXED
 
-	if ( t == "ar2" || t == "smg" ) then
+	if ( t == "ar2" or t == "smg" ) then
 
 		self.ActivityTranslateAI[ ACT_RANGE_ATTACK1 ]		= ACT_RANGE_ATTACK_AR2
 		self.ActivityTranslateAI[ ACT_RELOAD ]				= ACT_RELOAD_SMG1
@@ -124,7 +124,7 @@ function SWEP:SetupWeaponHoldTypeForAI( t )
 		return
 	end
 
-	if ( t == "shotgun" || t == "crossbow" ) then
+	if ( t == "shotgun" or t == "crossbow" ) then
 		self.ActivityTranslateAI[ ACT_IDLE ]			= ACT_IDLE_SMG1
 
 		self.ActivityTranslateAI[ ACT_RANGE_ATTACK1 ]	= ACT_RANGE_ATTACK_SHOTGUN

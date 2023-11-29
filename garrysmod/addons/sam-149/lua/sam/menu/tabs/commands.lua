@@ -57,7 +57,7 @@ sam.menu.add_tab("https://raw.githubusercontent.com/Srlion/Addons-Data/main/icon
 
 		for k, v in ipairs(sam.command.get_commands()) do
 			if (v.permission and not LocalPlayer():HasPermission(v.permission)) or v.menu_hide then
-				continue
+				goto continue
 			end
 
 			local item = category_list:add_item(v.name, v.category)
@@ -69,6 +69,7 @@ sam.menu.add_tab("https://raw.githubusercontent.com/Srlion/Addons-Data/main/icon
 			for _, aliase in ipairs(v.aliases) do
 				table.insert(item.names, aliase:lower())
 			end
+			::continue::
 		end
 	end
 	commands_refresh()
@@ -181,7 +182,7 @@ sam.menu.add_tab("https://raw.githubusercontent.com/Srlion/Addons-Data/main/icon
 		local NIL = {}
 		for _, v in ipairs(command_arguments) do
 			local func = arguments[v.name]["menu"]
-			if not func then continue end
+			if not func then goto continue end
 
 			local i = table.insert(input_arguments, NIL)
 			local p = func(function(allow)
@@ -198,6 +199,7 @@ sam.menu.add_tab("https://raw.githubusercontent.com/Srlion/Addons-Data/main/icon
 			if p then
 				p:AnimatedSetVisible(true)
 			end
+			::continue::
 		end
 
 		if #command_arguments == 0 then

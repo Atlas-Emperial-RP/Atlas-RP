@@ -145,15 +145,15 @@ if ( CLIENT ) then
 
 		CPanel:AddControl( "Button", { Text = "#tool.duplicator.showsaves", Command = "dupe_show" } )
 
-		if ( !self && IsValid( LocalPlayer() ) ) then self = LocalPlayer():GetTool( "duplicator" ) end
-		if ( !self || !self.CurrentDupeName ) then return end
+		if ( !self and IsValid( LocalPlayer() ) ) then self = LocalPlayer():GetTool( "duplicator" ) end
+		if ( !self or !self.CurrentDupeName ) then return end
 
 		local info = "Name: " .. self.CurrentDupeName
 		info = info .. "\nEntities: " .. self.CurrentDupeEntCount
 
 		CPanel:AddControl( "Label", { Text = info } )
 
-		if ( self.CurrentDupeWSIDs && #self.CurrentDupeWSIDs > 0 ) then
+		if ( self.CurrentDupeWSIDs and #self.CurrentDupeWSIDs > 0 ) then
 			CPanel:AddControl( "Label", { Text = "Required workshop content:" } )
 			for _, wsid in pairs( self.CurrentDupeWSIDs ) do
 				local subbed = ""
@@ -195,7 +195,7 @@ if ( CLIENT ) then
 		end
 
 		local ply = LocalPlayer()
-		if ( !IsValid( ply ) || !ply.GetTool ) then return end
+		if ( !IsValid( ply ) or !ply.GetTool ) then return end
 
 		local tool = ply:GetTool( "duplicator" )
 		if ( !tool ) then return end
@@ -222,7 +222,7 @@ if ( CLIENT ) then
 	function TOOL:DrawHUD()
 
 		local ply = LocalPlayer()
-		if ( !IsValid( ply ) || !self.CurrentDupeMins || !self.CurrentDupeMaxs ) then return end
+		if ( !IsValid( ply ) or !self.CurrentDupeMins or !self.CurrentDupeMaxs ) then return end
 
 		local tr = LocalPlayer():GetEyeTrace()
 

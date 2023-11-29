@@ -1,4 +1,4 @@
-/*
+--[[---
 	PermaProps
 	Created by Entoros, June 2010
 	Facepunch: http://www.facepunch.com/member.php?u=180808
@@ -12,7 +12,7 @@
 
 	Remake:
 		By Malboro the 28/12/2012
-*/
+--]]
 
 TOOL.Category		=	"Props Tool"
 TOOL.Name			=	"PermaProps"
@@ -37,7 +37,7 @@ function TOOL:LeftClick(trace)
 
 	if not PermaProps then ply:ChatPrint( "ERROR: Lib not found" ) return end
 	
-	if !PermaProps.HasPermission( ply, "Save") then return end
+	if not PermaProps.HasPermission( ply, "Save") then return end
 
 	if not ent:IsValid() then ply:ChatPrint( "That is not a valid entity !" ) return end
 	if ent:IsPlayer() then ply:ChatPrint( "That is a player !" ) return end
@@ -50,7 +50,7 @@ function TOOL:LeftClick(trace)
 	if not max then max = 1 else max = max + 1 end
 
 	local new_ent = PermaProps.PPEntityFromTable(content, max)
-	if !new_ent or !new_ent:IsValid() then return end
+	if not new_ent or not new_ent:IsValid() then return end
 
 	PermaProps.SparksEffect( ent )
 
@@ -72,7 +72,7 @@ function TOOL:RightClick(trace)
 
 	if not PermaProps then ply:ChatPrint( "ERROR: Lib not found" ) return end
 
-	if !PermaProps.HasPermission( ply, "Delete") then return end
+	if not PermaProps.HasPermission( ply, "Delete") then return end
 
 	if not ent:IsValid() then ply:ChatPrint( "That is not a valid entity !" ) return end
 	if ent:IsPlayer() then ply:ChatPrint( "That is a player !" ) return end
@@ -102,7 +102,7 @@ function TOOL:Reload(trace)
 		local ent = trace.Entity
 		local ply = self:GetOwner()
 
-		if !PermaProps.HasPermission( ply, "Update") then return end
+		if not PermaProps.HasPermission( ply, "Update") then return end
 
 		if ent:IsPlayer() then ply:ChatPrint( "That is a player !" ) return end
 		
@@ -112,7 +112,7 @@ function TOOL:Reload(trace)
 		PermaProps.SQL.Query("UPDATE permaprops set content = ".. sql.SQLStr(util.TableToJSON(content)) .." WHERE id = ".. ent.PermaProps_ID .." AND map = ".. sql.SQLStr(game.GetMap()) .. ";")
 
 		local new_ent = PermaProps.PPEntityFromTable(content, ent.PermaProps_ID)
-		if !new_ent or !new_ent:IsValid() then return end
+		if not new_ent or not new_ent:IsValid() then return end
 
 		PermaProps.SparksEffect( ent )
 

@@ -95,7 +95,7 @@ function sam.ranks.remove_rank(name)
 		return "default_rank"
 	end
 
-	// f9b9dacb44d0e4f0606b6d5f98a4a4b2ba2dac5608c0ac9ab2e5824b5952181b
+	-- f9b9dacb44d0e4f0606b6d5f98a4a4b2ba2dac5608c0ac9ab2e5824b5952181b
 	local rank = ranks[name]
 	if not rank then
 		error("invalid rank")
@@ -223,7 +223,7 @@ function sam.ranks.change_immunity(name, new_immunity)
 
 	if name == "user" or name == "superadmin" then return end
 
-	new_immunity = math.Clamp(new_immunity, 2, 99) // eb5e91d845478906626dedb88b756b023410e32864cf137a4471b437e0cabc83!!!
+	new_immunity = math.Clamp(new_immunity, 2, 99) -- eb5e91d845478906626dedb88b756b023410e32864cf137a4471b437e0cabc83!!!
 
 	local old_immunity = rank.immunity
 	rank.immunity = new_immunity
@@ -429,7 +429,7 @@ hook.Add("SAM.DatabaseLoaded", "LoadRanks", function()
 			sam.ranks.add_rank("user", nil, nil, 0)
 			sam.ranks.add_rank("admin", "user", SAM_IMMUNITY_ADMIN, 20160 --[[2 weeks]])
 			sam.ranks.add_rank("superadmin", "admin", SAM_IMMUNITY_SUPERADMIN, 0)
-			/*9d5447a780f7d9479fabb02b3f74f8e775d3f4ba34b9fcd4d0bc8b35dcb5a3e7*/
+			-- 9d5447a780f7d9479fabb02b3f74f8e775d3f4ba34b9fcd4d0bc8b35dcb5a3e7
 		end
 
 		sam.ranks.sync()

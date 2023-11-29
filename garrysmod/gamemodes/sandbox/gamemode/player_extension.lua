@@ -15,8 +15,8 @@ function meta:CheckLimit( str )
 	local count = self:GetCount( str )
 
 	local ret = hook.Run( "PlayerCheckLimit", self, str, count, c )
-	if ( ret != nil ) then
-		if ( !ret && SERVER ) then self:LimitHit( str ) end
+	if ( ret ~= nil ) then
+		if ( !ret and SERVER ) then self:LimitHit( str ) end
 		return ret
 	end
 
@@ -44,7 +44,7 @@ function meta:GetCount( str, minus )
 	local key = self:UniqueID()
 	local tab = g_SBoxObjects[ key ]
 
-	if ( !tab || !tab[ str ] ) then
+	if ( !tab or !tab[ str ] ) then
 
 		self:SetNWInt( "Count." .. str, 0 )
 		return 0
@@ -55,7 +55,7 @@ function meta:GetCount( str, minus )
 
 	for k, v in pairs( tab[ str ] ) do
 
-		if ( IsValid( v ) && !v:IsMarkedForDeletion() ) then
+		if ( IsValid( v ) and !v:IsMarkedForDeletion() ) then
 			c = c + 1
 		else
 			tab[ str ][ k ] = nil
@@ -144,7 +144,7 @@ else
 		for _, ent in ipairs( ents.FindByClass( "gmod_tool" ) ) do
 			if ( ent:GetOwner() == self ) then wep = ent break end
 		end
-		if ( !IsValid( wep ) || !wep.GetToolObject ) then return nil end
+		if ( !IsValid( wep ) or !wep.GetToolObject ) then return nil end
 
 		local tool = wep:GetToolObject( mode )
 		if ( !tool ) then return nil end

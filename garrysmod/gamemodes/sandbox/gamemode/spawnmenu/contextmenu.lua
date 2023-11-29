@@ -23,7 +23,7 @@ function PANEL:Open()
 	self:SetHangOpen( false )
 
 	-- If the spawn menu is open, try to close it..
-	if ( IsValid( g_SpawnMenu ) && g_SpawnMenu:IsVisible() ) then
+	if ( IsValid( g_SpawnMenu ) and g_SpawnMenu:IsVisible() ) then
 		g_SpawnMenu:Close( true )
 	end
 
@@ -42,7 +42,7 @@ function PANEL:Open()
 	local bShow = bShouldShow == nil or bShouldShow
 
 	-- Set up the active panel..
-	if ( bShow && IsValid( spawnmenu.ActiveControlPanel() ) ) then
+	if ( bShow and IsValid( spawnmenu.ActiveControlPanel() ) ) then
 
 		self.OldParent = spawnmenu.ActiveControlPanel():GetParent()
 		self.OldPosX, self.OldPosY = spawnmenu.ActiveControlPanel():GetPos()
@@ -89,8 +89,8 @@ function PANEL:PerformLayout()
 		spawnmenu.ActiveControlPanel():InvalidateLayout( true )
 
 		local Tall = math.min( spawnmenu.ActiveControlPanel():GetTall() + 10, ScrH() * 0.8 )
-		if ( self.Canvas:GetTall() != Tall ) then self.Canvas:SetTall( Tall ) end
-		if ( self.Canvas:GetWide() != 320 ) then self.Canvas:SetWide( 320 ) end
+		if ( self.Canvas:GetTall() ~= Tall ) then self.Canvas:SetTall( Tall ) end
+		if ( self.Canvas:GetWide() ~= 320 ) then self.Canvas:SetWide( 320 ) end
 
 		self.Canvas:SetPos( ScrW() - self.Canvas:GetWide() - 50, ScrH() - 50 - Tall )
 		self.Canvas:InvalidateLayout( true )
@@ -224,7 +224,7 @@ function GM:OnContextMenuOpen()
 	-- Let the gamemode decide whether we should open or not..
 	if ( !hook.Call( "ContextMenuOpen", self ) ) then return end
 
-	if ( IsValid( g_ContextMenu ) && !g_ContextMenu:IsVisible() ) then
+	if ( IsValid( g_ContextMenu ) and !g_ContextMenu:IsVisible() ) then
 		g_ContextMenu:Open()
 		menubar.ParentTo( g_ContextMenu )
 	end

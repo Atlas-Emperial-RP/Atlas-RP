@@ -13,17 +13,17 @@ local VarsOnHand = 15
 
 -- Returns true if it has TF2 hands
 local function HasTF2Hands( pEntity )
-	return pEntity:LookupBone( "bip_hand_L" ) != nil
+	return pEntity:LookupBone( "bip_hand_L" ) ~= nil
 end
 
 -- Returns true if it has Portal 2 hands
 local function HasP2Hands( pEntity )
-	return pEntity:LookupBone( "wrist_A_L" ) != nil || pEntity:LookupBone( "index_1_L" ) != nil
+	return pEntity:LookupBone( "wrist_A_L" ) ~= nil or pEntity:LookupBone( "index_1_L" ) ~= nil
 end
 
 -- Returns true if it has Zeno Clash hands
 local function HasZenoHands( pEntity )
-	return pEntity:LookupBone( "Bip01_L_Hand" ) != nil
+	return pEntity:LookupBone( "Bip01_L_Hand" ) ~= nil
 end
 
 local TranslateTable_TF2 = {}
@@ -253,7 +253,7 @@ local function GetFingerBone( self, fingernum, part, hand )
 	---- START HL2 BONE LOOKUP ----------------------------------
 	local Name = "ValveBiped.Bip01_L_Finger" .. fingernum
 	if ( hand == 1 ) then Name = "ValveBiped.Bip01_R_Finger" .. fingernum end
-	if ( part != 0 ) then Name = Name .. part end
+	if ( part ~= 0 ) then Name = Name .. part end
 
 	local bone = self:LookupBone( Name )
 	if ( bone ) then return bone end
@@ -419,11 +419,11 @@ function TOOL:GetHandPositions( pEntity )
 	if ( !RightHand ) then RightHand = pEntity:LookupBone( "R Hand" ) end
 	if ( !RightHand ) then RightHand = pEntity:LookupBone( "wrist_A_R" ) end
 
-	if ( !LeftHand || !RightHand ) then return false end
+	if ( !LeftHand or !RightHand ) then return false end
 
 	local LeftHand = pEntity:GetBoneMatrix( LeftHand )
 	local RightHand = pEntity:GetBoneMatrix( RightHand )
-	if ( !LeftHand || !RightHand ) then return false end
+	if ( !LeftHand or !RightHand ) then return false end
 
 	return LeftHand, RightHand
 
@@ -432,8 +432,8 @@ end
 -- Applies current convar hand to picked hand
 function TOOL:LeftClick( trace )
 
-	if ( IsValid( trace.Entity ) && trace.Entity:IsPlayer() ) then return false end
-	--if ( trace.Entity:GetClass() != "prop_ragdoll" && !trace.Entity:IsNPC() ) then return false end
+	if ( IsValid( trace.Entity ) and trace.Entity:IsPlayer() ) then return false end
+	--if ( trace.Entity:GetClass() ~= "prop_ragdoll" and !trace.Entity:IsNPC() ) then return false end
 
 	local LeftHand, RightHand = self:GetHandPositions( trace.Entity )
 
@@ -461,10 +461,10 @@ end
 function TOOL:RightClick( trace )
 
 	local ent = trace.Entity
-	if ( IsValid( ent ) && ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
+	if ( IsValid( ent ) and ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
 
-	if ( !IsValid( ent ) || ent:IsPlayer() ) then self:SetHand( NULL, 0 ) return true end
-	--if ( ent:GetClass() != "prop_ragdoll" && ent:GetClass() != "prop_dynamic" && !ent:IsNPC() ) then return false end
+	if ( !IsValid( ent ) or ent:IsPlayer() ) then self:SetHand( NULL, 0 ) return true end
+	--if ( ent:GetClass() ~= "prop_ragdoll" and ent:GetClass() ~= "prop_dynamic" and !ent:IsNPC() ) then return false end
 
 	if ( CLIENT ) then return false end
 
@@ -544,11 +544,11 @@ function TOOL:Think()
 	local selected = self:HandEntity()
 	local hand = self:HandNum()
 
-	if ( self.NextUpdate && self.NextUpdate > CurTime() ) then return end
+	if ( self.NextUpdate and self.NextUpdate > CurTime() ) then return end
 
 	if ( CLIENT ) then
 
-		if ( OldHand != hand || OldEntity != selected ) then
+		if ( OldHand ~= hand or OldEntity ~= selected ) then
 
 			OldHand = hand
 			OldEntity = selected

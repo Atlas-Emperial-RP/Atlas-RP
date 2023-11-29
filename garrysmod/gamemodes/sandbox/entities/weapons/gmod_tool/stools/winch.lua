@@ -21,10 +21,10 @@ TOOL.Information = {
 
 function TOOL:LeftClick( trace )
 
-	if ( IsValid( trace.Entity ) && trace.Entity:IsPlayer() ) then return end
+	if ( IsValid( trace.Entity ) and trace.Entity:IsPlayer() ) then return end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER && !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+	if ( SERVER and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 	local iNum = self:NumObjects()
 
@@ -88,7 +88,7 @@ function TOOL:RightClick( trace )
 	if ( self:GetOperation() == 1 ) then return false end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER && !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+	if ( SERVER and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 	local Phys = trace.Entity:GetPhysicsObjectNum( trace.PhysicsBone )
 	self:SetObject( 1, trace.Entity, trace.HitPos, Phys, trace.PhysicsBone, trace.HitNormal )
@@ -109,16 +109,16 @@ function TOOL:RightClick( trace )
 	end
 
 	-- Don't try to constrain world to world
-	if ( trace.HitWorld && tr.HitWorld ) then
+	if ( trace.HitWorld and tr.HitWorld ) then
 		self:ClearObjects()
 		return false
 	end
 
-	if ( IsValid( trace.Entity ) && trace.Entity:IsPlayer() ) then
+	if ( IsValid( trace.Entity ) and trace.Entity:IsPlayer() ) then
 		self:ClearObjects()
 		return false
 	end
-	if ( IsValid( tr.Entity ) && tr.Entity:IsPlayer() ) then
+	if ( IsValid( tr.Entity ) and tr.Entity:IsPlayer() ) then
 		self:ClearObjects()
 		return false
 	end
@@ -176,7 +176,7 @@ end
 
 function TOOL:Reload( trace )
 
-	if ( !IsValid( trace.Entity ) || trace.Entity:IsPlayer() ) then return false end
+	if ( !IsValid( trace.Entity ) or trace.Entity:IsPlayer() ) then return false end
 	if ( CLIENT ) then return true end
 
 	return constraint.RemoveConstraints( trace.Entity, "Winch" )

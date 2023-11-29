@@ -72,7 +72,7 @@ function PANEL:SetSearchType( stype, hookname )
 	end )
 
 	-- This stuff is only for the primary search
-	if ( hookname != "PopulateContent" ) then return end
+	if ( hookname ~= "PopulateContent" ) then return end
 
 	g_SpawnMenu.SearchPropPanel = self.PropPanel
 	hook.Add( "StartSearch", "StartSearch", function()
@@ -104,7 +104,7 @@ function PANEL:RefreshResults( str )
 		self.OldResults = -1
 	else
 		-- Don't force open the search when you click away from search while this function is called from cl_search_models.lua
-		if ( self.ContentPanel.SelectedPanel != self.PropPanel ) then
+		if ( self.ContentPanel.SelectedPanel ~= self.PropPanel ) then
 			return
 		end
 	end
@@ -113,7 +113,7 @@ function PANEL:RefreshResults( str )
 
 	local results = search.GetResults( str, self.m_strSearchType, GetConVarNumber( "sbox_search_maxresults" ) )
 	for id, result in ipairs( results ) do
-		if ( !IsValid( result.icon ) ) then ErrorNoHalt( "Failed to create icon for " .. ( result.words && isstring( result.words[ 1 ] ) && result.words[ 1 ] || result.text ).. "\n" ) continue end
+		if ( !IsValid( result.icon ) ) then ErrorNoHalt( "Failed to create icon for " .. ( result.words and isstring( result.words[ 1 ] ) and result.words[ 1 ] or result.text ).. "\n" ) continue end
 		result.icon:SetParent( vgui.GetWorldPanel() ) -- Don't parent the icons to search panel prematurely
 	end
 

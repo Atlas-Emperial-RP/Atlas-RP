@@ -106,7 +106,7 @@ function PANEL:SetCurrentFolder( strDir )
 	strDir = tostring( strDir )
 	strDir = string.Trim( strDir, "/" )
 
-	if ( self.m_strBaseFolder && !string.StartWith( strDir, self.m_strBaseFolder ) ) then
+	if ( self.m_strBaseFolder and !string.StartWith( strDir, self.m_strBaseFolder ) ) then
 		strDir = string.Trim( self.m_strBaseFolder, "/" ) .. "/" .. string.Trim( strDir, "/" )
 	end
 
@@ -126,7 +126,7 @@ function PANEL:SetOpen( bOpen, bAnim )
 
 	self.FolderNode:SetExpanded( bOpen, !bAnim )
 	self.m_bOpen = bOpen
-	self:SetCookie( "Open", bOpen && "1" || "0" )
+	self:SetCookie( "Open", bOpen and "1" || "0" )
 
 end
 
@@ -154,11 +154,11 @@ function PANEL:SetupTree()
 	self.Tree.RootNode.ChildExpanded = function( node, bExpand )
 		DTree_Node.ChildExpanded( node, bExpand )
 		self.m_bOpen = tobool( self.FolderNode.m_bExpanded )
-		self:SetCookie( "Open", self.m_bOpen && "1" || "0" )
+		self:SetCookie( "Open", self.m_bOpen and "1" || "0" )
 	end
 
 	self.FolderNode:SetExpanded( self.m_bOpen, true )
-	self:SetCookie( "Open", self.m_bOpen && "1" || "0" )
+	self:SetCookie( "Open", self.m_bOpen and "1" || "0" )
 
 	self:ShowFolder()
 
@@ -191,7 +191,7 @@ function PANEL:SetupFiles()
 	end
 	self.Divider:SetRight( self.Files )
 
-	if ( self.m_strCurrentFolder && self.m_strCurrentFolder != "" ) then
+	if ( self.m_strCurrentFolder and self.m_strCurrentFolder ~= "" ) then
 		self:ShowFolder( self.m_strCurrentFolder )
 	end
 
@@ -203,7 +203,7 @@ function PANEL:Setup()
 
 	if ( !self.m_strBaseFolder ) then return false end
 
-	return self:SetupTree() && self:SetupFiles()
+	return self:SetupTree() and self:SetupFiles()
 
 end
 
@@ -236,7 +236,7 @@ function PANEL:ShowFolder( path )
 				local icon = self.Files:Add( "SpawnIcon" )
 				icon:SetModel( path .. "/" .. v )
 				icon.DoClick = function( pnl )
-					if ( pnl.LastClickTime && SysTime() - pnl.LastClickTime < 0.3 ) then
+					if ( pnl.LastClickTime and SysTime() - pnl.LastClickTime < 0.3 ) then
 						self:OnDoubleClick( path .. "/" .. v, icon )
 					else
 						self:OnSelect( path .. "/" .. v, icon )

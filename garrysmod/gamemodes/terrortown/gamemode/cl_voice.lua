@@ -199,7 +199,7 @@ function RADIO:ShowRadioCommands(state)
                dlabel.txt = GetTranslation(command.text)
                dlabel.Think = function(s)
                                  local tgt, v = RADIO:GetTarget()
-                                 if s.target != tgt then
+                                 if s.target ~= tgt then
                                     s.target = tgt
 
                                     tgt = string.Interp(s.txt, {player = RADIO.ToPrintable(tgt)})
@@ -257,7 +257,7 @@ function RADIO:GetTargetType()
       else
          return ent, false
       end
-   elseif ent:GetClass() == "prop_ragdoll" and CORPSE.GetPlayerNick(ent, "") != "" then
+   elseif ent:GetClass() == "prop_ragdoll" and CORPSE.GetPlayerNick(ent, "") ~= "" then
 
       if DetectiveMode() and not CORPSE.GetFound(ent, false) then
          return "quick_corpse", true
@@ -307,7 +307,7 @@ end
 -- Radio commands are a console cmd instead of directly sent from RADIO, because
 -- this way players can bind keys to them
 local function RadioCommand(ply, cmd, arg)
-   if not IsValid(ply) or #arg != 1 then
+   if not IsValid(ply) or #arg ~= 1 then
       print("ttt_radio failed, too many arguments?")
       return
    end
@@ -429,8 +429,8 @@ g_VoicePanelList = nil
 -- 5 at 5000
 local function VoiceNotifyThink(pnl)
    if not (IsValid(pnl) and LocalPlayer() and IsValid(pnl.ply)) then return end
-   if not (GetGlobalBool("ttt_locational_voice", false) and (not pnl.ply:IsSpec()) and (pnl.ply != LocalPlayer())) then return end
-   if LocalPlayer():IsActiveTraitor() && pnl.ply:IsActiveTraitor() then return end
+   if not (GetGlobalBool("ttt_locational_voice", false) and (not pnl.ply:IsSpec()) and (pnl.ply ~= LocalPlayer())) then return end
+   if LocalPlayer():IsActiveTraitor() and pnl.ply:IsActiveTraitor() then return end
    
    local d = LocalPlayer():GetPos():Distance(pnl.ply:GetPos())
 
@@ -509,7 +509,7 @@ local function ReceiveVoiceState()
    local state = net.ReadBit() == 1
 
    -- prevent glitching due to chat starting/ending across round boundary
-   if GAMEMODE.round_state != ROUND_ACTIVE then return end
+   if GAMEMODE.round_state ~= ROUND_ACTIVE then return end
    if (not IsValid(LocalPlayer())) or (not LocalPlayer():IsActiveTraitor()) then return end
 
    local ply = player.GetByID(idx)
@@ -578,7 +578,7 @@ local MuteText = {
 local function SetMuteState(state)
    if MutedState then
       MutedState:SetText(string.upper(GetTranslation(MuteText[state])))
-      MutedState:SetVisible(state != MUTE_NONE)
+      MutedState:SetVisible(state ~= MUTE_NONE)
    end
 end
 
@@ -610,7 +610,7 @@ end
 local function GetDrainRate()
    if not GetGlobalBool("ttt_voice_drain", false) then return 0 end
 
-   if GetRoundState() != ROUND_ACTIVE then return 0 end
+   if GetRoundState() ~= ROUND_ACTIVE then return 0 end
    local ply = LocalPlayer()
    if (not IsValid(ply)) or ply:IsSpec() then return 0 end
 

@@ -42,7 +42,7 @@ end
 function SWEP:PrimaryAttack()
 
 	-- Make sure we can shoot first
-	if ( !self:CanPrimaryAttack() ) then return end
+	if ( not self:CanPrimaryAttack() ) then return end
 
 	-- Play shoot sound
 	self:EmitSound( "Weapon_AR2.Single" )
@@ -55,7 +55,7 @@ function SWEP:PrimaryAttack()
 
 	-- Punch the player's view
 	local owner = self:GetOwner()
-	if ( !owner:IsNPC() ) then owner:ViewPunch( Angle( -1, 0, 0 ) ) end
+	if ( not owner:IsNPC() ) then owner:ViewPunch( Angle( -1, 0, 0 ) ) end
 
 end
 
@@ -66,7 +66,7 @@ end
 function SWEP:SecondaryAttack()
 
 	-- Make sure we can shoot first
-	if ( !self:CanSecondaryAttack() ) then return end
+	if ( not self:CanSecondaryAttack() ) then return end
 
 	-- Play shoot sound
 	self:EmitSound("Weapon_Shotgun.Single")
@@ -79,7 +79,7 @@ function SWEP:SecondaryAttack()
 
 	-- Punch the player's view
 	local owner = self:GetOwner()
-	if ( !owner:IsNPC() ) then owner:ViewPunch( Angle( -10, 0, 0 ) ) end
+	if ( not owner:IsNPC() ) then owner:ViewPunch( Angle( -10, 0, 0 ) ) end
 
 end
 
@@ -142,10 +142,10 @@ function SWEP:ShootBullet( damage, num_bullets, aimcone, ammo_type, force, trace
 	bullet.Src		= owner:GetShootPos()			-- Source
 	bullet.Dir		= owner:GetAimVector()			-- Dir of bullet
 	bullet.Spread	= Vector( aimcone, aimcone, 0 )		-- Aim Cone
-	bullet.Tracer	= tracer || 5						-- Show a tracer on every x bullets
-	bullet.Force	= force || 1						-- Amount of force to give to phys objects
+	bullet.Tracer	= tracer or 5						-- Show a tracer on every x bullets
+	bullet.Force	= force or 1						-- Amount of force to give to phys objects
 	bullet.Damage	= damage
-	bullet.AmmoType = ammo_type || self.Primary.Ammo
+	bullet.AmmoType = ammo_type or self.Primary.Ammo
 
 	owner:FireBullets( bullet )
 

@@ -20,7 +20,7 @@ concommand.Add( "dupe_save", function( ply, cmd, arg )
 	-- Current dupe was armed from a file. Don't allow immediate resave.
 	if ( ply.CurrentDupeArmed ) then return end
 
-	if ( ply.m_NextDupeSave && ply.m_NextDupeSave > CurTime() && !game.SinglePlayer() ) then
+	if ( ply.m_NextDupeSave and ply.m_NextDupeSave > CurTime() and !game.SinglePlayer() ) then
 		ServerLog( tostring( ply ) .. " tried to save a dupe too quickly!\n" )
 		return
 	end
@@ -76,7 +76,7 @@ if ( CLIENT ) then
 
 			-- MsgN( "R [ " .. part .. " / " .. total .. " ] Size: " .. data:len() )
 
-			if ( part != total ) then return end
+			if ( part ~= total ) then return end
 
 			MsgN( "Received dupe. Size: " .. buffer:len() )
 

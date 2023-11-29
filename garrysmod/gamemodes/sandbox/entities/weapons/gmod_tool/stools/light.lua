@@ -21,12 +21,12 @@ cleanup.Register( "lights" )
 
 function TOOL:LeftClick( trace, attach )
 
-	if ( IsValid( trace.Entity ) && trace.Entity:IsPlayer() ) then return false end
+	if ( IsValid( trace.Entity ) and trace.Entity:IsPlayer() ) then return false end
 	if ( CLIENT ) then return true end
 	if ( attach == nil ) then attach = true end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER && attach && !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+	if ( SERVER and attach and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 	local ply = self:GetOwner()
 
@@ -37,11 +37,11 @@ function TOOL:LeftClick( trace, attach )
 	local b = math.Clamp( self:GetClientNumber( "b" ), 0, 255 )
 	local brght = math.Clamp( self:GetClientNumber( "brightness" ), -10, 20 )
 	local size = self:GetClientNumber( "size" )
-	local toggle = self:GetClientNumber( "toggle" ) != 1
+	local toggle = self:GetClientNumber( "toggle" ) ~= 1
 
 	local key = self:GetClientNumber( "key" )
 
-	if ( IsValid( trace.Entity ) && trace.Entity:GetClass() == "gmod_light" && trace.Entity:GetPlayer() == ply ) then
+	if ( IsValid( trace.Entity ) and trace.Entity:GetClass() == "gmod_light" and trace.Entity:GetPlayer() == ply ) then
 
 		trace.Entity:SetColor( Color( r, g, b, 255 ) )
 		trace.Entity.r = r
@@ -120,7 +120,7 @@ if ( SERVER ) then
 
 	function MakeLight( pl, r, g, b, brght, size, toggle, on, KeyDown, Data )
 
-		if ( IsValid( pl ) && !pl:CheckLimit( "lights" ) ) then return false end
+		if ( IsValid( pl ) and !pl:CheckLimit( "lights" ) ) then return false end
 
 		local light = ents.Create( "gmod_light" )
 		if ( !IsValid( light ) ) then return end
@@ -188,7 +188,7 @@ function TOOL:UpdateGhostLight( ent, pl )
 	if ( !IsValid( ent ) ) then return end
 
 	local trace = pl:GetEyeTrace()
-	if ( !trace.Hit || IsValid( trace.Entity ) && ( trace.Entity:IsPlayer() || trace.Entity:GetClass() == "gmod_light" ) ) then
+	if ( !trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:IsPlayer() or trace.Entity:GetClass() == "gmod_light" ) ) then
 
 		ent:SetNoDraw( true )
 		return
@@ -204,7 +204,7 @@ end
 
 function TOOL:Think()
 
-	if ( !IsValid( self.GhostEntity ) || self.GhostEntity:GetModel() != "models/maxofs2d/light_tubular.mdl" ) then
+	if ( !IsValid( self.GhostEntity ) or self.GhostEntity:GetModel() ~= "models/maxofs2d/light_tubular.mdl" ) then
 		self:MakeGhostEntity( "models/maxofs2d/light_tubular.mdl", vector_origin, angle_zero )
 	end
 

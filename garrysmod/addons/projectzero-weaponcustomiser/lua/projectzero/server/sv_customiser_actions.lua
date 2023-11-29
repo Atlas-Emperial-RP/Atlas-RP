@@ -5,7 +5,7 @@ net.Receive( "Project0.RequestEquipSkin", function( len, ply )
     if( not skinKey or not weaponClass or not PROJECT0.FUNC.GetConfiguredWeapon( weaponClass ) ) then return end
 
     if( not PROJECT0.DEVCONFIG.WeaponSkins[skinKey] ) then
-        if( skinKey != 0 or ply:Project0():GetEquippedCosmetic( "Skin", weaponClass ) == 0 ) then return end
+        if( skinKey ~= 0 or ply:Project0():GetEquippedCosmetic( "Skin", weaponClass ) == 0 ) then return end
         
         ply:Project0():SetCustomisedWeapon( weaponClass, skinKey )
         return
@@ -28,7 +28,7 @@ net.Receive( "Project0.RequestEquipCharm", function( len, ply )
     if( not weaponCfg or weaponCfg.Charm.Disabled ) then return end
 
     if( not PROJECT0.CONFIG.CUSTOMISER.Charms[charmKey] ) then
-        if( charmKey != 0 or ply:Project0():GetEquippedCosmetic( "Charm", weaponClass ) == 0 ) then return end
+        if( charmKey ~= 0 or ply:Project0():GetEquippedCosmetic( "Charm", weaponClass ) == 0 ) then return end
         
         ply:Project0():SetCustomisedWeapon( weaponClass, false, 0 )
         return
@@ -51,7 +51,7 @@ net.Receive( "Project0.RequestEquipSticker", function( len, ply )
     if( not weaponCfg or weaponCfg.Sticker.Disabled ) then return end
 
     if( not PROJECT0.CONFIG.CUSTOMISER.Stickers[stickerKey] ) then
-        if( stickerKey != 0 or ply:Project0():GetEquippedCosmetic( "Sticker", weaponClass ) == 0 ) then return end
+        if( stickerKey ~= 0 or ply:Project0():GetEquippedCosmetic( "Sticker", weaponClass ) == 0 ) then return end
         
         ply:Project0():SetCustomisedWeapon( weaponClass, false, false, stickerKey )
         return

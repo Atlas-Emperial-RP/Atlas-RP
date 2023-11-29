@@ -15,7 +15,7 @@ hook.Add("CalcMainActivity", "CalcMainActivity.MedicMod", function(ply, vel)
         -- stop the animation if the ragdoll isn't near the player
         if not ply:GetEyeTrace().Entity:IsDeathRagdoll() or ply:GetEyeTrace().Entity:GetPos():Distance(ply:GetPos()) > 100 then
             if SERVER then
-                if IsValid( ply.RagdollHeartMassage ) && IsValid( ply.RagdollHeartMassage:GetOwner() ) then
+                if IsValid( ply.RagdollHeartMassage ) and IsValid( ply.RagdollHeartMassage:GetOwner() ) then
                 ply.RagdollHeartMassage:GetOwner().NextSpawnTime = CurTime() +  ply.RagdollHeartMassage:GetOwner().AddToSpawnTime
                 ply.RagdollHeartMassage.IsHeartMassage = false
 				net.Start("MedicMod.Respawn")
@@ -40,15 +40,15 @@ hook.Add("PlayerButtonUp", "PlayerButtonUp.MedicMod", function( ply, but )
 
 	if table.HasValue( ConfigurationMedicMod.TeamsCantPracticeCPR, ply:Team() ) then return end
    
-    if but != ConfigurationMedicMod.CPRKey or not ConfigurationMedicMod.CanCPR then return end
+    if but ~= ConfigurationMedicMod.CPRKey or not ConfigurationMedicMod.CanCPR then return end
    
-    if ply.blocAnim && ply.blocAnim >= CurTime() then return end
+    if ply.blocAnim and ply.blocAnim >= CurTime() then return end
    
     -- if the player press the configured key, then stop his animation
-    if ply:GetMedicAnimation() != 0 then
+    if ply:GetMedicAnimation() ~= 0 then
         if SERVER then
 		-- add condition pour si le mec n'a plus d'arrêt cardiaque
-            if IsValid( ply.RagdollHeartMassage ) && IsValid( ply.RagdollHeartMassage:GetOwner() ) then
+            if IsValid( ply.RagdollHeartMassage ) and IsValid( ply.RagdollHeartMassage:GetOwner() ) then
                 ply.RagdollHeartMassage:GetOwner().NextSpawnTime = CurTime() +  ply.RagdollHeartMassage:GetOwner().AddToSpawnTime
                 ply.RagdollHeartMassage.IsHeartMassage = false
 				net.Start("MedicMod.Respawn")

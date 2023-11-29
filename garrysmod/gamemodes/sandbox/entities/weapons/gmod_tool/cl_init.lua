@@ -120,8 +120,8 @@ function SWEP:DrawHUD()
 		local name = v.name
 
 		if ( !name ) then continue end
-		if ( v.stage && v.stage != self:GetStage() ) then continue end
-		if ( v.op && v.op != toolObject:GetOperation() ) then continue end
+		if ( v.stage and v.stage ~= self:GetStage() ) then continue end
+		if ( v.op and v.op ~= toolObject:GetOperation() ) then continue end
 
 		local txt = "#tool." .. GetConVarString( "gmod_toolmode" ) .. "." .. name
 		if ( name == "info" ) then txt = toolObject:GetHelpText() end
@@ -141,19 +141,19 @@ function SWEP:DrawHUD()
 			if ( string.StartsWith( name, "reload" ) ) then icon1 = "gui/r.png" end
 			if ( string.StartsWith( name, "use" ) ) then icon1 = "gui/e.png" end
 		end
-		if ( !icon2 && !string.StartsWith( name, "use" ) && string.EndsWith( name, "use" ) ) then icon2 = "gui/e.png" end
+		if ( !icon2 and !string.StartsWith( name, "use" ) and string.EndsWith( name, "use" ) ) then icon2 = "gui/e.png" end
 
 		self.Icons = self.Icons or {}
-		if ( icon1 && !self.Icons[ icon1 ] ) then self.Icons[ icon1 ] = Material( icon1 ) end
-		if ( icon2 && !self.Icons[ icon2 ] ) then self.Icons[ icon2 ] = Material( icon2 ) end
+		if ( icon1 and !self.Icons[ icon1 ] ) then self.Icons[ icon1 ] = Material( icon1 ) end
+		if ( icon2 and !self.Icons[ icon2 ] ) then self.Icons[ icon2 ] = Material( icon2 ) end
 
-		if ( icon1 && self.Icons[ icon1 ] && !self.Icons[ icon1 ]:IsError() ) then
+		if ( icon1 and self.Icons[ icon1 ] and !self.Icons[ icon1 ]:IsError() ) then
 			surface.SetDrawColor( 255, 255, 255, 255 )
 			surface.SetMaterial( self.Icons[ icon1 ] )
 			surface.DrawTexturedRect( x, y + h2, 16, 16 )
 		end
 
-		if ( icon2 && self.Icons[ icon2 ] && !self.Icons[ icon2 ]:IsError() ) then
+		if ( icon2 and self.Icons[ icon2 ] and !self.Icons[ icon2 ]:IsError() ) then
 			surface.SetDrawColor( 255, 255, 255, 255 )
 			surface.SetMaterial( self.Icons[ icon2 ] )
 			surface.DrawTexturedRect( x - 25, y + h2, 16, 16 )

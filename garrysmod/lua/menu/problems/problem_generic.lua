@@ -95,8 +95,8 @@ function PANEL:Setup( problem )
 
 	self.Markup = markup.Parse( "<font=DermaDefault>" .. language.GetPhrase( self.Problem.text ) .. "</font>", self:GetWide() - self.CopyBtn:GetWide() - copyIconPad * 2 - severityOffset - textPaddingX * 2 )
 
-	self.FixBtn:SetEnabled( problem.fix != nil )
-	self.FixBtn:SetText( problem.fix && "#problems.quick_fix" || "#problems.no_quick_fix" )
+	self.FixBtn:SetEnabled( problem.fix ~= nil )
+	self.FixBtn:SetText( problem.fix and "#problems.quick_fix" || "#problems.no_quick_fix" )
 	self.FixBtn:SizeToContentsX( 10 )
 
 end
@@ -138,7 +138,7 @@ function PANEL:Paint( w, h )
 
 	surface.SetMaterial( arrowMat )
 	surface.SetDrawColor( white )
-	surface.DrawTexturedRectRotated( w - 20, 20, 20, 20, self.Collapsed && 180 || 0 )
+	surface.DrawTexturedRectRotated( w - 20, 20, 20, 20, self.Collapsed and 180 || 0 )
 
 end
 

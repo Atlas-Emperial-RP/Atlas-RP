@@ -32,7 +32,7 @@ function ENT:Initialize()
 		-- Wake up our physics object so we don't start asleep
 		local phys = self:GetPhysicsObject()
 		if ( IsValid( phys ) ) then
-			phys:EnableGravity( !self:GetEnabled() )
+			phys:EnableGravity( not self:GetEnabled() )
 			phys:Wake()
 		end
 
@@ -110,7 +110,7 @@ function ENT:PhysicsSimulate( phys, deltatime )
 
 	if ( !self:GetEnabled() ) then return end
 
-	if ( self.ZVelocity != 0 ) then
+	if ( self.ZVelocity ~= 0 ) then
 
 		self:SetTargetZ( self:GetTargetZ() + ( self.ZVelocity * deltatime * self:GetSpeed() ) )
 		self:GetPhysicsObject():Wake()
@@ -158,7 +158,7 @@ end
 
 function ENT:SetZVelocity( z )
 
-	if ( z != 0 ) then
+	if ( z ~= 0 ) then
 		self:GetPhysicsObject():Wake()
 	end
 
@@ -223,7 +223,7 @@ function ENT:OnDuplicated( v )
 	self:SetTargetZ( v.Pos.z )
 
 	local phys = self:GetPhysicsObject()
-	if ( IsValid( phys ) && !self:GetEnabled() ) then
+	if ( IsValid( phys ) and !self:GetEnabled() ) then
 		phys:SetMass( 15 )
 	end
 

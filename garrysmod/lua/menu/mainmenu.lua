@@ -62,7 +62,7 @@ function PANEL:Paint()
 
 	DrawBackground()
 
-	if ( self.IsInGame != IsInGame() ) then
+	if ( self.IsInGame ~= IsInGame() ) then
 
 		self.IsInGame = IsInGame()
 
@@ -82,7 +82,7 @@ function PANEL:Paint()
 
 	local canAdd = CanAddServerToFavorites()
 	local isFav = serverlist.IsCurrentServerFavorite()
-	if ( self.CanAddServerToFavorites != canAdd || self.IsCurrentServerFavorite != isFav ) then
+	if ( self.CanAddServerToFavorites ~= canAdd || self.IsCurrentServerFavorite ~= isFav ) then
 
 		self.CanAddServerToFavorites = canAdd
 		self.IsCurrentServerFavorite = isFav
@@ -170,7 +170,7 @@ function UpdateServerSettings()
 
 				array.settings[ k ] = v
 				array.settings[ k ].Value = cvar:GetString()
-				array.settings[ k ].Singleplayer = v.singleplayer && true || false
+				array.settings[ k ].Singleplayer = v.singleplayer and true || false
 			end
 
 		end
@@ -249,7 +249,7 @@ function IsServerBlacklisted( address, hostname, description, gm, map )
 			return v
 		end
 
-		if ( v:EndsWith( "*" ) && address:sub( 1, v:len() - 1 ) == v:sub( 1, v:len() - 1 ) ) then return v end
+		if ( v:EndsWith( "*" ) and address:sub( 1, v:len() - 1 ) == v:sub( 1, v:len() - 1 ) ) then return v end
 
 		-- IP Ranges
 		if ( string.find( v, "/", 1, false ) ) then
@@ -306,7 +306,7 @@ function GetServers( category, id )
 	local data = {
 		Callback = function( ping, name, desc, map, players, maxplayers, botplayers, pass, lastplayed, address, gm, workshopid, isAnon, netVersion, luaVersion, loc, gmcat )
 
-			if ( Servers[ category ] && Servers[ category ][ address ] ) then print( "Server Browser Error!", address, category ) return end
+			if ( Servers[ category ] and Servers[ category ][ address ] ) then print( "Server Browser Error!", address, category ) return end
 			Servers[ category ][ address ] = true
 
 			local blackListMatch = IsServerBlacklisted( address, name, desc, gm, map )
@@ -337,7 +337,7 @@ function GetServers( category, id )
 
 		CallbackFailed = function( address )
 
-			if ( Servers[ category ] && Servers[ category ][ address ] ) then print( "Server Browser Error!", address, category ) return end
+			if ( Servers[ category ] and Servers[ category ][ address ] ) then print( "Server Browser Error!", address, category ) return end
 			Servers[ category ][ address ] = true
 
 			local version = string.JavascriptSafe( tostring( VERSION ) )
@@ -471,7 +471,7 @@ end )
 
 hook.Add( "LoadGModSaveFailed", "LoadGModSaveFailed", function( str, wsid )
 	local button2 = nil
-	if ( wsid && wsid:len() > 0 ) then button2 = "Open map on Steam Workshop" end
+	if ( wsid and wsid:len() > 0 ) then button2 = "Open map on Steam Workshop" end
 
 	Derma_Query( str, "Failed to load save!", "OK", nil, button2, function() steamworks.ViewFile( wsid ) end )
 end )

@@ -20,7 +20,7 @@ local function fixupProp( ply, ent, hitpos, mins, maxs )
 	} )
 
 	-- Both traces hit meaning we are probably inside a wall on both sides, do nothing
-	if ( tr_up.Hit && tr_down.Hit ) then return end
+	if ( tr_up.Hit and tr_down.Hit ) then return end
 
 	if ( tr_down.Hit ) then ent:SetPos( entPos + ( tr_down.HitPos - endposD ) ) end
 	if ( tr_up.Hit ) then ent:SetPos( entPos + ( tr_up.HitPos - endposU ) ) end
@@ -78,7 +78,7 @@ concommand.Add( "gm_spawn", CCSpawn, nil, "Spawns props/ragdolls" )
 
 local function MakeRagdoll( ply, _, _, model, _, Data )
 
-	if ( IsValid( ply ) && !gamemode.Call( "PlayerSpawnRagdoll", ply, model ) ) then return end
+	if ( IsValid( ply ) and !gamemode.Call( "PlayerSpawnRagdoll", ply, model ) ) then return end
 
 	local Ent = ents.Create( "prop_ragdoll" )
 	duplicator.DoGeneric( Ent, Data )
@@ -106,7 +106,7 @@ duplicator.RegisterEntityClass( "prop_ragdoll", MakeRagdoll, "Pos", "Ang", "Mode
 -----------------------------------------------------------]]
 function GMODSpawnRagdoll( ply, model, iSkin, strBody )
 
-	if ( IsValid( ply ) && !gamemode.Call( "PlayerSpawnRagdoll", ply, model ) ) then return end
+	if ( IsValid( ply ) and !gamemode.Call( "PlayerSpawnRagdoll", ply, model ) ) then return end
 	local e = DoPlayerEntitySpawn( ply, "prop_ragdoll", model, iSkin, strBody )
 
 	if ( IsValid( ply ) ) then
@@ -132,7 +132,7 @@ function MakeProp( ply, Pos, Ang, model, _, Data )
 	Data.Model = model
 
 	-- Make sure this is allowed
-	if ( IsValid( ply ) && !gamemode.Call( "PlayerSpawnProp", ply, model ) ) then return end
+	if ( IsValid( ply ) and !gamemode.Call( "PlayerSpawnProp", ply, model ) ) then return end
 
 	local Prop = ents.Create( "prop_physics" )
 	duplicator.DoGeneric( Prop, Data )
@@ -161,7 +161,7 @@ function MakeEffect( ply, model, Data )
 	Data.Model = model
 
 	-- Make sure this is allowed
-	if ( IsValid( ply ) && !gamemode.Call( "PlayerSpawnEffect", ply, model ) ) then return end
+	if ( IsValid( ply ) and !gamemode.Call( "PlayerSpawnEffect", ply, model ) ) then return end
 
 	local Prop = ents.Create( "prop_effect" )
 	duplicator.DoGeneric( Prop, Data )
@@ -230,7 +230,7 @@ end
 -----------------------------------------------------------]]
 function GMODSpawnProp( ply, model, iSkin, strBody )
 
-	if ( IsValid( ply ) && !gamemode.Call( "PlayerSpawnProp", ply, model ) ) then return end
+	if ( IsValid( ply ) and !gamemode.Call( "PlayerSpawnProp", ply, model ) ) then return end
 
 	local e = DoPlayerEntitySpawn( ply, "prop_physics", model, iSkin, strBody )
 	if ( !IsValid( e ) ) then return end
@@ -260,7 +260,7 @@ end
 -----------------------------------------------------------]]
 function GMODSpawnEffect( ply, model, iSkin, strBody )
 
-	if ( IsValid( ply ) && !gamemode.Call( "PlayerSpawnEffect", ply, model ) ) then return end
+	if ( IsValid( ply ) and !gamemode.Call( "PlayerSpawnEffect", ply, model ) ) then return end
 
 	local e = DoPlayerEntitySpawn( ply, "prop_effect", model, iSkin, strBody )
 	if ( !IsValid( e ) ) then return end
@@ -299,7 +299,7 @@ function DoPlayerEntitySpawn( ply, entity_name, model, iSkin, strBody )
 	local tr = util.TraceLine( trace )
 
 	-- Prevent spawning too close
-	--[[if ( !tr.Hit || tr.Fraction < 0.05 ) then
+	--[[if ( !tr.Hit or tr.Fraction < 0.05 ) then
 		return
 	end]]
 
@@ -325,7 +325,7 @@ function DoPlayerEntitySpawn( ply, entity_name, model, iSkin, strBody )
 	ent:Activate()
 
 	-- Special case for effects
-	if ( entity_name == "prop_effect" && IsValid( ent.AttachedEntity ) ) then
+	if ( entity_name == "prop_effect" and IsValid( ent.AttachedEntity ) ) then
 		ent.AttachedEntity:SetBodyGroups( strBody )
 	end
 
@@ -337,7 +337,7 @@ function DoPlayerEntitySpawn( ply, entity_name, model, iSkin, strBody )
 	vFlushPoint = ent:GetPos() - vFlushPoint				-- Get the difference
 	vFlushPoint = tr.HitPos + vFlushPoint					-- Add it to our target pos
 
-	if ( entity_name != "prop_ragdoll" ) then
+	if ( entity_name ~= "prop_ragdoll" ) then
 
 		-- Set new position
 		ent:SetPos( vFlushPoint )
@@ -371,8 +371,8 @@ local function InternalSpawnNPC( ply, Position, Normal, Class, Equipment, SpawnF
 	-- We don't want them spawning any entity they like!
 	if ( !NPCData ) then return end
 
-	local isAdmin = ( IsValid( ply ) && ply:IsAdmin() ) || game.SinglePlayer()
-	if ( NPCData.AdminOnly && !isAdmin ) then return end
+	local isAdmin = ( IsValid( ply ) and ply:IsAdmin() ) or game.SinglePlayer()
+	if ( NPCData.AdminOnly and !isAdmin ) then return end
 
 	local bDropToFloor = false
 
@@ -387,7 +387,7 @@ local function InternalSpawnNPC( ply, Position, Normal, Class, Equipment, SpawnF
 	--
 	-- This NPC has to be spawned on a floor ( Turrets )
 	--
-	elseif ( NPCData.OnFloor && Vector( 0, 0, 1 ):Dot( Normal ) < 0.95 ) then
+	elseif ( NPCData.OnFloor and Vector( 0, 0, 1 ):Dot( Normal ) < 0.95 ) then
 		return nil
 	else
 		bDropToFloor = true
@@ -473,7 +473,7 @@ local function InternalSpawnNPC( ply, Position, Normal, Class, Equipment, SpawnF
 		if v == Equipment then valid = true break end
 	end
 
-	if ( Equipment && Equipment != "none" && valid ) then
+	if ( Equipment and Equipment ~= "none" and valid ) then
 		NPC:SetKeyValue( "additionalequipment", Equipment )
 		NPC.Equipment = Equipment
 	end
@@ -486,7 +486,7 @@ local function InternalSpawnNPC( ply, Position, Normal, Class, Equipment, SpawnF
 	-- For those NPCs that set their model in Spawn function
 	-- We have to keep the call above for NPCs that want a model set by Spawn() time
 	-- BAD: They may adversly affect entity collision bounds
-	if ( NPCData.Model && NPC:GetModel():lower() != NPCData.Model:lower() ) then
+	if ( NPCData.Model and NPC:GetModel():lower() ~= NPCData.Model:lower() ) then
 		NPC:SetModel( NPCData.Model )
 	end
 
@@ -570,13 +570,13 @@ concommand.Add( "gmod_spawnnpc", function( ply, cmd, args ) Spawn_NPC( ply, args
 -- This should be in base_npcs.lua really
 local function GenericNPCDuplicator( ply, mdl, class, equipment, spawnflags, data )
 
-	if ( IsValid( ply ) && !gamemode.Call( "PlayerSpawnNPC", ply, class, equipment ) ) then return end
+	if ( IsValid( ply ) and !gamemode.Call( "PlayerSpawnNPC", ply, class, equipment ) ) then return end
 
 	local normal = Vector( 0, 0, 1 )
 
 	local NPCList = list.Get( "NPC" )
 	local NPCData = NPCList[ class ]
-	if ( NPCData && NPCData.OnCeiling ) then normal = Vector( 0, 0, -1 ) end
+	if ( NPCData and NPCData.OnCeiling ) then normal = Vector( 0, 0, -1 ) end
 
 	local ent = InternalSpawnNPC( ply, data.Pos, normal, class, equipment, spawnflags, true )
 
@@ -585,7 +585,7 @@ local function GenericNPCDuplicator( ply, mdl, class, equipment, spawnflags, dat
 
 		duplicator.DoGeneric( ent, data )
 
-		if ( !NPCData.OnCeiling && !NPCData.NoDrop ) then
+		if ( !NPCData.OnCeiling and !NPCData.NoDrop ) then
 			ent:SetPos( pos )
 			ent:DropToFloor()
 		end
@@ -683,7 +683,7 @@ AddNPCToDuplicator( "monster_sentry" )
 -----------------------------------------------------------]]
 local function CanPlayerSpawnSENT( ply, EntityName )
 
-	local isAdmin = ( IsValid( ply ) && ply:IsAdmin() ) || game.SinglePlayer()
+	local isAdmin = ( IsValid( ply ) and ply:IsAdmin() ) or game.SinglePlayer()
 
 	-- Make sure this is a SWEP
 	local sent = scripted_ents.GetStored( EntityName )
@@ -694,7 +694,7 @@ local function CanPlayerSpawnSENT( ply, EntityName )
 		if ( !SpawnableEntities ) then return false end
 		local EntTable = SpawnableEntities[ EntityName ]
 		if ( !EntTable ) then return false end
-		if ( EntTable.AdminOnly && !isAdmin ) then return false end
+		if ( EntTable.AdminOnly and !isAdmin ) then return false end
 		return true
 
 	end
@@ -704,8 +704,8 @@ local function CanPlayerSpawnSENT( ply, EntityName )
 	if ( !isfunction( SpawnFunction ) ) then return false end
 
 	-- You're not allowed to spawn this unless you're an admin!
-	if ( !scripted_ents.GetMember( EntityName, "Spawnable" ) && !isAdmin ) then return false end
-	if ( scripted_ents.GetMember( EntityName, "AdminOnly" ) && !isAdmin ) then return false end
+	if ( !scripted_ents.GetMember( EntityName, "Spawnable" ) and !isAdmin ) then return false end
+	if ( scripted_ents.GetMember( EntityName, "AdminOnly" ) and !isAdmin ) then return false end
 
 	return true
 
@@ -850,8 +850,8 @@ function CCGiveSWEP( ply, command, arguments )
 	if ( swep == nil ) then return end
 
 	-- You're not allowed to spawn this!
-	local isAdmin = ply:IsAdmin() || game.SinglePlayer()
-	if ( ( !swep.Spawnable && !isAdmin ) or ( swep.AdminOnly && !isAdmin ) ) then
+	local isAdmin = ply:IsAdmin() or game.SinglePlayer()
+	if ( ( !swep.Spawnable and !isAdmin ) or ( swep.AdminOnly and !isAdmin ) ) then
 		return
 	end
 
@@ -884,8 +884,8 @@ function Spawn_Weapon( ply, wepname, tr )
 	if ( swep == nil ) then return end
 
 	-- You're not allowed to spawn this!
-	local isAdmin = ply:IsAdmin() || game.SinglePlayer()
-	if ( ( !swep.Spawnable && !isAdmin ) or ( swep.AdminOnly && !isAdmin ) ) then
+	local isAdmin = ply:IsAdmin() or game.SinglePlayer()
+	if ( ( !swep.Spawnable and !isAdmin ) or ( swep.AdminOnly and !isAdmin ) ) then
 		return
 	end
 
@@ -943,7 +943,7 @@ end )
 
 local function MakeVehicle( ply, Pos, Ang, model, Class, VName, VTable, data )
 
-	if ( IsValid( ply ) && !gamemode.Call( "PlayerSpawnVehicle", ply, model, VName, VTable ) ) then return end
+	if ( IsValid( ply ) and !gamemode.Call( "PlayerSpawnVehicle", ply, model, VName, VTable ) ) then return end
 
 	local Ent = ents.Create( Class )
 	if ( !IsValid( Ent ) ) then return NULL end
@@ -957,7 +957,7 @@ local function MakeVehicle( ply, Pos, Ang, model, Class, VName, VTable, data )
 	if ( model == "models/vehicle.mdl" ) then Ent:SetKeyValue( "vehiclescript", "scripts/vehicles/jalopy.txt" ) end
 
 	-- Fill in the keyvalues if we have them
-	if ( VTable && VTable.KeyValues ) then
+	if ( VTable and VTable.KeyValues ) then
 		for k, v in pairs( VTable.KeyValues ) do
 
 			local kLower = string.lower( k )
@@ -983,9 +983,9 @@ local function MakeVehicle( ply, Pos, Ang, model, Class, VName, VTable, data )
 	Ent:Activate()
 
 	-- Some vehicles reset this in Spawn()
-	if ( data && data.ColGroup ) then Ent:SetCollisionGroup( data.ColGroup ) end
+	if ( data and data.ColGroup ) then Ent:SetCollisionGroup( data.ColGroup ) end
 
-	if ( Ent.SetVehicleClass && VName ) then Ent:SetVehicleClass( VName ) end
+	if ( Ent.SetVehicleClass and VName ) then Ent:SetVehicleClass( VName ) end
 	Ent.VehicleName = VName
 	Ent.VehicleTable = VTable
 

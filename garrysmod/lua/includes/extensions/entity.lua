@@ -21,7 +21,7 @@ function meta:__index( key )
 	-- Search the metatable. We can do this without dipping into C, so we do it first.
 	--
 	local val = meta[ key ]
-	if ( val != nil ) then return val end
+	if ( val ~= nil ) then return val end
 
 	--
 	-- Search the entity table
@@ -29,7 +29,7 @@ function meta:__index( key )
 	local tab = self:GetTable()
 	if ( tab ) then
 		local val = tab[ key ]
-		if ( val != nil ) then return val end
+		if ( val ~= nil ) then return val end
 	end
 
 	--
@@ -141,7 +141,7 @@ local function DoDieFunction( ent )
 	for k, v in pairs( ent.OnDieFunctions ) do
 
 		-- Functions aren't saved - so this could be nil if we loaded a game.
-		if ( v && v.Function ) then
+		if ( v and v.Function ) then
 
 			v.Function( ent, unpack( v.Args ) )
 
@@ -201,7 +201,7 @@ function meta:GetChildBones( bone )
 	local bones = {}
 
 	for k = 0, bonecount - 1 do
-		if ( self:GetBoneParent( k ) != bone ) then continue end
+		if ( self:GetBoneParent( k ) ~= bone ) then continue end
 		table.insert( bones, k )
 	end
 
@@ -312,7 +312,7 @@ function meta:InstallDataTable()
 
 	self.CallDTVarProxies = function( ent, typename, index, newVal )
 		for name, t in pairs( datatable ) do
-			if ( t.index == index && t.typename == typename ) then
+			if ( t.index == index and t.typename == typename ) then
 				CallProxies( ent, t.Notify, name, self.dt[ name ], newVal )
 				break
 			end
@@ -454,7 +454,7 @@ function meta:InstallDataTable()
 			if ( tab[ k ] == nil ) then continue end
 
 			-- Support old saves/dupes with incorrectly saved data
-			if ( v.element && ( isangle( tab[ k ] ) || isvector( tab[ k ] ) ) ) then
+			if ( v.element and ( isangle( tab[ k ] ) || isvector( tab[ k ] ) ) ) then
 				tab[ k ] = tab[ k ][ v.element ]
 			end
 
@@ -525,7 +525,7 @@ if ( SERVER ) then
 
 		if ( !IsValid( ent ) ) then return end
 		if ( !isfunction( ent.GetEditingData ) ) then return end
-		if ( ent.AdminOnly && !( client:IsAdmin() || game.SinglePlayer() ) ) then return end
+		if ( ent.AdminOnly and !( client:IsAdmin() || game.SinglePlayer() ) ) then return end
 
 		local key = net.ReadString()
 

@@ -1,11 +1,11 @@
-/*
+--[[---
    ____          _          _   ____          __  __       _ _                     
   / ___|___   __| | ___  __| | | __ ) _   _  |  \/  | __ _| | |__   ___  _ __ ___  
  | |   / _ \ / _` |/ _ \/ _` | |  _ \| | | | | |\/| |/ _` | | '_ \ / _ \| '__/ _ \ 
  | |__| (_) | (_| |  __/ (_| | | |_) | |_| | | |  | | (_| | | |_) | (_) | | | (_) |
   \____\___/ \__,_|\___|\__,_| |____/ \__, | |_|  |_|\__,_|_|_.__/ \___/|_|  \___/ 
                                       |___/                                        
-*/
+  --]]
 
 util.AddNetworkString("pp_open_menu")
 util.AddNetworkString("pp_info_send")
@@ -23,10 +23,10 @@ local function PermissionLoad()
 
 		for k, v in pairs(CAMI.GetUsergroups()) do
 
-			if k == "superadmin" or k == "admin" or k == "user" then continue end
+			if k == "superadmin" or k == "admin" or k == "user" then goto continue end
 
 			PermaProps.Permissions[k] = { Physgun = false, Tool = false, Property = false, Save = false, Delete = false, Update = false, Menu = false, Permissions = false, Inherits = v.Inherits, Custom = false }
-
+			::continue::
 		end
 		
 	end
@@ -67,7 +67,7 @@ end
 
 local function pp_open_menu( ply )
 
-	if !PermaProps.HasPermission( ply, "Menu") then ply:ChatPrint("Access denied !") return end
+	if not  PermaProps.HasPermission( ply, "Menu") then ply:ChatPrint("Access denied !") return end
 
 	local SendTable = {}
 	local Data_PropsList = sql.Query( "SELECT * FROM permaprops WHERE map = ".. sql.SQLStr(game.GetMap()) .. ";" )
@@ -114,7 +114,7 @@ concommand.Add("pp_cfg_open", pp_open_menu)
 
 local function pp_info_send( um, ply )
 
-	if !PermaProps.HasPermission( ply, "Menu") then ply:ChatPrint("Access denied !") return end
+	if not PermaProps.HasPermission( ply, "Menu") then ply:ChatPrint("Access denied !") return end
 	
 	local Content = net.ReadTable()
 
@@ -122,7 +122,7 @@ local function pp_info_send( um, ply )
 
 		Content["Val"] = tonumber(Content["Val"])
 
-		if Content["Val"] != nil and Content["Val"] <= 0 then return end
+		if Content["Val"] ~= nil and Content["Val"] <= 0 then return end
 
 		sql.Query("DELETE FROM permaprops WHERE id = ".. sql.SQLStr(Content["Val"]) .. ";")
 
@@ -141,11 +141,11 @@ local function pp_info_send( um, ply )
 	elseif Content["CMD"] == "VAR" then
 
 		if PermaProps.Permissions[Content["Name"]] == nil or PermaProps.Permissions[Content["Name"]][Content["Data"]] == nil  then return end
-		if !isbool(Content["Val"]) then return end
+		if not isbool(Content["Val"]) then return end
 
 		if Content["Name"] == "superadmin" and  ( Content["Data"] == "Custom" or Content["Data"] == "Permissions" or Content["Data"] == "Menu" ) then return end
 
-		if !PermaProps.HasPermission( ply, "Permissions") then ply:ChatPrint("Access denied !") return end
+		if not PermaProps.HasPermission( ply, "Permissions") then ply:ChatPrint("Access denied !") return end
 
 		PermaProps.Permissions[Content["Name"]][Content["Data"]] = Content["Val"]
 

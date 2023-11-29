@@ -45,7 +45,7 @@ function PANEL:Init()
 	self.Palette:DockMargin( 0, 8, 0, 0 )
 	self.Palette:Reset()
 	self.Palette.DoClick = function( ctrl, color, btn )
-		self:SetColor( Color( color.r, color.g, color.b, self:GetAlphaBar() && color.a or 255 ) )
+		self:SetColor( Color( color.r, color.g, color.b, self:GetAlphaBar() and color.a or 255 ) )
 	end
 	self.Palette.OnRightClickButton = function( ctrl, btn )
 		local m = DermaMenu()
@@ -192,7 +192,7 @@ end
 
 function PANEL:SetConVarA( cvar )
 	self.m_ConVarA = cvar
-	self:SetAlphaBar( cvar != nil )
+	self:SetAlphaBar( cvar ~= nil )
 end
 
 function PANEL:PerformLayout( w, h )
@@ -256,25 +256,25 @@ function PANEL:UpdateColor( color )
 	self.Alpha:SetBarColor( ColorAlpha( color, 255 ) )
 	self.Alpha:SetValue( color.a / 255 )
 
-	if ( color.r != self.txtR:GetValue() ) then
+	if ( color.r ~= self.txtR:GetValue() ) then
 		self.txtR.notuserchange = true
 		self.txtR:SetValue( color.r )
 		self.txtR.notuserchange = nil
 	end
 
-	if ( color.g != self.txtG:GetValue() ) then
+	if ( color.g ~= self.txtG:GetValue() ) then
 		self.txtG.notuserchange = true
 		self.txtG:SetValue( color.g )
 		self.txtG.notuserchange = nil
 	end
 
-	if ( color.b != self.txtB:GetValue() ) then
+	if ( color.b ~= self.txtB:GetValue() ) then
 		self.txtB.notuserchange = true
 		self.txtB:SetValue( color.b )
 		self.txtB.notuserchange = nil
 	end
 
-	if ( color.a != self.txtA:GetValue() ) then
+	if ( color.a ~= self.txtA:GetValue() ) then
 		self.txtA.notuserchange = true
 		self.txtA:SetValue( color.a )
 		self.txtA.notuserchange = nil
@@ -342,7 +342,7 @@ function PANEL:DoConVarThink( convar )
 
 	local fValue = GetConVarNumber( convar )
 	local fOldValue = self[ "ConVarOld" .. convar ]
-	if ( fOldValue && fValue == fOldValue ) then return fOldValue, false end
+	if ( fOldValue and fValue == fOldValue ) then return fOldValue, false end
 
 	self[ "ConVarOld" .. convar ] = fValue
 

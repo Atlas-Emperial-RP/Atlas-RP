@@ -18,10 +18,10 @@ cleanup.Register( "emitters" )
 
 function TOOL:LeftClick( trace, worldweld )
 
-	if ( trace.Entity && trace.Entity:IsPlayer() ) then return false end
+	if ( trace.Entity and trace.Entity:IsPlayer() ) then return false end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER && !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+	if ( SERVER and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 	if ( CLIENT ) then return true end
 
@@ -35,7 +35,7 @@ function TOOL:LeftClick( trace, worldweld )
 	local delay = math.Clamp( self:GetClientNumber( "delay" ), 0.05, 20 )
 
 	-- We shot an existing emitter - just change its values
-	if ( IsValid( trace.Entity ) && trace.Entity:GetClass() == "gmod_emitter" && trace.Entity.pl == ply ) then
+	if ( IsValid( trace.Entity ) and trace.Entity:GetClass() == "gmod_emitter" and trace.Entity.pl == ply ) then
 
 		trace.Entity:SetEffect( effect )
 		trace.Entity:SetDelay( delay )
@@ -57,7 +57,7 @@ function TOOL:LeftClick( trace, worldweld )
 	if ( !self:GetSWEP():CheckLimit( "emitters" ) ) then return false end
 
 	local pos = trace.HitPos
-	if ( trace.Entity != NULL && ( !trace.Entity:IsWorld() || worldweld ) ) then else
+	if ( trace.Entity ~= NULL and ( !trace.Entity:IsWorld() or worldweld ) ) then else
 		pos = pos + trace.HitNormal
 	end
 
@@ -71,7 +71,7 @@ function TOOL:LeftClick( trace, worldweld )
 		undo.AddEntity( emitter )
 
 		-- Don't weld to world
-		if ( trace.Entity != NULL && ( !trace.Entity:IsWorld() || worldweld ) ) then
+		if ( trace.Entity ~= NULL and ( !trace.Entity:IsWorld() or worldweld ) ) then
 			local weld = constraint.Weld( emitter, trace.Entity, 0, trace.PhysicsBone, 0, true, true )
 			if ( IsValid( weld ) ) then
 				ply:AddCleanup( "emitters", weld )
@@ -99,7 +99,7 @@ if ( SERVER ) then
 
 	function MakeEmitter( ply, key, delay, toggle, effect, starton, nocollide, scale, Data )
 
-		if ( IsValid( ply ) && !ply:CheckLimit( "emitters" ) ) then return nil end
+		if ( IsValid( ply ) and !ply:CheckLimit( "emitters" ) ) then return nil end
 
 		local emitter = ents.Create( "gmod_emitter" )
 		if ( !IsValid( emitter ) ) then return false end
@@ -119,7 +119,7 @@ if ( SERVER ) then
 		emitter.NumDown = numpad.OnDown( ply, key, "Emitter_On", emitter )
 		emitter.NumUp = numpad.OnUp( ply, key, "Emitter_Off", emitter )
 
-		if ( nocollide && IsValid( emitter:GetPhysicsObject() ) ) then
+		if ( nocollide and IsValid( emitter:GetPhysicsObject() ) ) then
 			emitter:GetPhysicsObject():EnableCollisions( false )
 		end
 
@@ -154,7 +154,7 @@ function TOOL:UpdateGhostEmitter( ent, pl )
 	if ( !IsValid( ent ) ) then return end
 
 	local trace = pl:GetEyeTrace()
-	if ( !trace.Hit || IsValid( trace.Entity ) && ( trace.Entity:GetClass() == "gmod_emitter" || trace.Entity:IsPlayer() ) ) then
+	if ( !trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:GetClass() == "gmod_emitter" or trace.Entity:IsPlayer() ) ) then
 
 		ent:SetNoDraw( true )
 		return
@@ -170,7 +170,7 @@ end
 
 function TOOL:Think()
 
-	if ( !IsValid( self.GhostEntity ) || self.GhostEntity:GetModel() != "models/props_lab/tpplug.mdl" ) then
+	if ( !IsValid( self.GhostEntity ) or self.GhostEntity:GetModel() ~= "models/props_lab/tpplug.mdl" ) then
 		self:MakeGhostEntity( "models/props_lab/tpplug.mdl", vector_origin, angle_zero )
 	end
 

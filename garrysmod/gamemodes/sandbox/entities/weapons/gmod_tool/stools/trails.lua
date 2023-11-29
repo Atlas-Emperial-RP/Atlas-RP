@@ -37,7 +37,7 @@ local function SetTrails( ply, ent, data )
 	end
 
 	-- Just don't even bother with invisible trails
-	if ( data.StartSize <= 0 && data.EndSize <= 0 ) then return end
+	if ( data.StartSize <= 0 and data.EndSize <= 0 ) then return end
 
 		-- This is here to fix crash exploits
 	if ( !game.SinglePlayer() ) then

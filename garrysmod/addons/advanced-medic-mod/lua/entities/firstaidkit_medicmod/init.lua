@@ -52,7 +52,7 @@ function ENT:Touch( ent )
 	
 	self.nexttouch = CurTime() + 0.5
 	
-	if ent:GetClass() != "spawned_weapon" then return end
+	if ent:GetClass() ~= "spawned_weapon" then return end
 		
 	local content = ent:GetWeaponClass()
 

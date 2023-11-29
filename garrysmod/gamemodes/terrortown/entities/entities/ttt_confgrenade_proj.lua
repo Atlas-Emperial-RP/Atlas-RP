@@ -19,7 +19,7 @@ local function PushPullRadius(pos, pusher)
          local dir = (tpos - pos):GetNormal()
          local phys = target:GetPhysicsObject()
 
-         if target:IsPlayer() and (not target:IsFrozen()) and ((not target.was_pushed) or target.was_pushed.t != CurTime()) then
+         if target:IsPlayer() and (not target:IsFrozen()) and ((not target.was_pushed) or target.was_pushed.t ~= CurTime()) then
 
             -- always need an upwards push to prevent the ground's friction from
             -- stopping nearly all movement
@@ -66,7 +66,7 @@ function ENT:Explode(tr)
       self:SetSolid(SOLID_NONE)
 
       -- pull out of the surface
-      if tr.Fraction != 1.0 then
+      if tr.Fraction ~= 1.0 then
          self:SetPos(tr.HitPos + tr.HitNormal * 0.6)
       end
 
@@ -81,7 +81,7 @@ function ENT:Explode(tr)
       effect:SetStart(pos)
       effect:SetOrigin(pos)
 
-      if tr.Fraction != 1.0 then
+      if tr.Fraction ~= 1.0 then
          effect:SetNormal(tr.HitNormal)
       end
       

@@ -180,7 +180,7 @@ function PANEL:ValueChanged( val )
 
 	val = math.Clamp( tonumber( val ) || 0, self:GetMin(), self:GetMax() )
 
-	if ( self.TextArea != vgui.GetKeyboardFocus() ) then
+	if ( self.TextArea ~= vgui.GetKeyboardFocus() ) then
 		self.TextArea:SetValue( self.Scratch:GetTextValue() )
 	end
 

@@ -318,7 +318,7 @@ local function WinChecker()
          EndRound(WIN_TIMELIMIT)
       else
          local win = hook.Call("TTTCheckForWin", GAMEMODE)
-         if win != WIN_NONE then
+         if win ~= WIN_NONE then
             EndRound(win)
          end
       end
@@ -334,7 +334,7 @@ local function NameChangeKick()
    if GetRoundState() == ROUND_ACTIVE then
       for _, ply in ipairs(player.GetHumans()) do
          if ply.spawn_nick then
-            if ply.has_spawned and ply.spawn_nick != ply:Nick() and not hook.Call("TTTNameChangeKick", GAMEMODE, ply) then
+            if ply.has_spawned and ply.spawn_nick ~= ply:Nick() and not hook.Call("TTTNameChangeKick", GAMEMODE, ply) then
                local t = GetConVar("ttt_namechange_bantime"):GetInt()
                local msg = "Changed name during a round"
                if t > 0 then
@@ -546,7 +546,7 @@ function TellTraitorsAboutTraitors()
          else
             local names = ""
             for i,name in ipairs(traitornicks) do
-               if name != v:Nick() then
+               if name ~= v:Nick() then
                   names = names .. name .. ", "
                end
             end

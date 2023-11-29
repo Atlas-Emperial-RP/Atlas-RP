@@ -73,7 +73,7 @@ end
 
 function PANEL:OnCursorMoved( x, y )
 
-	if ( !self.Dragging && !self.Knob.Depressed ) then return end
+	if ( !self.Dragging and !self.Knob.Depressed ) then return end
 
 	local w, h = self:GetSize()
 	local iw, ih = self.Knob:GetSize()
@@ -222,7 +222,7 @@ function PANEL:ConVarXNumberThink()
 	local numValue = GetConVarNumber( self.m_strConVarX )
 
 	-- In case the convar is a "nan"
-	if ( numValue != numValue ) then return end
+	if ( numValue ~= numValue ) then return end
 	if ( self.m_strConVarXValue == numValue ) then return end
 
 	self.m_strConVarXValue = numValue
@@ -236,7 +236,7 @@ function PANEL:ConVarYNumberThink()
 	local numValue = GetConVarNumber( self.m_strConVarY )
 
 	-- In case the convar is a "nan"
-	if ( numValue != numValue ) then return end
+	if ( numValue ~= numValue ) then return end
 	if ( self.m_strConVarYValue == numValue ) then return end
 
 	self.m_strConVarYValue = numValue

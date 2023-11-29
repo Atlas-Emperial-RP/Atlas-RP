@@ -1,17 +1,17 @@
-/*
+--[[---
    ____          _          _   ____          __  __       _ _                     
   / ___|___   __| | ___  __| | | __ ) _   _  |  \/  | __ _| | |__   ___  _ __ ___  
  | |   / _ \ / _` |/ _ \/ _` | |  _ \| | | | | |\/| |/ _` | | '_ \ / _ \| '__/ _ \ 
  | |__| (_) | (_| |  __/ (_| | | |_) | |_| | | |  | | (_| | | |_) | (_) | | | (_) |
   \____\___/ \__,_|\___|\__,_| |____/ \__, | |_|  |_|\__,_|_|_.__/ \___/|_|  \___/ 
                                       |___/                                        
-*/
+*/ -- ]]
 
 if not PermaProps then PermaProps = {} end
 
 function PermaProps.PPGetEntTable( ent )
 
-	if !ent or !ent:IsValid() then return false end
+	if not ent or not ent:IsValid() then return false end
 
 	local content = {}
 	content.Class = ent:GetClass()
@@ -19,7 +19,7 @@ function PermaProps.PPGetEntTable( ent )
 	content.Angle = ent:GetAngles()
 	content.Model = ent:GetModel()
 	content.Skin = ent:GetSkin()
-	//content.Mins, content.Maxs = ent:GetCollisionBounds()
+	-- content.Mins, content.Maxs = ent:GetCollisionBounds()
 	content.ColGroup = ent:GetCollisionGroup()
 	content.Name = ent:GetName()
 	content.ModelScale = ent:GetModelScale()
@@ -28,11 +28,11 @@ function PermaProps.PPGetEntTable( ent )
 	content.Solid = ent:GetSolid()
 	content.RenderMode = ent:GetRenderMode()
 	
-	if PermaProps.SpecialENTSSave[ent:GetClass()] != nil and isfunction(PermaProps.SpecialENTSSave[ent:GetClass()]) then
+	if PermaProps.SpecialENTSSave[ent:GetClass()] ~= nil and isfunction(PermaProps.SpecialENTSSave[ent:GetClass()]) then
 
 		local othercontent = PermaProps.SpecialENTSSave[ent:GetClass()](ent)
 		if not othercontent then return false end
-		if othercontent != nil and istable(othercontent) then
+		if othercontent ~= nil and istable(othercontent) then
 			table.Merge(content, othercontent)
 		end
 
@@ -82,7 +82,7 @@ function PermaProps.PPGetEntTable( ent )
 	end
 
 	if ent:GetPhysicsObject() and ent:GetPhysicsObject():IsValid() then
-		content.Frozen = !ent:GetPhysicsObject():IsMoveable()
+		content.Frozen = not ent:GetPhysicsObject():IsMoveable()
 	end
 
 	if content.Class == "prop_dynamic" then
@@ -105,20 +105,20 @@ function PermaProps.PPEntityFromTable( data, id )
 	end
 
 	local ent = ents.Create(data.Class)
-	if !ent then return false end
-	if !ent:IsVehicle() then if !ent:IsValid() then return false end end
+	if not ent then return false end
+	if not ent:IsVehicle() then if not ent:IsValid() then return false end end
 	ent:SetPos( data.Pos or Vector(0, 0, 0) )
 	ent:SetAngles( data.Angle or Angle(0, 0, 0) )
 	ent:SetModel( data.Model or "models/error.mdl" )
 	ent:SetSkin( data.Skin or 0 )
-	//ent:SetCollisionBounds( ( data.Mins or 0 ), ( data.Maxs or 0 ) )
+	-- ent:SetCollisionBounds( ( data.Mins or 0 ), ( data.Maxs or 0 ) )
 	ent:SetCollisionGroup( data.ColGroup or 0 )
 	ent:SetName( data.Name or "" )
 	ent:SetModelScale( data.ModelScale or 1 )
 	ent:SetMaterial( data.Material or "" )
 	ent:SetSolid( data.Solid or 6 )
 
-	if PermaProps.SpecialENTSSpawn[data.Class] != nil and isfunction(PermaProps.SpecialENTSSpawn[data.Class]) then
+	if PermaProps.SpecialENTSSpawn[data.Class] ~= nil and isfunction(PermaProps.SpecialENTSSpawn[data.Class]) then
 
 		PermaProps.SpecialENTSSpawn[data.Class](ent, data.Other)
 
@@ -133,7 +133,7 @@ function PermaProps.PPEntityFromTable( data, id )
 	ent:SetRenderMode( data.RenderMode or RENDERMODE_NORMAL )
 	ent:SetColor( data.Color or Color(255, 255, 255, 255) )
 
-	if data.EntityMods != nil and istable(data.EntityMods) then -- OLD DATA
+	if data.EntityMods ~= nil and istable(data.EntityMods) then -- OLD DATA
 
 		if data.EntityMods.material then
 			ent:SetMaterial( data.EntityMods.material["MaterialOverride"] or "")
@@ -149,10 +149,10 @@ function PermaProps.PPEntityFromTable( data, id )
 
 		for k, v in pairs( data.DT ) do
 
-			if ( data.DT[ k ] == nil ) then continue end
-			if !isfunction(ent[ "Set" .. k ]) then continue end
+			if ( data.DT[ k ] == nil ) then goto continue end
+			if not isfunction(ent[ "Set" .. k ]) then goto continue end
 			ent[ "Set" .. k ]( ent, data.DT[ k ] )
-
+			::continue::
 		end
 
 	end
@@ -172,33 +172,33 @@ function PermaProps.PPEntityFromTable( data, id )
 
 		for k, v in pairs( data.SubMat ) do
 
-			if type(k) != "number" or type(v) != "string" then continue end
+			if type(k) ~= "number" or type(v) ~= "string" then goto continue end
 
 			ent:SetSubMaterial( k-1, v )
-			
+			::continue::
 		end
 
 	end
 
-	if data.Frozen != nil then
+	if data.Frozen ~= nil then
 		
 		local phys = ent:GetPhysicsObject()
 		if phys and phys:IsValid() then
-			phys:EnableMotion(!data.Frozen)
+			phys:EnableMotion(not data.Frozen)
 		end
 
 	end
 
-	/*if data.Table then
+	--[[--- if data.Table then
 
 		table.Merge(ent:GetTable(), data.Table)
 
-	end*/
+	end --]]
 
 	ent.PermaProps_ID = id
 	ent.PermaProps = true
 	
-	// For all idiots who don't know how to config FPP, FUCK YOU
+	-- For all idiots who don't know how to config FPP, FUCK YOU
 	function ent:CanTool( ply, trace, tool )
 
 		if trace and IsValid(trace.Entity) and trace.Entity.PermaProps then
@@ -240,8 +240,8 @@ function PermaProps.ReloadPermaProps()
 		local data = util.JSONToTable(v.content)
 
 		local e = PermaProps.PPEntityFromTable(data, tonumber(v.id))
-		if !e or !e:IsValid() then continue end
-
+		if not e or not e:IsValid() then goto continue end
+		::continue::
 	end
 
 end

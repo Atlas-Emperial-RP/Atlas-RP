@@ -10,7 +10,7 @@ TOOL.Information = {
 
 local function DoRemoveEntity( ent )
 
-	if ( !IsValid( ent ) || ent:IsPlayer() ) then return false end
+	if ( !IsValid( ent ) or ent:IsPlayer() ) then return false end
 
 	-- Nothing for the client to do here
 	if ( CLIENT ) then return true end
@@ -62,7 +62,7 @@ function TOOL:RightClick( trace )
 
 	local Entity = trace.Entity
 
-	if ( !IsValid( Entity ) || Entity:IsPlayer() ) then return false end
+	if ( !IsValid( Entity ) or Entity:IsPlayer() ) then return false end
 
 	-- Client can bail out now.
 	if ( CLIENT ) then return true end
@@ -90,7 +90,7 @@ end
 --
 function TOOL:Reload( trace )
 
-	if ( !IsValid( trace.Entity ) || trace.Entity:IsPlayer() ) then return false end
+	if ( !IsValid( trace.Entity ) or trace.Entity:IsPlayer() ) then return false end
 	if ( CLIENT ) then return true end
 
 	return constraint.RemoveAll( trace.Entity )
