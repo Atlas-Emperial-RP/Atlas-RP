@@ -111,6 +111,8 @@ function meta:sendDarkRPVars()
             for i = 1, vars_cnt, 1 do
                 DarkRP.writeNetDarkRPVar(vars[i], DarkRPVars[target][vars[i]])
             end
+
+            ::continue::
         end
     net.Send(self)
 end

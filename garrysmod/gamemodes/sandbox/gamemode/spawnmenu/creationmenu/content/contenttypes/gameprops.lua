@@ -6,7 +6,7 @@ local function recurseAddFiles( folder, pathid, list )
 	local files, folders = file.Find( folder .. "/*", pathid )
 	for id, file in pairs( files or {} ) do
 		if ( file:EndsWith( ".mdl" ) ) then
-			if ( !addedLabel ) then
+			if ( not addedLabel ) then
 				table.insert( list, { type = "header", text = folder } )
 				addedLabel = true
 			end
@@ -48,9 +48,9 @@ local function GamePropsRightClick( self )
 		-- Find the "root" node for this game
 		local parent = self
 		local icon = parent:GetIcon()
-		while ( !icon:StartWith( "games" ) ) do
+		while ( not icon:StartWith( "games" ) ) do
 			parent = parent:GetParentNode()
-			if ( !IsValid( parent ) ) then break end
+			if ( not IsValid( parent ) ) then break end
 			icon = parent:GetIcon()
 		end
 
@@ -139,10 +139,11 @@ local function RefreshGames( MyNode )
 	-- Create a list of mounted games, allowing us to browse them
 	for _, game in SortedPairsByMemberValue( games, "title" ) do
 
-		if ( !game.mounted ) then goto continue end
+		if ( not game.mounted ) then goto continue end
 
 		AddBrowseContent( MyNode.ViewPanel, MyNode, game.title, "games/16/" .. ( game.icon or game.folder ) .. ".png", "", game.folder, MyNode.pnlContent, game.depot )
 
+		::continue::
 	end
 
 end
@@ -167,7 +168,7 @@ end )
 
 hook.Add( "GameContentChanged", "RefreshSpawnmenuGames", function()
 
-	if ( !IsValid( myGamesNode ) ) then return end
+	if ( not IsValid( myGamesNode ) ) then return end
 
 	-- TODO: Maybe be more advaced and do not delete => recreate all the nodes, only delete nodes for addons that were removed, add only the new ones?
 	myGamesNode:Clear()

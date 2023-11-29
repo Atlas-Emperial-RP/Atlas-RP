@@ -26,6 +26,8 @@ function PLAYER:CPPIGetFriends()
     for k, v in pairs(self.Buddies) do
         if not table.HasValue(v, true) then goto continue end -- not buddies in anything
         table.insert(FriendsTable, k)
+
+        ::continue::
     end
 
     return FriendsTable

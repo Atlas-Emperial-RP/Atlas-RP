@@ -2,13 +2,13 @@
 local function AddRecursive( pnl, folder, path, wildcard )
 
 	local files, folders = file.Find( folder .. "*", path )
-	if ( !files ) then MsgN( "Warning! Not opening '" .. folder .. "' because we cannot search in it!"  ) return false end
+	if ( not files ) then MsgN( "Warning! Not opening '" .. folder .. "' because we cannot search in it!"  ) return false end
 
 	local added = false
 
 	for k, v in ipairs( files ) do
 
-		if ( !string.EndsWith( v, ".mdl" ) ) then goto continue end
+		if ( not string.EndsWith( v, ".mdl" ) ) then goto continue end
 
 		local cp = spawnmenu.GetContentType( "model" )
 		if ( cp ) then
@@ -16,6 +16,7 @@ local function AddRecursive( pnl, folder, path, wildcard )
 			added = true
 		end
 
+		::continue::
 	end
 
 	for k, v in ipairs( folders ) do
@@ -31,7 +32,7 @@ end
 
 local function AddonsRightClick( self )
 
-	if ( !IsValid( self ) or !self.wsid or self.wsid == "0" ) then return end
+	if ( not IsValid( self ) or not self.wsid or self.wsid == "0" ) then return end
 
 	local menu = DermaMenu()
 	menu:AddOption( "#spawnmenu.openaddononworkshop", function()
@@ -48,7 +49,7 @@ local function RefreshAddons( MyNode )
 
 	for _, addon in SortedPairsByMemberValue( engine.GetAddons(), "title" ) do
 
-		if ( !addon.downloaded or !addon.mounted ) then goto continue end
+		if ( not addon.downloaded or not addon.mounted ) then goto continue end
 		if ( addon.models <= 0 ) then goto continue end
 
 		local models = MyNode:AddNode( addon.title .. " (" .. addon.models .. ")", "icon16/bricks.png" )
@@ -57,7 +58,7 @@ local function RefreshAddons( MyNode )
 			ViewPanel:Clear( true )
 
 			local anyAdded = AddRecursive( ViewPanel, "models/", addon.title, "*.mdl" )
-			if ( !anyAdded ) then
+			if ( not anyAdded ) then
 				local cp = spawnmenu.GetContentType( "header" )
 				if ( cp ) then cp( ViewPanel, { text = "#spawnmenu.failedtofindmodels" } ) end
 
@@ -72,6 +73,7 @@ local function RefreshAddons( MyNode )
 		models.DoRightClick = AddonsRightClick
 		models.wsid = addon.wsid
 
+		::continue::
 	end
 
 end
@@ -93,7 +95,7 @@ end )
 
 hook.Add( "GameContentChanged", "RefreshSpawnmenuAddons", function()
 
-	if ( !IsValid( myAddonsNode ) ) then return end
+	if ( not IsValid( myAddonsNode ) ) then return end
 
 	-- TODO: Maybe be more advaced and do not delete => recreate all the nodes, only delete nodes for addons that were removed, add only the new ones?
 	myAddonsNode:Clear()

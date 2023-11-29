@@ -161,13 +161,15 @@ function PANEL:SelectPresetByName( name )
 	for id, line in pairs( self.PresetList:GetLines() ) do
 		if ( line:GetValue( 1 ) ~= name ) then goto continue end
 		self.PresetList:SelectItem( line )
+	
+		::continue::
 	end
 
 end
 
 function PANEL:Delete()
 
-	if ( !self.PresetList:GetSelectedLine() or !IsValid( self.PresetList:GetLine( self.PresetList:GetSelectedLine() ) ) ) then return end
+	if ( not self.PresetList:GetSelectedLine() or not IsValid( self.PresetList:GetLine( self.PresetList:GetSelectedLine() ) ) ) then return end
 
 	local Selected = self.PresetList:GetLine( self.PresetList:GetSelectedLine() ):GetValue( 1 ):Trim()
 	if ( Selected == "" ) then return end
@@ -205,13 +207,13 @@ end
 
 function PANEL:SaveChanges()
 
-	if ( !self.PresetList:GetSelectedLine() or !IsValid( self.PresetList:GetLine( self.PresetList:GetSelectedLine() ) ) ) then return end
+	if ( not self.PresetList:GetSelectedLine() or not IsValid( self.PresetList:GetLine( self.PresetList:GetSelectedLine() ) ) ) then return end
 
 	local Selected = self.PresetList:GetLine( self.PresetList:GetSelectedLine() ):GetValue( 1 ):Trim()
 	if ( Selected == "" ) then return end
 
 	local ToName = self.txtRename:GetValue():Trim()
-	if ( !ToName or ToName == "" ) then presets.BadNameAlert() return end
+	if ( not ToName or ToName == "" ) then presets.BadNameAlert() return end
 
 	if ( presets.Exists( self:GetType(), ToName ) and Selected ~= ToName ) then
 		presets.OverwritePresetPrompt( function()
@@ -243,10 +245,10 @@ end
 
 function PANEL:Add()
 
-	if ( !self:GetConVars() ) then return end
+	if ( not self:GetConVars() ) then return end
 
 	local ToName = self.txtName:GetValue():Trim()
-	if ( !ToName or ToName == "" ) then presets.BadNameAlert() return end
+	if ( not ToName or ToName == "" ) then presets.BadNameAlert() return end
 
 	if ( presets.Exists( self:GetType(), ToName ) ) then
 		presets.OverwritePresetPrompt( function()

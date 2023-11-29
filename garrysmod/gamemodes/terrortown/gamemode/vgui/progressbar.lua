@@ -39,9 +39,9 @@ function PANEL:SetValue( i )
 end
 
 function PANEL:UpdateText()
-   if ( !self.m_iMax ) then return end
-   if ( !self.m_iMin ) then return end
-   if ( !self.m_iValue ) then return end
+   if ( not self.m_iMax ) then return end
+   if ( not self.m_iMin ) then return end
+   if ( not self.m_iValue ) then return end
    
    local fDelta = 0;
    

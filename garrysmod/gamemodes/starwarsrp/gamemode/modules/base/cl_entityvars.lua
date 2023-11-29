@@ -92,7 +92,8 @@ timer.Create("DarkRPCheckifitcamethrough", 15, 0, function()
         if v:getDarkRPVar("rpname") then goto continue end
 
         RunConsoleCommand("_sendDarkRPvars")
-        return
+        do return end
+        ::continue::
     end
 
     timer.Remove("DarkRPCheckifitcamethrough")

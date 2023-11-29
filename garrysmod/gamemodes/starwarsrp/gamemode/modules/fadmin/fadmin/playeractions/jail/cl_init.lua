@@ -54,6 +54,8 @@ FAdmin.StartHooks["Jail"] = function()
                     button:SetImage2("fadmin/icons/disable")
                 end
             )
+
+            ::continue::
         end
 
         menu:Open()

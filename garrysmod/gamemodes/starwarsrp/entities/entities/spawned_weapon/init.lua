@@ -53,8 +53,8 @@ function ENT:Use(activator, caller)
     end
 
     local CanPickup = hook.Call("PlayerCanPickupWeapon", GAMEMODE, activator, weapon)
-    local Shouldntgoto continue = hook.Call("PlayerPickupDarkRPWeapon", nil, activator, self, weapon)
-    if not CanPickup or Shouldntgoto continue then
+    local Shouldntcontinue = hook.Call("PlayerPickupDarkRPWeapon", nil, activator, self, weapon)
+    if not CanPickup or Shouldntcontinue then
         weapon:Remove()
         return
     end

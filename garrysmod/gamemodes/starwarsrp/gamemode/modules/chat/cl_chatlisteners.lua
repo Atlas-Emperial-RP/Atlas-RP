@@ -68,6 +68,8 @@ local function drawChatReceivers()
         end
 
         draw.WordBox(2, x, y - (i - 1) * (fontHeight + 4), receivers[i]:Nick(), "DarkRPHUD1", Color(0, 0, 0, 160), color_white)
+
+        ::continue::
     end
 end
 
@@ -91,6 +93,8 @@ local function chatGetRecipients()
         elseif val == true then
             table.insert(receivers, ply)
         end
+
+        ::continue::
     end
 end
 

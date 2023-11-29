@@ -387,6 +387,8 @@ local function BuyAmmo(ply, args)
             if v.ammoType ~= args then goto continue end
 
             found = v
+
+            ::continue::
             break
         end
     end

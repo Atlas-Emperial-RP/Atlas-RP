@@ -74,7 +74,7 @@ function SWEP:PrimaryAttack()
 
 	-- Make a manhack
 	local ent = ents.Create( "npc_manhack" )
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	ent:SetPos( tr.HitPos + owner:GetAimVector() * -16 )
 	ent:SetAngles( tr.HitNormal:Angle() )
@@ -134,7 +134,7 @@ function SWEP:SecondaryAttack()
 
 	-- Make a manhack
 	local ent = ents.Create( "npc_rollermine" )
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	ent:SetPos( tr.HitPos + owner:GetAimVector() * -16 )
 	ent:SetAngles( tr.HitNormal:Angle() )
@@ -142,7 +142,7 @@ function SWEP:SecondaryAttack()
 
 	local weld = nil
 
-	if ( !tr.HitWorld ) then
+	if ( not tr.HitWorld ) then
 
 		-- Weld it to the object that we hit
 		weld = constraint.Weld( tr.Entity, ent, tr.PhysicsBone, 0, 0 )

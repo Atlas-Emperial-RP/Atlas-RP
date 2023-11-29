@@ -197,6 +197,8 @@ local function recalculateCanTouch(players, entities)
         if v:IsEFlagSet(EFL_SERVER_ONLY) then entities[k] = nil goto continue end
         if blockedEnts[v:GetClass()] then entities[k] = nil goto continue end
         if v:IsWeapon() and IsValid(v.Owner) then entities[k] = nil goto continue end
+
+        ::continue::
     end
 
     for _, ply in pairs(players) do
@@ -224,6 +226,8 @@ local function recalculateCanTouch(players, entities)
         ply.FPP_PrivateSettings_OwnProps = nil
         ply.FPP_PrivateSettings_WorldProps = nil
         ply.FPPIsAdmin = nil
+
+        ::continue::
     end
 end
 
@@ -317,9 +321,13 @@ local function handleConstraintCreation(ent)
             e.FPPConstraintReasons[ply] = reason
 
             table.insert(send, e)
+
+            ::continue::
         end
 
         FPP.plySendTouchData(ply, send)
+
+        ::continue::
     end
 
 end
@@ -349,6 +357,8 @@ local function onEntitiesCreated(ents)
             FPP.calculateCanTouch(ply, ent)
         end
         table.insert(send, ent)
+
+        ::continue::
     end
 
     for _, ply in ipairs(player.GetAll()) do
@@ -385,6 +395,8 @@ function FPP.RecalculateConstrainedEntities(players, entities)
 
         ent.FPPRestrictConstraint = ent.FPPRestrictConstraint or {}
         ent.FPPConstraintReasons = ent.FPPConstraintReasons or {}
+
+        ::continue::
     end
 
     -- constrained entities form a graph.
@@ -418,6 +430,8 @@ function FPP.RecalculateConstrainedEntities(players, entities)
                     gray[otherEnt] = true
                     BFSQueue[right] = otherEnt
                     right = right + 1
+
+                    ::continue::
                 end
 
                 black[value] = true
@@ -443,6 +457,8 @@ function FPP.RecalculateConstrainedEntities(players, entities)
             -- reset BFS information for next BFS round
             black = {}
             gray = {}
+
+            ::continue::
         end
     end
 end

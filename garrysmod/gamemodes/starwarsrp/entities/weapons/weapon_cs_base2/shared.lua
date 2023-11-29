@@ -495,6 +495,8 @@ if CLIENT then
             if vm:GetManipulateBoneAngles(bone) ~= v.angle then
                 vm:ManipulateBoneAngles(bone, v.angle)
             end
+
+            ::continue::
         end
     end
 

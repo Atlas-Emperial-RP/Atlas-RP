@@ -42,16 +42,18 @@ function PANEL:Init()
 				if ( str:StartWith( "#" ) ) then str = str:sub( 2 ) end
 				str = language.GetPhrase( str )
 
-				if ( !category_matched and !string.find( str:lower(), text, nil, true ) ) then
+				if ( not category_matched and not string.find( str:lower(), text, nil, true ) ) then
 					item:SetVisible( false )
 				else
 					item:SetVisible( true )
 					count = count + 1
 				end
 				item:InvalidateLayout()
+
+				::continue::
 			end
 
-			if ( count < 1 and !category_matched ) then
+			if ( count < 1 and not category_matched ) then
 				category:SetVisible( false )
 			else
 				category:SetVisible( true )
@@ -164,6 +166,8 @@ function PANEL:SetActiveToolText( str )
 				item:SetSelected( true )
 				return
 			end
+
+			::continue::
 		end
 
 	end

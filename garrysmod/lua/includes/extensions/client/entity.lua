@@ -2,7 +2,7 @@
 if ( SERVER ) then return end
 
 local meta = FindMetaTable( "Entity" )
-if ( !meta ) then return end
+if ( not meta ) then return end
 
 
 --

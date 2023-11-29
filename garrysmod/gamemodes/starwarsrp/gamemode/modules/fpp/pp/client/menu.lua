@@ -226,6 +226,8 @@ function FPP.AdminMenu(Panel)
         rm:SetText(v:Nick())
         rm:SetConsoleCommand("FPP_Cleanup", v:UserID())
         rm:SetDisabled(not canCleanup)
+
+        ::continue::
     end
     if not areplayers then
         local nope = general:Add(Label("<No players available>"))
@@ -387,7 +389,9 @@ function FPP.AdminMenu(Panel)
                     end
                 end
                 FPP.multirestricttoollist:AddLine(k)
-                return
+                do return end
+
+                ::continue::
             end
         end
         FPP.DtreeToolRestrict.Items = true
@@ -409,6 +413,8 @@ function FPP.AdminMenu(Panel)
                     node2.DoClick = nodeClick
                 end
             end
+
+            ::continue::
         end
     end
 
@@ -591,6 +597,8 @@ function FPP.AdminMenu(Panel)
                 RunConsoleCommand("FPP_SetPlayerGroup", b:UserID(), GroupList:GetLine(GroupList:GetSelectedLine()).Columns[1]:GetValue())
                 PressLoadFirst:SetText("List might be corrupted, reload is recommended")
             end)
+
+            ::continue::
         end
 
         menu:AddOption("other...", function()
@@ -795,6 +803,8 @@ RetrieveRestrictedTool = function(um)
                     end)
                 end
             end)
+
+            ::continue::
         end
         menu:Open()
     end
@@ -1032,6 +1042,8 @@ function FPP.BuddiesMenu(Panel)
             BuddiesPanel:AddPanel(add)
             AvailablePlayers = true
         end
+
+        ::continue::
     end
     if not AvailablePlayers then
         Panel:AddControl("Label", {Text = "<No players available>"})
@@ -1128,6 +1140,8 @@ function FPP.PrivateSettings(Panel)
     for _, v in ipairs(player.GetAll()) do
         if v == LocalPlayer() then goto continue end
         fallbackChoice:AddChoice(v:Nick(), v:UserID(), PrivateSettingsPanel.FallbackSelected == v:UserID())
+
+        ::continue::
     end
 
     fallbackChoice.OnSelect = function(_, _, nick, uid)

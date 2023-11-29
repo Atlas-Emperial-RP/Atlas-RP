@@ -7,6 +7,8 @@ local function HMThink()
     for _, v in ipairs(player.GetAll()) do
         if not v:Alive() then goto continue end
         v:hungerUpdate()
+
+        ::continue::
     end
 end
 timer.Create("HMThink", 10, 0, HMThink)
@@ -95,7 +97,9 @@ local function BuyFood(ply, args)
         DarkRP.placeEntity(SpawnedFood, tr, ply)
 
         hook.Call("playerBoughtFood", nil, ply, v, SpawnedFood, cost)
-        return ""
+
+        do return "" end
+        ::continue::
     end
     DarkRP.notify(ply, 1, 4, DarkRP.getPhrase("invalid_x", DarkRP.getPhrase("arguments"), ""))
     return ""

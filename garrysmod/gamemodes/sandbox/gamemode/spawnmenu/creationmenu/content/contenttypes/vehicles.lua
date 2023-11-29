@@ -9,7 +9,7 @@ hook.Add( "PopulateVehicles", "AddEntityContent", function( pnlContent, tree, no
 		for k, v in pairs( Vehicles ) do
 
 			local Category = v.Category or "Other"
-			if ( !isstring( Category ) ) then Category = tostring( Category ) end
+			if ( not isstring( Category ) ) then Category = tostring( Category ) end
 			Categorised[ Category ] = Categorised[ Category ] or {}
 
 			v.ClassName = k
@@ -44,7 +44,7 @@ hook.Add( "PopulateVehicles", "AddEntityContent", function( pnlContent, tree, no
 				spawnmenu.CreateContentIcon( ent.ScriptedEntityType or "entity", self.PropPanel, {
 					nicename	= ent.PrintName or ent.ClassName,
 					spawnname	= ent.ClassName,
-					material	= ent.IconOverride or "entities/" .. ent.ClassName .. ".png",
+					material	= (ent.IconOverride or "entities/") .. ent.ClassName .. ".png",
 					admin		= ent.AdminOnly
 				} )
 

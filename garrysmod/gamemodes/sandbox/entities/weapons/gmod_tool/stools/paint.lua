@@ -16,13 +16,13 @@ TOOL.Information = {
 
 local function PlaceDecal( ply, ent, data )
 
-	if ( !IsValid( ent ) and !ent:IsWorld() ) then return end
+	if ( not IsValid( ent ) and not ent:IsWorld() ) then return end
 	if ( CLIENT ) then return end
 
 	local bone
 	if ( data.bone and data.bone < ent:GetPhysicsObjectCount() ) then bone = ent:GetPhysicsObjectNum( data.bone ) end
-	if ( !IsValid( bone ) ) then bone = ent:GetPhysicsObject() end
-	if ( !IsValid( bone ) ) then bone = ent end
+	if ( not IsValid( bone ) ) then bone = ent:GetPhysicsObject() end
+	if ( not IsValid( bone ) ) then bone = ent end
 
 	util.Decal( data.decal, bone:LocalToWorld( data.Pos1 ), bone:LocalToWorld( data.Pos2 ), ply )
 
@@ -45,7 +45,7 @@ for i = 1, 32 do
 end
 
 function TOOL:Reload( trace )
-	if ( !IsValid( trace.Entity ) ) then return false end
+	if ( not IsValid( trace.Entity ) ) then return false end
 
 	trace.Entity:RemoveAllDecals()
 
@@ -75,8 +75,8 @@ function TOOL:RightClick( trace, bNoDelay )
 
 	local Bone
 	if ( trace.PhysicsBone and trace.PhysicsBone < trace.Entity:GetPhysicsObjectCount() ) then Bone = trace.Entity:GetPhysicsObjectNum( trace.PhysicsBone ) end
-	if ( !IsValid( Bone ) ) then Bone = trace.Entity:GetPhysicsObject() end
-	if ( !IsValid( Bone ) ) then Bone = trace.Entity end
+	if ( not IsValid( Bone ) ) then Bone = trace.Entity:GetPhysicsObject() end
+	if ( not IsValid( Bone ) ) then Bone = trace.Entity end
 
 	Pos1 = Bone:WorldToLocal( Pos1 )
 	Pos2 = Bone:WorldToLocal( Pos2 )
@@ -138,7 +138,7 @@ function TOOL.BuildCPanel( CPanel )
 	-- Remove duplicates.
 	local Options = {}
 	for id, str in ipairs( list.Get( "PaintMaterials" ) ) do
-		if ( !table.HasValue( Options, str ) ) then
+		if ( not table.HasValue( Options, str ) ) then
 			table.insert( Options, str )
 		end
 	end

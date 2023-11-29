@@ -34,6 +34,8 @@ hook.Add("PlayerNoClip", "FAdmin_noclip", function(ply)
     for k, v in pairs(hook.GetTable().PlayerNoClip) do
         if k == "FAdmin_noclip" then goto continue end
         if v(ply) == false then return false end
+
+        ::continue::
     end
 
     sendNoclipMessage(ply)

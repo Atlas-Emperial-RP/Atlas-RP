@@ -67,7 +67,7 @@ function PANEL:SetSearchType( stype, hookname )
 		self.ContentPanel = pnlContent
 	end )
 	hook.Add( "SearchUpdate", "SearchUpdate_" .. hookname, function()
-		if ( !g_SpawnMenu:IsVisible() ) then self.RebuildResults = true return end
+		if ( not g_SpawnMenu:IsVisible() ) then self.RebuildResults = true return end
 		self:RefreshResults( self.CurrentSearch )
 	end )
 
@@ -98,7 +98,7 @@ end
 
 function PANEL:RefreshResults( str )
 
-	if ( !str ) then -- User tried to search for something
+	if ( not str ) then -- User tried to search for something
 		self.CurrentSearch = self.Search:GetText()
 		str = self.CurrentSearch
 		self.OldResults = -1
@@ -109,12 +109,14 @@ function PANEL:RefreshResults( str )
 		end
 	end
 
-	if ( !str or str == "" ) then return end
+	if ( not str or str == "" ) then return end
 
 	local results = search.GetResults( str, self.m_strSearchType, GetConVarNumber( "sbox_search_maxresults" ) )
 	for id, result in ipairs( results ) do
-		if ( !IsValid( result.icon ) ) then ErrorNoHalt( "Failed to create icon for " .. ( result.words and isstring( result.words[ 1 ] ) and result.words[ 1 ] or result.text ).. "\n" ) goto continue end
+		if ( not IsValid( result.icon ) ) then ErrorNoHalt( "Failed to create icon for " .. ( result.words and isstring( result.words[ 1 ] ) and result.words[ 1 ] or result.text ).. "\n" ) goto continue end
 		result.icon:SetParent( vgui.GetWorldPanel() ) -- Don't parent the icons to search panel prematurely
+
+		::continue::
 	end
 
 	-- I know this is not perfect, but this is the best I am willing to do with how the search library was set up
@@ -143,7 +145,7 @@ end
 
 function PANEL:AddSearchResult( text, func, icon )
 
-	if ( !IsValid( icon ) ) then return end
+	if ( not IsValid( icon ) ) then return end
 
 	icon:SetParent( self.PropPanel )
 	self.PropPanel:Add( icon )

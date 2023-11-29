@@ -814,7 +814,9 @@ local function insertCategory(destination, tbl)
 
         destination[k] = tbl
         tbl.members = cat.members
-        return
+        do return end
+
+        ::continue::
     end
 
     table.insert(destination, tbl)
@@ -855,7 +857,9 @@ function DarkRP.addToCategory(item, kind, cat)
         if c.name ~= cat then goto continue end
 
         insertCategory(c.members, item)
-        return
+        do return end
+
+        ::continue::
     end
 
     DarkRP.errorNoHalt(string.format([[The category of "%s" ("%s") does not exist!]], item.name, cat), 2, {
@@ -875,8 +879,12 @@ function DarkRP.removeFromCategory(item, kind)
         for k, mem in pairs(v.members) do
             if mem ~= item then goto continue end
             table.remove(v.members, k)
+
+            ::continue::
             break
         end
+
+        ::continue::
         break
     end
 end

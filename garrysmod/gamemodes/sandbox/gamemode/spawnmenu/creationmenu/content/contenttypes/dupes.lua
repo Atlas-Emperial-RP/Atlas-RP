@@ -31,6 +31,7 @@ spawnmenu.AddCreationTab( "#spawnmenu.category.dupes", function()
 
 			table.insert( saves, entry )
 
+			::continue::
 		end
 
 		local results = {
@@ -82,7 +83,7 @@ hook.Add( "DupeSaveAvailable", "UpdateDupeSpawnmenuAvailable", function()
 
 	DupeInClipboard = true
 
-	if ( !IsValid( HTML ) ) then return end
+	if ( notIsValid( HTML ) ) then return end
 
 	HTML:Call( "SetDupeSaveState( true );" )
 
@@ -92,7 +93,7 @@ hook.Add( "DupeSaveUnavailable", "UpdateDupeSpawnmenuUnavailable", function()
 
 	DupeInClipboard = false
 
-	if ( !IsValid( HTML ) ) then return end
+	if ( notIsValid( HTML ) ) then return end
 
 	HTML:Call( "SetDupeSaveState( false );" )
 
@@ -100,7 +101,7 @@ end )
 
 hook.Add( "DupeSaved", "DuplicationSavedSpawnMenu", function()
 
-	if ( !IsValid( HTML ) ) then return end
+	if ( not IsValid( HTML ) ) then return end
 
 	HTML:Call( "ShowLocalDupes();" )
 
@@ -110,6 +111,6 @@ concommand.Add( "dupe_show", function()
 
 	g_SpawnMenu:OpenCreationMenuTab( "#spawnmenu.category.dupes" )
 
-	timer.Simple( 1.0, function() if ( !IsValid( HTML ) ) then return end HTML:Call( "ShowLocalDupes();" ) end )
+	timer.Simple( 1.0, function() if ( not IsValid( HTML ) ) then return end HTML:Call( "ShowLocalDupes();" ) end )
 
 end, nil, "", { FCVAR_DONTRECORD } )

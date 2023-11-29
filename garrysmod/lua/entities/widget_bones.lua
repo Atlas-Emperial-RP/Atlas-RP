@@ -11,7 +11,7 @@ local widget_bone = {
 	GetParentPos = function( self )
 
 		local p = self:GetParent()
-		if ( !IsValid( p ) ) then return end
+		if ( not IsValid( p ) ) then return end
 
 		local bp = p:GetBoneParent( self:GetParentAttachment() )
 		if ( bp <= 0 ) then return end
@@ -23,7 +23,7 @@ local widget_bone = {
 	OverlayRender = function( self )
 
 		local pp = self:GetParentPos()
-		if ( !pp ) then return end
+		if ( not pp ) then return end
 
 		local fwd = self:GetAngles():Forward()
 		local len = self:GetSize() / 2
@@ -56,10 +56,10 @@ local widget_bone = {
 	TestCollision = function( self, startpos, delta, isbox, extents )
 
 		if ( isbox ) then return end
-		if ( !widgets.Tracing ) then return end
+		if ( not widgets.Tracing ) then return end
 
 		local pp = self:GetParentPos()
-		if ( !pp ) then return end
+		if ( not pp ) then return end
 
 		local fwd = ( pp - self:GetPos() ):GetNormal()
 		local ang = fwd:Angle()
@@ -70,7 +70,7 @@ local widget_bone = {
 		local maxs = Vector( len, w * 0.5, w * 0.5 )
 
 		local hit, norm, fraction = util.IntersectRayWithOBB( startpos, delta, self:GetPos(), ang, mins, maxs )
-		if ( !hit ) then return end
+		if ( not hit ) then return end
 
 		--debugoverlay.BoxAngles( self:GetPos(), mins, maxs, ang, 0.1, Color( 0, 255, 0, 64 ) )
 
@@ -83,8 +83,8 @@ local widget_bone = {
 
 	Think = function( self )
 
-		if ( !SERVER ) then return end
-		if ( !IsValid( self:GetParent() ) ) then return end
+		if ( not SERVER ) then return end
+		if ( not IsValid( self:GetParent() ) ) then return end
 
 		--
 		-- Because the bone length changes (with the manipulator)
@@ -101,7 +101,7 @@ local widget_bone = {
 	CalcAbsolutePosition = function( self, v, a )
 
 		local ent = self:GetParent()
-		if ( !IsValid( ent ) ) then return end
+		if ( not IsValid( ent ) ) then return end
 
 		local bone = self:GetParentAttachment()
 		if ( bone <= 0 ) then return end
@@ -144,7 +144,7 @@ function ENT:Setup( ent )
 	for k = 0, ent:GetBoneCount() - 1 do
 
 		if ( ent:GetBoneParent( k ) <= 0 ) then goto continue end
-		if ( !ent:BoneHasFlag( k, BONE_USED_BY_VERTEX_LOD0 ) ) then goto continue end
+		if ( not ent:BoneHasFlag( k, BONE_USED_BY_VERTEX_LOD0 ) ) then goto continue end
 
 		local btn = ents.Create( "widget_bone" )
 		btn:FollowBone( ent, k )
@@ -159,6 +159,7 @@ function ENT:Setup( ent )
 
 		self:DeleteOnRemove( btn )
 
+		::continue::
 	end
 
 end

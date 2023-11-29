@@ -239,6 +239,8 @@ function migrateDB(callback)
                     if not teamcmd then goto continue end
 
                     MySQLite.queueQuery(string.format([[INSERT INTO darkrp_jobspawn(id, teamcmd) VALUES(%s, %s)]], row.id, MySQLite.SQLStr(teamcmd)))
+
+                    ::continue::
                 end
 
                 MySQLite.queueQuery([[REPLACE INTO darkrp_dbversion VALUES(20181014)]])
@@ -514,6 +516,8 @@ function setUpNonOwnableDoors()
                 end
                 e:setKeysTitle(row.title ~= "NULL" and row.title or nil)
             end
+
+            ::continue::
         end
     end)
 end
@@ -563,6 +567,8 @@ function setUpTeamOwnableDoors()
                 print(("can't find job %s for door %d, removing from database"):format(row.job, row.idx))
                 MySQLite.query(("DELETE FROM darkrp_doorjobs WHERE idx = %d AND map = %s AND job = %s;"):format(row.idx, MySQLite.SQLStr(map), MySQLite.SQLStr(row.job)))
             end
+
+            ::continue::
         end
     end)
 end
@@ -594,6 +600,8 @@ function setUpGroupDoors()
 
             if not RPExtraTeamDoorIDs[row.doorgroup] then goto continue end
             ent:setDoorGroup(row.doorgroup)
+
+            ::continue::
         end
     end)
 end

@@ -9,7 +9,7 @@ hook.Add( "PopulateNPCs", "AddNPCContent", function( pnlContent, tree, node )
 	for k, v in pairs( NPCList ) do
 
 		local Category = v.Category or "Other"
-		if ( !isstring( Category ) ) then Category = tostring( Category ) end
+		if ( not isstring( Category ) ) then Category = tostring( Category ) end
 
 		local Tab = Categories[ Category ] or {}
 		Tab[ k ] = v
@@ -39,7 +39,7 @@ hook.Add( "PopulateNPCs", "AddNPCContent", function( pnlContent, tree, node )
 				spawnmenu.CreateContentIcon( ent.ScriptedEntityType or "npc", self.PropPanel, {
 					nicename	= ent.Name or name,
 					spawnname	= name,
-					material	= ent.IconOverride or "entities/" .. name .. ".png",
+					material	= (ent.IconOverride or "entities/") .. name .. ".png",
 					weapon		= ent.Weapons,
 					admin		= ent.AdminOnly
 				} )

@@ -144,7 +144,7 @@ function PANEL:Init()
 
 				self:SetVisible( true )
 
-				if ( !IsValid( tr.Entity ) ) then return end
+				if ( not IsValid( tr.Entity ) ) then return end
 
 				self:SetFromEntity( tr.Entity )
 
@@ -356,13 +356,13 @@ function PANEL:UpdateEntity( ent )
 
 	ent:SetEyeTarget( self.ModelPanel:GetCamPos() )
 
-	if ( IsValid( self.TargetAnglePanel ) and !self.TargetAnglePanel:IsEditing() ) then
+	if ( IsValid( self.TargetAnglePanel ) and not self.TargetAnglePanel:IsEditing() ) then
 		self.TargetAnglePanel:SetText( tostring( ent:GetAngles() ) )
 	end
-	if ( IsValid( self.TargetCamAnglePanel ) and !self.TargetCamAnglePanel:IsEditing() ) then
+	if ( IsValid( self.TargetCamAnglePanel ) and not self.TargetCamAnglePanel:IsEditing() ) then
 		self.TargetCamAnglePanel:SetText( tostring( self.ModelPanel:GetLookAng() ) )
 	end
-	if ( IsValid( self.TargetCamPosPanel ) and !self.TargetCamPosPanel:IsEditing() ) then
+	if ( IsValid( self.TargetCamPosPanel ) and not self.TargetCamPosPanel:IsEditing() ) then
 		self.TargetCamPosPanel:SetText( tostring( self.ModelPanel:GetCamPos() ) )
 	end
 
@@ -379,7 +379,7 @@ function PANEL:UpdateEntity( ent )
 
 	end
 
-	if ( !self.AnimPause:GetToggle() ) then
+	if ( not self.AnimPause:GetToggle() ) then
 		ent:FrameAdvance( FrameTime() )
 	end
 
@@ -399,7 +399,7 @@ end
 
 function PANEL:SetIcon( icon )
 
-	if ( !IsValid( icon ) ) then return end
+	if ( not IsValid( icon ) ) then return end
 
 	local model = icon:GetModelName()
 	self:SetOrigin( icon )
@@ -419,7 +419,7 @@ function PANEL:SetIcon( icon )
 		self.LeftPanel:SetWide( 400 )
 	end
 
-	if ( !model or model == "" ) then
+	if ( not model or model == "" ) then
 
 		self:SetModel( "error.mdl" )
 		self.SpawnIcon:SetSpawnIcon( icon:GetIconName() )
@@ -437,7 +437,7 @@ end
 
 function PANEL:Refresh()
 
-	if ( !self:GetModel() ) then return end
+	if ( not self:GetModel() ) then return end
 
 	self.ModelPanel:SetModel( self:GetModel() )
 	self.ModelPanel.LayoutEntity = function() self:UpdateEntity( self.ModelPanel:GetEntity() )  end
@@ -495,7 +495,7 @@ function PANEL:FillAnimations( ent )
 
 			-- If we're not using a custom, change our spawnicon
 			-- so we save the new skin in the right place...
-			if ( !self:GetCustomIcon() ) then
+			if ( not self:GetCustomIcon() ) then
 				self.SpawnIcon:SetModel( self.SpawnIcon:GetModelName(), newVal, self.SpawnIcon:GetBodyGroup() )
 			end
 		end
@@ -525,13 +525,13 @@ function PANEL:FillAnimations( ent )
 
 			-- If we're not using a custom, change our spawnicon
 			-- so we save the new skin in the right place...
-			if ( !self:GetCustomIcon() ) then
+			if ( not self:GetCustomIcon() ) then
 				self.SpawnIcon:SetBodyGroup( s.BodyGroupID, newVal )
 				self.SpawnIcon:SetModel( self.SpawnIcon:GetModelName(), self.SpawnIcon:GetSkinID(), self.SpawnIcon:GetBodyGroup() )
 			end
 		end
 		newItems = newItems + 1
-
+		::continue::
 	end
 
 	if ( newItems > 0 ) then
@@ -546,7 +546,7 @@ end
 
 function PANEL:SetFromEntity( ent )
 
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	local bodyStr = ""
 	for i = 0, 8 do

@@ -19,12 +19,18 @@ local function LoadModules()
         for _, File in SortedPairs(file.Find(root .. folder .. "/sh_*.lua", "LUA"), true) do
             if File == "sh_interface.lua" then goto continue end
             include(root .. folder .. "/" .. File)
+            
+            ::continue::
         end
 
         for _, File in SortedPairs(file.Find(root .. folder .. "/cl_*.lua", "LUA"), true) do
             if File == "cl_interface.lua" then goto continue end
             include(root .. folder .. "/" .. File)
+
+            ::continue::
         end
+
+        ::continue::
     end
 end
 

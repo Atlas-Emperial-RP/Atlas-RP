@@ -209,6 +209,8 @@ local function playerSay(talker, message)
             DarkRP.talkToPerson(ply, talkerTeam, talkerName, col, message, talker)
             return
         end
+
+        ::continue::
     end
 end
 hook.Add("PlayerSay", "FSpectate", playerSay)

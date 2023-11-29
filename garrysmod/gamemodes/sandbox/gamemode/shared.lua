@@ -64,7 +64,7 @@ function GM:CanTool( ply, trace, mode, tool, button )
 			if ( mode == v ) then vFound = true end
 		end
 
-		if ( !vFound ) then return false end
+		if ( not vFound ) then return false end
 
 	end
 
@@ -185,10 +185,10 @@ end
 function GM:PlayerNoClip( pl, on )
 
 	-- Don't allow if player is in vehicle
-	if ( !IsValid( pl ) or pl:InVehicle() or !pl:Alive() ) then return false end
+	if ( not IsValid( pl ) or pl:InVehicle() or not pl:Alive() ) then return false end
 
 	-- Always allow to turn off noclip, and in single player
-	if ( !on or game.SinglePlayer() ) then return true end
+	if ( not on or game.SinglePlayer() ) then return true end
 
 	return GetConVarNumber( "sbox_noclip" ) > 0
 
@@ -203,7 +203,7 @@ function GM:CanProperty( pl, property, ent )
 	--
 	-- Always a chance some bastard got through
 	--
-	if ( !IsValid( ent ) ) then return false end
+	if ( not IsValid( ent ) ) then return false end
 
 
 	--
@@ -217,7 +217,7 @@ function GM:CanProperty( pl, property, ent )
 			if ( property == v ) then vFound = true end
 		end
 
-		if ( !vFound ) then return false end
+		if ( not vFound ) then return false end
 
 	end
 
@@ -292,7 +292,7 @@ end
 function GM:PlayerDriveAnimate( ply )
 
 	local driving = ply:GetDrivingEntity()
-	if ( !IsValid( driving ) ) then return end
+	if ( not IsValid( driving ) ) then return end
 
 	ply:SetPlaybackRate( 1 )
 	ply:ResetSequence( ply:SelectWeightedSequence( ACT_HL2MP_IDLE_MAGIC ) )

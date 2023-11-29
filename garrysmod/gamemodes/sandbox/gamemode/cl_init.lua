@@ -47,7 +47,7 @@ function GM:OnUndo( name, strCustomString )
 
 	local text = strCustomString
 
-	if ( !text ) then
+	if ( not text ) then
 		local strId = "#Undone_" .. name
 		text = language.GetPhrase( strId )
 		if ( strId == text ) then
@@ -135,17 +135,17 @@ end
 
 hook.Add( "PreDrawHalos", "AddPhysgunHalos", function()
 
-	if ( !PhysgunHalos or table.IsEmpty( PhysgunHalos ) ) then return end
+	if ( not PhysgunHalos or table.IsEmpty( PhysgunHalos ) ) then return end
 
 	for k, v in pairs( PhysgunHalos ) do
 
-		if ( !IsValid( k ) ) then goto continue end
+		if ( not IsValid( k ) ) then goto continue end
 
 		local size = math.random( 1, 2 )
 		local colr = k:GetWeaponColor() + VectorRand() * 0.3
 
 		halo.Add( PhysgunHalos, Color( colr.x * 255, colr.y * 255, colr.z * 255 ), size, size, 1, true, false )
-
+		::continue::
 	end
 
 	PhysgunHalos = {}

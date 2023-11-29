@@ -185,6 +185,8 @@ hook.Add("PlayerInitialSpawn", "SendLaws", function(ply)
         umsg.Start("DRP_AddLaw", ply)
             umsg.String(law)
         umsg.End()
+
+        ::continue::
     end
 end)
 

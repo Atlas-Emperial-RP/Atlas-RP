@@ -122,7 +122,7 @@ local function SandboxSettings( pnl )
 	local ConVarsLimits = {}
 	for id, str in pairs( cleanup.GetTable() ) do
 		local cvar = GetConVar( "sbox_max" .. str )
-		if ( !cvar ) then goto continue end
+		if ( not cvar ) then goto continue end
 
 		ConVarsDefault[ "sbox_max" .. str ] = cvar:GetDefault()
 		table.insert( ConVarsLimits, {
@@ -130,6 +130,8 @@ local function SandboxSettings( pnl )
 			default = cvar:GetDefault(),
 			label = language.GetPhrase( "max_" .. str )
 		} )
+
+		::continue::
 	end
 
 	pnl:AddControl( "ComboBox", { MenuButton = 1, Folder = "util_sandbox", Options = { [ "#preset.default" ] = ConVarsDefault }, CVars = table.GetKeys( ConVarsDefault ) } )

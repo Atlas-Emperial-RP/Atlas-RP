@@ -34,6 +34,8 @@ function PANEL:Rebuild()
 
         rHeight = goRight and rHeight + item:GetTall() + 2 or rHeight
         lHeight = goRight and lHeight or lHeight + item:GetTall() + 2
+
+        ::continue::
     end
 
     -- Make the category stretch if it's the only one

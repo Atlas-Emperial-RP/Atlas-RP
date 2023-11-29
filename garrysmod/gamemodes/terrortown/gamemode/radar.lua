@@ -50,6 +50,8 @@ local function RadarScan(ply, cmd, args)
             end
 
             table.insert(targets, {role=role, pos=pos})
+
+            ::continue::
          end
 
          net.Start("TTT_Radar")

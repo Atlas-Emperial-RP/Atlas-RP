@@ -36,6 +36,8 @@ function SWEP:DrawHUD()
             render.SetMaterial(lineMat)
             render.DrawBeam(v.original:GetPos(), v.ent:GetPos(), 2, 0.01, 20, haloCol)
         cam.End3D()
+
+        ::continue::
     end
 end
 
@@ -47,6 +49,8 @@ KeypadCheckerHalos = function()
 
         drawEnts[i] = v.ent
         i = i + 1
+
+        ::continue::
     end
 
     if table.IsEmpty(drawEnts) then return end

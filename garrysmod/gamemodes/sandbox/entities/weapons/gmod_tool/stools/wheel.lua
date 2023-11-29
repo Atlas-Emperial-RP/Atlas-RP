@@ -35,15 +35,15 @@ function TOOL:LeftClick( trace )
 	if ( trace.Entity and trace.Entity:IsPlayer() ) then return false end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+	if ( SERVER and not util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 	if ( CLIENT ) then return true end
 
-	if ( !self:GetSWEP():CheckLimit( "wheels" ) ) then return false end
+	if ( not self:GetSWEP():CheckLimit( "wheels" ) ) then return false end
 
 	-- Check the model's validity
 	local model = self:GetClientInfo( "model" )
-	if ( !util.IsValidModel( model ) or !util.IsValidProp( model ) or !IsValidWheelModel( model ) ) then return false end
+	if ( not util.IsValidModel( model ) or not util.IsValidProp( model ) or not IsValidWheelModel( model ) ) then return false end
 
 	-- Get client's CVars
 	local torque = self:GetClientNumber( "torque" )
@@ -62,7 +62,7 @@ function TOOL:LeftClick( trace )
 
 	-- Create the wheel
 	local wheelEnt = MakeWheel( ply, trace.HitPos, trace.HitNormal:Angle() + self.wheelAngle, model, fwd, bck, nil, nil, toggle, torque )
-	if ( !IsValid( wheelEnt ) ) then return false end
+	if ( not IsValid( wheelEnt ) ) then return false end
 
 	-- Position
 	local CurPos = wheelEnt:GetPos()
@@ -153,11 +153,11 @@ if ( SERVER ) then
 	-- For duplicator, creates the wheel.
 	function MakeWheel( pl, pos, ang, model, key_f, key_r, axis, direction, toggle, BaseTorque, Data )
 
-		if ( IsValid( pl ) and !pl:CheckLimit( "wheels" ) ) then return false end
-		if ( !IsValidWheelModel( model ) ) then return false end
+		if ( IsValid( pl ) and not pl:CheckLimit( "wheels" ) ) then return false end
+		if ( not IsValidWheelModel( model ) ) then return false end
 
 		local wheel = ents.Create( "gmod_wheel" )
-		if ( !IsValid( wheel ) ) then return end
+		if ( not IsValid( wheel ) ) then return end
 
 		wheel:SetModel( model )
 		wheel:SetPos( pos )
@@ -205,10 +205,10 @@ end
 
 function TOOL:UpdateGhostWheel( ent, ply )
 
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	local trace = ply:GetEyeTrace()
-	if ( !trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:IsPlayer() /*or trace.Entity:GetClass() == "gmod_wheel"*/ ) ) then
+	if ( not trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:IsPlayer() ) ) then
 
 		ent:SetNoDraw( true )
 		return
@@ -231,9 +231,9 @@ end
 function TOOL:Think()
 
 	local mdl = self:GetClientInfo( "model" )
-	if ( !IsValidWheelModel( mdl ) ) then self:ReleaseGhostEntity() return end
+	if ( not IsValidWheelModel( mdl ) ) then self:ReleaseGhostEntity() return end
 
-	if ( !IsValid( self.GhostEntity ) or self.GhostEntity:GetModel() ~= mdl ) then
+	if ( not IsValid( self.GhostEntity ) or self.GhostEntity:GetModel() ~= mdl ) then
 		self.wheelAngle = Angle( math.NormalizeAngle( self:GetClientNumber( "rx" ) ), math.NormalizeAngle( self:GetClientNumber( "ry" ) ), math.NormalizeAngle( self:GetClientNumber( "rz" ) ) )
 		self:MakeGhostEntity( mdl, vector_origin, angle_zero )
 	end
@@ -263,7 +263,7 @@ function TOOL.BuildCPanel( CPanel )
 
 end
 
-// Don't copy paste all of those ridiculous angles, just use one variable for all of them
+-- Don't copy paste all of those ridiculous angles, just use one variable for all of them
 local zero = { wheel_rx = 0, wheel_ry = 0, wheel_rz = 0 }
 local one = { wheel_rx = 90, wheel_ry = 0, wheel_rz = 0 }
 local two = { wheel_rx = 90, wheel_ry = 0, wheel_rz = 90 }

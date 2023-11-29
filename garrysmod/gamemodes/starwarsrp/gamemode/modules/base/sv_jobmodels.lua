@@ -12,6 +12,8 @@ net.Receive("DarkRP_preferredjobmodels", function(len, ply)
         if net.ReadBit() == 0 then goto continue end
 
         preferredJobModels[ply][i] = net.ReadString()
+
+        ::continue::
     end
 
     if not received[ply] and preferredJobModels[ply][ply:Team()] then

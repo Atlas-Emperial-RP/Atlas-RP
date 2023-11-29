@@ -297,7 +297,7 @@ end
 
 -- Allow for suppression of the attack command
 function WSWITCH:PreventAttack()
-   return self.Show and !self.cv.fast:GetBool()
+   return self.Show and not self.cv.fast:GetBool()
 end
 
 function WSWITCH:Think()

@@ -161,6 +161,8 @@ function finish()
         if not stubs[name] then ErrorNoHalt("Calling non-existing stub \"" .. name .. "\"") goto continue end
 
         stubs[name].metatable[name](unpack(tbl.args))
+
+        ::continue::
     end
 
     delayedCalls = {}

@@ -143,6 +143,8 @@ function SWEP:GetStrippableWeapons(ent, callback)
             if (GAMEMODE.Config.weaponCheckerHideNoLicense and GAMEMODE.NoLicense[class]) or GAMEMODE.Config.noStripWeapons[class] then goto continue end
 
             callback(v)
+
+            ::continue::
         end
     end)
 end
@@ -244,6 +246,7 @@ function SWEP:Reload()
             wep:SetClip1(v.clip1)
             wep:SetClip2(v.clip2)
 
+            ::continue::
         end
         DarkRP.notify(Owner, 2, 4, DarkRP.getPhrase("returned_persons_weapons", ent:Nick()))
 
@@ -295,6 +298,8 @@ function SWEP:Succeed()
             if ent.ConfiscatedWeapons[k] then goto continue end
 
             ent.ConfiscatedWeapons[k] = v
+
+            ::continue::
         end
     end
 

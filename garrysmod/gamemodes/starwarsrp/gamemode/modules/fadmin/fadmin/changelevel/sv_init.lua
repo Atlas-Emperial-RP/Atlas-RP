@@ -66,7 +66,7 @@ hook.Add("PlayerInitialSpawn", "FAdmin_ChangelevelInfo", function(ply)
 
         for _, ignore in ipairs(ignorePatterns) do
             if string.find(name, ignore) then
-                goto mapgoto continue
+                goto mapcontinue
             end
         end
 
@@ -94,7 +94,9 @@ hook.Add("PlayerInitialSpawn", "FAdmin_ChangelevelInfo", function(ply)
         end
 
         table.insert(mapList[mapCategory], name)
-        ::mapgoto continue::
+
+        ::continue::
+        ::mapcontinue::
     end
 
     local gamemodeList = engine.GetGamemodes()

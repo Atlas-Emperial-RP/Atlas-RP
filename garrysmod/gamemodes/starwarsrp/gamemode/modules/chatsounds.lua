@@ -313,6 +313,8 @@ local function CheckChat(ply, text)
             longestMatch = k
             longestMatchLength = length
         end
+
+        ::continue::
     end
 
     if not longestMatch then return end

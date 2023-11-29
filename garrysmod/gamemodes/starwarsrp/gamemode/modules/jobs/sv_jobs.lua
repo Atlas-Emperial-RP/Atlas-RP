@@ -117,12 +117,16 @@ function meta:changeTeam(t, force, suppressNotification, ignoreMaxMembers)
             for _, e in ipairs(ents.FindByClass(v.ent)) do
                 if e.SID == self.SID then e:Remove() end
             end
+
+            ::continue::
         end
 
         if not GAMEMODE.Config.preventClassItemRemoval["spawned_shipment"] then
             for _, v in ipairs(ents.FindByClass("spawned_shipment")) do
                 if v.allowed and istable(v.allowed) and table.HasValue(v.allowed, t) then goto continue end
                 if v.SID == self.SID then v:Remove() end
+
+                ::continue::
             end
         end
     end

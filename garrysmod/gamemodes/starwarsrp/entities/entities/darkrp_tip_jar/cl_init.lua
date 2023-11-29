@@ -102,6 +102,8 @@ function ENT:DrawAnims(sysTime)
         anim.progress = (sysTime - anim.start) * self.donateAnimSpeed
 
         anim = anim.nextDonateAnimation
+        
+        ::continue::
     end
 
     if not self.firstDonateAnimation then

@@ -47,6 +47,8 @@ function FAdmin.FindPlayer(info)
                 found[v] = true
             end
         end
+
+        ::continue::
     end
 
     local players = {}

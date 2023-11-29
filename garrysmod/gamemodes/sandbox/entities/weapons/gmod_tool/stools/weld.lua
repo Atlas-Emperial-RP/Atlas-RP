@@ -20,7 +20,7 @@ function TOOL:LeftClick( trace )
 	if ( IsValid( trace.Entity ) and trace.Entity:IsPlayer() ) then return false end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+	if ( SERVER and not util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 	local iNum = self:NumObjects()
 	local Phys = trace.Entity:GetPhysicsObjectNum( trace.PhysicsBone )
@@ -85,19 +85,19 @@ function TOOL:RightClick( trace )
 	if ( iNum < 2 ) then
 
 		-- If there's no physics object then we can't constraint it!
-		if ( SERVER and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+		if ( SERVER and not util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 		-- Don't weld players, or to players
 		if ( trace.Entity:IsPlayer() ) then return false end
 
 		-- Don't do anything with stuff without any physics..
-		if ( SERVER and !IsValid( Phys ) ) then return false end
+		if ( SERVER and not IsValid( Phys ) ) then return false end
 
 	end
 
 	if ( iNum == 0 ) then
 
-		if ( !IsValid( trace.Entity ) ) then return false end
+		if ( not IsValid( trace.Entity ) ) then return false end
 		if ( trace.Entity:GetClass() == "prop_vehicle_jeep" ) then return false end
 
 	end
@@ -179,7 +179,7 @@ function TOOL:RightClick( trace )
 		local Phys1 = self:GetPhys( 1 )
 
 		-- The entity became invalid half way through
-		if ( !IsValid( Ent1 ) ) then
+		if ( not IsValid( Ent1 ) ) then
 
 			self:ClearObjects()
 			return false
@@ -214,7 +214,7 @@ function TOOL:Think()
 
 	if ( self:GetOperation() == 1 ) then
 
-		if ( SERVER and !IsValid( self:GetEnt( 1 ) ) ) then
+		if ( SERVER and not IsValid( self:GetEnt( 1 ) ) ) then
 
 			self:ClearObjects()
 			return
@@ -253,7 +253,7 @@ end
 
 function TOOL:Reload( trace )
 
-	if ( !IsValid( trace.Entity ) or trace.Entity:IsPlayer() ) then return false end
+	if ( not IsValid( trace.Entity ) or trace.Entity:IsPlayer() ) then return false end
 	if ( CLIENT ) then return true end
 
 	self:ClearObjects()

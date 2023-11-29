@@ -80,7 +80,7 @@ function ENT:PressedThinkInternal( ply, mv )
 	--
 	-- TODO: We should find out why this happens instead of just preventing it!
 	--
-	if ( !istable( ply.WidgetMove ) ) then
+	if ( not istable( ply.WidgetMove ) ) then
 		ply.WidgetMove = {}
 		ply.WidgetMove.EyePos = ply:EyePos()
 		ply.WidgetMove.EyeVec = ply:GetAimVector()
@@ -209,7 +209,7 @@ end
 function ENT:TestCollision( startpos, delta, isbox, extents )
 
 	if ( isbox ) then return end
-	if ( !widgets.Tracing ) then return end
+	if ( not widgets.Tracing ) then return end
 
 	-- TODO. Actually trace against our cube!
 

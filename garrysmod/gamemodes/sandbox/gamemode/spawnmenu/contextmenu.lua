@@ -115,8 +115,8 @@ end
 function PANEL:RestoreControlPanel()
 
 	-- Restore the active panel
-	if ( !spawnmenu.ActiveControlPanel() ) then return end
-	if ( !self.OldParent ) then return end
+	if ( not spawnmenu.ActiveControlPanel() ) then return end
+	if ( not self.OldParent ) then return end
 
 	spawnmenu.ActiveControlPanel():SetParent( self.OldParent )
 	spawnmenu.ActiveControlPanel():SetPos( self.OldPosX, self.OldPosY )
@@ -134,7 +134,7 @@ vgui.Register( "ContextMenu", PANEL, "EditablePanel" )
 
 function CreateContextMenu()
 
-	if ( !hook.Run( "ContextMenuEnabled" ) ) then return end
+	if ( not hook.Run( "ContextMenuEnabled" ) ) then return end
 
 	if ( IsValid( g_ContextMenu ) ) then
 		g_ContextMenu:Remove()
@@ -143,7 +143,7 @@ function CreateContextMenu()
 
 	g_ContextMenu = vgui.Create( "ContextMenu" )
 
-	if ( !IsValid( g_ContextMenu ) ) then return end
+	if ( not IsValid( g_ContextMenu ) ) then return end
 
 	g_ContextMenu:SetVisible( false )
 
@@ -222,9 +222,9 @@ end
 function GM:OnContextMenuOpen()
 
 	-- Let the gamemode decide whether we should open or not..
-	if ( !hook.Call( "ContextMenuOpen", self ) ) then return end
+	if ( not hook.Call( "ContextMenuOpen", self ) ) then return end
 
-	if ( IsValid( g_ContextMenu ) and !g_ContextMenu:IsVisible() ) then
+	if ( IsValid( g_ContextMenu ) and not g_ContextMenu:IsVisible() ) then
 		g_ContextMenu:Open()
 		menubar.ParentTo( g_ContextMenu )
 	end

@@ -6,7 +6,7 @@ local GravityDuplicator
 if ( SERVER ) then
 	function GravityDuplicator( ply, ent, data )
 
-		if ( !data || !data.enabled ) then
+		if ( not data or not data.enabled ) then
 
 			duplicator.ClearEntityModifier( ent, "gravity_property" )
 			return
@@ -30,8 +30,8 @@ properties.Add( "gravity", {
 
 	Filter = function( self, ent, ply )
 
-		if ( !IsValid( ent ) ) then return false end
-		if ( !gamemode.Call( "CanProperty", ply, "gravity", ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
+		if ( not gamemode.Call( "CanProperty", ply, "gravity", ent ) ) then return false end
 
 		if ( ent:GetClass() == "prop_physics" ) then return true end
 		if ( ent:GetClass() == "prop_ragdoll" ) then return true end
@@ -57,8 +57,8 @@ properties.Add( "gravity", {
 	Receive = function( self, length, ply )
 
 		local ent = net.ReadEntity()
-		if ( !properties.CanBeTargeted( ent, ply ) ) then return end
-		if ( !self:Filter( ent, ply ) ) then return end
+		if ( not properties.CanBeTargeted( ent, ply ) ) then return end
+		if ( not self:Filter( ent, ply ) ) then return end
 
 		local bones = ent:GetPhysicsObjectCount()
 		local b = ent:GetNWBool( "gravity_disabled" )

@@ -118,13 +118,13 @@ end
 function PANEL:SetTriggerSpawnlistChange( bTrigger )
 
 	self.m_bTriggerSpawnlistChange = bTrigger
-	self.IconList:SetReadOnly( !bTrigger )
+	self.IconList:SetReadOnly( not bTrigger )
 
 end
 
 function PANEL:OnModified()
 
-	if ( !self:GetTriggerSpawnlistChange() ) then return end
+	if ( not self:GetTriggerSpawnlistChange() ) then return end
 
 	hook.Run( "SpawnlistContentChanged" )
 
@@ -188,20 +188,24 @@ hook.Add( "SpawnlistOpenGenericMenu", "DragAndDropSelectionMenu", function( canv
 		icon:InternalAddResizeMenu( menu, function( w, h )
 
 			for id, pnl in pairs( selected ) do
-				if ( !pnl.InternalAddResizeMenu ) then goto continue end
+				if ( not pnl.InternalAddResizeMenu ) then goto continue end
 				pnl:SetSize( w, h )
 				pnl:InvalidateLayout( true )
 				pnl:GetParent():OnModified()
 				pnl:GetParent():Layout()
 				pnl:SetModel( pnl:GetModelName(), pnl:GetSkinID(), pnl:GetBodyGroup() )
+
+				::continue::
 			end
 
 		end, language.GetPhrase( "spawnmenu.menu.resizex" ):format( spawnicons ) )
 
 		menu:AddOption( language.GetPhrase( "spawnmenu.menu.rerenderx" ):format( spawnicons ), function()
 			for id, pnl in pairs( selected ) do
-				if ( !pnl.RebuildSpawnIcon ) then goto continue end
+				if ( not pnl.RebuildSpawnIcon ) then goto continue end
 				pnl:RebuildSpawnIcon()
+
+				::continue::
 			end
 		end ):SetIcon( "icon16/picture.png" )
 	end

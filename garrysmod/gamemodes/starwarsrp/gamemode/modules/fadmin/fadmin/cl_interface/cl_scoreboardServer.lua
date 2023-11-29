@@ -19,6 +19,8 @@ local function MakeServerOptions()
     for k, v in pairs(FAdmin.ScoreBoard.Server.Controls.ServerActions:GetChildren()) do
         if k == 1 then goto continue end
         v:Remove()
+
+        ::continue::
     end
 
     FAdmin.ScoreBoard.Server.Controls.PlayerActionsCat = FAdmin.ScoreBoard.Server.Controls.PlayerActionsCat or vgui.Create("FAdminPlayerCatagory")
@@ -36,6 +38,8 @@ local function MakeServerOptions()
     for k, v in pairs(FAdmin.ScoreBoard.Server.Controls.PlayerActions:GetChildren()) do
         if k == 1 then goto continue end
         v:Remove()
+
+        ::continue::
     end
 
     FAdmin.ScoreBoard.Server.Controls.ServerSettingsCat = FAdmin.ScoreBoard.Server.Controls.ServerSettingsCat or vgui.Create("FAdminPlayerCatagory")
@@ -53,6 +57,8 @@ local function MakeServerOptions()
     for k, v in pairs(FAdmin.ScoreBoard.Server.Controls.ServerSettings:GetChildren()) do
         if k == 1 then goto continue end
         v:Remove()
+
+        ::continue::
     end
 
     for k, v in ipairs(FAdmin.ScoreBoard.Server.ActionButtons) do

@@ -86,6 +86,8 @@ local function unragdoll(target)
             if not IsValid(v) then goto continue end
             if v.SetCanRemove then v:SetCanRemove(true) end
             v:Remove()
+
+            ::continue::
         end
     end
     target.FAdminRagdoll = nil
@@ -276,6 +278,8 @@ local function Ragdoll(ply, cmd, args)
         if RagdollType ~= "unragdoll" and string.lower(cmd) ~= "unragdoll" then
             target:FAdmin_SetGlobal("fadmin_ragdolled", true)
         end
+
+        ::continue::
     end
     if RagdollType == "unragdoll" or string.lower(cmd) == "unragdoll" then
         FAdmin.Messages.FireNotification("unragdoll", ply, targets)

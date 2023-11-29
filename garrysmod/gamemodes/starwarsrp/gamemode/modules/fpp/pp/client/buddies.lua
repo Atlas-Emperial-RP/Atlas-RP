@@ -88,6 +88,8 @@ function FPP.NewBuddy(um)
         sql.Query("UPDATE FPP_Buddies SET name = " .. sql.SQLStr(ply:Nick()) .. " WHERE steamid = " .. sql.SQLStr(SteamID) .. ";")
         FPP.Buddies[SteamID] = FPP.Buddies[SteamID] or {}
         FPP.Buddies[SteamID].name = ply:Nick()
+
+        ::continue::
     end
 end
 usermessage.Hook("FPP_CheckBuddy", FPP.NewBuddy)

@@ -9,6 +9,8 @@ local function updateAgenda(ply, agenda, text)
 
         v:setSelfDarkRPVar("agenda", agenda.text)
         DarkRP.notify(v, 2, 4, phrase)
+
+        ::continue::
     end
 end
 

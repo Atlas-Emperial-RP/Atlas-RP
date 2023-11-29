@@ -53,6 +53,8 @@ for _, File in pairs(configFiles) do
 
     if SERVER then AddCSLuaFile(File) end
     doInclude(File)
+
+    ::continue::
 end
 if SERVER and file.Exists("darkrp_config/mysql.lua", "LUA") then doInclude("darkrp_config/mysql.lua") end
 
@@ -85,12 +87,16 @@ local function loadModules()
 
             if File == "sh_interface.lua" then goto continue end
             doInclude(fol .. folder .. "/" .. File)
+
+            ::continue::
         end
 
         if SERVER then
             for _, File in SortedPairs(file.Find(fol .. folder .. "/sv_*.lua", "LUA"), true) do
                 if File == "sv_interface.lua" then goto continue end
                 doInclude(fol .. folder .. "/" .. File)
+
+                ::continue::
             end
         end
 
@@ -102,7 +108,11 @@ local function loadModules()
             else
                 doInclude(fol .. folder .. "/" .. File)
             end
+
+            ::continue::
         end
+
+        ::continue::
     end
 end
 
@@ -136,6 +146,8 @@ local function loadCustomDarkRPItems()
 
         if SERVER then AddCSLuaFile(File) end
         doInclude(File)
+
+        ::continue::
     end
 end
 

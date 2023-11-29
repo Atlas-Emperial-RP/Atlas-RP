@@ -167,6 +167,8 @@ function PANEL:onSelected(item)
         v:SetSelected(false)
         v.model:SetSize(60, 60)
         v.model:SetPos(0, 0)
+
+        ::continue::
     end
 end
 
@@ -359,6 +361,7 @@ function PANEL:Refresh()
             if v:GetDisabled() then goto continue end
             job = v.DarkRPItem
             goto break2
+            ::continue::
         end
     end
     ::break2::

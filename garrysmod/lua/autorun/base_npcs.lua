@@ -479,7 +479,7 @@ if ( IsMounted( "ep2" ) ) then
 end
 
 
-if ( IsMounted( "hl1" ) || IsMounted( "hl1mp" ) ) then
+if ( IsMounted( "hl1" ) or IsMounted( "hl1mp" ) ) then
 
 	Category = "Half-Life: Source"
 

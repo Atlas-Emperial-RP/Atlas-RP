@@ -8,11 +8,11 @@ properties.Add( "skin", {
 
 	Filter = function( self, ent, ply )
 
-		if ( !IsValid( ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
 		if ( ent:IsPlayer() ) then return false end
-		if ( !gamemode.Call( "CanProperty", ply, "skin", ent ) ) then return false end
+		if ( not gamemode.Call( "CanProperty", ply, "skin", ent ) ) then return false end
 		if ( IsValid( ent.AttachedEntity ) ) then ent = ent.AttachedEntity end  -- If our ent has an attached entity, we want to modify its skin instead
-		if ( !ent:SkinCount() ) then return false end
+		if ( not ent:SkinCount() ) then return false end
 
 		return ent:SkinCount() > 1
 
@@ -63,8 +63,8 @@ properties.Add( "skin", {
 		local ent = net.ReadEntity()
 		local skinid = net.ReadUInt( 8 )
 
-		if ( !properties.CanBeTargeted( ent, ply ) ) then return end
-		if ( !self:Filter( ent, ply ) ) then return end
+		if ( not properties.CanBeTargeted( ent, ply ) ) then return end
+		if ( not self:Filter( ent, ply ) ) then return end
 
 		ent = IsValid( ent.AttachedEntity ) and ent.AttachedEntity or ent
 		ent:SetSkin( skinid )

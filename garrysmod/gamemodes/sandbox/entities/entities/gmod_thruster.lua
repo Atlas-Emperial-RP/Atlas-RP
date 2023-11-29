@@ -91,8 +91,8 @@ if ( CLIENT ) then
 
 			t.effectDraw( self )
 
-			break
 			::continue::
+			break
 		end
 
 	end

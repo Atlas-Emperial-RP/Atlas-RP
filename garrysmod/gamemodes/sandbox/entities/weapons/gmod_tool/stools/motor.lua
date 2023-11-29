@@ -22,14 +22,14 @@ function TOOL:LeftClick( trace )
 	if ( IsValid( trace.Entity ) and trace.Entity:IsPlayer() ) then return end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+	if ( SERVER and not util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 	local iNum = self:NumObjects()
 
 	local Phys = trace.Entity:GetPhysicsObjectNum( trace.PhysicsBone )
 
 	-- Don't allow us to choose the world as the first object
-	if ( iNum == 0 and !IsValid( trace.Entity ) ) then return end
+	if ( iNum == 0 and not IsValid( trace.Entity ) ) then return end
 
 	-- Don't allow us to choose the same object
 	if ( iNum == 1 and trace.Entity == self:GetEnt( 1 ) ) then return end
@@ -111,7 +111,7 @@ end
 
 function TOOL:Reload( trace )
 
-	if ( !IsValid( trace.Entity ) or trace.Entity:IsPlayer() ) then return false end
+	if ( not IsValid( trace.Entity ) or trace.Entity:IsPlayer() ) then return false end
 	if ( CLIENT ) then return true end
 
 	return constraint.RemoveConstraints( trace.Entity, "Motor" )

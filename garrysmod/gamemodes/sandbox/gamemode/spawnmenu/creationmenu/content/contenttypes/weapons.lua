@@ -8,14 +8,15 @@ hook.Add( "PopulateWeapons", "AddWeaponContent", function( pnlContent, tree, nod
 	-- Build into categories
 	for k, weapon in pairs( Weapons ) do
 
-		if ( !weapon.Spawnable ) then goto continue end
+		if ( not weapon.Spawnable ) then goto continue end
 
 		local Category = weapon.Category or "Other2"
-		if ( !isstring( Category ) ) then Category = tostring( Category ) end
+		if ( not isstring( Category ) ) then Category = tostring( Category ) end
 
 		Categorised[ Category ] = Categorised[ Category ] or {}
 		table.insert( Categorised[ Category ], weapon )
 
+		::continue::
 	end
 
 	Weapons = nil
@@ -42,7 +43,7 @@ hook.Add( "PopulateWeapons", "AddWeaponContent", function( pnlContent, tree, nod
 				spawnmenu.CreateContentIcon( ent.ScriptedEntityType or "weapon", self.PropPanel, {
 					nicename	= ent.PrintName or ent.ClassName,
 					spawnname	= ent.ClassName,
-					material	= ent.IconOverride or "entities/" .. ent.ClassName .. ".png",
+					material	= (ent.IconOverride or "entities/") .. ent.ClassName .. ".png",
 					admin		= ent.AdminOnly
 				} )
 

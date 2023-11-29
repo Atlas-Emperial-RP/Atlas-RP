@@ -23,6 +23,8 @@ local function Freeze(ply, cmd, args)
                 target:UnLock()
             end)
         end
+
+        ::continue::
     end
     FAdmin.Messages.FireNotification("freeze", ply, targets, {time})
 

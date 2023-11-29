@@ -160,7 +160,7 @@ function GM:CanEditVariable( ent, ply, key, val, editor )
 
 	-- Only allow admins to edit admin only variables!
 	local isAdmin = ply:IsAdmin() or game.SinglePlayer()
-	if ( editor.AdminOnly and !isAdmin ) then
+	if ( editor.AdminOnly and not isAdmin ) then
 		return false
 	end
 

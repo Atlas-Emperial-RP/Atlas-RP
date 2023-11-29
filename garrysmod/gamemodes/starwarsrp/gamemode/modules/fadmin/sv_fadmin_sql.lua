@@ -65,12 +65,16 @@ hook.Add("FAdmin_RetrieveBans", "getMySQLBans", function()
                 adminname = v.AdminName,
                 adminsteam = v.Admin_steam
             }
+
+            ::continue::
         end
 
         for _, v in ipairs(player.GetAll()) do
             if not FAdmin.BANS[string.upper(v:SteamID())] then goto continue end
 
             v:Kick("FAdmin ban evasion")
+
+            ::continue::
         end
     end)
 end)

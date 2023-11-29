@@ -136,6 +136,8 @@ function PANEL:AddPlayerRows()
             line:SetSelected(true)
             self:SetSelected(line)
         end
+
+        ::continue::
     end
 end
 

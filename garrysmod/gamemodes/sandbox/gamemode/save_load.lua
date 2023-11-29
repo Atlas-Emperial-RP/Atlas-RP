@@ -11,13 +11,13 @@ if ( SERVER ) then
 	--
 	concommand.Add( "gm_save", function( ply, cmd, args )
 
-		if ( !IsValid( ply ) ) then return end
+		if ( not IsValid( ply ) ) then return end
 
 		-- gmsave.SaveMap is very expensive for big maps/lots of entities. Do not allow random ppl to save the map in multiplayer!
 		-- TODO: Actually do proper hooks for this
-		if ( !game.SinglePlayer() and !ply:IsAdmin() ) then return end
+		if ( not game.SinglePlayer() and not ply:IsAdmin() ) then return end
 
-		if ( ply.m_NextSave and ply.m_NextSave > CurTime() and !game.SinglePlayer() ) then
+		if ( ply.m_NextSave and ply.m_NextSave > CurTime() and not game.SinglePlayer() ) then
 			ServerLog( tostring( ply ) ..  " tried to save too quickly!\n" )
 			return
 		end
@@ -27,10 +27,10 @@ if ( SERVER ) then
 		ServerLog( tostring( ply ) .. " requested a save.\n" )
 
 		local save = gmsave.SaveMap( ply )
-		if ( !save ) then return end
+		if ( not save ) then return end
 
 		local compressed_save = util.Compress( save )
-		if ( !compressed_save ) then compressed_save = save end
+		if ( not compressed_save ) then compressed_save = save end
 
 		local len = string.len( compressed_save )
 		local send_size = 60000
@@ -61,10 +61,10 @@ if ( SERVER ) then
 	local function LoadGModSave( savedata )
 
 		-- If we loaded the save from main menu and the player entity is not ready yet
-		if ( game.SinglePlayer() and !IsValid( Entity( 1 ) ) ) then
+		if ( game.SinglePlayer() and not IsValid( Entity( 1 ) ) ) then
 
 			timer.Create( "LoadGModSave_WaitForPlayer", 0.1, 0, function()
-				if ( !IsValid( Entity( 1 ) ) ) then return end
+				if ( not IsValid( Entity( 1 ) ) ) then return end
 
 				timer.Remove( "LoadGModSave_WaitForPlayer" )
 				LoadGModSave( savedata )
@@ -76,7 +76,7 @@ if ( SERVER ) then
 
 		local ply = nil
 		if ( IsValid( Entity( 1 ) ) and ( game.SinglePlayer() or Entity( 1 ):IsListenServerHost() ) ) then ply = Entity( 1 ) end
-		if ( !IsValid( ply ) and #player.GetHumans() == 1 ) then ply = player.GetHumans()[ 1 ] end
+		if ( not IsValid( ply ) and #player.GetHumans() == 1 ) then ply = player.GetHumans()[ 1 ] end
 
 		gmsave.LoadMap( savedata, ply )
 
@@ -86,7 +86,7 @@ if ( SERVER ) then
 
 		savedata = util.Decompress( savedata )
 
-		if ( !isstring( savedata ) ) then
+		if ( not isstring( savedata ) ) then
 			MsgN( "gm_load: Couldn't load save!" )
 			return
 		end
@@ -107,12 +107,12 @@ else
 
 		buffer = buffer .. data
 
-		if ( !done ) then return end
+		if ( not done ) then return end
 
 		MsgN( "Received save. Size: " .. buffer:len() )
 
 		local uncompressed = util.Decompress( buffer )
-		if ( !uncompressed ) then
+		if ( not uncompressed ) then
 			MsgN( "Received save - but couldn't decompress!?" )
 			buffer = ""
 			return

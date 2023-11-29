@@ -486,6 +486,8 @@ function FPP.Protect.CanTool(ply, trace, tool, ENT)
                     return false
                 end
             end
+
+            ::continue::
         end
     end
 
@@ -578,6 +580,8 @@ local function freezeDisconnected(ply)
         if ent.FPPOwnerID ~= SteamID or ent:GetPersistent() or not physObj:IsValid() then goto continue end
 
         physObj:EnableMotion(false)
+
+        ::continue::
     end
 end
 
@@ -616,6 +620,8 @@ function FPP.PlayerDisconnect(ply)
             if v:GetNW2String("FPP_OriginalOwner", "") == "" then
                 v:SetNW2String("FPP_OriginalOwner", SteamID)
             end
+
+            ::continue::
         end
 
         -- Create disconnect timer if fallback is not in server
@@ -643,6 +649,8 @@ function FPP.PlayerDisconnect(ply)
         for _, v in ipairs(ents.GetAll()) do
             if v.FPPOwnerID ~= SteamID or v:GetPersistent() then goto continue end
             v:Remove()
+
+            ::continue::
         end
         FPP.DisconnectedPlayers[SteamID] = nil -- Player out of the Disconnect table
     end)

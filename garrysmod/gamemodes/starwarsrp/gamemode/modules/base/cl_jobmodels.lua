@@ -38,6 +38,8 @@ local function sendModels() -- run after the jobs have loaded
 
             net.WriteBit(true)
             net.WriteString(preferredModels[job.command])
+
+            ::continue::
         end
     net.SendToServer()
 end

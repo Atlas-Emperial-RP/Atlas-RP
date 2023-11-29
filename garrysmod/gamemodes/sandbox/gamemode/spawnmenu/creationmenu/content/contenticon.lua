@@ -24,7 +24,7 @@ local function DoGenericSpawnmenuRightclickMenu( self )
 			self:OpenMenuExtra( menu )
 		end
 
-		if ( !IsValid( self:GetParent() ) or !self:GetParent().GetReadOnly or !self:GetParent():GetReadOnly() ) then
+		if ( not IsValid( self:GetParent() ) or not self:GetParent().GetReadOnly or not self:GetParent():GetReadOnly() ) then
 			menu:AddSpacer()
 			menu:AddOption( "#spawnmenu.menu.delete", function() self:Remove() hook.Run( "SpawnlistContentChanged" ) end ):SetIcon( "icon16/bin_closed.png" )
 		end
@@ -70,7 +70,7 @@ function PANEL:SetMaterial( name )
 	local mat = Material( name )
 
 	-- Look for the old style material
-	if ( !mat or mat:IsError() ) then
+	if ( not mat or mat:IsError() ) then
 
 		name = name:Replace( "entities/", "VGUI/entities/" )
 		name = name:Replace( ".png", "" )
@@ -79,7 +79,7 @@ function PANEL:SetMaterial( name )
 	end
 
 	-- Couldn't find any material.. just return
-	if ( !mat or mat:IsError() ) then
+	if ( not mat or mat:IsError() ) then
 		return
 	end
 
@@ -109,7 +109,7 @@ end
 
 function PANEL:Paint( w, h )
 
-	if ( self.Depressed and !self.Dragging ) then
+	if ( self.Depressed and not self.Dragging ) then
 		if ( self.Border ~= 8 ) then
 			self.Border = 8
 			self:OnDepressionChanged( true )
@@ -131,7 +131,7 @@ function PANEL:Paint( w, h )
 
 	surface.SetDrawColor( 255, 255, 255, 255 )
 
-	if ( !dragndrop.IsDragging() and ( self:IsHovered() or self.Depressed or self:IsChildHovered() ) ) then
+	if ( not dragndrop.IsDragging() and ( self:IsHovered() or self.Depressed or self:IsChildHovered() ) ) then
 
 		surface.SetMaterial( matOverlay_Hovered )
 		self.Label:Hide()
@@ -220,9 +220,9 @@ vgui.Register( "ContentIcon", PANEL, "DButton" )
 
 spawnmenu.AddContentType( "entity", function( container, obj )
 
-	if ( !obj.material ) then return end
-	if ( !obj.nicename ) then return end
-	if ( !obj.spawnname ) then return end
+	if ( not obj.material ) then return end
+	if ( not obj.nicename ) then return end
+	if ( not obj.spawnname ) then return end
 
 	local icon = vgui.Create( "ContentIcon", container )
 	icon:SetContentType( "entity" )
@@ -250,9 +250,9 @@ end )
 
 spawnmenu.AddContentType( "vehicle", function( container, obj )
 
-	if ( !obj.material ) then return end
-	if ( !obj.nicename ) then return end
-	if ( !obj.spawnname ) then return end
+	if ( not obj.material ) then return end
+	if ( not obj.nicename ) then return end
+	if ( not obj.spawnname ) then return end
 
 	local icon = vgui.Create( "ContentIcon", container )
 	icon:SetContentType( "vehicle" )
@@ -282,11 +282,11 @@ local gmod_npcweapon = CreateConVar( "gmod_npcweapon", "", { FCVAR_ARCHIVE } )
 
 spawnmenu.AddContentType( "npc", function( container, obj )
 
-	if ( !obj.material ) then return end
-	if ( !obj.nicename ) then return end
-	if ( !obj.spawnname ) then return end
+	if ( not obj.material ) then return end
+	if ( not obj.nicename ) then return end
+	if ( not obj.spawnname ) then return end
 
-	if ( !obj.weapon ) then obj.weapon = {} end
+	if ( not obj.weapon ) then obj.weapon = {} end
 
 	local icon = vgui.Create( "ContentIcon", container )
 	icon:SetContentType( "npc" )
@@ -336,6 +336,8 @@ spawnmenu.AddContentType( "npc", function( container, obj )
 		for _, class in pairs( obj.weapon ) do
 			if ( class == "" ) then goto continue end
 			weaps[ language.GetPhrase( class ) ] = class
+
+			::continue::
 		end
 		addWeps( subMenu, weaps )
 
@@ -343,6 +345,8 @@ spawnmenu.AddContentType( "npc", function( container, obj )
 		for _, t in pairs( list.Get( "NPCUsableWeapons" ) ) do
 			if ( table.HasValue( obj.weapon, t.class ) ) then goto continue end
 			weaps[ language.GetPhrase( t.title ) ] = t.class
+
+			::continue::
 		end
 		addWeps( subMenu, weaps )
 
@@ -359,9 +363,9 @@ end )
 
 spawnmenu.AddContentType( "weapon", function( container, obj )
 
-	if ( !obj.material ) then return end
-	if ( !obj.nicename ) then return end
-	if ( !obj.spawnname ) then return end
+	if ( not obj.material ) then return end
+	if ( not obj.nicename ) then return end
+	if ( not obj.spawnname ) then return end
 
 	local icon = vgui.Create( "ContentIcon", container )
 	icon:SetContentType( "weapon" )

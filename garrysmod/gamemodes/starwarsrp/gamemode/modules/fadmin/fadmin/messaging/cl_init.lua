@@ -153,6 +153,8 @@ local function showNotification(notification, instigator, targets, extraInfo)
 
         table.insert(res, white)
         table.insert(res, text)
+
+        ::continue::
     end
 
     if showChat:GetBool() then

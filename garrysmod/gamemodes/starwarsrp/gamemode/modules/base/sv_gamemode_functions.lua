@@ -78,9 +78,11 @@ function GM:canDropWeapon(ply, weapon)
     if not GAMEMODE.Config.restrictdrop then return true end
 
     for _, v in pairs(CustomShipments) do
-        if v.entity ~= class then goto continue '=' end
+        if v.entity ~= class then goto continue end
 
-        return true
+        do return true end
+
+        ::continue::
     end
 
     return false
@@ -395,6 +397,8 @@ timer.Create("DarkRPCanHearPlayersVoice", DarkRP.voiceCheckTimeDelay, 0, functio
                 DrpCanHear[ply1][ply2] = canTalk and (deadv or ply2:Alive())
                 DrpCanHear[ply2][ply1] = canTalk and (deadv or ply1:Alive()) -- Take advantage of the symmetry
             end
+
+            ::continue::
         end
     end
 
@@ -700,6 +704,8 @@ local function restoreReconnectedEnts(ply)
         if e.DarkRPItem then
             ply:addCustomEntity(e.DarkRPItem)
         end
+
+        ::continue::
     end
 
     queuedForRemoval[sid] = nil
@@ -978,6 +984,8 @@ local function collectRemoveEntities(ply)
         if v.SID ~= sid or not v:IsVehicle() and not remClasses[string.lower(v:GetClass() or "")] then goto continue end
 
         table.insert(collect, v)
+
+        ::continue::
     end
 
     if not ply:isMayor() then return collect end
@@ -985,6 +993,8 @@ local function collectRemoveEntities(ply)
     for _, ent in pairs(ply.lawboards or {}) do
         if not IsValid(ent) then goto continue end
         table.insert(collect, ent)
+
+        ::continue::
     end
 
     return collect
@@ -1026,6 +1036,8 @@ function GM:PlayerDisconnected(ply)
         for _, v in ipairs(player.GetAll()) do
             if v:getAgendaTable() ~= agenda then goto continue end
             v:setSelfDarkRPVar("agenda", agenda.text)
+
+            ::continue::
         end
     end
 
@@ -1076,6 +1088,8 @@ function GM:InitPostEntity()
         for _, v in ipairs(ents.GetAll()) do
             if not v:isDoor() then goto continue end
             v:Fire("unlock", "", 0)
+
+            ::continue::
         end
     end
 end

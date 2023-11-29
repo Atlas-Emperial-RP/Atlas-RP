@@ -56,13 +56,13 @@ end
 local function ReloadClass( classname )
 
 	local ctrl = vgui.GetControlTable( classname )
-	if ( !ctrl ) then return end
+	if ( not ctrl ) then return end
 
 	local tbl = FindPanelsByClass( classname )
 
 	for k, v in pairs ( tbl ) do
 
-		if ( !v.AllowAutoRefresh ) then goto continue end
+		if ( not v.AllowAutoRefresh ) then goto continue_1 end
 
 		if ( v.PreAutoRefresh ) then
 			v:PreAutoRefresh()
@@ -70,16 +70,18 @@ local function ReloadClass( classname )
 
 		for name, func in pairs( ctrl ) do
 
-			if ( !isfunction( func ) ) then goto continue end
+			if ( not isfunction( func ) ) then goto continue_2 end
 
 			v[ name ] = func
 
+			::continue_2::
 		end
 
 		if ( v.PostAutoRefresh ) then
 			v:PostAutoRefresh()
 		end
 
+		::continue_1::
 	end
 
 end
@@ -171,7 +173,7 @@ function GetDefaultSkin()
 	end
 
 	-- default
-	if ( !skin ) then skin = DefaultSkin end
+	if ( not skin ) then skin = DefaultSkin end
 
 	return skin
 
@@ -192,10 +194,10 @@ end
 function SkinHook( strType, strName, panel, w, h )
 
 	local Skin = panel:GetSkin()
-	if ( !Skin ) then return end
+	if ( not Skin ) then return end
 
 	local func = Skin[ strType .. strName ]
-	if ( !func ) then return end
+	if ( not func ) then return end
 
 	return func( Skin, panel, w, h )
 
@@ -207,10 +209,10 @@ end
 function SkinTexture( strName, panel, default )
 
 	local Skin = panel:GetSkin()
-	if ( !Skin ) then return default end
+	if ( not Skin ) then return default end
 
 	local Textures = Skin.tex
-	if ( !Textures ) then return default end
+	if ( not Textures ) then return default end
 
 	return Textures[ strName ] or default
 
@@ -222,7 +224,7 @@ end
 function Color( strName, panel, default )
 
 	local Skin = panel:GetSkin()
-	if ( !Skin ) then return default end
+	if ( not Skin ) then return default end
 
 	return Skin[ strName ] or default
 

@@ -78,7 +78,7 @@ end
 function PANEL:IsEnabled()
 
 	-- This is a hack!
-	return !IsValid( self:GetParent() ) or !self:GetParent().GetReadOnly or !self:GetParent():GetReadOnly()
+	return not IsValid( self:GetParent() ) or not self:GetParent().GetReadOnly or not self:GetParent():GetReadOnly()
 
 end
 
@@ -108,7 +108,7 @@ vgui.Register( "ContentHeader", PANEL, "DLabelEditable" )
 
 spawnmenu.AddContentType( "header", function( container, obj )
 
-	if ( !obj.text or !isstring( obj.text ) ) then return end
+	if ( not obj.text or not isstring( obj.text ) ) then return end
 
 	local label = vgui.Create( "ContentHeader", container )
 	label:SetText( obj.text )

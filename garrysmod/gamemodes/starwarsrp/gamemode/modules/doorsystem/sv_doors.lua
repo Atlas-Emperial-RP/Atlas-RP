@@ -112,6 +112,8 @@ function pmeta:keysUnOwnAll()
             ent:Fire("unlock", "", 0.6)
         end
         ent:keysUnOwn(self)
+
+        ::continue::
     end
 
     for _, ply in ipairs(player.GetAll()) do
@@ -122,6 +124,8 @@ function pmeta:keysUnOwnAll()
                 ent:removeKeysAllowedToOwn(self)
             end
         end
+
+        ::continue::
     end
 
     self.OwnedNumz = 0
@@ -149,6 +153,8 @@ function pmeta:doPropertyTax()
         if isAllowed == false then goto continue end
 
         table.insert(taxables, ent)
+
+        ::continue::
     end
 
     -- co-owned doors
@@ -162,7 +168,11 @@ function pmeta:doPropertyTax()
             if isAllowed == false then goto continue end
 
             table.insert(taxables, ent)
+
+            ::continue::
         end
+
+        ::continue::
     end
 
     local numowned = #taxables
@@ -432,6 +442,8 @@ local function UnOwnAll(ply, cmd, args)
     for entIndex, ent in pairs(ply.Ownedz or {}) do
         if not IsValid(ent) or not ent:isKeysOwnable() then ply.Ownedz[entIndex] = nil goto continue end
         table.insert(unownables, ent)
+
+        ::continue::
     end
 
     for _, otherPly in ipairs(player.GetAll()) do
@@ -442,6 +454,8 @@ local function UnOwnAll(ply, cmd, args)
                 table.insert(unownables, ent)
             end
         end
+
+        ::continue::
     end
 
     for entIndex, ent in pairs(unownables) do
@@ -459,6 +473,8 @@ local function UnOwnAll(ply, cmd, args)
         local GiveMoneyBack = math.floor((hook.Call("get" .. (ent:IsVehicle() and "Vehicle" or "Door") .. "Cost", GAMEMODE, ply, ent) * 0.666) + 0.5)
         hook.Call("playerKeysSold", GAMEMODE, ply, ent, GiveMoneyBack)
         cost = cost + GiveMoneyBack
+
+        ::continue::
     end
 
     if amount == 0 then DarkRP.notify(ply, 1, 4, DarkRP.getPhrase("no_doors_owned")) return "" end

@@ -127,7 +127,11 @@ function DarkRP.findPlayers(info)
                 players = players or {}
                 table.insert(players, v)
             end
+
+            ::continue::
         end
+
+        ::continue::
     end
 
     return players
@@ -174,6 +178,8 @@ function meta:getEyeSightHitEntity(searchDistance, hitDistance, filter)
             smallestDistance = distance
             foundEnt = ent
         end
+
+        ::continue::
     end
 
     self:LagCompensation(false)
@@ -248,6 +254,8 @@ function DarkRP.explodeArg(arg)
             tableinsert(args, stringsub(arg, from + diff, to - 1 - diff))
             from = to + 1
         end
+
+        ::continue::
     end
     diff = wasQuotes and 1 or 0
 

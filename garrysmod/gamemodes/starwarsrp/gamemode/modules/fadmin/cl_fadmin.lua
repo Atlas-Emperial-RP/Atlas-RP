@@ -52,6 +52,8 @@ timer.Create("FAdmin_CleanPlayerSettings", 300, 0, function()
         if IsValid(Player(uid)) or uid > max then goto continue end
 
         FAdmin.PlayerSettings[uid] = nil
+
+        ::continue::
     end
 end)
 

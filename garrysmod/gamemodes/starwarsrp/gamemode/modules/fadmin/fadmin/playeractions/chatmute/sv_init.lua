@@ -21,6 +21,8 @@ local function MuteChat(ply, cmd, args)
                 target:FAdmin_SetGlobal("FAdmin_chatmuted", false)
             end)
         end
+
+        ::continue::
     end
 
     FAdmin.Messages.FireNotification("chatmute", ply, targets, {time})

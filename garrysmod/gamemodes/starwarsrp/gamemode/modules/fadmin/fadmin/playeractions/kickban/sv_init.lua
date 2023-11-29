@@ -271,6 +271,8 @@ hook.Add("DarkRPDBInitialized", "FAdmin_Retrievebans", function()
             end
 
             hook.Call("FAdmin_StoreBan", nil, string.upper(k), v.name, (v.time - os.time()) / 60, v.reason, v.adminname, v.adminsteam)
+
+            ::continue::
         end
         file.Delete("FAdmin/Bans.txt", "DATA")
     end
@@ -310,5 +312,7 @@ hook.Add("PlayerDisconnected", "FAdmin bans", function(ply)
         SendUserMessage("FAdmin_ban_cancel", target)
         target:UnLock()
         target:Spawn()
+
+        ::continue::
     end
 end)

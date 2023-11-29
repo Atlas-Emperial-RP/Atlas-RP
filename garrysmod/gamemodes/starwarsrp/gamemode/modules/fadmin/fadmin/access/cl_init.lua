@@ -1,4 +1,4 @@
-local goto continueNewGroup
+local continueNewGroup
 local EditGroups
 
 local function RetrievePRIVS(len)
@@ -11,6 +11,8 @@ local function RetrievePRIVS(len)
             Name = k,
             Inherits = FAdmin.Access.ADMIN[v.ADMIN]
         }, "FAdmin")
+
+        ::continue::
     end
 
     -- Remove any groups that are removed from FAdmin from CAMI.
@@ -18,6 +20,8 @@ local function RetrievePRIVS(len)
         if FAdmin.Access.Groups[k] then goto continue end
 
         CAMI.UnregisterUsergroup(k, "FAdmin")
+
+        ::continue::
     end
 end
 net.Receive("FADMIN_SendGroups", RetrievePRIVS)
@@ -41,9 +45,9 @@ local function addGroupUI(ply, func)
     function(text)
         if text == "" then return end
         Derma_Query("On what access will this team be based? (the new group will inherit all the privileges from the group)", "Admin access",
-            "user", function() goto continueNewGroup(ply, text, 0, func) end,
-            "admin", function() goto continueNewGroup(ply, text, 1, func) end,
-            "superadmin", function() goto continueNewGroup(ply, text, 2, func) end)
+            "user", function() continueNewGroup(ply, text, 0, func) end,
+            "admin", function() continueNewGroup(ply, text, 1, func) end,
+            "superadmin", function() continueNewGroup(ply, text, 2, func) end)
     end)
 end
 
@@ -96,7 +100,7 @@ FAdmin.StartHooks["1SetAccess"] = function() -- 1 in hook name so it will be exe
     )
 end
 
-goto continueNewGroup = function(ply, name, admin_access, func)
+continueNewGroup = function(ply, name, admin_access, func)
     if IsValid(ply) then
         RunConsoleCommand("_FAdmin", "setaccess", ply:UserID(), name, admin_access)
     else
@@ -166,6 +170,8 @@ EditGroups = function()
             if v ~= SelectedGroup:GetValue() then goto continue end
 
             SelectedGroup.Choices[k] = nil
+
+            ::continue::
             break
         end
         table.ClearKeys(SelectedGroup.Choices)

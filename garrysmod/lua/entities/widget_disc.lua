@@ -28,7 +28,7 @@ function ENT:OverlayRender()
 
 	local c = self:GetColor()
 
-	if ( !self:IsHovered() and !self:IsPressed() ) then
+	if ( not self:IsHovered() and not self:IsPressed() ) then
 		c.r = c.r * 0.5
 		c.g = c.g * 0.5
 		c.b = c.b * 0.5
@@ -49,13 +49,13 @@ end
 function ENT:TestCollision( startpos, delta, isbox, extents )
 
 	if ( isbox ) then return end
-	if ( !widgets.Tracing ) then return end
+	if ( not widgets.Tracing ) then return end
 
 	local fwd = self:GetAngles():Forward()
 	local size = self:GetSize() * 0.5
 
 	local hitpos = util.IntersectRayWithPlane( startpos, delta:GetNormal(), self:GetPos(), fwd )
-	if ( !hitpos ) then return end
+	if ( not hitpos ) then return end
 
 	local dist = self:GetPos():Distance( hitpos )
 	if ( dist > size ) then return end
@@ -96,7 +96,7 @@ function ENT:GetGrabPos( Pos, Forward )
 	local planenrm = ( eye - planepos ):GetNormal()
 
 	local hitpos = util.IntersectRayWithPlane( eye, fwd, planepos, arrowdir )
-	if ( !hitpos ) then return end
+	if ( not hitpos ) then return end
 
 	-- The whole circle should be 360
 	hitpos = self:WorldToLocal( hitpos )

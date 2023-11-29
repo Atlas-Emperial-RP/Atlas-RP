@@ -196,6 +196,8 @@ function RADAR:Draw(client)
       end
 
       DrawTarget(tgt, 24, 0)
+
+      ::continue::
    end
 
    -- Time until next scan

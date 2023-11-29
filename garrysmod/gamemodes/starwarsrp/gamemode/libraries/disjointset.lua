@@ -1,11 +1,11 @@
-/*---------------------------------------------------------------------------
+--[[ ---------------------------------------------------------------------------
 Disjoint-set forest implementation
 Inspired by the book Introduction To Algorithms (third edition)
 
 by FPtje Atheos
 
 Running time per operation (Union/FindSet): O(a(n)) where a is the inverse of the Ackermann function.
----------------------------------------------------------------------------*/
+---------------------------------------------------------------------------]]
 
 local ipairs = ipairs
 local setmetatable = setmetatable

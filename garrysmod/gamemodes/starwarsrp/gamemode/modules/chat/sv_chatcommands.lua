@@ -191,6 +191,8 @@ local function GroupMsg(ply, args)
             if not func(ply) then goto continue end
 
             table.insert(groupChats, func)
+
+            ::continue::
         end
 
         if table.IsEmpty(groupChats) then return "" end
@@ -204,6 +206,8 @@ local function GroupMsg(ply, args)
                 if not func(target, ply) then goto continue end
 
                 DarkRP.talkToPerson(target, col, phrase .. " " .. name, color, text, ply)
+
+                ::continue::
                 break
             end
         end

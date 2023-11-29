@@ -91,6 +91,7 @@ function DarkRP.toggleSleep(player, command)
                 wep:SetClip1(v[6])
                 wep:SetClip2(v[7])
 
+                ::continue::
             end
             local cl_defaultweapon = player:GetInfo("cl_defaultweapon")
             if player:HasWeapon(cl_defaultweapon) then
@@ -225,6 +226,8 @@ local function DamageSleepers(ent, dmginfo)
             v:StripWeapons()
             v:TakeDamageInfo(dmginfo)
         end
+
+        ::continue::
     end
 end
 hook.Add("EntityTakeDamage", "Sleepdamage", DamageSleepers)

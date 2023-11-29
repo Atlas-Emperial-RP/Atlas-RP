@@ -159,6 +159,8 @@ local function FilterEntityTable(eyepos, t)
             filtered = ent
             filteredDistance = distance
         end
+
+        ::continue::
     end
 
     return filtered

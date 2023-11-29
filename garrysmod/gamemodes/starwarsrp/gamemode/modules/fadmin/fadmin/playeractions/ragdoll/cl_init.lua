@@ -52,6 +52,8 @@ FAdmin.StartHooks["Ragdoll"] = function()
                     button:GetParent():InvalidateLayout()
                 end
             )
+
+            ::continue::
         end
 
         menu:Open()

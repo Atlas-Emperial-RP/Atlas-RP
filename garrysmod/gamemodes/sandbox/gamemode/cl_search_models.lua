@@ -12,7 +12,7 @@ local function GetAllFiles( tab, folder, extension, path )
 
 	local files, folders = file.Find( folder .. "*", path )
 
-	if ( !files ) then
+	if ( not files ) then
 		MsgN( "Warning! Ignoring '" .. folder .. "' because we cannot search in it!" )
 		return
 	end
@@ -43,7 +43,7 @@ hook.Add( "Think", "sandbox_queued_search", function()
 	GetAllFiles( unpack( call ) )
 	table.remove( queuedSearch, 1 )
 
-	if ( !timer.Exists( "search_models_update" ) or #queuedSearch < 1 ) then
+	if ( not timer.Exists( "search_models_update" ) or #queuedSearch < 1 ) then
 		timer.Create( "search_models_update", 1, 1, function() hook.Run( "SearchUpdate" ) end )
 	end
 
@@ -68,7 +68,7 @@ search.AddProvider( function( str )
 
 		-- Don't search in the models/ and .mdl bit of every model, because every model has this bit, unless they are looking for direct model path
 		local modelpath = v
-		if ( modelpath:StartWith( "models/" ) and modelpath:EndsWith( ".mdl" ) and !str:EndsWith( ".mdl" ) ) then modelpath = modelpath:sub( 8, modelpath:len() - 4 ) end
+		if ( modelpath:StartWith( "models/" ) and modelpath:EndsWith( ".mdl" ) and not str:EndsWith( ".mdl" ) ) then modelpath = modelpath:sub( 8, modelpath:len() - 4 ) end
 
 		if ( modelpath:find( str, nil, true ) ) then
 
@@ -86,7 +86,7 @@ search.AddProvider( function( str )
 		end
 
 		if ( #models >= sbox_search_maxresults:GetInt() / 2 ) then break end
-
+		::continue::
 	end
 
 	return models
@@ -116,19 +116,20 @@ local function AddSearchProvider( listname, ctype, stype )
 		local entities = {}
 
 		for k, v in pairs( list.Get( listname ) ) do
-			if ( listname == "Weapon" and !v.Spawnable ) then goto continue end
+			if ( listname == "Weapon" and not v.Spawnable ) then goto continue end
 
 			v.ClassName = k
 			v.PrintName = v.PrintName or v.Name
 			v.ScriptedEntityType = ctype
 			table.insert( entities, v )
+			::continue::
 		end
 
 		for k, v in ipairs( entities ) do
 
 			local name = v.PrintName
 			local name_c = v.ClassName
-			if ( !isstring( name ) and !isstring( name_c ) ) then goto continue end
+			if ( not isstring( name ) and not isstring( name_c ) ) then goto continue end
 
 			if ( ( isstring( name ) and name:lower():find( str, nil, true ) ) or ( isstring( name_c ) and name_c:lower():find( str, nil, true ) ) ) then
 
@@ -149,7 +150,7 @@ local function AddSearchProvider( listname, ctype, stype )
 			end
 
 			if ( #results >= sbox_search_maxresults:GetInt() / 4 ) then break end
-
+			::continue::
 		end
 
 		table.SortByMember( results, "text", true )

@@ -23,7 +23,7 @@ end
 -----------------------------------------------------------]]
 local function LimitReachedProcess( ply, str )
 
-	if ( !IsValid( ply ) ) then return true end
+	if ( not IsValid( ply ) ) then return true end
 
 	return ply:CheckLimit( str )
 

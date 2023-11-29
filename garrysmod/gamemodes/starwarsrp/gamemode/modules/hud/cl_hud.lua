@@ -365,6 +365,8 @@ local function DrawEntityDisplay(gamemodeTable)
                 ply:drawPlayerInfo()
             end
         end
+
+        ::continue::
     end
 
     local ent = localplayer:GetEyeTrace().Entity

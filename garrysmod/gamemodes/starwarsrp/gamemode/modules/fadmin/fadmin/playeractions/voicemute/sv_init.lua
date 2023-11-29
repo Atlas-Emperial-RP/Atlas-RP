@@ -21,6 +21,8 @@ local function MuteVoice(ply, cmd, args)
                 target:FAdmin_SetGlobal("FAdmin_voicemuted", false)
             end)
         end
+
+        ::continue::
     end
 
     FAdmin.Messages.FireNotification("voicemute", ply, targets, {time})

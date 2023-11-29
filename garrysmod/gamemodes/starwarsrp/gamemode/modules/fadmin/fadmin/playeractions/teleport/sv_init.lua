@@ -115,6 +115,8 @@ local function Bring(ply, cmd, args)
 
             if PHYSGUN then timer.Simple(0.5, function() target:Give("weapon_physgun") target:SelectWeapon("weapon_physgun") end) end
         end)
+
+        ::continue::
     end
 
     FAdmin.Messages.FireNotification("bring", ply, targets)

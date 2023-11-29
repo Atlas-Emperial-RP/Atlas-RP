@@ -61,6 +61,8 @@ function SWEP:PrimaryAttack()
             lastDot = dot
             found = v
         end
+
+        ::continue::
     end
     Owner:LagCompensation(false)
 

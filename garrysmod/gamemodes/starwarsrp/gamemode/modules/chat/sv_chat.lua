@@ -88,7 +88,7 @@ local function RP_PlayerChat(ply, text, teamonly)
     end
 
     if callback ~= "" then
-        callback = callback or "" .. " "
+        callback = (callback or "") .. " "
     end
 
     return text, callback, DoSayFunc;
@@ -154,6 +154,8 @@ local function callHooks(hooks, canReturn, ...)
         end
 
         if text ~= nil and canReturn then return text end
+
+        ::continue::
     end
 end
 

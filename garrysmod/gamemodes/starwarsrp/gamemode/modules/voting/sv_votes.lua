@@ -62,6 +62,8 @@ function Vote:getFilter()
         end
 
         filter:AddPlayer(v)
+
+        ::continue::
     end
 
     return filter
@@ -142,6 +144,8 @@ function DarkRP.destroyVotesWithEnt(ent)
         v:fail()
 
         Votes[k] = nil
+
+        ::continue::
     end
 end
 

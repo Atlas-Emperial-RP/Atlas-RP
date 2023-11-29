@@ -279,6 +279,8 @@ function LANG.ProcessMsg(name, params)
 
             params[k] = LANG.GetTranslation(name)
          end
+
+         ::continue::
       end
 
       text = interp(raw, params)

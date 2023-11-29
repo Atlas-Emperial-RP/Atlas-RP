@@ -233,6 +233,8 @@ hook.Add("PlayerDeath", "DarkRP Hitman System", function(ply, inflictor, attacke
         if hitman:getHitTarget() == ply then
             hitman:abortHit(DarkRP.getPhrase("target_died"))
         end
+
+        ::continue::
     end
 end)
 
@@ -259,6 +261,8 @@ hook.Add("playerArrested", "Hitman system", function(ply)
         if not v:isCP() then goto continue end
 
         DarkRP.notify(v, 0, 8, DarkRP.getPhrase("x_had_hit_ordered_by_y", ply:Nick(), hits[ply].customer:Nick()))
+
+        ::continue::
     end
 
     ply:abortHit(DarkRP.getPhrase("hitman_arrested"))

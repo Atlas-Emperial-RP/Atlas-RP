@@ -8,9 +8,9 @@ properties.Add( "npc_bigger", {
 
 	Filter = function( self, ent, ply )
 
-		if ( !gamemode.Call( "CanProperty", ply, "npc_bigger", ent ) ) then return false end
-		if ( !IsValid( ent ) ) then return false end
-		if ( !ent:IsNPC() ) then return false end
+		if ( not gamemode.Call( "CanProperty", ply, "npc_bigger", ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
+		if ( not ent:IsNPC() ) then return false end
 
 		return true
 
@@ -27,8 +27,8 @@ properties.Add( "npc_bigger", {
 	Receive = function( self, length, ply )
 
 		local ent = net.ReadEntity()
-		if ( !properties.CanBeTargeted( ent, ply ) ) then return end
-		if ( !self:Filter( ent, ply ) ) then return end
+		if ( not properties.CanBeTargeted( ent, ply ) ) then return end
+		if ( not self:Filter( ent, ply ) ) then return end
 
 		ent:SetModelScale( ent:GetModelScale() * 1.25, 1 )
 
@@ -43,9 +43,9 @@ properties.Add( "npc_smaller", {
 
 	Filter = function( self, ent, ply )
 
-		if ( !gamemode.Call( "CanProperty", ply, "npc_smaller", ent ) ) then return false end
-		if ( !IsValid( ent ) ) then return false end
-		if ( !ent:IsNPC() ) then return false end
+		if ( not gamemode.Call( "CanProperty", ply, "npc_smaller", ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
+		if ( not ent:IsNPC() ) then return false end
 
 		return true
 
@@ -62,8 +62,8 @@ properties.Add( "npc_smaller", {
 	Receive = function( self, length, ply )
 
 		local ent = net.ReadEntity()
-		if ( !properties.CanBeTargeted( ent, ply ) ) then return end
-		if ( !self:Filter( ent, ply ) ) then return end
+		if ( not properties.CanBeTargeted( ent, ply ) ) then return end
+		if ( not self:Filter( ent, ply ) ) then return end
 
 		ent:SetModelScale( ent:GetModelScale() * 0.8, 1 )
 

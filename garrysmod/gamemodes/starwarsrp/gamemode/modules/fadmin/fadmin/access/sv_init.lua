@@ -43,6 +43,8 @@ hook.Add("DatabaseInitialized", "InitializeFAdminGroups", function()
                     Name = v.NAME,
                     Inherits = FAdmin.Access.ADMIN[v.ADMIN_ACCESS] or "user"
                 }, v.SRC)
+
+                ::continue::
             end
 
             -- Send groups to early joiners and listen server hosts
@@ -57,6 +59,8 @@ hook.Add("DatabaseInitialized", "InitializeFAdminGroups", function()
                 if FAdmin.Access.Groups[v.Name] then goto continue end
 
                 FAdmin.Access.OnUsergroupRegistered(v,"")
+
+                ::continue::
             end
 
             -- Start listening for CAMI usergroup registrations.
@@ -104,6 +108,8 @@ hook.Add("DatabaseInitialized", "InitializeFAdminGroups", function()
                 for i = access + 1, #hasPrivs do
                     MySQLite.query(("REPLACE INTO FADMIN_PRIVILEGES VALUES(%s, %s);"):format(MySQLite.SQLStr(hasPrivs[i]), MySQLite.SQLStr(priv)))
                 end
+
+                ::continue::
             end
 
             createGroups(privs)
@@ -123,6 +129,8 @@ function FAdmin.Access.RegisterCAMIPrivilege(priv)
         groupdata.PRIVS[priv.Name] = true
 
         MySQLite.query(string.format([[REPLACE INTO FADMIN_PRIVILEGES VALUES(%s, %s);]], MySQLite.SQLStr(groupName), MySQLite.SQLStr(priv.Name)))
+
+        ::continue::
     end
 
     MySQLite.query(string.format([[REPLACE INTO FAdmin_CAMIPrivileges VALUES(%s);]], MySQLite.SQLStr(priv.Name)))
@@ -147,9 +155,13 @@ function FAdmin.Access.RegisterCAMIPrivileges()
                 groupdata.PRIVS[privName] = true
 
                 MySQLite.query(string.format([[REPLACE INTO FADMIN_PRIVILEGES VALUES(%s, %s);]], MySQLite.SQLStr(groupName), MySQLite.SQLStr(privName)))
+
+                ::continue::
             end
 
             MySQLite.query(string.format([[REPLACE INTO FAdmin_CAMIPrivileges VALUES(%s);]], MySQLite.SQLStr(privName)))
+
+            ::continue::
         end
     end)
 end
@@ -207,6 +219,8 @@ function FAdmin.Access.SetRoot(ply, cmd, args) -- FAdmin setroot player. Sets th
         CAMI.SignalUserGroupChanged(target, target_previous_group, "superadmin", "FAdmin")
 
         FAdmin.Messages.SendMessage(ply, 2, "User set to superadmin!")
+
+        ::continue::
     end
 
     FAdmin.Messages.FireNotification("setaccess", ply, targets, {"superadmin"})
@@ -224,6 +238,8 @@ local function AddGroup(ply, cmd, args)
         -- The user cannot create groups with privileges they don't have
         if not FAdmin.Access.PlayerHasPrivilege(ply, priv) then goto continue end
         if am <= admin + 1 then privs[priv] = true end
+
+        ::continue::
     end
 
     local immunity = FAdmin.Access.Groups[FAdmin.Access.ADMIN[admin + 1]].immunity
@@ -372,6 +388,8 @@ function FAdmin.Access.SetAccess(ply, cmd, args)
 
         -- An end user changed the usergroup. Register with CAMI
         CAMI.SignalUserGroupChanged(target, target_previous_group, args[2], "FAdmin")
+
+        ::continue::
     end
 
     FAdmin.Messages.SendMessage(ply, 4, "User access set!")

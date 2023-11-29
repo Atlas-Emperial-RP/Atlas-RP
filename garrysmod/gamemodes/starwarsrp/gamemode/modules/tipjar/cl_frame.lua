@@ -210,6 +210,8 @@ function DONATE_LIST:RebuildLines(tipjar)
         if ply == tipjar:Getowning_ent() then goto continue end
 
         self.activeLines[ply:Nick()] = DarkRP.formatMoney(amount)
+
+        ::continue::
     end
 
     for name, amount in SortedPairs(self.activeLines) do

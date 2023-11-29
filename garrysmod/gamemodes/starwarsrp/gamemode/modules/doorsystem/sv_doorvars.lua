@@ -131,6 +131,8 @@ function plyMeta:sendDoorData()
         if not v:getDoorData() or table.IsEmpty(v:getDoorData()) then goto continue end
 
         res[v:EntIndex()] = v:getDoorData()
+        
+        ::continue::
     end
 
     net.Start("DarkRP_AllDoorData")

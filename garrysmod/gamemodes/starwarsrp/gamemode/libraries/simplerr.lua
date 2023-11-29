@@ -406,6 +406,7 @@ local function translateMsg(msg, path, line, errs)
         res = string.format(trans.text, trans.format({string.match(msg, trans.match)}, line, path))
         hints = trans.hints
 
+        ::continue::
         break
     end
 

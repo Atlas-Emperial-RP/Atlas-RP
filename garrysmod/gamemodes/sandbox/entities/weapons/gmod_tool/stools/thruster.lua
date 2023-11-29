@@ -28,7 +28,7 @@ function TOOL:LeftClick( trace )
 	if ( trace.Entity and trace.Entity:IsPlayer() ) then return false end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+	if ( SERVER and not util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 	if ( CLIENT ) then return true end
 
@@ -74,14 +74,14 @@ function TOOL:LeftClick( trace )
 		return true
 	end
 
-	if ( !util.IsValidModel( model ) or !util.IsValidProp( model ) or !IsValidThrusterModel( model ) ) then return false end
-	if ( !self:GetSWEP():CheckLimit( "thrusters" ) ) then return false end
+	if ( not util.IsValidModel( model ) or not util.IsValidProp( model ) or not IsValidThrusterModel( model ) ) then return false end
+	if ( not self:GetSWEP():CheckLimit( "thrusters" ) ) then return false end
 
 	local Ang = trace.HitNormal:Angle()
 	Ang.pitch = Ang.pitch + 90
 
 	local thruster = MakeThruster( ply, model, Ang, trace.HitPos, key, key_bk, force, toggle, effect, damageable, soundname )
-	if ( !IsValid( thruster ) ) then return false end
+	if ( not IsValid( thruster ) ) then return false end
 
 	local min = thruster:OBBMins()
 	thruster:SetPos( trace.HitPos - trace.HitNormal * min.z )
@@ -120,11 +120,11 @@ if ( SERVER ) then
 
 	function MakeThruster( pl, model, ang, pos, key, key_bck, force, toggle, effect, damageable, soundname, nocollide )
 
-		if ( IsValid( pl ) and !pl:CheckLimit( "thrusters" ) ) then return false end
-		if ( !IsValidThrusterModel( model ) ) then return false end
+		if ( IsValid( pl ) and not pl:CheckLimit( "thrusters" ) ) then return false end
+		if ( not IsValidThrusterModel( model ) ) then return false end
 
 		local thruster = ents.Create( "gmod_thruster" )
-		if ( !IsValid( thruster ) ) then return false end
+		if ( not IsValid( thruster ) ) then return false end
 
 		thruster:SetModel( model )
 		thruster:SetAngles( ang )
@@ -180,10 +180,10 @@ end
 
 function TOOL:UpdateGhostThruster( ent, ply )
 
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	local trace = ply:GetEyeTrace()
-	if ( !trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:GetClass() == "gmod_thruster" or trace.Entity:IsPlayer() ) ) then
+	if ( not trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:GetClass() == "gmod_thruster" or trace.Entity:IsPlayer() ) ) then
 
 		ent:SetNoDraw( true )
 		return
@@ -204,9 +204,9 @@ end
 function TOOL:Think()
 
 	local mdl = self:GetClientInfo( "model" )
-	if ( !IsValidThrusterModel( mdl ) ) then self:ReleaseGhostEntity() return end
+	if ( not IsValidThrusterModel( mdl ) ) then self:ReleaseGhostEntity() return end
 
-	if ( !IsValid( self.GhostEntity ) or self.GhostEntity:GetModel() ~= mdl ) then
+	if ( not IsValid( self.GhostEntity ) or self.GhostEntity:GetModel() ~= mdl ) then
 		self:MakeGhostEntity( mdl, vector_origin, angle_zero )
 	end
 

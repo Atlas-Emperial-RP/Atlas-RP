@@ -84,7 +84,7 @@ end
 
 function GM:PaintWorldTips()
 
-	if ( !cl_drawworldtooltips:GetBool() ) then return end
+	if ( not cl_drawworldtooltips:GetBool() ) then return end
 	
 	if ( WorldTip and WorldTip.dietime > SysTime() ) then
 		DrawWorldTip( WorldTip )		

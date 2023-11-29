@@ -34,7 +34,7 @@ function PANEL:Init()
 	self.ToolToggle:SetSize( 16, 16 )
 	self.ToolToggle.DoClick = function()
 
-		self.ToolMenu:SetVisible( !self.ToolMenu:IsVisible() )
+		self.ToolMenu:SetVisible( not self.ToolMenu:IsVisible() )
 		self:InvalidateLayout()
 
 		if ( self.ToolMenu:IsVisible() ) then
@@ -207,7 +207,7 @@ vgui.Register( "SpawnMenu", PANEL, "EditablePanel" )
 -----------------------------------------------------------]]
 local function CreateSpawnMenu()
 
-	if ( !hook.Run( "SpawnMenuEnabled" ) ) then return end
+	if ( not hook.Run( "SpawnMenuEnabled" ) ) then return end
 
 	-- If we have an old spawn menu remove it.
 	if ( IsValid( g_SpawnMenu ) ) then
@@ -259,7 +259,7 @@ concommand.Add( "spawnmenu_reload", CreateSpawnMenu )
 function GM:OnSpawnMenuOpen()
 
 	-- Let the gamemode decide whether we should open or not..
-	if ( !hook.Call( "SpawnMenuOpen", self ) ) then return end
+	if ( not hook.Call( "SpawnMenuOpen", self ) ) then return end
 
 	if ( IsValid( g_SpawnMenu ) ) then
 		g_SpawnMenu:Open()
@@ -316,8 +316,8 @@ hook.Add( "OnTextEntryLoseFocus", "SpawnMenuKeyboardFocusOff", SpawnMenuKeyboard
 -----------------------------------------------------------]]
 local function SpawnMenuOpenGUIMousePressed()
 
-	if ( !IsValid( g_SpawnMenu ) ) then return end
-	if ( !g_SpawnMenu:IsVisible() ) then return end
+	if ( not IsValid( g_SpawnMenu ) ) then return end
+	if ( not g_SpawnMenu:IsVisible() ) then return end
 
 	return true
 
@@ -330,8 +330,8 @@ hook.Add( "GUIMousePressed", "SpawnMenuOpenGUIMousePressed", SpawnMenuOpenGUIMou
 -----------------------------------------------------------]]
 local function SpawnMenuOpenGUIMouseReleased()
 
-	if ( !IsValid( g_SpawnMenu ) ) then return end
-	if ( !g_SpawnMenu:IsVisible() ) then return end
+	if ( not IsValid( g_SpawnMenu ) ) then return end
+	if ( not g_SpawnMenu:IsVisible() ) then return end
 
 	g_SpawnMenu:Close()
 
@@ -354,7 +354,7 @@ hook.Add( "GUIMouseReleased", "SpawnMenuOpenGUIMouseReleased", SpawnMenuOpenGUIM
 		- No, in this case we should still refresh the spawn menu because some text and labels do actually update during use of the spawn menu and might be left "dirty"
 -----------------------------------------------------------]]
 local function SpawnMenuLanguageChanged()
-	if ( !IsValid( g_SpawnMenu ) ) then return end
+	if ( not IsValid( g_SpawnMenu ) ) then return end
 
 	if ( g_SpawnMenu.m_UnsavedModifications or g_SpawnMenu:IsVisible() ) then
 		-- If there are unsaved modifications, or the spawn menu is somehow open, mark the spawn menu for recreation when the opportunity arises
@@ -368,7 +368,7 @@ end
 cvars.AddChangeCallback( "gmod_language", SpawnMenuLanguageChanged, "spawnmenu_reload" )
 
 local function ProtectSpawnMenuChanges()
-	if ( !IsValid( g_SpawnMenu ) ) then return end
+	if ( not IsValid( g_SpawnMenu ) ) then return end
 
 	-- Mark the spawn menu as having unsaved modifications
 	g_SpawnMenu.m_UnsavedModifications = true
@@ -376,7 +376,7 @@ end
 hook.Add( "SpawnlistContentChanged", "ProtectSpawnMenuChanges", ProtectSpawnMenuChanges )
 
 local function SpawnMenuChangesFinished()
-	if ( !IsValid( g_SpawnMenu ) ) then return end
+	if ( not IsValid( g_SpawnMenu ) ) then return end
 
 	-- Mark the spawn menu as no longer having unsaved modifications
 	g_SpawnMenu.m_UnsavedModifications = nil
@@ -385,10 +385,10 @@ hook.Add( "OnRevertSpawnlist", "SpawnMenuChangesFinished", SpawnMenuChangesFinis
 hook.Add( "OnSaveSpawnlist", "SpawnMenuChangesFinished", SpawnMenuChangesFinished )
 
 local function SpawnMenuLanguageRefresh()
-	if ( !IsValid( g_SpawnMenu ) ) then return end
+	if ( not IsValid( g_SpawnMenu ) ) then return end
 
 	-- When the spawn menu is closed, check if it needs a language refresh. If it has no unsaved modifications, refresh it!
-	if ( !g_SpawnMenu.m_UnsavedModifications and g_SpawnMenu.m_NeedsLanguageRefresh ) then
+	if ( not g_SpawnMenu.m_UnsavedModifications and g_SpawnMenu.m_NeedsLanguageRefresh ) then
 		g_SpawnMenu.m_NeedsLanguageRefresh = nil
 		CreateSpawnMenu()
 	end

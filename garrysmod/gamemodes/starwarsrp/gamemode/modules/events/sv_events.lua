@@ -205,6 +205,8 @@ local function FireSpread(ent, chanceDiv)
             v:Fire("enablemotion", "", 0)
             constraint.RemoveAll(v)
         end
+
+        ::continue::
     end
 end
 

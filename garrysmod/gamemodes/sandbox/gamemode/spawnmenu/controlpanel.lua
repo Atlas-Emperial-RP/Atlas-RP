@@ -410,7 +410,7 @@ function PANEL:AddControl( control, data )
 
 	local ctrl = vgui.Create( original, self )
 	-- Fallback for scripts that relied on the old behaviour
-	if ( !ctrl ) then
+	if ( not ctrl ) then
 		ctrl = vgui.Create( control, self )
 	end
 	if ( ctrl ) then

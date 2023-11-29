@@ -82,5 +82,7 @@ hook.Add("loadCustomDarkRPItems", "CAMI privs", function()
             Name = "DarkRP_GetJob_" .. v.command,
             MinAccess = toAdmin[v.admin or 0]-- Add privileges for the teams that are voted for
         }
+
+        ::continue::
     end
 end)

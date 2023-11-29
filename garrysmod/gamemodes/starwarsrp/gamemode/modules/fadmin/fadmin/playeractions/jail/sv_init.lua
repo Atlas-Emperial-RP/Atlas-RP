@@ -11,6 +11,8 @@ local function createJailTimer(target, jailTime)
             if not IsValid(k) then goto continue end
             k:SetCanRemove(true)
             k:Remove()
+
+            ::continue::
         end
 
         target.FAdminJailProps = nil
@@ -46,6 +48,8 @@ local function Jail(ply, cmd, args)
                     if not IsValid(k) then goto continue end
                     k:SetCanRemove(true)
                     k:Remove()
+
+                    ::continue::
                 end
             end
 
@@ -123,6 +127,8 @@ local function Jail(ply, cmd, args)
             time = "for " .. JailTime .. " seconds"
             if JailTime == 0 then time = "indefinitely" end
         end
+
+        ::continue::
     end
 
     if JailType == "unjail" or string.lower(cmd) == "unjail" then

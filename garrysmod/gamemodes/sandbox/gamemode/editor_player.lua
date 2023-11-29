@@ -66,7 +66,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 
 		SearchBar.OnValueChange = function( s, str )
 			for id, pnl in pairs( PanelSelect:GetItems() ) do
-				if ( !pnl.playermodel:find( str, 1, true ) and !pnl.model_path:find( str, 1, true ) ) then
+				if ( not pnl.playermodel:find( str, 1, true ) and not pnl.model_path:find( str, 1, true ) ) then
 					pnl:SetVisible( false )
 				else
 					pnl:SetVisible( true )
@@ -127,6 +127,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 				end
 				
 				nicename[i] = string.upper( string.sub( word, 1, 1 ) ) .. string.sub( word, 2 )
+				::continue::
 			end
 
 			return table.concat( nicename, " " )
@@ -134,7 +135,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 
 		local function PlayPreviewAnimation( panel, playermodel )
 
-			if ( !panel or !IsValid( panel.Entity ) ) then return end
+			if ( not panel or not IsValid( panel.Entity ) ) then return end
 
 			local anims = list.Get( "PlayerOptionsAnimations" )
 
@@ -214,6 +215,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 				mdl.Entity:SetBodygroup( k, groups[ k + 1 ] or 0 )
 
 				bgtab.Tab:SetVisible( true )
+				::continue::
 			end
 
 			sheet.tabScroller:InvalidateLayout()

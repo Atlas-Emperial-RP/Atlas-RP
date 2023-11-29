@@ -44,6 +44,8 @@ function meta:drawOwnableInfo()
             local ent = Player(k)
             if not IsValid(ent) or not ent:IsPlayer() then goto continue end
             table.insert(doorInfo, ent:Nick())
+
+            ::continue::
         end
 
         local allowedCoOwn = self:getKeysAllowedToOwn()
@@ -54,6 +56,8 @@ function meta:drawOwnableInfo()
                 local ent = Player(k)
                 if not IsValid(ent) or not ent:IsPlayer() then goto continue end
                 table.insert(doorInfo, ent:Nick())
+
+                ::continue::
             end
         end
     elseif doorGroup then
@@ -63,6 +67,8 @@ function meta:drawOwnableInfo()
             if not v or not RPExtraTeams[k] then goto continue end
 
             table.insert(doorInfo, RPExtraTeams[k].name)
+
+            ::continue::
         end
     elseif blocked and changeDoorAccess then
         table.insert(doorInfo, DarkRP.getPhrase("keys_allow_ownership"))
