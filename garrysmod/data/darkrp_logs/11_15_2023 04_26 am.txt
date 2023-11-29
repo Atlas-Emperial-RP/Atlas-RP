@@ -1,0 +1,40 @@
+Wed Nov 15 04:26:30 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Wed Nov 15 04:26:30 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Wed Nov 15 04:28:36 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Wed Nov 15 04:30:35 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Wed Nov 15 04:30:43 2023	eggs (STEAM_0:0:55135130) has joined the game
+Wed Nov 15 04:30:43 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Wed Nov 15 04:30:59 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Wed Nov 15 04:31:24 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Wed Nov 15 04:31:36 2023	the gunk (STEAM_0:1:98581856) has joined the game
+Wed Nov 15 04:31:36 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Wed Nov 15 04:32:24 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Wed Nov 15 04:32:56 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Wed Nov 15 04:33:42 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Wed Nov 15 04:34:27 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Wed Nov 15 04:35:03 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Wed Nov 15 04:35:03 2023	SHW Colonel Butter (STEAM_0:1:78700995) spawned
+Wed Nov 15 04:35:31 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Wed Nov 15 04:35:59 2023	SHW Colonel Butter (STEAM_0:1:78700995): perfect
+Wed Nov 15 04:36:05 2023	SHW Colonel Butter (STEAM_0:1:78700995): he doesn't get paid or anything
+Wed Nov 15 04:36:07 2023	SHW Colonel Butter (STEAM_0:1:78700995): what a true hobo
+Wed Nov 15 04:36:27 2023	SHW Colonel Butter (STEAM_0:1:78700995) spawned
+Wed Nov 15 04:36:37 2023	SHW Colonel Butter (STEAM_0:1:78700995): /name Emperor Butter
+Wed Nov 15 04:36:40 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /name Lieutenant Scratchma
+Wed Nov 15 04:36:47 2023	Lieutenant Scratchma (STEAM_0:0:55135130) disconnected
+Wed Nov 15 04:36:48 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Wed Nov 15 04:37:09 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Wed Nov 15 04:37:13 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Wed Nov 15 04:41:42 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Wed Nov 15 04:42:17 2023	LazyYang (STEAM_0:1:108243180) has joined the game
+Wed Nov 15 04:42:17 2023	LazyYang (STEAM_0:1:108243180) spawned
+Wed Nov 15 04:42:23 2023	ARC Commander Gunk was killed by Grand Admiral Somebody with a rw_sw_dlt20a
+Wed Nov 15 04:42:34 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Wed Nov 15 04:42:38 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Wed Nov 15 04:43:20 2023	LazyYang (STEAM_0:1:108243180): /ooc just came to say hi to kaiser and badger
+Wed Nov 15 04:43:22 2023	LazyYang (STEAM_0:1:108243180): /ooc bye bye
+Wed Nov 15 04:43:26 2023	LazyYang (STEAM_0:1:108243180) disconnected
+Wed Nov 15 04:43:51 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Wed Nov 15 04:44:26 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Wed Nov 15 04:46:57 2023	ARC Commander Gunk (STEAM_0:1:98581856): /sleep
+Wed Nov 15 04:46:57 2023	ARC Commander Gunk (STEAM_0:1:98581856) disconnected

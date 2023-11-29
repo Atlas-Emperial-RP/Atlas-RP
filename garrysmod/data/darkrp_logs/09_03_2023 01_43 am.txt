@@ -1,0 +1,77 @@
+Sun Sep  3 01:43:42 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
+Sun Sep  3 01:43:42 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 01:44:06 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 01:44:57 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 01:48:43 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 01:49:44 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sun Sep  3 01:49:44 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 01:50:28 2023	ICSL 0001 Jinn was killed by IC 1854 Sarge with a rw_sw_e11
+Sun Sep  3 01:50:34 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 01:51:04 2023	ICSL 0001 Jinn was killed by IC 1854 Sarge with a rw_sw_e11
+Sun Sep  3 01:51:22 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bed_medicmod
+Sun Sep  3 01:51:54 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT drip_medicmod
+Sun Sep  3 01:51:54 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bloodbag_medicmod
+Sun Sep  3 01:53:14 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 01:54:01 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sun Sep  3 01:56:38 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sun Sep  3 01:56:40 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 01:57:07 2023	IC 1854 Sarge was killed by Entity [0][worldspawn] with a unknown
+Sun Sep  3 01:57:21 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 01:57:58 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sun Sep  3 02:00:52 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 02:03:26 2023	IC 1854 Sarge was killed by ICSL 0001 Jinn with a rw_sw_dual_westar34
+Sun Sep  3 02:03:34 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 02:04:16 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 02:05:06 2023	VibrantHealer35 (STEAM_0:0:161241684) has joined the game
+Sun Sep  3 02:05:06 2023	IC 1262 Scorch (STEAM_0:0:161241684) spawned
+Sun Sep  3 02:06:14 2023	IC 1262 Scorch (STEAM_0:0:161241684) spawned
+Sun Sep  3 02:14:09 2023	IC 1262 Scorch (STEAM_0:0:161241684): 
+Sun Sep  3 02:14:22 2023	IC 1262 Scorch (STEAM_0:0:161241684): 
+Sun Sep  3 02:15:16 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sun Sep  3 02:15:42 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 02:16:09 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 02:16:15 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sun Sep  3 02:25:07 2023	IC 1262 Scorch (STEAM_0:0:161241684): 
+Sun Sep  3 02:25:07 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 02:26:10 2023	IC 1262 Scorch (STEAM_0:0:161241684): 
+Sun Sep  3 02:27:06 2023	IC 1262 Scorch (STEAM_0:0:161241684) spawned
+Sun Sep  3 02:28:18 2023	IC 1262 Scorch (STEAM_0:0:161241684): 
+Sun Sep  3 02:29:08 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Sun Sep  3 02:33:26 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sun Sep  3 02:33:26 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 02:36:33 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Sun Sep  3 02:38:08 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sun Sep  3 02:38:08 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 02:40:03 2023	IC 1854 Sarge (STEAM_0:0:631269172): // /addspawn jobname
+Sun Sep  3 02:45:24 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 02:50:19 2023	IC 1262 Scorch (STEAM_0:0:161241684): 
+Sun Sep  3 02:55:45 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sun Sep  3 02:55:45 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned
+Sun Sep  3 03:01:38 2023	IC 1262 Scorch (STEAM_0:0:161241684) disconnected
+Sun Sep  3 03:03:19 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 03:07:26 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sun Sep  3 03:08:36 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sun Sep  3 03:09:07 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 03:11:35 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 03:12:03 2023	VibrantHealer35 (STEAM_0:0:161241684) has joined the game
+Sun Sep  3 03:12:03 2023	IC 1262 Scorch (STEAM_0:0:161241684) spawned
+Sun Sep  3 03:12:03 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 03:14:35 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 03:14:58 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sun Sep  3 03:15:06 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sun Sep  3 03:16:13 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sun Sep  3 03:16:23 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sun Sep  3 03:17:21 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 03:17:24 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 03:18:01 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sun Sep  3 03:18:04 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sun Sep  3 03:18:27 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sun Sep  3 03:18:34 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sun Sep  3 03:21:25 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sun Sep  3 03:21:27 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sun Sep  3 03:23:44 2023	IC 1854 Sarge (STEAM_0:0:631269172): badger
+Sun Sep  3 03:23:55 2023	IC 1854 Sarge (STEAM_0:0:631269172): // badger
+Sun Sep  3 03:24:00 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 03:24:41 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected
+Sun Sep  3 03:24:42 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 03:25:58 2023	ST COmmander Spark (STEAM_0:1:460412980): 

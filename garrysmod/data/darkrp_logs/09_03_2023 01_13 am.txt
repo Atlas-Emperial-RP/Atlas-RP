@@ -1,0 +1,31 @@
+Sun Sep  3 01:13:10 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
+Sun Sep  3 01:13:10 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 01:13:43 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 01:15:09 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 01:19:23 2023	IC 1854 Sarge (STEAM_0:0:631269172): npc_health_seller_medicmod
+Sun Sep  3 01:22:18 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sun Sep  3 01:22:41 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sun Sep  3 01:22:47 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sun Sep  3 01:22:48 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sun Sep  3 01:23:26 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sun Sep  3 01:23:38 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sun Sep  3 01:23:42 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sun Sep  3 01:23:51 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sun Sep  3 01:24:27 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT radio_medicmod
+Sun Sep  3 01:26:00 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT radio_medicmod
+Sun Sep  3 01:27:53 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT radio_medicmod
+Sun Sep  3 01:28:37 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sun Sep  3 01:28:50 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT electrocardiogram_medicmod
+Sun Sep  3 01:28:57 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT electrocardiogram_medicmod
+Sun Sep  3 01:29:47 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT radio_medicmod
+Sun Sep  3 01:30:43 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT drug_medicmod
+Sun Sep  3 01:30:54 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bed_medicmod
+Sun Sep  3 01:31:02 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bed_medicmod
+Sun Sep  3 01:31:03 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bed_medicmod
+Sun Sep  3 01:31:05 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bed_medicmod
+Sun Sep  3 01:31:31 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT drip_medicmod
+Sun Sep  3 01:31:36 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT drip_medicmod
+Sun Sep  3 01:36:33 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 01:38:51 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned NPC npc_pigeon
+Sun Sep  3 01:38:53 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned NPC npc_crow
+Sun Sep  3 01:38:55 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned NPC npc_monk

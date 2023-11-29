@@ -1,0 +1,11 @@
+Thu Aug 31 22:52:55 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
+Thu Aug 31 22:52:55 2023	Naval Director Magic Mike (STEAM_0:0:631269172) spawned
+Thu Aug 31 22:53:31 2023	Naval Director Magic Mike (STEAM_0:0:631269172): /advert
+Thu Aug 31 22:53:37 2023	Naval Director Magic Mike (STEAM_0:0:631269172): /advert HA
+Thu Aug 31 22:53:47 2023	DOHEAD (STEAM_0:0:581098097) has joined the game
+Thu Aug 31 22:53:47 2023	DOHEAD (STEAM_0:0:581098097) spawned
+Thu Aug 31 22:55:11 2023	VibrantHealer35 (STEAM_0:0:161241684) has joined the game
+Thu Aug 31 22:55:11 2023	Badger (STEAM_0:0:161241684) spawned
+Thu Aug 31 22:55:31 2023	Spark (STEAM_0:1:460412980) has joined the game
+Thu Aug 31 22:55:31 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Thu Aug 31 22:55:53 2023	Naval Director Magic Mike (STEAM_0:0:631269172): !sql

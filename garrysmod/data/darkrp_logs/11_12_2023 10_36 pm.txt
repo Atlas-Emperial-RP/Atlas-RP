@@ -1,0 +1,183 @@
+Sun Nov 12 22:36:34 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Sun Nov 12 22:36:34 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Nov 12 22:37:35 2023	Poo_Dinkle (STEAM_0:0:649439720) has joined the game
+Sun Nov 12 22:37:35 2023	CT 2LT Bud (STEAM_0:0:649439720) spawned
+Sun Nov 12 22:37:54 2023	Young Shed Theorist (STEAM_0:0:221707039) has joined the game
+Sun Nov 12 22:37:54 2023	Young Shed Theorist (STEAM_0:0:221707039) spawned
+Sun Nov 12 22:40:31 2023	CT 2LT Bud (STEAM_0:0:649439720) spawned
+Sun Nov 12 22:41:31 2023	CT 2LT Bud (STEAM_0:0:649439720): https://discord.gg/aWyeCg9P
+Sun Nov 12 22:41:44 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): //fleetga
+Sun Nov 12 22:41:49 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /fleetga
+Sun Nov 12 22:41:52 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Nov 12 22:42:28 2023	eggs (STEAM_0:0:55135130) has joined the game
+Sun Nov 12 22:42:28 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 12 22:43:18 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sun Nov 12 22:43:18 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 22:44:28 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 12 22:44:30 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 22:44:41 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:44:42 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /name Grand Admiral Grimjaw
+Sun Nov 12 22:44:45 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:45:59 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): /name CT 2LT Hydra
+Sun Nov 12 22:48:53 2023	CT 2LT Hydra (STEAM_0:0:29212178): hello?
+Sun Nov 12 22:50:34 2023	Young Shed Theorist (STEAM_0:0:221707039) disconnected
+Sun Nov 12 22:51:00 2023	CT 2LT Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:52:25 2023	CT 2LT Bud (STEAM_0:0:649439720) spawned SENT gred_emp_mg42_alt
+Sun Nov 12 22:52:40 2023	CT 2LT Bud (STEAM_0:0:649439720) spawned SENT gred_emp_mg42_alt
+Sun Nov 12 22:53:34 2023	CT 2LT Bud (STEAM_0:0:649439720) spawned SENT gred_emp_mg42_alt
+Sun Nov 12 22:53:45 2023	CT 2LT Hydra was killed by CT 2LT Bud with a rw_sw_dc15s
+Sun Nov 12 22:54:04 2023	CT 2LT Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 22:54:14 2023	CT 2LT Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:54:32 2023	Jango (STEAM_0:1:147363270) has joined the game
+Sun Nov 12 22:54:32 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270) spawned
+Sun Nov 12 22:55:40 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270) spawned
+Sun Nov 12 22:56:06 2023	Lord FireBall (STEAM_0:1:129278369) has joined the game
+Sun Nov 12 22:56:06 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Sun Nov 12 22:57:53 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me salutes
+Sun Nov 12 22:58:12 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me waves to you 
+Sun Nov 12 23:04:54 2023	CT 2LT Hydra (STEAM_0:0:29212178) spawned NPC npc_monk
+Sun Nov 12 23:05:01 2023	CT 2LT Hydra (STEAM_0:0:29212178) spawned NPC npc_monk
+Sun Nov 12 23:10:36 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Sun Nov 12 23:11:50 2023	MyTankHasAFlat (STEAM_0:1:152928599) has joined the game
+Sun Nov 12 23:11:50 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sun Nov 12 23:12:19 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sun Nov 12 23:13:42 2023	CT 2LT Hydra (STEAM_0:0:29212178): am i error
+Sun Nov 12 23:13:47 2023	CT 2LT Hydra (STEAM_0:0:29212178): cool
+Sun Nov 12 23:13:47 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me waves to you 
+Sun Nov 12 23:13:54 2023	CT 2LT Hydra (STEAM_0:0:29212178): am i error
+Sun Nov 12 23:14:03 2023	CT 2LT Hydra (STEAM_0:0:29212178): type i cant ehar you
+Sun Nov 12 23:14:13 2023	DT L21 X29 (STEAM_0:1:129278369): // yes
+Sun Nov 12 23:14:17 2023	CT 2LT Hydra (STEAM_0:0:29212178): ok cool ty
+Sun Nov 12 23:14:54 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me salutes
+Sun Nov 12 23:15:35 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me salutes
+Sun Nov 12 23:15:56 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): What is it?
+Sun Nov 12 23:16:11 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): Oh, no I thought you asked something.
+Sun Nov 12 23:16:27 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): Ahhh gotcha, feel that lma
+Sun Nov 12 23:16:33 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): lmao*
+Sun Nov 12 23:16:41 2023	DT L21 X29 (STEAM_0:1:129278369): cheese
+Sun Nov 12 23:16:44 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me breaks that shit DOWN
+Sun Nov 12 23:16:51 2023	DT L21 X29 (STEAM_0:1:129278369): cheese
+Sun Nov 12 23:17:41 2023	CT 2LT Hydra (STEAM_0:0:29212178): no
+Sun Nov 12 23:17:52 2023	CT 2LT Hydra (STEAM_0:0:29212178): dc-15x
+Sun Nov 12 23:19:07 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): E-11
+Sun Nov 12 23:19:14 2023	Croc (STEAM_0:1:161014837) has joined the game
+Sun Nov 12 23:19:14 2023	DT E4 O30 (STEAM_0:1:161014837) spawned
+Sun Nov 12 23:20:19 2023	DT E4 O30 (STEAM_0:1:161014837) spawned
+Sun Nov 12 23:21:29 2023	Atlas (STEAM_0:0:190051560) has joined the game
+Sun Nov 12 23:21:29 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Sun Nov 12 23:22:49 2023	DT E4 O30 (STEAM_0:1:161014837) spawned
+Sun Nov 12 23:23:01 2023	DT E4 O30 (STEAM_0:1:161014837) spawned
+Sun Nov 12 23:25:03 2023	DT E4 O30 (STEAM_0:1:161014837): 
+Sun Nov 12 23:26:32 2023	Medical Commander Jason (STEAM_0:0:190051560) disconnected
+Sun Nov 12 23:26:42 2023	CT 2LT Bud was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 12 23:26:47 2023	CT 2LT Bud (STEAM_0:0:649439720) spawned
+Sun Nov 12 23:28:11 2023	ST SGT 8008 UniTankk was killed by DT L21 X29 with a rw_sw_nade
+Sun Nov 12 23:28:16 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sun Nov 12 23:28:30 2023	Young Shed Theorist (STEAM_0:0:221707039) has joined the game
+Sun Nov 12 23:28:30 2023	Young Shed Theorist (STEAM_0:0:221707039) spawned
+Sun Nov 12 23:30:56 2023	CT 2LT Bud (STEAM_0:0:649439720) spawned
+Sun Nov 12 23:31:14 2023	Young Shed Theorist (STEAM_0:0:221707039) disconnected
+Sun Nov 12 23:31:25 2023	CT 2LT Hydra was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 12 23:31:30 2023	CT 2LT Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 23:31:48 2023	DT E4 O30 (STEAM_0:1:161014837): 
+Sun Nov 12 23:31:53 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 23:32:00 2023	DT L21 X29 was killed by CT 2LT Bud with a tfa_e11_extended
+Sun Nov 12 23:32:08 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Sun Nov 12 23:32:10 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 23:32:16 2023	CT 2LT Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 23:33:03 2023	ST SGT 8008 UniTankk was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 12 23:33:08 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sun Nov 12 23:33:22 2023	CT 2LT Bud was killed by CT 2LT Hydra with a rw_sw_dc15a_o
+Sun Nov 12 23:33:28 2023	CT 2LT Bud (STEAM_0:0:649439720) spawned
+Sun Nov 12 23:33:40 2023	CT 2LT Hydra was killed by ST SGT 8008 UniTankk with a tfa_dh17_extended
+Sun Nov 12 23:33:45 2023	CT 2LT Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 23:33:47 2023	CT 2LT Bud (STEAM_0:0:649439720) spawned
+Sun Nov 12 23:33:52 2023	ST SGT 8008 UniTankk was killed by Themself with a suicide trick
+Sun Nov 12 23:33:58 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sun Nov 12 23:34:03 2023	CT 2LT Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 23:34:13 2023	CT 2LT Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 23:34:46 2023	CT 2LT Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 23:35:06 2023	CT 2LT Bud (STEAM_0:0:649439720) spawned
+Sun Nov 12 23:35:07 2023	CT 2LT Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 23:35:11 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): // Are there plans to add a jump trooper class in the future by chance?
+Sun Nov 12 23:35:17 2023	Grand Admiral Grimjaw (STEAM_0:0:197465498): 
+Sun Nov 12 23:35:26 2023	CT 2LT Bud (STEAM_0:0:649439720): 
+Sun Nov 12 23:35:26 2023	CT 2LT Bud (STEAM_0:0:649439720): 
+Sun Nov 12 23:35:50 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /pm x29 you ready to rp?
+Sun Nov 12 23:35:53 2023	CT 2LT Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 23:36:10 2023	DT L21 X29 (STEAM_0:1:129278369): // yee
+Sun Nov 12 23:36:24 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert DT to ISB HQ
+Sun Nov 12 23:36:36 2023	DT L21 X29 was killed by Entity [2892][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Nov 12 23:36:42 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Sun Nov 12 23:36:45 2023	CT 2LT Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 23:36:47 2023	CT 2LT Bud (STEAM_0:0:649439720) spawned
+Sun Nov 12 23:36:53 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): // Dope
+Sun Nov 12 23:37:17 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert DT to DT bunks
+Sun Nov 12 23:37:23 2023	DT E4 O30 (STEAM_0:1:161014837): /pm scratc can you open the tteleporter
+Sun Nov 12 23:37:28 2023	CT 2LT Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 23:37:32 2023	CT 2LT Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 23:38:38 2023	CT 2LT Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 23:40:39 2023	Atlas (STEAM_0:0:190051560) has joined the game
+Sun Nov 12 23:40:39 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Sun Nov 12 23:41:52 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me puts hand on head
+Sun Nov 12 23:42:07 2023	DT L21 X29 (STEAM_0:1:129278369): 
+Sun Nov 12 23:42:11 2023	CT 2LT Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 23:43:22 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me salutes
+Sun Nov 12 23:43:32 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me disagrees with what you're doing/saying 
+Sun Nov 12 23:43:45 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): Lemme look up the list rq
+Sun Nov 12 23:43:49 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): Forgot which that is
+Sun Nov 12 23:43:49 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me disagrees with what you're doing/saying 
+Sun Nov 12 23:43:51 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me agrees with what you're doing/saying 
+Sun Nov 12 23:43:55 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): One sec
+Sun Nov 12 23:43:58 2023	DT L21 X29 (STEAM_0:1:129278369): // no.
+Sun Nov 12 23:43:59 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599): /advert green
+Sun Nov 12 23:44:07 2023	DT L21 X29 (STEAM_0:1:129278369): // no.
+Sun Nov 12 23:44:08 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // FUCK
+Sun Nov 12 23:44:09 2023	DT L21 X29 (STEAM_0:1:129278369): // no.
+Sun Nov 12 23:44:11 2023	DT L21 X29 (STEAM_0:1:129278369): // no.
+Sun Nov 12 23:44:11 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // oh new content
+Sun Nov 12 23:44:12 2023	DT L21 X29 (STEAM_0:1:129278369): // no.
+Sun Nov 12 23:44:14 2023	DT L21 X29 (STEAM_0:1:129278369): // no.
+Sun Nov 12 23:44:15 2023	DT L21 X29 (STEAM_0:1:129278369): // no.
+Sun Nov 12 23:44:17 2023	DT L21 X29 (STEAM_0:1:129278369): // no.
+Sun Nov 12 23:44:19 2023	DT L21 X29 (STEAM_0:1:129278369): // no.
+Sun Nov 12 23:44:21 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // when is the reset?
+Sun Nov 12 23:44:22 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): I can't paste in chat?/
+Sun Nov 12 23:44:28 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): Look up Gmod act list
+Sun Nov 12 23:44:34 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me agrees with what you're doing/saying 
+Sun Nov 12 23:44:38 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599): /ooc wader
+Sun Nov 12 23:44:42 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me salutes
+Sun Nov 12 23:44:43 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me breaks that shit DOWN
+Sun Nov 12 23:44:44 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me waves to you 
+Sun Nov 12 23:44:47 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /y Move up! 
+Sun Nov 12 23:44:54 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me agrees with what you're doing/saying 
+Sun Nov 12 23:44:56 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me disagrees with what you're doing/saying 
+Sun Nov 12 23:45:00 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me agrees with what you're doing/saying 
+Sun Nov 12 23:45:09 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): Yes is agree
+Sun Nov 12 23:45:13 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): No is disagree
+Sun Nov 12 23:45:30 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): Ye ye
+Sun Nov 12 23:45:41 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): robot
+Sun Nov 12 23:45:41 2023	Medical Commander Jason (STEAM_0:0:190051560) disconnected
+Sun Nov 12 23:45:52 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): Zombie
+Sun Nov 12 23:46:16 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): You know how to have the text with it as well?
+Sun Nov 12 23:46:30 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): Ye, but to bind both them to one key
+Sun Nov 12 23:46:41 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): Gotcha gortcha
+Sun Nov 12 23:46:41 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me agrees with what you're doing/saying 
+Sun Nov 12 23:46:47 2023	DT L21 X29 (STEAM_0:1:129278369): // grimjaw
+Sun Nov 12 23:46:53 2023	DT E4 O30 (STEAM_0:1:161014837): yes
+Sun Nov 12 23:47:07 2023	DT L21 X29 (STEAM_0:1:129278369): /pm grim join vc
+Sun Nov 12 23:47:15 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270): /me salutes
+Sun Nov 12 23:50:13 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me stares blankly
+Sun Nov 12 23:51:08 2023	1LO94G (STEAM_0:0:580928495) has joined the game
+Sun Nov 12 23:51:08 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov 12 23:52:09 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // i can see the default gmod scoreboard
+Sun Nov 12 23:52:20 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // cool amp
+Sun Nov 12 23:52:25 2023	CT 2LT Hydra (STEAM_0:0:29212178) disconnected
+Sun Nov 12 23:52:31 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599): /ooc what
+Sun Nov 12 23:52:38 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /sleep
+Sun Nov 12 23:52:42 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) disconnected
+Sun Nov 12 23:52:47 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599) disconnected
+Sun Nov 12 23:52:50 2023	DT L21 X29 was killed by Entity [2837][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Nov 12 23:52:50 2023	DT E4 O30 (STEAM_0:1:161014837) disconnected
+Sun Nov 12 23:52:56 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Sun Nov 12 23:53:11 2023	DT L21 X29 (STEAM_0:1:129278369) disconnected

@@ -1,0 +1,10 @@
+Sat Sep  2 03:36:29 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
+Sat Sep  2 03:36:29 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 03:36:54 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 03:43:04 2023	IC 1854 Sarge was killed by Themself with a suicide trick
+Sat Sep  2 03:43:04 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 03:43:13 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sat Sep  2 03:43:13 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 03:43:34 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 03:45:57 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sat Sep  2 03:46:09 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 

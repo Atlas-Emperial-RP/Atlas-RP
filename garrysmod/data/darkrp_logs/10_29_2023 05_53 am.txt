@@ -1,0 +1,24 @@
+Sun Oct 29 05:53:27 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Sun Oct 29 05:53:27 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 05:54:06 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Oct 29 05:55:26 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 05:55:37 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): !bmenu
+Sun Oct 29 05:55:38 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /buyammo 4
+Sun Oct 29 05:55:48 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Oct 29 05:58:26 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) disconnected
+Sun Oct 29 07:50:00 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sun Oct 29 07:50:00 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 07:55:36 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 08:05:38 2023	Grand Admiral Jinn (STEAM_0:0:649439720) disconnected
+Sun Oct 29 08:11:46 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sun Oct 29 08:11:46 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 08:12:45 2023	Grand Admiral Jinn (STEAM_0:0:649439720) spawned
+Sun Oct 29 08:14:24 2023	Lucy is Bae (STEAM_0:1:76110013) has joined the game
+Sun Oct 29 08:14:24 2023	Naval Captain Zeta (STEAM_0:1:76110013) spawned
+Sun Oct 29 08:17:12 2023	Naval Captain Zeta (STEAM_0:1:76110013) spawned
+Sun Oct 29 08:17:27 2023	Naval Captain Zeta (STEAM_0:1:76110013): /name Emperor Palpatine
+Sun Oct 29 08:17:56 2023	Emperor Palpatine (STEAM_0:1:76110013): /ooc Vogjin wake up 
+Sun Oct 29 08:18:25 2023	Emperor Palpatine (STEAM_0:1:76110013): !model Palp models/player/emperor_palpatine.mdl
+Sun Oct 29 08:18:31 2023	Emperor Palpatine (STEAM_0:1:76110013): 
+Sun Oct 29 08:19:46 2023	Emperor Palpatine (STEAM_0:1:76110013): 
+Sun Oct 29 08:22:52 2023	Grand Admiral Jinn (STEAM_0:0:649439720) disconnected

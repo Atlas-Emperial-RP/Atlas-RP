@@ -1,0 +1,9 @@
+Sun Nov 26 20:00:24 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sun Nov 26 20:00:24 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sun Nov 26 20:01:18 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sun Nov 26 20:05:45 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc wefwaer
+Sun Nov 26 20:05:48 2023	ST Commander Spark (STEAM_0:1:460412980): /name Chimaera High Overseer Spark
+Sun Nov 26 20:06:05 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) disconnected
+Sun Nov 26 21:50:23 2023	Terta_ (STEAM_0:1:128681061) has joined the game
+Sun Nov 26 21:50:23 2023	Med SGT 8675 Tracy (STEAM_0:1:128681061) spawned
+Sun Nov 26 21:52:23 2023	Med SGT 8675 Tracy (STEAM_0:1:128681061) disconnected

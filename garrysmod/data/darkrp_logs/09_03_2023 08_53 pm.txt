@@ -1,0 +1,134 @@
+Sun Sep  3 20:53:33 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
+Sun Sep  3 20:53:33 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 21:02:54 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT npc_health_seller_medicmod
+Sun Sep  3 21:02:59 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT npc_health_seller_medicmod
+Sun Sep  3 21:03:11 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sun Sep  3 21:03:19 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT terminal_medicmod
+Sun Sep  3 21:05:34 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 21:12:56 2023	DOHEAD (STEAM_0:0:581098097) has joined the game
+Sun Sep  3 21:12:56 2023	DOHEAD (STEAM_0:0:581098097) spawned
+Sun Sep  3 21:14:47 2023	DOHEAD (STEAM_0:0:581098097) spawned
+Sun Sep  3 21:15:48 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:16:26 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 21:16:27 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:21:02 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Sun Sep  3 21:21:02 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 21:21:55 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT lvs_tie_reaper
+Sun Sep  3 21:21:56 2023	ICSL 0001 Jinn was killed by Entity [0][worldspawn] with a unknown
+Sun Sep  3 21:22:05 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 21:22:05 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sun Sep  3 21:23:16 2023	DOHEAD was killed by ICSL 0001 Jinn with a lvs_tie_reaper
+Sun Sep  3 21:23:31 2023	DOHEAD (STEAM_0:0:581098097) spawned
+Sun Sep  3 21:24:11 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 21:24:56 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:25:44 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 21:25:51 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sun Sep  3 21:26:01 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sun Sep  3 21:27:30 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:27:47 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:27:47 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 21:27:56 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 21:28:21 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:28:45 2023	IC 1854 Sarge was killed by Entity [1002][trigger_hurt] with a trigger_hurt
+Sun Sep  3 21:28:55 2023	ICSL 0001 Jinn was killed by Entity [1002][trigger_hurt] with a trigger_hurt
+Sun Sep  3 21:29:00 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 21:29:12 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 21:30:09 2023	IC 1854 Sarge was killed by DOHEAD with a ls_sniper
+Sun Sep  3 21:30:13 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:30:40 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:30:48 2023	ICSL 0001 Jinn was killed by DOHEAD with a ls_sniper
+Sun Sep  3 21:31:03 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 21:35:30 2023	ICSL 0001 Jinn was killed by DOHEAD with a ls_sniper
+Sun Sep  3 21:35:49 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 21:36:25 2023	ICSL 0001 Jinn was killed by DOHEAD with a ls_sniper
+Sun Sep  3 21:36:37 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 21:37:43 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:41:39 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 21:41:44 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 21:42:54 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 21:43:21 2023	IC 1854 Sarge was killed by DOHEAD with a tfa_wsp_5
+Sun Sep  3 21:43:26 2023	ICSL 0001 Jinn was killed by DOHEAD with a tfa_wsp_5
+Sun Sep  3 21:43:42 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 21:43:43 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 21:44:02 2023	DOHEAD was killed by Entity [0][worldspawn] with a unknown
+Sun Sep  3 21:44:17 2023	DOHEAD (STEAM_0:0:581098097) spawned
+Sun Sep  3 21:44:17 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT lunasflightschool_niksacokica_tx-427
+Sun Sep  3 21:44:27 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 21:44:31 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 21:44:33 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT lunasflightschool_niksacokica_tx-427_imperial
+Sun Sep  3 21:44:34 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 21:44:53 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT xx-9_heavy_turbolaser
+Sun Sep  3 21:45:06 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT kingpommes_lfs_atat
+Sun Sep  3 21:45:14 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 21:45:14 2023	DOHEAD (STEAM_0:0:581098097) arrested IC 1854 Sarge
+Sun Sep  3 21:45:25 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 21:45:25 2023	DOHEAD (STEAM_0:0:581098097) arrested ICSL 0001 Jinn
+Sun Sep  3 21:45:30 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 21:45:30 2023	DOHEAD (STEAM_0:0:581098097) arrested IC 1854 Sarge
+Sun Sep  3 21:45:31 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sun Sep  3 21:45:38 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 21:45:44 2023	DOHEAD (STEAM_0:0:581098097) spawned
+Sun Sep  3 21:45:44 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 21:45:53 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:46:05 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT lfs-imperial-laat
+Sun Sep  3 21:46:12 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT turret_bullets2
+Sun Sep  3 21:46:37 2023	DOHEAD was killed by Themself with a suicide trick
+Sun Sep  3 21:46:37 2023	IC 1854 Sarge was killed by DOHEAD with a dc17m_at_rocket2
+Sun Sep  3 21:46:50 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT turret_bullets2
+Sun Sep  3 21:46:52 2023	DOHEAD (STEAM_0:0:581098097) spawned
+Sun Sep  3 21:46:53 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 21:46:54 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:47:35 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT turret_bullets
+Sun Sep  3 21:47:46 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT turret_rail
+Sun Sep  3 21:47:59 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT or_gun_platform_artillery
+Sun Sep  3 21:48:50 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT or_gun_platform_artillery
+Sun Sep  3 21:50:24 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:50:42 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): 
+Sun Sep  3 21:50:53 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:50:56 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 21:51:07 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:51:16 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 21:51:17 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 21:51:23 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 21:52:40 2023	DOHEAD (STEAM_0:0:581098097) disconnected
+Sun Sep  3 21:53:05 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT or_gun_platform_artillery
+Sun Sep  3 21:55:49 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT sent_40k_fieldcannon
+Sun Sep  3 21:55:51 2023	VibrantHealer35 (STEAM_0:0:161241684) has joined the game
+Sun Sep  3 21:55:51 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Sun Sep  3 21:56:17 2023	ICSL 0001 Jinn was killed by IC 1854 Sarge with a sent_40k_fieldcannon
+Sun Sep  3 21:56:26 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 21:56:45 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned SENT sent_40k_fieldcannon
+Sun Sep  3 21:58:01 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Sun Sep  3 21:58:59 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Sun Sep  3 21:59:50 2023	DOHEAD (STEAM_0:0:581098097) has joined the game
+Sun Sep  3 21:59:50 2023	DOHEAD (STEAM_0:0:581098097) spawned
+Sun Sep  3 22:00:49 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Sun Sep  3 22:00:54 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 22:00:57 2023	Purge Commander Badger was killed by ICSL 0001 Jinn with a sent_40k_fieldcannon_plasma
+Sun Sep  3 22:01:15 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Sun Sep  3 22:01:26 2023	Purge Commander Badger was killed by ICSL 0001 Jinn with a sent_40k_fieldcannon
+Sun Sep  3 22:01:33 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Sun Sep  3 22:01:39 2023	Purge Commander Badger was killed by ICSL 0001 Jinn with a sent_40k_fieldcannon_projectile
+Sun Sep  3 22:01:47 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Sun Sep  3 22:02:01 2023	DOHEAD (STEAM_0:0:581098097) spawned
+Sun Sep  3 22:02:09 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 22:02:12 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 22:03:59 2023	DOHEAD (STEAM_0:0:581098097) spawned SENT hb_extended_main_1000lb
+Sun Sep  3 22:04:07 2023	DOHEAD (STEAM_0:0:581098097) spawned SENT hb_extended_main_1000lb
+Sun Sep  3 22:04:30 2023	DOHEAD (STEAM_0:0:581098097) spawned SENT hb_extended_missile_amg88
+Sun Sep  3 22:04:32 2023	ICSL 0001 Jinn was killed by Entity [2868][mediaplayer_tv] with a mediaplayer_tv
+Sun Sep  3 22:04:33 2023	IC 1854 Sarge was killed by DOHEAD with a unknown
+Sun Sep  3 22:04:42 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 22:04:42 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 22:04:47 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 22:04:54 2023	DOHEAD (STEAM_0:0:581098097) spawned SENT hb_extended_missile_amg88
+Sun Sep  3 22:04:56 2023	IC 1854 Sarge was killed by Entity [2868][mediaplayer_tv] with a mediaplayer_tv
+Sun Sep  3 22:04:58 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sun Sep  3 22:04:58 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sun Sep  3 22:04:59 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Sun Sep  3 22:05:13 2023	DOHEAD was killed by IC 1854 Sarge with a rw_sw_e11
+Sun Sep  3 22:05:20 2023	DOHEAD (STEAM_0:0:581098097) spawned
+Sun Sep  3 22:05:29 2023	DOHEAD was killed by ICSL 0001 Jinn with a flamethrower_basic
+Sun Sep  3 22:05:34 2023	DOHEAD (STEAM_0:0:581098097) spawned
+Sun Sep  3 22:05:36 2023	DOHEAD (STEAM_0:0:581098097): 
+Sun Sep  3 22:05:52 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected

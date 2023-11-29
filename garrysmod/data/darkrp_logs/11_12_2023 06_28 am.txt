@@ -1,0 +1,1127 @@
+Sun Nov 12 06:28:25 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Sun Nov 12 06:28:25 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 06:37:47 2023	SHW LTCOL Ares (STEAM_0:1:78700995) disconnected
+Sun Nov 12 17:26:31 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Sun Nov 12 17:26:31 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 17:32:26 2023	SHW LTCOL Ares (STEAM_0:1:78700995) disconnected
+Sun Nov 12 18:58:44 2023	YungLove215 (STEAM_0:0:558698701) has joined the game
+Sun Nov 12 18:58:44 2023	YungLove215 (STEAM_0:0:558698701) spawned
+Sun Nov 12 19:00:15 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sun Nov 12 19:00:15 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:00:35 2023	YungLove215 (STEAM_0:0:558698701): // PLEASE TRAIN ME
+Sun Nov 12 19:00:39 2023	YungLove215 (STEAM_0:0:558698701): // out of character
+Sun Nov 12 19:01:16 2023	IA Commander Demo (STEAM_0:0:29212178): /ooc ok
+Sun Nov 12 19:01:16 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:01:21 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Nov 12 19:02:02 2023	IA Commander Demo (STEAM_0:0:29212178): 1 sec
+Sun Nov 12 19:02:34 2023	IA Commander Demo (STEAM_0:0:29212178): sorry gotta do something go back tp spawn and join the discord link if you havent yet
+Sun Nov 12 19:05:04 2023	IA Commander Demo (STEAM_0:0:29212178): about face
+Sun Nov 12 19:05:42 2023	YungLove215 (STEAM_0:0:558698701): /me salutes with bravery
+Sun Nov 12 19:05:43 2023	YungLove215 (STEAM_0:0:558698701): /me strips weapons and comms
+Sun Nov 12 19:05:44 2023	YungLove215 (STEAM_0:0:558698701): /me strips weapons and comms
+Sun Nov 12 19:06:32 2023	IA Commander Demo (STEAM_0:0:29212178): IA PVT #### Name
+Sun Nov 12 19:06:32 2023	YungLove215 (STEAM_0:0:558698701): /name IA 1939 bram
+Sun Nov 12 19:06:39 2023	IA 1939 bram (STEAM_0:0:558698701): /name IA PVT 1939 bram
+Sun Nov 12 19:07:11 2023	IA PVT 1939 bram (STEAM_0:0:558698701) spawned
+Sun Nov 12 19:07:13 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Nov 12 19:07:25 2023	IA PVT 1939 bram (STEAM_0:0:558698701): /me salutes with bravery
+Sun Nov 12 19:07:56 2023	IA PVT 1939 bram (STEAM_0:0:558698701) disconnected
+Sun Nov 12 19:08:16 2023	IA Commander Demo (STEAM_0:0:29212178): /name Demo on Duty
+Sun Nov 12 19:17:20 2023	Poo_Dinkle (STEAM_0:0:649439720) has joined the game
+Sun Nov 12 19:17:20 2023	ISB Colonel Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 19:18:32 2023	ISB Colonel Jinn (STEAM_0:0:649439720): /ooc demo
+Sun Nov 12 19:21:26 2023	ISB Colonel Jinn (STEAM_0:0:649439720): 
+Sun Nov 12 19:22:05 2023	Demo on Duty (STEAM_0:0:29212178): /ooc yo
+Sun Nov 12 19:22:49 2023	Demo on Duty (STEAM_0:0:29212178): /name IA Commander Demo
+Sun Nov 12 19:22:54 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:23:18 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Nov 12 19:23:36 2023	ISB Colonel Jinn (STEAM_0:0:649439720): 
+Sun Nov 12 19:23:43 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sun Nov 12 19:25:44 2023	IA Commander Demo (STEAM_0:0:29212178) disconnected
+Sun Nov 12 19:26:43 2023	ISB Colonel Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 19:26:47 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sun Nov 12 19:26:47 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:27:40 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:28:00 2023	ISB Colonel Jinn (STEAM_0:0:649439720): /name SLIC 099 Jinn
+Sun Nov 12 19:28:20 2023	SLIC 099 Jinn (STEAM_0:0:649439720): /name SL IC 099 Jinn
+Sun Nov 12 19:28:32 2023	SL IC 099 Jinn (STEAM_0:0:649439720): /name ICSL 099 Jinn
+Sun Nov 12 19:28:35 2023	IA Commander Demo (STEAM_0:0:29212178): /name Chimarea VI Demo
+Sun Nov 12 19:28:35 2023	Chimarea VI Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:29:03 2023	Chimarea VI Demo (STEAM_0:0:29212178): /name Chimaera VI Demo
+Sun Nov 12 19:29:44 2023	Crusader (STEAM_0:0:109652499) has joined the game
+Sun Nov 12 19:29:44 2023	Crusader (STEAM_0:0:109652499) spawned
+Sun Nov 12 19:30:09 2023	Chimaera VI Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:30:18 2023	Chimaera VI Demo (STEAM_0:0:29212178): /cheer
+Sun Nov 12 19:30:27 2023	Chimaera VI Demo (STEAM_0:0:29212178): /name CT PVT 1111 Tester
+Sun Nov 12 19:30:51 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 19:30:51 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): 
+Sun Nov 12 19:31:51 2023	ICSL 099 Jinn was killed by CT PVT 1111 Tester with a rw_sw_dual_dc17
+Sun Nov 12 19:31:56 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 19:32:20 2023	CT PVT 1111 Tester was killed by ICSL 099 Jinn with a rw_sw_dual_dc17
+Sun Nov 12 19:32:25 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:32:30 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): 
+Sun Nov 12 19:36:14 2023	Crusader (STEAM_0:0:109652499) disconnected
+Sun Nov 12 19:37:45 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Sun Nov 12 19:37:45 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 19:39:41 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Sun Nov 12 19:39:41 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 19:39:46 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 19:40:31 2023	yairme (STEAM_0:0:184328867) has joined the game
+Sun Nov 12 19:40:31 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 19:41:33 2023	SHW Commander Pip was killed by ICSL 099 Jinn with a rw_sw_dc15a
+Sun Nov 12 19:41:38 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 19:42:27 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 19:42:46 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): 
+Sun Nov 12 19:42:55 2023	Ensign Pablo (STEAM_0:0:184328867) disconnected
+Sun Nov 12 19:43:13 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): 
+Sun Nov 12 19:43:52 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): 
+Sun Nov 12 19:45:22 2023	SHW Commander Pip was killed by SHW LTCOL Ares with a rw_sw_t21
+Sun Nov 12 19:45:27 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 19:45:40 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): 
+Sun Nov 12 19:48:35 2023	SHW LTCOL Ares was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 19:48:37 2023	SHW Commander Pip was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 19:48:42 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 19:48:47 2023	CT PVT 1111 Tester was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 19:48:47 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 19:48:52 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:49:28 2023	SHW Commander Pip was killed by CT PVT 1111 Tester with a rw_sw_z6
+Sun Nov 12 19:49:33 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 19:49:43 2023	CT PVT 1111 Tester was killed by SHW Commander Pip with a rw_sw_el16
+Sun Nov 12 19:49:47 2023	SHW Commander Pip was killed by ICSL 099 Jinn with a ven_riddick_dlt23v
+Sun Nov 12 19:49:48 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:49:52 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 19:49:58 2023	ICSL 099 Jinn was killed by SHW Commander Pip with a rw_sw_el16
+Sun Nov 12 19:50:01 2023	SHW Commander Pip was killed by CT PVT 1111 Tester with a rw_sw_dc15le_o
+Sun Nov 12 19:50:03 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 19:50:06 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 19:50:12 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): rw_sw_dc19le
+Sun Nov 12 19:50:18 2023	CT PVT 1111 Tester was killed by SHW Commander Pip with a rw_sw_tl50
+Sun Nov 12 19:50:22 2023	SHW Commander Pip was killed by ICSL 099 Jinn with a rw_sw_dc15a
+Sun Nov 12 19:50:23 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:50:27 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 19:50:42 2023	CT PVT 1111 Tester was killed by ICSL 099 Jinn with a rw_sw_dc15le
+Sun Nov 12 19:50:47 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:51:05 2023	CT PVT 1111 Tester was killed by ICSL 099 Jinn with a rw_sw_dc19
+Sun Nov 12 19:51:05 2023	SHW LTCOL Ares was killed by SHW Commander Pip with a rw_sw_t21b
+Sun Nov 12 19:51:10 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:51:11 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 19:51:19 2023	CT PVT 1111 Tester was killed by ICSL 099 Jinn with a rw_sw_dc19le
+Sun Nov 12 19:51:24 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:51:38 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected
+Sun Nov 12 19:51:41 2023	CT PVT 1111 Tester was killed by ICSL 099 Jinn with a rw_sw_dc15x
+Sun Nov 12 19:51:46 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:51:53 2023	SHW LTCOL Ares was killed by ICSL 099 Jinn with a rw_sw_dp23
+Sun Nov 12 19:52:01 2023	CT PVT 1111 Tester was killed by ICSL 099 Jinn with a rw_sw_dp23
+Sun Nov 12 19:52:07 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:52:11 2023	ICSL 099 Jinn was killed by CT PVT 1111 Tester with a rw_sw_westarm5
+Sun Nov 12 19:52:16 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 19:52:51 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 19:52:58 2023	CT PVT 1111 Tester was killed by ICSL 099 Jinn with a rw_sw_stun_dc15s
+Sun Nov 12 19:52:58 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Sun Nov 12 19:52:58 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 19:53:03 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:53:15 2023	ICSL 099 Jinn was killed by CT PVT 1111 Tester with a rw_sw_stun_dc17
+Sun Nov 12 19:53:23 2023	SHW Commander Pip was killed by CT PVT 1111 Tester with a rw_sw_stun_dc17
+Sun Nov 12 19:53:24 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 19:53:41 2023	CT PVT 1111 Tester was killed by ICSL 099 Jinn with a rw_sw_dual_dc17s
+Sun Nov 12 19:53:47 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:53:50 2023	ICSL 099 Jinn was killed by CT PVT 1111 Tester with a rw_sw_dual_dc17s
+Sun Nov 12 19:53:55 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 19:54:32 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 19:55:13 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 19:55:14 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): 
+Sun Nov 12 19:55:34 2023	CT PVT 1111 Tester was killed by ICSL 099 Jinn with a rw_sw_nt242c
+Sun Nov 12 19:55:39 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:55:43 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): 
+Sun Nov 12 19:56:27 2023	CT PVT 1111 Tester was killed by ICSL 099 Jinn with a rw_sw_nt242c
+Sun Nov 12 19:56:32 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 19:56:44 2023	SHW Commander Pip was killed by Entity [2850][mortar_bomb_shell] with a mortar_bomb_shell
+Sun Nov 12 19:56:48 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): 
+Sun Nov 12 19:56:49 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 19:57:11 2023	SHW LTCOL Ares was killed by SHW Commander Pip with a ent_rw_rocket
+Sun Nov 12 19:57:20 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Sun Nov 12 19:57:25 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 19:57:36 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): 
+Sun Nov 12 19:57:50 2023	yairme (STEAM_0:0:184328867) has joined the game
+Sun Nov 12 19:57:50 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 19:58:14 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 19:58:19 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 19:59:18 2023	SHW LTCOL Ares was killed by ICSL 099 Jinn with a rw_sw_electrodagger
+Sun Nov 12 19:59:34 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 19:59:35 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): Ensign Pablo SteamID [ STEAM_0:0:184328867 ]  SteamID64 [ 76561198328923462 ] Steam Name [ Ensign Pablo ]
+Sun Nov 12 19:59:52 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 20:00:39 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): 
+Sun Nov 12 20:03:18 2023	Willisepic66 (STEAM_0:1:460210970) has joined the game
+Sun Nov 12 20:03:18 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:04:13 2023	CT PVT 1111 Tester was killed by ICSL 099 Jinn with a at_sw_dc17m
+Sun Nov 12 20:04:18 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:04:21 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): owy
+Sun Nov 12 20:04:22 2023	CT PVT 1111 Tester (STEAM_0:0:29212178) spawned
+Sun Nov 12 20:04:51 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): 
+Sun Nov 12 20:04:52 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 20:04:53 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): 
+Sun Nov 12 20:05:53 2023	SHRT SGT 4201 Billy was killed by Ensign Pablo with a tfa_dt29
+Sun Nov 12 20:06:04 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:06:57 2023	CT PVT 1111 Tester (STEAM_0:0:29212178): /name CT 2LT 8287 Hydra
+Sun Nov 12 20:07:08 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 20:07:20 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): /name CT 2LT 8287 Hydra
+Sun Nov 12 20:07:30 2023	SHRT SGT 4201 Billy was killed by Ensign Pablo with a tfa_dt29
+Sun Nov 12 20:07:40 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:08:39 2023	SHRT SGT 4201 Billy was killed by CT 2LT 8287 Hydra with a rw_sw_dual_dc17
+Sun Nov 12 20:08:44 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:09:17 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 20:09:40 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 20:10:14 2023	SHRT SGT 4201 Billy was killed by ICSL 099 Jinn with a dc17m_at_rocket2
+Sun Nov 12 20:10:21 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:11:54 2023	CT 2LT 8287 Hydra was killed by ICSL 099 Jinn with a rw_sw_tl40
+Sun Nov 12 20:12:00 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 20:13:24 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 20:13:56 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 20:15:19 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 20:15:21 2023	Ensign Pablo (STEAM_0:0:184328867): 
+Sun Nov 12 20:15:28 2023	Ensign Pablo (STEAM_0:0:184328867): 
+Sun Nov 12 20:15:40 2023	Ensign Pablo (STEAM_0:0:184328867): 
+Sun Nov 12 20:17:53 2023	Ensign Pablo (STEAM_0:0:184328867): 
+Sun Nov 12 20:18:53 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 20:18:54 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 20:19:03 2023	SHW Commander Pip was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 20:19:08 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:19:28 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 20:19:33 2023	Ensign Pablo was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 20:19:38 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:19:40 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): /name Lieutenant Demo
+Sun Nov 12 20:19:41 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 20:19:48 2023	SHW Commander Pip (STEAM_0:1:169781558): /name Dealer Plip
+Sun Nov 12 20:19:50 2023	SHRT SGT 4201 Billy was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 20:19:56 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:20:02 2023	SHW LTCOL Ares (STEAM_0:1:78700995): no
+Sun Nov 12 20:20:55 2023	SHW LTCOL Ares was killed by SHRT SGT 4201 Billy with a rw_sw_e22
+Sun Nov 12 20:21:00 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970): /sleep
+Sun Nov 12 20:21:00 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 20:21:00 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:21:00 2023	SHRT SGT 4201 Billy was killed by Dealer Plip with a stunstick
+Sun Nov 12 20:21:05 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:21:09 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT rw_sw_dispencer
+Sun Nov 12 20:21:37 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT rw_sw_dispencer
+Sun Nov 12 20:21:48 2023	SHW LTCOL Ares (STEAM_0:1:78700995): /me strips weapons and comms
+Sun Nov 12 20:21:55 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT rw_sw_dispencer_grenade
+Sun Nov 12 20:21:56 2023	SHRT SGT 4201 Billy was killed by SHW LTCOL Ares with a rw_sw_se14c
+Sun Nov 12 20:22:09 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:22:10 2023	Ensign Pablo (STEAM_0:0:184328867): 
+Sun Nov 12 20:22:15 2023	Ensign Pablo (STEAM_0:0:184328867): 
+Sun Nov 12 20:23:17 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT rw_sw_dispencer
+Sun Nov 12 20:23:44 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT rw_sw_dispencer_grenade
+Sun Nov 12 20:23:52 2023	Ensign Pablo (STEAM_0:0:184328867): /act dance
+Sun Nov 12 20:24:09 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT rw_sw_dispencer
+Sun Nov 12 20:24:20 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT rw_sw_dispencer_grenade
+Sun Nov 12 20:24:29 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT rw_sw_dispencer
+Sun Nov 12 20:24:54 2023	Dealer Plip (STEAM_0:1:169781558): /ooc bind {key} "act dance"
+Sun Nov 12 20:25:08 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970): /agree
+Sun Nov 12 20:25:26 2023	Lieutenant Demo (STEAM_0:0:29212178): 
+Sun Nov 12 20:25:31 2023	Lieutenant Demo (STEAM_0:0:29212178): 
+Sun Nov 12 20:25:53 2023	Dealer Plip (STEAM_0:1:169781558): /advert {! Baby, getting cheated and getting outplayed ain't the same thing.(Loitering - 10secs - Do not return for 10min)}
+Sun Nov 12 20:26:05 2023	Dealer Plip (STEAM_0:1:169781558): /advert nuh uh
+Sun Nov 12 20:26:47 2023	SHW LTCOL Ares (STEAM_0:1:78700995): bind [key] stp
+Sun Nov 12 20:27:40 2023	SHRT SGT 4201 Billy was killed by Lieutenant Demo with a rw_sw_rg4d
+Sun Nov 12 20:27:45 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:28:07 2023	Dealer Plip was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 20:28:19 2023	Dealer Plip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:28:29 2023	SHRT SGT 4201 Billy was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 20:28:33 2023	SHW LTCOL Ares was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 20:28:34 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:28:39 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 20:28:44 2023	Ensign Pablo was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 20:28:56 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 20:28:58 2023	Dealer Plip (STEAM_0:1:169781558) spawned SENT gred_emp_m2
+Sun Nov 12 20:29:06 2023	SHRT SGT 4201 Billy was killed by Dealer Plip with a unknown
+Sun Nov 12 20:29:19 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:29:22 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_gau19
+Sun Nov 12 20:29:39 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_phalanx
+Sun Nov 12 20:29:49 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_fnmag
+Sun Nov 12 20:30:05 2023	SHRT SGT 4201 Billy was killed by Lieutenant Demo with a unknown
+Sun Nov 12 20:30:06 2023	Dealer Plip (STEAM_0:1:169781558) spawned SENT gred_emp_m240b
+Sun Nov 12 20:30:11 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:30:15 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT or_artillery_incoming_shell_basilisk_inc
+Sun Nov 12 20:30:17 2023	Lieutenant Demo was killed by ICSL 099 Jinn with a unknown
+Sun Nov 12 20:30:17 2023	Dealer Plip was killed by ICSL 099 Jinn with a unknown
+Sun Nov 12 20:30:18 2023	SHW LTCOL Ares was killed by ICSL 099 Jinn with a unknown
+Sun Nov 12 20:30:18 2023	Ensign Pablo was killed by ICSL 099 Jinn with a unknown
+Sun Nov 12 20:30:20 2023	ICSL 099 Jinn was killed by Themself with a suicide trick
+Sun Nov 12 20:30:20 2023	SHRT SGT 4201 Billy was killed by ICSL 099 Jinn with a unknown
+Sun Nov 12 20:30:22 2023	Dealer Plip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:30:23 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 20:30:23 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 20:30:25 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 20:30:29 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:30:31 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 20:30:36 2023	Dealer Plip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:30:48 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_zpu4_1949
+Sun Nov 12 20:31:02 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_m60
+Sun Nov 12 20:31:04 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970): /advert sorry guys i tunred the thermostat from 75 to 80
+Sun Nov 12 20:31:10 2023	Xanderr (STEAM_0:0:63471237) has joined the game
+Sun Nov 12 20:31:10 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 20:31:17 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_2a65
+Sun Nov 12 20:31:28 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_m777
+Sun Nov 12 20:31:38 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_bofors
+Sun Nov 12 20:31:42 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /shadowcommand
+Sun Nov 12 20:31:44 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 20:31:45 2023	Dealer Plip (STEAM_0:1:169781558): /name SHW Commander Pip
+Sun Nov 12 20:31:47 2023	Lieutenant Demo (STEAM_0:0:29212178): 
+Sun Nov 12 20:31:53 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gb_rocket_v1
+Sun Nov 12 20:31:54 2023	SHRT SGT 4201 Billy was killed by ICSL 099 Jinn with a gb_rocket_v1
+Sun Nov 12 20:31:54 2023	Lieutenant Demo was killed by ICSL 099 Jinn with a gb_rocket_v1
+Sun Nov 12 20:31:54 2023	ICSL 099 Jinn was killed by Themself with a suicide trick
+Sun Nov 12 20:31:59 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 20:31:59 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:32:00 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 20:32:09 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_phalanx
+Sun Nov 12 20:32:30 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970): /cheer
+Sun Nov 12 20:32:34 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_artemis30
+Sun Nov 12 20:32:49 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_breda35
+Sun Nov 12 20:32:57 2023	ICSL 099 Jinn was killed by Lieutenant Demo with a gred_emp_phalanx
+Sun Nov 12 20:33:03 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_3inchmortar
+Sun Nov 12 20:33:09 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 20:33:11 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_3inchmortar
+Sun Nov 12 20:33:11 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert WHOEVER IS MAKING THAT RACKET, I WILL FUCK YOU UP
+Sun Nov 12 20:33:32 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_3inchmortar
+Sun Nov 12 20:33:44 2023	ICSL 099 Jinn was killed by Lieutenant Demo with a base_shell
+Sun Nov 12 20:33:49 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 20:33:53 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_nebelwerfer
+Sun Nov 12 20:34:04 2023	Lieutenant Demo (STEAM_0:0:29212178): my back hurts
+Sun Nov 12 20:34:06 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_rocket_hvar
+Sun Nov 12 20:34:09 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_rocket_hvar
+Sun Nov 12 20:34:19 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_rocket_hvar
+Sun Nov 12 20:34:21 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_phalanx
+Sun Nov 12 20:34:23 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Sun Nov 12 20:34:23 2023	SHRT SGT 4201 Billy was killed by SHW Commander Pip with a gb_rocket_hvar
+Sun Nov 12 20:34:34 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:34:44 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_rocket_hvar
+Sun Nov 12 20:34:47 2023	Ensign Pablo was killed by Entity [2927][gb_rocket_nebel] with a gb_rocket_nebel
+Sun Nov 12 20:34:52 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 20:34:53 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Sun Nov 12 20:34:53 2023	SHW LTCOL Ares was killed by SHW Commander Pip with a gb_rocket_hvar
+Sun Nov 12 20:34:53 2023	SHW Colonel Furboy was killed by SHW Commander Pip with a gb_rocket_hvar
+Sun Nov 12 20:34:53 2023	ICSL 099 Jinn was killed by SHW Commander Pip with a gb_rocket_hvar
+Sun Nov 12 20:34:57 2023	SHW Colonel Furboy (STEAM_0:0:63471237): LMAO
+Sun Nov 12 20:34:59 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 20:35:01 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:35:01 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 20:35:02 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 20:35:03 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:35:37 2023	SHW LTCOL Ares was killed by Lieutenant Demo with a unknown
+Sun Nov 12 20:35:38 2023	SHW Colonel Furboy was killed by Lieutenant Demo with a unknown
+Sun Nov 12 20:35:38 2023	Ensign Pablo was killed by Lieutenant Demo with a unknown
+Sun Nov 12 20:35:40 2023	SHW Commander Pip was killed by Lieutenant Demo with a unknown
+Sun Nov 12 20:35:46 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:35:47 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 20:35:48 2023	SHRT SGT 4201 Billy was killed by Lieutenant Demo with a unknown
+Sun Nov 12 20:35:50 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 20:35:51 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 20:35:54 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:35:57 2023	SHW Colonel Furboy (STEAM_0:0:63471237): // WHAT THE ACTUAL FUCK
+Sun Nov 12 20:36:25 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_flak37
+Sun Nov 12 20:36:49 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_rpk
+Sun Nov 12 20:36:58 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_gau19
+Sun Nov 12 20:37:00 2023	SHW Commander Pip was killed by Lieutenant Demo with a unknown
+Sun Nov 12 20:37:07 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:37:13 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_m2a1
+Sun Nov 12 20:37:15 2023	Lieutenant Demo was killed by Ensign Pablo with a tfa_dt29
+Sun Nov 12 20:37:20 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 20:37:26 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gb_rocket_nebel
+Sun Nov 12 20:37:27 2023	Lieutenant Demo was killed by Entity [2908][base_shell] with a base_shell
+Sun Nov 12 20:37:32 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 20:37:40 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_pak40
+Sun Nov 12 20:37:45 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_gpf155
+Sun Nov 12 20:38:12 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_tie_fighter
+Sun Nov 12 20:38:13 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_pak43
+Sun Nov 12 20:38:15 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_pak43
+Sun Nov 12 20:38:19 2023	SHW Colonel Furboy (STEAM_0:0:63471237): "Don't aim towards people" *was just aiming it inside the base*
+Sun Nov 12 20:38:26 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_flakvierling38
+Sun Nov 12 20:38:27 2023	Ensign Pablo (STEAM_0:0:184328867) disconnected
+Sun Nov 12 20:38:33 2023	Lieutenant Demo was killed by ICSL 099 Jinn with a unknown
+Sun Nov 12 20:38:38 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 20:38:38 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_6pdr
+Sun Nov 12 20:38:43 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_tie_interceptor
+Sun Nov 12 20:39:12 2023	SHW Commander Pip was killed by Lieutenant Demo with a lvs_tie_interceptor
+Sun Nov 12 20:39:17 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:39:22 2023	Lieutenant Demo was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 12 20:39:28 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 20:39:34 2023	Screen_wolf75 (STEAM_0:0:231421928) has joined the game
+Sun Nov 12 20:39:34 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Sun Nov 12 20:39:40 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_awing
+Sun Nov 12 20:39:46 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Sun Nov 12 20:39:52 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_ywing
+Sun Nov 12 20:39:55 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_flakvierling38
+Sun Nov 12 20:39:59 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_tie_defender
+Sun Nov 12 20:40:06 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 12 20:40:07 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_flak38
+Sun Nov 12 20:40:08 2023	yairme (STEAM_0:0:184328867) has joined the game
+Sun Nov 12 20:40:08 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 20:40:11 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:40:24 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_tie_fighter
+Sun Nov 12 20:40:26 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_tie_fighter
+Sun Nov 12 20:40:35 2023	SHW Colonel Furboy was killed by SHW Commander Pip with a gred_emp_flakvierling38
+Sun Nov 12 20:40:35 2023	ICSL 099 Jinn was killed by SHW Commander Pip with a lvs_tie_fighter
+Sun Nov 12 20:40:41 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 20:40:43 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 20:40:54 2023	Lieutenant Demo (STEAM_0:0:29212178): /advert TIR FITHERS DO NOT SHOOT BACK
+Sun Nov 12 20:41:02 2023	SHW LTCOL Ares was killed by SHW Commander Pip with a gred_emp_flakvierling38
+Sun Nov 12 20:41:07 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_zpu4_1949
+Sun Nov 12 20:41:07 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 20:41:09 2023	SHW Colonel Furboy (STEAM_0:0:63471237): // tir fithers
+Sun Nov 12 20:41:11 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_flakvierling38
+Sun Nov 12 20:41:15 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_flakvierling38
+Sun Nov 12 20:41:20 2023	Lieutenant Demo (STEAM_0:0:29212178): /advert Tie Fighters do not shoot this is AA Training only
+Sun Nov 12 20:41:39 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_tie_fighter
+Sun Nov 12 20:41:43 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_flak36
+Sun Nov 12 20:41:46 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_flak36
+Sun Nov 12 20:41:47 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 20:41:48 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 12 20:41:49 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Sun Nov 12 20:41:52 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_awing
+Sun Nov 12 20:41:53 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:42:20 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_xwing
+Sun Nov 12 20:42:22 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_uwing
+Sun Nov 12 20:42:39 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT lvs_starfighter_vulturedroid
+Sun Nov 12 20:42:43 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970): /ADVERT I WOULD LIKE A SHIP
+Sun Nov 12 20:42:43 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_xwing
+Sun Nov 12 20:42:57 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_flak40z
+Sun Nov 12 20:43:40 2023	Ensign Pablo (STEAM_0:0:184328867) disconnected
+Sun Nov 12 20:43:40 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_phalanx
+Sun Nov 12 20:43:47 2023	Lieutenant Demo was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 12 20:43:53 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 20:44:34 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_phalanx
+Sun Nov 12 20:44:37 2023	SHW Colonel Furboy (STEAM_0:0:63471237): lets find out
+Sun Nov 12 20:44:38 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT lvs_starfighter_vulturedroid
+Sun Nov 12 20:44:54 2023	yairme (STEAM_0:0:184328867) has joined the game
+Sun Nov 12 20:44:54 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 20:44:58 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT lvs_starfighter_arc170
+Sun Nov 12 20:45:08 2023	SHRT SGT 4201 Billy was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 12 20:45:13 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:45:14 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Sun Nov 12 20:45:17 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_fakehover_iftx
+Sun Nov 12 20:45:19 2023	ICSL 099 Jinn was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 12 20:45:23 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT tie_interceptor
+Sun Nov 12 20:45:24 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_starfighter_droidtrifighter
+Sun Nov 12 20:45:25 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT tie_interceptor
+Sun Nov 12 20:45:35 2023	Lieutenant Demo was killed by SHW LTCOL Ares with a unknown
+Sun Nov 12 20:45:37 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Sun Nov 12 20:45:40 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 20:45:41 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 20:45:50 2023	SHW LTCOL Ares was killed by Themself with a suicide trick
+Sun Nov 12 20:45:53 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT lvs_xwing
+Sun Nov 12 20:45:54 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_starfighter_vwing
+Sun Nov 12 20:45:59 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 20:46:03 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT lvs_awing
+Sun Nov 12 20:46:17 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_phalanx
+Sun Nov 12 20:46:30 2023	SHRT SGT 4201 Billy was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 12 20:46:31 2023	SHW Colonel Furboy was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 12 20:46:37 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 20:46:38 2023	Lieutenant Demo was killed by SHW Commander Pip with a unknown
+Sun Nov 12 20:46:39 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:46:43 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 20:46:45 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970): /ADVERT TP PLEAS
+Sun Nov 12 20:46:58 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_zsu23
+Sun Nov 12 20:47:15 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT gred_emp_artemis30
+Sun Nov 12 20:47:55 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT xx-9_heavy_turbolaser
+Sun Nov 12 20:47:56 2023	SHW Colonel Furboy (STEAM_0:0:63471237): MOM SAID ITS MY TURN ON THE XBOX
+Sun Nov 12 20:47:56 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_phalanx
+Sun Nov 12 20:47:57 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_phalanx
+Sun Nov 12 20:47:58 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_phalanx
+Sun Nov 12 20:47:59 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_phalanx
+Sun Nov 12 20:48:12 2023	SHW Colonel Furboy was killed by SHW Commander Pip with a gred_emp_phalanx
+Sun Nov 12 20:48:15 2023	SHW LTCOL Ares was killed by SHW Commander Pip with a gred_emp_phalanx
+Sun Nov 12 20:48:15 2023	ICSL 099 Jinn was killed by SHRT SGT 4201 Billy with a unknown
+Sun Nov 12 20:48:17 2023	SHRT SGT 4201 Billy was killed by SHW Commander Pip with a gred_emp_phalanx
+Sun Nov 12 20:48:19 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 20:48:21 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 20:48:21 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 20:48:21 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_phalanx
+Sun Nov 12 20:48:23 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:48:47 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_zsu23
+Sun Nov 12 20:48:54 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT 23v_lafette
+Sun Nov 12 20:48:57 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_zsu23
+Sun Nov 12 20:49:05 2023	Ensign Pablo (STEAM_0:0:184328867) disconnected
+Sun Nov 12 20:49:06 2023	SHRT SGT 4201 Billy was killed by SHW Commander Pip with a unknown
+Sun Nov 12 20:49:06 2023	Lieutenant Demo was killed by SHW Commander Pip with a unknown
+Sun Nov 12 20:49:11 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 20:49:19 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT 23v_lafette
+Sun Nov 12 20:49:27 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT 23v_lafette
+Sun Nov 12 20:49:32 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT 23v_lafette
+Sun Nov 12 20:49:33 2023	SHW Commander Pip was killed by Entity [2846][23v_lafette] with a 23v_lafette
+Sun Nov 12 20:49:37 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:49:39 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:49:43 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT 23v_lafette
+Sun Nov 12 20:50:00 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_tie_fighter
+Sun Nov 12 20:50:18 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT gred_emp_phalanx
+Sun Nov 12 20:50:26 2023	SHW LTCOL Ares was killed by SHW Commander Pip with a unknown
+Sun Nov 12 20:50:26 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned SENT lvs_imperial_transport
+Sun Nov 12 20:50:34 2023	SHRT SGT 4201 Billy was killed by SHW Commander Pip with a unknown
+Sun Nov 12 20:50:35 2023	SHW Commander Pip was killed by Lieutenant Demo with a gred_emp_phalanx
+Sun Nov 12 20:50:41 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:50:41 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:51:01 2023	yairme (STEAM_0:0:184328867) has joined the game
+Sun Nov 12 20:51:01 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 20:51:28 2023	SHRT SGT 4201 Billy was killed by First Order Commander Pretzel with a rw_sw_stw48
+Sun Nov 12 20:51:33 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 20:51:33 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:51:41 2023	First Order Commander Pretzel (STEAM_0:0:231421928): hi bitch boy <3
+Sun Nov 12 20:52:35 2023	eggs (STEAM_0:0:55135130) has joined the game
+Sun Nov 12 20:52:35 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 12 20:52:59 2023	First Order Commander Pretzel (STEAM_0:0:231421928): i fucking hate you
+Sun Nov 12 20:53:10 2023	SHW Colonel Furboy was killed by First Order Commander Pretzel with a rw_sw_stw48
+Sun Nov 12 20:53:16 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 20:53:50 2023	SHRT SGT 4201 Billy was killed by SHW Commander Pip with a stunstick
+Sun Nov 12 20:54:12 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:54:21 2023	Young Shed Theorist (STEAM_0:0:221707039) has joined the game
+Sun Nov 12 20:54:21 2023	Young Shed Theorist (STEAM_0:0:221707039) spawned
+Sun Nov 12 20:54:22 2023	Ensign Pablo (STEAM_0:0:184328867) disconnected
+Sun Nov 12 20:54:25 2023	SHW Colonel Furboy (STEAM_0:0:63471237): shiny
+Sun Nov 12 20:55:46 2023	yairme (STEAM_0:0:184328867) has joined the game
+Sun Nov 12 20:55:46 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 20:55:56 2023	SHRT SGT 4201 Billy was killed by SHW Colonel Furboy with a rw_sw_t21
+Sun Nov 12 20:56:01 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) disconnected
+Sun Nov 12 20:56:59 2023	Willisepic66 (STEAM_0:1:460210970) has joined the game
+Sun Nov 12 20:56:59 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:57:17 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Sun Nov 12 20:57:17 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sun Nov 12 20:57:22 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 20:57:27 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 20:57:41 2023	SHW LTCOL Ares was killed by SHRT SGT 4201 Billy with a rw_sw_rk3
+Sun Nov 12 20:57:46 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 20:57:47 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 20:58:27 2023	First Order Commander Pretzel was killed by SHRT SGT 4201 Billy with a rw_sw_rk3
+Sun Nov 12 20:58:34 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Sun Nov 12 20:58:44 2023	SHRT SGT 4201 Billy was killed by SHW Commander Pip with a rw_sw_t21
+Sun Nov 12 20:58:51 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 21:00:32 2023	SHW Colonel Furboy (STEAM_0:0:63471237): wat
+Sun Nov 12 21:02:10 2023	SHW Colonel Furboy (STEAM_0:0:63471237): a code cylinder?
+Sun Nov 12 21:02:32 2023	SHW Colonel Furboy (STEAM_0:0:63471237): wow, call yourselves members of the empire and you don't know that. SMH
+Sun Nov 12 21:02:51 2023	SHW Colonel Furboy (STEAM_0:0:63471237): I like pablo, he gives me sugar
+Sun Nov 12 21:03:12 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 12 21:03:28 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /name IA Vice Commander Scratchma
+Sun Nov 12 21:03:58 2023	Ensign Pablo was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 21:04:25 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 21:04:27 2023	IA Vice Commander Scratchma was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 21:04:49 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 12 21:04:59 2023	SHW Commander Pip (STEAM_0:1:169781558): /pm shw i like how when other people die it's funny but when he dies it's not okay
+Sun Nov 12 21:05:07 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970): /ME GETS IGH
+Sun Nov 12 21:05:44 2023	SHW Commander Pip (STEAM_0:1:169781558): /pm pret I love how when other people dies it's okay, but when he dies it's not
+Sun Nov 12 21:05:57 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm pip ikr
+Sun Nov 12 21:06:19 2023	SHW Colonel Furboy (STEAM_0:0:63471237): LETS GO
+Sun Nov 12 21:06:21 2023	SHW Colonel Furboy (STEAM_0:0:63471237): MURDER
+Sun Nov 12 21:06:31 2023	SHW Commander Pip was killed by Ensign Pablo with a tfa_dt29
+Sun Nov 12 21:06:36 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 21:07:24 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm pip he's being annoying af
+Sun Nov 12 21:07:48 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT lvs_repulsorlift_gunship
+Sun Nov 12 21:07:58 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Damn rust bucket! (Defective)
+Sun Nov 12 21:08:15 2023	SHW Colonel Furboy was killed by First Order Commander Pretzel with a rw_sw_stw48
+Sun Nov 12 21:08:24 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 21:09:19 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Damn rust bucket! (Defective)
+Sun Nov 12 21:09:48 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sun Nov 12 21:11:18 2023	SHW Colonel Furboy (STEAM_0:0:63471237): hmm?
+Sun Nov 12 21:11:26 2023	SHW Colonel Furboy (STEAM_0:0:63471237): up to you
+Sun Nov 12 21:11:42 2023	First Order Commander Pretzel (STEAM_0:0:231421928): im deafening in discord unntil bitch shuts up
+Sun Nov 12 21:11:57 2023	First Order Commander Pretzel (STEAM_0:0:231421928): noipe
+Sun Nov 12 21:12:01 2023	SHW Colonel Furboy (STEAM_0:0:63471237): they just wont stop arguing
+Sun Nov 12 21:12:06 2023	First Order Commander Pretzel (STEAM_0:0:231421928): up to you
+Sun Nov 12 21:12:12 2023	SHW Colonel Furboy (STEAM_0:0:63471237): :3
+Sun Nov 12 21:12:28 2023	First Order Commander Pretzel (STEAM_0:0:231421928): flip a coin and choose based off that
+Sun Nov 12 21:12:39 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT aura_lfs_fight_display_panel
+Sun Nov 12 21:12:43 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT aura_lfs_fight_display_panel
+Sun Nov 12 21:13:18 2023	Lieutenant Demo (STEAM_0:0:29212178) spawned
+Sun Nov 12 21:13:23 2023	SHW Colonel Furboy (STEAM_0:0:63471237): idfk
+Sun Nov 12 21:13:24 2023	First Order Commander Pretzel (STEAM_0:0:231421928): you good?
+Sun Nov 12 21:13:37 2023	Lieutenant Demo (STEAM_0:0:29212178): 
+Sun Nov 12 21:13:53 2023	SHW Colonel Furboy (STEAM_0:0:63471237): yeah, they did
+Sun Nov 12 21:13:59 2023	SHW Colonel Furboy (STEAM_0:0:63471237): kinda rude
+Sun Nov 12 21:14:08 2023	First Order Commander Pretzel (STEAM_0:0:231421928): i  dont want to, billy is being annoying and shit
+Sun Nov 12 21:14:15 2023	Lieutenant Demo (STEAM_0:0:29212178): /name CT 2LT 8287 Hydra
+Sun Nov 12 21:14:20 2023	SHW Colonel Furboy (STEAM_0:0:63471237): nothing new then
+Sun Nov 12 21:14:20 2023	ICSL 099 Jinn (STEAM_0:0:649439720): 
+Sun Nov 12 21:14:27 2023	First Order Commander Pretzel (STEAM_0:0:231421928): fuck it 
+Sun Nov 12 21:14:43 2023	First Order Commander Pretzel (STEAM_0:0:231421928): xander, crashma lets go 
+Sun Nov 12 21:15:09 2023	ICSL 099 Jinn (STEAM_0:0:649439720): 
+Sun Nov 12 21:15:28 2023	SHRT SGT 4201 Billy was killed by SHW Commander Pip with a at_sw_dc17m
+Sun Nov 12 21:15:30 2023	First Order Commander Pretzel (STEAM_0:0:231421928): heheh
+Sun Nov 12 21:15:33 2023	SHW Colonel Furboy (STEAM_0:0:63471237): wow
+Sun Nov 12 21:15:40 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 21:16:00 2023	SHRT SGT 4201 Billy was killed by SHW Commander Pip with a at_sw_dc17m
+Sun Nov 12 21:16:02 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /pm fur cloak and go in
+Sun Nov 12 21:16:05 2023	SHW Colonel Furboy (STEAM_0:0:63471237): {*Oh noes, dats not good! [Defective]}
+Sun Nov 12 21:16:06 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 21:16:26 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 12 21:16:26 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /name ISB Deputy Chief Scratchma
+Sun Nov 12 21:16:38 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 21:16:41 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 21:16:43 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 21:16:52 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:16:54 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 21:17:11 2023	Ensign Pablo was killed by SHRT SGT 4201 Billy with a weapon_infect_rak
+Sun Nov 12 21:17:13 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm xander where'd you go
+Sun Nov 12 21:17:16 2023	SHRT SGT 4201 Billy was killed by SHW Commander Pip with a at_sw_dc17m
+Sun Nov 12 21:17:19 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 21:17:22 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 21:17:32 2023	First Order Commander Pretzel (STEAM_0:0:231421928): idk
+Sun Nov 12 21:17:37 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /pm Pretzel I was told to cloak and sneak by scratchma
+Sun Nov 12 21:17:47 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sun Nov 12 21:17:53 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm xander oh just go in the office
+Sun Nov 12 21:17:56 2023	First Order Commander Pretzel was killed by Entity [1002][trigger_hurt] with a trigger_hurt
+Sun Nov 12 21:17:58 2023	SHRT SGT 4201 Billy was killed by SHW Commander Pip with a at_sw_dc17m
+Sun Nov 12 21:18:01 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Sun Nov 12 21:18:04 2023	SHW LTCOL Ares was killed by SHW Commander Pip with a at_sw_dc17m
+Sun Nov 12 21:18:12 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 21:18:14 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Sun Nov 12 21:18:14 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sun Nov 12 21:18:15 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 21:18:19 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 21:18:22 2023	SHW Colonel Furboy (STEAM_0:0:63471237): bird
+Sun Nov 12 21:18:31 2023	SHW Colonel Furboy (STEAM_0:0:63471237): goofy ah
+Sun Nov 12 21:18:36 2023	First Order Commander Pretzel (STEAM_0:0:231421928): breadstick built different
+Sun Nov 12 21:18:40 2023	SHW Colonel Furboy (STEAM_0:0:63471237): random
+Sun Nov 12 21:18:42 2023	SHW Colonel Furboy (STEAM_0:0:63471237): up to birb
+Sun Nov 12 21:19:03 2023	First Order Commander Pretzel (STEAM_0:0:231421928): there still bitching at each other?
+Sun Nov 12 21:19:09 2023	SHW Colonel Furboy (STEAM_0:0:63471237): idk
+Sun Nov 12 21:19:09 2023	First Order Commander Pretzel (STEAM_0:0:231421928): they*
+Sun Nov 12 21:19:16 2023	ICSL 099 Jinn was killed by Themself with a suicide trick
+Sun Nov 12 21:19:16 2023	ICSL 099 Jinn (STEAM_0:0:649439720): 
+Sun Nov 12 21:19:17 2023	First Order Commander Pretzel (STEAM_0:0:231421928): yep
+Sun Nov 12 21:19:18 2023	SHW Colonel Furboy (STEAM_0:0:63471237): everytime I undeafen I just hear shouting
+Sun Nov 12 21:19:26 2023	SHW Colonel Furboy (STEAM_0:0:63471237): which could be anything
+Sun Nov 12 21:19:27 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 21:19:33 2023	1LO94G (STEAM_0:0:580928495) has joined the game
+Sun Nov 12 21:19:33 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov 12 21:19:35 2023	First Order Commander Pretzel (STEAM_0:0:231421928): i just hear a bang outside my house :)
+Sun Nov 12 21:19:44 2023	First Order Commander Pretzel (STEAM_0:0:231421928): idk
+Sun Nov 12 21:19:50 2023	First Order Commander Pretzel (STEAM_0:0:231421928): just a bang
+Sun Nov 12 21:20:02 2023	First Order Commander Pretzel (STEAM_0:0:231421928): they've been happennningn all day
+Sun Nov 12 21:20:22 2023	First Order Commander Pretzel (STEAM_0:0:231421928): that one was just louder so idk what it was
+Sun Nov 12 21:20:25 2023	MyTankHasAFlat (STEAM_0:1:152928599) has joined the game
+Sun Nov 12 21:20:25 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sun Nov 12 21:20:35 2023	First Order Commander Pretzel (STEAM_0:0:231421928): nah
+Sun Nov 12 21:20:54 2023	IA PFC 8008 UniTankk was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 21:21:00 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sun Nov 12 21:21:03 2023	CT 2LT 8287 Hydra was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 21:21:08 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 21:21:10 2023	SHW Colonel Furboy (STEAM_0:0:63471237) disconnected
+Sun Nov 12 21:21:14 2023	First Order Commander Pretzel (STEAM_0:0:231421928): oop
+Sun Nov 12 21:21:16 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sun Nov 12 21:21:25 2023	CT 2LT 8287 Hydra was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 21:21:28 2023	Shock Vice Commander Jack was killed by ICSL 099 Jinn with a tfa_dt29
+Sun Nov 12 21:21:30 2023	First Order Commander Pretzel (STEAM_0:0:231421928): eh
+Sun Nov 12 21:21:31 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 21:21:37 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:21:42 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:21:55 2023	First Order Commander Pretzel (STEAM_0:0:231421928): bokura
+Sun Nov 12 21:22:09 2023	Xanderr (STEAM_0:0:63471237) has joined the game
+Sun Nov 12 21:22:09 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 21:22:17 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /yes
+Sun Nov 12 21:22:22 2023	First Order Commander Pretzel (STEAM_0:0:231421928): was planning onn spending time with dish
+Sun Nov 12 21:22:32 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov 12 21:22:34 2023	SHRT SGT 4201 Billy was killed by Themself with a suicide trick
+Sun Nov 12 21:22:40 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 21:23:10 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /shadowcommand
+Sun Nov 12 21:23:12 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 21:23:15 2023	SHRT SGT 4201 Billy was killed by IA PFC 8008 UniTankk with a rw_sw_dlt19s
+Sun Nov 12 21:23:21 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 21:23:22 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm xander you good
+Sun Nov 12 21:23:28 2023	First Order Commander Pretzel (STEAM_0:0:231421928): hm
+Sun Nov 12 21:23:35 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /pm Pretzel idk what happened, on my way back
+Sun Nov 12 21:23:42 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm xander k
+Sun Nov 12 21:23:44 2023	First Order Commander Pretzel (STEAM_0:0:231421928): k
+Sun Nov 12 21:24:11 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert Furboy to brig
+Sun Nov 12 21:24:47 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /pm fur boy want to go back?
+Sun Nov 12 21:24:55 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /pm Scratchma ye
+Sun Nov 12 21:25:38 2023	SHW Colonel Furboy (STEAM_0:0:63471237): mhm
+Sun Nov 12 21:25:51 2023	SHW Colonel Furboy (STEAM_0:0:63471237): ye
+Sun Nov 12 21:26:23 2023	SHW Colonel Furboy (STEAM_0:0:63471237): yup
+Sun Nov 12 21:26:57 2023	SHW Colonel Furboy (STEAM_0:0:63471237): yipee
+Sun Nov 12 21:27:12 2023	SHW Colonel Furboy (STEAM_0:0:63471237): ye
+Sun Nov 12 21:27:13 2023	SHRT SGT 4201 Billy was killed by Entity [3549][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Nov 12 21:27:15 2023	First Order Commander Pretzel (STEAM_0:0:231421928): until i get cuffs
+Sun Nov 12 21:27:21 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 21:27:34 2023	First Order Commander Pretzel (STEAM_0:0:231421928): talked with dish about it and he said he might talk with people about it
+Sun Nov 12 21:28:01 2023	First Order Commander Pretzel (STEAM_0:0:231421928): cause palp specifically told me i could steal people at any point of time to interview them or experiment on them
+Sun Nov 12 21:28:07 2023	SHW Colonel Furboy (STEAM_0:0:63471237): nice
+Sun Nov 12 21:28:13 2023	First Order Commander Pretzel (STEAM_0:0:231421928): cant really do that tho without cuffs
+Sun Nov 12 21:28:15 2023	SHW Colonel Furboy (STEAM_0:0:63471237): human rights violations
+Sun Nov 12 21:28:19 2023	First Order Commander Pretzel (STEAM_0:0:231421928): yea
+Sun Nov 12 21:28:43 2023	First Order Commander Pretzel (STEAM_0:0:231421928): another bang happened :)
+Sun Nov 12 21:28:46 2023	First Order Commander Pretzel (STEAM_0:0:231421928): anyway
+Sun Nov 12 21:29:22 2023	First Order Commander Pretzel (STEAM_0:0:231421928): the way dish explained it do me is that dt protects isb and then isb is meant to protect me cause apparently im higher then 
+Sun Nov 12 21:29:24 2023	First Order Commander Pretzel (STEAM_0:0:231421928): they are
+Sun Nov 12 21:29:34 2023	First Order Commander Pretzel (STEAM_0:0:231421928): apparently
+Sun Nov 12 21:29:53 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_breen
+Sun Nov 12 21:29:54 2023	SHW Colonel Furboy (STEAM_0:0:63471237): just having a nice little teaparty here
+Sun Nov 12 21:29:59 2023	First Order Commander Pretzel (STEAM_0:0:231421928): real
+Sun Nov 12 21:30:12 2023	First Order Commander Pretzel (STEAM_0:0:231421928): one second, looking out the window rq
+Sun Nov 12 21:30:52 2023	SHRT SGT 4201 Billy was killed by Ensign Pablo with a tfa_dt29
+Sun Nov 12 21:31:04 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sun Nov 12 21:31:23 2023	SHW Colonel Furboy (STEAM_0:0:63471237): special ops mainly
+Sun Nov 12 21:31:32 2023	SHW Colonel Furboy (STEAM_0:0:63471237): nope
+Sun Nov 12 21:31:37 2023	Croc (STEAM_0:1:161014837) has joined the game
+Sun Nov 12 21:31:37 2023	DT E3 O30 (STEAM_0:1:161014837) spawned
+Sun Nov 12 21:31:44 2023	SHW Colonel Furboy (STEAM_0:0:63471237): when?
+Sun Nov 12 21:32:05 2023	SHW Colonel Furboy (STEAM_0:0:63471237): I think that was mainly minging when stuff was less serious
+Sun Nov 12 21:32:08 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc where is my woman
+Sun Nov 12 21:32:09 2023	First Order Commander Pretzel (STEAM_0:0:231421928): so its either fireworks or gunnshots, thinnking its gunshots tho cause it rainy and damp outside
+Sun Nov 12 21:32:14 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // teaparty
+Sun Nov 12 21:32:21 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) disconnected
+Sun Nov 12 21:32:21 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc huh
+Sun Nov 12 21:32:27 2023	SHW LTCOL Ares (STEAM_0:1:78700995): // you heard her
+Sun Nov 12 21:32:33 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:32:36 2023	First Order Commander Pretzel (STEAM_0:0:231421928): can i be given cuffs?
+Sun Nov 12 21:32:55 2023	First Order Commander Pretzel (STEAM_0:0:231421928): yea, blind fold him and drag him here
+Sun Nov 12 21:32:58 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 21:33:01 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:33:03 2023	SHW Colonel Furboy (STEAM_0:0:63471237): lol
+Sun Nov 12 21:33:15 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:33:28 2023	SHW Colonel Furboy (STEAM_0:0:63471237): wow
+Sun Nov 12 21:33:36 2023	First Order Commander Pretzel (STEAM_0:0:231421928): :)
+Sun Nov 12 21:33:38 2023	SHW Colonel Furboy (STEAM_0:0:63471237): iS ThAT faiLRp
+Sun Nov 12 21:33:49 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:34:00 2023	First Order Commander Pretzel (STEAM_0:0:231421928): teaparty
+Sun Nov 12 21:34:11 2023	First Order Commander Pretzel (STEAM_0:0:231421928): good
+Sun Nov 12 21:34:12 2023	First Order Commander Pretzel (STEAM_0:0:231421928): :)
+Sun Nov 12 21:34:16 2023	DT E3 O30 (STEAM_0:1:161014837) spawned
+Sun Nov 12 21:34:24 2023	SHW Colonel Furboy (STEAM_0:0:63471237): perfectly consentual tea party
+Sun Nov 12 21:34:25 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:34:36 2023	R5P17 (STEAM_0:0:58399281) has joined the game
+Sun Nov 12 21:34:36 2023	R5P17 (STEAM_0:0:58399281) spawned
+Sun Nov 12 21:34:41 2023	SHW Colonel Furboy (STEAM_0:0:63471237): so?
+Sun Nov 12 21:34:44 2023	SHW Colonel Furboy (STEAM_0:0:63471237): yes
+Sun Nov 12 21:34:46 2023	First Order Commander Pretzel (STEAM_0:0:231421928): cookie
+Sun Nov 12 21:34:46 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert DT to bunks
+Sun Nov 12 21:34:59 2023	SHW Colonel Furboy (STEAM_0:0:63471237): ok
+Sun Nov 12 21:35:02 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_citizen
+Sun Nov 12 21:35:02 2023	SHW Colonel Furboy (STEAM_0:0:63471237): enough
+Sun Nov 12 21:35:03 2023	SHW Colonel Furboy (STEAM_0:0:63471237): smh
+Sun Nov 12 21:35:04 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:12 2023	DT E3 O30 (STEAM_0:1:161014837): 
+Sun Nov 12 21:35:13 2023	First Order Commander Pretzel (STEAM_0:0:231421928): im not baking you any cookies
+Sun Nov 12 21:35:18 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:19 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:26 2023	SHW Colonel Furboy (STEAM_0:0:63471237): lost the cookie privilige
+Sun Nov 12 21:35:26 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:31 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:31 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:34 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:35 2023	DT E3 O30 (STEAM_0:1:161014837): /name DT E4 O30
+Sun Nov 12 21:35:36 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:38 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:40 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:40 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:52 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:53 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:54 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:55 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:56 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:35:58 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:36:00 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:36:02 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:36:04 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:36:27 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:36:29 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned NPC npc_combine_s
+Sun Nov 12 21:36:48 2023	First Order Commander Pretzel (STEAM_0:0:231421928): it actually might be fireworks
+Sun Nov 12 21:36:53 2023	SHW Colonel Furboy (STEAM_0:0:63471237): huh
+Sun Nov 12 21:36:53 2023	First Order Commander Pretzel (STEAM_0:0:231421928): why
+Sun Nov 12 21:36:59 2023	DT E4 O30 (STEAM_0:1:161014837): 1.15
+Sun Nov 12 21:37:02 2023	First Order Commander Pretzel (STEAM_0:0:231421928): aw :(
+Sun Nov 12 21:37:09 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599): /OOC DISH 
+Sun Nov 12 21:37:11 2023	SHW Colonel Furboy (STEAM_0:0:63471237): I thought he would of liked it
+Sun Nov 12 21:37:14 2023	SHW Colonel Furboy (STEAM_0:0:63471237): :3
+Sun Nov 12 21:37:18 2023	First Order Commander Pretzel (STEAM_0:0:231421928): real
+Sun Nov 12 21:37:32 2023	ICSL 099 Jinn (STEAM_0:0:649439720) disconnected
+Sun Nov 12 21:37:33 2023	SHW Colonel Furboy (STEAM_0:0:63471237): I feel like im in the middle of a domestic
+Sun Nov 12 21:37:48 2023	SHW Commander Pip was killed by First Order Commander Pretzel with a rw_sw_stw48
+Sun Nov 12 21:37:54 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 21:37:58 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc BIRD DOWN
+Sun Nov 12 21:38:01 2023	SHW Colonel Furboy (STEAM_0:0:63471237): ow :(
+Sun Nov 12 21:38:02 2023	First Order Commander Pretzel was killed by Entity [1002][trigger_hurt] with a trigger_hurt
+Sun Nov 12 21:38:03 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // whore
+Sun Nov 12 21:38:06 2023	SHW Colonel Furboy (STEAM_0:0:63471237): no
+Sun Nov 12 21:38:07 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Sun Nov 12 21:38:08 2023	SHW Colonel Furboy (STEAM_0:0:63471237): wolf did
+Sun Nov 12 21:38:31 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599): spark said giv sgt
+Sun Nov 12 21:38:35 2023	First Order Commander Pretzel (STEAM_0:0:231421928): i want garlic bread but i have no garlic bread :(
+Sun Nov 12 21:38:40 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): /advert Is  anyone be interested in playing a short Hostage rescue sim? If so come to Sim Room 1
+Sun Nov 12 21:38:51 2023	SHW Colonel Furboy (STEAM_0:0:63471237): hmmmmm
+Sun Nov 12 21:38:57 2023	SHW Colonel Furboy (STEAM_0:0:63471237): maybe
+Sun Nov 12 21:38:58 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): /advert Sim Room A*
+Sun Nov 12 21:39:07 2023	First Order Commander Pretzel (STEAM_0:0:231421928): i miss dish
+Sun Nov 12 21:39:17 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:39:17 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sun Nov 12 21:39:30 2023	First Order Commander Pretzel (STEAM_0:0:231421928): no he wanted to go do  other stuff
+Sun Nov 12 21:39:32 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599): /name ST sgt 8008 UniTankk
+Sun Nov 12 21:39:47 2023	First Order Commander Pretzel (STEAM_0:0:231421928): he killed breadstick
+Sun Nov 12 21:39:48 2023	SHW Colonel Furboy (STEAM_0:0:63471237): thats why we were killing him
+Sun Nov 12 21:39:55 2023	ST sgt 8008 UniTankk (STEAM_0:1:152928599): /name ST SGT 8008 UniTankk
+Sun Nov 12 21:40:03 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): goto r5
+Sun Nov 12 21:40:06 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:40:11 2023	First Order Commander Pretzel (STEAM_0:0:231421928): he's just not going to be treated nicely later tonight
+Sun Nov 12 21:40:15 2023	Ensign Pablo (STEAM_0:0:184328867): /advert Furboy, location? 
+Sun Nov 12 21:40:21 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert Classified
+Sun Nov 12 21:40:34 2023	Ensign Pablo (STEAM_0:0:184328867): /ooc cringe
+Sun Nov 12 21:40:37 2023	SHW Colonel Furboy (STEAM_0:0:63471237): lmaoo
+Sun Nov 12 21:41:00 2023	First Order Commander Pretzel (STEAM_0:0:231421928): walk into my office
+Sun Nov 12 21:41:06 2023	First Order Commander Pretzel (STEAM_0:0:231421928): call us cringe
+Sun Nov 12 21:41:09 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 21:41:12 2023	First Order Commander Pretzel (STEAM_0:0:231421928): get capped
+Sun Nov 12 21:41:22 2023	SHW Colonel Furboy (STEAM_0:0:63471237): 3
+Sun Nov 12 21:41:29 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): : :3
+Sun Nov 12 21:41:36 2023	SHW Colonel Furboy (STEAM_0:0:63471237): exactly
+Sun Nov 12 21:41:36 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me :3
+Sun Nov 12 21:41:42 2023	SHW Colonel Furboy (STEAM_0:0:63471237): lmao
+Sun Nov 12 21:41:48 2023	SHW Colonel Furboy (STEAM_0:0:63471237): how do that?
+Sun Nov 12 21:41:51 2023	SHW Colonel Furboy (STEAM_0:0:63471237): dont remember
+Sun Nov 12 21:41:54 2023	SHW Colonel Furboy (STEAM_0:0:63471237): ah
+Sun Nov 12 21:41:55 2023	DT E4 O30 (STEAM_0:1:161014837): i come out of the isd
+Sun Nov 12 21:41:59 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /me :3
+Sun Nov 12 21:42:04 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me :3
+Sun Nov 12 21:42:05 2023	SHW Colonel Furboy (STEAM_0:0:63471237): thought it was coloured
+Sun Nov 12 21:42:08 2023	DT E4 O30 (STEAM_0:1:161014837): get the shodow out to
+Sun Nov 12 21:42:17 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me :3
+Sun Nov 12 21:42:18 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /me :3
+Sun Nov 12 21:42:18 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /me 3
+Sun Nov 12 21:42:21 2023	First Order Commander Pretzel (STEAM_0:0:231421928): 3
+Sun Nov 12 21:42:21 2023	SHW Colonel Furboy (STEAM_0:0:63471237): fkc
+Sun Nov 12 21:42:28 2023	First Order Commander Pretzel (STEAM_0:0:231421928): xander fucked it
+Sun Nov 12 21:42:29 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /me :3
+Sun Nov 12 21:42:34 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me :3
+Sun Nov 12 21:42:34 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /me :3
+Sun Nov 12 21:42:35 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /me :3
+Sun Nov 12 21:42:39 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:42:48 2023	SHW Colonel Furboy (STEAM_0:0:63471237): hmmm
+Sun Nov 12 21:42:53 2023	SHW Colonel Furboy (STEAM_0:0:63471237): do I get another monster
+Sun Nov 12 21:43:01 2023	SHW Colonel Furboy (STEAM_0:0:63471237): I have only had 3 today
+Sun Nov 12 21:43:09 2023	SHW Colonel Furboy (STEAM_0:0:63471237): only 3
+Sun Nov 12 21:43:17 2023	First Order Commander Pretzel (STEAM_0:0:231421928): how much caffine do you need to live god damn
+Sun Nov 12 21:43:35 2023	SHW Colonel Furboy (STEAM_0:0:63471237): I dont drink it for the caffine, just the taste
+Sun Nov 12 21:43:44 2023	SHW Colonel Furboy (STEAM_0:0:63471237): nah
+Sun Nov 12 21:43:56 2023	SHW Colonel Furboy (STEAM_0:0:63471237): I'm surprisingly unaffected
+Sun Nov 12 21:44:01 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:44:08 2023	SHW Colonel Furboy (STEAM_0:0:63471237): if anything, I get tired after drinking one
+Sun Nov 12 21:44:14 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // dee
+Sun Nov 12 21:44:18 2023	First Order Commander Pretzel (STEAM_0:0:231421928): that was gunshots
+Sun Nov 12 21:44:18 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // z
+Sun Nov 12 21:44:23 2023	SHW Colonel Furboy (STEAM_0:0:63471237): // <hsv>Cheese</hsv>
+Sun Nov 12 21:44:32 2023	First Order Commander Pretzel (STEAM_0:0:231421928): it was 2 short bangs back to back
+Sun Nov 12 21:44:41 2023	SHW Colonel Furboy (STEAM_0:0:63471237): thought it was fireworks
+Sun Nov 12 21:44:47 2023	First Order Commander Pretzel (STEAM_0:0:231421928): yea, buts its upstairs
+Sun Nov 12 21:45:01 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert ISB, I require assistance at your back entrance!!
+Sun Nov 12 21:45:15 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // woah
+Sun Nov 12 21:45:16 2023	SHW Colonel Furboy (STEAM_0:0:63471237): huh
+Sun Nov 12 21:45:16 2023	First Order Commander Pretzel (STEAM_0:0:231421928): my window is already closed and im on the otehr side of my room pretty much
+Sun Nov 12 21:45:22 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc chill
+Sun Nov 12 21:45:24 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599): /ooc what does he mean
+Sun Nov 12 21:45:40 2023	First Order Commander Pretzel (STEAM_0:0:231421928): i love texas
+Sun Nov 12 21:45:41 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599): /cheer
+Sun Nov 12 21:45:42 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599): /dance
+Sun Nov 12 21:45:45 2023	SHW Colonel Furboy (STEAM_0:0:63471237): yup
+Sun Nov 12 21:45:52 2023	SHW LTCOL Ares (STEAM_0:1:78700995): // back door
+Sun Nov 12 21:45:53 2023	First Order Commander Pretzel (STEAM_0:0:231421928): ye haw
+Sun Nov 12 21:46:33 2023	SHW Colonel Furboy (STEAM_0:0:63471237): I can't even talk ingame, dont know why but mic won't get picked up at all
+Sun Nov 12 21:46:59 2023	SHW Colonel Furboy (STEAM_0:0:63471237): I've done all I can think of, and some suggestions from google and none of them have worked
+Sun Nov 12 21:47:46 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599): /ooc no
+Sun Nov 12 21:47:47 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): /ooc damn
+Sun Nov 12 21:48:00 2023	DT E4 O30 (STEAM_0:1:161014837): /advert Disperse from the area immediately, failure to do so will result in termination. [Only Warning]
+Sun Nov 12 21:48:01 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): /ooc do it then
+Sun Nov 12 21:48:25 2023	SHW Commander Pip (STEAM_0:1:169781558): /wave
+Sun Nov 12 21:48:34 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc get locked out bozo
+Sun Nov 12 21:48:35 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): /avert EVERYONE TAKE OFF YOUR PAC 
+Sun Nov 12 21:48:44 2023	SHW Colonel Furboy (STEAM_0:0:63471237): did dish just lock scratchma out?
+Sun Nov 12 21:48:51 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): /advert EVERYONE TAKE YOUR PAC ITS CREATING ISSUES FOR THE SERVER
+Sun Nov 12 21:48:54 2023	SHW Colonel Furboy (STEAM_0:0:63471237): ffs
+Sun Nov 12 21:49:07 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 21:49:33 2023	Poo_Dinkle (STEAM_0:0:649439720) has joined the game
+Sun Nov 12 21:49:33 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 21:49:52 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:50:06 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:50:11 2023	SHW Colonel Furboy (STEAM_0:0:63471237): meh, usual
+Sun Nov 12 21:50:18 2023	SHW Colonel Furboy (STEAM_0:0:63471237): yup
+Sun Nov 12 21:50:35 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:50:43 2023	SHW Colonel Furboy (STEAM_0:0:63471237): lmao
+Sun Nov 12 21:50:51 2023	SHW Colonel Furboy (STEAM_0:0:63471237): you good?
+Sun Nov 12 21:51:04 2023	SHW Colonel Furboy (STEAM_0:0:63471237): yes
+Sun Nov 12 21:51:20 2023	SHW Colonel Furboy (STEAM_0:0:63471237): someone arrested him?
+Sun Nov 12 21:51:21 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): /ooc that means you scratchma
+Sun Nov 12 21:51:21 2023	SHW Colonel Furboy (STEAM_0:0:63471237): cya
+Sun Nov 12 21:51:27 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // my heart
+Sun Nov 12 21:51:29 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // i loved her
+Sun Nov 12 21:51:32 2023	SHW Colonel Furboy (STEAM_0:0:63471237): // Waaa
+Sun Nov 12 21:51:32 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // waaaaaa
+Sun Nov 12 21:51:49 2023	SHW Colonel Furboy (STEAM_0:0:63471237): of course
+Sun Nov 12 21:52:04 2023	SHW Colonel Furboy (STEAM_0:0:63471237): me neither
+Sun Nov 12 21:52:11 2023	SHW Colonel Furboy (STEAM_0:0:63471237): yea
+Sun Nov 12 21:53:13 2023	SHW Colonel Furboy (STEAM_0:0:63471237): :3
+Sun Nov 12 21:53:18 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 21:53:36 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) disconnected
+Sun Nov 12 21:53:40 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /pm pret want to do experiments?
+Sun Nov 12 21:53:42 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:53:50 2023	ICSL 099 Jinn (STEAM_0:0:649439720): /addspawn staff
+Sun Nov 12 21:53:58 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm scratchma want kinda experiments
+Sun Nov 12 21:54:00 2023	ICSL 099 Jinn (STEAM_0:0:649439720): 
+Sun Nov 12 21:54:04 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:54:06 2023	ICSL 099 Jinn (STEAM_0:0:649439720): 
+Sun Nov 12 21:54:19 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:54:58 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me shakes
+Sun Nov 12 21:55:30 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sun Nov 12 21:55:30 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sun Nov 12 21:56:05 2023	SHW Colonel Furboy (STEAM_0:0:63471237): tehe
+Sun Nov 12 21:56:05 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /pm pip ooc keep doing it its really fucking funny
+Sun Nov 12 21:56:06 2023	ST Commander Spark (STEAM_0:1:460412980) disconnected
+Sun Nov 12 21:57:09 2023	ICSL 099 Jinn (STEAM_0:0:649439720): 
+Sun Nov 12 21:57:13 2023	SHW Colonel Furboy (STEAM_0:0:63471237): 3
+Sun Nov 12 21:57:52 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:58:03 2023	DT E4 O30 (STEAM_0:1:161014837): /advert Disperse from the area immediately, failure to do so will result in termination. [Only Warning]
+Sun Nov 12 21:58:31 2023	SHW Colonel Furboy (STEAM_0:0:63471237): idk
+Sun Nov 12 21:58:34 2023	ICSL 099 Jinn (STEAM_0:0:649439720): 
+Sun Nov 12 21:58:42 2023	SHW Colonel Furboy (STEAM_0:0:63471237): I am concerned
+Sun Nov 12 21:58:50 2023	SHW Colonel Furboy (STEAM_0:0:63471237): lemme scout
+Sun Nov 12 21:58:53 2023	ISB Deputy Chief Scratchma was killed by DT E4 O30 with a rw_sw_e11d
+Sun Nov 12 21:58:59 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 12 21:59:30 2023	SHW Colonel Furboy (STEAM_0:0:63471237): syhhh
+Sun Nov 12 21:59:48 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:59:57 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 21:59:58 2023	Ensign Pablo was killed by DT E4 O30 with a rw_sw_e11d
+Sun Nov 12 22:00:00 2023	DT E4 O30 (STEAM_0:1:161014837): /comms [DT] Target Neutralized
+Sun Nov 12 22:00:03 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 22:00:03 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm xander we're in fleet bunks
+Sun Nov 12 22:00:07 2023	ICSL 099 Jinn (STEAM_0:0:649439720): 
+Sun Nov 12 22:00:08 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:00:23 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:00:34 2023	DT E4 O30 was killed by ISB Deputy Chief Scratchma with a rw_sw_e11d
+Sun Nov 12 22:00:39 2023	DT E4 O30 (STEAM_0:1:161014837) spawned
+Sun Nov 12 22:00:42 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /w run
+Sun Nov 12 22:00:49 2023	Ensign Pablo (STEAM_0:0:184328867): /Advert DT to fleet bunks
+Sun Nov 12 22:01:07 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): !goot jinn
+Sun Nov 12 22:01:10 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:01:16 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm xander run
+Sun Nov 12 22:01:26 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /pm pretzel I have invis, am fine
+Sun Nov 12 22:01:33 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm xander i forgor
+Sun Nov 12 22:01:43 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /pm pretzel where are you?
+Sun Nov 12 22:01:53 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm xander down the elevator
+Sun Nov 12 22:01:59 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /pm ares hai squidward
+Sun Nov 12 22:01:59 2023	DT E4 O30 was killed by Entity [1002][trigger_hurt] with a trigger_hurt
+Sun Nov 12 22:02:05 2023	DT E4 O30 (STEAM_0:1:161014837) spawned
+Sun Nov 12 22:02:11 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /pm ares turn around
+Sun Nov 12 22:02:15 2023	DT E4 O30 was killed by Entity [1002][trigger_hurt] with a trigger_hurt
+Sun Nov 12 22:02:21 2023	DT E4 O30 (STEAM_0:1:161014837) spawned
+Sun Nov 12 22:02:24 2023	SHW LTCOL Ares (STEAM_0:1:78700995): /w hi nerd
+Sun Nov 12 22:02:33 2023	1LO94G (STEAM_0:0:580928495) has joined the game
+Sun Nov 12 22:02:33 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov 12 22:02:35 2023	ISB Deputy Chief Scratchma was killed by Entity [1002][trigger_hurt] with a trigger_hurt
+Sun Nov 12 22:02:39 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /whisper was fucking about with wolf and uni
+Sun Nov 12 22:02:46 2023	SHW Colonel Furboy (STEAM_0:0:63471237): fck
+Sun Nov 12 22:02:59 2023	SHW LTCOL Ares (STEAM_0:1:78700995): /w its /w
+Sun Nov 12 22:03:01 2023	ICSL 099 Jinn (STEAM_0:0:649439720): 
+Sun Nov 12 22:03:08 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 12 22:03:28 2023	SHW Colonel Furboy (STEAM_0:0:63471237): something is going on
+Sun Nov 12 22:03:35 2023	SHW Colonel Furboy (STEAM_0:0:63471237): uh
+Sun Nov 12 22:03:39 2023	SHW Colonel Furboy (STEAM_0:0:63471237): Hi Ensign
+Sun Nov 12 22:03:52 2023	ST SGT 8008 UniTankk was killed by SHW Commander Pip with a weapon_infect_rak
+Sun Nov 12 22:03:58 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sun Nov 12 22:04:13 2023	First Order Commander Pretzel (STEAM_0:0:231421928): oh hi
+Sun Nov 12 22:04:22 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599): /ooc what's the command to reset sound
+Sun Nov 12 22:04:28 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:04:32 2023	ICSL 099 Jinn (STEAM_0:0:649439720): !menui
+Sun Nov 12 22:04:33 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert There is an unidentified monster roaming the Vardos military base
+Sun Nov 12 22:04:38 2023	ICSL 099 Jinn (STEAM_0:0:649439720): 
+Sun Nov 12 22:04:39 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:04:40 2023	SHW Colonel Furboy (STEAM_0:0:63471237): its downstairs
+Sun Nov 12 22:04:42 2023	SHW Colonel Furboy (STEAM_0:0:63471237): idk
+Sun Nov 12 22:04:43 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:04:46 2023	First Order Commander Pretzel was killed by SHW Commander Pip with a weapon_infect_rak
+Sun Nov 12 22:04:51 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert Avoid it at all costs to avoid spreading the disease it carries
+Sun Nov 12 22:04:56 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Sun Nov 12 22:05:02 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // monster :)
+Sun Nov 12 22:05:07 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /advert What is its current location?
+Sun Nov 12 22:05:24 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov 12 22:05:28 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_phalanx
+Sun Nov 12 22:06:10 2023	SHW LTCOL Ares (STEAM_0:1:78700995) disconnected
+Sun Nov 12 22:06:38 2023	ISB Deputy Chief Scratchma was killed by ICSL 099 Jinn with a unknown
+Sun Nov 12 22:06:42 2023	SHW Colonel Furboy (STEAM_0:0:63471237): // Jesus
+Sun Nov 12 22:06:44 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 12 22:06:46 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // yum
+Sun Nov 12 22:06:50 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // MY EARS
+Sun Nov 12 22:06:53 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599): /ooc you cant park an a10 there
+Sun Nov 12 22:06:57 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // WHAT IS THE DREADFUL SOUND
+Sun Nov 12 22:06:59 2023	SHW Colonel Furboy (STEAM_0:0:63471237): What the fuck is that thing
+Sun Nov 12 22:07:02 2023	Ensign Pablo was killed by DT E4 O30 with a rw_sw_e11d
+Sun Nov 12 22:07:05 2023	First Order Commander Pretzel (STEAM_0:0:231421928): the gun?
+Sun Nov 12 22:07:07 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT gred_emp_phalanx
+Sun Nov 12 22:07:10 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 22:07:10 2023	SHW Colonel Furboy (STEAM_0:0:63471237): nah the creature
+Sun Nov 12 22:07:15 2023	First Order Commander Pretzel (STEAM_0:0:231421928): oh idk
+Sun Nov 12 22:07:18 2023	First Order Commander Pretzel (STEAM_0:0:231421928): quirky fella
+Sun Nov 12 22:07:24 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned SENT 23v_lafette
+Sun Nov 12 22:07:25 2023	SHW Colonel Furboy (STEAM_0:0:63471237): quirky lil guy
+Sun Nov 12 22:07:27 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned SENT 23v_lafette
+Sun Nov 12 22:07:28 2023	SHW Colonel Furboy (STEAM_0:0:63471237): jeus
+Sun Nov 12 22:07:28 2023	First Order Commander Pretzel (STEAM_0:0:231421928): yea
+Sun Nov 12 22:07:30 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Sun Nov 12 22:07:30 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sun Nov 12 22:07:35 2023	SHW Colonel Furboy (STEAM_0:0:63471237): thats a phalanx I think
+Sun Nov 12 22:07:38 2023	Shock Vice Commander Jack was killed by ICSL 099 Jinn with a unknown
+Sun Nov 12 22:07:40 2023	First Order Commander Pretzel (STEAM_0:0:231421928): i kinda wanna catch one
+Sun Nov 12 22:07:40 2023	DT E4 O30 was killed by ICSL 099 Jinn with a unknown
+Sun Nov 12 22:07:45 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov 12 22:07:46 2023	DT E4 O30 (STEAM_0:1:161014837) spawned
+Sun Nov 12 22:07:48 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 22:07:51 2023	SHW Colonel Furboy (STEAM_0:0:63471237): who tf using a mf phalanx ensign?
+Sun Nov 12 22:08:02 2023	First Order Commander Pretzel (STEAM_0:0:231421928): peak a boo
+Sun Nov 12 22:08:06 2023	First Order Commander Pretzel (STEAM_0:0:231421928): nothin
+Sun Nov 12 22:08:11 2023	SHW Colonel Furboy (STEAM_0:0:63471237): uh
+Sun Nov 12 22:08:14 2023	SHW Colonel Furboy (STEAM_0:0:63471237): okay then
+Sun Nov 12 22:08:19 2023	SHW Colonel Furboy (STEAM_0:0:63471237): time for some amnestics
+Sun Nov 12 22:08:19 2023	First Order Commander Pretzel (STEAM_0:0:231421928): pasty monster dude
+Sun Nov 12 22:08:24 2023	SHW Colonel Furboy was killed by CT 2LT 8287 Hydra with a weapon_infect_rak
+Sun Nov 12 22:08:30 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 22:08:32 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned
+Sun Nov 12 22:08:39 2023	ICSL 099 Jinn (STEAM_0:0:649439720): 
+Sun Nov 12 22:08:55 2023	ICSL 099 Jinn (STEAM_0:0:649439720) spawned SENT lvs_walker_atte
+Sun Nov 12 22:09:09 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Sun Nov 12 22:09:09 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Sun Nov 12 22:09:29 2023	First Order Commander Pretzel (STEAM_0:0:231421928): idk
+Sun Nov 12 22:09:39 2023	SHW Colonel Furboy (STEAM_0:0:63471237): Where is it?
+Sun Nov 12 22:09:43 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned SENT lvs_walker_atte
+Sun Nov 12 22:09:49 2023	SHW Commander Pip was killed by CT 2LT 8287 Hydra with a lvs_walker_atte
+Sun Nov 12 22:09:50 2023	SHW Colonel Furboy (STEAM_0:0:63471237): stun it and I can get a sample
+Sun Nov 12 22:09:51 2023	DT E4 O30 was killed by CT 2LT 8287 Hydra with a lvs_walker_atte
+Sun Nov 12 22:09:57 2023	DT E4 O30 (STEAM_0:1:161014837) spawned
+Sun Nov 12 22:09:57 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned SENT lvs_walker_atte
+Sun Nov 12 22:09:59 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 22:10:13 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:10:19 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc adhd event be like
+Sun Nov 12 22:10:22 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned SENT lvs_walker_atte
+Sun Nov 12 22:10:24 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned SENT lvs_walker_atte
+Sun Nov 12 22:10:25 2023	ICSL 099 Jinn (STEAM_0:0:649439720): /name CT 2LT Bud
+Sun Nov 12 22:10:39 2023	CT 2LT 8287 Hydra was killed by Themself with a suicide trick
+Sun Nov 12 22:10:39 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:10:43 2023	SHW Colonel Furboy (STEAM_0:0:63471237): (ooc) I got infected but died before hand
+Sun Nov 12 22:10:44 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 22:10:46 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:10:50 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:10:56 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:10:56 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:11:03 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:11:03 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:11:03 2023	SHW Colonel Furboy (STEAM_0:0:63471237): what swep
+Sun Nov 12 22:11:10 2023	First Order Commander Pretzel (STEAM_0:0:231421928): i hardly know here
+Sun Nov 12 22:11:10 2023	SHW Colonel Furboy (STEAM_0:0:63471237): nope, not got it
+Sun Nov 12 22:11:14 2023	CT 2LT Bud (STEAM_0:0:649439720): 
+Sun Nov 12 22:11:14 2023	CT 2LT Bud (STEAM_0:0:649439720): 
+Sun Nov 12 22:11:15 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178): 
+Sun Nov 12 22:11:17 2023	First Order Commander Pretzel (STEAM_0:0:231421928): nuh uh
+Sun Nov 12 22:11:21 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned SENT lvs_fakehover_iftx
+Sun Nov 12 22:11:23 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:11:23 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:11:29 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:11:29 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:11:30 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /isbchief
+Sun Nov 12 22:11:31 2023	SHW Colonel Furboy (STEAM_0:0:63471237): {*Oh noes, dats not good! [Defective]}
+Sun Nov 12 22:11:32 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Sun Nov 12 22:11:34 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sun Nov 12 22:11:34 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sun Nov 12 22:11:39 2023	SHW Colonel Furboy (STEAM_0:0:63471237): why do I still have that bounf
+Sun Nov 12 22:11:40 2023	CT 2LT Bud (STEAM_0:0:649439720): 
+Sun Nov 12 22:11:40 2023	CT 2LT Bud (STEAM_0:0:649439720): 
+Sun Nov 12 22:11:43 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /name ISB Chief Grimjaw
+Sun Nov 12 22:11:47 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:11:47 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:11:50 2023	SHW Colonel Furboy (STEAM_0:0:63471237): gotta unbind all my old shit
+Sun Nov 12 22:12:01 2023	CT 2LT Bud (STEAM_0:0:649439720): 
+Sun Nov 12 22:12:01 2023	CT 2LT Bud (STEAM_0:0:649439720): 
+Sun Nov 12 22:12:02 2023	SHW Colonel Furboy (STEAM_0:0:63471237): unknown
+Sun Nov 12 22:12:09 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned SENT lvs_walker_atte
+Sun Nov 12 22:12:11 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:12:11 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:12:14 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Nov 12 22:12:14 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Nov 12 22:12:16 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sun Nov 12 22:12:16 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sun Nov 12 22:12:23 2023	SHW Colonel Furboy (STEAM_0:0:63471237): It might of escaped into the city
+Sun Nov 12 22:12:34 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:12:34 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:12:39 2023	DT E4 O30 (STEAM_0:1:161014837): /pm scrat what is your Locatin?
+Sun Nov 12 22:12:40 2023	SHW Colonel Furboy (STEAM_0:0:63471237): No
+Sun Nov 12 22:12:50 2023	SHW Colonel Furboy (STEAM_0:0:63471237): ATTE
+Sun Nov 12 22:12:57 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Nov 12 22:12:57 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Nov 12 22:13:00 2023	SHW Colonel Furboy was killed by CT 2LT Bud with a lvs_walker_atte
+Sun Nov 12 22:13:07 2023	Ensign Pablo was killed by CT 2LT 8287 Hydra with a lvs_walker_atte
+Sun Nov 12 22:13:09 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 22:13:12 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 22:13:14 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Sun Nov 12 22:13:14 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 22:13:16 2023	SHW Commander Pip was killed by CT 2LT 8287 Hydra with a lvs_walker_atte
+Sun Nov 12 22:13:21 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 22:13:22 2023	ISB Deputy Chief Scratchma was killed by CT 2LT Bud with a lvs_walker_atte
+Sun Nov 12 22:13:27 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Sun Nov 12 22:13:50 2023	SHW Commander Pip was killed by CT 2LT 8287 Hydra with a lvs_walker_atte
+Sun Nov 12 22:13:55 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sun Nov 12 22:14:02 2023	ST SGT 8008 UniTankk was killed by CT 2LT 8287 Hydra with a lvs_protontorpedo
+Sun Nov 12 22:14:07 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm pip where you at
+Sun Nov 12 22:14:10 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sun Nov 12 22:14:18 2023	SHW Commander Pip (STEAM_0:1:169781558): /pm pret below you
+Sun Nov 12 22:14:27 2023	SHW Colonel Furboy was killed by CT 2LT 8287 Hydra with a lvs_walker_atte
+Sun Nov 12 22:14:34 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 22:14:44 2023	ISB Chief Grimjaw was killed by CT 2LT 8287 Hydra with a lvs_walker_atte
+Sun Nov 12 22:14:50 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sun Nov 12 22:15:02 2023	First Order Commander Pretzel (STEAM_0:0:231421928): why are there tanks fighting?
+Sun Nov 12 22:15:09 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:15:09 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:15:13 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Nov 12 22:15:13 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Nov 12 22:15:39 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:15:39 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:15:41 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned SENT lvs_fakehover_iftx
+Sun Nov 12 22:15:48 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm pip gotta show you somethin
+Sun Nov 12 22:15:55 2023	Shock Vice Commander Jack was killed by CT 2LT 8287 Hydra with a lvs_fakehover_iftx
+Sun Nov 12 22:16:01 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov 12 22:16:08 2023	DT E4 O30 was killed by CT 2LT 8287 Hydra with a lvs_concussionmissile
+Sun Nov 12 22:16:11 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Nov 12 22:16:11 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Nov 12 22:16:11 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sun Nov 12 22:16:13 2023	DT E4 O30 (STEAM_0:1:161014837) spawned
+Sun Nov 12 22:16:37 2023	First Order Commander Pretzel (STEAM_0:0:231421928): sorry lag
+Sun Nov 12 22:16:44 2023	SHW Colonel Furboy was killed by CT 2LT 8287 Hydra with a lvs_fakehover_iftx
+Sun Nov 12 22:16:49 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 22:16:53 2023	DT E4 O30 (STEAM_0:1:161014837) disconnected
+Sun Nov 12 22:17:10 2023	CT 2LT 8287 Hydra was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 12 22:17:10 2023	CT 2LT Bud was killed by Entity [0][worldspawn] with a unknown
+Sun Nov 12 22:17:10 2023	ST SGT 8008 UniTankk was killed by CT 2LT 8287 Hydra with a lvs_concussionmissile
+Sun Nov 12 22:17:15 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 22:17:16 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sun Nov 12 22:17:24 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 22:17:30 2023	CT 2LT Bud (STEAM_0:0:649439720) spawned
+Sun Nov 12 22:17:34 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Nov 12 22:17:34 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sun Nov 12 22:18:06 2023	CT 2LT 8287 Hydra was killed by Entity [2918][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Nov 12 22:18:26 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) spawned
+Sun Nov 12 22:18:27 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) disconnected
+Sun Nov 12 22:18:39 2023	SHW Colonel Furboy (STEAM_0:0:63471237): Hostiles appear to be clones.
+Sun Nov 12 22:19:09 2023	CT 2LT Bud (STEAM_0:0:649439720): 
+Sun Nov 12 22:20:22 2023	SHW Colonel Furboy was killed by Entity [2827][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Nov 12 22:20:24 2023	SHW Colonel Furboy (STEAM_0:0:63471237): LMAO
+Sun Nov 12 22:20:32 2023	SHW Colonel Furboy (STEAM_0:0:63471237): WEEEEEEEEEE
+Sun Nov 12 22:20:33 2023	Shock Vice Commander Jack was killed by Entity [2828][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Nov 12 22:20:39 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sun Nov 12 22:20:48 2023	CT 2LT 8287 Hydra (STEAM_0:0:29212178) disconnected
+Sun Nov 12 22:20:59 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sun Nov 12 22:20:59 2023	Ensign Pablo was killed by Entity [2861][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Nov 12 22:20:59 2023	SHW LTCOL Ares was killed by Entity [2861][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Nov 12 22:20:59 2023	ST SGT 8008 UniTankk was killed by Entity [2861][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sun Nov 12 22:21:05 2023	Ensign Pablo (STEAM_0:0:184328867) spawned
+Sun Nov 12 22:21:12 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sun Nov 12 22:21:17 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sun Nov 12 22:21:21 2023	First Order Commander Pretzel (STEAM_0:0:231421928) disconnected
+Sun Nov 12 22:21:48 2023	Ensign Pablo (STEAM_0:0:184328867) disconnected
+Sun Nov 12 22:21:49 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) disconnected
+Sun Nov 12 22:21:50 2023	ST SGT 8008 UniTankk (STEAM_0:1:152928599) disconnected
+Sun Nov 12 22:21:52 2023	SHW LTCOL Ares (STEAM_0:1:78700995) disconnected
+Sun Nov 12 22:21:57 2023	SHW Colonel Furboy (STEAM_0:0:63471237) disconnected
+Sun Nov 12 22:22:45 2023	Lord FireBall (STEAM_0:1:129278369) has joined the game
+Sun Nov 12 22:22:45 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Sun Nov 12 22:27:25 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected
+Sun Nov 12 22:30:35 2023	DT L21 X29 (STEAM_0:1:129278369) spawned

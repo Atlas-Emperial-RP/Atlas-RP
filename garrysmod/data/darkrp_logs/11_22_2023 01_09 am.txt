@@ -1,0 +1,746 @@
+Wed Nov 22 01:09:31 2023	Willisepic66 (STEAM_0:1:460210970) has joined the game
+Wed Nov 22 01:09:31 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 01:09:43 2023	zachs2003 (STEAM_0:0:546893200) has joined the game
+Wed Nov 22 01:09:43 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200) spawned
+Wed Nov 22 01:09:51 2023	Imperial Phoenix (STEAM_0:0:244564861) has joined the game
+Wed Nov 22 01:09:51 2023	PLT 6413 Bigbird 11 (STEAM_0:0:244564861) spawned
+Wed Nov 22 01:09:53 2023	Croc (STEAM_0:1:161014837) has joined the game
+Wed Nov 22 01:09:53 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Wed Nov 22 01:09:53 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Wed Nov 22 01:09:53 2023	Royal Guard 0001 (STEAM_0:0:197465498) spawned
+Wed Nov 22 01:09:57 2023	MyTankHasAFlat (STEAM_0:1:152928599) has joined the game
+Wed Nov 22 01:09:57 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 01:09:59 2023	Gurdle (STEAM_0:0:526168581) has joined the game
+Wed Nov 22 01:09:59 2023	Gurdle (STEAM_0:0:526168581) spawned
+Wed Nov 22 01:10:00 2023	eggs (STEAM_0:0:55135130) has joined the game
+Wed Nov 22 01:10:00 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Wed Nov 22 01:10:04 2023	Lucy is Bae (STEAM_0:1:76110013) has joined the game
+Wed Nov 22 01:10:04 2023	Emperor Palpatine (STEAM_0:1:76110013) spawned
+Wed Nov 22 01:10:06 2023	Xain (STEAM_0:0:231680469) has joined the game
+Wed Nov 22 01:10:06 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Wed Nov 22 01:10:08 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 01:10:12 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Wed Nov 22 01:10:12 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Wed Nov 22 01:10:23 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Wed Nov 22 01:10:26 2023	DeathStalker (STEAM_0:1:124958304) has joined the game
+Wed Nov 22 01:10:26 2023	ST PFC 0186 Kepler (STEAM_0:1:124958304) spawned
+Wed Nov 22 01:10:32 2023	Spark (STEAM_0:1:460412980) has joined the game
+Wed Nov 22 01:10:32 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 01:10:33 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200) spawned
+Wed Nov 22 01:10:35 2023	PLT 6413 Bigbird 11 (STEAM_0:0:244564861): /name RC 6576 Cage
+Wed Nov 22 01:10:36 2023	Royal Guard 0001 (STEAM_0:0:197465498): /royalguard
+Wed Nov 22 01:10:38 2023	Royal Guard 0001 (STEAM_0:0:197465498) spawned
+Wed Nov 22 01:10:48 2023	RC 6576 Cage (STEAM_0:0:244564861) spawned
+Wed Nov 22 01:10:52 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Wed Nov 22 01:10:52 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 01:10:56 2023	Terta_ (STEAM_0:1:128681061) has joined the game
+Wed Nov 22 01:10:56 2023	Med SGT 8675 Tracy (STEAM_0:1:128681061) spawned
+Wed Nov 22 01:10:59 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Wed Nov 22 01:11:03 2023	the gunk (STEAM_0:1:98581856) has joined the game
+Wed Nov 22 01:11:03 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Wed Nov 22 01:11:16 2023	Vex (STEAM_0:0:440286446) has joined the game
+Wed Nov 22 01:11:16 2023	Chimaera Recon Vex (STEAM_0:0:440286446) spawned
+Wed Nov 22 01:11:28 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 01:11:29 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /buyammo 3
+Wed Nov 22 01:11:40 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Wed Nov 22 01:11:51 2023	ST PFC 0186 Kepler (STEAM_0:1:124958304) spawned
+Wed Nov 22 01:12:08 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Wed Nov 22 01:12:14 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 01:12:24 2023	Med SGT 8675 Tracy (STEAM_0:1:128681061) spawned
+Wed Nov 22 01:12:41 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /job Fleet Lieutenant
+Wed Nov 22 01:12:51 2023	Emperor Palpatine (STEAM_0:1:76110013) spawned
+Wed Nov 22 01:13:01 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Wed Nov 22 01:13:16 2023	RC 6576 Cage (STEAM_0:0:244564861): 
+Wed Nov 22 01:13:16 2023	RC 6576 Cage (STEAM_0:0:244564861): 
+Wed Nov 22 01:13:19 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc WHO
+Wed Nov 22 01:13:44 2023	Med SGT 8675 Tracy was killed by ARC Commander Gunk with a rw_sw_tl50
+Wed Nov 22 01:13:49 2023	Med SGT 8675 Tracy (STEAM_0:1:128681061) spawned
+Wed Nov 22 01:13:59 2023	Emperor Palpatine (STEAM_0:1:76110013): /advert Royal Guard tryouts happening at the inquisitorius fortress
+Wed Nov 22 01:14:25 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Wed Nov 22 01:14:26 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Wed Nov 22 01:14:27 2023	Gurdle (STEAM_0:0:526168581): /advert i need a trainer
+Wed Nov 22 01:14:43 2023	Emperor Palpatine (STEAM_0:1:76110013): /advert [INQ] Purge make sure to guar the gate while RG tryouts are happening
+Wed Nov 22 01:14:44 2023	Med SGT 8675 Tracy was killed by ARC Commander Gunk with a rw_sw_tl50
+Wed Nov 22 01:14:49 2023	Med SGT 8675 Tracy (STEAM_0:1:128681061) spawned
+Wed Nov 22 01:15:04 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /advert permisison to enter fotress for the tryout
+Wed Nov 22 01:15:08 2023	DOHEAD (STEAM_0:0:581098097) has joined the game
+Wed Nov 22 01:15:08 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Wed Nov 22 01:15:09 2023	SHW SGT 8008 UniTankk was killed by Gurdle with a weapon_fists
+Wed Nov 22 01:15:20 2023	Inquisitor Ares (STEAM_0:1:78700995): /me puts the artifacts into the vault
+Wed Nov 22 01:15:38 2023	ST PFC 0186 Kepler (STEAM_0:1:124958304): ./name IA PFC 1480 Zach
+Wed Nov 22 01:16:08 2023	DT E5 O30 (STEAM_0:1:161014837): yes
+Wed Nov 22 01:16:10 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200): /name IA PFC 1480 Zach
+Wed Nov 22 01:16:12 2023	ISB Director Dohead was killed by Gurdle with a weapon_fists
+Wed Nov 22 01:16:28 2023	Chimaera Recon Vex was killed by Gurdle with a weapon_fists
+Wed Nov 22 01:16:36 2023	Royal Guard 0001 (STEAM_0:0:197465498): 
+Wed Nov 22 01:16:43 2023	Chimaera Recon Vex (STEAM_0:0:440286446) spawned
+Wed Nov 22 01:16:58 2023	Gurdle (STEAM_0:0:526168581) disconnected
+Wed Nov 22 01:17:26 2023	Med SGT 8675 Tracy (STEAM_0:1:128681061) disconnected
+Wed Nov 22 01:18:03 2023	1LO94G (STEAM_0:0:580928495) has joined the game
+Wed Nov 22 01:18:03 2023	Inquisitor Jack (STEAM_0:0:580928495) spawned
+Wed Nov 22 01:18:14 2023	Chimaera Recon Vex (STEAM_0:0:440286446): /name Shore Commander Vex
+Wed Nov 22 01:18:26 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // I will be holding Purge Trooper tryouts after RG Tryouts if anyone is interested
+Wed Nov 22 01:19:02 2023	RC 6576 Cage (STEAM_0:0:244564861): // You looking pretty xain
+Wed Nov 22 01:19:06 2023	RC 6576 Cage (STEAM_0:0:244564861): // Hehhehehe
+Wed Nov 22 01:19:21 2023	RC 6576 Cage (STEAM_0:0:244564861): // Be a shame if you died
+Wed Nov 22 01:19:26 2023	Emperor Palpatine (STEAM_0:1:76110013): https://discord.gg/VHWS3aNW
+Wed Nov 22 01:19:32 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): // I know. Don't interrupt the tryouts if you plan on shooting at me
+Wed Nov 22 01:19:33 2023	DT E5 O30 (STEAM_0:1:161014837): \
+Wed Nov 22 01:19:35 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Wed Nov 22 01:19:42 2023	RC 6576 Cage (STEAM_0:0:244564861): // Ill wait till after
+Wed Nov 22 01:19:51 2023	Inquisitor Ares (STEAM_0:1:78700995): /pm xain they are going to the inq disc
+Wed Nov 22 01:19:55 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Wed Nov 22 01:20:00 2023	ISB Director Dohead (STEAM_0:0:581098097): /name ISB Director Dohead
+Wed Nov 22 01:20:24 2023	(1)Spark (STEAM_0:0:42756804) has joined the game
+Wed Nov 22 01:20:24 2023	(1)Spark (STEAM_0:0:42756804) spawned
+Wed Nov 22 01:21:00 2023	Royal Guard 0001 (STEAM_0:0:197465498): /pm emperor let me know what you want me to do btw
+Wed Nov 22 01:21:05 2023	Emperor Palpatine (STEAM_0:1:76110013): /pm 0001 Switch to a rebel job and try to shoot at me
+Wed Nov 22 01:21:22 2023	Royal Guard 0001 (STEAM_0:0:197465498) spawned
+Wed Nov 22 01:21:39 2023	Royal Guard 0001 (STEAM_0:0:197465498): /name Rebel Commander Jones
+Wed Nov 22 01:22:04 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): we just watch
+Wed Nov 22 01:22:05 2023	RC 6576 Cage (STEAM_0:0:244564861): /advert [Secure] 6576 reporting. Commander How copy?
+Wed Nov 22 01:22:09 2023	Inquisitor Ares (STEAM_0:1:78700995): ye
+Wed Nov 22 01:22:11 2023	Inquisitor Ares (STEAM_0:1:78700995): ye
+Wed Nov 22 01:22:13 2023	ST Commander Spark was killed by Shore Colonel Billy with a rw_sw_tl50
+Wed Nov 22 01:22:18 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 01:22:34 2023	Rebel Commander Jones (STEAM_0:0:197465498): 
+Wed Nov 22 01:22:36 2023	Shore Colonel Billy was killed by SHW Commander Pip with a rw_sw_e11s
+Wed Nov 22 01:22:39 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): can\
+Wed Nov 22 01:22:42 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 01:22:42 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): you cloak 
+Wed Nov 22 01:22:44 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): us
+Wed Nov 22 01:22:48 2023	Inquisitor Ares (STEAM_0:1:78700995): uhh
+Wed Nov 22 01:22:51 2023	Inquisitor Ares (STEAM_0:1:78700995): ye sure
+Wed Nov 22 01:22:57 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): just not to distract them
+Wed Nov 22 01:23:02 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Wed Nov 22 01:23:07 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Wed Nov 22 01:23:07 2023	Rebel Commander Jones (STEAM_0:0:197465498): 
+Wed Nov 22 01:23:10 2023	SHW Commander Pip was killed by Shore Commander Vex with a rw_sw_z6i
+Wed Nov 22 01:23:11 2023	ST PFC 0186 Kepler (STEAM_0:1:124958304): /me salutes
+Wed Nov 22 01:23:15 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 01:23:19 2023	Shore Commander Vex (STEAM_0:0:440286446): /salute
+Wed Nov 22 01:23:43 2023	Shore Commander Vex was killed by ISB Director Dohead with a tfa_dt29
+Wed Nov 22 01:23:49 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Wed Nov 22 01:24:02 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 01:24:11 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): just watching
+Wed Nov 22 01:24:25 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 01:24:30 2023	SHW Commander Pip was killed by ISB Director Dohead with a tfa_dt29
+Wed Nov 22 01:24:39 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 01:24:54 2023	Shore Colonel Billy was killed by SHW SGT 8008 UniTankk with a rw_sw_t21b
+Wed Nov 22 01:24:58 2023	Rebel Commander Jones (STEAM_0:0:197465498): 
+Wed Nov 22 01:24:59 2023	SHW Commander Pip was killed by Entity [2913][prop_physics] with a prop_physics
+Wed Nov 22 01:25:00 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 01:25:03 2023	ST PFC 0186 Kepler (STEAM_0:1:124958304) disconnected
+Wed Nov 22 01:25:05 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 01:25:33 2023	RC 6576 Cage (STEAM_0:0:244564861): /advert [Rebel] 6576 reporting. Commander How copy?
+Wed Nov 22 01:25:39 2023	SHW SGT 8008 UniTankk was killed by Shore Colonel Billy with a rw_sw_dlt20a
+Wed Nov 22 01:25:52 2023	Shore Colonel Billy (STEAM_0:1:460210970): /sleep
+Wed Nov 22 01:25:56 2023	Rebel Commander Jones (STEAM_0:0:197465498): /pm cage idk if your adverting to me but if you are target the emperor
+Wed Nov 22 01:25:58 2023	Shore Colonel Billy (STEAM_0:1:460210970): /WAKE
+Wed Nov 22 01:25:58 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 01:26:04 2023	Rebel Commander Jones (STEAM_0:0:197465498): 
+Wed Nov 22 01:26:09 2023	RC 6576 Cage (STEAM_0:0:244564861): /pm rebel yea to you
+Wed Nov 22 01:26:17 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /pm dish i had a shield
+Wed Nov 22 01:26:18 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 01:26:18 2023	Shore Colonel Billy was killed by ARC Commander Gunk with a rw_sw_tl50
+Wed Nov 22 01:26:24 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 01:26:25 2023	Rebel Commander Jones (STEAM_0:0:197465498): /pm cage aight im helping in a tryout target the emperor
+Wed Nov 22 01:26:28 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /pm dish already had a shield i mean
+Wed Nov 22 01:26:32 2023	Rebel Commander Jones (STEAM_0:0:197465498): 
+Wed Nov 22 01:26:39 2023	RC 6576 Cage (STEAM_0:0:244564861): /pm rebel Copy, His location>
+Wed Nov 22 01:26:44 2023	SHW Commander Pip (STEAM_0:1:169781558): /pm uni is it in your kit?
+Wed Nov 22 01:26:51 2023	Rebel Commander Jones (STEAM_0:0:197465498): /pm cage outside the main base
+Wed Nov 22 01:26:59 2023	Rebel Commander Jones (STEAM_0:0:197465498): 
+Wed Nov 22 01:27:02 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /pm Yeah?
+Wed Nov 22 01:27:07 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /pm dish yeah 
+Wed Nov 22 01:27:11 2023	SHW Commander Pip was killed by Shore Colonel Billy with a rw_sw_dlt20a
+Wed Nov 22 01:27:16 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 01:27:28 2023	Shore Colonel Billy was killed by SHW Commander Pip with a rw_sw_t21b
+Wed Nov 22 01:27:33 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 01:27:44 2023	Rebel Commander Jones (STEAM_0:0:197465498): 
+Wed Nov 22 01:28:02 2023	Rebel Commander Jones (STEAM_0:0:197465498): 
+Wed Nov 22 01:28:03 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /pm ares open the gate
+Wed Nov 22 01:28:09 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Wed Nov 22 01:28:14 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Wed Nov 22 01:28:17 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Wed Nov 22 01:28:31 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Wed Nov 22 01:28:40 2023	Rebel Commander Jones (STEAM_0:0:197465498): 
+Wed Nov 22 01:28:58 2023	Rebel Commander Jones (STEAM_0:0:197465498): /pm cage he's back in sith base
+Wed Nov 22 01:29:10 2023	Rebel Commander Jones (STEAM_0:0:197465498): /name Royal Gaurd 0001
+Wed Nov 22 01:29:17 2023	Royal Gaurd 0001 (STEAM_0:0:197465498): /royalgaurd
+Wed Nov 22 01:29:17 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /pm dish where did u go
+Wed Nov 22 01:29:20 2023	Royal Gaurd 0001 (STEAM_0:0:197465498): /royalguard
+Wed Nov 22 01:29:23 2023	Royal Gaurd 0001 (STEAM_0:0:197465498) spawned
+Wed Nov 22 01:29:26 2023	Shore Commander Vex (STEAM_0:0:440286446): L L A  R
+Wed Nov 22 01:29:27 2023	Shore Commander Vex (STEAM_0:0:440286446): L L A  R
+Wed Nov 22 01:29:29 2023	Shore Commander Vex (STEAM_0:0:440286446): L L A  R
+Wed Nov 22 01:29:30 2023	Shore Commander Vex (STEAM_0:0:440286446): L L A  R
+Wed Nov 22 01:29:31 2023	Shore Commander Vex (STEAM_0:0:440286446): L L A  R
+Wed Nov 22 01:29:33 2023	Shore Commander Vex (STEAM_0:0:440286446): L L A  R
+Wed Nov 22 01:29:37 2023	Shore Commander Vex (STEAM_0:0:440286446): L L A  R
+Wed Nov 22 01:29:50 2023	Royal Gaurd 0001 (STEAM_0:0:197465498): /pm cage they won and got away rip
+Wed Nov 22 01:30:00 2023	Royal Gaurd 0001 (STEAM_0:0:197465498): /pm cage try attacking the main base
+Wed Nov 22 01:30:01 2023	Shore Commander Vex (STEAM_0:0:440286446): L L A R A  L
+Wed Nov 22 01:30:02 2023	Inquisitor Jack (STEAM_0:0:580928495) spawned
+Wed Nov 22 01:30:05 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Wed Nov 22 01:30:06 2023	Shore Commander Vex (STEAM_0:0:440286446): L L A R A  L
+Wed Nov 22 01:30:13 2023	Shore Colonel Billy was killed by SHW Commander Pip with a rw_sw_e11s
+Wed Nov 22 01:30:17 2023	Shore Commander Vex (STEAM_0:0:440286446): L L A R A  L
+Wed Nov 22 01:30:26 2023	Shore Colonel Billy (STEAM_0:1:460210970): RS DOHEAD
+Wed Nov 22 01:30:37 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 01:31:12 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Wed Nov 22 01:31:28 2023	Royal Gaurd 0001 (STEAM_0:0:197465498): 
+Wed Nov 22 01:31:37 2023	Royal Gaurd 0001 (STEAM_0:0:197465498): 
+Wed Nov 22 01:31:40 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Wed Nov 22 01:31:57 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /name Royal Guard 0021
+Wed Nov 22 01:31:59 2023	Shore Colonel Billy was killed by ST Commander Spark with a rw_sw_dual_dh17a
+Wed Nov 22 01:32:05 2023	Shore Colonel Billy (STEAM_0:1:460210970): revive me right fcking now
+Wed Nov 22 01:32:08 2023	Emperor Palpatine (STEAM_0:1:76110013) spawned SENT darth_vader_theme
+Wed Nov 22 01:32:16 2023	Shore Colonel Billy (STEAM_0:1:460210970): revive me
+Wed Nov 22 01:32:21 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Wed Nov 22 01:32:21 2023	Shore Colonel Billy (STEAM_0:1:460210970): you fuck head
+Wed Nov 22 01:32:27 2023	Shore Colonel Billy (STEAM_0:1:460210970): revive me
+Wed Nov 22 01:32:30 2023	ST Commander Spark (STEAM_0:1:460412980): /me pushes
+Wed Nov 22 01:32:34 2023	Shore Colonel Billy (STEAM_0:1:460210970): // revive me you fuck head
+Wed Nov 22 01:32:45 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Wed Nov 22 01:32:45 2023	Royal Guard 0021 (STEAM_0:0:55135130): 
+Wed Nov 22 01:32:48 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Wed Nov 22 01:32:48 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Wed Nov 22 01:33:07 2023	Shore Colonel Billy (STEAM_0:1:460210970): // they suck at aiming
+Wed Nov 22 01:33:09 2023	SHW SGT 8008 UniTankk was killed by ST Commander Spark with a rw_sw_dual_dh17a
+Wed Nov 22 01:33:13 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /ooc nuh uh
+Wed Nov 22 01:33:17 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc real
+Wed Nov 22 01:33:36 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /ooc and now i join in the water
+Wed Nov 22 01:33:36 2023	Shore Colonel Billy (STEAM_0:1:460210970): // so how you doin pip hows it floatin
+Wed Nov 22 01:33:47 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc floatin nice bro
+Wed Nov 22 01:33:52 2023	ST Commander Spark was killed by ARC Commander Gunk with a rw_sw_t21
+Wed Nov 22 01:33:58 2023	Shore Colonel Billy (STEAM_0:1:460210970): // welcome spark
+Wed Nov 22 01:33:59 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 01:34:06 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc nice water  today
+Wed Nov 22 01:34:08 2023	Shore Colonel Billy (STEAM_0:1:460210970): // how ya doing
+Wed Nov 22 01:34:10 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc You DO recognize the bodies in the water
+Wed Nov 22 01:34:15 2023	ARC Commander Gunk (STEAM_0:1:98581856): /sleep
+Wed Nov 22 01:34:23 2023	DT E5 O30 (STEAM_0:1:161014837): /name Royal Guard 0010
+Wed Nov 22 01:34:24 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /pm dish respawn
+Wed Nov 22 01:34:27 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 01:34:30 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 01:34:31 2023	Shore Colonel Billy (STEAM_0:1:460210970): // gunk you look dumb as fuvk
+Wed Nov 22 01:34:33 2023	Royal Guard 0021 (STEAM_0:0:55135130) disconnected
+Wed Nov 22 01:34:34 2023	ARC Commander Gunk (STEAM_0:1:98581856): /sleep
+Wed Nov 22 01:34:34 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Wed Nov 22 01:34:34 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 01:35:25 2023	eggs (STEAM_0:0:55135130) has joined the game
+Wed Nov 22 01:35:25 2023	Royal Guard 0021 (STEAM_0:0:55135130) spawned
+Wed Nov 22 01:36:02 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599): /NAME SHW Captain UniTankk
+Wed Nov 22 01:36:15 2023	Royal Guard 0021 (STEAM_0:0:55135130) spawned
+Wed Nov 22 01:36:27 2023	SHW Captain UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 01:36:27 2023	ST Commander Spark was killed by Shore Colonel Billy with a rw_sw_dlt20a
+Wed Nov 22 01:36:32 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 01:36:41 2023	Inquisitor Ares (STEAM_0:1:78700995): // shouldn't captain be an officer whitelist?
+Wed Nov 22 01:36:47 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc yes
+Wed Nov 22 01:36:57 2023	Inquisitor Ares (STEAM_0:1:78700995): // smh dish
+Wed Nov 22 01:37:01 2023	Royal Gaurd 0001 (STEAM_0:0:197465498): /name Grand Admiral Somebody
+Wed Nov 22 01:37:06 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /fleetga
+Wed Nov 22 01:37:08 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Wed Nov 22 01:37:10 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc my bad
+Wed Nov 22 01:37:12 2023	Shore Colonel Billy was killed by ISB Director Dohead with a ls_sniper
+Wed Nov 22 01:37:17 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 01:37:20 2023	ST Commander Spark (STEAM_0:1:460412980): /setjob unitankk shadowofficer
+Wed Nov 22 01:37:26 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Wed Nov 22 01:37:29 2023	SHW Captain UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 01:37:33 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Wed Nov 22 01:37:34 2023	Royal Guard 0010 (STEAM_0:1:161014837): /advert Safety your weapon immediately [Shift+E+R] [Only Warning]
+Wed Nov 22 01:38:06 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Wed Nov 22 01:38:14 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc DOHEAD
+Wed Nov 22 01:38:16 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc COME HERE
+Wed Nov 22 01:38:38 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc DOHEAD
+Wed Nov 22 01:38:39 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc DOHEAD
+Wed Nov 22 01:38:40 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc DOHEAD
+Wed Nov 22 01:38:41 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc DOHEAD
+Wed Nov 22 01:38:41 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc DOHEAD
+Wed Nov 22 01:38:42 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc DOHEAD
+Wed Nov 22 01:38:43 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc DOHEAD
+Wed Nov 22 01:38:56 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Wed Nov 22 01:38:58 2023	Shore Colonel Billy (STEAM_0:1:460210970): /pm doead i see you :)
+Wed Nov 22 01:39:00 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Wed Nov 22 01:39:06 2023	Shore Colonel Billy (STEAM_0:1:460210970): /pm dohead i see you :)
+Wed Nov 22 01:39:21 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Wed Nov 22 01:39:25 2023	Shore Colonel Billy (STEAM_0:1:460210970): /pm dohead you fucking suck at hiding same with the clone
+Wed Nov 22 01:39:29 2023	Shore Commander Vex (STEAM_0:0:440286446): !bwhitelist 
+Wed Nov 22 01:39:32 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Wed Nov 22 01:39:39 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Wed Nov 22 01:40:01 2023	Inquisitor Ares was killed by RC 6576 Cage with a at_sw_dc17m_original
+Wed Nov 22 01:40:02 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc Butter
+Wed Nov 22 01:40:02 2023	Shore Commander Vex was killed by Themself with a suicide trick
+Wed Nov 22 01:40:02 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Wed Nov 22 01:40:04 2023	IA PFC 1480 Zach (STEAM_0:0:546893200) spawned
+Wed Nov 22 01:40:05 2023	Emperor Palpatine (STEAM_0:1:76110013): /advert Open the base 
+Wed Nov 22 01:40:06 2023	Inquisitor Ares (STEAM_0:1:78700995): // yes?
+Wed Nov 22 01:40:07 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Wed Nov 22 01:40:08 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Wed Nov 22 01:40:11 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc Shadow shenanigans
+Wed Nov 22 01:40:12 2023	RC 6576 Cage was killed by Purge Vice Commander Xain with a rw_sw_e11d
+Wed Nov 22 01:40:13 2023	Screen_wolf75 (STEAM_0:0:231421928) has joined the game
+Wed Nov 22 01:40:13 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Wed Nov 22 01:40:14 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Wed Nov 22 01:40:18 2023	RC 6576 Cage (STEAM_0:0:244564861) spawned
+Wed Nov 22 01:40:21 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Enroute
+Wed Nov 22 01:40:24 2023	Inquisitor Ares (STEAM_0:1:78700995): // Shadnanigans?
+Wed Nov 22 01:40:30 2023	RC 6576 Cage (STEAM_0:0:244564861): // KILLED THE IQ YEA!
+Wed Nov 22 01:40:40 2023	Inquisitor Ares (STEAM_0:1:78700995): // ye its hard to kill someone that is running
+Wed Nov 22 01:40:52 2023	Emperor Palpatine (STEAM_0:1:76110013): /ooc who wants imp navy
+Wed Nov 22 01:40:57 2023	Inquisitor Ares (STEAM_0:1:78700995): // against npcs we are great but against people we are meh
+Wed Nov 22 01:41:14 2023	Shore Colonel Billy (STEAM_0:1:460210970): /ooc like for an event if so then yes if not hell no
+Wed Nov 22 01:41:26 2023	Shore Commander Vex (STEAM_0:0:440286446): SHRT TRA 1480 Zach
+Wed Nov 22 01:41:34 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /advert [imperial comms]  hello troopers i have been kidnapped by the Clone insurgent please help me
+Wed Nov 22 01:41:56 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Wed Nov 22 01:42:04 2023	Inquisitor Ares (STEAM_0:1:78700995): /advert [IMP] Would you happen to know where you are grand admiral
+Wed Nov 22 01:42:05 2023	Emperor Palpatine (STEAM_0:1:76110013): /advert [Imperial] Deal with that at once 
+Wed Nov 22 01:42:09 2023	RC 6576 Cage (STEAM_0:0:244564861): /me strips comms
+Wed Nov 22 01:42:15 2023	ISB Director Dohead (STEAM_0:0:581098097): /name ISB Director Dohead
+Wed Nov 22 01:42:15 2023	IA PFC 1480 Zach (STEAM_0:0:546893200): /name SHRT TRA 1480 Zach
+Wed Nov 22 01:42:17 2023	RC 6576 Cage (STEAM_0:0:244564861): /me puts binders on and binds them to me
+Wed Nov 22 01:42:41 2023	Shore Colonel Billy (STEAM_0:1:460210970): /buyammo 4
+Wed Nov 22 01:42:41 2023	Royal Guard 0021 (STEAM_0:0:55135130) disconnected
+Wed Nov 22 01:43:15 2023	RC 6576 Cage (STEAM_0:0:244564861): /advert [Rebel] This is cage, Need imidate evac for a HVT at docks. How copy?
+Wed Nov 22 01:44:01 2023	ARC Commander Gunk was killed by RC 6576 Cage with a at_sw_dc17m_original
+Wed Nov 22 01:44:02 2023	ARC Commander Gunk (STEAM_0:1:98581856): /advert GRAND ADMIRAL SPOTTED AT WAREHOUSE
+Wed Nov 22 01:44:06 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Wed Nov 22 01:44:59 2023	RC 6576 Cage (STEAM_0:0:244564861): /advert [Rebel] This is cage, Need imidate evac for a HVT at docks. How copy?
+Wed Nov 22 01:45:24 2023	RC 6576 Cage (STEAM_0:0:244564861): /me places detanator on the admiral, set with a proximinar trigger
+Wed Nov 22 01:46:28 2023	ST Commander Spark was killed by Themself with a suicide trick
+Wed Nov 22 01:46:28 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Wed Nov 22 01:46:30 2023	Shore Colonel Billy (STEAM_0:1:460210970): /ADVERT AT DOCKS AND SEE NO HOSTILES RIGHT NOW
+Wed Nov 22 01:46:33 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 01:47:27 2023	Emperor Palpatine (STEAM_0:1:76110013): im gunna switch jobs il brb
+Wed Nov 22 01:47:43 2023	RC 6576 Cage (STEAM_0:0:244564861): /advert [Rebel] This is cage, Need imidate evac for a HVT at docks. How copy?
+Wed Nov 22 01:47:43 2023	Emperor Palpatine (STEAM_0:1:76110013) spawned
+Wed Nov 22 01:47:50 2023	Purge Vice Commander Xain (STEAM_0:0:231680469): /pm palpatine You got a minute to talk in discord?
+Wed Nov 22 01:47:51 2023	Emperor Palpatine (STEAM_0:1:76110013): /name ARC SGT Kaiser
+Wed Nov 22 01:48:15 2023	ARC Commander Gunk (STEAM_0:1:98581856): /advert ARC to Hangar
+Wed Nov 22 01:49:31 2023	RC 6576 Cage (STEAM_0:0:244564861): /me puts a spike in the wall and secures the binders to them.
+Wed Nov 22 01:49:36 2023	SHRT TRA 1480 Zach was killed by Shore Colonel Billy with a rw_sw_tl50
+Wed Nov 22 01:49:42 2023	SHRT TRA 1480 Zach (STEAM_0:0:546893200) spawned
+Wed Nov 22 01:49:53 2023	Shore Colonel Billy was killed by Themself with a suicide trick
+Wed Nov 22 01:49:58 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 01:50:30 2023	ISB Director Dohead (STEAM_0:0:581098097) disconnected
+Wed Nov 22 01:51:19 2023	SHW Commander Pip was killed by Shore Colonel Billy with a rw_sw_dlt20a
+Wed Nov 22 01:51:19 2023	First Order Commander Pretzel (STEAM_0:0:231421928): :)
+Wed Nov 22 01:51:22 2023	Shore Colonel Billy was killed by First Order Commander Pretzel with a rw_sw_stw48
+Wed Nov 22 01:51:29 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 01:51:29 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Wed Nov 22 01:51:30 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 01:51:34 2023	First Order Commander Pretzel (STEAM_0:0:231421928): :)
+Wed Nov 22 01:51:44 2023	First Order Commander Pretzel (STEAM_0:0:231421928): hola
+Wed Nov 22 01:51:53 2023	RC 6576 Cage (STEAM_0:0:244564861): /advert [OPEN] Imperial dogs, I have your "Grand Admiral", I have demands.
+Wed Nov 22 01:51:59 2023	Inquisitor Ares (STEAM_0:1:78700995): // uhhh
+Wed Nov 22 01:52:06 2023	Inquisitor Ares (STEAM_0:1:78700995): // spark wanna explain what you drew
+Wed Nov 22 01:52:08 2023	Shore Colonel Billy (STEAM_0:1:460210970): /advert what are they
+Wed Nov 22 01:52:11 2023	ARC SGT Kaiser (STEAM_0:1:76110013): /advert [OPEN] What are your demands
+Wed Nov 22 01:52:12 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc nothing
+Wed Nov 22 01:52:35 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm uni space 
+Wed Nov 22 01:52:56 2023	ARC SGT Kaiser (STEAM_0:1:76110013): /advert [ARC] Checking the underground area of the docks
+Wed Nov 22 01:53:02 2023	RC 6576 Cage (STEAM_0:0:244564861): /advert [OPEN] I want a ship to be brought to the spaceport, Civilian, No trackers, Im not some stupid criminal.
+Wed Nov 22 01:53:03 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /me starts playing clash of clans
+Wed Nov 22 01:53:36 2023	RC 6576 Cage (STEAM_0:0:244564861): /advert [OPEN] 500k in unmarked credits are to be aboard, else, your grand admiral gets killed
+Wed Nov 22 01:53:40 2023	RC 6576 Cage (STEAM_0:0:244564861): /me gags
+Wed Nov 22 01:53:50 2023	Royal Guard 0010 (STEAM_0:1:161014837): /advert Safety your weapon immediately [Shift+E+R] [Only Warning]
+Wed Nov 22 01:53:59 2023	Shore Colonel Billy (STEAM_0:1:460210970): /advert [OPEN] what about sand and i mean lots of it?
+Wed Nov 22 01:54:06 2023	Shore Commander Vex (STEAM_0:0:440286446): /advert how about 5 grams of weed (gas)
+Wed Nov 22 01:54:15 2023	ARC SGT Kaiser (STEAM_0:1:76110013): /advert [OPEN] I will meet you there with the ship and credits 
+Wed Nov 22 01:54:19 2023	RC 6576 Cage (STEAM_0:0:244564861): /advert [OPEN] DO YOU WANT HIM TO DIE?
+Wed Nov 22 01:54:21 2023	ST Commander Spark (STEAM_0:1:460412980): {pink SMIKE } {red  CAT!!!!!!}
+Wed Nov 22 01:54:21 2023	DOHEAD (STEAM_0:0:581098097) has joined the game
+Wed Nov 22 01:54:21 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Wed Nov 22 01:54:33 2023	RC 6576 Cage (STEAM_0:0:244564861): /advert [OPEN] ONE IMPERIAL, ANY MORE AND HE DIES
+Wed Nov 22 01:54:37 2023	ARC Commander Gunk (STEAM_0:1:98581856): /advert [IMP] Found a tunnel under one of the warehouses checking it now
+Wed Nov 22 01:54:38 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /me makes terriefed muffled noies
+Wed Nov 22 01:54:39 2023	RC 6576 Cage (STEAM_0:0:244564861): /me drags
+Wed Nov 22 01:54:47 2023	Shore Commander Vex (STEAM_0:0:440286446): /advert [OPEN] how about 10 grams of weed 
+Wed Nov 22 01:54:49 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc [OPEN] Give me a location reble
+Wed Nov 22 01:55:03 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert [OPEN] Give me a location, rebel.
+Wed Nov 22 01:55:06 2023	Shore Colonel Billy (STEAM_0:1:460210970): /advert [IMP] Found one in the club too
+Wed Nov 22 01:55:08 2023	Inquisitor Ares (STEAM_0:1:78700995): // lol pip
+Wed Nov 22 01:55:20 2023	RC 6576 Cage (STEAM_0:0:244564861): /advert [OPEN] Spaceport, 5 minutes.
+Wed Nov 22 01:55:26 2023	ST Commander Spark was killed by First Order Commander Pretzel with a rw_sw_dlt19d
+Wed Nov 22 01:55:35 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 01:55:42 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert [OPEN] Enroute
+Wed Nov 22 01:56:07 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert [IMP] I have no plans on giving them credits. I will get the job done.
+Wed Nov 22 01:56:30 2023	ARC Commander Gunk (STEAM_0:1:98581856): /advert [IMP] ARC is Enroute to assist
+Wed Nov 22 01:56:33 2023	ARC SGT Kaiser (STEAM_0:1:76110013): /advert [IMP] I can draw his attention and you sneak behind him
+Wed Nov 22 01:57:08 2023	Inquisitor Ares (STEAM_0:1:78700995): /advert [IMP] Jack and I just scouted the location no one is there
+Wed Nov 22 01:57:28 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert [IMP] All forces, disperse and hide
+Wed Nov 22 01:57:40 2023	Grand Admiral Somebody was killed by RC 6576 Cage with a at_sw_dc17m_original
+Wed Nov 22 01:57:43 2023	SHRT TRA 1480 Zach was killed by RC 6576 Cage with a at_sw_dc17m_original
+Wed Nov 22 01:57:45 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Wed Nov 22 01:57:47 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert [IMP] Kaiser and I will handle it, we will call on you
+Wed Nov 22 01:57:53 2023	SHRT TRA 1480 Zach (STEAM_0:0:546893200) spawned
+Wed Nov 22 01:57:54 2023	ARC SGT Kaiser (STEAM_0:1:76110013): /advert [OPEN] Where are you Rebel im here 
+Wed Nov 22 01:58:11 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /name Grand Admiral Everybody
+Wed Nov 22 01:58:13 2023	Shore Commander Vex (STEAM_0:0:440286446): /pm Pretzel can you kill billy pls
+Wed Nov 22 01:58:31 2023	ST Commander Spark (STEAM_0:1:460412980): /advert IM BEING SHOT AT
+Wed Nov 22 01:58:43 2023	Inquisitor Ares (STEAM_0:1:78700995): // I guess he has fallen and he can't get up
+Wed Nov 22 01:58:49 2023	RC 6576 Cage (STEAM_0:0:244564861): /advert [OPEN] I HAVE YOUR COMMS, HES DEAD BECUASE OF YOUR TRETUREY
+Wed Nov 22 01:58:51 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert [IMP] He was being ransomed, the rebel is now KOS
+Wed Nov 22 01:59:14 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Wed Nov 22 01:59:28 2023	ST Commander Spark was killed by RC 6576 Cage with a at_sw_dc17m_original
+Wed Nov 22 01:59:34 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 01:59:42 2023	ARC SGT Kaiser (STEAM_0:1:76110013): /advert [RP] Uses my tech to track the somebody comms location
+Wed Nov 22 01:59:44 2023	Royal Guard 0010 (STEAM_0:1:161014837) disconnected
+Wed Nov 22 01:59:49 2023	ARC SGT Kaiser (STEAM_0:1:76110013): /roll
+Wed Nov 22 01:59:52 2023	RC 6576 Cage (STEAM_0:0:244564861): // not how that works lol
+Wed Nov 22 01:59:54 2023	SHW Captain UniTankk (STEAM_0:1:152928599): /advert the dude is in main plaza
+Wed Nov 22 01:59:55 2023	ARC SGT Kaiser (STEAM_0:1:76110013): /ooc 95
+Wed Nov 22 02:00:00 2023	ARC Commander Gunk (STEAM_0:1:98581856): /advert [SECURE] Admiral is it possible to ping Grand Admiral Someones comms since the rebel has them for a location?
+Wed Nov 22 02:00:08 2023	Shore Colonel Billy (STEAM_0:1:460210970): /ooc bruh used thay as rp :skull:
+Wed Nov 22 02:00:12 2023	ISB Director Dohead (STEAM_0:0:581098097) disconnected
+Wed Nov 22 02:00:17 2023	RC 6576 Cage was killed by ARC SGT Kaiser with a rw_sw_dual_dc17s
+Wed Nov 22 02:00:31 2023	RC 6576 Cage (STEAM_0:0:244564861): /me beep
+Wed Nov 22 02:00:34 2023	RC 6576 Cage (STEAM_0:0:244564861): /me beeep
+Wed Nov 22 02:00:36 2023	ARC SGT Kaiser (STEAM_0:1:76110013): /advert [IMP] The rebel is dead
+Wed Nov 22 02:00:38 2023	RC 6576 Cage (STEAM_0:0:244564861): /me beep beep
+Wed Nov 22 02:00:40 2023	RC 6576 Cage (STEAM_0:0:244564861): /me beep beep beep
+Wed Nov 22 02:00:43 2023	RC 6576 Cage (STEAM_0:0:244564861): /me beep beep beep beep
+Wed Nov 22 02:00:49 2023	ARC SGT Kaiser (STEAM_0:1:76110013): /ooc comms devices can be tracked they did it in star wars
+Wed Nov 22 02:00:57 2023	Shore Colonel Billy (STEAM_0:1:460210970): /ooc grimjaw your a fucking cheater you cheated on show with a clone, WE WERE YOU MAIN KIDNAPPERS, and now you have him?!?!?!?!
+Wed Nov 22 02:01:00 2023	RC 6576 Cage (STEAM_0:0:244564861): /me the body combusts, burning everything
+Wed Nov 22 02:01:06 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert [IMP] Check body and go back to hanger
+Wed Nov 22 02:01:11 2023	ST Commander Spark was killed by First Order Commander Pretzel with a rw_sw_stw48
+Wed Nov 22 02:01:18 2023	Grand Admiral Everybody (STEAM_0:0:197465498): // what ?!
+Wed Nov 22 02:01:18 2023	RC 6576 Cage (STEAM_0:0:244564861) spawned
+Wed Nov 22 02:01:18 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 02:01:18 2023	ARC SGT Kaiser (STEAM_0:1:76110013): /advert [IMP] Do you want us to revive him and cuff him 
+Wed Nov 22 02:01:34 2023	RC 6576 Cage (STEAM_0:0:244564861): // YEA PKED EM!
+Wed Nov 22 02:01:36 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert [IMP] Burn the body
+Wed Nov 22 02:01:38 2023	ARC SGT Kaiser (STEAM_0:1:76110013): /advert [IMP] Very well
+Wed Nov 22 02:01:47 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 02:01:48 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Wed Nov 22 02:01:52 2023	Inquisitor Ares (STEAM_0:1:78700995): /advert [IMP] If you see any weird objects on him please let the Inquisitors have them
+Wed Nov 22 02:02:00 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Wed Nov 22 02:02:05 2023	ARC SGT Kaiser (STEAM_0:1:76110013): /name ARC SSGT Kaiser
+Wed Nov 22 02:02:28 2023	ARC SSGT Kaiser (STEAM_0:1:76110013): /advert [RP] picks the commando weapon off his body
+Wed Nov 22 02:02:34 2023	ARC SSGT Kaiser (STEAM_0:1:76110013): /roll
+Wed Nov 22 02:02:34 2023	Shore Colonel Billy was killed by Themself with a suicide trick
+Wed Nov 22 02:02:34 2023	(1)Spark (STEAM_0:0:42756804) disconnected
+Wed Nov 22 02:02:35 2023	Shore Commander Vex was killed by SHW Commander Pip with a rw_sw_e11s
+Wed Nov 22 02:02:35 2023	DOHEAD (STEAM_0:0:581098097) has joined the game
+Wed Nov 22 02:02:35 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Wed Nov 22 02:02:38 2023	ARC SSGT Kaiser (STEAM_0:1:76110013): /ooc 81
+Wed Nov 22 02:02:40 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Wed Nov 22 02:02:43 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 02:02:44 2023	RC 6576 Cage (STEAM_0:0:244564861): // what part of "Burns everything" dont you get?
+Wed Nov 22 02:02:51 2023	SHRT TRA 1480 Zach (STEAM_0:0:546893200): rolle
+Wed Nov 22 02:02:52 2023	ARC SSGT Kaiser (STEAM_0:1:76110013): /ooc didnt see that
+Wed Nov 22 02:02:56 2023	RC 6576 Cage (STEAM_0:0:244564861): // yea
+Wed Nov 22 02:03:08 2023	SHRT TRA 1480 Zach (STEAM_0:0:546893200): /roll
+Wed Nov 22 02:03:16 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc vex, type in chat
+Wed Nov 22 02:03:20 2023	ST Commander Spark was killed by First Order Commander Pretzel with a rw_sw_stw48
+Wed Nov 22 02:03:21 2023	First Order Commander Pretzel was killed by Entity [2948][entityflame] with a entityflame
+Wed Nov 22 02:03:22 2023	Shore Colonel Billy (STEAM_0:1:460210970): /ooc ok
+Wed Nov 22 02:03:24 2023	Shore Commander Vex (STEAM_0:0:440286446): /ooc no
+Wed Nov 22 02:03:43 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 02:03:56 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 02:04:00 2023	Shore Colonel Billy (STEAM_0:1:460210970): e
+Wed Nov 22 02:04:01 2023	Inquisitor Ares (STEAM_0:1:78700995): hi
+Wed Nov 22 02:04:04 2023	Shore Colonel Billy (STEAM_0:1:460210970): cheese
+Wed Nov 22 02:04:06 2023	Shore Commander Vex (STEAM_0:0:440286446): no
+Wed Nov 22 02:04:06 2023	ARC SSGT Kaiser (STEAM_0:1:76110013): sus
+Wed Nov 22 02:04:09 2023	Shore Colonel Billy (STEAM_0:1:460210970): cheese
+Wed Nov 22 02:04:09 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Wed Nov 22 02:04:09 2023	Shore Commander Vex (STEAM_0:0:440286446): sus
+Wed Nov 22 02:04:13 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Wed Nov 22 02:04:14 2023	Shore Colonel Billy (STEAM_0:1:460210970): figures
+Wed Nov 22 02:04:14 2023	Shore Commander Vex (STEAM_0:0:440286446): cheese
+Wed Nov 22 02:04:14 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Wed Nov 22 02:04:15 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Wed Nov 22 02:04:18 2023	Shore Colonel Billy (STEAM_0:1:460210970): cheese
+Wed Nov 22 02:04:18 2023	SHW Commander Pip (STEAM_0:1:169781558): cheese
+Wed Nov 22 02:04:21 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Wed Nov 22 02:04:22 2023	SHW Captain UniTankk (STEAM_0:1:152928599): cheese
+Wed Nov 22 02:04:24 2023	Shore Colonel Billy (STEAM_0:1:460210970): cheese
+Wed Nov 22 02:04:26 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Wed Nov 22 02:04:28 2023	SHW Captain UniTankk (STEAM_0:1:152928599): cheese
+Wed Nov 22 02:04:29 2023	SHW Captain UniTankk was killed by Entity [2848][prop_physics] with a prop_physics
+Wed Nov 22 02:04:29 2023	RC 6576 Cage (STEAM_0:0:244564861) disconnected
+Wed Nov 22 02:04:30 2023	Shore Colonel Billy (STEAM_0:1:460210970): cheese
+Wed Nov 22 02:04:39 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Wed Nov 22 02:04:45 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Wed Nov 22 02:04:46 2023	Shore Colonel Billy (STEAM_0:1:460210970): figures
+Wed Nov 22 02:04:46 2023	SHW Captain UniTankk (STEAM_0:1:152928599): /ooc help ive been boated
+Wed Nov 22 02:04:51 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Wed Nov 22 02:04:53 2023	ARC SSGT Kaiser was killed by Entity [2837][prop_physics] with a prop_physics
+Wed Nov 22 02:04:58 2023	ARC Commander Gunk was killed by Entity [2829][prop_physics] with a prop_physics
+Wed Nov 22 02:04:59 2023	SHW Captain UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 02:05:00 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Wed Nov 22 02:05:06 2023	ARC SSGT Kaiser (STEAM_0:1:76110013) spawned
+Wed Nov 22 02:05:15 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Wed Nov 22 02:05:26 2023	Shore Colonel Billy was killed by Entity [2837][prop_physics] with a prop_physics
+Wed Nov 22 02:05:26 2023	SHRT TRA 1480 Zach was killed by Entity [2837][prop_physics] with a prop_physics
+Wed Nov 22 02:05:32 2023	SHRT TRA 1480 Zach (STEAM_0:0:546893200) spawned
+Wed Nov 22 02:05:36 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 02:05:41 2023	SHW Commander Pip was killed by Shore Colonel Billy with a rw_sw_dlt20a
+Wed Nov 22 02:05:48 2023	ARC SSGT Kaiser (STEAM_0:1:76110013): 
+Wed Nov 22 02:06:09 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 02:06:09 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Wed Nov 22 02:06:20 2023	Shore Colonel Billy was killed by Entity [2934][prop_physics] with a prop_physics
+Wed Nov 22 02:06:34 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 02:07:00 2023	SHW Commander Pip was killed by Shore Colonel Billy with a rw_sw_dlt20a
+Wed Nov 22 02:07:45 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 02:07:48 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Wed Nov 22 02:07:49 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Wed Nov 22 02:07:52 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Wed Nov 22 02:08:07 2023	ARC Commander Gunk was killed by Shore Colonel Billy with a rw_sw_dlt20a
+Wed Nov 22 02:08:46 2023	SHRT TRA 1480 Zach was killed by Entity [2937][prop_physics] with a prop_physics
+Wed Nov 22 02:09:01 2023	SHRT TRA 1480 Zach (STEAM_0:0:546893200) spawned
+Wed Nov 22 02:09:11 2023	SHW Captain UniTankk was killed by Shore Colonel Billy with a rw_sw_dlt20a
+Wed Nov 22 02:09:16 2023	PlushBerry (STEAM_0:1:525736108) has joined the game
+Wed Nov 22 02:09:16 2023	PlushBerry (STEAM_0:1:525736108) spawned
+Wed Nov 22 02:09:17 2023	SHW Captain UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 02:09:28 2023	ARC SSGT Kaiser (STEAM_0:1:76110013): 
+Wed Nov 22 02:09:48 2023	Shore Colonel Billy was killed by First Order Commander Pretzel with a rw_sw_stw48
+Wed Nov 22 02:09:56 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 02:10:00 2023	Shore Colonel Billy (STEAM_0:1:460210970): // same here kaiser
+Wed Nov 22 02:10:07 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Wed Nov 22 02:10:09 2023	Shore Colonel Billy (STEAM_0:1:460210970): // and me kaiser
+Wed Nov 22 02:10:10 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 02:10:25 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 02:11:05 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Wed Nov 22 02:11:15 2023	ST Commander Spark was killed by Themself with a suicide trick
+Wed Nov 22 02:11:15 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Wed Nov 22 02:11:16 2023	SHW Captain UniTankk was killed by Entity [3017][prop_physics] with a prop_physics
+Wed Nov 22 02:11:16 2023	Purge Vice Commander Xain was killed by Entity [3017][prop_physics] with a prop_physics
+Wed Nov 22 02:11:20 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 02:11:28 2023	Shore Commander Vex was killed by First Order Commander Pretzel with a rw_sw_dlt19d
+Wed Nov 22 02:11:33 2023	SHW Captain UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 02:11:35 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Wed Nov 22 02:11:35 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) spawned
+Wed Nov 22 02:12:00 2023	Grand Admiral Everybody (STEAM_0:0:197465498): /pm kaiser i added a rifle to royal guard
+Wed Nov 22 02:12:08 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Wed Nov 22 02:12:10 2023	SHW Captain UniTankk was killed by Shore Commander Vex with a rw_sw_z6i
+Wed Nov 22 02:12:16 2023	SHW Captain UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 02:12:21 2023	ARC SSGT Kaiser (STEAM_0:1:76110013): /pm Everybody danke also lethal company tonight
+Wed Nov 22 02:12:28 2023	PlushBerry (STEAM_0:1:525736108): /ooc anytime i press for discord or steam i get sent to google
+Wed Nov 22 02:12:31 2023	First Order Commander Pretzel was killed by Shore Colonel Billy with a rw_sw_dlt20a
+Wed Nov 22 02:12:31 2023	Grand Admiral Everybody (STEAM_0:0:197465498): /pm kaiser maybe 
+Wed Nov 22 02:12:42 2023	Shore Colonel Billy was killed by Inquisitor Jack with a weapon_lightsaber
+Wed Nov 22 02:12:42 2023	Grand Admiral Everybody (STEAM_0:0:197465498): 
+Wed Nov 22 02:12:43 2023	First Order Commander Pretzel (STEAM_0:0:231421928): bitch
+Wed Nov 22 02:12:47 2023	ISB Director Dohead (STEAM_0:0:581098097): /advert kos vex for being mean
+Wed Nov 22 02:12:49 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Wed Nov 22 02:12:51 2023	Grand Admiral Everybody (STEAM_0:0:197465498): /pm kaiser thats what i gave em
+Wed Nov 22 02:12:51 2023	Shore Colonel Billy (STEAM_0:1:460210970) spawned
+Wed Nov 22 02:12:57 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Wed Nov 22 02:13:21 2023	ARC SSGT Kaiser (STEAM_0:1:76110013): /pm Every nice
+Wed Nov 22 02:13:39 2023	PlushBerry (STEAM_0:1:525736108): /ooc whats the discord?
+Wed Nov 22 02:13:40 2023	ST Commander Spark (STEAM_0:1:460412980): /me takes arrest batton
+Wed Nov 22 02:13:50 2023	ISB Director Dohead (STEAM_0:0:581098097) disconnected
+Wed Nov 22 02:13:56 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc one sec
+Wed Nov 22 02:14:10 2023	SHW Captain UniTankk was killed by Shore Commander Vex with a rw_sw_z6i
+Wed Nov 22 02:14:15 2023	Grand Admiral Everybody (STEAM_0:0:197465498): /name Grand Admiral Somebody
+Wed Nov 22 02:14:15 2023	SHW Captain UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 02:14:20 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc https://discord.gg/Wf9uHEv8
+Wed Nov 22 02:14:37 2023	ST Commander Spark was killed by Entity [2963][prop_physics] with a prop_physics
+Wed Nov 22 02:14:39 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 02:14:43 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Wed Nov 22 02:14:43 2023	ST Commander Spark (STEAM_0:1:460412980) arrested Shore Commander Vex
+Wed Nov 22 02:14:51 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Wed Nov 22 02:14:51 2023	Inquisitor Jack (STEAM_0:0:580928495) spawned
+Wed Nov 22 02:14:55 2023	Shore Commander Vex (STEAM_0:0:440286446): /ooc ypu dick
+Wed Nov 22 02:14:59 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 02:15:01 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Wed Nov 22 02:15:04 2023	ST Commander Spark (STEAM_0:1:460412980) unarrested Shore Commander Vex
+Wed Nov 22 02:15:19 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Wed Nov 22 02:15:25 2023	Inquisitor Jack (STEAM_0:0:580928495) spawned
+Wed Nov 22 02:15:30 2023	Shore Colonel Billy (STEAM_0:1:460210970) disconnected
+Wed Nov 22 02:15:34 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Wed Nov 22 02:15:42 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Wed Nov 22 02:15:46 2023	Inquisitor Jack (STEAM_0:0:580928495) spawned
+Wed Nov 22 02:15:49 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Wed Nov 22 02:15:53 2023	ARC Commander Gunk was killed by Themself with a suicide trick
+Wed Nov 22 02:15:53 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Wed Nov 22 02:15:55 2023	SHRT TRA 1480 Zach (STEAM_0:0:546893200) spawned
+Wed Nov 22 02:15:58 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Wed Nov 22 02:16:55 2023	SHW Captain UniTankk was killed by Inquisitor Ares with a weapon_lightsaber
+Wed Nov 22 02:17:02 2023	SHW Captain UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 02:17:44 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 02:18:05 2023	PlushBerry (STEAM_0:1:525736108) disconnected
+Wed Nov 22 02:18:06 2023	ST Commander Spark was killed by ARC SSGT Kaiser with a rw_sw_dual_dc17s
+Wed Nov 22 02:18:12 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 02:18:27 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc I came back to getting pulled
+Wed Nov 22 02:18:31 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc Can we not
+Wed Nov 22 02:19:07 2023	ST Commander Spark (STEAM_0:1:460412980): /drop
+Wed Nov 22 02:19:16 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Wed Nov 22 02:19:27 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Wed Nov 22 02:19:28 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Wed Nov 22 02:19:50 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Wed Nov 22 02:19:51 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Wed Nov 22 02:21:03 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 10
+Wed Nov 22 02:21:04 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $10
+Wed Nov 22 02:21:09 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 10
+Wed Nov 22 02:21:10 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $10
+Wed Nov 22 02:21:31 2023	ST Commander Spark (STEAM_0:1:460412980): /addmoney spak 100000
+Wed Nov 22 02:21:35 2023	ST Commander Spark (STEAM_0:1:460412980): /addmoney spark 100000
+Wed Nov 22 02:21:35 2023	ST Commander Spark (STEAM_0:1:460412980) added $100,000 to Spark's wallet
+Wed Nov 22 02:21:38 2023	SHW Captain UniTankk was killed by ARC Commander Gunk with a rw_sw_t21
+Wed Nov 22 02:21:38 2023	ST Commander Spark (STEAM_0:1:460412980): /addmoney spark 100000
+Wed Nov 22 02:21:38 2023	ST Commander Spark (STEAM_0:1:460412980) added $100,000 to Spark's wallet
+Wed Nov 22 02:21:39 2023	ST Commander Spark (STEAM_0:1:460412980): /addmoney spark 100000
+Wed Nov 22 02:21:39 2023	ST Commander Spark (STEAM_0:1:460412980) added $100,000 to Spark's wallet
+Wed Nov 22 02:21:40 2023	ST Commander Spark (STEAM_0:1:460412980): /addmoney spark 100000
+Wed Nov 22 02:21:40 2023	ST Commander Spark (STEAM_0:1:460412980) added $100,000 to Spark's wallet
+Wed Nov 22 02:21:43 2023	SHW Captain UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 02:21:45 2023	ST Commander Spark (STEAM_0:1:460412980): /addmoney spark 1000000000000
+Wed Nov 22 02:21:45 2023	ST Commander Spark (STEAM_0:1:460412980) added $1,000,000,000,000 to Spark's wallet
+Wed Nov 22 02:21:47 2023	ST Commander Spark (STEAM_0:1:460412980): /addmoney spark 1000000000000
+Wed Nov 22 02:21:47 2023	ST Commander Spark (STEAM_0:1:460412980) added $1,000,000,000,000 to Spark's wallet
+Wed Nov 22 02:21:48 2023	ST Commander Spark (STEAM_0:1:460412980): /addmoney spark 1000000000000
+Wed Nov 22 02:21:48 2023	ST Commander Spark (STEAM_0:1:460412980) added $1,000,000,000,000 to Spark's wallet
+Wed Nov 22 02:21:48 2023	ST Commander Spark (STEAM_0:1:460412980): /addmoney spark 1000000000000
+Wed Nov 22 02:21:48 2023	ST Commander Spark (STEAM_0:1:460412980) added $1,000,000,000,000 to Spark's wallet
+Wed Nov 22 02:21:49 2023	ST Commander Spark (STEAM_0:1:460412980): /addmoney spark 1000000000000
+Wed Nov 22 02:21:49 2023	ST Commander Spark (STEAM_0:1:460412980) added $1,000,000,000,000 to Spark's wallet
+Wed Nov 22 02:21:50 2023	ST Commander Spark (STEAM_0:1:460412980): /addmoney spark 1000000000000
+Wed Nov 22 02:21:50 2023	ST Commander Spark (STEAM_0:1:460412980) added $1,000,000,000,000 to Spark's wallet
+Wed Nov 22 02:21:50 2023	ST Commander Spark (STEAM_0:1:460412980): /addmoney spark 1000000000000
+Wed Nov 22 02:21:50 2023	ST Commander Spark (STEAM_0:1:460412980) added $1,000,000,000,000 to Spark's wallet
+Wed Nov 22 02:22:10 2023	ARC Commander Gunk (STEAM_0:1:98581856): /dropmoney 500000
+Wed Nov 22 02:22:11 2023	ARC Commander Gunk (STEAM_0:1:98581856) has dropped $500,000
+Wed Nov 22 02:22:17 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 10
+Wed Nov 22 02:22:18 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $10
+Wed Nov 22 02:22:23 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 10
+Wed Nov 22 02:22:24 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 10
+Wed Nov 22 02:22:24 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $10
+Wed Nov 22 02:22:25 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 10
+Wed Nov 22 02:22:26 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $10
+Wed Nov 22 02:22:40 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /dropmoney 10
+Wed Nov 22 02:22:41 2023	Grand Admiral Somebody (STEAM_0:0:197465498) has dropped $10
+Wed Nov 22 02:23:41 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 10
+Wed Nov 22 02:23:42 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $10
+Wed Nov 22 02:25:04 2023	Shore Commander Vex was killed by ST Commander Spark with a rw_sw_huntershotgun
+Wed Nov 22 02:25:16 2023	ST Commander Spark was killed by Themself with a suicide trick
+Wed Nov 22 02:25:16 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Wed Nov 22 02:25:19 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 02:25:23 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Wed Nov 22 02:25:28 2023	SHW Captain UniTankk was killed by ST Commander Spark with a rw_sw_dual_dh17a
+Wed Nov 22 02:25:35 2023	SHW Captain UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 02:25:39 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Wed Nov 22 02:25:39 2023	Shore Commander Vex (STEAM_0:0:440286446) arrested ST Commander Spark
+Wed Nov 22 02:25:59 2023	ST Commander Spark (STEAM_0:1:460412980): /unarrest spark
+Wed Nov 22 02:25:59 2023	ST Commander Spark (STEAM_0:1:460412980) force-unarrested Spark
+Wed Nov 22 02:26:04 2023	Shore Commander Vex (STEAM_0:0:440286446): /advert RFA spark smelly
+Wed Nov 22 02:26:18 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /advert false
+Wed Nov 22 02:26:36 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Wed Nov 22 02:26:36 2023	Grand Admiral Somebody (STEAM_0:0:197465498) arrested Shore Commander Vex
+Wed Nov 22 02:26:46 2023	Shore Commander Vex (STEAM_0:0:440286446) disconnected
+Wed Nov 22 02:26:51 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /advert RFA Vex Disobeying fleet
+Wed Nov 22 02:27:53 2023	SHW Captain UniTankk was killed by SHRT TRA 1480 Zach with a rw_sw_tl40
+Wed Nov 22 02:28:16 2023	SHRT TRA 1480 Zach was killed by Inquisitor Jack with a weapon_ak472
+Wed Nov 22 02:28:22 2023	SHRT TRA 1480 Zach (STEAM_0:0:546893200) spawned
+Wed Nov 22 02:28:26 2023	SHW Captain UniTankk (STEAM_0:1:152928599) spawned
+Wed Nov 22 02:28:33 2023	SHW Captain UniTankk (STEAM_0:1:152928599) disconnected
+Wed Nov 22 02:29:03 2023	Inquisitor Jack was killed by Inquisitor Ares with a weapon_lightsaber
+Wed Nov 22 02:29:21 2023	Inquisitor Jack (STEAM_0:0:580928495) spawned
+Wed Nov 22 02:30:24 2023	ARC SSGT Kaiser (STEAM_0:1:76110013) spawned SENT dewitsenate
+Wed Nov 22 02:30:32 2023	SHRT TRA 1480 Zach was killed by Inquisitor Jack with a rw_sw_priest_staff
+Wed Nov 22 02:30:38 2023	SHRT TRA 1480 Zach (STEAM_0:0:546893200) spawned
+Wed Nov 22 02:31:05 2023	ARC SSGT Kaiser (STEAM_0:1:76110013) spawned SENT starwarsthat
+Wed Nov 22 02:31:45 2023	Inquisitor Jack (STEAM_0:0:580928495) disconnected
+Wed Nov 22 02:31:52 2023	ARC SSGT Kaiser (STEAM_0:1:76110013) spawned SENT weirdyankovic
+Wed Nov 22 02:32:15 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /dance
+Wed Nov 22 02:32:27 2023	SHRT TRA 1480 Zach (STEAM_0:0:546893200): \dance
+Wed Nov 22 02:32:40 2023	Inquisitor Ares (STEAM_0:1:78700995): act dance in console
+Wed Nov 22 02:33:02 2023	Grand Admiral Somebody (STEAM_0:0:197465498) disconnected
+Wed Nov 22 02:34:05 2023	SHRT TRA 1480 Zach (STEAM_0:0:546893200) disconnected
+Wed Nov 22 02:35:24 2023	ST Commander Spark (STEAM_0:1:460412980): /name ST Commander Spark
+Wed Nov 22 02:36:14 2023	ST Commander Spark (STEAM_0:1:460412980) disconnected
+Wed Nov 22 02:37:38 2023	Inquisitor Ares was killed by Entity [0][worldspawn] with a unknown
+Wed Nov 22 02:37:39 2023	ARC Commander Gunk (STEAM_0:1:98581856) disconnected
+Wed Nov 22 02:37:47 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Wed Nov 22 02:38:34 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected
+Wed Nov 22 02:41:51 2023	Purge Vice Commander Xain (STEAM_0:0:231680469) disconnected
+Wed Nov 22 02:44:33 2023	PlushBerry (STEAM_0:1:525736108) has joined the game
+Wed Nov 22 02:44:33 2023	PlushBerry (STEAM_0:1:525736108) spawned
+Wed Nov 22 02:46:36 2023	PlushBerry (STEAM_0:1:525736108): /advert i need a trainer mr please :]
+Wed Nov 22 02:46:42 2023	ARC SSGT Kaiser (STEAM_0:1:76110013) disconnected
+Wed Nov 22 02:47:25 2023	Inquisitor Ares (STEAM_0:1:78700995): // omw
+Wed Nov 22 02:47:34 2023	First Order Commander Pretzel (STEAM_0:0:231421928) disconnected
+Wed Nov 22 03:01:45 2023	PlushBerry (STEAM_0:1:525736108): /ST TRA 1121 Husker
+Wed Nov 22 03:01:58 2023	PlushBerry (STEAM_0:1:525736108): /name ST TRA 1121 Husker
+Wed Nov 22 03:02:48 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Wed Nov 22 03:03:27 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Wed Nov 22 03:03:29 2023	ST TRA 1121 Husker (STEAM_0:1:525736108): AFK]
+Wed Nov 22 03:06:29 2023	ST TRA 1121 Husker (STEAM_0:1:525736108) disconnected
+Wed Nov 22 03:06:40 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Wed Nov 22 03:08:05 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Wed Nov 22 03:08:14 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Wed Nov 22 03:12:33 2023	Inquisitor Ares (STEAM_0:1:78700995) disconnected
+Wed Nov 22 03:23:39 2023	PlushBerry (STEAM_0:1:525736108) has joined the game
+Wed Nov 22 03:23:39 2023	ST TRA 1121 Husker (STEAM_0:1:525736108) spawned
+Wed Nov 22 03:25:48 2023	ST TRA 1121 Husker (STEAM_0:1:525736108) spawned
+Wed Nov 22 03:42:29 2023	ST TRA 1121 Husker (STEAM_0:1:525736108) disconnected
+Wed Nov 22 03:49:33 2023	AHHHH (STEAM_0:1:189494712) has joined the game
+Wed Nov 22 03:49:33 2023	Shore VCMD Point (STEAM_0:1:189494712) spawned
+Wed Nov 22 03:50:46 2023	Shore VCMD Point (STEAM_0:1:189494712) disconnected
+Wed Nov 22 05:13:40 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Wed Nov 22 05:13:40 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Wed Nov 22 07:24:18 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected
+Wed Nov 22 19:23:40 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Wed Nov 22 19:23:40 2023	Grand Admiral Somebody (STEAM_0:0:197465498) spawned
+Wed Nov 22 19:34:29 2023	Croc (STEAM_0:1:161014837) has joined the game
+Wed Nov 22 19:34:29 2023	Royal Guard 0010 (STEAM_0:1:161014837) spawned
+Wed Nov 22 20:13:34 2023	Grand Admiral Somebody (STEAM_0:0:197465498): /name ISB Chief Grimjaw
+Wed Nov 22 20:13:47 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Wed Nov 22 20:14:14 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Wed Nov 22 20:14:34 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Wed Nov 22 20:15:02 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Wed Nov 22 20:16:15 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Wed Nov 22 20:16:21 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Wed Nov 22 20:16:34 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Wed Nov 22 20:16:43 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Wed Nov 22 20:16:55 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Wed Nov 22 20:17:55 2023	PlushBerry (STEAM_0:1:525736108) has joined the game
+Wed Nov 22 20:17:55 2023	ST TRA 1121 Husker (STEAM_0:1:525736108) spawned
+Wed Nov 22 20:18:42 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): you there
+Wed Nov 22 20:25:41 2023	Royal Guard 0010 (STEAM_0:1:161014837): no
+Wed Nov 22 20:25:49 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Wed Nov 22 20:25:49 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Wed Nov 22 20:25:49 2023	Royal Guard 0010 (STEAM_0:1:161014837): k
+Wed Nov 22 20:25:56 2023	Royal Guard 0010 (STEAM_0:1:161014837): damn
+Wed Nov 22 20:26:17 2023	Royal Guard 0010 (STEAM_0:1:161014837): we have RG and DT for thta
+Wed Nov 22 20:26:58 2023	ST TRA 1121 Husker (STEAM_0:1:525736108) spawned
+Wed Nov 22 20:27:30 2023	Royal Guard 0010 (STEAM_0:1:161014837): /name DT E5 O30
+Wed Nov 22 20:28:27 2023	ST TRA 1121 Husker (STEAM_0:1:525736108): /ooc trying to figure out the map 
+Wed Nov 22 20:28:38 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // its a large map 
+Wed Nov 22 20:28:47 2023	ST TRA 1121 Husker (STEAM_0:1:525736108): /ooc i see that lol
+Wed Nov 22 20:29:09 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Wed Nov 22 20:29:37 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // its gonna be a mix of darkrp and star wars rp so theres gonna be civilian jobs and criminal jobs that troopers can interact
+Wed Nov 22 20:29:40 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // with
+Wed Nov 22 20:29:42 2023	ST TRA 1121 Husker (STEAM_0:1:525736108): /ooc where the heck is the raining room
+Wed Nov 22 20:30:00 2023	Inquisitor Ares (STEAM_0:1:78700995): // on the other side of the map from the base
+Wed Nov 22 20:30:11 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // outside the base we are heading to the base now
+Wed Nov 22 20:32:02 2023	ST TRA 1121 Husker (STEAM_0:1:525736108): /ooc yes
+Wed Nov 22 20:33:09 2023	ST TRA 1121 Husker (STEAM_0:1:525736108): /ooc OOOooo its this map yea i knpw this one
+Wed Nov 22 20:33:30 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // yeah its a good map
+Wed Nov 22 20:33:40 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Wed Nov 22 20:33:51 2023	ST TRA 1121 Husker (STEAM_0:1:525736108): /ooc so are troopers supposed to stay in base? or can walk anywhere?
+Wed Nov 22 20:34:02 2023	Inquisitor Ares (STEAM_0:1:78700995): // they can go anywhere
+Wed Nov 22 20:34:03 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // they can walk around
+Wed Nov 22 20:34:13 2023	ST TRA 1121 Husker (STEAM_0:1:525736108): /ooc o cool
+Wed Nov 22 20:34:34 2023	Inquisitor Ares (STEAM_0:1:78700995): // civillians aren't supposed to be in the base but troopers can walk around and do stuff
+Wed Nov 22 20:34:48 2023	ST TRA 1121 Husker (STEAM_0:1:525736108): /ooc is there any way i can get a TP? so i can ask stuff becuase am guessin its down time
+Wed Nov 22 20:34:53 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // yep and criminals will either attack or run from troopers
+Wed Nov 22 20:35:02 2023	ST TRA 1121 Husker (STEAM_0:1:525736108): /ooc  other mind
+Wed Nov 22 20:35:16 2023	Inquisitor Ares (STEAM_0:1:78700995): // grimjaw where'd you go
+Wed Nov 22 20:35:21 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Wed Nov 22 20:36:40 2023	ST TRA 1121 Husker (STEAM_0:1:525736108) spawned
+Wed Nov 22 20:36:48 2023	ST TRA 1121 Husker (STEAM_0:1:525736108): /ooc mr clone man
+Wed Nov 22 20:36:52 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // yep there ya go
+Wed Nov 22 20:37:11 2023	DT E5 O30 (STEAM_0:1:161014837): 
+Wed Nov 22 20:37:12 2023	ST TRA 1121 Husker (STEAM_0:1:525736108) spawned
+Wed Nov 22 20:37:21 2023	ST TRA 1121 Husker (STEAM_0:1:525736108): /ooc cool
+Wed Nov 22 20:37:35 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // yes sir
+Wed Nov 22 20:42:21 2023	ST TRA 1121 Husker (STEAM_0:1:525736108) disconnected
+Wed Nov 22 20:42:39 2023	DT E5 O30 (STEAM_0:1:161014837): th L E 5hA dO, W gU A 2R dS F wE R; E tHe /m 0 sT e L iTe oF a 5- L` TH e gU A R [4 dS me N
+Wed Nov 22 20:42:55 2023	DT E5 O30 (STEAM_0:1:161014837): th L E 5hA dO, W gU A 2R dS F wE R; E tHe /m 0 sT e L iTe oF a 5- L` TH e gU A R [4 dS me N
+Wed Nov 22 20:46:10 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Wed Nov 22 20:46:36 2023	DT E5 O30 (STEAM_0:1:161014837) spawned

@@ -1,0 +1,32 @@
+Sat Sep  2 19:17:08 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sat Sep  2 19:17:09 2023	ST COmmander Spark (STEAM_0:1:460412980) spawned
+Sat Sep  2 19:17:47 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 19:17:57 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
+Sat Sep  2 19:17:57 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 19:18:19 2023	ST COmmander Spark (STEAM_0:1:460412980): 
+Sat Sep  2 19:18:39 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT bodyman_closet
+Sat Sep  2 19:19:15 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 19:20:09 2023	IC 1854 Sarge (STEAM_0:0:631269172): perma prop no work
+Sat Sep  2 19:20:14 2023	IC 1854 Sarge (STEAM_0:0:631269172): no
+Sat Sep  2 19:20:18 2023	IC 1854 Sarge (STEAM_0:0:631269172): perma prop no work
+Sat Sep  2 19:20:23 2023	IC 1854 Sarge (STEAM_0:0:631269172): no work
+Sat Sep  2 19:20:28 2023	IC 1854 Sarge (STEAM_0:0:631269172): perma prop
+Sat Sep  2 19:20:30 2023	ST COmmander Spark (STEAM_0:1:460412980): THEN FIX IT
+Sat Sep  2 19:20:32 2023	IC 1854 Sarge (STEAM_0:0:631269172): perma prop no work
+Sat Sep  2 19:20:40 2023	IC 1854 Sarge (STEAM_0:0:631269172): IDK HOW
+Sat Sep  2 19:20:49 2023	IC 1854 Sarge (STEAM_0:0:631269172): spark no work
+Sat Sep  2 19:20:53 2023	IC 1854 Sarge (STEAM_0:0:631269172): spark no
+Sat Sep  2 19:21:01 2023	IC 1854 Sarge (STEAM_0:0:631269172): spark yes work
+Sat Sep  2 19:21:22 2023	IC 1854 Sarge (STEAM_0:0:631269172): it only works w text screen
+Sat Sep  2 19:25:16 2023	ST COmmander Spark (STEAM_0:1:460412980) disconnected
+Sat Sep  2 19:26:22 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 19:26:48 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 19:37:17 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 19:37:43 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 19:38:20 2023	IC 1854 Sarge (STEAM_0:0:631269172): 
+Sat Sep  2 19:48:10 2023	IC 1854 Sarge (STEAM_0:0:631269172) disconnected
+Sat Sep  2 21:53:13 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
+Sat Sep  2 21:53:13 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 21:53:56 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned
+Sat Sep  2 21:56:48 2023	IC 1854 Sarge (STEAM_0:0:631269172) spawned SENT wii music background
+Sat Sep  2 22:09:44 2023	IC 1854 Sarge (STEAM_0:0:631269172) disconnected

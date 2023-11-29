@@ -1,0 +1,824 @@
+Sat Nov 11 08:19:44 2023	Shadow Whelm (STEAM_0:0:503446630) has joined the game
+Sat Nov 11 08:19:44 2023	DT 2LT Shadow (STEAM_0:0:503446630) spawned
+Sat Nov 11 08:28:56 2023	Cookie12 (STEAM_0:1:61170829) has joined the game
+Sat Nov 11 08:28:56 2023	DT Z2 J31 (STEAM_0:1:61170829) spawned
+Sat Nov 11 08:31:50 2023	DT 2LT Shadow (STEAM_0:0:503446630) spawned
+Sat Nov 11 08:32:38 2023	DT 2LT Shadow (STEAM_0:0:503446630) spawned
+Sat Nov 11 08:33:29 2023	DT 2LT Shadow (STEAM_0:0:503446630) spawned
+Sat Nov 11 08:33:30 2023	DT Z2 J31 (STEAM_0:1:61170829) spawned
+Sat Nov 11 08:33:57 2023	DT 2LT Shadow (STEAM_0:0:503446630): /rpname DT O1 S04
+Sat Nov 11 08:38:07 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Sat Nov 11 08:38:07 2023	SHW SFC 1208 Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 08:38:46 2023	SHW SFC 1208 Ares (STEAM_0:1:78700995): /name SHW LTCOL Ares
+Sat Nov 11 08:39:17 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 08:40:26 2023	DT O1 S04 (STEAM_0:0:503446630) disconnected
+Sat Nov 11 09:02:32 2023	floodhunter133 (STEAM_0:1:484835386) has joined the game
+Sat Nov 11 09:02:32 2023	DT D5 F13 (STEAM_0:1:484835386) spawned
+Sat Nov 11 09:04:17 2023	DT D5 F13 (STEAM_0:1:484835386) disconnected
+Sat Nov 11 10:16:35 2023	SHW LTCOL Ares (STEAM_0:1:78700995) disconnected
+Sat Nov 11 10:16:47 2023	DT Z2 J31 (STEAM_0:1:61170829) disconnected
+Sat Nov 11 14:26:15 2023	Ironwing001 (STEAM_0:1:50031807) has joined the game
+Sat Nov 11 14:26:15 2023	IA SGM 0471 Stone (STEAM_0:1:50031807) spawned
+Sat Nov 11 14:27:36 2023	IA SGM 0471 Stone (STEAM_0:1:50031807) spawned
+Sat Nov 11 14:34:24 2023	IA SGM 0471 Stone (STEAM_0:1:50031807) disconnected
+Sat Nov 11 17:28:34 2023	Willisepic66 (STEAM_0:1:460210970) has joined the game
+Sat Nov 11 17:28:34 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sat Nov 11 17:29:07 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Sat Nov 11 18:05:15 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) disconnected
+Sat Nov 11 18:58:26 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sat Nov 11 18:58:26 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov 11 18:59:07 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 18:59:22 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 19:00:10 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 19:03:22 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 19:03:45 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 19:04:16 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov 11 19:04:50 2023	MyTankHasAFlat (STEAM_0:1:152928599) has joined the game
+Sat Nov 11 19:04:50 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 19:05:23 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 19:06:13 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 19:09:51 2023	IA Commander Demo (STEAM_0:0:29212178): /name CT PVT 3423 Test
+Sat Nov 11 19:11:25 2023	CT PVT 3423 Test was killed by Themself with a suicide trick
+Sat Nov 11 19:11:25 2023	CT PVT 3423 Test (STEAM_0:0:29212178): 
+Sat Nov 11 19:11:30 2023	CT PVT 3423 Test (STEAM_0:0:29212178) spawned
+Sat Nov 11 19:12:12 2023	CT PVT 3423 Test (STEAM_0:0:29212178): 
+Sat Nov 11 19:13:03 2023	CT PVT 3423 Test (STEAM_0:0:29212178): 
+Sat Nov 11 19:14:35 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Sat Nov 11 19:14:35 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 19:21:35 2023	CT PVT 3423 Test was killed by IA PVT 8008 UniTankk with a rw_sw_dlt19s
+Sat Nov 11 19:21:40 2023	CT PVT 3423 Test (STEAM_0:0:29212178) spawned
+Sat Nov 11 19:23:26 2023	Xanderr (STEAM_0:0:63471237) has joined the game
+Sat Nov 11 19:23:26 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sat Nov 11 19:23:53 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /shadowcommand
+Sat Nov 11 19:23:55 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sat Nov 11 19:24:08 2023	SHW LTCOL Ares (STEAM_0:1:78700995) disconnected
+Sat Nov 11 19:24:13 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) disconnected
+Sat Nov 11 19:24:29 2023	CT PVT 3423 Test (STEAM_0:0:29212178) spawned
+Sat Nov 11 19:24:38 2023	CT PVT 3423 Test (STEAM_0:0:29212178): /name IA Commander Demo
+Sat Nov 11 19:26:09 2023	IA Commander Demo (STEAM_0:0:29212178): huh
+Sat Nov 11 19:26:16 2023	IA Commander Demo (STEAM_0:0:29212178): bruh
+Sat Nov 11 19:26:45 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Sat Nov 11 19:26:45 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 19:28:48 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov 11 19:29:01 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov 11 19:29:09 2023	MyTankHasAFlat (STEAM_0:1:152928599) has joined the game
+Sat Nov 11 19:29:09 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 19:29:14 2023	IA Commander Demo (STEAM_0:0:29212178): /name CT PVT 1111 Test
+Sat Nov 11 19:29:54 2023	CT PVT 1111 Test (STEAM_0:0:29212178): 
+Sat Nov 11 19:29:59 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 19:30:02 2023	CT PVT 1111 Test (STEAM_0:0:29212178): 
+Sat Nov 11 19:30:30 2023	yairme (STEAM_0:0:184328867) has joined the game
+Sat Nov 11 19:30:30 2023	SHW PVT 2001 Yairme (STEAM_0:0:184328867) spawned
+Sat Nov 11 19:31:04 2023	CT PVT 1111 Test (STEAM_0:0:29212178): 
+Sat Nov 11 19:31:06 2023	SHW LTCOL Ares was killed by IA PVT 8008 UniTankk with a rw_sw_e11
+Sat Nov 11 19:31:14 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 19:31:19 2023	IA PVT 8008 UniTankk was killed by SHW LTCOL Ares with a weapon_fists
+Sat Nov 11 19:31:24 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 19:31:34 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 19:31:37 2023	CT PVT 1111 Test (STEAM_0:0:29212178): 
+Sat Nov 11 19:32:02 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 19:32:03 2023	SHW PVT 2001 Yairme (STEAM_0:0:184328867): /name SHW GSGT 2001 Yairme
+Sat Nov 11 19:32:49 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /sleep
+Sat Nov 11 19:32:53 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /sleep
+Sat Nov 11 19:32:55 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /sleep
+Sat Nov 11 19:32:55 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sat Nov 11 19:33:01 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /sleep
+Sat Nov 11 19:33:09 2023	SHW Colonel Furboy (STEAM_0:0:63471237): /sleep
+Sat Nov 11 19:33:09 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sat Nov 11 19:33:38 2023	1LO94G (STEAM_0:0:580928495) has joined the game
+Sat Nov 11 19:33:38 2023	Shokc Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sat Nov 11 19:33:48 2023	IA PVT 8008 UniTankk was killed by SHW Colonel Furboy with a rw_sw_t21
+Sat Nov 11 19:34:05 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 19:35:11 2023	SHW Colonel Furboy (STEAM_0:0:63471237): :3
+Sat Nov 11 19:35:40 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599): /dance
+Sat Nov 11 19:35:41 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599): /cheer
+Sat Nov 11 19:37:34 2023	Shokc Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sat Nov 11 19:37:47 2023	SHW Colonel Furboy (STEAM_0:0:63471237): // Oh god, the irish are here
+Sat Nov 11 19:37:53 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599): /OOC kill
+Sat Nov 11 19:39:11 2023	CT PVT 1111 Test (STEAM_0:0:29212178): /OOC NEW CONTENT IN IN CONTENT PACK DOWNLOAD IT
+Sat Nov 11 19:39:19 2023	CT PVT 1111 Test was killed by Shokc Vice Commander Jack with a rw_sw_dlt19
+Sat Nov 11 19:39:24 2023	CT PVT 1111 Test (STEAM_0:0:29212178) spawned
+Sat Nov 11 19:39:26 2023	SHW GSGT 2001 Yairme (STEAM_0:0:184328867): /name SHW FSGT 2001 Yairme
+Sat Nov 11 19:39:35 2023	SHW FSGT 2001 Yairme was killed by Shokc Vice Commander Jack with a rw_sw_dlt19
+Sat Nov 11 19:39:40 2023	IA PVT 8008 UniTankk was killed by SHW Colonel Furboy with a rw_sw_t21
+Sat Nov 11 19:39:45 2023	SHW FSGT 2001 Yairme (STEAM_0:0:184328867) spawned
+Sat Nov 11 19:39:45 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 19:39:54 2023	SHW Colonel Furboy was killed by IA PVT 8008 UniTankk with a rw_sw_dlt19s
+Sat Nov 11 19:39:57 2023	CT PVT 1111 Test (STEAM_0:0:29212178): 
+Sat Nov 11 19:39:59 2023	SHW Colonel Furboy (STEAM_0:0:63471237): MEDIC
+Sat Nov 11 19:40:01 2023	CT PVT 1111 Test (STEAM_0:0:29212178): goto yai
+Sat Nov 11 19:40:02 2023	SHW Colonel Furboy (STEAM_0:0:63471237): MEDIC
+Sat Nov 11 19:40:04 2023	CT PVT 1111 Test (STEAM_0:0:29212178): 
+Sat Nov 11 19:40:05 2023	SHW FSGT 2001 Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 19:40:05 2023	SHW FSGT 2001 Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 19:40:06 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sat Nov 11 19:40:14 2023	CT PVT 1111 Test (STEAM_0:0:29212178): 
+Sat Nov 11 19:40:40 2023	SHW LTCOL Ares was killed by IA PVT 8008 UniTankk with a rw_sw_dlt19s
+Sat Nov 11 19:40:43 2023	CT PVT 1111 Test (STEAM_0:0:29212178): 
+Sat Nov 11 19:40:46 2023	IA PVT 8008 UniTankk was killed by SHW Colonel Furboy with a rw_sw_t21
+Sat Nov 11 19:40:48 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 19:40:53 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 19:40:54 2023	SHW FSGT 2001 Yairme (STEAM_0:0:184328867) spawned
+Sat Nov 11 19:41:20 2023	IA PVT 8008 UniTankk was killed by Shokc Vice Commander Jack with a rw_sw_dlt19
+Sat Nov 11 19:41:27 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 19:41:55 2023	CT PVT 1111 Test (STEAM_0:0:29212178): STOP SHOOTING ITS NOT ATFER HOURS
+Sat Nov 11 19:42:24 2023	SHW Colonel Furboy was killed by SHW FSGT 2001 Yairme with a rw_sw_se14c
+Sat Nov 11 19:42:28 2023	CT PVT 1111 Test (STEAM_0:0:29212178): /advert OK, no more shooting because rules apply no
+Sat Nov 11 19:42:31 2023	CT PVT 1111 Test (STEAM_0:0:29212178): /advert now*
+Sat Nov 11 19:42:43 2023	SHW Colonel Furboy (STEAM_0:0:63471237): its not after hours anymore
+Sat Nov 11 19:42:51 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) disconnected
+Sat Nov 11 19:42:52 2023	SHW Colonel Furboy (STEAM_0:0:63471237): we need to be more serious
+Sat Nov 11 19:42:53 2023	SHW Colonel Furboy (STEAM_0:0:63471237) spawned
+Sat Nov 11 19:44:22 2023	SHW LTCOL Ares was killed by SHW Colonel Furboy with a rw_sw_t21
+Sat Nov 11 19:44:28 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 19:44:51 2023	CT PVT 1111 Test (STEAM_0:0:29212178): /Demo on Duty
+Sat Nov 11 19:44:55 2023	CT PVT 1111 Test (STEAM_0:0:29212178): /name Demo on Duty
+Sat Nov 11 19:44:55 2023	Demo on Duty (STEAM_0:0:29212178) spawned
+Sat Nov 11 19:45:01 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 19:46:36 2023	SHW Colonel Furboy (STEAM_0:0:63471237) disconnected
+Sat Nov 11 19:47:25 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 19:47:46 2023	SHW LTCOL Ares (STEAM_0:1:78700995) disconnected
+Sat Nov 11 19:47:46 2023	Shokc Vice Commander Jack was killed by Themself with a suicide trick
+Sat Nov 11 19:47:53 2023	Shokc Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sat Nov 11 19:48:59 2023	Demo on Duty (STEAM_0:0:29212178) disconnected
+Sat Nov 11 19:49:26 2023	SHW FSGT 2001 Yairme (STEAM_0:0:184328867) disconnected
+Sat Nov 11 20:08:04 2023	Atlas (STEAM_0:0:190051560) has joined the game
+Sat Nov 11 20:08:04 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Sat Nov 11 20:10:20 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Sat Nov 11 20:10:20 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 20:13:05 2023	Medical Commander Jason (STEAM_0:0:190051560) disconnected
+Sat Nov 11 20:14:01 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:15:07 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:16:25 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Sat Nov 11 20:16:25 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 20:17:46 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:18:06 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 20:19:46 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 20:26:50 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sat Nov 11 20:26:50 2023	Demo on Duty (STEAM_0:0:29212178) spawned
+Sat Nov 11 20:28:08 2023	Demo on Duty (STEAM_0:0:29212178) spawned
+Sat Nov 11 20:28:16 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:28:39 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:28:47 2023	Demo on Duty (STEAM_0:0:29212178): !spetate
+Sat Nov 11 20:28:49 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:30:15 2023	Oogington (STEAM_0:0:585618786) has joined the game
+Sat Nov 11 20:30:15 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786) spawned
+Sat Nov 11 20:33:18 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786) spawned
+Sat Nov 11 20:33:27 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): /ooc sup peeps\
+Sat Nov 11 20:35:09 2023	SHW LTCOL Ares was killed by SHRT TRA 0045 Oog with a rw_sw_e22
+Sat Nov 11 20:35:17 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 20:37:58 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): /ooc ah yes, the commadore and captian of the imperial fleet
+Sat Nov 11 20:38:01 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): /ooc :sob:
+Sat Nov 11 20:38:38 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:38:43 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:38:59 2023	Shadow Whelm (STEAM_0:0:503446630) has joined the game
+Sat Nov 11 20:38:59 2023	DT O1 S04 (STEAM_0:0:503446630) spawned
+Sat Nov 11 20:39:01 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:40:19 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): /ooc 7 daamage at long range is scuffed
+Sat Nov 11 20:40:26 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): /ooc damage*
+Sat Nov 11 20:40:29 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:40:42 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): wtf was that
+Sat Nov 11 20:40:43 2023	DT O1 S04 (STEAM_0:0:503446630) spawned
+Sat Nov 11 20:40:56 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): well ik it's a prop but what was it a prop of
+Sat Nov 11 20:40:58 2023	DT O1 S04 (STEAM_0:0:503446630): /ooc demo you can give whitelists right?
+Sat Nov 11 20:41:22 2023	Atlas (STEAM_0:0:190051560) has joined the game
+Sat Nov 11 20:41:22 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Sat Nov 11 20:41:44 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc I can as well
+Sat Nov 11 20:41:53 2023	DT O1 S04 (STEAM_0:0:503446630): /ooc can you gib me inferno whitelist
+Sat Nov 11 20:41:57 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:42:32 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): /ooc I hate how we can't use the kill command on ourselves
+Sat Nov 11 20:42:40 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc it's bad
+Sat Nov 11 20:42:47 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): /ooc it's bad!
+Sat Nov 11 20:42:58 2023	DT O1 S04 (STEAM_0:0:503446630) disconnected
+Sat Nov 11 20:43:05 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): 15:42:49 - It's bad!.
+Sat Nov 11 20:43:46 2023	Shadow Whelm (STEAM_0:0:503446630) has joined the game
+Sat Nov 11 20:43:46 2023	DT O1 S04 (STEAM_0:0:503446630) spawned
+Sat Nov 11 20:43:54 2023	VibrantHealer35 (STEAM_0:0:161241684) has joined the game
+Sat Nov 11 20:43:54 2023	IC 1262 Scorch (STEAM_0:0:161241684) spawned
+Sat Nov 11 20:44:03 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:44:22 2023	DT O1 S04 (STEAM_0:0:503446630) spawned
+Sat Nov 11 20:44:45 2023	DT O1 S04 (STEAM_0:0:503446630): /rpname Inferno Squad Leader Shadow
+Sat Nov 11 20:44:54 2023	Inferno Squad Leader Shadow (STEAM_0:0:503446630): /ooc hey dish come tp to me
+Sat Nov 11 20:45:00 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:45:49 2023	SHW Commander Pip was killed by Inferno Squad Leader Shadow with a rw_sw_dual_westar35
+Sat Nov 11 20:45:54 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 20:46:02 2023	Brian O'Connor (STEAM_0:0:569996284) has joined the game
+Sat Nov 11 20:46:02 2023	Brian O'Connor (STEAM_0:0:569996284) spawned
+Sat Nov 11 20:46:12 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): I see you
+Sat Nov 11 20:46:21 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): yuh uh
+Sat Nov 11 20:46:25 2023	Medical Commander Jason (STEAM_0:0:190051560) disconnected
+Sat Nov 11 20:46:31 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:46:31 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:46:45 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): it's tempting
+Sat Nov 11 20:46:52 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:46:52 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:46:53 2023	IC 1262 Scorch (STEAM_0:0:161241684): /name Purge Commander Badger
+Sat Nov 11 20:46:57 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:46:57 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:47:02 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:47:18 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Sat Nov 11 20:47:34 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:47:34 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:47:34 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): /ooc def looks like new things got added
+Sat Nov 11 20:47:39 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:47:47 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc yeah
+Sat Nov 11 20:48:00 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc It's still not completely done
+Sat Nov 11 20:48:03 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): /ooca afk rq
+Sat Nov 11 20:48:08 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): /ooc ah okay
+Sat Nov 11 20:48:12 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): /ooc afk rq
+Sat Nov 11 20:48:21 2023	Inferno Squad Leader Shadow (STEAM_0:0:503446630): /ooc lemme drive tie fighter
+Sat Nov 11 20:49:30 2023	Inferno Squad Leader Shadow (STEAM_0:0:503446630): /advert open hangar gate
+Sat Nov 11 20:51:13 2023	Brian O'Connor (STEAM_0:0:569996284) disconnected
+Sat Nov 11 20:52:13 2023	SHW Commander Pip was killed by Purge Commander Badger with a rw_sw_electrohammer
+Sat Nov 11 20:52:18 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 20:53:18 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): /ooc back
+Sat Nov 11 20:53:49 2023	SHW Commander Pip was killed by Inferno Squad Leader Shadow with a rw_sw_dlt20a
+Sat Nov 11 20:53:54 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 20:55:55 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): /ooc I know exactly what I'm gonna do now
+Sat Nov 11 20:56:17 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:56:17 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:56:36 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:56:40 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:56:43 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): hi
+Sat Nov 11 20:56:52 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): what if
+Sat Nov 11 20:56:53 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Sat Nov 11 20:56:54 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): i dont
+Sat Nov 11 20:57:09 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): what fi I don't though
+Sat Nov 11 20:57:14 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:57:14 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:58:17 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:58:17 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:58:22 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:58:22 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:58:27 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:58:27 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:58:30 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:58:30 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:58:31 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:58:31 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:58:42 2023	Demo on Duty (STEAM_0:0:29212178): !ucloak
+Sat Nov 11 20:58:45 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:58:47 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:58:59 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786): that works for me
+Sat Nov 11 20:59:01 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:59:04 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:59:11 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:59:11 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:59:15 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:59:29 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:59:29 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:59:43 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:59:43 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:59:51 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 20:59:54 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 20:59:54 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:00:00 2023	SHRT TRA 0045 Oog (STEAM_0:0:585618786) disconnected
+Sat Nov 11 21:00:08 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:00:08 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:00:20 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:00:20 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:00:25 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:00:28 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:00:28 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:00:31 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:00:31 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:00:42 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:00:42 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:00:47 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:00:57 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:01:01 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:01:01 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:01:16 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:01:16 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:01:28 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:02:25 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:02:25 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:02:32 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:02:32 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:02:38 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:02:38 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:02:53 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:02:53 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:03:01 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:03:09 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:03:09 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:03:19 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:03:19 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:03:40 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:03:40 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:03:42 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:03:42 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:03:46 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:03:46 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:03:49 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:03:49 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:04:01 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:04:11 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:04:28 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:05:28 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:06:31 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:06:31 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:06:58 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:06:58 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:07:06 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:07:06 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:07:13 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:07:13 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:07:14 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:07:14 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:07:27 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:07:27 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:07:32 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:07:32 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:07:35 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:07:35 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:07:44 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:07:44 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:07:58 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:07:58 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:08:05 2023	Croc (STEAM_0:1:161014837) has joined the game
+Sat Nov 11 21:08:05 2023	DT E3 O30 (STEAM_0:1:161014837) spawned
+Sat Nov 11 21:08:09 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:08:09 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:08:51 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:08:51 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:09:17 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Sat Nov 11 21:09:17 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Sat Nov 11 21:09:29 2023	DT E3 O30 (STEAM_0:1:161014837) disconnected
+Sat Nov 11 21:09:31 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Sat Nov 11 21:09:46 2023	Inferno Squad Leader Shadow (STEAM_0:0:503446630) spawned
+Sat Nov 11 21:09:46 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Sat Nov 11 21:09:54 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Sat Nov 11 21:10:01 2023	Croc (STEAM_0:1:161014837) has joined the game
+Sat Nov 11 21:10:01 2023	DT E3 O30 (STEAM_0:1:161014837) spawned
+Sat Nov 11 21:11:27 2023	DT E3 O30 (STEAM_0:1:161014837) spawned
+Sat Nov 11 21:12:20 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:13:41 2023	Inferno Squad Leader Shadow was killed by Purge Commander Badger with a rw_sw_e11d
+Sat Nov 11 21:13:46 2023	Inferno Squad Leader Shadow (STEAM_0:0:503446630) spawned
+Sat Nov 11 21:13:58 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:13:58 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:14:06 2023	Purge Commander Badger (STEAM_0:0:161241684): /advert With Improcco and Green Company, 41st will never fall behind! Join us now at our Bunks!
+Sat Nov 11 21:14:07 2023	Inferno Squad Leader Shadow (STEAM_0:0:503446630): /ooc you know everytime you kill me or respawn me i have to walk all the way back
+Sat Nov 11 21:14:12 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Sat Nov 11 21:14:14 2023	DT E3 O30 (STEAM_0:1:161014837): /comms [DT] Target Neutralized
+Sat Nov 11 21:14:58 2023	Purge Commander Badger was killed by Inferno Squad Leader Shadow with a rw_sw_e11t
+Sat Nov 11 21:15:05 2023	Purge Commander Badger (STEAM_0:0:161241684) spawned
+Sat Nov 11 21:15:05 2023	Purge Commander Badger (STEAM_0:0:161241684): 
+Sat Nov 11 21:15:48 2023	Purge Commander Badger (STEAM_0:0:161241684) disconnected
+Sat Nov 11 21:19:35 2023	Demo on Duty (STEAM_0:0:29212178): fix your name
+Sat Nov 11 21:19:45 2023	Demo on Duty (STEAM_0:0:29212178): ok
+Sat Nov 11 21:20:00 2023	Shokc Vice Commander Jack (STEAM_0:0:580928495): /name Shock Vice Commander Jack
+Sat Nov 11 21:20:15 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:20:23 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:20:45 2023	Inferno Squad Leader Shadow (STEAM_0:0:503446630) disconnected
+Sat Nov 11 21:24:46 2023	SHW Commander Pip was killed by Shock Vice Commander Jack with a stunstick
+Sat Nov 11 21:24:52 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 21:25:38 2023	SHW LTCOL Ares was killed by Shock Vice Commander Jack with a stunstick
+Sat Nov 11 21:25:56 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 21:26:06 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:26:51 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:26:51 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:26:59 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:26:59 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:27:07 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:27:07 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:27:11 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:27:11 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:27:14 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) disconnected
+Sat Nov 11 21:27:19 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:27:19 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:27:20 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:27:20 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:27:34 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:27:34 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:27:42 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:27:42 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:27:45 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:27:45 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:28:30 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:28:30 2023	Demo on Duty (STEAM_0:0:29212178): 
+Sat Nov 11 21:28:40 2023	Demo on Duty (STEAM_0:0:29212178): /name IA Commander Demo
+Sat Nov 11 21:28:44 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:28:44 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:28:48 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov 11 21:29:12 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:29:12 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:29:57 2023	SHW Commander Pip (STEAM_0:1:169781558): !logs
+Sat Nov 11 21:30:01 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:30:22 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 21:30:22 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 21:30:55 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:31:32 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:31:47 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:32:01 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 21:34:51 2023	SHW Commander Pip was killed by SHW LTCOL Ares with a rw_sw_t21
+Sat Nov 11 21:34:57 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 21:35:49 2023	SHW LTCOL Ares was killed by SHW Commander Pip with a rw_sw_dual_e11
+Sat Nov 11 21:35:58 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 21:36:35 2023	floodhunter133 (STEAM_0:1:484835386) has joined the game
+Sat Nov 11 21:36:35 2023	DT D5 F13 (STEAM_0:1:484835386) spawned
+Sat Nov 11 21:40:02 2023	MyTankHasAFlat (STEAM_0:1:152928599) has joined the game
+Sat Nov 11 21:40:02 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 21:40:38 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:43:18 2023	eggs (STEAM_0:0:55135130) has joined the game
+Sat Nov 11 21:43:18 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov 11 21:45:02 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:45:08 2023	SHW LTCOL Ares (STEAM_0:1:78700995) disconnected
+Sat Nov 11 21:45:16 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 21:45:16 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 21:45:24 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:45:29 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:45:29 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:45:32 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 21:45:32 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 21:45:49 2023	DT D5 F13 (STEAM_0:1:484835386) spawned
+Sat Nov 11 21:46:01 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:46:18 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:46:44 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599): /dance
+Sat Nov 11 21:46:45 2023	IA Commander Demo was killed by Entity [2871][prop_physics] with a prop_physics
+Sat Nov 11 21:46:45 2023	IA PVT 8008 UniTankk was killed by Entity [2871][prop_physics] with a prop_physics
+Sat Nov 11 21:46:51 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov 11 21:47:03 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 21:47:06 2023	IA Commander Demo (STEAM_0:0:29212178): /advert CODE HQ
+Sat Nov 11 21:47:26 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): // hold on let me check the codes
+Sat Nov 11 21:47:36 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 21:47:44 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc hold on
+Sat Nov 11 21:48:17 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): // GESCHLECHTSVERKER
+Sat Nov 11 21:48:24 2023	IA PVT 8008 UniTankk was killed by IA Commander Demo with a weapon_crowbar
+Sat Nov 11 21:48:29 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc Sex?
+Sat Nov 11 21:48:29 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 21:48:34 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): // vineboom
+Sat Nov 11 21:48:51 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /name John
+Sat Nov 11 21:49:09 2023	SHW Commander Pip was killed by IA PVT 8008 UniTankk with a rw_sw_dlt19s
+Sat Nov 11 21:49:14 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 21:49:28 2023	IA PVT 8008 UniTankk (STEAM_0:1:152928599): /name IA PFC 8008 UniTankk
+Sat Nov 11 21:49:55 2023	John (STEAM_0:0:55135130): /me dabs up
+Sat Nov 11 21:50:00 2023	IA Commander Demo (STEAM_0:0:29212178): /me dabs up
+Sat Nov 11 21:52:06 2023	John was killed by Entity [0][worldspawn] with a unknown
+Sat Nov 11 21:52:15 2023	John (STEAM_0:0:55135130) spawned
+Sat Nov 11 21:52:28 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Sat Nov 11 21:52:30 2023	IA PFC 8008 UniTankk was killed by Entity [0][worldspawn] with a unknown
+Sat Nov 11 21:52:34 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 21:52:36 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 21:52:49 2023	IA Commander Demo (STEAM_0:0:29212178): /ooc bro space meth goes crazy
+Sat Nov 11 21:54:01 2023	IA Commander Demo (STEAM_0:0:29212178): /ooc unitank is this the caramel dancing you speak of in ia bunks?
+Sat Nov 11 21:54:18 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599): /ooc possibly
+Sat Nov 11 21:54:19 2023	IA Commander Demo (STEAM_0:0:29212178): /ooc it is quite fire i must admit
+Sat Nov 11 21:54:20 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599): /ooc i forgor
+Sat Nov 11 21:55:09 2023	IA PFC 8008 UniTankk was killed by IA Commander Demo with a rw_sw_dual_e5bx
+Sat Nov 11 21:55:14 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 21:55:42 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:56:48 2023	Vex (STEAM_0:0:440286446) has joined the game
+Sat Nov 11 21:56:48 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sat Nov 11 21:57:03 2023	John (STEAM_0:0:55135130): // SHUP
+Sat Nov 11 21:57:04 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599): /OOC NO
+Sat Nov 11 21:57:11 2023	John (STEAM_0:0:55135130): // WE ARE RICK ASTLEYING
+Sat Nov 11 21:57:21 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc Me map cleanup
+Sat Nov 11 21:57:25 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:57:31 2023	John (STEAM_0:0:55135130): // my heart
+Sat Nov 11 21:57:34 2023	John (STEAM_0:0:55135130): // i loved him
+Sat Nov 11 21:57:36 2023	John (STEAM_0:0:55135130): // waaaaaaaaa
+Sat Nov 11 21:57:42 2023	John (STEAM_0:0:55135130) spawned
+Sat Nov 11 21:57:43 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc waaaaaaa
+Sat Nov 11 21:57:44 2023	John (STEAM_0:0:55135130): /name 66th Naval CWO Sir Scratchma
+Sat Nov 11 21:57:47 2023	66th Naval CWO Sir Scratchma (STEAM_0:0:55135130): // FUCK
+Sat Nov 11 21:57:59 2023	66th Naval CWO Sir Scratchma (STEAM_0:0:55135130): /name ISB Deputy Chief Scratchma
+Sat Nov 11 21:58:01 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sat Nov 11 21:58:01 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov 11 21:58:15 2023	DT D5 F13 (STEAM_0:1:484835386) disconnected
+Sat Nov 11 21:58:52 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 21:59:27 2023	floodhunter133 (STEAM_0:1:484835386) has joined the game
+Sat Nov 11 21:59:27 2023	DT D5 F13 (STEAM_0:1:484835386) spawned
+Sat Nov 11 22:00:24 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sat Nov 11 22:00:54 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:01:45 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:01:47 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sat Nov 11 22:01:55 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sat Nov 11 22:02:03 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Sat Nov 11 22:02:03 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 22:02:04 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov 11 22:02:06 2023	ST Commander Spark (STEAM_0:1:460412980): /name Chimaera High Overseer Spark
+Sat Nov 11 22:03:03 2023	Shore Commander Vex (STEAM_0:0:440286446): /name Chimaera Recon Vex
+Sat Nov 11 22:03:20 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 22:03:26 2023	Chimaera Recon Vex (STEAM_0:0:440286446) spawned
+Sat Nov 11 22:04:57 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 22:07:04 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:07:04 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:07:14 2023	IA PFC 8008 UniTankk was killed by Entity [2188][trigger_hurt] with a trigger_hurt
+Sat Nov 11 22:07:15 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:07:20 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 22:07:41 2023	SHW Commander Pip was killed by ISB Deputy Chief Scratchma with a rw_sw_riotbaton
+Sat Nov 11 22:07:46 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 22:07:47 2023	Chimaera Recon Vex (STEAM_0:0:440286446) spawned
+Sat Nov 11 22:07:47 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) arrested Chimaera Recon Vex
+Sat Nov 11 22:07:50 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:08:16 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov 11 22:08:33 2023	Chimaera Recon Vex (STEAM_0:0:440286446): 
+Sat Nov 11 22:08:35 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov 11 22:08:43 2023	IA Commander Demo (STEAM_0:0:29212178): /name Definitly Chimera Demo
+Sat Nov 11 22:08:49 2023	Chimaera Recon Vex (STEAM_0:0:440286446): 
+Sat Nov 11 22:08:56 2023	Definitly Chimera Demo (STEAM_0:0:29212178): /job Chimera uhh Chimera
+Sat Nov 11 22:09:11 2023	Definitly Chimera Demo (STEAM_0:0:29212178): 
+Sat Nov 11 22:09:15 2023	Definitly Chimera Demo (STEAM_0:0:29212178): 
+Sat Nov 11 22:09:20 2023	ISB Deputy Chief Scratchma was killed by Themself with a suicide trick
+Sat Nov 11 22:09:24 2023	Definitly Chimera Demo (STEAM_0:0:29212178): 
+Sat Nov 11 22:09:25 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov 11 22:10:51 2023	Definitly Chimera Demo (STEAM_0:0:29212178): 
+Sat Nov 11 22:10:55 2023	Definitly Chimera Demo (STEAM_0:0:29212178): 
+Sat Nov 11 22:10:56 2023	*Jerry*『Kol』 (STEAM_0:0:59377502) has joined the game
+Sat Nov 11 22:10:56 2023	ST PFC 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov 11 22:11:09 2023	Definitly Chimera Demo (STEAM_0:0:29212178): 
+Sat Nov 11 22:11:28 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:11:57 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 22:11:57 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) arrested SHW Commander Pip
+Sat Nov 11 22:11:58 2023	Chimaera Recon Vex (STEAM_0:0:440286446) spawned
+Sat Nov 11 22:11:58 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) arrested Chimaera Recon Vex
+Sat Nov 11 22:12:00 2023	ST PFC 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov 11 22:12:06 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): /ooc pissing me off
+Sat Nov 11 22:12:13 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert IA Commander to bunks
+Sat Nov 11 22:12:15 2023	Chimaera Recon Vex (STEAM_0:0:440286446): 
+Sat Nov 11 22:12:22 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:12:24 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // oh shit you arent on
+Sat Nov 11 22:12:54 2023	Definitly Chimera Demo (STEAM_0:0:29212178): /name Chimaera VI Demo
+Sat Nov 11 22:13:13 2023	Chimaera VI Demo (STEAM_0:0:29212178) spawned
+Sat Nov 11 22:13:44 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:16:02 2023	yairme (STEAM_0:0:184328867) has joined the game
+Sat Nov 11 22:16:02 2023	SHW FSGT 2001 Yairme (STEAM_0:0:184328867) spawned
+Sat Nov 11 22:16:43 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): kol
+Sat Nov 11 22:16:51 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): my mother says hi lmao
+Sat Nov 11 22:16:54 2023	Chimaera Recon Vex was killed by SHW Commander Pip with a rw_sw_t21
+Sat Nov 11 22:16:56 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): o
+Sat Nov 11 22:16:58 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): k
+Sat Nov 11 22:16:59 2023	Chimaera Recon Vex (STEAM_0:0:440286446) spawned
+Sat Nov 11 22:17:00 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): k
+Sat Nov 11 22:17:08 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert {*damn bro, youre kinda loitering. leave in 10 seconds or be aos. dont come back for 5 minuets}
+Sat Nov 11 22:17:09 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert {*damn bro, youre kinda loitering. leave in 10 seconds or be aos. dont come back for 5 minuets}
+Sat Nov 11 22:17:19 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // cool bind
+Sat Nov 11 22:17:40 2023	SHW FSGT 2001 Yairme (STEAM_0:0:184328867) spawned
+Sat Nov 11 22:17:53 2023	IA PFC 8008 UniTankk was killed by Entity [3526][prop_physics] with a prop_physics
+Sat Nov 11 22:18:16 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599) spawned
+Sat Nov 11 22:18:25 2023	ST PFC 6969 Kol was killed by Chimaera High Overseer Spark with a rw_sw_e11d
+Sat Nov 11 22:18:40 2023	ST PFC 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov 11 22:21:23 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:22:14 2023	SHW LTCOL Ares (STEAM_0:1:78700995): /w they'll never know
+Sat Nov 11 22:22:34 2023	SHW Commander Pip (STEAM_0:1:169781558): /adver Code Soap Scratchma
+Sat Nov 11 22:22:43 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Code Soap Scratchma
+Sat Nov 11 22:23:03 2023	IA PFC 8008 UniTankk (STEAM_0:1:152928599) disconnected
+Sat Nov 11 22:23:51 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): https://discord.gg/CRQUBzzG
+Sat Nov 11 22:24:25 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Sat Nov 11 22:24:25 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sat Nov 11 22:25:35 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me checks pockets
+Sat Nov 11 22:25:36 2023	Chimaera VI Demo (STEAM_0:0:29212178): /me plants drugs 
+Sat Nov 11 22:25:41 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /isbcheif
+Sat Nov 11 22:25:45 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /isbchief
+Sat Nov 11 22:25:47 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sat Nov 11 22:25:49 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me checks rear pockets
+Sat Nov 11 22:27:02 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 22:27:02 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) arrested SHW Commander Pip
+Sat Nov 11 22:27:07 2023	Chimaera Recon Vex (STEAM_0:0:440286446): /name Shore Commander Vex
+Sat Nov 11 22:27:13 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sat Nov 11 22:27:17 2023	ST PFC 6969 Kol (STEAM_0:0:59377502): /me goes invisible
+Sat Nov 11 22:27:27 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc Aw man, tryna save our Chim brothern
+Sat Nov 11 22:27:36 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:27:36 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:27:36 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sat Nov 11 22:27:45 2023	Chimaera VI Demo (STEAM_0:0:29212178): 
+Sat Nov 11 22:27:47 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:27:47 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:27:50 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:27:50 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:27:51 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sat Nov 11 22:27:55 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:27:55 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:28:01 2023	Shore Commander Vex (STEAM_0:0:440286446): !back
+Sat Nov 11 22:28:20 2023	Shore Commander Vex was killed by Themself with a suicide trick
+Sat Nov 11 22:28:20 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sat Nov 11 22:28:25 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sat Nov 11 22:28:29 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me shows bag of drugs
+Sat Nov 11 22:29:02 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sat Nov 11 22:29:08 2023	Shore Commander Vex (STEAM_0:0:440286446): !pay 50
+Sat Nov 11 22:29:21 2023	SHW Commander Pip (STEAM_0:1:169781558): /give 50
+Sat Nov 11 22:29:21 2023	Shore Commander Vex (STEAM_0:0:440286446): /give 50
+Sat Nov 11 22:29:22 2023	SHW Commander Pip (STEAM_0:1:169781558) has given $50 to Chimaera High Overseer Spark (STEAM_0:1:460412980)
+Sat Nov 11 22:29:22 2023	Shore Commander Vex (STEAM_0:0:440286446) has given $50 to Chimaera High Overseer Spark (STEAM_0:1:460412980)
+Sat Nov 11 22:30:16 2023	Chimaera VI Demo (STEAM_0:0:29212178) disconnected
+Sat Nov 11 22:30:29 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sat Nov 11 22:30:29 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) arrested Shore Commander Vex
+Sat Nov 11 22:30:39 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) unarrested SHW Commander Pip
+Sat Nov 11 22:30:39 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert RFA Pip Att Murder
+Sat Nov 11 22:30:51 2023	ISB Deputy Chief Scratchma was killed by Themself with a suicide trick
+Sat Nov 11 22:30:51 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 22:30:51 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:30:56 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov 11 22:31:02 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 22:31:02 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:31:02 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // fair is fair i forgor to post
+Sat Nov 11 22:31:09 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sat Nov 11 22:31:18 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 22:31:18 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:31:22 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc nah
+Sat Nov 11 22:31:29 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): one sec
+Sat Nov 11 22:31:31 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc that was a fair arrest
+Sat Nov 11 22:31:36 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // thanks for cooperating
+Sat Nov 11 22:32:15 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sat Nov 11 22:32:15 2023	Chimaera VI Demo (STEAM_0:0:29212178) spawned
+Sat Nov 11 22:33:05 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me checks pockets
+Sat Nov 11 22:33:09 2023	Chimaera VI Demo (STEAM_0:0:29212178) spawned
+Sat Nov 11 22:33:52 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Code Makarov Vex
+Sat Nov 11 22:34:27 2023	SHW Commander Pip was killed by Chimaera High Overseer Spark with a rw_sw_e11d
+Sat Nov 11 22:34:32 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 22:35:28 2023	SHW FSGT 2001 Yairme (STEAM_0:0:184328867) spawned
+Sat Nov 11 22:35:28 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) arrested SHW FSGT 2001 Yairme
+Sat Nov 11 22:35:29 2023	ST PFC 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov 11 22:35:29 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) arrested ST PFC 6969 Kol
+Sat Nov 11 22:36:04 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:36:04 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:36:27 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sat Nov 11 22:36:45 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert RFA Yairme Tresspassing
+Sat Nov 11 22:36:53 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert RFA Kol Tresspassing
+Sat Nov 11 22:36:56 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:36:56 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:37:02 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:37:02 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:37:17 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me checks pockets
+Sat Nov 11 22:37:48 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me turns out all pockets
+Sat Nov 11 22:38:04 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me opens bag
+Sat Nov 11 22:38:22 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me opens drug test bottle
+Sat Nov 11 22:38:33 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me inserts substance into vial
+Sat Nov 11 22:39:10 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /fleetga
+Sat Nov 11 22:39:12 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sat Nov 11 22:39:22 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /name Grand Admiral Somebidy
+Sat Nov 11 22:39:28 2023	Grand Admiral Somebidy (STEAM_0:0:197465498): /name Grand Admiral Somebody
+Sat Nov 11 22:39:49 2023	Atlas (STEAM_0:0:190051560) has joined the game
+Sat Nov 11 22:39:49 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Sat Nov 11 22:42:10 2023	DT E3 O30 (STEAM_0:1:161014837): 
+Sat Nov 11 22:43:25 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert Kol to bunks
+Sat Nov 11 22:44:04 2023	SHW LTCOL Ares was killed by Entity [3541][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov 11 22:44:04 2023	SHW FSGT 2001 Yairme was killed by Entity [3541][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov 11 22:44:04 2023	Chimaera High Overseer Spark was killed by Entity [3541][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov 11 22:44:04 2023	SHW Commander Pip was killed by Entity [3541][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov 11 22:44:04 2023	Terta_ (STEAM_0:1:128681061) has joined the game
+Sat Nov 11 22:44:04 2023	Terta_ (STEAM_0:1:128681061) spawned
+Sat Nov 11 22:44:09 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov 11 22:44:10 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Sat Nov 11 22:44:10 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 22:44:11 2023	SHW FSGT 2001 Yairme (STEAM_0:0:184328867) spawned
+Sat Nov 11 22:44:12 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:44:52 2023	Medical Commander Jason (STEAM_0:0:190051560) disconnected
+Sat Nov 11 22:45:00 2023	DT E3 O30 (STEAM_0:1:161014837): /me shuch for drugs
+Sat Nov 11 22:45:05 2023	DT E3 O30 (STEAM_0:1:161014837): /roll
+Sat Nov 11 22:46:00 2023	Shore Commander Vex was killed by ISB Deputy Chief Scratchma with a rw_sw_e11d
+Sat Nov 11 22:46:03 2023	DT E3 O30 (STEAM_0:1:161014837): /comms [DT] Target Neutralized
+Sat Nov 11 22:46:06 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sat Nov 11 22:47:14 2023	SHW FSGT 2001 Yairme (STEAM_0:0:184328867) disconnected
+Sat Nov 11 22:47:26 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): /advert ISB ST Kol tryed to sell me drugs
+Sat Nov 11 22:47:39 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Oh no!
+Sat Nov 11 22:47:43 2023	ST PFC 6969 Kol (STEAM_0:0:59377502): /advert this is false
+Sat Nov 11 22:47:47 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Whatever will you do?
+Sat Nov 11 22:47:52 2023	cameron.crawford11 (STEAM_0:1:593562948) has joined the game
+Sat Nov 11 22:47:52 2023	cameron.crawford11 (STEAM_0:1:593562948) spawned
+Sat Nov 11 22:47:54 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:47:56 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:48:00 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:48:37 2023	cameron.crawford11 (STEAM_0:1:593562948): /name jon
+Sat Nov 11 22:49:06 2023	jon (STEAM_0:1:593562948): why is the models all errors
+Sat Nov 11 22:49:19 2023	jon (STEAM_0:1:593562948): where do I download it?
+Sat Nov 11 22:49:22 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): https://steamcommunity.com/sharedfiles/filedetails/?id=3023459068
+Sat Nov 11 22:49:30 2023	Terta_ (STEAM_0:1:128681061) spawned
+Sat Nov 11 22:49:39 2023	jon (STEAM_0:1:593562948): is there a command for the workshop?
+Sat Nov 11 22:49:47 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /workshop
+Sat Nov 11 22:49:52 2023	jon (STEAM_0:1:593562948): like !content
+Sat Nov 11 22:49:52 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): !workshop
+Sat Nov 11 22:49:56 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): !content
+Sat Nov 11 22:50:04 2023	jon (STEAM_0:1:593562948): damn
+Sat Nov 11 22:50:06 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): https://steamcommunity.com/sharedfiles/filedetails/?id=3023459068
+Sat Nov 11 22:50:30 2023	jon (STEAM_0:1:593562948): how do I become shadow corps
+Sat Nov 11 22:50:41 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): IA PVT #### Name
+Sat Nov 11 22:50:46 2023	yairme (STEAM_0:0:184328867) has joined the game
+Sat Nov 11 22:50:46 2023	SHW FSGT 2001 Yairme (STEAM_0:0:184328867) spawned
+Sat Nov 11 22:50:50 2023	jon (STEAM_0:1:593562948): /name Ia 5345 jon
+Sat Nov 11 22:50:56 2023	Lucy is Bae (STEAM_0:1:76110013) has joined the game
+Sat Nov 11 22:50:56 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013) spawned
+Sat Nov 11 22:50:58 2023	Ia 5345 jon (STEAM_0:1:593562948): /name Ia PVT 5345 jon
+Sat Nov 11 22:51:14 2023	ST PFC 6969 Kol (STEAM_0:0:59377502): /name Shore 2LT 6969 Kol
+Sat Nov 11 22:51:16 2023	Ia PVT 5345 jon (STEAM_0:1:593562948): question
+Sat Nov 11 22:51:33 2023	Ia PVT 5345 jon (STEAM_0:1:593562948): how do I join the rc or IC things
+Sat Nov 11 22:51:46 2023	Ia PVT 5345 jon (STEAM_0:1:593562948): do they exist in this server
+Sat Nov 11 22:52:15 2023	Terta_ (STEAM_0:1:128681061): /name IA PVP
+Sat Nov 11 22:52:26 2023	IA PVP (STEAM_0:1:128681061): /name IA PVT 8675 Tracy
+Sat Nov 11 22:52:29 2023	Ia PVT 5345 jon (STEAM_0:1:593562948): imperial commandoes
+Sat Nov 11 22:52:30 2023	Shore Commander Vex (STEAM_0:0:440286446): 
+Sat Nov 11 22:52:37 2023	Ia PVT 5345 jon (STEAM_0:1:593562948): kk
+Sat Nov 11 22:52:46 2023	Ia PVT 5345 jon (STEAM_0:1:593562948): I need to download the content pack
+Sat Nov 11 22:53:00 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013) spawned
+Sat Nov 11 22:53:06 2023	DT D5 F13 (STEAM_0:1:484835386) disconnected
+Sat Nov 11 22:53:10 2023	Shore 2LT 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov 11 22:53:16 2023	Shore 2LT 6969 Kol (STEAM_0:0:59377502): /name Shore 2LT Kol
+Sat Nov 11 22:53:32 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:53:32 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:53:38 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 22:53:52 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov 11 22:54:04 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 22:54:10 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /name IA VC Scratchma
+Sat Nov 11 22:54:17 2023	Ia PVT 5345 jon (STEAM_0:1:593562948) disconnected
+Sat Nov 11 22:54:18 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov 11 22:54:50 2023	Chimaera High Overseer Spark was killed by Shore Commander Vex with a rw_sw_tl50
+Sat Nov 11 22:54:55 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Sat Nov 11 22:55:02 2023	Shore 2LT Kol was killed by Chimaera High Overseer Spark with a rw_sw_e11d
+Sat Nov 11 22:55:18 2023	Shore 2LT Kol (STEAM_0:0:59377502) spawned
+Sat Nov 11 22:56:09 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /y Dismissed
+Sat Nov 11 22:56:19 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): Rise
+Sat Nov 11 22:56:30 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): a good trooper that knows the protocal
+Sat Nov 11 22:56:33 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) disconnected
+Sat Nov 11 22:56:47 2023	IA VC Scratchma (STEAM_0:0:55135130): act dance
+Sat Nov 11 22:56:56 2023	IA VC Scratchma (STEAM_0:0:55135130): bind key "act dance"
+Sat Nov 11 22:57:35 2023	IA PVT 8675 Tracy (STEAM_0:1:128681061) disconnected
+Sat Nov 11 22:57:42 2023	SHW FSGT 2001 Yairme (STEAM_0:0:184328867) spawned
+Sat Nov 11 22:58:01 2023	IA VC Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:58:01 2023	IA VC Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:58:07 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 22:58:07 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 22:58:16 2023	IA VC Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:58:16 2023	IA VC Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:58:19 2023	IA VC Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:58:19 2023	IA VC Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:58:35 2023	IA VC Scratchma (STEAM_0:0:55135130): 
+Sat Nov 11 22:58:49 2023	IA VC Scratchma (STEAM_0:0:55135130): /name GM Scratchma on training
+Sat Nov 11 22:58:52 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 22:58:59 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Reverse Code B6
+Sat Nov 11 22:59:02 2023	SHW FSGT 2001 Yairme (STEAM_0:0:184328867): /name GM Yairme
+Sat Nov 11 22:59:04 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 22:59:08 2023	GM Scratchma on training (STEAM_0:0:55135130): 
+Sat Nov 11 22:59:08 2023	GM Scratchma on training (STEAM_0:0:55135130): 
+Sat Nov 11 22:59:09 2023	GM Scratchma on training (STEAM_0:0:55135130): 
+Sat Nov 11 22:59:11 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 22:59:11 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 22:59:21 2023	GM Scratchma on training (STEAM_0:0:55135130) spawned
+Sat Nov 11 22:59:23 2023	GM Yairme (STEAM_0:0:184328867) spawned
+Sat Nov 11 22:59:37 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 22:59:44 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 22:59:48 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 22:59:48 2023	GM Scratchma on training (STEAM_0:0:55135130): 
+Sat Nov 11 22:59:53 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 23:00:20 2023	GM Scratchma on training (STEAM_0:0:55135130): 
+Sat Nov 11 23:00:22 2023	Shore Commander Vex (STEAM_0:0:440286446): /me strips weapons and coms
+Sat Nov 11 23:01:01 2023	Shore Commander Vex (STEAM_0:0:440286446): /advert selling pip
+Sat Nov 11 23:01:14 2023	SHW LTCOL Ares was killed by Shore 2LT Kol with a rw_sw_tl50
+Sat Nov 11 23:01:21 2023	SHW LTCOL Ares (STEAM_0:1:78700995) spawned
+Sat Nov 11 23:01:24 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 23:01:28 2023	Grand Admiral Somebody (STEAM_0:0:197465498): 
+Sat Nov 11 23:01:53 2023	GM Scratchma on training (STEAM_0:0:55135130): 
+Sat Nov 11 23:01:58 2023	GM Scratchma on training (STEAM_0:0:55135130): /name test
+Sat Nov 11 23:02:02 2023	Shore Commander Vex (STEAM_0:0:440286446): /me give weapons and comms
+Sat Nov 11 23:02:25 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /name Purge COL 1945 Zeta
+Sat Nov 11 23:02:27 2023	Purge COL 1945 Zeta (STEAM_0:1:76110013) spawned
+Sat Nov 11 23:02:40 2023	SHW Commander Pip (STEAM_0:1:169781558): /give 3000
+Sat Nov 11 23:02:47 2023	SHW Commander Pip (STEAM_0:1:169781558): /give 3000
+Sat Nov 11 23:02:48 2023	SHW Commander Pip (STEAM_0:1:169781558) has given $3,000 to Shore Commander Vex (STEAM_0:0:440286446)
+Sat Nov 11 23:02:50 2023	test (STEAM_0:0:55135130): !
+Sat Nov 11 23:03:06 2023	test (STEAM_0:0:55135130): 
+Sat Nov 11 23:03:08 2023	test (STEAM_0:0:55135130): .!goto
+Sat Nov 11 23:03:28 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:03:30 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Vex tried to kidnap me and is tryna buy weed
+Sat Nov 11 23:03:30 2023	test (STEAM_0:0:55135130): /job Gamemaster on Training Duty
+Sat Nov 11 23:04:01 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:04:12 2023	test (STEAM_0:0:55135130): .!return
+Sat Nov 11 23:04:20 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:04:42 2023	test (STEAM_0:0:55135130): 
+Sat Nov 11 23:04:45 2023	test (STEAM_0:0:55135130): .!bring
+Sat Nov 11 23:05:00 2023	test (STEAM_0:0:55135130): .!bring
+Sat Nov 11 23:05:01 2023	Purge COL 1945 Zeta (STEAM_0:1:76110013): /ooc i forgot purge gets a good loadout
+Sat Nov 11 23:05:13 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:05:39 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:07:21 2023	test (STEAM_0:0:55135130): weapon_ak472
+Sat Nov 11 23:07:26 2023	GM Yairme (STEAM_0:0:184328867): weapon_ak472
+Sat Nov 11 23:07:39 2023	test (STEAM_0:0:55135130): .!give
+Sat Nov 11 23:07:45 2023	test (STEAM_0:0:55135130): .!give test weapon_ak472
+Sat Nov 11 23:07:46 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:07:58 2023	test (STEAM_0:0:55135130): .!give ^ weapon_ak472
+Sat Nov 11 23:08:04 2023	Shore Commander Vex (STEAM_0:0:440286446) disconnected
+Sat Nov 11 23:08:07 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:08:28 2023	test (STEAM_0:0:55135130): .!giveammo 
+Sat Nov 11 23:08:49 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:09:02 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:09:31 2023	Shore 2LT Kol (STEAM_0:0:59377502) disconnected
+Sat Nov 11 23:10:13 2023	test (STEAM_0:0:55135130): !.cloak
+Sat Nov 11 23:10:17 2023	test (STEAM_0:0:55135130): .!cloak
+Sat Nov 11 23:10:23 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:10:28 2023	test (STEAM_0:0:55135130): 
+Sat Nov 11 23:10:30 2023	test (STEAM_0:0:55135130): 
+Sat Nov 11 23:10:35 2023	test (STEAM_0:0:55135130): 
+Sat Nov 11 23:10:40 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:11:18 2023	test (STEAM_0:0:55135130): .!god
+Sat Nov 11 23:11:24 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:11:45 2023	Purge COL 1945 Zeta (STEAM_0:1:76110013): /comms [INQ] Sith Temple is secured 
+Sat Nov 11 23:11:45 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:12:05 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:12:22 2023	GM Yairme (STEAM_0:0:184328867): 
+Sat Nov 11 23:12:38 2023	test (STEAM_0:0:55135130): 
+Sat Nov 11 23:12:48 2023	Purge COL 1945 Zeta (STEAM_0:1:76110013): /advert [INQ] INQ Fortress Secured Holocrons and relics are safely secured 
+Sat Nov 11 23:13:32 2023	test (STEAM_0:0:55135130): 
+Sat Nov 11 23:13:40 2023	test (STEAM_0:0:55135130): 
+Sat Nov 11 23:14:03 2023	test (STEAM_0:0:55135130): // BRO IM TRAINING A GM
+Sat Nov 11 23:14:10 2023	SHW LTCOL Ares (STEAM_0:1:78700995): // YIIIPPPPPPEEEEEEEEEEEEEEEE
+Sat Nov 11 23:14:11 2023	Purge COL 1945 Zeta (STEAM_0:1:76110013): /ooc will comms be working

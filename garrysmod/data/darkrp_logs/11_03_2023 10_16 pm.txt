@@ -1,0 +1,1417 @@
+Fri Nov  3 22:16:59 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Fri Nov  3 22:16:59 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 22:18:12 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 22:41:50 2023	eggs (STEAM_0:0:55135130) has joined the game
+Fri Nov  3 22:41:50 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 22:43:51 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 22:43:59 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /name Fleet Something Scratchma
+Fri Nov  3 22:44:55 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 22:45:00 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 22:45:06 2023	Fleet Something Scratchma (STEAM_0:0:55135130): /y lol
+Fri Nov  3 22:45:22 2023	Fleet Something Scratchma (STEAM_0:0:55135130): /y PTS
+Fri Nov  3 22:47:04 2023	Fleet Something Scratchma (STEAM_0:0:55135130): /y PTS
+Fri Nov  3 22:47:10 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /y PTS
+Fri Nov  3 22:47:40 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 22:47:53 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /name Viceroy Grimjaw
+Fri Nov  3 22:48:12 2023	Viceroy Grimjaw (STEAM_0:0:197465498): /job Imperial Viceroy
+Fri Nov  3 22:48:17 2023	Viceroy Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 22:50:45 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT superswaypoints_waypoint
+Fri Nov  3 22:50:59 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT superswaypoints_waypoint
+Fri Nov  3 22:51:38 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT superswaypoints_waypoint
+Fri Nov  3 22:51:41 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 22:52:55 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 22:54:04 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 22:54:34 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT superswaypoints_waypoint
+Fri Nov  3 22:55:10 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT superswaypoints_waypoint
+Fri Nov  3 22:55:23 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT superswaypoints_waypoint
+Fri Nov  3 22:55:50 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT superswaypoints_waypoint
+Fri Nov  3 22:56:49 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT superswaypoints_waypoint
+Fri Nov  3 22:57:04 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT superswaypoints_waypoint
+Fri Nov  3 23:00:02 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT hb_cp_anniebase
+Fri Nov  3 23:00:32 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT hb_cp_annie
+Fri Nov  3 23:01:26 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT hb_main_bigjdam
+Fri Nov  3 23:02:02 2023	Viceroy Grimjaw (STEAM_0:0:197465498): NPCs?!
+Fri Nov  3 23:03:17 2023	Viceroy Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:03:26 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT hb_extended_missile_amg88
+Fri Nov  3 23:04:00 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned SENT hb_extended_misc_overwatchbomb
+Fri Nov  3 23:04:11 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Fri Nov  3 23:04:11 2023	Demo on Duty (STEAM_0:0:29212178) spawned
+Fri Nov  3 23:04:14 2023	Viceroy Grimjaw was killed by Demo on Duty with a unknown
+Fri Nov  3 23:04:14 2023	Fleet Something Scratchma was killed by Demo on Duty with a unknown
+Fri Nov  3 23:04:21 2023	Viceroy Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:04:41 2023	Viceroy Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:05:06 2023	Demo on Duty (STEAM_0:0:29212178): /name IA Commander Demo
+Fri Nov  3 23:05:14 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Fri Nov  3 23:06:18 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Fri Nov  3 23:06:28 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:06:29 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Fri Nov  3 23:07:37 2023	DOHEAD (STEAM_0:0:581098097) has joined the game
+Fri Nov  3 23:07:37 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:08:22 2023	Viceroy Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:10:07 2023	Viceroy Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:10:48 2023	IA Commander Demo (STEAM_0:0:29212178) disconnected
+Fri Nov  3 23:11:20 2023	Viceroy Grimjaw (STEAM_0:0:197465498): /name Fleet Admiral Grimjaw
+Fri Nov  3 23:11:42 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:11:52 2023	the gunk (STEAM_0:1:98581856) has joined the game
+Fri Nov  3 23:11:52 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:12:39 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:13:13 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:13:51 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:14:01 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:14:06 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:14:06 2023	ISB Director Dohead (STEAM_0:0:581098097) arrested Fleet Admiral Grimjaw
+Fri Nov  3 23:14:30 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /unarrest ^
+Fri Nov  3 23:14:37 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /unarrest Grimjaw
+Fri Nov  3 23:14:37 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) force-unarrested King Platypus
+Fri Nov  3 23:15:12 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:15:13 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): // we love roleplay
+Fri Nov  3 23:15:21 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): // we love roleplay
+Fri Nov  3 23:15:23 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): // we love roleplay
+Fri Nov  3 23:15:23 2023	Fleet Something Scratchma (STEAM_0:0:55135130): // rel
+Fri Nov  3 23:15:25 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): // we love roleplay
+Fri Nov  3 23:15:51 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:16:08 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:16:12 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:16:25 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:16:55 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:17:07 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /advert you are banished from these lands Leave the area in 10 seconds or be AOS/KOS.  Don't return for 5 minutes
+Fri Nov  3 23:17:12 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /advert false
+Fri Nov  3 23:17:17 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:17:17 2023	ISB Director Dohead (STEAM_0:0:581098097) arrested Fleet Admiral Grimjaw
+Fri Nov  3 23:17:22 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:17:22 2023	ISB Director Dohead (STEAM_0:0:581098097) arrested Fleet Something Scratchma
+Fri Nov  3 23:17:23 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /unarrest Grimjaw
+Fri Nov  3 23:17:23 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) force-unarrested King Platypus
+Fri Nov  3 23:17:29 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:17:29 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:17:31 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:17:31 2023	FO VC Gunk (STEAM_0:1:98581856) arrested Fleet Admiral Grimjaw
+Fri Nov  3 23:17:37 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /unarrest Grimjaw
+Fri Nov  3 23:17:37 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) force-unarrested King Platypus
+Fri Nov  3 23:17:46 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:17:46 2023	FO VC Gunk (STEAM_0:1:98581856) arrested Fleet Something Scratchma
+Fri Nov  3 23:17:49 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:17:49 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:17:51 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:17:54 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:17:54 2023	ISB Director Dohead (STEAM_0:0:581098097) arrested FO VC Gunk
+Fri Nov  3 23:18:01 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:18:02 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:18:02 2023	ISB Director Dohead (STEAM_0:0:581098097) arrested Fleet Admiral Grimjaw
+Fri Nov  3 23:18:03 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:18:03 2023	Fleet Something Scratchma (STEAM_0:0:55135130) arrested ISB Director Dohead
+Fri Nov  3 23:18:06 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:18:10 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /unarrest Grimjaw
+Fri Nov  3 23:18:10 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) force-unarrested King Platypus
+Fri Nov  3 23:18:15 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:18:16 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:18:16 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) arrested ISB Director Dohead
+Fri Nov  3 23:18:19 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:18:20 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:18:29 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:18:37 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:19:09 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:19:09 2023	Fleet Something Scratchma (STEAM_0:0:55135130) arrested FO VC Gunk
+Fri Nov  3 23:19:12 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:19:12 2023	Fleet Something Scratchma (STEAM_0:0:55135130) arrested Fleet Admiral Grimjaw
+Fri Nov  3 23:19:14 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:19:14 2023	ISB Director Dohead (STEAM_0:0:581098097) arrested Fleet Something Scratchma
+Fri Nov  3 23:19:17 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:19:18 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:19:19 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:19:21 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:19:23 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:19:23 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /arrest scratch
+Fri Nov  3 23:19:23 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:19:23 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) force-arrested eggs
+Fri Nov  3 23:19:25 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:19:26 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /unarrest Grimjaw
+Fri Nov  3 23:19:26 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) force-unarrested King Platypus
+Fri Nov  3 23:19:30 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:19:30 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) arrested Fleet Something Scratchma
+Fri Nov  3 23:19:31 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:19:34 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:19:34 2023	ISB Director Dohead (STEAM_0:0:581098097) arrested FO VC Gunk
+Fri Nov  3 23:19:36 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:19:39 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:19:41 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:19:42 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:19:42 2023	ISB Director Dohead (STEAM_0:0:581098097) arrested FO VC Gunk
+Fri Nov  3 23:19:43 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:19:43 2023	Fleet Something Scratchma (STEAM_0:0:55135130) arrested Fleet Admiral Grimjaw
+Fri Nov  3 23:19:44 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:19:46 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:19:46 2023	Fleet Something Scratchma (STEAM_0:0:55135130) arrested ISB Director Dohead
+Fri Nov  3 23:19:46 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:19:47 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /unarrest Grimjaw
+Fri Nov  3 23:19:47 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) force-unarrested King Platypus
+Fri Nov  3 23:19:51 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:19:51 2023	Fleet Something Scratchma (STEAM_0:0:55135130) arrested FO VC Gunk
+Fri Nov  3 23:19:53 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:19:53 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:19:54 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:19:58 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:19:58 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:19:58 2023	Fleet Something Scratchma (STEAM_0:0:55135130) arrested FO VC Gunk
+Fri Nov  3 23:20:00 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:20:01 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:20:01 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) arrested Fleet Something Scratchma
+Fri Nov  3 23:20:02 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:20:05 2023	FO VC Gunk (STEAM_0:1:98581856) unarrested Fleet Something Scratchma
+Fri Nov  3 23:20:09 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:20:26 2023	FO VC Gunk was killed by Entity [3418][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov  3 23:20:26 2023	Fleet Something Scratchma was killed by Entity [3418][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov  3 23:20:31 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:20:33 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:20:33 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:20:39 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:20:43 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:20:43 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) arrested ISB Director Dohead
+Fri Nov  3 23:20:51 2023	FO VC Gunk (STEAM_0:1:98581856): /me Steals Kidney
+Fri Nov  3 23:20:54 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:20:54 2023	Fleet Something Scratchma (STEAM_0:0:55135130): /sleep
+Fri Nov  3 23:20:57 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:20:57 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:20:57 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) arrested Fleet Something Scratchma
+Fri Nov  3 23:21:05 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:21:06 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:21:07 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:21:10 2023	FO VC Gunk (STEAM_0:1:98581856): /a <hsv>wow, iphone</hsv> 
+Fri Nov  3 23:21:12 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:21:17 2023	FO VC Gunk was killed by Entity [2848][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov  3 23:21:17 2023	Fleet Something Scratchma was killed by Entity [2848][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov  3 23:21:17 2023	Fleet Admiral Grimjaw was killed by Entity [2848][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov  3 23:21:18 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:21:18 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:21:22 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:21:22 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:21:24 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:21:31 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:21:31 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:21:32 2023	Fleet Something Scratchma (STEAM_0:0:55135130): !unnarest *
+Fri Nov  3 23:21:36 2023	Fleet Admiral Grimjaw was killed by Entity [2830][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov  3 23:21:36 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:21:38 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:21:42 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:21:45 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:21:46 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:21:46 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:21:48 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:21:50 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:21:50 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:21:52 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:21:53 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:21:53 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:21:54 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:21:56 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:21:56 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:21:57 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:21:59 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:21:59 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:22:00 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:22:02 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:22:02 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:22:04 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:22:05 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:22:05 2023	FO VC Gunk (STEAM_0:1:98581856) arrested Fleet Something Scratchma
+Fri Nov  3 23:22:05 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:22:05 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:22:12 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:22:59 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:23:01 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:23:01 2023	ISB Director Dohead (STEAM_0:0:581098097) arrested Fleet Admiral Grimjaw
+Fri Nov  3 23:23:07 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /unarrest Grimjaw
+Fri Nov  3 23:23:07 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) force-unarrested King Platypus
+Fri Nov  3 23:23:19 2023	ISB Director Dohead was killed by Entity [2881][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:23:25 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:23:26 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:23:28 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:23:46 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:23:46 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:23:48 2023	Fleet Something Scratchma was killed by Entity [2882][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov  3 23:23:48 2023	Fleet Admiral Grimjaw was killed by Entity [2882][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Fri Nov  3 23:23:53 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:23:53 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:23:53 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:23:54 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:23:54 2023	Fleet Something Scratchma (STEAM_0:0:55135130) arrested ISB Director Dohead
+Fri Nov  3 23:23:58 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:23:59 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:23:59 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:24:08 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:24:09 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:24:10 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:24:13 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /unarrest Grimjaw
+Fri Nov  3 23:24:13 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) force-unarrested King Platypus
+Fri Nov  3 23:24:14 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:24:16 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:24:17 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:24:20 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:24:21 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:24:21 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) arrested ISB Director Dohead
+Fri Nov  3 23:24:24 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:24:27 2023	Fleet Something Scratchma (STEAM_0:0:55135130) unarrested ISB Director Dohead
+Fri Nov  3 23:24:27 2023	ISB Director Dohead (STEAM_0:0:581098097): !unrrest *
+Fri Nov  3 23:24:28 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:24:28 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) arrested Fleet Something Scratchma
+Fri Nov  3 23:24:31 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:24:33 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:24:38 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:24:38 2023	ISB Director Dohead (STEAM_0:0:581098097) arrested Fleet Admiral Grimjaw
+Fri Nov  3 23:24:48 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /unarrest Grimjaw
+Fri Nov  3 23:24:48 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) force-unarrested King Platypus
+Fri Nov  3 23:24:55 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:25:25 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:25:27 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:25:57 2023	FO VC Gunk was killed by Entity [3437][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:25:57 2023	Fleet Admiral Grimjaw was killed by Entity [3437][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:25:57 2023	Fleet Something Scratchma was killed by Entity [3437][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:25:58 2023	ISB Director Dohead was killed by Entity [3447][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:26:01 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:26:01 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:26:03 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:26:04 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:26:20 2023	FO VC Gunk was killed by Entity [3418][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:26:26 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:26:26 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:26:33 2023	ISB Director Dohead was killed by Entity [3420][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:26:38 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:26:38 2023	Fleet Admiral Grimjaw was killed by Entity [2855][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:26:44 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:26:49 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:26:51 2023	Fleet Admiral Grimjaw was killed by Entity [3414][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:26:53 2023	ISB Director Dohead was killed by Entity [3407][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:26:57 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:26:59 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:27:02 2023	Fleet Admiral Grimjaw was killed by Entity [3417][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:27:02 2023	FO VC Gunk was killed by Entity [3417][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:27:07 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:27:07 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:27:09 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:27:10 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:27:18 2023	Fleet Admiral Grimjaw was killed by Entity [2877][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:27:23 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:27:27 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:27:30 2023	Fleet Admiral Grimjaw was killed by Entity [3410][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:27:30 2023	ISB Director Dohead was killed by Entity [3410][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:27:35 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:27:36 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:27:48 2023	FO VC Gunk was killed by ISB Director Dohead with a rw_sw_e11t
+Fri Nov  3 23:27:57 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:28:05 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:28:14 2023	ISB Director Dohead was killed by Entity [3422][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:28:20 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:28:32 2023	ISB Director Dohead was killed by Entity [3418][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:28:37 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:28:37 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:29:27 2023	FO VC Gunk was killed by Entity [3441][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:29:33 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:29:36 2023	ISB Director Dohead was killed by Entity [2828][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:29:42 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:30:01 2023	ISB Director Dohead was killed by Entity [3410][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:30:06 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:30:56 2023	FO VC Gunk was killed by Entity [1002][trigger_hurt] with a trigger_hurt
+Fri Nov  3 23:31:02 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:31:08 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Fri Nov  3 23:31:17 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Fri Nov  3 23:31:17 2023	FO VC Gunk (STEAM_0:1:98581856) arrested Fleet Admiral Grimjaw
+Fri Nov  3 23:31:40 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:31:41 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) disconnected
+Fri Nov  3 23:31:49 2023	ISB Director Dohead was killed by Entity [2827][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:31:52 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:31:54 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:31:55 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:32:03 2023	ISB Director Dohead was killed by Entity [2864][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:32:03 2023	FO VC Gunk was killed by Entity [2864][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:32:08 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned
+Fri Nov  3 23:32:08 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:32:19 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:32:23 2023	FO VC Gunk was killed by Entity [3402][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:32:29 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:33:27 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:33:31 2023	FO VC Gunk was killed by Entity [3412][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:33:36 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:36:56 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:37:47 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT lvs_tie_fighter
+Fri Nov  3 23:39:02 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT lvs_tie_fighter
+Fri Nov  3 23:39:10 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT lvs_awing
+Fri Nov  3 23:39:17 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT lvs_xwing
+Fri Nov  3 23:39:28 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT lvs_ywing
+Fri Nov  3 23:42:11 2023	Fleet Something Scratchma (STEAM_0:0:55135130): .!admin
+Fri Nov  3 23:42:36 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:42:42 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:42:51 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:43:04 2023	Fleet Something Scratchma (STEAM_0:0:55135130): .!admin
+Fri Nov  3 23:43:11 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:43:30 2023	Fleet Something Scratchma was killed by Entity [3444][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:43:30 2023	FO VC Gunk was killed by Entity [3444][heart_turbolaser] with a heart_turbolaser
+Fri Nov  3 23:43:33 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:43:37 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:43:37 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:43:38 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Fri Nov  3 23:43:39 2023	ISB Director Dohead (STEAM_0:0:581098097): 
+Fri Nov  3 23:43:41 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:44:06 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:44:12 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Fri Nov  3 23:44:39 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT hb_extended_main_100lb
+Fri Nov  3 23:44:49 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT hb_extended_main_1000lb
+Fri Nov  3 23:45:04 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT hb_extended_main_1000lb
+Fri Nov  3 23:45:34 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT hb_main_500lb
+Fri Nov  3 23:45:52 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT hb_extended_main_1000lb
+Fri Nov  3 23:45:59 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT hb_extended_main_1000lb
+Fri Nov  3 23:46:05 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT hb_extended_main_1000lb
+Fri Nov  3 23:46:09 2023	Fleet Something Scratchma was killed by ISB Director Dohead with a unknown
+Fri Nov  3 23:46:15 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Fri Nov  3 23:46:31 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT hb_extended_main_50lb
+Fri Nov  3 23:46:36 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT hb_extended_main_50lb
+Fri Nov  3 23:46:51 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT hb_extended_main_1000lb
+Fri Nov  3 23:47:27 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT hb_nuclear_c_uranium
+Fri Nov  3 23:48:37 2023	ISB Director Dohead (STEAM_0:0:581098097) spawned SENT starwarsthat
+Fri Nov  3 23:49:07 2023	ISB Director Dohead (STEAM_0:0:581098097) disconnected
+Fri Nov  3 23:58:01 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:58:16 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Fri Nov  3 23:59:49 2023	FO VC Gunk (STEAM_0:1:98581856): /hu
+Sat Nov  4 00:00:20 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:00:29 2023	FO VC Gunk (STEAM_0:1:98581856): /sleep
+Sat Nov  4 00:00:34 2023	FO VC Gunk (STEAM_0:1:98581856): !kill ^
+Sat Nov  4 00:01:09 2023	FO VC Gunk was killed by Entity [0][worldspawn] with a unknown
+Sat Nov  4 00:01:14 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:01:27 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 00:01:31 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:02:27 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 00:02:27 2023	FO VC Gunk (STEAM_0:1:98581856) arrested Fleet Something Scratchma
+Sat Nov  4 00:03:02 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:03:28 2023	FO VC Gunk (STEAM_0:1:98581856): geonosis
+Sat Nov  4 00:04:24 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:04:37 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:04:55 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 00:05:16 2023	FO VC Gunk (STEAM_0:1:98581856): !giveentity kingpommes_lfs_tie_paladin
+Sat Nov  4 00:05:21 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:05:32 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:05:40 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:05:49 2023	FO VC Gunk was killed by Fleet Something Scratchma with a geonosis
+Sat Nov  4 00:05:53 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 00:05:56 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 00:05:57 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:06:00 2023	Fleet Something Scratchma was killed by Themself with a suicide trick
+Sat Nov  4 00:06:01 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:06:05 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 00:06:05 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:06:10 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:06:11 2023	Fleet Something Scratchma was killed by Themself with a suicide trick
+Sat Nov  4 00:06:11 2023	FO VC Gunk was killed by Themself with a suicide trick
+Sat Nov  4 00:06:14 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 00:06:14 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:06:17 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 00:06:17 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:06:24 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:06:24 2023	Fleet Something Scratchma (STEAM_0:0:55135130): .!give ^ geonosis
+Sat Nov  4 00:06:39 2023	Fleet Something Scratchma (STEAM_0:0:55135130): .!give ^ geonosis
+Sat Nov  4 00:06:44 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:06:51 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:06:53 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:06:55 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:07:01 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:07:08 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 00:07:14 2023	Fleet Something Scratchma was killed by Themself with a suicide trick
+Sat Nov  4 00:07:14 2023	FO VC Gunk was killed by Themself with a suicide trick
+Sat Nov  4 00:07:18 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 00:07:18 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:07:19 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 00:07:24 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:07:36 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:08:00 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:08:13 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 00:08:15 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 00:08:32 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:08:38 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:08:47 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:08:54 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:08:54 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:08:59 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:09:16 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:15:24 2023	Fleet Something Scratchma was killed by Entity [0][worldspawn] with a unknown
+Sat Nov  4 00:15:29 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 00:15:33 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:15:55 2023	Fleet Something Scratchma was killed by FO VC Gunk with a rw_sw_dlt19d
+Sat Nov  4 00:15:59 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 00:15:59 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:16:02 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:16:18 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:16:24 2023	Fleet Something Scratchma was killed by Entity [0][worldspawn] with a unknown
+Sat Nov  4 00:16:28 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 00:16:28 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:16:44 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:18:28 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 00:18:28 2023	FO VC Gunk (STEAM_0:1:98581856) arrested Fleet Something Scratchma
+Sat Nov  4 00:18:34 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:19:09 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:20:50 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 00:20:50 2023	FO VC Gunk (STEAM_0:1:98581856) arrested Fleet Something Scratchma
+Sat Nov  4 00:20:53 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:20:55 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:21:02 2023	FO VC Gunk (STEAM_0:1:98581856): /me Steals Kidney
+Sat Nov  4 00:21:28 2023	Fleet Something Scratchma (STEAM_0:0:55135130): /sleep
+Sat Nov  4 00:21:31 2023	Fleet Something Scratchma (STEAM_0:0:55135130): /sleep
+Sat Nov  4 00:21:31 2023	FO VC Gunk (STEAM_0:1:98581856): /sleep
+Sat Nov  4 00:21:33 2023	Fleet Something Scratchma (STEAM_0:0:55135130): /sleep
+Sat Nov  4 00:21:33 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 00:21:36 2023	FO VC Gunk (STEAM_0:1:98581856): /sleep
+Sat Nov  4 00:21:38 2023	FO VC Gunk (STEAM_0:1:98581856): /sleep
+Sat Nov  4 00:21:38 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 00:24:20 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sat Nov  4 00:24:20 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 00:25:12 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 00:25:19 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 00:25:24 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 00:25:42 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 00:25:42 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:25:45 2023	FO VC Gunk (STEAM_0:1:98581856): 
+Sat Nov  4 00:27:04 2023	FO VC Gunk was killed by IA Commander Demo with a stunstick
+Sat Nov  4 00:27:09 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 00:29:14 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:29:40 2023	FO VC Gunk (STEAM_0:1:98581856) disconnected
+Sat Nov  4 00:31:23 2023	goodstuff (STEAM_0:1:763294797) has joined the game
+Sat Nov  4 00:31:23 2023	IA PVT 1945 Goodstuff (STEAM_0:1:763294797) spawned
+Sat Nov  4 00:33:09 2023	IA PVT 1945 Goodstuff (STEAM_0:1:763294797): bloxwich
+Sat Nov  4 00:35:32 2023	IA PVT 1945 Goodstuff (STEAM_0:1:763294797) spawned
+Sat Nov  4 00:36:03 2023	IA Commander Demo (STEAM_0:0:29212178) disconnected
+Sat Nov  4 00:36:52 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:36:59 2023	IA PVT 1945 Goodstuff (STEAM_0:1:763294797) disconnected
+Sat Nov  4 00:37:40 2023	Fleet Something Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 00:37:57 2023	Fleet Something Scratchma was killed by Themself with a suicide trick
+Sat Nov  4 00:37:59 2023	Fleet Something Scratchma (STEAM_0:0:55135130) disconnected
+Sat Nov  4 01:34:24 2023	Lord FireBall (STEAM_0:1:129278369) has joined the game
+Sat Nov  4 01:34:24 2023	DT L21 B29 (STEAM_0:1:129278369) spawned
+Sat Nov  4 01:38:19 2023	DT L21 B29 (STEAM_0:1:129278369) disconnected
+Sat Nov  4 08:26:02 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Sat Nov  4 08:26:02 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned
+Sat Nov  4 08:29:59 2023	SHW CMD Dishwasher (STEAM_0:1:169781558): 
+Sat Nov  4 08:31:09 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned
+Sat Nov  4 08:31:57 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned
+Sat Nov  4 08:34:10 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned
+Sat Nov  4 08:37:59 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT tie_interceptor
+Sat Nov  4 08:38:33 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned
+Sat Nov  4 08:38:50 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Sat Nov  4 08:39:28 2023	SHW CMD Dishwasher was killed by Entity [0][worldspawn] with a unknown
+Sat Nov  4 08:39:34 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned
+Sat Nov  4 08:39:43 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Sat Nov  4 08:42:13 2023	SHW CMD Dishwasher was killed by Entity [0][worldspawn] with a unknown
+Sat Nov  4 08:42:18 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned
+Sat Nov  4 08:44:38 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Sat Nov  4 08:45:26 2023	SHW CMD Dishwasher (STEAM_0:1:169781558): /advert Damn rust bucket! (Defective)
+Sat Nov  4 08:45:29 2023	SHW CMD Dishwasher (STEAM_0:1:169781558): /advert {! If you mess this up one more time, I'm segregating the ship!} (False)
+Sat Nov  4 08:46:11 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Sat Nov  4 08:46:13 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_tie_fighter
+Sat Nov  4 08:46:29 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_tie_fighter
+Sat Nov  4 08:46:44 2023	SHW CMD Dishwasher (STEAM_0:1:169781558): /advert {! If you mess this up one more time, I'm segregating the ship!} (False)
+Sat Nov  4 08:47:12 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_delta_shuttle
+Sat Nov  4 08:47:15 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_delta_shuttle
+Sat Nov  4 08:47:18 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_zeta_shuttle
+Sat Nov  4 08:47:25 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Sat Nov  4 08:47:30 2023	SHW CMD Dishwasher (STEAM_0:1:169781558): /advert {! If you mess this up one more time, I'm segregating the ship!} (False)
+Sat Nov  4 08:47:43 2023	SHW CMD Dishwasher (STEAM_0:1:169781558): /advert {! If you mess this up one more time, I'm segregating the ship!} (False)
+Sat Nov  4 08:47:44 2023	SHW CMD Dishwasher (STEAM_0:1:169781558): /advert Damn rust bucket! (Defective)
+Sat Nov  4 08:47:45 2023	SHW CMD Dishwasher (STEAM_0:1:169781558): /advert {! If you mess this up one more time, I'm segregating the ship!} (False)
+Sat Nov  4 08:48:32 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Sat Nov  4 08:48:33 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Sat Nov  4 08:48:33 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Sat Nov  4 08:48:57 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Sat Nov  4 08:49:08 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned SENT lvs_tie_interceptor
+Sat Nov  4 08:49:25 2023	SHW CMD Dishwasher (STEAM_0:1:169781558): /advert {! If you mess this up one more time, I'm segregating the ship!} (False)
+Sat Nov  4 08:49:51 2023	SHW CMD Dishwasher (STEAM_0:1:169781558): /advert Damn rust bucket! (Defective)
+Sat Nov  4 08:50:08 2023	SHW CMD Dishwasher was killed by Entity [0][worldspawn] with a unknown
+Sat Nov  4 08:50:13 2023	SHW CMD Dishwasher (STEAM_0:1:169781558) spawned
+Sat Nov  4 08:57:11 2023	SHW CMD Dishwasher (STEAM_0:1:169781558): /name SHW Commander Pip
+Sat Nov  4 09:09:05 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected
+Sat Nov  4 19:16:37 2023	Atlas (STEAM_0:0:190051560) has joined the game
+Sat Nov  4 19:16:37 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Sat Nov  4 19:21:51 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Sat Nov  4 19:22:04 2023	Medical Commander Jason (STEAM_0:0:190051560): 
+Sat Nov  4 19:22:06 2023	Medical Commander Jason (STEAM_0:0:190051560): /opencomms negative
+Sat Nov  4 19:22:08 2023	Medical Commander Jason (STEAM_0:0:190051560): /opencomms enroute
+Sat Nov  4 19:22:11 2023	Medical Commander Jason (STEAM_0:0:190051560): 
+Sat Nov  4 19:22:12 2023	Medical Commander Jason (STEAM_0:0:190051560): /opencomms enroute
+Sat Nov  4 19:22:13 2023	Medical Commander Jason (STEAM_0:0:190051560): /opencomms negative
+Sat Nov  4 19:22:14 2023	Medical Commander Jason (STEAM_0:0:190051560): /opencomms negative
+Sat Nov  4 19:22:15 2023	Medical Commander Jason (STEAM_0:0:190051560): /opencomms enroute
+Sat Nov  4 19:22:43 2023	Medical Commander Jason (STEAM_0:0:190051560): /comms Enroute
+Sat Nov  4 19:22:47 2023	Medical Commander Jason (STEAM_0:0:190051560): /comms
+Sat Nov  4 19:22:52 2023	Medical Commander Jason (STEAM_0:0:190051560): /comms yo
+Sat Nov  4 19:24:33 2023	Medical Commander Jason (STEAM_0:0:190051560) disconnected
+Sat Nov  4 20:08:11 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Sat Nov  4 20:08:11 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Sat Nov  4 20:08:11 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Sat Nov  4 20:11:40 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 20:13:03 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Sat Nov  4 20:13:15 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /name ISB Chief Grimjaw
+Sat Nov  4 20:25:59 2023	Shadow Whelm (STEAM_0:0:503446630) has joined the game
+Sat Nov  4 20:25:59 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 20:26:13 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // hello
+Sat Nov  4 20:27:09 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 20:35:03 2023	DT O1 S05 (STEAM_0:0:503446630): /advert i need a trainer!
+Sat Nov  4 20:36:20 2023	eggs (STEAM_0:0:55135130) has joined the game
+Sat Nov  4 20:36:20 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 20:37:36 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sat Nov  4 20:37:36 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov  4 20:38:19 2023	Fleet Something Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 20:38:46 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Sat Nov  4 20:38:46 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 20:39:13 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov  4 20:39:19 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc have you ever heard about twitch prime? 
+Sat Nov  4 20:39:25 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc wow, iphone 
+Sat Nov  4 20:39:32 2023	Fleet Something Scratchma (STEAM_0:0:55135130): /ooc {*wow, iphone}
+Sat Nov  4 20:39:36 2023	Fleet Something Scratchma (STEAM_0:0:55135130): // fuck
+Sat Nov  4 20:39:51 2023	Fleet Something Scratchma (STEAM_0:0:55135130): /name Fleet Captain Scratchma
+Sat Nov  4 20:39:55 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // WOW IPHONE
+Sat Nov  4 20:39:58 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): /job Fleet Captain
+Sat Nov  4 20:40:06 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // wow
+Sat Nov  4 20:40:06 2023	Night Star (STEAM_0:0:61944231) has joined the game
+Sat Nov  4 20:40:06 2023	Night Star (STEAM_0:0:61944231) spawned
+Sat Nov  4 20:40:09 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // iphone
+Sat Nov  4 20:40:27 2023	DT O1 S05 (STEAM_0:0:503446630): /advert no wait dont do that (false)
+Sat Nov  4 20:40:51 2023	Night Star (STEAM_0:0:61944231): /name Star
+Sat Nov  4 20:41:05 2023	Star (STEAM_0:0:61944231): 
+Sat Nov  4 20:41:05 2023	Star (STEAM_0:0:61944231): 
+Sat Nov  4 20:41:39 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 20:42:06 2023	Star (STEAM_0:0:61944231): 
+Sat Nov  4 20:42:12 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 20:42:37 2023	Star (STEAM_0:0:61944231): /isbcommand
+Sat Nov  4 20:42:42 2023	Star (STEAM_0:0:61944231) spawned
+Sat Nov  4 20:42:42 2023	Star (STEAM_0:0:61944231): 
+Sat Nov  4 20:42:42 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:42:49 2023	Star (STEAM_0:0:61944231): /name ISB Deputy Chief Star
+Sat Nov  4 20:42:51 2023	DT O1 S05 (STEAM_0:0:503446630): name smh
+Sat Nov  4 20:43:37 2023	Atlas (STEAM_0:0:190051560) has joined the game
+Sat Nov  4 20:43:37 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Sat Nov  4 20:46:42 2023	Screen_wolf75 (STEAM_0:0:231421928) has joined the game
+Sat Nov  4 20:46:42 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Sat Nov  4 20:46:49 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): :3
+Sat Nov  4 20:47:31 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): /w shadow commader rebellion?
+Sat Nov  4 20:47:41 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc SCRAGMA UNDEFF
+Sat Nov  4 20:48:15 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): /job ISB Deputy Chief
+Sat Nov  4 20:48:24 2023	*Jerry*『Kol』 (STEAM_0:0:59377502) has joined the game
+Sat Nov  4 20:48:24 2023	*Jerry*『Kol』 (STEAM_0:0:59377502) spawned
+Sat Nov  4 20:48:31 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): !giveweapon weapon_fists star
+Sat Nov  4 20:48:39 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov  4 20:48:43 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 20:48:43 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Sat Nov  4 20:48:52 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov  4 20:48:54 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 20:49:03 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 20:49:17 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Sat Nov  4 20:49:22 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): 
+Sat Nov  4 20:49:27 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 20:49:28 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): 
+Sat Nov  4 20:49:47 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 20:50:10 2023	Medical Commander Jason (STEAM_0:0:190051560): 
+Sat Nov  4 20:50:13 2023	Medical Commander Jason (STEAM_0:0:190051560): /roll
+Sat Nov  4 20:50:26 2023	SHW Commander Pip was killed by ISB Deputy Chief Star with a weapon_fists
+Sat Nov  4 20:50:34 2023	ISB Deputy Chief Star was killed by Fleet Captain Scratchma with a stunstick
+Sat Nov  4 20:50:39 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sat Nov  4 20:50:39 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 20:50:41 2023	ISB Deputy Chief Star (STEAM_0:0:61944231) spawned
+Sat Nov  4 20:50:47 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): 
+Sat Nov  4 20:50:55 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sat Nov  4 20:51:55 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): /giveweapon ^ gmod_tool
+Sat Nov  4 20:52:04 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 20:52:08 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:52:09 2023	*Jerry*『Kol』 (STEAM_0:0:59377502): /name ST PVT 6969 Kol
+Sat Nov  4 20:52:41 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:53:01 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 20:53:06 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 20:53:08 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:53:23 2023	ST Commander Spark (STEAM_0:1:460412980): /setjob kol stormenlisted
+Sat Nov  4 20:53:28 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sat Nov  4 20:53:30 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 20:54:23 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) spawned NPC npc_combine_s
+Sat Nov  4 20:54:46 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): models/npc/roger/swbf_rebel_soldiermagma_roger/swbf_rebel_soldiermagma_roger.mdl
+Sat Nov  4 20:55:11 2023	DT O1 S05 (STEAM_0:0:503446630): /yell open na noor
+Sat Nov  4 20:55:29 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc where woman
+Sat Nov  4 20:55:42 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): rw_sw_a280
+Sat Nov  4 20:55:51 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // screencapped
+Sat Nov  4 20:55:51 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT imp_speeder
+Sat Nov  4 20:56:16 2023	Fleet Captain Scratchma was killed by NPC [3511][npc_swbf_rebel_soldiersand_roger_enemy] with a rw_sw_a280
+Sat Nov  4 20:56:20 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 20:56:20 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:56:21 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:56:27 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 20:56:29 2023	ST Commander Spark was killed by Themself with a suicide trick
+Sat Nov  4 20:56:29 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sat Nov  4 20:56:30 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): models/npc/roger/swbf_rebel_soldiermagma_roger/swbf_rebel_soldiermagma_roger.mdl
+Sat Nov  4 20:56:34 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov  4 20:56:38 2023	Fleet Captain Scratchma was killed by NPC [3396][npc_swbf_rebel_soldiersand_roger_enemy] with a rw_sw_a280
+Sat Nov  4 20:56:45 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) spawned
+Sat Nov  4 20:56:45 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:56:47 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:56:54 2023	First Order Commander Pretzel (STEAM_0:0:231421928): gay
+Sat Nov  4 20:57:18 2023	First Order Commander Pretzel (STEAM_0:0:231421928): tf is that
+Sat Nov  4 20:57:20 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /pm scratch models/npc/hgn/swrp/swrp/rebel_soldier_01.mdl
+Sat Nov  4 20:57:27 2023	First Order Commander Pretzel (STEAM_0:0:231421928): thats an error
+Sat Nov  4 20:57:28 2023	ST Commander Spark was killed by DT O1 S05 with a rw_sw_e11d
+Sat Nov  4 20:57:41 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc bruh my guns would not change 
+Sat Nov  4 20:57:47 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT tx225normal
+Sat Nov  4 20:57:49 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov  4 20:58:13 2023	First Order Commander Pretzel (STEAM_0:0:231421928): we fly
+Sat Nov  4 20:58:13 2023	ST Commander Spark was killed by Entity [3403][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov  4 20:58:13 2023	DT O1 S05 was killed by Entity [3403][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov  4 20:58:13 2023	ST PVT 6969 Kol was killed by Entity [3403][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov  4 20:58:18 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 20:58:22 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:58:23 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 20:58:23 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:58:24 2023	First Order Commander Pretzel (STEAM_0:0:231421928): are we  over the wall?
+Sat Nov  4 20:58:27 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:58:29 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:58:32 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov  4 20:58:42 2023	DT O1 S05 (STEAM_0:0:503446630): /advert no wait dont do that (false)
+Sat Nov  4 20:59:08 2023	First Order Commander Pretzel (STEAM_0:0:231421928): are we  over the wall?
+Sat Nov  4 20:59:16 2023	ST PVT 6969 Kol was killed by Medical Commander Jason with a rw_sw_t21
+Sat Nov  4 20:59:20 2023	Medical Commander Jason was killed by ST Commander Spark with a tfa_t21_extended
+Sat Nov  4 20:59:26 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Sat Nov  4 20:59:34 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 20:59:37 2023	Medical Commander Jason (STEAM_0:0:190051560): // why does every gun do 7 damage in my hands
+Sat Nov  4 20:59:41 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:59:41 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:59:41 2023	First Order Commander Pretzel (STEAM_0:0:231421928): not stuck
+Sat Nov  4 20:59:44 2023	ISB Chief Grimjaw was killed by Themself with a suicide trick
+Sat Nov  4 20:59:44 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 20:59:47 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 20:59:48 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc just shoot them in the head
+Sat Nov  4 20:59:49 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sat Nov  4 20:59:50 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc easy
+Sat Nov  4 20:59:51 2023	First Order Commander Pretzel (STEAM_0:0:231421928): cringe
+Sat Nov  4 20:59:56 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:59:56 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 20:59:58 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) disconnected
+Sat Nov  4 21:00:06 2023	DT O1 S05 was killed by Medical Commander Jason with a rw_sw_t21
+Sat Nov  4 21:00:07 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 21:00:11 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 21:00:14 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:00:14 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:00:20 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:00:20 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:00:20 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sat Nov  4 21:00:20 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sat Nov  4 21:00:25 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sat Nov  4 21:00:25 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Sat Nov  4 21:00:32 2023	DT O1 S05 was killed by Medical Commander Jason with a rw_sw_t21
+Sat Nov  4 21:00:37 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 21:00:50 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:01:04 2023	Medical Commander Jason (STEAM_0:0:190051560): // when is db?
+Sat Nov  4 21:02:14 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): npc_combine_s
+Sat Nov  4 21:02:31 2023	ST Commander Spark was killed by Medical Commander Jason with a rw_sw_t21
+Sat Nov  4 21:02:32 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:02:32 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:02:39 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov  4 21:02:39 2023	*Jerry*『Kol』 (STEAM_0:0:59377502) has joined the game
+Sat Nov  4 21:02:39 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 21:03:07 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 21:03:38 2023	ST Commander Spark (STEAM_0:1:460412980): /addspawn stormenlisted
+Sat Nov  4 21:03:48 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov  4 21:03:58 2023	ST Commander Spark (STEAM_0:1:460412980): /name Staff Spark on Bitch Duty
+Sat Nov  4 21:04:01 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:04:09 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:04:10 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:04:12 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:04:15 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /me Shows ID
+Sat Nov  4 21:04:18 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /sleep
+Sat Nov  4 21:04:20 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:04:21 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /sleep
+Sat Nov  4 21:04:23 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /sleep
+Sat Nov  4 21:04:24 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /sleep
+Sat Nov  4 21:04:25 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /sleep
+Sat Nov  4 21:04:25 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Sat Nov  4 21:04:25 2023	DT O1 S05 (STEAM_0:0:503446630): /advert no wait dont do that (false)
+Sat Nov  4 21:04:28 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:04:28 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:04:31 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:04:37 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:04:54 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): npc_combine_s
+Sat Nov  4 21:05:08 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): rw_sw_a280
+Sat Nov  4 21:05:26 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): models/npc/hgn/swrp/swrp/rebel_soldier_01.mdl
+Sat Nov  4 21:05:41 2023	DT O1 S05 (STEAM_0:0:503446630): /advert no wait dont do that (false)
+Sat Nov  4 21:05:57 2023	Medical Commander Jason (STEAM_0:0:190051560): /comms Enroute
+Sat Nov  4 21:05:59 2023	Medical Commander Jason (STEAM_0:0:190051560): /comms Enroute
+Sat Nov  4 21:06:31 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:07:03 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:07:03 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:07:04 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:07:10 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): 
+Sat Nov  4 21:07:41 2023	ST PVT 6969 Kol was killed by Medical Commander Jason with a rw_sw_t21
+Sat Nov  4 21:07:42 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // dishwasher your SHOCK Commander correct?
+Sat Nov  4 21:07:48 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): 
+Sat Nov  4 21:07:53 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): /ooc he is yes and i think he AFK
+Sat Nov  4 21:07:59 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // gotcha
+Sat Nov  4 21:08:03 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) disconnected
+Sat Nov  4 21:08:16 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // grimjaw you busy?
+Sat Nov  4 21:08:22 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): 
+Sat Nov  4 21:08:23 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // nah whats up?
+Sat Nov  4 21:08:25 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): 
+Sat Nov  4 21:08:36 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // come by the gate outside
+Sat Nov  4 21:08:43 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // omw
+Sat Nov  4 21:08:43 2023	*Jerry*『Kol』 (STEAM_0:0:59377502) has joined the game
+Sat Nov  4 21:08:43 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 21:09:00 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // let me know when you're out here
+Sat Nov  4 21:09:01 2023	Medical Commander Jason (STEAM_0:0:190051560): // when is our DB?
+Sat Nov  4 21:09:04 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): /staff
+Sat Nov  4 21:09:05 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): /ooc soon
+Sat Nov  4 21:09:09 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 21:09:11 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): 
+Sat Nov  4 21:09:15 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): 
+Sat Nov  4 21:09:20 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): /citizen
+Sat Nov  4 21:09:20 2023	Medical Commander Jason (STEAM_0:0:190051560): // ok sparkles
+Sat Nov  4 21:09:20 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // lmao i see ya
+Sat Nov  4 21:09:27 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): 
+Sat Nov  4 21:09:27 2023	First Order Commander Pretzel (STEAM_0:0:231421928): nuh uh
+Sat Nov  4 21:09:34 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): nice ride
+Sat Nov  4 21:09:47 2023	First Order Commander Pretzel (STEAM_0:0:231421928): its to fat to get inside
+Sat Nov  4 21:09:58 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): /fleetcaptain
+Sat Nov  4 21:10:00 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): lmao yeah its a bit big
+Sat Nov  4 21:10:02 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): /captain
+Sat Nov  4 21:10:04 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): /commodore
+Sat Nov  4 21:10:08 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): /fleetcommadore
+Sat Nov  4 21:10:11 2023	First Order Commander Pretzel (STEAM_0:0:231421928): it almost fits but not fully
+Sat Nov  4 21:10:17 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): /fleetcommadore
+Sat Nov  4 21:10:28 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): maybe if you spawned it in
+Sat Nov  4 21:10:34 2023	ISB Deputy Chief Star (STEAM_0:0:61944231) spawned
+Sat Nov  4 21:10:41 2023	ISB Deputy Chief Star (STEAM_0:0:61944231) spawned
+Sat Nov  4 21:10:43 2023	First Order Commander Pretzel (STEAM_0:0:231421928): i cant spawn anything in
+Sat Nov  4 21:10:45 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): 
+Sat Nov  4 21:10:47 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): rip
+Sat Nov  4 21:10:48 2023	First Order Commander Pretzel (STEAM_0:0:231421928): dish spawned this
+Sat Nov  4 21:11:00 2023	DT O1 S05 was killed by Medical Commander Jason with a rw_sw_t21
+Sat Nov  4 21:11:03 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): ah gotcha if you need anything spawned in let me know
+Sat Nov  4 21:11:08 2023	First Order Commander Pretzel (STEAM_0:0:231421928): gamer
+Sat Nov  4 21:11:09 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 21:11:24 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): Skindlesson
+Sat Nov  4 21:11:32 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): i love how you can actually fly with this thing its ridiculous 
+Sat Nov  4 21:11:43 2023	First Order Commander Pretzel (STEAM_0:0:231421928): its amazing to fly in star wars again
+Sat Nov  4 21:11:48 2023	Medical Commander Jason (STEAM_0:0:190051560): // I be in a hamster ball
+Sat Nov  4 21:11:54 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): agreed
+Sat Nov  4 21:11:57 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): /name Viceroy Skindlesson
+Sat Nov  4 21:12:00 2023	Viceroy Skindlesson (STEAM_0:0:61944231): /job Vicerow
+Sat Nov  4 21:12:06 2023	Viceroy Skindlesson (STEAM_0:0:61944231): /job Viceroy
+Sat Nov  4 21:12:09 2023	Viceroy Skindlesson (STEAM_0:0:61944231): /job Viceroy
+Sat Nov  4 21:12:11 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // but what kind of hampster ball
+Sat Nov  4 21:12:11 2023	Viceroy Skindlesson (STEAM_0:0:61944231): /job Viceroy
+Sat Nov  4 21:12:13 2023	Viceroy Skindlesson (STEAM_0:0:61944231): /job Viceroy
+Sat Nov  4 21:12:18 2023	Medical Commander Jason (STEAM_0:0:190051560): // A bullet proof one
+Sat Nov  4 21:12:19 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:12:20 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:12:33 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:12:42 2023	Medical Commander Jason (STEAM_0:0:190051560): // help Im being kidnapped
+Sat Nov  4 21:12:48 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // skill issue
+Sat Nov  4 21:12:49 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT superswaypoints_waypoint
+Sat Nov  4 21:12:52 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:12:57 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:13:17 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:13:22 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT superswaypoints_waypoint
+Sat Nov  4 21:13:41 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // how are you being kidnapped your in a bulletproof hampsterball
+Sat Nov  4 21:13:53 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sat Nov  4 21:13:53 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 21:14:10 2023	First Order Commander Pretzel (STEAM_0:0:231421928): smh
+Sat Nov  4 21:14:16 2023	First Order Commander Pretzel (STEAM_0:0:231421928): dish in there?
+Sat Nov  4 21:14:25 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:14:25 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) disconnected
+Sat Nov  4 21:14:31 2023	First Order Commander Pretzel (STEAM_0:0:231421928): no in the vc
+Sat Nov  4 21:14:38 2023	First Order Commander Pretzel (STEAM_0:0:231421928): mkay
+Sat Nov  4 21:14:53 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) disconnected
+Sat Nov  4 21:14:59 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 21:15:33 2023	*Jerry*『Kol』 (STEAM_0:0:59377502) has joined the game
+Sat Nov  4 21:15:33 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 21:15:43 2023	First Order Commander Pretzel (STEAM_0:0:231421928): this map feels small
+Sat Nov  4 21:15:58 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): it does but at the same time its massive
+Sat Nov  4 21:16:01 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:16:03 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:16:04 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:16:18 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): also how would you feel about a unvisersal speed increase
+Sat Nov  4 21:16:31 2023	First Order Commander Pretzel (STEAM_0:0:231421928): universal speed increase how?
+Sat Nov  4 21:16:40 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sat Nov  4 21:16:40 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned
+Sat Nov  4 21:16:48 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): not much just abit so its quicker to get around 
+Sat Nov  4 21:16:52 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:16:54 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): and for arresting jobs
+Sat Nov  4 21:16:56 2023	Viceroy Skindlesson (STEAM_0:0:61944231): !buddah
+Sat Nov  4 21:16:58 2023	First Order Commander Pretzel (STEAM_0:0:231421928): on the tank?
+Sat Nov  4 21:16:58 2023	Viceroy Skindlesson (STEAM_0:0:61944231): !buddah ^
+Sat Nov  4 21:17:01 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:17:05 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): nah on foot
+Sat Nov  4 21:17:06 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:17:11 2023	First Order Commander Pretzel (STEAM_0:0:231421928): oh i dont care
+Sat Nov  4 21:17:14 2023	Medical Commander Jason (STEAM_0:0:190051560): // what is that fucking sound
+Sat Nov  4 21:17:16 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): aight
+Sat Nov  4 21:17:16 2023	First Order Commander Pretzel (STEAM_0:0:231421928): im here for fun
+Sat Nov  4 21:17:21 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:17:23 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): !stopsounds
+Sat Nov  4 21:17:31 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:17:31 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:17:32 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // use stopsound in consule see if that helps
+Sat Nov  4 21:17:35 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): same here
+Sat Nov  4 21:17:40 2023	Viceroy Skindlesson (STEAM_0:0:61944231): // does not work
+Sat Nov  4 21:17:47 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // :(
+Sat Nov  4 21:17:51 2023	DT O1 S05 (STEAM_0:0:503446630): /advert no wait dont do that (false)
+Sat Nov  4 21:17:52 2023	DT O1 S05 (STEAM_0:0:503446630): /advert no wait dont do that (false)
+Sat Nov  4 21:17:52 2023	DT O1 S05 (STEAM_0:0:503446630): /advert no wait dont do that (false)
+Sat Nov  4 21:17:57 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc mb\
+Sat Nov  4 21:17:59 2023	First Order Commander Pretzel (STEAM_0:0:231421928): how will i ever cope
+Sat Nov  4 21:18:07 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:18:17 2023	Medical Commander Jason (STEAM_0:0:190051560): 
+Sat Nov  4 21:18:25 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // man where is everyone
+Sat Nov  4 21:18:26 2023	Medical Commander Jason (STEAM_0:0:190051560): // Should probably label DB
+Sat Nov  4 21:18:31 2023	First Order Commander Pretzel (STEAM_0:0:231421928): can i drive a jeep around inside the building grimjaw?
+Sat Nov  4 21:18:46 2023	First Order Commander Pretzel (STEAM_0:0:231421928): aw
+Sat Nov  4 21:18:57 2023	First Order Commander Pretzel (STEAM_0:0:231421928): idfk
+Sat Nov  4 21:18:59 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT superswaypoints_waypoint
+Sat Nov  4 21:19:05 2023	IA Commander Demo (STEAM_0:0:29212178): /pm spark when should I do admin timesheets like are they mandatory currently or when the server offical opens?
+Sat Nov  4 21:19:26 2023	First Order Commander Pretzel (STEAM_0:0:231421928): its planned poorly and stupid
+Sat Nov  4 21:19:36 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:19:38 2023	First Order Commander Pretzel (STEAM_0:0:231421928): i want to be able to fuck around and talk with people
+Sat Nov  4 21:19:44 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:19:45 2023	Medical Commander Jason (STEAM_0:0:190051560): // no
+Sat Nov  4 21:19:50 2023	Medical Commander Jason (STEAM_0:0:190051560): // where do I stand?
+Sat Nov  4 21:20:00 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // come to debrief
+Sat Nov  4 21:20:09 2023	First Order Commander Pretzel (STEAM_0:0:231421928): i was kinda just thrown on first order
+Sat Nov  4 21:20:13 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 21:20:14 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // you should have a waypiont i will tell you where to stand
+Sat Nov  4 21:20:27 2023	Medical Commander Jason (STEAM_0:0:190051560): // Im in DB 
+Sat Nov  4 21:20:28 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // oh you are here
+Sat Nov  4 21:21:05 2023	Medical Commander Jason (STEAM_0:0:190051560): // somebody destroy that tank before I fucking do
+Sat Nov  4 21:21:15 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // its already gone :(
+Sat Nov  4 21:21:18 2023	DT O1 S05 (STEAM_0:0:503446630): /advert no wait dont do that (false)
+Sat Nov  4 21:21:19 2023	DT O1 S05 (STEAM_0:0:503446630): /advert no wait dont do that (false)
+Sat Nov  4 21:21:37 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): /pm Kol nice
+Sat Nov  4 21:21:51 2023	IA Commander Demo (STEAM_0:0:29212178): /y PTS
+Sat Nov  4 21:21:53 2023	Medical Commander Jason (STEAM_0:0:190051560): /w based
+Sat Nov  4 21:22:18 2023	IA Commander Demo (STEAM_0:0:29212178): /y PTS
+Sat Nov  4 21:22:22 2023	Medical Commander Jason (STEAM_0:0:190051560): // I wish I could see who could hear me
+Sat Nov  4 21:22:22 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // he smoked a 15 pack
+Sat Nov  4 21:22:26 2023	ST PVT 6969 Kol (STEAM_0:0:59377502): /y PTS
+Sat Nov  4 21:22:28 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /y PTS
+Sat Nov  4 21:23:11 2023	Viceroy Skindlesson (STEAM_0:0:61944231): // Demo Mic is Off lmao
+Sat Nov  4 21:23:14 2023	IA Commander Demo (STEAM_0:0:29212178): /y NEVERMIND
+Sat Nov  4 21:23:18 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /y PTS
+Sat Nov  4 21:23:21 2023	Medical Commander Jason (STEAM_0:0:190051560): // I can hear him
+Sat Nov  4 21:23:22 2023	ST PVT 6969 Kol (STEAM_0:0:59377502): /y PTS
+Sat Nov  4 21:23:36 2023	First Order Commander Pretzel (STEAM_0:0:231421928): i can hear him
+Sat Nov  4 21:23:46 2023	Medical Commander Jason (STEAM_0:0:190051560): // I am the speaking pedastal
+Sat Nov  4 21:23:58 2023	ST PVT 6969 Kol (STEAM_0:0:59377502): /y PTS
+Sat Nov  4 21:24:00 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // yeah
+Sat Nov  4 21:24:03 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /w i don't trust him
+Sat Nov  4 21:24:13 2023	1LO94G (STEAM_0:0:580928495) has joined the game
+Sat Nov  4 21:24:13 2023	1LO94G (STEAM_0:0:580928495) spawned
+Sat Nov  4 21:24:24 2023	Medical Commander Jason (STEAM_0:0:190051560) disconnected
+Sat Nov  4 21:24:32 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT hb_extended_main_1000lb
+Sat Nov  4 21:24:43 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // i've run out of pretzels to eat
+Sat Nov  4 21:24:51 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc then go get more
+Sat Nov  4 21:25:02 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // there are nnone
+Sat Nov  4 21:25:06 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc find more
+Sat Nov  4 21:25:17 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:25:24 2023	DT O1 S05 (STEAM_0:0:503446630): yes
+Sat Nov  4 21:25:28 2023	the gunk (STEAM_0:1:98581856) has joined the game
+Sat Nov  4 21:25:28 2023	FO VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 21:25:29 2023	ST PVT 6969 Kol (STEAM_0:0:59377502): // spark stfu
+Sat Nov  4 21:25:29 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // make some SMH
+Sat Nov  4 21:25:49 2023	First Order Commander Pretzel (STEAM_0:0:231421928): man thats quirky
+Sat Nov  4 21:26:33 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:26:37 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected
+Sat Nov  4 21:26:55 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm scratchma got a problem
+Sat Nov  4 21:26:56 2023	IA Commander Demo was killed by NPC [3542][npc_combine_s] with a rw_sw_a280
+Sat Nov  4 21:26:58 2023	ST PVT 6969 Kol was killed by DT O1 S05 with a rw_sw_dlt19x
+Sat Nov  4 21:27:01 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 21:27:13 2023	FO VC Gunk (STEAM_0:1:98581856): /name Shore VC Gunk
+Sat Nov  4 21:27:14 2023	Shore VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 21:27:31 2023	DT O1 S05 (STEAM_0:0:503446630): /advet LARGE QUANTITIES
+Sat Nov  4 21:27:38 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /advert numerous rebels all throughout the base
+Sat Nov  4 21:27:38 2023	DT O1 S05 (STEAM_0:0:503446630): /advert LARGE QUANTITIE
+Sat Nov  4 21:27:47 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // REEEEEE MY IMMERSION
+Sat Nov  4 21:27:49 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm scratchma none of my guns do any damage
+Sat Nov  4 21:27:56 2023	DT O1 S05 was killed by NPC [3536][npc_combine_s] with a rw_sw_a280
+Sat Nov  4 21:28:02 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 21:28:09 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 21:28:42 2023	1LO94G (STEAM_0:0:580928495) disconnected
+Sat Nov  4 21:29:34 2023	Viceroy Skindlesson (STEAM_0:0:61944231): // The real Atlas!?!?!????
+Sat Nov  4 21:29:50 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Sat Nov  4 21:29:50 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 21:29:52 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // shut up "viceroy"
+Sat Nov  4 21:30:00 2023	Viceroy Skindlesson (STEAM_0:0:61944231): // Scrungle
+Sat Nov  4 21:30:04 2023	First Order Commander Pretzel (STEAM_0:0:231421928): gunk
+Sat Nov  4 21:30:09 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // not even a real rank 
+Sat Nov  4 21:30:14 2023	First Order Commander Pretzel (STEAM_0:0:231421928): none of my guns do damage
+Sat Nov  4 21:30:32 2023	Shore VC Gunk was killed by NPC [3458][npc_combine_s] with a rw_sw_a280
+Sat Nov  4 21:30:39 2023	Shore VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 21:30:43 2023	IA Commander Demo was killed by NPC [3400][npc_combine_s] with a rw_sw_a280
+Sat Nov  4 21:30:49 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 21:31:15 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 21:31:23 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:32:02 2023	DT O1 S05 (STEAM_0:0:503446630): /advert We are currently clearing out rebels at the bunks
+Sat Nov  4 21:33:04 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Rebels in reactor, taking care of it.
+Sat Nov  4 21:33:05 2023	IA Commander Demo was killed by Shore VC Gunk with a rw_sw_e22
+Sat Nov  4 21:33:09 2023	Shore VC Gunk was killed by NPC [3567][npc_combine_s] with a rw_sw_a280
+Sat Nov  4 21:33:10 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 21:33:15 2023	Shore VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 21:33:26 2023	SHW Commander Pip was killed by NPC [3535][npc_combine_s] with a rw_sw_a280
+Sat Nov  4 21:33:28 2023	First Order Commander Pretzel was killed by NPC [3444][npc_combine_s] with a rw_sw_a280
+Sat Nov  4 21:33:31 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 21:33:34 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Sat Nov  4 21:33:35 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT superswaypoints_waypoint
+Sat Nov  4 21:34:02 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /advert Command Floor clear
+Sat Nov  4 21:34:36 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:34:38 2023	IA Commander Demo was killed by NPC [3533][npc_combine_s] with a rw_sw_a280
+Sat Nov  4 21:34:42 2023	Shore VC Gunk was killed by NPC [3444][npc_combine_s] with a rw_sw_a280
+Sat Nov  4 21:34:43 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 21:34:48 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT hb_extended_main_50lb
+Sat Nov  4 21:34:49 2023	Shore VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 21:34:55 2023	Atlas (STEAM_0:0:190051560) has joined the game
+Sat Nov  4 21:34:55 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Sat Nov  4 21:35:16 2023	ISB Chief Grimjaw was killed by NPC [3444][npc_combine_s] with a rw_sw_a280
+Sat Nov  4 21:35:20 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT hb_extended_main_100lb
+Sat Nov  4 21:35:22 2023	SHW Commander Pip was killed by NPC [3444][npc_combine_s] with a rw_sw_a280
+Sat Nov  4 21:35:30 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Sat Nov  4 21:35:37 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT hb_extended_main_100lb
+Sat Nov  4 21:35:40 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 21:35:47 2023	ST PVT 6969 Kol was killed by NPC [3533][npc_combine_s] with a rw_sw_a280
+Sat Nov  4 21:35:52 2023	DT O1 S05 (STEAM_0:0:503446630): /advert we have to KIA with more rebels in reactor
+Sat Nov  4 21:35:57 2023	DT O1 S05 (STEAM_0:0:503446630): /advert 2*
+Sat Nov  4 21:36:05 2023	ST PVT 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 21:36:10 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT hb_extended_main_50lb
+Sat Nov  4 21:36:11 2023	DT O1 S05 was killed by NPC [3444][npc_combine_s] with a rw_sw_a280
+Sat Nov  4 21:36:15 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT hb_extended_main_50lb
+Sat Nov  4 21:36:18 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 21:36:22 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT hb_extended_main_50lb
+Sat Nov  4 21:36:40 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // nnice bomb spark
+Sat Nov  4 21:36:41 2023	IA Commander Demo (STEAM_0:0:29212178): /advert bombs in reactor room
+Sat Nov  4 21:36:45 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /advert bomb found in Reactor area
+Sat Nov  4 21:36:47 2023	Shore VC Gunk (STEAM_0:1:98581856): /advert Sir theres a bomb in the reactor
+Sat Nov  4 21:37:46 2023	Shore VC Gunk (STEAM_0:1:98581856): /advert SHOOT THE BOMBS????!?!? OK
+Sat Nov  4 21:37:55 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Explosive is secured, command.
+Sat Nov  4 21:38:09 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /advert someone detain that SHORE
+Sat Nov  4 21:38:17 2023	Viceroy Skindlesson (STEAM_0:0:61944231): /advert Gunk is a very good trooper! Be like him!
+Sat Nov  4 21:38:48 2023	Shore VC Gunk was killed by SHW Commander Pip with a rw_sw_t21
+Sat Nov  4 21:38:49 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /advert also get off our comms "Viceroy"
+Sat Nov  4 21:38:56 2023	Viceroy Skindlesson (STEAM_0:0:61944231): /advert No
+Sat Nov  4 21:39:08 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Rebel Gunk eliminated
+Sat Nov  4 21:39:20 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Sat Nov  4 21:39:55 2023	Shore VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 21:40:23 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /advert 3 bombs left yes
+Sat Nov  4 21:40:38 2023	Medical Commander Jason (STEAM_0:0:190051560): // This gun does 0 dmg to NPCs
+Sat Nov  4 21:40:42 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert I'M BEING TEMPTED BY A GHOST
+Sat Nov  4 21:40:43 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT hb_extended_main_100lb
+Sat Nov  4 21:41:16 2023	Medical Commander Jason (STEAM_0:0:190051560): // what the fuck
+Sat Nov  4 21:41:28 2023	Medical Commander Jason (STEAM_0:0:190051560): // wait what the fuck
+Sat Nov  4 21:41:39 2023	Medical Commander Jason (STEAM_0:0:190051560): // I do 0 damage in general
+Sat Nov  4 21:41:41 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT pfx6_00
+Sat Nov  4 21:41:43 2023	ST PVT 6969 Kol (STEAM_0:0:59377502): // yeah
+Sat Nov  4 21:41:45 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // welcome to the club
+Sat Nov  4 21:41:46 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT pfx1_0e
+Sat Nov  4 21:41:50 2023	Medical Commander Jason (STEAM_0:0:190051560): // what the fuck
+Sat Nov  4 21:41:51 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT pfx1_08#
+Sat Nov  4 21:41:54 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT pfx1_08_
+Sat Nov  4 21:41:55 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT pfx1_08~_l
+Sat Nov  4 21:41:56 2023	SHW Commander Pip (STEAM_0:1:169781558): I do a lot of damage
+Sat Nov  4 21:41:56 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // bro what the hell is happening
+Sat Nov  4 21:41:58 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT pfx1_08_~_l
+Sat Nov  4 21:41:59 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned SENT pfx1_0c
+Sat Nov  4 21:42:11 2023	Medical Commander Jason (STEAM_0:0:190051560): // the fuck am I sposed to do?
+Sat Nov  4 21:42:12 2023	First Order Commander Pretzel (STEAM_0:0:231421928): // ive shot this bomb like 15+ times and it hasn't gone off
+Sat Nov  4 21:42:12 2023	DT O1 S05 was killed by ST PVT 6969 Kol with a tfa_e11_extended
+Sat Nov  4 21:42:17 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 21:42:29 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:42:30 2023	Viceroy Skindlesson (STEAM_0:0:61944231): /giveweapon Kol tfa_e11d
+Sat Nov  4 21:43:12 2023	Viceroy Skindlesson (STEAM_0:0:61944231): // Yall doin damage with those?
+Sat Nov  4 21:43:13 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:43:15 2023	ST PVT 6969 Kol (STEAM_0:0:59377502): // no
+Sat Nov  4 21:43:17 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:43:19 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc its not a weapon issue
+Sat Nov  4 21:43:24 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc Are people not doing damage not GMS or higher?
+Sat Nov  4 21:43:29 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // garrys mod at its finest
+Sat Nov  4 21:43:30 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc i think its a rank issue
+Sat Nov  4 21:43:35 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:43:35 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:43:39 2023	Medical Commander Jason (STEAM_0:0:190051560): // this is hilariously broken
+Sat Nov  4 21:43:39 2023	Viceroy Skindlesson (STEAM_0:0:61944231): // Yea, it is, working on it now
+Sat Nov  4 21:43:56 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // oh good gracious
+Sat Nov  4 21:43:57 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc It's probably a rank issue with privs
+Sat Nov  4 21:44:05 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc great event guys
+Sat Nov  4 21:44:12 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // well glad i suggested a event to test shit
+Sat Nov  4 21:44:13 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:44:19 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // half of the people arent able to participate
+Sat Nov  4 21:44:24 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // fuck
+Sat Nov  4 21:44:31 2023	Medical Commander Jason (STEAM_0:0:190051560): // I kinda can
+Sat Nov  4 21:45:04 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:45:32 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:45:37 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:45:38 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:45:43 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:45:56 2023	Shore VC Gunk (STEAM_0:1:98581856): /advert The hangar has been cleared of rebels
+Sat Nov  4 21:46:10 2023	Cookie12 (STEAM_0:1:61170829) has joined the game
+Sat Nov  4 21:46:10 2023	DT D6 J31 (STEAM_0:1:61170829) spawned
+Sat Nov  4 21:46:54 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:47:00 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:48:21 2023	Shore VC Gunk (STEAM_0:1:98581856): /me <flash c=255,0,0> Strips Weapons and Comms</flash> 
+Sat Nov  4 21:48:30 2023	DT O1 S05 (STEAM_0:0:503446630): /me strips weapons and comms 
+Sat Nov  4 21:48:37 2023	DT D6 J31 (STEAM_0:1:61170829) spawned
+Sat Nov  4 21:48:50 2023	Viceroy Skindlesson was killed by Medical Commander Jason with a rw_sw_t21
+Sat Nov  4 21:48:52 2023	IA Commander Demo (STEAM_0:0:29212178): /bring dt d6
+Sat Nov  4 21:48:59 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 21:49:06 2023	Viceroy Skindlesson (STEAM_0:0:61944231) spawned
+Sat Nov  4 21:49:10 2023	SHW Commander Pip (STEAM_0:1:169781558): !ulx
+Sat Nov  4 21:49:11 2023	First Order Commander Pretzel (STEAM_0:0:231421928): /pm grimjaw can i get a tp to everyone else?
+Sat Nov  4 21:49:11 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:49:13 2023	Viceroy Skindlesson (STEAM_0:0:61944231): 
+Sat Nov  4 21:49:14 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:50:03 2023	Shore VC Gunk (STEAM_0:1:98581856): // "without a gun to your back" thats what you think :)
+Sat Nov  4 21:50:07 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Damn rust bucket! (Defective)
+Sat Nov  4 21:50:13 2023	Viceroy Skindlesson (STEAM_0:0:61944231): /isbcommand
+Sat Nov  4 21:50:15 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Ignore that
+Sat Nov  4 21:50:17 2023	Viceroy Skindlesson (STEAM_0:0:61944231): /name ISB Deputy Chief Star
+Sat Nov  4 21:50:18 2023	ISB Deputy Chief Star (STEAM_0:0:61944231) spawned
+Sat Nov  4 21:50:19 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): 
+Sat Nov  4 21:50:25 2023	Medical Commander Jason (STEAM_0:0:190051560): // thats a good server description
+Sat Nov  4 21:50:53 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc jason, can I snatch you rq
+Sat Nov  4 21:51:07 2023	Medical Commander Jason (STEAM_0:0:190051560): // ye
+Sat Nov  4 21:51:09 2023	SHW Commander Pip (STEAM_0:1:169781558): /bring Jason
+Sat Nov  4 21:51:14 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:51:20 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:51:20 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:51:21 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned NPC npc_monk
+Sat Nov  4 21:51:29 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 21:51:29 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 21:51:34 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:51:34 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:51:35 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:51:44 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:51:44 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:51:49 2023	DT O1 S05 (STEAM_0:0:503446630): /y You need DT up there?
+Sat Nov  4 21:51:51 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:51:51 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:51:52 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:51:52 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:51:52 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:51:53 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 21:51:53 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 21:52:06 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:52:06 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:52:14 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:52:14 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 21:52:16 2023	Medical Commander Jason (STEAM_0:0:190051560): // im getting a supreme db
+Sat Nov  4 21:52:24 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc are you guys talking?
+Sat Nov  4 21:52:28 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc nvm
+Sat Nov  4 21:52:29 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 21:52:29 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 21:52:42 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned NPC npc_monk
+Sat Nov  4 21:52:46 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:52:57 2023	ST PVT 6969 Kol (STEAM_0:0:59377502): /y PTS
+Sat Nov  4 21:53:21 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:53:37 2023	DT O1 S05 (STEAM_0:0:503446630): /y
+Sat Nov  4 21:53:40 2023	DT O1 S05 (STEAM_0:0:503446630): /y PTS
+Sat Nov  4 21:53:49 2023	ST PVT 6969 Kol (STEAM_0:0:59377502): /w he should get something for taking an army out by himself
+Sat Nov  4 21:53:54 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:54:02 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // thanks kol appercaite it but i have to coup the ISB Director first
+Sat Nov  4 21:54:17 2023	ISB Deputy Chief Star (STEAM_0:0:61944231): /salute
+Sat Nov  4 21:54:22 2023	ST PVT 6969 Kol (STEAM_0:0:59377502): /name ST PFC 6969 Kol
+Sat Nov  4 21:54:22 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /salute
+Sat Nov  4 21:54:27 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:54:28 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): act salute in console
+Sat Nov  4 21:55:04 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:55:04 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:55:06 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 21:55:24 2023	DT D6 J31 (STEAM_0:1:61170829): say that again
+Sat Nov  4 21:55:37 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980) spawned
+Sat Nov  4 21:55:38 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:55:38 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 21:55:42 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): 
+Sat Nov  4 21:55:44 2023	Staff Spark on Bitch Duty (STEAM_0:1:460412980): /name ST Commander Spark
+Sat Nov  4 21:56:05 2023	ISB Deputy Chief Star (STEAM_0:0:61944231) disconnected
+Sat Nov  4 21:56:26 2023	DT D6 J31 (STEAM_0:1:61170829): mhm
+Sat Nov  4 21:56:36 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Figured out the issue, poor people could not attack because we accidentally set all your weapons to stun. 
+Sat Nov  4 21:56:45 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc BRUH
+Sat Nov  4 21:56:48 2023	Medical Commander Jason (STEAM_0:0:190051560): // how
+Sat Nov  4 21:56:53 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc joking
+Sat Nov  4 21:56:57 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // who fucked that UP ETF
+Sat Nov  4 21:57:00 2023	DT D6 J31 (STEAM_0:1:61170829): someone chose mine
+Sat Nov  4 21:57:07 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // oh damn it dish
+Sat Nov  4 21:57:07 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc it's a rank issue, user could not hurt npcs for some reason
+Sat Nov  4 21:57:17 2023	DT D6 J31 (STEAM_0:1:61170829): yeah
+Sat Nov  4 21:57:25 2023	DT D6 J31 (STEAM_0:1:61170829): yep sorry
+Sat Nov  4 21:57:41 2023	Medical Commander Jason (STEAM_0:0:190051560): // 10/10 everybody got to be a medic
+Sat Nov  4 21:57:56 2023	DT D6 J31 (STEAM_0:1:61170829): did it 
+Sat Nov  4 21:58:04 2023	ST PFC 6969 Kol (STEAM_0:0:59377502): id like to recommend the demotion of ST PFC 6969 Kol
+Sat Nov  4 21:58:24 2023	IA Commander Demo was killed by Medical Commander Jason with a rw_sw_t21
+Sat Nov  4 21:58:31 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 21:58:35 2023	DT D6 J31 (STEAM_0:1:61170829): dt discord yes
+Sat Nov  4 21:58:56 2023	First Order Commander Pretzel (STEAM_0:0:231421928): he's my bitch 
+Sat Nov  4 21:59:09 2023	First Order Commander Pretzel (STEAM_0:0:231421928): brb
+Sat Nov  4 21:59:42 2023	DT O1 S05 (STEAM_0:0:503446630): D-1 Sergeant D-2 Staff Sergeant D-3 Sergeant First ClassD-4 Master Sergeant D-5 First Sergeant D-6 Sergeant Major D-7 Command S
+Sat Nov  4 21:59:43 2023	IA Commander Demo was killed by ST Commander Spark with a rw_sw_huntershotgun
+Sat Nov  4 21:59:43 2023	DT D6 J31 (STEAM_0:1:61170829): its fine lol 
+Sat Nov  4 21:59:49 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 21:59:57 2023	ST Commander Spark was killed by Entity [3423][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov  4 22:00:01 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov  4 22:00:02 2023	DT D6 J31 (STEAM_0:1:61170829): lol 
+Sat Nov  4 22:00:08 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Sat Nov  4 22:00:21 2023	ST PFC 6969 Kol was killed by Medical Commander Jason with a rw_sw_t21
+Sat Nov  4 22:00:23 2023	ST PFC 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 22:00:24 2023	DT O1 S05 (STEAM_0:0:503446630): 0-1 2nd Lieutenant 0-2 1st Lieutenant 0-3 Captain 0-4 Major 
+Sat Nov  4 22:00:44 2023	Medical Commander Jason (STEAM_0:0:190051560): // maybe I should open a armor cleaning service
+Sat Nov  4 22:01:20 2023	DT D6 J31 (STEAM_0:1:61170829): voice only
+Sat Nov  4 22:01:40 2023	DT D6 J31 (STEAM_0:1:61170829): i do have a mic just tired rn
+Sat Nov  4 22:01:56 2023	DT D6 J31 (STEAM_0:1:61170829): its 9 am
+Sat Nov  4 22:02:00 2023	DT D6 J31 (STEAM_0:1:61170829): for me
+Sat Nov  4 22:02:11 2023	DT D6 J31 (STEAM_0:1:61170829): woke up early
+Sat Nov  4 22:02:22 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 22:02:24 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 22:02:30 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /advert AOS Spark At.murder
+Sat Nov  4 22:02:34 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): 
+Sat Nov  4 22:02:47 2023	ST Commander Spark was killed by Entity [3487][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov  4 22:02:47 2023	ST PFC 6969 Kol was killed by Entity [3487][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov  4 22:02:47 2023	SHW Commander Pip was killed by Entity [3487][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov  4 22:02:50 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:02:55 2023	ST PFC 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 22:03:05 2023	ST Commander Spark (STEAM_0:1:460412980) disconnected
+Sat Nov  4 22:03:11 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // spark crashed
+Sat Nov  4 22:03:13 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): // ooh yeah
+Sat Nov  4 22:03:14 2023	SHW Commander Pip (STEAM_0:1:169781558): LMAO
+Sat Nov  4 22:03:22 2023	DT D6 J31 (STEAM_0:1:61170829): yeah
+Sat Nov  4 22:03:35 2023	DT D6 J31 (STEAM_0:1:61170829): nah its fine 
+Sat Nov  4 22:04:11 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 22:06:08 2023	Spark (STEAM_0:1:460412980) has joined the game
+Sat Nov  4 22:06:08 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov  4 22:06:34 2023	Medical Commander Jason (STEAM_0:0:190051560) disconnected
+Sat Nov  4 22:07:02 2023	Shore VC Gunk (STEAM_0:1:98581856) disconnected
+Sat Nov  4 22:07:30 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov  4 22:08:04 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc what if the fleet got kidnapped
+Sat Nov  4 22:08:09 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc hear me out chat
+Sat Nov  4 22:08:10 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /name Fleet Admiral Grimjaw
+Sat Nov  4 22:08:12 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Sat Nov  4 22:08:14 2023	ST Commander Spark (STEAM_0:1:460412980): /name Chimaera High Overseer Spark
+Sat Nov  4 22:08:16 2023	DT O1 S05 was killed by SHW Commander Pip with a rw_sw_t21
+Sat Nov  4 22:08:20 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498) spawned
+Sat Nov  4 22:08:21 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 22:09:00 2023	IA Commander Demo (STEAM_0:0:29212178): GAMER MOUSE REGIMENT
+Sat Nov  4 22:09:08 2023	DT O1 S05 (STEAM_0:0:503446630): /advert open the hangar door
+Sat Nov  4 22:09:13 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc pls
+Sat Nov  4 22:09:16 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Enroute
+Sat Nov  4 22:09:16 2023	the gunk (STEAM_0:1:98581856) has joined the game
+Sat Nov  4 22:09:16 2023	Shore VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 22:09:47 2023	Fleet Admiral Grimjaw (STEAM_0:0:197465498): /name Fleet Admiral Nobody
+Sat Nov  4 22:10:24 2023	ST PFC 6969 Kol was killed by IA Commander Demo with a weapon_fists
+Sat Nov  4 22:10:48 2023	IA Commander Demo was killed by Chimaera High Overseer Spark with a rw_sw_dlt19
+Sat Nov  4 22:10:53 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 22:10:59 2023	1LO94G (STEAM_0:0:580928495) has joined the game
+Sat Nov  4 22:10:59 2023	1LO94G (STEAM_0:0:580928495) spawned
+Sat Nov  4 22:11:08 2023	ST PFC 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 22:11:11 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc HELP
+Sat Nov  4 22:11:13 2023	Shore VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 22:11:14 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc HELP ME
+Sat Nov  4 22:11:16 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc helllp
+Sat Nov  4 22:12:18 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 22:12:25 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 22:12:56 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert WAAH WAAH VC
+Sat Nov  4 22:12:59 2023	ST PFC 6969 Kol (STEAM_0:0:59377502): /comms sir yes sir
+Sat Nov  4 22:13:03 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert KEEP CRYING
+Sat Nov  4 22:13:16 2023	Shore VC Gunk (STEAM_0:1:98581856): /advert who tf is this guy lmao
+Sat Nov  4 22:13:24 2023	SHW Commander Pip was killed by IA Commander Demo with a rw_sw_dlt19x
+Sat Nov  4 22:13:33 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:13:34 2023	Fleet Captain Scratchma (STEAM_0:0:55135130): /advert KOS Complete
+Sat Nov  4 22:13:58 2023	Shore VC Gunk (STEAM_0:1:98581856): /me Steals Kidney
+Sat Nov  4 22:14:13 2023	Fleet Captain Scratchma was killed by SHW Commander Pip with a rw_sw_dl44
+Sat Nov  4 22:14:16 2023	SHW Commander Pip was killed by Shore VC Gunk with a rw_sw_dlt20a
+Sat Nov  4 22:14:22 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:14:32 2023	Fleet Captain Scratchma (STEAM_0:0:55135130) disconnected
+Sat Nov  4 22:14:38 2023	QuinnTheSpin (STEAM_0:1:65073902) has joined the game
+Sat Nov  4 22:14:38 2023	QuinnTheSpin (STEAM_0:1:65073902) spawned
+Sat Nov  4 22:14:58 2023	QuinnTheSpin (STEAM_0:1:65073902): !content
+Sat Nov  4 22:15:09 2023	QuinnTheSpin (STEAM_0:1:65073902) disconnected
+Sat Nov  4 22:15:24 2023	SHW Commander Pip was killed by DT O1 S05 with a rw_sw_e11d
+Sat Nov  4 22:15:37 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:16:08 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected
+Sat Nov  4 22:16:51 2023	ST PFC 6969 Kol (STEAM_0:0:59377502): /name Viceroy ST PFC 6969 Kol
+Sat Nov  4 22:16:53 2023	Viceroy ST PFC 6969 Kol was killed by Chimaera High Overseer Spark with a rw_sw_e11d
+Sat Nov  4 22:17:05 2023	Viceroy ST PFC 6969 Kol (STEAM_0:0:59377502): /name ST PFC 6969 Kol
+Sat Nov  4 22:17:23 2023	ST PFC 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 22:17:34 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned SENT hb_extended_main_50lb
+Sat Nov  4 22:20:44 2023	Shore VC Gunk was killed by Themself with a suicide trick
+Sat Nov  4 22:20:49 2023	Shore VC Gunk (STEAM_0:1:98581856) spawned
+Sat Nov  4 22:21:08 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Sat Nov  4 22:21:08 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:21:31 2023	DT O1 S05 was killed by IA Commander Demo with a rw_sw_e11
+Sat Nov  4 22:21:36 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 22:22:23 2023	IA Commander Demo was killed by Entity [0][worldspawn] with a unknown
+Sat Nov  4 22:22:28 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 22:23:14 2023	SHW Commander Pip (STEAM_0:1:169781558): !staff
+Sat Nov  4 22:23:19 2023	SHW Commander Pip (STEAM_0:1:169781558): /staff
+Sat Nov  4 22:23:26 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 22:23:56 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:24:00 2023	Shore VC Gunk (STEAM_0:1:98581856): /name FO VC Fish
+Sat Nov  4 22:24:00 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 22:24:01 2023	FO VC Fish (STEAM_0:1:98581856) spawned
+Sat Nov  4 22:24:33 2023	SHW Commander Pip (STEAM_0:1:169781558): /job Staff
+Sat Nov  4 22:24:36 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 22:24:45 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 22:24:51 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:24:57 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:25:04 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:26:23 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:27:04 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc anyone with user rank down to be tested with?
+Sat Nov  4 22:27:07 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:27:35 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:27:48 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc DT or ST can I nab one of you?
+Sat Nov  4 22:28:08 2023	ST PFC 6969 Kol was killed by FO VC Fish with a rw_sw_dlt19d
+Sat Nov  4 22:28:14 2023	ST PFC 6969 Kol (STEAM_0:0:59377502) spawned
+Sat Nov  4 22:28:22 2023	ST PFC 6969 Kol (STEAM_0:0:59377502): // sure
+Sat Nov  4 22:28:33 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:28:44 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sat Nov  4 22:28:49 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:28:49 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sat Nov  4 22:28:59 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:29:07 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:29:11 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:29:19 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:29:19 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 22:29:19 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:29:24 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:29:26 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned NPC npc_monk
+Sat Nov  4 22:29:26 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:29:28 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:29:35 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): /ooc grimjaw undeff
+Sat Nov  4 22:29:48 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:29:51 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc Is a DT available?
+Sat Nov  4 22:30:05 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:30:21 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc Cookie or Shadow, I need to test something
+Sat Nov  4 22:30:27 2023	DT D6 J31 (STEAM_0:1:61170829): // whats up
+Sat Nov  4 22:30:28 2023	DT O1 S05 (STEAM_0:0:503446630): /ooc sure
+Sat Nov  4 22:30:34 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 22:30:43 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:30:52 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sat Nov  4 22:30:59 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980): 
+Sat Nov  4 22:31:08 2023	SHW Commander Pip (STEAM_0:1:169781558): !back dt
+Sat Nov  4 22:31:19 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 22:31:27 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 22:31:27 2023	Fleet Admiral Nobody (STEAM_0:0:197465498): 
+Sat Nov  4 22:31:28 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:31:29 2023	DT D6 J31 was killed by Entity [1002][trigger_hurt] with a trigger_hurt
+Sat Nov  4 22:32:01 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:32:03 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) disconnected
+Sat Nov  4 22:32:09 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 22:32:17 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:32:26 2023	DT D6 J31 (STEAM_0:1:61170829) spawned
+Sat Nov  4 22:32:27 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:32:40 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:32:46 2023	IA Commander Demo (STEAM_0:0:29212178): bring j31
+Sat Nov  4 22:32:48 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:33:29 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:34:12 2023	IA Commander Demo (STEAM_0:0:29212178) disconnected
+Sat Nov  4 22:34:24 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:34:26 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc the simp leaves hehe
+Sat Nov  4 22:34:27 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:34:42 2023	DT D6 J31 (STEAM_0:1:61170829): // lol 
+Sat Nov  4 22:34:49 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:34:54 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc hehe cookie
+Sat Nov  4 22:34:59 2023	DT D6 J31 (STEAM_0:1:61170829): // what
+Sat Nov  4 22:35:05 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc YOUR simp
+Sat Nov  4 22:35:07 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:35:22 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:35:39 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Sat Nov  4 22:35:47 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Sat Nov  4 22:35:47 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 22:36:06 2023	1LO94G was killed by FO VC Fish with a rw_sw_dlt19d
+Sat Nov  4 22:36:25 2023	1LO94G (STEAM_0:0:580928495) spawned
+Sat Nov  4 22:36:28 2023	FO VC Fish (STEAM_0:1:98581856): 
+Sat Nov  4 22:36:36 2023	IA Commander Demo was killed by 1LO94G with a weapon_fists
+Sat Nov  4 22:36:40 2023	SHW Commander Pip was killed by FO VC Fish with a rw_sw_dlt19d
+Sat Nov  4 22:36:43 2023	Fleet Admiral Nobody (STEAM_0:0:197465498) disconnected
+Sat Nov  4 22:36:47 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:36:51 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc owie
+Sat Nov  4 22:36:59 2023	FO VC Fish was killed by DT O1 S05 with a rw_sw_dlt19
+Sat Nov  4 22:37:01 2023	ST PFC 6969 Kol (STEAM_0:0:59377502) disconnected
+Sat Nov  4 22:37:05 2023	FO VC Fish (STEAM_0:1:98581856) spawned
+Sat Nov  4 22:37:12 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 22:37:33 2023	FO VC Fish (STEAM_0:1:98581856) disconnected
+Sat Nov  4 22:38:02 2023	DT O1 S05 was killed by IA Commander Demo with a ven_riddick_dlt23v
+Sat Nov  4 22:38:14 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 22:38:32 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned NPC npc_seagull
+Sat Nov  4 22:38:44 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned NPC npc_monk
+Sat Nov  4 22:39:38 2023	DT O1 S05 was killed by SHW Commander Pip with a rw_sw_t21
+Sat Nov  4 22:39:56 2023	DT O1 S05 (STEAM_0:0:503446630) spawned
+Sat Nov  4 22:40:07 2023	DT O1 S05 (STEAM_0:0:503446630) disconnected
+Sat Nov  4 22:40:49 2023	1LO94G was killed by DT D6 J31 with a rw_sw_e11d
+Sat Nov  4 22:40:57 2023	1LO94G (STEAM_0:0:580928495) spawned
+Sat Nov  4 22:41:31 2023	DT D6 J31 (STEAM_0:1:61170829) spawned
+Sat Nov  4 22:41:45 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:41:50 2023	1LO94G (STEAM_0:0:580928495) spawned
+Sat Nov  4 22:43:07 2023	DT D6 J31 was killed by SHW Commander Pip with a rw_sw_e11s
+Sat Nov  4 22:43:14 2023	DT D6 J31 (STEAM_0:1:61170829) spawned
+Sat Nov  4 22:43:24 2023	SHW Commander Pip was killed by IA Commander Demo with a rw_sw_tusken_cycler
+Sat Nov  4 22:43:29 2023	1LO94G was killed by IA Commander Demo with a rw_sw_tusken_cycler
+Sat Nov  4 22:43:31 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:43:35 2023	1LO94G (STEAM_0:0:580928495) spawned
+Sat Nov  4 22:44:04 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:44:16 2023	1LO94G (STEAM_0:0:580928495): /name Shock Vice Commander Jack
+Sat Nov  4 22:45:08 2023	SHW Commander Pip (STEAM_0:1:169781558): /name Shock Commander Dishwasher
+Sat Nov  4 22:45:09 2023	Shock Commander Dishwasher (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:46:27 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sat Nov  4 22:46:27 2023	IA Commander Demo (STEAM_0:0:29212178) arrested Shock Vice Commander Jack
+Sat Nov  4 22:46:29 2023	IA Commander Demo was killed by Shock Commander Dishwasher with a rw_sw_dlt19
+Sat Nov  4 22:46:34 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:46:34 2023	Shock Commander Dishwasher (STEAM_0:1:169781558): 
+Sat Nov  4 22:46:35 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 22:51:03 2023	IA Commander Demo was killed by Shock Commander Dishwasher with a rw_sw_e11t
+Sat Nov  4 22:51:11 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 22:51:14 2023	Shock Commander Dishwasher (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:51:14 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) arrested Shock Commander Dishwasher
+Sat Nov  4 22:51:37 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) unarrested Shock Commander Dishwasher
+Sat Nov  4 22:51:46 2023	Shock Vice Commander Jack was killed by IA Commander Demo with a rw_sw_k16
+Sat Nov  4 22:51:54 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sat Nov  4 22:52:17 2023	Shock Vice Commander Jack was killed by IA Commander Demo with a rw_sw_k16
+Sat Nov  4 22:52:22 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sat Nov  4 22:53:15 2023	DT D6 J31 was killed by Shock Commander Dishwasher with a rw_sw_dlt19
+Sat Nov  4 22:53:17 2023	IA Commander Demo was killed by Entity [3371][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov  4 22:53:17 2023	Shock Vice Commander Jack was killed by Entity [3371][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov  4 22:53:22 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 22:53:23 2023	DT D6 J31 (STEAM_0:1:61170829) spawned
+Sat Nov  4 22:53:23 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sat Nov  4 22:53:25 2023	Shock Commander Dishwasher was killed by Entity [3406][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Sat Nov  4 22:53:30 2023	Shock Commander Dishwasher (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:53:33 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 22:53:47 2023	Shock Commander Dishwasher (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:53:54 2023	Shock Commander Dishwasher (STEAM_0:1:169781558): /name SHW Commander Pip
+Sat Nov  4 22:54:05 2023	Shock Vice Commander Jack was killed by DT D6 J31 with a rw_sw_e11d
+Sat Nov  4 22:54:10 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sat Nov  4 22:55:16 2023	Shock Vice Commander Jack was killed by IA Commander Demo with a weapon_ak472
+Sat Nov  4 22:55:36 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sat Nov  4 22:55:50 2023	SHW Commander Pip was killed by IA Commander Demo with a weapon_ak472
+Sat Nov  4 22:55:55 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Sat Nov  4 22:56:03 2023	IA Commander Demo was killed by Shock Vice Commander Jack with a rw_sw_dlt19
+Sat Nov  4 22:56:07 2023	DT D6 J31 was killed by Shock Vice Commander Jack with a rw_sw_dlt19
+Sat Nov  4 22:56:08 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 22:56:15 2023	DT D6 J31 (STEAM_0:1:61170829) spawned
+Sat Nov  4 22:56:22 2023	Shock Vice Commander Jack was killed by IA Commander Demo with a weapon_m42
+Sat Nov  4 22:56:29 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sat Nov  4 22:56:33 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 23:01:16 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected
+Sat Nov  4 23:02:55 2023	Shock Vice Commander Jack was killed by IA Commander Demo with a rw_sw_riotbaton
+Sat Nov  4 23:02:59 2023	IA Commander Demo was killed by DT D6 J31 with a rw_sw_e11d
+Sat Nov  4 23:03:04 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 23:03:05 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sat Nov  4 23:03:10 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 23:04:13 2023	Shock Vice Commander Jack was killed by DT D6 J31 with a rw_sw_e11d
+Sat Nov  4 23:04:17 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) spawned
+Sat Nov  4 23:04:21 2023	Shock Vice Commander Jack (STEAM_0:0:580928495) disconnected
+Sat Nov  4 23:04:37 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 23:04:40 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Sat Nov  4 23:06:23 2023	IA Commander Demo was killed by DT D6 J31 with a rw_sw_e11d
+Sat Nov  4 23:09:56 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 23:10:16 2023	IA Commander Demo (STEAM_0:0:29212178) spawned NPC npc_crow
+Sat Nov  4 23:10:17 2023	IA Commander Demo (STEAM_0:0:29212178) spawned NPC npc_crow
+Sat Nov  4 23:10:24 2023	IA Commander Demo (STEAM_0:0:29212178) spawned NPC npc_pigeon
+Sat Nov  4 23:10:26 2023	IA Commander Demo (STEAM_0:0:29212178) spawned NPC npc_seagull
+Sat Nov  4 23:10:35 2023	IA Commander Demo (STEAM_0:0:29212178) spawned NPC npc_monk
+Sat Nov  4 23:12:05 2023	IA Commander Demo was killed by DT D6 J31 with a rw_sw_e11d
+Sat Nov  4 23:12:11 2023	DT D6 J31 (STEAM_0:1:61170829) disconnected
+Sat Nov  4 23:13:39 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Sat Nov  4 23:13:50 2023	IA Commander Demo (STEAM_0:0:29212178) disconnected
+Sat Nov  4 23:36:38 2023	First Order Commander Pretzel (STEAM_0:0:231421928) disconnected
+Sat Nov  4 23:40:12 2023	Screen_wolf75 (STEAM_0:0:231421928) has joined the game
+Sat Nov  4 23:40:12 2023	First Order Commander Pretzel (STEAM_0:0:231421928) spawned
+Sat Nov  4 23:52:35 2023	First Order Commander Pretzel (STEAM_0:0:231421928) disconnected

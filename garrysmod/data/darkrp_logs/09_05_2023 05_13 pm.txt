@@ -1,0 +1,5 @@
+Tue Sep  5 17:13:48 2023	vogjin (STEAM_0:0:649439720) has joined the game
+Tue Sep  5 17:13:48 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Tue Sep  5 17:16:24 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) spawned
+Tue Sep  5 17:17:08 2023	ICSL 0001 Jinn (STEAM_0:0:649439720): /addspawn purgetroopermed
+Tue Sep  5 17:19:47 2023	ICSL 0001 Jinn (STEAM_0:0:649439720) disconnected

@@ -1,0 +1,2108 @@
+Mon Nov 20 19:58:48 2023	Luna Tess (STEAM_0:1:84791284) has joined the game
+Mon Nov 20 19:58:48 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Mon Nov 20 20:08:49 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Mon Nov 20 20:08:49 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 20:23:23 2023	Willisepic66 (STEAM_0:1:460210970) has joined the game
+Mon Nov 20 20:23:23 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Mon Nov 20 20:25:04 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Mon Nov 20 20:26:50 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) disconnected
+Mon Nov 20 20:45:36 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected
+Mon Nov 20 20:50:48 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /novacommander
+Mon Nov 20 20:50:51 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Mon Nov 20 20:50:57 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Mon Nov 20 20:50:57 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 20:54:13 2023	SHW Commander Pip was killed by Entity [0][worldspawn] with a unknown
+Mon Nov 20 20:54:18 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 21:01:34 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT witcher_gateway
+Mon Nov 20 21:01:38 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT witcher_gateway
+Mon Nov 20 21:02:02 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned SENT witcher_gateway
+Mon Nov 20 21:03:16 2023	Keller (STEAM_0:0:507344162) has joined the game
+Mon Nov 20 21:03:16 2023	Keller (STEAM_0:0:507344162) spawned
+Mon Nov 20 21:03:44 2023	Keller (STEAM_0:0:507344162): !content
+Mon Nov 20 21:09:18 2023	Keller (STEAM_0:0:507344162) disconnected
+Mon Nov 20 21:16:28 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // so what is the symbol for shadow
+Mon Nov 20 21:16:35 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // like JT had moths, Shore has sand
+Mon Nov 20 21:16:38 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // medics are furries
+Mon Nov 20 21:16:44 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc wizards
+Mon Nov 20 21:16:53 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // idk what Nova should do
+Mon Nov 20 21:16:53 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc shadow wizard money gang
+Mon Nov 20 21:16:59 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // i dont want to do bees
+Mon Nov 20 21:17:20 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc bro, you guys have drip
+Mon Nov 20 21:17:21 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // cus NOVA is meant to be durable 
+Mon Nov 20 21:17:27 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // bro we got bling fr
+Mon Nov 20 21:18:32 2023	NOVA CMD Heretic (STEAM_0:1:84791284): so im trying to figure out
+Mon Nov 20 21:18:43 2023	NOVA CMD Heretic (STEAM_0:1:84791284): if this fatman is a prop or the actual nuke
+Mon Nov 20 21:18:50 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // models/thedoctor/fatman.mdl
+Mon Nov 20 21:18:56 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // thats the model ok so i can spawn it
+Mon Nov 20 21:19:04 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // i think
+Mon Nov 20 21:19:31 2023	NOVA CMD Heretic (STEAM_0:1:84791284): 
+Mon Nov 20 21:20:01 2023	NOVA CMD Heretic (STEAM_0:1:84791284): interrogation room
+Mon Nov 20 21:20:02 2023	NOVA CMD Heretic (STEAM_0:1:84791284): ?
+Mon Nov 20 21:20:04 2023	NOVA CMD Heretic (STEAM_0:1:84791284): ah
+Mon Nov 20 21:20:17 2023	NOVA CMD Heretic (STEAM_0:1:84791284): true
+Mon Nov 20 21:21:08 2023	NOVA CMD Heretic (STEAM_0:1:84791284): still tyring to figure out what to do for bunks
+Mon Nov 20 21:21:47 2023	NOVA CMD Heretic (STEAM_0:1:84791284): im gonna remove the chairs and podium prolly
+Mon Nov 20 21:21:51 2023	NOVA CMD Heretic (STEAM_0:1:84791284): and maybe redo beds
+Mon Nov 20 21:22:14 2023	NOVA CMD Heretic (STEAM_0:1:84791284): i was thinking of maybe doing that
+Mon Nov 20 21:22:16 2023	NOVA CMD Heretic (STEAM_0:1:84791284): yeah
+Mon Nov 20 21:22:21 2023	NOVA CMD Heretic (STEAM_0:1:84791284): kitchen or lockers
+Mon Nov 20 21:22:42 2023	NOVA CMD Heretic (STEAM_0:1:84791284): also a nuke
+Mon Nov 20 21:22:56 2023	NOVA CMD Heretic (STEAM_0:1:84791284): this one isnt
+Mon Nov 20 21:23:02 2023	NOVA CMD Heretic (STEAM_0:1:84791284): nah im kidding
+Mon Nov 20 21:23:17 2023	NOVA CMD Heretic (STEAM_0:1:84791284): as long as it isnt that can bomb i think i wont get banned
+Mon Nov 20 21:23:20 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Mon Nov 20 21:23:20 2023	Shadow Colonel Butter (STEAM_0:1:78700995) spawned
+Mon Nov 20 21:23:45 2023	NOVA CMD Heretic (STEAM_0:1:84791284): u forgor to prop it
+Mon Nov 20 21:23:50 2023	NOVA CMD Heretic (STEAM_0:1:84791284): prolly
+Mon Nov 20 21:24:01 2023	NOVA CMD Heretic (STEAM_0:1:84791284): it was late so maybe
+Mon Nov 20 21:24:26 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // what i lowkey want to do is set up a nova only witcher portal
+Mon Nov 20 21:24:32 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // so i can put the vending machines there
+Mon Nov 20 21:24:38 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // so no other regiment can abuse it
+Mon Nov 20 21:26:15 2023	Croc (STEAM_0:1:161014837) has joined the game
+Mon Nov 20 21:26:15 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Mon Nov 20 21:30:03 2023	eggs (STEAM_0:0:55135130) has joined the game
+Mon Nov 20 21:30:03 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 21:30:13 2023	Shadow Colonel Butter (STEAM_0:1:78700995): /name Inquisitor Acolyte Ares
+Mon Nov 20 21:30:15 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Mon Nov 20 21:30:43 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): 
+Mon Nov 20 21:31:53 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /sleep
+Mon Nov 20 21:31:56 2023	DT E5 O30 (STEAM_0:1:161014837) spawned
+Mon Nov 20 21:34:45 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /sleep
+Mon Nov 20 21:34:45 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 21:38:32 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // i forgor i was here
+Mon Nov 20 21:38:38 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): // lol
+Mon Nov 20 21:38:47 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // nah
+Mon Nov 20 21:38:52 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): 
+Mon Nov 20 21:38:58 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // reset or cleanup?
+Mon Nov 20 21:39:12 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc they are the same thing
+Mon Nov 20 21:39:12 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 21:39:24 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // nuh uh
+Mon Nov 20 21:39:37 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc there is no cleanup command on here
+Mon Nov 20 21:39:53 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc mapreset is effectively the same as the cleanup command
+Mon Nov 20 21:40:04 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // q utilities admin cleanup cleanup everything
+Mon Nov 20 21:40:11 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): // same thing
+Mon Nov 20 21:42:11 2023	DT E5 O30 (STEAM_0:1:161014837): /pm scratch you sahold proble chgan your name lol
+Mon Nov 20 21:42:15 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /name Lieutenant Scratchma
+Mon Nov 20 21:42:30 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /job Fleet Lieutenant
+Mon Nov 20 21:42:32 2023	Lucy is Bae (STEAM_0:1:76110013) has joined the game
+Mon Nov 20 21:42:32 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013) spawned
+Mon Nov 20 21:43:11 2023	DT E5 O30 (STEAM_0:1:161014837): no it only admirals
+Mon Nov 20 21:43:28 2023	DT E5 O30 (STEAM_0:1:161014837): yeah so if you get then i can
+Mon Nov 20 21:44:12 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013) spawned
+Mon Nov 20 21:45:42 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): 
+Mon Nov 20 21:45:45 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): 
+Mon Nov 20 21:46:27 2023	DT E5 O30 (STEAM_0:1:161014837): 
+Mon Nov 20 21:46:40 2023	Terta_ (STEAM_0:1:128681061) has joined the game
+Mon Nov 20 21:46:40 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061) spawned
+Mon Nov 20 21:46:59 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /looc ill be right back gotta get my lunch
+Mon Nov 20 21:48:04 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061) spawned
+Mon Nov 20 21:50:44 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned SENT rw_sw_dispencer
+Mon Nov 20 21:51:04 2023	DT E5 O30 (STEAM_0:1:161014837): /advert  BOW TO YOUR EMPEROR OR BE EXECUTED [ONLY WARNING] 
+Mon Nov 20 21:52:06 2023	DT E5 O30 (STEAM_0:1:161014837): /ooc he afk
+Mon Nov 20 21:52:39 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // ay dish
+Mon Nov 20 21:52:44 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // are fleet allowed in brig?
+Mon Nov 20 21:53:20 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc yes, but only admiral + are allowed without being able to be removed by shock
+Mon Nov 20 21:53:46 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc general and admiral + are allowed without possibility to be removed
+Mon Nov 20 21:54:30 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): im back
+Mon Nov 20 21:55:10 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): bruh
+Mon Nov 20 21:55:30 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): i hate the minging on here this was already talked about
+Mon Nov 20 21:55:45 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Mon Nov 20 21:55:50 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Mon Nov 20 21:55:51 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /sleep
+Mon Nov 20 21:55:51 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 21:56:00 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 21:56:25 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 21:56:40 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 21:56:41 2023	DT E5 O30 (STEAM_0:1:161014837): /advert  BOW TO YOUR EMPEROR OR BE EXECUTED [ONLY WARNING] 
+Mon Nov 20 21:57:00 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): are you on duty
+Mon Nov 20 21:57:27 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): go and check the doclks
+Mon Nov 20 21:57:40 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): i have a transport coming with artifacts
+Mon Nov 20 21:57:43 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): the Docks
+Mon Nov 20 21:58:03 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): go and make sure it is brought to the inq fortress safely
+Mon Nov 20 21:58:31 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): i just said lieutenant
+Mon Nov 20 21:58:46 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): it is a braclet
+Mon Nov 20 21:58:54 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): very very deadly
+Mon Nov 20 21:58:55 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /advert Ares to brig
+Mon Nov 20 21:59:07 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): i will be going to the Fortress
+Mon Nov 20 21:59:33 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): if this artifact is lost it iwll be bad 
+Mon Nov 20 21:59:37 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /me chuckles
+Mon Nov 20 21:59:48 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): you might say weird creatures might appear
+Mon Nov 20 22:01:25 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): it should be dock two
+Mon Nov 20 22:02:36 2023	DT E5 O30 (STEAM_0:1:161014837): /advert Disperse from the area immediately, failure to do so will result in termination. [Only Warning]
+Mon Nov 20 22:03:40 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): you remember the bracelet or amulet that can infect people and turn them into rakghouls
+Mon Nov 20 22:03:53 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): with the dark side
+Mon Nov 20 22:03:59 2023	DT E5 O30 (STEAM_0:1:161014837): yes
+Mon Nov 20 22:04:07 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): that is the item in the shipment
+Mon Nov 20 22:04:18 2023	DT E5 O30 (STEAM_0:1:161014837): oh damn sip them
+Mon Nov 20 22:04:23 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): yep
+Mon Nov 20 22:04:36 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): gunna change name really quick to progress the RP
+Mon Nov 20 22:04:53 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /name Narrator 
+Mon Nov 20 22:04:59 2023	DT E5 O30 (STEAM_0:1:161014837): what shold i chang it to
+Mon Nov 20 22:05:09 2023	Narrator (STEAM_0:1:76110013): do you wanna be a rakghoul
+Mon Nov 20 22:05:17 2023	DT E5 O30 (STEAM_0:1:161014837): yeah sure
+Mon Nov 20 22:05:21 2023	Narrator (STEAM_0:1:76110013): dope
+Mon Nov 20 22:05:57 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /advert man there are SO MANY containers
+Mon Nov 20 22:06:06 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /advert anyone got bolt cutters?
+Mon Nov 20 22:06:10 2023	Narrator (STEAM_0:1:76110013): /advert The patrol would arrive at the docks and would feel ill approaching one of the containers
+Mon Nov 20 22:06:39 2023	Narrator (STEAM_0:1:76110013): 
+Mon Nov 20 22:06:42 2023	Narrator (STEAM_0:1:76110013): 
+Mon Nov 20 22:07:04 2023	Narrator (STEAM_0:1:76110013): 
+Mon Nov 20 22:07:24 2023	Narrator (STEAM_0:1:76110013): /advert The Bracelet would call out to scratchma 
+Mon Nov 20 22:07:58 2023	Narrator (STEAM_0:1:76110013): /pm Scratchma your basically gunna becomea rakghoul
+Mon Nov 20 22:08:07 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /pm narrator ok
+Mon Nov 20 22:08:32 2023	Narrator (STEAM_0:1:76110013): /advert The Fleet would begin to feel ill like something is making them feel aggresive
+Mon Nov 20 22:09:10 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Mon Nov 20 22:09:10 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Mon Nov 20 22:09:48 2023	Narrator (STEAM_0:1:76110013): /pm scratchma in like two minutes give yourself the rakghoul swep
+Mon Nov 20 22:09:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /pm narrator alright
+Mon Nov 20 22:10:07 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /pm narrator still cant find the braceket
+Mon Nov 20 22:10:13 2023	Narrator (STEAM_0:1:76110013): /advert The Medical trooper would begin to feel ill due to the power of the bracelet 
+Mon Nov 20 22:10:33 2023	Narrator (STEAM_0:1:76110013): /pm scratchma it is in the container next to you
+Mon Nov 20 22:11:10 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /pm narrator this one?
+Mon Nov 20 22:11:40 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /me squints
+Mon Nov 20 22:11:40 2023	Narrator (STEAM_0:1:76110013): /advert The Fleet would begin to feel something crawl out of them 
+Mon Nov 20 22:11:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /me picks up bracelet
+Mon Nov 20 22:12:03 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /me wears bracelet
+Mon Nov 20 22:12:05 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Mon Nov 20 22:12:06 2023	Narrator (STEAM_0:1:76110013): /pm scratchma go ham have fun
+Mon Nov 20 22:12:39 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /me rases her hand to show her wearing the bracelet
+Mon Nov 20 22:12:40 2023	Narrator (STEAM_0:1:76110013) spawned SENT pfx1_07
+Mon Nov 20 22:12:54 2023	Lieutenant Scratchma was killed by Inquisitor Acolyte Ares with a weapon_lightsaber
+Mon Nov 20 22:13:10 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /me takes bracelet
+Mon Nov 20 22:13:13 2023	Narrator (STEAM_0:1:76110013): 
+Mon Nov 20 22:13:21 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 22:13:31 2023	Narrator (STEAM_0:1:76110013) spawned
+Mon Nov 20 22:13:35 2023	Narrator (STEAM_0:1:76110013): 
+Mon Nov 20 22:13:55 2023	Narrator (STEAM_0:1:76110013): 
+Mon Nov 20 22:14:00 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 22:14:13 2023	Narrator (STEAM_0:1:76110013): 
+Mon Nov 20 22:14:17 2023	Narrator (STEAM_0:1:76110013): 
+Mon Nov 20 22:14:25 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /advert hey we got the bracelet
+Mon Nov 20 22:14:41 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 22:14:41 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 22:14:50 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Mon Nov 20 22:14:50 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Mon Nov 20 22:14:53 2023	Narrator (STEAM_0:1:76110013): /a imma lower it
+Mon Nov 20 22:15:20 2023	Narrator (STEAM_0:1:76110013): 
+Mon Nov 20 22:15:31 2023	Narrator (STEAM_0:1:76110013): /name mcdonalds employee
+Mon Nov 20 22:15:44 2023	mcdonalds employee (STEAM_0:1:76110013): /advert if you get infected transform
+Mon Nov 20 22:15:50 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 22:15:50 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 22:15:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 22:15:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 22:16:35 2023	mcdonalds employee (STEAM_0:1:76110013): /ooc med and scratchma come back to me
+Mon Nov 20 22:18:19 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Mon Nov 20 22:18:31 2023	IA Commander Demo (STEAM_0:0:29212178): 
+Mon Nov 20 22:21:08 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 22:21:08 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 22:22:55 2023	PomPom (STEAM_0:1:44753757) has joined the game
+Mon Nov 20 22:22:55 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Mon Nov 20 22:24:12 2023	Inquisitor Acolyte Ares was killed by IA Commander Demo with a weapon_infect_rak
+Mon Nov 20 22:24:28 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995) spawned
+Mon Nov 20 22:24:53 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Mon Nov 20 22:25:04 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 22:25:04 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 22:25:07 2023	IA CPL 7562 William was killed by IA Commander Demo with a weapon_infect_rak
+Mon Nov 20 22:25:07 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 22:25:07 2023	Lieutenant Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 22:25:47 2023	IA CPL 7562 William (STEAM_0:1:44753757): this is messed up
+Mon Nov 20 22:26:01 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Mon Nov 20 22:26:53 2023	mcdonalds employee (STEAM_0:1:76110013): /ooc alright once scratchma and the med die the rakghouls are dead
+Mon Nov 20 22:27:03 2023	Med PFC 8675 Tracy was killed by DT E5 O30 with a rw_sw_e11d
+Mon Nov 20 22:27:05 2023	mcdonalds employee (STEAM_0:1:76110013) spawned
+Mon Nov 20 22:27:07 2023	IA Commander Demo (STEAM_0:0:29212178): /ooc i'm still alive 
+Mon Nov 20 22:27:09 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061) spawned
+Mon Nov 20 22:27:17 2023	mcdonalds employee (STEAM_0:1:76110013): /name Purge COL 1945 Ricky
+Mon Nov 20 22:27:24 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /ooc and demo
+Mon Nov 20 22:28:11 2023	IA Commander Demo (STEAM_0:0:29212178): /ooc IA Rakghouls are better than other takghouls
+Mon Nov 20 22:28:20 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): // takghouls
+Mon Nov 20 22:28:26 2023	IA Commander Demo (STEAM_0:0:29212178): /ooc takghouls
+Mon Nov 20 22:28:59 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): 
+Mon Nov 20 22:29:42 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /ooc the best rakghouls
+Mon Nov 20 22:29:48 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): 
+Mon Nov 20 22:30:13 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): /dance
+Mon Nov 20 22:30:21 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061) disconnected
+Mon Nov 20 22:30:29 2023	Lieutenant Scratchma was killed by DT E5 O30 with a rw_sw_e11d
+Mon Nov 20 22:30:34 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 22:30:57 2023	IA Commander Demo was killed by Purge COL 1945 Ricky with a flamethrower_basic
+Mon Nov 20 22:31:02 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Mon Nov 20 22:31:12 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /advert [IMP] One Rakghoul is dead
+Mon Nov 20 22:31:19 2023	MyTankHasAFlat (STEAM_0:1:152928599) has joined the game
+Mon Nov 20 22:31:19 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 22:31:29 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /advert [IMP] Fleet get the emperors bracelet here asap
+Mon Nov 20 22:31:38 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // what does imp mena
+Mon Nov 20 22:31:40 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // mean
+Mon Nov 20 22:31:44 2023	Terta_ (STEAM_0:1:128681061) has joined the game
+Mon Nov 20 22:31:44 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061) spawned
+Mon Nov 20 22:31:47 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /ooc imperial
+Mon Nov 20 22:31:51 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // alright
+Mon Nov 20 22:31:57 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /advert sorry i just got here
+Mon Nov 20 22:32:14 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /advert [IMP] what bracelet?
+Mon Nov 20 22:32:15 2023	DT E5 O30 (STEAM_0:1:161014837): copy
+Mon Nov 20 22:32:29 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 22:32:35 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /advert [IMP] The one the emperor ordered you to get 
+Mon Nov 20 22:32:46 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): 
+Mon Nov 20 22:33:00 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /advert [IMP] you are thinking of a different fleet, i just got here
+Mon Nov 20 22:33:02 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061) spawned
+Mon Nov 20 22:33:12 2023	DT E5 O30 (STEAM_0:1:161014837): how do i get in RG
+Mon Nov 20 22:33:17 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // nlr syndromew
+Mon Nov 20 22:33:30 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /ooc Tryout for RG
+Mon Nov 20 22:33:51 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /ooc ill be doing tryouts soon for it
+Mon Nov 20 22:34:02 2023	DT E5 O30 (STEAM_0:1:161014837): /ooc okay
+Mon Nov 20 22:34:47 2023	IA CPL 7562 William (STEAM_0:1:44753757): // Note to self, water does not put out fire
+Mon Nov 20 22:35:20 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013) spawned SENT tx225lights
+Mon Nov 20 22:35:41 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) disconnected
+Mon Nov 20 22:36:52 2023	IA CPL 7562 William (STEAM_0:1:44753757): /sleep
+Mon Nov 20 22:36:56 2023	IA CPL 7562 William (STEAM_0:1:44753757): /sleep
+Mon Nov 20 22:36:58 2023	IA CPL 7562 William (STEAM_0:1:44753757): /sleep
+Mon Nov 20 22:36:58 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Mon Nov 20 22:37:21 2023	IA CPL 7562 William (STEAM_0:1:44753757): /sleep
+Mon Nov 20 22:37:28 2023	IA CPL 7562 William (STEAM_0:1:44753757): /sleep
+Mon Nov 20 22:37:28 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Mon Nov 20 22:37:29 2023	IA Commander Demo (STEAM_0:0:29212178) spawned SENT imp_speeder
+Mon Nov 20 22:37:36 2023	IA CPL 7562 William (STEAM_0:1:44753757): /sleep
+Mon Nov 20 22:37:36 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /rp opens the container
+Mon Nov 20 22:37:37 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Mon Nov 20 22:37:37 2023	IA CPL 7562 William was killed by Entity [0][worldspawn] with a unknown
+Mon Nov 20 22:37:42 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /me opens the container
+Mon Nov 20 22:37:42 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Mon Nov 20 22:37:44 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /roll
+Mon Nov 20 22:37:52 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /pm ricky ooc the inq took the bracelet
+Mon Nov 20 22:37:55 2023	IA Commander Demo (STEAM_0:0:29212178): /roll
+Mon Nov 20 22:38:19 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /advert [INQ] Inquisitor where is the emperor bracelet
+Mon Nov 20 22:38:47 2023	Med PFC 8675 Tracy was killed by Entity [0][worldspawn] with a unknown
+Mon Nov 20 22:39:00 2023	Lieutenant Scratchma was killed by Themself with a suicide trick
+Mon Nov 20 22:39:07 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061) spawned
+Mon Nov 20 22:39:12 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 22:39:18 2023	IA Commander Demo (STEAM_0:0:29212178) spawned SENT speeder_bike
+Mon Nov 20 22:39:19 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // these speeders are the worst
+Mon Nov 20 22:39:21 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /advert [INQ] I was sleeping in my bunks when all of this was happening so I have no idea
+Mon Nov 20 22:39:25 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013) spawned SENT lvs_laatle_gunship
+Mon Nov 20 22:39:41 2023	IA Commander Demo (STEAM_0:0:29212178) spawned SENT lvs_fakehover_iftx
+Mon Nov 20 22:39:55 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /advert [INQ] I can start looking for it now though
+Mon Nov 20 22:40:18 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /advert [INQ] Look for it
+Mon Nov 20 22:40:41 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /advert [INQ] Would you happen to know its last location
+Mon Nov 20 22:40:55 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /advert [INQ] The docks 
+Mon Nov 20 22:40:58 2023	Xanderr (STEAM_0:0:63471237) has joined the game
+Mon Nov 20 22:40:58 2023	Shadow Colonel Furboy (STEAM_0:0:63471237) spawned
+Mon Nov 20 22:41:29 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): 
+Mon Nov 20 22:41:35 2023	IA Commander Demo (STEAM_0:0:29212178): /advert Permission to Enter
+Mon Nov 20 22:41:42 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): 
+Mon Nov 20 22:42:12 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013) spawned
+Mon Nov 20 22:42:37 2023	Purge COL 1945 Ricky (STEAM_0:1:76110013): /name Royal Guard 21
+Mon Nov 20 22:43:29 2023	IA Commander Demo (STEAM_0:0:29212178) spawned SENT lvs_tie_fighter
+Mon Nov 20 22:44:32 2023	Royal Guard 21 (STEAM_0:1:76110013): 
+Mon Nov 20 22:44:50 2023	Royal Guard 21 (STEAM_0:1:76110013) spawned
+Mon Nov 20 22:44:58 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // wus nan plus tean
+Mon Nov 20 22:45:00 2023	Royal Guard 21 (STEAM_0:1:76110013): /NAME Emperor Sheev Palpatine
+Mon Nov 20 22:45:05 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): /ooc 1
+Mon Nov 20 22:45:12 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /advert why did the purge let us temple?
+Mon Nov 20 22:45:16 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /advert [IMP] Where is my bracelet
+Mon Nov 20 22:45:27 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): 
+Mon Nov 20 22:45:32 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /advert [IMP] the inquizator is looking for it
+Mon Nov 20 22:45:50 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): /shadowcommand
+Mon Nov 20 22:45:52 2023	Shadow Colonel Furboy (STEAM_0:0:63471237) spawned
+Mon Nov 20 22:46:00 2023	IA Commander Demo (STEAM_0:0:29212178) spawned SENT lvs_fakehover_iftx
+Mon Nov 20 22:46:01 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /advert [IMP] I got information that it was at the docks and im almost finished with searching the whole place
+Mon Nov 20 22:46:02 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): 
+Mon Nov 20 22:46:22 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /advert RG Tryouts will be tomorrow 
+Mon Nov 20 22:46:28 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /me hands keys
+Mon Nov 20 22:46:35 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // is rg a primary?
+Mon Nov 20 22:46:39 2023	IA Commander Demo (STEAM_0:0:29212178): /me finds chicken sandwich
+Mon Nov 20 22:46:43 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /ooc no secondary
+Mon Nov 20 22:46:46 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // nice
+Mon Nov 20 22:46:49 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // ill bite
+Mon Nov 20 22:48:18 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // ill go to rg tryoust when this rp episode is done
+Mon Nov 20 22:48:19 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned SENT mediaplayer_tv
+Mon Nov 20 22:48:34 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /ooc RG tryouts are tomorrow
+Mon Nov 20 22:48:39 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // what time?
+Mon Nov 20 22:48:45 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /ooc around this time
+Mon Nov 20 22:48:49 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // alright
+Mon Nov 20 22:49:05 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /advert [IMP] Would you have gone into the warehouse below the docks?
+Mon Nov 20 22:49:25 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /advert [IMP] no but we checked the crate it should be in
+Mon Nov 20 22:49:36 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /advert [IMP] all empty
+Mon Nov 20 22:50:02 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /pm Ares its outside the first dock hanger 
+Mon Nov 20 22:50:15 2023	DT E5 O30 (STEAM_0:1:161014837): /advert [DT-Emperor] what is your Location?
+Mon Nov 20 22:50:49 2023	IA Commander Demo (STEAM_0:0:29212178) spawned NPC npc_monk
+Mon Nov 20 22:50:50 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc butter, send me the materials that you didn't have
+Mon Nov 20 22:51:33 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /advert [Emperor - DT] Inside inq Fortress
+Mon Nov 20 22:51:54 2023	DT E5 O30 (STEAM_0:1:161014837): /advert Disperse from the area immediately, failure to do so will result in termination. [Only Warning]
+Mon Nov 20 22:52:08 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /advert [IMP] I have found it coming back to sith temple
+Mon Nov 20 22:53:54 2023	DT E5 O30 (STEAM_0:1:161014837): /advert  BOW TO YOUR EMPEROR OR BE EXECUTED [ONLY WARNING] 
+Mon Nov 20 22:54:33 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /me puts the bracelet away in the archives
+Mon Nov 20 22:55:26 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013) spawned SENT darth_vader_theme
+Mon Nov 20 22:55:35 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // mapwide by the way
+Mon Nov 20 22:55:51 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): // I cant hear it 
+Mon Nov 20 22:56:09 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /name Inquisitor Ares
+Mon Nov 20 22:56:15 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 22:56:18 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Private contractor
+Mon Nov 20 22:56:39 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): smh
+Mon Nov 20 22:57:11 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): good idea
+Mon Nov 20 22:57:15 2023	IA Commander Demo (STEAM_0:0:29212178): /me finds grease
+Mon Nov 20 22:57:45 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): boost me onto plant
+Mon Nov 20 22:57:50 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): nvm
+Mon Nov 20 22:57:54 2023	IA Commander Demo (STEAM_0:0:29212178) spawned SENT lvs_starfighter_vwing
+Mon Nov 20 22:57:55 2023	IA Commander Demo (STEAM_0:0:29212178) spawned SENT lvs_fakehover_iftx
+Mon Nov 20 22:57:58 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Mon Nov 20 22:58:03 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Mon Nov 20 22:58:08 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Mon Nov 20 22:58:25 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): thank you
+Mon Nov 20 22:58:26 2023	IA Commander Demo was killed by Entity [3561][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Mon Nov 20 22:58:31 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Mon Nov 20 22:58:36 2023	SHW Commander Pip was killed by Entity [3723][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Mon Nov 20 22:58:36 2023	IA Commander Demo (STEAM_0:0:29212178) spawned SENT lvs_starfighter_droidtrifighter
+Mon Nov 20 22:58:44 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 22:58:45 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /ooc we need more music disc
+Mon Nov 20 22:58:55 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013) spawned SENT dewitsenate
+Mon Nov 20 22:59:12 2023	IA Commander Demo (STEAM_0:0:29212178) spawned SENT lvs_starfighter_vulturedroid
+Mon Nov 20 22:59:23 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Mon Nov 20 23:00:08 2023	IA CPL 7562 William was killed by Entity [3755][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Mon Nov 20 23:00:08 2023	IA Commander Demo was killed by Entity [3755][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Mon Nov 20 23:00:16 2023	DT E5 O30 (STEAM_0:1:161014837): ok
+Mon Nov 20 23:00:33 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // i think my gmod has a memory leak
+Mon Nov 20 23:00:36 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // ill be back
+Mon Nov 20 23:00:38 2023	DT E5 O30 (STEAM_0:1:161014837) disconnected
+Mon Nov 20 23:00:42 2023	SHW Commander Pip was killed by Entity [2848][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Mon Nov 20 23:00:48 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 23:00:51 2023	Lieutenant Scratchma (STEAM_0:0:55135130) disconnected
+Mon Nov 20 23:00:56 2023	Shadow Colonel Furboy was killed by Inquisitor Ares with a weapon_lightsaber
+Mon Nov 20 23:01:02 2023	Shadow Colonel Furboy (STEAM_0:0:63471237) spawned
+Mon Nov 20 23:01:12 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // alright im back from being afk, a lot of people are on wow
+Mon Nov 20 23:01:17 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // anyway going afk 
+Mon Nov 20 23:01:17 2023	Inquisitor Ares was killed by Shadow Colonel Furboy with a rw_sw_t21
+Mon Nov 20 23:01:25 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /ooc you missed a small rakghoual even
+Mon Nov 20 23:01:26 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Mon Nov 20 23:01:28 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /ooc event
+Mon Nov 20 23:02:27 2023	IA CPL 7562 William (STEAM_0:1:44753757): // Bombs are pretty cool
+Mon Nov 20 23:03:25 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc butter join altas gen
+Mon Nov 20 23:03:35 2023	Inquisitor Ares (STEAM_0:1:78700995): // gimme a minute gmod lagged my pc
+Mon Nov 20 23:03:38 2023	eggs (STEAM_0:0:55135130) has joined the game
+Mon Nov 20 23:03:38 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 23:03:47 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /ooc should i leave naval 
+Mon Nov 20 23:04:42 2023	Lieutenant Scratchma (STEAM_0:0:55135130): // up to you
+Mon Nov 20 23:04:56 2023	Lieutenant Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 23:04:57 2023	Lieutenant Scratchma (STEAM_0:0:55135130): /name ISB Deputy Chief Scratchma
+Mon Nov 20 23:04:58 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected
+Mon Nov 20 23:04:59 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013) spawned
+Mon Nov 20 23:05:14 2023	Emperor Sheev Palpatine (STEAM_0:1:76110013): /name Naval 99th Captain Zeta
+Mon Nov 20 23:05:31 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // you are one of two people in naval
+Mon Nov 20 23:05:36 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Mon Nov 20 23:05:47 2023	IA CPL 7562 William (STEAM_0:1:44753757): /sleep
+Mon Nov 20 23:05:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc yeah but naval kinda useless on ground
+Mon Nov 20 23:05:59 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // real
+Mon Nov 20 23:06:12 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // you are basically shock but you have black clothes
+Mon Nov 20 23:06:24 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc idk where to transfer to
+Mon Nov 20 23:06:32 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // its all up to you
+Mon Nov 20 23:07:36 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Mon Nov 20 23:07:52 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /citizen
+Mon Nov 20 23:07:55 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /novacommander
+Mon Nov 20 23:08:03 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /novacommander
+Mon Nov 20 23:08:05 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Mon Nov 20 23:08:07 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Greetings
+Mon Nov 20 23:08:27 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): Things are going decent, to my knowledge
+Mon Nov 20 23:08:39 2023	NOVA CMD Heretic (STEAM_0:1:84791284): hello
+Mon Nov 20 23:08:51 2023	IA CPL 7562 William (STEAM_0:1:44753757): /sleep
+Mon Nov 20 23:08:51 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Mon Nov 20 23:08:58 2023	NOVA CMD Heretic (STEAM_0:1:84791284): There was an attack
+Mon Nov 20 23:09:12 2023	NOVA CMD Heretic (STEAM_0:1:84791284): Weird deepfried gremlins maybe
+Mon Nov 20 23:09:22 2023	NOVA CMD Heretic (STEAM_0:1:84791284): i dont know all i saw was my own bones
+Mon Nov 20 23:09:35 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /comms can i get a squad to patrol the city and keep the citizens under control
+Mon Nov 20 23:09:40 2023	NOVA CMD Heretic (STEAM_0:1:84791284): yes
+Mon Nov 20 23:10:01 2023	Shadow Colonel Furboy (STEAM_0:0:63471237) disconnected
+Mon Nov 20 23:10:10 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /advert [imp] Can i get a squad to patrol the city to keep the citizens under control
+Mon Nov 20 23:10:31 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /me checks id
+Mon Nov 20 23:13:55 2023	IA CPL 7562 William (STEAM_0:1:44753757): /me salutes
+Mon Nov 20 23:15:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): 
+Mon Nov 20 23:15:56 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): 
+Mon Nov 20 23:16:57 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_citizen
+Mon Nov 20 23:17:05 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_citizen
+Mon Nov 20 23:17:07 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:17:07 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:17:19 2023	Inquisitor Ares (STEAM_0:1:78700995) disconnected
+Mon Nov 20 23:18:08 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Mon Nov 20 23:18:18 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc trying to find the tank
+Mon Nov 20 23:19:08 2023	Xanderr (STEAM_0:0:63471237) has joined the game
+Mon Nov 20 23:19:08 2023	Shadow Colonel Furboy (STEAM_0:0:63471237) spawned
+Mon Nov 20 23:19:17 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc go on without tank
+Mon Nov 20 23:19:19 2023	IA Commander Demo (STEAM_0:0:29212178): /ooc Tank? Where? I want it
+Mon Nov 20 23:19:39 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned SENT march_of_the_resistance
+Mon Nov 20 23:19:40 2023	IA Commander Demo (STEAM_0:0:29212178) spawned SENT landspeeder
+Mon Nov 20 23:20:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /name Random Civ
+Mon Nov 20 23:20:13 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): /shadowcommand
+Mon Nov 20 23:20:14 2023	Random Civ (STEAM_0:1:76110013): /advert Down with the empire 
+Mon Nov 20 23:20:16 2023	Shadow Colonel Furboy (STEAM_0:0:63471237) spawned
+Mon Nov 20 23:20:29 2023	Shadow Colonel Furboy (STEAM_0:0:63471237): /name Shadow Colonel Fox
+Mon Nov 20 23:20:42 2023	Random Civ (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:21:18 2023	Random Civ (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:21:22 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert Tell me the location of that Civilian
+Mon Nov 20 23:21:26 2023	IA Commander Demo was killed by Themself with a suicide trick
+Mon Nov 20 23:21:26 2023	Random Civ (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:21:26 2023	Random Civ (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:21:27 2023	Random Civ (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:21:28 2023	Random Civ (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:21:31 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Mon Nov 20 23:21:33 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert I must ask him a question
+Mon Nov 20 23:21:40 2023	Random Civ (STEAM_0:1:76110013): /name Naval 99th Captain Zeta
+Mon Nov 20 23:21:52 2023	IA Commander Demo (STEAM_0:0:29212178) spawned SENT xj6
+Mon Nov 20 23:22:01 2023	STL_Butter (STEAM_0:1:78700995) has joined the game
+Mon Nov 20 23:22:01 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Mon Nov 20 23:22:03 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /advert [IMP] I am picking up multiple life form scans near the docks
+Mon Nov 20 23:22:06 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Mon Nov 20 23:22:12 2023	IA Commander Demo (STEAM_0:0:29212178) spawned SENT landspeeder
+Mon Nov 20 23:22:15 2023	MyTankHasAFlat (STEAM_0:1:152928599) has joined the game
+Mon Nov 20 23:22:15 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 23:22:28 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert [IMP] Enroute
+Mon Nov 20 23:22:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:22:29 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:22:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:22:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:22:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:22:47 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:22:58 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Mon Nov 20 23:23:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:03 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:05 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:06 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:06 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:07 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:08 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:12 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:12 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:13 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:14 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:16 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:16 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:17 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) spawned
+Mon Nov 20 23:23:17 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:17 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:18 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:25 2023	Shadow Colonel Fox (STEAM_0:0:63471237): /advert [IMP] Gunfire from the docks
+Mon Nov 20 23:23:32 2023	IA Commander Demo was killed by Themself with a suicide trick
+Mon Nov 20 23:23:37 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Mon Nov 20 23:23:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:43 2023	IA Commander Demo (STEAM_0:0:29212178): /ooc bro those cars lmao
+Mon Nov 20 23:23:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:45 2023	Shadow Colonel Fox (STEAM_0:0:63471237): Yes
+Mon Nov 20 23:23:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:54 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:55 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:55 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:56 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:56 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:57 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:23:57 2023	Shadow Colonel Fox (STEAM_0:0:63471237): Multiple hostiles on the other side
+Mon Nov 20 23:24:29 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert [IMP] SIGNIFIGANT rebel activity at the docks
+Mon Nov 20 23:24:40 2023	IA Commander Demo (STEAM_0:0:29212178): /name Richard Kewjoe
+Mon Nov 20 23:24:41 2023	Richard Kewjoe (STEAM_0:0:29212178) spawned
+Mon Nov 20 23:24:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /advert [IMP] Might be a rebel cell in this city
+Mon Nov 20 23:24:55 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert [IMP] All available troopers to the docks. Leave no rebel surivors
+Mon Nov 20 23:25:05 2023	Inquisitor Ares (STEAM_0:1:78700995): /name Inquisitor Acolyte Ares
+Mon Nov 20 23:25:08 2023	Richard Kewjoe (STEAM_0:0:29212178) spawned SENT republic_speeder
+Mon Nov 20 23:25:10 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:11 2023	Dishwasher (STEAM_0:1:169781558) has joined the game
+Mon Nov 20 23:25:11 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 23:25:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:12 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:12 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:12 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:13 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:13 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:14 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:18 2023	Inquisitor Acolyte Ares (STEAM_0:1:78700995): /name Inquisitor Ares
+Mon Nov 20 23:25:22 2023	zachs2003 (STEAM_0:0:546893200) has joined the game
+Mon Nov 20 23:25:22 2023	zachs2003 (STEAM_0:0:546893200) spawned
+Mon Nov 20 23:25:29 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:30 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:31 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:31 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:32 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:32 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:33 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:34 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:35 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:36 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:25:37 2023	SHW SGT 8008 UniTankk (STEAM_0:1:152928599) disconnected
+Mon Nov 20 23:25:57 2023	Shadow Colonel Fox (STEAM_0:0:63471237): Thanks
+Mon Nov 20 23:26:24 2023	Shadow Colonel Fox (STEAM_0:0:63471237): /roll
+Mon Nov 20 23:26:30 2023	Richard Kewjoe (STEAM_0:0:29212178) spawned SENT republic_speeder
+Mon Nov 20 23:27:14 2023	DeathStalker (STEAM_0:1:124958304) has joined the game
+Mon Nov 20 23:27:14 2023	DeathStalker (STEAM_0:1:124958304) spawned
+Mon Nov 20 23:27:19 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /advert [IMP] Rebels have breached the base
+Mon Nov 20 23:27:21 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:22 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:22 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:23 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:27 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:29 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:30 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:44 2023	Richard Kewjoe was killed by Themself with a suicide trick
+Mon Nov 20 23:27:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:49 2023	Richard Kewjoe (STEAM_0:0:29212178) spawned
+Mon Nov 20 23:27:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:53 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:53 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:54 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:54 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:55 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:55 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:57 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:58 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:59 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:27:59 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:00 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:00 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:01 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:01 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:35 2023	Richard Kewjoe (STEAM_0:0:29212178): https://discord.gg/X5rXaSxT
+Mon Nov 20 23:28:49 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:53 2023	SHW Commander Pip was killed by Richard Kewjoe with a rw_sw_e5s
+Mon Nov 20 23:28:55 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:56 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:57 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:57 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:59 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:28:59 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 23:29:00 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:00 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:01 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:01 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:01 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:03 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:03 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:05 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:05 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:06 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:06 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:09 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:09 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:32 2023	Richard Kewjoe (STEAM_0:0:29212178): /job Biker Guy
+Mon Nov 20 23:29:38 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:38 2023	Richard Kewjoe (STEAM_0:0:29212178) spawned SENT speeder_bike
+Mon Nov 20 23:29:38 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:38 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:38 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:39 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:39 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:39 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:40 2023	Inquisitor Ares was killed by NPC [3775][npc_combine_s] with a rw_sw_a280
+Mon Nov 20 23:29:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:45 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Mon Nov 20 23:29:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:47 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:47 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:48 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:48 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:48 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:49 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:49 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:57 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:29:59 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:00 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:00 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:01 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:03 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:05 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:06 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:21 2023	Richard Kewjoe (STEAM_0:0:29212178) spawned
+Mon Nov 20 23:30:26 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:27 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:27 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:30 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:31 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:32 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:33 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:33 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:41 2023	zachs2003 (STEAM_0:0:546893200) disconnected
+Mon Nov 20 23:30:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:30:45 2023	Richard Kewjoe (STEAM_0:0:29212178): /name CT LCPL 1332 Vik
+Mon Nov 20 23:30:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:01 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:03 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:05 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Mon Nov 20 23:31:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:16 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:16 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:17 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:18 2023	NOVA CMD Heretic was killed by Inquisitor Ares with a weapon_lightsaber
+Mon Nov 20 23:31:18 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:19 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:19 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:19 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:19 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:20 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:21 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:27 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:28 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Mon Nov 20 23:31:29 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:30 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:30 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:31 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:31 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:34 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:34 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:36 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:37 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:37 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:38 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:38 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:39 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:47 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:47 2023	IA CPL 7562 William (STEAM_0:1:44753757): /advert medbay has been cleared
+Mon Nov 20 23:31:47 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:47 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:56 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 23:31:58 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:31:59 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:32:00 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:32:00 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:32:01 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:32:01 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:32:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:32:03 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:32:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:32:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:32:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:32:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:32:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:32:05 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:32:08 2023	CocoJelly (STEAM_0:0:626205508) has joined the game
+Mon Nov 20 23:32:08 2023	CocoJelly (STEAM_0:0:626205508) spawned
+Mon Nov 20 23:32:41 2023	CT LCPL 1332 Vik (STEAM_0:0:29212178): 
+Mon Nov 20 23:32:58 2023	Shadow Colonel Fox (STEAM_0:0:63471237): Clear
+Mon Nov 20 23:33:03 2023	Shadow Colonel Fox (STEAM_0:0:63471237): None
+Mon Nov 20 23:33:14 2023	Shadow Colonel Fox (STEAM_0:0:63471237): Engine?
+Mon Nov 20 23:33:19 2023	Shadow Colonel Fox (STEAM_0:0:63471237): Power*
+Mon Nov 20 23:33:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:39 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:41 2023	NOVA CMD Heretic (STEAM_0:1:84791284): ty
+Mon Nov 20 23:33:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:47 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:49 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:53 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:54 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:55 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:55 2023	Shadow Colonel Fox (STEAM_0:0:63471237): /advert Hostiles in reactor
+Mon Nov 20 23:33:56 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:59 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:33:59 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:00 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:00 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:01 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:01 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:03 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:10 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:12 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:37 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:38 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:38 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:40 2023	Shadow Colonel Fox (STEAM_0:0:63471237) spawned
+Mon Nov 20 23:34:40 2023	Inquisitor Ares was killed by NPC [3824][npc_combine_s] with a rw_sw_a280
+Mon Nov 20 23:34:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:43 2023	SHW Commander Pip was killed by NPC [3814][npc_combine_s] with a rw_sw_a280
+Mon Nov 20 23:34:49 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:56 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:57 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:58 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:58 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:34:59 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:00 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:07 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:07 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:08 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:08 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 23:35:08 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:09 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:09 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:35:29 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Mon Nov 20 23:35:34 2023	IA CPL 7562 William was killed by NPC [2829][npc_combine_s] with a rw_sw_a280
+Mon Nov 20 23:35:35 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Mon Nov 20 23:35:35 2023	Shadow Colonel Fox (STEAM_0:0:63471237): Med
+Mon Nov 20 23:35:37 2023	Shadow Colonel Fox (STEAM_0:0:63471237) spawned
+Mon Nov 20 23:36:08 2023	NOVA CMD Heretic was killed by NPC [3801][npc_combine_s] with a rw_sw_a280
+Mon Nov 20 23:36:16 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Mon Nov 20 23:36:37 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Mon Nov 20 23:37:22 2023	Shadow Colonel Fox (STEAM_0:0:63471237): Many thanks
+Mon Nov 20 23:37:35 2023	Inquisitor Ares (STEAM_0:1:78700995): /advert [IMP] Reactor is clear
+Mon Nov 20 23:37:41 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Affirm
+Mon Nov 20 23:37:47 2023	SHW Commander Pip was killed by Entity [2188][trigger_hurt] with a trigger_hurt
+Mon Nov 20 23:37:48 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /advert [IMP] I am detecting multiple ships coming into the atmosphere
+Mon Nov 20 23:37:53 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Mon Nov 20 23:37:53 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Mon Nov 20 23:37:55 2023	CT LCPL 1332 Vik (STEAM_0:0:29212178): https://discord.gg/X5rXaSxT
+Mon Nov 20 23:38:34 2023	zachs2003 (STEAM_0:0:546893200) has joined the game
+Mon Nov 20 23:38:34 2023	zachs2003 (STEAM_0:0:546893200) spawned
+Mon Nov 20 23:38:57 2023	NOVA CMD Heretic (STEAM_0:1:84791284): work what audio cut
+Mon Nov 20 23:38:59 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Sim Rooms are clear
+Mon Nov 20 23:39:06 2023	NOVA CMD Heretic (STEAM_0:1:84791284): munitions like the artillery?
+Mon Nov 20 23:39:16 2023	NOVA CMD Heretic (STEAM_0:1:84791284): yea
+Mon Nov 20 23:39:26 2023	CT LCPL 1332 Vik (STEAM_0:0:29212178): /name IA Commander Demo
+Mon Nov 20 23:39:27 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Mon Nov 20 23:39:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned SENT calamari
+Mon Nov 20 23:39:42 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Brig is clear
+Mon Nov 20 23:39:53 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned SENT u-wing
+Mon Nov 20 23:39:58 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned SENT u-wing
+Mon Nov 20 23:40:02 2023	DeathStalker (STEAM_0:1:124958304) disconnected
+Mon Nov 20 23:40:10 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:10 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:12 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:12 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:14 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:14 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:17 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:17 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:18 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:18 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:19 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:19 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:20 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:20 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:22 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:22 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:22 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:24 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:24 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:24 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:27 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:27 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:29 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:40:45 2023	Naval 99th Captain Zeta was killed by NOVA CMD Heretic with a or_gun_platform_artillery
+Mon Nov 20 23:40:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned
+Mon Nov 20 23:40:55 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): 
+Mon Nov 20 23:40:59 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): 
+Mon Nov 20 23:41:00 2023	Inquisitor Ares (STEAM_0:1:78700995): // dish back at it again with his hobo powers
+Mon Nov 20 23:41:19 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): 
+Mon Nov 20 23:41:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:47 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:47 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:47 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:48 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:48 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:49 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:49 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:49 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:53 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:41:57 2023	zachs2003 (STEAM_0:0:546893200) disconnected
+Mon Nov 20 23:42:14 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:15 2023	DeathStalker (STEAM_0:1:124958304) has joined the game
+Mon Nov 20 23:42:15 2023	DeathStalker (STEAM_0:1:124958304) spawned
+Mon Nov 20 23:42:16 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:16 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:25 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:27 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:29 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:30 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:30 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:31 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:31 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:32 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:32 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:33 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:34 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:34 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:35 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:36 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:42:40 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /advert Affective Artillery out of Range (Paste 100 meters)
+Mon Nov 20 23:42:49 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc i can find us better rebel npcs that give a challenge
+Mon Nov 20 23:42:49 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert Understood
+Mon Nov 20 23:42:52 2023	IA Commander Demo (STEAM_0:0:29212178): IA
+Mon Nov 20 23:42:52 2023	IA Commander Demo (STEAM_0:0:29212178): Ia
+Mon Nov 20 23:43:01 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:43:01 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:43:09 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned SENT u-wing
+Mon Nov 20 23:43:18 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:43:18 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:43:24 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned
+Mon Nov 20 23:43:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned SENT u-wing
+Mon Nov 20 23:43:32 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:43:32 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:43:36 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:43:36 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:43:45 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:43:45 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:43:51 2023	Shadow Colonel Fox (STEAM_0:0:63471237): /advert [IMP] City medical centre cleared
+Mon Nov 20 23:44:08 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned
+Mon Nov 20 23:44:13 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): 
+Mon Nov 20 23:44:17 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): 
+Mon Nov 20 23:44:23 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:24 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:24 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:24 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:25 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:25 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:25 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:26 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:26 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:26 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:26 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:27 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:27 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:47 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:48 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:48 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:48 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:53 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:53 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:53 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:53 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:53 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:54 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:54 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:56 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:57 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:44:58 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:19 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:20 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:21 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:22 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:23 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:26 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:27 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:27 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:32 2023	Shadow Colonel Fox (STEAM_0:0:63471237): /advert Any updates on the rebel attack?
+Mon Nov 20 23:45:36 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:37 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:37 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:38 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:45:45 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Negative, continue patrol
+Mon Nov 20 23:45:51 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /advert Front Hangar is Clean
+Mon Nov 20 23:46:01 2023	Inquisitor Ares (STEAM_0:1:78700995): /advert They have taken sith temple
+Mon Nov 20 23:46:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:05 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:06 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:06 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:07 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:08 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:08 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:09 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:10 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:10 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:12 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:13 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:13 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:14 2023	DeathStalker (STEAM_0:1:124958304) disconnected
+Mon Nov 20 23:46:14 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:14 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:16 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:17 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:46:19 2023	Inquisitor Ares (STEAM_0:1:78700995): /advert granted
+Mon Nov 20 23:46:20 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Has anyone checked the Industrial Sector?
+Mon Nov 20 23:46:21 2023	Shadow Colonel Fox (STEAM_0:0:63471237): /advert Enroute to assist
+Mon Nov 20 23:47:01 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Warehouses are clear
+Mon Nov 20 23:47:02 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:47:02 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:47:07 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc God you are there
+Mon Nov 20 23:47:11 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // i felt that 
+Mon Nov 20 23:47:13 2023	IA Commander Demo (STEAM_0:0:29212178): /OOC CONSOLE ARE YOU OK
+Mon Nov 20 23:47:24 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // console speaks the truth
+Mon Nov 20 23:47:38 2023	zachs2003 (STEAM_0:0:546893200) has joined the game
+Mon Nov 20 23:47:38 2023	zachs2003 (STEAM_0:0:546893200) spawned
+Mon Nov 20 23:48:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:02 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:08 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:08 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:48:08 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:48:09 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:09 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:16 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:16 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:17 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:17 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:18 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:18 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:19 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:19 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:20 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:48:20 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:48:37 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:39 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:45 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:47 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:47 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:48 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:48:48 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:10 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:16 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:18 2023	DeathStalker (STEAM_0:1:124958304) has joined the game
+Mon Nov 20 23:49:18 2023	DeathStalker (STEAM_0:1:124958304) spawned
+Mon Nov 20 23:49:18 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:23 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:24 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:24 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:53 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:55 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:56 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:57 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:58 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:49:59 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:00 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:06 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:06 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:07 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:07 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:08 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:09 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:14 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:21 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:22 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:22 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:23 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:24 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:25 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:25 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:26 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:26 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:27 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:28 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:39 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:41 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:42 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:43 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:44 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:49 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:50 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:53 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:50:53 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:51:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:51:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:51:05 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:51:05 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:51:06 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:51:06 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:51:07 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:51:08 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:51:08 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:51:09 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:51:10 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:51:11 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned NPC npc_combine_s
+Mon Nov 20 23:51:34 2023	DeathStalker (STEAM_0:1:124958304) disconnected
+Mon Nov 20 23:52:05 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert The Inquistitorius Sector is clear
+Mon Nov 20 23:52:23 2023	DeathStalker (STEAM_0:1:124958304) has joined the game
+Mon Nov 20 23:52:23 2023	DeathStalker (STEAM_0:1:124958304) spawned
+Mon Nov 20 23:52:26 2023	Inquisitor Ares (STEAM_0:1:78700995): /advert Sith Temple is clear
+Mon Nov 20 23:52:27 2023	NOVA CMD Heretic (STEAM_0:1:84791284): holas
+Mon Nov 20 23:52:31 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // wut
+Mon Nov 20 23:52:43 2023	IA CPL 7562 William (STEAM_0:1:44753757): // cock even
+Mon Nov 20 23:52:52 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // WHO ARE YOYU
+Mon Nov 20 23:55:04 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /advert hospital seems clear
+Mon Nov 20 23:55:17 2023	IA CPL 7562 William (STEAM_0:1:44753757): u just look at ground and alt+e
+Mon Nov 20 23:55:22 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc we do need better npcs tho
+Mon Nov 20 23:55:32 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // actually we need worse NPCs 
+Mon Nov 20 23:55:40 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert IA and Special forces, begin patrol on Vardos. 
+Mon Nov 20 23:55:45 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // thems got aimbot
+Mon Nov 20 23:55:49 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:55:49 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Mon Nov 20 23:55:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc no the ones we have are worse
+Mon Nov 20 23:55:52 2023	Inquisitor Ares (STEAM_0:1:78700995): // I can clear a room with over 10 of them by myself
+Mon Nov 20 23:55:58 2023	Shadow Colonel Fox (STEAM_0:0:63471237): /roll
+Mon Nov 20 23:56:33 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /advert The Civilian Cloning Bay is Clear
+Mon Nov 20 23:57:17 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Clubs and Hobo camps are clear
+Mon Nov 20 23:57:46 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert We need a team on sewers and below the Warehouses
+Mon Nov 20 23:57:49 2023	Spark (STEAM_0:1:460412980) has joined the game
+Mon Nov 20 23:57:49 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Mon Nov 20 23:57:59 2023	Inquisitor Ares (STEAM_0:1:78700995): /advert I already cleared out below the warehouses
+Mon Nov 20 23:58:03 2023	DeathStalker (STEAM_0:1:124958304): /me salutes
+Mon Nov 20 23:58:08 2023	Inquisitor Ares (STEAM_0:1:78700995): /advert I am checking the sewers right now
+Mon Nov 20 23:58:27 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /advert the water is clear
+Mon Nov 20 23:58:46 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Deputy Chief, is the ISB Headquarters clear?
+Mon Nov 20 23:58:52 2023	CocoJelly (STEAM_0:0:626205508) disconnected
+Mon Nov 20 23:59:14 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /advert I am on my way there now
+Mon Nov 20 23:59:23 2023	Inquisitor Ares (STEAM_0:1:78700995): /advert Sewers are clear
+Mon Nov 20 23:59:28 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Mon Nov 20 23:59:37 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Mon Nov 20 23:59:57 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Mon Nov 20 23:59:58 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Mon Nov 20 23:59:59 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:00:26 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): /advert sewers are clear
+Tue Nov 21 00:00:52 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:00:53 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:00:58 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:01:00 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:01:15 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /me <flash c=183,202,113>Naval Warrant Officer | Numbers | Real ID | Bagel Enthusiast | Heretic</flash>
+Tue Nov 21 00:01:27 2023	IA Commander Demo (STEAM_0:0:29212178): ./me stripps comms and weapons
+Tue Nov 21 00:01:28 2023	ST Commander Spark (STEAM_0:1:460412980): /me STEALS HIS SHIT
+Tue Nov 21 00:01:34 2023	DeathStalker (STEAM_0:1:124958304): /me stripps comms and weapons
+Tue Nov 21 00:01:49 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): /advert under the warehouses is clear
+Tue Nov 21 00:01:59 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Everyone report to hanger.
+Tue Nov 21 00:02:13 2023	ST Commander Spark (STEAM_0:1:460412980): /advert no
+Tue Nov 21 00:02:21 2023	IA Commander Demo (STEAM_0:0:29212178): /ooc nah I'm good
+Tue Nov 21 00:02:23 2023	zachs2003 (STEAM_0:0:546893200): /me stripps comms and weapons
+Tue Nov 21 00:02:53 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Scratch that order, rebels in Apartment Complex.
+Tue Nov 21 00:02:58 2023	IA Commander Demo (STEAM_0:0:29212178): ./y clear
+Tue Nov 21 00:03:07 2023	DeathStalker (STEAM_0:1:124958304): /y clear
+Tue Nov 21 00:03:16 2023	zachs2003 (STEAM_0:0:546893200): /y clear
+Tue Nov 21 00:03:19 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:03:30 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:04:18 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Rebels cleared, only in the lobby
+Tue Nov 21 00:04:25 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Back to hanger
+Tue Nov 21 00:04:56 2023	IA Commander Demo (STEAM_0:0:29212178) spawned NPC npc_citizen
+Tue Nov 21 00:05:25 2023	DeathStalker (STEAM_0:1:124958304): /ooc spark
+Tue Nov 21 00:05:40 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:05:52 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:06:17 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Tue Nov 21 00:06:17 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Tue Nov 21 00:06:31 2023	IA Commander Demo (STEAM_0:0:29212178): ./name IA PVT #### Name
+Tue Nov 21 00:07:04 2023	Shadow Colonel Fox (STEAM_0:0:63471237): /roll
+Tue Nov 21 00:07:11 2023	zachs2003 (STEAM_0:0:546893200): /name IA  PVP 148 zach
+Tue Nov 21 00:07:29 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Tue Nov 21 00:07:29 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Tue Nov 21 00:07:47 2023	IA Commander Demo (STEAM_0:0:29212178): /name IA PVT 4734 Demo
+Tue Nov 21 00:07:54 2023	IA  PVP 148 zach (STEAM_0:0:546893200): /name IA  PVP 1480 Zach
+Tue Nov 21 00:08:19 2023	IA  PVP 1480 Zach (STEAM_0:0:546893200): /name IA  PVT 1480 Zach
+Tue Nov 21 00:08:37 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc no
+Tue Nov 21 00:08:42 2023	Inquisitor Ares (STEAM_0:1:78700995): // yes
+Tue Nov 21 00:08:45 2023	IA PVT 4734 Demo (STEAM_0:0:29212178): IA  PVT 1480 Zach SteamID [ STEAM_0:0:546893200 ]  SteamID64 [ 76561199054052128 ] Steam Name [ IA  PVT 1480 Zach ]
+Tue Nov 21 00:08:48 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc spark is a bitch
+Tue Nov 21 00:08:53 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // yuh
+Tue Nov 21 00:08:58 2023	DeathStalker (STEAM_0:1:124958304): im being trained by spark
+Tue Nov 21 00:09:25 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /pm spark you should promote tracy... NOW!
+Tue Nov 21 00:09:33 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /pm spark she did a really good job 
+Tue Nov 21 00:09:40 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc CRACKMA
+Tue Nov 21 00:09:45 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // crackma
+Tue Nov 21 00:09:46 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc IM NOT A MEDIC I CANT 
+Tue Nov 21 00:09:46 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc yall are good for DB
+Tue Nov 21 00:09:49 2023	NOVA CMD Heretic (STEAM_0:1:84791284): e
+Tue Nov 21 00:09:52 2023	NOVA CMD Heretic (STEAM_0:1:84791284): ayyy
+Tue Nov 21 00:09:55 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // didnt you do her tryout?
+Tue Nov 21 00:09:58 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc im planning a off world
+Tue Nov 21 00:10:23 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // im also planning an off world with dishwasher and butter
+Tue Nov 21 00:10:23 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200) spawned
+Tue Nov 21 00:10:33 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // can we do off world events?
+Tue Nov 21 00:10:42 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // prolly
+Tue Nov 21 00:10:49 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): // which maps do we have?
+Tue Nov 21 00:10:49 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc we are now
+Tue Nov 21 00:10:59 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc idk blud
+Tue Nov 21 00:11:24 2023	DeathStalker (STEAM_0:1:124958304) disconnected
+Tue Nov 21 00:11:31 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /w pip test
+Tue Nov 21 00:11:41 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /pm pip test
+Tue Nov 21 00:11:45 2023	SHW Commander Pip (STEAM_0:1:169781558): /pm here it's /pm lmao
+Tue Nov 21 00:11:54 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /pm pip Mustafar off world event
+Tue Nov 21 00:12:12 2023	SHW Commander Pip (STEAM_0:1:169781558): /pm ares It's a mustafar off world event
+Tue Nov 21 00:12:47 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Tue Nov 21 00:12:47 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Tue Nov 21 00:12:53 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Tue Nov 21 00:12:53 2023	Inquisitor Ares (STEAM_0:1:78700995): 
+Tue Nov 21 00:12:53 2023	IA CPL 7562 William (STEAM_0:1:44753757): /sleep
+Tue Nov 21 00:12:53 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Tue Nov 21 00:12:53 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): 
+Tue Nov 21 00:13:04 2023	IA CPL 7562 William (STEAM_0:1:44753757): /sleep
+Tue Nov 21 00:13:04 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Tue Nov 21 00:13:29 2023	NOVA CMD Heretic (STEAM_0:1:84791284): i cant do a nova DB
+Tue Nov 21 00:13:31 2023	NOVA CMD Heretic (STEAM_0:1:84791284): LMAO
+Tue Nov 21 00:13:38 2023	NOVA CMD Heretic (STEAM_0:1:84791284): Shadow wants to join Nova
+Tue Nov 21 00:13:40 2023	Shadow Colonel Fox (STEAM_0:0:63471237): we can't do much of one anyways
+Tue Nov 21 00:13:41 2023	NOVA CMD Heretic (STEAM_0:1:84791284): :|
+Tue Nov 21 00:14:08 2023	Shadow Colonel Fox (STEAM_0:0:63471237) disconnected
+Tue Nov 21 00:14:16 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130) spawned
+Tue Nov 21 00:14:16 2023	ISB Deputy Chief Scratchma (STEAM_0:0:55135130): /name IA Vice Commander Scratchma
+Tue Nov 21 00:14:16 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:14:27 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:14:37 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) disconnected
+Tue Nov 21 00:14:47 2023	DeathStalker (STEAM_0:1:124958304) has joined the game
+Tue Nov 21 00:14:47 2023	DeathStalker (STEAM_0:1:124958304) spawned
+Tue Nov 21 00:15:04 2023	IA PVT 4734 Demo (STEAM_0:0:29212178): /name IA Commander Demo
+Tue Nov 21 00:15:10 2023	NOVA CMD Heretic (STEAM_0:1:84791284): mustard far event ong
+Tue Nov 21 00:15:14 2023	NOVA CMD Heretic (STEAM_0:1:84791284): we just gotta get a map
+Tue Nov 21 00:15:15 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /advert code go back to bunks
+Tue Nov 21 00:15:25 2023	IA Commander Demo (STEAM_0:0:29212178): /advert Denied wrong code
+Tue Nov 21 00:15:29 2023	NOVA CMD Heretic (STEAM_0:1:84791284): u got one?
+Tue Nov 21 00:15:31 2023	IA CPL 7562 William (STEAM_0:1:44753757): /advert Good copy.
+Tue Nov 21 00:15:33 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /advert go to bunks anyway
+Tue Nov 21 00:15:34 2023	NOVA CMD Heretic (STEAM_0:1:84791284): YES
+Tue Nov 21 00:15:36 2023	IA Commander Demo (STEAM_0:0:29212178): /advert Code HQ
+Tue Nov 21 00:15:40 2023	NOVA CMD Heretic (STEAM_0:1:84791284): also
+Tue Nov 21 00:15:40 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /me <flash c=183,202,113>Naval Warrant Officer | Numbers | Real ID | Bagel Enthusiast | Heretic</flash>
+Tue Nov 21 00:15:48 2023	NOVA CMD Heretic (STEAM_0:1:84791284): Kamino and Tatoine pod race event
+Tue Nov 21 00:15:55 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:16:06 2023	NOVA CMD Heretic (STEAM_0:1:84791284): YEsssss
+Tue Nov 21 00:16:11 2023	NOVA CMD Heretic (STEAM_0:1:84791284): we need a use for money
+Tue Nov 21 00:16:13 2023	DeathStalker (STEAM_0:1:124958304) spawned
+Tue Nov 21 00:16:15 2023	NOVA CMD Heretic (STEAM_0:1:84791284): Civ guns
+Tue Nov 21 00:16:22 2023	IA Commander Demo (STEAM_0:0:29212178) disconnected
+Tue Nov 21 00:16:24 2023	NOVA CMD Heretic (STEAM_0:1:84791284): Imp guns
+Tue Nov 21 00:16:30 2023	DeathStalker (STEAM_0:1:124958304): /name ST PVT 0186 Kepler
+Tue Nov 21 00:16:57 2023	NOVA CMD Heretic (STEAM_0:1:84791284): pog
+Tue Nov 21 00:17:34 2023	IA CPL 7562 William (STEAM_0:1:44753757): /sleep
+Tue Nov 21 00:17:41 2023	IA CPL 7562 William (STEAM_0:1:44753757): /sleep
+Tue Nov 21 00:17:41 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Tue Nov 21 00:17:48 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Tue Nov 21 00:18:06 2023	NOVA CMD Heretic (STEAM_0:1:84791284): Fiance forcing me to watch questionable steam games.
+Tue Nov 21 00:18:17 2023	NOVA CMD Heretic (STEAM_0:1:84791284): ill buy them when a sale comes out
+Tue Nov 21 00:18:28 2023	NOVA CMD Heretic (STEAM_0:1:84791284): dont worry about it kind of games
+Tue Nov 21 00:18:47 2023	IA CPL 7562 William was killed by ST Commander Spark with a rw_sw_nt242c
+Tue Nov 21 00:18:50 2023	NOVA CMD Heretic (STEAM_0:1:84791284): yeah its the ball in my head
+Tue Nov 21 00:18:50 2023	IA CPL 7562 William (STEAM_0:1:44753757) spawned
+Tue Nov 21 00:18:55 2023	NOVA CMD Heretic (STEAM_0:1:84791284): i have to reposition it
+Tue Nov 21 00:18:59 2023	ST Commander Spark was killed by IA Vice Commander Scratchma with a rw_sw_dlt19x
+Tue Nov 21 00:19:05 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Tue Nov 21 00:19:22 2023	SHW Commander Pip was killed by ST Commander Spark with a rw_sw_nt242c
+Tue Nov 21 00:19:27 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 00:19:56 2023	ST Commander Spark was killed by SHW Commander Pip with a rw_sw_t21b
+Tue Nov 21 00:19:58 2023	IA CPL 7562 William (STEAM_0:1:44753757): /name IA SGT 7562 William
+Tue Nov 21 00:20:01 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Tue Nov 21 00:20:35 2023	IA SGT 7562 William (STEAM_0:1:44753757) spawned
+Tue Nov 21 00:20:41 2023	NOVA CMD Heretic (STEAM_0:1:84791284): BRUH
+Tue Nov 21 00:21:35 2023	IA SGT 7562 William (STEAM_0:1:44753757) spawned
+Tue Nov 21 00:21:59 2023	IA SGT 7562 William (STEAM_0:1:44753757) spawned
+Tue Nov 21 00:22:02 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Tue Nov 21 00:22:02 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Tue Nov 21 00:22:19 2023	IA SGT 7562 William (STEAM_0:1:44753757) spawned
+Tue Nov 21 00:22:31 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Tue Nov 21 00:22:35 2023	NOVA CMD Heretic (STEAM_0:1:84791284): hes lying.
+Tue Nov 21 00:22:43 2023	NOVA CMD Heretic (STEAM_0:1:84791284): ?
+Tue Nov 21 00:22:47 2023	NOVA CMD Heretic (STEAM_0:1:84791284): Oh did u lose the other text
+Tue Nov 21 00:23:21 2023	SHW Commander Pip (STEAM_0:1:169781558): cheese
+Tue Nov 21 00:23:27 2023	SHW Commander Pip (STEAM_0:1:169781558): cheese
+Tue Nov 21 00:23:31 2023	SHW Commander Pip (STEAM_0:1:169781558): cheese
+Tue Nov 21 00:23:33 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): cheese
+Tue Nov 21 00:23:34 2023	SHW Commander Pip (STEAM_0:1:169781558): cheese
+Tue Nov 21 00:23:35 2023	NOVA CMD Heretic (STEAM_0:1:84791284): cheese
+Tue Nov 21 00:23:37 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): cheese
+Tue Nov 21 00:23:37 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): cheese
+Tue Nov 21 00:23:38 2023	NOVA CMD Heretic (STEAM_0:1:84791284): cheese
+Tue Nov 21 00:23:39 2023	Inquisitor Ares (STEAM_0:1:78700995): cheese
+Tue Nov 21 00:23:40 2023	NOVA CMD Heretic (STEAM_0:1:84791284): cheese
+Tue Nov 21 00:23:40 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 00:23:40 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): cheese
+Tue Nov 21 00:23:41 2023	SHW Commander Pip (STEAM_0:1:169781558): cheese
+Tue Nov 21 00:23:43 2023	Inquisitor Ares (STEAM_0:1:78700995): cheese
+Tue Nov 21 00:23:45 2023	Inquisitor Ares (STEAM_0:1:78700995): cheese
+Tue Nov 21 00:23:46 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): cheese
+Tue Nov 21 00:23:46 2023	NOVA CMD Heretic (STEAM_0:1:84791284): cheese
+Tue Nov 21 00:23:47 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): cheese
+Tue Nov 21 00:23:51 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): cheese
+Tue Nov 21 00:23:51 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 00:23:51 2023	Inquisitor Ares (STEAM_0:1:78700995): cheese
+Tue Nov 21 00:23:52 2023	NOVA CMD Heretic (STEAM_0:1:84791284): cheese
+Tue Nov 21 00:23:54 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): cheese
+Tue Nov 21 00:23:54 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 00:23:56 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 00:23:56 2023	Inquisitor Ares (STEAM_0:1:78700995): cheese
+Tue Nov 21 00:23:56 2023	NOVA CMD Heretic (STEAM_0:1:84791284): cheese
+Tue Nov 21 00:23:57 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): cheese
+Tue Nov 21 00:23:58 2023	Inquisitor Ares (STEAM_0:1:78700995): cheese
+Tue Nov 21 00:23:59 2023	NOVA CMD Heretic (STEAM_0:1:84791284): cheese
+Tue Nov 21 00:24:00 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): cheese
+Tue Nov 21 00:24:00 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): cheese
+Tue Nov 21 00:24:01 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 00:24:02 2023	Inquisitor Ares (STEAM_0:1:78700995): cheese
+Tue Nov 21 00:24:04 2023	Inquisitor Ares (STEAM_0:1:78700995): cheese
+Tue Nov 21 00:24:04 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 00:24:05 2023	SHW Commander Pip (STEAM_0:1:169781558): helo
+Tue Nov 21 00:24:05 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): cheese
+Tue Nov 21 00:24:08 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): cheese
+Tue Nov 21 00:24:10 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 00:24:10 2023	Inquisitor Ares (STEAM_0:1:78700995): cheese
+Tue Nov 21 00:24:11 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): cheese
+Tue Nov 21 00:24:12 2023	NOVA CMD Heretic (STEAM_0:1:84791284): cheese
+Tue Nov 21 00:24:14 2023	SHW Commander Pip (STEAM_0:1:169781558): help
+Tue Nov 21 00:24:15 2023	Inquisitor Ares (STEAM_0:1:78700995): cheese
+Tue Nov 21 00:24:20 2023	SHW Commander Pip (STEAM_0:1:169781558): shut up
+Tue Nov 21 00:24:26 2023	Black Mesa Security Guard (STEAM_0:0:29212178) has joined the game
+Tue Nov 21 00:24:26 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Tue Nov 21 00:24:29 2023	NOVA CMD Heretic (STEAM_0:1:84791284): help
+Tue Nov 21 00:24:34 2023	SHW Commander Pip (STEAM_0:1:169781558): shut up
+Tue Nov 21 00:24:37 2023	IA SGT 7562 William (STEAM_0:1:44753757): /buyammo 4
+Tue Nov 21 00:24:40 2023	IA SGT 7562 William (STEAM_0:1:44753757): coming
+Tue Nov 21 00:24:41 2023	SHW Commander Pip (STEAM_0:1:169781558): cheese
+Tue Nov 21 00:24:44 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): cheese
+Tue Nov 21 00:24:45 2023	SHW Commander Pip (STEAM_0:1:169781558): help
+Tue Nov 21 00:24:47 2023	IA SGT 7562 William (STEAM_0:1:44753757): coming
+Tue Nov 21 00:24:49 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): pizza
+Tue Nov 21 00:24:50 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 00:24:50 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): coming
+Tue Nov 21 00:24:51 2023	SHW Commander Pip (STEAM_0:1:169781558): help
+Tue Nov 21 00:24:52 2023	IA SGT 7562 William (STEAM_0:1:44753757): coming
+Tue Nov 21 00:24:53 2023	SHW Commander Pip (STEAM_0:1:169781558): hi
+Tue Nov 21 00:24:54 2023	NOVA CMD Heretic (STEAM_0:1:84791284): voming
+Tue Nov 21 00:24:55 2023	IA SGT 7562 William (STEAM_0:1:44753757): coming
+Tue Nov 21 00:24:55 2023	NOVA CMD Heretic (STEAM_0:1:84791284): coming
+Tue Nov 21 00:24:59 2023	SHW Commander Pip (STEAM_0:1:169781558): hi
+Tue Nov 21 00:25:00 2023	NOVA CMD Heretic (STEAM_0:1:84791284): no
+Tue Nov 21 00:25:02 2023	NOVA CMD Heretic (STEAM_0:1:84791284): nope
+Tue Nov 21 00:25:03 2023	IA SGT 7562 William (STEAM_0:1:44753757): figures
+Tue Nov 21 00:25:04 2023	NOVA CMD Heretic (STEAM_0:1:84791284): yeah
+Tue Nov 21 00:25:04 2023	SHW Commander Pip (STEAM_0:1:169781558): yeah
+Tue Nov 21 00:25:08 2023	IA SGT 7562 William (STEAM_0:1:44753757): follow
+Tue Nov 21 00:25:11 2023	IA SGT 7562 William (STEAM_0:1:44753757): follow
+Tue Nov 21 00:25:14 2023	SHW Commander Pip (STEAM_0:1:169781558): figures
+Tue Nov 21 00:25:19 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:25:19 2023	IA SGT 7562 William (STEAM_0:1:44753757): here they come
+Tue Nov 21 00:25:21 2023	NOVA CMD Heretic (STEAM_0:1:84791284): figures
+Tue Nov 21 00:25:24 2023	IA SGT 7562 William (STEAM_0:1:44753757): here they come
+Tue Nov 21 00:25:25 2023	SHW Commander Pip (STEAM_0:1:169781558): here they come
+Tue Nov 21 00:25:26 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 00:25:26 2023	NOVA CMD Heretic (STEAM_0:1:84791284): here they come
+Tue Nov 21 00:25:28 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:25:29 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): coming
+Tue Nov 21 00:25:29 2023	IA SGT 7562 William (STEAM_0:1:44753757): omg
+Tue Nov 21 00:25:30 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): fiqures
+Tue Nov 21 00:25:31 2023	NOVA CMD Heretic (STEAM_0:1:84791284): omg
+Tue Nov 21 00:25:33 2023	SHW Commander Pip (STEAM_0:1:169781558): incoming
+Tue Nov 21 00:25:34 2023	IA SGT 7562 William (STEAM_0:1:44753757): oops
+Tue Nov 21 00:25:34 2023	NOVA CMD Heretic (STEAM_0:1:84791284): figures
+Tue Nov 21 00:25:36 2023	IA SGT 7562 William (STEAM_0:1:44753757): oops
+Tue Nov 21 00:25:39 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:25:40 2023	IA SGT 7562 William (STEAM_0:1:44753757): /buyammo 4
+Tue Nov 21 00:25:40 2023	NOVA CMD Heretic (STEAM_0:1:84791284): afk
+Tue Nov 21 00:25:40 2023	SHW Commander Pip (STEAM_0:1:169781558): oops
+Tue Nov 21 00:25:41 2023	NOVA CMD Heretic (STEAM_0:1:84791284): woah
+Tue Nov 21 00:25:42 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) disconnected
+Tue Nov 21 00:25:43 2023	IA SGT 7562 William (STEAM_0:1:44753757): too much info
+Tue Nov 21 00:25:45 2023	SHW Commander Pip (STEAM_0:1:169781558): woah
+Tue Nov 21 00:25:46 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:25:52 2023	SHW Commander Pip (STEAM_0:1:169781558): get out
+Tue Nov 21 00:25:53 2023	IA SGT 7562 William (STEAM_0:1:44753757): too much info
+Tue Nov 21 00:25:59 2023	IA SGT 7562 William (STEAM_0:1:44753757): wait for me
+Tue Nov 21 00:26:02 2023	SHW Commander Pip (STEAM_0:1:169781558): get out
+Tue Nov 21 00:26:08 2023	IA SGT 7562 William (STEAM_0:1:44753757): you never know
+Tue Nov 21 00:26:12 2023	IA SGT 7562 William (STEAM_0:1:44753757): whoops
+Tue Nov 21 00:26:14 2023	IA SGT 7562 William (STEAM_0:1:44753757): whoops
+Tue Nov 21 00:26:15 2023	IA Commander Demo (STEAM_0:0:29212178) spawned
+Tue Nov 21 00:26:22 2023	IA SGT 7562 William (STEAM_0:1:44753757): uh oh
+Tue Nov 21 00:26:23 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): cheese
+Tue Nov 21 00:26:26 2023	IA SGT 7562 William (STEAM_0:1:44753757): uh oh
+Tue Nov 21 00:26:27 2023	IA Commander Demo (STEAM_0:0:29212178): help
+Tue Nov 21 00:26:27 2023	IA SGT 7562 William (STEAM_0:1:44753757): uh oh
+Tue Nov 21 00:26:32 2023	IA SGT 7562 William (STEAM_0:1:44753757): coming
+Tue Nov 21 00:26:33 2023	IA SGT 7562 William (STEAM_0:1:44753757): coming
+Tue Nov 21 00:26:37 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): coming
+Tue Nov 21 00:26:39 2023	IA SGT 7562 William (STEAM_0:1:44753757): coming
+Tue Nov 21 00:26:46 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): yes
+Tue Nov 21 00:26:46 2023	IA SGT 7562 William (STEAM_0:1:44753757): coming
+Tue Nov 21 00:26:50 2023	IA SGT 7562 William (STEAM_0:1:44753757): figures
+Tue Nov 21 00:26:52 2023	IA SGT 7562 William (STEAM_0:1:44753757): figures
+Tue Nov 21 00:26:54 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:26:56 2023	IA SGT 7562 William (STEAM_0:1:44753757): too much info
+Tue Nov 21 00:26:58 2023	IA SGT 7562 William (STEAM_0:1:44753757): too much info
+Tue Nov 21 00:27:00 2023	IA Commander Demo (STEAM_0:0:29212178): zach enter the general vc in the imperial army discord
+Tue Nov 21 00:27:02 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:27:05 2023	IA SGT 7562 William (STEAM_0:1:44753757): too much info
+Tue Nov 21 00:27:09 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:27:10 2023	IA SGT 7562 William (STEAM_0:1:44753757): too much info
+Tue Nov 21 00:27:13 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:27:14 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:27:16 2023	IA SGT 7562 William (STEAM_0:1:44753757): too much info
+Tue Nov 21 00:27:19 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:27:20 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:27:22 2023	IA SGT 7562 William (STEAM_0:1:44753757): too much info
+Tue Nov 21 00:27:23 2023	IA Commander Demo (STEAM_0:0:29212178): zach enter general vc in imperial army discord
+Tue Nov 21 00:27:25 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:27:27 2023	IA SGT 7562 William (STEAM_0:1:44753757): uh oh
+Tue Nov 21 00:27:30 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:27:33 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:27:34 2023	IA SGT 7562 William (STEAM_0:1:44753757): coming
+Tue Nov 21 00:27:34 2023	IA Commander Demo (STEAM_0:0:29212178): zach you there?
+Tue Nov 21 00:27:38 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 00:27:47 2023	IA SGT 7562 William (STEAM_0:1:44753757): you and me both
+Tue Nov 21 00:27:50 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:27:51 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): dad
+Tue Nov 21 00:27:53 2023	IA SGT 7562 William (STEAM_0:1:44753757): coming
+Tue Nov 21 00:27:57 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): lol
+Tue Nov 21 00:28:01 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): /rp pistol whips the target in frontof them, dragging their lifeless corpse away into concealment.
+Tue Nov 21 00:28:05 2023	IA SGT 7562 William (STEAM_0:1:44753757): spread the word
+Tue Nov 21 00:28:10 2023	IA Commander Demo (STEAM_0:0:29212178): enter the imperial army general vc
+Tue Nov 21 00:28:14 2023	eggs (STEAM_0:0:55135130) has joined the game
+Tue Nov 21 00:28:14 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Tue Nov 21 00:28:16 2023	IA SGT 7562 William (STEAM_0:1:44753757): talking to me
+Tue Nov 21 00:28:23 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): cheese
+Tue Nov 21 00:28:24 2023	IA SGT 7562 William (STEAM_0:1:44753757): stop looking at me
+Tue Nov 21 00:28:27 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:28:30 2023	IA SGT 7562 William (STEAM_0:1:44753757): stop looking at me
+Tue Nov 21 00:28:33 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:28:38 2023	IA SGT 7562 William (STEAM_0:1:44753757): thats you
+Tue Nov 21 00:28:41 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:28:45 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): Fiqures
+Tue Nov 21 00:28:46 2023	IA SGT 7562 William (STEAM_0:1:44753757): take this medkit
+Tue Nov 21 00:28:49 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:29:04 2023	IA SGT 7562 William (STEAM_0:1:44753757): better reload
+Tue Nov 21 00:29:07 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:29:12 2023	IA SGT 7562 William (STEAM_0:1:44753757): bull-shit
+Tue Nov 21 00:29:14 2023	IA SGT 7562 William (STEAM_0:1:44753757): bull-shit
+Tue Nov 21 00:29:18 2023	IA SGT 7562 William (STEAM_0:1:44753757): damn
+Tue Nov 21 00:29:20 2023	IA SGT 7562 William (STEAM_0:1:44753757): bullshit
+Tue Nov 21 00:29:23 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:29:24 2023	IA SGT 7562 William (STEAM_0:1:44753757): there we go
+Tue Nov 21 00:29:28 2023	IA SGT 7562 William (STEAM_0:1:44753757): behind you
+Tue Nov 21 00:29:31 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:29:32 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): // HELLO ROLEPLAYERS
+Tue Nov 21 00:29:33 2023	IA SGT 7562 William (STEAM_0:1:44753757): vops
+Tue Nov 21 00:29:35 2023	IA SGT 7562 William (STEAM_0:1:44753757): cops
+Tue Nov 21 00:29:39 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): cheese
+Tue Nov 21 00:29:40 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:29:42 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 00:29:48 2023	Inquisitor Ares (STEAM_0:1:78700995): cheese
+Tue Nov 21 00:29:49 2023	IA SGT 7562 William (STEAM_0:1:44753757): ammo
+Tue Nov 21 00:29:53 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): gernade
+Tue Nov 21 00:29:54 2023	IA SGT 7562 William (STEAM_0:1:44753757): dejavu
+Tue Nov 21 00:29:56 2023	IA SGT 7562 William (STEAM_0:1:44753757): dejavu
+Tue Nov 21 00:29:57 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:30:03 2023	IA SGT 7562 William (STEAM_0:1:44753757): dont tell me
+Tue Nov 21 00:30:05 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:30:09 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:30:10 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:30:11 2023	IA SGT 7562 William (STEAM_0:1:44753757): ehhh
+Tue Nov 21 00:30:16 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:30:16 2023	IA SGT 7562 William (STEAM_0:1:44753757): excuse me
+Tue Nov 21 00:30:19 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): coming
+Tue Nov 21 00:30:24 2023	IA SGT 7562 William (STEAM_0:1:44753757): focus
+Tue Nov 21 00:30:26 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): im coming
+Tue Nov 21 00:30:28 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:30:28 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:30:29 2023	IA SGT 7562 William (STEAM_0:1:44753757): freeman
+Tue Nov 21 00:30:33 2023	IA SGT 7562 William (STEAM_0:1:44753757): focus
+Tue Nov 21 00:30:36 2023	IA SGT 7562 William (STEAM_0:1:44753757): focus
+Tue Nov 21 00:30:37 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:30:40 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:30:43 2023	IA Commander Demo (STEAM_0:0:29212178) spawned SENT imp_speeder
+Tue Nov 21 00:30:47 2023	IA SGT 7562 William (STEAM_0:1:44753757): finally
+Tue Nov 21 00:30:54 2023	IA SGT 7562 William (STEAM_0:1:44753757): combine
+Tue Nov 21 00:30:59 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): u wanna go scouting?
+Tue Nov 21 00:31:07 2023	IA SGT 7562 William (STEAM_0:1:44753757): combine
+Tue Nov 21 00:31:24 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304) disconnected
+Tue Nov 21 00:31:35 2023	IA SGT 7562 William (STEAM_0:1:44753757): enough of your mumbo jumbo
+Tue Nov 21 00:31:43 2023	IA SGT 7562 William (STEAM_0:1:44753757): enough of your mumbo jumbo
+Tue Nov 21 00:31:48 2023	IA SGT 7562 William (STEAM_0:1:44753757): hax
+Tue Nov 21 00:31:54 2023	IA SGT 7562 William (STEAM_0:1:44753757): derka
+Tue Nov 21 00:32:10 2023	IA SGT 7562 William (STEAM_0:1:44753757): headcrabs
+Tue Nov 21 00:32:27 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:32:30 2023	ST Commander Spark (STEAM_0:1:460412980): 
+Tue Nov 21 00:32:35 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:35 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:36 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:32:36 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:37 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:37 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:32:38 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:38 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:39 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:39 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:32:39 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:43 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:44 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:32:44 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:44 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:45 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:45 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:32:45 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:46 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:46 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Tue Nov 21 00:32:46 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:47 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:32:47 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:32:53 2023	IA SGT 7562 William (STEAM_0:1:44753757): hax
+Tue Nov 21 00:33:01 2023	IA SGT 7562 William (STEAM_0:1:44753757): hax
+Tue Nov 21 00:33:05 2023	SHW Commander Pip (STEAM_0:1:169781558): hax
+Tue Nov 21 00:33:08 2023	IA SGT 7562 William (STEAM_0:1:44753757): focus
+Tue Nov 21 00:33:13 2023	SHW Commander Pip (STEAM_0:1:169781558): get out 
+Tue Nov 21 00:33:17 2023	IA SGT 7562 William (STEAM_0:1:44753757): freeman
+Tue Nov 21 00:33:24 2023	SHW Commander Pip (STEAM_0:1:169781558): hi
+Tue Nov 21 00:33:26 2023	Lord FireBall (STEAM_0:1:129278369) has joined the game
+Tue Nov 21 00:33:26 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Tue Nov 21 00:33:28 2023	IA SGT 7562 William (STEAM_0:1:44753757): heads up
+Tue Nov 21 00:33:28 2023	SHW Commander Pip (STEAM_0:1:169781558): freeman
+Tue Nov 21 00:33:36 2023	IA SGT 7562 William (STEAM_0:1:44753757): get out
+Tue Nov 21 00:33:41 2023	IA SGT 7562 William (STEAM_0:1:44753757): kay
+Tue Nov 21 00:33:46 2023	NOVA CMD Heretic (STEAM_0:1:84791284): th
+Tue Nov 21 00:33:49 2023	SHW Commander Pip (STEAM_0:1:169781558): kay
+Tue Nov 21 00:33:49 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:33:50 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:33:54 2023	NOVA CMD Heretic (STEAM_0:1:84791284): Theres a maid outfit?
+Tue Nov 21 00:33:55 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Tue Nov 21 00:34:14 2023	NOVA CMD Heretic (STEAM_0:1:84791284): Theres a maid outfit? ?
+Tue Nov 21 00:34:17 2023	NOVA CMD Heretic (STEAM_0:1:84791284): gakme froze
+Tue Nov 21 00:34:20 2023	NOVA CMD Heretic (STEAM_0:1:84791284): game
+Tue Nov 21 00:34:26 2023	IA Commander Demo (STEAM_0:0:29212178): LOG UR PROMO
+Tue Nov 21 00:34:29 2023	IA Commander Demo (STEAM_0:0:29212178): WHAT
+Tue Nov 21 00:34:36 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:37 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:37 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:34:38 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:38 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:39 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:39 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:34:39 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:40 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:40 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:41 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:34:41 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:41 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:42 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:42 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:34:43 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:43 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:44 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:44 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:34:44 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:44 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:45 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:45 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:34:46 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:46 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:34:47 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:34:47 2023	IA Commander Demo (STEAM_0:0:29212178): holy moly
+Tue Nov 21 00:34:53 2023	IA Commander Demo (STEAM_0:0:29212178): WAIT
+Tue Nov 21 00:34:58 2023	IA Commander Demo (STEAM_0:0:29212178): /me kisses on cheek
+Tue Nov 21 00:35:10 2023	IA Commander Demo (STEAM_0:0:29212178): WILL
+Tue Nov 21 00:35:12 2023	IA Commander Demo (STEAM_0:0:29212178): LOG UR PROMO
+Tue Nov 21 00:35:29 2023	IA Commander Demo (STEAM_0:0:29212178): SCRATCHMA DONT FORGET TO TELL PEOPLE TO LOG PROMOS >:(
+Tue Nov 21 00:35:30 2023	ST Commander Spark (STEAM_0:1:460412980): /dropmoney 1000000
+Tue Nov 21 00:35:31 2023	ST Commander Spark (STEAM_0:1:460412980) has dropped $1,000,000
+Tue Nov 21 00:35:56 2023	NOVA CMD Heretic (STEAM_0:1:84791284): Theres a maid outfit? ?
+Tue Nov 21 00:35:58 2023	IA Commander Demo (STEAM_0:0:29212178) disconnected
+Tue Nov 21 00:36:09 2023	Inquisitor Ares was killed by DT L21 X29 with a rw_sw_dlt19
+Tue Nov 21 00:36:12 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Tue Nov 21 00:36:42 2023	NOVA CMD Heretic (STEAM_0:1:84791284): oh my god why am i lagging to death hold on.
+Tue Nov 21 00:36:46 2023	ST Commander Spark was killed by DT L21 X29 with a rw_sw_dlt19x
+Tue Nov 21 00:36:52 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Tue Nov 21 00:37:07 2023	NOVA CMD Heretic (STEAM_0:1:84791284): CMDs should get capes
+Tue Nov 21 00:37:12 2023	IA SGT 7562 William (STEAM_0:1:44753757): // There exists a my little pony maid outfit model
+Tue Nov 21 00:37:26 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): // PERISH
+Tue Nov 21 00:37:42 2023	DT L21 X29 was killed by ST Commander Spark with a rw_sw_dlt19
+Tue Nov 21 00:38:11 2023	DT L21 X29 (STEAM_0:1:129278369): // help
+Tue Nov 21 00:38:24 2023	DT L21 X29 (STEAM_0:1:129278369): // help
+Tue Nov 21 00:38:52 2023	NOVA CMD Heretic (STEAM_0:1:84791284): DP23 is so underwhelming
+Tue Nov 21 00:39:02 2023	DT L21 X29 (STEAM_0:1:129278369): // im not walking back
+Tue Nov 21 00:39:08 2023	DT L21 X29 (STEAM_0:1:129278369): // revive
+Tue Nov 21 00:39:18 2023	DT L21 X29 (STEAM_0:1:129278369): // pls
+Tue Nov 21 00:39:56 2023	NOVA CMD Heretic (STEAM_0:1:84791284): !revive fire
+Tue Nov 21 00:40:00 2023	NOVA CMD Heretic (STEAM_0:1:84791284): doesnt work
+Tue Nov 21 00:40:02 2023	NOVA CMD Heretic (STEAM_0:1:84791284): oh well
+Tue Nov 21 00:40:06 2023	DT L21 X29 (STEAM_0:1:129278369): // tp me
+Tue Nov 21 00:40:13 2023	DT L21 X29 (STEAM_0:1:129278369): // it revives
+Tue Nov 21 00:40:22 2023	Med PFC 8675 Tracy (STEAM_0:1:128681061): /name Med LCPL 8675 Tracy
+Tue Nov 21 00:40:27 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Tue Nov 21 00:40:42 2023	SHW Commander Pip was killed by IA Vice Commander Scratchma with a rw_sw_dlt19x
+Tue Nov 21 00:40:42 2023	Med LCPL 8675 Tracy was killed by ST Commander Spark with a rw_sw_nt242c
+Tue Nov 21 00:40:48 2023	Med LCPL 8675 Tracy (STEAM_0:1:128681061) spawned
+Tue Nov 21 00:40:48 2023	King Platypus (STEAM_0:0:197465498) has joined the game
+Tue Nov 21 00:40:48 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov 21 00:40:48 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 00:41:00 2023	Med LCPL 8675 Tracy was killed by ST Commander Spark with a rw_sw_nt242c
+Tue Nov 21 00:41:06 2023	Med LCPL 8675 Tracy (STEAM_0:1:128681061) spawned
+Tue Nov 21 00:41:24 2023	ST Commander Spark was killed by DT L21 X29 with a rw_sw_dlt19
+Tue Nov 21 00:41:33 2023	ST Commander Spark (STEAM_0:1:460412980): /ooc SHIT
+Tue Nov 21 00:41:34 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Tue Nov 21 00:41:50 2023	DT L21 X29 was killed by IA Vice Commander Scratchma with a stunstick
+Tue Nov 21 00:42:09 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Tue Nov 21 00:42:19 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
+Tue Nov 21 00:42:22 2023	ST Commander Spark (STEAM_0:1:460412980): /name Chimaera High Overseer Spark
+Tue Nov 21 00:43:11 2023	NOVA CMD Heretic (STEAM_0:1:84791284) disconnected
+Tue Nov 21 00:44:18 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 00:44:22 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 00:44:23 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 00:44:26 2023	Inquisitor Ares (STEAM_0:1:78700995): figuresaw
+Tue Nov 21 00:44:26 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 00:44:27 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:44:30 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 00:44:32 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:44:33 2023	Inquisitor Ares (STEAM_0:1:78700995): figures
+Tue Nov 21 00:45:03 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Tue Nov 21 00:45:11 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov 21 00:45:24 2023	Chimaera High Overseer Spark was killed by Entity [3774][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Tue Nov 21 00:45:29 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) spawned
+Tue Nov 21 00:45:58 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Tue Nov 21 00:46:01 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Tue Nov 21 00:46:51 2023	IA SGT 7562 William (STEAM_0:1:44753757): /pm spark pee
+Tue Nov 21 00:46:52 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /buyammo 3
+Tue Nov 21 00:47:51 2023	SHW Commander Pip was killed by Themself with a suicide trick
+Tue Nov 21 00:47:51 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Tue Nov 21 00:47:56 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 00:49:46 2023	SHW Commander Pip was killed by IA Vice Commander Scratchma with a stunstick
+Tue Nov 21 00:49:55 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 00:49:55 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Tue Nov 21 00:49:59 2023	IA Vice Commander Scratchma was killed by Themself with a suicide trick
+Tue Nov 21 00:50:04 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Tue Nov 21 00:50:47 2023	SHW Commander Pip (STEAM_0:1:169781558): Command+: X-8 Night Sniper, T-21, E-11S
+Tue Nov 21 00:51:00 2023	Chimaera High Overseer Spark (STEAM_0:1:460412980) disconnected
+Tue Nov 21 00:52:41 2023	IA SGT 7562 William (STEAM_0:1:44753757): /pm scr https://www.dropbox.com/scl/fi/hne9zlgd8kvvodwu9xnsv/sexyxgracmaasd.zip?rlkey=gy8u12zdcbf4g0wfjcmzds73i＆dl=1
+Tue Nov 21 00:53:14 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): https://www.dropbox.com/scl/fi/hne9zlgd8kvvodwu9xnsv/sexyxgracmaasd.zip?rlkey=gy8u12zdcbf4g0wfjcmzds73i＆dl=1
+Tue Nov 21 00:53:23 2023	Xanderr (STEAM_0:0:63471237) has joined the game
+Tue Nov 21 00:53:23 2023	Shadow Colonel Fox (STEAM_0:0:63471237) spawned
+Tue Nov 21 00:54:03 2023	IA SGT 7562 William (STEAM_0:1:44753757): /pm scr https://www.dropbox.com/scl/fi/hne9zlgd8kvvodwu9xnsv/sexyxgracmaasd.zip?rlkey=gy8u12zdcbf4g0wfjcmzds73i＆dl=0
+Tue Nov 21 00:54:17 2023	Shadow Colonel Fox (STEAM_0:0:63471237): /shadowcommand
+Tue Nov 21 00:54:19 2023	Shadow Colonel Fox (STEAM_0:0:63471237) spawned
+Tue Nov 21 00:54:37 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /buyammo 3
+Tue Nov 21 00:54:39 2023	Atlas (STEAM_0:0:190051560) has joined the game
+Tue Nov 21 00:54:39 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Tue Nov 21 00:54:44 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /buyammo 3
+Tue Nov 21 00:54:52 2023	SHW Commander Pip was killed by Entity [3776][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Tue Nov 21 00:54:58 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): https://www.dropbox.com/scl/fi/hne9zlgd8kvvodwu9xnsv/sexyxgracmaasd.zip?rlkey=gy8u12zdcbf4g0wfjcmzds73i＆dl=1
+Tue Nov 21 00:55:07 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 00:56:06 2023	Shadow Colonel Fox was killed by Entity [3781][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Tue Nov 21 00:56:11 2023	Shadow Colonel Fox (STEAM_0:0:63471237) spawned
+Tue Nov 21 00:56:56 2023	SHW Commander Pip was killed by Shadow Colonel Fox with a rw_sw_se14c
+Tue Nov 21 00:57:01 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 00:57:47 2023	Inquisitor Ares was killed by SHW Commander Pip with a rw_sw_x8
+Tue Nov 21 00:57:55 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Tue Nov 21 00:58:11 2023	SHW Commander Pip was killed by Shadow Colonel Fox with a rw_sw_se14c
+Tue Nov 21 00:58:17 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 00:58:38 2023	Med LCPL 8675 Tracy (STEAM_0:1:128681061) disconnected
+Tue Nov 21 01:00:23 2023	Jerta (STEAM_0:0:46404182) has joined the game
+Tue Nov 21 01:00:23 2023	Jerta (STEAM_0:0:46404182) spawned
+Tue Nov 21 01:00:29 2023	Luna Tess (STEAM_0:1:84791284) has joined the game
+Tue Nov 21 01:00:29 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Tue Nov 21 01:01:09 2023	Shadow Colonel Fox was killed by Entity [2835][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Tue Nov 21 01:01:14 2023	Shadow Colonel Fox (STEAM_0:0:63471237) spawned
+Tue Nov 21 01:01:49 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // It's Joever
+Tue Nov 21 01:01:49 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Tue Nov 21 01:01:49 2023	the gunk (STEAM_0:1:98581856) has joined the game
+Tue Nov 21 01:01:49 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Tue Nov 21 01:02:01 2023	Medical Commander Jason (STEAM_0:0:190051560): // sup
+Tue Nov 21 01:02:15 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // Joe
+Tue Nov 21 01:02:19 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /novacommander
+Tue Nov 21 01:02:21 2023	Maximus (STEAM_0:0:219239989) has joined the game
+Tue Nov 21 01:02:21 2023	Maximus (STEAM_0:0:219239989) spawned
+Tue Nov 21 01:02:21 2023	NOVA CMD Heretic (STEAM_0:1:84791284) spawned
+Tue Nov 21 01:02:43 2023	Shadow Colonel Fox (STEAM_0:0:63471237): yo
+Tue Nov 21 01:02:50 2023	Shadow Colonel Fox (STEAM_0:0:63471237): hmm?
+Tue Nov 21 01:02:58 2023	Jerta (STEAM_0:0:46404182): /ooc what's your guys discord?
+Tue Nov 21 01:03:03 2023	NOVA CMD Heretic (STEAM_0:1:84791284): !discord
+Tue Nov 21 01:03:04 2023	Inquisitor Ares was killed by SHW Commander Pip with a rw_sw_t21
+Tue Nov 21 01:03:09 2023	NOVA CMD Heretic (STEAM_0:1:84791284): // good question
+Tue Nov 21 01:03:20 2023	Inquisitor Ares (STEAM_0:1:78700995) spawned
+Tue Nov 21 01:03:23 2023	Inquisitor Ares (STEAM_0:1:78700995): // https://discord.gg/J3kzYmS3
+Tue Nov 21 01:03:26 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /pm Jerta https://discord.gg/CJ22zVm8
+Tue Nov 21 01:03:39 2023	NOVA CMD Heretic (STEAM_0:1:84791284): hi
+Tue Nov 21 01:03:44 2023	Medical Commander Jason (STEAM_0:0:190051560): cheese
+Tue Nov 21 01:03:47 2023	NOVA CMD Heretic (STEAM_0:1:84791284): help
+Tue Nov 21 01:03:49 2023	NOVA CMD Heretic (STEAM_0:1:84791284): omg
+Tue Nov 21 01:03:52 2023	NOVA CMD Heretic (STEAM_0:1:84791284): omg
+Tue Nov 21 01:03:55 2023	NOVA CMD Heretic (STEAM_0:1:84791284): god
+Tue Nov 21 01:03:58 2023	NOVA CMD Heretic (STEAM_0:1:84791284): god
+Tue Nov 21 01:04:00 2023	NOVA CMD Heretic (STEAM_0:1:84791284): omg
+Tue Nov 21 01:04:02 2023	NOVA CMD Heretic (STEAM_0:1:84791284): it wont work
+Tue Nov 21 01:04:05 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Tue Nov 21 01:04:10 2023	NOVA CMD Heretic (STEAM_0:1:84791284): yeah
+Tue Nov 21 01:04:12 2023	Medical Commander Jason (STEAM_0:0:190051560): oh my gpd
+Tue Nov 21 01:04:15 2023	Shadow Colonel Fox (STEAM_0:0:63471237): /civillian
+Tue Nov 21 01:04:16 2023	NOVA CMD Heretic (STEAM_0:1:84791284): oh my god
+Tue Nov 21 01:04:16 2023	Medical Commander Jason (STEAM_0:0:190051560): oh ygo
+Tue Nov 21 01:04:20 2023	Shadow Colonel Fox (STEAM_0:0:63471237): /civilian
+Tue Nov 21 01:04:23 2023	NOVA CMD Heretic (STEAM_0:1:84791284): Damn
+Tue Nov 21 01:04:24 2023	Medical Commander Jason (STEAM_0:0:190051560): oh my god
+Tue Nov 21 01:04:27 2023	NOVA CMD Heretic (STEAM_0:1:84791284): dream
+Tue Nov 21 01:04:32 2023	NOVA CMD Heretic (STEAM_0:1:84791284): YEAH
+Tue Nov 21 01:04:32 2023	Shadow Colonel Fox (STEAM_0:0:63471237) spawned
+Tue Nov 21 01:04:41 2023	Maximus (STEAM_0:0:219239989): !content
+Tue Nov 21 01:04:42 2023	Shadow Colonel Fox (STEAM_0:0:63471237) spawned
+Tue Nov 21 01:04:51 2023	Shadow Colonel Fox (STEAM_0:0:63471237) disconnected
+Tue Nov 21 01:04:53 2023	NOVA CMD Heretic (STEAM_0:1:84791284): /name NOVA Commander Heretic
+Tue Nov 21 01:05:00 2023	Maximus (STEAM_0:0:219239989) disconnected
+Tue Nov 21 01:05:28 2023	Medical Commander Jason (STEAM_0:0:190051560): // bro hectic got piss for eyes
+Tue Nov 21 01:05:47 2023	NOVA Commander Heretic (STEAM_0:1:84791284): ?
+Tue Nov 21 01:06:10 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 01:06:28 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Tue Nov 21 01:06:37 2023	NOVA Commander Heretic (STEAM_0:1:84791284): // the first person who walks out of a door is getting shot
+Tue Nov 21 01:06:47 2023	Medical Commander Jason (STEAM_0:0:190051560): // if imma be throwing stones Imma do it in the safety of my home
+Tue Nov 21 01:06:48 2023	NOVA Commander Heretic (STEAM_0:1:84791284): // i will not specify which door
+Tue Nov 21 01:07:23 2023	Jerta (STEAM_0:0:46404182) disconnected
+Tue Nov 21 01:07:26 2023	NOVA Commander Heretic (STEAM_0:1:84791284): 
+Tue Nov 21 01:07:39 2023	Medical Commander Jason (STEAM_0:0:190051560): // Can we arrest hectic for threatening iSB?
+Tue Nov 21 01:07:40 2023	NOVA Commander Heretic (STEAM_0:1:84791284): 
+Tue Nov 21 01:08:04 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // depends
+Tue Nov 21 01:08:19 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /advert Pip to IA bunks
+Tue Nov 21 01:08:21 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 01:08:30 2023	SHW Commander Pip (STEAM_0:1:169781558): /advert Enroute
+Tue Nov 21 01:08:39 2023	NOVA Commander Heretic (STEAM_0:1:84791284): 
+Tue Nov 21 01:08:54 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Tue Nov 21 01:09:34 2023	IA Vice Commander Scratchma was killed by SHW Commander Pip with a rw_sw_t21
+Tue Nov 21 01:09:35 2023	SHW Commander Pip was killed by IA SGT 7562 William with a rw_sw_dlt19s
+Tue Nov 21 01:09:39 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Tue Nov 21 01:09:41 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 01:09:48 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Tue Nov 21 01:09:52 2023	Inquisitor Ares (STEAM_0:1:78700995): /name Butter on duty
+Tue Nov 21 01:09:58 2023	DT L21 X29 was killed by SHW Commander Pip with a rw_sw_t21
+Tue Nov 21 01:10:03 2023	Butter on duty (STEAM_0:1:78700995) spawned
+Tue Nov 21 01:10:08 2023	DT L21 X29 (STEAM_0:1:129278369) spawned
+Tue Nov 21 01:10:13 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:10:27 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Tue Nov 21 01:11:05 2023	NOVA Commander Heretic (STEAM_0:1:84791284): 
+Tue Nov 21 01:11:09 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:11:09 2023	NOVA Commander Heretic (STEAM_0:1:84791284): 
+Tue Nov 21 01:11:11 2023	NOVA Commander Heretic (STEAM_0:1:84791284) spawned
+Tue Nov 21 01:12:11 2023	Medical Commander Jason (STEAM_0:0:190051560): y bitch
+Tue Nov 21 01:12:17 2023	Medical Commander Jason (STEAM_0:0:190051560): /y bitch
+Tue Nov 21 01:12:42 2023	NOVA Commander Heretic (STEAM_0:1:84791284): 
+Tue Nov 21 01:12:44 2023	NOVA Commander Heretic (STEAM_0:1:84791284) spawned
+Tue Nov 21 01:12:58 2023	Medical Commander Jason was killed by IA Vice Commander Scratchma with a rw_sw_dlt19x
+Tue Nov 21 01:13:05 2023	Medical Commander Jason (STEAM_0:0:190051560) spawned
+Tue Nov 21 01:13:10 2023	DT L21 X29 (STEAM_0:1:129278369) disconnected
+Tue Nov 21 01:13:18 2023	IA SGT 7562 William was killed by Medical Commander Jason with a rw_sw_t21
+Tue Nov 21 01:13:27 2023	IA SGT 7562 William (STEAM_0:1:44753757) spawned
+Tue Nov 21 01:13:32 2023	IA  PVT 1480 Zach was killed by Medical Commander Jason with a rw_sw_t21
+Tue Nov 21 01:13:38 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200) spawned
+Tue Nov 21 01:13:46 2023	SHW Commander Pip was killed by ARC Commander Gunk with a weapon_fists
+Tue Nov 21 01:13:52 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 01:14:06 2023	Medical Commander Jason (STEAM_0:0:190051560): /y yall still bitches
+Tue Nov 21 01:14:36 2023	Medical Commander Jason (STEAM_0:0:190051560): /y if you bitchin at me I cannot hear aya dumbass
+Tue Nov 21 01:14:47 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 01:14:50 2023	Medical Commander Jason (STEAM_0:0:190051560): cheese
+Tue Nov 21 01:14:53 2023	IA SGT 7562 William (STEAM_0:1:44753757): get out
+Tue Nov 21 01:14:55 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /y so we can say anythink about you can hear us
+Tue Nov 21 01:14:57 2023	Medical Commander Jason (STEAM_0:0:190051560): no
+Tue Nov 21 01:14:58 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:14:59 2023	IA SGT 7562 William (STEAM_0:1:44753757): coming
+Tue Nov 21 01:15:01 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:15:02 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:15:03 2023	IA SGT 7562 William (STEAM_0:1:44753757): freeman
+Tue Nov 21 01:15:04 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:15:07 2023	IA SGT 7562 William (STEAM_0:1:44753757): got one
+Tue Nov 21 01:15:09 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:15:12 2023	IA SGT 7562 William (STEAM_0:1:44753757): gosh
+Tue Nov 21 01:15:12 2023	Medical Commander Jason (STEAM_0:0:190051560): /y bitch words are paper
+Tue Nov 21 01:15:14 2023	SHW Commander Pip (STEAM_0:1:169781558): shut up
+Tue Nov 21 01:15:14 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:15:16 2023	IA SGT 7562 William (STEAM_0:1:44753757): gosh
+Tue Nov 21 01:15:18 2023	Medical Commander Jason (STEAM_0:0:190051560): /y I got worse
+Tue Nov 21 01:15:19 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:15:21 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:15:21 2023	SHW Commander Pip (STEAM_0:1:169781558): omg
+Tue Nov 21 01:15:24 2023	IA SGT 7562 William (STEAM_0:1:44753757): it cant be
+Tue Nov 21 01:15:26 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:15:30 2023	The Illusive Man (STEAM_0:0:52386057) has joined the game
+Tue Nov 21 01:15:30 2023	The Illusive Man (STEAM_0:0:52386057) spawned
+Tue Nov 21 01:15:31 2023	SHW Commander Pip (STEAM_0:1:169781558): figures
+Tue Nov 21 01:15:32 2023	IA SGT 7562 William (STEAM_0:1:44753757): isnt good
+Tue Nov 21 01:15:47 2023	Jerta (STEAM_0:0:46404182) has joined the game
+Tue Nov 21 01:15:47 2023	Jerta (STEAM_0:0:46404182) spawned
+Tue Nov 21 01:16:15 2023	IA Vice Commander Scratchma was killed by IA SGT 7562 William with a rw_sw_ent_nade_thermal
+Tue Nov 21 01:16:20 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Tue Nov 21 01:16:50 2023	IA  PVT 1480 Zach was killed by Medical Commander Jason with a rw_sw_e11
+Tue Nov 21 01:16:56 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200) spawned
+Tue Nov 21 01:16:57 2023	IA SGT 7562 William was killed by Medical Commander Jason with a rw_sw_e11
+Tue Nov 21 01:17:02 2023	IA SGT 7562 William (STEAM_0:1:44753757) spawned
+Tue Nov 21 01:17:03 2023	IA Vice Commander Scratchma was killed by Medical Commander Jason with a rw_sw_e11
+Tue Nov 21 01:17:09 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) spawned
+Tue Nov 21 01:17:18 2023	ISB Chief Grimjaw was killed by Themself with a suicide trick
+Tue Nov 21 01:17:18 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Tue Nov 21 01:17:24 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov 21 01:17:38 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Tue Nov 21 01:17:52 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Tue Nov 21 01:18:07 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): 
+Tue Nov 21 01:18:11 2023	Medical Commander Jason (STEAM_0:0:190051560): // Im over here trying to enjoy a nice soak in my heroine and yall keep destroying my shit
+Tue Nov 21 01:18:20 2023	Butter on duty (STEAM_0:1:78700995): // lol
+Tue Nov 21 01:18:23 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): // i just wanted morphine
+Tue Nov 21 01:18:35 2023	Medical Commander Jason (STEAM_0:0:190051560): // our morphine is colored water
+Tue Nov 21 01:18:36 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 01:18:40 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:18:41 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): // i eated it
+Tue Nov 21 01:18:43 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 01:18:48 2023	Jerta (STEAM_0:0:46404182) disconnected
+Tue Nov 21 01:18:50 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 01:18:52 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:18:54 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 01:18:55 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:18:56 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 01:18:56 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:18:58 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:18:59 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:19:01 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): i read that as "soak in my heroine"
+Tue Nov 21 01:19:02 2023	IA SGT 7562 William (STEAM_0:1:44753757): cheese
+Tue Nov 21 01:19:05 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:19:11 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): cheese
+Tue Nov 21 01:19:15 2023	IA SGT 7562 William (STEAM_0:1:44753757): it is ok
+Tue Nov 21 01:19:19 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): freeman
+Tue Nov 21 01:19:22 2023	Medical Commander Jason (STEAM_0:0:190051560): // can we get map clean?
+Tue Nov 21 01:19:22 2023	IA SGT 7562 William (STEAM_0:1:44753757): right on
+Tue Nov 21 01:19:27 2023	Medical Commander Jason (STEAM_0:0:190051560): // they broke my shit
+Tue Nov 21 01:19:30 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): right on
+Tue Nov 21 01:19:33 2023	IA SGT 7562 William (STEAM_0:1:44753757): spread the word
+Tue Nov 21 01:19:37 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /ooc <hsv>wow, iphone</hsv>
+Tue Nov 21 01:19:40 2023	IA SGT 7562 William (STEAM_0:1:44753757): stop looking at me
+Tue Nov 21 01:19:45 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): you
+Tue Nov 21 01:19:48 2023	IA SGT 7562 William (STEAM_0:1:44753757): stop looking at me
+Tue Nov 21 01:19:55 2023	IA SGT 7562 William (STEAM_0:1:44753757): talking to me
+Tue Nov 21 01:20:01 2023	Medical Commander Jason (STEAM_0:0:190051560): /y your eyes I will have them soon
+Tue Nov 21 01:20:03 2023	IA SGT 7562 William (STEAM_0:1:44753757): too much info
+Tue Nov 21 01:20:25 2023	Medical Commander Jason (STEAM_0:0:190051560): 
+Tue Nov 21 01:20:32 2023	Medical Commander Jason (STEAM_0:0:190051560):  hope ya know I cant see that
+Tue Nov 21 01:20:32 2023	SHW Commander Pip was killed by IA  PVT 1480 Zach with a rw_sw_se14c
+Tue Nov 21 01:20:35 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Tue Nov 21 01:20:35 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): 
+Tue Nov 21 01:20:37 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 01:20:42 2023	Medical Commander Jason (STEAM_0:0:190051560): /y like its completely gone for me
+Tue Nov 21 01:20:45 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): pain
+Tue Nov 21 01:20:59 2023	Butter on duty (STEAM_0:1:78700995): /name Ensign Butter
+Tue Nov 21 01:21:21 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): // MY HEART
+Tue Nov 21 01:21:26 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): // fortnite
+Tue Nov 21 01:21:29 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): // I LOVED HER
+Tue Nov 21 01:21:30 2023	Ensign Butter (STEAM_0:1:78700995): // no
+Tue Nov 21 01:21:32 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc kys
+Tue Nov 21 01:21:33 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): // WUAAAAAH
+Tue Nov 21 01:21:38 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200): go for it
+Tue Nov 21 01:21:47 2023	Medical Commander Jason (STEAM_0:0:190051560): /y tissue paper ass motherfuckers
+Tue Nov 21 01:22:08 2023	ISB Chief Grimjaw (STEAM_0:0:197465498): /name IA Captian Grimjaw
+Tue Nov 21 01:22:12 2023	SHW Commander Pip (STEAM_0:1:169781558): /ooc the illusive man is illusive
+Tue Nov 21 01:22:15 2023	IA Captian Grimjaw (STEAM_0:0:197465498): /iaofficer
+Tue Nov 21 01:22:22 2023	DeathStalker (STEAM_0:1:124958304) has joined the game
+Tue Nov 21 01:22:22 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304) spawned
+Tue Nov 21 01:22:24 2023	The Illusive Man (STEAM_0:0:52386057): // I'm just a tourist.
+Tue Nov 21 01:22:27 2023	Ensign Butter (STEAM_0:1:78700995): 
+Tue Nov 21 01:22:29 2023	IA Captian Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov 21 01:22:33 2023	SHW Commander Pip (STEAM_0:1:169781558): 
+Tue Nov 21 01:22:49 2023	IA Captian Grimjaw (STEAM_0:0:197465498): 
+Tue Nov 21 01:22:51 2023	IA Captian Grimjaw (STEAM_0:0:197465498): 
+Tue Nov 21 01:23:00 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304) spawned
+Tue Nov 21 01:23:03 2023	Ensign Butter (STEAM_0:1:78700995): /name Butter on duty
+Tue Nov 21 01:23:10 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /buyammo 3
+Tue Nov 21 01:23:11 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:23:14 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /buyammo 3
+Tue Nov 21 01:23:35 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:25:45 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): /rp pistol whips the target in frontof them, dragging their lifeless corpse away into concealment.
+Tue Nov 21 01:27:19 2023	Medical Commander Jason (STEAM_0:0:190051560): /y your cool
+Tue Nov 21 01:27:37 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:28:29 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): /buyammo 3
+Tue Nov 21 01:28:45 2023	IA Captian Grimjaw (STEAM_0:0:197465498): /advert we have the NOVA Commander hostage we require 100k credits for his safe release
+Tue Nov 21 01:28:54 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): ight bet
+Tue Nov 21 01:28:57 2023	ARC Commander Gunk (STEAM_0:1:98581856): /advert Who?
+Tue Nov 21 01:29:02 2023	The Illusive Man (STEAM_0:0:52386057) disconnected
+Tue Nov 21 01:29:05 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): /advert ill pay 100k
+Tue Nov 21 01:29:19 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): /ad where we meet
+Tue Nov 21 01:29:19 2023	IA Captian Grimjaw (STEAM_0:0:197465498): /advert NOVA Commander heretic we found him sleeping in nova bunks
+Tue Nov 21 01:29:22 2023	Butter on duty (STEAM_0:1:78700995): // i got $2
+Tue Nov 21 01:29:35 2023	Medical Commander Jason (STEAM_0:0:190051560): advert I have a mcdonalds sanmich 
+Tue Nov 21 01:29:50 2023	Medical Commander Jason (STEAM_0:0:190051560): /advert I got half a subway sub if you wanna trade
+Tue Nov 21 01:30:00 2023	SHW Commander Pip was killed by IA  PVT 1480 Zach with a rw_sw_se14c
+Tue Nov 21 01:30:11 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 01:30:23 2023	IA Captian Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov 21 01:30:24 2023	SHW Commander Pip was killed by ARC Commander Gunk with a rw_sw_huntershotgun
+Tue Nov 21 01:30:33 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130): // my game lagged
+Tue Nov 21 01:30:34 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 01:30:51 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): /ooc come back
+Tue Nov 21 01:31:21 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): /dropmoney 100000
+Tue Nov 21 01:31:22 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304) has dropped $100,000
+Tue Nov 21 01:32:04 2023	SHW Commander Pip was killed by ARC Commander Gunk with a rw_sw_t21
+Tue Nov 21 01:32:06 2023	NOVA Commander Heretic was killed by Entity [3676][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Tue Nov 21 01:32:06 2023	IA SGT 7562 William was killed by Entity [3676][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Tue Nov 21 01:32:06 2023	IA  PVT 1480 Zach was killed by Entity [3676][ent_rw_rocket_mods] with a ent_rw_rocket_mods
+Tue Nov 21 01:32:07 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 01:32:11 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200) spawned
+Tue Nov 21 01:32:11 2023	IA SGT 7562 William (STEAM_0:1:44753757) spawned
+Tue Nov 21 01:32:27 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:32:36 2023	SHW Commander Pip was killed by ARC Commander Gunk with a rw_sw_t21
+Tue Nov 21 01:32:41 2023	SHW Commander Pip (STEAM_0:1:169781558) spawned
+Tue Nov 21 01:32:56 2023	Medical Commander Jason (STEAM_0:0:190051560) disconnected
+Tue Nov 21 01:33:36 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): /dropmoney 500000
+Tue Nov 21 01:33:37 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304) has dropped $500,000
+Tue Nov 21 01:33:46 2023	NOVA Commander Heretic (STEAM_0:1:84791284) spawned
+Tue Nov 21 01:34:04 2023	IA Captian Grimjaw was killed by IA Vice Commander Scratchma with a rw_sw_dlt19x
+Tue Nov 21 01:34:05 2023	IA Captian Grimjaw was killed by Themself with a suicide trick
+Tue Nov 21 01:34:05 2023	IA Captian Grimjaw (STEAM_0:0:197465498): 
+Tue Nov 21 01:34:11 2023	IA Captian Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov 21 01:34:18 2023	Ilovecats2488 (STEAM_0:0:88088908) has joined the game
+Tue Nov 21 01:34:18 2023	Ilovecats2488 (STEAM_0:0:88088908) spawned
+Tue Nov 21 01:35:10 2023	IA  PVT 1480 Zach was killed by SHW Commander Pip with a rw_sw_t21
+Tue Nov 21 01:35:15 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200) spawned
+Tue Nov 21 01:35:46 2023	NOVA Commander Heretic (STEAM_0:1:84791284) spawned SENT lvs_fakehover_iftx
+Tue Nov 21 01:37:28 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:37:28 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:37:44 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200): yes
+Tue Nov 21 01:37:46 2023	NOVA Commander Heretic (STEAM_0:1:84791284): 
+Tue Nov 21 01:37:49 2023	IA Vice Commander Scratchma (STEAM_0:0:55135130) disconnected
+Tue Nov 21 01:38:35 2023	ARC Commander Gunk (STEAM_0:1:98581856): /me Eats 10 Pounds of Sand
+Tue Nov 21 01:38:35 2023	Ilovecats2488 (STEAM_0:0:88088908) disconnected
+Tue Nov 21 01:38:46 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:39:03 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): /
+Tue Nov 21 01:40:02 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:40:04 2023	IA Captian Grimjaw (STEAM_0:0:197465498) spawned SENT tx130
+Tue Nov 21 01:40:25 2023	ARC Commander Gunk (STEAM_0:1:98581856): /advert <hsv>Code Venezuelan Hyper-Inflation</hsv>
+Tue Nov 21 01:40:37 2023	Butter on duty (STEAM_0:1:78700995): // ???
+Tue Nov 21 01:40:45 2023	ARC Commander Gunk (STEAM_0:1:98581856): // dont worry about it
+Tue Nov 21 01:40:50 2023	Butter on duty (STEAM_0:1:78700995): // wtf is that code name
+Tue Nov 21 01:40:50 2023	ARC Commander Gunk (STEAM_0:1:98581856): // :)
+Tue Nov 21 01:40:57 2023	ARC Commander Gunk (STEAM_0:1:98581856): // it was from zephyr
+Tue Nov 21 01:42:34 2023	IA Captian Grimjaw (STEAM_0:0:197465498): 
+Tue Nov 21 01:42:39 2023	SHW Commander Pip (STEAM_0:1:169781558) disconnected
+Tue Nov 21 01:43:08 2023	Lucy is Bae (STEAM_0:1:76110013) has joined the game
+Tue Nov 21 01:43:08 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned
+Tue Nov 21 01:43:14 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): /ooc will there be any mini events or rp events tonnight or nah
+Tue Nov 21 01:43:36 2023	IA SGT 7562 William (STEAM_0:1:44753757): // There was one that ended just before you joined :(
+Tue Nov 21 01:43:43 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): bruh rly
+Tue Nov 21 01:43:45 2023	IA Captian Grimjaw (STEAM_0:0:197465498): // riperoni
+Tue Nov 21 01:43:58 2023	IA Captian Grimjaw (STEAM_0:0:197465498): 
+Tue Nov 21 01:44:03 2023	IA Captian Grimjaw (STEAM_0:0:197465498): /fleetga
+Tue Nov 21 01:44:05 2023	IA Captian Grimjaw (STEAM_0:0:197465498) spawned
+Tue Nov 21 01:44:20 2023	IA Captian Grimjaw (STEAM_0:0:197465498): /name Grand Adrmial Somebody
+Tue Nov 21 01:45:08 2023	Butter on duty (STEAM_0:1:78700995): 
+Tue Nov 21 01:45:45 2023	NOVA Commander Heretic (STEAM_0:1:84791284): help
+Tue Nov 21 01:45:54 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned
+Tue Nov 21 01:46:04 2023	Butter on duty (STEAM_0:1:78700995): /name AFK Butter
+Tue Nov 21 01:46:33 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): /me salutes
+Tue Nov 21 01:46:34 2023	IA SGT 7562 William (STEAM_0:1:44753757) disconnected
+Tue Nov 21 01:47:04 2023	AFK Butter (STEAM_0:1:78700995) spawned
+Tue Nov 21 01:47:52 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304) spawned
+Tue Nov 21 01:48:12 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304) spawned
+Tue Nov 21 01:48:36 2023	NOVA Commander Heretic (STEAM_0:1:84791284): help
+Tue Nov 21 01:48:42 2023	NOVA Commander Heretic (STEAM_0:1:84791284): help
+Tue Nov 21 01:48:48 2023	NOVA Commander Heretic (STEAM_0:1:84791284): oh my god
+Tue Nov 21 01:48:53 2023	NOVA Commander Heretic (STEAM_0:1:84791284): cheese
+Tue Nov 21 01:48:56 2023	NOVA Commander Heretic (STEAM_0:1:84791284): cheese
+Tue Nov 21 01:52:59 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): pizza man is here hold on
+Tue Nov 21 01:57:13 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): /ad {rp} scans for any near by non friendly ships in orbit
+Tue Nov 21 01:57:29 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): /advert {rp}  scans for any near by non friendly ships in orbit
+Tue Nov 21 01:57:57 2023	ST PVT 0186 Kepler (STEAM_0:1:124958304): /name Naval 99th Crewmen Pizza
+Tue Nov 21 01:58:37 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): 
+Tue Nov 21 01:59:05 2023	Naval 99th Crewmen Pizza (STEAM_0:1:124958304) spawned
+Tue Nov 21 01:59:49 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200) disconnected
+Tue Nov 21 02:00:10 2023	NOVA Commander Heretic (STEAM_0:1:84791284) spawned SENT prop_vehicle_prisoner_pod
+Tue Nov 21 02:01:25 2023	Naval 99th Crewmen Pizza (STEAM_0:1:124958304) disconnected
+Tue Nov 21 02:02:58 2023	Jerta (STEAM_0:0:46404182) has joined the game
+Tue Nov 21 02:02:58 2023	Jerta (STEAM_0:0:46404182) spawned
+Tue Nov 21 02:03:18 2023	zachs2003 (STEAM_0:0:546893200) has joined the game
+Tue Nov 21 02:03:18 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200) spawned
+Tue Nov 21 02:03:51 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200) spawned
+Tue Nov 21 02:10:57 2023	Jerta (STEAM_0:0:46404182) disconnected
+Tue Nov 21 02:24:03 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) disconnected
+Tue Nov 21 02:27:33 2023	PlushBerry (STEAM_0:1:525736108) has joined the game
+Tue Nov 21 02:27:33 2023	PlushBerry (STEAM_0:1:525736108) spawned
+Tue Nov 21 02:27:36 2023	AFK Butter (STEAM_0:1:78700995) disconnected
+Tue Nov 21 02:28:45 2023	ARC Commander Gunk (STEAM_0:1:98581856): /sleep
+Tue Nov 21 02:28:46 2023	ARC Commander Gunk (STEAM_0:1:98581856) disconnected
+Tue Nov 21 02:29:50 2023	PlushBerry (STEAM_0:1:525736108): HMMMMMMMM
+Tue Nov 21 02:30:02 2023	PlushBerry (STEAM_0:1:525736108) disconnected
+Tue Nov 21 02:30:17 2023	IA  PVT 1480 Zach (STEAM_0:0:546893200) disconnected
+Tue Nov 21 02:34:40 2023	Willisepic66 (STEAM_0:1:460210970) has joined the game
+Tue Nov 21 02:34:40 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) spawned
+Tue Nov 21 02:35:15 2023	Grand Adrmial Somebody (STEAM_0:0:197465498) disconnected
+Tue Nov 21 02:35:40 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970) disconnected
+Tue Nov 21 02:39:04 2023	NOVA Commander Heretic (STEAM_0:1:84791284): 
+Tue Nov 21 02:41:07 2023	Lucy is Bae (STEAM_0:1:76110013) has joined the game
+Tue Nov 21 02:41:07 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned
+Tue Nov 21 02:43:09 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned
+Tue Nov 21 02:45:15 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc TELL VOGJIN TO ADD THE NPCS
+Tue Nov 21 03:04:16 2023	the gunk (STEAM_0:1:98581856) has joined the game
+Tue Nov 21 03:04:16 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Tue Nov 21 03:07:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc hello
+Tue Nov 21 03:09:01 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned
+Tue Nov 21 03:18:52 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): when do you want to do the tryout 
+Tue Nov 21 03:22:29 2023	NOVA Commander Heretic (STEAM_0:1:84791284): // vogjin is still afk btw
+Tue Nov 21 03:22:40 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc oof
+Tue Nov 21 03:22:46 2023	NOVA Commander Heretic (STEAM_0:1:84791284): // vogjin just got back
+Tue Nov 21 03:22:51 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc nice
+Tue Nov 21 03:22:59 2023	ARC Commander Gunk (STEAM_0:1:98581856): // kaiser asked me to get on for a tryout and he isnt here
+Tue Nov 21 03:23:14 2023	ARC Commander Gunk (STEAM_0:1:98581856): //nvm
+Tue Nov 21 03:23:17 2023	ARC Commander Gunk (STEAM_0:1:98581856): // nvm
+Tue Nov 21 03:23:20 2023	NOVA Commander Heretic (STEAM_0:1:84791284): // kaiser is zeta
+Tue Nov 21 03:25:36 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc Heretic can you ask vogjin if Emperor counts as a primary
+Tue Nov 21 03:26:09 2023	NOVA Commander Heretic (STEAM_0:1:84791284): // Vogjin growled at me
+Tue Nov 21 03:26:13 2023	NOVA Commander Heretic (STEAM_0:1:84791284): // theres your answer
+Tue Nov 21 03:26:23 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /ooc tell him hi for me
+Tue Nov 21 03:30:03 2023	ARC Commander Gunk (STEAM_0:1:98581856): /advert <hsv>Code Venezuelan Hyper-Inflation</hsv>
+Tue Nov 21 03:31:04 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): 
+Tue Nov 21 03:31:25 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): 
+Tue Nov 21 03:31:59 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013) spawned
+Tue Nov 21 03:32:07 2023	Naval 99th Captain Zeta (STEAM_0:1:76110013): /name IA PVT Zeta
+Tue Nov 21 03:32:38 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Tue Nov 21 03:32:44 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Tue Nov 21 03:32:44 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Tue Nov 21 03:32:49 2023	IA PVT Zeta (STEAM_0:1:76110013): 
+Tue Nov 21 03:36:32 2023	NOVA Commander Heretic (STEAM_0:1:84791284) disconnected
+Tue Nov 21 03:36:37 2023	ARC Commander Gunk (STEAM_0:1:98581856) spawned SENT item_ammo_smg1
+Tue Nov 21 03:39:13 2023	IA PVT Zeta was killed by ARC Commander Gunk with a rw_sw_huntershotgun
+Tue Nov 21 03:39:20 2023	IA PVT Zeta (STEAM_0:1:76110013) spawned
+Tue Nov 21 03:39:23 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Tue Nov 21 03:39:23 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Tue Nov 21 03:39:28 2023	IA PVT Zeta (STEAM_0:1:76110013): 
+Tue Nov 21 03:39:32 2023	ARC Commander Gunk (STEAM_0:1:98581856): 
+Tue Nov 21 03:40:00 2023	IA PVT Zeta (STEAM_0:1:76110013): 
+Tue Nov 21 03:40:17 2023	IA PVT Zeta (STEAM_0:1:76110013): /name ARC SGT Zeta
+Tue Nov 21 03:40:58 2023	ARC SGT Zeta (STEAM_0:1:76110013) spawned
+Tue Nov 21 03:45:30 2023	ARC SGT Zeta (STEAM_0:1:76110013): ARC SGT Zeta SteamID [ STEAM_0:1:76110013 ] 
+Tue Nov 21 03:47:30 2023	ARC SGT Zeta (STEAM_0:1:76110013): /name ARC SGT Kaiser
+Tue Nov 21 03:47:44 2023	ARC SGT Kaiser (STEAM_0:1:76110013): mt palpy job is a secondary life
+Tue Nov 21 03:47:52 2023	ARC SGT Kaiser (STEAM_0:1:76110013): not primary
+Tue Nov 21 03:49:49 2023	ARC SGT Kaiser (STEAM_0:1:76110013): 
+Tue Nov 21 03:56:11 2023	ARC SGT Kaiser (STEAM_0:1:76110013): im gunna hop off now and go play a game with vogjin
+Tue Nov 21 03:56:54 2023	ARC SGT Kaiser (STEAM_0:1:76110013) disconnected
+Tue Nov 21 03:56:57 2023	ARC Commander Gunk (STEAM_0:1:98581856) disconnected

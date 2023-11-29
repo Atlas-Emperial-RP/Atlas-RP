@@ -1,0 +1,4 @@
+Sat Oct 28 22:38:59 2023	Vex (STEAM_0:0:440286446) has joined the game
+Sat Oct 28 22:38:59 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
+Sat Oct 28 22:40:45 2023	Shore Commander Vex was killed by Themself with a suicide trick
+Sat Oct 28 22:41:04 2023	Shore Commander Vex (STEAM_0:0:440286446) spawned
