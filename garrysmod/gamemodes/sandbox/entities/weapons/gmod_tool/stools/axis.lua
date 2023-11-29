@@ -26,13 +26,13 @@ function TOOL:LeftClick( trace )
 	local iNum = self:NumObjects()
 
 	-- Don't allow us to choose the world as the first object
-	if ( iNum == 0 and !IsValid( trace.Entity ) ) then return false end
+	if ( iNum == 0 and not IsValid( trace.Entity ) ) then return false end
 
 	-- Don't do jeeps (crash protection until we get it fixed)
 	if ( iNum == 0 and trace.Entity:GetClass() == "prop_vehicle_jeep" ) then return false end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+	if ( SERVER and not util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 	local Phys = trace.Entity:GetPhysicsObjectNum( trace.PhysicsBone )
 	self:SetObject( iNum + 1, trace.Entity, trace.HitPos, Phys, trace.PhysicsBone, trace.HitNormal )
@@ -116,7 +116,7 @@ function TOOL:RightClick( trace )
 	local iNum = self:NumObjects()
 
 	-- Don't allow us to choose the world as the first object
-	if ( iNum == 0 and !IsValid( trace.Entity ) ) then return false end
+	if ( iNum == 0 and not IsValid( trace.Entity ) ) then return false end
 
 	local Phys = trace.Entity:GetPhysicsObjectNum( trace.PhysicsBone )
 	self:SetObject( iNum + 1, trace.Entity, trace.HitPos, Phys, trace.PhysicsBone, trace.HitNormal )
@@ -183,7 +183,7 @@ end
 
 function TOOL:Reload( trace )
 
-	if ( !IsValid( trace.Entity ) or trace.Entity:IsPlayer() ) then return false end
+	if ( not IsValid( trace.Entity ) or trace.Entity:IsPlayer() ) then return false end
 	if ( CLIENT ) then return true end
 
 	return constraint.RemoveConstraints( trace.Entity, "Axis" )

@@ -34,8 +34,8 @@ function ENT:Think()
 	local TimeDiff = CurTime() - self.last_time
 	self.last_time = CurTime()
 
-	if ( !self.constraint ) then return true end
-	if ( !self.direction ) then return true end
+	if ( not self.constraint ) then return true end
+	if ( not self.direction ) then return true end
 	if ( self.direction == DIR_NONE ) then return true end
 
 	local current_length = self.current_length
@@ -172,7 +172,7 @@ end
 ------------------------------------------------------------------------]]
 local function HydraulicToggle( pl, hyd )
 
-	if ( !IsValid( hyd ) ) then return false end
+	if ( not IsValid( hyd ) ) then return false end
 
 	-- I hate this, shouldn't we just be calling hyd:Toggle()
 
@@ -200,7 +200,7 @@ numpad.Register( "HydraulicToggle", HydraulicToggle )
 	WinchOn - Called to switch the winch on
 ------------------------------------------------------------------------]]
 local function WinchOn( pl, winch, dir )
-	if ( !IsValid( winch ) ) then return false end
+	if ( not IsValid( winch ) ) then return false end
 	winch:SetDirection( dir )
 end
 numpad.Register( "WinchOn", WinchOn )
@@ -210,7 +210,7 @@ numpad.Register( "HydraulicDir", WinchOn ) -- A little cheat
 	WinchOff - Called to switch the winch off
 ------------------------------------------------------------------------]]
 local function WinchOff( pl, winch )
-	if ( !IsValid( winch ) ) then return false end
+	if ( not IsValid( winch ) ) then return false end
 	winch:SetDirection( 0 )
 end
 numpad.Register( "WinchOff", WinchOff )
@@ -219,7 +219,7 @@ numpad.Register( "WinchOff", WinchOff )
 	WinchToggle - Called to toggle the winch
 ------------------------------------------------------------------------]]
 local function WinchToggle( pl, winch, dir )
-	if ( !IsValid( winch ) ) then return false end
+	if ( not IsValid( winch ) ) then return false end
 	if ( winch:GetDirection() == dir ) then
 		winch:SetDirection( 0 )
 	else
@@ -233,7 +233,7 @@ numpad.Register( "WinchToggle", WinchToggle )
 ------------------------------------------------------------------------]]
 local function MuscleToggle( pl, hyd )
 
-	if ( !IsValid( hyd ) ) then return false end
+	if ( not IsValid( hyd ) ) then return false end
 
 	if ( hyd:GetDirection() == 0 ) then
 		hyd:SetDirection( 1 )

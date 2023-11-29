@@ -26,7 +26,7 @@ function TOOL:LeftClick( trace )
 	if ( trace.Entity and trace.Entity:IsPlayer() ) then return false end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+	if ( SERVER and not util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 	if ( CLIENT ) then return true end
 
@@ -72,11 +72,11 @@ function TOOL:LeftClick( trace )
 
 	end
 
-	if ( !util.IsValidModel( model ) or !util.IsValidProp( model ) or !IsValidHoverballModel( model ) ) then return false end
-	if ( !self:GetSWEP():CheckLimit( "hoverballs" ) ) then return false end
+	if ( not util.IsValidModel( model ) or not util.IsValidProp( model ) or not IsValidHoverballModel( model ) ) then return false end
+	if ( not self:GetSWEP():CheckLimit( "hoverballs" ) ) then return false end
 
 	local ball = MakeHoverBall( ply, trace.HitPos, key_d, key_u, speed, resistance, strength, model, nil, nil, nil, nil, key_o )
-	if ( !IsValid( ball ) ) then return false end
+	if ( not IsValid( ball ) ) then return false end
 
 	local ang = trace.HitNormal:Angle()
 	ang.pitch = ang.pitch + 90
@@ -116,11 +116,11 @@ if ( SERVER ) then
 
 	function MakeHoverBall( ply, Pos, key_d, key_u, speed, resistance, strength, model, Vel, aVel, frozen, nocollide, key_o )
 
-		if ( IsValid( ply ) and !ply:CheckLimit( "hoverballs" ) ) then return false end
-		if ( !IsValidHoverballModel( model ) ) then return false end
+		if ( IsValid( ply ) and not ply:CheckLimit( "hoverballs" ) ) then return false end
+		if ( not IsValidHoverballModel( model ) ) then return false end
 
 		local ball = ents.Create( "gmod_hoverball" )
-		if ( !IsValid( ball ) ) then return false end
+		if ( not IsValid( ball ) ) then return false end
 
 		ball:SetPos( Pos )
 		ball:SetModel( Model( model ) )
@@ -176,10 +176,10 @@ end
 
 function TOOL:UpdateGhostHoverball( ent, ply )
 
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	local trace = ply:GetEyeTrace()
-	if ( !trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:GetClass() == "gmod_hoverball" or trace.Entity:IsPlayer() ) ) then
+	if ( not trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:GetClass() == "gmod_hoverball" or trace.Entity:IsPlayer() ) ) then
 
 		ent:SetNoDraw( true )
 		return
@@ -202,9 +202,9 @@ end
 function TOOL:Think()
 
 	local mdl = self:GetClientInfo( "model" )
-	if ( !IsValidHoverballModel( mdl ) ) then self:ReleaseGhostEntity() return end
+	if ( not IsValidHoverballModel( mdl ) ) then self:ReleaseGhostEntity() return end
 
-	if ( !IsValid( self.GhostEntity ) or self.GhostEntity:GetModel() ~= mdl ) then
+	if ( not IsValid( self.GhostEntity ) or self.GhostEntity:GetModel() ~= mdl ) then
 		self:MakeGhostEntity( mdl, vector_origin, angle_zero )
 	end
 

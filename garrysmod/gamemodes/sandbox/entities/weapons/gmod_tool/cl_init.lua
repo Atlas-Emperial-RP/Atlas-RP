@@ -50,11 +50,11 @@ function SWEP:DrawHUD()
 	local toolObject = self:GetToolObject()
 	
 	-- Don't draw help for a nonexistant tool!
-	if ( !toolObject ) then return end
+	if ( not toolObject ) then return end
 
 	toolObject:DrawHUD()
 
-	if ( !gmod_drawhelp:GetBool() ) then return end
+	if ( not gmod_drawhelp:GetBool() ) then return end
 
 	-- This could probably all suck less than it already does
 
@@ -98,7 +98,7 @@ function SWEP:DrawHUD()
 
 	TextTable.font = "GModToolHelp"
 
-	if ( !toolObject.Information ) then
+	if ( not toolObject.Information ) then
 		TextTable.pos = { x + self.InfoBoxHeight, y }
 		TextTable.text = toolObject:GetHelpText()
 		w, h = draw.TextShadow( TextTable, 1 )
@@ -119,7 +119,7 @@ function SWEP:DrawHUD()
 
 		local name = v.name
 
-		if ( !name ) then goto continue end
+		if ( not name ) then goto continue end
 		if ( v.stage and v.stage ~= self:GetStage() ) then goto continue end
 		if ( v.op and v.op ~= toolObject:GetOperation() ) then goto continue end
 
@@ -134,26 +134,26 @@ function SWEP:DrawHUD()
 		local icon1 = v.icon
 		local icon2 = v.icon2
 
-		if ( !icon1 ) then
+		if ( not icon1 ) then
 			if ( string.StartsWith( name, "info" ) ) then icon1 = "gui/info" end
 			if ( string.StartsWith( name, "left" ) ) then icon1 = "gui/lmb.png" end
 			if ( string.StartsWith( name, "right" ) ) then icon1 = "gui/rmb.png" end
 			if ( string.StartsWith( name, "reload" ) ) then icon1 = "gui/r.png" end
 			if ( string.StartsWith( name, "use" ) ) then icon1 = "gui/e.png" end
 		end
-		if ( !icon2 and !string.StartsWith( name, "use" ) and string.EndsWith( name, "use" ) ) then icon2 = "gui/e.png" end
+		if ( not icon2 and not string.StartsWith( name, "use" ) and string.EndsWith( name, "use" ) ) then icon2 = "gui/e.png" end
 
 		self.Icons = self.Icons or {}
-		if ( icon1 and !self.Icons[ icon1 ] ) then self.Icons[ icon1 ] = Material( icon1 ) end
-		if ( icon2 and !self.Icons[ icon2 ] ) then self.Icons[ icon2 ] = Material( icon2 ) end
+		if ( icon1 and not self.Icons[ icon1 ] ) then self.Icons[ icon1 ] = Material( icon1 ) end
+		if ( icon2 and not self.Icons[ icon2 ] ) then self.Icons[ icon2 ] = Material( icon2 ) end
 
-		if ( icon1 and self.Icons[ icon1 ] and !self.Icons[ icon1 ]:IsError() ) then
+		if ( icon1 and self.Icons[ icon1 ] and not self.Icons[ icon1 ]:IsError() ) then
 			surface.SetDrawColor( 255, 255, 255, 255 )
 			surface.SetMaterial( self.Icons[ icon1 ] )
 			surface.DrawTexturedRect( x, y + h2, 16, 16 )
 		end
 
-		if ( icon2 and self.Icons[ icon2 ] and !self.Icons[ icon2 ]:IsError() ) then
+		if ( icon2 and self.Icons[ icon2 ] and not self.Icons[ icon2 ]:IsError() ) then
 			surface.SetDrawColor( 255, 255, 255, 255 )
 			surface.SetMaterial( self.Icons[ icon2 ] )
 			surface.DrawTexturedRect( x - 25, y + h2, 16, 16 )
@@ -162,7 +162,7 @@ function SWEP:DrawHUD()
 		end
 
 		h2 = h2 + h
-
+		::continue::
 	end
 
 	self.InfoBoxHeight = h2 + 8
@@ -171,28 +171,28 @@ end
 
 function SWEP:SetStage( ... )
 
-	if ( !self:GetToolObject() ) then return end
+	if ( not self:GetToolObject() ) then return end
 	return self:GetToolObject():SetStage( ... )
 
 end
 
 function SWEP:GetStage( ... )
 
-	if ( !self:GetToolObject() ) then return end
+	if ( not self:GetToolObject() ) then return end
 	return self:GetToolObject():GetStage( ... )
 
 end
 
 function SWEP:ClearObjects( ... )
 
-	if ( !self:GetToolObject() ) then return end
+	if ( not self:GetToolObject() ) then return end
 	self:GetToolObject():ClearObjects( ... )
 
 end
 
 function SWEP:StartGhostEntities( ... )
 
-	if ( !self:GetToolObject() ) then return end
+	if ( not self:GetToolObject() ) then return end
 	self:GetToolObject():StartGhostEntities( ... )
 
 end
@@ -202,7 +202,7 @@ end
 
 function SWEP:FreezeMovement()
 
-	if ( !self:GetToolObject() ) then return false end
+	if ( not self:GetToolObject() ) then return false end
 
 	return self:GetToolObject():FreezeMovement()
 

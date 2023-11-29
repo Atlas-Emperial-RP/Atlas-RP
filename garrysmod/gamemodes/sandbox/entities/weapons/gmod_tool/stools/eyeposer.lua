@@ -37,7 +37,7 @@ local function ConvertRelativeToEyesAttachment( ent, pos )
 	if ( eyeattachment == 0 ) then return end
 
 	local attachment = ent:GetAttachment( eyeattachment )
-	if ( !attachment ) then return end
+	if ( not attachment ) then return end
 
 	return WorldToLocal( pos, angle_zero, attachment.Pos, attachment.Ang )
 
@@ -65,7 +65,7 @@ function TOOL:CalculateEyeTarget()
 		if ( eyeattachment == 0 ) then return fwd * distance end
 
 		local attachment = ent:GetAttachment( eyeattachment )
-		if ( !attachment ) then return fwd * distance end
+		if ( not attachment ) then return fwd * distance end
 
 		return LocalToWorld( fwd * distance, angle_zero, attachment.Pos, attachment.Ang )
 	end
@@ -80,7 +80,7 @@ end
 
 function TOOL:SetSelectedEntity( ent )
 
-	if ( !IsValid( ent ) ) then self:SetOperation( 0 ) end
+	if ( not IsValid( ent ) ) then self:SetOperation( 0 ) end
 
 	if ( IsValid( ent ) and ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
 	return self:GetWeapon():SetNWEntity( "eyeposer_ent", ent )
@@ -93,10 +93,10 @@ function TOOL:LeftClick( trace )
 		return self:MakeLookAtMe( trace )
 	end
 
-	if ( !IsValid( self:GetSelectedEntity() ) or self:GetOperation() ~= 1 ) then
+	if ( not IsValid( self:GetSelectedEntity() ) or self:GetOperation() ~= 1 ) then
 
 		self:SetSelectedEntity( trace.Entity )
-		if ( !IsValid( self:GetSelectedEntity() ) ) then return false end
+		if ( not IsValid( self:GetSelectedEntity() ) ) then return false end
 
 		local eyeAtt = self:GetSelectedEntity():LookupAttachment( "eyes" )
 		if ( eyeAtt == 0 ) then
@@ -115,10 +115,10 @@ function TOOL:LeftClick( trace )
 	self:SetSelectedEntity( NULL )
 	self:SetOperation( 0 )
 
-	if ( !IsValid( selectedEnt ) ) then return false end
+	if ( not IsValid( selectedEnt ) ) then return false end
 
 	local LocalPos = ConvertRelativeToEyesAttachment( selectedEnt, trace.HitPos )
-	if ( !LocalPos ) then return false end
+	if ( not LocalPos ) then return false end
 
 	SetEyeTarget( self:GetOwner(), selectedEnt, { EyeTarget = LocalPos } )
 
@@ -132,7 +132,7 @@ function TOOL:RightClick( trace )
 	local hadEntity = IsValid( self:GetSelectedEntity() )
 
 	self:SetSelectedEntity( trace.Entity )
-	if ( !IsValid( self:GetSelectedEntity() ) ) then return hadEntity end
+	if ( not IsValid( self:GetSelectedEntity() ) ) then return hadEntity end
 
 	local eyeAtt = self:GetSelectedEntity():LookupAttachment( "eyes" )
 	if ( eyeAtt == 0 ) then
@@ -159,14 +159,14 @@ function TOOL:MakeLookAtMe( trace )
 
 	local ent = trace.Entity
 	if ( IsValid( ent ) and ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
-	if ( !IsValid( ent ) ) then return false end
+	if ( not IsValid( ent ) ) then return false end
 
 	if ( CLIENT ) then return true end
 
 	local pos = self:GetOwner():EyePos()
 
 	local LocalPos = ConvertRelativeToEyesAttachment( ent, pos )
-	if ( !LocalPos ) then return false end
+	if ( not LocalPos ) then return false end
 
 	SetEyeTarget( self:GetOwner(), ent, { EyeTarget = LocalPos } )
 
@@ -182,7 +182,7 @@ function TOOL:Reload( trace )
 
 	local ent = trace.Entity
 	if ( IsValid( ent ) and ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
-	if ( !IsValid( ent ) ) then return false end
+	if ( not IsValid( ent ) ) then return false end
 
 	if ( CLIENT ) then return true end
 
@@ -207,7 +207,7 @@ function TOOL:Think()
 		return
 	end
 
-	if ( !IsValid( ent ) ) then self:SetOperation( 0 ) return end
+	if ( not IsValid( ent ) ) then self:SetOperation( 0 ) return end
 	
 	if ( self:GetOperation() ~= 2 ) then return end
 
@@ -225,14 +225,14 @@ local SelectionRing = surface.GetTextureID( "gui/faceposer_indicator" )
 function TOOL:DrawHUD()
 
 	local selected = self:GetSelectedEntity()
-	if ( !IsValid( selected ) ) then return end
+	if ( not IsValid( selected ) ) then return end
 
 	local eyeattachment = selected:LookupAttachment( "eyes" )
 	if ( eyeattachment == 0 ) then return end
 
 	local attachment = selected:GetAttachment( eyeattachment )
 	local scrpos = attachment.Pos:ToScreen()
-	if ( !scrpos.visible ) then return end
+	if ( not scrpos.visible ) then return end
 
 	if ( self:GetOperation() == 1 ) then
 

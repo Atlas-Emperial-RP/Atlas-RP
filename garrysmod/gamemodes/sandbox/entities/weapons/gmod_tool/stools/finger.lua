@@ -401,29 +401,29 @@ end
 function TOOL:GetHandPositions( pEntity )
 
 	local LeftHand = pEntity:LookupBone( "ValveBiped.Bip01_L_Hand" )
-	if ( !LeftHand ) then LeftHand = pEntity:LookupBone( "bip_hand_L" ) end
-	if ( !LeftHand ) then LeftHand = pEntity:LookupBone( "Bip01_L_Hand" ) end
-	if ( !LeftHand ) then LeftHand = pEntity:LookupBone( "Dog_Model.Hand_L" ) end -- DOG
-	if ( !LeftHand ) then LeftHand = pEntity:LookupBone( "ValveBiped.Hand1_L" ) end -- Vortigaunt
-	if ( !LeftHand ) then LeftHand = pEntity:LookupBone( "wrist_L" ) end -- Chell
-	if ( !LeftHand ) then LeftHand = pEntity:LookupBone( "L Hand" ) end -- Insurgency
-	if ( !LeftHand ) then LeftHand = pEntity:LookupBone( "wrist_A_L" ) end -- Portal 2 Egg bot
+	if ( not LeftHand ) then LeftHand = pEntity:LookupBone( "bip_hand_L" ) end
+	if ( not LeftHand ) then LeftHand = pEntity:LookupBone( "Bip01_L_Hand" ) end
+	if ( not LeftHand ) then LeftHand = pEntity:LookupBone( "Dog_Model.Hand_L" ) end -- DOG
+	if ( not LeftHand ) then LeftHand = pEntity:LookupBone( "ValveBiped.Hand1_L" ) end -- Vortigaunt
+	if ( not LeftHand ) then LeftHand = pEntity:LookupBone( "wrist_L" ) end -- Chell
+	if ( not LeftHand ) then LeftHand = pEntity:LookupBone( "L Hand" ) end -- Insurgency
+	if ( not LeftHand ) then LeftHand = pEntity:LookupBone( "wrist_A_L" ) end -- Portal 2 Egg bot
 
 	local RightHand = pEntity:LookupBone( "ValveBiped.Bip01_R_Hand" )
-	if ( !RightHand ) then RightHand = pEntity:LookupBone( "bip_hand_R" ) end
-	if ( !RightHand ) then RightHand = pEntity:LookupBone( "Bip01_R_Hand" ) end
-	if ( !RightHand ) then RightHand = pEntity:LookupBone( "Bip01_R_Hand" ) end
-	if ( !RightHand ) then RightHand = pEntity:LookupBone( "Dog_Model.Hand_R" ) end
-	if ( !RightHand ) then RightHand = pEntity:LookupBone( "ValveBiped.Hand1_R" ) end
-	if ( !RightHand ) then RightHand = pEntity:LookupBone( "wrist_R" ) end
-	if ( !RightHand ) then RightHand = pEntity:LookupBone( "R Hand" ) end
-	if ( !RightHand ) then RightHand = pEntity:LookupBone( "wrist_A_R" ) end
+	if ( not RightHand ) then RightHand = pEntity:LookupBone( "bip_hand_R" ) end
+	if ( not RightHand ) then RightHand = pEntity:LookupBone( "Bip01_R_Hand" ) end
+	if ( not RightHand ) then RightHand = pEntity:LookupBone( "Bip01_R_Hand" ) end
+	if ( not RightHand ) then RightHand = pEntity:LookupBone( "Dog_Model.Hand_R" ) end
+	if ( not RightHand ) then RightHand = pEntity:LookupBone( "ValveBiped.Hand1_R" ) end
+	if ( not RightHand ) then RightHand = pEntity:LookupBone( "wrist_R" ) end
+	if ( not RightHand ) then RightHand = pEntity:LookupBone( "R Hand" ) end
+	if ( not RightHand ) then RightHand = pEntity:LookupBone( "wrist_A_R" ) end
 
-	if ( !LeftHand or !RightHand ) then return false end
+	if ( not LeftHand or not RightHand ) then return false end
 
 	local LeftHand = pEntity:GetBoneMatrix( LeftHand )
 	local RightHand = pEntity:GetBoneMatrix( RightHand )
-	if ( !LeftHand or !RightHand ) then return false end
+	if ( not LeftHand or not RightHand ) then return false end
 
 	return LeftHand, RightHand
 
@@ -437,7 +437,7 @@ function TOOL:LeftClick( trace )
 
 	local LeftHand, RightHand = self:GetHandPositions( trace.Entity )
 
-	if ( !LeftHand ) then return false end
+	if ( not LeftHand ) then return false end
 	if ( CLIENT ) then return true end
 
 	local LeftHand = ( LeftHand:GetTranslation() - trace.HitPos ):Length()
@@ -463,13 +463,13 @@ function TOOL:RightClick( trace )
 	local ent = trace.Entity
 	if ( IsValid( ent ) and ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
 
-	if ( !IsValid( ent ) or ent:IsPlayer() ) then self:SetHand( NULL, 0 ) return true end
+	if ( not IsValid( ent ) or ent:IsPlayer() ) then self:SetHand( NULL, 0 ) return true end
 	--if ( ent:GetClass() ~= "prop_ragdoll" and ent:GetClass() ~= "prop_dynamic" and !ent:IsNPC() ) then return false end
 
 	if ( CLIENT ) then return false end
 
 	local LeftHand, RightHand = self:GetHandPositions( ent )
-	if ( !LeftHand ) then return false end
+	if ( not LeftHand ) then return false end
 
 	local LeftHand = ( LeftHand:GetTranslation() - trace.HitPos ):Length()
 	local RightHand = ( RightHand:GetTranslation() - trace.HitPos ):Length()
@@ -559,7 +559,7 @@ function TOOL:Think()
 
 	end
 
-	if ( !IsValid( selected ) ) then return end
+	if ( not IsValid( selected ) ) then return end
 	if ( selected:IsWorld() ) then return end
 
 	self:ApplyValues( selected, hand )
@@ -579,7 +579,7 @@ function TOOL:RebuildControlPanel( hand )
 
 	-- We've selected a new entity - rebuild the controls list
 	local CPanel = controlpanel.Get( "finger" )
-	if ( !CPanel ) then return end
+	if ( not CPanel ) then return end
 
 	CPanel:ClearControls()
 	self.BuildCPanel( CPanel, self:HandEntity(), self:HandNum() )
@@ -592,13 +592,13 @@ function TOOL.BuildCPanel( CPanel, ent, hand )
 
 	CPanel:AddControl( "Header", { Description = "#tool.finger.desc" } )
 
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	CPanel:AddControl( "ComboBox", { MenuButton = 1, Folder = "finger", Options = { [ "#preset.default" ] = ConVarsDefault }, CVars = table.GetKeys( ConVarsDefault ) } )
 
 	SetupFingers( ent )
 
-	if ( !ent.FingerIndex ) then return end
+	if ( not ent.FingerIndex ) then return end
 
 	-- Detect mitten hands
 	local NumVars = table.Count( ent.FingerIndex )
@@ -619,19 +619,19 @@ function TOOL:DrawHUD()
 	local selected = self:HandEntity()
 	local hand = self:HandNum()
 
-	if ( !IsValid( selected ) ) then return end
+	if ( not IsValid( selected ) ) then return end
 	if ( selected:IsWorld() ) then return end
 
 	local lefthand, righthand = self:GetHandPositions( selected )
 
 	local BoneMatrix = lefthand
 	if ( hand == 1 ) then BoneMatrix = righthand end
-	if ( !BoneMatrix ) then return end
+	if ( not BoneMatrix ) then return end
 
 	local vPos = BoneMatrix:GetTranslation()
 
 	local scrpos = vPos:ToScreen()
-	if ( !scrpos.visible ) then return end
+	if ( not scrpos.visible ) then return end
 
 	-- Work out the side distance to give a rough headsize box..
 	local player_eyes = LocalPlayer():EyeAngles()

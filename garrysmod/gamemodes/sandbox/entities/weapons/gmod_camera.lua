@@ -73,7 +73,7 @@ function SWEP:Reload()
 
 	local owner = self:GetOwner()
 
-	if ( !owner:KeyDown( IN_ATTACK2 ) ) then self:SetZoom( owner:IsBot() and 75 or owner:GetInfoNum( "fov_desired", 75 ) ) end
+	if ( not owner:KeyDown( IN_ATTACK2 ) ) then self:SetZoom( owner:IsBot() and 75 or owner:GetInfoNum( "fov_desired", 75 ) ) end
 	self:SetRoll( 0 )
 
 end
@@ -86,8 +86,8 @@ function SWEP:PrimaryAttack()
 	self:DoShootEffect()
 
 	-- If we're multiplayer this can be done totally clientside
-	if ( !game.SinglePlayer() and SERVER ) then return end
-	if ( CLIENT and !IsFirstTimePredicted() ) then return end
+	if ( not game.SinglePlayer() and SERVER ) then return end
+	if ( CLIENT and not IsFirstTimePredicted() ) then return end
 
 	self:GetOwner():ConCommand( "jpeg" )
 
@@ -110,7 +110,7 @@ function SWEP:Tick()
 
 	local cmd = owner:GetCurrentCommand()
 
-	if ( !cmd:KeyDown( IN_ATTACK2 ) ) then return end -- Not holding Mouse 2, bail
+	if ( not cmd:KeyDown( IN_ATTACK2 ) ) then return end -- Not holding Mouse 2, bail
 
 	self:SetZoom( math.Clamp( self:GetZoom() + cmd:GetMouseY() * FrameTime() * 6.6, 0.1, 175 ) ) -- Handles zooming
 	self:SetRoll( self:GetRoll() + cmd:GetMouseX() * FrameTime() * 1.65 ) -- Handles rotation
@@ -142,7 +142,7 @@ function SWEP:Equip()
 
 	local owner = self:GetOwner()
 
-	if ( self:GetZoom() == 70 and owner:IsPlayer() and !owner:IsBot() ) then
+	if ( self:GetZoom() == 70 and owner:IsPlayer() and not owner:IsBot() ) then
 		self:SetZoom( owner:GetInfoNum( "fov_desired", 75 ) )
 	end
 
@@ -161,7 +161,7 @@ function SWEP:DoShootEffect()
 	self:SendWeaponAnim( ACT_VM_PRIMARYATTACK )
 	owner:SetAnimation( PLAYER_ATTACK1 )
 
-	if ( SERVER and !game.SinglePlayer() ) then
+	if ( SERVER and not game.SinglePlayer() ) then
 
 		--
 		-- Note that the flash effect is only

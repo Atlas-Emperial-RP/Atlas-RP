@@ -40,7 +40,7 @@ function TOOL:LeftClick( trace )
 
 	local ent = trace.Entity
 	if ( IsValid( ent.AttachedEntity ) ) then ent = ent.AttachedEntity end
-	if ( !IsValid( ent ) ) then return false end -- The entity is valid and isn't worldspawn
+	if ( not IsValid( ent ) ) then return false end -- The entity is valid and isn't worldspawn
 	if ( CLIENT ) then return true end
 
 	local r = self:GetClientNumber( "r", 0 )
@@ -59,7 +59,7 @@ function TOOL:RightClick( trace )
 
 	local ent = trace.Entity
 	if ( IsValid( ent.AttachedEntity ) ) then ent = ent.AttachedEntity end
-	if ( !IsValid( ent ) ) then return false end -- The entity is valid and isn't worldspawn
+	if ( not IsValid( ent ) ) then return false end -- The entity is valid and isn't worldspawn
 
 	if ( CLIENT ) then return true end
 
@@ -80,7 +80,7 @@ function TOOL:Reload( trace )
 	local ent = trace.Entity
 	if ( IsValid( ent.AttachedEntity ) ) then ent = ent.AttachedEntity end
 
-	if ( !IsValid( ent ) ) then return false end -- The entity is valid and isn't worldspawn
+	if ( not IsValid( ent ) ) then return false end -- The entity is valid and isn't worldspawn
 	if ( CLIENT ) then return true end
 
 	SetColour( self:GetOwner(), ent, { Color = Color( 255, 255, 255, 255 ), RenderMode = 0, RenderFX = 0 } )

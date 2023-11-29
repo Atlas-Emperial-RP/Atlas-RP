@@ -11,7 +11,7 @@ TOOL.Name = "#tool.editentity.name"
 
 function TOOL:LeftClick( trace )
 
-	if ( !trace.Hit ) then return false end
+	if ( not trace.Hit ) then return false end
 
 	self.Weapon:SetTargetEntity1( trace.Entity )
 
@@ -34,7 +34,7 @@ function TOOL:Think()
 		self.LastEditing = CurrentEditing
 
 		local CPanel = controlpanel.Get( "editentity" )
-		if ( !CPanel ) then return end
+		if ( not CPanel ) then return end
 
 		CPanel:ClearControls()
 		self.BuildCPanel( CPanel, CurrentEditing )

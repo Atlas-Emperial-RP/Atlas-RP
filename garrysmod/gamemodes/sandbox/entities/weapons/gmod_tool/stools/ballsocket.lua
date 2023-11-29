@@ -17,7 +17,7 @@ function TOOL:LeftClick( trace )
 	if ( IsValid( trace.Entity ) and trace.Entity:IsPlayer() ) then return end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER and !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+	if ( SERVER and not util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 	local iNum = self:NumObjects()
 	local Phys = trace.Entity:GetPhysicsObjectNum( trace.PhysicsBone )
@@ -69,7 +69,7 @@ end
 
 function TOOL:Reload( trace )
 
-	if ( !IsValid( trace.Entity ) or trace.Entity:IsPlayer() ) then return false end
+	if ( not IsValid( trace.Entity ) or trace.Entity:IsPlayer() ) then return false end
 	if ( CLIENT ) then return true end
 
 	return constraint.RemoveConstraints( trace.Entity, "Ballsocket" )

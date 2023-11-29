@@ -56,7 +56,7 @@ function TOOL:LeftClick( trace )
 		trace.Entity:SetLightFOV( fov )
 		trace.Entity:SetDistance( distance )
 		trace.Entity:SetBrightness( bright )
-		trace.Entity:SetToggle( !toggle )
+		trace.Entity:SetToggle( not toggle )
 		trace.Entity:UpdateLight()
 
 		numpad.Remove( trace.Entity.NumDown )

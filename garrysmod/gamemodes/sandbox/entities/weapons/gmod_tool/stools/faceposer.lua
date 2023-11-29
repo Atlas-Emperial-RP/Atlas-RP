@@ -30,7 +30,7 @@ end
 
 local function GenerateDefaultFlexValue( ent, flexID )
 	local min, max = ent:GetFlexBounds( flexID )
-	if ( !max or max - min == 0 ) then return 0 end
+	if ( not max or max - min == 0 ) then return 0 end
 	return ( 0 - min ) / ( max - min )
 end
 
@@ -61,7 +61,7 @@ function TOOL:Think()
 	if ( self.FaceTimer > CurTime() ) then return end
 
 	local ent = self:FacePoserEntity()
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	local FlexNum = ent:GetFlexNum()
 	if ( FlexNum <= 0 ) then return end
@@ -92,7 +92,7 @@ function TOOL:RightClick( trace )
 		self:SetFacePoserEntity( ent )
 	end
 
-	if ( !IsValid( ent ) ) then return true end
+	if ( not IsValid( ent ) ) then return true end
 
 	local FlexNum = ent:GetFlexNum()
 	if ( FlexNum == 0 ) then return false end
@@ -105,7 +105,7 @@ function TOOL:RightClick( trace )
 
 		-- In multiplayer the rest is only done on the client to save bandwidth.
 		-- We can't do that in single player because these functions don't get called on the client
-		if ( !game.SinglePlayer() ) then return true end
+		if ( not game.SinglePlayer() ) then return true end
 
 	end
 
@@ -113,7 +113,7 @@ function TOOL:RightClick( trace )
 
 		local Weight = "0.0"
 
-		if ( !ent:HasFlexManipulatior() ) then
+		if ( not ent:HasFlexManipulatior() ) then
 			Weight = GenerateDefaultFlexValue( ent, i )
 		elseif ( i <= FlexNum ) then
 			Weight = ent:GetFlexWeight( i )
@@ -138,7 +138,7 @@ function TOOL:LeftClick( trace )
 	local ent = trace.Entity
 	if ( IsValid( ent ) and ent:GetClass() == "prop_effect" ) then ent = ent.AttachedEntity end
 
-	if ( !IsValid( ent ) ) then return false end
+	if ( not IsValid( ent ) ) then return false end
 	if ( ent:GetFlexNum() == 0 ) then return false end
 
 	self.FaceTimer = 0
@@ -190,7 +190,7 @@ local function PrettifyName( name )
 				table.insert( newParts, toAdd )
 				wordStart = i
 			end
-
+			::continue::
 		end
 
 		table.insert( newParts, str:sub(wordStart, str:len()))
@@ -200,6 +200,7 @@ local function PrettifyName( name )
 	for id, str in ipairs( newParts ) do
 		if ( str:len() < 2 ) then goto continue end
 		newParts[ id ] = str:Left( 1 ):upper() .. str:sub( 2 )
+		::continue::
 	end
 
 	return table.concat( newParts, " " )
@@ -209,7 +210,7 @@ function TOOL.BuildCPanel( CPanel, FaceEntity )
 
 	CPanel:AddControl( "Header", { Description = "#tool.faceposer.desc" } )
 
-	if ( !IsValid( FaceEntity ) or FaceEntity:GetFlexNum() == 0 ) then return end
+	if ( not IsValid( FaceEntity ) or FaceEntity:GetFlexNum() == 0 ) then return end
 
 	CPanel:AddControl( "ComboBox", { MenuButton = 1, Folder = "face", Options = { [ "#preset.default" ] = ConVarsDefault }, CVars = table.GetKeys( ConVarsDefault ) } )
 
@@ -377,7 +378,7 @@ function TOOL.BuildCPanel( CPanel, FaceEntity )
 
 		local name = FaceEntity:GetFlexName( i )
 
-		if ( !IsUselessFaceFlex( name ) ) then
+		if ( not IsUselessFaceFlex( name ) ) then
 
 			local min, max = FaceEntity:GetFlexBounds( i )
 
@@ -399,7 +400,7 @@ function TOOL.BuildCPanel( CPanel, FaceEntity )
 	-- Actual searching
 	filter.OnValueChange = function( pnl, txt )
 		for id, flxpnl in ipairs( flexControllers ) do
-			if ( !flxpnl:GetText():lower():find( txt:lower(), nil, true ) and !flxpnl.originalName:lower():find( txt:lower(), nil, true ) ) then
+			if ( not flxpnl:GetText():lower():find( txt:lower(), nil, true ) and not flxpnl.originalName:lower():find( txt:lower(), nil, true ) ) then
 				flxpnl:SetVisible( false )
 			else
 				flxpnl:SetVisible( true )
@@ -418,7 +419,7 @@ function TOOL:DrawHUD()
 
 	local selected = self:FacePoserEntity()
 
-	if ( !IsValid( selected ) or selected:IsWorld() or selected:GetFlexNum() == 0 ) then return end
+	if ( not IsValid( selected ) or selected:IsWorld() or selected:GetFlexNum() == 0 ) then return end
 
 	local pos = selected:GetPos()
 	local eyeattachment = selected:LookupAttachment( "eyes" )
@@ -435,7 +436,7 @@ function TOOL:DrawHUD()
 	end
 
 	local scrpos = pos:ToScreen()
-	if ( !scrpos.visible ) then return end
+	if ( not scrpos.visible ) then return end
 
 	-- Work out the side distance to give a rough headsize box..
 	local player_eyes = LocalPlayer():EyeAngles()
