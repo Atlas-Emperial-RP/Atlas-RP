@@ -15,7 +15,8 @@ function ENT:CreateGUI( scale )
 	
 	local ActiveItem = 1
 
-	/* MAIN FRAME */
+	--[[ MAIN FRAME ]]--
+
 
 	local frame = vgui.Create( "DPanel" )
 	-- frame:SetPos( 0, 0 )
@@ -51,7 +52,7 @@ function ENT:CreateGUI( scale )
 
 	frame.Paint = function( pnl, w, h )
 
-		/* BACKGROUND */
+		--[[ BACKGROUND ]]--
 
 		surface.SetDrawColor( 255, 255, 255 )
 		surface.SetMaterial( Background )
@@ -59,43 +60,47 @@ function ENT:CreateGUI( scale )
 
 		draw.RoundedBox( 0, 0, 0, w, h, Color( 0, 0, 0, 225 ))
 
-		/* TOP */
+		--[[ TOP ]]
+
 
 		draw.RoundedBox( 0, 0, 0, w, h*0.2, Color( 255, 255, 255, 10 ))
 
 		draw.DrawText( "Terminal", "MedicModFont15", w*0.5, h*0.065, Color( 255, 255, 255 ), 1)
 
-		/* BOTTOM */
+		--[[ BOTTOM ]]
+
 
 		draw.DrawText( ConfigurationMedicMod.Entities[ActiveItem].price..ConfigurationMedicMod.MoneyUnit, "MedicModFont12", w*0.5, h*0.785, Color( 255, 255, 255 ), 1)
 
-		draw.RoundedBox( 0, w*0.2, h*0.75, w*0.6, 2, Color( 255, 255, 255 ))
-	end
+		end
 
-	/* SCROLL SYSTEM */
+		--[[ SCROLL SYSTEM ]]--
 
-	local ItemScrollPanel = vgui.Create("DScrollPanel", frame )
-	ItemScrollPanel:SetSize( frame:GetWide()*0.6, frame:GetTall()*0.45 )
-	ItemScrollPanel:SetPos( frame:GetWide()*0.2, frame:GetTall()*0.25 )
 
-	ItemScrollPanel:GetVBar().Paint = function()
-	end
+		local ItemScrollPanel = vgui.Create("DScrollPanel", frame )
+		ItemScrollPanel:SetSize( frame:GetWide()*0.6, frame:GetTall()*0.45 )
+		ItemScrollPanel:SetPos( frame:GetWide()*0.2, frame:GetTall()*0.25 )
 
-	ItemScrollPanel:GetVBar().btnGrip.Paint = function()
-	end
+		ItemScrollPanel:GetVBar().Paint = function()
+		end
 
-	ItemScrollPanel:GetVBar().btnUp.Paint = function()
-	end
+		ItemScrollPanel:GetVBar().btnGrip.Paint = function()
+		end
 
-	ItemScrollPanel:GetVBar().btnDown.Paint = function()
-	end
+		ItemScrollPanel:GetVBar().btnUp.Paint = function()
+		end
 
-	/* ITEM LIST */
+		ItemScrollPanel:GetVBar().btnDown.Paint = function()
+		end
 
-	local ItemsList = vgui.Create( "DIconLayout", ItemScrollPanel )
-	ItemsList:SetSize( ItemScrollPanel:GetWide(), ItemScrollPanel:GetTall() )
-	ItemsList:SetPos( 0, 0 )
-	ItemsList:SetSpaceY( 0 )
+		--[[ ITEM LIST ]]--
+
+
+		local ItemsList = vgui.Create( "DIconLayout", ItemScrollPanel )
+		ItemsList:SetSize( ItemScrollPanel:GetWide(), ItemScrollPanel:GetTall() )
+		ItemsList:SetPos( 0, 0 )
+		ItemsList:SetSpaceY( 0 )
+		ItemsList:SetSpaceX( 0 )
 	ItemsList:SetSpaceX( 0 )
 
 	ItemSlot = {}
@@ -118,7 +123,30 @@ function ENT:CreateGUI( scale )
 			
 	end
 
-	/* LEFT */
+	local _LeftArrow = vgui.Create( "DButton", frame )
+		_LeftArrow:SetSize( 50/2, 50/2 )
+		_LeftArrow:SetPos( frame:GetWide()*0.1, frame:GetTall()*0.4 )
+		_LeftArrow:SetText("")
+
+		_LeftArrow.Paint = function( pnl, w, h )
+
+			surface.SetDrawColor( 255, 255, 255 )
+			surface.SetMaterial( ArrowLeft )
+			surface.DrawTexturedRect( 0, 0, w, h )
+		end
+
+		_LeftArrow.DoClick = function()
+
+			if ActiveItem == 1 then return end
+
+			ActiveItem = ActiveItem - 1
+
+			ItemScrollPanel:ScrollToChild(ItemSlot[ActiveItem])
+		end
+
+		--[[ RIGHT ]]
+
+		local _RightArrow = vgui.Create( "DButton", frame )
 
 	local _LeftArrow = vgui.Create( "DButton", frame )
 	_LeftArrow:SetSize( 50/2, 50/2 )
@@ -141,7 +169,7 @@ function ENT:CreateGUI( scale )
 		ItemScrollPanel:ScrollToChild(ItemSlot[ActiveItem])
 	end
 
-	/* RIGHT */
+	-- [[ RIGHT ]]
 
 	local _RightArrow = vgui.Create( "DButton", frame )
 	_RightArrow:SetSize( 50/2, 50/2 )
@@ -164,7 +192,8 @@ function ENT:CreateGUI( scale )
 		ItemScrollPanel:ScrollToChild(ItemSlot[ActiveItem])
 	end
 
-	/* BUY */
+	--[[ BUY ]]--
+
 
 	local _BuyButton = vgui.Create( "DButton", frame )
 	_BuyButton:SetSize( frame:GetWide()*0.3, frame:GetTall()*0.12 )

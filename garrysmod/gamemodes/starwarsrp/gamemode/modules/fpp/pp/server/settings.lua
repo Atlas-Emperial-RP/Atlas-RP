@@ -55,9 +55,11 @@ local function getSettingsChangedEntities(settingsType, setting)
 
     if setting == "adminall" then
         for _, v in ipairs(ents.GetAll()) do
-            if not IsValid(v) then continue end
+            if not IsValid(v) then goto continue end
             local owner = v:CPPIGetOwner()
             if IsValid(owner) then table.insert(entities, v) end
+
+            ::continue::
         end
 
         for _, v in ipairs(player.GetAll()) do
@@ -68,10 +70,12 @@ local function getSettingsChangedEntities(settingsType, setting)
         return plys, entities
     elseif setting == "worldprops" or setting == "adminworldprops" then
         for _, v in ipairs(ents.GetAll()) do
-            if FPP.Blocked[blockedString][string.lower(v:GetClass())] then continue end
+            if FPP.Blocked[blockedString][string.lower(v:GetClass())] then goto continue end
 
             local owner = v:CPPIGetOwner()
             if not IsValid(owner) then table.insert(entities, v) end
+
+            ::continue::
         end
 
         for _, v in ipairs(player.GetAll()) do
@@ -81,8 +85,10 @@ local function getSettingsChangedEntities(settingsType, setting)
         return setting == "adminworldprops" and plys or player.GetAll(), entities
     elseif setting == "canblocked" or setting == "admincanblocked" then
         for _, v in ipairs(ents.GetAll()) do
-            if not FPP.Blocked[blockedString][string.lower(v:GetClass())] then continue end
+            if not FPP.Blocked[blockedString][string.lower(v:GetClass())] then goto continue end
             table.insert(entities, v)
+
+            ::continue::
         end
 
         for _, v in ipairs(player.GetAll()) do
@@ -208,10 +214,12 @@ local function AddBlockedModel(ply, cmd, args)
     local models = getIntendedBlockedModels(args[1], tonumber(args[2]) and Entity(args[2]) or nil)
 
     for _, model in pairs(models) do
-        if FPP.BlockedModels[model] then FPP.Notify(ply, string.format([["%s" is already in the black/whitelist]], model), false) continue end
+        if FPP.BlockedModels[model] then FPP.Notify(ply, string.format([["%s" is already in the black/whitelist]], model), false) goto continue end
         FPP.BlockedModels[model] = true
         MySQLite.query("REPLACE INTO FPP_BLOCKEDMODELS1 VALUES(" .. sql.SQLStr(model) .. ");")
         FPP.NotifyAll(((ply.Nick and ply:Nick()) or "Console") .. " added " .. model .. " to the blocked models black/whitelist", true)
+
+        ::continue::
     end
 end
 concommand.Add("FPP_AddBlockedModel", runIfAccess("FPP_Settings", AddBlockedModel))
@@ -303,10 +311,12 @@ local function RetrieveSettings()
                     -- Likely an old setting that has since been removed from FPP.
                     -- This setting however still exists in the DB. Time to remove it.
                     MySQLite.query("DELETE FROM " .. k .. " WHERE var = " .. sql.SQLStr(value.var) .. ";")
-                    continue
+                    goto continue
                 end
 
                 FPP.Settings[k][value.var] = tonumber(value.setting)
+
+                ::continue::
             end
         end)
     end
@@ -382,10 +392,12 @@ local function RetrieveBlocked()
             for _, v in pairs(data) do
                 if not FPP.Blocked[v.var] then
                     ErrorNoHalt((v.var or "(nil var)") .. " blocked type does not exist! (Setting: " .. (v.setting or "") .. ")")
-                    continue
+                    goto continue
                 end
 
                 FPP.Blocked[v.var][string.lower(v.setting)] = true
+
+                ::continue::
             end
         else
             -- Give third party addons 5 seconds to add default blocked items
@@ -444,8 +456,10 @@ local function RetrieveBlockedModels()
         end
 
         for _, v in ipairs(data or {}) do
-            if not v.model then continue end
+            if not v.model then goto continue end
             FPP.BlockedModels[v.model] = true
+
+            ::continue::
         end
     end)
 end
@@ -540,11 +554,13 @@ concommand.Add("FPP_AddGroup", runIfAccess("FPP_Settings", AddGroup))
 hook.Add("InitPostEntity", "FPP_Load_CAMI", function()
     if not CAMI then return end
     for groupName, _ in pairs(CAMI.GetUsergroups()) do
-        if FPP.Groups[groupName] then continue end
+        if FPP.Groups[groupName] then goto continue end
 
         FPP.Groups[groupName] = {}
         FPP.Groups[groupName].allowdefault = true
         FPP.Groups[groupName].tools = {}
+
+        ::continue::
     end
 end)
 
@@ -777,8 +793,10 @@ local function changeBuddies(ply, buddy, settings)
     local affectedProps = {}
     for _, v in ipairs(ents.GetAll()) do
         local owner = v:CPPIGetOwner()
-        if owner ~= ply then continue end
+        if owner ~= ply then goto continue end
         table.insert(affectedProps, v)
+
+        ::continue::
     end
 
     FPP.recalculateCanTouch({buddy}, affectedProps)

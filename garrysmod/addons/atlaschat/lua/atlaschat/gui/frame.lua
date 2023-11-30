@@ -72,7 +72,7 @@ end
 ----------------------------------------------------------------------
 
 function panel:Think()
-	if (self.Dragging[1] != 0) then
+	if (self.Dragging[1] ~= 0) then
 		local x = gui.MouseX() -self.Dragging[1]
 		local y = gui.MouseY() -self.Dragging[2]
 		

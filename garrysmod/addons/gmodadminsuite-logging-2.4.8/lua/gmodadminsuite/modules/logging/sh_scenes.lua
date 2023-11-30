@@ -65,8 +65,9 @@ else
 
 	function GAS.Logging.Scenes:Clear()
 		for ent in pairs(GAS_Logging_Scenes_Ents) do
-			if (not IsValid(ent)) then continue end
+			if (not IsValid(ent)) then goto continue end
 			ent:Remove()
+			::continue::
 		end
 		GAS_Logging_Scenes_Ents = {}
 		GAS.Logging.Scenes.SceneEnts = {}
@@ -158,7 +159,7 @@ else
 
 		if (GAS.Logging.Scenes.SceneEnts[k]) then
 			for _,ent in pairs(GAS.Logging.Scenes.SceneEnts[k]) do
-				if (not IsValid(ent)) then continue end
+				if (not IsValid(ent)) then goto continue end
 				local f = false
 				for i,ent2 in ipairs(GAS.Logging.Scenes.Victims) do
 					if (ent2 == ent) then
@@ -178,6 +179,7 @@ else
 
 				GAS_Logging_Scenes_Ents[ent] = nil
 				ent:Remove()
+				::continue::
 			end
 			GAS.Logging.Scenes.SceneEnts[k] = nil
 		end

@@ -246,7 +246,7 @@ end
 
 function plymeta:ResetViewRoll()
    local ang = self:EyeAngles()
-   if ang.r != 0 then
+   if ang.r ~= 0 then
       ang.r = 0
       self:SetEyeAngles(ang)
    end

@@ -1,6 +1,6 @@
 
 -- Return if there's nothing to add on to
-if ( !sql ) then return end
+if ( not sql ) then return end
 
 
 --[[----------------------------------------------------------

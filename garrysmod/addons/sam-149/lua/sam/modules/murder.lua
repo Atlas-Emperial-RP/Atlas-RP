@@ -68,10 +68,10 @@ add("PostGamemodeLoaded", "SAM.Murder", function()
 			local targets = {admin = sam.console}
 			for i = 1, #players do
 				local v = players[i]
-				if not v:IsBot() then continue end
+				if not v:IsBot() then goto continue end
 
 				local slays = autoslain_players[v:AccountID()]
-				if not slays then continue end
+				if not slays then goto continue end
 
 				v:Kill()
 
@@ -83,6 +83,7 @@ add("PostGamemodeLoaded", "SAM.Murder", function()
 				})
 
 				autoslain_players[v:AccountID()] = slays > 0 and slays or nil
+				::continue::
 			end
 		end)
 	end)

@@ -39,7 +39,7 @@
 
 <body ng-app="MenuApp" ng-controller="MenuController">
 
-<div id="version" ng-click="ShowNews()" ng-show="Branch"><span ng-show="Branch != 'unknown'">You are on the {{Branch}} branch. Click here to find out more. ( </span>{{Version}}<span ng-show="Branch != 'unknown'"> )</span></div>
+<div id="version" ng-click="ShowNews()" ng-show="Branch"><span ng-show="Branch ~= 'unknown'">You are on the {{Branch}} branch. Click here to find out more. ( </span>{{Version}}<span ng-show="Branch ~= 'unknown'"> )</span></div>
 
 <div ng-view>
 
@@ -100,7 +100,7 @@
 	<li ng-repeat="game in Games|orderBy:'title'" class="{{IfElse( !game.owned, 'notowned', '' )}} {{IfElse( !game.installed, 'notinstalled', '' )}}">
 		<input type=checkbox ng-model="game.mounted" ng-show="game.installed" ng-change="GameMountChanged( game )"/>
 		<img src='img/notowned.png' ng-show="!game.owned" width="16" height="16">
-		<img src='img/notinstalled.png' ng-show="game.owned && !game.installed" width="16" height="16">
+		<img src='img/notinstalled.png' ng-show="game.owned and !game.installed" width="16" height="16">
 
 		<span>{{game.title}}</span>
 	</li>

@@ -35,9 +35,9 @@ end
 -----------------------------------------------------------]]
 function GM:HUDWeaponPickedUp( wep )
 
-	if ( !IsValid( LocalPlayer() ) || !LocalPlayer():Alive() ) then return end
-	if ( !IsValid( wep ) ) then return end
-	if ( !isfunction( wep.GetPrintName ) ) then return end
+	if ( not IsValid( LocalPlayer() ) or not LocalPlayer():Alive() ) then return end
+	if ( not IsValid( wep ) ) then return end
+	if ( not isfunction( wep.GetPrintName ) ) then return end
 
 	local pickup = AddGenericPickup( self, wep:GetPrintName() )
 	pickup.color = Color( 255, 200, 50, 255 )
@@ -50,7 +50,7 @@ end
 -----------------------------------------------------------]]
 function GM:HUDItemPickedUp( itemname )
 
-	if ( !IsValid( LocalPlayer() ) || !LocalPlayer():Alive() ) then return end
+	if ( not IsValid( LocalPlayer() ) or not LocalPlayer():Alive() ) then return end
 
 	local pickup = AddGenericPickup( self, "#" .. itemname )
 	pickup.color = Color( 180, 255, 180, 255 )
@@ -63,7 +63,7 @@ end
 -----------------------------------------------------------]]
 function GM:HUDAmmoPickedUp( itemname, amount )
 
-	if ( !IsValid( LocalPlayer() ) || !LocalPlayer():Alive() ) then return end
+	if ( not IsValid( LocalPlayer() ) or not LocalPlayer():Alive() ) then return end
 
 	-- Try to tack it onto an exisiting ammo pickup
 	if ( self.PickupHistory ) then
@@ -101,7 +101,7 @@ function GM:HUDDrawPickupHistory()
 
 	for k, v in pairs( self.PickupHistory ) do
 
-		if ( !istable( v ) ) then
+		if ( not istable( v ) ) then
 
 			Msg( tostring( v ) .. "\n" )
 			PrintTable( self.PickupHistory )

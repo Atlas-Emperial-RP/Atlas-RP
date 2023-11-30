@@ -15,7 +15,7 @@ atlaschat.restrictions = {}
 function atlaschat.FixInvalidFont()
 	local ok = pcall(draw.SimpleText, "shit", atlaschat.font:GetString(), 0, 0, color_transparent, 1, 1)
 
-	if (!ok) then
+	if (not ok) then
 		atlaschat.font:SetString("atlaschat.theme.text")
 
 		Msg("Reverting atlaschat font because it is invalid!\n")
@@ -105,7 +105,7 @@ hook.Add("InitPostEntity", "atlaschat.CreateChatbox", function()
 
 	local theme = atlaschat.theme.GetCurrent()
 
-	if (!theme) then
+	if (not theme) then
 		Msg("Invalid atlaschat theme! Reverting back to default.\n")
 
 		atlaschat.themeConfig:SetString("default")
@@ -113,7 +113,7 @@ hook.Add("InitPostEntity", "atlaschat.CreateChatbox", function()
 
 	local panel = atlaschat.theme.GetValue("panel")
 
-	if (!ValidPanel(panel)) then
+	if (not ValidPanel(panel)) then
 		atlaschat.theme.Call("Initialize")
 
 		atlaschat.themeConfig:OnChange(atlaschat.themeConfig:GetString())
@@ -213,7 +213,7 @@ gameevent.Listen("player_disconnect")
 hook.Add("player_disconnect", "atlaschat.DisconnectMessage", function(data)
 	local filtered = atlaschat.filterJoinDisconnect:GetBool()
 
-	if (!filtered) then
+	if (not filtered) then
 		chat.AddText(color_white, ":offline: Player ", color_red, data.name, color_grey, " (" .. data.networkid	.. ") ", color_white, "has left the server: " .. data.reason)
 	end
 end)
@@ -223,7 +223,7 @@ net.Receive("atlaschat.plcnt", function(bits)
 	local steamID = net.ReadString()
 	local filtered = atlaschat.filterJoinDisconnect:GetBool()
 
-	if (!filtered) then
+	if (not filtered) then
 		chat.AddText(color_white, ":online: Player ", color_limegreen, name, color_grey, " (" .. steamID .. ") ", color_white, "has joined the game.")
 	end
 end)
@@ -246,7 +246,7 @@ hook.Add("ChatText", "atlaschat.ChatText", function(index, name, text, filter)
 				end
 			end
 		elseif (filter == "chat") then
-			if (name and name != "") then
+			if (name and name ~= "") then
 				chat.AddText(color_grey, name, color_white, text)
 			else
 				timer.Simple(0, function() chat.AddText(color_white, text) end)
@@ -324,7 +324,7 @@ end
 --		Override chat.AddText to use our theme function.
 ----------------------------------------------------------------------
 
-if (!atlaschat.chatAddText) then atlaschat.chatAddText = chat.AddText end
+if (not atlaschat.chatAddText) then atlaschat.chatAddText = chat.AddText end
 
 function chat.AddText(...)
 	local panel = atlaschat.theme.GetValue("panel")
@@ -373,14 +373,14 @@ function atlaschat.BuildFontCache(text, font)
 	local lowered = string.lower(font)
 	local len = string.utf8len(text)
 
-	if (!atlaschat.fontCache[lowered]) then atlaschat.fontCache[lowered] = {} end
+	if (not atlaschat.fontCache[lowered]) then atlaschat.fontCache[lowered] = {} end
 
 	surface.SetFont(font)
 
 	for i = 1, len do
 		local character = string.utf8sub(text, i, i)
 
-		if (!atlaschat.fontCache[lowered][character]) then
+		if (not atlaschat.fontCache[lowered][character]) then
 			local width = surface.GetTextSize(character)
 
 			atlaschat.fontCache[lowered][character] = width
@@ -442,7 +442,7 @@ function atlaschat.NewBasePanel()
 					self:SetCursor("beam")
 
 					for k, child in pairs(children) do
-						if (ValidPanel(child) and !child.cursor) then
+						if (ValidPanel(child) and not child.cursor) then
 							child:SetCursor("beam")
 						end
 					end
@@ -450,7 +450,7 @@ function atlaschat.NewBasePanel()
 					if (input.IsMouseDown(MOUSE_LEFT)) then
 						currentPanel = self
 
-						if (!ValidPanel(previousPanel)) then
+						if (not ValidPanel(previousPanel)) then
 							previousPanel = self
 						else
 							local list = chatPanel:GetActiveList()
@@ -507,7 +507,7 @@ function atlaschat.NewBasePanel()
 							end
 						end
 
-						if (!self.selection.x) then
+						if (not self.selection.x) then
 							for k, child in pairs(children) do
 								if (ValidPanel(child)) then
 									local x2 = child:GetPos()
@@ -576,7 +576,7 @@ function atlaschat.NewBasePanel()
 					self:SetCursor("arrow")
 
 					for k, child in pairs(children) do
-						if (ValidPanel(child) and !child.cursor) then
+						if (ValidPanel(child) and not child.cursor) then
 							child:SetCursor("arrow")
 						end
 					end
@@ -584,7 +584,7 @@ function atlaschat.NewBasePanel()
 			end
 		end
 
-		if (ValidPanel(chatPanel) and !chatPanel:IsVisible()) then
+		if (ValidPanel(chatPanel) and not chatPanel:IsVisible()) then
 			if (self.fade and self.fade <= CurTime()) then
 				self:AlphaTo(0, 1.5, 0)
 
@@ -842,7 +842,7 @@ function atlaschat.ParseExpressionPreview(parent, font, noWrap)
 
 					-- We're at the end.
 					if (ending > #exploded) then
-						if (text != "") then
+						if (text ~= "") then
 							label:SetText(text)
 							label:SizeToContents()
 
@@ -857,7 +857,7 @@ function atlaschat.ParseExpressionPreview(parent, font, noWrap)
 
 		if (type == "Panel") then
 			-- Lol hacky.
-			if (base != value:GetParent()) then
+			if (base ~= value:GetParent()) then
 				value:SetParent(base)
 			end
 
@@ -971,7 +971,7 @@ function atlaschat.ParseExpressionPreview(parent, font, noWrap)
 
 						-- We're at the end.
 						if (ending > #exploded) then
-							if (text != "") then
+							if (text ~= "") then
 								label:SetText(text)
 								label:SizeToContents()
 
@@ -994,9 +994,9 @@ end
 ---------------------------------------------------------
 
 hook.Add("Think", "atlaschat.TextSelection", function()
-	if (!atlaschat) then return; end
-	if (!atlaschat.theme) then return; end
-	if (!atlaschat.theme.GetValue) then return; end
+	if (not atlaschat) then return; end
+	if (not atlaschat.theme) then return; end
+	if (not atlaschat.theme.GetValue) then return; end
 	
 	local panel = atlaschat.theme.GetValue("panel")
 
@@ -1009,7 +1009,7 @@ hook.Add("Think", "atlaschat.TextSelection", function()
 	end
 
 	if (input.IsMouseDown(MOUSE_LEFT)) then
-		if (!lastMouseDown) then
+		if (not lastMouseDown) then
 			lastMouseDown = CurTime()
 
 			copiedText = false
@@ -1035,7 +1035,7 @@ hook.Add("Think", "atlaschat.TextSelection", function()
 	end
 
 	if (input.IsKeyDown(KEY_LCONTROL) and input.IsKeyDown(KEY_C) and ValidPanel(previousPanel) and ValidPanel(currentPanel)) then
-		if (!copiedText) then
+		if (not copiedText) then
 			local table, string = table, string
 			local list = panel:GetActiveList()
 			local children = list:GetCanvas():GetChildren()
@@ -1246,7 +1246,7 @@ net.Receive("atlaschat.rxpm", function(bits)
 	local panel = atlaschat.theme.GetValue("panel").chatrooms
 
 	-- Add it to the "GLOBAL" chat.
-	if (player != LocalPlayer()) then
+	if (player ~= LocalPlayer()) then
 		atlaschat.theme.Call("ParseText", nil, color_red, "(PM) ", player, color_white, ": ", text)
 	end
 
@@ -1264,7 +1264,7 @@ net.Receive("atlaschat.gtplpm", function(bits)
 	local panel = atlaschat.theme.GetValue("panel").chatrooms
 	local chatRoom = panel:GetChatroom(key)
 
-	if (!ValidPanel(chatRoom)) then
+	if (not ValidPanel(chatRoom)) then
 		chatRoom = panel:AddChatroom(nil, key, true)
 	end
 
@@ -1434,7 +1434,7 @@ net.Receive("atlaschat.chatText", function(bits)
 	local text = net.ReadString()
 	local player = net.ReadEntity()
 	local team = util.tobool(net.ReadBit())
-	local dead = IsValid(player) and !player:Alive() or false
+	local dead = IsValid(player) and not player:Alive() or false
 
 	hook.Run("OnPlayerChat", player, text, team, dead)
 end)

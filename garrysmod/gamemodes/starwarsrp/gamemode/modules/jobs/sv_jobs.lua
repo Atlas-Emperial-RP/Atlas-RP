@@ -111,18 +111,22 @@ function meta:changeTeam(t, force, suppressNotification, ignoreMaxMembers)
         -- Must not be ipairs, DarkRPEntities might have missing keys when
         -- DarkRP.removeEntity is called.
         for _, v in pairs(DarkRPEntities) do
-            if GAMEMODE.Config.preventClassItemRemoval[v.ent] then continue end
-            if not v.allowed then continue end
-            if istable(v.allowed) and (table.HasValue(v.allowed, t) or not table.HasValue(v.allowed, prevTeam)) then continue end
+            if GAMEMODE.Config.preventClassItemRemoval[v.ent] then goto continue end
+            if not v.allowed then goto continue end
+            if istable(v.allowed) and (table.HasValue(v.allowed, t) or not table.HasValue(v.allowed, prevTeam)) then goto continue end
             for _, e in ipairs(ents.FindByClass(v.ent)) do
                 if e.SID == self.SID then e:Remove() end
             end
+
+            ::continue::
         end
 
         if not GAMEMODE.Config.preventClassItemRemoval["spawned_shipment"] then
             for _, v in ipairs(ents.FindByClass("spawned_shipment")) do
-                if v.allowed and istable(v.allowed) and table.HasValue(v.allowed, t) then continue end
+                if v.allowed and istable(v.allowed) and table.HasValue(v.allowed, t) then goto continue end
                 if v.SID == self.SID then v:Remove() end
+
+                ::continue::
             end
         end
     end

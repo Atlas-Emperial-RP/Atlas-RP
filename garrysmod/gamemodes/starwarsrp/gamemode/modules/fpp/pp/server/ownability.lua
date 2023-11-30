@@ -193,14 +193,16 @@ end
 -- try not to call this with both player.GetAll() and ents.GetAll()
 local function recalculateCanTouch(players, entities)
     for k, v in pairs(entities) do
-        if not IsValid(v) then entities[k] = nil continue end
-        if v:IsEFlagSet(EFL_SERVER_ONLY) then entities[k] = nil continue end
-        if blockedEnts[v:GetClass()] then entities[k] = nil continue end
-        if v:IsWeapon() and IsValid(v.Owner) then entities[k] = nil continue end
+        if not IsValid(v) then entities[k] = nil goto continue end
+        if v:IsEFlagSet(EFL_SERVER_ONLY) then entities[k] = nil goto continue end
+        if blockedEnts[v:GetClass()] then entities[k] = nil goto continue end
+        if v:IsWeapon() and IsValid(v.Owner) then entities[k] = nil goto continue end
+
+        ::continue::
     end
 
     for _, ply in pairs(players) do
-        if not IsValid(ply) then continue end
+        if not IsValid(ply) then goto continue end
         -- optimisations
         ply.FPPIsAdmin = ply.FPP_Privileges.FPP_TouchOtherPlayersProps
         ply.FPP_PrivateSettings_OtherPlayerProps = ply:GetInfo("FPP_PrivateSettings_OtherPlayerProps")
@@ -224,6 +226,8 @@ local function recalculateCanTouch(players, entities)
         ply.FPP_PrivateSettings_OwnProps = nil
         ply.FPP_PrivateSettings_WorldProps = nil
         ply.FPPIsAdmin = nil
+
+        ::continue::
     end
 end
 
@@ -302,14 +306,14 @@ local function handleConstraintCreation(ent)
         local touch1, touch2 = FPP.plyCanTouchEnt(ply, ent1), FPP.plyCanTouchEnt(ply, ent2)
 
         -- The constrained entities have the same touching rights.
-        if touch1 == touch2 then continue end
+        if touch1 == touch2 then goto continue end
 
         local restrictedAccess = bit.band(touch1, touch2)
 
         local send = {}
         for _, e in pairs(constraint.GetAllConstrainedEntities(ent1) or {}) do
-            if not IsValid(e) then continue end
-            if FPP.plyCanTouchEnt(ply, e) == restrictedAccess then continue end
+            if not IsValid(e) then goto continue end
+            if FPP.plyCanTouchEnt(ply, e) == restrictedAccess then goto continue end
 
             e.FPPRestrictConstraint = e.FPPRestrictConstraint or {}
             e.FPPConstraintReasons = e.FPPConstraintReasons or {}
@@ -317,9 +321,13 @@ local function handleConstraintCreation(ent)
             e.FPPConstraintReasons[ply] = reason
 
             table.insert(send, e)
+
+            ::continue::
         end
 
         FPP.plySendTouchData(ply, send)
+
+        ::continue::
     end
 
 end
@@ -331,24 +339,26 @@ local function onEntitiesCreated(ents)
     local send = {}
 
     for _, ent in pairs(ents) do
-        if not IsValid(ent) then continue end
+        if not IsValid(ent) then goto continue end
 
         if isConstraint(ent) then
             handleConstraintCreation(ent)
-            continue
+            goto continue
         end
 
         -- Don't send information about server only entities to the clients
         if ent:GetSolid() == 0 or ent:IsEFlagSet(EFL_SERVER_ONLY) then
-            continue
+            goto continue
         end
 
-        if blockedEnts[ent:GetClass()] then continue end
+        if blockedEnts[ent:GetClass()] then goto continue end
 
         for _, ply in ipairs(player.GetAll()) do
             FPP.calculateCanTouch(ply, ent)
         end
         table.insert(send, ent)
+
+        ::continue::
     end
 
     for _, ply in ipairs(player.GetAll()) do
@@ -379,12 +389,14 @@ On entity removed
 -- Update constraints, O(players * (entities + constraints))
 function FPP.RecalculateConstrainedEntities(players, entities)
     for i, ent in pairs(entities) do
-        if not IsValid(ent) then entities[i] = nil continue end
-        if ent:IsEFlagSet(EFL_SERVER_ONLY) then entities[i] = nil continue end
-        if blockedEnts[ent:GetClass()] then entities[i] = nil continue end
+        if not IsValid(ent) then entities[i] = nil goto continue end
+        if ent:IsEFlagSet(EFL_SERVER_ONLY) then entities[i] = nil goto continue end
+        if blockedEnts[ent:GetClass()] then entities[i] = nil goto continue end
 
         ent.FPPRestrictConstraint = ent.FPPRestrictConstraint or {}
         ent.FPPConstraintReasons = ent.FPPConstraintReasons or {}
+
+        ::continue::
     end
 
     -- constrained entities form a graph.
@@ -397,7 +409,7 @@ function FPP.RecalculateConstrainedEntities(players, entities)
         local value -- used as key and value of the BFSQueue
 
         for _, ent in pairs(entities) do
-            if discovered[ent] then continue end -- We've seen this ent in a graph
+            if discovered[ent] then goto continue end -- We've seen this ent in a graph
             ent.FPPCanTouch = ent.FPPCanTouch or {}
             ent.FPPCanTouch[ply] = ent.FPPCanTouch[ply] or 0
 
@@ -413,11 +425,13 @@ function FPP.RecalculateConstrainedEntities(players, entities)
                 for _, constr in pairs(value.Constraints or {}) do
                     local otherEnt = constr.Ent1 == value and constr.Ent2 or constr.Ent1
 
-                    if not IsValid(otherEnt) or gray[otherEnt] or black[otherEnt] then continue end
+                    if not IsValid(otherEnt) or gray[otherEnt] or black[otherEnt] then goto continue end
 
                     gray[otherEnt] = true
                     BFSQueue[right] = otherEnt
                     right = right + 1
+
+                    ::continue::
                 end
 
                 black[value] = true
@@ -443,6 +457,8 @@ function FPP.RecalculateConstrainedEntities(players, entities)
             -- reset BFS information for next BFS round
             black = {}
             gray = {}
+
+            ::continue::
         end
     end
 end

@@ -12,34 +12,34 @@ if SERVER then
 
 	function SetPhysProp( Player, Entity, BoneID, Bone, Data )
 
-		if ( !IsValid( Bone ) ) then
+		if ( not IsValid( Bone ) ) then
 
 			Bone = Entity:GetPhysicsObjectNum( BoneID )
-			if ( !IsValid( Bone ) ) then
+			if ( not IsValid( Bone ) ) then
 				Msg( "SetPhysProp: Error applying attributes to invalid physics object!\n" )
 				return
 			end
 
 		end
 
-		if ( Data.GravityToggle != nil )	then Bone:EnableGravity( Data.GravityToggle ) end
-		if ( Data.Material != nil )			then Bone:SetMaterial( Data.Material ) end
+		if ( Data.GravityToggle ~= nil )	then Bone:EnableGravity( Data.GravityToggle ) end
+		if ( Data.Material ~= nil )			then Bone:SetMaterial( Data.Material ) end
 
 		-- todo: Rename/Implement
 		--[[
-		if ( Data.motionb != nil )	then Bone:EnableMotion( Data.motionb ) end
-		if ( Data.mass != nil )			then Bone:SetMass( Data.mass ) end
-		if ( Data.dragb != nil )		then Bone:EnableDrag( Data.dragb ) end
-		if ( Data.drag != nil )			then Bone:SetDragCoefficient( Data.drag ) end
-		if ( Data.buoyancy != nil )		then Bone:SetBuoyancyRatio( Data.buoyancy ) end
-		if ( Data.rotdamping != nil )	then Bone:SetDamping( PhysBone:GetSpeedDamping(), Data.rotdamping ) end
-		if ( Data.speeddamping != nil )	then Bone:SetDamping( Data.speeddamping, PhysBone:GetRotDamping() ) end
+		if ( Data.motionb ~= nil )	then Bone:EnableMotion( Data.motionb ) end
+		if ( Data.mass ~= nil )			then Bone:SetMass( Data.mass ) end
+		if ( Data.dragb ~= nil )		then Bone:EnableDrag( Data.dragb ) end
+		if ( Data.drag ~= nil )			then Bone:SetDragCoefficient( Data.drag ) end
+		if ( Data.buoyancy ~= nil )		then Bone:SetBuoyancyRatio( Data.buoyancy ) end
+		if ( Data.rotdamping ~= nil )	then Bone:SetDamping( PhysBone:GetSpeedDamping(), Data.rotdamping ) end
+		if ( Data.speeddamping ~= nil )	then Bone:SetDamping( Data.speeddamping, PhysBone:GetRotDamping() ) end
 		--]]
 
 		-- HACK HACK
 		-- If we don't do this the prop will be motion enabled and will
 		-- slide through the world with no gravity.
-		if ( !Bone:IsMoveable() ) then
+		if ( not Bone:IsMoveable() ) then
 
 			Bone:EnableMotion( true )
 			Bone:EnableMotion( false )
@@ -55,8 +55,8 @@ if SERVER then
 
 	local function MagnetOff( pl, magnet )
 
-		if ( !IsValid( magnet ) ) then return false end
-		if ( magnet:GetTable().toggle != 0 ) then return true end
+		if ( not IsValid( magnet ) ) then return false end
+		if ( magnet:GetTable().toggle ~= 0 ) then return true end
 
 		magnet:Fire( "TurnOff", "" , 0 )
 
@@ -67,11 +67,11 @@ if SERVER then
 
 	local function MagnetOn( pl, magnet )
 
-		if ( !IsValid( magnet ) ) then return false end
+		if ( not IsValid( magnet ) ) then return false end
 
-		if ( magnet:GetTable().toggle != 0 ) then
+		if ( magnet:GetTable().toggle ~= 0 ) then
 
-			magnet:GetTable().toggle_state = !magnet:GetTable().toggle_state
+			magnet:GetTable().toggle_state = not magnet:GetTable().toggle_state
 
 			if ( magnet:GetTable().toggle_state ) then
 				magnet:Fire( "TurnOn", "" , 0 )
@@ -101,8 +101,8 @@ if SERVER then
 		if ( material ) then magnet:SetMaterial( material ) end
 
 		local spawnflags = 4
-		if ( nopull && nopull > 0 ) then spawnflags = spawnflags - 4 end		-- no pull required: remove the suck flag
-		if ( allowrot && allowrot > 0 ) then spawnflags = spawnflags + 8 end
+		if ( nopull and nopull > 0 ) then spawnflags = spawnflags - 4 end		-- no pull required: remove the suck flag
+		if ( allowrot and allowrot > 0 ) then spawnflags = spawnflags + 8 end
 
 		if ( maxobjects ) then magnet:SetKeyValue( "maxobjects", maxobjects ) end
 		if ( strength ) then magnet:SetKeyValue( "forcelimit", strength ) end
@@ -116,10 +116,10 @@ if SERVER then
 			local Phys = magnet:GetPhysicsObject()
 			if ( Vel ) then Phys:SetVelocity( Vel ) end
 			if ( aVel ) then Phys:AddAngleVelocity( aVel ) end
-			Phys:EnableMotion( frozen != true )
+			Phys:EnableMotion( frozen ~= true )
 		end
 
-		if ( alwayson && alwayson > 0 ) then
+		if ( alwayson and alwayson > 0 ) then
 			magnet:Input( "TurnOn", nil, nil, nil )
 		else
 			magnet:Input( "TurnOff", nil, nil, nil )

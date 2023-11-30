@@ -83,7 +83,7 @@ if SERVER then
 	function SetPlayerTime(ply)
 	    ply.CustomHQSpawnTimer = CurTime()
 	end
-	if disableRespawnTime != 0 then
+	if disableRespawnTime ~= 0 then
 	    hook.Add("PostPlayerDeath", "stopfalcosimmrespawn", SetPlayerTime)
 	    hook.Add("PlayerDeathThink", "stopfalcozimmrespawn", DisableImmRespawn)
 	end
@@ -92,7 +92,7 @@ function shouldveaddedthisbefore(ply, before, after)
 	if SERVER then
 		local globalwep = weapons.GetStored("weapon_defibrillator")
 		ply.CustomHQLastTeamChange = CurTime()
-		if globalwep != nil and globalwep.respawnPlayerOnJobChange then
+		if globalwep ~= nil and globalwep.respawnPlayerOnJobChange then
 			ply:Spawn()
 		end
 	end
@@ -113,7 +113,7 @@ function SWEP:SecondaryAttack()
 	timer.Simple(0.16, function() if IsValid(self) then self:SendWeaponAnim(ACT_VM_SECONDARYATTACK) end end)
 	self:SetNextSecondaryFire(CurTime()+self.ChargeTime+2)
 	timer.Simple(.9, function()
-		if !IsValid(self.Owner) or !IsValid(self) then return end
+		if not IsValid(self.Owner) or not IsValid(self) then return end
 		self.Owner:EmitSound("buttons/button1.wav", 50)
 		self.CanUse = CurTime() + self.ChargeTime
 		self:makefxN("charge")

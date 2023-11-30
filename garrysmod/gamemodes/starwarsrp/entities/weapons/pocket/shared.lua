@@ -97,8 +97,10 @@ function SWEP:SecondaryAttack()
     local maxK = 0
 
     for k in pairs(Owner:getPocketItems()) do
-        if k < maxK then continue end
+        if k < maxK then goto continue end
         maxK = k
+
+        ::continue::
     end
 
     if maxK == 0 then

@@ -113,7 +113,7 @@ end
 
 function PANEL:GetFloatValue( max )
 
-	if ( !self.m_fFloatValue ) then self.m_fFloatValue = 0 end
+	if ( not self.m_fFloatValue ) then self.m_fFloatValue = 0 end
 
 	return tonumber( self.m_fFloatValue ) or 0
 
@@ -127,11 +127,11 @@ function PANEL:SetValue( val )
 	val = tonumber( val )
 	val = val or 0
 
-	if ( self.m_numMax != nil ) then
+	if ( self.m_numMax ~= nil ) then
 		val = math.min( self.m_numMax, val )
 	end
 
-	if ( self.m_numMin != nil ) then
+	if ( self.m_numMin ~= nil ) then
 		val = math.max( self.m_numMin, val )
 	end
 
@@ -139,7 +139,7 @@ function PANEL:SetValue( val )
 
 		val = Format( "%i", val )
 
-	elseif ( val != 0 ) then
+	elseif ( val ~= 0 ) then
 
 		val = Format( "%." .. self.m_iDecimals .. "f", val )
 
@@ -149,13 +149,13 @@ function PANEL:SetValue( val )
 
 	end
 
-	local hasChanged = tonumber( val ) != tonumber( self:GetValue() )
+	local hasChanged = tonumber( val ) ~= tonumber( self:GetValue() )
 
 	--
 	-- Don't change the value while we're typing into it!
 	-- It causes confusion!
 	--
-	if ( !self:HasFocus() ) then
+	if ( not self:HasFocus() ) then
 		self:SetText( val )
 		self:ConVarChanged( val )
 	end
@@ -202,7 +202,7 @@ function PANEL:SizeToContents()
 
 	chars = chars + math.max( minchars, maxchars )
 
-	if ( self:GetDecimals() && self:GetDecimals() > 0 ) then
+	if ( self:GetDecimals() and self:GetDecimals() > 0 ) then
 
 		chars = chars + 1 -- .
 		chars = chars + self:GetDecimals()

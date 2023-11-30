@@ -127,7 +127,7 @@ add_version(110, function()
 		SET
 			`inherit` = 'user'
 		WHERE
-			`name` != 'user'
+			`name` ~= 'user'
 	]])
 
 	if not SQL.IsMySQL() then

@@ -1,6 +1,6 @@
 
 -- We don't want this to run in menu state, and render.GetAmbientLightColor doesn't exist in menu state
-if ( !render || !render.GetAmbientLightColor ) then return end
+if ( not render or not render.GetAmbientLightColor ) then return end
 
 --[[---------------------------------------------------------
   Short aliases for stencil constants
@@ -120,9 +120,9 @@ function cam.Start3D( pos, ang, fov, x, y, w, h, znear, zfar )
 	tab.origin = pos
 	tab.angles = ang
 
-	if ( fov != nil ) then tab.fov = fov end
+	if ( fov ~= nil ) then tab.fov = fov end
 
-	if ( x != nil && y != nil && w != nil && h != nil ) then
+	if ( x ~= nil and y ~= nil and w ~= nil and h ~= nil ) then
 
 		tab.x			= x
 		tab.y			= y
@@ -132,7 +132,7 @@ function cam.Start3D( pos, ang, fov, x, y, w, h, znear, zfar )
 
 	end
 
-	if ( znear != nil && zfar != nil ) then
+	if ( znear ~= nil and zfar ~= nil ) then
 
 		tab.znear	= znear
 		tab.zfar	= zfar
@@ -168,7 +168,7 @@ end
 
 --
 -- This isn't very fast. If you're doing something every frame you should find a way to
--- cache a ClientsideModel and keep it around! This is fine for rendering to a render
+-- cache a ClientsideModel and keep it aroundnot  This is fine for rendering to a render
 -- target once - or something.
 --
 
@@ -180,7 +180,7 @@ function render.Model( tbl, ent )
 		ent = ClientsideModel( tbl.model or "error.mdl", RENDERGROUP_OTHER )
 	end
 
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	ent:SetModel( tbl.model or "error.mdl" )
 	ent:SetNoDraw( true )
@@ -192,7 +192,7 @@ function render.Model( tbl, ent )
 	--
 	-- If we created the model, then remove it!
 	--
-	if ( inent != ent ) then
+	if ( inent ~= ent ) then
 		ent:Remove()
 	end
 

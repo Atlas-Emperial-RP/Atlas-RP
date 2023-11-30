@@ -171,7 +171,7 @@ BRICKSCREDITSTORE.ITEMTYPES["Entity"] = {
     },
     UseFunction = function( ply, typeInfo )
         local entity = ents.Create( typeInfo[1] )
-        if ( !IsValid( entity ) ) then return end
+        if ( not IsValid( entity ) ) then return end
         entity:SetPos( ply:GetPos()+ply:GetForward()*25 )
         entity:Spawn()
     end
@@ -259,7 +259,7 @@ BRICKSCREDITSTORE.LOCKERTYPES["Suit"] = {
                 end
         
                 if( typeInfo[2] ) then
-                    local Armor = (ply:Armor() > 0 and ply:Armor()*(1+(typeInfo[2]/100))) or 255*(typeInfo[2]/100)
+                    local Armor = ((ply:Armor() > 0 and ply:Armor()*(1+(typeInfo[2]/100))) or 255)*(typeInfo[2]/100)
                     ply:SetArmor( math.Clamp( Armor, 5, 255*(typeInfo[2]/100) ) )
                 end
         
@@ -379,7 +379,7 @@ local Boosters = {
         ply:SetHealth( math.Clamp( ply:Health()*(1+boost), 5, ply:GetMaxHealth()*(1+boost) ) )
     end,
     ["Armor"] = function( ply, boost )
-        local Armor = (ply:Armor() > 0 and ply:Armor()*(1+boost)) or 255*boost
+        local Armor = ((ply:Armor() > 0 and ply:Armor()*(1+boost)) or 255)*boost
         ply:SetArmor( math.Clamp( Armor, 5, 255 ) )
     end,
     ["Speed"] = function( ply, boost )

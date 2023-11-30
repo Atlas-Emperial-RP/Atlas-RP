@@ -1,5 +1,5 @@
 
-if ( !debug ) then return end
+if ( not debug ) then return end
 
 --[[---------------------------------------------------------
 	Name: Trace
@@ -30,7 +30,7 @@ function debug.Trace()
 	while true do
 
 		local info = debug.getinfo( level, "Sln" )
-		if ( !info ) then break end
+		if ( not info ) then break end
 
 		if ( info.what ) == "C" then
 

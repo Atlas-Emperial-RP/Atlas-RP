@@ -6,7 +6,7 @@
 		<workshopcontainer>
 
 			<workshopmessage ng-show="Loading" ng-Tranny="'saves.loading'">...</workshopmessage>
-			<workshopmessage ng-show="( TotalResults == 0 || NumResults == 0 ) && !Loading" ng-Tranny="'saves.noneonmap'">...</workshopmessage>
+			<workshopmessage ng-show="( TotalResults == 0 || NumResults == 0 ) and !Loading" ng-Tranny="'saves.noneonmap'">...</workshopmessage>
 
 			<workshopicon ng-hide="Loading" ng-repeat="file in Files" style="width: {{IconWidth|number:0}}px; height: {{IconHeight|number:0}}px">
 
@@ -20,8 +20,8 @@
 
 				<author ng-hide="file.local">{{file.info.ownername}}</author>
 
-				<votes ng-show="!file.local && (file.vote.up-file.vote.down) > 0" style="color: #4a4">+{{file.vote.up-file.vote.down|number:0}}</votes>
-				<votes ng-show="!file.local && (file.vote.up-file.vote.down) < 0" style="color: #a44">{{file.vote.up-file.vote.down|number:0}}</votes>
+				<votes ng-show="!file.local and (file.vote.up-file.vote.down) > 0" style="color: #4a4">+{{file.vote.up-file.vote.down|number:0}}</votes>
+				<votes ng-show="!file.local and (file.vote.up-file.vote.down) < 0" style="color: #a44">{{file.vote.up-file.vote.down|number:0}}</votes>
 
 				<description>{{file.info.description}}</description>
 

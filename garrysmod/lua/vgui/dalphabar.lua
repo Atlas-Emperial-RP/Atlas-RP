@@ -17,7 +17,7 @@ end
 
 function PANEL:OnCursorMoved( x, y )
 
-	if ( !input.IsMouseDown( MOUSE_LEFT ) ) then return end
+	if ( not input.IsMouseDown( MOUSE_LEFT ) ) then return end
 
 	local fHeight = y / self:GetTall()
 

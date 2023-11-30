@@ -45,11 +45,11 @@ function PANEL:PerformLayout()
 
 	self:ApplySchemeSettings()
 
-	if ( !self.Image ) then return end
+	if ( not self.Image ) then return end
 
 	self.Image:SetPos( 7, 3 )
 
-	if ( !self:IsActive() ) then
+	if ( not self:IsActive() ) then
 		self.Image:SetImageColor( Color( 255, 255, 255, 155 ) )
 	else
 		self.Image:SetImageColor( color_white )
@@ -122,17 +122,19 @@ end
 
 function PANEL:DoRightClick()
 
-	if ( !IsValid( self:GetPropertySheet() ) ) then return end
+	if ( not IsValid( self:GetPropertySheet() ) ) then return end
 
 	local tabs = DermaMenu()
 	for k, v in pairs( self:GetPropertySheet().Items ) do
-		if ( !v || !IsValid( v.Tab ) || !v.Tab:IsVisible() ) then continue end
+		if ( not v or not IsValid( v.Tab ) or not v.Tab:IsVisible() ) then goto continue end
 		local option = tabs:AddOption( v.Tab:GetText(), function()
-			if ( !v || !IsValid( v.Tab ) || !IsValid( self:GetPropertySheet() ) || !IsValid( self:GetPropertySheet().tabScroller ) ) then return end
+			if ( not v or not IsValid( v.Tab ) or not IsValid( self:GetPropertySheet() ) or not IsValid( self:GetPropertySheet().tabScroller ) ) then return end
 			v.Tab:DoClick()
 			self:GetPropertySheet().tabScroller:ScrollToChild( v.Tab )
 		end )
 		if ( IsValid( v.Tab.Image ) ) then option:SetIcon( v.Tab.Image:GetImage() ) end
+
+		::continue::
 	end
 	tabs:Open()
 
@@ -174,7 +176,7 @@ end
 
 function PANEL:AddSheet( label, panel, material, NoStretchX, NoStretchY, Tooltip )
 
-	if ( !IsValid( panel ) ) then
+	if ( not IsValid( panel ) ) then
 		ErrorNoHalt( "DPropertySheet:AddSheet tried to add invalid panel!" )
 		debug.Trace()
 		return
@@ -198,7 +200,7 @@ function PANEL:AddSheet( label, panel, material, NoStretchX, NoStretchY, Tooltip
 
 	table.insert( self.Items, Sheet )
 
-	if ( !self:GetActiveTab() ) then
+	if ( not self:GetActiveTab() ) then
 		self:SetActiveTab( Sheet.Tab )
 		Sheet.Panel:SetVisible( true )
 	end
@@ -211,7 +213,7 @@ end
 
 function PANEL:SetActiveTab( active )
 
-	if ( !IsValid( active ) || self.m_pActiveTab == active ) then return end
+	if ( not IsValid( active ) or self.m_pActiveTab == active ) then return end
 
 	if ( IsValid( self.m_pActiveTab ) ) then
 
@@ -253,12 +255,12 @@ end
 
 function PANEL:CrossFade( anim, delta, data )
 
-	if ( !data || !IsValid( data.OldTab ) || !IsValid( data.NewTab ) ) then return end
+	if ( not data or not IsValid( data.OldTab ) or not IsValid( data.NewTab ) ) then return end
 
 	local old = data.OldTab:GetPanel()
 	local new = data.NewTab:GetPanel()
 
-	if ( !IsValid( old ) && !IsValid( new ) ) then return end
+	if ( not IsValid( old ) and not IsValid( new ) ) then return end
 
 	if ( anim.Finished ) then
 		if ( IsValid( old ) ) then
@@ -270,7 +272,7 @@ function PANEL:CrossFade( anim, delta, data )
 		if ( IsValid( new ) ) then
 			new:SetAlpha( 255 )
 			new:SetZPos( 0 )
-			new:SetVisible( true ) // In case new == old
+			new:SetVisible( true ) -- In case new == old
 		end
 
 		return
@@ -291,7 +293,7 @@ function PANEL:CrossFade( anim, delta, data )
 
 	if ( IsValid( old ) ) then
 		old:SetVisible( true )
-		if ( !IsValid( new ) ) then old:SetAlpha( 255 * ( 1 - delta ) ) end
+		if ( not IsValid( new ) ) then old:SetAlpha( 255 * ( 1 - delta ) ) end
 	end
 
 	if ( IsValid( new ) ) then
@@ -306,7 +308,7 @@ function PANEL:PerformLayout()
 	local ActiveTab = self:GetActiveTab()
 	local Padding = self:GetPadding()
 
-	if ( !IsValid( ActiveTab ) ) then return end
+	if ( not IsValid( ActiveTab ) ) then return end
 
 	-- Update size now, so the height is definitiely right.
 	ActiveTab:InvalidateLayout( true )
@@ -335,13 +337,13 @@ function PANEL:PerformLayout()
 	end
 
 	if ( IsValid( ActivePanel ) ) then
-		if ( !ActivePanel.NoStretchX ) then
+		if ( not ActivePanel.NoStretchX ) then
 			ActivePanel:SetWide( self:GetWide() - Padding * 2 )
 		else
 			ActivePanel:CenterHorizontal()
 		end
 
-		if ( !ActivePanel.NoStretchY ) then
+		if ( not ActivePanel.NoStretchY ) then
 			local _, y = ActivePanel:GetPos()
 			ActivePanel:SetTall( self:GetTall() - y - Padding )
 		else
@@ -406,18 +408,20 @@ function PANEL:CloseTab( tab, bRemovePanelToo )
 
 	for k, v in pairs( self.Items ) do
 
-		if ( v.Tab != tab ) then continue end
+		if ( v.Tab ~= tab ) then goto continue end
 
 		table.remove( self.Items, k )
 
+		::continue::
 	end
 
 	for k, v in pairs( self.tabScroller.Panels ) do
 
-		if ( v != tab ) then continue end
+		if ( v ~= tab ) then goto continue end
 
 		table.remove( self.tabScroller.Panels, k )
 
+		::continue::
 	end
 
 	self.tabScroller:InvalidateLayout( true )

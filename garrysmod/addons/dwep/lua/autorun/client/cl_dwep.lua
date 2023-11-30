@@ -77,7 +77,7 @@ end
 local oldResults = {}
 local function refreshResults()
 	if IsValid(DWEP.Menu) and IsValid(DWEP.Menu.SearchPanel) then
-		if DWEP.SearchData["results"] != oldResults then 
+		if DWEP.SearchData["results"] ~= oldResults then 
 			DWEP.SearchData["searchTime"] = nil
 			local total = #DWEP.Menu.SearchPanel.Results
 			for k,v in pairs(DWEP.Menu.SearchPanel.Results) do
@@ -236,7 +236,7 @@ local function formatWeapon(weaponData)
 	local updateData = {} 
 	local function formatWeaponData(tbl, parent)
 		for k, v in pairs(tbl) do
-			if type(v) != "function" then 
+			if type(v) ~= "function" then 
 				if type(v) == "table" then
 					formatWeaponData(v, parent .. " | " .. k)
 				else
@@ -251,7 +251,7 @@ local function formatWeapon(weaponData)
 		local valType = type(v)
 		if valType == "table" then 
 			formatWeaponData(v, k) 
-		elseif valType != "Vector" and valType != "function" then 
+		elseif valType ~= "Vector" and valType ~= "function" then 
 			updateData[k] = v
 		end 
 	end 
@@ -415,7 +415,7 @@ function OpenDWEPWeapon(class)
 		local weaponData = formatWeapon(weapon) 
 		for k,v in orderedPairs(weaponData) do
 		local defaultValue = ""
-			if type(v) == "Vector" or type(v) == "Angle" then continue end
+			if type(v) == "Vector" or type(v) == "Angle" then goto continue end
 			--if type(v) == "table" then updateData[parentLayer][k] = {value = v, changed = true, parent = parentLayer} targetUpdate = updateData[parentLayer][k]  end 
 			local configOption = vgui.Create("DPanel", weaponScroll)
 			configOption:SetPos(offset, ypos)
@@ -479,6 +479,8 @@ function OpenDWEPWeapon(class)
 				configInput:SetChecked(v)
 			end
 			ypos = ypos + 29 * 1.1
+
+			::continue::
 		end
 	end
 end 

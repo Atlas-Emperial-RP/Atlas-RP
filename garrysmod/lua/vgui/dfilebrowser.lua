@@ -26,7 +26,7 @@ function PANEL:Init()
 
 	self.Tree.DoClick = function( _, node )
 		local folder = node:GetFolder()
-		if ( !folder ) then return end
+		if ( not folder ) then return end
 
 		self:SetCurrentFolder( folder )
 	end
@@ -41,7 +41,7 @@ function PANEL:SetName( strName )
 		self.m_strName = nil
 	end
 
-	if ( !self.bSetup ) then return end
+	if ( not self.bSetup ) then return end
 
 	self:SetupTree()
 
@@ -50,7 +50,7 @@ end
 function PANEL:SetBaseFolder( strBase )
 
 	self.m_strBaseFolder = tostring( strBase )
-	if ( !self.bSetup ) then return end
+	if ( not self.bSetup ) then return end
 
 	self:SetupTree()
 
@@ -59,7 +59,7 @@ end
 function PANEL:SetPath( strPath )
 
 	self.m_strPath = tostring( strPath )
-	if ( !self.bSetup ) then return end
+	if ( not self.bSetup ) then return end
 
 	self:SetupTree()
 
@@ -67,12 +67,12 @@ end
 
 function PANEL:SetSearch( strSearch )
 
-	if ( !strSearch || strSearch == "" ) then
+	if ( not strSearch or strSearch == "" ) then
 		strSearch = "*"
 	end
 
 	self.m_strSearch = tostring( strSearch )
-	if ( !self.bSetup ) then return end
+	if ( not self.bSetup ) then return end
 
 	self:SetupTree()
 
@@ -80,8 +80,8 @@ end
 
 function PANEL:SetFileTypes( strTypes )
 
-	self.m_strFilter = tostring( strTypes || "*.*" )
-	if ( !self.bSetup ) then return end
+	self.m_strFilter = tostring( strTypes or "*.*" )
+	if ( not self.bSetup ) then return end
 
 	if ( self.m_strCurrentFolder ) then
 		self:ShowFolder( self.m_strCurrentFolder )
@@ -92,7 +92,7 @@ end
 function PANEL:SetModels( bUseModels )
 
 	self.m_bModels = tobool( bUseModels )
-	if ( !self.bSetup ) then return end
+	if ( not self.bSetup ) then return end
 
 	self:SetupFiles()
 	if ( self.m_strCurrentFolder ) then
@@ -106,12 +106,12 @@ function PANEL:SetCurrentFolder( strDir )
 	strDir = tostring( strDir )
 	strDir = string.Trim( strDir, "/" )
 
-	if ( self.m_strBaseFolder && !string.StartWith( strDir, self.m_strBaseFolder ) ) then
+	if ( self.m_strBaseFolder and not string.StartWith( strDir, self.m_strBaseFolder ) ) then
 		strDir = string.Trim( self.m_strBaseFolder, "/" ) .. "/" .. string.Trim( strDir, "/" )
 	end
 
 	self.m_strCurrentFolder = strDir
-	if ( !self.bSetup ) then return end
+	if ( not self.bSetup ) then return end
 
 	self:ShowFolder( strDir )
 
@@ -122,11 +122,11 @@ function PANEL:SetOpen( bOpen, bAnim )
 	bOpen = tobool( bOpen )
 	self.m_bOpen = bOpen
 
-	if ( !self.bSetup ) then return end
+	if ( not self.bSetup ) then return end
 
-	self.FolderNode:SetExpanded( bOpen, !bAnim )
+	self.FolderNode:SetExpanded( bOpen, not bAnim )
 	self.m_bOpen = bOpen
-	self:SetCookie( "Open", bOpen && "1" || "0" )
+	self:SetCookie( "Open", bOpen and "1" or "0" )
 
 end
 
@@ -134,7 +134,7 @@ function PANEL:Paint( w, h )
 
 	DPanel.Paint( self, w, h )
 
-	if ( !self.bSetup ) then
+	if ( not self.bSetup ) then
 		self.bSetup = self:Setup()
 	end
 
@@ -143,7 +143,7 @@ end
 function PANEL:SetupTree()
 
 	local name = self.m_strName
-	if ( !name ) then name = string.Trim( string.match( self.m_strBaseFolder, "/.+$" ) || self.m_strBaseFolder, "/" ) end
+	if ( not name ) then name = string.Trim( string.match( self.m_strBaseFolder, "/.+$" ) or self.m_strBaseFolder, "/" ) end
 
 	local children = self.Tree.RootNode.ChildNodes
 	if ( IsValid( children ) ) then
@@ -154,11 +154,11 @@ function PANEL:SetupTree()
 	self.Tree.RootNode.ChildExpanded = function( node, bExpand )
 		DTree_Node.ChildExpanded( node, bExpand )
 		self.m_bOpen = tobool( self.FolderNode.m_bExpanded )
-		self:SetCookie( "Open", self.m_bOpen && "1" || "0" )
+		self:SetCookie( "Open", self.m_bOpen and "1" or "0" )
 	end
 
 	self.FolderNode:SetExpanded( self.m_bOpen, true )
-	self:SetCookie( "Open", self.m_bOpen && "1" || "0" )
+	self:SetCookie( "Open", self.m_bOpen and "1" or "0" )
 
 	self:ShowFolder()
 
@@ -191,7 +191,7 @@ function PANEL:SetupFiles()
 	end
 	self.Divider:SetRight( self.Files )
 
-	if ( self.m_strCurrentFolder && self.m_strCurrentFolder != "" ) then
+	if ( self.m_strCurrentFolder and self.m_strCurrentFolder ~= "" ) then
 		self:ShowFolder( self.m_strCurrentFolder )
 	end
 
@@ -201,33 +201,33 @@ end
 
 function PANEL:Setup()
 
-	if ( !self.m_strBaseFolder ) then return false end
+	if ( not self.m_strBaseFolder ) then return false end
 
-	return self:SetupTree() && self:SetupFiles()
+	return self:SetupTree() and self:SetupFiles()
 
 end
 
 function PANEL:ShowFolder( path )
 
-	if ( !IsValid( self.Files ) ) then return end
+	if ( not IsValid( self.Files ) ) then return end
 
 	self.Files:Clear()
 
 	if ( IsValid( self.FileHeader ) ) then
-		self.FileHeader:SetText( path || "Files" )
+		self.FileHeader:SetText( path or "Files" )
 	end
 
-	if ( !path ) then return end
+	if ( not path ) then return end
 
 	local filters = self.m_strFilter
-	if ( !filters || filters == "" ) then
+	if ( not filters or filters == "" ) then
 		filters = "*.*"
 	end
 
 	for _, filter in ipairs( string.Explode( " ", filters ) ) do
 
-		local files = file.Find( string.Trim( path .. "/" .. ( filter || "*.*" ), "/" ), self.m_strPath )
-		if ( !istable( files ) ) then continue end
+		local files = file.Find( string.Trim( path .. "/" .. ( filter or "*.*" ), "/" ), self.m_strPath )
+		if ( not istable( files ) ) then goto continue end
 
 		for _, v in ipairs( files ) do
 
@@ -236,7 +236,7 @@ function PANEL:ShowFolder( path )
 				local icon = self.Files:Add( "SpawnIcon" )
 				icon:SetModel( path .. "/" .. v )
 				icon.DoClick = function( pnl )
-					if ( pnl.LastClickTime && SysTime() - pnl.LastClickTime < 0.3 ) then
+					if ( pnl.LastClickTime and SysTime() - pnl.LastClickTime < 0.3 ) then
 						self:OnDoubleClick( path .. "/" .. v, icon )
 					else
 						self:OnSelect( path .. "/" .. v, icon )
@@ -252,13 +252,14 @@ function PANEL:ShowFolder( path )
 
 		end
 
+		::continue::
 	end
 
 end
 
 function PANEL:SortFiles( desc )
 
-	if ( !self:GetModels() ) then
+	if ( not self:GetModels() ) then
 		self.Files:SortByColumn( 1, tobool( desc ) )
 	end
 

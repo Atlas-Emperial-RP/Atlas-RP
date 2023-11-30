@@ -110,19 +110,19 @@ function SWEP:PrimaryAttack()
 	
 	local selecteditem = items[self:GetActive()]
 	
-	if selecteditem == "bandage" && self:GetBandage() > 0 then
+	if selecteditem == "bandage" and self:GetBandage() > 0 then
 		if self.Owner:HasWeapon( selecteditem ) then self.Owner:MedicNotif(sentences["You already carry this element on you"][lang]) return end
 		self:SetBandage( self:GetBandage() - 1) 
 		self.Owner:Give(selecteditem)
 		return
 	end
-	if selecteditem == "syringe_morphine" && self:GetMorphine() > 0 then
+	if selecteditem == "syringe_morphine" and self:GetMorphine() > 0 then
 		if self.Owner:HasWeapon( selecteditem ) then self.Owner:MedicNotif(sentences["You already carry this element on you"][lang]) return end
 		self:SetMorphine( self:GetMorphine() - 1) 
 		self.Owner:Give(selecteditem)
 		return
 	end
-	if selecteditem == "syringe_antidote" && self:GetAntidote() > 0 then
+	if selecteditem == "syringe_antidote" and self:GetAntidote() > 0 then
 		if self.Owner:HasWeapon( selecteditem ) then self.Owner:MedicNotif(sentences["You already carry this element on you"][lang]) return end
 		self:SetAntidote( self:GetAntidote() - 1) 
 		self.Owner:Give(selecteditem)

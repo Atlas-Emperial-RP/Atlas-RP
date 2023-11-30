@@ -477,7 +477,7 @@ function FPP.Protect.CanTool(ply, trace, tool, ENT)
                     FPP.Notify(ply, "The client settings of the tool are invalid!", false)
                     return false
                 end
-                continue
+                goto continue
             end
 
             for _, item in pairs(block) do
@@ -486,6 +486,8 @@ function FPP.Protect.CanTool(ply, trace, tool, ENT)
                     return false
                 end
             end
+
+            ::continue::
         end
     end
 
@@ -575,9 +577,11 @@ local function freezeDisconnected(ply)
 
     for _, ent in ipairs(ents.GetAll()) do
         local physObj = ent:GetPhysicsObject()
-        if ent.FPPOwnerID ~= SteamID or ent:GetPersistent() or not physObj:IsValid() then continue end
+        if ent.FPPOwnerID ~= SteamID or ent:GetPersistent() or not physObj:IsValid() then goto continue end
 
         physObj:EnableMotion(false)
+
+        ::continue::
     end
 end
 
@@ -599,7 +603,7 @@ function FPP.PlayerDisconnect(ply)
 
         local fallback = player.GetBySteamID(ply.FPPFallbackOwner)
         for _, v in ipairs(ents.GetAll()) do
-            if v.FPPOwnerID ~= SteamID or v:GetPersistent() then continue end
+            if v.FPPOwnerID ~= SteamID or v:GetPersistent() then goto continue end
 
             v.FPPFallbackOwner = ply.FPPFallbackOwner
 
@@ -616,6 +620,8 @@ function FPP.PlayerDisconnect(ply)
             if v:GetNW2String("FPP_OriginalOwner", "") == "" then
                 v:SetNW2String("FPP_OriginalOwner", SteamID)
             end
+
+            ::continue::
         end
 
         -- Create disconnect timer if fallback is not in server
@@ -641,8 +647,10 @@ function FPP.PlayerDisconnect(ply)
             end
         end
         for _, v in ipairs(ents.GetAll()) do
-            if v.FPPOwnerID ~= SteamID or v:GetPersistent() then continue end
+            if v.FPPOwnerID ~= SteamID or v:GetPersistent() then goto continue end
             v:Remove()
+
+            ::continue::
         end
         FPP.DisconnectedPlayers[SteamID] = nil -- Player out of the Disconnect table
     end)

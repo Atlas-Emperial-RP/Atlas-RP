@@ -33,7 +33,7 @@ function ENT:Think()
 	--
 	-- Find an env_sun - if we don't already have one.
 	--
-	if ( SERVER && self.EnvSun == nil ) then
+	if ( SERVER and self.EnvSun == nil ) then
 
 		-- so this closure only gets called once - even if it fails
 		self.EnvSun = false
@@ -48,7 +48,7 @@ function ENT:Think()
 	--
 	-- If we have a sun - force our sun normal to its value
 	--
-	if ( SERVER && IsValid( self.EnvSun ) ) then
+	if ( SERVER and IsValid( self.EnvSun ) ) then
 
 		local vec = self.EnvSun:GetInternalVariable( "m_vDirection" )
 

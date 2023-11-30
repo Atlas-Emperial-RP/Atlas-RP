@@ -270,7 +270,7 @@ function GAS.Logging.ClassIDs:Init(callback)
 			if (tonumber(row.id) > max_id) then
 				max_id = tonumber(row.id)
 			end
-			if (row.class_type == nil or row.class_name == nil) then continue end
+			if (row.class_type == nil or row.class_name == nil) then goto continue end
 			
 			GAS.Logging.ClassIDs.Registry[row.class_type .. row.class_name] = tonumber(row.id)
 			GAS.Logging.ClassIDs.IDRegistry[tonumber(row.id)] = {row.class_type, row.class_name}
@@ -285,6 +285,7 @@ function GAS.Logging.ClassIDs:Init(callback)
 				GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name][stored_class_type] = true
 				GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name][row.class_type] = true
 			end
+			::continue::
 		end
 		GAS.Logging.ClassIDs.NewClassID = max_id
 		GAS:print("[bLogs] " .. #rows .. " classes registered")
@@ -624,19 +625,21 @@ GAS:hook("Tick", "logging:ExtraProcessingQueue", function()
 			local processed_pvp_players = {}
 			for _,replacement in ipairs(logtbl[1]) do
 				if (replacement[1] == GAS.Logging.FORMAT_PLAYER) then
-					if (processed_pvp_players[replacement[2]]) then continue end
+					if (processed_pvp_players[replacement[2]]) then goto continue end
 					processed_pvp_players[replacement[2]] = true
 
 					local pvp_events = GAS.Logging.PvP.PlayerEvents[replacement[2]]
 					if (pvp_events) then
 						for i,pvp_event in pairs(pvp_events) do
-							if (processed_pvp_events[i]) then continue end
+							if (processed_pvp_events[i]) then goto continue_1 end
 							processed_pvp_events[i] = true
 
 							pvp_event:AddLog(logtbl)
+							::continue_1::
 						end
 					end
 				end
+				::continue::
 			end
 		end
 
@@ -647,13 +650,14 @@ GAS:hook("Tick", "logging:ExtraProcessingQueue", function()
 				if (GAS.Logging.LiveLogsIn10Seconds > GAS.Logging.Config.LiveLogsIn10Seconds) then
 					if (GAS.Logging.Config.NotifyLiveLogsAntispam) then
 						for ply in pairs(GAS_Logging_LiveLogsPlayers) do
-							if (not IsValid(ply)) then continue end
+							if (not IsValid(ply)) then goto continue end
 							if (not OpenPermissions:IsOperator(ply)) then
-								if (not OpenPermissions:HasPermission(ply, "gmodadminsuite/logging", false) or not OpenPermissions:HasPermission(ply, "gmodadminsuite_logging/see_live_logs", false)) then continue end
-								if (not GAS.Logging.Permissions:CanAccessModule(ply, module, false)) then continue end
+								if (not OpenPermissions:HasPermission(ply, "gmodadminsuite/logging", false) or not OpenPermissions:HasPermission(ply, "gmodadminsuite_logging/see_live_logs", false)) then goto continue end
+								if (not GAS.Logging.Permissions:CanAccessModule(ply, module, false)) then goto continue end
 							end
 							GAS:netStart("logging:LiveLogAntispam")
 							net.Send(ply)
+							::continue::
 						end
 					end
 				else
@@ -664,14 +668,15 @@ GAS:hook("Tick", "logging:ExtraProcessingQueue", function()
 		if (allow_livelog_send) then
 			local data = util.Compress(GAS:SerializeTable(logtbl))
 			for ply in pairs(GAS_Logging_LiveLogsPlayers) do
-				if (not IsValid(ply)) then continue end
+				if (not IsValid(ply)) then goto continue end
 				if (not OpenPermissions:IsOperator(ply)) then
-					if (not OpenPermissions:HasPermission(ply, "gmodadminsuite/logging", false) or not OpenPermissions:HasPermission(ply, "gmodadminsuite_logging/see_live_logs", false)) then continue end
-					if (not GAS.Logging.Permissions:CanAccessModule(ply, module, false)) then continue end
+					if (not OpenPermissions:HasPermission(ply, "gmodadminsuite/logging", false) or not OpenPermissions:HasPermission(ply, "gmodadminsuite_logging/see_live_logs", false)) then goto continue end
+					if (not GAS.Logging.Permissions:CanAccessModule(ply, module, false)) then goto continue end
 				end
 				GAS:netStart("logging:LiveLog")
 					net.WriteData(data, #data)
 				net.Send(ply)
+				::continue::
 			end
 		end
 

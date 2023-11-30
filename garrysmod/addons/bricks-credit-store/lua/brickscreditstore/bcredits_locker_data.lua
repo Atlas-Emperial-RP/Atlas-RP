@@ -41,10 +41,10 @@ function ply_meta:GetBRCS_Active()
 end
 
 local function CompareTable( table1, table2 )
-	if( #table1 != #table2 ) then return false end
+	if( #table1 ~= #table2 ) then return false end
 
 	for k, v in pairs( table1 ) do
-		if( not table2[k] or table2[k] != v ) then
+		if( not table2[k] or table2[k] ~= v ) then
 			return false
 		end
 	end
@@ -348,7 +348,7 @@ if( SERVER ) then
 	
 	function ply_meta:SaveBRCS_LockerData()
 		local Locker = self:GetBRCS_Locker()
-		if( Locker != nil ) then
+		if( Locker ~= nil ) then
 			if( not istable( Locker ) ) then
 				Locker = {}
 			end
@@ -357,7 +357,7 @@ if( SERVER ) then
 		end
 		
 		local LockerJSON = util.TableToJSON( Locker )
-		if( BRICKSCREDITSTORE.LUACONFIG.UseMySQL != true ) then
+		if( BRICKSCREDITSTORE.LUACONFIG.UseMySQL ~= true ) then
 			if( not file.Exists( "brickscreditstore/locker_data", "DATA" ) ) then
 				file.CreateDir( "brickscreditstore/locker_data" )
 			end
@@ -371,12 +371,12 @@ if( SERVER ) then
 	hook.Add( "PlayerInitialSpawn", "BRCSHooks_PlayerInitialSpawn_LockerDataLoad", function( ply )
 		local Locker = {}
 	
-		if( BRICKSCREDITSTORE.LUACONFIG.UseMySQL != true ) then
+		if( BRICKSCREDITSTORE.LUACONFIG.UseMySQL ~= true ) then
 			if( file.Exists( "brickscreditstore/locker_data/" .. ply:SteamID64() .. ".txt", "DATA" ) ) then
 				local LockerJSON = file.Read( "brickscreditstore/locker_data/" .. ply:SteamID64() .. ".txt", "DATA" )
 				LockerJSON = util.JSONToTable( LockerJSON )
 				
-				if( LockerJSON != nil ) then
+				if( LockerJSON ~= nil ) then
 					if( istable( LockerJSON ) ) then
 						Locker = LockerJSON
 					end
@@ -390,7 +390,7 @@ if( SERVER ) then
 				if( value ) then
 					local LockerJSON = util.JSONToTable( value )
 
-					if( LockerJSON != nil ) then
+					if( LockerJSON ~= nil ) then
 						if( istable( LockerJSON ) ) then
 							Locker = LockerJSON
 						end

@@ -66,7 +66,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 
 		SearchBar.OnValueChange = function( s, str )
 			for id, pnl in pairs( PanelSelect:GetItems() ) do
-				if ( !pnl.playermodel:find( str, 1, true ) && !pnl.model_path:find( str, 1, true ) ) then
+				if ( not pnl.playermodel:find( str, 1, true ) and not pnl.model_path:find( str, 1, true ) ) then
 					pnl:SetVisible( false )
 				else
 					pnl:SetVisible( true )
@@ -123,10 +123,11 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 			for i, word in ipairs( string.Explode( "_", str ) ) do
 				if ( #word == 1 ) then
 					nicename[i] = string.upper( string.sub( word, 1, 1 ) )
-					continue
+					goto continue
 				end
 				
 				nicename[i] = string.upper( string.sub( word, 1, 1 ) ) .. string.sub( word, 2 )
+				::continue::
 			end
 
 			return table.concat( nicename, " " )
@@ -134,7 +135,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 
 		local function PlayPreviewAnimation( panel, playermodel )
 
-			if ( !panel or !IsValid( panel.Entity ) ) then return end
+			if ( not panel or not IsValid( panel.Entity ) ) then return end
 
 			local anims = list.Get( "PlayerOptionsAnimations" )
 
@@ -195,7 +196,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 
 			local groups = string.Explode( " ", GetConVarString( "cl_playerbodygroups" ) )
 			for k = 0, mdl.Entity:GetNumBodyGroups() - 1 do
-				if ( mdl.Entity:GetBodygroupCount( k ) <= 1 ) then continue end
+				if ( mdl.Entity:GetBodygroupCount( k ) <= 1 ) then goto continue end
 
 				local bgroup = vgui.Create( "DNumSlider" )
 				bgroup:Dock( TOP )
@@ -214,6 +215,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 				mdl.Entity:SetBodygroup( k, groups[ k + 1 ] or 0 )
 
 				bgtab.Tab:SetVisible( true )
+				::continue::
 			end
 
 			sheet.tabScroller:InvalidateLayout()
@@ -250,7 +252,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 
 		function PanelSelect:OnActivePanelChanged( old, new )
 
-			if ( old != new ) then -- Only reset if we changed the model
+			if ( old ~= new ) then -- Only reset if we changed the model
 				RunConsoleCommand( "cl_playerbodygroups", "0" )
 				RunConsoleCommand( "cl_playerskin", "0" )
 			end

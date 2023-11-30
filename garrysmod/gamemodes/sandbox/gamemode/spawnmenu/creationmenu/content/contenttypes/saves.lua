@@ -18,7 +18,7 @@ spawnmenu.AddCreationTab( "#spawnmenu.category.saves", function()
 
 		for k, v in ipairs( f ) do
 
-			if ( k <= offset ) then continue end
+			if ( k <= offset ) then goto continue end
 			if ( k > offset + perpage ) then break end
 
 			local entry = {
@@ -30,6 +30,7 @@ spawnmenu.AddCreationTab( "#spawnmenu.category.saves", function()
 
 			table.insert( saves, entry )
 
+			::continue::
 		end
 
 		local results = {
@@ -64,7 +65,7 @@ end, "icon16/disk_multiple.png", 200 )
 
 hook.Add( "PostGameSaved", "OnCreationsSaved", function()
 
-	if ( !HTML ) then return end
+	if ( not HTML ) then return end
 
 	HTML:Call( "OnGameSaved()" )
 

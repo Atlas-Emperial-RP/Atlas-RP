@@ -8,8 +8,8 @@ properties.Add( "remove", {
 
 	Filter = function( self, ent, ply )
 
-		if ( !gamemode.Call( "CanProperty", ply, "remover", ent ) ) then return false end
-		if ( !IsValid( ent ) ) then return false end
+		if ( not gamemode.Call( "CanProperty", ply, "remover", ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
 		if ( ent:IsPlayer() ) then return false end
 
 		return true
@@ -25,14 +25,14 @@ properties.Add( "remove", {
 	end,
 
 	Receive = function( self, length, ply )
-		if ( !IsValid( ply ) ) then return end
+		if ( not IsValid( ply ) ) then return end
 
 		local ent = net.ReadEntity()
-		if ( !IsValid( ent ) ) then return end
+		if ( not IsValid( ent ) ) then return end
 
 		-- Don't allow removal of players or objects that cannot be physically targeted by properties
-		if ( !properties.CanBeTargeted( ent, ply ) ) then return end
-		if ( !self:Filter( ent, ply ) ) then return end
+		if ( not properties.CanBeTargeted( ent, ply ) ) then return end
+		if ( not self:Filter( ent, ply ) ) then return end
 
 		-- Remove all constraints (this stops ropes from hanging around)
 		constraint.RemoveAll( ent )

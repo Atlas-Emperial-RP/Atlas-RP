@@ -22,11 +22,11 @@ local function RadarScan(ply, cmd, args)
 
          local targets = {}
          for k, p in ipairs(scan_ents) do
-            if ply == p or (not IsValid(p)) then continue end
+            if ply == p or (not IsValid(p)) then goto continue end
 
             if p:IsPlayer() then
-               if not p:IsTerror() then continue end
-               if p:GetNWBool("disguised", false) and (not ply:IsTraitor()) then continue end
+               if not p:IsTerror() then goto continue end
+               if p:GetNWBool("disguised", false) and (not ply:IsTraitor()) then goto continue end
             end
 
             local pos = p:LocalToWorld(p:OBBCenter())
@@ -43,13 +43,15 @@ local function RadarScan(ply, cmd, args)
                if not ply:IsTraitor() then
                   role = ROLE_INNOCENT
                end
-            elseif role != ROLE_INNOCENT and role != ply:GetRole() then
+            elseif role ~= ROLE_INNOCENT and role ~= ply:GetRole() then
                -- Detectives/Traitors can see who has their role, but not who
                -- has the opposite role.
                role = ROLE_INNOCENT
             end
 
             table.insert(targets, {role=role, pos=pos})
+
+            ::continue::
          end
 
          net.Start("TTT_Radar")

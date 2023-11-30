@@ -1,13 +1,13 @@
 
 module( "presets", package.seeall )
 
--- TODO: A function to check/replace invalid characters for filenames!
+-- TODO: A function to check/replace invalid characters for filenamesnot 
 
 local Presets = LoadPresets()
 
 function GetTable( presetname )
 
-	if ( !presetname ) then return end
+	if ( not presetname ) then return end
 	presetname = presetname:Trim()
 	if ( presetname == "" ) then return end
 
@@ -19,12 +19,12 @@ end
 
 function Exists( presetname, strName )
 
-	if ( !presetname || !strName ) then return false end
+	if ( not presetname or not strName ) then return false end
 	presetname = presetname:Trim()
 	strName = strName:Trim()
-	if ( presetname == "" || strName == "" ) then return false end
+	if ( presetname == "" or strName == "" ) then return false end
 
-	if ( !Presets[ presetname ] || !Presets[ presetname ][ strName ] ) then return false end
+	if ( not Presets[ presetname ] or not Presets[ presetname ][ strName ] ) then return false end
 
 	return true
 
@@ -32,10 +32,10 @@ end
 
 function Add( presetname, strName, pTable )
 
-	if ( !presetname || !strName ) then return end
+	if ( not presetname or not strName ) then return end
 	presetname = presetname:Trim()
 	strName = strName:Trim()
-	if ( presetname == "" || strName == "" ) then return end
+	if ( presetname == "" or strName == "" ) then return end
 
 	Presets[ presetname ] = Presets[ presetname ] or {}
 	Presets[ presetname ][ strName ] = pTable
@@ -47,11 +47,11 @@ end
 
 function Rename( presetname, strName, strToName )
 
-	if ( !presetname || !strName || !strToName || strName == strToName ) then return end
+	if ( not presetname or not strName or not strToName or strName == strToName ) then return end
 	presetname = presetname:Trim()
 	strName = strName:Trim()
 	strToName = strToName:Trim()
-	if ( presetname == "" || strName == "" || strToName == "" || strName == strToName ) then return end
+	if ( presetname == "" or strName == "" or strToName == "" or strName == strToName ) then return end
 
 	Presets[ presetname ] = Presets[ presetname ] or {}
 	Presets[ presetname ][ strToName ] = Presets[ presetname ][ strName ]
@@ -64,10 +64,10 @@ end
 
 function Remove( presetname, strName )
 
-	if ( !presetname || !strName ) then return end
+	if ( not presetname or not strName ) then return end
 	presetname = presetname:Trim()
 	strName = strName:Trim()
-	if ( presetname == "" || strName == "" ) then return end
+	if ( presetname == "" or strName == "" ) then return end
 
 	Presets[ presetname ] = Presets[ presetname ] or {}
 	Presets[ presetname ][ strName ] = nil

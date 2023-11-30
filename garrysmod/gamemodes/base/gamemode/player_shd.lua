@@ -29,7 +29,7 @@ end
 		Return true to not play normal sound
 -----------------------------------------------------------]]
 function GM:PlayerFootstep( ply, vPos, iFoot, strSoundName, fVolume, pFilter )
-	if ( IsValid( ply ) and !ply:Alive() ) then
+	if ( IsValid( ply ) and not ply:Alive() ) then
 		return true
 	end
 
@@ -56,7 +56,7 @@ function GM:PlayerStepSoundTime( ply, iType, bWalking )
 	local fStepTime = 350
 	local fMaxSpeed = ply:GetMaxSpeed()
 
-	if ( iType == STEPSOUNDTIME_NORMAL || iType == STEPSOUNDTIME_WATER_FOOT ) then
+	if ( iType == STEPSOUNDTIME_NORMAL or iType == STEPSOUNDTIME_WATER_FOOT ) then
 
 		if ( fMaxSpeed <= 100 ) then
 			fStepTime = 400
@@ -91,9 +91,9 @@ end
 		 the player is allowed to noclip, false to block
 -----------------------------------------------------------]]
 function GM:PlayerNoClip( pl, on )
-	if ( !on ) then return true end
+	if ( not on ) then return true end
 	-- Allow noclip if we're in single player and living
-	return game.SinglePlayer() && IsValid( pl ) && pl:Alive()
+	return game.SinglePlayer() and IsValid( pl ) and pl:Alive()
 
 end
 
@@ -106,7 +106,7 @@ function GM:FindUseEntity( ply, ent )
 	-- return what you REALLY want it to use
 
 	-- Simple fix to allow entities inside playerclip brushes to be used. Necessary for c1a0c map in Half-Life: Source 
-	if ( !IsValid( ent ) ) then
+	if ( not IsValid( ent ) ) then
 		local traceEnt = util.TraceLine( {
 			start = ply:GetShootPos(),
 			endpos = ply:GetShootPos() + ply:GetAimVector() * 72,

@@ -87,7 +87,7 @@ function ENT:DrawAnims(sysTime)
             anim = anim.nextDonateAnimation
             self.firstDonateAnimation = anim
 
-            continue
+            goto continue
         end
 
         draw.SimpleText(
@@ -102,6 +102,8 @@ function ENT:DrawAnims(sysTime)
         anim.progress = (sysTime - anim.start) * self.donateAnimSpeed
 
         anim = anim.nextDonateAnimation
+        
+        ::continue::
     end
 
     if not self.firstDonateAnimation then

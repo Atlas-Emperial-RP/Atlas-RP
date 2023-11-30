@@ -156,7 +156,7 @@ function SWEP:GatherRagdollSample(ent)
             self:PerformScan(#self.ItemSamples)
          end
       end
-   elseif ply != nil then
+   elseif ply ~= nil then
       -- not valid but not nil -> disconnected?
       self:Report("dna_no_killer")
    else
@@ -733,7 +733,7 @@ if CLIENT then
 else -- SERVER
 
    local function ScanPrint(ply, cmd, args)
-      if #args != 1 then return end
+      if #args ~= 1 then return end
 
       local tester = GetTester(ply)
       if IsValid(tester) then
@@ -747,7 +747,7 @@ else -- SERVER
    concommand.Add("ttt_wtester_scan", ScanPrint)
 
    local function RemoveSample(ply, cmd, args)
-      if #args != 1 then return end
+      if #args ~= 1 then return end
 
       local idx = tonumber(args[1])
       if not idx then return end

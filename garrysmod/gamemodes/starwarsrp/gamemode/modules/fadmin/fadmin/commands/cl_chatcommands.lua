@@ -20,11 +20,13 @@ hook.Add("ChatTextChanged", "FAdmin_Chat_autocomplete", function(text)
 
     local optionsCount = 0
     for k, v in pairs(FAdmin.Commands.List) do
-        if string.find(string.lower(k), Command, 1, true) ~= 1 then continue end
+        if string.find(string.lower(k), Command, 1, true) ~= 1 then goto continue end
 
         Options[prefix .. k] = table.Copy(v.ExtraArgs)
 
         optionsCount = optionsCount + 1
+
+        ::continue::
     end
 
     local ChatBoxPosX, ChatBoxPosY = chat.GetChatBoxPos()
@@ -48,8 +50,10 @@ hook.Add("ChatTextChanged", "FAdmin_Chat_autocomplete", function(text)
         local players = {}
 
         for _, v in pairs(FAdmin.FindPlayer(Args[#Args]) or {}) do
-            if not IsValid(v) then continue end
+            if not IsValid(v) then goto continue end
             table.insert(players, v:Nick())
+
+            ::continue::
         end
 
         targets = table.concat(players, ", ")

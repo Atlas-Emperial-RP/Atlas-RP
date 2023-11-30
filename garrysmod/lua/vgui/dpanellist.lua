@@ -88,7 +88,7 @@ function PANEL:Clear( bDelete )
 
 	for k, panel in pairs( self.Items ) do
 
-		if ( !IsValid( panel ) ) then continue end
+		if ( not IsValid( panel ) ) then goto continue end
 
 		panel:SetVisible( false )
 
@@ -96,6 +96,7 @@ function PANEL:Clear( bDelete )
 			panel:Remove()
 		end
 
+		::continue::
 	end
 
 	self.Items = {}
@@ -104,11 +105,11 @@ end
 
 function PANEL:AddItem( item, strLineState )
 
-	if ( !IsValid( item ) ) then return end
+	if ( not IsValid( item ) ) then return end
 
 	item:SetVisible( true )
 	item:SetParent( self:GetCanvas() )
-	item.m_strLineState = strLineState || item.m_strLineState
+	item.m_strLineState = strLineState or item.m_strLineState
 	table.insert( self.Items, item )
 
 	--[[if ( self.m_bSortable ) then
@@ -184,7 +185,7 @@ function PANEL.DropAction( Slot, RcvSlot )
 
 	PanelToMove:SetPos( RcvSlot.Data.pnlCanvas:ScreenToLocal( gui.MouseX() - dragndrop.m_MouseLocalX, gui.MouseY() - dragndrop.m_MouseLocalY ) )
 
-	if ( dragndrop.DropPos == 4 || dragndrop.DropPos == 8 ) then
+	if ( dragndrop.DropPos == 4 or dragndrop.DropPos == 8 ) then
 		RcvSlot.Data:InsertBefore( RcvSlot.Panel, PanelToMove )
 	else
 		RcvSlot.Data:InsertAfter( RcvSlot.Panel, PanelToMove )
@@ -200,7 +201,7 @@ function PANEL:RemoveItem( item, bDontDelete )
 
 			self.Items[ k ] = nil
 
-			if ( !bDontDelete ) then
+			if ( not bDontDelete ) then
 				panel:Remove()
 			end
 
@@ -216,7 +217,7 @@ function PANEL:CleanList()
 
 	for k, panel in pairs( self.Items ) do
 
-		if ( !IsValid( panel ) || panel:GetParent() != self.pnlCanvas ) then
+		if ( not IsValid( panel ) or panel:GetParent() ~= self.pnlCanvas ) then
 			self.Items[k] = nil
 		end
 
@@ -238,19 +239,19 @@ function PANEL:Rebuild()
 
 			if ( panel:IsVisible() ) then
 
-				local OwnLine = ( panel.m_strLineState && panel.m_strLineState == "ownline" )
+				local OwnLine = ( panel.m_strLineState and panel.m_strLineState == "ownline" )
 
 				local w = panel:GetWide()
 				local h = panel:GetTall()
 
-				if ( x > self.Padding && ( x + w > self:GetWide() || OwnLine ) ) then
+				if ( x > self.Padding and ( x + w > self:GetWide() or OwnLine ) ) then
 
 					x = self.Padding
 					y = y + h + self.Spacing
 
 				end
 
-				if ( self.m_fAnimTime > 0 && self.m_iBuilds > 1 ) then
+				if ( self.m_fAnimTime > 0 and self.m_iBuilds > 1 ) then
 					panel:MoveTo( x, y, self.m_fAnimTime, 0, self.m_fAnimEase )
 				else
 					panel:SetPos( x, y )
@@ -278,14 +279,14 @@ function PANEL:Rebuild()
 
 				if ( self.m_bNoSizing ) then
 					panel:SizeToContents()
-					if ( self.m_fAnimTime > 0 && self.m_iBuilds > 1 ) then
+					if ( self.m_fAnimTime > 0 and self.m_iBuilds > 1 ) then
 						panel:MoveTo( ( self:GetCanvas():GetWide() - panel:GetWide() ) * 0.5, self.Padding + Offset, self.m_fAnimTime, 0, self.m_fAnimEase )
 					else
 						panel:SetPos( ( self:GetCanvas():GetWide() - panel:GetWide() ) * 0.5, self.Padding + Offset )
 					end
 				else
 					panel:SetSize( self:GetCanvas():GetWide() - self.Padding * 2, panel:GetTall() )
-					if ( self.m_fAnimTime > 0 && self.m_iBuilds > 1 ) then
+					if ( self.m_fAnimTime > 0 and self.m_iBuilds > 1 ) then
 						panel:MoveTo( self.Padding, self.Padding + Offset, self.m_fAnimTime, self.m_fAnimEase )
 					else
 						panel:SetPos( self.Padding, self.Padding + Offset )
@@ -311,7 +312,7 @@ function PANEL:Rebuild()
 	self:GetCanvas():SetTall( Offset + self.Padding - self.Spacing )
 
 	-- Although this behaviour isn't exactly implied, center vertically too
-	if ( self.m_bNoSizing && self:GetCanvas():GetTall() < self:GetTall() ) then
+	if ( self.m_bNoSizing and self:GetCanvas():GetTall() < self:GetTall() ) then
 
 		self:GetCanvas():SetPos( 0, ( self:GetTall() - self:GetCanvas():GetTall() ) * 0.5 )
 
@@ -346,7 +347,7 @@ function PANEL:PerformLayout()
 	local Tall = self.pnlCanvas:GetTall()
 	local YPos = 0
 
-	if ( !self.Rebuild ) then
+	if ( not self.Rebuild ) then
 		debug.Trace()
 	end
 
@@ -375,7 +376,7 @@ function PANEL:PerformLayout()
 
 	end
 
-	if ( self.VBar && !self:GetAutoSize() && Tall != self.pnlCanvas:GetTall() ) then
+	if ( self.VBar and not self:GetAutoSize() and Tall ~= self.pnlCanvas:GetTall() ) then
 		self.VBar:SetScroll( self.VBar:GetScroll() ) -- Make sure we are not too far down!
 	end
 
@@ -402,7 +403,7 @@ end
 
 function PANEL:SortByMember( key, desc )
 
-	desc = desc || true
+	desc = desc or true
 
 	table.sort( self.Items, function( a, b )
 

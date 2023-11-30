@@ -6,7 +6,7 @@ function drawcharge(isCharge)
 	local globalwep = weapons.GetStored("weapon_defibrillator")
 	local activewep = LocalPlayer():GetActiveWeapon()
 	if isCharge then
-		if CurTime() >= globalwep.CanUse and !chargeActive then
+		if CurTime() >= globalwep.CanUse and not chargeActive then
 			frame = vgui.Create("DPanel")
 			frame:SetSize(400, 60)
 			frame:SetPos(scrx/2-200, 55)
@@ -29,7 +29,7 @@ function drawcharge(isCharge)
 			end)
 		end
 	else
-		if frame != nil then
+		if frame ~= nil then
 			frame:Remove()
 			if timer.Exists("fadethething") then timer.Destroy("fadethething") end
 		end
@@ -77,7 +77,7 @@ net.Receive("defibgetents", function(len)
 			pos = v:GetPos()
 		end
 	end
-	if !isRevive then 
+	if not isRevive then 
 		local lookatent = ply:GetEyeTrace().Entity
 		if lookatent:IsPlayer() and ply:GetPos():Distance(lookatent:GetPos()) <= globalwep.HitDistance then 
 			isRevive = false
@@ -96,10 +96,10 @@ hook.Add("HUDPaint", "DrawDefibGUI", function()
 	local globalwep = weapons.GetStored("weapon_defibrillator")
 	local isDefib = LocalPlayer():GetActiveWeapon().PrintName == "Defibrillator"
 	local medicsOnly = globalwep.ReviveHeartMedicsOnly
-	if isDefib and medicsOnly or !medicsOnly then
+	if isDefib and medicsOnly or not medicsOnly then
 		for k,v in pairs(ents.GetAll()) do
 			local otherply = v:GetRagdollOwner()
-			if v:GetClass() == "class C_HL2MPRagdoll" and otherply.TimeDied != nil and (otherply.TimeDied+globalwep.TimeToRevive)-CurTime() > 0 then
+			if v:GetClass() == "class C_HL2MPRagdoll" and otherply.TimeDied ~= nil and (otherply.TimeDied+globalwep.TimeToRevive)-CurTime() > 0 then
 				local dist = LocalPlayer():GetPos():Distance(v:GetPos())
 				if dist <= globalwep.ReviveHeartDistance then
 					cam.Start2D()
@@ -115,7 +115,7 @@ hook.Add("HUDPaint", "DrawDefibGUI", function()
 			end
 		end
 	end
-	if globalwep.enableRespawnText and globalwep.disableRespawnTime != 0 and LocalPlayer():Health() <= 0 and LocalPlayer().TimeDied != nil then
+	if globalwep.enableRespawnText and globalwep.disableRespawnTime ~= 0 and LocalPlayer():Health() <= 0 and LocalPlayer().TimeDied ~= nil then
 		local timeLeft = (LocalPlayer().TimeDied+globalwep.disableRespawnTime) - CurTime()
 		if timeLeft >= 0 then
 			local text = string.format(globalwep.respawnWaitText, timeLeft)
@@ -132,7 +132,7 @@ end)
 hook.Add("PostPlayerDraw", "DefibTwoHanded", function(ply)
 	local model = ply.Defib
 	local attach = ply:GetAttachment(ply:LookupAttachment("anim_attachment_LH"))
-	if !ply or !ply:Alive() or ply:GetActiveWeapon() == NULL or ply:GetActiveWeapon():GetClass() != "weapon_defibrillator" or !attach then 
+	if not ply or not ply:Alive() or ply:GetActiveWeapon() == NULL or ply:GetActiveWeapon():GetClass() ~= "weapon_defibrillator" or not attach then 
 		if ply.Defib then ply.Defib:Remove(); ply.Defib = nil; end
 		return
 	end

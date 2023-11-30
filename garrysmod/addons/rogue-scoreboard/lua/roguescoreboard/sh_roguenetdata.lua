@@ -4,7 +4,7 @@ local plyMeta = FindMetaTable("Player")
 
 local dataConverters = {
     ["Entity"] = function(a) return a end,
-    ["Bool"] = function(a) return !!a end,
+    ["Bool"] = function(a) return not a end,
     ["String"] = function(a) return tostring(a) end,
     ["Int"] = function(a) return math.floor(tonumber(a)) end,
     ["Float"] = function(a) return tonumber(a) end,
@@ -39,7 +39,7 @@ if SERVER then
 
     hook.Add("PlayerInitialSpawn", "SyncNetData", function(ply)
         timer.Simple(FrameTime(), function()
-            if !IsValid(ply) or !ply:IsPlayer() then return end
+            if not IsValid(ply) or not ply:IsPlayer() then return end
 
             for dataPly, dataTable in pairs(NetData) do
                 for dataKey, data in pairs(dataTable) do

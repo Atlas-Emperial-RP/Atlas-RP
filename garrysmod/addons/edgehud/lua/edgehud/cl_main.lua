@@ -22,7 +22,7 @@ EdgeHUD.Vars.ScreenMargin = math.floor(screenHeight * 0.012)
 EdgeHUD.Vars.ElementsMargin = math.floor(screenHeight * 0.01)
 
 --Check if hungermod is enabled.
-EdgeHUD.Vars.hungerMod = !DarkRP.disabledDefaults["modules"]["hungermod"]
+EdgeHUD.Vars.hungerMod = not DarkRP.disabledDefaults["modules"]["hungermod"]
 
 --cl_misc
 EdgeHUD.Vars.iconSize = math.floor(EdgeHUD.Vars.WidgetHeight * 0.45)
@@ -273,7 +273,7 @@ timer.Create("EdgeHUD:ResolutionChange",1,0,function(  )
 	local curWidth = ScrW()
 
 	--Check if the height changed.
-	if lastHeight != curHeight or lastWidth != curWidth then
+	if lastHeight ~= curHeight or lastWidth ~= curWidth then
 
 		--Reload the the addon.
 		include("autorun/sh_edgehud_loader.lua")
@@ -301,7 +301,7 @@ if EdgeHUD.Configuration.GetConfigValue( "DisableVCMod" ) then
 	--Create a timer to disable the VCMod HUD.
 	timer.Create("EdgeHUD:RemoveVCModHUD",1,0,function(  )
 
-		if !hook.GetTable()["HUDPaint"]["VC_HUDPaint"] then return end
+		if not hook.GetTable()["HUDPaint"]["VC_HUDPaint"] then return end
 
 		--Check if VCMod is installed.
 		if VC and string.find(debug.getinfo(hook.GetTable()["HUDPaint"]["VC_HUDPaint"]).short_src, "edgehud") == nil then
@@ -340,7 +340,7 @@ end
 Disable killfeed
 ---------------------------------------------------------------------------]]
 
-if !EdgeHUD.Configuration.GetConfigValue( "EnableKillfeed" ) then
+if not EdgeHUD.Configuration.GetConfigValue( "EnableKillfeed" ) then
 
 	--Override the function which draws the killfeed.
 	function GAMEMODE.DrawDeathNotice() end

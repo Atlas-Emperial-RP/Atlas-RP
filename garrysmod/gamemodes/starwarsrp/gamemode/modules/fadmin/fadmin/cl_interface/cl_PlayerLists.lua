@@ -7,10 +7,12 @@ local function SortedPairsByFunction(Table, Sorted, SortDown)
 
     local SortedTable = {}
     for _, v in ipairs(CopyTable) do
-        if not IsValid(v.PLY) or not v.PLY[Sorted] then continue end
+        if not IsValid(v.PLY) or not v.PLY[Sorted] then goto continue end
         local SortBy = (Sorted ~= "Team" and v.PLY[Sorted](v.PLY)) or (v.PLY:getDarkRPVar("job") or team.GetName(v.PLY[Sorted](v.PLY)))
         SortedTable[SortBy] = SortedTable[SortBy] or {}
         table.insert(SortedTable[SortBy], v.PLY)
+
+        ::continue::
     end
 
     local SecondSort = {}

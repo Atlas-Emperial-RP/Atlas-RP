@@ -1,4 +1,4 @@
-/*
+--[[---
    ____          _          _   ____          __  __       _ _                     
   / ___|___   __| | ___  __| | | __ ) _   _  |  \/  | __ _| | |__   ___  _ __ ___  
  | |   / _ \ / _` |/ _ \/ _` | |  _ \| | | | | |\/| |/ _` | | '_ \ / _ \| '__/ _ \ 
@@ -6,11 +6,11 @@
   \____\___/ \__,_|\___|\__,_| |____/ \__, | |_|  |_|\__,_|_|_.__/ \___/|_|  \___/ 
                                       |___/                                        
 						Thanks to ARitz Cracker for this part
-*/
+--]]
 
 function PermaProps.HasPermission( ply, name )
 
-	if !PermaProps or !PermaProps.Permissions or !PermaProps.Permissions[ply:GetUserGroup()] then return false end
+	if not PermaProps or not PermaProps.Permissions or not PermaProps.Permissions[ply:GetUserGroup()] then return false end
 
 	if PermaProps.Permissions[ply:GetUserGroup()].Custom == false and PermaProps.Permissions[ply:GetUserGroup()].Inherits and PermaProps.Permissions[PermaProps.Permissions[ply:GetUserGroup()].Inherits] then
 

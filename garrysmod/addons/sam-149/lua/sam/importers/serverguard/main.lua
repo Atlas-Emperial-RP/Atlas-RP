@@ -62,7 +62,7 @@ local import_ranks = function()
 				local data = sam.isstring(v.data) and util.JSONToTable(v.data)
 				local tools = sam.istable(data) and sam.istable(data.Restrictions) and sam.istable(data.Restrictions.Tools) and data.Restrictions.Tools
 
-				if not tools then continue end
+				if not tools then goto continue end
 
 				for tool_name, value in pairs(tools) do
 					if value == false then
@@ -71,6 +71,7 @@ local import_ranks = function()
 						sam.ranks.give_permission(name, tool_name)
 					end
 				end
+				::continue::
 			end
 
 			sam.print("Imported ranks from serverguard.")
@@ -85,7 +86,7 @@ local import_expires = function(data)
 		local began = false
 		for _, v in ipairs(data) do
 			local ply_data = v.data and von.deserialize(v.data) or {}
-			if not sam.isnumber(tonumber(ply_data.groupExpire)) then continue end
+			if not sam.isnumber(tonumber(ply_data.groupExpire)) then goto continue end
 
 			if not began then
 				began = true
@@ -100,6 +101,7 @@ local import_expires = function(data)
 				WHERE
 					`steamid` = {2}
 			]], {tonumber(ply_data.groupExpire), v.steam_id})
+			::continue::
 		end
 		SQL.Commit(function()
 			sam.print("Imported users from serverguard.")

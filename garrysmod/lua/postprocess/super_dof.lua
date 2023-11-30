@@ -181,7 +181,7 @@ function RenderDoF( vOrigin, vAngle, vFocus, fAngleSize, radial_steps, passes, b
 
 	local view = inView
 
-	if ( !view ) then
+	if ( not view ) then
 
 		view = {
 			x = 0,
@@ -330,7 +330,7 @@ end
 
 hook.Add( "RenderScene", "RenderSuperDoF", function( ViewOrigin, ViewAngles, ViewFOV )
 
-	if ( !IsValid( SuperDOFWindow ) ) then return end
+	if ( not IsValid( SuperDOFWindow ) ) then return end
 
 	-- Don't render it when the console is up
 	if ( FrameTime() == 0 ) then return end
@@ -358,7 +358,7 @@ end )
 
 hook.Add( "GUIMousePressed", "SuperDOFMouseDown", function( mouse )
 
-	if ( !IsValid( SuperDOFWindow ) ) then return end
+	if ( not IsValid( SuperDOFWindow ) ) then return end
 
 	vgui.GetWorldPanel():MouseCapture( true )
 	FocusGrabber = true
@@ -367,7 +367,7 @@ end )
 
 hook.Add( "GUIMouseReleased", "SuperDOFMouseUp", function( mouse )
 
-	if ( !IsValid( SuperDOFWindow ) ) then return end
+	if ( not IsValid( SuperDOFWindow ) ) then return end
 
 	vgui.GetWorldPanel():MouseCapture( false )
 	FocusGrabber = false

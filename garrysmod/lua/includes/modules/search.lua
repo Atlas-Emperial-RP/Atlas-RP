@@ -19,7 +19,7 @@ end
 
 function GetResults( str, types, maxResults )
 
-	if ( !maxResults || maxResults < 1 ) then maxResults = 1024 end
+	if ( not maxResults or maxResults < 1 ) then maxResults = 1024 end
 
 	local str = str:lower()
 	if ( str == "" ) then return {} end
@@ -28,9 +28,9 @@ function GetResults( str, types, maxResults )
 
 	for k, v in pairs( Providers ) do
 		if ( isstring( types ) ) then
-			if ( types != k ) then continue end
+			if ( types ~= k ) then goto continue end
 		elseif ( istable( types ) ) then
-			if ( !table.HasValue( types, k ) ) then continue end
+			if ( not table.HasValue( types, k ) ) then goto continue end
 		end
 
 		local tbl = v.func( str )
@@ -40,6 +40,7 @@ function GetResults( str, types, maxResults )
 
 		if ( #results >= maxResults ) then break end
 
+		::continue::
 	end
 
 	-- Todo. Sort, weighted?

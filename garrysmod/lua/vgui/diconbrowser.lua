@@ -20,7 +20,7 @@ end
 
 function PANEL:ScrollToSelected()
 
-	if ( !IsValid( self.m_pSelectedIcon ) ) then return end
+	if ( not IsValid( self.m_pSelectedIcon ) ) then return end
 
 	self:ScrollToChild( self.m_pSelectedIcon )
 
@@ -49,7 +49,7 @@ function PANEL:Fill()
 	self.Filled = true
 	if ( self.m_bManual ) then return end
 
-	if ( !local_IconList ) then
+	if ( not local_IconList ) then
 		local_IconList = file.Find( "materials/icon16/*.png", "MOD" )
 		local_IconList_Split = #local_IconList
 		table.Add( local_IconList, file.Find( "materials/flags16/*.png", "MOD" ) )
@@ -61,8 +61,8 @@ function PANEL:Fill()
 
 		timer.Simple( k * 0.001, function()
 
-			if ( !IsValid( self ) ) then return end
-			if ( !IsValid( self.IconLayout ) ) then return end
+			if ( not IsValid( self ) ) then return end
+			if ( not IsValid( self.IconLayout ) ) then return end
 
 			local btn = self.IconLayout:Add( "DImageButton" )
 			btn.FilterText = string.lower( v )
@@ -88,13 +88,13 @@ function PANEL:Fill()
 
 			btn.Paint = function( btn, w, h )
 
-				if ( self.m_pSelectedIcon != btn ) then return end
+				if ( self.m_pSelectedIcon ~= btn ) then return end
 
 				derma.SkinHook( "Paint", "Selection", btn, w, h )
 
 			end
 
-			if ( !self.m_pSelectedIcon || self.m_strSelectedIcon == btn:GetImage() ) then
+			if ( not self.m_pSelectedIcon or self.m_strSelectedIcon == btn:GetImage() ) then
 				self.m_pSelectedIcon = btn
 				--self:ScrollToChild( btn )
 			end
@@ -113,7 +113,7 @@ function PANEL:FilterByText( text )
 
 	for k, v in ipairs( self.IconLayout:GetChildren() ) do
 
-		v:SetVisible( v.FilterText:find( text ) != nil )
+		v:SetVisible( v.FilterText:find( text ) ~= nil )
 
 	end
 
@@ -123,7 +123,7 @@ end
 
 function PANEL:Paint( w, h )
 
-	if ( !self.Filled ) then self:Fill() end
+	if ( not self.Filled ) then self:Fill() end
 
 	derma.SkinHook( "Paint", "Tree", self, w, h )
 

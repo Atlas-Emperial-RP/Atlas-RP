@@ -30,9 +30,9 @@ function ENT:Touch( ent )
 	
 	self.NextTouch = CurTime() + 1
 	
-	if ent:GetClass() != "beaker_medicmod" then return end
+	if ent:GetClass() ~= "beaker_medicmod" then return end
 	
-	if self:GetDrug() != ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] then return end
+	if self:GetDrug() ~= ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] then return end
 	
 	local drug
 	
@@ -40,11 +40,12 @@ function ENT:Touch( ent )
 		drug = k
 		for product, val in pairs( ConfigurationMedicMod.Drugs[k] ) do
 			if product == "func" or product == "price" or product == ent:GetProduct1() or product == ent:GetProduct2() or product == ent:GetProduct3() then
-				continue
+				goto continue
 			else
 				drug = nil
 				break
 			end
+			::continue::
 		end
 		
 		if drug then break end

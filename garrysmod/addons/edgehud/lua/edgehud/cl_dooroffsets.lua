@@ -21,10 +21,10 @@ timer.Create("EdgeHUD:CheckDoorOffset",1,0,function(  )
 	for k,v in pairs(entities) do
 
 		-- MAke sure the entity is valid, etc.
-		if v == ply or !IsValid(v) or !v:isDoor() then continue end
+		if v == ply or not IsValid(v) or not v:isDoor() then goto continue end
 
 		-- Check if we have requested the dooroffsets for the door.
-		if v.EdgeHud_Requested then continue end
+		if v.EdgeHud_Requested then goto continue end
 
 		-- Set v.EdgeHUD_Requested to true.
 		v.EdgeHud_Requested = true
@@ -35,6 +35,7 @@ timer.Create("EdgeHUD:CheckDoorOffset",1,0,function(  )
 		-- Check if we have a maximum of 5 doors.
 		if #requiredOffsets >= 5 then break end
 
+		::continue::
 	end
 
 	-- Make sure we have any doors to request.
@@ -57,11 +58,12 @@ net.Receive("EdgeHUD:SendDoorOffsets", function(  )
 	for k,v in pairs(requiredEntities) do
 
 		-- Make sure that the entity exists.
-		if !IsValid(k) then continue end
+		if not IsValid(k) then goto continue end
 
 		-- Update the offsets.
 		k.EdgeHUD_DoorOffset = {Angles = Angle(v.pi,v.ya,v.ro), Position = Vector(v.x,v.y,v.z)}
 
+		::continue::
 	end
 
 end)
@@ -73,7 +75,7 @@ net.Receive("EdgeHUD:DoorUpdated", function(  )
 	local door = net.ReadEntity()
 
 	-- Make sure that door is valid.
-	if !IsValid(door) then return end
+	if not IsValid(door) then return end
 
 	-- Set EdgeHud_Requested to false.
 	door.EdgeHud_Requested = false
@@ -103,7 +105,7 @@ local groupsAccess = string.Explode(";", configTxt)
 local function hasAccess( target )
 
 	-- Check if we have access.
-	if EdgeHUD.Owner != target:SteamID64() and !table.HasValue(groupsAccess, target:GetUserGroup()) then
+	if EdgeHUD.Owner ~= target:SteamID64() and not table.HasValue(groupsAccess, target:GetUserGroup()) then
 		notification.AddLegacy( "[EdgeHUD] Only " .. util.SteamIDFrom64( EdgeHUD.Owner ) .. " and users with the following ranks can open the door offset menu: " .. table.concat(groupsAccess, ", "),NOTIFY_ERROR,10)
 		return false
 	end
@@ -117,13 +119,13 @@ end
 concommand.Add("edgehud_dooroffset",function(  )
 
 	--Check if the player has access.
-	if !hasAccess(ply) then return end
+	if not hasAccess(ply) then return end
 
 	-- Get the door that the player is looking at.
 	local door = ply:GetEyeTrace().Entity
 
 	-- Make sure that the entity is a door.
-	if !IsValid(door) or !door:isDoor() then
+	if not IsValid(door) or not door:isDoor() then
 		notification.AddLegacy( "[EdgeHUD] You need to be looking at a door to open the door offset menu.",NOTIFY_ERROR,10)
 		return
 	end

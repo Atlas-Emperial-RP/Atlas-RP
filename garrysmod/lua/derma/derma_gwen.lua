@@ -5,8 +5,8 @@ GWEN = {}
 
 function GWEN.CreateTextureBorder( _xo, _yo, _wo, _ho, l, t, r, b, material_override )
 
-	local mat = SKIN && SKIN.GwenTexture || material_override
-	if ( material_override && !material_override:IsError() ) then mat = material_override end
+	local mat = SKIN and SKIN.GwenTexture or material_override
+	if ( material_override and not material_override:IsError() ) then mat = material_override end
 
 	return function( x, y, w, h, col )
 
@@ -54,8 +54,8 @@ end
 
 function GWEN.CreateTextureNormal( _xo, _yo, _wo, _ho, material_override )
 
-	local mat = SKIN && SKIN.GwenTexture || material_override
-	if ( material_override && !material_override:IsError() ) then mat = material_override end
+	local mat = SKIN and SKIN.GwenTexture or material_override
+	if ( material_override and not material_override:IsError() ) then mat = material_override end
 
 	return function( x, y, w, h, col )
 
@@ -81,8 +81,8 @@ end
 
 function GWEN.CreateTextureCentered( _xo, _yo, _wo, _ho, material_override )
 
-	local mat = SKIN && SKIN.GwenTexture || material_override
-	if ( material_override && !material_override:IsError() ) then mat = material_override end
+	local mat = SKIN and SKIN.GwenTexture or material_override
+	if ( material_override and not material_override:IsError() ) then mat = material_override end
 
 	return function( x, y, w, h, col )
 
@@ -113,8 +113,8 @@ end
 
 function GWEN.TextureColor( x, y, material_override )
 
-	local mat = SKIN && SKIN.GwenTexture || material_override
-	if ( material_override && !material_override:IsError() ) then mat = material_override end
+	local mat = SKIN and SKIN.GwenTexture or material_override
+	if ( material_override and not material_override:IsError() ) then mat = material_override end
 	return mat:GetColor( x, y )
 
 end
@@ -126,7 +126,7 @@ end
 function meta:LoadGWENFile( filename, path )
 
 	local contents = file.Read( filename, path or "GAME" )
-	if ( !contents ) then return end
+	if ( not contents ) then return end
 
 	self:LoadGWENString( contents )
 
@@ -138,8 +138,8 @@ end
 function meta:LoadGWENString( str )
 
 	local tbl = util.JSONToTable( str )
-	if ( !tbl ) then return end
-	if ( !tbl.Controls ) then return end
+	if ( not tbl ) then return end
+	if ( not tbl.Controls ) then return end
 
 	self:ApplyGWEN( tbl.Controls )
 
@@ -175,7 +175,7 @@ function meta:ApplyGWEN( tbl )
 
 	end
 
-	if ( !tbl.Children ) then return end
+	if ( not tbl.Children ) then return end
 
 	for k, v in pairs( tbl.Children ) do
 

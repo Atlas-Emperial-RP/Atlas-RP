@@ -23,7 +23,7 @@ end
 
 function ENT:Touch( ent )
 
-	if ent:GetClass() != "bed_medicmod" then return end
+	if ent:GetClass() ~= "bed_medicmod" then return end
 	
 	local bed = ent
 	local elec = self.Elec

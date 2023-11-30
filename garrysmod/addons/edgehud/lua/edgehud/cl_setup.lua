@@ -165,7 +165,7 @@ else
 
 		local groupsAccess = string.Explode(";", configTxt)
 
-		if EdgeHUD.Owner != LocalPlayer():SteamID64() and !table.HasValue(groupsAccess, LocalPlayer():GetUserGroup()) then
+		if EdgeHUD.Owner ~= LocalPlayer():SteamID64() and not table.HasValue(groupsAccess, LocalPlayer():GetUserGroup()) then
 			notification.AddLegacy( "[EdgeHUD] Only " .. util.SteamIDFrom64( EdgeHUD.Owner ) .. " and users with the following ranks can open the configuration menu: " .. table.concat(groupsAccess, ", "),NOTIFY_ERROR,10)
 			return
 		end
@@ -295,7 +295,7 @@ else
 			exampleButton:SetPos(configOption:GetWide() - exampleButton:GetWide() * 1.2,configOption:GetTall() / 2 - exampleButton:GetTall() / 2)
 			exampleButton.PaintOver = function( s, w, h )
 
-				if v.ExampleImage != "" then
+				if v.ExampleImage ~= "" then
 
 					surface.SetDrawColor(White)
 					surface.SetMaterial(MAT_ExampleMaterial)

@@ -93,7 +93,7 @@ function panel:Init()
 	
 	function self.button.DoClick()
 		Derma_StringRequest("Add Usergroup", "Enter the name/unique of the usergroup", "", function(text)
-			if (text != "") then
+			if (text ~= "") then
 				net.Start("atlaschat.rstcs")
 					net.WriteBit(false)
 					net.WriteString(self.expression)

@@ -52,7 +52,7 @@ function GM:CanTool( ply, trace, mode, tool, button )
 
 	-- The jeep spazzes out when applying something
 	-- todo: Find out what it's reacting badly to and change it in _physprops
-	if ( mode == "physprop" && trace.Entity:IsValid() && trace.Entity:GetClass() == "prop_vehicle_jeep" ) then
+	if ( mode == "physprop" and trace.Entity:IsValid() and trace.Entity:GetClass() == "prop_vehicle_jeep" ) then
 		return false
 	end
 
@@ -64,7 +64,7 @@ function GM:CanTool( ply, trace, mode, tool, button )
 			if ( mode == v ) then vFound = true end
 		end
 
-		if ( !vFound ) then return false end
+		if ( not vFound ) then return false end
 
 	end
 
@@ -85,7 +85,7 @@ end
 -----------------------------------------------------------]]
 function GM:GravGunPunt( ply, ent )
 
-	if ( ent:IsValid() && ent.GravGunPunt ) then
+	if ( ent:IsValid() and ent.GravGunPunt ) then
 		return ent:GravGunPunt( ply )
 	end
 
@@ -99,7 +99,7 @@ end
 -----------------------------------------------------------]]
 function GM:GravGunPickupAllowed( ply, ent )
 
-	if ( ent:IsValid() && ent.GravGunPickupAllowed ) then
+	if ( ent:IsValid() and ent.GravGunPickupAllowed ) then
 		return ent:GravGunPickupAllowed( ply )
 	end
 
@@ -115,9 +115,9 @@ end
 function GM:PhysgunPickup( ply, ent )
 
 	-- Don't pick up persistent props
-	if ( ent:GetPersistent() && GetConVarString( "sbox_persist" ):Trim() != "" ) then return false end
+	if ( ent:GetPersistent() and GetConVarString( "sbox_persist" ):Trim() ~= "" ) then return false end
 
-	if ( ent:IsValid() && ent.PhysgunPickup ) then
+	if ( ent:IsValid() and ent.PhysgunPickup ) then
 		return ent:PhysgunPickup( ply )
 	end
 
@@ -135,13 +135,13 @@ function GM:PhysgunPickup( ply, ent )
 		if ( string.find( EntClass, "prop_door" ) ) then return false end
 
 		-- Don't move physboxes if the mapper logic says no
-		if ( EntClass == "func_physbox" && ent:HasSpawnFlags( SF_PHYSBOX_MOTIONDISABLED ) ) then return false  end
+		if ( EntClass == "func_physbox" and ent:HasSpawnFlags( SF_PHYSBOX_MOTIONDISABLED ) ) then return false  end
 
 		-- If the physics object is frozen by the mapper, don't allow us to move it.
-		if ( string.find( EntClass, "prop_" ) && ( ent:HasSpawnFlags( SF_PHYSPROP_MOTIONDISABLED ) || ent:HasSpawnFlags( SF_PHYSPROP_PREVENT_PICKUP ) ) ) then return false end
+		if ( string.find( EntClass, "prop_" ) and ( ent:HasSpawnFlags( SF_PHYSPROP_MOTIONDISABLED ) or ent:HasSpawnFlags( SF_PHYSPROP_PREVENT_PICKUP ) ) ) then return false end
 
 		-- Allow physboxes, but get rid of all other func_'s (ladder etc)
-		if ( EntClass != "func_physbox" && string.find( EntClass, "func_" ) ) then return false end
+		if ( EntClass ~= "func_physbox" and string.find( EntClass, "func_" ) ) then return false end
 
 
 	end
@@ -166,7 +166,7 @@ end
 function GM:EntityKeyValue( ent, key, value )
 
 	-- Physgun not allowed on this prop..
-	if ( key == "gmod_allowphysgun" && value == '0' ) then
+	if ( key == "gmod_allowphysgun" and value == '0' ) then
 		ent.PhysgunDisabled = true
 	end
 
@@ -185,10 +185,10 @@ end
 function GM:PlayerNoClip( pl, on )
 
 	-- Don't allow if player is in vehicle
-	if ( !IsValid( pl ) || pl:InVehicle() || !pl:Alive() ) then return false end
+	if ( not IsValid( pl ) or pl:InVehicle() or not pl:Alive() ) then return false end
 
 	-- Always allow to turn off noclip, and in single player
-	if ( !on || game.SinglePlayer() ) then return true end
+	if ( not on or game.SinglePlayer() ) then return true end
 
 	return GetConVarNumber( "sbox_noclip" ) > 0
 
@@ -203,7 +203,7 @@ function GM:CanProperty( pl, property, ent )
 	--
 	-- Always a chance some bastard got through
 	--
-	if ( !IsValid( ent ) ) then return false end
+	if ( not IsValid( ent ) ) then return false end
 
 
 	--
@@ -217,7 +217,7 @@ function GM:CanProperty( pl, property, ent )
 			if ( property == v ) then vFound = true end
 		end
 
-		if ( !vFound ) then return false end
+		if ( not vFound ) then return false end
 
 	end
 
@@ -228,10 +228,10 @@ function GM:CanProperty( pl, property, ent )
 
 		if ( game.SinglePlayer() ) then return true end
 
-		if ( ent:IsNPC() ) then return GetConVarNumber( "sbox_bonemanip_npc" ) != 0 end
-		if ( ent:IsPlayer() ) then return GetConVarNumber( "sbox_bonemanip_player" ) != 0 end
+		if ( ent:IsNPC() ) then return GetConVarNumber( "sbox_bonemanip_npc" ) ~= 0 end
+		if ( ent:IsPlayer() ) then return GetConVarNumber( "sbox_bonemanip_player" ) ~= 0 end
 
-		return GetConVarNumber( "sbox_bonemanip_misc" ) != 0
+		return GetConVarNumber( "sbox_bonemanip_misc" ) ~= 0
 
 	end
 
@@ -292,7 +292,7 @@ end
 function GM:PlayerDriveAnimate( ply )
 
 	local driving = ply:GetDrivingEntity()
-	if ( !IsValid( driving ) ) then return end
+	if ( not IsValid( driving ) ) then return end
 
 	ply:SetPlaybackRate( 1 )
 	ply:ResetSequence( ply:SelectWeightedSequence( ACT_HL2MP_IDLE_MAGIC ) )

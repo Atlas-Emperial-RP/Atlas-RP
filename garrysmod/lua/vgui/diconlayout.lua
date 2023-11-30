@@ -43,10 +43,10 @@ function PANEL:LayoutIcons_TOP()
 
 	for k, v in ipairs( self:GetChildren() ) do
 
-		if ( !v:IsVisible() ) then continue end
+		if ( not v:IsVisible() ) then goto continue end
 
 		local w, h = v:GetSize()
-		if ( x + w > MaxWidth || ( v.OwnLine && x > self.m_iBorder ) ) then
+		if ( x + w > MaxWidth or ( v.OwnLine and x > self.m_iBorder ) ) then
 
 			x = self.m_iBorder
 			y = y + RowHeight + self.m_iSpaceY
@@ -64,6 +64,7 @@ function PANEL:LayoutIcons_TOP()
 			x = MaxWidth + 1
 		end
 
+		::continue::
 	end
 
 end
@@ -77,10 +78,10 @@ function PANEL:LayoutIcons_LEFT()
 
 	for k, v in ipairs( self:GetChildren() ) do
 
-		if ( !v:IsVisible() ) then continue end
+		if ( not v:IsVisible() ) then goto continue end
 
 		local w, h = v:GetSize()
-		if ( y + h > MaxHeight || ( v.OwnLine && y > self.m_iBorder ) ) then
+		if ( y + h > MaxHeight or ( v.OwnLine and y > self.m_iBorder ) ) then
 
 			y = self.m_iBorder
 			x = x + RowWidth + self.m_iSpaceX
@@ -98,6 +99,7 @@ function PANEL:LayoutIcons_LEFT()
 			y = MaxHeight + 1
 		end
 
+		::continue::
 	end
 
 end
@@ -106,8 +108,8 @@ function PANEL:PerformLayout()
 
 	local ShouldLayout = false
 
-	if ( self.LastW != self:GetWide() ) then ShouldLayout = true end
-	if ( self.LastH != self:GetTall() ) then ShouldLayout = true end
+	if ( self.LastW ~= self:GetWide() ) then ShouldLayout = true end
+	if ( self.LastH ~= self:GetTall() ) then ShouldLayout = true end
 
 	self.LastW = self:GetWide()
 	self.LastH = self:GetTall()

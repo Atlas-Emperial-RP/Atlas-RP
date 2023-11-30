@@ -15,11 +15,11 @@ function PANEL:Init()
 	self.numberWang:SetMinMax( 0, 99999999 )
 	self.numberWang.backTextColor = PROJECT0.FUNC.GetTheme( 3, 100 )
 	self.numberWang.Paint = function( self2, w, h )
-		if( self2:GetTextColor().a != 255 or self2:GetTextColor().a != 0 ) then
+		if( self2:GetTextColor().a ~= 255 or self2:GetTextColor().a ~= 0 ) then
 			self2:SetTextColor( Color( 255, 255, 255, 100+(self.alpha or 0) ) )
 		end
 
-		if( self2.GetPlaceholderText && self2.GetPlaceholderColor && self2:GetPlaceholderText() && self2:GetPlaceholderText():Trim() != "" && self2:GetPlaceholderColor() && ( !self2:GetText() || self2:GetText() == "" ) ) then
+		if( self2.GetPlaceholderText and self2.GetPlaceholderColor and self2:GetPlaceholderText() and self2:GetPlaceholderText():Trim() ~= "" and self2:GetPlaceholderColor() and ( not self2:GetText() or self2:GetText() == "" ) ) then
 			local oldText = self2:GetText()
 	
 			local str = self2:GetPlaceholderText()

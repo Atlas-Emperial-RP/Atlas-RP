@@ -115,12 +115,12 @@ function PANEL:PropSelect( label, convar, models, height )
 
 		local tmp = {} -- HACK: Order by skin too
 		for k, v in SortedPairsByMemberValue( models, "model" ) do
-			tmp[ k ] = v.model:lower() .. ( v.skin || 0 )
+			tmp[ k ] = v.model:lower() .. ( v.skin or 0 )
 		end
 
 		for k, v in SortedPairsByValue( tmp ) do
 			v = models[ k ]
-			local icon = props:AddModelEx( k, v.model, v.skin || 0 )
+			local icon = props:AddModelEx( k, v.model, v.skin or 0 )
 			if ( v.tooltip ) then icon:SetToolTip( v.tooltip ) end
 		end
 
@@ -144,7 +144,7 @@ function PANEL:ComboBox( strLabel, strConVar )
 	right:SetConVar( strConVar )
 	right:Dock( FILL )
 	function right:OnSelect( index, value, data )
-		if ( !self.m_strConVar ) then return end
+		if ( not self.m_strConVar ) then return end
 		RunConsoleCommand( self.m_strConVar, tostring( data or value ) )
 	end
 
@@ -163,7 +163,7 @@ function PANEL:NumberWang( strLabel, strConVar, numMin, numMax, numDecimals )
 	local right = vgui.Create( "DNumberWang", self )
 	right:SetMinMax( numMin, numMax )
 
-	if ( numDecimals != nil ) then right:SetDecimals( numDecimals ) end
+	if ( numDecimals ~= nil ) then right:SetDecimals( numDecimals ) end
 
 	right:SetConVar( strConVar )
 	right:SizeToContents()
@@ -181,7 +181,7 @@ function PANEL:NumSlider( strLabel, strConVar, numMin, numMax, numDecimals )
 	left:SetMinMax( numMin, numMax )
 	left:SetDark( true )
 
-	if ( numDecimals != nil ) then left:SetDecimals( numDecimals ) end
+	if ( numDecimals ~= nil ) then left:SetDecimals( numDecimals ) end
 
 	left:SetConVar( strConVar )
 	left:SizeToContents()

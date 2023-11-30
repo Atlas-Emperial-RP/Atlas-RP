@@ -27,7 +27,7 @@ end
 
 function PANEL:AddItem( item )
 
-	if ( !IsValid( item ) ) then return end
+	if ( not IsValid( item ) ) then return end
 
 	item:SetVisible( true )
 	item:SetParent( self )
@@ -46,7 +46,7 @@ function PANEL:RemoveItem( item, bDontDelete )
 
 			table.remove( self.Items, k )
 
-			if ( !bDontDelete ) then
+			if ( not bDontDelete ) then
 				panel:Remove()
 			end
 
@@ -66,7 +66,7 @@ function PANEL:PerformLayout()
 
 	for k, panel in pairs( self.Items ) do
 
-		if ( !panel:IsVisible() ) then continue end
+		if ( not panel:IsVisible() ) then goto continue end
 
 		local x = ( i % self.m_iCols ) * self.m_iColWide
 		local y = math.floor( i / self.m_iCols ) * self.m_iRowHeight
@@ -74,6 +74,8 @@ function PANEL:PerformLayout()
 		panel:SetPos( x, y )
 
 		i = i + 1
+
+		::continue::
 	end
 
 	self:SetWide( self.m_iColWide * self.m_iCols )

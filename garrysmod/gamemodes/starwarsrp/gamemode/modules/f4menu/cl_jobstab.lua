@@ -163,10 +163,12 @@ end
 
 function PANEL:onSelected(item)
     for _,v in pairs(self.iconList.Items) do
-        if v == item then continue end
+        if v == item then goto continue end
         v:SetSelected(false)
         v.model:SetSize(60, 60)
         v.model:SetPos(0, 0)
+
+        ::continue::
     end
 end
 
@@ -356,9 +358,10 @@ function PANEL:Refresh()
     local job
     for _, cat in ipairs(self.pnlLeft:GetItems()) do
         for _, v in pairs(cat:GetItems()) do
-            if v:GetDisabled() then continue end
+            if v:GetDisabled() then goto continue end
             job = v.DarkRPItem
             goto break2
+            ::continue::
         end
     end
     ::break2::

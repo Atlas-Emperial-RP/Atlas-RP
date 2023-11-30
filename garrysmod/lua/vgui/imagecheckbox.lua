@@ -37,7 +37,7 @@ end
 
 function PANEL:DoClick()
 
-	self:SetChecked( !self.State )
+	self:SetChecked( not self.State )
 
 end
 

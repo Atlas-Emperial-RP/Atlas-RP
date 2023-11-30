@@ -1,6 +1,6 @@
 
 local meta = FindMetaTable( "Player" )
-if ( !meta ) then return end
+if ( not meta ) then return end
 
 -- In this file we're adding functions to the player meta table.
 -- This means you'll be able to call functions here straight from the player object
@@ -39,7 +39,7 @@ local function PlayerUnfreezeObject( ply, ent, object )
 	if ( ent:GetUnFreezable() ) then return 0 end
 
 	-- NOTE: IF YOU'RE MAKING SOME KIND OF PROP PROTECTOR THEN HOOK "CanPlayerUnfreeze"
-	if ( !gamemode.Call( "CanPlayerUnfreeze", ply, ent, object ) ) then return 0 end
+	if ( not gamemode.Call( "CanPlayerUnfreeze", ply, ent, object ) ) then return 0 end
 
 	object:EnableMotion( true )
 	object:Wake()
@@ -58,15 +58,15 @@ function meta:PhysgunUnfreeze()
 
 	-- Get the player's table
 	local tab = self:GetTable()
-	if ( !tab.FrozenPhysicsObjects ) then return 0 end
+	if ( not tab.FrozenPhysicsObjects ) then return 0 end
 
 	-- Detect double click. Unfreeze all objects on double click.
-	if ( tab.LastPhysUnfreeze && CurTime() - tab.LastPhysUnfreeze < 0.25 ) then
+	if ( tab.LastPhysUnfreeze and CurTime() - tab.LastPhysUnfreeze < 0.25 ) then
 		return self:UnfreezePhysicsObjects()
 	end
 
 	local tr = self:GetEyeTrace()
-	if ( tr.HitNonWorld && IsValid( tr.Entity ) ) then
+	if ( tr.HitNonWorld and IsValid( tr.Entity ) ) then
 
 		local Ents = constraint.GetAllConstrainedEntities( tr.Entity )
 		local UnfrozenObjects = 0
@@ -105,7 +105,7 @@ function meta:UnfreezePhysicsObjects()
 	local tab = self:GetTable()
 
 	-- If the table doesn't exist then quit here
-	if ( !tab.FrozenPhysicsObjects ) then return 0 end
+	if ( not tab.FrozenPhysicsObjects ) then return 0 end
 
 	local Count = 0
 
@@ -114,12 +114,12 @@ function meta:UnfreezePhysicsObjects()
 
 		-- Make sure the entity to which the physics object
 		-- is attached is still valid (still exists)
-		if ( isentity( v.ent ) && IsValid( v.ent ) ) then
+		if ( isentity( v.ent ) and IsValid( v.ent ) ) then
 
 			-- We can't directly test to see if EnableMotion is false right now
 			-- but IsMovable seems to do the job just fine.
 			-- We only test so the count isn't wrong
-			if ( IsValid( v.phys ) && !v.phys:IsMoveable() ) then
+			if ( IsValid( v.phys ) and not v.phys:IsMoveable() ) then
 
 				-- We need to freeze/unfreeze all physobj's in jeeps to stop it spazzing
 				if ( v.ent:GetClass() == "prop_vehicle_jeep" ) then

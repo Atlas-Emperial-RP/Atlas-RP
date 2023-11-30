@@ -20,7 +20,7 @@ end
 
 function EFFECT:Render()
 
-	if ( !IsValid( self.Target ) ) then return end
+	if ( not IsValid( self.Target ) ) then return end
 
 	local delta = ( ( CurTime() - self.StartTime ) / self.Length ) ^ 0.5
 	local idelta = 1 - delta

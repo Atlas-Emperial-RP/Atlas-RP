@@ -5,7 +5,7 @@ local matRefract = Material( "models/spawn_effect" )
 
 function EFFECT:Init( data )
 
-	if ( !cl_drawspawneffect:GetBool() ) then return end
+	if ( not cl_drawspawneffect:GetBool() ) then return end
 
 	-- This is how long the spawn effect
 	-- takes from start to finish.
@@ -14,8 +14,8 @@ function EFFECT:Init( data )
 
 	local ent = data:GetEntity()
 
-	if ( !IsValid( ent ) ) then return end
-	if ( !ent:GetModel() ) then return end
+	if ( not IsValid( ent ) ) then return end
+	if ( not ent:GetModel() ) then return end
 
 	self.ParentEntity = ent
 	self:SetModel( ent:GetModel() )
@@ -32,8 +32,8 @@ end
 
 function EFFECT:Think()
 
-	if ( !cl_drawspawneffect:GetBool() ) then return false end
-	if ( !IsValid( self.ParentEntity ) ) then return false end
+	if ( not cl_drawspawneffect:GetBool() ) then return false end
+	if ( not IsValid( self.ParentEntity ) ) then return false end
 
 	local PPos = self.ParentEntity:GetPos()
 	self:SetPos( PPos + ( EyePos() - PPos ):GetNormal() )
@@ -102,8 +102,8 @@ end
 
 function EFFECT:RenderParent()
 
-	if ( !IsValid( self ) ) then return end
-	if ( !IsValid( self.SpawnEffect ) ) then self.RenderOverride = nil return end
+	if ( not IsValid( self ) ) then return end
+	if ( not IsValid( self.SpawnEffect ) ) then self.RenderOverride = nil return end
 
 	local bClipping = self.SpawnEffect:StartClip( self, 1 )
 

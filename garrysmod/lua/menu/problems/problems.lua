@@ -32,7 +32,7 @@ end
 local function CountProblem( severity )
 
 	ProblemsCount = ProblemsCount + 1
-	ProblemSeverity = math.max( ProblemSeverity, severity || 0 )
+	ProblemSeverity = math.max( ProblemSeverity, severity or 0 )
 
 	if ( IsValid( pnlMainMenu ) ) then
 		pnlMainMenu:Call( "SetProblemCount(" .. ProblemsCount .. ", " .. ProblemSeverity .. ")" )
@@ -47,12 +47,12 @@ local function RecountProblems()
 
 	for id, err in pairs( ErrorLog ) do
 		ProblemsCount = ProblemsCount + 1
-		ProblemSeverity = math.max( err.severity || 0, ProblemSeverity )
+		ProblemSeverity = math.max( err.severity or 0, ProblemSeverity )
 	end
 
 	for id, prob in pairs( Problems ) do
 		ProblemsCount = ProblemsCount + 1
-		ProblemSeverity = math.max( prob.severity || 0, ProblemSeverity )
+		ProblemSeverity = math.max( prob.severity or 0, ProblemSeverity )
 	end
 
 	if ( IsValid( pnlMainMenu ) ) then
@@ -78,7 +78,7 @@ end
 
 function ClearProblem( id )
 
-	if ( !Problems[ id ] ) then return end
+	if ( not Problems[ id ] ) then return end
 
 	Problems[ id ] = nil
 
@@ -90,9 +90,9 @@ end
 
 function FireProblem( prob )
 
-	local probID = prob.id || prob.text
+	local probID = prob.id or prob.text
 
-	if ( !Problems[ probID ] ) then
+	if ( not Problems[ probID ] ) then
 		CountProblem( prob.severity )
 	end
 
@@ -108,16 +108,16 @@ local function FireError( str, realm, stack, addontitle, addonid )
 	errorText = string.Replace( errorText, "\t", ( " " ):rep( 12 ) ) -- Ew
 
 	for i, t in pairs( stack ) do
-		if ( !t.Function or t.Function == "" ) then t.Function = "unknown" end
+		if ( not t.Function or t.Function == "" ) then t.Function = "unknown" end
 
 		errorText = errorText .. "\n" .. ("    "):rep( i ) .. i .. ". " .. t.Function .. " - " .. t.File .. ":" .. t.Line
 	end
 
 	local errorUniqueID = errorText .. realm
 
-	if ( !addontitle || addontitle == "" ) then addontitle = "Other" end
+	if ( not addontitle or addontitle == "" ) then addontitle = "Other" end
 
-	if ( !ErrorLog[ errorUniqueID ] ) then
+	if ( not ErrorLog[ errorUniqueID ] ) then
 		local newErr = {
 			text = errorText,
 			realm = realm,
@@ -147,8 +147,8 @@ hook.Add( "OnLuaError", "MenuErrorLogger", function( str, realm, stack, addontit
 		FireError( str, realm, stack, addontitle, addonid )
 	end )
 
-	if ( !good ) then
-		print( "Failed to log a Lua error!\n", err)
+	if ( not good ) then
+		print( "Failed to log a Lua errornot \n", err)
 	end
 
 end )
@@ -169,7 +169,7 @@ function OpenProblemsPanel()
 		ProblemsPanel:ReceivedProblem( id, prob )
 	end
 
-	if ( !anyErrors ) then
+	if ( not anyErrors ) then
 		ProblemsPanel.Tabs:SwitchToName( "#problems.problems" )
 	end
 
@@ -192,7 +192,7 @@ end
 
 timer.Create( "menu_check_for_problems", 1, 0, function()
 
-	if ( math.floor( GetConVarNumber( "mat_hdr_level" ) ) != 2 ) then
+	if ( math.floor( GetConVarNumber( "mat_hdr_level" ) ) ~= 2 ) then
 		FireProblem( { id = "mat_hdr_level", text = "#problem.mat_hdr_level", type = "config", fix = function() RunConsoleCommand( "mat_hdr_level", "2" ) end } )
 	else
 		ClearProblem( "mat_hdr_level" )
@@ -210,7 +210,7 @@ timer.Create( "menu_check_for_problems", 1, 0, function()
 		ClearProblem( "mat_specular" )
 	end
 
-	if ( math.floor( math.abs( GetConVarNumber( "gmod_mcore_test" ) ) ) != 0 ) then
+	if ( math.floor( math.abs( GetConVarNumber( "gmod_mcore_test" ) ) ) ~= 0 ) then
 		FireProblem( { id = "gmod_mcore_test", text = "#problem.gmod_mcore_test", type = "config" } )
 	else
 		ClearProblem( "gmod_mcore_test" )
@@ -222,14 +222,14 @@ timer.Create( "menu_check_for_problems", 1, 0, function()
 		ClearProblem( "voice_fadeouttime" )
 	end
 
-	if ( ScrW() < 1000 || ScrH() < 700 ) then
+	if ( ScrW() < 1000 or ScrH() < 700 ) then
 		FireProblem( { id = "screen_res", text = "#problem.screen_res", type = "config" } )
 	else
 		ClearProblem( "screen_res" )
 	end
 
 	-- These are not saved, but still affect gameplay
-	if ( GetConVarNumber( "cl_forwardspeed" ) != 10000 || GetConVarNumber( "cl_sidespeed" ) != 10000 || GetConVarNumber( "cl_backspeed" ) != 10000 ) then
+	if ( GetConVarNumber( "cl_forwardspeed" ) ~= 10000 or GetConVarNumber( "cl_sidespeed" ) ~= 10000 or GetConVarNumber( "cl_backspeed" ) ~= 10000 ) then
 		FireProblem( { id = "cl_speeds", text = "#problem.cl_speeds", type = "config", fix = function()
 			RunConsoleCommand( "cl_forwardspeed", "10000" )
 			RunConsoleCommand( "cl_sidespeed", "10000" )
@@ -239,7 +239,7 @@ timer.Create( "menu_check_for_problems", 1, 0, function()
 		ClearProblem( "cl_speeds" )
 	end
 
-	if ( render.GetDXLevel() != 95 && render.GetDXLevel() != 90 ) then
+	if ( render.GetDXLevel() ~= 95 and render.GetDXLevel() ~= 90 ) then
 		FireProblem( { id = "mat_dxlevel", text = language.GetPhrase( "problem.mat_dxlevel" ):format( render.GetDXLevel() ), type = "config" } )
 	else
 		ClearProblem( "mat_dxlevel" )
@@ -248,10 +248,10 @@ timer.Create( "menu_check_for_problems", 1, 0, function()
 end )
 
 -- Problems that we only need to check on startup
-if ( !render.SupportsHDR() ) then FireProblem( { text = "#problem.no_hdr", type = "hardware" } ) end
-if ( !render.SupportsPixelShaders_1_4() ) then FireProblem( { text = "#problem.no_ps14", type = "hardware" } ) end
-if ( !render.SupportsPixelShaders_2_0() ) then FireProblem( { text = "#problem.no_ps20", type = "hardware" } ) end
-if ( !render.SupportsVertexShaders_2_0() ) then FireProblem( { text = "#problem.no_vs20", type = "hardware" } ) end
+if ( not render.SupportsHDR() ) then FireProblem( { text = "#problem.no_hdr", type = "hardware" } ) end
+if ( not render.SupportsPixelShaders_1_4() ) then FireProblem( { text = "#problem.no_ps14", type = "hardware" } ) end
+if ( not render.SupportsPixelShaders_2_0() ) then FireProblem( { text = "#problem.no_ps20", type = "hardware" } ) end
+if ( not render.SupportsVertexShaders_2_0() ) then FireProblem( { text = "#problem.no_vs20", type = "hardware" } ) end
 
 
 
@@ -272,7 +272,7 @@ hook.Add( "OnNotifyAddonConflict", "AddonConflictNotification", function( addon1
 
 		steamworks.FileInfo( addon1, function( result )
 
-			if ( !result ) then return end
+			if ( not result ) then return end
 
 			AddonConflicts[ id ].addon1 = result.title
 			RefreshAddonConflicts()
@@ -281,7 +281,7 @@ hook.Add( "OnNotifyAddonConflict", "AddonConflictNotification", function( addon1
 
 		steamworks.FileInfo( addon2, function( result )
 
-			if ( !result ) then return end
+			if ( not result ) then return end
 
 			AddonConflicts[ id ].addon2 = result.title
 			RefreshAddonConflicts()

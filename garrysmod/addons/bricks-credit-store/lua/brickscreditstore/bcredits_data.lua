@@ -57,7 +57,7 @@ if( SERVER ) then
 	
 	function ply_meta:SaveBRCS_Data()
 		local Credits = self:GetBRCS_Credits()
-		if( Credits != nil ) then
+		if( Credits ~= nil ) then
 			if( not isnumber( Credits ) ) then
 				Credits = 0
 			end
@@ -65,7 +65,7 @@ if( SERVER ) then
 			Credits = 0
 		end
 		
-		if( BRICKSCREDITSTORE.LUACONFIG.UseMySQL != true ) then
+		if( BRICKSCREDITSTORE.LUACONFIG.UseMySQL ~= true ) then
 			if( not file.Exists( "brickscreditstore/credit_data", "DATA" ) ) then
 				file.CreateDir( "brickscreditstore/credit_data" )
 			end
@@ -79,12 +79,12 @@ if( SERVER ) then
 	hook.Add( "PlayerInitialSpawn", "BRCSHooks_PlayerInitialSpawn_DataLoad", function( ply )
 		local Credits = 0
 	
-		if( BRICKSCREDITSTORE.LUACONFIG.UseMySQL != true ) then
+		if( BRICKSCREDITSTORE.LUACONFIG.UseMySQL ~= true ) then
 			if( file.Exists( "brickscreditstore/credit_data/" .. ply:SteamID64() .. ".txt", "DATA" ) ) then
 				local CreditsString = file.Read( "brickscreditstore/credit_data/" .. ply:SteamID64() .. ".txt", "DATA" )
 				CreditsString = tonumber( CreditsString )
 				
-				if( CreditsString != nil ) then
+				if( CreditsString ~= nil ) then
 					if( isnumber( CreditsString ) ) then
 						Credits = CreditsString
 					end
@@ -97,7 +97,7 @@ if( SERVER ) then
 				if( value ) then
 					local CreditsString = tonumber( value )
 
-					if( CreditsString != nil ) then
+					if( CreditsString ~= nil ) then
 						if( isnumber( CreditsString ) ) then
 							Credits = CreditsString
 						end

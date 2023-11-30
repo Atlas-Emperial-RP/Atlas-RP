@@ -81,13 +81,15 @@ function FPP.NewBuddy(um)
     local data = sql.Query("SELECT * FROM FPP_Buddies")
     for _, v in ipairs(data or {}) do
         -- make the player buddy if they're in your buddies list
-        if v.steamid ~= SteamID then continue end
+        if v.steamid ~= SteamID then goto continue end
 
         RunConsoleCommand("FPP_SetBuddy", ply:UserID(), v.physgun, v.gravgun, v.toolgun, v.playeruse, v.entitydamage)
         -- update the name
         sql.Query("UPDATE FPP_Buddies SET name = " .. sql.SQLStr(ply:Nick()) .. " WHERE steamid = " .. sql.SQLStr(SteamID) .. ";")
         FPP.Buddies[SteamID] = FPP.Buddies[SteamID] or {}
         FPP.Buddies[SteamID].name = ply:Nick()
+
+        ::continue::
     end
 end
 usermessage.Hook("FPP_CheckBuddy", FPP.NewBuddy)

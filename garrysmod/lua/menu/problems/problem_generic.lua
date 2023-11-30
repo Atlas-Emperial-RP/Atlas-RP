@@ -10,14 +10,14 @@ function PANEL:Init()
 	self.CopyBtn:SetImage( "icon16/page_copy.png" )
 	self.CopyBtn:SetSize( 16, 16 )
 	self.CopyBtn.DoClick = function( btm )
-		if ( !self.Problem ) then return end
+		if ( not self.Problem ) then return end
 
 		SetClipboardText( language.GetPhrase( self.Problem.text ) )
 	end
 
 	self.FixBtn = self:Add( "DButton" )
 	self.FixBtn.DoClick = function( btm )
-		if ( !self.Problem || !self.Problem.fix ) then return end
+		if ( not self.Problem or not self.Problem.fix ) then return end
 
 		self.Problem.fix()
 	end
@@ -62,7 +62,7 @@ function PANEL:Paint( w, h )
 	bgClr.a = self:GetAlpha()
 
 	-- No info yet
-	if ( !self.Problem ) then
+	if ( not self.Problem ) then
 		draw.RoundedBox( 0, 0, 0, w, h, bgClr )
 		return
 	end
@@ -95,8 +95,8 @@ function PANEL:Setup( problem )
 
 	self.Markup = markup.Parse( "<font=DermaDefault>" .. language.GetPhrase( self.Problem.text ) .. "</font>", self:GetWide() - self.CopyBtn:GetWide() - copyIconPad * 2 - severityOffset - textPaddingX * 2 )
 
-	self.FixBtn:SetEnabled( problem.fix != nil )
-	self.FixBtn:SetText( problem.fix && "#problems.quick_fix" || "#problems.no_quick_fix" )
+	self.FixBtn:SetEnabled( problem.fix ~= nil )
+	self.FixBtn:SetText( problem.fix and "#problems.quick_fix" or "#problems.no_quick_fix" )
 	self.FixBtn:SizeToContentsX( 10 )
 
 end
@@ -138,13 +138,13 @@ function PANEL:Paint( w, h )
 
 	surface.SetMaterial( arrowMat )
 	surface.SetDrawColor( white )
-	surface.DrawTexturedRectRotated( w - 20, 20, 20, 20, self.Collapsed && 180 || 0 )
+	surface.DrawTexturedRectRotated( w - 20, 20, 20, 20, self.Collapsed and 180 or 0 )
 
 end
 
 function PANEL:OnMousePressed()
 
-	self.Collapsed = !self.Collapsed
+	self.Collapsed = not self.Collapsed
 	self:InvalidateLayout()
 
 	collapsedCache[ self.Title ] = self.Collapsed
@@ -181,7 +181,7 @@ function PANEL:ReceivedProblem( uid, prob )
 
 	local pnl = self.ProblemPanels[ uid ]
 
-	if ( !IsValid( pnl ) ) then
+	if ( not IsValid( pnl ) ) then
 		pnl = self.ProblemList:Add( "GenericProblem" )
 		self.ProblemPanels[ uid ] = pnl
 		self:InvalidateLayout()

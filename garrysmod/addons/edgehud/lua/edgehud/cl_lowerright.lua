@@ -46,7 +46,7 @@ timer.Create("EdgeHUD:UpdateExtraWidgets",0.05,0,function(  )
 	end
 
 	--Make sure ply is valid.
-	if !IsValid(ply) then return end
+	if not IsValid(ply) then return end
 
 	widgetsDrawing.mgangs = true
 	widgetsDrawing.gunlicense = true
@@ -61,10 +61,10 @@ timer.Create("EdgeHUD:UpdateExtraWidgets",0.05,0,function(  )
 		local veh = ply:GetVehicle()
 
 		--Make sure the vehicle is valid.
-		if !IsValid(veh) then return end
+		if not IsValid(veh) then return end
 
 		--Check so the player is the driver.
-		if !EdgeHUD.Player_IsDriver then return end
+		if not EdgeHUD.Player_IsDriver then return end
 
 		--Make sure the vehicle isn't a chair.
 		if string.find(string.lower(veh:GetClass()),"chair") then return end
@@ -109,7 +109,7 @@ timer.Create("EdgeHUD:UpdateExtraWidgets",0.05,0,function(  )
 			local secAmmo = curWep:GetSecondaryAmmoType()
 
 			--Check if the primary ammo should be drawn.
-			if (curWep:Clip1() != -1 or primAmmo != -1) and class != "weapon_physcannon" then
+			if (curWep:Clip1() ~= -1 or primAmmo ~= -1) and class ~= "weapon_physcannon" then
 				widgetsDrawing.primAmmo = true
 				widgetsDrawing.mgangs = false
 				primary = curWep:Clip1()
@@ -117,7 +117,7 @@ timer.Create("EdgeHUD:UpdateExtraWidgets",0.05,0,function(  )
 			end
 
 			--Check if the secondary ammo should be drawn.
-			if (curWep:Clip2() != -1 or secAmmo != -1) and class != "weapon_physcannon" then
+			if (curWep:Clip2() ~= -1 or secAmmo ~= -1) and class ~= "weapon_physcannon" then
 				widgetsDrawing.secAmmo = true
 				widgetsDrawing.mgangs = false
 				secondary = curWep:Clip2()
@@ -148,24 +148,24 @@ local extraWidgets = {
 		end,
 		getData = function() return fuel .. "%" end,
 		shouldDraw = function()
-			if !VC then return false end
-			if !widgetsDrawing.vehicleHUD then return false end
+			if not VC then return false end
+			if not widgetsDrawing.vehicleHUD then return false end
 
 			local veh = ply:GetVehicle()
 
-			if !IsValid(veh) then return false end
+			if not IsValid(veh) then return false end
 
-			return EdgeHUD.Configuration.GetConfigValue( "VehicleStatusWidgets" ) and fuel != -1 and VC.ServerSettings.Fuel and veh:VC_isFuelConsumptionEnabled()
+			return EdgeHUD.Configuration.GetConfigValue( "VehicleStatusWidgets" ) and fuel ~= -1 and VC.ServerSettings.Fuel and veh:VC_isFuelConsumptionEnabled()
 		end
 	},
 	{
 		icon = Material("edgehud/icon_engine.png","smooth"),
 		getData = function() return HP .. "%" end,
 		shouldDraw = function()
-			if !VC then return false end
-			if !widgetsDrawing.vehicleHUD then return false end
+			if not VC then return false end
+			if not widgetsDrawing.vehicleHUD then return false end
 
-			return EdgeHUD.Configuration.GetConfigValue( "VehicleStatusWidgets" ) and HP != -1 and VC.ServerSettings.Damage end
+			return EdgeHUD.Configuration.GetConfigValue( "VehicleStatusWidgets" ) and HP ~= -1 and VC.ServerSettings.Damage end
 	},
 	{
 		icon = Material("edgehud/icon_speedometer.png","smooth"),
@@ -181,7 +181,7 @@ local extraWidgets = {
 	{
 		icon = Material("edgehud/icon_gang.png","smooth"),
 		getData = function() return (mg2 and ply.GetGang) and ply:GetGang() and ply:GetGang():GetName() or "" end,
-		shouldDraw = function() return (mg2 and ply.GetGang) and ply:GetGang() != nil and widgetsDrawing.mgangs and EdgeHUD.Configuration.GetConfigValue( "MGang2Widget" ) end
+		shouldDraw = function() return (mg2 and ply.GetGang) and ply:GetGang() ~= nil and widgetsDrawing.mgangs and EdgeHUD.Configuration.GetConfigValue( "MGang2Widget" ) end
 	},
 	{
 		icon = Material("edgehud/icon_proplimit.png","smooth"),
@@ -315,7 +315,7 @@ timer.Create("EdgeHUD:ExtraWidgets",0.05,0,function(  )
 		local data = extraWidgets[i].getData()
 
 		--Check if the widget's data has been updated.
-		if label:GetValue() != data then
+		if label:GetValue() ~= data then
 
 			--Update the label.
 			label:SetText(DarkRP.deLocalise(data))
@@ -331,7 +331,7 @@ timer.Create("EdgeHUD:ExtraWidgets",0.05,0,function(  )
 		local shouldDraw = extraWidgets[i].shouldDraw() and EdgeHUD.Configuration.GetConfigValue( "LowerRight" )
 
 		--Check if the visibility needs to be updated.
-		if curWidget:IsVisible() != shouldDraw then
+		if curWidget:IsVisible() ~= shouldDraw then
 			curWidget:SetVisible(shouldDraw)
 		end
 

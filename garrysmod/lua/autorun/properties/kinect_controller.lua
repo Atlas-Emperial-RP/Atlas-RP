@@ -17,10 +17,10 @@ properties.Add( "motioncontrol_ragdoll", {
 
 	Filter = function( self, ent, ply )
 
-		if ( CLIENT && !motionsensor ) then return false end
-		if ( CLIENT && !motionsensor.IsAvailable() ) then return false end
-		if ( !ent:IsRagdoll() ) then return false end
-		if ( !gamemode.Call( "CanProperty", ply, "motioncontrol_ragdoll", ent ) ) then return false end
+		if ( CLIENT and not motionsensor ) then return false end
+		if ( CLIENT and not motionsensor.IsAvailable() ) then return false end
+		if ( not ent:IsRagdoll() ) then return false end
+		if ( not gamemode.Call( "CanProperty", ply, "motioncontrol_ragdoll", ent ) ) then return false end
 
 		return true
 
@@ -35,7 +35,7 @@ properties.Add( "motioncontrol_ragdoll", {
 		--
 		-- Start up the kinect controller. This will freeze the game for a second.
 		--
-		if ( !motionsensor.IsActive() ) then
+		if ( not motionsensor.IsActive() ) then
 			motionsensor.Start()
 		end
 
@@ -44,12 +44,12 @@ properties.Add( "motioncontrol_ragdoll", {
 	Receive = function( self, length, player )
 
 		local ent = net.ReadEntity()
-		if ( !self:Filter( ent, player ) ) then return end
+		if ( not self:Filter( ent, player ) ) then return end
 
 		-- Do not spam please!
 		local timeout = playerTimeouts[ player ]
-		if ( timeout && timeout.time > CurTime() ) then
-			if ( !timeout.sentMessage ) then
+		if ( timeout and timeout.time > CurTime() ) then
+			if ( not timeout.sentMessage ) then
 				ServerLog( "Player " .. tostring( player ) .. " tried to use 'motioncontrol_ragdoll' property too rapidly!\n" )
 				player:PrintMessage( HUD_PRINTTALK, "Please wait at least 0.2 seconds before trying to control another ragdoll." )
 				timeout.sentMessage = true

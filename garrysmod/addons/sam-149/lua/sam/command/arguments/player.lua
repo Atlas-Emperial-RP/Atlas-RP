@@ -77,7 +77,7 @@ command.new_argument("player")
 			local tmp = {}
 			for _, v in ipairs(input:sub(2):Trim():Split(",")) do
 				v = tonumber(v)
-				if not sam.isnumber(v) then continue end
+				if not sam.isnumber(v) then goto continue end
 				local target = Entity(v)
 				if not tmp[target] and IsValid(target) and target:IsPlayer() then
 					tmp[target] = true
@@ -85,6 +85,7 @@ command.new_argument("player")
 						table.insert(targets, target)
 					end
 				end
+				::continue::
 			end
 		else
 			local target

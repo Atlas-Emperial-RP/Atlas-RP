@@ -5,10 +5,12 @@ local function updateAgenda(ply, agenda, text)
 
     local phrase = DarkRP.getPhrase("agenda_updated")
     for _, v in ipairs(player.GetAll()) do
-        if v:getAgendaTable() ~= agenda then continue end
+        if v:getAgendaTable() ~= agenda then goto continue end
 
         v:setSelfDarkRPVar("agenda", agenda.text)
         DarkRP.notify(v, 2, 4, phrase)
+
+        ::continue::
     end
 end
 

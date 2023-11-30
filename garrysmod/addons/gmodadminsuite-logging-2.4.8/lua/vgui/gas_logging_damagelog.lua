@@ -145,7 +145,7 @@ function PANEL:DoClick()
 
 			timeline.DmgEventBlips = {}
 			for i,log in ipairs(pvp_event_report.data[GAS.Logging.PvP_EVENT_LOGS]) do
-				if (type(log[1]) == "table") then continue end
+				if (type(log[1]) == "table") then goto continue end
 
 				local place = (log[1] / total_time) * (w * (total_time / timeline.Scale)) - timeline.BlipOffset
 
@@ -162,6 +162,7 @@ function PANEL:DoClick()
 				else
 					timeline.DmgEventBlips[i] = {nil, blip}
 				end
+				::continue::
 			end
 		end
 		timeline:RefreshBlips()
@@ -268,13 +269,14 @@ function PANEL:DoClick()
 			if (self.Scale < 5) then
 				local spacing = w / math.floor(self.Scale / .25)
 				for i=1,math.floor(self.Scale / .25) do
-					if ((i - 1) % 4 == 0) then continue end
+					if ((i - 1) % 4 == 0) then goto continue end
 					if ((i - 1) % 2 == 0) then
 						surface.SetDrawColor(37, 37, 37)
 					else
 						surface.SetDrawColor(30, 30, 30)
 					end
 					surface.DrawLine((i - 1) * spacing,0,(i - 1) * spacing,h)
+					::continue::
 				end
 			end
 

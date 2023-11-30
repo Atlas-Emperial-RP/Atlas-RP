@@ -648,7 +648,7 @@ Thu Nov 16 01:28:09 2023	First Order Commander Pretzel (STEAM_0:0:231421928): hm
 Thu Nov 16 01:28:13 2023	SCOUT SGT 2321 Jerrod (STEAM_0:0:29212178): /me shows valid ID
 Thu Nov 16 01:28:18 2023	First Order Commander Pretzel (STEAM_0:0:231421928): what? you're robotic
 Thu Nov 16 01:28:18 2023	SHW Colonel Furboy (STEAM_0:0:63471237): Fair point
-Thu Nov 16 01:28:26 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970): /me shows id || certified sandy boi||
+Thu Nov 16 01:28:26 2023	SHRT SGT 4201 Billy (STEAM_0:1:460210970): /me shows id or certified sandy boior
 Thu Nov 16 01:28:28 2023	First Order Commander Pretzel (STEAM_0:0:231421928): why?
 Thu Nov 16 01:28:32 2023	DT E4 O30 (STEAM_0:1:161014837) spawned
 Thu Nov 16 01:28:35 2023	First Order Commander Pretzel (STEAM_0:0:231421928): k robot

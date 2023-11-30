@@ -193,8 +193,9 @@ local function CreateListingMenu(tab_content, job_index, is_blacklist)
 	function controls_container:PerformLayout()
 		add_remove_selector:SizeToButtons()
 		for i,v in ipairs(self:GetChildren()) do
-			if (i == 1) then continue end
+			if (i == 1) then goto continue end
 			v:SetWide((self:GetWide() - add_remove_selector:GetWide() - 50) / (#self:GetChildren() - 1))
+			::continue::
 		end
 	end
 
@@ -499,16 +500,16 @@ GAS:hook("gmodadminsuite:ModuleFrame:jobwhitelist", "jobwhitelist:menu", functio
 		local duplicate_job_names_check, duplicate_jobs = {}, {}
 		jobs_tab_content.Categories:SetLoading(false)
 		for _,category in ipairs(DarkRP.getCategories().jobs) do
-			if (#category.members == 0) then continue end
+			if (#category.members == 0) then goto continue end
 			local category_vgui
 			for _,job in ipairs(category.members) do
 				local job_index = job.team
 				local perms_job_identifier = OpenPermissions:GetTeamIdentifier(job_index)
-				if (not GAS.JobWhitelist:CanAccessJob(LocalPlayer(), perms_job_identifier)) then continue end
+				if (not GAS.JobWhitelist:CanAccessJob(LocalPlayer(), perms_job_identifier)) then goto continue_1 end
 				category_vgui = category_vgui or jobs_tab_content.Categories:AddCategory(category.name, category.color)
 				if (duplicate_job_names_check[job.name]) then
 					duplicate_jobs[job.name] = true
-					continue
+					goto continue_1
 				else
 					duplicate_job_names_check[job.name] = true
 				end
@@ -763,7 +764,9 @@ GAS:hook("gmodadminsuite:ModuleFrame:jobwhitelist", "jobwhitelist:menu", functio
 						end
 					end)
 				end
+				::continue_1::
 			end
+			::continue::
 		end
 
 		if (not table.IsEmpty(duplicate_jobs)) then
@@ -1518,8 +1521,9 @@ GAS:hook("gmodadminsuite:ModuleFrame:jobwhitelist", "jobwhitelist:menu", functio
 
 						local categories = {}
 						for i,c in ipairs(DarkRP.getCategories().jobs) do
-							if (GAS:table_IsEmpty(c.members)) then continue end
+							if (GAS:table_IsEmpty(c.members)) then goto continue end
 							table.insert(categories, {members = c.members, name = c.name, color = c.color})
+							::continue::
 						end
 						table.SortByMember(categories, "name", true)
 						for i,v in ipairs(categories) do

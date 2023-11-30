@@ -97,21 +97,21 @@ local function FireSingleOutput( output, this, activator, data )
 		output.times = output.times - 1
 	end
 
-	return ( output.times > 0 ) || ( output.times == -1 )
+	return ( output.times > 0 ) or ( output.times == -1 )
 
 end
 
 -- This function is used to trigger an output.
 function ENT:TriggerOutput( name, activator, data )
 
-	if ( !self.m_tOutputs ) then return end
-	if ( !self.m_tOutputs[ name ] ) then return end
+	if ( not self.m_tOutputs ) then return end
+	if ( not self.m_tOutputs[ name ] ) then return end
 
 	local OutputList = self.m_tOutputs[ name ]
 
 	for idx = #OutputList, 1, -1 do
 
-		if ( OutputList[ idx ] and !FireSingleOutput( OutputList[ idx ], self.Entity, activator, data ) ) then
+		if ( OutputList[ idx ] and not FireSingleOutput( OutputList[ idx ], self.Entity, activator, data ) ) then
 
 			-- Shift the indexes so this loop doesn't fail later
 			table.remove( self.m_tOutputs[ name ], idx )

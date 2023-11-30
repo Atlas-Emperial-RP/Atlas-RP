@@ -102,7 +102,7 @@ function meta:sendDarkRPVars()
 
             local vars = {}
             for var, value in pairs(DarkRPVars[target] or {}) do
-                if self ~= target and (privateDarkRPVars[target] or {})[var] then continue end
+                if self ~= target and (privateDarkRPVars[target] or {})[var] then goto continue end
                 table.insert(vars, var)
             end
 
@@ -111,6 +111,8 @@ function meta:sendDarkRPVars()
             for i = 1, vars_cnt, 1 do
                 DarkRP.writeNetDarkRPVar(vars[i], DarkRPVars[target][vars[i]])
             end
+
+            ::continue::
         end
     net.Send(self)
 end

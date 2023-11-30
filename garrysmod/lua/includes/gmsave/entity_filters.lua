@@ -53,21 +53,21 @@ function gmsave.ShouldSaveEntity( ent, t )
 	--
 	-- Filtered out - we don't want to save these entity types!
 	--
-	if ( info && info.save == false ) then return false end
+	if ( info and info.save == false ) then return false end
 
 	--
 	-- Should we save the parent entity?
-	-- If not, don't save this!
+	-- If not, don't save thisnot 
 	--
 	local parent = ent:GetParent()
 	if ( IsValid( parent ) ) then
-		if ( !gmsave.ShouldSaveEntity( parent, parent:GetSaveTable() ) ) then return false end
+		if ( not gmsave.ShouldSaveEntity( parent, parent:GetSaveTable() ) ) then return false end
 	end
 
 	--
 	-- If this is a weapon, and it has a valid owner.. don't save it!
 	--
-	if ( ent:IsWeapon() && IsValid( ent:GetOwner() ) ) then
+	if ( ent:IsWeapon() and IsValid( ent:GetOwner() ) ) then
 		return false
 	end
 

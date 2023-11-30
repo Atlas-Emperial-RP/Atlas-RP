@@ -122,7 +122,7 @@ function RADAR:Draw(client)
    surface.SetFont("HudSelectionText")
 
    -- C4 warnings
-   if self.bombs_count != 0 and client:IsActiveTraitor() then
+   if self.bombs_count ~= 0 and client:IsActiveTraitor() then
       surface.SetTexture(c4warn)
       surface.SetTextColor(200, 55, 55, 220)
       surface.SetDrawColor(255, 255, 255, 200)
@@ -144,7 +144,7 @@ function RADAR:Draw(client)
    end
 
    -- Samples
-   if self.samples_count != 0 then
+   if self.samples_count ~= 0 then
       surface.SetTexture(sample_scan)
       surface.SetTextColor(200, 50, 50, 255)
       surface.SetDrawColor(255, 255, 255, 240)
@@ -170,7 +170,7 @@ function RADAR:Draw(client)
 
       scrpos = tgt.pos:ToScreen()
       if not scrpos.visible then
-         continue
+         goto continue
       end
       md = mpos:Distance(Vector(scrpos.x, scrpos.y, 0))
       if md < near_cursor_dist then
@@ -196,6 +196,8 @@ function RADAR:Draw(client)
       end
 
       DrawTarget(tgt, 24, 0)
+
+      ::continue::
    end
 
    -- Time until next scan

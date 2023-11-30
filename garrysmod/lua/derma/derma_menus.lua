@@ -9,7 +9,7 @@ end
 
 function DermaMenu( parentmenu, parent )
 
-	if ( !parentmenu ) then CloseDermaMenus() end
+	if ( not parentmenu ) then CloseDermaMenus() end
 
 	local dmenu = vgui.Create( "DMenu", parent )
 

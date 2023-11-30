@@ -48,7 +48,7 @@ function panel:Init()
 	end
 	
 	function self.button:OnMousePressed()
-		Derma_StringRequest("Add Usergroup", "Enter the name/unique of the usergroup", "", function(text) if (text != "") then net.Start("atlaschat.crtrnk") net.WriteString(text) net.SendToServer() end end, function(text) end, "Accept")
+		Derma_StringRequest("Add Usergroup", "Enter the name/unique of the usergroup", "", function(text) if (text ~= "") then net.Start("atlaschat.crtrnk") net.WriteString(text) net.SendToServer() end end, function(text) end, "Accept")
 	end
 	
 	self:AddColumn("USERGROUP", (420 -40) /2)
@@ -185,7 +185,7 @@ function panel:Populate()
 		image.path = Material(data.icon) or ""
 
 		function image:Paint(w, h)
-			if (self.path and self.path != "") then
+			if (self.path and self.path ~= "") then
 				draw.Material(w /2 -8, h /2 -8, 16, 16, self.Hovered and color_green or color_white, self.path)
 			end
 		end

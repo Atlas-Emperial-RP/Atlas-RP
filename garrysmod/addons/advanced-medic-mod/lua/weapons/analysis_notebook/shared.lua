@@ -65,7 +65,7 @@ function SWEP:PrimaryAttack()
 			self:SetAnalyseEndTime( CurTime() + ConfigurationMedicMod.TimeToQuickAnalyse )
 			self:SetPatient( ent )
 			self:SetPlayer( ent:GetOwner() )
-		elseif IsValid(ent.ragdoll) && ent.ragdoll:IsDeathRagdoll() then
+		elseif IsValid(ent.ragdoll) and ent.ragdoll:IsDeathRagdoll() then
 			self:SetSearching( true )
 			self:SetAnalyseEndTime( CurTime() + ConfigurationMedicMod.TimeToQuickAnalyse )
 			self:SetPatient( ent )
@@ -94,8 +94,8 @@ end
 function SWEP:Think()
 	
 	if not self:GetSearching() then return end
-	if self:GetAnalyseEndTime() > CurTime() && self:GetAnalyseEndTime() > 0 then
-		if IsValid(self:GetPatient()) && IsValid(self.Owner:GetEyeTrace().Entity) && self:GetPatient() == self.Owner:GetEyeTrace().Entity then 
+	if self:GetAnalyseEndTime() > CurTime() and self:GetAnalyseEndTime() > 0 then
+		if IsValid(self:GetPatient()) and IsValid(self.Owner:GetEyeTrace().Entity) and self:GetPatient() == self.Owner:GetEyeTrace().Entity then 
 			if self.Owner:GetPos():Distance(self:GetPatient():GetPos()) > 200 then
 				self:SetSearching( false )
 				self:SetPatient( nil )
@@ -186,7 +186,7 @@ function SWEP:DrawHUD()
 		return
     end
 	
-	if self.Infos != nil then
+	if self.Infos ~= nil then
 		local line = 0
 		for k, v in pairs(self.Infos) do 
 			

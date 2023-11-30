@@ -39,7 +39,7 @@ function ENT:OverlayRender()
 
 	local c = self:GetColor()
 
-	if ( !self:IsHovered() && !self:IsPressed() ) then
+	if ( not self:IsHovered() and not self:IsPressed() ) then
 		c.r = c.r * 0.5
 		c.g = c.g * 0.5
 		c.b = c.b * 0.5
@@ -62,7 +62,7 @@ end
 function ENT:TestCollision( startpos, delta, isbox, extents )
 
 	if ( isbox ) then return end
-	if ( !widgets.Tracing ) then return end
+	if ( not widgets.Tracing ) then return end
 
 	local size = self:GetSize() * 0.5
 
@@ -70,7 +70,7 @@ function ENT:TestCollision( startpos, delta, isbox, extents )
 	local maxs = Vector( size, 1, 1 )
 
 	local hit, norm, fraction = util.IntersectRayWithOBB( startpos, delta, self:GetPos(), self:GetAngles(), mins, maxs )
-	if ( !hit ) then return end
+	if ( not hit ) then return end
 
 	--debugoverlay.BoxAngles( self:GetPos(), mins, maxs, self:GetAngles(), 0.1, Color( 0, 0, 255, 64 ) )
 
@@ -105,7 +105,7 @@ function ENT:GetGrabPos( Pos, Forward )
 	local planenrm = (eye-planepos):GetNormal()
 
 	local hitpos = util.IntersectRayWithPlane( eye, fwd, planepos, planenrm )
-	if ( !hitpos ) then return end
+	if ( not hitpos ) then return end
 
 	-- Get nearest point along the arrow where we touched it
 	local fdist, vpos, falong = util.DistanceToLine( planepos - arrowdir * 1024, planepos + arrowdir * 1024, hitpos )

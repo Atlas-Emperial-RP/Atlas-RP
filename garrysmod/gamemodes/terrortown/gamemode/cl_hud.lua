@@ -117,7 +117,7 @@ local function DrawBg(x, y, width, height, client)
 
    -- main border, traitor based
    local col = bg_colors.innocent
-   if GAMEMODE.round_state != ROUND_ACTIVE then
+   if GAMEMODE.round_state ~= ROUND_ACTIVE then
       col = bg_colors.noround
    elseif client:GetTraitor() then
       col = bg_colors.traitor
@@ -158,7 +158,7 @@ local function PunchPaint(client)
    dr.SimpleText(L.punch_help, "TabLarge", ScrW() / 2, margin, COLOR_WHITE, TEXT_ALIGN_CENTER)
 
    local bonus = client:GetNWInt("bonuspunches", 0)
-   if bonus != 0 then
+   if bonus ~= 0 then
       local text
       if bonus < 0 then
          text = interp(L.punch_bonus, {num = bonus})
@@ -240,7 +240,7 @@ local function InfoPaint(client)
    -- Draw ammo
    if client:GetActiveWeapon().Primary then
       local ammo_clip, ammo_max, ammo_inv = GetAmmo(client)
-      if ammo_clip != -1 then
+      if ammo_clip ~= -1 then
          local ammo_y = health_y + bar_height + margin
          PaintBar(x+margin, ammo_y, bar_width, bar_height, ammo_colors, ammo_clip/ammo_max)
          local text = string.format("%i + %02i", ammo_clip, ammo_inv)

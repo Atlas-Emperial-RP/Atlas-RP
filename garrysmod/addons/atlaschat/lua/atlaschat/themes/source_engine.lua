@@ -92,7 +92,7 @@ function theme:PaintPanel(w, h)
 	
 	local hostName = GetHostName():upper()
 
-	if (ValidPanel(self.panel.hostName) and self.panel.hostName:GetText() != hostName) then
+	if (ValidPanel(self.panel.hostName) and self.panel.hostName:GetText() ~= hostName) then
 		self.panel.hostName:SetText(hostName)
 		self.panel.hostName:SizeToContents()
 	end

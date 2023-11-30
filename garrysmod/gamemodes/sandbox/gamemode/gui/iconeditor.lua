@@ -144,7 +144,7 @@ function PANEL:Init()
 
 				self:SetVisible( true )
 
-				if ( !IsValid( tr.Entity ) ) then return end
+				if ( not IsValid( tr.Entity ) ) then return end
 
 				self:SetFromEntity( tr.Entity )
 
@@ -190,7 +190,7 @@ function PANEL:Init()
 
 				if ( !node.FileName ) then return end
 				local ext = string.GetExtensionFromFilename( node.FileName )
-				if( ext != "vcd" ) then return end
+				if( ext ~= "vcd" ) then return end
 
 				self.ModelPanel:StartScene( node.FileName )
 				MsgN( node.FileName )
@@ -214,7 +214,7 @@ function PANEL:Init()
 		bbox:SetDark( true )
 		bbox.OnChange = function( p, b )
 			self.ShowBBox = b
-			p:SetCookie( "checkbox_checked", b && 1 or 0 )
+			p:SetCookie( "checkbox_checked", b and 1 or 0 )
 		end
 		bbox.LoadCookies = function( p ) local b = p:GetCookie( "checkbox_checked" ) p:SetChecked( b ) p:OnChange( tobool( b ) ) end
 		bbox:SetCookieName( "model_editor_bbox" )
@@ -226,7 +226,7 @@ function PANEL:Init()
 		origin:SetDark( true )
 		origin.OnChange = function( p, b )
 			self.ShowOrigin = b
-			p:SetCookie( "checkbox_checked", b && 1 or 0 )
+			p:SetCookie( "checkbox_checked", b and 1 or 0 )
 		end
 		origin.LoadCookies = function( p ) local b = p:GetCookie( "checkbox_checked" ) p:SetChecked( b ) p:OnChange( tobool( b ) ) end
 		origin:SetCookieName( "model_editor_origin" )
@@ -356,13 +356,13 @@ function PANEL:UpdateEntity( ent )
 
 	ent:SetEyeTarget( self.ModelPanel:GetCamPos() )
 
-	if ( IsValid( self.TargetAnglePanel ) && !self.TargetAnglePanel:IsEditing() ) then
+	if ( IsValid( self.TargetAnglePanel ) and not self.TargetAnglePanel:IsEditing() ) then
 		self.TargetAnglePanel:SetText( tostring( ent:GetAngles() ) )
 	end
-	if ( IsValid( self.TargetCamAnglePanel ) && !self.TargetCamAnglePanel:IsEditing() ) then
+	if ( IsValid( self.TargetCamAnglePanel ) and not self.TargetCamAnglePanel:IsEditing() ) then
 		self.TargetCamAnglePanel:SetText( tostring( self.ModelPanel:GetLookAng() ) )
 	end
-	if ( IsValid( self.TargetCamPosPanel ) && !self.TargetCamPosPanel:IsEditing() ) then
+	if ( IsValid( self.TargetCamPosPanel ) and not self.TargetCamPosPanel:IsEditing() ) then
 		self.TargetCamPosPanel:SetText( tostring( self.ModelPanel:GetCamPos() ) )
 	end
 
@@ -371,7 +371,7 @@ function PANEL:UpdateEntity( ent )
 		ent:SetCycle( self.AnimTrack:GetSlideX() )
 		self.AnimPause:SetToggle( true )
 
-	elseif ( ent:GetCycle() != self.AnimTrack:GetSlideX() ) then
+	elseif ( ent:GetCycle() ~= self.AnimTrack:GetSlideX() ) then
 
 		local cyc = ent:GetCycle()
 		if ( cyc < 0 ) then cyc = cyc + 1 end
@@ -379,7 +379,7 @@ function PANEL:UpdateEntity( ent )
 
 	end
 
-	if ( !self.AnimPause:GetToggle() ) then
+	if ( not self.AnimPause:GetToggle() ) then
 		ent:FrameAdvance( FrameTime() )
 	end
 
@@ -399,7 +399,7 @@ end
 
 function PANEL:SetIcon( icon )
 
-	if ( !IsValid( icon ) ) then return end
+	if ( not IsValid( icon ) ) then return end
 
 	local model = icon:GetModelName()
 	self:SetOrigin( icon )
@@ -419,7 +419,7 @@ function PANEL:SetIcon( icon )
 		self.LeftPanel:SetWide( 400 )
 	end
 
-	if ( !model or model == "" ) then
+	if ( not model or model == "" ) then
 
 		self:SetModel( "error.mdl" )
 		self.SpawnIcon:SetSpawnIcon( icon:GetIconName() )
@@ -437,7 +437,7 @@ end
 
 function PANEL:Refresh()
 
-	if ( !self:GetModel() ) then return end
+	if ( not self:GetModel() ) then return end
 
 	self.ModelPanel:SetModel( self:GetModel() )
 	self.ModelPanel.LayoutEntity = function() self:UpdateEntity( self.ModelPanel:GetEntity() )  end
@@ -495,7 +495,7 @@ function PANEL:FillAnimations( ent )
 
 			-- If we're not using a custom, change our spawnicon
 			-- so we save the new skin in the right place...
-			if ( !self:GetCustomIcon() ) then
+			if ( not self:GetCustomIcon() ) then
 				self.SpawnIcon:SetModel( self.SpawnIcon:GetModelName(), newVal, self.SpawnIcon:GetBodyGroup() )
 			end
 		end
@@ -505,7 +505,7 @@ function PANEL:FillAnimations( ent )
 
 	for k = 0, ent:GetNumBodyGroups() - 1 do
 
-		if ( ent:GetBodygroupCount( k ) <= 1 ) then continue end
+		if ( ent:GetBodygroupCount( k ) <= 1 ) then goto continue end
 
 		local bgSlider = self.BodyList:Add( "DNumSlider" )
 		bgSlider:Dock( TOP )
@@ -525,13 +525,13 @@ function PANEL:FillAnimations( ent )
 
 			-- If we're not using a custom, change our spawnicon
 			-- so we save the new skin in the right place...
-			if ( !self:GetCustomIcon() ) then
+			if ( not self:GetCustomIcon() ) then
 				self.SpawnIcon:SetBodyGroup( s.BodyGroupID, newVal )
 				self.SpawnIcon:SetModel( self.SpawnIcon:GetModelName(), self.SpawnIcon:GetSkinID(), self.SpawnIcon:GetBodyGroup() )
 			end
 		end
 		newItems = newItems + 1
-
+		::continue::
 	end
 
 	if ( newItems > 0 ) then
@@ -546,7 +546,7 @@ end
 
 function PANEL:SetFromEntity( ent )
 
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	local bodyStr = ""
 	for i = 0, 8 do

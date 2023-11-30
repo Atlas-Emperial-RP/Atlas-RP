@@ -65,7 +65,7 @@ local ScaleXZ = {
 
 local function GetNiceBoneScale( name, scale )
 
-	if ( table.HasValue( ScaleYZ, name ) || string.find( name:lower(), "leg" ) || string.find( name:lower(), "arm" ) ) then
+	if ( table.HasValue( ScaleYZ, name ) or string.find( name:lower(), "leg" ) or string.find( name:lower(), "arm" ) ) then
 		return Vector( 0, scale, scale )
 	end
 
@@ -79,12 +79,12 @@ end
 
 --Scale the specified bone by Scale
 local function ScaleBone( ent, bone, scale, type )
-	if ( !bone || CLIENT ) then return false end
+	if ( not bone or CLIENT ) then return false end
 
 	local physBone = ent:TranslateBoneToPhysBone( bone )
 	for i = 0, ent:GetBoneCount() do
 
-		if ( ent:TranslateBoneToPhysBone( i ) != physBone ) then continue end
+		if ( ent:TranslateBoneToPhysBone( i ) ~= physBone ) then goto continue end
 
 		-- Some bones are scaled only in certain directions (like legs don't scale on length)
 		local v = GetNiceBoneScale( ent:GetBoneName( i ), scale ) * 0.1
@@ -95,6 +95,7 @@ local function ScaleBone( ent, bone, scale, type )
 		if ( TargetScale.z < 0 ) then TargetScale.z = 0 end
 
 		ent:ManipulateBoneScale( i, TargetScale )
+		::continue::
 	end
 
 end
@@ -102,8 +103,8 @@ end
 --Scale UP
 function TOOL:LeftClick( trace, scale )
 
-	if ( !IsValid( trace.Entity ) ) then return false end
-	if ( !trace.Entity:IsNPC() && trace.Entity:GetClass() != "prop_ragdoll" /*&& !trace.Entity:IsPlayer()*/ ) then return false end
+	if ( not IsValid( trace.Entity ) ) then return false end
+	if ( not trace.Entity:IsNPC() and trace.Entity:GetClass() ~= "prop_ragdoll" and not trace.Entity:IsPlayer() ) then return false end
 
 	local bone = trace.Entity:TranslatePhysBoneToBone( trace.PhysicsBone )
 	ScaleBone( trace.Entity, bone, scale or 1 )
@@ -127,8 +128,8 @@ end
 -- Reset scaling
 function TOOL:Reload( trace )
 
-	if ( !IsValid( trace.Entity ) ) then return false end
-	if ( !trace.Entity:IsNPC() && trace.Entity:GetClass() != "prop_ragdoll" /*&& !trace.Entity:IsPlayer()*/ ) then return false end
+	if ( not IsValid( trace.Entity ) ) then return false end
+	if ( not trace.Entity:IsNPC() and trace.Entity:GetClass() ~= "prop_ragdoll" and not trace.Entity:IsPlayer() ) then return false end
 
 	if ( CLIENT ) then return true end
 

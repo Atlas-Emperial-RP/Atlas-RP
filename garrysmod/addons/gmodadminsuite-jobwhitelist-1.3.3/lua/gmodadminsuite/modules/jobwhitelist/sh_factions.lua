@@ -239,14 +239,16 @@ if (SERVER) then
 			SetTeam = OpenPermissions:GetTeamIdentifier(SetTeam)
 		}
 		for _,t in ipairs(WhitelistTo) do
-			if (not RPExtraTeams[t]) then continue end
+			if (not RPExtraTeams[t]) then goto continue end
 			faction_tbl.WhitelistTo[OpenPermissions:GetTeamIdentifier(t)] = true
+			::continue::
 		end
 		for _,t in ipairs(BlacklistFrom) do
-			if (not RPExtraTeams[t]) then continue end
+			if (not RPExtraTeams[t]) then goto continue end
 			local id = OpenPermissions:GetTeamIdentifier(t)
 			faction_tbl.BlacklistFrom[id] = true
 			faction_tbl.WhitelistTo[id] = nil
+			::continue::
 		end
 		faction_tbl.WhitelistTo[faction_tbl.SetTeam] = true
 		faction_tbl.BlacklistFrom[faction_tbl.SetTeam] = nil
@@ -382,7 +384,7 @@ else
 		local created_faction = false
 		for index, selection in ipairs(GAS.JobWhitelist.Factions.Config.Factions) do
 			local permitted = is_operator or OpenPermissions:HasPermission(LocalPlayer(), "gmodadminsuite_jobwhitelist_factions/" .. selection.ID)
-			if (not selection.ShowIfNotPermitted and not permitted) then continue end
+			if (not selection.ShowIfNotPermitted and not permitted) then goto continue end
 			created_faction = true
 
 			local faction = vgui.Create("GAS.JobWhitelist.Faction", GAS.JobWhitelist.Factions.Menu.FactionContainer)
@@ -407,6 +409,7 @@ else
 					surface.PlaySound(GAS.JobWhitelist.Factions.Config.PermissionDeniedSound)
 				end
 			end
+			::continue::
 		end
 
 		local fs = file.Find("gas_jobwhitelist_faction_imgs/*.png", "DATA")

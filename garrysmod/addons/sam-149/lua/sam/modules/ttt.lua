@@ -57,7 +57,7 @@ run(function()
 			local ply = players[i]
 
 			local slays = ply:sam_get_pdata("slays_amount")
-			if not slays then continue end
+			if not slays then goto continue end
 
 			if not ply:IsSpec() then
 				ply:Kill()
@@ -85,6 +85,7 @@ run(function()
 			sam.player.send_message(nil, "setslays_slayed", {
 				T = {ply}, V = slays
 			})
+			::continue::
 		end
 
 		return OldBeginRound(...)

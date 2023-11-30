@@ -33,9 +33,10 @@ function PROJECT0.PLAYERMETA:GetOwnsCosmeticType( type, itemID, weapons )
 
             local doesntOwn = false
             for k, v in ipairs( weapons ) do
-                if( ownedSkins[itemID][v] ) then continue end
+                if( ownedSkins[itemID][v] ) then goto continue end
                 doesntOwn = true
                 break
+                ::continue::
             end
 
             return not doesntOwn

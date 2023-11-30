@@ -39,7 +39,7 @@ util.worldpicker = {
 
 hook.Add( "VGUIMousePressAllowed", "WorldPickerMouseDisable", function( code )
 
-	if ( !bDoing ) then return false end
+	if ( not bDoing ) then return false end
 
 	local dir = gui.ScreenToVector( gui.MousePos() )
 	local tr = util.TraceLine( {

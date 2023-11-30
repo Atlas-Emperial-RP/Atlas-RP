@@ -37,7 +37,7 @@ function EdgeHUD.ShowHUDPopup( Clr, Title, Message )
 	end
 
 	--WAit for the current active popup to complete if there is one.
-	if !IsValid(activePopup) then
+	if not IsValid(activePopup) then
 
 		--Save the current popup.
 		local curPopup = table.Copy(popupQueue[1])
@@ -78,11 +78,11 @@ function EdgeHUD.ShowHUDPopup( Clr, Title, Message )
 		--Create a timer that will remove the popup.
 		timer.Simple(6,function(  )
 
-			if !IsValid(Popup) then return end
+			if not IsValid(Popup) then return end
 
 			Popup:AlphaTo(0,1.5,0,function(  )
 
-				if !IsValid(Popup) then return end
+				if not IsValid(Popup) then return end
 
 				--Remove the popup.
 				Popup:Remove()
@@ -125,7 +125,7 @@ if EdgeHUD.Configuration.GetConfigValue( "VehicleDisplay" ) then
 		local isLocked = net.ReadBool()
 		local ent = net.ReadEntity()
 
-		if !IsValid(ent) then return end
+		if not IsValid(ent) then return end
 
 		ent.EdgeHUD_Locked = isLocked
 
@@ -203,7 +203,7 @@ if EdgeHUD.Configuration.GetConfigValue( "VehicleDisplay" ) then
 		maxTextWidth = math.max(maxTextWidth,vehicleTitle:GetWide())
 
 		--Check if we have any coOwners.
-		if #coOwners != 0 then
+		if #coOwners ~= 0 then
 
 			--Add +1 to rows.
 			rows = rows + 1
@@ -220,7 +220,7 @@ if EdgeHUD.Configuration.GetConfigValue( "VehicleDisplay" ) then
 		end
 
 		--Check if we have any allowed coOwners.
-		if #allowedCoOwners != 0 then
+		if #allowedCoOwners ~= 0 then
 
 			--Add +1 to rows.
 			rows = rows + 1
@@ -287,10 +287,10 @@ if EdgeHUD.Configuration.GetConfigValue( "VehicleDisplay" ) then
 	--Add a timer that updates the vehicle display.
 	timer.Create("EdgeHUD:VehicleDisplay_Updater", 0.1, 0, function(  )
 
-		if !IsValid(vehiclePanel) then return end
+		if not IsValid(vehiclePanel) then return end
 
 		--Check if we should draw.
-		if !EdgeHUD.shouldDraw then vehiclePanel.Reset() return end
+		if not EdgeHUD.shouldDraw then vehiclePanel.Reset() return end
 
 		if ply:InVehicle() then vehiclePanel.Reset() return end
 
@@ -304,9 +304,9 @@ if EdgeHUD.Configuration.GetConfigValue( "VehicleDisplay" ) then
 		local vehicle = eyeTrace.Entity
 
 		--MAke sure it's valid.
-		if !IsValid(vehicle) then vehiclePanel.Reset() return end
+		if not IsValid(vehicle) then vehiclePanel.Reset() return end
 
-		if !vehicle:IsVehicle() then vehiclePanel.Reset() return end
+		if not vehicle:IsVehicle() then vehiclePanel.Reset() return end
 
 		--Get the class.
 		local class = vehicle:GetClass()
@@ -321,7 +321,7 @@ if EdgeHUD.Configuration.GetConfigValue( "VehicleDisplay" ) then
 		local lockStatus = false
 
 		--Check if the vehicle has a locked var.
-		if vehicle.EdgeHUD_Locked == nil and (vehicle.EdgeHUD_DataRequestSent == nil or vehicle.EdgeHUD_DataRequestSent != nil and vehicle.EdgeHUD_DataRequestSent + 5 < os.time()) then
+		if vehicle.EdgeHUD_Locked == nil and (vehicle.EdgeHUD_DataRequestSent == nil or vehicle.EdgeHUD_DataRequestSent ~= nil and vehicle.EdgeHUD_DataRequestSent + 5 < os.time()) then
 
 			--Set a var that a request has been sent.
 			vehicle.EdgeHUD_DataRequestSent = os.time()
@@ -384,11 +384,12 @@ if EdgeHUD.Configuration.GetConfigValue( "VehicleDisplay" ) then
 					local allowedCoOwner = Player(k)
 
 					--Make sure the player is valid.
-					if !IsValid(allowedCoOwner) then continue end
+					if not IsValid(allowedCoOwner) then goto continue end
 
 					--Add the player to the list.
 					table.insert(allowedCoOwners, allowedCoOwner:Name())
 
+					::continue::
 				end
 
 			end
@@ -401,11 +402,12 @@ if EdgeHUD.Configuration.GetConfigValue( "VehicleDisplay" ) then
 					local CoOwner = Player(k)
 
 					--Make sure the player is valid.
-					if !IsValid(CoOwner) then continue end
+					if not IsValid(CoOwner) then goto continue end
 
 					--Add the player to the list.
 					table.insert(coOwners, CoOwner:Name())
-
+					
+					::continue::
 				end
 
 			end
@@ -538,7 +540,7 @@ if EdgeHUD.Configuration.GetConfigValue( "DoorMenu" ) then
 			if input.IsKeyDown(KEY_F2) then
 
 				-- Return if we have a cooldown.
-				if closeCooldown > CurTime() or !allowClose then return end
+				if closeCooldown > CurTime() or not allowClose then return end
 
 				frame:Close()
 			else
@@ -665,7 +667,7 @@ Notification system
 local notificationSystemConfig = EdgeHUD.Configuration.GetConfigValue( "NotificationSystem" )
 
 --Check if EdgeHUD should load the notifications or if another addon has been given priority.
-if notificationSystemConfig != "Other Design" then
+if notificationSystemConfig ~= "Other Design" then
 
 	if notificationSystemConfig == "EdgeHUD Design" then
 
@@ -698,7 +700,7 @@ if notificationSystemConfig != "Other Design" then
 
 			timer.Simple(0,function(  )
 
-				if !IsValid(self) then return end
+				if not IsValid(self) then return end
 
 				local oldPos = self.fy
 
@@ -742,7 +744,7 @@ if notificationSystemConfig != "Other Design" then
 			EdgeHUD.DrawEdges(0,0,w,h, 8)
 
 
-			if ( !s.Progress ) then return end
+			if ( not s.Progress ) then return end
 
 			--Determine the position.
 			local x, y = 8, math.floor(s:GetTall() * 0.82 - 5)
@@ -1128,13 +1130,13 @@ if VC and EdgeHUD.Configuration.GetConfigValue( "Vehicle_DamageIndicators" )  th
 				local veh = ply:GetVehicle()
 
 				--Make sure the vehicle is valid.
-				if !IsValid(veh) then return end
+				if not IsValid(veh) then return end
 
 				--Get the damaged parts.
 				local parts = veh:VC_getDamagedParts()
 
 				--Make sure the tire is damaged.
-				if !parts["wheel"] then return end
+				if not parts["wheel"] then return end
 
 				--Create a string-var for the wheels that are damaged.
 				local damagedTires = ""
@@ -1171,7 +1173,7 @@ if VC and EdgeHUD.Configuration.GetConfigValue( "Vehicle_DamageIndicators" )  th
 				local veh = ply:GetVehicle()
 
 				--Make sure that the vehicle is valid.
-				if !IsValid(veh) then return end
+				if not IsValid(veh) then return end
 
 				--Check if the engine light should show.
 				return veh:VC_getHealth(true) <= 30
@@ -1189,7 +1191,7 @@ if VC and EdgeHUD.Configuration.GetConfigValue( "Vehicle_DamageIndicators" )  th
 				local veh = ply:GetVehicle()
 
 				--Make sure that the vehicle is valid.
-				if !IsValid(veh) then return end
+				if not IsValid(veh) then return end
 
 				--Check if the fuel is low.
 				return veh:VC_fuelGet(true) <= 30
@@ -1207,10 +1209,10 @@ if VC and EdgeHUD.Configuration.GetConfigValue( "Vehicle_DamageIndicators" )  th
 				local veh = ply:GetVehicle()
 
 				--Make sure that the vehicle is valid.
-				if !IsValid(veh) then return end
+				if not IsValid(veh) then return end
 
 				--Check if cruise control is enabled.
-				return veh:VC_getCruise() != nil
+				return veh:VC_getCruise() ~= nil
 
 			end
 		},
@@ -1256,10 +1258,10 @@ if VC and EdgeHUD.Configuration.GetConfigValue( "Vehicle_DamageIndicators" )  th
 			local veh = ply:GetVehicle()
 
 			--Check so the vehicle exists.
-			if !IsValid(veh) then return end
+			if not IsValid(veh) then return end
 
 			--Make sure VCMOd is loaded.
-			if !veh.VC_getDamagedParts then return end
+			if  not veh.VC_getDamagedParts then return end
 
 			--Set isVisible to true.
 			isVisible = true
@@ -1282,7 +1284,7 @@ if VC and EdgeHUD.Configuration.GetConfigValue( "Vehicle_DamageIndicators" )  th
 					--Show the information.
 					v.getInfo()
 
-				elseif !parts[v.Part] and v.showExtra() == false and v.Element:IsVisible() == true then
+				elseif not parts[v.Part] and v.showExtra() == false and v.Element:IsVisible() == true then
 
 					--Change didChange to true.
 					didChange = true
@@ -1337,13 +1339,14 @@ if VC and EdgeHUD.Configuration.GetConfigValue( "Vehicle_DamageIndicators" )  th
 			for k,v in pairs(indicators) do
 
 				--Check if the element is visible.
-				if v.Element:IsVisible() == false then continue end
+				if v.Element:IsVisible() == false then goto continue end
 
 				--Set the position.
 				v.Element:SetPos(nextPos,screenHeight - VARS.ElementsMargin - VARS.WidgetHeight - EdgeHUD.BottomOffset)
 
 				nextPos = nextPos + VARS.ElementsMargin + VARS.WidgetHeight
 
+				::continue::
 			end
 
 		end
@@ -1489,7 +1492,7 @@ if LevelSystemConfiguration and (DarkRPLevelSystem == "Show on change" or DarkRP
 
 		if DarkRPLevelSystem == "Show on change" then
 
-			if newLevel != level or newXP != xp then
+			if newLevel ~= level or newXP ~= xp then
 
 				nextClose = CurTime() + 3.5
 
@@ -1503,7 +1506,7 @@ if LevelSystemConfiguration and (DarkRPLevelSystem == "Show on change" or DarkRP
 
 			end
 
-			if nextClose < CurTime() and levelWidget:GetAlpha() == 255 and nextClose != -1 then
+			if nextClose < CurTime() and levelWidget:GetAlpha() == 255 and nextClose ~= -1 then
 				levelWidget:AlphaTo(0, 0.4)
 			end
 
@@ -1527,9 +1530,9 @@ if LevelSystemConfiguration and (DarkRPLevelSystem == "Show on change" or DarkRP
 		xp = xp or ply:getDarkRPVar('xp') or 0
 		lerpedXP = lerpedXP or 0
 
-		if !EdgeHUD.shouldDraw then return end
+		if not EdgeHUD.shouldDraw then return end
 
-		if math.Round(lerpedXP,5) != xp or needsUpdate then
+		if math.Round(lerpedXP,5) ~= xp or needsUpdate then
 
 			lerpedXP = Lerp(FrameTime() * 5, lerpedXP, xp)
 			percentage = lerpedXP / (20 + (level * (level + 1) * 90) * LevelSystemConfiguration.XPMult)
@@ -1631,7 +1634,7 @@ if EdgeHUD.Configuration.GetConfigValue( "EnableDarkRPTellAll" ) then
 		timer.Create("EdgeHUD:ProcessAdminTell", 1, 0, function(  )
 
 			--Check if the player is active.
-			if !gui.IsGameUIVisible() then
+			if not gui.IsGameUIVisible() then
 
 				--Add all messages
 				for k,v in pairs(atellQueue) do
@@ -1704,7 +1707,7 @@ if EdgeHUD.Configuration.GetConfigValue( "GestureMenu" ) then
 			if input.IsKeyDown(KEY_R) then
 
 				-- Return if we have a cooldown.
-				if closeCooldown > CurTime() or !allowClose then return end
+				if closeCooldown > CurTime() or not allowClose then return end
 
 				gestureFrame:Remove()
 
@@ -1871,7 +1874,7 @@ local function loadVisualizers(  )
 		--Override the default VoiceNotify paint function.
 		VoiceNotify.Paint = function( s, w, h )
 
-			if !IsValid(s.ply) then return end
+			if not IsValid(s.ply) then return end
 
 			--Draw the background.
 			surface.SetDrawColor(COLORS["Black_Transparent"])
@@ -1904,11 +1907,11 @@ local function loadVisualizers(  )
 
 end
 
-if !IsValid(g_VoicePanelList) then
+if not IsValid(g_VoicePanelList) then
 
 	timer.Create("EdgeHUD:LoadVisualizers",0.5,120,function(  )
 
-		if !loadVisualizers or !isfunction(loadVisualizers) then
+		if not loadVisualizers or not isfunction(loadVisualizers) then
 			timer.Remove("EdgeHUD:LoadVisualizers")
 		end
 
@@ -1983,7 +1986,7 @@ if ItemPickups == "EdgeHUD Design" then
 			v.destination = (itemHeight + itemMargin) * k
 
 			--Create data.
-			if !v.lerpedYPos then
+			if not v.lerpedYPos then
 				v.lerpedYPos = v.destination
 				v.lerpedXPos = itemPickupWidth
 				v.alpha = 1
@@ -1998,7 +2001,7 @@ if ItemPickups == "EdgeHUD Design" then
 			if v.alpha < 0.05 then
 				items[k] = nil
 				items = table.ClearKeys(items)
-				continue
+				goto continue
 			end
 
 			--Lerp data.
@@ -2018,7 +2021,8 @@ if ItemPickups == "EdgeHUD Design" then
 			EdgeHUD.DrawEdges(math.Round(v.lerpedXPos),math.Round(v.lerpedYPos),v.itemWidth,itemHeight, 8)
 
 			draw.SimpleText( v.text, "EdgeHUD:ItemPickup", math.Round(v.lerpedXPos) + v.itemWidth / 2, math.Round(v.lerpedYPos) + itemHeight / 2, ColorAlpha(COLORS["White"], v.alpha * COLORS["White"].a), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-
+			
+			::continue::
 		end
 
 	end
@@ -2026,7 +2030,7 @@ if ItemPickups == "EdgeHUD Design" then
 	--Hook into HUDItemPickedUp.
 	hook.Add("HUDItemPickedUp","EdgeHUD:HUDItemPickedUp", function( itemName )
 
-		if !IsValid(ply) or !ply:Alive() then return end
+		if not IsValid(ply) or not ply:Alive() then return end
 
 		addNewItem(language.GetPhrase("#" .. itemName))
 
@@ -2036,9 +2040,9 @@ if ItemPickups == "EdgeHUD Design" then
 	hook.Add("HUDWeaponPickedUp","EdgeHUD:HUDWeaponPickedUp", function( wep )
 
 
-		if !IsValid(ply) or !ply:Alive() then return end
-		if !IsValid(wep) then return end
-		if !isfunction(wep.GetPrintName) then return end
+		if not IsValid(ply) or not ply:Alive() then return end
+		if not IsValid(wep) then return end
+		if not isfunction(wep.GetPrintName) then return end
 
 		addNewItem(wep:GetPrintName())
 
@@ -2047,7 +2051,7 @@ if ItemPickups == "EdgeHUD Design" then
 	--Hook into HUDAmmoPickedUp
 	hook.Add("HUDAmmoPickedUp","EdgeHUD:HUDWeaponPickedUp", function( itemname, amount )
 
-		if !IsValid(ply) or !ply:Alive() then return end
+		if not IsValid(ply) or not ply:Alive() then return end
 
 		addNewItem(language.GetPhrase( "#" .. itemname .. "_Ammo" ) .. " +" .. amount)
 
@@ -2055,7 +2059,7 @@ if ItemPickups == "EdgeHUD Design" then
 
 end
 
-if ItemPickups != "Default Design" then
+if ItemPickups ~= "Default Design" then
 
 	--Remove GAMEMODE.HUDDrawPickupHistory.
 	timer.Create("EdgeHUD:Remove_DrawPickupHistory",1,0,function(  )
@@ -2089,7 +2093,7 @@ end
 local groupsAccess = string.Explode(";", configTxt)
 
 --Check if the message should show.
-if EdgeHUD.LatestVersion != EdgeHUD.Version and EdgeHUD.LatestVersion != "" and (EdgeHUD.Owner == ply:SteamID64() or table.HasValue(groupsAccess, ply:GetUserGroup())) then
+if EdgeHUD.LatestVersion ~= EdgeHUD.Version and EdgeHUD.LatestVersion ~= "" and (EdgeHUD.Owner == ply:SteamID64() or table.HasValue(groupsAccess, ply:GetUserGroup())) then
 
 	local outdatedFrameWidth, outdatedFrameHeight = screenHeight * 0.55, screenHeight * 0.2
 
@@ -2177,10 +2181,10 @@ if EdgeHUD.Owner == ply:SteamID64() and tobool(ply:GetPData("EdgeHUD_Announcemen
 
 	http.Fetch("http://tempjompecode.com/edgehud_announcement.php",function( result, _, _, code )
 
-		if code != 200 then return end
+		if code ~= 200 then return end
 
 		-- Check if we have a message to show.
-		if result == "" or string.find(result:lower(), "</html>") != nil then return end
+		if result == "" or string.find(result:lower(), "</html>") ~= nil then return end
 
 		-- Tags.
 		result = string.Replace(result,"{{USER}}",ply:SteamName())
@@ -2198,8 +2202,8 @@ concommand.Add("edgehud_toggleannouncements",function(  )
 
 	-- Get and update the data.
 	local data = tobool(ply:GetPData("EdgeHUD_Announcements",true))
-	ply:SetPData("EdgeHUD_Announcements",!data)
+	ply:SetPData("EdgeHUD_Announcements",not data)
 
-	chat.AddText(Color(50,50,50,255),"[EdgeHUD] ", Color(255,255,255,255), "Developer announcements has been turned " .. (!data == false and "off. Sorry for any inconvenience!" or "on.") .. "")
+	chat.AddText(Color(50,50,50,255),"[EdgeHUD] ", Color(255,255,255,255), "Developer announcements has been turned " .. (not data == false and "off. Sorry for any inconvenience!" or "on.") .. "")
 
 end)

@@ -31,12 +31,12 @@ function PANEL:SetOnViewMaterial( MatName, MatNameBackup )
 end
 
 function PANEL:Unloaded()
-	return self.m_strMatName != nil
+	return self.m_strMatName ~= nil
 end
 
 function PANEL:LoadMaterial()
 
-	if ( !self:Unloaded() ) then return end
+	if ( not self:Unloaded() ) then return end
 
 	self:DoLoadMaterial()
 
@@ -49,7 +49,7 @@ function PANEL:DoLoadMaterial()
 	local mat = Material( self:GetMatName() )
 	self:SetMaterial( mat )
 
-	if ( self.m_Material:IsError() && self:GetFailsafeMatName() ) then
+	if ( self.m_Material:IsError() and self:GetFailsafeMatName() ) then
 		self:SetMaterial( Material( self:GetFailsafeMatName() ) )
 	end
 
@@ -75,7 +75,7 @@ function PANEL:SetMaterial( Mat )
 
 	self.m_Material = Mat
 
-	if ( !self.m_Material ) then return end
+	if ( not self.m_Material ) then return end
 
 	local Texture = self.m_Material:GetTexture( "$basetexture" )
 	if ( Texture ) then
@@ -90,7 +90,7 @@ end
 
 function PANEL:SetImage( strImage, strBackup )
 
-	if ( strBackup && !file.Exists( "materials/" .. strImage .. ".vmt", "GAME" ) && !file.Exists( "materials/" .. strImage, "GAME" ) ) then
+	if ( strBackup and not file.Exists( "materials/" .. strImage .. ".vmt", "GAME" ) and not file.Exists( "materials/" .. strImage, "GAME" ) ) then
 		strImage = strBackup
 	end
 
@@ -119,7 +119,7 @@ function PANEL:FixVertexLitMaterial()
 	local Mat = self:GetMaterial()
 	local strImage = Mat:GetName()
 
-	if ( string.find( Mat:GetShader(), "VertexLitGeneric" ) || string.find( Mat:GetShader(), "Cable" ) ) then
+	if ( string.find( Mat:GetShader(), "VertexLitGeneric" ) or string.find( Mat:GetShader(), "Cable" ) ) then
 
 		local t = Mat:GetString( "$basetexture" )
 
@@ -156,7 +156,7 @@ function PANEL:PaintAt( x, y, dw, dh )
 	dw, dh = dw or self:GetWide(), dh or self:GetTall()
 	self:LoadMaterial()
 
-	if ( !self.m_Material ) then return true end
+	if ( not self.m_Material ) then return true end
 
 	surface.SetMaterial( self.m_Material )
 	surface.SetDrawColor( self.m_Color.r, self.m_Color.g, self.m_Color.b, self.m_Color.a )
@@ -167,7 +167,7 @@ function PANEL:PaintAt( x, y, dw, dh )
 		local h = self.ActualHeight
 
 		-- Image is bigger than panel, shrink to suitable size
-		if ( w > dw && h > dh ) then
+		if ( w > dw and h > dh ) then
 
 			if ( w > dw ) then
 

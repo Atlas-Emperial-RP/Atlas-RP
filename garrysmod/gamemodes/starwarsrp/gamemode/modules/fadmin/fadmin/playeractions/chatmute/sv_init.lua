@@ -14,13 +14,15 @@ local function MuteChat(ply, cmd, args)
         if IsValid(target) and not target:FAdmin_GetGlobal("FAdmin_chatmuted") then
             target:FAdmin_SetGlobal("FAdmin_chatmuted", true)
 
-            if time == 0 then continue end
+            if time == 0 then goto continue end
 
             timer.Simple(time, function()
                 if not IsValid(target) or not target:FAdmin_GetGlobal("FAdmin_chatmuted") then return false end
                 target:FAdmin_SetGlobal("FAdmin_chatmuted", false)
             end)
         end
+
+        ::continue::
     end
 
     FAdmin.Messages.FireNotification("chatmute", ply, targets, {time})

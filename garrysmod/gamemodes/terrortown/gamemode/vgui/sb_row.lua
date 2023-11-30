@@ -149,7 +149,7 @@ function PANEL:SetPlayer(ply)
 
    if not self.info then
       local g = ScoreGroup(ply)
-      if g == GROUP_TERROR and ply != LocalPlayer() then
+      if g == GROUP_TERROR and ply ~= LocalPlayer() then
          self.info = vgui.Create("TTTScorePlayerInfoTags", self)
          self.info:SetPlayer(ply)
 
@@ -166,13 +166,13 @@ function PANEL:SetPlayer(ply)
    end
 
    self.voice.DoClick = function()
-                           if IsValid(ply) and ply != LocalPlayer() then
+                           if IsValid(ply) and ply ~= LocalPlayer() then
                               ply:SetMuted(not ply:IsMuted())
                            end
                         end
 
    self.voice.DoRightClick = function()
-      if IsValid(ply) and ply != LocalPlayer() then
+      if IsValid(ply) and ply ~= LocalPlayer() then
          self:ShowMicVolumeSlider()
       end
    end
@@ -197,14 +197,14 @@ function PANEL:UpdatePlayerData()
    self.nick:SetTextColor(ColorForPlayer(ply))
 
    local ptag = ply.sb_tag
-   if ScoreGroup(ply) != GROUP_TERROR then
+   if ScoreGroup(ply) ~= GROUP_TERROR then
       ptag = nil
    end
 
    self.tag:SetText(ptag and GetTranslation(ptag.txt) or "")
    self.tag:SetTextColor(ptag and ptag.color or COLOR_WHITE)
 
-   self.sresult:SetVisible(ply.search_result != nil)
+   self.sresult:SetVisible(ply.search_result ~= nil)
 
    -- more blue if a detective searched them
    if ply.search_result and (LocalPlayer():IsDetective() or (not ply.search_result.show)) then
@@ -218,7 +218,7 @@ function PANEL:UpdatePlayerData()
       self.info:UpdatePlayerData()
    end
 
-   if self.Player != LocalPlayer() then
+   if self.Player ~= LocalPlayer() then
       local muted = self.Player:IsMuted()
       self.voice:SetImage(muted and "icon16/sound_mute.png" or "icon16/sound.png")
    else
@@ -333,7 +333,7 @@ function PANEL:ShowMicVolumeSlider()
    local y = math.min(gui.MouseY(), ScrH() - height)
 
    local currentPlayerVolume = self:GetPlayer():GetVoiceVolumeScale()
-   currentPlayerVolume = currentPlayerVolume != nil and currentPlayerVolume or 1
+   currentPlayerVolume = currentPlayerVolume ~= nil and currentPlayerVolume or 1
 
 
    -- Frame for the slider

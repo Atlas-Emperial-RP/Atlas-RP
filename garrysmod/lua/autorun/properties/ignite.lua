@@ -21,12 +21,12 @@ properties.Add( "ignite", {
 
 	Filter = function( self, ent, ply )
 
-		if ( !IsValid( ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
 		if ( ent:IsPlayer() ) then return false end
-		if ( !CanEntityBeSetOnFire( ent ) ) then return false end
-		if ( !gamemode.Call( "CanProperty", ply, "ignite", ent ) ) then return false end
+		if ( not CanEntityBeSetOnFire( ent ) ) then return false end
+		if ( not gamemode.Call( "CanProperty", ply, "ignite", ent ) ) then return false end
 
-		return !ent:IsOnFire()
+		return not ent:IsOnFire()
 	end,
 
 	Action = function( self, ent )
@@ -41,8 +41,8 @@ properties.Add( "ignite", {
 
 		local ent = net.ReadEntity()
 
-		if ( !properties.CanBeTargeted( ent, ply ) ) then return end
-		if ( !self:Filter( ent, ply ) ) then return end
+		if ( not properties.CanBeTargeted( ent, ply ) ) then return end
+		if ( not self:Filter( ent, ply ) ) then return end
 
 		ent:Ignite( 360 )
 
@@ -57,9 +57,9 @@ properties.Add( "extinguish", {
 
 	Filter = function( self, ent, ply )
 
-		if ( !IsValid( ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
 		if ( ent:IsPlayer() ) then return false end
-		if ( !gamemode.Call( "CanProperty", ply, "extinguish", ent ) ) then return false end
+		if ( not gamemode.Call( "CanProperty", ply, "extinguish", ent ) ) then return false end
 
 		return ent:IsOnFire()
 	end,
@@ -76,8 +76,8 @@ properties.Add( "extinguish", {
 
 		local ent = net.ReadEntity()
 
-		if ( !properties.CanBeTargeted( ent, ply ) ) then return end
-		if ( !self:Filter( ent, ply ) ) then return end
+		if ( not properties.CanBeTargeted( ent, ply ) ) then return end
+		if ( not self:Filter( ent, ply ) ) then return end
 
 		ent:Extinguish()
 

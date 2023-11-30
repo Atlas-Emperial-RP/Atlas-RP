@@ -38,11 +38,13 @@ function PANEL:Rebuild()
     local height = 0
     local k = 0
     for _, item in pairs(self.Items) do
-        if not item:IsVisible() then continue end
+        if not item:IsVisible() then goto continue end
         k = k + 1
         item:SetWide(self:GetWide() - 10)
         item:SetPos(5, height)
         height = height + item:GetTall() + 2
+
+        ::continue::
     end
     self:GetCanvas():SetTall(height)
     self:SetTall(height)

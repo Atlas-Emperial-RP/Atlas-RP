@@ -87,7 +87,7 @@ if EdgeHUD.Configuration.GetConfigValue( "TopRight" ) then
 		local title = agendaTbl and agendaTbl.Title or ""
 
 		--Check if the agenda has been changed.
-		if agendaText.curAgenda != agenda or agendaTitle:GetValue() != title then
+		if agendaText.curAgenda ~= agenda or agendaTitle:GetValue() ~= title then
 
 			if agenda == "" then
 				agenda = EdgeHUD.GetPhrase("TOPRIGHT_AGENDAHELP")
@@ -167,7 +167,7 @@ if EdgeHUD.Configuration.GetConfigValue( "TopRight" ) then
 			local newData = curWidget.getData()
 
 			--Check if the data has changed.
-			if widgetMessage.Text != newData then
+			if widgetMessage.Text ~= newData then
 
 				--Update the text, position, etc.
 				widgetMessage.Text = newData
@@ -197,9 +197,9 @@ if EdgeHUD.Configuration.GetConfigValue( "TopRight" ) then
 
 		local AlwaysShowAgenda = EdgeHUD.Configuration.GetConfigValue( "AlwaysShowAgenda" )
 
-		if (AlwaysShowAgenda and agendaTbl) or (!AlwaysShowAgenda and agenda != "") then
+		if (AlwaysShowAgenda and agendaTbl) or (not AlwaysShowAgenda and agenda ~= "") then
 			agendaPanel:SetVisible(true)
-		elseif (AlwaysShowAgenda and !agendaTbl) or (!AlwaysShowAgenda and agenda == "") then
+		elseif (AlwaysShowAgenda and not agendaTbl) or (not AlwaysShowAgenda and agenda == "") then
 			agendaPanel:SetVisible(false)
 		end
 
@@ -226,7 +226,7 @@ if EdgeHUD.Configuration.GetConfigValue( "TopRight" ) then
 				curWidget:SetVisible(true)
 			else
 				curWidget:SetVisible(false)
-				continue
+				goto continue
 			end
 
 			--Set the panel position.
@@ -234,7 +234,8 @@ if EdgeHUD.Configuration.GetConfigValue( "TopRight" ) then
 
 			--Calculate the rest of the detailsPos.
 			detailsPos = detailsPos + VARS.ElementsMargin + detailWidgetsHeight
-
+			
+			::continue::
 		end
 
 	end)

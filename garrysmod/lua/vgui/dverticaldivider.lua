@@ -127,7 +127,7 @@ end
 
 function PANEL:OnCursorMoved( x, y )
 
-	if ( !self:GetDragging() ) then return end
+	if ( not self:GetDragging() ) then return end
 
 	self.m_iTopHeight = y - self:GetHoldPos()
 

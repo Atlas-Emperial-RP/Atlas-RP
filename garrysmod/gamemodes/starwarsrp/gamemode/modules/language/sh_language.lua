@@ -7,8 +7,10 @@ function DarkRP.addLanguage(name, tbl)
 
     -- Merge the language with the translations added by DarkRP.addPhrase
     for k, v in pairs(old) do
-        if rp_languages[name][k] then continue end
+        if rp_languages[name][k] then goto continue end
         rp_languages[name][k] = v
+
+        ::continue::
     end
     LANGUAGE = rp_languages[name] -- backwards compatibility
 end
@@ -30,8 +32,10 @@ function DarkRP.getMissingPhrases(lang)
     local format = "%s = \"%s\","
 
     for k, v in pairs(rp_languages.en) do
-        if rp_languages[lang][k] then continue end
+        if rp_languages[lang][k] then goto continue end
         table.insert(res, string.format(format, k, v))
+
+        ::continue::
     end
 
     return table.IsEmpty(res) and "No language strings missing!" or table.concat(res, "\n")

@@ -76,7 +76,7 @@ function ScoreGroup(p)
             -- To terrorists, missing players show as alive
             if client:IsSpec() or
                client:IsActiveTraitor() or
-               ((GAMEMODE.round_state != ROUND_ACTIVE) and client:IsTerror()) then
+               ((GAMEMODE.round_state ~= ROUND_ACTIVE) and client:IsTerror()) then
                return GROUP_NOTFOUND
             else
                return GROUP_TERROR
@@ -221,7 +221,7 @@ local function column_label_work(self_, table_to_add, label, width, sort_identif
    lbl.IsHeading = true
    lbl.Width = width or 50 -- Retain compatibility with existing code
 
-   if sort_identifier != nil then
+   if sort_identifier ~= nil then
       can_sort = true
       -- If we have an identifier and an existing sort function then it was a built-in
       -- Otherwise...

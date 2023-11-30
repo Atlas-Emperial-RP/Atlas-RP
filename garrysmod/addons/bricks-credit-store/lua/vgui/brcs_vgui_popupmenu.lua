@@ -53,7 +53,7 @@ function PANEL:AddOption( label, onClick, material )
 	local TextColor = Color( 101, 107, 145 )
 	local IconMat = material and Material( material, "noclamp smooth" ) or false
 	OptionButton.Paint = function( self2, w, h )
-		if( self2:IsHovered() and !self2:IsDown() ) then
+		if( self2:IsHovered() and not self2:IsDown() ) then
 			BackgroundColor = Color( 0, 0, 0, 25 )
 			TextColor = Color( 101*1.35, 107*1.35, 145*1.35 )
 		elseif( self2:IsDown() ) then

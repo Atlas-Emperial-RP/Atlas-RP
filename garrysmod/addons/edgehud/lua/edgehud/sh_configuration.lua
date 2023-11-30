@@ -94,7 +94,7 @@ if SERVER then
 			elseif v.TypeEnum == EDGEHUD_CONFIG_BOOL then
 
 				--Check so the value is allowed.
-				if !isbool(configFile[k]) then
+				if not isbool(configFile[k]) then
 
 					--Reset the value.
 					resetToDefault(k)
@@ -107,7 +107,7 @@ if SERVER then
 			elseif v.TypeEnum == EDGEHUD_CONFIG_STRING then
 
 				--Check so the value is allowed.
-				if !isstring(configFile[k]) or #configFile[k] > EdgeHUD.Configuration.ConfigOptions[k].maxLength then
+				if not isstring(configFile[k]) or #configFile[k] > EdgeHUD.Configuration.ConfigOptions[k].maxLength then
 
 					--Reset the value.
 					resetToDefault(k)
@@ -120,7 +120,7 @@ if SERVER then
 			elseif v.TypeEnum == EDGEHUD_CONFIG_NUMBER then
 
 				--Check so it's allowed.
-				if !isnumber(configFile[k]) or configFile[k] > EdgeHUD.Configuration.ConfigOptions[k].maxNum or configFile[k] < EdgeHUD.Configuration.ConfigOptions[k].minNum then
+				if not isnumber(configFile[k]) or configFile[k] > EdgeHUD.Configuration.ConfigOptions[k].maxNum or configFile[k] < EdgeHUD.Configuration.ConfigOptions[k].minNum then
 
 					--Reset the value.
 					resetToDefault(k)
@@ -133,7 +133,7 @@ if SERVER then
 			elseif v.TypeEnum == EDGEHUD_CONFIG_TABLE then
 
 				--Check so it's a string and that the value is in the list of allowed values.
-				if !isstring(configFile[k]) or !table.HasValue(EdgeHUD.Configuration.ConfigOptions[k].AllowedValues,configFile[k]) then
+				if not isstring(configFile[k]) or not table.HasValue(EdgeHUD.Configuration.ConfigOptions[k].AllowedValues,configFile[k]) then
 
 					--Reset the value.
 					resetToDefault(k)
@@ -151,7 +151,7 @@ if SERVER then
 		for k,v in pairs(configFile) do
 
 			--Check if the value is not used anymore.
-			if !EdgeHUD.Configuration.ConfigOptions[k] then
+			if not EdgeHUD.Configuration.ConfigOptions[k] then
 
 				--Remove the value.
 				configFile[k] = nil
@@ -598,7 +598,7 @@ Misc
 if SERVER then
 
 	--Make sure that the edgehud folder exists.
-	if !file.Exists("edgehud","DATA") then
+	if not file.Exists("edgehud","DATA") then
 
 		--Create the folder.
 		file.CreateDir("edgehud")
@@ -606,7 +606,7 @@ if SERVER then
 	end
 
 	--Check if we have any configuration.
-	if !file.Exists("edgehud/config.txt","DATA") then
+	if not file.Exists("edgehud/config.txt","DATA") then
 
 		--Create a table that will be turned into JSON.
 		local toWriteTbl = {}
@@ -671,7 +671,7 @@ if SERVER then
 		local groupsAccess = string.Explode(";", configTxt)
 
 		--Check so the player is the owner of the addon.
-		if EdgeHUD.Owner != ply:SteamID64() and !table.HasValue(groupsAccess, ply:GetUserGroup()) then return end
+		if EdgeHUD.Owner ~= ply:SteamID64() and not table.HasValue(groupsAccess, ply:GetUserGroup()) then return end
 
 		--Save the config.
 		EdgeHUD.Configuration.SaveConfiguration( net.ReadTable() )

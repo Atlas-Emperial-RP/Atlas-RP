@@ -6,11 +6,11 @@ function EFFECT:GetTracerShootPos( Position, Ent, Attachment )
 
 	self.ViewModelTracer = false
 
-	if ( !IsValid( Ent ) ) then return Position end
-	if ( !Ent:IsWeapon() ) then return Position end
+	if ( not IsValid( Ent ) ) then return Position end
+	if ( not Ent:IsWeapon() ) then return Position end
 
 	-- Shoot from the viewmodel
-	if ( Ent:IsCarriedByLocalPlayer() && !LocalPlayer():ShouldDrawLocalPlayer() ) then
+	if ( Ent:IsCarriedByLocalPlayer() and not LocalPlayer():ShouldDrawLocalPlayer() ) then
 
 		local ViewModel = LocalPlayer():GetViewModel()
 

@@ -36,29 +36,31 @@ function PANEL:Init()
 			end
 
 			for id, item in ipairs( category:GetChildren() ) do
-				if ( item == category.Header ) then continue end
+				if ( item == category.Header ) then goto continue end
 
 				local str = item.Text
 				if ( str:StartWith( "#" ) ) then str = str:sub( 2 ) end
 				str = language.GetPhrase( str )
 
-				if ( !category_matched && !string.find( str:lower(), text, nil, true ) ) then
+				if ( not category_matched and not string.find( str:lower(), text, nil, true ) ) then
 					item:SetVisible( false )
 				else
 					item:SetVisible( true )
 					count = count + 1
 				end
 				item:InvalidateLayout()
+
+				::continue::
 			end
 
-			if ( count < 1 && !category_matched ) then
+			if ( count < 1 and not category_matched ) then
 				category:SetVisible( false )
 			else
 				category:SetVisible( true )
 
 				 -- Make sure the category is expanded, but restore the state when we quit searching
 				if ( text == "" ) then
-					if ( category._preSearchState != nil ) then
+					if ( category._preSearchState ~= nil ) then
 						category:SetExpanded( category._preSearchState )
 						category._preSearchState = nil
 					end
@@ -157,13 +159,15 @@ function PANEL:SetActiveToolText( str )
 	for id, category in ipairs( self.List.pnlCanvas:GetChildren() ) do
 
 		for id, item in ipairs( category:GetChildren() ) do
-			if ( item == category.Header ) then continue end
+			if ( item == category.Header ) then goto continue end
 
 			if ( item.Name == str ) then
 				self.List:UnselectAll()
 				item:SetSelected( true )
 				return
 			end
+
+			::continue::
 		end
 
 	end

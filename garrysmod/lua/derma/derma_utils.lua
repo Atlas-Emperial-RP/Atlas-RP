@@ -17,7 +17,7 @@ function Derma_DrawBackgroundBlur( panel, starttime )
 	local wasEnabled = DisableClipping( true )
 
 	-- Menu cannot do blur
-	if ( !MENU_DLL ) then
+	if ( not MENU_DLL ) then
 		surface.SetMaterial( matBlurScreen )
 		surface.SetDrawColor( 255, 255, 255, 255 )
 

@@ -13,7 +13,7 @@ end
 -----------------------------------------------------------]]
 function GM:CanPlayerUnfreeze( ply, entity, physobject )
 
-	if ( entity:GetPersistent() && GetConVarString( "sbox_persist" ):Trim() != "" ) then return false end
+	if ( entity:GetPersistent() and GetConVarString( "sbox_persist" ):Trim() ~= "" ) then return false end
 
 	return true
 end
@@ -23,7 +23,7 @@ end
 -----------------------------------------------------------]]
 local function LimitReachedProcess( ply, str )
 
-	if ( !IsValid( ply ) ) then return true end
+	if ( not IsValid( ply ) ) then return true end
 
 	return ply:CheckLimit( str )
 

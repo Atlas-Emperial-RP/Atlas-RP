@@ -67,7 +67,7 @@ end
 
 function PANEL:PositionTooltip()
 
-	if ( !IsValid( self.TargetPanel ) ) then
+	if ( not IsValid( self.TargetPanel ) ) then
 		self:Close()
 		return
 	end
@@ -110,8 +110,8 @@ function PANEL:OpenForPanel( panel )
 		self:SetVisible( false )
 		timer.Simple( self.OpenDelay, function()
 
-			if ( !IsValid( self ) ) then return end
-			if ( !IsValid( panel ) ) then return end
+			if ( not IsValid( self ) ) then return end
+			if ( not IsValid( panel ) ) then return end
 
 			self:PositionTooltip()
 			self:SetVisible( true )
@@ -123,7 +123,7 @@ end
 
 function PANEL:Close()
 
-	if ( !self.DeleteContentsOnClose && IsValid( self.Contents ) ) then
+	if ( not self.DeleteContentsOnClose and IsValid( self.Contents ) ) then
 
 		self.Contents:SetVisible( false )
 		self.Contents:SetParent( nil )

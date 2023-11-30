@@ -1,0 +1,18 @@
+{
+    "Lua.diagnostics.globals": [
+        "AddCSLuaFile",
+        "DEFINE_BASECLASS",
+        "ENT",
+        "CLIENT",
+        "SERVER",
+        "CurTime",
+        "numpad",
+        "surface",
+        "SWEP",
+        "util",
+        "controlpanel",
+        "ErrorNoHalt",
+        "constraint",
+        "undo"
+    ]
+}

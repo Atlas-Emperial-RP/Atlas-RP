@@ -101,7 +101,7 @@ function SWEP:DealDamage()
 		mask = MASK_SHOT_HULL
 	} )
 
-	if ( !IsValid( tr.Entity ) ) then
+	if ( not IsValid( tr.Entity ) ) then
 		tr = util.TraceHull( {
 			start = owner:GetShootPos(),
 			endpos = owner:GetShootPos() + owner:GetAimVector() * self.HitDistance,
@@ -113,18 +113,18 @@ function SWEP:DealDamage()
 	end
 
 	-- We need the second part for single player because SWEP:Think is ran shared in SP
-	if ( tr.Hit && !( game.SinglePlayer() && CLIENT ) ) then
+	if ( tr.Hit and not ( game.SinglePlayer() and CLIENT ) ) then
 		self:EmitSound( HitSound )
 	end
 
 	local hit = false
 	local scale = phys_pushscale:GetFloat()
 
-	if ( SERVER && IsValid( tr.Entity ) && ( tr.Entity:IsNPC() || tr.Entity:IsPlayer() || tr.Entity:Health() > 0 ) ) then
+	if ( SERVER and IsValid( tr.Entity ) and ( tr.Entity:IsNPC() or tr.Entity:IsPlayer() or tr.Entity:Health() > 0 ) ) then
 		local dmginfo = DamageInfo()
 
 		local attacker = owner
-		if ( !IsValid( attacker ) ) then attacker = self end
+		if ( not IsValid( attacker ) ) then attacker = self end
 		dmginfo:SetAttacker( attacker )
 
 		dmginfo:SetInflictor( self )
@@ -155,7 +155,7 @@ function SWEP:DealDamage()
 	end
 
 	if ( SERVER ) then
-		if ( hit && anim != "fists_uppercut" ) then
+		if ( hit and anim ~= "fists_uppercut" ) then
 			self:SetCombo( self:GetCombo() + 1 )
 		else
 			self:SetCombo( 0 )
@@ -206,7 +206,7 @@ function SWEP:Think()
 	local curtime = CurTime()
 	local idletime = self:GetNextIdle()
 
-	if ( idletime > 0 && CurTime() > idletime ) then
+	if ( idletime > 0 and CurTime() > idletime ) then
 
 		vm:SendViewModelMatchingSequence( vm:LookupSequence( "fists_idle_0" .. math.random( 1, 2 ) ) )
 
@@ -216,7 +216,7 @@ function SWEP:Think()
 
 	local meleetime = self:GetNextMeleeAttack()
 
-	if ( meleetime > 0 && CurTime() > meleetime ) then
+	if ( meleetime > 0 and CurTime() > meleetime ) then
 
 		self:DealDamage()
 
@@ -224,7 +224,7 @@ function SWEP:Think()
 
 	end
 
-	if ( SERVER && CurTime() > self:GetNextPrimaryFire() + 0.1 ) then
+	if ( SERVER and CurTime() > self:GetNextPrimaryFire() + 0.1 ) then
 
 		self:SetCombo( 0 )
 

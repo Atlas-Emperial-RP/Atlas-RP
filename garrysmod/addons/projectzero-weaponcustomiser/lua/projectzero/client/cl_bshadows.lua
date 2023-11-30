@@ -24,10 +24,11 @@ PROJECT0.TEMP.RTMaterials = PROJECT0.TEMP.RTMaterials or {}
 local function createRTMaterial( uniqueID )
     local materialID
     for k, v in ipairs( PROJECT0.TEMP.RTMaterials or {} ) do
-        if( v != true ) then continue end
+        if( v ~= true ) then goto continue end
 
         materialID = k
         break
+        ::continue::
     end
 
     if( not materialID ) then
@@ -93,7 +94,7 @@ function PROJECT0.FUNC.BeginShadow( uniqueID, areaX, areaY, areaEndX, areaEndY )
     render.OverrideAlphaWriteEnable(false, false)
 
     local shadowTable = PROJECT0.TEMP.CreatedShadows[uniqueID]
-    if( areaX and (not shadowTable[4] or shadowTable[4] != areaX or shadowTable[5] != areaY or shadowTable[6] != areaEndX or shadowTable[7] != areaEndY) ) then
+    if( areaX and (not shadowTable[4] or shadowTable[4] ~= areaX or shadowTable[5] ~= areaY or shadowTable[6] ~= areaEndX or shadowTable[7] ~= areaEndY) ) then
         shadowTable[4] = areaX
         shadowTable[5] = areaY
         shadowTable[6] = areaEndX
@@ -117,7 +118,7 @@ function PROJECT0.FUNC.EndShadow( uniqueID, x, y, intensity, spread, blur, opaci
     distance = distance or 0
     _shadowOnly = _shadowOnly or false
 
-    if( not shadowTable[1] or (shadowTable[8] and (shadowTable[10] or 0) != shadowTable[8]) or (shadowTable[9] and (shadowTable[11] or 0) != shadowTable[9]) or (shadowTable[12] or 1) != surface.GetAlphaMultiplier() ) then
+    if( not shadowTable[1] or (shadowTable[8] and (shadowTable[10] or 0) ~= shadowTable[8]) or (shadowTable[9] and (shadowTable[11] or 0) ~= shadowTable[9]) or (shadowTable[12] or 1) ~= surface.GetAlphaMultiplier() ) then
         local shadowRenderTarget = getShadowRenderTarget( uniqueID )
         -- Copy this render target to the other
         render.CopyRenderTargetToTexture(shadowRenderTarget)
@@ -191,17 +192,19 @@ function PROJECT0.FUNC.DeleteShadow( uniqueID )
     if( not PROJECT0.TEMP.CreatedShadows[uniqueID] ) then return end
 
     for k, v in ipairs( PROJECT0.TEMP.RTMaterials or {} ) do
-        if( v != uniqueID ) then continue end
+        if( v ~= uniqueID ) then goto continue end
 
         PROJECT0.TEMP.RTMaterials[k] = true
         break
+        ::continue::
     end
 
     for k, v in ipairs( PROJECT0.TEMP.ShadowRenderTargets or {} ) do
-        if( v != uniqueID ) then continue end
+        if( v ~= uniqueID ) then goto continue end
 
         PROJECT0.TEMP.ShadowRenderTargets[k] = true
         break
+        ::continue::
     end
 
     PROJECT0.TEMP.CreatedShadows[uniqueID][1] = nil

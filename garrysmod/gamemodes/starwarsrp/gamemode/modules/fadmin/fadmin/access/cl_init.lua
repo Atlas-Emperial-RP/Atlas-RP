@@ -1,23 +1,27 @@
-local ContinueNewGroup
+local continueNewGroup
 local EditGroups
 
 local function RetrievePRIVS(len)
     FAdmin.Access.Groups = net.ReadTable()
 
     for k, v in pairs(FAdmin.Access.Groups) do
-        if CAMI.GetUsergroup(k) then continue end
+        if CAMI.GetUsergroup(k) then goto continue end
 
         CAMI.RegisterUsergroup({
             Name = k,
             Inherits = FAdmin.Access.ADMIN[v.ADMIN]
         }, "FAdmin")
+
+        ::continue::
     end
 
     -- Remove any groups that are removed from FAdmin from CAMI.
     for k in pairs(CAMI.GetUsergroups()) do
-        if FAdmin.Access.Groups[k] then continue end
+        if FAdmin.Access.Groups[k] then goto continue end
 
         CAMI.UnregisterUsergroup(k, "FAdmin")
+
+        ::continue::
     end
 end
 net.Receive("FADMIN_SendGroups", RetrievePRIVS)
@@ -41,9 +45,9 @@ local function addGroupUI(ply, func)
     function(text)
         if text == "" then return end
         Derma_Query("On what access will this team be based? (the new group will inherit all the privileges from the group)", "Admin access",
-            "user", function() ContinueNewGroup(ply, text, 0, func) end,
-            "admin", function() ContinueNewGroup(ply, text, 1, func) end,
-            "superadmin", function() ContinueNewGroup(ply, text, 2, func) end)
+            "user", function() continueNewGroup(ply, text, 0, func) end,
+            "admin", function() continueNewGroup(ply, text, 1, func) end,
+            "superadmin", function() continueNewGroup(ply, text, 2, func) end)
     end)
 end
 
@@ -96,7 +100,7 @@ FAdmin.StartHooks["1SetAccess"] = function() -- 1 in hook name so it will be exe
     )
 end
 
-ContinueNewGroup = function(ply, name, admin_access, func)
+continueNewGroup = function(ply, name, admin_access, func)
     if IsValid(ply) then
         RunConsoleCommand("_FAdmin", "setaccess", ply:UserID(), name, admin_access)
     else
@@ -163,9 +167,11 @@ EditGroups = function()
         RunConsoleCommand("_FAdmin", "RemoveGroup", SelectedGroup:GetValue())
 
         for k, v in pairs(SelectedGroup.Choices) do
-            if v ~= SelectedGroup:GetValue() then continue end
+            if v ~= SelectedGroup:GetValue() then goto continue end
 
             SelectedGroup.Choices[k] = nil
+
+            ::continue::
             break
         end
         table.ClearKeys(SelectedGroup.Choices)

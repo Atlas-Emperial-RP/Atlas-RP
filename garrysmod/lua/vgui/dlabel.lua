@@ -58,7 +58,7 @@ PANEL.SetColor = PANEL.SetTextColor
 
 function PANEL:GetColor()
 
-	return self.m_colText || self.m_colTextStyle
+	return self.m_colText or self.m_colTextStyle
 
 end
 
@@ -67,7 +67,7 @@ function PANEL:UpdateFGColor()
 	local col = self:GetTextStyleColor()
 	if ( self:GetTextColor() ) then col = self:GetTextColor() end
 
-	if ( !col ) then return end
+	if ( not col ) then return end
 
 	self:SetFGColor( col.r, col.g, col.b, col.a )
 
@@ -75,9 +75,9 @@ end
 
 function PANEL:Toggle()
 
-	if ( !self:GetIsToggle() ) then return end
+	if ( not self:GetIsToggle() ) then return end
 
-	self:SetToggle( !self:GetToggle() )
+	self:SetToggle( not self:GetToggle() )
 	self:OnToggled( self:GetToggle() )
 
 end
@@ -91,13 +91,13 @@ end
 
 function PANEL:SetEnabled( bEnabled )
 
-	self:SetDisabled( !bEnabled )
+	self:SetDisabled( not bEnabled )
 
 end
 
 function PANEL:IsEnabled()
 
-	return !self:GetDisabled()
+	return not self:GetDisabled()
 
 end
 
@@ -150,9 +150,9 @@ function PANEL:OnMousePressed( mousecode )
 
 	if ( self:GetDisabled() ) then return end
 
-	if ( mousecode == MOUSE_LEFT && !dragndrop.IsDragging() && self.m_bDoubleClicking ) then
+	if ( mousecode == MOUSE_LEFT and not dragndrop.IsDragging() and self.m_bDoubleClicking ) then
 
-		if ( self.LastClickTime && SysTime() - self.LastClickTime < 0.2 ) then
+		if ( self.LastClickTime and SysTime() - self.LastClickTime < 0.2 ) then
 
 			self:DoDoubleClickInternal()
 			self:DoDoubleClick()
@@ -165,11 +165,11 @@ function PANEL:OnMousePressed( mousecode )
 	end
 
 	-- Do not do selections if playing is spawning things while moving
-	local isPlyMoving = LocalPlayer && IsValid( LocalPlayer() ) && ( LocalPlayer():KeyDown( IN_FORWARD ) || LocalPlayer():KeyDown( IN_BACK ) || LocalPlayer():KeyDown( IN_MOVELEFT ) || LocalPlayer():KeyDown( IN_MOVERIGHT ) )
+	local isPlyMoving = LocalPlayer and IsValid( LocalPlayer() ) and ( LocalPlayer():KeyDown( IN_FORWARD ) or LocalPlayer():KeyDown( IN_BACK ) or LocalPlayer():KeyDown( IN_MOVELEFT ) or LocalPlayer():KeyDown( IN_MOVERIGHT ) )
 
 	-- If we're selectable and have shift held down then go up
 	-- the parent until we find a selection canvas and start box selection
-	if ( self:IsSelectable() && mousecode == MOUSE_LEFT && ( input.IsShiftDown() || input.IsControlDown() ) && !isPlyMoving ) then
+	if ( self:IsSelectable() and mousecode == MOUSE_LEFT and ( input.IsShiftDown() or input.IsControlDown() ) and not isPlyMoving ) then
 
 		return self:StartBoxSelection()
 
@@ -192,7 +192,7 @@ function PANEL:OnMouseReleased( mousecode )
 	self:MouseCapture( false )
 
 	if ( self:GetDisabled() ) then return end
-	if ( !self.Depressed && dragndrop.m_DraggingMain != self ) then return end
+	if ( not self.Depressed and dragndrop.m_DraggingMain ~= self ) then return end
 
 	if ( self.Depressed ) then
 		self.Depressed = nil
@@ -207,7 +207,7 @@ function PANEL:OnMouseReleased( mousecode )
 		return
 	end
 	
-	if ( self:IsSelectable() && mousecode == MOUSE_LEFT ) then
+	if ( self:IsSelectable() and mousecode == MOUSE_LEFT ) then
 
 		local canvas = self:GetSelectionCanvas()
 		if ( canvas ) then
@@ -216,7 +216,7 @@ function PANEL:OnMouseReleased( mousecode )
 
 	end
 
-	if ( !self.Hovered ) then return end
+	if ( not self.Hovered ) then return end
 
 	--
 	-- For the purposes of these callbacks we want to

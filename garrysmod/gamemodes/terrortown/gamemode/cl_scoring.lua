@@ -188,7 +188,7 @@ function CLSCORE:BuildScorePanel(dpanel)
    local bonus = ScoreTeamBonus(scores, wintype)
 
    for id, s in pairs(scores) do
-      if id != -1 then
+      if id ~= -1 then
          local was_traitor = s.was_traitor
          local role = was_traitor and T("traitor") or (s.was_detective and T("detective") or "")
 

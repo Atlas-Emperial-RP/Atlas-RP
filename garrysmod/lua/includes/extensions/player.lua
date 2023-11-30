@@ -3,7 +3,7 @@ local meta = FindMetaTable( "Player" )
 local entity = FindMetaTable( "Entity" )
 
 -- Return if there's nothing to add on to
-if ( !meta ) then return end
+if ( not meta ) then return end
 
 --
 -- Entity index accessor. This used to be done in engine, but it's done in Lua now because it's faster
@@ -14,13 +14,13 @@ function meta:__index( key )
 	-- Search the metatable. We can do this without dipping into C, so we do it first.
 	--
 	local val = meta[key]
-	if ( val != nil ) then return val end
+	if ( val ~= nil ) then return val end
 
 	--
 	-- Search the entity metatable
 	--
 	local val = entity[key]
-	if ( val != nil ) then return val end
+	if ( val ~= nil ) then return val end
 
 	--
 	-- Search the entity table
@@ -34,7 +34,7 @@ function meta:__index( key )
 
 end
 
-if ( !sql.TableExists( "playerpdata" ) ) then
+if ( not sql.TableExists( "playerpdata" ) ) then
 
 	sql.Query( "CREATE TABLE IF NOT EXISTS playerpdata ( infoid TEXT NOT NULL PRIMARY KEY, value TEXT );" )
 
@@ -114,7 +114,7 @@ if ( CLIENT ) then
 
 	function meta:ConCommand( command, bSkipQueue )
 
-		if ( bSkipQueue || IsConCommandBlocked( command ) ) then
+		if ( bSkipQueue or IsConCommandBlocked( command ) ) then
 			SendConCommand( self, command )
 		else
 			CommandList = CommandList or {}
@@ -125,7 +125,7 @@ if ( CLIENT ) then
 
 	local function SendQueuedConsoleCommands()
 
-		if ( !CommandList ) then return end
+		if ( not CommandList ) then return end
 
 		local BytesSent = 0
 

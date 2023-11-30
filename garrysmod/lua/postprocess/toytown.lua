@@ -29,9 +29,9 @@ end
 
 hook.Add( "RenderScreenspaceEffects", "RenderToyTown", function()
 
-	if ( !pp_toytown:GetBool() ) then return end
-	if ( !GAMEMODE:PostProcessPermitted( "toytown" ) ) then return end
-	if ( !render.SupportsPixelShaders_2_0() ) then return end
+	if ( not pp_toytown:GetBool() ) then return end
+	if ( not GAMEMODE:PostProcessPermitted( "toytown" ) ) then return end
+	if ( not render.SupportsPixelShaders_2_0() ) then return end
 
 	local NumPasses = pp_toytown_passes:GetInt()
 	local H = math.floor( ScrH() * pp_toytown_size:GetFloat() )

@@ -6,9 +6,9 @@ win.active = {}
 
 win.widgets = win.widgets or {}
 
------------------------
-/// WINDOWS MANAGER ///
------------------------
+---------------------------
+-- [[ WINDOWS MANAGER ]] --
+---------------------------
 -- Name: unique name
 -- Desc: Button Hover Text
 -- Icon: Button icon
@@ -125,9 +125,9 @@ function win:HideAll(...)
     end
 end
 
----------------
-/// WIDGETS ///
----------------
+-------------------
+-- [[ WIDGETS ]] --
+-------------------
 -- Used for example for custom panels or functions 
 -- that run before the opening animation or after
 
@@ -166,9 +166,9 @@ end
 
 
 
----------------------
-/// OTHER WINDOWS ///
----------------------
+-------------------------
+-- [[ OTHER WINDOWS ]] --
+-------------------------
 --NOTIFY
 function emenu:Notify(text,time,etype)
 	if not etype then etype = NOTIFY_GENERIC end

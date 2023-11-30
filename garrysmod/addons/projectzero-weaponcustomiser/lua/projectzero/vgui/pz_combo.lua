@@ -89,7 +89,7 @@ function PANEL:GetSelectedID()
 end
 
 function PANEL:GetSelected()
-	if ( !self.selected ) then return end
+	if ( not self.selected ) then return end
 
 	return self:GetOptionText( self.selected ), self:GetOptionData( self.selected )
 end
@@ -121,11 +121,11 @@ function PANEL:AddChoice( value, data, select, icon )
 end
 
 function PANEL:IsMenuOpen()
-	return IsValid( self.Menu ) && self.Menu:IsVisible()
+	return IsValid( self.Menu ) and self.Menu:IsVisible()
 end
 
 function PANEL:OpenMenu( pControlOpener )
-	if ( pControlOpener && pControlOpener == self.TextEntry ) then
+	if ( pControlOpener and pControlOpener == self.TextEntry ) then
 		return
 	end
 
@@ -145,7 +145,7 @@ function PANEL:OpenMenu( pControlOpener )
 		local sorted = {}
 		for k, v in pairs( self.Choices ) do
 			local val = tostring( v ) --tonumber( v ) || v -- This would make nicer number sorting, but SortedPairsByMemberValue doesn't seem to like number-string mixing
-			if ( string.len( val ) > 1 && !tonumber( val ) && val:StartWith( "#" ) ) then val = language.GetPhrase( val:sub( 2 ) ) end
+			if ( string.len( val ) > 1 and not tonumber( val ) and val:StartWith( "#" ) ) then val = language.GetPhrase( val:sub( 2 ) ) end
 			table.insert( sorted, { id = k, data = v, label = val } )
 		end
 		for k, v in SortedPairsByMemberValue( sorted, "label" ) do
@@ -178,7 +178,7 @@ function PANEL:CloseMenu()
 end
 
 function PANEL:CheckConVarChanges()
-	if ( !self.m_strConVar ) then return end
+	if ( not self.m_strConVar ) then return end
 
 	local strValue = GetConVarString( self.m_strConVar )
 	if ( self.m_strConVarValue == strValue ) then return end

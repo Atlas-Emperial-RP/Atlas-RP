@@ -25,7 +25,7 @@ TEAM_CITIZEN = DarkRP.createJob("Citizen", {
 		["legs"] = {0,1,2,3,4,5},
 		["beanies"] = {0,1,2},
 		["glasses"] = {0,1}, -- these are all examples, please don't actually copy-paste them because they might not work.
-	} -- check below for playermodels that support this addon, and use the sandbox playermodel selector to check bodygroups.
+	}, -- check below for playermodels that support this addon, and use the sandbox playermodel selector to check bodygroups.
 
 	armorbodygroups = { -- configure armor to give players here (for Prior). first number in the pair is the bodygroup, second number is how much armor to give.
 		-- eg. in this case, setting the "torso" bodygroup to 2 gives the player 30 armor.

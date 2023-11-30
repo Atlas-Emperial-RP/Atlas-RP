@@ -24,9 +24,8 @@ SWEP.AdminSpawnable = true
 SWEP.Slot = 3
 SWEP.PrintName = "Rope Leash"
 
-//
-// Handcuff Vars
-SWEP.CuffTime = 0.8 // Seconds to handcuff
+-- [[ Handcuff Vars ]] --
+SWEP.CuffTime = 0.8 -- Seconds to handcuff
 SWEP.CuffSound = Sound( "buttons/lever7.wav" )
 
 SWEP.CuffMaterial = "models/props_foliage/tree_deciduous_01a_trunk"
@@ -39,5 +38,5 @@ SWEP.CuffReusable = false
 SWEP.CuffBlindfold = false
 SWEP.CuffGag = false
 
-SWEP.CuffStrengthVariance = 0.1 // Randomise strangth
-SWEP.CuffRegenVariance = 0.2 // Randomise regen
+SWEP.CuffStrengthVariance = 0.1 -- Randomise strangth
+SWEP.CuffRegenVariance = 0.2 -- Randomise regen

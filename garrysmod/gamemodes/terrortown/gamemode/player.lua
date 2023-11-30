@@ -30,7 +30,7 @@ function GM:PlayerInitialSpawn( ply )
    end
 
    -- Game has started, tell this guy where the round is at
-   if rstate != ROUND_WAIT then
+   if rstate ~= ROUND_WAIT then
       SendRoundState(rstate, ply)
       SendConfirmedTraitors(ply)
       SendDetectiveList(ply)
@@ -343,7 +343,7 @@ function GM:KeyPress(ply, key)
          local ang = ply:EyeAngles()
 
          local target = ply:GetObserverTarget()
-         if IsValid(target) and target:IsPlayer() and ply:GetObserverMode() != OBS_MODE_ROAMING then -- Only set the spectator's position to the player they are spectating if they are in chase or eye mode. They can use the reload key if they want to return to the person they're spectating
+         if IsValid(target) and target:IsPlayer() and ply:GetObserverMode() ~= OBS_MODE_ROAMING then -- Only set the spectator's position to the player they are spectating if they are in chase or eye mode. They can use the reload key if they want to return to the person they're spectating
             pos = target:EyePos()
             ang = target:EyeAngles()
          end
@@ -357,7 +357,7 @@ function GM:KeyPress(ply, key)
          return true
       elseif key == IN_JUMP then
          -- unfuck if you're on a ladder etc
-         if (ply:GetMoveType() != MOVETYPE_NOCLIP) then
+         if (ply:GetMoveType() ~= MOVETYPE_NOCLIP) then
             ply:SetMoveType(MOVETYPE_NOCLIP)
          end
       elseif key == IN_RELOAD then
@@ -439,7 +439,7 @@ function GM:PlayerDisconnected(ply)
       ply:SetRole(ROLE_NONE)
    end
 
-   if GetRoundState() != ROUND_PREP then
+   if GetRoundState() ~= ROUND_PREP then
       -- Keep traitor entindices in sync on traitor clients
       SendTraitorList(GetTraitorFilter(false), nil)
 
@@ -504,7 +504,7 @@ end
 
 -- See if we should award credits now
 local function CheckCreditAward(victim, attacker)
-   if GetRoundState() != ROUND_ACTIVE then return end
+   if GetRoundState() ~= ROUND_ACTIVE then return end
    if not IsValid(victim) then return end
 
    -- DETECTIVE AWARD
@@ -728,7 +728,7 @@ function GM:SpectatorThink(ply)
    end
 
    -- when speccing a player
-   if ply:GetObserverMode() != OBS_MODE_ROAMING and (not ply.propspec) and (not ply:GetRagdollSpec()) then
+   if ply:GetObserverMode() ~= OBS_MODE_ROAMING and (not ply.propspec) and (not ply:GetRagdollSpec()) then
       local tgt = ply:GetObserverTarget()
       if IsValid(tgt) and tgt:IsPlayer() then
          if (not tgt:IsTerror()) or (not tgt:Alive()) then
@@ -971,7 +971,7 @@ function GM:PlayerTakeDamage(ent, infl, att, amount, dmginfo)
          -- if we already blamed this on a pusher, no need to do more
          -- else we override whatever was in was_pushed with info pointing
          -- at our damage owner
-         if push.att != owner then
+         if push.att ~= owner then
             owner_time = owner_time or CurTime()
 
             push.att = owner
@@ -1037,7 +1037,7 @@ function GM:PlayerTakeDamage(ent, infl, att, amount, dmginfo)
    util.StartBleeding(ent, dmginfo:GetDamage(), 5)
 
    -- general actions for pvp damage
-   if ent != att and IsValid(att) and att:IsPlayer() and GetRoundState() == ROUND_ACTIVE and math.floor(dmginfo:GetDamage()) > 0 then
+   if ent ~= att and IsValid(att) and att:IsPlayer() and GetRoundState() == ROUND_ACTIVE and math.floor(dmginfo:GetDamage()) > 0 then
 
       -- scale everything to karma damage factor except the knife, because it
       -- assumes a kill
@@ -1096,7 +1096,7 @@ function GM:Tick()
          end
 
          -- Run DNA Scanner think also when it is not deployed
-         if IsValid(ply.scanner_weapon) and wep != ply.scanner_weapon then
+         if IsValid(ply.scanner_weapon) and wep ~= ply.scanner_weapon then
             ply.scanner_weapon:Think()
          end
       elseif tm == TEAM_SPEC then

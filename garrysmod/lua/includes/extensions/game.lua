@@ -22,7 +22,7 @@ local AmmoTypes = {}
 --		})
 --
 function game.AddAmmoType( tbl )
-	if ( !isstring( tbl.name ) ) then
+	if ( not isstring( tbl.name ) ) then
 		ErrorNoHalt( "bad argument #1 to 'AddAmmoType' ('name' key expected a string, got " .. type( tbl.name ) .. ")\n" )
 		return
 	end

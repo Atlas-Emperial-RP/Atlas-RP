@@ -12,7 +12,7 @@ end )
 
 hook.Add( "WorkshopEnd", "WorkshopEnd", function()
 
-	if ( !IsValid( vgui_workshop ) ) then return end
+	if ( not IsValid( vgui_workshop ) ) then return end
 
 	vgui_workshop:Remove()
 
@@ -20,7 +20,7 @@ end )
 
 hook.Add( "WorkshopDownloadFile", "WorkshopDownloadFile", function( id, iImageID, title, iSize )
 
-	if ( !IsValid( vgui_workshop ) ) then
+	if ( not IsValid( vgui_workshop ) ) then
 		vgui_workshop = GetOverlayPanel():Add( pnlWorkshop )
 	end
 
@@ -31,7 +31,7 @@ end )
 
 hook.Add( "WorkshopDownloadedFile", "WorkshopDownloadedFile", function( id )
 
-	if ( !IsValid( vgui_workshop ) ) then return end
+	if ( not IsValid( vgui_workshop ) ) then return end
 
 	vgui_workshop:FinishedDownloading( id )
 
@@ -39,7 +39,7 @@ end )
 
 hook.Add( "WorkshopDownloadProgress", "WorkshopDownloadProgress", function( id, iImageID, title, downloaded, expected )
 
-	if ( !IsValid( vgui_workshop ) ) then
+	if ( not IsValid( vgui_workshop ) ) then
 		vgui_workshop = GetOverlayPanel():Add( pnlWorkshop )
 		vgui_workshop:PrepareDownloading()
 		vgui_workshop:StartDownloading( id, iImageID, title, expected )
@@ -51,7 +51,7 @@ end )
 
 hook.Add( "WorkshopExtractProgress", "WorkshopExtractProgress", function( id, iImageID, title, percent )
 
-	if ( !IsValid( vgui_workshop ) ) then
+	if ( not IsValid( vgui_workshop ) ) then
 		vgui_workshop = GetOverlayPanel():Add( pnlWorkshop )
 		vgui_workshop:PrepareDownloading()
 		vgui_workshop:StartDownloading( id, iImageID, title, percent )
@@ -63,7 +63,7 @@ end )
 
 hook.Add( "WorkshopDownloadTotals", "WorkshopDownloadTotals", function( iRemain, iTotal )
 
-	if ( !IsValid( vgui_workshop ) ) then
+	if ( not IsValid( vgui_workshop ) ) then
 		vgui_workshop = GetOverlayPanel():Add( pnlWorkshop )
 	end
 
@@ -84,7 +84,7 @@ end )
 
 hook.Add( "WorkshopSubscriptionsProgress", "WorkshopSubscriptionsProgress", function( iCurrent, iMax )
 
-	if ( !IsValid( vgui_workshop ) ) then
+	if ( not IsValid( vgui_workshop ) ) then
 		vgui_workshop = GetOverlayPanel():Add( pnlWorkshop )
 	end
 
@@ -94,7 +94,7 @@ end )
 
 hook.Add( "WorkshopSubscriptionsMessage", "WorkshopSubscriptionsMessage", function( msg )
 
-	if ( !IsValid( vgui_workshop ) ) then
+	if ( not IsValid( vgui_workshop ) ) then
 		vgui_workshop = GetOverlayPanel():Add( pnlWorkshop )
 	end
 

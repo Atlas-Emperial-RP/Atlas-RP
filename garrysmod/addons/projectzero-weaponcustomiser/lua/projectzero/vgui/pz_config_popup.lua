@@ -46,7 +46,7 @@ function PANEL:FinishSetup()
             self2:SetExpanded( true )
         end
         
-        local expandable = noExpandable != true
+        local expandable = noExpandable ~= true
         
         fieldPanel.header = vgui.Create( expandable and "DButton" or "Panel", fieldPanel )
         fieldPanel.header:Dock( TOP )

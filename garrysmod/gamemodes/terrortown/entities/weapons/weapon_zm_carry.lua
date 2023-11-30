@@ -253,8 +253,8 @@ function SWEP:AllowPickup(target)
            (not phys:HasGameFlag(FVPHYSICS_NO_PLAYER_PICKUP)) and
            phys:GetMass() < CARRY_WEIGHT_LIMIT and
            (not PlayerStandsOn(target)) and
-           (target.CanPickup != false) and
-           (target:GetClass() != "prop_ragdoll" or allow_rag:GetBool()) and
+           (target.CanPickup ~= false) and
+           (target:GetClass() ~= "prop_ragdoll" or allow_rag:GetBool()) and
            ((not target:IsWeapon()) or allow_wep:GetBool()))
 end
 

@@ -88,7 +88,7 @@ local function RP_PlayerChat(ply, text, teamonly)
     end
 
     if callback ~= "" then
-        callback = callback or "" .. " "
+        callback = (callback or "") .. " "
     end
 
     return text, callback, DoSayFunc;
@@ -140,7 +140,7 @@ local function callHooks(hooks, canReturn, ...)
             isString = isstring(id)
         end
 
-        if not isfunction(f) then continue end
+        if not isfunction(f) then goto continue end
 
         if not isString then
             -- Non valid hooks are removed, as entities don't become valid after being non-valid
@@ -154,6 +154,8 @@ local function callHooks(hooks, canReturn, ...)
         end
 
         if text ~= nil and canReturn then return text end
+
+        ::continue::
     end
 end
 

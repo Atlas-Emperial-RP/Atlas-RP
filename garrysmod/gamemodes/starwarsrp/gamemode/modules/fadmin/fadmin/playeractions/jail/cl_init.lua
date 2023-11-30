@@ -40,7 +40,7 @@ FAdmin.StartHooks["Jail"] = function()
         menu:AddPanel(Title)
 
         for k, v in pairs(FAdmin.PlayerActions.JailTypes) do
-            if v == "Unjail" then continue end
+            if v == "Unjail" then goto continue end
             FAdmin.PlayerActions.addTimeSubmenu(menu, v .. " jail",
                 function()
                     RunConsoleCommand("_FAdmin", "Jail", ply:UserID(), k)
@@ -54,6 +54,8 @@ FAdmin.StartHooks["Jail"] = function()
                     button:SetImage2("fadmin/icons/disable")
                 end
             )
+
+            ::continue::
         end
 
         menu:Open()

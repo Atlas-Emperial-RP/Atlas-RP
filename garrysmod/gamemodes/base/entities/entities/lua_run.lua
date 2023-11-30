@@ -29,7 +29,7 @@ function ENT:SetupGlobals( activator, caller )
 	ACTIVATOR = activator
 	CALLER = caller
 
-	if ( IsValid( activator ) && activator:IsPlayer() ) then
+	if ( IsValid( activator ) and activator:IsPlayer() ) then
 		TRIGGER_PLAYER = activator
 	end
 
