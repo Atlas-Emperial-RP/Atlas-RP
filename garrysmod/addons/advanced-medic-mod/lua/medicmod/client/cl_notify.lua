@@ -85,29 +85,30 @@ hook.Add("HUDPaint", "MedicMod.HUDNotifications", function()
 		
 	for k, v in pairs( NotificationTable_Venatuss ) do
 		if v.type == "medic" then
-			if v.timeremove - CurTime() < 0 then table.remove(NotificationTable_Venatuss,k) goto continue end
+			if v.timeremove - CurTime() < 0 then table.remove(NotificationTable_Venatuss,k) end
+			if not (v.timeremove - CurTime() < 0) then 
+
+				local alpha = ( math.Clamp(CurTime() - v.apptime, 0 , 1) )
+				local posy = ScrH() - 200 - 60 * k - 40 * ( 1 - ( math.Clamp(CurTime() - v.apptime, 0 , 1) ) )
+				local posx = math.Clamp(v.timeremove - CurTime(),0,0.25) * 4 * 30 + (0.25 - math.Clamp(v.timeremove - CurTime(),0,0.25)) * 4 * - 340
+			
+				surface.SetFont( "Bariol20" )
+				local x,y = surface.GetTextSize( v.text ) 
+			
+				draw.RoundedBox( 5, posx, posy , 60, 40, Color(0, 131, 167,255 * alpha ) )	
+			
+				surface.SetDrawColor( 255, 255, 255, 255 * alpha )
+				surface.DrawRect( posx + 50, posy, 20 + x, 40 )
 		
-			local alpha = ( math.Clamp(CurTime() - v.apptime, 0 , 1) )
-			local posy = ScrH() - 200 - 60 * k - 40 * ( 1 - ( math.Clamp(CurTime() - v.apptime, 0 , 1) ) )
-			local posx = math.Clamp(v.timeremove - CurTime(),0,0.25) * 4 * 30 + (0.25 - math.Clamp(v.timeremove - CurTime(),0,0.25)) * 4 * - 340
-			
-			surface.SetFont( "Bariol20" )
-			local x,y = surface.GetTextSize( v.text ) 
-			
-			draw.RoundedBox( 5, posx, posy , 60, 40, Color(0, 131, 167,255 * alpha ) )	
-			
-			surface.SetDrawColor( 255, 255, 255, 255 * alpha )
-			surface.DrawRect( posx + 50, posy, 20 + x, 40 )
-		
-			surface.SetMaterial( iconMat )
-			surface.DrawTexturedRect( posx + 10, posy + 5, 30, 30 )
+				surface.SetMaterial( iconMat )
+				surface.DrawTexturedRect( posx + 10, posy + 5, 30, 30 )
 			
 			
-			surface.SetTextPos( posx + 50 + 10, posy + 40/2-y/2 )
-			surface.SetTextColor( 0, 0, 0, 255 * alpha)
-			surface.DrawText( v.text )
+				surface.SetTextPos( posx + 50 + 10, posy + 40/2-y/2 )
+				surface.SetTextColor( 0, 0, 0, 255 * alpha)
+				surface.DrawText( v.text )
 			
-			::continue::
+			end 
 		end
 	end	
 	
