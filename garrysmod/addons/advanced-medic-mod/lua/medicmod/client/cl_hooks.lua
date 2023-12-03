@@ -36,17 +36,18 @@ hook.Add("HUDPaint", "HUDPaint.MedicMod", function()
     if ConfigurationMedicMod.MedicTeams and table.HasValue(ConfigurationMedicMod.MedicTeams, LocalPlayer():Team()) then
         for k, v in pairs(ents.FindByClass("prop_ragdoll")) do
            
-            if v:IsDeathRagdoll() then      
-                local pos = ( v:GetPos() + Vector(0,0,10) ):ToScreen()
-                local dist = v:GetPos():Distance(LocalPlayer():GetPos())
+            if not v:IsDeathRagdoll() then goto continue end        
            
-                surface.SetDrawColor( 255, 255, 255, 255 )
-                surface.SetMaterial( notifIcon )
-                surface.DrawTexturedRect( pos.x - 25, pos.y, 50, 50 )
+            local pos = ( v:GetPos() + Vector(0,0,10) ):ToScreen()
+            local dist = v:GetPos():Distance(LocalPlayer():GetPos())
            
-                draw.SimpleTextOutlined( math.floor(math.sqrt(dist/3)).."m", "MedicModFont30", pos.x, pos.y + 50, Color( 255, 255, 255, 255 ), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color( 0, 0, 0, 255 ) )
-            end
+            surface.SetDrawColor( 255, 255, 255, 255 )
+            surface.SetMaterial( notifIcon )
+            surface.DrawTexturedRect( pos.x - 25, pos.y, 50, 50 )
+           
+            draw.SimpleTextOutlined( math.floor(math.sqrt(dist/3)).."m", "MedicModFont30", pos.x, pos.y + 50, Color( 255, 255, 255, 255 ), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color( 0, 0, 0, 255 ) )
 
+            ::continue::
         end
     end
     
