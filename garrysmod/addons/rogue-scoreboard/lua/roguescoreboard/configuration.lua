@@ -237,9 +237,9 @@ Configuration.UndercoverNames       = {
 
 Configuration.Administration = {}
 Configuration.Administration["ulx"] = {}
---[[ Configuration.Administration["ulx"].goto = function(cmdPly)
+Configuration.Administration["ulx"].go_to = function(cmdPly)
     RunConsoleCommand("ulx", "goto", cmdPly:Nick())
-end ]] -- todo: fix this
+end -- todo: fix this
 
 Configuration.Administration["ulx"].bring = function(cmdPly)
     RunConsoleCommand("ulx", "bring", cmdPly:Nick())
@@ -273,9 +273,9 @@ end
 -- [[ S A M  A D M I N ]] --
 
 Configuration.Administration["sam"] = {}
---[[--- Configuration.Administration["sam"].goto = function(cmdPly)
+Configuration.Administration["sam"].go_to = function(cmdPly)
     RunConsoleCommand("sam", "goto", cmdPly:Nick())
-end --]] -- todo: fix this
+end  -- todo: fix this
 
 Configuration.Administration["sam"].bring = function(cmdPly)
     RunConsoleCommand("sam", "bring", cmdPly:Nick())
@@ -309,9 +309,9 @@ end
 -- [[ F A D M I N ]] --
 
 Configuration.Administration["fadmin"] = {}
---[[--- Configuration.Administration["fadmin"].goto = function(cmdPly)
+Configuration.Administration["fadmin"].go_to = function(cmdPly)
     RunConsoleCommand("fadmin", "goto", cmdPly:Nick())
-end --]] -- todo: fix this
+end -- todo: fix this
 
 Configuration.Administration["fadmin"].bring = function(cmdPly)
     RunConsoleCommand("fadmin", "bring", cmdPly:Nick())
@@ -345,9 +345,10 @@ end
 -- [[ S E R V E R  G U A R D ]] --
 
 Configuration.Administration["serverguard"] = {}
---[[--- Configuration.Administration["serverguard"].goto = function(cmdPly)
+
+Configuration.Administration["serverguard"].go_to = function(cmdPly)
     RunConsoleCommand("sg", "goto", cmdPly:Nick())
-end --]] -- todo: fix this
+end -- todo: fix this
 
 Configuration.Administration["serverguard"].bring = function(cmdPly)
     RunConsoleCommand("sg", "bring", cmdPly:Nick())
@@ -381,9 +382,9 @@ end
 -- [[ X  A D M I N  2 ]] --
 
 Configuration.Administration["xadmin2"] = {}
---[[--- Configuration.Administration["xadmin2"].goto = function(cmdPly)
+Configuration.Administration["xadmin2"].go_to = function(cmdPly)
     RunConsoleCommand("xadmin", "goto", cmdPly:Nick())
-end --]] -- todo: fix this
+end -- todo: fix this
 
 Configuration.Administration["xadmin2"].bring = function(cmdPly)
     RunConsoleCommand("xadmin", "bring", cmdPly:Nick())
@@ -417,9 +418,9 @@ end
 -- [[ X  A D M I N  1 ]] --
 
 Configuration.Administration["xadmin"] = {}
---[[--- Configuration.Administration["xadmin"].goto = function(cmdPly)
+Configuration.Administration["xadmin"].go_to = function(cmdPly)
     RunConsoleCommand("xadmin_goto", "goto", cmdPly:Nick())
-end --]] -- todo: fix this
+end -- todo: fix this
 
 Configuration.Administration["xadmin"].bring = function(cmdPly)
     RunConsoleCommand("xadmin_bring", "bring", cmdPly:Nick())
