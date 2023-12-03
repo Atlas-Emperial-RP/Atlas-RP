@@ -151,11 +151,11 @@ function PANEL:Init()
 
         local createVariablesPage = false
         for key, val in ipairs( configMeta:GetSortedVariables() ) do
-            if( val.Type == PROJECT0.TYPE.Table ) then goto continue end
+            if( val.Type == PROJECT0.TYPE.Table ) then break end
 
             createVariablesPage = true
 
-            ::continue::
+            
             break
         end
 
@@ -178,7 +178,7 @@ function PANEL:Init()
                     local headerH = PROJECT0.FUNC.ScreenScale( 75 )
                     local customElement = val.Type == PROJECT0.TYPE.Table and val.VguiElement
 
-                    if( val.Type == PROJECT0.TYPE.Table ) then goto continue_1 end
+                    if( val.Type == PROJECT0.TYPE.Table ) then break end
 
                     local variablePanel = vgui.Create( "DPanel", scrollPanel )
                     variablePanel:Dock( TOP )
@@ -244,13 +244,12 @@ function PANEL:Init()
                             PROJECT0.FUNC.RequestConfigChange( configMetaKey, val.Key, textEntry:GetValue() )
                         end
                     end
-                    ::continue_1::
                 end
             end
         end
 
         for key, val in ipairs( configMeta:GetSortedVariables() ) do
-            if( val.Type ~= PROJECT0.TYPE.Table ) then goto continue end
+            if( val.Type ~= PROJECT0.TYPE.Table ) then break end
 
             local page = vgui.Create( "Panel", self.contents )
             page:Dock( FILL )
@@ -268,7 +267,7 @@ function PANEL:Init()
             end
 
             pageCategory:AddPage( page, val.Key, val.Name )
-            ::continue::
+            
         end
     end
 
@@ -281,9 +280,9 @@ end
 
 function PANEL:Refresh()
     for k, v in pairs( self.pages ) do
-        if( not v.Panel.Refresh ) then goto continue end
+        if( not v.Panel.Refresh ) then break end
         v.Panel:Refresh()
-        ::continue::
+        
     end
 end
 
@@ -419,11 +418,11 @@ end
 
 function PANEL:OpenPageByID( id, variableKey )
     for k, v in ipairs( self.pages ) do
-        if( v.ConfigID ~= id or (variableKey and v.VariableKey ~= variableKey) ) then goto continue end
+        if( v.ConfigID ~= id or (variableKey and v.VariableKey ~= variableKey) ) then break end
 
         self:SetActivePage( k )
         do return v end
-        ::continue::
+        
     end
 end
 

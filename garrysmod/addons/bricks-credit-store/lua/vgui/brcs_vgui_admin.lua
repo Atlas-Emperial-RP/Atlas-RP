@@ -834,7 +834,7 @@ function PANEL:SetItemData( npcType, itemKey, newItem )
 						end
 					end
 					
-					if( not IsValid( EntryPanel ) ) then goto continue end
+					if( not IsValid( EntryPanel ) ) then break end
 
 					EntryPanel:Dock( TOP )
 					EntryPanel:DockMargin( 0, 0, 0, 10 )
@@ -867,7 +867,7 @@ function PANEL:SetItemData( npcType, itemKey, newItem )
 					end
 
 					EntryPanels[k] = EntryPanel
-					::continue::
+					
 				end
 			end
 

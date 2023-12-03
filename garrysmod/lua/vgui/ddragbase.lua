@@ -109,7 +109,7 @@ function PANEL:DropAction_Normal( Drops, bDoDrop, Command, x, y )
 
 		-- Don't drop one of our parents onto us
 		-- because we'll be sucked into a vortex
-		if ( v:IsOurChild( self ) ) then goto continue end
+		if ( v:IsOurChild( self ) ) then break end
 
 		-- Copy the panel if we are told to from the DermaMenu(), or if we are moving from a read only panel to a not read only one.
 		if ( ( Command and Command == "copy" or ( IsValid( v:GetParent() ) and v:GetParent().GetReadOnly and v:GetParent():GetReadOnly() and v:GetParent():GetReadOnly() ~= self:GetReadOnly() ) ) and v.Copy ) then v = v:Copy() end
@@ -130,7 +130,7 @@ function PANEL:DropAction_Normal( Drops, bDoDrop, Command, x, y )
 			v:MoveToAfter( closest )
 		end
 
-		::continue::
+		
 	end
 
 	self:OnModified()

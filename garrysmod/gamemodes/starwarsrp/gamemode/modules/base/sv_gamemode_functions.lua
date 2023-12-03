@@ -78,11 +78,11 @@ function GM:canDropWeapon(ply, weapon)
     if not GAMEMODE.Config.restrictdrop then return true end
 
     for _, v in pairs(CustomShipments) do
-        if v.entity ~= class then goto continue end
+        if v.entity ~= class then break end
 
         do return true end
 
-        ::continue::
+        
     end
 
     return false
@@ -384,10 +384,10 @@ timer.Create("DarkRPCanHearPlayersVoice", DarkRP.voiceCheckTimeDelay, 0, functio
             local y = gridY + vOffset
 
             local row = grid[x]
-            if not row then goto continue end
+            if not row then break end
 
             local cell = row[y]
-            if not cell then goto continue end
+            if not cell then break end
 
             for _, ply2 in ipairs(cell) do
                 local canTalk =
@@ -398,7 +398,7 @@ timer.Create("DarkRPCanHearPlayersVoice", DarkRP.voiceCheckTimeDelay, 0, functio
                 DrpCanHear[ply2][ply1] = canTalk and (deadv or ply1:Alive()) -- Take advantage of the symmetry
             end
 
-            ::continue::
+            
         end
     end
 
@@ -692,7 +692,7 @@ local function restoreReconnectedEnts(ply)
     timer.Remove("DarkRP_removeDisconnected_" .. sid)
 
     for _, e in pairs(queuedForRemoval[sid]) do
-        if not IsValid(e) then goto continue end
+        if not IsValid(e) then break end
 
         e.SID = ply.SID
 
@@ -705,7 +705,7 @@ local function restoreReconnectedEnts(ply)
             ply:addCustomEntity(e.DarkRPItem)
         end
 
-        ::continue::
+        
     end
 
     queuedForRemoval[sid] = nil
@@ -981,20 +981,20 @@ local function collectRemoveEntities(ply)
 
     local sid = ply.SID
     for _, v in ipairs(ents.GetAll()) do
-        if v.SID ~= sid or not v:IsVehicle() and not remClasses[string.lower(v:GetClass() or "")] then goto continue end
+        if v.SID ~= sid or not v:IsVehicle() and not remClasses[string.lower(v:GetClass() or "")] then break end
 
         table.insert(collect, v)
 
-        ::continue::
+        
     end
 
     if not ply:isMayor() then return collect end
 
     for _, ent in pairs(ply.lawboards or {}) do
-        if not IsValid(ent) then goto continue end
+        if not IsValid(ent) then break end
         table.insert(collect, ent)
 
-        ::continue::
+        
     end
 
     return collect
@@ -1034,10 +1034,10 @@ function GM:PlayerDisconnected(ply)
     if agenda and ply:Team() == agenda.Manager and team.NumPlayers(ply:Team()) <= 1 then
         agenda.text = nil
         for _, v in ipairs(player.GetAll()) do
-            if v:getAgendaTable() ~= agenda then goto continue end
+            if v:getAgendaTable() ~= agenda then break end
             v:setSelfDarkRPVar("agenda", agenda.text)
 
-            ::continue::
+            
         end
     end
 
@@ -1086,10 +1086,10 @@ function GM:InitPostEntity()
 
     if GAMEMODE.Config.unlockdoorsonstart then
         for _, v in ipairs(ents.GetAll()) do
-            if not v:isDoor() then goto continue end
+            if not v:isDoor() then break end
             v:Fire("unlock", "", 0)
 
-            ::continue::
+            
         end
     end
 end

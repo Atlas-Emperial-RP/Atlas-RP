@@ -322,7 +322,7 @@ hook.Add("PlayerSay", "PlayerSay.MedicMod", function(ply, text)
        
         for k, v in pairs(ents.GetAll()) do
            
-            if not MedicModSavedEntities[v:GetClass()] then goto continue end
+            if not MedicModSavedEntities[v:GetClass()] then break end
            
             MedicPos[#MedicPos + 1] = {
                 pos = v:GetPos(),
@@ -338,7 +338,7 @@ hook.Add("PlayerSay", "PlayerSay.MedicMod", function(ply, text)
    
 			ConfigurationMedicMod.SavedEnts =  util.JSONToTable(filecontent)
 
-            ::continue::
+            
        
         end
        

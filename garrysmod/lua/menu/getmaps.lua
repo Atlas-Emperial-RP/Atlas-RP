@@ -294,7 +294,7 @@ local function RefreshMaps( skip )
 		local Ignore = IgnoreMaps[ name ] or IgnoreMaps[ prefix ]
 
 		-- Don't loop if it's already ignored
-		if ( Ignore ) then goto continue end
+		if ( Ignore ) then break end
 
 		for _, ignore in ipairs( IgnorePatterns ) do
 			if ( string.find( name, ignore ) ) then
@@ -304,7 +304,7 @@ local function RefreshMaps( skip )
 		end
 
 		-- Don't add useless maps
-		if ( Ignore ) then goto continue end
+		if ( Ignore ) then break end
 
 		-- Check if the map has a simple name or prefix
 		local Category = MapNames[ name ] or MapNames[ prefix ]
@@ -361,7 +361,7 @@ local function RefreshMaps( skip )
 			table.insert( MapList[ "Counter-Strike: GO" ], name .. " " )
 		end
 
-		::continue::
+		
 	end
 
 	-- Send the new list to the HTML menu

@@ -23,7 +23,7 @@ function SWEP:DrawHUD()
 
     local entMessages = {}
     for k,v in ipairs(DrawData or {}) do
-        if not IsValid(v.ent) or not IsValid(v.original) then goto continue end
+        if not IsValid(v.ent) or not IsValid(v.original) then break end
         entMessages[v.ent] = (entMessages[v.ent] or 0) + 1
         local obbCenter = v.ent:OBBCenter()
         local pos = v.ent:LocalToWorld(obbCenter):ToScreen()
@@ -37,7 +37,7 @@ function SWEP:DrawHUD()
             render.DrawBeam(v.original:GetPos(), v.ent:GetPos(), 2, 0.01, 20, haloCol)
         cam.End3D()
 
-        ::continue::
+        
     end
 end
 
@@ -45,12 +45,12 @@ KeypadCheckerHalos = function()
     local drawEnts = {}
     local i = 1
     for k,v in ipairs(DrawData) do
-        if not IsValid(v.ent) then goto continue end
+        if not IsValid(v.ent) then break end
 
         drawEnts[i] = v.ent
         i = i + 1
 
-        ::continue::
+        
     end
 
     if table.IsEmpty(drawEnts) then return end

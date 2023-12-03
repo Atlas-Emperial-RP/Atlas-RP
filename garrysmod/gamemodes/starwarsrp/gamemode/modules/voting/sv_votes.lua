@@ -53,17 +53,17 @@ function Vote:getFilter()
     local filter = RecipientFilter()
 
     for _, v in ipairs(player.GetAll()) do
-        if self.exclude[v] then goto continue end
+        if self.exclude[v] then break end
         local canVote = hook.Call("canVote", GAMEMODE, v, self)
 
         if canVote == false then
             self.exclude[v] = true
-            goto continue
+            break
         end
 
         filter:AddPlayer(v)
 
-        ::continue::
+        
     end
 
     return filter
@@ -134,7 +134,7 @@ end
 
 function DarkRP.destroyVotesWithEnt(ent)
     for k, v in pairs(Votes) do
-        if v.target ~= ent then goto continue end
+        if v.target ~= ent then break end
 
         timer.Remove(v.id .. "DarkRPVote")
         umsg.Start("KillVoteVGUI", v:getFilter())
@@ -145,7 +145,7 @@ function DarkRP.destroyVotesWithEnt(ent)
 
         Votes[k] = nil
 
-        ::continue::
+        
     end
 end
 

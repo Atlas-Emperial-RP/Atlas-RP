@@ -341,7 +341,7 @@ local function DrawEntityDisplay(gamemodeTable)
            or ply:GetNoDraw()
            or ply:IsDormant()
            or ply:GetColor().a == 0 and (ply:GetRenderMode() == RENDERMODE_TRANSALPHA or ply:GetRenderMode() == RENDERMODE_TRANSCOLOR) then
-           goto continue
+           break
         end
         local hisPos = ply:GetShootPos()
         if ply:getDarkRPVar("wanted") then ply:drawWantedInfo() end
@@ -366,7 +366,7 @@ local function DrawEntityDisplay(gamemodeTable)
             end
         end
 
-        ::continue::
+        
     end
 
     local ent = localplayer:GetEyeTrace().Entity

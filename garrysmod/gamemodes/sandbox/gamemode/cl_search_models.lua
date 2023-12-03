@@ -72,7 +72,7 @@ search.AddProvider( function( str )
 
 		if ( modelpath:find( str, nil, true ) ) then
 
-			if ( IsUselessModel( v ) ) then goto continue end
+			if ( IsUselessModel( v ) ) then break end
 
 			local entry = {
 				text = v:GetFileFromFilename(),
@@ -86,7 +86,7 @@ search.AddProvider( function( str )
 		end
 
 		if ( #models >= sbox_search_maxresults:GetInt() / 2 ) then break end
-		::continue::
+		
 	end
 
 	return models
@@ -116,20 +116,20 @@ local function AddSearchProvider( listname, ctype, stype )
 		local entities = {}
 
 		for k, v in pairs( list.Get( listname ) ) do
-			if ( listname == "Weapon" and not v.Spawnable ) then goto continue end
+			if ( listname == "Weapon" and not v.Spawnable ) then break end
 
 			v.ClassName = k
 			v.PrintName = v.PrintName or v.Name
 			v.ScriptedEntityType = ctype
 			table.insert( entities, v )
-			::continue::
+			
 		end
 
 		for k, v in ipairs( entities ) do
 
 			local name = v.PrintName
 			local name_c = v.ClassName
-			if ( not isstring( name ) and not isstring( name_c ) ) then goto continue end
+			if ( not isstring( name ) and not isstring( name_c ) ) then break end
 
 			if ( ( isstring( name ) and name:lower():find( str, nil, true ) ) or ( isstring( name_c ) and name_c:lower():find( str, nil, true ) ) ) then
 
@@ -150,7 +150,7 @@ local function AddSearchProvider( listname, ctype, stype )
 			end
 
 			if ( #results >= sbox_search_maxresults:GetInt() / 4 ) then break end
-			::continue::
+			
 		end
 
 		table.SortByMember( results, "text", true )

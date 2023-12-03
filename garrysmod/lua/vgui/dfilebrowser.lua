@@ -227,7 +227,7 @@ function PANEL:ShowFolder( path )
 	for _, filter in ipairs( string.Explode( " ", filters ) ) do
 
 		local files = file.Find( string.Trim( path .. "/" .. ( filter or "*.*" ), "/" ), self.m_strPath )
-		if ( not istable( files ) ) then goto continue end
+		if ( not istable( files ) ) then break end
 
 		for _, v in ipairs( files ) do
 
@@ -252,7 +252,7 @@ function PANEL:ShowFolder( path )
 
 		end
 
-		::continue::
+		
 	end
 
 end
