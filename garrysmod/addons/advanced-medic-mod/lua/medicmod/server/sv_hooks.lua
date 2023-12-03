@@ -322,23 +322,24 @@ hook.Add("PlayerSay", "PlayerSay.MedicMod", function(ply, text)
        
         for k, v in pairs(ents.GetAll()) do
            
-            if MedicModSavedEntities[v:GetClass()] then 
+            if not MedicModSavedEntities[v:GetClass()] then goto continue end
            
-                MedicPos[#MedicPos + 1] = {
-                    pos = v:GetPos(),
-                    ang = v:GetAngles(),
-                    class = v:GetClass()
-                }
+            MedicPos[#MedicPos + 1] = {
+                pos = v:GetPos(),
+                ang = v:GetAngles(),
+                class = v:GetClass()
+            }
            
-                file.CreateDir("medicmod")
+            file.CreateDir("medicmod")
            
-                file.Write("medicmod/save_ents.txt", util.TableToJSON(MedicPos))
+            file.Write("medicmod/save_ents.txt", util.TableToJSON(MedicPos))
 			
-			    local filecontent = file.Read("medicmod/save_ents.txt", "DATA")
+			local filecontent = file.Read("medicmod/save_ents.txt", "DATA")
    
-			    ConfigurationMedicMod.SavedEnts =  util.JSONToTable(filecontent)
+			ConfigurationMedicMod.SavedEnts =  util.JSONToTable(filecontent)
 
-            end
+            ::continue::
+       
         end
        
         ply:MedicNotif("Entities saved!")
