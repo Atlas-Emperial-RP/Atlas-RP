@@ -201,10 +201,10 @@ function meta:GetChildBones( bone )
 	local bones = {}
 
 	for k = 0, bonecount - 1 do
-		if ( self:GetBoneParent( k ) ~= bone ) then break end
+		if ( self:GetBoneParent( k ) ~= bone ) then goto continue end
 		table.insert( bones, k )
 
-		
+		::continue::
 	end
 
 	return bones
@@ -423,7 +423,7 @@ function meta:InstallDataTable()
 		for k, v in pairs( datatable ) do
 
 			-- Don't try to save entities (yet?)
-			if ( v.typename == "Entity" ) then break end
+			if ( v.typename == "Entity" ) then goto continue end
 
 			if ( v.element ) then
 				dt[ k ] = v.GetFunc( ent, v.index )[ v.element ]
@@ -431,7 +431,7 @@ function meta:InstallDataTable()
 				dt[ k ] = v.GetFunc( ent, v.index )
 			end
 
-			
+			::continue::
 		end
 
 		--
@@ -454,7 +454,7 @@ function meta:InstallDataTable()
 		for k, v in pairs( datatable ) do
 
 			-- If it contains this entry
-			if ( tab[ k ] == nil ) then break end
+			if ( tab[ k ] == nil ) then goto continue end
 
 			-- Support old saves/dupes with incorrectly saved data
 			if ( v.element and ( isangle( tab[ k ] ) or isvector( tab[ k ] ) ) ) then
@@ -468,7 +468,7 @@ function meta:InstallDataTable()
 				v.SetFunc( ent, v.index, tab[ k ] )
 			end
 
-			
+			::continue::
 		end
 
 	end

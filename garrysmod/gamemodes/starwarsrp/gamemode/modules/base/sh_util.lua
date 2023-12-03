@@ -110,12 +110,12 @@ function DarkRP.findPlayers(info)
                 players = players or {}
                 table.insert(players, Player(PlayerInfo))
             end
-            break
+            goto continue
         end
 
         for _, v in ipairs(pls) do
             -- Prevend duplicates
-            if found[v] then break end
+            if found[v] then goto continue end
 
             -- Find by Steam ID
             if (PlayerInfo == v:SteamID() or v:SteamID() == "UNKNOWN") or
@@ -128,10 +128,10 @@ function DarkRP.findPlayers(info)
                 table.insert(players, v)
             end
 
-            
+            ::continue::
         end
 
-        
+        ::continue::
     end
 
     return players
@@ -153,14 +153,14 @@ function meta:getEyeSightHitEntity(searchDistance, hitDistance, filter)
     local foundEnt
 
     for _, ent in pairs(entities) do
-        if not IsValid(ent) or filter(ent) == false then break end
+        if not IsValid(ent) or filter(ent) == false then goto continue end
 
         local center = ent:GetPos()
 
         -- project the center vector on the aim vector
         local projected = shootPos + (center - shootPos):Dot(aimvec) * aimvec
 
-        if aimvec:Dot((projected - shootPos):GetNormalized()) < 0 then break end
+        if aimvec:Dot((projected - shootPos):GetNormalized()) < 0 then goto continue end
 
         -- the point on the model that has the smallest distance to your line of sight
         local nearestPoint = ent:NearestPoint(projected)
@@ -173,13 +173,13 @@ function meta:getEyeSightHitEntity(searchDistance, hitDistance, filter)
                 filter = {self, ent}
             }
             local traceLine = util.TraceLine(trace)
-            if traceLine.Hit then break end
+            if traceLine.Hit then goto continue end
 
             smallestDistance = distance
             foundEnt = ent
         end
 
-        
+        ::continue::
     end
 
     self:LagCompensation(false)
@@ -245,7 +245,7 @@ function DarkRP.explodeArg(arg)
             inQuotes = not inQuotes
             wasQuotes = true
 
-            break
+            goto continue
         end
 
         if c == ' ' and not inQuotes then
@@ -255,7 +255,7 @@ function DarkRP.explodeArg(arg)
             from = to + 1
         end
 
-        
+        ::continue::
     end
     diff = wasQuotes and 1 or 0
 
@@ -357,7 +357,7 @@ local function checkDatabase(ply)
     if MySQLite and MySQLite.isMySQL() then
         display(string.format([[WARNING: DarkRP is using MySQL. This only
     checks the local SQLite database stored in the %s file in the
-    garrysmod/ folder. The check will break.]], dbFile))
+    garrysmod/ folder. The check will goto continue.]], dbFile))
     end
 
     local check = sql.QueryValue("PRAGMA INTEGRITY_CHECK")

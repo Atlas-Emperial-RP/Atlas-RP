@@ -505,7 +505,7 @@ function PANEL:FillAnimations( ent )
 
 	for k = 0, ent:GetNumBodyGroups() - 1 do
 
-		if ( ent:GetBodygroupCount( k ) <= 1 ) then break end
+		if ( ent:GetBodygroupCount( k ) <= 1 ) then goto continue end
 
 		local bgSlider = self.BodyList:Add( "DNumSlider" )
 		bgSlider:Dock( TOP )
@@ -531,7 +531,7 @@ function PANEL:FillAnimations( ent )
 			end
 		end
 		newItems = newItems + 1
-		
+		::continue::
 	end
 
 	if ( newItems > 0 ) then

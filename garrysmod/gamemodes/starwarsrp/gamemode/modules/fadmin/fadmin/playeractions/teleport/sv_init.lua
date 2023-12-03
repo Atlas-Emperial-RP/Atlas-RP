@@ -84,7 +84,7 @@ local function Bring(ply, cmd, args)
     end
 
     for _, target in pairs(targets) do
-        if not IsValid(target) or target == ply then break end
+        if not IsValid(target) or target == ply then goto continue end
 
         target:ExitVehicle()
         if not target:Alive() then target:Spawn() end
@@ -116,7 +116,7 @@ local function Bring(ply, cmd, args)
             if PHYSGUN then timer.Simple(0.5, function() target:Give("weapon_physgun") target:SelectWeapon("weapon_physgun") end) end
         end)
 
-        
+        ::continue::
     end
 
     FAdmin.Messages.FireNotification("bring", ply, targets)

@@ -139,23 +139,23 @@ local function findNearestObject()
     local foundPly, foundDot = nil, 0
 
     for _, ply in ipairs(player.GetAll()) do
-        if not IsValid(ply) or ply == LocalPlayer() then break end
+        if not IsValid(ply) or ply == LocalPlayer() then goto continue end
 
         local pos = ply:GetShootPos()
         local dot = (pos - fromPos):GetNormalized():Dot(aimvec)
 
         -- Discard players you're not looking at
-        if dot < 0.97 then break end
+        if dot < 0.97 then goto continue end
         -- not a better alternative
-        if dot < foundDot then break end
+        if dot < foundDot then goto continue end
 
         local trace = util.QuickTrace(fromPos, pos - fromPos, ply)
 
-        if trace.Hit then break end
+        if trace.Hit then goto continue end
 
         foundPly, foundDot = ply, dot
 
-        
+        ::continue::
     end
 
     return foundPly
@@ -279,8 +279,8 @@ local function specThink()
     local skip = 0
     for i = 0, #pls - 1 do
         local p = pls[i + 1]
-        if not IsValid(p) then break end
-        if not isRoaming and p == specEnt and not thirdperson then skip = skip + 3 break end
+        if not IsValid(p) then goto continue end
+        if not isRoaming and p == specEnt and not thirdperson then skip = skip + 3 goto continue end
 
         local tr = p:GetEyeTrace()
         local sp = gunpos(p)
@@ -292,7 +292,7 @@ local function specThink()
         linesToDraw[pos + 2] = team.GetColor(p:Team())
         lastPly = i
 
-        
+        ::continue::
     end
 
     -- Remove entries from linesToDraw that don't match with a player anymore
@@ -352,11 +352,11 @@ local function drawHelp()
     local pls = player.GetAll()
     for i = 1, #pls do
         local ply = pls[i]
-        if not IsValid(ply) then break end
-        if not isRoaming and ply == specEnt then break end
+        if not IsValid(ply) then goto continue end
+        if not isRoaming and ply == specEnt then goto continue end
 
         local pos = ply:GetShootPos():ToScreen()
-        if not pos.visible then break end
+        if not pos.visible then goto continue end
 
         local x, y = pos.x, pos.y
 
@@ -365,7 +365,7 @@ local function drawHelp()
         draw.WordBox(2, x, y - 46, "Health: " .. ply:Health(), "UiBold", uiBackground, uiForeground)
         draw.WordBox(2, x, y - 26, ply:GetUserGroup(), "UiBold", uiBackground, uiForeground)
 
-        
+        ::continue::
     end
 
     if not isRoaming then return end

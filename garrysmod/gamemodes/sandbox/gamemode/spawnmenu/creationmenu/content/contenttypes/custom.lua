@@ -142,7 +142,7 @@ function AddPropsOfParent( pnlContent, node, parentid, customProps )
 
 	for FileName, Info in SortedPairs( Props ) do
 
-		if ( parentid ~= Info.parentid ) then break end
+		if ( parentid ~= Info.parentid ) then goto continue end
 
 		local pnlnode = AddCustomizableNode( pnlContent, Info.name, Info.icon, node, Info.needsapp )
 		pnlnode:SetExpanded( true )
@@ -167,7 +167,7 @@ function AddPropsOfParent( pnlContent, node, parentid, customProps )
 
 		AddPropsOfParent( pnlContent, pnlnode, Info.id, customProps )
 
-		
+		::continue::
 	end
 
 end

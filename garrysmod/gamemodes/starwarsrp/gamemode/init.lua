@@ -75,39 +75,39 @@ local files, folders = file.Find(fol .. "*", "LUA")
 local SortedPairs = SortedPairs
 
 for _, v in ipairs(files) do
-    if DarkRP.disabledDefaults["modules"][v:Left(-5)] then break end
-    if string.GetExtensionFromFilename(v) ~= "lua" then break end
+    if DarkRP.disabledDefaults["modules"][v:Left(-5)] then goto continue end
+    if string.GetExtensionFromFilename(v) ~= "lua" then goto continue end
     include(fol .. v)
 
-    
+    ::continue::
 end
 
 for _, folder in SortedPairs(folders, true) do
-    if folder == "." or folder == ".." or DarkRP.disabledDefaults["modules"][folder] then break end
+    if folder == "." or folder == ".." or DarkRP.disabledDefaults["modules"][folder] then goto continue end
 
     for _, File in SortedPairs(file.Find(fol .. folder .. "/sh_*.lua", "LUA"), true) do
-        if File == "sh_interface.lua" then break end
+        if File == "sh_interface.lua" then goto continue end
         AddCSLuaFile(fol .. folder .. "/" .. File)
         include(fol .. folder .. "/" .. File)
 
-        
+        ::continue::
     end
 
     for _, File in SortedPairs(file.Find(fol .. folder .. "/sv_*.lua", "LUA"), true) do
-        if File == "sv_interface.lua" then break end
+        if File == "sv_interface.lua" then goto continue end
         include(fol .. folder .. "/" .. File)
 
-        
+        ::continue::
     end
 
     for _, File in SortedPairs(file.Find(fol .. folder .. "/cl_*.lua", "LUA"), true) do
-        if File == "cl_interface.lua" then break end
+        if File == "cl_interface.lua" then goto continue end
         AddCSLuaFile(fol .. folder .. "/" .. File)
 
-        
+        ::continue::
     end
 
-    
+    ::continue::
 end
 
 

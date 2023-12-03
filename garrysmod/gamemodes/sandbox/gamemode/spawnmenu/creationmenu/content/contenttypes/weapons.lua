@@ -8,7 +8,7 @@ hook.Add( "PopulateWeapons", "AddWeaponContent", function( pnlContent, tree, nod
 	-- Build into categories
 	for k, weapon in pairs( Weapons ) do
 
-		if ( not weapon.Spawnable ) then break end
+		if ( not weapon.Spawnable ) then goto continue end
 
 		local Category = weapon.Category or "Other2"
 		if ( not isstring( Category ) ) then Category = tostring( Category ) end
@@ -16,7 +16,7 @@ hook.Add( "PopulateWeapons", "AddWeaponContent", function( pnlContent, tree, nod
 		Categorised[ Category ] = Categorised[ Category ] or {}
 		table.insert( Categorised[ Category ], weapon )
 
-		
+		::continue::
 	end
 
 	Weapons = nil

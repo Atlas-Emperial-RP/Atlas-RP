@@ -5,23 +5,23 @@ local function RetrievePRIVS(len)
     FAdmin.Access.Groups = net.ReadTable()
 
     for k, v in pairs(FAdmin.Access.Groups) do
-        if CAMI.GetUsergroup(k) then break end
+        if CAMI.GetUsergroup(k) then goto continue end
 
         CAMI.RegisterUsergroup({
             Name = k,
             Inherits = FAdmin.Access.ADMIN[v.ADMIN]
         }, "FAdmin")
 
-        
+        ::continue::
     end
 
     -- Remove any groups that are removed from FAdmin from CAMI.
     for k in pairs(CAMI.GetUsergroups()) do
-        if FAdmin.Access.Groups[k] then break end
+        if FAdmin.Access.Groups[k] then goto continue end
 
         CAMI.UnregisterUsergroup(k, "FAdmin")
 
-        
+        ::continue::
     end
 end
 net.Receive("FADMIN_SendGroups", RetrievePRIVS)
@@ -167,11 +167,11 @@ EditGroups = function()
         RunConsoleCommand("_FAdmin", "RemoveGroup", SelectedGroup:GetValue())
 
         for k, v in pairs(SelectedGroup.Choices) do
-            if v ~= SelectedGroup:GetValue() then break end
+            if v ~= SelectedGroup:GetValue() then goto continue end
 
             SelectedGroup.Choices[k] = nil
 
-            
+            ::continue::
             break
         end
         table.ClearKeys(SelectedGroup.Choices)

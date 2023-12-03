@@ -128,7 +128,7 @@ function PANEL:LayoutTiles()
 
 	for k, v in ipairs( self:GetChildren() ) do
 
-		if ( not v:IsVisible() ) then break end
+		if ( not v:IsVisible() ) then goto continue end
 
 		local w = math.ceil( v:GetWide() / ( tilesize + self:GetSpaceX() ) )
 		local h = math.ceil( v:GetTall() / ( tilesize + self:GetSpaceY() ) )
@@ -149,7 +149,7 @@ function PANEL:LayoutTiles()
 
 		LastX = x
 
-		
+		::continue::
 	end
 
 end

@@ -83,7 +83,7 @@ local buyableSchema = fn.FAnd{baseSchema, tc.checkTable{
 -- The command of an entity must be unique
 local uniqueEntity = function(cmd, tbl)
     for _, v in pairs(DarkRPEntities) do
-        if v.cmd ~= cmd then break end
+        if v.cmd ~= cmd then goto continue end
 
         do return
             false,
@@ -93,7 +93,7 @@ local uniqueEntity = function(cmd, tbl)
                 "Fix this by changing the 'cmd' field of your entity to something else."
             } end
 
-        
+        ::continue::
     end
 
     return true

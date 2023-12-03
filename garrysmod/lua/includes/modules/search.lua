@@ -28,9 +28,9 @@ function GetResults( str, types, maxResults )
 
 	for k, v in pairs( Providers ) do
 		if ( isstring( types ) ) then
-			if ( types ~= k ) then break end
+			if ( types ~= k ) then goto continue end
 		elseif ( istable( types ) ) then
-			if ( not table.HasValue( types, k ) ) then break end
+			if ( not table.HasValue( types, k ) ) then goto continue end
 		end
 
 		local tbl = v.func( str )
@@ -40,7 +40,7 @@ function GetResults( str, types, maxResults )
 
 		if ( #results >= maxResults ) then break end
 
-		
+		::continue::
 	end
 
 	-- Todo. Sort, weighted?

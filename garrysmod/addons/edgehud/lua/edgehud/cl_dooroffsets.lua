@@ -21,10 +21,10 @@ timer.Create("EdgeHUD:CheckDoorOffset",1,0,function(  )
 	for k,v in pairs(entities) do
 
 		-- MAke sure the entity is valid, etc.
-		if v == ply or not IsValid(v) or not v:isDoor() then break end
+		if v == ply or not IsValid(v) or not v:isDoor() then goto continue end
 
 		-- Check if we have requested the dooroffsets for the door.
-		if v.EdgeHud_Requested then break end
+		if v.EdgeHud_Requested then goto continue end
 
 		-- Set v.EdgeHUD_Requested to true.
 		v.EdgeHud_Requested = true
@@ -35,7 +35,7 @@ timer.Create("EdgeHUD:CheckDoorOffset",1,0,function(  )
 		-- Check if we have a maximum of 5 doors.
 		if #requiredOffsets >= 5 then break end
 
-		
+		::continue::
 	end
 
 	-- Make sure we have any doors to request.
@@ -58,12 +58,12 @@ net.Receive("EdgeHUD:SendDoorOffsets", function(  )
 	for k,v in pairs(requiredEntities) do
 
 		-- Make sure that the entity exists.
-		if not IsValid(k) then break end
+		if not IsValid(k) then goto continue end
 
 		-- Update the offsets.
 		k.EdgeHUD_DoorOffset = {Angles = Angle(v.pi,v.ya,v.ro), Position = Vector(v.x,v.y,v.z)}
 
-		
+		::continue::
 	end
 
 end)

@@ -143,8 +143,8 @@ function ENT:Setup( ent )
 
 	for k = 0, ent:GetBoneCount() - 1 do
 
-		if ( ent:GetBoneParent( k ) <= 0 ) then break end
-		if ( not ent:BoneHasFlag( k, BONE_USED_BY_VERTEX_LOD0 ) ) then break end
+		if ( ent:GetBoneParent( k ) <= 0 ) then goto continue end
+		if ( not ent:BoneHasFlag( k, BONE_USED_BY_VERTEX_LOD0 ) ) then goto continue end
 
 		local btn = ents.Create( "widget_bone" )
 		btn:FollowBone( ent, k )
@@ -159,7 +159,7 @@ function ENT:Setup( ent )
 
 		self:DeleteOnRemove( btn )
 
-		
+		::continue::
 	end
 
 end

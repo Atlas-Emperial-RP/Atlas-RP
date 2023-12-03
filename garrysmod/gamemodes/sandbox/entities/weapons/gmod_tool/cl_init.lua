@@ -119,9 +119,9 @@ function SWEP:DrawHUD()
 
 		local name = v.name
 
-		if ( not name ) then break end
-		if ( v.stage and v.stage ~= self:GetStage() ) then break end
-		if ( v.op and v.op ~= toolObject:GetOperation() ) then break end
+		if ( not name ) then goto continue end
+		if ( v.stage and v.stage ~= self:GetStage() ) then goto continue end
+		if ( v.op and v.op ~= toolObject:GetOperation() ) then goto continue end
 
 		local txt = "#tool." .. GetConVarString( "gmod_toolmode" ) .. "." .. name
 		if ( name == "info" ) then txt = toolObject:GetHelpText() end
@@ -162,7 +162,7 @@ function SWEP:DrawHUD()
 		end
 
 		h2 = h2 + h
-		
+		::continue::
 	end
 
 	self.InfoBoxHeight = h2 + 8

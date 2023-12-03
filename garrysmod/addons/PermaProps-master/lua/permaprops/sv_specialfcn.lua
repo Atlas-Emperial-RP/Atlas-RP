@@ -72,7 +72,7 @@ PermaProps.SpecialENTSSpawn["prop_ragdoll"] = function( ent, data )
 		for objectid, objectdata in pairs( data["Bones"] ) do
 
 			local Phys = ent:GetPhysicsObjectNum( objectid )
-			if not IsValid( Phys ) then break end
+			if not IsValid( Phys ) then goto continue end
 		
 			if ( isvector( objectdata.Pos ) and isangle( objectdata.Angle ) ) then
 
@@ -86,7 +86,7 @@ PermaProps.SpecialENTSSpawn["prop_ragdoll"] = function( ent, data )
 				end
 
 			end
-			
+			::continue::
 		end
 
 	end
@@ -239,7 +239,7 @@ PermaProps.SpecialENTSSave["prop_ragdoll"] = function( ent )
 	for objectid = 0, num - 1 do
 
 		local obj = ent:GetPhysicsObjectNum( objectid )
-		if ( not obj:IsValid() ) then break end
+		if ( not obj:IsValid() ) then goto continue end
 
 		content.Other["Bones"][ objectid ] = {}
 
@@ -249,7 +249,7 @@ PermaProps.SpecialENTSSave["prop_ragdoll"] = function( ent )
 		if ( obj:IsAsleep() ) then content.Other["Bones"][ objectid ].Sleep = true end
 
 		content.Other["Bones"][ objectid ].Pos, content.Other["Bones"][ objectid ].Angle = WorldToLocal( content.Other["Bones"][ objectid ].Pos, content.Other["Bones"][ objectid ].Angle, Vector( 0, 0, 0 ), Angle( 0, 0, 0 ) )
-		
+		::continue::
 	end
 
 	if ( ent:HasBoneManipulations() ) then

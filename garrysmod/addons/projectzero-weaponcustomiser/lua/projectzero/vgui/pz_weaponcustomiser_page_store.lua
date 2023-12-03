@@ -339,13 +339,13 @@ function PANEL:Refresh()
         local categoryPanel = categoryPanels[v.Category]
         if( not IsValid( categoryPanel ) ) then
             print( "[PROJECT0] Error, shop category does not exist for item ID: " .. k )
-            break
+            goto continue
         end
 
         local itemInfo = cosmeticTypes[v.Type].GetItemInfo( v.ItemID )
         if( not itemInfo ) then
             print( "[PROJECT0] Error, shop item info does not exist for item ID: " .. k )
-            break
+            goto continue
         end
 
         local ownsCosmetic = LocalPlayer():Project0():GetOwnsCosmeticType( v.Type, v.ItemID, v.Weapons )
@@ -406,7 +406,7 @@ function PANEL:Refresh()
 
         categoryPanel.slotCount = (categoryPanel.slotCount or 0)+1
         categoryPanel:SetExtraHeight( math.ceil(categoryPanel.slotCount/slotsWide)*((self.slotSize*1.2)+spacing) )
-        
+        ::continue::
     end
 end
 

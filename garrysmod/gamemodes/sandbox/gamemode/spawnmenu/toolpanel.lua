@@ -36,7 +36,7 @@ function PANEL:Init()
 			end
 
 			for id, item in ipairs( category:GetChildren() ) do
-				if ( item == category.Header ) then break end
+				if ( item == category.Header ) then goto continue end
 
 				local str = item.Text
 				if ( str:StartWith( "#" ) ) then str = str:sub( 2 ) end
@@ -50,7 +50,7 @@ function PANEL:Init()
 				end
 				item:InvalidateLayout()
 
-				
+				::continue::
 			end
 
 			if ( count < 1 and not category_matched ) then
@@ -159,7 +159,7 @@ function PANEL:SetActiveToolText( str )
 	for id, category in ipairs( self.List.pnlCanvas:GetChildren() ) do
 
 		for id, item in ipairs( category:GetChildren() ) do
-			if ( item == category.Header ) then break end
+			if ( item == category.Header ) then goto continue end
 
 			if ( item.Name == str ) then
 				self.List:UnselectAll()
@@ -167,7 +167,7 @@ function PANEL:SetActiveToolText( str )
 				return
 			end
 
-			
+			::continue::
 		end
 
 	end

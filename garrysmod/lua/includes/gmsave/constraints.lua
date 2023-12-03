@@ -38,12 +38,12 @@ function gmsave.ConstraintSaveList( ents )
 
 	for k, v in pairs( ents ) do
 
-		if ( not IsValid( v ) ) then break end
-		if ( not v:IsConstraint() ) then break end
+		if ( not IsValid( v ) ) then goto continue end
+		if ( not v:IsConstraint() ) then goto continue end
 
 		SavedConstraints[ k ] = gmsave.ConstraintSave( v )
 
-		
+		::continue::
 	end
 
 	return SavedConstraints
@@ -81,11 +81,11 @@ function gmsave.ConstraintsLoadFromTable( tab, ents )
 	for k, v in pairs( tab ) do
 
 		local ent = ents[ k ]
-		if ( not IsValid( ent ) ) then break end
+		if ( not IsValid( ent ) ) then goto continue end
 
 		gmsave.ConstraintLoad( v, ent, ents )
 
-		
+		::continue::
 	end
 
 end

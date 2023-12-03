@@ -13,9 +13,9 @@ function PANEL:Refresh()
 
     local function GetRarityFromOrder( order )
         for k, v in pairs( values ) do
-            if( v.Order ~= order ) then break end
+            if( v.Order ~= order ) then goto continue end
             do return k end
-            
+            ::continue::
         end
 
         return nil

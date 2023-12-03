@@ -344,10 +344,10 @@ function DarkRP.hooks:playerArrested(ply, time, arrester)
 
     local phrase = DarkRP.getPhrase("hes_arrested", ply:Nick(), time)
     for _, v in ipairs(player.GetAll()) do
-        if v == ply then break end
+        if v == ply then goto continue end
         v:PrintMessage(HUD_PRINTCENTER, phrase)
 
-        
+        ::continue::
     end
 
     local steamID = ply:SteamID()

@@ -89,12 +89,12 @@ local EntityPhysics =
 		for objectid = 0, num-1 do
 
 			local obj = Entity:GetPhysicsObjectNum( objectid )
-			if ( not IsValid( obj ) ) then break end
+			if ( not IsValid( obj ) ) then goto continue end
 
 			data[ objectid ] = {}
 			PhysicsObject.Save( data[ objectid ], obj )
 
-			
+			::continue::
 		end
 
 	end,
@@ -109,11 +109,11 @@ local EntityPhysics =
 		for objectid, objectdata in pairs( data ) do
 
 			local Phys = Entity:GetPhysicsObjectNum( objectid )
-			if ( not IsValid( Phys ) ) then break end
+			if ( not IsValid( Phys ) ) then goto continue end
 
 			PhysicsObject.Load( objectdata, Phys )
 
-			
+			::continue::
 		end
 
 	end,
@@ -576,8 +576,8 @@ function WorkoutSize( Ents )
 
 	for k, v in pairs( Ents ) do
 
-		if ( not v.Mins or not v.Maxs ) then break end
-		if ( not v.Angle or not v.Pos ) then break end
+		if ( not v.Mins or not v.Maxs ) then goto continue end
+		if ( not v.Angle or not v.Pos ) then goto continue end
 
 		--
 		-- Rotate according to the entitynot 
@@ -604,7 +604,7 @@ function WorkoutSize( Ents )
 		maxs.y = math.max( maxs.y, t1.y, t2.y, t3.y, t4.y, b1.y, b2.y, b3.y, b4.y )
 		maxs.z = math.max( maxs.z, t1.z, t2.z, t3.z, t4.z, b1.z, b2.z, b3.z, b4.z )
 
-		
+		::continue::
 	end
 
 	return mins, maxs
@@ -788,7 +788,7 @@ function Paste( Player, EntityList, ConstraintList )
 
 		local e = nil
 		local b = ProtectedCall( function() e = CreateEntityFromTable( Player, v ) end )
-		if ( not b ) then break end
+		if ( not b ) then goto continue end
 
 		if ( IsValid( e ) ) then
 
@@ -819,7 +819,7 @@ function Paste( Player, EntityList, ConstraintList )
 
 		end
 
-		
+		::continue::
 	end
 
 	--
@@ -894,7 +894,7 @@ function ApplyBoneModifiers( Player, Ent )
 	for Bone, Types in pairs( Ent.BoneMods ) do
 
 		-- The physics object isn't valid, skip it.
-		if ( not Ent.PhysicsObjects[ Bone ] ) then break end
+		if ( not Ent.PhysicsObjects[ Bone ] ) then goto continue end
 
 		-- Loop through each modifier on this bone
 		for Type, Data in pairs( Types ) do
@@ -907,7 +907,7 @@ function ApplyBoneModifiers( Player, Ent )
 
 		end
 
-		
+		::continue::
 	end
 
 end

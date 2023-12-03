@@ -83,11 +83,11 @@ local function unragdoll(target)
         target.FAdminRagdoll:Remove()
     elseif istable(target.FAdminRagdoll) then
         for _, v in pairs(target.FAdminRagdoll) do
-            if not IsValid(v) then break end
+            if not IsValid(v) then goto continue end
             if v.SetCanRemove then v:SetCanRemove(true) end
             v:Remove()
 
-            
+            ::continue::
         end
     end
     target.FAdminRagdoll = nil
@@ -200,7 +200,7 @@ local function Ragdoll(ply, cmd, args)
 
     for _, target in pairs(targets) do
         if not FAdmin.Access.PlayerHasPrivilege(ply, "Ragdoll", target) then FAdmin.Messages.SendMessage(ply, 5, "No access!") return false end
-        if not IsValid(target) then break end
+        if not IsValid(target) then goto continue end
         if RagdollType == "unragdoll" or string.lower(cmd) == "unragdoll" and target:FAdmin_GetGlobal("fadmin_ragdolled") then
             unragdoll(target)
         elseif RagdollType == "normal" or RagdollType == "ragdoll" then
@@ -279,7 +279,7 @@ local function Ragdoll(ply, cmd, args)
             target:FAdmin_SetGlobal("fadmin_ragdolled", true)
         end
 
-        
+        ::continue::
     end
     if RagdollType == "unragdoll" or string.lower(cmd) == "unragdoll" then
         FAdmin.Messages.FireNotification("unragdoll", ply, targets)

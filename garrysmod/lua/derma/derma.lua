@@ -62,7 +62,7 @@ local function ReloadClass( classname )
 
 	for k, v in pairs ( tbl ) do
 
-		if ( not v.AllowAutoRefresh ) then break end
+		if ( not v.AllowAutoRefresh ) then goto continue_1 end
 
 		if ( v.PreAutoRefresh ) then
 			v:PreAutoRefresh()
@@ -70,18 +70,18 @@ local function ReloadClass( classname )
 
 		for name, func in pairs( ctrl ) do
 
-			if ( not isfunction( func ) ) then break end
+			if ( not isfunction( func ) ) then goto continue_2 end
 
 			v[ name ] = func
 
-			
+			::continue_2::
 		end
 
 		if ( v.PostAutoRefresh ) then
 			v:PostAutoRefresh()
 		end
 
-		
+		::continue_1::
 	end
 
 end

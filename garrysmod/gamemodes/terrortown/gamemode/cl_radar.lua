@@ -170,7 +170,7 @@ function RADAR:Draw(client)
 
       scrpos = tgt.pos:ToScreen()
       if not scrpos.visible then
-         break
+         goto continue
       end
       md = mpos:Distance(Vector(scrpos.x, scrpos.y, 0))
       if md < near_cursor_dist then
@@ -197,7 +197,7 @@ function RADAR:Draw(client)
 
       DrawTarget(tgt, 24, 0)
 
-      
+      ::continue::
    end
 
    -- Time until next scan

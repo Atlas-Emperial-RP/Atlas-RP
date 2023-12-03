@@ -134,13 +134,13 @@ function PANEL:Refresh()
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
                     local type, itemKey = PROJECT0.FUNC.ReverseCosmeticKey( k )
-                    if( type ~= PROJECT0.COSMETIC_TYPES.CHARM ) then break end
+                    if( type ~= PROJECT0.COSMETIC_TYPES.CHARM ) then goto continue end
             
                     local configTable = PROJECT0.CONFIG.CUSTOMISER.Charms[itemKey]
-                    if( not configTable ) then break end
+                    if( not configTable ) then goto continue end
 
                     table.insert( items, { configTable.Rarity, itemKey, configTable.Name } )
-                    
+                    ::continue::
                 end
 
                 return items
@@ -162,13 +162,13 @@ function PANEL:Refresh()
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
                     local type, itemKey = PROJECT0.FUNC.ReverseCosmeticKey( k )
-                    if( type ~= PROJECT0.COSMETIC_TYPES.STICKER ) then break end
+                    if( type ~= PROJECT0.COSMETIC_TYPES.STICKER ) then goto continue end
             
                     local configTable = PROJECT0.CONFIG.CUSTOMISER.Stickers[itemKey]
-                    if( not configTable ) then break end
+                    if( not configTable ) then goto continue end
             
                     table.insert( items, { configTable.Rarity, itemKey, configTable.Name } )
-                    
+                    ::continue::
                 end
 
                 return items
@@ -192,10 +192,10 @@ function PANEL:Refresh()
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetOwnedSkins() ) do
                     local devConfig = PROJECT0.DEVCONFIG.WeaponSkins[k]
-                    if( not devConfig ) then break end
+                    if( not devConfig ) then goto continue end
 
                     table.insert( items, { PROJECT0.FUNC.GetSkinRarity( k ), k, devConfig.Name } )
-                    
+                    ::continue::
                 end
 
                 return items
@@ -227,15 +227,15 @@ function PANEL:Refresh()
 
     local sortedItems = {}
     for type, cosmeticType in pairs( cosmeticTypes ) do
-        if( self.unselectedTypes[type] ) then break end
+        if( self.unselectedTypes[type] ) then goto continue end
 
         for k, v in pairs( cosmeticType.GetOwnedItems() ) do
-            if( not string.find( string.lower( v[3] ), string.lower( self.searchBar:GetValue() ) ) ) then break end
+            if( not string.find( string.lower( v[3] ), string.lower( self.searchBar:GetValue() ) ) ) then goto continue end
 
             table.insert( sortedItems, { type, v } )
-            
+            ::continue::
         end
-        
+        ::continue::
     end
 
     self.sortTypes[self.sortType].SortItems( sortedItems )
