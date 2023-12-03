@@ -5,10 +5,10 @@ hook.Add("PlayerSpawn", "HMPlayerSpawn", HMPlayerSpawn)
 
 local function HMThink()
     for _, v in ipairs(player.GetAll()) do
-        if not v:Alive() then goto continue end
+        if not v:Alive() then break end
         v:hungerUpdate()
 
-        ::continue::
+        
     end
 end
 timer.Create("HMThink", 10, 0, HMThink)
@@ -35,7 +35,7 @@ local function BuyFood(ply, args)
     end
 
     for _, v in pairs(FoodItems) do
-        if string.lower(args) ~= string.lower(v.name) then goto continue end
+        if string.lower(args) ~= string.lower(v.name) then break end
 
         if (v.requiresCook == nil or v.requiresCook == true) and not ply:isCook() then
             DarkRP.notify(ply, 1, 4, DarkRP.getPhrase("unable", "/buyfood", DarkRP.getPhrase("cooks_only")))
@@ -99,7 +99,7 @@ local function BuyFood(ply, args)
         hook.Call("playerBoughtFood", nil, ply, v, SpawnedFood, cost)
 
         do return "" end
-        ::continue::
+        
     end
     DarkRP.notify(ply, 1, 4, DarkRP.getPhrase("invalid_x", DarkRP.getPhrase("arguments"), ""))
     return ""

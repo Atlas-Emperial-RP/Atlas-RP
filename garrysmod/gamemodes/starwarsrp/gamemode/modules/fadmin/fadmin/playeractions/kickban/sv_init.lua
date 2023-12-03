@@ -265,14 +265,14 @@ hook.Add("DarkRPDBInitialized", "FAdmin_Retrievebans", function()
             v.time = tonumber(v.time)
             if v.time and v.time < os.time() then
                 FAdmin.BANS[string.upper(k)] = nil
-                goto continue
+                break
             elseif not v.time then
-                goto continue
+                break
             end
 
             hook.Call("FAdmin_StoreBan", nil, string.upper(k), v.name, (v.time - os.time()) / 60, v.reason, v.adminname, v.adminsteam)
 
-            ::continue::
+            
         end
         file.Delete("FAdmin/Bans.txt", "DATA")
     end
@@ -305,14 +305,14 @@ end)
 
 hook.Add("PlayerDisconnected", "FAdmin bans", function(ply)
     for k,v in pairs(StartBannedUsers) do
-        if v.author ~= ply then goto continue end
+        if v.author ~= ply then break end
         StartBannedUsers[k] = nil
         local target = player.GetBySteamID(k)
-        if not IsValid(target) then goto continue end
+        if not IsValid(target) then break end
         SendUserMessage("FAdmin_ban_cancel", target)
         target:UnLock()
         target:Spawn()
 
-        ::continue::
+        
     end
 end)

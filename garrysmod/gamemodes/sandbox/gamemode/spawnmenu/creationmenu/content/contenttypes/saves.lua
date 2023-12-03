@@ -18,7 +18,7 @@ spawnmenu.AddCreationTab( "#spawnmenu.category.saves", function()
 
 		for k, v in ipairs( f ) do
 
-			if ( k <= offset ) then goto continue end
+			if ( k <= offset ) then break end
 			if ( k > offset + perpage ) then break end
 
 			local entry = {
@@ -30,7 +30,7 @@ spawnmenu.AddCreationTab( "#spawnmenu.category.saves", function()
 
 			table.insert( saves, entry )
 
-			::continue::
+			
 		end
 
 		local results = {

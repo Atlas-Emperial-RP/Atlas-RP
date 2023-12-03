@@ -226,7 +226,7 @@ if EdgeHUD.Configuration.GetConfigValue( "TopRight" ) then
 				curWidget:SetVisible(true)
 			else
 				curWidget:SetVisible(false)
-				goto continue
+				break
 			end
 
 			--Set the panel position.
@@ -235,7 +235,7 @@ if EdgeHUD.Configuration.GetConfigValue( "TopRight" ) then
 			--Calculate the rest of the detailsPos.
 			detailsPos = detailsPos + VARS.ElementsMargin + detailWidgetsHeight
 			
-			::continue::
+			
 		end
 
 	end)

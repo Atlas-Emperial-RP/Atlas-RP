@@ -334,19 +334,19 @@ spawnmenu.AddContentType( "npc", function( container, obj )
 
 		local weaps = {}
 		for _, class in pairs( obj.weapon ) do
-			if ( class == "" ) then goto continue end
+			if ( class == "" ) then break end
 			weaps[ language.GetPhrase( class ) ] = class
 
-			::continue::
+			
 		end
 		addWeps( subMenu, weaps )
 
 		local weaps = {}
 		for _, t in pairs( list.Get( "NPCUsableWeapons" ) ) do
-			if ( table.HasValue( obj.weapon, t.class ) ) then goto continue end
+			if ( table.HasValue( obj.weapon, t.class ) ) then break end
 			weaps[ language.GetPhrase( t.title ) ] = t.class
 
-			::continue::
+			
 		end
 		addWeps( subMenu, weaps )
 

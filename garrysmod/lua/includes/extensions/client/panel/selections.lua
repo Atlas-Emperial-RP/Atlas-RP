@@ -167,11 +167,11 @@ function meta:GetChildrenInRect( x, y, w, h )
 
 		local vw, vh = v:GetSize()
 
-		if ( not self:IsVisible() ) then goto continue end
-		if ( x > v.x + vw ) then goto continue end
-		if ( y > v.y + vh ) then goto continue end
-		if ( v.x > x + w ) then goto continue end
-		if ( v.y > y + h ) then goto continue end
+		if ( not self:IsVisible() ) then break end
+		if ( x > v.x + vw ) then break end
+		if ( y > v.y + vh ) then break end
+		if ( v.x > x + w ) then break end
+		if ( v.y > y + h ) then break end
 
 		if ( v.m_bSelectable ) then
 			table.insert( tab, v )
@@ -179,7 +179,7 @@ function meta:GetChildrenInRect( x, y, w, h )
 
 		table.Add( tab, v:GetChildrenInRect( x - v.x, y - v.y, w, h ) )
 
-		::continue::
+		
 	end
 
 

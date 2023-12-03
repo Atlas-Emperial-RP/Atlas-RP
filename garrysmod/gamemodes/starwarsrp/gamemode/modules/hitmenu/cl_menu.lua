@@ -118,7 +118,7 @@ function PANEL:AddPlayerRows()
 
     for _, v in ipairs(players) do
         local canRequest = hook.Call("canRequestHit", DarkRP.hooks, self:GetHitman(), LocalPlayer(), v, self:GetHitman():getHitPrice())
-        if not canRequest then goto continue end
+        if not canRequest then break end
 
         local line = vgui.Create("HitmanMenuPlayerRow")
         line:SetPlayer(v)
@@ -137,7 +137,7 @@ function PANEL:AddPlayerRows()
             self:SetSelected(line)
         end
 
-        ::continue::
+        
     end
 end
 

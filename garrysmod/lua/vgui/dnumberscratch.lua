@@ -194,14 +194,14 @@ function PANEL:DrawNotches( level, x, y, w, h, range, value, min, max )
 
 		local nx = mid + n * size
 
-		if ( nx > x + w or nx < x ) then goto continue end
+		if ( nx > x + w or nx < x ) then break end
 
 		local dist = 1 - ( math.abs( halfw - nx + x ) / w )
 
 		local val = ( nx - realmid ) / self:GetZoom()
 
-		if ( val <= min + 0.001 ) then goto continue end
-		if ( val >= max - 0.001 ) then goto continue end
+		if ( val <= min + 0.001 ) then break end
+		if ( val >= max - 0.001 ) then break end
 
 		surface.SetDrawColor( 0, 0, 0, alpha * dist )
 		surface.SetTextColor( 0, 0, 0, alpha * dist )
@@ -213,7 +213,7 @@ function PANEL:DrawNotches( level, x, y, w, h, range, value, min, max )
 		surface.SetTextPos( nx - ( tw * 0.5 ), y + top - th )
 		surface.DrawText( val )
 
-		::continue::
+		
 	end
 
 	surface.SetDrawColor( 0, 0, 0, alpha )

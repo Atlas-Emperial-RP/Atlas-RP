@@ -39,10 +39,13 @@ function ENT:Touch( ent )
 	for k, v in pairs( ConfigurationMedicMod.Drugs ) do
 		drug = k
 		for product, val in pairs( ConfigurationMedicMod.Drugs[k] ) do
-			if product ~= "func" or product ~= "price" or product ~= ent:GetProduct1() or product ~= ent:GetProduct2() or product ~= ent:GetProduct3() then 
+			if product == "func" or product == "price" or product == ent:GetProduct1() or product == ent:GetProduct2() or product == ent:GetProduct3() then
+				break
+			else
 				drug = nil
 				break
 			end
+			
 		end
 		
 		if drug then break end

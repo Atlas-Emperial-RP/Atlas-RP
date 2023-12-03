@@ -1,8 +1,9 @@
 local function onBought(ply, ent)
     for _, v in pairs(ent.Seats or {}) do
-        if IsValid(v) or v:isKeysOwnable() then  
+        if not IsValid(v) or not v:isKeysOwnable() then break end
         v:keysOwn(ply)
-        end
+
+        
     end
 end
 hook.Add("playerBoughtVehicle", "PassengerModCompatibility", onBought)

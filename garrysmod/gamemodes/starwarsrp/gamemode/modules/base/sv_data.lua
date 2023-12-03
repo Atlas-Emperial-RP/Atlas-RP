@@ -236,11 +236,11 @@ function migrateDB(callback)
 
                 for i, row in pairs(oldData) do
                     local teamcmd = (RPExtraTeams[tonumber(row.team)] or {}).command
-                    if not teamcmd then goto continue end
+                    if not teamcmd then break end
 
                     MySQLite.queueQuery(string.format([[INSERT INTO darkrp_jobspawn(id, teamcmd) VALUES(%s, %s)]], row.id, MySQLite.SQLStr(teamcmd)))
 
-                    ::continue::
+                    
                 end
 
                 MySQLite.queueQuery([[REPLACE INTO darkrp_dbversion VALUES(20181014)]])
@@ -404,7 +404,7 @@ function DarkRP.storeOfflineMoney(sid64, amount)
             "If you are a server owner, please look closely to the files mentioned in this error",
             "After all, these files will tell you WHICH addon is doing it",
             "This is NOT a DarkRP bug!",
-            "Your server will goto continue working normally",
+            "Your server will break working normally",
             "But whichever addon just tried to store an offline player's money",
             "Will NOT take effect!"
         })
@@ -506,7 +506,7 @@ function setUpNonOwnableDoors()
         for _, row in pairs(r) do
             local e = DarkRP.doorIndexToEnt(tonumber(row.idx))
 
-            if not IsValid(e) then goto continue end
+            if not IsValid(e) then break end
             if e:isKeysOwnable() then
                 if tobool(row.isDisabled) then
                     e:setKeysNonOwnable(tobool(row.isDisabled))
@@ -517,7 +517,7 @@ function setUpNonOwnableDoors()
                 e:setKeysTitle(row.title ~= "NULL" and row.title or nil)
             end
 
-            ::continue::
+            
         end
     end)
 end
@@ -557,7 +557,7 @@ function setUpTeamOwnableDoors()
             row.idx = tonumber(row.idx)
 
             local e = DarkRP.doorIndexToEnt(row.idx)
-            if not IsValid(e) then goto continue end
+            if not IsValid(e) then break end
 
             local _, job = DarkRP.getJobByCommand(row.job)
 
@@ -568,7 +568,7 @@ function setUpTeamOwnableDoors()
                 MySQLite.query(("DELETE FROM darkrp_doorjobs WHERE idx = %d AND map = %s AND job = %s;"):format(row.idx, MySQLite.SQLStr(map), MySQLite.SQLStr(row.job)))
             end
 
-            ::continue::
+            
         end
     end)
 end
@@ -595,13 +595,13 @@ function setUpGroupDoors()
             local ent = DarkRP.doorIndexToEnt(tonumber(row.idx))
 
             if not IsValid(ent) or not ent:isKeysOwnable() then
-                goto continue
+                break
             end
 
-            if not RPExtraTeamDoorIDs[row.doorgroup] then goto continue end
+            if not RPExtraTeamDoorIDs[row.doorgroup] then break end
             ent:setDoorGroup(row.doorgroup)
 
-            ::continue::
+            
         end
     end)
 end

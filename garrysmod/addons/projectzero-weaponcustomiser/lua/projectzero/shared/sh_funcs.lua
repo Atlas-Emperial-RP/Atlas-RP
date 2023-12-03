@@ -21,9 +21,9 @@ end
 function PROJECT0.FUNC.GetFirstRarity()
 	local lowest
 	for k, v in pairs( PROJECT0.CONFIG.GENERAL.Rarities ) do
-		if( lowest and PROJECT0.CONFIG.GENERAL.Rarities[lowest].Order <= v.Order ) then goto continue end
+		if( lowest and PROJECT0.CONFIG.GENERAL.Rarities[lowest].Order <= v.Order ) then break end
 		lowest = k
-		::continue::
+		
 	end
 
 	return lowest

@@ -9,15 +9,15 @@ function ents.FindByClassAndParent( classname, entity )
 	local out = {}
 	for k, v in ipairs( list ) do
 
-		if ( not IsValid(v) ) then goto continue end
+		if ( not IsValid(v) ) then break end
 
 		local p = v:GetParent()
-		if ( not IsValid(p) ) then goto continue end
-		if ( p ~= entity ) then goto continue end
+		if ( not IsValid(p) ) then break end
+		if ( p ~= entity ) then break end
 
 		table.insert( out, v )
 		
-		::continue::
+		
 	end
 
 	if ( #out == 0 ) then return end

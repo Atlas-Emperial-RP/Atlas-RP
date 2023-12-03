@@ -185,7 +185,7 @@ local function playerSay(talker, message)
     local talkerName = talker:Nick()
     local col = Color(255, 255, 255, 255)
     for _, ply in ipairs(player.GetAll()) do
-        if ply == talker or not ply.FSpectating then goto continue end
+        if ply == talker or not ply.FSpectating then break end
 
         local shootPos = talker:GetShootPos()
         local FSpectatingEnt = ply.FSpectatingEnt
@@ -210,7 +210,7 @@ local function playerSay(talker, message)
             return
         end
 
-        ::continue::
+        
     end
 end
 hook.Add("PlayerSay", "FSpectate", playerSay)

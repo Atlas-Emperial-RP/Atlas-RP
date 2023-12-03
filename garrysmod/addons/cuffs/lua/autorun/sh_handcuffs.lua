@@ -351,7 +351,7 @@ if CLIENT then
 		local allCuffs = ents.FindByClass( "weapon_handcuffed" )
 		for i=1,#allCuffs do
 			local cuff = allCuffs[i]
-			if not (IsValid(cuff) and IsValid(cuff.Owner) and cuff.GetRopeLength and cuff:GetRopeLength()>0 and cuff.GetKidnapper and IsValid(cuff:GetKidnapper())) then goto continue end
+			if not (IsValid(cuff) and IsValid(cuff.Owner) and cuff.GetRopeLength and cuff:GetRopeLength()>0 and cuff.GetKidnapper and IsValid(cuff:GetKidnapper())) then break end
 			
 			local kidnapper = cuff:GetKidnapper()
 			local kidPos = (kidnapper:IsPlayer() and kidnapper:GetPos() + Vector(0,0,37)) or kidnapper:GetPos()
@@ -390,7 +390,7 @@ if CLIENT then
 			render.DrawBeam( kidPos, pos, 0.7, 0, 5, Col.Rope )
 			render.DrawBeam( pos, kidPos, -0.7, 0, 5, Col.Rope )
 
-			::continue::
+			
 		end
 	end)
 	

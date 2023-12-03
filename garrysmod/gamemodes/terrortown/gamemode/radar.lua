@@ -22,11 +22,11 @@ local function RadarScan(ply, cmd, args)
 
          local targets = {}
          for k, p in ipairs(scan_ents) do
-            if ply == p or (not IsValid(p)) then goto continue end
+            if ply == p or (not IsValid(p)) then break end
 
             if p:IsPlayer() then
-               if not p:IsTerror() then goto continue end
-               if p:GetNWBool("disguised", false) and (not ply:IsTraitor()) then goto continue end
+               if not p:IsTerror() then break end
+               if p:GetNWBool("disguised", false) and (not ply:IsTraitor()) then break end
             end
 
             local pos = p:LocalToWorld(p:OBBCenter())
@@ -51,7 +51,7 @@ local function RadarScan(ply, cmd, args)
 
             table.insert(targets, {role=role, pos=pos})
 
-            ::continue::
+            
          end
 
          net.Start("TTT_Radar")
