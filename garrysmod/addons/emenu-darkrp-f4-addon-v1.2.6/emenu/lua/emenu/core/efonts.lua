@@ -1,6 +1,6 @@
-------------
+--[[----------
 /* FONTS  */
-------------
+------------]]
 -- All fonts are automatically added from the resource/efonts folder
 
 local defaultfont = "Amsterdam" --This is not the name of the FILE but the name of the FONT
@@ -18,9 +18,9 @@ local function Font(size,weight,fontfamily)
 end
 
 
-----------------------
+--[[--------------------
 /// CREATING FONTS ///
-----------------------
+----------------------]]
 --12
 Font(12,500) -- emenu_12_500
 

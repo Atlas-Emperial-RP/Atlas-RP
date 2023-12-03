@@ -41,9 +41,9 @@ emenu.Materials = {
 
 
 
-------------------------
+--[[----------------------
 /// LOADER FUNCTIONS ///
-------------------------
+------------------------]]
 local epath = "emenu/" 
 
 if (SERVER) then
@@ -158,9 +158,9 @@ end
 
 
 
------------------
+--[[---------------
 /// MAIN LOAD ///
------------------
+-----------------]]
 -- Adds all fonts to server load
 emenu.loader:ResourceAddFile("resource/fonts/amsterdam.ttf")
 

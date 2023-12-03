@@ -1,12 +1,12 @@
---------------
+--[[------------
 /// COLORS ///
---------------
+--------------]]
 emenu.colors.jobs[emenu.text["favorite"]] = Color(255,107,129)
 emenu.colors.jobs[emenu.text["recent"]]   = Color(138,43,226)
 
-------------------
+--[[----------------
 /// HL2 MODELS ///
-------------------
+------------------]]
 local halflife2 = {
 	["weapon_bugbait"] = { PrintName = "Bugbait", WorldModel = "models/weapons/w_bugbait.mdl" },
 	["weapon_357"] = { PrintName = ".357 Magnum", WorldModel = "models/weapons/w_357.mdl" },
@@ -24,17 +24,17 @@ local halflife2 = {
 }
 
 
------------------
+--[[---------------
 /// FUNCTIONS ///
------------------
+-----------------]]
 emenu.jobs = emenu.jobs or {}
 emenu.jobs.needupdate = false
 emenu.jobs.list = {}
 
 
-----------------
+--[[--------------
 /// FAVORITE ///
-----------------
+----------------]]
 emenu.jobs.favorite = emenu.jobs.favorite or {}
 emenu.jobs.favorite.list = emenu.jobs.favorite.list or {}
 local filename = "favorite_jobs"
@@ -78,9 +78,9 @@ end
 
 
 
---------------
+--[[------------
 /// RECENT ///
---------------
+--------------]]
 emenu.jobs.recent = emenu.jobs.recent or {}
 local function AddRecentJob(job)
 	if not DarkRP then return end
@@ -107,9 +107,9 @@ local function AddRecentJob(job)
 end
 
 
---------------------
+--[[------------------
 /// JOB LIST GEN ///
---------------------
+--------------------]]
 function emenu.jobs:GenerateJobs()
 	self.list.categories = {}
 	local ply = LocalPlayer()
@@ -119,9 +119,9 @@ function emenu.jobs:GenerateJobs()
 	if not istable(tbl) then return end
 	tbl = tbl["jobs"]
 
-	----------------
+	--[[--------------
 	/// FAVORITE ///
-	----------------
+	----------------]]
 	if istable(self.favorite.list) then
 		for id,bool in pairs(self.favorite.list) do
 			if not self.list.categories[emenu.text["favorite"]] then
@@ -140,13 +140,13 @@ function emenu.jobs:GenerateJobs()
 		end
 	end
 
-	--------------
+	--[[------------
 	/// RECENT ///
-	--------------
+	--------------]]
 	for _,v in ipairs(self.recent) do
 		local job = RPExtraTeams[v]
 		if job then
-			if job.favorite then continue end
+			if job.favorite then break end
 			if not self.list.categories[emenu.text["recent"]] then
 				self.list.categories[emenu.text["recent"]] = {}
 			end
@@ -159,9 +159,9 @@ function emenu.jobs:GenerateJobs()
 		table.insert(self.list.sequence,emenu.text["recent"])
 	end
 
-	--------------------
+	--[[------------------
 	/// CURRENT JOBS ///
-	--------------------
+	--------------------]]
 	for id, category in ipairs(tbl) do
 		local catname = category.name
 		local members = category.members
@@ -186,9 +186,9 @@ end
 
 
 
--------------
+--[[-----------
 /// PANEL ///
--------------
+-------------]]
 local function func(bg)
 	if not IsValid(bg) then return end
 	if not DarkRP then return end
@@ -235,7 +235,7 @@ local function func(bg)
 				end
 
 				if job.private and not customcheck then
-					continue
+					break
 				end
 
 				if not IsColor(job.color) then job.color = Color(255,255,255) end
@@ -274,9 +274,9 @@ local function func(bg)
 				end
 
 
-				--------------
+				--[[------------
 				/// MODELS ///
-				--------------
+				--------------]]
 				local models = job.model
 				local model = models
 				if istable(models) then
@@ -388,9 +388,9 @@ local function func(bg)
 				end
 
 
-				-------------------
+				--[[-----------------
 				/// DESCRIPTION ///
-				-------------------
+				-------------------]]
 				local descpnl = jobpan:Add("DPanel")
 				descpnl:SetSize(jobpan:GetWide()-5,jobModel:GetWide(),jobpan:GetTall())
 				descpnl:SetX(5+jobModel:GetX()+jobModel:GetWide())
@@ -439,9 +439,9 @@ local function func(bg)
 					end
 				end
 
-				-----------------
+				--[[---------------
 				/// JOB PANEL ///
-				-----------------
+				-----------------]]
 				function jobpan:DoClick()
 					if IsValid(content.slidebg) then
 						content.slidebg:Close()
@@ -877,9 +877,9 @@ local function func(bg)
 
 				end
 
-				--------------------
+				--[[------------------
 				/// CONTEXT MENU ///
-				--------------------
+				--------------------]]
 				function jobpan:DoRightClick()
 					local context = vgui.Create("emenu.contextmenu",bg)
                 	context:SetWide(bg:GetWide()*0.1)
@@ -932,9 +932,9 @@ local function func(bg)
 	CreateList()
 
 
-	------------------------
+	--[[----------------------
 	/// UPDATE FUNCTIONS ///
-	------------------------
+	------------------------]]
 	local oldscroll = 0 
 	function pnl:UpdateList()
 		if not emenu:IsActive() then return end

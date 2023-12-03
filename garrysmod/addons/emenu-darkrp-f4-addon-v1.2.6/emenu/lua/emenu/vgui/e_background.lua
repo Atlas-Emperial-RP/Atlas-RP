@@ -1,6 +1,6 @@
-----------------------
+--[[--------------------
 /// EFFECT MANAGER ///
-----------------------
+----------------------]]
 CreateClientConVar("emenu_effect", "1", true, false, "emenu effect on / off", 0, 1)
 emenu.EffectManager = {}
 local EffectManager = emenu.EffectManager
@@ -118,9 +118,9 @@ end
 
 
 
----------------
+--[[-------------
 /// EFFECTS ///
----------------
+---------------]]
 -- Requirements for the effect:
 -- 1) New panel must be created
 -- 2) Panel must be returned in function

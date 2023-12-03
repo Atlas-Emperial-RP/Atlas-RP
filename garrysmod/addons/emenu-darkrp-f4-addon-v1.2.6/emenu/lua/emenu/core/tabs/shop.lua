@@ -1,11 +1,11 @@
-------------------
+--[[----------------
 /// INITIALIZE ///
-------------------
+------------------]]
 emenu.shop = {}
 
------------------
+--[[---------------
 /// FUNCTIONS ///
------------------
+-----------------]]
 --https://github.com/FPtje/DarkRP/blob/master/gamemode/modules/f4menu/cl_entitiestab.lua
 function emenu.shop:CanBuyWeapons(ship)
     local ply = LocalPlayer()
@@ -99,9 +99,9 @@ end
 
 
 
-----------------
+--[[--------------
 /// FAVORITE ///
-----------------
+----------------]]
 emenu.shop.favorite = {}
 emenu.shop.favorite.list = emenu.shop.favorite.list or {}
 local filename = "favorite_entities"
@@ -145,9 +145,9 @@ function emenu.shop.favorite:Remove(tab,cmd)
 end
 
 
----------------------
+--[[-------------------
 /// MAIN FUNCTION ///
----------------------
+---------------------]]
 function emenu.shop:GenPanel(bg)
 	local ply = LocalPlayer()
 
@@ -178,9 +178,9 @@ function emenu.shop:GenPanel(bg)
 		local tbl = DarkRP.getCategories()
 		if not istable(tbl) then return end
 
-		----------------
+		--[[--------------
 		/// ENTITIES ///
-		----------------
+		----------------]]
 		local tabname = emenu.text["ents"]
 		base:AddTab(tabname,function(parent)
 			local scroll = vgui.Create("emenu.scrollpanel",parent)
@@ -198,7 +198,7 @@ function emenu.shop:GenPanel(bg)
 				for itemid,item in ipairs(category.members) do
 
 					local canbuy, suppress, msg, price = emenu.shop:CanBuyEntity(item)
-					if not price then continue end
+					if not price then break end
 
 					if emenu.shop.favorite.list then
 						if emenu.shop.favorite.list[tabname] then
@@ -229,7 +229,7 @@ function emenu.shop:GenPanel(bg)
 			--ITEMS
 			for id, category in ipairs(self.ent_sequence) do
 				local items = self.ent_categories[category]
-				if (#items == 0) then continue end
+				if (#items == 0) then break end
 
 				local categlist = vgui.Create("DIconLayout",list)
 				categlist:SetSpaceX(3)
@@ -361,9 +361,9 @@ function emenu.shop:GenPanel(bg)
 		end)
 		
 	
-		------------
+		--[[----------
 		/// FOOD ///
-		------------
+		------------]]
 
 		local contin = true
 
@@ -387,7 +387,7 @@ function emenu.shop:GenPanel(bg)
 			for id, item in ipairs(FoodItems) do
 
 				local canbuy, suppress, msg, price = emenu.shop:CanBuyEntity(item)
-				if not price then continue end
+				if not price then break end
 
 				if emenu.shop.favorite.list then
 					if emenu.shop.favorite.list[tabname] then
@@ -413,7 +413,7 @@ function emenu.shop:GenPanel(bg)
 			--ITEMS
 			for id, category in ipairs(self.ent_sequence) do
 				local items = self.ent_categories[category]
-				if (#items == 0) then continue end
+				if (#items == 0) then break end
 
 				local categlist = vgui.Create("DIconLayout",list)
 				categlist:SetSpaceX(3)
@@ -546,9 +546,9 @@ function emenu.shop:GenPanel(bg)
 		end
 
 
-		------------
+		--[[----------
 		/// AMMO ///
-		------------
+		------------]]
 		local tabname = emenu.text["ammo"]
 		base:AddTab(tabname,function(parent)
 			local scroll = vgui.Create("emenu.scrollpanel",parent)
@@ -563,7 +563,7 @@ function emenu.shop:GenPanel(bg)
 			self.ent_categories = {}
 			for id, item in ipairs(GAMEMODE.AmmoTypes or GM.AmmoTypes) do
 
-				if not item.price then continue end
+				if not item.price then break end
 
 				if emenu.shop.favorite.list then
 					if emenu.shop.favorite.list[tabname] then
@@ -593,7 +593,7 @@ function emenu.shop:GenPanel(bg)
 			--ITEMS
 			for id, category in ipairs(self.ent_sequence) do
 				local items = self.ent_categories[category]
-				if (#items == 0) then continue end
+				if (#items == 0) then break end
 
 				local categlist = vgui.Create("DIconLayout",list)
 				categlist:SetSpaceX(3)
@@ -721,9 +721,9 @@ function emenu.shop:GenPanel(bg)
 
 
 
-		---------------
+		--[[-------------
 		/// WEAPONS ///
-		---------------
+		---------------]]
 		local tabname = emenu.text["weapons"]
 		base:AddTab(tabname,function(parent)
 			local scroll = vgui.Create("emenu.scrollpanel",parent)
@@ -739,10 +739,10 @@ function emenu.shop:GenPanel(bg)
 			for id, category in ipairs(tbl["weapons"]) do
 
 				for itemid,item in ipairs(category.members) do
-					if (not item.separate) then continue end
+					if (not item.separate) then break end
 
 					local canbuy, suppress, msg, price = emenu.shop:CanBuyWeapons(item)
-					if not price then continue end
+					if not price then break end
 
 					if emenu.shop.favorite.list then
 						if emenu.shop.favorite.list[tabname] then
@@ -783,7 +783,7 @@ function emenu.shop:GenPanel(bg)
 			--ITEMS
 			for id, category in ipairs(keys) do
 				local items = self.ent_categories[category].members
-				if (#items == 0) then continue end
+				if (#items == 0) then break end
 
 				local categlist = vgui.Create("DIconLayout",list)
 				categlist:SetSpaceX(3)
@@ -910,9 +910,9 @@ function emenu.shop:GenPanel(bg)
 
 
 
-		-----------------
+		--[[---------------
 		/// SHIPMENTS ///
-		-----------------
+		-----------------]]
 		local tabname = emenu.text["shipments"]
 		base:AddTab(tabname,function(parent)
 			local scroll = vgui.Create("emenu.scrollpanel",parent)
@@ -928,10 +928,10 @@ function emenu.shop:GenPanel(bg)
 			for id, category in ipairs(tbl["shipments"]) do
 
 				for itemid,item in ipairs(category.members) do
-					if item.noship then continue end
+					if item.noship then break end
 
 					local canbuy, suppress, msg, price = emenu.shop:CanBuyShipments(item)
-					if not price then continue end
+					if not price then break end
 
 					if emenu.shop.favorite.list then
 						if emenu.shop.favorite.list[tabname] then
@@ -970,7 +970,7 @@ function emenu.shop:GenPanel(bg)
 			--ITEMS
 			for id, category in ipairs(keys) do
 				local items = self.ent_categories[category].members
-				if (#items == 0) then continue end
+				if (#items == 0) then break end
 
 				local categlist = vgui.Create("DIconLayout",list)
 				categlist:SetSpaceX(3)
@@ -1105,9 +1105,9 @@ function emenu.shop:GenPanel(bg)
 	return pnl
 end
 
-------------------------
+--[[----------------------
 /// UPDATE FUNCTIONS ///
-------------------------
+------------------------]]
 --CHANGE TEAM
 hook.Add("emenu_OnPlayerChangedTeam","emenu.shop.onjobchange",function(ply,old,new)
 	if ply == LocalPlayer() then

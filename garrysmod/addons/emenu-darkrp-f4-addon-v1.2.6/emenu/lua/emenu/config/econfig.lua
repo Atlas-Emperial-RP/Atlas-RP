@@ -1,12 +1,12 @@
 emenu.config = {}
 local cfg = emenu.config
 
-------------------------
+--[[----------------------
 /// MAIN CONFIG FILE ///
-------------------------
+------------------------]]
 --The file with translations is on the path: emenu/lua/emenu/config/elangs.lua
 
-/// GENERAL ///
+--/// GENERAL ///
 cfg.language = "english"   -- russian / english / german / french / turkish / polish / chinese
 cfg.tag = "[EMENU]" 	   -- In chat / console
 cfg.animtime = 0.2 		   -- DEFAULT: 0.2  | Animation speed (in seconds) lower - faster
@@ -15,22 +15,22 @@ cfg.hide_other = true 	   -- DEFAULT: true | If true, then other tabs are minimi
 cfg.override_notify = true -- DEFAULT: true | Overwrites the gm:AddNotify function for a more comfortable experience. If notify starts to behave strangely, change this parameter to false
 cfg.hide_jobchange  = true -- DEFAULT: true | Hides the panel with jobs if a new profession is taken
 
-/// EFFECTS SETTINGS ///
+--/// EFFECTS SETTINGS ///
 cfg.effect          = "dots" 	-- "dots" / "snow" / false current available
 cfg.effectPhysics   = true 		-- DEFAULT: true | Eats ~10-20 fps
 cfg.effect_speed    = 1 		-- DEFAULT: 1    | Particle speed
 cfg.blurStrength 	= 0			-- DEFAULT: 0    | Blur the background 0 for disable
 
-/// FPS SMOOTHING ///
+--/// FPS SMOOTHING ///
 --(effect_fps_suspension) With a small number of fps, it will decrease the number of particles, and with a large number, it will increase
 cfg.effect_fps_suspension = true     	-- DEFAULT: true
 cfg.dots_amount = {min = 20, max = 110} -- DEFAULT: min = 20, max = 150
 cfg.snow_amount = {min = 40, max = 200} -- DEFAULT: min = 40, max = 200
 
 
------------------
+--[[----------------
 /// AUTO OPEN ///
------------------
+-----------------]]
 -- Use names according to the language file (emenu/lua/emenu/config/elangs.lua)
 -- That is, which have already been translated!
 cfg.auto_open = {
@@ -41,9 +41,9 @@ cfg.auto_open = {
 	--etc...
 }
 
--------------
+--[[-----------
 /// LINKS ///
--------------
+-------------]]
 --[[ Adding new:
 {
 	name = "Name", -- Name displayed under the icon
@@ -73,9 +73,9 @@ cfg.links = {
 }
 
 
---------------
+--[[------------
 /// COLORS ///
---------------
+--------------]]
 emenu.colors = emenu.colors or {}
 local clr = emenu.colors
 clr.default = {
@@ -141,7 +141,7 @@ clr.notify = {
 	hoverbg = Color(24, 24, 26, 200),
 }
 
-/// TABS ///
+-- /// TABS ///
 --SHOP
 emenu.colors.shop = {
 	itembg = Color(50, 50, 52),

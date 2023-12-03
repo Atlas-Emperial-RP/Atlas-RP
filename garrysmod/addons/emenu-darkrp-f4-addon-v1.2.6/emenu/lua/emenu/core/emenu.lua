@@ -11,9 +11,9 @@ local cursorpos = {
 
 
 
----------------------------
+--[[-------------------------
 /// MAIN BUILD FUNCTION ///
----------------------------
+---------------------------]]
 function emenu:Build()
     local scrw, scrh = ScrW(), ScrH()
     local ply = LocalPlayer()
@@ -92,9 +92,9 @@ function emenu:Build()
         end
     end)
 
-    -------------------------------
+    --[[-----------------------------
     /// FUNCTIONS LOAD (BEFORE) ///
-    -------------------------------
+    -------------------------------]]
     for name,functbl in pairs(emenu.windows:GetWidgets()) do
         if not functbl.loadafter then
             if functbl.type == "panel" then
@@ -154,9 +154,9 @@ function emenu:Build()
 
 
 
-        ------------------------------
+        --[[----------------------------
         /// FUNCTIONS LOAD (AFTER) ///
-        ------------------------------
+        ------------------------------]]
         for name,functbl in pairs(emenu.windows:GetWidgets()) do
             if functbl.loadafter then
                 if functbl.type == "panel" then
@@ -173,9 +173,9 @@ function emenu:Build()
         botlist:SetLayoutDir( TOP )
         botlist:SetSpaceX(boffset)
 
-        ---------------
+        --[[-------------
         /// BUTTONS ///
-        ---------------
+        ---------------]]
         for id,seq in ipairs(emenu.windows:GetSeqAll()) do
             local name = seq[1]
             local window = emenu.windows:GetAll()[name]
@@ -218,9 +218,9 @@ function emenu:Build()
                 button:DoClick()
             end
 
-            ------------------------------
+            --[[----------------------------
             /// CONTEXT MENU (buttons) ///
-            ------------------------------
+            ------------------------------]]
             function button:DoRightClick()
                 local context = vgui.Create("emenu.contextmenu",bg)
                 context:SetWide(bg:GetWide()*0.1)
@@ -263,9 +263,9 @@ function emenu:Build()
                 context:SetPosClamped(px-context:GetWide()*0.5,py-self:GetTall()-context:GetTall()-5)
             end
 
-            ------------
+            --[[----------
             /// ICON ///
-            ------------
+            ------------]]
 
             local font = "emenu_20_500"
             local iconsize = button:GetTall()*0.5
@@ -318,9 +318,9 @@ end
 
 
 
--------------
+--[[-----------
 /// LINKS ///
--------------
+-------------]]
 for id,link in ipairs(emenu.config.links) do
     if link.type == "browser" then
         emenu.windows:Register(link.name, link.helptext, link.icon, function(bg)
@@ -360,9 +360,9 @@ for id,link in ipairs(emenu.config.links) do
 end
 
 
---------------------
+--[[------------------
 /// OPEN / CLOSE ///
---------------------
+--------------------]]
 function emenu:IsValid()
     return IsValid(self.bg)
 end
@@ -428,9 +428,9 @@ function emenu:Override()
 end
 
 
-----------------
+--[[--------------
 /// COMMANDS ///
-----------------
+----------------]]
 concommand.Add("emenu_override", function()
     emenu:Override()
 end)
@@ -448,9 +448,9 @@ concommand.Add("emenu_close", function()
 end)
 
 
--------------
+--[[-----------
 /// HOOKS ///
--------------
+-------------]]
 -- Open/Close hooks:
 -- • OnEMenuShow
 -- • OnEMenuHide

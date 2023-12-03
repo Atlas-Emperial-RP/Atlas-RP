@@ -1,18 +1,18 @@
----------------------
+--[[-------------------
 /// ALL LANGUAGES ///
----------------------
+---------------------]]
 -- Selecting the language in the file: emenu/lua/emenu/config/econfig.lua
 
 --case sensitive!
 emenu.langs = {
-	---------------
+	--[[-------------
 	/// ENGLISH ///
-	---------------
+	---------------]]
 	["english"] = {
-		// Main
+		--// Main
 		["greet"] = "Welcome back, %s", -- %s = nickname
 
-		// Windows
+		--// Windows
 		["win_title"] = "Window",
 		["loading"] = "Loading",
 		["actions"]  = "Actions",
@@ -24,7 +24,7 @@ emenu.langs = {
 		["unpin"] = "Unpin",
 		["browser"] = "Browser",
 
-		// Other
+		--// Other
 		["favorite"] = "Favorite",
 		["confirm"] = "Confirm",
 		["cancel"] = "Cancel",
@@ -37,7 +37,7 @@ emenu.langs = {
 		["on_effect"] = "On effects",
 		["off_effect"] = "Off effects",
 
-		// Jobs Tab
+		--// Jobs Tab
 		["jobs"] = "Jobs",
 		["job"]  = "job",
 		["jobs_phrase"] = "Choose your profession",
@@ -56,7 +56,7 @@ emenu.langs = {
 		["err_already"] = "You are already playing this profession",
 
 
-		// Shop Tab
+		--// Shop Tab
 		["shop"] = "Shop",
 		["shop_phrase"] = "Buy whatever you want :)",
 		["buy"] = "Buy",
@@ -66,7 +66,7 @@ emenu.langs = {
 		["ammo"] = "Ammo",
 		["food"] = "Food",
 
-		// Quick Actions
+		--// Quick Actions
 		--tabs
 		["general_tab"] = "General",
 		["money_tab"] = "Money",
@@ -101,14 +101,14 @@ emenu.langs = {
 	},
 
 
-	---------------
+	--[[-------------
 	/// RUSSIAN ///
-	---------------
+	---------------]]
 	["russian"] = {
-		// Main
+		--// Main
 		["greet"] = "Привет, %s", -- %s = nickname
 
-		// Windows
+		--// Windows
 		["win_title"] = "Окно",
 		["loading"] = "Загрузка",
 		["actions"]  = "Действия",
@@ -120,7 +120,7 @@ emenu.langs = {
 		["unpin"] = "Открепить",
 		["browser"] = "Браузер",
 
-		// Other
+		--// Other
 		["favorite"] = "Избранное",
 		["confirm"] = "Подтвердить",
 		["cancel"] = "Отменить",
@@ -133,7 +133,7 @@ emenu.langs = {
 		["on_effect"] = "Включить эффекты",
 		["off_effect"] = "Выключить эффекты",
 
-		// Jobs Tab
+		--// Jobs Tab
 		["jobs"] = "Работы",
 		["job"]  = "работа",
 		["jobs_phrase"] = "Выберите вашу профессию.",
@@ -151,7 +151,7 @@ emenu.langs = {
 		["err_noslots"] = "Максимально игроков",
 		["err_already"] = "Вы уже играете за эту профессию",
 
-		// Shop Tab
+		--// Shop Tab
 		["shop"] = "Магазин",
 		["shop_phrase"] = "Купите что вам нужно",
 		["buy"] = "Купить",
@@ -161,7 +161,7 @@ emenu.langs = {
 		["ammo"] = "Патроны",
 		["food"] = "Еда",
 
-		// Quick Actions
+		--// Quick Actions
 		--tabs
 		["general_tab"] = "Основное",
 		["money_tab"] = "Деньги",
@@ -196,14 +196,14 @@ emenu.langs = {
 	},
 
 
-	--------------
+	--[[------------
 	/// FRENCH ///
-	--------------
+	--------------]]
 	["french"] = {
-		// Main
+		--// Main
 		["greet"] = "Bienvenue à nouveau, %s", -- %s = nickname
 	 
-		// Windows
+		--// Windows
 		["win_title"] = "Fenêtres",
 		["loading"] = "Chargement",
 		["actions"]  = "Actions",
@@ -215,7 +215,7 @@ emenu.langs = {
 		["unpin"] = "Décrocher",
 		["browser"] = "Navigateur",
 	 
-		// Other
+		--// Other
 		["favorite"] = "Favoris",
 		["confirm"] = "Confirmer",
 		["cancel"] = "Annuler",
@@ -228,7 +228,7 @@ emenu.langs = {
 		["on_effect"] = "Effets Activés",
 		["off_effect"] = "Effets Désactivés",
 	 
-		// Jobs Tab
+		--// Jobs Tab
 		["jobs"] = "Metiers",
 		["job"]  = "Metier",
 		["jobs_phrase"] = "Choisissez votre profession",
@@ -246,7 +246,7 @@ emenu.langs = {
 		["err_noslots"] = "Nombre maximal de joueurs",
 		["err_already"] = "Vous jouez déjà cette profession",
 	 
-		// Shop Tab
+		--// Shop Tab
 		["shop"] = "Boutique",
 		["shop_phrase"] = "Achetez ce que vous voulez :)",
 		["buy"] = "Acheter",
@@ -256,7 +256,7 @@ emenu.langs = {
 		["ammo"] = "Munitions",
 		["food"] = "Nourriture",
 	 
-		// Quick Actions
+		--// Quick Actions
 		--tabs
 		["general_tab"] = "Général",
 		["money_tab"] = "Argent",
@@ -291,14 +291,14 @@ emenu.langs = {
 	},
 
 
-	--------------
+	--[[------------
 	/// GERMAN ///
-	--------------
+	--------------]]
 	["german"] = {
-		// Main
+		--// Main
 		["greet"] = "Willkommen zurück, %s", -- %s = nickname
 
-		// Windows
+		--// Windows
 		["win_title"] = "Fenster",
 		["loading"] = "Lädt",
 		["actions"]  = "Aktionen",
@@ -310,7 +310,7 @@ emenu.langs = {
 		["unpin"] = "Lösen",
 		["browser"] = "Browser",
 
-		// Other
+		--// Other
 		["favorite"] = "Favorit",
 		["confirm"] = "Bestätigen",
 		["cancel"] = "Abbrechen",
@@ -323,7 +323,7 @@ emenu.langs = {
 		["on_effect"] = "On effects",
 		["off_effect"] = "Off effects",
 
-		// Jobs Tab
+		--// Jobs Tab
 		["jobs"] = "Berufe",
 		["job"]  = "beruf",
 		["jobs_phrase"] = "Wähle deinen Beruf",
@@ -341,7 +341,7 @@ emenu.langs = {
 		["err_noslots"] = "Maximale Anzahl an Spielern",
 		["err_already"] = "Du spielst bereits den Beruf",
 
-		// Shop Tab
+		--// Shop Tab
 		["shop"] = "Shop",
 		["shop_phrase"] = "Kaufe was du möchtest :)",
 		["buy"] = "Kaufen",
@@ -351,7 +351,7 @@ emenu.langs = {
 		["ammo"] = "Munition",
 		["food"] = "Essen",
 
-		// Quick Actions
+		--// Quick Actions
 		--tabs
 		["general_tab"] = "Generell",
 		["money_tab"] = "Geld",
@@ -386,10 +386,10 @@ emenu.langs = {
 	},
 
 	["turkish"] = {
-		// Main
+		--// Main
 		["greet"] = "Tekrardan hoş geldiniz, %s", -- %s = nickname
 
-		// Windows
+		--// Windows
 		["win_title"] = "Pencere",
 		["loading"] = "Yükleniyor",
 		["actions"] = "Eylemler",
@@ -401,7 +401,7 @@ emenu.langs = {
 		["unpin"] = "Sabitlemeyi kaldır",
 		["browser"] = "Tarayıcı",
 
-		// Other
+		--// Other
 		["favorite"] = "Favori",
 		["confirm"] = "Onayla",
 		["cancel"] = "İptal",
@@ -414,7 +414,7 @@ emenu.langs = {
 		["on_effect"] = "Efektler açık",
 		["off_effect"] = "Efektler kapalı",
 
-		// Jobs Tab
+		--// Jobs Tab
 		["jobs"] = "Meslekler",
 		["job"] = "Meslek",
 		["jobs_phrase"] = "Mesleğini seç",
@@ -432,7 +432,7 @@ emenu.langs = {
 		["err_noslots"] = "Maksimum Oyuncu",
 		["err_already"] = "Zaten bu meslektesiniz",
 
-		// Shop Tab
+		--// Shop Tab
 		["shop"] = "Market",
 		["shop_phrase"] = "Ne istersen alabilirsin :)",
 		["buy"] = "Satın al",
@@ -442,7 +442,7 @@ emenu.langs = {
 		["ammo"] = "Cephanelik",
 		["food"] = "Yemek",
 
-		// Quick Actions
+		--// Quick Actions
 		--tabs
 		["general_tab"] = "Genel",
 		["money_tab"] = "Ekonomi",
@@ -479,10 +479,10 @@ emenu.langs = {
 	},
 
 	["polish"] = {
-        // Main
+        --// Main
         ["greet"] = "Witamy ponownie, %s", -- %s = nickname
 
-        // Windows
+        --// Windows
         ["win_title"] = "Okno",
         ["loading"] = "Ładowanie",
         ["actions"]  = "Akcje",
@@ -494,7 +494,7 @@ emenu.langs = {
         ["unpin"] = "Unpin",
         ["browser"] = "Przeglądarka",
 
-        // Other
+        --// Other
         ["favorite"] = "Ulubione",
         ["confirm"] = "Potwierdź",
         ["cancel"] = "Anuluj",
@@ -507,7 +507,7 @@ emenu.langs = {
         ["on_effect"] = "Włączone efekty",
         ["off_effect"] = "Wyłączone efekty",
 
-        // Jobs Tab
+        --// Jobs Tab
         ["jobs"] = "Prace",
         ["job"]  = "Praca",
         ["jobs_phrase"] = "Wybierz swoją pracę",
@@ -526,7 +526,7 @@ emenu.langs = {
         ["err_already"] = "Jesteś już w tej pracy",
 
 
-        // Shop Tab
+        --// Shop Tab
         ["shop"] = "Sklep",
         ["shop_phrase"] = "Kup co chcesz :)",
         ["buy"] = "Kup",
@@ -536,7 +536,7 @@ emenu.langs = {
         ["ammo"] = "Ammo",
         ["food"] = "Jedzenie",
 
-        // Quick Actions
+        --// Quick Actions
         --tabs
         ["general_tab"] = "Generalne",
         ["money_tab"] = "Pieniądze",
@@ -570,15 +570,15 @@ emenu.langs = {
         ["err_cant_do"] = "Nie możesz tego zrobić z tą osobą",
     },
 
-    ---------------
+    --[[-------------
 	/// SPANISH ///
-	---------------
+	---------------]]
 	["spanish"] = {
-		// Main
+		--// Main
 		["greet"] = "Bienvenido de vuelta, %s", -- %s = nickname
 
 
-		// Windows
+		--// Windows
 		["win_title"] = "Ventana",
 		["loading"] = "Cargando",
 		["actions"] = "Acciones",
@@ -591,7 +591,7 @@ emenu.langs = {
 		["browser"] = "Buscador",
 
 
-		// Other
+		--// Other
 		["favorite"] = "Favorito",
 		["confirm"] = "Confirmar",
 		["cancel"] = "Cancelar",
@@ -605,7 +605,7 @@ emenu.langs = {
 		["off_effect"] = "Efectos desactivados",
 
 
-		// Jobs Tab
+		--// Jobs Tab
 		["jobs"] = "Trabajos",
 		["job"] = "trabajo",
 		["jobs_phrase"] = "Escoge tu profesión",
@@ -626,7 +626,7 @@ emenu.langs = {
 
 
 
-		// Shop Tab
+		--// Shop Tab
 		["shop"] = "Tienda",
 		["shop_phrase"] = "Compra lo que desees :)",
 		["buy"] = "Comprar",
@@ -637,7 +637,7 @@ emenu.langs = {
 		["food"] = "Comida",
 
 
-		// Quick Actions
+		--// Quick Actions
 		--tabs
 		["general_tab"] = "General",
 		["money_tab"] = "Dinero",
@@ -672,14 +672,14 @@ emenu.langs = {
 		["enter_reason"] = "Ingresa la razón",
 		["err_cant_do"] = "No puedes realizar esa acción sobre esa persona",
 	},
-	---------------
+	--[[-------------
 	/// CHINESE ///
-	---------------
+	---------------]]
 	["chinese"] = {
-		// Main
+		--// Main
 		["greet"] = "欢迎回来, %s", -- %s = nickname
 
-		// Windows
+		--// Windows
 		["win_title"] = "窗口",
 		["loading"] = "加载中",
 		["actions"]  = "操作",
@@ -691,7 +691,7 @@ emenu.langs = {
 		["unpin"] = "解除置顶",
 		["browser"] = "浏览",
 
-		// Other
+		--// Other
 		["favorite"] = "收藏",
 		["confirm"] = "确定",
 		["cancel"] = "取消",
@@ -705,7 +705,7 @@ emenu.langs = {
 		["off_effect"] = "禁用效果",
 
 
-		// Jobs Tab
+		--// Jobs Tab
 		["jobs"] = "职业",
 		["job"]  = "职业",
 		["jobs_phrase"] = "选择你的职业",
@@ -723,7 +723,7 @@ emenu.langs = {
 		["err_noslots"] = "玩家数量限制",
 		["err_already"] = "你目前就是这个职业",
 
-		// Shop Tab
+		--// Shop Tab
 		["shop"] = "商店",
 		["shop_phrase"] = "买你所要 :)",
 		["buy"] = "购买",
@@ -733,7 +733,7 @@ emenu.langs = {
 		["ammo"] = "子弹",
 		["food"] = "食物",
 
-		// Quick Actions
+		--// Quick Actions
 		--tabs
 		["general_tab"] = "一般",
 		["money_tab"] = "金钱",
