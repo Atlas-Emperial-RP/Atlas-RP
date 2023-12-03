@@ -444,14 +444,11 @@ function IsBleedingDamage( dmg )
     local isdmg = false
    
     for k, v in pairs( ConfigurationMedicMod.DamageBleeding ) do
-        
-		if not v then goto continue end
 		
-		if dmg:IsDamageType( k ) then
+		if v and dmg:IsDamageType( k ) then
             isdmg = true
         end
-        
-        ::continue::
+
     end
    
     return isdmg
