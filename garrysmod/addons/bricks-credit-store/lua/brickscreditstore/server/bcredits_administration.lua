@@ -15,7 +15,7 @@ concommand.Add( "brcs_savenpcpositions", function( ply, cmd, args )
 	if( BRICKSCREDITSTORE.HasAdminAccess( ply ) ) then
 		local Entities = {}
 		for key, ent in pairs( ents.FindByClass( "brickscreditstore_npc" ) ) do
-			if( not BRICKSCREDITSTORE.CONFIG.NPCs[ent:Getnpc_type() or ""] ) then goto continue end
+			if( not BRICKSCREDITSTORE.CONFIG.NPCs[ent:Getnpc_type() or ""] ) then break end
 
 			local EntVector = string.Explode(" ", tostring(ent:GetPos()))
 			local EntAngles = string.Explode(" ", tostring(ent:GetAngles()))
@@ -27,7 +27,7 @@ concommand.Add( "brcs_savenpcpositions", function( ply, cmd, args )
 			
 			table.insert( Entities, EntTable )
 
-			::continue::
+			
 		end
 		
 		file.Write("brickscreditstore/saved_ents/".. string.lower(game.GetMap()) ..".txt", util.TableToJSON( Entities ), "DATA")

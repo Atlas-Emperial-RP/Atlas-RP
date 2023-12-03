@@ -43,7 +43,7 @@ function PANEL:LayoutIcons_TOP()
 
 	for k, v in ipairs( self:GetChildren() ) do
 
-		if ( not v:IsVisible() ) then goto continue end
+		if ( not v:IsVisible() ) then break end
 
 		local w, h = v:GetSize()
 		if ( x + w > MaxWidth or ( v.OwnLine and x > self.m_iBorder ) ) then
@@ -64,7 +64,7 @@ function PANEL:LayoutIcons_TOP()
 			x = MaxWidth + 1
 		end
 
-		::continue::
+		
 	end
 
 end
@@ -78,7 +78,7 @@ function PANEL:LayoutIcons_LEFT()
 
 	for k, v in ipairs( self:GetChildren() ) do
 
-		if ( not v:IsVisible() ) then goto continue end
+		if ( not v:IsVisible() ) then break end
 
 		local w, h = v:GetSize()
 		if ( y + h > MaxHeight or ( v.OwnLine and y > self.m_iBorder ) ) then
@@ -99,7 +99,7 @@ function PANEL:LayoutIcons_LEFT()
 			y = MaxHeight + 1
 		end
 
-		::continue::
+		
 	end
 
 end

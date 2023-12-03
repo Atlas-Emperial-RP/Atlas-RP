@@ -33,12 +33,12 @@ function Add( tbl )
 
 		for k, v in pairs( ActiveList ) do
 
-			if ( tbl.name ~= v.name ) then goto continue end
+			if ( tbl.name ~= v.name ) then break end
 
 			Msg( "Reloading: ", v.Material, "\n" )
 			Init( tbl.name, k, v.Material, v.Values )
 
-			::continue::
+			
 		end
 
 	end

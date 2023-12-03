@@ -82,7 +82,7 @@ WorkshopFiles.prototype.Init = function( namespace, scope, RootScope )
 		// Fills in perpage
 		self.RefreshDimensions();
 
-		if ( scope.Category ~= type || scope.Tagged ~= searchtag ) scope.TotalResults = 0;
+		if ( scope.Category != type || scope.Tagged != searchtag ) scope.TotalResults = 0;
 
 		scope.Category	= type;
 		scope.Tagged	= searchtag;
@@ -112,7 +112,7 @@ WorkshopFiles.prototype.Init = function( namespace, scope, RootScope )
 		else
 		{
 			// fumble
-			if ( scope.MapName and scope.Tagged )
+			if ( scope.MapName && scope.Tagged )
 			{
 				gmod.FetchItems( self.NameSpace, scope.Category, scope.Offset, scope.PerPage, scope.Tagged + "," + scope.MapName, scope.SubscriptionSearchText, filter, scope.UGCSortMethod );
 			}
@@ -234,7 +234,7 @@ WorkshopFiles.prototype.ReceiveFileInfo = function( id, data )
 {
 	for ( var k in this.Scope.Files )
 	{
-		if ( this.Scope.Files[k].id ~= id ) continue;
+		if ( this.Scope.Files[k].id != id ) continue;
 
 		this.Scope.Files[k].filled	= true;
 		this.Scope.Files[k].info	= data;
@@ -250,7 +250,7 @@ WorkshopFiles.prototype.ReceiveUserName = function( id, data )
 {
 	for ( var k in this.Scope.Files )
 	{
-		if ( !this.Scope.Files[k].filled || !this.Scope.Files[k] || this.Scope.Files[k].info.owner ~= id ) continue;
+		if ( !this.Scope.Files[k].filled || !this.Scope.Files[k] || this.Scope.Files[k].info.owner != id ) continue;
 
 		this.Scope.Files[k].filled	= true;
 		this.Scope.Files[k].info.ownername = data;
@@ -266,7 +266,7 @@ WorkshopFiles.prototype.ReceiveImage = function( id, url )
 {
 	for ( var k in this.Scope.Files )
 	{
-		if ( this.Scope.Files[k].id ~= id ) continue;
+		if ( this.Scope.Files[k].id != id ) continue;
 
 		this.Scope.Files[k].background = url;
 		this.Changed();

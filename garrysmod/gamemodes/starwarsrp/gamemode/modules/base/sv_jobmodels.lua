@@ -9,11 +9,11 @@ net.Receive("DarkRP_preferredjobmodels", function(len, ply)
     preferredJobModels[ply] = {}
 
     for i in pairs(RPExtraTeams) do
-        if net.ReadBit() == 0 then goto continue end
+        if net.ReadBit() == 0 then break end
 
         preferredJobModels[ply][i] = net.ReadString()
 
-        ::continue::
+        
     end
 
     if not received[ply] and preferredJobModels[ply][ply:Team()] then

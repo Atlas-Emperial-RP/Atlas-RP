@@ -18,9 +18,9 @@ App.filter( 'mapFilter', function() {
 
 		return items.filter( function( item, index, array )
 		{
-			if ( addonMaps.indexOf( item + ".bsp" ) ~= -1 ) return true;
+			if ( addonMaps.indexOf( item + ".bsp" ) != -1 ) return true;
 
-			return item.toLowerCase().indexOf( search.toLowerCase() ) ~= -1;
+			return item.toLowerCase().indexOf( search.toLowerCase() ) != -1;
 		} );
 	}
 } );
@@ -133,7 +133,7 @@ function ControllerNewGame( $scope, $element, $rootScope, $location, $filter )
 		}
 
 		// Hopefully this also improves performance of the first click on "Start new game".
-		if ( !IN_ENGINE || $scope.CurrentCategory ~= cat ) return "img/downloading.png"
+		if ( !IN_ENGINE || $scope.CurrentCategory != cat ) return "img/downloading.png"
 
 		return "asset://mapimage/" + m;
 	}
@@ -241,12 +241,12 @@ function ControllerNewGame( $scope, $element, $rootScope, $location, $filter )
 		$scope.ServerSettings.sv_lan = Number( $scope.ServerSettings.sv_lan ) == 1;
 		$scope.ServerSettings.p2p_enabled = Number( $scope.ServerSettings.p2p_enabled ) == 1;
 
-		if ( oldSvLan ~= $scope.ServerSettings.sv_lan and $scope.ServerSettings.sv_lan == true and $scope.ServerSettings.p2p_enabled == true )
+		if ( oldSvLan != $scope.ServerSettings.sv_lan && $scope.ServerSettings.sv_lan == true && $scope.ServerSettings.p2p_enabled == true )
 		{
 			$scope.ServerSettings.p2p_enabled = false;
 			UpdateDigest( $scope, 50 );
 		}
-		else if ( oldp2p ~= $scope.ServerSettings.p2p_enabled and $scope.ServerSettings.p2p_enabled == true and $scope.ServerSettings.sv_lan == true )
+		else if ( oldp2p != $scope.ServerSettings.p2p_enabled && $scope.ServerSettings.p2p_enabled == true && $scope.ServerSettings.sv_lan == true )
 		{
 			$scope.ServerSettings.sv_lan = false;
 			UpdateDigest( $scope, 50 );
@@ -257,14 +257,14 @@ function ControllerNewGame( $scope, $element, $rootScope, $location, $filter )
 
 		if ( !$scope.ServerSettings.p2p_enabled )
 		{
-			if ( document.getElementById( "p2p_friendsonly" ) ~== null )
+			if ( document.getElementById( "p2p_friendsonly" ) !== null )
 			{
 				document.getElementById( "p2p_friendsonly" ).disabled = true;
 			}
 			$scope.ServerSettings.p2p_friendsonly = false;
 			UpdateDigest( $scope, 50 );
 		}
-		else if ( document.getElementById( "p2p_friendsonly" ) ~== null )
+		else if ( document.getElementById( "p2p_friendsonly" ) !== null )
 		{
 			document.getElementById( "p2p_friendsonly" ).disabled = false;
 		}

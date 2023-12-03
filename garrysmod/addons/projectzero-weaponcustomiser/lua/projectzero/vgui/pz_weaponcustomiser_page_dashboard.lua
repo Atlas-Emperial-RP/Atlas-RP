@@ -14,9 +14,9 @@ function PANEL:FillPanel()
             GetValues = function()
                 local count = 0
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
-                    if( PROJECT0.FUNC.ReverseCosmeticKey( k ) ~= 1 ) then goto continue end
+                    if( PROJECT0.FUNC.ReverseCosmeticKey( k ) ~= 1 ) then break end
                     count = count+1
-                    ::continue::
+                    
                 end
 
                 return count, table.Count( PROJECT0.CONFIG.CUSTOMISER.Charms )
@@ -40,9 +40,9 @@ function PANEL:FillPanel()
             GetValues = function()
                 local count = 0
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
-                    if( PROJECT0.FUNC.ReverseCosmeticKey( k ) ~= 2 ) then goto continue end
+                    if( PROJECT0.FUNC.ReverseCosmeticKey( k ) ~= 2 ) then break end
                     count = count+1
-                    ::continue::
+                    
                 end
 
                 return count, table.Count( PROJECT0.CONFIG.CUSTOMISER.Stickers )
@@ -111,13 +111,13 @@ function PANEL:FillPanel()
         local totalH = 0
         local itemPanelH = PROJECT0.FUNC.ScreenScale( 100 )
         for k, v in ipairs( PROJECT0.CONFIG.CUSTOMISER.Store ) do
-            if( not v.Featured ) then goto continue end
+            if( not v.Featured ) then break end
 
             totalH = totalH+itemPanelH+PROJECT0.UI.Margin25
             if( totalH > self2:GetTall()-rightTopH-(2*PROJECT0.UI.Margin25) ) then break end
 
             local itemInfo = cosmeticTypes[v.Type].GetItemInfo( v.ItemID )
-            if( not itemInfo ) then goto continue end
+            if( not itemInfo ) then break end
 
             local borderH = PROJECT0.FUNC.ScreenScale( 5 )
 
@@ -180,7 +180,7 @@ function PANEL:FillPanel()
             end
 
             itemPanel.itemButton = itemButton
-            ::continue::
+            
         end
     end
     rightPanel:RefreshStore()

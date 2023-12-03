@@ -128,11 +128,11 @@ function plyMeta:sendDoorData()
 
     local res = {}
     for _, v in ipairs(ents.GetAll()) do
-        if not v:getDoorData() or table.IsEmpty(v:getDoorData()) then goto continue end
+        if not v:getDoorData() or table.IsEmpty(v:getDoorData()) then break end
 
         res[v:EntIndex()] = v:getDoorData()
         
-        ::continue::
+        
     end
 
     net.Start("DarkRP_AllDoorData")

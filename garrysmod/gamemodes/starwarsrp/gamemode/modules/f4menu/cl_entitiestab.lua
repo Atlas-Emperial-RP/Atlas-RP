@@ -24,7 +24,7 @@ function PANEL:Rebuild()
     end
 
     for _, item in pairs(self.Items) do
-        if not item:IsVisible() then goto continue end
+        if not item:IsVisible() then break end
         k = k + 1
         local goRight = k % 2 == 0
 
@@ -35,7 +35,7 @@ function PANEL:Rebuild()
         rHeight = goRight and rHeight + item:GetTall() + 2 or rHeight
         lHeight = goRight and lHeight or lHeight + item:GetTall() + 2
 
-        ::continue::
+        
     end
 
     -- Make the category stretch if it's the only one

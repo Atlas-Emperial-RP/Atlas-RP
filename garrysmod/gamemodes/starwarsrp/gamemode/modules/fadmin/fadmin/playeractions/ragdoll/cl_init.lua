@@ -37,7 +37,7 @@ FAdmin.StartHooks["Ragdoll"] = function()
         menu:AddPanel(Title)
 
         for k, v in pairs(FAdmin.PlayerActions.RagdollTypes) do
-            if v == "Unragdoll" then goto continue end
+            if v == "Unragdoll" then break end
             FAdmin.PlayerActions.addTimeSubmenu(menu, v,
                 function()
                     RunConsoleCommand("_FAdmin", "Ragdoll", ply:UserID(), k)
@@ -53,7 +53,7 @@ FAdmin.StartHooks["Ragdoll"] = function()
                 end
             )
 
-            ::continue::
+            
         end
 
         menu:Open()

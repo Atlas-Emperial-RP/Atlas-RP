@@ -45,7 +45,7 @@ function ENT:UseOverride(activator)
          if not pickup then
             return
          end
-         -- else pickup successful, goto continue with print transfer and removal
+         -- else pickup successful, break with print transfer and removal
       else
          wep = activator:Give("weapon_ttt_beacon")
       end
