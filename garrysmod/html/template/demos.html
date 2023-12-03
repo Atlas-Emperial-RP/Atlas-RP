@@ -8,19 +8,19 @@
 			<li><h2 ng-tranny="'demos'"></h2></li>
 
 			<li ng-repeat="cat in MyCategories" class="clickable {{IfElse( Category == cat, 'active', 'notactive' )}}">
-				<a ng-click="Switch( cat, 0 )" ng-Tranny="'demos.'+cat" ng-show="cat ~= ''" class="{{IfElse( Category == cat, 'active', 'notactive' )}}"></a>
+				<a ng-click="Switch( cat, 0 )" ng-Tranny="'demos.'+cat" ng-show="cat != ''" class="{{IfElse( Category == cat, 'active', 'notactive' )}}"></a>
 			</li>
 
 			<li>&nbsp;</li>
 
 			<li ng-repeat="cat in Categories" class="clickable {{IfElse( Category == cat, 'active', 'notactive' )}}">
-				<a ng-click="Switch( cat, 0 )" ng-Tranny="'demos.'+cat" ng-show="cat ~= ''" class="{{IfElse( Category == cat, 'active', 'notactive' )}}"></a>
+				<a ng-click="Switch( cat, 0 )" ng-Tranny="'demos.'+cat" ng-show="cat != ''" class="{{IfElse( Category == cat, 'active', 'notactive' )}}"></a>
 			</li>
 
 			<li>&nbsp;</li>
 
 			<li ng-repeat="cat in CategoriesSecondary" class="clickable {{IfElse( Category == cat, 'active', 'notactive' )}}">
-				<a ng-click="Switch( cat, 0 )" ng-Tranny="'demos.'+cat" ng-show="cat ~= ''" class="{{IfElse( Category == cat, 'active', 'notactive' )}}"></a>
+				<a ng-click="Switch( cat, 0 )" ng-Tranny="'demos.'+cat" ng-show="cat != ''" class="{{IfElse( Category == cat, 'active', 'notactive' )}}"></a>
 			</li>
 
 			<li>&nbsp;</li>
@@ -38,8 +38,8 @@
 		<workshopcontainer>
 
 			<workshopmessage ng-show="Loading" ng-Tranny="'demos.loading'">...</workshopmessage>
-			<workshopmessage ng-show="( TotalResults == 0 || NumResults == 0 ) and !Loading and ( !Disabled || Category ~= 'subscribed_ugc' )" ng-Tranny="'demos.none'">...</workshopmessage>
-			<workshopmessage ng-show="TotalResults == 0 and !Loading and Disabled and Category == 'subscribed_ugc'" ng-Tranny="'ugc.disabled'">...</workshopmessage>
+			<workshopmessage ng-show="( TotalResults == 0 || NumResults == 0 ) && !Loading && ( !Disabled || Category != 'subscribed_ugc' )" ng-Tranny="'demos.none'">...</workshopmessage>
+			<workshopmessage ng-show="TotalResults == 0 && !Loading && Disabled && Category == 'subscribed_ugc'" ng-Tranny="'ugc.disabled'">...</workshopmessage>
 
 			<workshopicon ng-hide="Loading" ng-repeat="file in Files" style="width: {{IconWidth|number:0}}px; height: {{IconHeight|number:0}}px" class="{{IfElse( IsSubscribed( file ), 'installed', '' )}}">
 
@@ -51,8 +51,8 @@
 					<label ng-click="OpenWorkshopFile( file.id )">{{file.info.title || "Loading..."}}</label>
 				</name>
 				<author ng-hide="file.local">{{file.info.ownername}}</author>
-				<votes ng-show="!file.local and (file.info.up-file.info.down) > 0" style="color: #4a4">+{{file.info.up-file.info.down|number:0}}</votes>
-				<votes ng-show="!file.local and (file.info.up-file.info.down) < 0" style="color: #a44">{{file.info.up-file.info.down|number:0}}</votes>
+				<votes ng-show="!file.local && (file.info.up-file.info.down) > 0" style="color: #4a4">+{{file.info.up-file.info.down|number:0}}</votes>
+				<votes ng-show="!file.local && (file.info.up-file.info.down) < 0" style="color: #a44">{{file.info.up-file.info.down|number:0}}</votes>
 				<description>{{file.info.description}}</description>
 
 				<controls>
@@ -65,8 +65,8 @@
 					</left>
 
 					<right>
-						<control ng-show="!file.local and !IsSubscribed( file ) and !Disabled" ng-click="Subscribe( file )" ng-Tranny="'ugc.subscribe'">..</control>
-						<control ng-show="!file.local and IsSubscribed( file )" ng-click="Unsubscribe( file )" ng-Tranny="'ugc.unsubscribe'">..</control>
+						<control ng-show="!file.local && !IsSubscribed( file ) && !Disabled" ng-click="Subscribe( file )" ng-Tranny="'ugc.subscribe'">..</control>
+						<control ng-show="!file.local && IsSubscribed( file )" ng-click="Unsubscribe( file )" ng-Tranny="'ugc.unsubscribe'">..</control>
 						<control ng-click="DemoToVideo( file )" ng-Tranny="'demos.video'">..</control>
 						<control ng-click="PlayDemo( file )" ng-Tranny="'demos.play'">..</control>
 					</right>

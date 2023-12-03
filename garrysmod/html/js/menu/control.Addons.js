@@ -289,8 +289,8 @@ function ControllerAddons( $scope, $element, $rootScope, $location )
 		{
 			var enabled = files[ id ].mounted;
 
-			if ( enabled and $scope.CreatePresetSaveEnabled ) newPreset.enabled.push( id );
-			if ( !enabled and $scope.CreatePresetSaveDisabled ) newPreset.disabled.push( id );
+			if ( enabled && $scope.CreatePresetSaveEnabled ) newPreset.enabled.push( id );
+			if ( !enabled && $scope.CreatePresetSaveDisabled ) newPreset.disabled.push( id );
 		}
 
 		lua.Run( "CreateNewAddonPreset( %s )", JSON.stringify( newPreset ) );
@@ -349,7 +349,7 @@ function ControllerAddons( $scope, $element, $rootScope, $location )
 			IDsDone[ id ] = true;
 		}
 
-		if ( newAct ~= "" )
+		if ( newAct != "" )
 		{
 			var files = subscriptions.GetAll();
 			for ( var id in files )
@@ -375,7 +375,7 @@ function ControllerAddons( $scope, $element, $rootScope, $location )
 			if ( subscriptions.GetInvalidReason( file.id ) ) classes.push( "invalid" );
 		}
 
-		if ( file.info and file.info.floating ) classes.push( "floating" );
+		if ( file.info && file.info.floating ) classes.push( "floating" );
 
 		return classes.join( " " );
 	}

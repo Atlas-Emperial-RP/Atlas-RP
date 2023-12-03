@@ -72,7 +72,7 @@ function ControllerServers( $scope, $element, $rootScope, $location )
 
 	$scope.SelectServer = function( server, event )
 	{
-		if ( event and event.which ~= 1 )
+		if ( event && event.which != 1 )
 		{
 			var txt = server.address;
 			lua.Run( "SetClipboardText( %s )", txt );
@@ -148,7 +148,7 @@ function ControllerServers( $scope, $element, $rootScope, $location )
 	{
 		if ( !gm ) return "Unknown Gamemode";
 
-		if ( gm.info and gm.info.title )
+		if ( gm.info && gm.info.title )
 			return gm.info.title;
 
 		return gm.name;
@@ -251,19 +251,19 @@ function ControllerServers( $scope, $element, $rootScope, $location )
 
 	$scope.serverFilter = function( server )
 	{
-		if ( $scope.CurrentGamemode.Search and
-			server.name.toLowerCase().indexOf( $scope.CurrentGamemode.Search.toLowerCase() ) == -1 and
-			server.address.indexOf( $scope.CurrentGamemode.Search ) == -1 and
+		if ( $scope.CurrentGamemode.Search &&
+			server.name.toLowerCase().indexOf( $scope.CurrentGamemode.Search.toLowerCase() ) == -1 &&
+			server.address.indexOf( $scope.CurrentGamemode.Search ) == -1 &&
 			server.map.toLowerCase().indexOf( $scope.CurrentGamemode.Search.toLowerCase() ) == -1 ) return false;
 
-		if ( server.players < 1 and $scope.SVFilterHasPly ) return false;
-		if ( server.players >= server.maxplayers and $scope.SVFilterNotFull ) return false;
-		if ( server.pass and $scope.SVFilterHidePass ) return false;
+		if ( server.players < 1 && $scope.SVFilterHasPly ) return false;
+		if ( server.players >= server.maxplayers && $scope.SVFilterNotFull ) return false;
+		if ( server.pass && $scope.SVFilterHidePass ) return false;
 		if ( server.ping > $scope.SVFilterMaxPing ) return false;
 		if ( server.players < $scope.SVFilterPlyMin ) return false;
 		if ( server.players > $scope.SVFilterPlyMax ) return false;
-		if ( server.flag and $scope.CurrentGamemode.FilterFlags[ server.flag ] == false ) return false;
-		if ( $scope.CurrentGamemode.HasPreferFlags and $scope.CurrentGamemode.FilterFlags[ server.flag ] ~= true ) return false;
+		if ( server.flag && $scope.CurrentGamemode.FilterFlags[ server.flag ] == false ) return false;
+		if ( $scope.CurrentGamemode.HasPreferFlags && $scope.CurrentGamemode.FilterFlags[ server.flag ] != true ) return false;
 
 		return true;
 	}
@@ -273,12 +273,12 @@ function ControllerServers( $scope, $element, $rootScope, $location )
 		if ( $scope.GMSearch )
 		{
 			var found = false;
-			if ( gm.name.toLowerCase().indexOf( $scope.GMSearch.toLowerCase() ) ~= -1 ) found = true;
-			if ( !found and gm.info and gm.info.title.toLowerCase().indexOf( $scope.GMSearch.toLowerCase() ) ~= -1 ) found = true;
+			if ( gm.name.toLowerCase().indexOf( $scope.GMSearch.toLowerCase() ) != -1 ) found = true;
+			if ( !found && gm.info && gm.info.title.toLowerCase().indexOf( $scope.GMSearch.toLowerCase() ) != -1 ) found = true;
 			if ( !found ) return false;
 		}
 
-		if ( Scope.GMHasFilterTags and gm.info and !$scope.GMFilterTags[ gm.info.tag ? gm.info.tag : "none" ] ) return false;
+		if ( Scope.GMHasFilterTags && gm.info && !$scope.GMFilterTags[ gm.info.tag ? gm.info.tag : "none" ] ) return false;
 
 		return true;
 	}
@@ -383,7 +383,7 @@ function UpdateInfiniteScroll( elem )
 
 function AddServer( type, id, ping, name, desc, map, players, maxplayers, botplayers, pass, lastplayed, address, gamemode, workshopid, isAnon, version, isFav, loc, gmcat )
 {
-	if ( id ~= RequestNum[ type ] ) return;
+	if ( id != RequestNum[ type ] ) return;
 
 	if ( !gamemode ) gamemode = desc;
 	if ( maxplayers <= 1 ) return;
@@ -407,7 +407,7 @@ function AddServer( type, id, ping, name, desc, map, players, maxplayers, botpla
 	}
 
 	// Validate sv_location
-	if ( loc and !loc.match( /^[a-zA-Z]+$/ ) )
+	if ( loc && !loc.match( /^[a-zA-Z]+$/ ) )
 	{
 		loc = "";
 	}
@@ -438,7 +438,7 @@ function AddServer( type, id, ping, name, desc, map, players, maxplayers, botpla
 	if ( !data.flag ) data.flag = GenerateFlag( data );
 	if ( data.flag == "eu" ) data.flag = "europeanunion"; // ew
 
-	if ( !IN_ENGINE and !version ) data.version_c = 0
+	if ( !IN_ENGINE && !version ) data.version_c = 0
 
 	data.hasmap = DoWeHaveMap( data.map );
 
@@ -521,7 +521,7 @@ function SwitchFilter( cat, me )
 function SetPlayerList( serverip, players )
 {
 	if ( !Scope.CurrentGamemode || !Scope.CurrentGamemode.Selected ) return;
-	if ( Scope.CurrentGamemode.Selected.address ~= serverip ) return;
+	if ( Scope.CurrentGamemode.Selected.address != serverip ) return;
 
 	Scope.CurrentGamemode.Selected.playerlist = players;
 
@@ -562,7 +562,7 @@ function UpdateGamemodeInfo( server, type )
 		for ( var i = 0; i < names.length; i++ )
 		{
 			var name = names[ i ];
-			if ( name ~= name.toLowerCase() and name.toLowerCase() == server.gamemode.toLowerCase() )
+			if ( name != name.toLowerCase() && name.toLowerCase() == server.gamemode.toLowerCase() )
 			{
 				server.desc = name;
 				break;
@@ -574,7 +574,7 @@ function UpdateGamemodeInfo( server, type )
 	gi.title = GetHighestKey( gi.titles );
 
 	// categories
-	if ( server.category ~= "" )
+	if ( server.category != "" )
 	{
 		if ( !gi.categories ) gi.categories = {}
 		if ( !gi.categories[ server.category ] ) { gi.categories[ server.category ] = 1; } else { gi.categories[ server.category ]++; }
@@ -586,7 +586,7 @@ function UpdateGamemodeInfo( server, type )
 	// DO NOT rely on this
 	if ( !gi.tag_set )
 	{
-		if ( gi.title.toLowerCase().indexOf( "roleplay" ) ~= - 1 || gi.title.indexOf( " RP" ) ~= -1 || gi.title.indexOf( "RP " ) ~= -1 || gi.title.indexOf( "RP" ) == gi.title.length - 2 )
+		if ( gi.title.toLowerCase().indexOf( "roleplay" ) != - 1 || gi.title.indexOf( " RP" ) != -1 || gi.title.indexOf( "RP " ) != -1 || gi.title.indexOf( "RP" ) == gi.title.length - 2 )
 		{
 			gi.tag = "rp";
 		}
@@ -597,7 +597,7 @@ function UpdateGamemodeInfo( server, type )
 	}
 
 	// Use the most common workshop id
-	if ( server.workshopid ~= "" and server.workshopid ~= "0" )
+	if ( server.workshopid != "" && server.workshopid != "0" )
 	{
 		if ( !gi.wsid ) gi.wsid = {}
 		if ( !gi.wsid[ server.workshopid ] ) { gi.wsid[ server.workshopid ] = 1; } else { gi.wsid[ server.workshopid ]++; }
@@ -606,7 +606,7 @@ function UpdateGamemodeInfo( server, type )
 
 	// flags, for filtering
 	gi = GetGamemode( server.gamemode, type )
-	if ( server.flag ~= "" )
+	if ( server.flag != "" )
 	{
 		if ( !gi.flags ) gi.flags = {}
 		gi.flags[ server.flag ] = true;
