@@ -236,11 +236,11 @@ function migrateDB(callback)
 
                 for i, row in pairs(oldData) do
                     local teamcmd = (RPExtraTeams[tonumber(row.team)] or {}).command
-                    if not teamcmd then goto continue end
+                    if teamcmd then
 
-                    MySQLite.queueQuery(string.format([[INSERT INTO darkrp_jobspawn(id, teamcmd) VALUES(%s, %s)]], row.id, MySQLite.SQLStr(teamcmd)))
+                        MySQLite.queueQuery(string.format([[INSERT INTO darkrp_jobspawn(id, teamcmd) VALUES(%s, %s)]], row.id, MySQLite.SQLStr(teamcmd)))
 
-                    ::continue::
+                    end
                 end
 
                 MySQLite.queueQuery([[REPLACE INTO darkrp_dbversion VALUES(20181014)]])
@@ -506,18 +506,18 @@ function setUpNonOwnableDoors()
         for _, row in pairs(r) do
             local e = DarkRP.doorIndexToEnt(tonumber(row.idx))
 
-            if not IsValid(e) then goto continue end
-            if e:isKeysOwnable() then
-                if tobool(row.isDisabled) then
-                    e:setKeysNonOwnable(tobool(row.isDisabled))
+            if IsValid(e) then
+                if e:isKeysOwnable() then
+                    if tobool(row.isDisabled) then
+                        e:setKeysNonOwnable(tobool(row.isDisabled))
+                    end
+                    if row.isLocked and row.isLocked ~= "NULL" then
+                        e:Fire((tobool(row.isLocked) and "" or "un") .. "lock", "", 0)
+                    end
+                    e:setKeysTitle(row.title ~= "NULL" and row.title or nil)
                 end
-                if row.isLocked and row.isLocked ~= "NULL" then
-                    e:Fire((tobool(row.isLocked) and "" or "un") .. "lock", "", 0)
-                end
-                e:setKeysTitle(row.title ~= "NULL" and row.title or nil)
-            end
 
-            ::continue::
+            end
         end
     end)
 end
@@ -557,18 +557,18 @@ function setUpTeamOwnableDoors()
             row.idx = tonumber(row.idx)
 
             local e = DarkRP.doorIndexToEnt(row.idx)
-            if not IsValid(e) then goto continue end
+            if IsValid(e) then
 
-            local _, job = DarkRP.getJobByCommand(row.job)
+                local _, job = DarkRP.getJobByCommand(row.job)
 
-            if job then
-                e:addKeysDoorTeam(job)
-            else
-                print(("can't find job %s for door %d, removing from database"):format(row.job, row.idx))
-                MySQLite.query(("DELETE FROM darkrp_doorjobs WHERE idx = %d AND map = %s AND job = %s;"):format(row.idx, MySQLite.SQLStr(map), MySQLite.SQLStr(row.job)))
+                if job then
+                    e:addKeysDoorTeam(job)
+                else
+                    print(("can't find job %s for door %d, removing from database"):format(row.job, row.idx))
+                    MySQLite.query(("DELETE FROM darkrp_doorjobs WHERE idx = %d AND map = %s AND job = %s;"):format(row.idx, MySQLite.SQLStr(map), MySQLite.SQLStr(row.job)))
+                end
+
             end
-
-            ::continue::
         end
     end)
 end
@@ -594,14 +594,11 @@ function setUpGroupDoors()
         for _, row in pairs(data) do
             local ent = DarkRP.doorIndexToEnt(tonumber(row.idx))
 
-            if not IsValid(ent) or not ent:isKeysOwnable() then
-                goto continue
+            if IsValid(ent) or ent:isKeysOwnable() and RPExtraTeamDoorIDs[row.doorgroup] then
+
+                ent:setDoorGroup(row.doorgroup)
+
             end
-
-            if not RPExtraTeamDoorIDs[row.doorgroup] then goto continue end
-            ent:setDoorGroup(row.doorgroup)
-
-            ::continue::
         end
     end)
 end

@@ -140,22 +140,22 @@ local function callHooks(hooks, canReturn, ...)
             isString = isstring(id)
         end
 
-        if not isfunction(f) then goto continue end
+        if isfunction(f) then
 
-        if not isString then
-            -- Non valid hooks are removed, as entities don't become valid after being non-valid
-            if IsValid(id) then
-                text = f(id, ...)
+            if not isString then
+                -- Non valid hooks are removed, as entities don't become valid after being non-valid
+                if IsValid(id) then
+                    text = f(id, ...)
+                else
+                    hooks[id] = nil
+                end
             else
-                hooks[id] = nil
+                text = f(...)
             end
-        else
-            text = f(...)
+
+            if text ~= nil and canReturn then return text end
+
         end
-
-        if text ~= nil and canReturn then return text end
-
-        ::continue::
     end
 end
 

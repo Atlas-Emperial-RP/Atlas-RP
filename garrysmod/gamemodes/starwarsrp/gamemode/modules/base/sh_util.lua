@@ -110,28 +110,26 @@ function DarkRP.findPlayers(info)
                 players = players or {}
                 table.insert(players, Player(PlayerInfo))
             end
-            goto continue
-        end
+        else
+            for _, v in ipairs(pls) do
+                -- Prevend duplicates
+                if not found[v] then
 
-        for _, v in ipairs(pls) do
-            -- Prevend duplicates
-            if found[v] then goto continue end
+                    -- Find by Steam ID
+                    if (PlayerInfo == v:SteamID() or v:SteamID() == "UNKNOWN") or
+                    -- Find by Partial Nick
+                    string.find(string.lower(v:Nick()), string.lower(tostring(PlayerInfo)), 1, true) ~= nil or
+                    -- Find by steam name
+                    (v.SteamName and string.find(string.lower(v:SteamName()), string.lower(tostring(PlayerInfo)), 1, true) ~= nil) then
+                        found[v] = true
+                        players = players or {}
+                        table.insert(players, v)
+                    end
 
-            -- Find by Steam ID
-            if (PlayerInfo == v:SteamID() or v:SteamID() == "UNKNOWN") or
-            -- Find by Partial Nick
-            string.find(string.lower(v:Nick()), string.lower(tostring(PlayerInfo)), 1, true) ~= nil or
-            -- Find by steam name
-            (v.SteamName and string.find(string.lower(v:SteamName()), string.lower(tostring(PlayerInfo)), 1, true) ~= nil) then
-                found[v] = true
-                players = players or {}
-                table.insert(players, v)
+                end
             end
 
-            ::continue::
         end
-
-        ::continue::
     end
 
     return players
@@ -153,33 +151,35 @@ function meta:getEyeSightHitEntity(searchDistance, hitDistance, filter)
     local foundEnt
 
     for _, ent in pairs(entities) do
-        if not IsValid(ent) or filter(ent) == false then goto continue end
+        if IsValid(ent) or filter(ent) ~= false then
 
-        local center = ent:GetPos()
+            local center = ent:GetPos()
 
-        -- project the center vector on the aim vector
-        local projected = shootPos + (center - shootPos):Dot(aimvec) * aimvec
+            -- project the center vector on the aim vector
+            local projected = shootPos + (center - shootPos):Dot(aimvec) * aimvec
 
-        if aimvec:Dot((projected - shootPos):GetNormalized()) < 0 then goto continue end
+            if not ( aimvec:Dot((projected - shootPos):GetNormalized()) < 0 ) then
 
-        -- the point on the model that has the smallest distance to your line of sight
-        local nearestPoint = ent:NearestPoint(projected)
-        local distance = nearestPoint:DistToSqr(projected)
+                -- the point on the model that has the smallest distance to your line of sight
+                local nearestPoint = ent:NearestPoint(projected)
+                local distance = nearestPoint:DistToSqr(projected)
 
-        if distance < smallestDistance then
-            local trace = {
-                start = self:GetShootPos(),
-                endpos = nearestPoint,
-                filter = {self, ent}
-            }
-            local traceLine = util.TraceLine(trace)
-            if traceLine.Hit then goto continue end
+                if distance < smallestDistance then
+                    local trace = {
+                        start = self:GetShootPos(),
+                        endpos = nearestPoint,
+                        filter = {self, ent}
+                    }
+                    local traceLine = util.TraceLine(trace)
+                    if not ( traceLine.Hit ) then
+                
+                        smallestDistance = distance
+                        foundEnt = ent
+                    end
+                end
 
-            smallestDistance = distance
-            foundEnt = ent
+            end
         end
-
-        ::continue::
     end
 
     self:LagCompensation(false)
@@ -245,17 +245,14 @@ function DarkRP.explodeArg(arg)
             inQuotes = not inQuotes
             wasQuotes = true
 
-            goto continue
-        end
+        
 
-        if c == ' ' and not inQuotes then
+        elseif c == ' ' and not inQuotes then
             diff = wasQuotes and 1 or 0
             wasQuotes = false
             tableinsert(args, stringsub(arg, from + diff, to - 1 - diff))
             from = to + 1
         end
-
-        ::continue::
     end
     diff = wasQuotes and 1 or 0
 

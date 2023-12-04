@@ -64,12 +64,10 @@ local function drawChatReceivers()
         if not IsValid(receivers[i]) then
             receivers[i] = receivers[#receivers]
             receivers[#receivers] = nil
-            goto continue
+        else
+            draw.WordBox(2, x, y - (i - 1) * (fontHeight + 4), receivers[i]:Nick(), "DarkRPHUD1", Color(0, 0, 0, 160), color_white)
+
         end
-
-        draw.WordBox(2, x, y - (i - 1) * (fontHeight + 4), receivers[i]:Nick(), "DarkRPHUD1", Color(0, 0, 0, 160), color_white)
-
-        ::continue::
     end
 end
 
@@ -82,19 +80,19 @@ local function chatGetRecipients()
     receivers = {}
     for _, ply in ipairs(player.GetAll()) do
         local hidePly = hook.Run("chatHideRecipient", ply)
-        if not IsValid(ply) or ply == LocalPlayer() or ply:GetNoDraw() or hidePly then goto continue end
+        if IsValid(ply) or ply ~= LocalPlayer() or not ply:GetNoDraw() or not hidePly then
 
-        local val = currentConfig.hearFunc(ply, currentChatText)
+            local val = currentConfig.hearFunc(ply, currentChatText)
 
-        -- Return nil to disable the chat recipients temporarily.
-        if val == nil then
-            receivers = nil
-            return
-        elseif val == true then
-            table.insert(receivers, ply)
+            -- Return nil to disable the chat recipients temporarily.
+            if val == nil then
+                receivers = nil
+                return
+            elseif val == true then
+                table.insert(receivers, ply)
+            end
+
         end
-
-        ::continue::
     end
 end
 

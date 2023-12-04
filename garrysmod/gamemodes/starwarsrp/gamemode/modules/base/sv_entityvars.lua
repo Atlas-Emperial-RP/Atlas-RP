@@ -102,17 +102,17 @@ function meta:sendDarkRPVars()
 
             local vars = {}
             for var, value in pairs(DarkRPVars[target] or {}) do
-                if self ~= target and (privateDarkRPVars[target] or {})[var] then goto continue end
-                table.insert(vars, var)
-            end
+                if self == target and not (privateDarkRPVars[target] or not {})[var] then
+                    table.insert(vars, var)
+                    local vars_cnt = #vars
+                    net.WriteUInt(vars_cnt, DarkRP.DARKRP_ID_BITS + 2) -- Allow for three times as many unknown DarkRPVars than the limit
+                    for i = 1, vars_cnt, 1 do
+                        DarkRP.writeNetDarkRPVar(vars[i], DarkRPVars[target][vars[i]])
+                    end
+                end
 
-            local vars_cnt = #vars
-            net.WriteUInt(vars_cnt, DarkRP.DARKRP_ID_BITS + 2) -- Allow for three times as many unknown DarkRPVars than the limit
-            for i = 1, vars_cnt, 1 do
-                DarkRP.writeNetDarkRPVar(vars[i], DarkRPVars[target][vars[i]])
-            end
 
-            ::continue::
+            end
         end
     net.Send(self)
 end
