@@ -87,23 +87,20 @@ function ENT:DrawAnims(sysTime)
             anim = anim.nextDonateAnimation
             self.firstDonateAnimation = anim
 
-            goto continue
+        else
+            draw.SimpleText(
+                anim.amount,
+                "DarkRP_tipjar",
+                -anim.textWidth / 2,
+                -100 - anim.progress * 200,
+                ColorAlpha(self.donateAnimColor, Lerp(anim.progress, 1024, 0)),
+                0
+            )
+
+            anim.progress = (sysTime - anim.start) * self.donateAnimSpeed
+
+            anim = anim.nextDonateAnimation
         end
-
-        draw.SimpleText(
-            anim.amount,
-            "DarkRP_tipjar",
-            -anim.textWidth / 2,
-            -100 - anim.progress * 200,
-            ColorAlpha(self.donateAnimColor, Lerp(anim.progress, 1024, 0)),
-            0
-        )
-
-        anim.progress = (sysTime - anim.start) * self.donateAnimSpeed
-
-        anim = anim.nextDonateAnimation
-        
-        ::continue::
     end
 
     if not self.firstDonateAnimation then

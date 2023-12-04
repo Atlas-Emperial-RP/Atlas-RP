@@ -203,21 +203,21 @@ search.AddProvider( function( str )
 		local niceName = v.Name or "#" .. k
 		if ( niceName:StartWith( "#" ) ) then niceName = language.GetPhrase( niceName:sub( 2 ) ) end
 
-		if (  not k:lower():find( str, nil, true ) and not niceName:lower():find( str, nil, true ) ) then goto continue end
+		if ( k:lower():find( str, nil, true ) and niceName:lower():find( str, nil, true ) ) then
 
-		local entry = {
-			text = niceName,
-			icon = spawnmenu.CreateContentIcon( "tool", nil, {
-				spawnname = k,
-				nicename = v.Name or "#" .. k
-			} ),
-			words = { k }
-		}
+			local entry = {
+				text = niceName,
+				icon = spawnmenu.CreateContentIcon( "tool", nil, {
+					spawnname = k,
+					nicename = v.Name or "#" .. k
+				} ),
+				words = { k }
+			}
 
-		table.insert( list, entry )
+			table.insert( list, entry )
 
-		if ( #list >= GetConVarNumber( "sbox_search_maxresults" ) / 32 ) then break end
-		::continue::
+			if ( #list >= GetConVarNumber( "sbox_search_maxresults" ) / 32 ) then break end
+		end
 	end
 
 	return list

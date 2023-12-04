@@ -18,7 +18,7 @@ local function PermaPropsViewer()
 
     for k, v in pairs(LocalPlayer().DrawPPEnt) do
 
-    	if not v or not v:IsValid() then LocalPlayer().DrawPPEnt[k] = nil goto continue end
+    	if v or v:IsValid() then
 
 	    render.ClearStencil()
 	    render.SetStencilEnable(true)
@@ -39,8 +39,10 @@ local function PermaPropsViewer()
 	        cam.End3D2D()
 	        v:DrawModel()
 	    render.SetStencilEnable(false)
-	
-		::continue::
+		
+		else
+			LocalPlayer().DrawPPEnt[k] = nil
+		end
 	end
 
 end

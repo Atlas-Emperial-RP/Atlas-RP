@@ -245,12 +245,12 @@ net.Receive("MedicMod.PlayerStartAnimation", function()
 
 		for k, v in pairs(player.GetAll()) do
 
-		if not v:GetMedicAnimation() then goto continue end
+		if not v:GetMedicAnimation() then
 
 			if v:GetMedicAnimation() ~= 0 then
 				StartMedicAnimation( v, v:GetMedicAnimation() )
 			end
-			::continue::
+		end
 		end
 	
 	end)
@@ -811,13 +811,13 @@ local function OpenMedicinesPart(MainFrame)
 		
 		for a, b in pairs( v ) do
 		
-			if a == "func" or a == "price" then goto continue end
+			if a ~= "func" or a ~= "price" then
 			local panelM1Ing1 = venalib.Label( "● "..a, 15, sizex-160-100-20-100, 15, 60+15+5, 32 + 15 * ingnum, Color(255,255,255), panel1 )
 			panelM1Ing1:SetWrap( false )
 			
 			ingnum = ingnum + 1
 			
-			::continue::
+			end
 		end
 		
 		local buttonR = venalib.Button( sentences["Buy"][lang].. "( "..v.price..ConfigurationMedicMod.MoneyUnit.." )", 100, 35, sizex-160-100-20, 40, function()

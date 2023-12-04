@@ -473,30 +473,30 @@ if CLIENT then
 
         for k, v in pairs(bones) do
             local bone = vm:LookupBone(k)
-            if not bone then goto continue end
+            if bone then
 
-            -- Bone scaling seems to be buggy. Workaround.
-            local scale = Vector(v.scale.x, v.scale.y, v.scale.z)
-            local ms = Vector(1,1,1)
-            local cur = vm:GetBoneParent(bone)
-            while cur >= 0 do
-                local pscale = bones[vm:GetBoneName(cur)].scale
-                ms = ms * pscale
-                cur = vm:GetBoneParent(cur)
-            end
-            scale = scale * ms
+                -- Bone scaling seems to be buggy. Workaround.
+                local scale = Vector(v.scale.x, v.scale.y, v.scale.z)
+                local ms = Vector(1,1,1)
+                local cur = vm:GetBoneParent(bone)
+                while cur >= 0 do
+                    local pscale = bones[vm:GetBoneName(cur)].scale
+                    ms = ms * pscale
+                    cur = vm:GetBoneParent(cur)
+                end
+                scale = scale * ms
 
-            if vm:GetManipulateBoneScale(bone) ~= scale then
-                vm:ManipulateBoneScale(bone, scale)
-            end
-            if vm:GetManipulateBonePosition(bone) ~= v.pos then
-                vm:ManipulateBonePosition(bone, v.pos)
-            end
-            if vm:GetManipulateBoneAngles(bone) ~= v.angle then
-                vm:ManipulateBoneAngles(bone, v.angle)
-            end
+                if vm:GetManipulateBoneScale(bone) ~= scale then
+                    vm:ManipulateBoneScale(bone, scale)
+                end
+                if vm:GetManipulateBonePosition(bone) ~= v.pos then
+                    vm:ManipulateBonePosition(bone, v.pos)
+                end
+                if vm:GetManipulateBoneAngles(bone) ~= v.angle then
+                    vm:ManipulateBoneAngles(bone, v.angle)
+                end
 
-            ::continue::
+            end
         end
     end
 

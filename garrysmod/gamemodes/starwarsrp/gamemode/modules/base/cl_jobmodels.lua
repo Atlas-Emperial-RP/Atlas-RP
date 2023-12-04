@@ -34,12 +34,13 @@ Load the preferred models
 local function sendModels() -- run after the jobs have loaded
     net.Start("DarkRP_preferredjobmodels")
         for _, job in pairs(RPExtraTeams) do
-            if not preferredModels[job.command] then net.WriteBit(false) goto continue end
+            if preferredModels[job.command] then
 
-            net.WriteBit(true)
-            net.WriteString(preferredModels[job.command])
-
-            ::continue::
+                net.WriteBit(true)
+                net.WriteString(preferredModels[job.command])
+            else
+                net.Writebit(false)
+            end
         end
     net.SendToServer()
 end

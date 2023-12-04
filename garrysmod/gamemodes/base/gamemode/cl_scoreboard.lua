@@ -243,13 +243,13 @@ local SCORE_BOARD = {
 		
 		for id, pl in ipairs( player.GetAll() ) do
 
-			if ( IsValid( pl.ScoreEntry ) ) then goto continue end
+			if ( not IsValid( pl.ScoreEntry ) ) then
 
-			pl.ScoreEntry = vgui.CreateFromTable( PLAYER_LINE, pl.ScoreEntry )
-			pl.ScoreEntry:Setup( pl )
-
-			self.Scores:AddItem( pl.ScoreEntry )
-			::continue::
+				pl.ScoreEntry = vgui.CreateFromTable( PLAYER_LINE, pl.ScoreEntry )
+				pl.ScoreEntry:Setup( pl )
+			
+				self.Scores:AddItem( pl.ScoreEntry )
+			end
 		end
 
 	end

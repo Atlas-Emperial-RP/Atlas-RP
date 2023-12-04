@@ -134,17 +134,13 @@ function SWEP:GetStrippableWeapons(ent, callback)
         for _, v in ipairs(ent:GetWeapons()) do
             local class = v:GetClass()
 
-            if GAMEMODE.Config.weaponCheckerHideDefault and (table.HasValue(GAMEMODE.Config.DefaultWeapons, class) or
-                access and table.HasValue(GAMEMODE.Config.AdminWeapons, class) or
-                ent:getJobTable() and ent:getJobTable().weapons and table.HasValue(ent:getJobTable().weapons, class)) then
-                goto continue
+            if GAMEMODE.Config.weaponCheckerHideDefault and (table.HasValue(GAMEMODE.Config.DefaultWeapons, class) or access and table.HasValue(GAMEMODE.Config.AdminWeapons, class) or ent:getJobTable() and ent:getJobTable().weapons and table.HasValue(ent:getJobTable().weapons, class)) then
+
+            elseif not (GAMEMODE.Config.weaponCheckerHideNoLicense and GAMEMODE.NoLicense[class]) or not ( GAMEMODE.Config.noStripWeapons[class] ) then
+
+                callback(v)
+
             end
-
-            if (GAMEMODE.Config.weaponCheckerHideNoLicense and GAMEMODE.NoLicense[class]) or GAMEMODE.Config.noStripWeapons[class] then goto continue end
-
-            callback(v)
-
-            ::continue::
         end
     end)
 end
@@ -238,15 +234,15 @@ function SWEP:Reload()
 
             -- :Give returns NULL when the player already has the weapon
             wep = IsValid(wep) and wep or ent:GetWeapon(v.class)
-            if not IsValid(wep) then goto continue end
+            if IsValid(wep) then
 
-            ent:GiveAmmo(v.primaryAmmoCount, v.primaryAmmoType, true)
-            ent:GiveAmmo(v.secondaryAmmoCount, v.secondaryAmmoType, true)
+                ent:GiveAmmo(v.primaryAmmoCount, v.primaryAmmoType, true)
+                ent:GiveAmmo(v.secondaryAmmoCount, v.secondaryAmmoType, true)
 
-            wep:SetClip1(v.clip1)
-            wep:SetClip2(v.clip2)
+                wep:SetClip1(v.clip1)
+                wep:SetClip2(v.clip2)
 
-            ::continue::
+            end
         end
         DarkRP.notify(Owner, 2, 4, DarkRP.getPhrase("returned_persons_weapons", ent:Nick()))
 
@@ -295,11 +291,11 @@ function SWEP:Succeed()
     else
         -- Merge stripped weapons into confiscated weapons
         for k,v in pairs(stripped) do
-            if ent.ConfiscatedWeapons[k] then goto continue end
+            if ent.ConfiscatedWeapons[k] then
 
-            ent.ConfiscatedWeapons[k] = v
+                ent.ConfiscatedWeapons[k] = v
 
-            ::continue::
+            end
         end
     end
 

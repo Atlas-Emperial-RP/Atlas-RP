@@ -44,15 +44,13 @@ hook.Add( "PopulatePostProcess", "AddPostProcess", function( pnlContent, tree, n
 
 				if ( pp.func ) then
 					pp.func( self.PropPanel )
-					goto continue
+				else
+					spawnmenu.CreateContentIcon( "postprocess", self.PropPanel, {
+						name	= pp.name,
+						icon	= pp.icon
+					} )
+
 				end
-
-				spawnmenu.CreateContentIcon( "postprocess", self.PropPanel, {
-					name	= pp.name,
-					icon	= pp.icon
-				} )
-
-				::continue::
 			end
 
 		end

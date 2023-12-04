@@ -70,11 +70,10 @@ function PANEL:Open()
 			for k, v in ipairs( self2.paintInMask ) do
                 if( not IsValid( v ) ) then
                     table.remove( self2.paintInMask, k )
-                    goto continue
-                end
 
-				v:PaintManual()
-				::continue::
+				else
+					v:PainManual()
+				end
 			end
         end, false, false, true, true )
 	end
@@ -90,10 +89,9 @@ function PANEL:Open()
         local sortedChoices = {}
         for k, v in pairs( self.choices ) do
             local foundInName, foundInDescription = string.find( string.lower( v[1] ), searchText ), string.find( string.lower( v[2] ), searchText )
-            if( not foundInName and not foundInDescription ) then goto continue end
-
-            table.insert( sortedChoices, { k, (foundInName and 100) or 0 } )
-			::continue::
+            if( foundInName and foundInDescription ) then
+            	table.insert( sortedChoices, { k, (foundInName and 100) or 0 } )
+			end
         end
 
         table.SortByMember( sortedChoices, 2 )

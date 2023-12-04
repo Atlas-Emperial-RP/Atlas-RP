@@ -224,18 +224,16 @@ if EdgeHUD.Configuration.GetConfigValue( "TopRight" ) then
 			--Check if the widget should be drawn.
 			if detailWidgets[i].shouldDraw() then
 				curWidget:SetVisible(true)
+				--Set the panel position.
+				curWidget:SetPos(screenWidth - VARS.ScreenMargin - VARS.toprightWidth - EdgeHUD.RightOffset, detailsPos + EdgeHUD.TopOffset)
+
+				--Calculate the rest of the detailsPos.
+				detailsPos = detailsPos + VARS.ElementsMargin + detailWidgetsHeight
 			else
 				curWidget:SetVisible(false)
-				goto continue
 			end
 
-			--Set the panel position.
-			curWidget:SetPos(screenWidth - VARS.ScreenMargin - VARS.toprightWidth - EdgeHUD.RightOffset, detailsPos + EdgeHUD.TopOffset)
-
-			--Calculate the rest of the detailsPos.
-			detailsPos = detailsPos + VARS.ElementsMargin + detailWidgetsHeight
 			
-			::continue::
 		end
 
 	end)

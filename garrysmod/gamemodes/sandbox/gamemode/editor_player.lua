@@ -123,11 +123,9 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 			for i, word in ipairs( string.Explode( "_", str ) ) do
 				if ( #word == 1 ) then
 					nicename[i] = string.upper( string.sub( word, 1, 1 ) )
-					goto continue
+				else
+					nicename[i] = string.upper( string.sub( word, 1, 1 ) ) .. string.sub( word, 2 )
 				end
-				
-				nicename[i] = string.upper( string.sub( word, 1, 1 ) ) .. string.sub( word, 2 )
-				::continue::
 			end
 
 			return table.concat( nicename, " " )
@@ -196,26 +194,26 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 
 			local groups = string.Explode( " ", GetConVarString( "cl_playerbodygroups" ) )
 			for k = 0, mdl.Entity:GetNumBodyGroups() - 1 do
-				if ( mdl.Entity:GetBodygroupCount( k ) <= 1 ) then goto continue end
+				if not ( mdl.Entity:GetBodygroupCount( k ) <= 1 ) then
 
-				local bgroup = vgui.Create( "DNumSlider" )
-				bgroup:Dock( TOP )
-				bgroup:SetText( MakeNiceName( mdl.Entity:GetBodygroupName( k ) ) )
-				bgroup:SetDark( true )
-				bgroup:SetTall( 50 )
-				bgroup:SetDecimals( 0 )
-				bgroup.type = "bgroup"
-				bgroup.typenum = k
-				bgroup:SetMax( mdl.Entity:GetBodygroupCount( k ) - 1 )
-				bgroup:SetValue( groups[ k + 1 ] or 0 )
-				bgroup.OnValueChanged = UpdateBodyGroups
+					local bgroup = vgui.Create( "DNumSlider" )
+					bgroup:Dock( TOP )
+					bgroup:SetText( MakeNiceName( mdl.Entity:GetBodygroupName( k ) ) )
+					bgroup:SetDark( true )
+					bgroup:SetTall( 50 )
+					bgroup:SetDecimals( 0 )
+					bgroup.type = "bgroup"
+					bgroup.typenum = k
+					bgroup:SetMax( mdl.Entity:GetBodygroupCount( k ) - 1 )
+					bgroup:SetValue( groups[ k + 1 ] or 0 )
+					bgroup.OnValueChanged = UpdateBodyGroups
 
-				bdcontrolspanel:AddItem( bgroup )
+					bdcontrolspanel:AddItem( bgroup )
 
-				mdl.Entity:SetBodygroup( k, groups[ k + 1 ] or 0 )
+					mdl.Entity:SetBodygroup( k, groups[ k + 1 ] or 0 )
 
-				bgtab.Tab:SetVisible( true )
-				::continue::
+					bgtab.Tab:SetVisible( true )
+				end
 			end
 
 			sheet.tabScroller:InvalidateLayout()

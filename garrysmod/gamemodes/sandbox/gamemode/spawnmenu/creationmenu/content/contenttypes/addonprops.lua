@@ -8,15 +8,15 @@ local function AddRecursive( pnl, folder, path, wildcard )
 
 	for k, v in ipairs( files ) do
 
-		if ( not string.EndsWith( v, ".mdl" ) ) then goto continue end
+		if ( string.EndsWith( v, ".mdl" ) ) then
 
-		local cp = spawnmenu.GetContentType( "model" )
-		if ( cp ) then
-			cp( pnl, { model = folder .. v } )
-			added = true
+			local cp = spawnmenu.GetContentType( "model" )
+			if ( cp ) then
+				cp( pnl, { model = folder .. v } )
+				added = true
+			end
+
 		end
-
-		::continue::
 	end
 
 	for k, v in ipairs( folders ) do
@@ -49,31 +49,30 @@ local function RefreshAddons( MyNode )
 
 	for _, addon in SortedPairsByMemberValue( engine.GetAddons(), "title" ) do
 
-		if ( not addon.downloaded or not addon.mounted ) then goto continue end
-		if ( addon.models <= 0 ) then goto continue end
+		if ( addon.downloaded or addon.mounted ) and not ( addon.models <= 0) then
 
-		local models = MyNode:AddNode( addon.title .. " (" .. addon.models .. ")", "icon16/bricks.png" )
-		models.DoClick = function()
+			local models = MyNode:AddNode( addon.title .. " (" .. addon.models .. ")", "icon16/bricks.png" )
+			models.DoClick = function()
 
-			ViewPanel:Clear( true )
+				ViewPanel:Clear( true )
 
-			local anyAdded = AddRecursive( ViewPanel, "models/", addon.title, "*.mdl" )
-			if ( not anyAdded ) then
-				local cp = spawnmenu.GetContentType( "header" )
-				if ( cp ) then cp( ViewPanel, { text = "#spawnmenu.failedtofindmodels" } ) end
+				local anyAdded = AddRecursive( ViewPanel, "models/", addon.title, "*.mdl" )
+				if ( not anyAdded ) then
+					local cp = spawnmenu.GetContentType( "header" )
+					if ( cp ) then cp( ViewPanel, { text = "#spawnmenu.failedtofindmodels" } ) end
 
-				-- For debugging
-				local cp = spawnmenu.GetContentType( "header" )
-				if ( cp ) then cp( ViewPanel, { text = tostring( addon.title ) .. " (ID: " .. tostring( addon.wsid ) .. ")" } ) end
+					-- For debugging
+					local cp = spawnmenu.GetContentType( "header" )
+					if ( cp ) then cp( ViewPanel, { text = tostring( addon.title ) .. " (ID: " .. tostring( addon.wsid ) .. ")" } ) end
+				end
+
+				MyNode.pnlContent:SwitchPanel( ViewPanel )
+
 			end
-
-			MyNode.pnlContent:SwitchPanel( ViewPanel )
+			models.DoRightClick = AddonsRightClick
+			models.wsid = addon.wsid
 
 		end
-		models.DoRightClick = AddonsRightClick
-		models.wsid = addon.wsid
-
-		::continue::
 	end
 
 end

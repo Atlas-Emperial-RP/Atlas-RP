@@ -234,13 +234,11 @@ function PANEL:SetWeaponClass( weaponClass )
             GetOwnedItems = function()
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetOwnedSkins() ) do
-                    if( not v["*"] and not v[weaponClass] ) then goto continue end
+                    if( v["*"] and v[weaponClass] ) then
             
                     local devConfig = PROJECT0.DEVCONFIG.WeaponSkins[k]
-                    if( not devConfig ) then goto continue end
-
-                    table.insert( items, { PROJECT0.FUNC.GetSkinRarity( k ), k } )
-                    ::continue::
+                    if( not devConfig ) then table.insert( items, { PROJECT0.FUNC.GetSkinRarity( k ), k } ) end
+                    end
                 end
 
                 return items
@@ -265,13 +263,12 @@ function PANEL:SetWeaponClass( weaponClass )
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
                     local type, itemKey = PROJECT0.FUNC.ReverseCosmeticKey( k )
-                    if( type ~= PROJECT0.COSMETIC_TYPES.CHARM ) then goto continue end
+                    if( type == PROJECT0.COSMETIC_TYPES.CHARM ) then
             
                     local configTable = PROJECT0.CONFIG.CUSTOMISER.Charms[itemKey]
-                    if( not configTable ) then goto continue end
-
-                    table.insert( items, { configTable.Rarity, itemKey } )
-                    ::continue::
+                    if( configTable ) then table.insert( items, { configTable.Rarity, itemKey } ) end
+                    
+                    end
                 end
 
                 return items
@@ -298,13 +295,12 @@ function PANEL:SetWeaponClass( weaponClass )
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
                     local type, itemKey = PROJECT0.FUNC.ReverseCosmeticKey( k )
-                    if( type ~= PROJECT0.COSMETIC_TYPES.STICKER ) then goto continue end
+                    if( type == PROJECT0.COSMETIC_TYPES.STICKER ) then
             
                     local configTable = PROJECT0.CONFIG.CUSTOMISER.Stickers[itemKey]
-                    if( not configTable ) then goto continue end
+                    if( configTable ) then table.insert( items, { configTable.Rarity, itemKey } ) end
             
-                    table.insert( items, { configTable.Rarity, itemKey } )
-                    ::continue::
+                    end
                 end
 
                 return items
@@ -348,9 +344,9 @@ function PANEL:SetWeaponClass( weaponClass )
     
                 local startX = self2:LocalToScreen( 0, 0 )
                 for k, v in ipairs( self2.pnlCanvas:GetChildren() ) do
-                    if( not v.SetShadowBounds ) then goto continue_1 end
-                    v:SetShadowBounds( startX, 0, startX+w, ScrH() )
-                    ::continue_1::
+                    if( v.SetShadowBounds ) then
+                        v:SetShadowBounds( startX, 0, startX+w, ScrH() )
+                    end
                 end
             end
 
@@ -360,70 +356,70 @@ function PANEL:SetWeaponClass( weaponClass )
                     draw.SimpleText( PROJECT0.L( "disabled_on_weapon", v.Name ), "MontserratBold21", w/2, h/2-2, PROJECT0.FUNC.GetTheme( 3, 100 ), TEXT_ALIGN_CENTER, 0 )
                 end
 
-                goto continue
-            end
+            else
+                local startX = page:LocalToScreen( 0, 0 )
 
-            local startX = page:LocalToScreen( 0, 0 )
+                local items = v.GetOwnedItems()
+                table.sort( items, function(a, b) return PROJECT0.FUNC.GetRarityOrder( a[1] ) > PROJECT0.FUNC.GetRarityOrder( b[1] ) end )
 
-            local items = v.GetOwnedItems()
-            table.sort( items, function(a, b) return PROJECT0.FUNC.GetRarityOrder( a[1] ) > PROJECT0.FUNC.GetRarityOrder( b[1] ) end )
+                itemPanels[v.CosmeticKey] = {}
 
-            itemPanels[v.CosmeticKey] = {}
+                local equippedCosmetic = LocalPlayer():Project0():GetEquippedCosmetic( v.CosmeticKey, weaponClass )
+                for _, val in ipairs( items ) do
+                    local infoPanel = vgui.Create( "pz_cosmetic_item", page )
+                    infoPanel:Dock( LEFT )
+                    infoPanel:SetTall( customisePanel:GetTall()-customisePanel.navigation:GetTall()-(2*PROJECT0.UI.Margin25) )
+                    infoPanel:SetWide( infoPanel:GetTall()/1.2 )
+                    infoPanel:DockMargin( PROJECT0.UI.Margin25, PROJECT0.UI.Margin25, 0, PROJECT0.UI.Margin25 )
+                    infoPanel:SetRarity( val[1] )
+                    infoPanel:SetShadowBounds( startX, 0, startX+(page.actualW or 0), ScrH() )
+                    infoPanel.DoClick = function()
+                        v.OnItemClick( val )
+                    end
 
-            local equippedCosmetic = LocalPlayer():Project0():GetEquippedCosmetic( v.CosmeticKey, weaponClass )
-            for _, val in ipairs( items ) do
-                local infoPanel = vgui.Create( "pz_cosmetic_item", page )
-                infoPanel:Dock( LEFT )
-                infoPanel:SetTall( customisePanel:GetTall()-customisePanel.navigation:GetTall()-(2*PROJECT0.UI.Margin25) )
-                infoPanel:SetWide( infoPanel:GetTall()/1.2 )
-                infoPanel:DockMargin( PROJECT0.UI.Margin25, PROJECT0.UI.Margin25, 0, PROJECT0.UI.Margin25 )
-                infoPanel:SetRarity( val[1] )
-                infoPanel:SetShadowBounds( startX, 0, startX+(page.actualW or 0), ScrH() )
-                infoPanel.DoClick = function()
-                    v.OnItemClick( val )
+                    if( equippedCosmetic == val[2] ) then
+                        infoPanel:SetActive( true, true )
+                    end
+
+                    v.OnCreatePnl( infoPanel, val )
+
+                    table.insert( itemPanels[v.CosmeticKey], { infoPanel, val[2] } )
                 end
 
-                if( equippedCosmetic == val[2] ) then
-                    infoPanel:SetActive( true, true )
+                local unselectedPanel = vgui.Create( "pz_cosmetic_item", page )
+                unselectedPanel:Dock( LEFT )
+                unselectedPanel:SetTall( customisePanel:GetTall()-customisePanel.navigation:GetTall()-(2*PROJECT0.UI.Margin25) )
+                unselectedPanel:SetWide( unselectedPanel:GetTall()/1.2 )
+                unselectedPanel:DockMargin( PROJECT0.UI.Margin25, PROJECT0.UI.Margin25, 0, PROJECT0.UI.Margin25 )
+                unselectedPanel:SetShadowBounds( startX, 0, startX+(page.actualW or 0), ScrH() )
+                unselectedPanel.gradientAnim:SetColors( PROJECT0.FUNC.GetTheme( 3, 100 ) )
+                unselectedPanel.gradientAnim:StartAnim()
+                unselectedPanel.DoClick = function()
+                    v.OnItemClick( val, true )
                 end
 
-                v.OnCreatePnl( infoPanel, val )
-                
-                table.insert( itemPanels[v.CosmeticKey], { infoPanel, val[2] } )
-            end
+                if( equippedCosmetic == 0 ) then
+                    unselectedPanel:SetActive( true, true )
+                end
 
-            local unselectedPanel = vgui.Create( "pz_cosmetic_item", page )
-            unselectedPanel:Dock( LEFT )
-            unselectedPanel:SetTall( customisePanel:GetTall()-customisePanel.navigation:GetTall()-(2*PROJECT0.UI.Margin25) )
-            unselectedPanel:SetWide( unselectedPanel:GetTall()/1.2 )
-            unselectedPanel:DockMargin( PROJECT0.UI.Margin25, PROJECT0.UI.Margin25, 0, PROJECT0.UI.Margin25 )
-            unselectedPanel:SetShadowBounds( startX, 0, startX+(page.actualW or 0), ScrH() )
-            unselectedPanel.gradientAnim:SetColors( PROJECT0.FUNC.GetTheme( 3, 100 ) )
-            unselectedPanel.gradientAnim:StartAnim()
-            unselectedPanel.DoClick = function()
-                v.OnItemClick( val, true )
-            end
+                table.insert( itemPanels[v.CosmeticKey], { unselectedPanel, 0 } )
 
-            if( equippedCosmetic == 0 ) then
-                unselectedPanel:SetActive( true, true )
-            end
+                local unselectedIcon = vgui.Create( "Panel", unselectedPanel )
+                unselectedIcon:Dock( FILL )
+                local iconMat = Material( "project0/icons/blank.png" )
+                unselectedIcon.Paint = function( self2, w, h )
+                    surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 3, 25 ) )
+                    surface.SetMaterial( iconMat )
+                    local iconSize = PROJECT0.FUNC.ScreenScale( 64 )
+                    surface.DrawTexturedRect( w/2-iconSize/2, h/2-iconSize/2, iconSize, iconSize )
+                end
 
-            table.insert( itemPanels[v.CosmeticKey], { unselectedPanel, 0 } )
+                local spacingPanel = vgui.Create( "Panel", page )
+                spacingPanel:Dock( LEFT )
+                spacingPanel:SetWide( PROJECT0.UI.Margin25 )
+
             
-            local unselectedIcon = vgui.Create( "Panel", unselectedPanel )
-            unselectedIcon:Dock( FILL )
-            local iconMat = Material( "project0/icons/blank.png" )
-            unselectedIcon.Paint = function( self2, w, h )
-                surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 3, 25 ) )
-                surface.SetMaterial( iconMat )
-                local iconSize = PROJECT0.FUNC.ScreenScale( 64 )
-                surface.DrawTexturedRect( w/2-iconSize/2, h/2-iconSize/2, iconSize, iconSize )
             end
-
-            local spacingPanel = vgui.Create( "Panel", page )
-            spacingPanel:Dock( LEFT )
-            spacingPanel:SetWide( PROJECT0.UI.Margin25 )
-            ::continue::
         end
     end
     RefreshCosmetics()

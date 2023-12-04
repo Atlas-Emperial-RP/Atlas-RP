@@ -70,17 +70,14 @@ if EdgeHUD.Configuration.GetConfigValue( "PlayerOverhead" ) then
 		--Loop through all players.
 		for k,v in pairs(players) do
 
-			--Make sure the player is valid.
-			if not IsValid(v) then goto continue end
-
-			--Dont draw ourselves.
-			if v == ply then goto continue end
+			--Make sure the player is valid and Dont draw ourselves.
+			if IsValid(v) and v ~= ply then
 
 			--Check so the player is close enough.
 			if ply:GetPos():DistToSqr( v:GetPos() ) < 300^2 or v:IsSpeaking() then
 				table.insert(playersToRender,v)
 			end
-			::continue::
+			end
 		end
 
 	end)
@@ -93,17 +90,8 @@ if EdgeHUD.Configuration.GetConfigValue( "PlayerOverhead" ) then
 
 		for k,v in pairs(playersToRender) do
 
-			--Make sure the player is valid.
-			if not IsValid(v) then goto continue end
-
-			--Check if the player is dead.
-			if not v:Alive() then goto continue end
-
-			--Check so the player isn't dormant.
-			if v:IsDormant() then goto continue end
-
-			--Check if the player is cloaked.
-			if v:GetColor().a < 100 or v:GetNoDraw() then goto continue end
+			--Make sure the player is valid. Check if the player is dead. Check so the player isn't dormant. Check if the player is cloaked
+			if IsValid(v) and v:Alive() and not v:IsDormant() and not (v:GetColor().a < 100 or v:GetNoDraw()) then
 
 			--Get the local player's eye angles.
 			local eyeAngs = ply:EyeAngles()
@@ -222,7 +210,7 @@ if EdgeHUD.Configuration.GetConfigValue( "PlayerOverhead" ) then
 			--End cam3d2d
 			cam.End3D2D()
 
-			::continue::
+			end
 		end
 
 	end)

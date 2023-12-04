@@ -301,20 +301,20 @@ local function CheckChat(ply, text)
     local longestMatchLength = 0
     for k, v in pairs(sounds) do
         local res1, res2 = string.find(string.lower(text), k)
-        if not res1 then goto continue end
-        local charBefore = text[res1 - 1]
-        local charAfter = text[res2 + 1]
-        local length = res2 - res1
-        -- Check whether the match is not part of a larger word (e.g. "no" should not match when "know" is said)
-        if charBefore and charBefore ~= "" and charBefore ~= " " then goto continue end
-        if charAfter and charAfter ~= "" and charAfter ~= " " then goto continue end
+        if res1 then
+            local charBefore = text[res1 - 1]
+            local charAfter = text[res2 + 1]
+            local length = res2 - res1
+            -- Check whether the match is not part of a larger word (e.g. "no" should not match when "know" is said)
+            if charBefore and charBefore == "" and charBefore == " " and charAfter and charBefore == "" and charAfter == " " then
 
-        if length > longestMatchLength then
-            longestMatch = k
-            longestMatchLength = length
+                if length > longestMatchLength then
+                    longestMatch = k
+                    longestMatchLength = length
+                end
+
+            end
         end
-
-        ::continue::
     end
 
     if not longestMatch then return end

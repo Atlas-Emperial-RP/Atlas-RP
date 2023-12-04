@@ -151,11 +151,12 @@ function PANEL:Init()
 
         local createVariablesPage = false
         for key, val in ipairs( configMeta:GetSortedVariables() ) do
-            if( val.Type == PROJECT0.TYPE.Table ) then goto continue end
+            if( val.Type ~= PROJECT0.TYPE.Table ) then
 
-            createVariablesPage = true
+                createVariablesPage = true
 
-            ::continue::
+            end
+
             break
         end
 
@@ -178,97 +179,97 @@ function PANEL:Init()
                     local headerH = PROJECT0.FUNC.ScreenScale( 75 )
                     local customElement = val.Type == PROJECT0.TYPE.Table and val.VguiElement
 
-                    if( val.Type == PROJECT0.TYPE.Table ) then goto continue_1 end
+                    if( val.Type ~= PROJECT0.TYPE.Table ) then
 
-                    local variablePanel = vgui.Create( "DPanel", scrollPanel )
-                    variablePanel:Dock( TOP )
-                    variablePanel:SetTall( headerH )
-                    variablePanel:DockMargin( 0, 0, PROJECT0.UI.Margin10, PROJECT0.UI.Margin10 )
-                    variablePanel.Paint = function( self2, w, h )
-                        self2:CreateFadeAlpha( false, 0, 0.5, false, self2.highlight, 100, 0.5 )
+                        local variablePanel = vgui.Create( "DPanel", scrollPanel )
+                        variablePanel:Dock( TOP )
+                        variablePanel:SetTall( headerH )
+                        variablePanel:DockMargin( 0, 0, PROJECT0.UI.Margin10, PROJECT0.UI.Margin10 )
+                        variablePanel.Paint = function( self2, w, h )
+                            self2:CreateFadeAlpha( false, 0, 0.5, false, self2.highlight, 100, 0.5 )
 
-                        surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 2, 100+self2.alpha ) )
-                        surface.DrawRect( 0, 0, w, h )
+                            surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 2, 100+self2.alpha ) )
+                            surface.DrawRect( 0, 0, w, h )
 
-                        surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 4 ) )
-                        surface.DrawRect( 0, 0, 5, h )
+                            surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 4 ) )
+                            surface.DrawRect( 0, 0, 5, h )
 
-                        draw.SimpleText( val.Name, "MontserratBold22", PROJECT0.UI.Margin25, headerH/2+1, PROJECT0.FUNC.GetTheme( 4 ), 0, TEXT_ALIGN_BOTTOM )
-                        draw.SimpleText( val.Description, "MontserratMedium21", PROJECT0.UI.Margin25, headerH/2-1, PROJECT0.FUNC.GetTheme( 3, 100 ) )
+                            draw.SimpleText( val.Name, "MontserratBold22", PROJECT0.UI.Margin25, headerH/2+1, PROJECT0.FUNC.GetTheme( 4 ), 0, TEXT_ALIGN_BOTTOM )
+                            draw.SimpleText( val.Description, "MontserratMedium21", PROJECT0.UI.Margin25, headerH/2-1, PROJECT0.FUNC.GetTheme( 3, 100 ) )
+                        end
+
+                        self.pages[pageKey].VariablePanels[val.Key] = variablePanel
+
+                        local targetH = PROJECT0.FUNC.ScreenScale( 40 )
+                        local margin = (variablePanel:GetTall()-targetH)/2
+
+                        if( val.GetOptions ) then
+                            local options = val.GetOptions()
+
+                            local comboSelect = vgui.Create( "pz_combo", variablePanel )
+                            comboSelect:Dock( RIGHT )
+                            comboSelect:DockMargin( 0, margin, PROJECT0.UI.Margin25, margin )
+                            comboSelect:SetWide( PROJECT0.FUNC.ScreenScale( 200 ) )
+                            comboSelect:SetBackColor( PROJECT0.FUNC.GetTheme( 1 ) )
+                            comboSelect:SetHighlightColor( PROJECT0.FUNC.GetTheme( 2, 50 ) )
+                            comboSelect:SetValue( "Select Option" )
+
+                            local currentValue = configMeta:GetConfigValue( val.Key )
+                            for k, v in pairs( options ) do
+                                comboSelect:AddChoice( v, k, currentValue == k )
+                            end
+
+                            comboSelect.OnSelect = function( self2, index, value, data )
+                                PROJECT0.FUNC.RequestConfigChange( configMetaKey, val.Key, data )
+                            end
+                        elseif( val.Type == PROJECT0.TYPE.Int ) then 
+                            local numberWang = vgui.Create( "pz_numberwang", variablePanel )
+                            numberWang:Dock( RIGHT )
+                            numberWang:DockMargin( 0, margin, PROJECT0.UI.Margin25, margin )
+                            numberWang:SetWide( PROJECT0.FUNC.ScreenScale( 200 ) )
+                            numberWang:SetBackColor( PROJECT0.FUNC.GetTheme( 1 ) )
+                            numberWang:SetHighlightColor( PROJECT0.FUNC.GetTheme( 2, 50 ) )
+                            numberWang:SetValue( configMeta:GetConfigValue( val.Key ) )
+                            numberWang.OnChange = function( self2 )
+                                PROJECT0.FUNC.RequestConfigChange( configMetaKey, val.Key, numberWang:GetValue() )
+                            end
+                        elseif( val.Type == PROJECT0.TYPE.String ) then
+                            local textEntry = vgui.Create( "pz_textentry", variablePanel )
+                            textEntry:Dock( RIGHT )
+                            textEntry:DockMargin( 0, margin, PROJECT0.UI.Margin25, margin )
+                            textEntry:SetWide( PROJECT0.FUNC.ScreenScale( 200 ) )
+                            textEntry:SetBackColor( PROJECT0.FUNC.GetTheme( 1 ) )
+                            textEntry:SetHighlightColor( PROJECT0.FUNC.GetTheme( 2, 50 ) )
+                            textEntry:SetValue( configMeta:GetConfigValue( val.Key ) )
+                            textEntry.OnChange = function( self2 )
+                                PROJECT0.FUNC.RequestConfigChange( configMetaKey, val.Key, textEntry:GetValue() )
+                            end
+                        end
                     end
-
-                    self.pages[pageKey].VariablePanels[val.Key] = variablePanel
-
-                    local targetH = PROJECT0.FUNC.ScreenScale( 40 )
-                    local margin = (variablePanel:GetTall()-targetH)/2
-
-                    if( val.GetOptions ) then
-                        local options = val.GetOptions()
-
-                        local comboSelect = vgui.Create( "pz_combo", variablePanel )
-                        comboSelect:Dock( RIGHT )
-                        comboSelect:DockMargin( 0, margin, PROJECT0.UI.Margin25, margin )
-                        comboSelect:SetWide( PROJECT0.FUNC.ScreenScale( 200 ) )
-                        comboSelect:SetBackColor( PROJECT0.FUNC.GetTheme( 1 ) )
-                        comboSelect:SetHighlightColor( PROJECT0.FUNC.GetTheme( 2, 50 ) )
-                        comboSelect:SetValue( "Select Option" )
-
-                        local currentValue = configMeta:GetConfigValue( val.Key )
-                        for k, v in pairs( options ) do
-                            comboSelect:AddChoice( v, k, currentValue == k )
-                        end
-
-                        comboSelect.OnSelect = function( self2, index, value, data )
-                            PROJECT0.FUNC.RequestConfigChange( configMetaKey, val.Key, data )
-                        end
-                    elseif( val.Type == PROJECT0.TYPE.Int ) then 
-                        local numberWang = vgui.Create( "pz_numberwang", variablePanel )
-                        numberWang:Dock( RIGHT )
-                        numberWang:DockMargin( 0, margin, PROJECT0.UI.Margin25, margin )
-                        numberWang:SetWide( PROJECT0.FUNC.ScreenScale( 200 ) )
-                        numberWang:SetBackColor( PROJECT0.FUNC.GetTheme( 1 ) )
-                        numberWang:SetHighlightColor( PROJECT0.FUNC.GetTheme( 2, 50 ) )
-                        numberWang:SetValue( configMeta:GetConfigValue( val.Key ) )
-                        numberWang.OnChange = function( self2 )
-                            PROJECT0.FUNC.RequestConfigChange( configMetaKey, val.Key, numberWang:GetValue() )
-                        end
-                    elseif( val.Type == PROJECT0.TYPE.String ) then
-                        local textEntry = vgui.Create( "pz_textentry", variablePanel )
-                        textEntry:Dock( RIGHT )
-                        textEntry:DockMargin( 0, margin, PROJECT0.UI.Margin25, margin )
-                        textEntry:SetWide( PROJECT0.FUNC.ScreenScale( 200 ) )
-                        textEntry:SetBackColor( PROJECT0.FUNC.GetTheme( 1 ) )
-                        textEntry:SetHighlightColor( PROJECT0.FUNC.GetTheme( 2, 50 ) )
-                        textEntry:SetValue( configMeta:GetConfigValue( val.Key ) )
-                        textEntry.OnChange = function( self2 )
-                            PROJECT0.FUNC.RequestConfigChange( configMetaKey, val.Key, textEntry:GetValue() )
-                        end
-                    end
-                    ::continue_1::
                 end
             end
         end
 
         for key, val in ipairs( configMeta:GetSortedVariables() ) do
-            if( val.Type ~= PROJECT0.TYPE.Table ) then goto continue end
+            if( val.Type == PROJECT0.TYPE.Table ) then
 
-            local page = vgui.Create( "Panel", self.contents )
-            page:Dock( FILL )
-            page:SetVisible( false )
-            page:SetAlpha( 0 )
-        
-            local customElement  = vgui.Create( val.VguiElement, page )
-            customElement:Dock( FILL )
-            customElement:SetSize( self.contents:GetSize() )
-            if( customElement.FillPanel ) then customElement:FillPanel() end
-            if( customElement.Refresh ) then 
-                page.Refresh = function()
-                    customElement:Refresh()
+                local page = vgui.Create( "Panel", self.contents )
+                page:Dock( FILL )
+                page:SetVisible( false )
+                page:SetAlpha( 0 )
+                
+                local customElement  = vgui.Create( val.VguiElement, page )
+                customElement:Dock( FILL )
+                customElement:SetSize( self.contents:GetSize() )
+                if( customElement.FillPanel ) then customElement:FillPanel() end
+                if( customElement.Refresh ) then 
+                    page.Refresh = function()
+                        customElement:Refresh()
+                    end
                 end
-            end
 
-            pageCategory:AddPage( page, val.Key, val.Name )
-            ::continue::
+                pageCategory:AddPage( page, val.Key, val.Name )
+            end
         end
     end
 
@@ -281,9 +282,9 @@ end
 
 function PANEL:Refresh()
     for k, v in pairs( self.pages ) do
-        if( not v.Panel.Refresh ) then goto continue end
-        v.Panel:Refresh()
-        ::continue::
+        if( v.Panel.Refresh ) then
+            v.Panel:Refresh()
+        end
     end
 end
 
@@ -419,11 +420,11 @@ end
 
 function PANEL:OpenPageByID( id, variableKey )
     for k, v in ipairs( self.pages ) do
-        if( v.ConfigID ~= id or (variableKey and v.VariableKey ~= variableKey) ) then goto continue end
+        if( v.ConfigID == id or (variableKey and v.VariableKey == variableKey) ) then
 
-        self:SetActivePage( k )
-        do return v end
-        ::continue::
+            self:SetActivePage( k )
+            do return v end
+        end
     end
 end
 

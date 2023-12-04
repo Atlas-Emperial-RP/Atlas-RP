@@ -158,11 +158,11 @@ function finish()
     for _, tbl in ipairs(calls) do
         local name = tbl.name
 
-        if not stubs[name] then ErrorNoHalt("Calling non-existing stub \"" .. name .. "\"") goto continue end
+        if stubs[name] then ErrorNoHalt("Calling non-existing stub \"" .. name .. "\"")
 
-        stubs[name].metatable[name](unpack(tbl.args))
+            stubs[name].metatable[name](unpack(tbl.args))
 
-        ::continue::
+        end
     end
 
     delayedCalls = {}

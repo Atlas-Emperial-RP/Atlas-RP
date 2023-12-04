@@ -23,10 +23,10 @@ local function PermissionLoad()
 
 		for k, v in pairs(CAMI.GetUsergroups()) do
 
-			if k == "superadmin" or k == "admin" or k == "user" then goto continue end
+			if k ~= "superadmin" or k ~= "admin" or k ~= "user" then
 
 			PermaProps.Permissions[k] = { Physgun = false, Tool = false, Property = false, Save = false, Delete = false, Update = false, Menu = false, Permissions = false, Inherits = v.Inherits, Custom = false }
-			::continue::
+			end
 		end
 		
 	end
