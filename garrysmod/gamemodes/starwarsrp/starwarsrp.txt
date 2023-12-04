@@ -1,13 +1,11 @@
-"starwars"
+"darkrp"
 {
-    "base"          "sandbox"
-    "title"         "StarWarsRP"
-    "version"       "2.7.0"
-    "category"      "rp"
-    "menusystem"    "1"
-    "workshopid"    "248302805"
+	"base"		"darkrp"
+    "title"  "StarWarsRP"
+    "version"   "1.0.0"
+    "menusystem"	"1"
 
-    "author_name"   "FPtje Falco et al."
+    "author_name"   "Harray and FPtje Falco et al."
     "author_email"  ""
     "author_url"    "https://github.com/FPtje/DarkRP"
 
