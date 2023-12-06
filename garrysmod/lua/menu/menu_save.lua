@@ -9,19 +9,19 @@ function ws_save:FetchLocal( offset, perpage )
 
 	for k, v in ipairs( f ) do
 
-		if ( k <= offset ) then goto continue end
-		if ( k > offset + perpage ) then break end
+		if not ( k <= offset ) then
+			if ( k > offset + perpage ) then break end
 
-		local entry = {
-			file	= "saves/" .. v,
-			name	= v:StripExtension(),
-			preview	= "saves/" .. v:StripExtension() .. ".jpg",
-			description	= "Local map save stored on your computer. Local content can be deleted in the main menu."
-		}
+			local entry = {
+				file	= "saves/" .. v,
+				name	= v:StripExtension(),
+				preview	= "saves/" .. v:StripExtension() .. ".jpg",
+				description	= "Local map save stored on your computer. Local content can be deleted in the main menu."
+			}
 
-		table.insert( saves, entry )
+			table.insert( saves, entry )
 
-		::continue::
+		end
 	end
 
 	local results = {

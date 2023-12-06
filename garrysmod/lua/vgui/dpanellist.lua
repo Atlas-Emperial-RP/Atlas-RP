@@ -88,15 +88,15 @@ function PANEL:Clear( bDelete )
 
 	for k, panel in pairs( self.Items ) do
 
-		if ( not IsValid( panel ) ) then goto continue end
+		if ( IsValid( panel ) ) then
 
-		panel:SetVisible( false )
+			panel:SetVisible( false )
 
-		if ( bDelete ) then
-			panel:Remove()
+			if ( bDelete ) then
+				panel:Remove()
+			end
+
 		end
-
-		::continue::
 	end
 
 	self.Items = {}

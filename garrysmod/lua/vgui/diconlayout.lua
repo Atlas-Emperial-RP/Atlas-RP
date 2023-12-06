@@ -43,28 +43,28 @@ function PANEL:LayoutIcons_TOP()
 
 	for k, v in ipairs( self:GetChildren() ) do
 
-		if ( not v:IsVisible() ) then goto continue end
+		if ( v:IsVisible() ) then
 
-		local w, h = v:GetSize()
-		if ( x + w > MaxWidth or ( v.OwnLine and x > self.m_iBorder ) ) then
+			local w, h = v:GetSize()
+			if ( x + w > MaxWidth or ( v.OwnLine and x > self.m_iBorder ) ) then
 
-			x = self.m_iBorder
-			y = y + RowHeight + self.m_iSpaceY
-			RowHeight = 0
+				x = self.m_iBorder
+				y = y + RowHeight + self.m_iSpaceY
+				RowHeight = 0
+
+			end
+
+			v:SetPos( x, y )
+
+			x = x + v:GetWide() + self.m_iSpaceX
+			RowHeight = math.max( RowHeight, v:GetTall() )
+
+			-- Start a new line if this panel is meant to be on its own line
+			if ( v.OwnLine ) then
+				x = MaxWidth + 1
+			end
 
 		end
-
-		v:SetPos( x, y )
-
-		x = x + v:GetWide() + self.m_iSpaceX
-		RowHeight = math.max( RowHeight, v:GetTall() )
-
-		-- Start a new line if this panel is meant to be on its own line
-		if ( v.OwnLine ) then
-			x = MaxWidth + 1
-		end
-
-		::continue::
 	end
 
 end
@@ -78,28 +78,28 @@ function PANEL:LayoutIcons_LEFT()
 
 	for k, v in ipairs( self:GetChildren() ) do
 
-		if ( not v:IsVisible() ) then goto continue end
+		if ( v:IsVisible() ) then
 
-		local w, h = v:GetSize()
-		if ( y + h > MaxHeight or ( v.OwnLine and y > self.m_iBorder ) ) then
+			local w, h = v:GetSize()
+			if ( y + h > MaxHeight or ( v.OwnLine and y > self.m_iBorder ) ) then
 
-			y = self.m_iBorder
-			x = x + RowWidth + self.m_iSpaceX
-			RowWidth = 0
+				y = self.m_iBorder
+				x = x + RowWidth + self.m_iSpaceX
+				RowWidth = 0
+
+			end
+
+			v:SetPos( x, y )
+
+			y = y + v:GetTall() + self.m_iSpaceY
+			RowWidth = math.max( RowWidth, v:GetWide() )
+
+			-- Start a new line if this panel is meant to be on its own line
+			if ( v.OwnLine ) then
+				y = MaxHeight + 1
+			end
 
 		end
-
-		v:SetPos( x, y )
-
-		y = y + v:GetTall() + self.m_iSpaceY
-		RowWidth = math.max( RowWidth, v:GetWide() )
-
-		-- Start a new line if this panel is meant to be on its own line
-		if ( v.OwnLine ) then
-			y = MaxHeight + 1
-		end
-
-		::continue::
 	end
 
 end

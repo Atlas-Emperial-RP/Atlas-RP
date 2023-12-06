@@ -380,12 +380,12 @@ function IsMounted( name )
 
 	for k, v in pairs( games ) do
 
-		if ( not v.mounted ) then goto continue end
+		if ( v.mounted ) then
 
-		if ( v.depot == name ) then return true end
-		if ( v.folder == name ) then return true end
+			if ( v.depot == name ) then return true end
+			if ( v.folder == name ) then return true end
 
-		::continue::
+		end
 	end
 
 	return false

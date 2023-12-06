@@ -158,16 +158,15 @@ function PANEL:PerformLayout()
 	local x = 0
 
 	for k, v in pairs( self.Panels ) do
-		if ( not IsValid( v ) ) then goto continue end
-		if ( not v:IsVisible() ) then goto continue end
+		if ( IsValid( v ) ) and ( v:IsVisible() ) then
 
-		v:SetPos( x, 0 )
-		v:SetTall( h )
-		if ( v.ApplySchemeSettings ) then v:ApplySchemeSettings() end
+			v:SetPos( x, 0 )
+			v:SetTall( h )
+			if ( v.ApplySchemeSettings ) then v:ApplySchemeSettings() end
 
-		x = x + v:GetWide() - self.m_iOverlap
+			x = x + v:GetWide() - self.m_iOverlap
 
-		::continue::
+		end
 	end
 
 	self.pnlCanvas:SetWide( x + self.m_iOverlap )

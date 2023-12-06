@@ -109,28 +109,28 @@ function PANEL:DropAction_Normal( Drops, bDoDrop, Command, x, y )
 
 		-- Don't drop one of our parents onto us
 		-- because we'll be sucked into a vortex
-		if ( v:IsOurChild( self ) ) then goto continue end
+		if not ( v:IsOurChild( self ) ) then
 
-		-- Copy the panel if we are told to from the DermaMenu(), or if we are moving from a read only panel to a not read only one.
-		if ( ( Command and Command == "copy" or ( IsValid( v:GetParent() ) and v:GetParent().GetReadOnly and v:GetParent():GetReadOnly() and v:GetParent():GetReadOnly() ~= self:GetReadOnly() ) ) and v.Copy ) then v = v:Copy() end
+			-- Copy the panel if we are told to from the DermaMenu(), or if we are moving from a read only panel to a not read only one.
+			if ( ( Command and Command == "copy" or ( IsValid( v:GetParent() ) and v:GetParent().GetReadOnly and v:GetParent():GetReadOnly() and v:GetParent():GetReadOnly() ~= self:GetReadOnly() ) ) and v.Copy ) then v = v:Copy() end
 
-		v = v:OnDrop( self )
+			v = v:OnDrop( self )
 
-		if ( drop == 5 ) then
-			closest:DroppedOn( v )
+			if ( drop == 5 ) then
+				closest:DroppedOn( v )
+			end
+
+			if ( drop == 8 or drop == 4 ) then
+				v:SetParent( self )
+				v:MoveToBefore( closest )
+			end
+
+			if ( drop == 2 or drop == 6 ) then
+				v:SetParent( self )
+				v:MoveToAfter( closest )
+			end
+
 		end
-
-		if ( drop == 8 or drop == 4 ) then
-			v:SetParent( self )
-			v:MoveToBefore( closest )
-		end
-
-		if ( drop == 2 or drop == 6 ) then
-			v:SetParent( self )
-			v:MoveToAfter( closest )
-		end
-
-		::continue::
 	end
 
 	self:OnModified()

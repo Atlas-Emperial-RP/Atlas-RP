@@ -166,13 +166,13 @@ function UpdateServerSettings()
 			array.settings = {}
 			for k, v in pairs( Settings.settings ) do
 				local cvar = GetConVar( v.name )
-				if ( not cvar ) then goto continue end
+				if ( cvar ) then
 
-				array.settings[ k ] = v
-				array.settings[ k ].Value = cvar:GetString()
-				array.settings[ k ].Singleplayer = v.singleplayer and true or false
+					array.settings[ k ] = v
+					array.settings[ k ].Value = cvar:GetString()
+					array.settings[ k ].Singleplayer = v.singleplayer and true or false
 
-				::continue::
+				end
 			end
 
 		end

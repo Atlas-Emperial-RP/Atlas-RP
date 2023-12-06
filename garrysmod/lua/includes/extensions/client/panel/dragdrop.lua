@@ -88,22 +88,22 @@ function dragndrop.StartDragging()
 
 		for k, v in pairs( canvas:GetSelectedChildren() ) do
 
-			if ( not v.m_DragSlot ) then goto continue end
+			if ( v.m_DragSlot ) then
 
-			table.insert( dragndrop.m_Dragging, v )
+				table.insert( dragndrop.m_Dragging, v )
 			
-			::continue::
+			end
 		end
 
 	end
 
 	for k, v in pairs( dragndrop.m_Dragging ) do
 
-		if ( not IsValid( v ) ) then goto continue end
+		if ( IsValid( v ) ) then
 
-		v:OnStartDragging()
+			v:OnStartDragging()
 
-		::continue::
+		end
 	end
 
 	dragndrop.m_DraggingMain = dragndrop.m_DragWatch
@@ -121,10 +121,10 @@ function dragndrop.StopDragging()
 
 	for k, v in pairs( dragndrop.m_Dragging or {} ) do
 
-		if ( not IsValid( v ) ) then goto continue end
-		v:OnStopDragging()
+		if ( IsValid( v ) ) then
+			v:OnStopDragging()
 
-		::continue::
+		end
 	end
 
 	dragndrop.Clear()
@@ -245,12 +245,12 @@ hook.Add( "DrawOverlay", "DragNDropPaint", function()
 	-- Find the top, left most panel
 	for k, v in pairs( dragndrop.m_Dragging ) do
 
-		if ( not IsValid( v ) ) then goto continue end
+		if ( IsValid( v ) ) then
 
-		hold_offset_x = math.min( hold_offset_x, v.x )
-		hold_offset_y = math.min( hold_offset_y, v.y )
+			hold_offset_x = math.min( hold_offset_x, v.x )
+			hold_offset_y = math.min( hold_offset_y, v.y )
 
-		::continue::
+		end
 	end
 
 	local wasEnabled = DisableClipping( true )
@@ -264,20 +264,21 @@ hook.Add( "DrawOverlay", "DragNDropPaint", function()
 
 			for k, v in pairs( dragndrop.m_Dragging ) do
 
-				if ( not IsValid( v ) ) then goto continue end
+				if ( IsValid( v ) ) then
 
-				local dist = 512 - v:Distance( dragndrop.m_DraggingMain )
+					local dist = 512 - v:Distance( dragndrop.m_DraggingMain )
 
-				if ( dist < 0 ) then goto continue end
+					if not ( dist < 0 ) then
 
-				dist = dist / 512
-				surface.SetAlphaMultiplier( Alpha * dist )
+						dist = dist / 512
+						surface.SetAlphaMultiplier( Alpha * dist )
 
-				v.PaintingDragging = true
-				v:PaintAt( ox + v.x - v:GetWide() / 2, oy + v.y - v:GetTall() / 2 )  -- fill the gap between the top left corner and the mouse position
-				v.PaintingDragging = nil
+						v.PaintingDragging = true
+						v:PaintAt( ox + v.x - v:GetWide() / 2, oy + v.y - v:GetTall() / 2 )  -- fill the gap between the top left corner and the mouse position
+						v.PaintingDragging = nil
+					end
 
-				::continue::
+				end
 			end
 
 		surface.SetAlphaMultiplier( 1.0 )
@@ -344,14 +345,15 @@ function meta:GetValidReceiverSlot()
 		-- Find matching slot..
 		for k, v in pairs( self.m_ReceiverSlot ) do
 
-			if ( not dragndrop.m_DraggingMain.m_DragSlot ) then goto continue end
+			if ( dragndrop.m_DraggingMain.m_DragSlot ) then
 
-			local slot = dragndrop.m_DraggingMain.m_DragSlot[ k ]
-			if ( not slot ) then goto continue end
+				local slot = dragndrop.m_DraggingMain.m_DragSlot[ k ]
+				if ( slot ) then
 
-			do return self, v end
+					do return self, v end
 
-			::continue::
+				end
+			end
 		end
 
 	end
