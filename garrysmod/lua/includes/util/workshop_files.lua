@@ -13,10 +13,10 @@ function WorkshopFileBase( namespace, requiredtags )
 
 		local tags = table.Copy( requiredtags )
 		for k, v in pairs( extratags ) do
-			if ( v == "" ) then break end
-			table.insert( tags, v )
+			if ( v ~= "" ) then
+				table.insert( tags, v )
 
-			
+			end
 		end
 
 		if ( type == "local" ) then
@@ -93,23 +93,27 @@ function WorkshopFileBase( namespace, requiredtags )
 			for id, tag in pairs( tags ) do
 				if ( not item.tags:lower():find( tag, 1, true ) ) then found = false end
 			end
-			if ( not found ) then break end
+			if ( found ) then
 
-			-- Search for searchText
-			if ( searchText:Trim() ~= "" ) then
-				if ( not item.title:lower():find( searchText:lower(), 1, true ) ) then break end
-			end
-
-			if ( filter and filter == "enabledonly" ) then
-				if ( not steamworks.ShouldMountAddon( item.wsid ) ) then break end
-			end
-			if ( filter and filter == "disabledonly" ) then
-				if ( steamworks.ShouldMountAddon( item.wsid ) ) then break end
-			end
-
-			searchedItems[ #searchedItems + 1 ] = item
-
+				-- Search for searchText
+				if ( searchText:Trim() == "" ) then
+					if ( item.title:lower():find( searchText:lower(), 1, true ) ) then
+						searchedItems[ #searchedItems + 1 ] = item
+					end
+				end
 			
+				if ( not filter and filter ~= "enabledonly" ) then
+					if ( steamworks.ShouldMountAddon( item.wsid ) ) then 
+						searchedItems[ #searchedItems + 1 ] = item
+					end
+				end
+				if ( not filter and filter ~= "disabledonly" ) then
+					if ( not steamworks.ShouldMountAddon( item.wsid ) ) then 
+						searchedItems[ #searchedItems + 1 ] = item
+					end
+				end
+		
+			end
 		end
 
 		-- Build the page!
@@ -200,9 +204,6 @@ function WorkshopFileBase( namespace, requiredtags )
 				self.HTML:Call( namespace .. ".ReceiveFileInfo( \"" .. v .. "\", " .. json .. " )" )
 				self.HTML:Call( namespace .. ".ReceiveImage( \"" .. v .. "\", \"html/img/localaddon.png\" )" )
 
-				-- Do not try to get votes for this one
-				break
-
 			elseif ( InfoCache[ v ] ) then
 
 				self.HTML:Call( namespace .. ".ReceiveFileInfo( \"" .. v .. "\", " .. InfoCache[ v ] .. " )" )
@@ -261,7 +262,7 @@ function WorkshopFileBase( namespace, requiredtags )
 
 				end )
 			end
-			
+			::continue::
 		end
 
 	end

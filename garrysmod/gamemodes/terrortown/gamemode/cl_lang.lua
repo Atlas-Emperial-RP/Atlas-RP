@@ -275,12 +275,12 @@ function LANG.ProcessMsg(name, params)
       for k, v in pairs(params) do
          if isstring(v) then
             local name = LANG.GetNameParam(v)
-            if not name then break end
+            if not name then goto continue end
 
             params[k] = LANG.GetTranslation(name)
          end
 
-         
+         ::continue::
       end
 
       text = interp(raw, params)

@@ -415,7 +415,7 @@ function OpenDWEPWeapon(class)
 		local weaponData = formatWeapon(weapon) 
 		for k,v in orderedPairs(weaponData) do
 		local defaultValue = ""
-			if type(v) == "Vector" or type(v) == "Angle" then break end
+			if type(v) ~= "Vector" or type(v) ~= "Angle" then
 			--if type(v) == "table" then updateData[parentLayer][k] = {value = v, changed = true, parent = parentLayer} targetUpdate = updateData[parentLayer][k]  end 
 			local configOption = vgui.Create("DPanel", weaponScroll)
 			configOption:SetPos(offset, ypos)
@@ -480,7 +480,7 @@ function OpenDWEPWeapon(class)
 			end
 			ypos = ypos + 29 * 1.1
 
-			
+			end
 		end
 	end
 end 

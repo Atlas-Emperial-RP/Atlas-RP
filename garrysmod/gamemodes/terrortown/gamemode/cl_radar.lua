@@ -169,35 +169,34 @@ function RADAR:Draw(client)
       alpha = alpha_base
 
       scrpos = tgt.pos:ToScreen()
-      if not scrpos.visible then
-         break
+      if scrpos.visible then
+         md = mpos:Distance(Vector(scrpos.x, scrpos.y, 0))
+         if md < near_cursor_dist then
+            alpha = math.Clamp(alpha * (md / near_cursor_dist), 40, 230)
+         end
+
+         role = tgt.role or ROLE_INNOCENT
+         if role == ROLE_TRAITOR then
+            surface.SetDrawColor(255, 0, 0, alpha)
+            surface.SetTextColor(255, 0, 0, alpha)
+
+         elseif role == ROLE_DETECTIVE then
+            surface.SetDrawColor(0, 0, 255, alpha)
+            surface.SetTextColor(0, 0, 255, alpha)
+
+         elseif role == 3 then -- decoys
+            surface.SetDrawColor(150, 150, 150, alpha)
+            surface.SetTextColor(150, 150, 150, alpha)
+
+         else
+            surface.SetDrawColor(0, 255, 0, alpha)
+            surface.SetTextColor(0, 255, 0, alpha)
+         end
+
+         DrawTarget(tgt, 24, 0)
+
+         
       end
-      md = mpos:Distance(Vector(scrpos.x, scrpos.y, 0))
-      if md < near_cursor_dist then
-         alpha = math.Clamp(alpha * (md / near_cursor_dist), 40, 230)
-      end
-
-      role = tgt.role or ROLE_INNOCENT
-      if role == ROLE_TRAITOR then
-         surface.SetDrawColor(255, 0, 0, alpha)
-         surface.SetTextColor(255, 0, 0, alpha)
-
-      elseif role == ROLE_DETECTIVE then
-         surface.SetDrawColor(0, 0, 255, alpha)
-         surface.SetTextColor(0, 0, 255, alpha)
-
-      elseif role == 3 then -- decoys
-         surface.SetDrawColor(150, 150, 150, alpha)
-         surface.SetTextColor(150, 150, 150, alpha)
-
-      else
-         surface.SetDrawColor(0, 255, 0, alpha)
-         surface.SetTextColor(0, 255, 0, alpha)
-      end
-
-      DrawTarget(tgt, 24, 0)
-
-      
    end
 
    -- Time until next scan

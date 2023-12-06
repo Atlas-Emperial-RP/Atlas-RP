@@ -72,21 +72,19 @@ search.AddProvider( function( str )
 
 		if ( modelpath:find( str, nil, true ) ) then
 
-			if ( IsUselessModel( v ) ) then break end
+			if not ( IsUselessModel( v ) ) then
 
-			local entry = {
-				text = v:GetFileFromFilename(),
-				func = function() RunConsoleCommand( "gm_spawn", v ) end,
-				icon = spawnmenu.CreateContentIcon( "model", g_SpawnMenu.SearchPropPanel, { model = v } ),
-				words = { v }
-			}
+				local entry = {
+					text = v:GetFileFromFilename(),
+					func = function() RunConsoleCommand( "gm_spawn", v ) end,
+					icon = spawnmenu.CreateContentIcon( "model", g_SpawnMenu.SearchPropPanel, { model = v } ),
+					words = { v }
+				}
 
-			table.insert( models, entry )
-
+				table.insert( models, entry )
+				if ( #models >= sbox_search_maxresults:GetInt() / 2 ) then break end
+			end
 		end
-
-		if ( #models >= sbox_search_maxresults:GetInt() / 2 ) then break end
-		
 	end
 
 	return models
@@ -116,41 +114,41 @@ local function AddSearchProvider( listname, ctype, stype )
 		local entities = {}
 
 		for k, v in pairs( list.Get( listname ) ) do
-			if ( listname == "Weapon" and not v.Spawnable ) then break end
+			if ( listname ~= "Weapon" and v.Spawnable ) then
 
-			v.ClassName = k
-			v.PrintName = v.PrintName or v.Name
-			v.ScriptedEntityType = ctype
-			table.insert( entities, v )
-			
+				v.ClassName = k
+				v.PrintName = v.PrintName or v.Name
+				v.ScriptedEntityType = ctype
+				table.insert( entities, v )
+			end
 		end
 
 		for k, v in ipairs( entities ) do
 
 			local name = v.PrintName
 			local name_c = v.ClassName
-			if ( not isstring( name ) and not isstring( name_c ) ) then break end
+			if ( isstring( name ) and isstring( name_c ) ) then
 
-			if ( ( isstring( name ) and name:lower():find( str, nil, true ) ) or ( isstring( name_c ) and name_c:lower():find( str, nil, true ) ) ) then
+				if ( ( isstring( name ) and name:lower():find( str, nil, true ) ) or ( isstring( name_c ) and name_c:lower():find( str, nil, true ) ) ) then
 
-				local entry = {
-					text = v.PrintName or v.ClassName,
-					icon = spawnmenu.CreateContentIcon( v.ScriptedEntityType or "entity", nil, {
-						nicename = v.PrintName or v.ClassName,
-						spawnname = v.ClassName,
-						material = "entities/" .. v.ClassName .. ".png",
+					local entry = {
+						text = v.PrintName or v.ClassName,
+						icon = spawnmenu.CreateContentIcon( v.ScriptedEntityType or "entity", nil, {
+							nicename = v.PrintName or v.ClassName,
+							spawnname = v.ClassName,
+							material = "entities/" .. v.ClassName .. ".png",
 
-						admin = v.AdminOnly
-					} ),
-					words = { v }
-				}
+							admin = v.AdminOnly
+						} ),
+						words = { v }
+					}
 
-				table.insert( results, entry )
+					table.insert( results, entry )
 
+				end
+
+				if ( #results >= sbox_search_maxresults:GetInt() / 4 ) then break end
 			end
-
-			if ( #results >= sbox_search_maxresults:GetInt() / 4 ) then break end
-			
 		end
 
 		table.SortByMember( results, "text", true )

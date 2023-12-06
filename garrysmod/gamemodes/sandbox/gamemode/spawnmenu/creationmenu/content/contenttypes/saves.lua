@@ -18,19 +18,19 @@ spawnmenu.AddCreationTab( "#spawnmenu.category.saves", function()
 
 		for k, v in ipairs( f ) do
 
-			if ( k <= offset ) then break end
-			if ( k > offset + perpage ) then break end
-
-			local entry = {
-				file	= "saves/" .. v,
-				name	= v:StripExtension(),
-				preview	= "saves/" .. v:StripExtension() .. ".jpg",
-				description	= "Local map saves stored on your computer. Local content can be deleted in the main menu."
-			}
-
-			table.insert( saves, entry )
-
-			
+			if not ( k <= offset ) then
+				local entry = {
+					file	= "saves/" .. v,
+					name	= v:StripExtension(),
+					preview	= "saves/" .. v:StripExtension() .. ".jpg",
+					description	= "Local map saves stored on your computer. Local content can be deleted in the main menu."
+				}
+	
+				table.insert( saves, entry )
+	
+			elseif ( k > offset + perpage ) then 
+				break 
+			end
 		end
 
 		local results = {

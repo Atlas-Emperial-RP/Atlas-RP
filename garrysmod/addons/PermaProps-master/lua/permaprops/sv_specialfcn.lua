@@ -72,21 +72,21 @@ PermaProps.SpecialENTSSpawn["prop_ragdoll"] = function( ent, data )
 		for objectid, objectdata in pairs( data["Bones"] ) do
 
 			local Phys = ent:GetPhysicsObjectNum( objectid )
-			if not IsValid( Phys ) then break end
+			if IsValid( Phys ) then
 		
-			if ( isvector( objectdata.Pos ) and isangle( objectdata.Angle ) ) then
+				if ( isvector( objectdata.Pos ) and isangle( objectdata.Angle ) ) then
 
-				local pos, ang = LocalToWorld( objectdata.Pos, objectdata.Angle, Vector(0, 0, 0), Angle(0, 0, 0) )
-				Phys:SetPos( pos )
-				Phys:SetAngles( ang )
-				Phys:Wake()
+					local pos, ang = LocalToWorld( objectdata.Pos, objectdata.Angle, Vector(0, 0, 0), Angle(0, 0, 0) )
+					Phys:SetPos( pos )
+					Phys:SetAngles( ang )
+					Phys:Wake()
 
-				if objectdata.Frozen then
-					Phys:EnableMotion( false )
+					if objectdata.Frozen then
+						Phys:EnableMotion( false )
+					end
+
 				end
-
 			end
-			
 		end
 
 	end
@@ -239,17 +239,17 @@ PermaProps.SpecialENTSSave["prop_ragdoll"] = function( ent )
 	for objectid = 0, num - 1 do
 
 		local obj = ent:GetPhysicsObjectNum( objectid )
-		if ( not obj:IsValid() ) then break end
+		if ( obj:IsValid() ) then
 
-		content.Other["Bones"][ objectid ] = {}
+			content.Other["Bones"][ objectid ] = {}
 
-		content.Other["Bones"][ objectid ].Pos = obj:GetPos()
-		content.Other["Bones"][ objectid ].Angle = obj:GetAngles()
-		content.Other["Bones"][ objectid ].Frozen = not obj:IsMoveable()
-		if ( obj:IsAsleep() ) then content.Other["Bones"][ objectid ].Sleep = true end
+			content.Other["Bones"][ objectid ].Pos = obj:GetPos()
+			content.Other["Bones"][ objectid ].Angle = obj:GetAngles()
+			content.Other["Bones"][ objectid ].Frozen = not obj:IsMoveable()
+			if ( obj:IsAsleep() ) then content.Other["Bones"][ objectid ].Sleep = true end
 
-		content.Other["Bones"][ objectid ].Pos, content.Other["Bones"][ objectid ].Angle = WorldToLocal( content.Other["Bones"][ objectid ].Pos, content.Other["Bones"][ objectid ].Angle, Vector( 0, 0, 0 ), Angle( 0, 0, 0 ) )
-		
+			content.Other["Bones"][ objectid ].Pos, content.Other["Bones"][ objectid ].Angle = WorldToLocal( content.Other["Bones"][ objectid ].Pos, content.Other["Bones"][ objectid ].Angle, Vector( 0, 0, 0 ), Angle( 0, 0, 0 ) )
+		end
 	end
 
 	if ( ent:HasBoneManipulations() ) then

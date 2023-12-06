@@ -46,15 +46,15 @@ net.Receive( "Project0.RequestSaveConfigChanges", function( len, ply )
 
     local variableCount = 0
     for k, v in pairs( changedConfig ) do
-        if( not PROJECT0.CONFIG[k] ) then break end
+        if( PROJECT0.CONFIG[k] ) then
 
-        for key, val in pairs( v ) do
-            PROJECT0.CONFIG[k][key] = val
-            variableCount = variableCount+1
+            for key, val in pairs( v ) do
+                PROJECT0.CONFIG[k][key] = val
+                variableCount = variableCount+1
+            end
+
+            file.Write( "projectzero/config/" .. k .. ".txt", util.TableToJSON( PROJECT0.CONFIG[k], true ) )
         end
-
-        file.Write( "projectzero/config/" .. k .. ".txt", util.TableToJSON( PROJECT0.CONFIG[k], true ) )
-        
     end
 
     print( "[PROJECT0] Config Saved: " .. table.Count( changedConfig ) .. " Module(s), " .. variableCount .. " Variable(s)" )

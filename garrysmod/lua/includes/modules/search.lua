@@ -27,20 +27,15 @@ function GetResults( str, types, maxResults )
 	local results = {}
 
 	for k, v in pairs( Providers ) do
-		if ( isstring( types ) ) then
-			if ( types ~= k ) then break end
-		elseif ( istable( types ) ) then
-			if ( not table.HasValue( types, k ) ) then break end
-		end
-
-		local tbl = v.func( str )
-		for _, e in pairs( tbl ) do
-			table.insert( results, e )
-		end
-
-		if ( #results >= maxResults ) then break end
-
+		if ( ( isstring( types ) ) and (types == k ) ) or ( ( istable( types ) ) and ( table.HasValue( types, k ) ) ) then
+			
+			local tbl = v.func( str )
+			for _, e in pairs( tbl ) do
+				table.insert( results, e )
+			end
 		
+			if ( #results >= maxResults ) then break end
+		end
 	end
 
 	-- Todo. Sort, weighted?
