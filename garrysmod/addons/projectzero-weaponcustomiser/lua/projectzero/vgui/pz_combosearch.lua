@@ -167,31 +167,31 @@ function PANEL:OpenMenu( pControlOpener )
 	if ( self:GetSortItems() ) then
 		local sorted = {}
 		for k, v in pairs( self.Choices ) do
-			if( IsValid( self.textEntry ) and not string.find( string.lower( v ), string.lower( self.textEntry:GetValue() ) ) ) then break end
+			if( not IsValid( self.textEntry ) and string.find( string.lower( v ), string.lower( self.textEntry:GetValue() ) ) ) then
 
-			local val = tostring( v ) --tonumber( v ) || v -- This would make nicer number sorting, but SortedPairsByMemberValue doesn't seem to like number-string mixing
-			if ( string.len( val ) > 1 and not tonumber( val ) and val:StartWith( "#" ) ) then val = language.GetPhrase( val:sub( 2 ) ) end
-			table.insert( sorted, { id = k, data = v, label = val } )
-			
+				local val = tostring( v ) --tonumber( v ) || v -- This would make nicer number sorting, but SortedPairsByMemberValue doesn't seem to like number-string mixing
+				if ( string.len( val ) > 1 and not tonumber( val ) and val:StartWith( "#" ) ) then val = language.GetPhrase( val:sub( 2 ) ) end
+				table.insert( sorted, { id = k, data = v, label = val } )
+			end
 		end
 		for k, v in SortedPairsByMemberValue( sorted, "label" ) do
-			if( IsValid( self.textEntry ) and not string.find( string.lower( v.data ), string.lower( self.textEntry:GetValue() ) ) ) then break end
+			if( not IsValid( self.textEntry ) and string.find( string.lower( v.data ), string.lower( self.textEntry:GetValue() ) ) ) then
 
-			local option = self.Menu:AddOption( v.data, function() self:ChooseOption( v.data, v.id ) end )
-			if ( self.ChoiceIcons[ v.id ] ) then
-				option:SetIcon( self.ChoiceIcons[ v.id ] )
+				local option = self.Menu:AddOption( v.data, function() self:ChooseOption( v.data, v.id ) end )
+				if ( self.ChoiceIcons[ v.id ] ) then
+					option:SetIcon( self.ChoiceIcons[ v.id ] )
+				end
 			end
-			
 		end
 	else
 		for k, v in pairs( self.Choices ) do
-			if( IsValid( self.textEntry ) and not string.find( string.lower( v ), string.lower( self.textEntry:GetValue() ) ) ) then break end
+			if( not IsValid( self.textEntry ) and string.find( string.lower( v ), string.lower( self.textEntry:GetValue() ) ) ) then
 
-			local option = self.Menu:AddOption( v, function() self:ChooseOption( v, k ) end )
-			if ( self.ChoiceIcons[ k ] ) then
-				option:SetIcon( self.ChoiceIcons[ k ] )
+				local option = self.Menu:AddOption( v, function() self:ChooseOption( v, k ) end )
+				if ( self.ChoiceIcons[ k ] ) then
+					option:SetIcon( self.ChoiceIcons[ k ] )
+				end
 			end
-			
 		end
 	end
 

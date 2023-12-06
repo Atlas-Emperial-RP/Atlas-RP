@@ -126,15 +126,15 @@ function PANEL:DoRightClick()
 
 	local tabs = DermaMenu()
 	for k, v in pairs( self:GetPropertySheet().Items ) do
-		if ( not v or not IsValid( v.Tab ) or not v.Tab:IsVisible() ) then break end
-		local option = tabs:AddOption( v.Tab:GetText(), function()
-			if ( not v or not IsValid( v.Tab ) or not IsValid( self:GetPropertySheet() ) or not IsValid( self:GetPropertySheet().tabScroller ) ) then return end
-			v.Tab:DoClick()
-			self:GetPropertySheet().tabScroller:ScrollToChild( v.Tab )
-		end )
-		if ( IsValid( v.Tab.Image ) ) then option:SetIcon( v.Tab.Image:GetImage() ) end
+		if ( v or IsValid( v.Tab ) or v.Tab:IsVisible() ) then
+			local option = tabs:AddOption( v.Tab:GetText(), function()
+				if ( not v or not IsValid( v.Tab ) or not IsValid( self:GetPropertySheet() ) or not IsValid( self:GetPropertySheet().tabScroller ) ) then return end
+				v.Tab:DoClick()
+				self:GetPropertySheet().tabScroller:ScrollToChild( v.Tab )
+			end )
+			if ( IsValid( v.Tab.Image ) ) then option:SetIcon( v.Tab.Image:GetImage() ) end
 
-		
+		end
 	end
 	tabs:Open()
 
@@ -408,20 +408,20 @@ function PANEL:CloseTab( tab, bRemovePanelToo )
 
 	for k, v in pairs( self.Items ) do
 
-		if ( v.Tab ~= tab ) then break end
+		if ( v.Tab == tab ) then
 
-		table.remove( self.Items, k )
+			table.remove( self.Items, k )
 
-		
+		end
 	end
 
 	for k, v in pairs( self.tabScroller.Panels ) do
 
-		if ( v ~= tab ) then break end
+		if ( v == tab ) then
 
-		table.remove( self.tabScroller.Panels, k )
+			table.remove( self.tabScroller.Panels, k )
 
-		
+		end
 	end
 
 	self.tabScroller:InvalidateLayout( true )

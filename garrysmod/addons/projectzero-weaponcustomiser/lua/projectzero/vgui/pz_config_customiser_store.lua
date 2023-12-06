@@ -470,9 +470,9 @@ function PANEL:CreateConfigPopup( valueKey, values )
         buttonRow:AddButton( "ADD NEW", Material( "project0/icons/add.png", "noclamp smooth" ), function()
             local options = {}
             for k, v in pairs( PROJECT0.FUNC.GetConfiguredWeapons() ) do
-                if( table.HasValue( configItem.Weapons, k ) ) then break end
-                options[k] = v.Name
-                
+                if( not table.HasValue( configItem.Weapons, k ) ) then
+                    options[k] = v.Name
+                end
             end
     
             PROJECT0.FUNC.DermaComboRequest( "What weapon would you like to add?", "WEAPON EDITOR", options, false, true, false, function( value, data )
