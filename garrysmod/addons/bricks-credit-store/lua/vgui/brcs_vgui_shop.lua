@@ -337,7 +337,7 @@ function PANEL:Setup( ParentVGUI )
 				end
 			end
 
-			if( not Toggled[v[1] or ""] or not v[1] or not BRICKSCREDITSTORE.LOCKERTYPES[v[1] or ""] ) then break end
+			if Toggled[v[1] or ""] or not v[1] or not BRICKSCREDITSTORE.LOCKERTYPES[v[1] or ""] then
 
 			local LockerType = BRICKSCREDITSTORE.LOCKERTYPES[v[1] or ""]
 			
@@ -428,9 +428,9 @@ function PANEL:Setup( ParentVGUI )
 						self2.PopUp:AddOption( "Transfer", function() 
 							local Options = {}
 							for k, v in pairs( player.GetHumans() ) do
-								if( v == LocalPlayer() ) then break end
+								if ( v ~= LocalPlayer() ) then
 								Options[v:SteamID64()] = v:Nick()
-								
+								end
 							end
 
 							if( table.Count( Options ) <= 0 ) then
@@ -494,7 +494,7 @@ function PANEL:Setup( ParentVGUI )
 					net.WriteInt( k, 32 )
 				net.SendToServer()
 			end
-			
+			end
 		end
 		
 		IconLayout:SizeToContents()

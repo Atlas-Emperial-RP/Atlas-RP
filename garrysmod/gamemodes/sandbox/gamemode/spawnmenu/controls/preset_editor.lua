@@ -159,10 +159,9 @@ end
 function PANEL:SelectPresetByName( name )
 
 	for id, line in pairs( self.PresetList:GetLines() ) do
-		if ( line:GetValue( 1 ) ~= name ) then break end
-		self.PresetList:SelectItem( line )
-	
-		
+		if ( line:GetValue( 1 ) == name ) then
+			self.PresetList:SelectItem( line )
+		end
 	end
 
 end

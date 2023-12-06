@@ -149,10 +149,9 @@ function PermaProps.PPEntityFromTable( data, id )
 
 		for k, v in pairs( data.DT ) do
 
-			if ( data.DT[ k ] == nil ) then break end
-			if not isfunction(ent[ "Set" .. k ]) then break end
+			if ( data.DT[ k ] ~= nil ) and isfunction(ent[ "Set" .. k]) then
 			ent[ "Set" .. k ]( ent, data.DT[ k ] )
-			
+			end
 		end
 
 	end
@@ -172,10 +171,10 @@ function PermaProps.PPEntityFromTable( data, id )
 
 		for k, v in pairs( data.SubMat ) do
 
-			if type(k) ~= "number" or type(v) ~= "string" then break end
+			if type(k) == "number" or type(v) == "string" then
 
 			ent:SetSubMaterial( k-1, v )
-			
+			end
 		end
 
 	end
@@ -240,8 +239,6 @@ function PermaProps.ReloadPermaProps()
 		local data = util.JSONToTable(v.content)
 
 		local e = PermaProps.PPEntityFromTable(data, tonumber(v.id))
-		if not e or not e:IsValid() then break end
-		
 	end
 
 end

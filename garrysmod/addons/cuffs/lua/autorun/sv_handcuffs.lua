@@ -243,12 +243,12 @@ end)
 
 local function DoUntie( ply, ent )
 	for i=1,#ent.TiedHandcuffs do
-		if not IsValid(ent.TiedHandcuffs[i]) then break end
+		if IsValid(ent.TiedHandcuffs[i]) then
 		
 		ent.TiedHandcuffs[i]:SetKidnapper( ply )
 		hook.Call( "OnHandcuffUnTied", GAMEMODE, ply, ent.TiedHandcuffs[i].Owner, ent.TiedHandcuffs[i], ent )
 		hook.Call( "OnHandcuffStartDragging", GAMEMODE, ply, ent.TiedHandcuffs[i].Owner, ent.TiedHandcuffs[i] )
-		
+		end
 	end
 	
 	ent:Remove()

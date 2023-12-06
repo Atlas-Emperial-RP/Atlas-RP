@@ -250,21 +250,20 @@ function ENT:SetRagdoll( ragdoll )
 		local iMaxSkip = table.Count( pos ) * 0.25
 		for k, v in pairs( pos ) do
 
-			if ( math.abs( v.x ) > 0.05 ) then break end
-			if ( math.abs( v.y ) > 0.05 ) then break end
+			if not ( math.abs( v.x ) > 0.05 ) and not ( math.abs( v.y ) > 0.05 ) then
 
-			pos[k] = nil -- don't use this point to control the ragdoll
-			ang[k] = nil -- (use the ragdoll point)
+				pos[k] = nil -- don't use this point to control the ragdoll
+				ang[k] = nil -- (use the ragdoll point)
 
-			iSkipped = iSkipped + 1
+				iSkipped = iSkipped + 1
 
-			if ( iSkipped > iMaxSkip ) then
+				if ( iSkipped > iMaxSkip ) then
 
-				ragdoll:RagdollStopControlling()
-				return
+					ragdoll:RagdollStopControlling()
+					return
 
+				end
 			end
-			
 		end
 
 		--

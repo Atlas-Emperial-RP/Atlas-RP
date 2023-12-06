@@ -13,11 +13,11 @@ function PANEL:Refresh()
 
     local function GetCategoryFromOrder( order )
         for k, v in pairs( values ) do
-            if( v.Order ~= order ) then break end
+            if( v.Order == order ) then
             
-            do return k end
+                do return k end
             
-            
+            end
         end
 
         return nil

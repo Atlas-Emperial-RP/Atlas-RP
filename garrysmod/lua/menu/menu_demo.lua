@@ -9,19 +9,19 @@ function demo:FetchLocal( offset, perpage )
 
 	for k, v in ipairs( f ) do
 
-		if ( k <= offset ) then break end
-		if ( k > offset + perpage ) then break end
+		if not ( k <= offset ) then
+			if ( k > offset + perpage ) then break end
 
-		local entry = {
-			file	= "demos/" .. v,
-			name	= v:StripExtension(),
-			preview	= "demos/" .. v:StripExtension() .. ".jpg",
-			description	= "Local demo stored on your computer. Local content can be deleted in the main menu."
-		}
+			local entry = {
+				file	= "demos/" .. v,
+				name	= v:StripExtension(),
+				preview	= "demos/" .. v:StripExtension() .. ".jpg",
+				description	= "Local demo stored on your computer. Local content can be deleted in the main menu."
+			}
 
-		table.insert( saves, entry )
+			table.insert( saves, entry )
 
-		
+		end
 	end
 
 	local results = {

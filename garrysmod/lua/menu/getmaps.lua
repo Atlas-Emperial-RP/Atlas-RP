@@ -294,74 +294,74 @@ local function RefreshMaps( skip )
 		local Ignore = IgnoreMaps[ name ] or IgnoreMaps[ prefix ]
 
 		-- Don't loop if it's already ignored
-		if ( Ignore ) then break end
+		if not ( Ignore ) then
 
-		for _, ignore in ipairs( IgnorePatterns ) do
-			if ( string.find( name, ignore ) ) then
-				Ignore = true
-				break
+			for _, ignore in ipairs( IgnorePatterns ) do
+				if ( string.find( name, ignore ) ) then
+					Ignore = true
+					break
+				end
 			end
-		end
 
-		-- Don't add useless maps
-		if ( Ignore ) then break end
-
-		-- Check if the map has a simple name or prefix
-		local Category = MapNames[ name ] or MapNames[ prefix ]
-
-		-- Check if the map has an embedded prefix, or is TTT/Sandbox
-		if ( not Category ) then
-			for pattern, category in pairs( MapPatterns ) do
-				if ( string.find( name, pattern ) ) then
-					Category = category
+			-- Don't add useless maps
+			if not ( Ignore ) then
+			
+				-- Check if the map has a simple name or prefix
+				local Category = MapNames[ name ] or MapNames[ prefix ]
+			
+				-- Check if the map has an embedded prefix, or is TTT/Sandbox
+				if ( not Category ) then
+					for pattern, category in pairs( MapPatterns ) do
+						if ( string.find( name, pattern ) ) then
+							Category = category
+						end
+					end
+				end
+			
+				-- Throw all uncategorised maps into Other
+				Category = Category or "Other"
+			
+				local fav
+			
+				if ( table.HasValue( favmaps, name ) ) then
+					fav = true
+				end
+			
+				local csgo = false
+			
+				if ( Category == "Counter-Strike" ) then
+					if ( file.Exists( "maps/" .. name .. ".bsp", "csgo" ) ) then
+						if ( file.Exists( "maps/" .. name .. ".bsp", "cstrike" ) ) then -- Map also exists in CS:GO
+							csgo = true
+						else
+							Category = "Counter-Strike: GO"
+						end
+					end
+				end
+			
+				if ( not MapList[ Category ] ) then
+					MapList[ Category ] = {}
+				end
+			
+				table.insert( MapList[ Category ], name )
+			
+				if ( fav ) then
+					if ( not MapList[ "Favourites" ] ) then
+						MapList[ "Favourites" ] = {}
+					end
+				
+					table.insert( MapList[ "Favourites" ], name )
+				end
+			
+				if ( csgo ) then
+					if ( not MapList[ "Counter-Strike: GO" ] ) then
+						MapList[ "Counter-Strike: GO" ] = {}
+					end
+					-- HACK: We have to make the CS:GO name different from the CS:S name to prevent Favourites conflicts
+					table.insert( MapList[ "Counter-Strike: GO" ], name .. " " )
 				end
 			end
 		end
-
-		-- Throw all uncategorised maps into Other
-		Category = Category or "Other"
-
-		local fav
-
-		if ( table.HasValue( favmaps, name ) ) then
-			fav = true
-		end
-
-		local csgo = false
-
-		if ( Category == "Counter-Strike" ) then
-			if ( file.Exists( "maps/" .. name .. ".bsp", "csgo" ) ) then
-				if ( file.Exists( "maps/" .. name .. ".bsp", "cstrike" ) ) then -- Map also exists in CS:GO
-					csgo = true
-				else
-					Category = "Counter-Strike: GO"
-				end
-			end
-		end
-
-		if ( not MapList[ Category ] ) then
-			MapList[ Category ] = {}
-		end
-
-		table.insert( MapList[ Category ], name )
-
-		if ( fav ) then
-			if ( not MapList[ "Favourites" ] ) then
-				MapList[ "Favourites" ] = {}
-			end
-
-			table.insert( MapList[ "Favourites" ], name )
-		end
-
-		if ( csgo ) then
-			if ( not MapList[ "Counter-Strike: GO" ] ) then
-				MapList[ "Counter-Strike: GO" ] = {}
-			end
-			-- HACK: We have to make the CS:GO name different from the CS:S name to prevent Favourites conflicts
-			table.insert( MapList[ "Counter-Strike: GO" ], name .. " " )
-		end
-
-		
 	end
 
 	-- Send the new list to the HTML menu

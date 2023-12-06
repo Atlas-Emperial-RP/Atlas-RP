@@ -143,23 +143,24 @@ function ENT:Setup( ent )
 
 	for k = 0, ent:GetBoneCount() - 1 do
 
-		if ( ent:GetBoneParent( k ) <= 0 ) then break end
-		if ( not ent:BoneHasFlag( k, BONE_USED_BY_VERTEX_LOD0 ) ) then break end
+		if ( not ent:GetBoneParent( k ) <= 0 ) then
+			if ( ent:BoneHasFlag( k, BONE_USED_BY_VERTEX_LOD0 ) ) then
 
-		local btn = ents.Create( "widget_bone" )
-		btn:FollowBone( ent, k )
-		btn:SetLocalPos( vector_origin )
-		btn:SetLocalAngles( angle_zero )
-		btn:Spawn()
-		btn:SetSize( ent:BoneLength( k ) * 2 )
+				local btn = ents.Create( "widget_bone" )
+				btn:FollowBone( ent, k )
+				btn:SetLocalPos( vector_origin )
+				btn:SetLocalAngles( angle_zero )
+				btn:Spawn()
+				btn:SetSize( ent:BoneLength( k ) * 2 )
 
-		btn.OnClick = function( x, ply )
-			self:OnBoneClick( k, ply )
+				btn.OnClick = function( x, ply )
+					self:OnBoneClick( k, ply )
+				end
+
+				self:DeleteOnRemove( btn )
+			end
+
 		end
-
-		self:DeleteOnRemove( btn )
-
-		
 	end
 
 end
