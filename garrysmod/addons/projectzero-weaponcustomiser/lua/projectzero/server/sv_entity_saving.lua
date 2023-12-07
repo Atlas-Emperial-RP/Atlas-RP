@@ -30,10 +30,9 @@ concommand.Add( "pz_clear_ents", function( ply, cmd, args )
 	end
 
 	for k, v in pairs( ents.GetAll() ) do
-		if( PROJECT0.DEVCONFIG.EntityTypes[v:GetClass()] ) then
-			v:Remove()
-		end
-		
+		if( not PROJECT0.DEVCONFIG.EntityTypes[v:GetClass()] ) then goto continue end
+		v:Remove()
+		::continue::
 	end
 
 	if( file.Exists( "projectzero/saved_ents/".. string.lower( game.GetMap() ) ..".txt", "DATA" ) ) then
@@ -56,14 +55,16 @@ local function SpawnSavedEntities()
 			local devConfig = PROJECT0.DEVCONFIG.EntityTypes[v.Class]
 			if( not devConfig ) then
 				entities[k] = nil
-			else
-				local transformData = string.Explode( ";", v.TranformData )
-			
-				local ent = ents.Create( v.Class )
-				ent:SetPos( Vector( transformData[1], transformData[2], transformData[3] ) )
-				ent:SetAngles( Angle( transformData[4], transformData[5], transformData[6] ) )
-				ent:Spawn()
+				goto continue
 			end
+
+			local transformData = string.Explode( ";", v.TranformData )
+			
+			local ent = ents.Create( v.Class )
+			ent:SetPos( Vector( transformData[1], transformData[2], transformData[3] ) )
+			ent:SetAngles( Angle( transformData[4], transformData[5], transformData[6] ) )
+			ent:Spawn()
+			::continue::
 		end
 	end
 

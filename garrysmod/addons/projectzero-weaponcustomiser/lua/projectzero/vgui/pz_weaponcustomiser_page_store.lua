@@ -339,74 +339,74 @@ function PANEL:Refresh()
         local categoryPanel = categoryPanels[v.Category]
         if( not IsValid( categoryPanel ) ) then
             print( "[PROJECT0] Error, shop category does not exist for item ID: " .. k )
+            goto continue
+        end
 
-        else
-            local itemInfo = cosmeticTypes[v.Type].GetItemInfo( v.ItemID )
+        local itemInfo = cosmeticTypes[v.Type].GetItemInfo( v.ItemID )
+        if( not itemInfo ) then
+            print( "[PROJECT0] Error, shop item info does not exist for item ID: " .. k )
+            goto continue
+        end
 
-            if( not itemInfo ) then
-                print( "[PROJECT0] Error, shop item info does not exist for item ID: " .. k )
-            else
+        local ownsCosmetic = LocalPlayer():Project0():GetOwnsCosmeticType( v.Type, v.ItemID, v.Weapons )
 
-                local ownsCosmetic = LocalPlayer():Project0():GetOwnsCosmeticType( v.Type, v.ItemID, v.Weapons )
+        local info = {}
 
-                local info = {}
+        if( ownsCosmetic ) then
+            table.insert( info, { PROJECT0.L( "error" ), Material( "project0/icons/warning.png", "noclamp smooth" ), PROJECT0.L( "already_owned" ) } )
+        end
 
-                if( ownsCosmetic ) then
-                    table.insert( info, { PROJECT0.L( "error" ), Material( "project0/icons/warning.png", "noclamp smooth" ), PROJECT0.L( "already_owned" ) } )
-                end
+        table.insert( info, { PROJECT0.L( "price" ), Material( "project0/icons/price.png", "noclamp smooth" ), PROJECT0.FUNC.FormatStoreCurrency( v.Price ) } )
 
-                table.insert( info, { PROJECT0.L( "price" ), Material( "project0/icons/price.png", "noclamp smooth" ), PROJECT0.FUNC.FormatStoreCurrency( v.Price ) } )
+        for k, v in ipairs( cosmeticTypes[v.Type].GetCosmeticInfo( v ) ) do
+            table.insert( info, v )
+        end
 
-                for k, v in ipairs( cosmeticTypes[v.Type].GetCosmeticInfo( v ) ) do
-                    table.insert( info, v )
-                end
+        local infoPanel = vgui.Create( "pz_cosmetic_item", categoryPanel.grid )
+        infoPanel:SetSize( self.slotSize, self.slotSize*1.2 )
+        infoPanel:SetRarity( itemInfo[1] )
+        infoPanel:SetPopup( v.Type, itemInfo[2], info )
+        infoPanel:SetShadowBounds( 0, self.scrollPanel.screenY, ScrW(), self.scrollPanel.screenY+self.scrollPanel:GetTall() )
+        infoPanel.DoClick = function()
+            if( ownsCosmetic ) then
+                PROJECT0.FUNC.CreateNotification( PROJECT0.L( "purchase_error" ), PROJECT0.L( "already_own_cosmetic" ), "error" )
+                return
+            end
 
-                local infoPanel = vgui.Create( "pz_cosmetic_item", categoryPanel.grid )
-                infoPanel:SetSize( self.slotSize, self.slotSize*1.2 )
-                infoPanel:SetRarity( itemInfo[1] )
-                infoPanel:SetPopup( v.Type, itemInfo[2], info )
-                infoPanel:SetShadowBounds( 0, self.scrollPanel.screenY, ScrW(), self.scrollPanel.screenY+self.scrollPanel:GetTall() )
-                infoPanel.DoClick = function()
-                    if( ownsCosmetic ) then
-                        PROJECT0.FUNC.CreateNotification( PROJECT0.L( "purchase_error" ), PROJECT0.L( "already_own_cosmetic" ), "error" )
-                        return
-                    end
+            net.Start( "Project0.RequestCosmeticPurchase" )
+                net.WriteUInt( k, 10 )
+            net.SendToServer()
+        end
 
-                    net.Start( "Project0.RequestCosmeticPurchase" )
-                        net.WriteUInt( k, 10 )
-                    net.SendToServer()
-                end
+        cosmeticTypes[v.Type].OnCreatePnl( infoPanel, { v.ItemID } )
 
-                cosmeticTypes[v.Type].OnCreatePnl( infoPanel, { v.ItemID } )
+        if( ownsCosmetic ) then
+            local disabledIcon = vgui.Create( "Panel", infoPanel )
+            disabledIcon:SetSize( PROJECT0.FUNC.Repeat( PROJECT0.FUNC.ScreenScale( 26 ), 2 ) )
+            disabledIcon:SetPos( infoPanel:GetWide()-PROJECT0.UI.Margin5-disabledIcon:GetWide(), PROJECT0.UI.Margin5 )
+            disabledIcon.Paint = function( self2, w, h )
+                surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 1 ) )
+                surface.DrawRect( 0, 0, w, h )
 
-                if( ownsCosmetic ) then
-                    local disabledIcon = vgui.Create( "Panel", infoPanel )
-                    disabledIcon:SetSize( PROJECT0.FUNC.Repeat( PROJECT0.FUNC.ScreenScale( 26 ), 2 ) )
-                    disabledIcon:SetPos( infoPanel:GetWide()-PROJECT0.UI.Margin5-disabledIcon:GetWide(), PROJECT0.UI.Margin5 )
-                    disabledIcon.Paint = function( self2, w, h )
-                        surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 1 ) )
-                        surface.DrawRect( 0, 0, w, h )
+                surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 2, 100 ) )
+                surface.DrawRect( 0, 0, w, h )
 
-                        surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 2, 100 ) )
-                        surface.DrawRect( 0, 0, w, h )
+                local borderL, borderR = w*0.4, 2
+                surface.SetDrawColor( PROJECT0.DEVCONFIG.Colours.Red )
+                surface.DrawRect( 0, 0, borderL, borderR )
+                surface.DrawRect( 0, 0, borderR, borderL )
+                surface.DrawRect( w-borderL, h-borderR, borderL, borderR )
+                surface.DrawRect( w-borderR, h-borderL, borderR, borderL )
 
-                        local borderL, borderR = w*0.4, 2
-                        surface.SetDrawColor( PROJECT0.DEVCONFIG.Colours.Red )
-                        surface.DrawRect( 0, 0, borderL, borderR )
-                        surface.DrawRect( 0, 0, borderR, borderL )
-                        surface.DrawRect( w-borderL, h-borderR, borderL, borderR )
-                        surface.DrawRect( w-borderR, h-borderL, borderR, borderL )
-
-                        surface.SetMaterial( disabledMat )
-                        local iconSize = PROJECT0.FUNC.ScreenScale( 14 )
-                        surface.DrawTexturedRect( w/2-iconSize/2, h/2-iconSize/2, iconSize, iconSize )
-                    end
-                end
-
-                categoryPanel.slotCount = (categoryPanel.slotCount or 0)+1
-                categoryPanel:SetExtraHeight( math.ceil(categoryPanel.slotCount/slotsWide)*((self.slotSize*1.2)+spacing) )
+                surface.SetMaterial( disabledMat )
+                local iconSize = PROJECT0.FUNC.ScreenScale( 14 )
+                surface.DrawTexturedRect( w/2-iconSize/2, h/2-iconSize/2, iconSize, iconSize )
             end
         end
+
+        categoryPanel.slotCount = (categoryPanel.slotCount or 0)+1
+        categoryPanel:SetExtraHeight( math.ceil(categoryPanel.slotCount/slotsWide)*((self.slotSize*1.2)+spacing) )
+        ::continue::
     end
 end
 

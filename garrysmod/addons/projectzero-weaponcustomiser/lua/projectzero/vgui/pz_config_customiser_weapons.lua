@@ -193,9 +193,9 @@ function PANEL:Refresh()
         local function getEnabledWeapons()
             local enabledWeapons = 0
             for k, v in pairs( weaponPack.Weapons ) do
-                if not ( values[k] and values[k].Disabled ) then
-                    enabledWeapons = enabledWeapons+1
-                end
+                if( values[k] and values[k].Disabled ) then goto continue end
+                enabledWeapons = enabledWeapons+1
+                ::continue::
             end
 
             return enabledWeapons
@@ -215,91 +215,91 @@ function PANEL:Refresh()
             end
         end )
 
-        if not ( categoryDisabled ) then
+        if( categoryDisabled ) then goto continue end
 
-            for weaponClass, weaponData in pairs( weaponPack.Weapons ) do
-                local weaponEntry = self:CreateWeaponPanel( categoryPanel, weaponData.Name, weaponClass, weaponData.Model )
+        for weaponClass, weaponData in pairs( weaponPack.Weapons ) do
+            local weaponEntry = self:CreateWeaponPanel( categoryPanel, weaponData.Name, weaponClass, weaponData.Model )
 
-                local topMargin = (weaponEntry:GetTall()-PROJECT0.FUNC.ScreenScale( 30 ))/2
-                local checkBox = vgui.Create( "pz_checkbox", weaponEntry )
-                checkBox:Dock( RIGHT )
-                checkBox:DockMargin( 0, topMargin, topMargin, topMargin )
-                checkBox:SetWide( PROJECT0.FUNC.ScreenScale( 30 ) )
-                checkBox:SetValue( not (values[weaponClass] or {}).Disabled )	
-                checkBox:DisableShadows( true )
-                checkBox.OnChange = function( self2, value )
-                    if( value ) then
-                        values[weaponClass] = nil
-                    else
-                        values[weaponClass] = { Disabled = true }
-                    end
-
-                    PROJECT0.FUNC.RequestConfigChange( "CUSTOMISER", "Weapons", values )
-
-                    if( getEnabledWeapons() == 0 ) then
-                        self:Refresh()
-                    end
+            local topMargin = (weaponEntry:GetTall()-PROJECT0.FUNC.ScreenScale( 30 ))/2
+            local checkBox = vgui.Create( "pz_checkbox", weaponEntry )
+            checkBox:Dock( RIGHT )
+            checkBox:DockMargin( 0, topMargin, topMargin, topMargin )
+            checkBox:SetWide( PROJECT0.FUNC.ScreenScale( 30 ) )
+            checkBox:SetValue( not (values[weaponClass] or {}).Disabled )	
+            checkBox:DisableShadows( true )
+            checkBox.OnChange = function( self2, value )
+                if( value ) then
+                    values[weaponClass] = nil
+                else
+                    values[weaponClass] = { Disabled = true }
                 end
 
-                weaponEntry:AddButton( editMat, function()
-                    local oldWeaponValues = values[weaponClass]
-                    values[weaponClass] = oldWeaponValues or table.Copy( PROJECT0.FUNC.GetConfiguredWeapon( weaponClass ) )
+                PROJECT0.FUNC.RequestConfigChange( "CUSTOMISER", "Weapons", values )
 
-                    local popup = vgui.Create( "pz_config_popup_weaponcfg" )
-                    popup.OnClose = function( valueChanged )
-                        if( not popup.valueChanged ) then 
-                            values[weaponClass] = oldWeaponValues
-                            return 
-                        end
-
-                        PROJECT0.FUNC.RequestConfigChange( "CUSTOMISER", "Weapons", values )
-                        self:Refresh()
-                    end
-                    popup:FinishSetup( values[weaponClass], weaponClass )
-
-                    PROJECT0.TEMP.WeaponCfgEditPopup = popup
-                
-                    self.popup = popup
-                end )
-
-                categoryPanel:SetExtraHeight( categoryPanel:GetExtraHeight()+weaponEntry:GetTall()+PROJECT0.UI.Margin5 )
-		    end
-        end
-	end
-
-    local customCategoryPanel = self:CreateCategoryPanel( "custom", "Custom" )
-
-    for k, v in pairs( values ) do
-        if( not  weaponsList[k] ) then
-            weaponsList[k] = v
-
-            local weaponEntry = self:CreateWeaponPanel( customCategoryPanel, v.Name, k, v.Model )
-            weaponEntry:AddButton( deleteMat, function()
-                PROJECT0.FUNC.DermaQuery( "Do you want to delete the configuration?", "WEAPON REMOVAL", "Confirm", function() 
-                    values[k] = nil
-                    PROJECT0.FUNC.RequestConfigChange( "CUSTOMISER", "Weapons", values )
+                if( getEnabledWeapons() == 0 ) then
                     self:Refresh()
-                end, "Cancel" )
-            end )
+                end
+            end
+            
             weaponEntry:AddButton( editMat, function()
+                local oldWeaponValues = values[weaponClass]
+                values[weaponClass] = oldWeaponValues or table.Copy( PROJECT0.FUNC.GetConfiguredWeapon( weaponClass ) )
+
                 local popup = vgui.Create( "pz_config_popup_weaponcfg" )
                 popup.OnClose = function( valueChanged )
                     if( not popup.valueChanged ) then 
-                        return
+                        values[weaponClass] = oldWeaponValues
+                        return 
                     end
 
                     PROJECT0.FUNC.RequestConfigChange( "CUSTOMISER", "Weapons", values )
                     self:Refresh()
                 end
-                popup:FinishSetup( values[k], k )
+                popup:FinishSetup( values[weaponClass], weaponClass )
 
                 PROJECT0.TEMP.WeaponCfgEditPopup = popup
             
                 self.popup = popup
             end )
 
-            customCategoryPanel:SetExtraHeight( customCategoryPanel:GetExtraHeight()+weaponEntry:GetTall()+PROJECT0.UI.Margin5 )
-        end
+            categoryPanel:SetExtraHeight( categoryPanel:GetExtraHeight()+weaponEntry:GetTall()+PROJECT0.UI.Margin5 )
+		end
+        ::continue::
+	end
+
+    local customCategoryPanel = self:CreateCategoryPanel( "custom", "Custom" )
+
+    for k, v in pairs( values ) do
+        if( weaponsList[k] ) then goto continue end
+        weaponsList[k] = v
+
+        local weaponEntry = self:CreateWeaponPanel( customCategoryPanel, v.Name, k, v.Model )
+        weaponEntry:AddButton( deleteMat, function()
+            PROJECT0.FUNC.DermaQuery( "Do you want to delete the configuration?", "WEAPON REMOVAL", "Confirm", function() 
+                values[k] = nil
+                PROJECT0.FUNC.RequestConfigChange( "CUSTOMISER", "Weapons", values )
+                self:Refresh()
+            end, "Cancel" )
+        end )
+        weaponEntry:AddButton( editMat, function()
+            local popup = vgui.Create( "pz_config_popup_weaponcfg" )
+            popup.OnClose = function( valueChanged )
+                if( not popup.valueChanged ) then 
+                    return
+                end
+
+                PROJECT0.FUNC.RequestConfigChange( "CUSTOMISER", "Weapons", values )
+                self:Refresh()
+            end
+            popup:FinishSetup( values[k], k )
+
+            PROJECT0.TEMP.WeaponCfgEditPopup = popup
+        
+            self.popup = popup
+        end )
+
+        customCategoryPanel:SetExtraHeight( customCategoryPanel:GetExtraHeight()+weaponEntry:GetTall()+PROJECT0.UI.Margin5 )
+        ::continue::
     end
 
     local addNewButton = customCategoryPanel:Add( "DButton" )
@@ -335,9 +335,9 @@ function PANEL:Refresh()
         
         local options = {}
         for k, v in ipairs( weapons.GetList() ) do
-            if( not weaponsList[v.ClassName] ) then
-                options[v.ClassName] = PROJECT0.FUNC.GetWeaponName( v.ClassName )
-            end
+            if( weaponsList[v.ClassName] ) then goto continue end
+            options[v.ClassName] = PROJECT0.FUNC.GetWeaponName( v.ClassName )
+            ::continue::
         end
 
         PROJECT0.FUNC.DermaComboRequest( "What weapon would you like to add?", "WEAPON EDITOR", options, false, true, false, function( value, data )

@@ -26,10 +26,10 @@ net.Receive( "Project0.RequestCosmeticsPurchased", function( len, ply )
     local data = {}
     for k, v in ipairs( PROJECT0.TEMP.CosmeticPurchases ) do
         local day = 7-math.floor( (currentTime-v[1])/86400 )
-        if not ( day > 7 or day < 1 ) then
+        if( day > 7 or day < 1 ) then goto continue end
 
-            data[day] = (data[day] or 0)+1
-        end
+        data[day] = (data[day] or 0)+1
+        ::continue::
     end
 
     net.Start( "Project0.SendCosmeticsPurchased" )
