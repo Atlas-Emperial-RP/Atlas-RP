@@ -50,13 +50,14 @@ end, function(cmd, args)
 	local tbl = {}
 	local is_operator = OpenPermissions:IsOperator(LocalPlayer())
 	for module_name, module_data in pairs(GAS.Modules.Info) do
-		if (module_data.OperatorOnly and not is_operator) then continue end
-		if (arg and #string.Trim(arg) > 0) then
-			if (not module_name:lower():find(string.Trim(arg):lower())) then
-				continue
+		if (not module_data.OperatorOnly and is_operator) then
+			if (arg and #string.Trim(arg) > 0) then
+				if (not module_name:lower():find(string.Trim(arg):lower())) then
+					return
+				end
 			end
+			table.insert(tbl, cmd .. " " .. module_name)
 		end
-		table.insert(tbl, cmd .. " " .. module_name)
 	end
 	table.sort(tbl)
 	table.insert(tbl, 1, cmd .. " reload")
@@ -438,9 +439,10 @@ local function OpenMenu()
 			Icon = "icon16/shield.png",
 		})
 		for module_name, info in pairs(GAS.Modules.Info) do
-			if (info.NoMenu or info.Hidden) then continue end
-			combobox:AddChoice(info.Name, module_name, GAS.LocalConfig.DefaultModule == module_name, info.Icon)
-			create_language_setting(module_name, info)
+			if (info.NoMenu or info.Hidden) then 
+				combobox:AddChoice(info.Name, module_name, GAS.LocalConfig.DefaultModule == module_name, info.Icon)
+				create_language_setting(module_name, info)
+			end
 		end
 	end)
 
@@ -634,42 +636,39 @@ local function OpenMenu()
 	for category, modules in pairs(GAS.Modules.Organised) do
 		local category_vgui
 		for module_name, info in pairs(modules) do
-			if (info.NoMenu or info.Hidden) then continue end
-			if (info.DarkRP == true and DarkRP == nil) then continue end
-			if (GAS.Modules:IsModuleEnabled(module_name) ~= GAS.Modules.MODULE_ENABLED) then continue end
-			if (info.OperatorOnly and not is_operator) then continue end
-			if (not is_operator and not OpenPermissions:HasPermission(LocalPlayer(), "gmodadminsuite/" .. module_name)) then continue end
-			created_anything = true
-			if (not category_vgui) then
-				if (category == GAS.MODULE_CATEGORY_ADMINISTRATION) then
-					category_vgui = GAS.Menu.Modules:AddCategory(L"administration", Color(255,35,35))
-				elseif (category == GAS.MODULE_CATEGORY_PLAYER_MANAGEMENT) then
-					category_vgui = GAS.Menu.Modules:AddCategory(L"player_management", Color(0,130,255))
-				elseif (category == GAS.MODULE_CATEGORY_UTILITIES) then
-					category_vgui = GAS.Menu.Modules:AddCategory(L"utilities", Color(255,75,0))
-				elseif (category == GAS.MODULE_CATEGORY_FUN) then
-					category_vgui = GAS.Menu.Modules:AddCategory(L"fun", Color(190,0,255))
+			if not (info.NoMenu or info.Hidden) and not (info.DarkRP ~= true and DarkRP == nil) and not (GAS.Modules:IsModuleEnabled(module_name) ~= GAS.Modules.MODULE_ENABLED) and not (info.OperatorOnly and not is_operator) and not (not is_operator and not OpenPermissions:HasPermission(LocalPlayer(), "gmodadminsuite/" .. module_name)) then 
+				created_anything = true
+				if (not category_vgui) then
+					if (category == GAS.MODULE_CATEGORY_ADMINISTRATION) then
+						category_vgui = GAS.Menu.Modules:AddCategory(L"administration", Color(255,35,35))
+					elseif (category == GAS.MODULE_CATEGORY_PLAYER_MANAGEMENT) then
+						category_vgui = GAS.Menu.Modules:AddCategory(L"player_management", Color(0,130,255))
+					elseif (category == GAS.MODULE_CATEGORY_UTILITIES) then
+						category_vgui = GAS.Menu.Modules:AddCategory(L"utilities", Color(255,75,0))
+					elseif (category == GAS.MODULE_CATEGORY_FUN) then
+						category_vgui = GAS.Menu.Modules:AddCategory(L"fun", Color(190,0,255))
+					end
 				end
-			end
-			local item = category_vgui:AddItem(GAS.Modules:GetFriendlyName(module_name), function()
-				GAS.Menu.ModuleOpen = module_name
-
-				GAS:OpenModuleFrame(module_name)
+				local item = category_vgui:AddItem(GAS.Modules:GetFriendlyName(module_name), function()
+					GAS.Menu.ModuleOpen = module_name
 				
-				GAS.Menu.Fullscreened = false
-
-				local _,h = GAS.ModuleFrame:GetSize()
-				GAS.Menu:SetTall(h)
-			end, nil, info.Icon)
-			if (IsValid(GAS.ModuleFrame)) then
-				if (GAS.ModuleFrame.ModuleName == module_name) then
-					item:SetActive(true)
+					GAS:OpenModuleFrame(module_name)
+					
+					GAS.Menu.Fullscreened = false
+				
+					local _,h = GAS.ModuleFrame:GetSize()
+					GAS.Menu:SetTall(h)
+				end, nil, info.Icon)
+				if (IsValid(GAS.ModuleFrame)) then
+					if (GAS.ModuleFrame.ModuleName == module_name) then
+						item:SetActive(true)
+					end
+				elseif (GAS.LocalConfig.DefaultModule == module_name) then
+					item:OnMouseReleased(MOUSE_LEFT)
 				end
-			elseif (GAS.LocalConfig.DefaultModule == module_name) then
-				item:OnMouseReleased(MOUSE_LEFT)
+			
+				GAS.Menu.Modules.IndexedItems[module_name] = item
 			end
-
-			GAS.Menu.Modules.IndexedItems[module_name] = item
 		end
 	end
 	if (not created_anything) then
@@ -697,8 +696,9 @@ function GAS:OpenMenu()
 		GAS:GetConfig("modules", function(config)
 			GAS.Modules.Config = config
 			for module_name, enabled in pairs(GAS.Modules.Config.Enabled) do
-				if (not enabled) then continue end
-				GAS.Modules:LoadModule(module_name, true)
+				if (enabled) then
+					GAS.Modules:LoadModule(module_name, true)
+				end
 			end
 			OpenMenu()
 		end)

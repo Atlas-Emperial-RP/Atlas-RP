@@ -167,10 +167,11 @@ function PANEL:SortRows()
 	local size_y = 0
 	local no_rows = true
 	for i,v in pairs(self.Rows) do
-		if (not v:IsVisible()) then continue end
-		v:AlignTop(size_y)
-		size_y = size_y + v:GetTall()
-		no_rows = false
+		if (v:IsVisible()) then 
+			v:AlignTop(size_y)
+			size_y = size_y + v:GetTall()
+			no_rows = false
+		end
 	end
 	self.NoResultsFound.Visible = no_rows
 end

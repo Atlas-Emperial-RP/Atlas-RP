@@ -217,53 +217,53 @@ if (CLIENT) then
 			}) do
 
 				local i = v.Key
-				if (i == "IPAddressField" and not see_ip_addresses) then continue end
+				if (i ~= "IPAddressField" and see_ip_addresses) then
 
-				local line = vgui.Create("bVGUI.BlankPanel", form)
-				line:Dock(TOP)
-				line:DockMargin(0,0,0,10)
+					local line = vgui.Create("bVGUI.BlankPanel", form)
+					line:Dock(TOP)
+					line:DockMargin(0,0,0,10)
 
-				if (v.TextEntry) then
-					local TextEntry = vgui.Create("bVGUI.TextEntry", line)
-					self.Content[i] = TextEntry
-					TextEntry:SetUpdateOnType(true)
-					function TextEntry:OnValueChange()
-						if (not IsValid(content.SearchBtn)) then return end
-						content.SearchBtn:DoVerification()
+					if (v.TextEntry) then
+						local TextEntry = vgui.Create("bVGUI.TextEntry", line)
+						self.Content[i] = TextEntry
+						TextEntry:SetUpdateOnType(true)
+						function TextEntry:OnValueChange()
+							if (not IsValid(content.SearchBtn)) then return end
+							content.SearchBtn:DoVerification()
+						end
+					elseif (v.ComboBox) then
+						local ComboBox = vgui.Create("bVGUI.ComboBox", line)
+						self.Content[i] = ComboBox
+						function ComboBox:OnSelect(i,v,d)
+							if (not IsValid(content.SearchBtn)) then return end
+							GAS:PlaySound("btn_light")
+							content.SearchBtn:DoVerification()
+						end
 					end
-				elseif (v.ComboBox) then
-					local ComboBox = vgui.Create("bVGUI.ComboBox", line)
-					self.Content[i] = ComboBox
-					function ComboBox:OnSelect(i,v,d)
-						if (not IsValid(content.SearchBtn)) then return end
-						GAS:PlaySound("btn_light")
-						content.SearchBtn:DoVerification()
-					end
+
+					self.Content[i]:Dock(BOTTOM)
+					self.Content[i]:DockMargin(0,5,0,0)
+
+					local top = vgui.Create("bVGUI.BlankPanel", line)
+					top:Dock(TOP)
+					top:SetTall(16)
+
+					local icon = vgui.Create("DImage", top)
+					icon:Dock(LEFT)
+					icon:SetSize(16,16)
+					icon:SetImage(v.Icon)
+					icon:DockMargin(0,0,5,0)
+
+					local label = vgui.Create("DLabel", top)
+					label:Dock(FILL)
+					label:SetContentAlignment(4)
+					label:SetFont(bVGUI.FONT(bVGUI.FONT_CIRCULAR, "REGULAR", 14))
+					label:SetTextColor(bVGUI.COLOR_WHITE)
+					label:SetText(v.Label)
+					label:SizeToContents()
+
+					line:SetTall(16 + 5 + self.Content[i]:GetTall())
 				end
-
-				self.Content[i]:Dock(BOTTOM)
-				self.Content[i]:DockMargin(0,5,0,0)
-
-				local top = vgui.Create("bVGUI.BlankPanel", line)
-				top:Dock(TOP)
-				top:SetTall(16)
-
-				local icon = vgui.Create("DImage", top)
-				icon:Dock(LEFT)
-				icon:SetSize(16,16)
-				icon:SetImage(v.Icon)
-				icon:DockMargin(0,0,5,0)
-
-				local label = vgui.Create("DLabel", top)
-				label:Dock(FILL)
-				label:SetContentAlignment(4)
-				label:SetFont(bVGUI.FONT(bVGUI.FONT_CIRCULAR, "REGULAR", 14))
-				label:SetTextColor(bVGUI.COLOR_WHITE)
-				label:SetText(v.Label)
-				label:SizeToContents()
-
-				line:SetTall(16 + 5 + self.Content[i]:GetTall())
-
 			end
 
 			self.Content.CountryField:SetSortItems(false)

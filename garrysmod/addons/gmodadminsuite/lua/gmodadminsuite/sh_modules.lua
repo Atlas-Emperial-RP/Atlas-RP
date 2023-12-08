@@ -76,51 +76,52 @@ GAS:StartHeader("Modules")
 local save_config = false
 local _,d = file.Find("gmodadminsuite/modules/*", "LUA")
 for _,module_name in ipairs(d) do
-	if (not file.Exists("gmodadminsuite/modules/" .. module_name .. "/_gas_info.lua", "LUA")) then continue end
+	if (file.Exists("gmodadminsuite/modules/" .. module_name .. "/_gas_info.lua", "LUA")) then 
 
-	if (SERVER) then
-		AddCSLuaFile("gmodadminsuite/modules/" .. module_name .. "/_gas_info.lua")
-	end
-	GAS.Modules.Info[module_name] = include("gmodadminsuite/modules/" .. module_name .. "/_gas_info.lua")
-
-	local category = GAS.Modules.Info[module_name].Category
-	GAS.Modules.Organised[category] = GAS.Modules.Organised[category] or {}
-	GAS.Modules.Organised[category][module_name] = GAS.Modules.Info[module_name]
-
-	local init = false
-	if (file.Exists("gmodadminsuite/modules/" .. module_name .. "/sh_init.lua", "LUA")) then
-		if (SERVER) then AddCSLuaFile("gmodadminsuite/modules/" .. module_name .. "/sh_init.lua") end
-		include("gmodadminsuite/modules/" .. module_name .. "/sh_init.lua")
-		init = true
-	end
-	if (file.Exists("gmodadminsuite/modules/" .. module_name .. "/cl_init.lua", "LUA")) then
-		if (SERVER) then AddCSLuaFile("gmodadminsuite/modules/" .. module_name .. "/cl_init.lua") end
-		if (CLIENT) then include("gmodadminsuite/modules/" .. module_name .. "/cl_init.lua") end
-		init = true
-	end
-	if (SERVER and file.Exists("gmodadminsuite/modules/" .. module_name .. "/sv_init.lua", "LUA")) then
-		include("gmodadminsuite/modules/" .. module_name .. "/sv_init.lua")
-		init = true
-	end
-
-	local friendly_name
-	if (SERVER) then
-		friendly_name = GAS.Modules.Info[module_name].Name
-	else
-		friendly_name = GAS:Phrase("module_name", module_name)
-	end
-	if (SERVER) then
-		if (GAS.Modules.Config.Enabled[module_name] == nil and GAS.Modules.Info[module_name].DefaultEnabled == true) then
-			GAS.Modules.Config.Enabled[module_name] = true
-			save_config = true
+		if (SERVER) then
+			AddCSLuaFile("gmodadminsuite/modules/" .. module_name .. "/_gas_info.lua")
 		end
-		if (GAS.Modules.Config.Enabled[module_name]) then
-			GAS:HeaderPrint("= " .. friendly_name, GAS_PRINT_COLOR_GOOD)
+		GAS.Modules.Info[module_name] = include("gmodadminsuite/modules/" .. module_name .. "/_gas_info.lua")
+
+		local category = GAS.Modules.Info[module_name].Category
+		GAS.Modules.Organised[category] = GAS.Modules.Organised[category] or {}
+		GAS.Modules.Organised[category][module_name] = GAS.Modules.Info[module_name]
+
+		local init = false
+		if (file.Exists("gmodadminsuite/modules/" .. module_name .. "/sh_init.lua", "LUA")) then
+			if (SERVER) then AddCSLuaFile("gmodadminsuite/modules/" .. module_name .. "/sh_init.lua") end
+			include("gmodadminsuite/modules/" .. module_name .. "/sh_init.lua")
+			init = true
+		end
+		if (file.Exists("gmodadminsuite/modules/" .. module_name .. "/cl_init.lua", "LUA")) then
+			if (SERVER) then AddCSLuaFile("gmodadminsuite/modules/" .. module_name .. "/cl_init.lua") end
+			if (CLIENT) then include("gmodadminsuite/modules/" .. module_name .. "/cl_init.lua") end
+			init = true
+		end
+		if (SERVER and file.Exists("gmodadminsuite/modules/" .. module_name .. "/sv_init.lua", "LUA")) then
+			include("gmodadminsuite/modules/" .. module_name .. "/sv_init.lua")
+			init = true
+		end
+
+		local friendly_name
+		if (SERVER) then
+			friendly_name = GAS.Modules.Info[module_name].Name
 		else
-			GAS:HeaderPrint("X " .. friendly_name, GAS_PRINT_COLOR_BAD)
+			friendly_name = GAS:Phrase("module_name", module_name)
 		end
-	elseif (init) then
-		GAS:HeaderPrint("✓ " .. friendly_name, GAS_PRINT_COLOR_GOOD)
+		if (SERVER) then
+			if (GAS.Modules.Config.Enabled[module_name] == nil and GAS.Modules.Info[module_name].DefaultEnabled == true) then
+				GAS.Modules.Config.Enabled[module_name] = true
+				save_config = true
+			end
+			if (GAS.Modules.Config.Enabled[module_name]) then
+				GAS:HeaderPrint("= " .. friendly_name, GAS_PRINT_COLOR_GOOD)
+			else
+				GAS:HeaderPrint("X " .. friendly_name, GAS_PRINT_COLOR_BAD)
+			end
+		elseif (init) then
+			GAS:HeaderPrint("✓ " .. friendly_name, GAS_PRINT_COLOR_GOOD)
+		end
 	end
 end
 
@@ -135,15 +136,17 @@ if (CLIENT) then
 		GAS:GetConfig("modules", function(config)
 			GAS.Modules.Config = config
 			for module_name, enabled in pairs(GAS.Modules.Config.Enabled) do
-				if (not enabled) then continue end
-				GAS.Modules:LoadModule(module_name, true)
+				if (enabled) then 
+					GAS.Modules:LoadModule(module_name, true)
+				end
 			end
 		end)
 	end)
 else
 	for module_name, enabled in pairs(GAS.Modules.Config.Enabled) do
-		if (not enabled) then continue end
-		GAS.Modules:LoadModule(module_name, true)
+		if (enabled) then 
+			GAS.Modules:LoadModule(module_name, true)
+		end
 	end
 end
 
