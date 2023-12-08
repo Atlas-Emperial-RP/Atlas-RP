@@ -71,7 +71,7 @@ function PANEL:OpenMenu( pControlOpener )
 		local sorted = {}
 		for k, v in pairs( self.Choices ) do
 			local val = tostring( v ) --tonumber( v ) or v -- This would make nicer number sorting, but SortedPairsByMemberValue doesn't seem to like number-string mixing
-			if ( string.len( val ) > 1 and !tonumber( val ) and val:StartWith( "#" ) ) then val = language.GetPhrase( val:sub( 2 ) ) end
+			if ( string.len( val ) > 1 and not tonumber( val ) and val:StartWith( "#" ) ) then val = language.GetPhrase( val:sub( 2 ) ) end
 			table.insert( sorted, { id = k, data = v, label = val } )
 		end
 		for k, v in SortedPairsByMemberValue( sorted, "label" ) do
