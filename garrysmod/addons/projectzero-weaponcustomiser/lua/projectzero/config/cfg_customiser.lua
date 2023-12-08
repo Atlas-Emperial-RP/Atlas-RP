@@ -9,10 +9,10 @@ MODULE:AddVariable( "StatisticsNetworkDelay", "Statistics Network Delay", "How o
 MODULE:AddVariable( "StoreCurrency", "Store Currency", "The currency used in the cosmetic store.", PROJECT0.TYPE.String, "darkrp", false, function()
     local options = {}
     for k, v in pairs( PROJECT0.TEMP.Currencies ) do
-        if( v.IsInstalled() ) then
+        if( not v.IsInstalled() ) then goto continue end
         options[v.ID] = v.Title
 
-        end
+        ::continue::
     end
 
     return options

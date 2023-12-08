@@ -284,35 +284,35 @@ function PROJECT0.FUNC.DrawGradientBox(x, y, w, h, direction, ...)
 	
 	local previousPos = (horizontal and x or y)-secSize
 	for k, v in pairs( colors ) do
-		if( k % 2 ~= 0 ) then 
+		if( k % 2 == 0 ) then goto continue end
 
-			previousPos = previousPos+secSize
-			surface.SetDrawColor( v )
-			surface.DrawRect( (horizontal and previousPos or x), (horizontal and y or previousPos), (horizontal and secSize or w), (horizontal and h or secSize) )
-		end
+		previousPos = previousPos+secSize
+		surface.SetDrawColor( v )
+		surface.DrawRect( (horizontal and previousPos or x), (horizontal and y or previousPos), (horizontal and secSize or w), (horizontal and h or secSize) )
+		::continue::
 	end
 
 	local previousGradPos = (horizontal and x or y)-secSize
 	for k, v in pairs( colors ) do
-		if( k % 2 == 0 ) then
+		if( k % 2 ~= 0 ) then goto continue end
 
-			previousGradPos = previousGradPos+secSize
+		previousGradPos = previousGradPos+secSize
 
-			surface.SetDrawColor( v )
-			surface.SetMaterial( horizontal and gradientMatR or gradientMatU )
+		surface.SetDrawColor( v )
+		surface.SetMaterial( horizontal and gradientMatR or gradientMatU )
 
-			if( horizontal ) then
-				surface.DrawTexturedRectUV( previousGradPos, y, secSize, h, 1, 0, 0, 1)
-			else
-				surface.DrawTexturedRect( x, previousGradPos, w, secSize )
-			end
-
-			if( colors[k+1] ) then
-				surface.SetDrawColor( v )
-				surface.SetMaterial( horizontal and gradientMatR or gradientMatD )
-				surface.DrawTexturedRect((horizontal and previousGradPos+secSize or x), (horizontal and y or previousGradPos+secSize), (horizontal and secSize or w), (horizontal and h or secSize))
-			end
+		if( horizontal ) then
+			surface.DrawTexturedRectUV( previousGradPos, y, secSize, h, 1, 0, 0, 1)
+		else
+			surface.DrawTexturedRect( x, previousGradPos, w, secSize )
 		end
+
+		if( colors[k+1] ) then
+			surface.SetDrawColor( v )
+			surface.SetMaterial( horizontal and gradientMatR or gradientMatD )
+			surface.DrawTexturedRect((horizontal and previousGradPos+secSize or x), (horizontal and y or previousGradPos+secSize), (horizontal and secSize or w), (horizontal and h or secSize))
+		end
+		::continue::
 	end
 end
 

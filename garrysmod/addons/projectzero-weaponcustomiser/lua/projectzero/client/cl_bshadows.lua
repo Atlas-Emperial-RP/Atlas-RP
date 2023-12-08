@@ -24,11 +24,11 @@ PROJECT0.TEMP.RTMaterials = PROJECT0.TEMP.RTMaterials or {}
 local function createRTMaterial( uniqueID )
     local materialID
     for k, v in ipairs( PROJECT0.TEMP.RTMaterials or {} ) do
-        if( v == true ) then
+        if( v ~= true ) then goto continue end
 
         materialID = k
         break
-        end
+        ::continue::
     end
 
     if( not materialID ) then
@@ -192,19 +192,19 @@ function PROJECT0.FUNC.DeleteShadow( uniqueID )
     if( not PROJECT0.TEMP.CreatedShadows[uniqueID] ) then return end
 
     for k, v in ipairs( PROJECT0.TEMP.RTMaterials or {} ) do
-        if( v == uniqueID ) then
+        if( v ~= uniqueID ) then goto continue end
 
         PROJECT0.TEMP.RTMaterials[k] = true
         break
-        end
+        ::continue::
     end
 
     for k, v in ipairs( PROJECT0.TEMP.ShadowRenderTargets or {} ) do
-        if( v == uniqueID ) then
+        if( v ~= uniqueID ) then goto continue end
 
         PROJECT0.TEMP.ShadowRenderTargets[k] = true
         break
-        end
+        ::continue::
     end
 
     PROJECT0.TEMP.CreatedShadows[uniqueID][1] = nil
