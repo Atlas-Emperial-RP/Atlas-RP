@@ -54,7 +54,8 @@ function PANEL:SetValid(valid)
 end
 
 function PANEL:ResetValidity()
-	self._Valid, self._Invalid = nil
+	self._Valid = nil
+	self._Invalid = nil
 end
 
 derma.DefineControl("bVGUI.TextEntry", nil, PANEL, "DTextEntry")

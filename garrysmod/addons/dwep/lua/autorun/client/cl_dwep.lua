@@ -9,11 +9,11 @@ local foreground = colors["foreground"]
 local inactiveClr = colors["inactiveClr"]
 local theme = colors["theme"] 
 local highlight = Color(theme.r, theme.g, theme.b, 10)
-surface.CreateFont( "dwep_24", { font = "Roboto", size = 24, weight = 600, bold = true, strikeout = false, outline = false, shadow = false, outline = false,})
-surface.CreateFont( "dwep_22", { font = "Roboto", size = 22, weight = 600, bold = true, strikeout = false, outline = false, shadow = false, outline = false,})
-surface.CreateFont( "dwep_20", { font = "Roboto", size = 20, weight = 600, bold = true, strikeout = false, outline = false, shadow = false, outline = false,})
-surface.CreateFont( "dwep_18", { font = "Roboto", size = 18, weight = 600, bold = true, strikeout = false, outline = false, shadow = false, outline = false,})
-surface.CreateFont( "dwep_16", { font = "Roboto", size = 16, weight = 600, bold = true, strikeout = false, outline = false, shadow = false, outline = false,})
+surface.CreateFont( "dwep_24", { font = "Roboto", size = 24, weight = 600, bold = true, strikeout = false, shadow = false })
+surface.CreateFont( "dwep_22", { font = "Roboto", size = 22, weight = 600, bold = true, strikeout = false, shadow = false })
+surface.CreateFont( "dwep_20", { font = "Roboto", size = 20, weight = 600, bold = true, strikeout = false, shadow = false })
+surface.CreateFont( "dwep_18", { font = "Roboto", size = 18, weight = 600, bold = true, strikeout = false, shadow = false })
+surface.CreateFont( "dwep_16", { font = "Roboto", size = 16, weight = 600, bold = true, strikeout = false, shadow = false })
 DWEP.SearchData = DWEP.SearchData or {
 	["search"] = "",
 	["results"] = DWEP.Sweps,

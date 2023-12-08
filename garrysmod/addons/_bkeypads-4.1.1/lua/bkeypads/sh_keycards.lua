@@ -101,7 +101,7 @@ do
 			for _, level in ipairs(levels) do
 				teamLevels[level] = teamLevels[level] or {}
 				teamLevels[level][team_index] = true
-				keycards = keycards .. ((bKeypads.Keycards.Levels[level] or {Name="ERROR " .. level}).Name or "Level " .. level) .. ", "
+				keycards = keycards .. (((bKeypads.Keycards.Levels[level] or {Name="ERROR " .. level}).Name or "Level ") .. level) .. ", "
 			end
 
 			bKeypads:print("[" .. team.GetName(team_index) .. "] = (Found: " .. #levels .. ") " .. keycards:sub(1, -3), bKeypads.PRINT_TYPE_SPECIAL)
@@ -118,7 +118,7 @@ do
 				teamsCount = teamsCount + 1
 			end
 
-			bKeypads:print("[" .. ((bKeypads.Keycards.Levels[level] or {Name="ERROR " .. level}).Name or "Level " .. level) .. "] = (Found: " .. teamsCount .. ") " .. teamsStr:sub(1, -3), bKeypads.PRINT_TYPE_SPECIAL)
+			bKeypads:print("[" .. (((bKeypads.Keycards.Levels[level] or {Name="ERROR " .. level}).Name or "Level ") .. level) .. "] = (Found: " .. teamsCount .. ") " .. teamsStr:sub(1, -3), bKeypads.PRINT_TYPE_SPECIAL)
 		end
 		MsgC("\n")
 	end)

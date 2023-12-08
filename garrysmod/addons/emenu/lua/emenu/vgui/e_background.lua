@@ -196,10 +196,10 @@ local function ef_snow(bg)
 			draw.RoundedBox(16,v.x, v.y, v.size, v.size, v.color)
 
 			--x manipulation
-			v.x = v.x + (v.amplitude * (bg.Speed*suspension) or 1)
+			v.x = v.x + (v.amplitude * ((bg.Speed*suspension) or 1))
 
 			--y manipulation
-			v.y = v.y + (startspeed*v.gravity*(bg.Speed*suspension) or 1)
+			v.y = v.y + (startspeed*v.gravity*((bg.Speed*suspension) or 1))
 
 			--x out except
 			if v.x < 0 then	v.x = w
@@ -365,10 +365,10 @@ local function ef_dots(bg)
 			surface.DrawRect(v.x, v.y, v.size, v.size) 
 
 			--x manipulation
-			v.x = v.x + (v.amplitude * (bg.Speed*suspension) or 1)
+			v.x = v.x + (v.amplitude * ((bg.Speed*suspension) or 1))
 
 			--y manipulation
-			v.y = v.y + (startspeed*v.gravity*(bg.Speed*suspension) or 1)
+			v.y = v.y + (startspeed*v.gravity*((bg.Speed*suspension) or 1))
 
 			--x out except
 			if v.x < 0 then	

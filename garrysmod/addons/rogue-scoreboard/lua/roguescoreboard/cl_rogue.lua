@@ -144,7 +144,7 @@ local function initCommandTable()
 
 						Configuration.Administration[Configuration.AdministrationMod].freeze( cmdPly )
 
-					elseif cmdPly:IsFrozen() then
+					elseif not cmdPly:IsFrozen() then
 
 						Configuration.Administration[Configuration.AdministrationMod].unfreeze( cmdPly )
 						Configuration.Administration[Configuration.AdministrationMod].send( cmdPly )
@@ -227,7 +227,7 @@ function RogueRandomNameGeneration( ply )
 	  	ply.RandomMoney = math.random( Configuration.LowestMoney, Configuration.HighestMoney )
 	  	ply.RandomKills = math.random( Configuration.LowestKills, Configuration.HighestKills )
 	  	ply.RandomDeaths = math.random( Configuration.LowestDeaths, Configuration.HighestDeaths )
-	elseif ply:GetRogueNetBool("Incognito", false) and ply.RandomName then
+	elseif not ply:GetRogueNetBool("Incognito", false) and not ply.RandomName then
 	 	ply.RandomName = nil
 	  	ply.RandomMoney = nil
 	  	ply.RandomKills = nil
@@ -824,7 +824,7 @@ local function createScoreboard()
 	Main.Update = function()
 		if table.HasValue( Configuration.IncognitoAccess, LocalPlayer():GetUserGroup()) and HiddenButton:IsVisible() then
 			HiddenButton:Show()
-		elseif table.HasValue( Configuration.IncognitoAccess, LocalPlayer():GetUserGroup()) and HiddenButton:IsVisible() then
+		elseif	not table.HasValue( Configuration.IncognitoAccess, LocalPlayer():GetUserGroup()) and not HiddenButton:IsVisible() then
 			HiddenButton:Hide()
 		end
 

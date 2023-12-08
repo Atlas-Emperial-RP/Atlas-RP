@@ -26,6 +26,5 @@ return {
 		search_name             = "Search Name",
 		none                    = "< none >",
 		cancel                  = "Cancel",
-		steamid                 = "SteamID",
 
 } end }

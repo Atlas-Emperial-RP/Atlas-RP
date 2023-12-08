@@ -590,7 +590,8 @@ PVP_COMBAT_MODULE:Setup(function()
 			self.Scenes.End[2] = self:TakeSnapshot(self.Instigator)
 		end
 
-		self.Victim, self.Instigator = nil
+		self.Victim = nil
+		self.Instigator = nil
 	end
 end)
 

@@ -50,19 +50,19 @@ function win:Register(Name,Desc,Icon,Func,Pos)
 					local oldfunc = pnl.OnClose
 					function pnl:OnClose()
 						win.active[self.id] = nil
-						oldfunc()
+						oldfunc(self)
 					end
 
 					local oldfunc = pnl.OnPress
 					function pnl:OnPress()
 						self:SetZPos(2)
-						oldfunc()
+						oldfunc(self)
 					end
 
 					local oldfunc = pnl.OnUnpress
 					function pnl:OnUnpress()
 						self:SetZPos(1)
-						oldfunc()
+						oldfunc(self)
 					end
 
 					self.active[string.lower(Name)] = pnl
