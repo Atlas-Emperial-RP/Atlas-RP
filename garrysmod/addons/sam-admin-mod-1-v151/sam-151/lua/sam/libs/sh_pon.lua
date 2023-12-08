@@ -104,40 +104,41 @@ do
 
 		for k, v in next, tbl, predictedNumeric do
 			local tk, tv = type(k), type(v)
-			if not self[tk] or not self[tv] then continue end
+			if self[tk] or self[tv] then 
 
-			-- WRITE KEY
-			if tk == 'string' then
-				local pid = cache[k]
+				-- WRITE KEY
+				if tk == 'string' then
+					local pid = cache[k]
 
-				if pid then
-					output[#output + 1] = format('(%x)', pid)
+					if pid then
+						output[#output + 1] = format('(%x)', pid)
+					else
+						cacheSize = cacheSize + 1
+						cache[k] = cacheSize
+						self.string(self, k, output, cache)
+					end
+				elseif IsColor(v) then
+					self.Color(self, v, output, cache)
 				else
-					cacheSize = cacheSize + 1
-					cache[k] = cacheSize
-					self.string(self, k, output, cache)
+					self[tk](self, k, output, cache)
 				end
-			elseif IsColor(v) then
-				self.Color(self, v, output, cache)
-			else
-				self[tk](self, k, output, cache)
-			end
 
-			-- WRITE VALUE
-			if tv == 'string' then
-				local pid = cache[v]
+				-- WRITE VALUE
+				if tv == 'string' then
+					local pid = cache[v]
 
-				if pid then
-					output[#output + 1] = format('(%x)', pid)
+					if pid then
+						output[#output + 1] = format('(%x)', pid)
+					else
+						cacheSize = cacheSize + 1
+						cache[v] = cacheSize
+						self.string(self, v, output, cache)
+					end
+				elseif IsColor(v) then
+					self.Color(self, v, output, cache)
 				else
-					cacheSize = cacheSize + 1
-					cache[v] = cacheSize
-					self.string(self, v, output, cache)
+					self[tv](self, v, output, cache)
 				end
-			elseif IsColor(v) then
-				self.Color(self, v, output, cache)
-			else
-				self[tv](self, v, output, cache)
 			end
 		end
 
@@ -292,17 +293,18 @@ do
 			-- READ THE KEY
 			index = index + 1
 			index, k = self[tk](self, index, str, cache)
-			if not k then continue end
-			-- READ THE VALUE
-			tv = sub(str, index, index)
-			index = index + 1
+			if k then
+				-- READ THE VALUE
+				tv = sub(str, index, index)
+				index = index + 1
 
-			if not self[tv] then
-				print('did not find type: ' .. tv)
+				if not self[tv] then
+					print('did not find type: ' .. tv)
+				end
+
+				index, v = self[tv](self, index, str, cache)
+				cur[k] = v
 			end
-
-			index, v = self[tv](self, index, str, cache)
-			cur[k] = v
 		end
 
 		return index, cur

@@ -79,9 +79,8 @@ do
 		return result
 	end
 
-	/*
-		Admin
-	*/
+	
+		-- Admin
 	sam.add_message_argument("A", function(result, admin)
 		if sam.isconsole(admin) then
 			-- we need to show that it's the real console!!!!!
@@ -105,26 +104,23 @@ do
 		end
 	end)
 
-	/*
-		Target(s)
-	*/
+	--	Target(s)
+
 	sam.add_message_argument("T", function(result, targets)
 		for k, v in ipairs(sam.get_targets_list(targets)) do
 			insert(result, v)
 		end
 	end)
 
-	/*
-		Value(s)
-	*/
+	-- Value(s)
+
 	sam.add_message_argument("V", function(result, value)
 		insert(result, Color(0, 230, 64))
 		insert(result, tostring(value))
 	end)
 
-	/*
-		Text(s)
-	*/
+	--	Text(s)
+
 	sam.add_message_argument("S", function(result, text, _, color)
 		insert(result, sam.get_color(color) or white_color)
 		insert(result, tostring(text))
@@ -146,9 +142,8 @@ do
 		return Color(r, g, b)
 	end
 
-	/*
-		Colored Text(s)
-	*/
+	--	Colored Text(s)
+
 	sam.add_message_argument("#", function(result, _, color, ...)
 		local text = table.concat({...}, " ")
 		insert(result, hex_rgb(color))

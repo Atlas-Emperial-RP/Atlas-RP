@@ -62,13 +62,14 @@ local import_ranks = function()
 				local data = sam.isstring(v.data) and util.JSONToTable(v.data)
 				local tools = sam.istable(data) and sam.istable(data.Restrictions) and sam.istable(data.Restrictions.Tools) and data.Restrictions.Tools
 
-				if not tools then continue end
+				if tools then 
 
-				for tool_name, value in pairs(tools) do
-					if value == false then
-						sam.ranks.take_permission(name, tool_name)
-					else
-						sam.ranks.give_permission(name, tool_name)
+					for tool_name, value in pairs(tools) do
+						if value == false then
+							sam.ranks.take_permission(name, tool_name)
+						else
+							sam.ranks.give_permission(name, tool_name)
+						end
 					end
 				end
 			end
@@ -85,21 +86,22 @@ local import_expires = function(data)
 		local began = false
 		for _, v in ipairs(data) do
 			local ply_data = v.data and von.deserialize(v.data) or {}
-			if not sam.isnumber(tonumber(ply_data.groupExpire)) then continue end
+			if sam.isnumber(tonumber(ply_data.groupExpire)) then 
 
-			if not began then
-				began = true
-				SQL.Begin()
+				if not began then
+					began = true
+					SQL.Begin()
+				end
+
+				SQL.FQuery([[
+					UPDATE
+						`sam_players`
+					SET
+						`expiry_date` = {1}
+					WHERE
+						`steamid` = {2}
+				]], {tonumber(ply_data.groupExpire), v.steam_id})
 			end
-
-			SQL.FQuery([[
-				UPDATE
-					`sam_players`
-				SET
-					`expiry_date` = {1}
-				WHERE
-					`steamid` = {2}
-			]], {tonumber(ply_data.groupExpire), v.steam_id})
 		end
 		SQL.Commit(function()
 			sam.print("Imported users from serverguard.")

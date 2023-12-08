@@ -57,34 +57,35 @@ run(function()
 			local ply = players[i]
 
 			local slays = ply:sam_get_pdata("slays_amount")
-			if not slays then continue end
+			if slays then 
 
-			if not ply:IsSpec() then
-				ply:Kill()
+				if not ply:IsSpec() then
+					ply:Kill()
+				end
+
+				GAMEMODE:PlayerSpawnAsSpectator(ply)
+
+				ply:SetTeam(TEAM_SPEC)
+				ply:SetForceSpec(true)
+				ply:Spawn()
+
+				ply:SetRagdollSpec(false) -- dying will enable this, we don't want it here
+
+				slays = slays - 1
+
+				if slays == 0 then
+					timer.Simple(0, function()
+						ply:SetForceSpec(false)
+					end)
+					ply:sam_set_pdata("slays_amount", nil)
+				else
+					ply:sam_set_pdata("slays_amount", slays)
+				end
+
+				sam.player.send_message(nil, "setslays_slayed", {
+					T = {ply}, V = slays
+				})
 			end
-
-			GAMEMODE:PlayerSpawnAsSpectator(ply)
-
-			ply:SetTeam(TEAM_SPEC)
-			ply:SetForceSpec(true)
-			ply:Spawn()
-
-			ply:SetRagdollSpec(false) -- dying will enable this, we don't want it here
-
-			slays = slays - 1
-
-			if slays == 0 then
-				timer.Simple(0, function()
-					ply:SetForceSpec(false)
-				end)
-				ply:sam_set_pdata("slays_amount", nil)
-			else
-				ply:sam_set_pdata("slays_amount", slays)
-			end
-
-			sam.player.send_message(nil, "setslays_slayed", {
-				T = {ply}, V = slays
-			})
 		end
 
 		return OldBeginRound(...)

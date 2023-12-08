@@ -56,18 +56,17 @@ sam.menu.add_tab("https://raw.githubusercontent.com/Srlion/Addons-Data/main/icon
 		table.Empty(category_list.categories)
 
 		for k, v in ipairs(sam.command.get_commands()) do
-			if (v.permission and not LocalPlayer():HasPermission(v.permission)) or v.menu_hide then
-				continue
-			end
+			if (not v.permission and LocalPlayer():HasPermission(v.permission)) or not v.menu_hide then
+		
+				local item = category_list:add_item(v.name, v.category)
+				item:InvalidateParent(true)
+				item.help = v.help
+				item.command = v
 
-			local item = category_list:add_item(v.name, v.category)
-			item:InvalidateParent(true)
-			item.help = v.help
-			item.command = v
-
-			item.names = {v.name:lower()}
-			for _, aliase in ipairs(v.aliases) do
-				table.insert(item.names, aliase:lower())
+				item.names = {v.name:lower()}
+				for _, aliase in ipairs(v.aliases) do
+					table.insert(item.names, aliase:lower())
+				end
 			end
 		end
 	end
@@ -181,22 +180,23 @@ sam.menu.add_tab("https://raw.githubusercontent.com/Srlion/Addons-Data/main/icon
 		local NIL = {}
 		for _, v in ipairs(command_arguments) do
 			local func = arguments[v.name]["menu"]
-			if not func then continue end
+			if func then
 
-			local i = table.insert(input_arguments, NIL)
-			local p = func(function(allow)
-				if not IsValid(run_command) then return end
-				input_arguments[i] = allow == nil and NIL or allow
-				for i_2 = 1, #input_arguments do
-					if input_arguments[i_2] == NIL then
-						run_command:SetEnabled(false)
-						return
+				local i = table.insert(input_arguments, NIL)
+				local p = func(function(allow)
+					if not IsValid(run_command) then return end
+					input_arguments[i] = allow == nil and NIL or allow
+					for i_2 = 1, #input_arguments do
+						if input_arguments[i_2] == NIL then
+							run_command:SetEnabled(false)
+							return
+						end
 					end
+					run_command:SetEnabled(true)
+				end, body, buttons, v, childs)
+				if p then
+					p:AnimatedSetVisible(true)
 				end
-				run_command:SetEnabled(true)
-			end, body, buttons, v, childs)
-			if p then
-				p:AnimatedSetVisible(true)
 			end
 		end
 
