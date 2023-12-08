@@ -1,0 +1,520 @@
+Couldn't load shader dll: game_shader_generic_garrysmod_srv.soConVarRef mat_dxlevel doesn't point to an existing ConVar
+Game_srv.so loaded for "Garry's Mod"
+Initializing Steam libraries for Workshop..
+WS: No +host_workshop_collection or it is invalid!
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/_ugc_ws'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/advanced-medic-mod'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/advdupe2'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/atlaschat'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/bodygroupr-master'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/bricks-credit-store'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/cuffs'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/customhq_defibrillator'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/darkrpmodification'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/darkrpmodification-master_gmchosting'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/dwep'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/edgehud'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/emenu'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/fprofiler'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/gmcpanel-workshop-merged'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/gmodadminsuite-adminphysgun-2.0.1'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/gmodadminsuite-adminsits-2.0.1'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/gmodadminsuite-config'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/gmodadminsuite-jobwhitelist-1.3.3'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/gmodadminsuite-logging-2.4.8'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/permaprops-master'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/projectzero-weaponcustomiser'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/rogue-scoreboard'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/sam-149'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/sqlworkbench'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/stacker'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/stackerstool'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/sui'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/ulib'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/ulx'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/willox-keypad-cracker'
+Adding Filesystem Addon '/home/gmcgame/sammim/82/garrysmod/addons/xeon-drm-dll'
+Unknown command "cl_cmdrate"
+Unknown command "cl_updaterate"
+Unknown command "rate"
+Usage: sv_setsteamaccount <login_token>
+"host_workshop_collection" = ""
+ game
+Network: IP 208.103.169.21, mode MP, dedicated Yes, ports 27015 SV / 28005 CL
+Error loading cfg/trusted_keys_base.txt
+Error loading cfg/pure_server_minimal.txt
+PREP OK
+Atlas chat version 2.4.3 has loaded!
+Initializing Darkrp Bodygroups Manager
+Loading Arizard's bodyGroupr
+[BRICKSCREDITSTORE] SHARED bcredits_data.lua loaded
+[BRICKSCREDITSTORE] SHARED bcredits_locker_data.lua loaded
+[BRICKSCREDITSTORE] SHARED bcredits_shared.lua loaded
+[BRICKSCREDITSTORE] SHARED bcredits_types.lua loaded
+[BRICKSCREDITSTORE] CLIENT bcredits_client.lua loaded
+[BRICKSCREDITSTORE] CLIENT bshadows.lua loaded
+
+[bricks-credit-store] addons/bricks-credit-store/lua/brickscreditstore/server/bcredits_administration.lua:18: '=' expected near 'continue'
+  1. unknown - addons/bricks-credit-store/lua/autorun/brickscreditstore_autorun.lua:49
+
+[BRICKSCREDITSTORE] SERVER bcredits_administration.lua loaded
+Physgun Utils not detected. This addon will only run on Physgun servers. If you think this is a error, please contact support.[BRICKSCREDITSTORE] SERVER bcredits_server.lua loaded
+[BRICKSCREDITSTORE] SERVER bcredits_sql.lua loaded
+ ______ __  __ ______ _   _ _    _ 
+|  ____|  \/  |  ____| \ | | |  | |
+| |__  | \  / | |__  |  \| | |  | |
+|  __| | |\/| |  __| | . ` | |  | |
+| |____| |  | | |____| |\  | |__| |
+|______|_|  |_|______|_| \_|\____/ 
+_____________________________________
+
+• Resource added: resource/fonts/amsterdam.ttf
+• emenu/config/econfig.lua
+• emenu/config/elangs.lua
+• emenu/core/eutils.lua
+• emenu/core/efonts.lua
+• emenu/core/eserver.lua
+• emenu/vgui/e_avatar.lua
+• emenu/vgui/e_background.lua
+• emenu/vgui/e_combolist.lua
+• emenu/vgui/e_context.lua
+• emenu/vgui/e_dvscrollbar.lua
+• emenu/vgui/e_scrollpanel.lua
+• emenu/vgui/e_window.lua
+• emenu/core/ewinmanager.lua
+• emenu/core/emenu.lua
+• emenu/core/tabs/jobs.lua
+• emenu/core/tabs/quickbuttons.lua
+• emenu/core/tabs/shop.lua
+
+LOADING FINISHED
+_____________________________________
+
+[gmcpanel-workshop-merged] bad argument #3 to 'Add' (function expected, got nil)
+  1. Add - lua/includes/modules/hook.lua:31
+   2. unknown - addons/gmcpanel-workshop-merged/lua/autorun/hb_help.lua:16
+
+HBOMBS Base Pack and HBOMBS Materials Pack belong to Business Cat.
+HBOMBS Expansion is a addon adding to the current bombs HBOMBS includes.
+Sqoosh is not the creator of HBOMBS and does not intend to claim any work done by Business Cat.
+rogue-scoreboard - loading
+physgun_sh - hello world!
+Physgun Utils not detected. This addon will only run on Physgun servers. If you think this is a error, please contact support.(SAM) Loading...
+
+[sam-149] addons/sam-149/lua/sam/libs/sh_pon.lua:107: '=' expected near 'continue'
+  1. load_file - addons/sam-149/lua/autorun/sam.lua:45
+   2. unknown - addons/sam-149/lua/autorun/sam.lua:59
+
+
+[sam-149] addons/sam-149/lua/sam/command/arguments/player.lua:80: '=' expected near 'continue'
+  1. load_file - addons/sam-149/lua/autorun/sam.lua:45
+   2. unknown - addons/sam-149/lua/autorun/sam.lua:94
+
+
+[sam-149] addons/sam-149/lua/sam/menu/tabs/commands.lua:60: '=' expected near 'continue'
+  1. load_file - addons/sam-149/lua/autorun/sam.lua:45
+   2. unknown - addons/sam-149/lua/sam/menu/sh_init.lua:22
+    3. func - [C]:-1
+     4. load_file - addons/sam-149/lua/autorun/sam.lua:45
+      5. unknown - addons/sam-149/lua/autorun/sam.lua:99
+
+
+[sam-149] addons/sam-149/lua/sam/modules/murder.lua:71: '=' expected near 'continue'
+  1. load_file - addons/sam-149/lua/autorun/sam.lua:45
+   2. unknown - addons/sam-149/lua/autorun/sam.lua:106
+
+
+[sam-149] addons/sam-149/lua/sam/modules/teleport.lua:96: '=' expected near 'continue'
+  1. load_file - addons/sam-149/lua/autorun/sam.lua:45
+   2. unknown - addons/sam-149/lua/autorun/sam.lua:106
+
+
+[sam-149] addons/sam-149/lua/sam/modules/ttt.lua:60: '=' expected near 'continue'
+  1. load_file - addons/sam-149/lua/autorun/sam.lua:45
+   2. unknown - addons/sam-149/lua/autorun/sam.lua:106
+
+(SAM) Loaded!
+
+[edgehud] addons/edgehud/lua/edgehud/sv_dooroffsets.lua:103: '=' expected near 'continue'
+  1. unknown - addons/edgehud/lua/autorun/sh_edgehud_loader.lua:203
+
+
+[cuffs] addons/cuffs/lua/autorun/sh_handcuffs.lua:354: '=' expected near 'continue'
+
+[MEDICMOD]Loading files...
+[advanced-medic-mod] addons/advanced-medic-mod/lua/medicmod/server/sv_functions.lua:448: '=' expected near 'continue'
+  1. unknown - addons/advanced-medic-mod/lua/autorun/sh_medicmod_loader.lua:91
+
+
+[advanced-medic-mod] addons/advanced-medic-mod/lua/medicmod/server/sv_hooks.lua:325: '=' expected near 'continue'
+  1. unknown - addons/advanced-medic-mod/lua/autorun/sh_medicmod_loader.lua:92
+
+
+[advanced-medic-mod] addons/advanced-medic-mod/lua/medicmod/server/sv_net.lua:62: '=' expected near 'continue'
+  1. unknown - addons/advanced-medic-mod/lua/autorun/sh_medicmod_loader.lua:94
+
+
+[cuffs] addons/cuffs/lua/autorun/sv_handcuffs.lua:246: '=' expected near 'continue'
+
+///////////////////////////////
+//      Ulysses Library      //
+///////////////////////////////
+// Loading...                //
+//  shared/defines.lua       //
+//  shared/misc.lua          //
+//  shared/util.lua          //
+//  shared/hook.lua          //
+//  shared/table.lua         //
+//  shared/player.lua        //
+//  server/player.lua        //
+//  server/bans.lua          //
+//  shared/messages.lua      //
+//  shared/commands.lua      //
+//  server/concommand.lua    //
+//  server/util.lua          //
+//  shared/sh_ucl.lua        //
+//  server/ucl.lua           //
+//  server/phys.lua          //
+//  server/player_ext.lua    //
+//  server/entity_ext.lua    //
+//  shared/plugin.lua        //
+//  shared/cami_global.lua   //
+//  shared/cami_ulib.lua     //
+// Load Complete!            //
+///////////////////////////////
+[ULIB] Loading SHARED module: ulx_init.lua
+///////////////////////////////
+//       ULX Admin Mod       //
+///////////////////////////////
+// Loading...                //
+//  sh_defines.lua           //
+//  lib.lua                  //
+//  base.lua                 //
+//  sh_base.lua              //
+//  log.lua                  //
+//  MODULE: slots.lua        //
+//  MODULE: uteam.lua        //
+//  MODULE: votemap.lua      //
+//  MODULE: xgui_server.lua  //
+///////////////////////////////
+// ULX GUI -- by Stickly Man //
+///////////////////////////////
+// Adding Main Modules..     //
+//  bans.lua                 //
+//  commands.lua             //
+//  groups.lua               //
+//  maps.lua                 //
+//  settings.lua             //
+// Adding Setting Modules..  //
+//  client.lua               //
+//  server.lua               //
+// Adding Gamemode Modules.. //
+//  sandbox.lua              //
+// Loading Server Modules..  //
+//  sv_bans.lua              //
+//  sv_groups.lua            //
+//  sv_maps.lua              //
+//  sv_sandbox.lua           //
+//  sv_settings.lua          //
+// XGUI modules added!       //
+///////////////////////////////
+//  MODULE: chat.lua         //
+//  MODULE: fun.lua          //
+//  MODULE: menus.lua        //
+//  MODULE: rcon.lua         //
+//  MODULE: teleport.lua     //
+//  MODULE: user.lua         //
+//  MODULE: userhelp.lua     //
+//  MODULE: util.lua         //
+//  MODULE: vote.lua         //
+//  end.lua                  //
+// Load Complete!            //
+///////////////////////////////
+
+[gmodadminsuite-jobwhitelist-1.3.3] addons/gmodadminsuite-jobwhitelist-1.3.3/lua/autorun/server/gas_jobwhitelist_darkrp_load.lua:17: attempt to index global 'GAS' (a nil value)
+  1. unknown - addons/gmodadminsuite-jobwhitelist-1.3.3/lua/autorun/server/gas_jobwhitelist_darkrp_load.lua:17
+
+---------------------------------
+| Loading ServerSide PermaProps |
+---------------------------------
+
+[permaprops-master] addons/permaprops-master/lua/permaprops/sv_lib.lua:152: '=' expected near 'continue'
+  1. unknown - addons/permaprops-master/lua/autorun/server/sv_permaload.lua:18
+
+permaprops/sv_lib.lua
+
+[permaprops-master] addons/permaprops-master/lua/permaprops/sv_menu.lua:26: '=' expected near 'continue'
+  1. unknown - addons/permaprops-master/lua/autorun/server/sv_permaload.lua:18
+
+permaprops/sv_menu.lua
+permaprops/sv_permissions.lua
+
+[permaprops-master] addons/permaprops-master/lua/permaprops/sv_specialfcn.lua:75: '=' expected near 'continue'
+  1. unknown - addons/permaprops-master/lua/autorun/server/sv_permaload.lua:18
+
+permaprops/sv_specialfcn.lua
+permaprops/sv_sql.lua
+-----------------------------
+| Loading Shared PermaProps |
+-----------------------------
+---------------------------------
+| Loading ClientSide PermaProps |
+---------------------------------
+permaprops/cl_drawent.lua
+permaprops/cl_menu.lua
+-------------------------------
+XEON DRM is waiting for your server to get an IP address...
+
+[gmodadminsuite-logging-2.4.8] addons/gmodadminsuite-logging-2.4.8/lua/weapons/gas_log_scanner/shared.lua:258: '=' expected near 'continue'
+
+[AddCSLuaFile] Refusing to AddCSLuaFile 'weapons/health regen swep/shared.lua' (<nowhere>) because its name contains dodgy symbols
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_dt29 from non existant SWEP tfa_3dscoped_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_e11d_sv from non existant SWEP tfa_3dscoped_base!
+ERROR: Trying to derive weapon tfa_e11d from non existant SWEP tfa_3dscoped_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon weapon_ak47custom from non existant SWEP weapon_cs_base2!
+ERROR: Trying to derive weapon awhg_bobs_gun_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_sw_cissnip from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_dlt19d from non existant SWEP tfa_3dscoped_base!
+ERROR: Trying to derive weapon tfa_sw_cisshot from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_sw_repshot from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_dt29_sv from non existant SWEP tfa_3dscoped_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_sw_bowcaster from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_sw_repsnip from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+ERROR: Trying to derive weapon tfa_swsft_base from non existant SWEP tfa_gun_base!
+
+[advanced-medic-mod] addons/advanced-medic-mod/lua/entities/drug_medicmod/init.lua:43: '=' expected near 'continue'
+
+Refusing to load drug_medicmod because it is missing Type and Base keys!
+ERROR: Trying to derive entity vanilla_explosion from non existant entity lunasflightschool_basescript!
+ERROR: Trying to derive entity tx225normal from non existant entity speeder_base!
+ERROR: Trying to derive entity cargo_shuttle from non existant entity fighter_base!
+ERROR: Trying to derive entity u-wing from non existant entity fighter_base!
+ERROR: Trying to derive entity tie_striker from non existant entity fighter_base!
+ERROR: Trying to derive entity tx225lights from non existant entity speeder_base!
+ERROR: Trying to derive entity krennic_shuttle from non existant entity fighter_base!
+[AddCSLuaFile] Couldn't find 'effects/blue_tracer_fx/init.lua' (<nowhere>)
+[AddCSLuaFile] Refusing to AddCSLuaFile 'effects/blue_tracer_fx _laat/init.lua' (<nowhere>) because its name contains dodgy symbols
+
+[atlaschat] addons/atlaschat/lua/atlaschat/sv_sql.lua:163: attempt to concatenate a nil value
+  1. Query - addons/atlaschat/lua/atlaschat/sv_sql.lua:163
+   2. fn - addons/atlaschat/lua/atlaschat/init.lua:78
+    3. Call - addons/ulib/lua/ulib/shared/hook.lua:109
+     4. Initialize - addons/atlaschat/lua/atlaschat/sv_sql.lua:121
+      5. fn - addons/atlaschat/lua/atlaschat/init.lua:68
+       6. unknown - addons/ulib/lua/ulib/shared/hook.lua:109
+
+ConVarRef room_type doesn't point to an existing ConVar
+Executing dedicated server config file server.cfg
+Using map cycle file cfg/mapcycle.txt.
+
+|Hbombs physics module initialized!
+|If you don't want this, delete the hb_physics.lua file
+Initializing Steam libraries for secure Internet server
+
+[ Y88b   d88P 8888888888 .d88888b.  888b    888 ]
+[  Y88b d88P  888       d88P" "Y88b 8888b   888 ]
+[   Y88o88P   888       888     888 88888b  888 ]
+[    Y888P    8888888   888     888 888Y88b 888 ]
+[    d888b    888       888     888 888 Y88b888 ]
+[   d88888b   888       888     888 888  Y88888 ]
+[  d88P Y88b  888       Y88b. .d88P 888   Y8888 ]
+[ d88P   Y88b 8888888888 "Y88888P"  888    Y888 ]
+
+DRM (digital rights management) for Billy's scripts
+
+"Doubt has killed more scripts than errors will." - John Lua
+
+Support
+https://support.billy.enterprises
+
+Server Status
+https://xeon.network
+
+Server/Licenses Panel
+https://xeon.network/servers
+
+XEON | Entropy available: 3562
+XEON | Hello, world!
+XEON | Module Version: 1.3.0
+XEON | Protocol Version: 1.1.0
+XEON | Server IP: 208.103.169.21:27015
+XEON | Starting task scheduler...
+XEON | Ready!
+No account token specified; logging into anonymous game server account.  (Use sv_setsteamaccount to login to a persistent account.)
+Server ranking in server browser will be negatively impacted due to sv_setsteamaccount not being set.
+'banned_ip.cfg' not present; not executing.
+'banned_user.cfg' not present; not executing.
+(SAM) Connected to database and loaded data successfully.
+[EdgeHUD] : [1.14.4] : Starting up.
+[EdgeHUD] : [1.14.4] : Licensed to 76561198112485755.
+[EdgeHUD] : [1.14.4] : EdgeHUD requires DarkRP to work correctly. Please install the DarkRP gamemode to use EdgeHUD.
+[EdgeHUD] : [1.14.4] : Finished loading.
+Connection to Steam servers successful.
+   Public IP is 208.103.169.21.
+Assigned anonymous gameserver Steam ID [A-1:2968349722(24776)].
+VAC secure mode is activated.
+47.5.106.29:27005:  password failed.
+47.5.106.29:27005:  password failed.
+47.5.106.29:27005:  password failed.
+47.5.106.29:27005:  password failed.
+47.5.106.29:27005:  password failed.
+47.5.106.29:27005:  password failed.
+47.5.106.29:27005:  password failed.
+47.5.106.29:27005:  password failed.
+47.5.106.29:27005:  password failed.
+47.5.106.29:27005:  password failed.
+47.5.106.29:27005:  password failed.
+47.5.106.29:27005:  password failed.
+47.5.106.29:27005:  password failed.
+Client "Dishwasher" connected (47.5.106.29:27005).
+
+[ulib] addons/ulib/lua/ulib/server/ucl.lua:1115: attempt to call upvalue 'playerAuth' (a nil value)
+  1. fn - addons/ulib/lua/ulib/server/ucl.lua:1115
+   2. unknown - addons/ulib/lua/ulib/shared/hook.lua:109
+    3. UniqueID - [C]:-1
+     4. echoToAdmins - addons/ulx/lua/ulx/log.lua:164
+      5. fn - addons/ulx/lua/ulx/log.lua:202
+       6. unknown - addons/ulib/lua/ulib/shared/hook.lua:109
+
+
+[ulx] addons/ulx/lua/ulx/base.lua:78: [ULIB] Unauthed player
+  1. query - [C]:-1
+   2. fn - addons/ulx/lua/ulx/base.lua:78
+    3. unknown - addons/ulib/lua/ulib/shared/hook.lua:109
+
+
+[ulx] addons/ulx/lua/ulx/modules/uteam.lua:23: attempt to index a nil value
+  1. fn - addons/ulx/lua/ulx/modules/uteam.lua:23
+   2. unknown - addons/ulib/lua/ulib/shared/hook.lua:109
+
+[Dishwasher|2|STEAM_0:1:169781558] Lua Error:
+
+[ulx] addons/ulx/lua/ulx/xgui/commands.lua:306: [ULIB] Unauthed player
+  1. query - [C]:-1
+   2. refresh - addons/ulx/lua/ulx/xgui/commands.lua:306
+    3. unknown - addons/ulx/lua/ulx/xgui/commands.lua:395
+     4. include - [C]:-1
+      5. fn - addons/ulx/lua/ulx/modules/cl/xgui_client.lua:142
+       6. Call - addons/ulib/lua/ulib/shared/hook.lua:109
+        7. fn - addons/ulib/lua/ulib/cl_init.lua:49
+         8. unknown - addons/ulib/lua/ulib/shared/hook.lua:109
+
+
+[Dishwasher|2|STEAM_0:1:169781558] Lua Error:
+
+[ulx] addons/ulx/lua/ulx/xgui/maps.lua:88: [ULIB] Unauthed player
+  1. query - [C]:-1
+   2. updateVoteMaps - addons/ulx/lua/ulx/xgui/maps.lua:88
+    3. unknown - addons/ulx/lua/ulx/xgui/maps.lua:163
+     4. include - [C]:-1
+      5. fn - addons/ulx/lua/ulx/modules/cl/xgui_client.lua:142
+       6. Call - addons/ulib/lua/ulib/shared/hook.lua:109
+        7. fn - addons/ulib/lua/ulib/cl_init.lua:49
+         8. unknown - addons/ulib/lua/ulib/shared/hook.lua:109
+
+
+[Dishwasher|2|STEAM_0:1:169781558] Lua Error:
+
+[ulx] addons/ulx/lua/ulx/modules/cl/xgui_client.lua:235: [ULIB] Unauthed player
+  1. query - [C]:-1
+   2. processModules - addons/ulx/lua/ulx/modules/cl/xgui_client.lua:235
+    3. fn - addons/ulx/lua/ulx/modules/cl/xgui_client.lua:189
+     4. Call - addons/ulib/lua/ulib/shared/hook.lua:109
+      5. fn - addons/ulib/lua/ulib/cl_init.lua:49
+       6. unknown - addons/ulib/lua/ulib/shared/hook.lua:109
+
+
+
+[ulx] addons/ulx/lua/ulx/modules/xgui_server.lua:191: [ULIB] Unauthed player
+  1. query - [C]:-1
+   2. sendDataTable - addons/ulx/lua/ulx/modules/xgui_server.lua:191
+    3. unknown - addons/ulx/lua/ulx/modules/xgui_server.lua:106
+     4. unknown - addons/ulx/lua/ulx/modules/xgui_server.lua:73
+      5. unknown - lua/includes/modules/concommand.lua:54
+
+[Dishwasher|2|STEAM_0:1:169781558] Lua Error:
+
+[sam-149] addons/sam-149/lua/sam/menu/sh_init.lua:16: attempt to index field 'menu' (a nil value)
+  1. callback - addons/sam-149/lua/sam/menu/sh_init.lua:16
+   2. func - addons/sam-149/lua/sam/libs/sh_netstream.lua:163
+    3. unknown - lua/includes/extensions/net.lua:38
+
+
+[Dishwasher|2|STEAM_0:1:169781558] Lua Error:
+
+[sam-149] addons/sam-149/lua/sam/menu/sh_init.lua:16: attempt to index field 'menu' (a nil value)
+  1. callback - addons/sam-149/lua/sam/menu/sh_init.lua:16
+   2. func - addons/sam-149/lua/sam/libs/sh_netstream.lua:163
+    3. unknown - lua/includes/extensions/net.lua:38
+
+
+Error! Variable "$phong" is multiply defined in material "models/thedoctor/mat_atomicannie/skin1"!
+Error! Variable "$phong" is multiply defined in material "models/thedoctor/mat_atomicannie/skin2"!
+ServerLog: [ULX] Dishwasher<STEAM_0:1:169781558> spawned sent hb_cp_annie
+Dishwasher<STEAM_0:1:169781558> spawned sent hb_cp_annie
+ServerLog: [ULX] Dishwasher<STEAM_0:1:169781558> spawned sent bodyman_closet
+Dishwasher<STEAM_0:1:169781558> spawned sent bodyman_closet
+[Dishwasher|2|STEAM_0:1:169781558] Lua Error:
+
+[bodygroupr-master] addons/bodygroupr-master/lua/bodyman/bodyman_client.lua:318: attempt to call method 'getJobTable' (a nil value)
+  1. RefreshAppearanceMenu - addons/bodygroupr-master/lua/bodyman/bodyman_client.lua:318
+   2. OpenMenu - addons/bodygroupr-master/lua/bodyman/bodyman_client.lua:305
+    3. unknown - addons/bodygroupr-master/lua/bodyman/bodyman_client.lua:590
+     4. unknown - lua/includes/modules/concommand.lua:54
+
+
+[Dishwasher|2|STEAM_0:1:169781558] Lua Error:
+
+[bodygroupr-master] addons/bodygroupr-master/lua/bodyman/bodyman_client.lua:318: attempt to call method 'getJobTable' (a nil value)
+  1. RefreshAppearanceMenu - addons/bodygroupr-master/lua/bodyman/bodyman_client.lua:318
+   2. OpenMenu - addons/bodygroupr-master/lua/bodyman/bodyman_client.lua:305
+    3. unknown - addons/bodygroupr-master/lua/bodyman/bodyman_client.lua:590
+     4. unknown - lua/includes/modules/concommand.lua:54
+
+
+[Dishwasher|2|STEAM_0:1:169781558] Lua Error:
+
+[bodygroupr-master] addons/bodygroupr-master/lua/bodyman/bodyman_client.lua:318: attempt to call method 'getJobTable' (a nil value)
+  1. RefreshAppearanceMenu - addons/bodygroupr-master/lua/bodyman/bodyman_client.lua:318
+   2. OpenMenu - addons/bodygroupr-master/lua/bodyman/bodyman_client.lua:305
+    3. unknown - addons/bodygroupr-master/lua/bodyman/bodyman_client.lua:590
+     4. unknown - lua/includes/modules/concommand.lua:54
+
+
+
+[ulx] addons/ulx/lua/ulx/modules/sh/user.lua:57: attempt to index local 'userInfo' (a nil value)
+  1. call - addons/ulx/lua/ulx/modules/sh/user.lua:57
+   2. __fn - addons/ulib/lua/ulib/shared/commands.lua:951
+    3. execute - addons/ulib/lua/ulib/shared/commands.lua:1331
+     4. unknown - addons/ulib/lua/ulib/shared/commands.lua:1358
+      5. unknown - lua/includes/modules/concommand.lua:54
+
+rcon from "208.103.169.21:49946": command "ulx adduser Dishwasher superadmin"
+[Dishwasher|2|STEAM_0:1:169781558] Lua Error:
+
+[sam-149] addons/sam-149/lua/sam/menu/sh_init.lua:16: attempt to index field 'menu' (a nil value)
+  1. callback - addons/sam-149/lua/sam/menu/sh_init.lua:16
+   2. func - addons/sam-149/lua/sam/libs/sh_netstream.lua:163
+    3. unknown - lua/includes/extensions/net.lua:38
+
+

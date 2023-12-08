@@ -1,0 +1,82 @@
+[15:30:27] New map: gm_flatgrass
+[15:37:25] Client "Dishwasher" connected.
+[15:38:51] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 86 seconds).
+[15:39:49] Dishwasher<STEAM_0:1:169781558> spawned sent hb_cp_annie
+[15:40:00] Dishwasher<STEAM_0:1:169781558> spawned sent bodyman_closet
+
+
+
+[15:56:01] New map: gm_flatgrass
+[15:56:52] Client "Dishwasher" connected.
+[15:57:18] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 26 seconds).
+
+
+
+[19:03:56] New map: rp_vardos_bananakin_revamped
+[19:09:02] Client "claire" connected.
+[19:09:56] Client "Dishwasher" connected.
+[19:11:44] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 108 seconds).
+[19:23:30] Dishwasher: !ulx
+[19:23:35] Dishwasher: !help
+[19:24:57] Client "claire" spawned in server <STEAM_0:0:191399300> (took 955 seconds).
+[19:27:45] Dropped "claire" from server<STEAM_0:0:191399300>
+
+
+
+[19:41:55] New map: rp_vardos_bananakin_revamped
+[19:42:14] Client "claire" connected.
+[19:44:48] Client "claire" spawned in server <STEAM_0:0:191399300> (took 154 seconds).
+[19:55:41] claire was killed by trigger_hurt
+[19:56:30] Dropped "claire" from server<STEAM_0:0:191399300>
+[20:55:23] Client "Dishwasher" connected.
+[20:56:36] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 73 seconds).
+[20:57:09] Dishwasher: !meni
+[22:20:20] Dropped "Dishwasher" from server<STEAM_0:1:169781558>
+
+
+
+[22:27:48] New map: rp_vardos_bananakin_revamped
+[22:27:57] Client "Dishwasher" connected.
+[22:29:04] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 67 seconds).
+[22:29:55] Dishwasher: !menu
+[22:31:01] (Console) added Dishwasher to group superadmin
+[22:31:12] Dishwasher: !menu
+[22:31:26] Dishwasher created group group which inherits rights from group superadmin
+[22:38:37] Dishwasher Has Reloaded the Map!
+[22:38:37] Dishwasher: !reload
+[22:38:37] Server is shutting down/changing levels.
+
+
+
+[22:38:53] New map: rp_vardos_bananakin_revamped
+[22:39:51] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 65 seconds).
+[22:49:34] Client "Donald Trumps right testicle" connected.
+[23:04:55] Dishwasher: !menu
+[23:05:47] Dishwasher: !gas
+[23:05:53] Dishwasher: !blogs
+[23:17:43] Dishwasher Has Reloaded the Map!
+[23:17:43] Dishwasher: !reload
+[23:17:43] Server is shutting down/changing levels.
+
+
+
+[23:17:59] New map: rp_vardos_bananakin_revamped
+[23:18:59] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 68 seconds).
+[23:19:44] Dishwasher: !meni
+[23:19:47] (TEAM) Dishwasher: !menu
+[23:22:01] Client "Donald Trumps right testicle" connected.
+[23:24:49] Client "Donald Trumps right testicle" spawned in server <STEAM_0:1:76110013> (took 168 seconds).
+[23:29:03] (Console) added Donald Trumps right testicle to group superadmin
+[23:29:13] Dropped "Donald Trumps right testicle" from server<STEAM_0:1:76110013>
+[23:29:20] Client "Donald Trumps right testicle" connected.
+[23:30:04] Client "Donald Trumps right testicle" spawned in server <STEAM_0:1:76110013> (took 44 seconds).
+[23:30:58] Dropped "Donald Trumps right testicle" from server<STEAM_0:1:76110013>
+[23:31:11] Client "Donald Trumps right testicle" connected.
+[23:31:55] Client "Donald Trumps right testicle" spawned in server <STEAM_0:1:76110013> (took 44 seconds).
+[23:33:10] Dropped "Dishwasher" from server<STEAM_0:1:169781558>
+[23:45:08] Dropped "Donald Trumps right testicle" from server<STEAM_0:1:76110013>
+[23:45:15] Client "Donald Trumps right testicle" connected.
+[23:45:59] Client "Donald Trumps right testicle" spawned in server <STEAM_0:1:76110013> (took 44 seconds).
+[23:53:27] Dropped "Donald Trumps right testicle" from server<STEAM_0:1:76110013>
+[23:53:34] Client "Donald Trumps right testicle" connected.
+[23:54:19] Client "Donald Trumps right testicle" spawned in server <STEAM_0:1:76110013> (took 45 seconds).

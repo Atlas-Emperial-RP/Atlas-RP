@@ -1,0 +1,27 @@
+[09:31:15] New map: gm_flatgrass
+[09:37:24] Client "claire" connected.
+[09:38:36] Client "claire" spawned in server <STEAM_0:0:191399300> (took 72 seconds).
+[09:39:03] Dropped "claire" from server<STEAM_0:0:191399300>
+
+
+
+[10:03:17] New map: gm_flatgrass
+[10:03:34] Client "claire" connected.
+[10:06:37] Client "claire" spawned in server <STEAM_0:0:191399300> (took 183 seconds).
+
+
+
+[10:19:30] New map: gm_flatgrass
+[10:20:12] Client "claire" connected.
+[10:20:28] Client "claire" spawned in server <STEAM_0:0:191399300> (took 16 seconds).
+[10:24:36] Dropped "claire" from server<STEAM_0:0:191399300>
+[10:24:45] Client "claire" connected.
+[10:25:00] Client "claire" spawned in server <STEAM_0:0:191399300> (took 15 seconds).
+[10:25:43] Dropped "claire" from server<STEAM_0:0:191399300>
+
+
+
+[18:06:43] New map: gm_flatgrass
+[18:06:58] Client "claire" connected.
+[18:07:53] Client "claire" spawned in server <STEAM_0:0:191399300> (took 55 seconds).
+[18:08:38] Dropped "claire" from server<STEAM_0:0:191399300>
