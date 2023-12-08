@@ -36,7 +36,7 @@ function PANEL:Init()
 	self.ColorMixer.colPrev:Dock( TOP )
 	self.ColorMixer.colPrev:DockMargin( 0, 4, 0, 0 )
 	self.ColorMixer.colPrev.Paint = function(s,w,h)
-		if !self.GottenRGB then return end
+		if not self.GottenRGB then return end
 		
 		surface.SetDrawColor(self.GottenRGB)
 		surface.DrawRect(0,0,w,h)

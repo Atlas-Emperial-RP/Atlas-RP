@@ -86,7 +86,7 @@ function PANEL:PerformLayoutInternal()
 
 	self:Rebuild()
 
-	if ( Tall != self.pnlCanvas:GetTall() ) then
+	if ( Tall ~= self.pnlCanvas:GetTall() ) then
 		self.VBar:SetScroll( self.VBar:GetScroll() ) -- Make sure we are not too far down!
 	end
 

@@ -239,14 +239,16 @@ if (SERVER) then
 			SetTeam = OpenPermissions:GetTeamIdentifier(SetTeam)
 		}
 		for _,t in ipairs(WhitelistTo) do
-			if (not RPExtraTeams[t]) then continue end
-			faction_tbl.WhitelistTo[OpenPermissions:GetTeamIdentifier(t)] = true
+			if (RPExtraTeams[t]) then 
+				faction_tbl.WhitelistTo[OpenPermissions:GetTeamIdentifier(t)] = true
+			end
 		end
 		for _,t in ipairs(BlacklistFrom) do
-			if (not RPExtraTeams[t]) then continue end
-			local id = OpenPermissions:GetTeamIdentifier(t)
-			faction_tbl.BlacklistFrom[id] = true
-			faction_tbl.WhitelistTo[id] = nil
+			if (RPExtraTeams[t]) then 
+				local id = OpenPermissions:GetTeamIdentifier(t)
+				faction_tbl.BlacklistFrom[id] = true
+				faction_tbl.WhitelistTo[id] = nil
+			end
 		end
 		faction_tbl.WhitelistTo[faction_tbl.SetTeam] = true
 		faction_tbl.BlacklistFrom[faction_tbl.SetTeam] = nil
@@ -382,29 +384,30 @@ else
 		local created_faction = false
 		for index, selection in ipairs(GAS.JobWhitelist.Factions.Config.Factions) do
 			local permitted = is_operator or OpenPermissions:HasPermission(LocalPlayer(), "gmodadminsuite_jobwhitelist_factions/" .. selection.ID)
-			if (not selection.ShowIfNotPermitted and not permitted) then continue end
-			created_faction = true
+			if (selection.ShowIfNotPermitted and permitted) then
+				created_faction = true
 
-			local faction = vgui.Create("GAS.JobWhitelist.Faction", GAS.JobWhitelist.Factions.Menu.FactionContainer)
-			table.insert(faction_pnls, faction)
-			faction:SetImage(selection.Logo)
-			faction:SetName(selection.Name)
+				local faction = vgui.Create("GAS.JobWhitelist.Faction", GAS.JobWhitelist.Factions.Menu.FactionContainer)
+				table.insert(faction_pnls, faction)
+				faction:SetImage(selection.Logo)
+				faction:SetName(selection.Name)
 
-			if (permitted) then
-				faction:SetDescription(selection.Description)
-				function faction:DoClick()
-					GAS:netStart("factions:choose")
-						net.WriteUInt(index, 6)
-					net.SendToServer()
+				if (permitted) then
+					faction:SetDescription(selection.Description)
+					function faction:DoClick()
+						GAS:netStart("factions:choose")
+							net.WriteUInt(index, 6)
+						net.SendToServer()
 
-					surface.PlaySound(GAS.JobWhitelist.Factions.Config.OnSelectionSound)
+						surface.PlaySound(GAS.JobWhitelist.Factions.Config.OnSelectionSound)
 
-					GAS.JobWhitelist.Factions.Menu:Close()
-				end
-			else
-				faction:SetDescription(L"faction_not_permitted" .. "\n" .. selection.Description)
-				function faction:DoClick()
-					surface.PlaySound(GAS.JobWhitelist.Factions.Config.PermissionDeniedSound)
+						GAS.JobWhitelist.Factions.Menu:Close()
+					end
+				else
+					faction:SetDescription(L"faction_not_permitted" .. "\n" .. selection.Description)
+					function faction:DoClick()
+						surface.PlaySound(GAS.JobWhitelist.Factions.Config.PermissionDeniedSound)
+					end
 				end
 			end
 		end

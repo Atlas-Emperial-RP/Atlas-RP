@@ -241,8 +241,9 @@ function PANEL:Init()
 
 				if (self:GetParent().ControlsAll == true) then
 					for i,v in ipairs(this.PermissionsSelector.Categories[self:GetParent().Category]) do
-						if (v.ControlsAll) then continue end
-						v.Checkboxes[self.CheckboxIndex]:SetChecked(self:GetChecked())
+						if (not v.ControlsAll) then 
+							v.Checkboxes[self.CheckboxIndex]:SetChecked(self:GetChecked())
+						end
 					end
 				end
 

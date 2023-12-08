@@ -98,24 +98,26 @@ if (SERVER) then
 					for _,row in ipairs(rows) do
 						if (DarkRP and RPExtraTeams) then
 							for _,job in ipairs(RPExtraTeams) do
-								if (GAS.Teams.Identifiers[job.team] ~= nil) then continue end
-								if (
-									(row.OPENPERMISSIONS_IDENTIFIER ~= nil and job.OPENPERMISSIONS_IDENTIFIER == row.OPENPERMISSIONS_IDENTIFIER) or
-									(row.command ~= nil and job.command == row.command) or
-									(row.name ~= nil and job.name == row.name)
-								) then
-									GAS.Teams.Identifiers[job.team] = tonumber(row.id)
-									GAS.Teams.IdentifiersIndexed[tonumber(row.id)] = job.team
-									break
+								if (GAS.Teams.Identifiers[job.team] == nil) then
+									if (
+										(row.OPENPERMISSIONS_IDENTIFIER ~= nil and job.OPENPERMISSIONS_IDENTIFIER == row.OPENPERMISSIONS_IDENTIFIER) or
+										(row.command ~= nil and job.command == row.command) or
+										(row.name ~= nil and job.name == row.name)
+									) then
+										GAS.Teams.Identifiers[job.team] = tonumber(row.id)
+										GAS.Teams.IdentifiersIndexed[tonumber(row.id)] = job.team
+										break
+									end
 								end
 							end
 						else
 							for i,t in ipairs(team.GetAllTeams()) do
-								if (GAS.Teams.Identifiers[i] ~= nil) then continue end
-								if (row.name ~= nil and t.Name == row.name) then
-									GAS.Teams.Identifiers[i] = tonumber(row.id)
-									GAS.Teams.IdentifiersIndexed[tonumber(row.id)] = i
-									break
+								if (GAS.Teams.Identifiers[i] == nil) then 
+									if (row.name ~= nil and t.Name == row.name) then
+										GAS.Teams.Identifiers[i] = tonumber(row.id)
+										GAS.Teams.IdentifiersIndexed[tonumber(row.id)] = i
+										break
+									end
 								end
 							end
 						end

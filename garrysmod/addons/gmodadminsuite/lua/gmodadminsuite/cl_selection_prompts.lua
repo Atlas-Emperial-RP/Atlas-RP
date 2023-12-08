@@ -16,8 +16,9 @@ function GAS.SelectionPrompts:PromptTeam(callback, _menu, muted)
 	if (DarkRP) then
 		local categories = {}
 		for i,c in ipairs(DarkRP.getCategories().jobs) do
-			if (GAS:table_IsEmpty(c.members)) then continue end
-			table.insert(categories, {members = c.members, name = c.name, color = c.color})
+			if (not GAS:table_IsEmpty(c.members)) then 
+				table.insert(categories, {members = c.members, name = c.name, color = c.color})
+			end
 		end
 		table.SortByMember(categories, "name", true)
 		for i,v in ipairs(categories) do
@@ -143,18 +144,19 @@ function GAS.SelectionPrompts:PromptAccountID(callback, _menu, muted, filter)
 		distances = {}
 	}
 	for _,ply in ipairs(player.GetHumans()) do
-		if (filter and filter[ply]) then continue end
+		if (not filter and not filter[ply]) then 
 		
-		table.insert(stuff_to_add.players, {account_id = ply:AccountID(), nick = ply:Nick(), ply = ply})
-		table.insert(stuff_to_add.distances, {distance = ply:GetPos():DistToSqr(LocalPlayer():GetPos()), account_id = ply:AccountID(), nick = ply:Nick(), ply = ply})
+			table.insert(stuff_to_add.players, {account_id = ply:AccountID(), nick = ply:Nick(), ply = ply})
+			table.insert(stuff_to_add.distances, {distance = ply:GetPos():DistToSqr(LocalPlayer():GetPos()), account_id = ply:AccountID(), nick = ply:Nick(), ply = ply})
 
-		local team_name = team.GetName(ply:Team())
-		stuff_to_add.jobs[team_name] = stuff_to_add.jobs[team_name] or {}
-		table.insert(stuff_to_add.jobs[team_name], {account_id = ply:AccountID(), nick = ply:Nick(), ply = ply})
+			local team_name = team.GetName(ply:Team())
+			stuff_to_add.jobs[team_name] = stuff_to_add.jobs[team_name] or {}
+			table.insert(stuff_to_add.jobs[team_name], {account_id = ply:AccountID(), nick = ply:Nick(), ply = ply})
 
-		for v in pairs(OpenPermissions:GetUserGroups(ply)) do
-			stuff_to_add.usergroups[v] = stuff_to_add.usergroups[v] or {}
-			table.insert(stuff_to_add.usergroups[v], {account_id = ply:AccountID(), nick = ply:Nick(), ply = ply})
+			for v in pairs(OpenPermissions:GetUserGroups(ply)) do
+				stuff_to_add.usergroups[v] = stuff_to_add.usergroups[v] or {}
+				table.insert(stuff_to_add.usergroups[v], {account_id = ply:AccountID(), nick = ply:Nick(), ply = ply})
+			end
 		end
 	end
 

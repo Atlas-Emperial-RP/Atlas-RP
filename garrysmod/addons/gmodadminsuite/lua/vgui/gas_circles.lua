@@ -1,7 +1,7 @@
-/*
+--[[
 	https://github.com/Sneaky-Squid/Circles
 	MIT License
-*/
+]]
 
 local blur = Material("pp/blurscreen")
 

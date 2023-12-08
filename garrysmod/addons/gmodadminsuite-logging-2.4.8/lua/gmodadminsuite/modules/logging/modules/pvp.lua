@@ -157,24 +157,26 @@ PVP_COMBAT_MODULE:Setup(function()
 
 		if (GAS.Logging.PvP.PlayerEvents[instigator_id] ~= nil) then
 			for _,event in ipairs(GAS.Logging.PvP.PlayerEvents[instigator_id]) do
-				if (event == self) then continue end
+				if (event ~= self) then
 
-				event.Properties[GAS.Logging.PvP_LINKED_EVENTS][self.Properties[GAS.Logging.PvP_EVENT_ID]] = true
-				self.Properties[GAS.Logging.PvP_LINKED_EVENTS][event.Properties[GAS.Logging.PvP_EVENT_ID]] = true
+					event.Properties[GAS.Logging.PvP_LINKED_EVENTS][self.Properties[GAS.Logging.PvP_EVENT_ID]] = true
+					self.Properties[GAS.Logging.PvP_LINKED_EVENTS][event.Properties[GAS.Logging.PvP_EVENT_ID]] = true
 
-				event.Properties[GAS.Logging.PvP_FLAGS][GAS.Logging.PvP_FLAG_LINKED] = true
-				self.Properties[GAS.Logging.PvP_FLAGS][GAS.Logging.PvP_FLAG_LINKED] = true
+					event.Properties[GAS.Logging.PvP_FLAGS][GAS.Logging.PvP_FLAG_LINKED] = true
+					self.Properties[GAS.Logging.PvP_FLAGS][GAS.Logging.PvP_FLAG_LINKED] = true
+				end
 			end
 		end
 		if (GAS.Logging.PvP.PlayerEvents[victim_id] ~= nil) then
 			for _,event in ipairs(GAS.Logging.PvP.PlayerEvents[victim_id]) do
-				if (event == self) then continue end
+				if (event ~= self) then 
 
-				event.Properties[GAS.Logging.PvP_LINKED_EVENTS][self.Properties[GAS.Logging.PvP_EVENT_ID]] = true
-				self.Properties[GAS.Logging.PvP_LINKED_EVENTS][event.Properties[GAS.Logging.PvP_EVENT_ID]] = true
+					event.Properties[GAS.Logging.PvP_LINKED_EVENTS][self.Properties[GAS.Logging.PvP_EVENT_ID]] = true
+					self.Properties[GAS.Logging.PvP_LINKED_EVENTS][event.Properties[GAS.Logging.PvP_EVENT_ID]] = true
 
-				event.Properties[GAS.Logging.PvP_FLAGS][GAS.Logging.PvP_FLAG_LINKED] = true
-				self.Properties[GAS.Logging.PvP_FLAGS][GAS.Logging.PvP_FLAG_LINKED] = true
+					event.Properties[GAS.Logging.PvP_FLAGS][GAS.Logging.PvP_FLAG_LINKED] = true
+					self.Properties[GAS.Logging.PvP_FLAGS][GAS.Logging.PvP_FLAG_LINKED] = true
+				end
 			end
 		end
 

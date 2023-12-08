@@ -65,8 +65,9 @@ else
 
 	function GAS.Logging.Scenes:Clear()
 		for ent in pairs(GAS_Logging_Scenes_Ents) do
-			if (not IsValid(ent)) then continue end
-			ent:Remove()
+			if (IsValid(ent)) then 
+				ent:Remove()
+			end
 		end
 		GAS_Logging_Scenes_Ents = {}
 		GAS.Logging.Scenes.SceneEnts = {}
@@ -158,26 +159,27 @@ else
 
 		if (GAS.Logging.Scenes.SceneEnts[k]) then
 			for _,ent in pairs(GAS.Logging.Scenes.SceneEnts[k]) do
-				if (not IsValid(ent)) then continue end
-				local f = false
-				for i,ent2 in ipairs(GAS.Logging.Scenes.Victims) do
-					if (ent2 == ent) then
-						f = true
-						table.remove(GAS.Logging.Scenes.Victims, i)
-						break
-					end
-				end
-				if (not f) then
-					for i,ent2 in ipairs(GAS.Logging.Scenes.Instigators) do
+				if (IsValid(ent)) then 
+					local f = false
+					for i,ent2 in ipairs(GAS.Logging.Scenes.Victims) do
 						if (ent2 == ent) then
-							table.remove(GAS.Logging.Scenes.Instigators, i)
+							f = true
+							table.remove(GAS.Logging.Scenes.Victims, i)
 							break
 						end
 					end
-				end
+					if (not f) then
+						for i,ent2 in ipairs(GAS.Logging.Scenes.Instigators) do
+							if (ent2 == ent) then
+								table.remove(GAS.Logging.Scenes.Instigators, i)
+								break
+							end
+						end
+					end
 
-				GAS_Logging_Scenes_Ents[ent] = nil
-				ent:Remove()
+					GAS_Logging_Scenes_Ents[ent] = nil
+					ent:Remove()
+				end
 			end
 			GAS.Logging.Scenes.SceneEnts[k] = nil
 		end

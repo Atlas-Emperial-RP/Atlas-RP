@@ -261,27 +261,30 @@ else
 
 		local data = {}
 		for category_index, category in pairs(DarkRP.getCategories().jobs) do
-			if (#category.members == 0) then continue end
-			for _,job in ipairs(category.members) do
-				local job_index = job.team
-				if (job_index == (GM or GAMEMODE).DefaultTeam) then continue end
-				if (not GAS.JobWhitelist:IsWhitelistEnabled(job_index)) then continue end
+			if (#category.members ~= 0) then 
+				for _,job in ipairs(category.members) do
+					local job_index = job.team
+					if (job_index ~= (GM or GAMEMODE).DefaultTeam) then 
+						if ( GAS.JobWhitelist:IsWhitelistEnabled(job_index)) then 
 
-				local is_whitelisted = false
-				if (GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()]) then
-					if (GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()][job_index]) then
-						is_whitelisted = true
+							local is_whitelisted = false
+							if (GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()]) then
+								if (GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()][job_index]) then
+									is_whitelisted = true
+								end
+							end
+							if (not is_operator) then
+								local job_id = OpenPermissions:GetTeamIdentifier(job_index)
+								if (not OpenPermissions:HasPermission(ply, {"gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/add_to/steamids", "gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/remove_from/steamids"})) then
+									break
+								end
+							end
+
+							data[category_index] = data[category_index] or {}
+							data[category_index][job_index] = is_whitelisted
+						end
 					end
 				end
-				if (not is_operator) then
-					local job_id = OpenPermissions:GetTeamIdentifier(job_index)
-					if (not OpenPermissions:HasPermission(ply, {"gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/add_to/steamids", "gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/remove_from/steamids"})) then
-						continue
-					end
-				end
-
-				data[category_index] = data[category_index] or {}
-				data[category_index][job_index] = is_whitelisted
 			end
 		end
 
@@ -309,27 +312,30 @@ else
 
 		local data = {}
 		for category_index, category in pairs(DarkRP.getCategories().jobs) do
-			if (#category.members == 0) then continue end
-			for _,job in ipairs(category.members) do
-				local job_index = job.team
-				if (job_index == (GM or GAMEMODE).DefaultTeam) then continue end
-				if (not GAS.JobWhitelist:IsBlacklistEnabled(job_index)) then continue end
+			if (#category.members ~= 0) then 
+				for _,job in ipairs(category.members) do
+					local job_index = job.team
+					if (job_index ~= (GM or GAMEMODE).DefaultTeam) then 
+						if (GAS.JobWhitelist:IsBlacklistEnabled(job_index)) then
 
-				local is_blacklisted = false
-				if (GAS.JobWhitelist.Blacklists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()]) then
-					if (GAS.JobWhitelist.Blacklists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()][job_index]) then
-						is_blacklisted = true
+							local is_blacklisted = false
+							if (GAS.JobWhitelist.Blacklists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()]) then
+								if (GAS.JobWhitelist.Blacklists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()][job_index]) then
+									is_blacklisted = true
+								end
+							end
+							if (not is_operator) then
+								local job_id = OpenPermissions:GetTeamIdentifier(job_index)
+								if (not OpenPermissions:HasPermission(ply, {"gmodadminsuite_jobwhitelist/" .. job_id .. "/blacklist/add_to/steamids", "gmodadminsuite_jobwhitelist/" .. job_id .. "/blacklist/remove_from/steamids"})) then
+									return
+								end
+							end
+						
+							data[category_index] = data[category_index] or {}
+							data[category_index][job_index] = is_blacklisted
+						end
 					end
 				end
-				if (not is_operator) then
-					local job_id = OpenPermissions:GetTeamIdentifier(job_index)
-					if (not OpenPermissions:HasPermission(ply, {"gmodadminsuite_jobwhitelist/" .. job_id .. "/blacklist/add_to/steamids", "gmodadminsuite_jobwhitelist/" .. job_id .. "/blacklist/remove_from/steamids"})) then
-						continue
-					end
-				end
-
-				data[category_index] = data[category_index] or {}
-				data[category_index][job_index] = is_blacklisted
 			end
 		end
 

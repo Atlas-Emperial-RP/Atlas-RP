@@ -458,25 +458,26 @@ bVGUI.Query = function(...)
 	local btns = {}
 	for i=1,4 do
 		local btnText = vararg[1 + (i * 2)]
-		if (btnText == nil) then continue end
-		local btnFunc = vararg[2 + (i * 2)]
+		if (btnText ~= nil) then
+			local btnFunc = vararg[2 + (i * 2)]
 
-		local btn = vgui.Create("bVGUI.Button", bVGUI.ACTIVE_POPUP.ButtonContainer)
-		table.insert(btns, btn)
-		btn:SetSize(90,25)
-		if (i == 1) then
-			btn:SetColor(bVGUI.BUTTON_COLOR_GREEN)
-		elseif (i == 2) then
-			btn:SetColor(bVGUI.BUTTON_COLOR_RED)
-		elseif (i == 3) then
-			btn:SetColor(bVGUI.BUTTON_COLOR_ORANGE)
-		elseif (i == 4) then
-			btn:SetColor(bVGUI.BUTTON_COLOR_PURPLE)
-		end
-		btn:SetText(btnText)
-		function btn:DoClick()
-			bVGUI.ACTIVE_POPUP:Close()
-			if (btnFunc) then btnFunc() end
+			local btn = vgui.Create("bVGUI.Button", bVGUI.ACTIVE_POPUP.ButtonContainer)
+			table.insert(btns, btn)
+			btn:SetSize(90,25)
+			if (i == 1) then
+				btn:SetColor(bVGUI.BUTTON_COLOR_GREEN)
+			elseif (i == 2) then
+				btn:SetColor(bVGUI.BUTTON_COLOR_RED)
+			elseif (i == 3) then
+				btn:SetColor(bVGUI.BUTTON_COLOR_ORANGE)
+			elseif (i == 4) then
+				btn:SetColor(bVGUI.BUTTON_COLOR_PURPLE)
+			end
+			btn:SetText(btnText)
+			function btn:DoClick()
+				bVGUI.ACTIVE_POPUP:Close()
+				if (btnFunc) then btnFunc() end
+			end
 		end
 	end
 
@@ -575,16 +576,17 @@ bVGUI.ChildrenSize = function(pnl)
 	local max_w = 0
 	local max_h = 0
 	for _,v in ipairs(pnl:GetChildren()) do
-		if (v.IsDefaultChild ~= false) then continue end
-		local pos_x, pos_y = v:GetPos()
-		local size_w, size_h = v:GetSize()
-		local my_max_w = pos_x + size_w
-		local my_max_h = pos_y + size_h
-		if (my_max_w > max_w) then
-			max_w = my_max_w
-		end
-		if (my_max_h > max_h) then
-			max_h = my_max_h
+		if (not v.IsDefaultChild) then 
+			local pos_x, pos_y = v:GetPos()
+			local size_w, size_h = v:GetSize()
+			local my_max_w = pos_x + size_w
+			local my_max_h = pos_y + size_h
+			if (my_max_w > max_w) then
+				max_w = my_max_w
+			end
+			if (my_max_h > max_h) then
+				max_h = my_max_h
+			end
 		end
 	end
 	max_w = max_w + padding_r

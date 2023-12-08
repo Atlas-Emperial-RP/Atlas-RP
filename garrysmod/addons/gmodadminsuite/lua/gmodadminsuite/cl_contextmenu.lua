@@ -24,14 +24,15 @@ properties.Add("GmodAdminSuite", {
 		option_submenu:AddOption(L"open_menu", self.Action):SetIcon("icon16/application_form_magnify.png")
 		local spacer = false
 		for i,v in pairs(GAS.ContextProperties) do
-			if (v.Filter and v.Filter(self, ent, LocalPlayer()) == false) then continue end
-			if (not spacer) then spacer = true option_submenu:AddSpacer() end
-			local submenu, submenu_pnl = option_submenu:AddSubMenu(v.MenuLabel, v.Action)
-			if (v.MenuIcon) then
-				submenu_pnl:SetIcon(v.MenuIcon)
-			end
-			if (v.MenuOpen) then
-				v.MenuOpen(self, submenu, ent, tr, submenu_pnl)
+			if v.Filter and v.Filter(self, ent, LocalPlayer()) then 
+				if (not spacer) then spacer = true option_submenu:AddSpacer() end
+				local submenu, submenu_pnl = option_submenu:AddSubMenu(v.MenuLabel, v.Action)
+				if (v.MenuIcon) then
+					submenu_pnl:SetIcon(v.MenuIcon)
+				end
+				if (v.MenuOpen) then
+					v.MenuOpen(self, submenu, ent, tr, submenu_pnl)
+				end
 			end
 		end
 	end,

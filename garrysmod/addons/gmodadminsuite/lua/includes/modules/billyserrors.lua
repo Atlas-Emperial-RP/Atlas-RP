@@ -143,10 +143,11 @@ if (SERVER) then
 			net.Send(ply)
 		else
 			for _,ply in ipairs(player.GetHumans()) do
-				if (not ply:IsSuperAdmin()) then continue end
-				net.Start("billyserrors")
-					net.WriteData(data, #data)
-				net.Send(ply)
+				if (ply:IsSuperAdmin()) then 
+					net.Start("billyserrors")
+						net.WriteData(data, #data)
+					net.Send(ply)
+				end
 			end
 		end
 	end
@@ -254,29 +255,30 @@ else
 			end
 			local category = BillysErrors.Menu.Categories:AddCategory("Addons", category_col)
 			for _,addon in ipairs(BillysErrors.Addons) do
-				if (#addon.Messages == 0) then continue end
-				local item = category:AddItem(addon.Name, function()
+				if (#addon.Messages ~= 0) then 
+					local item = category:AddItem(addon.Name, function()
 
-					BillysErrors.LastSelectedAddon = addon.Name
+						BillysErrors.LastSelectedAddon = addon.Name
 
-					BillysErrors.Menu.Header:SetText(addon.Name)
-					BillysErrors.Menu.Header:SetColor(addon.Color or Color(0,125,255))
-					BillysErrors.Menu.Header:SetIcon(addon.Icon or false)
+						BillysErrors.Menu.Header:SetText(addon.Name)
+						BillysErrors.Menu.Header:SetColor(addon.Color or Color(0,125,255))
+						BillysErrors.Menu.Header:SetIcon(addon.Icon or false)
 
-					CreateRichText()
-					for i,msg in ipairs(addon.Messages) do
-						local print_items = {}
-						BillysErrors:ProcessConsoleMsg(print_items, msg)
-						table.insert(print_items, "\n\n")
-						MsgC(unpack(print_items))
+						CreateRichText()
+						for i,msg in ipairs(addon.Messages) do
+							local print_items = {}
+							BillysErrors:ProcessConsoleMsg(print_items, msg)
+							table.insert(print_items, "\n\n")
+							MsgC(unpack(print_items))
 
-						BillysErrors:ProcessRichTextMsg(BillysErrors.Menu.Text, msg)
-						if (i ~= #msg) then BillysErrors.Menu.Text:AppendText("\n\n") end
+							BillysErrors:ProcessRichTextMsg(BillysErrors.Menu.Text, msg)
+							if (i ~= #msg) then BillysErrors.Menu.Text:AppendText("\n\n") end
+						end
+
+					end, addon.Color, addon.Icon)
+					if (BillysErrors.LastSelectedAddon == addon.Name) then
+						item:OnMouseReleased(MOUSE_LEFT)
 					end
-
-				end, addon.Color, addon.Icon)
-				if (BillysErrors.LastSelectedAddon == addon.Name) then
-					item:OnMouseReleased(MOUSE_LEFT)
 				end
 			end
 		end

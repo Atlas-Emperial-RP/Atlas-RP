@@ -231,28 +231,31 @@ function OpenPermissions:OpenMenu(specific_addon)
 						local copied_clashes = false
 						for _,line in ipairs(AccessGroups:GetSelected()) do
 							local identifier = line.Data.Enum .. " " .. line.Data.Value
-							if (not OpenPermissions.PermissionsRegistryEditing[line.Data.Enum] or not OpenPermissions.PermissionsRegistryEditing[line.Data.Value]) then continue end
-							for access_group, perms in pairs(OpenPermissions.PermissionsRegistryEditing[line.Data.Enum]) do
-								for permission_id, checked in pairs(perms) do
-									if (PastePermissions.PermissionsData[permission_id] == nil) then
-										local has_clashed = false
-										for _,line_2 in ipairs(AccessGroups:GetSelected()) do
-											local identifier_2 = line_2.Data.Enum .. " " .. line_2.Data.Value
-											if (not OpenPermissions.PermissionsRegistryEditing[line_2.Data.Enum] or not OpenPermissions.PermissionsRegistryEditing[line_2.Data.Value]) then continue end
-											if (identifier_2 == identifier) then continue end
-											if (OpenPermissions.PermissionsRegistryEditing[line_2.Data.Enum][line_2.Data.Value][permission_id] ~= checked) then
-												copied_clashes, has_clashed = true, true
-												break
+							if (OpenPermissions.PermissionsRegistryEditing[line.Data.Enum] or OpenPermissions.PermissionsRegistryEditing[line.Data.Value]) then 
+								for access_group, perms in pairs(OpenPermissions.PermissionsRegistryEditing[line.Data.Enum]) do
+									for permission_id, checked in pairs(perms) do
+										if (PastePermissions.PermissionsData[permission_id] == nil) then
+											local has_clashed = false
+											for _,line_2 in ipairs(AccessGroups:GetSelected()) do
+												local identifier_2 = line_2.Data.Enum .. " " .. line_2.Data.Value
+												if (OpenPermissions.PermissionsRegistryEditing[line_2.Data.Enum] or OpenPermissions.PermissionsRegistryEditing[line_2.Data.Value]) then
+													if (identifier_2 ~= identifier) then
+														if (OpenPermissions.PermissionsRegistryEditing[line_2.Data.Enum][line_2.Data.Value][permission_id] ~= checked) then
+															copied_clashes, has_clashed = true, true
+															break
+														end
+													end
+												end
 											end
-										end
-										if (not has_clashed) then
-											PastePermissions.PermissionsData[permission_id] = checked
-										else
+											if (not has_clashed) then
+												PastePermissions.PermissionsData[permission_id] = checked
+											else
+												PastePermissions.PermissionsData[permission_id] = nil
+											end
+										elseif (PastePermissions.PermissionsData[permission_id] ~= checked) then
+											copied_clashes = true
 											PastePermissions.PermissionsData[permission_id] = nil
 										end
-									elseif (PastePermissions.PermissionsData[permission_id] ~= checked) then
-										copied_clashes = true
-										PastePermissions.PermissionsData[permission_id] = nil
 									end
 								end
 							end
@@ -563,8 +566,9 @@ function OpenPermissions:OpenMenu(specific_addon)
 					if (OpenPermissions.IsDarkRP) then
 						local categories = {}
 						for i,c in ipairs(DarkRP.getCategories().jobs) do
-							if (GAS:table_IsEmpty(c.members)) then continue end
-							table.insert(categories, {name = c.name, color = c.color, members = c.members})
+							if (not GAS:table_IsEmpty(c.members)) then
+								table.insert(categories, {name = c.name, color = c.color, members = c.members})
+							end
 						end
 						table.SortByMember(categories, "name", true)
 						for i,c in ipairs(categories) do
@@ -649,15 +653,16 @@ function OpenPermissions:OpenMenu(specific_addon)
 							local all_state
 							local ambigious = false
 							for _,_v in ipairs(my_parent[1]) do
-								if (not IsValid(_v[3])) then continue end
-								if (_v[3]:IsAmbigious()) then
-									ambigious = true
-									break
-								elseif (all_state == nil) then
-									all_state = _v[3]:GetChecked()
-								elseif (all_state ~= _v[3]:GetChecked()) then
-									ambigious = true
-									break
+								if (IsValid(_v[3])) then 
+									if (_v[3]:IsAmbigious()) then
+										ambigious = true
+										break
+									elseif (all_state == nil) then
+										all_state = _v[3]:GetChecked()
+									elseif (all_state ~= _v[3]:GetChecked()) then
+										ambigious = true
+										break
+									end
 								end
 							end
 							my_parent[3]:SetAmbigious(ambigious)
@@ -861,14 +866,15 @@ function OpenPermissions:OpenMenu(specific_addon)
 
 	function DeleteAccessGroup:DoClick()
 		for i,line in pairs(AccessGroups:GetLines()) do
-			if (not line:IsLineSelected()) then continue end
-			if (AccessGroups.Data[line.Data.Enum][line.Data.Value] ~= nil) then
-				AccessGroups.Data[line.Data.Enum][line.Data.Value] = nil
+			if (line:IsLineSelected()) then
+				if (AccessGroups.Data[line.Data.Enum][line.Data.Value] ~= nil) then
+					AccessGroups.Data[line.Data.Enum][line.Data.Value] = nil
+				end
+				if (OpenPermissions.PermissionsRegistryEditing[line.Data.Enum][line.Data.Value] ~= nil) then
+					OpenPermissions.PermissionsRegistryEditing[line.Data.Enum][line.Data.Value] = nil
+				end
+				AccessGroups:RemoveLine(i)
 			end
-			if (OpenPermissions.PermissionsRegistryEditing[line.Data.Enum][line.Data.Value] ~= nil) then
-				OpenPermissions.PermissionsRegistryEditing[line.Data.Enum][line.Data.Value] = nil
-			end
-			AccessGroups:RemoveLine(i)
 		end
 		AddonContent:SetShowOverlay(true)
 		AddonContent:SwitchToName(L"permissions")
