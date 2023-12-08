@@ -76,7 +76,7 @@ function PANEL:GetText(text)
 end
 
 function PANEL:Paint(w)
-	if !self.LeftCircle or !self.RightCircle then
+	if not self.LeftCircle or not self.RightCircle then
 		self.LeftCircle = Circle(switch_height / 2, switch_height / 2, switch_height / 2,20)
 		self.RightCircle = Circle(switch_width - switch_height / 2, switch_height / 2, switch_height / 2,20)
 	end
