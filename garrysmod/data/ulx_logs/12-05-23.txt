@@ -1,0 +1,56 @@
+[19:54:13] New map: rp_vardos_bananakin_revamped
+
+
+
+[20:16:54] New map: rp_vardos_bananakin_revamped
+[20:19:17] Client "yairme" connected.
+[20:41:47] Client "yairme" spawned in server <STEAM_0:0:184328867> (took 1350 seconds).
+[20:42:59] (Console) added yairme to group superadmin
+[20:45:37] Dropped "yairme" from server<STEAM_0:0:184328867>
+[21:48:02] Client "yairme" connected.
+
+
+
+[21:49:50] New map: rp_vardos_bananakin_revamped
+
+
+
+[21:51:52] New map: rp_vardos_bananakin_revamped
+[21:52:26] Client "yairme" connected.
+[21:54:00] Client "yairme" spawned in server <STEAM_0:0:184328867> (took 94 seconds).
+[22:00:12] Dropped "yairme" from server<STEAM_0:0:184328867>
+
+
+
+[22:25:10] New map: rp_vardos_bananakin_revamped
+[22:49:03] Client "yairme" connected.
+[22:51:31] Client "yairme" spawned in server <STEAM_0:0:184328867> (took 148 seconds).
+[22:53:22] Dropped "yairme" from server<STEAM_0:0:184328867>
+
+
+
+[23:03:57] New map: rp_vardos_bananakin_revamped
+[23:04:50] Client "yairme" connected.
+[23:08:11] Client "yairme" spawned in server <STEAM_0:0:184328867> (took 201 seconds).
+[23:10:15] Dropped "yairme" from server<STEAM_0:0:184328867>
+
+
+
+[23:18:08] New map: rp_vardos_bananakin_revamped
+[23:18:27] Client "yairme" connected.
+[23:19:54] Client "yairme" spawned in server <STEAM_0:0:184328867> (took 87 seconds).
+[23:22:27] (Console) added yairme to group superadmin
+[23:22:53] Dropped "yairme" from server<STEAM_0:0:184328867>
+
+
+
+[23:51:56] New map: rp_vardos_bananakin_revamped
+[23:52:03] Client "yairme" connected.
+[23:53:45] Client "yairme" spawned in server <STEAM_0:0:184328867> (took 102 seconds).
+[23:55:50] (Console) added yairme to group superadmin
+[23:56:13] Dropped "yairme" from server<STEAM_0:0:184328867>
+
+
+
+[23:58:42] New map: rp_vardos_bananakin_revamped
+<Logging continued in "data/ulx_logs/12-06-23.txt">

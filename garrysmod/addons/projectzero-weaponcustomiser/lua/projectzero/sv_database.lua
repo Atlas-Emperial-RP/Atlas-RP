@@ -1,8 +1,8 @@
 local function LoadSQLFiles()
     for k, v in ipairs( file.Find( "projectzero/*.lua", "LUA" ) ) do
-        if( string.StartWith( v, "sv_sql" ) ) then
+        if( not string.StartWith( v, "sv_sql" ) ) then goto continue end
         include( "projectzero/" .. v )
-        end
+        ::continue::
     end
 end
 

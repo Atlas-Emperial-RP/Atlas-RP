@@ -1,0 +1,369 @@
+Couldn't load shader dll: game_shader_generic_garrysmod_srv.soConVarRef mat_dxlevel doesn't point to an existing ConVar
+Game_srv.so loaded for "Garry's Mod"
+Initializing Steam libraries for Workshop..
+WS: Waiting for Steam to log us in...........
+WS: Fetching collection info...
+Processing collection 3023459068...
+   Collection 'Atlas' (287 items)
+   Retrieving item details...
+   286 new addon(s) + 1 new collection(s)
+Processing collection 2222752768...
+   Collection 'Vanguard Imperial 2023 Content' (158 items)
+   Retrieving item details...
+   44 new addon(s) + 1 new collection(s)
+Processing collection 2729866003...
+   Collection 'Server Tools' (40 items)
+   Retrieving item details...
+   23 new addon(s)
+WS: Finished!
+
+WS: Processing 353 addons...
+Processing addon 353: NPC Tools (104486597)...
+   Mounted!
+Processing addon 352: Playable Piano (104548572)...
+   Mounted!
+Processing addon 351: Standing Pose Tool (104576786)...
+   Mounted!
+Processing addon 350: Extended Properties (104607712)...
+   Mounted!
+Processing addon 349: No Collide World [Reupload] (104634865)...
+   Mounted!
+Processing addon 348: PAC3 (104691717)...
+   Mounted!
+Processing addon 347: The Sit Anywhere Script! (108176967)...
+   Mounted!
+Processing addon 346: 3D2D Textscreens (109643223)...
+   Mounted!
+Processing addon 345: Star Wars Lightsabers (111412589)...
+   Mounted!
+Processing addon 344: Rp_Stardestroyer (130083907)...
+   Mounted!
+Processing addon 343: Smart Weld (131586620)...
+   Mounted!
+Processing addon 342: VJ Base (131759821)...
+   Mounted!
+Processing addon 341: rp_catalyst_v1 (135544186)...
+   Mounted!
+Processing addon 340: Rp_Kashyyyk_Jungle (169044808)...
+   Mounted!
+Processing addon 339: Sci-Fi Citizens v4 (173923845)...
+   Mounted!
+Processing addon 338: Sci-Fi Citizens Playermodels (173932955)...
+   Mounted!
+Processing addon 337: Emplacements (213515639)...
+   Mounted!
+Processing addon 336: PermaProps (220336312)...
+   Mounted!
+Processing addon 335: Rp_Naboo_City (225115060)...
+   Mounted!
+Processing addon 334: Star Wars Death Troopers (244505203)...
+   Mounted!
+Processing addon 333: Empty Hands Swep (245482078)...
+   Mounted!
+Processing addon 332: Star Wars Music Speakers (252742321)...
+   Mounted!
+Processing addon 331: SW Forklift Truck (264931812)...
+   Mounted!
+Processing addon 330: Sci-fi Props Megapack (284266415)...
+   Mounted!
+Processing addon 329: Star Wars Roleplay Props (414296692)...
+   Mounted!
+Processing addon 328: STAR WARS Emperor Palpatine Playermodel (457212613)...
+   Mounted!
+Processing addon 327: rp_Nar_Shaddaa_V2 (485317056)...
+   Mounted!
+Processing addon 326: RemoveProps (488122182)...
+   Mounted!
+Processing addon 325: Equipped Weapon Addon (489910704)...
+   Mounted!
+Processing addon 324: Roll Command (516377504)...
+   Mounted!
+Processing addon 323: Media Player (546392647)...
+   Mounted!
+Processing addon 322: Miscellaneous Star Wars Characters (NPCs, Part 1) (603880998)...
+   Addon needs downloading...
+   Downloading [ 48% of 109.3 MB ]
+   Downloading [ 48% of 109.3 MB ]
+   Downloading [ 49% of 109.3 MB ]
+   Downloading [ 50% of 109.3 MB ]
+   Downloading [ 51% of 109.3 MB ]
+   Downloading [ 51% of 109.3 MB ]
+   Downloading [ 52% of 109.3 MB ]
+   Downloading [ 53% of 109.3 MB ]
+   Downloading [ 53% of 109.3 MB ]
+   Downloading [ 54% of 109.3 MB ]
+   Downloading [ 55% of 109.3 MB ]
+   Downloading [ 56% of 109.3 MB ]
+   Downloading [ 57% of 109.3 MB ]
+   Downloading [ 57% of 109.3 MB ]
+   Downloading [ 58% of 109.3 MB ]
+   Downloading [ 59% of 109.3 MB ]
+   Downloading [ 60% of 109.3 MB ]
+   Downloading [ 61% of 109.3 MB ]
+   Downloading [ 62% of 109.3 MB ]
+   Downloading [ 62% of 109.3 MB ]
+   Downloading [ 63% of 109.3 MB ]
+   Downloading [ 64% of 109.3 MB ]
+   Downloading [ 65% of 109.3 MB ]
+   Downloading [ 66% of 109.3 MB ]
+   Downloading [ 66% of 109.3 MB ]
+   Downloading [ 67% of 109.3 MB ]
+   Downloading [ 68% of 109.3 MB ]
+   Downloading [ 69% of 109.3 MB ]
+   Downloading [ 70% of 109.3 MB ]
+   Downloading [ 70% of 109.3 MB ]
+   Downloading [ 71% of 109.3 MB ]
+   Downloading [ 72% of 109.3 MB ]
+   Downloading [ 73% of 109.3 MB ]
+   Downloading [ 74% of 109.3 MB ]
+   Downloading [ 74% of 109.3 MB ]
+   Downloading [ 75% of 109.3 MB ]
+   Downloading [ 76% of 109.3 MB ]
+   Downloading [ 77% of 109.3 MB ]
+   Downloading [ 78% of 109.3 MB ]
+   Downloading [ 79% of 109.3 MB ]
+   Downloading [ 79% of 109.3 MB ]
+   Downloading [ 80% of 109.3 MB ]
+   Downloading [ 81% of 109.3 MB ]
+   Downloading [ 81% of 109.3 MB ]
+   Downloading [ 82% of 109.3 MB ]
+   Downloading [ 83% of 109.3 MB ]
+   Downloading [ 84% of 109.3 MB ]
+   Downloading [ 84% of 109.3 MB ]
+   Downloading [ 85% of 109.3 MB ]
+   Downloading [ 86% of 109.3 MB ]
+   Downloading [ 87% of 109.3 MB ]
+   Downloading [ 88% of 109.3 MB ]
+   Downloading [ 88% of 109.3 MB ]
+   Downloading [ 89% of 109.3 MB ]
+   Downloading [ 90% of 109.3 MB ]
+   Downloading [ 90% of 109.3 MB ]
+   Downloading [ 91% of 109.3 MB ]
+   Downloading [ 92% of 109.3 MB ]
+   Downloading [ 92% of 109.3 MB ]
+   Downloading [ 93% of 109.3 MB ]
+   Downloading [ 94% of 109.3 MB ]
+   Downloading [ 95% of 109.3 MB ]
+   Downloading [ 96% of 109.3 MB ]
+   Downloading [ 96% of 109.3 MB ]
+   Downloading [ 97% of 109.3 MB ]
+   Downloading [ 98% of 109.3 MB ]
+   Downloading [ 99% of 109.3 MB ]
+   Downloading [ 100% of 109.3 MB ]
+   Downloaded!
+   Extracting...
+   Mounting...
+   Mounted!
+Processing addon 321: Miscellaneous Star Wars Characters (NPCs, Part 2) (612389671)...
+   Addon needs downloading...
+   Downloading [ 0% of 77.3 MB ]
+   Downloading [ 1% of 77.3 MB ]
+   Downloading [ 2% of 77.3 MB ]
+   Downloading [ 3% of 77.3 MB ]
+   Downloading [ 4% of 77.3 MB ]
+   Downloading [ 5% of 77.3 MB ]
+   Downloading [ 6% of 77.3 MB ]
+   Downloading [ 7% of 77.3 MB ]
+   Downloading [ 8% of 77.3 MB ]
+   Downloading [ 9% of 77.3 MB ]
+   Downloading [ 10% of 77.3 MB ]
+   Downloading [ 11% of 77.3 MB ]
+   Downloading [ 12% of 77.3 MB ]
+   Downloading [ 14% of 77.3 MB ]
+   Downloading [ 15% of 77.3 MB ]
+   Downloading [ 16% of 77.3 MB ]
+   Downloading [ 16% of 77.3 MB ]
+   Downloading [ 18% of 77.3 MB ]
+   Downloading [ 19% of 77.3 MB ]
+   Downloading [ 20% of 77.3 MB ]
+   Downloading [ 21% of 77.3 MB ]
+   Downloading [ 22% of 77.3 MB ]
+   Downloading [ 23% of 77.3 MB ]
+   Downloading [ 24% of 77.3 MB ]
+   Downloading [ 25% of 77.3 MB ]
+   Downloading [ 27% of 77.3 MB ]
+   Downloading [ 28% of 77.3 MB ]
+   Downloading [ 29% of 77.3 MB ]
+   Downloading [ 30% of 77.3 MB ]
+   Downloading [ 31% of 77.3 MB ]
+   Downloading [ 32% of 77.3 MB ]
+   Downloading [ 34% of 77.3 MB ]
+   Downloading [ 35% of 77.3 MB ]
+   Downloading [ 36% of 77.3 MB ]
+   Downloading [ 38% of 77.3 MB ]
+   Downloading [ 39% of 77.3 MB ]
+   Downloading [ 40% of 77.3 MB ]
+   Downloading [ 41% of 77.3 MB ]
+   Downloading [ 42% of 77.3 MB ]
+   Downloading [ 43% of 77.3 MB ]
+   Downloading [ 45% of 77.3 MB ]
+   Downloading [ 46% of 77.3 MB ]
+   Downloading [ 47% of 77.3 MB ]
+   Downloading [ 48% of 77.3 MB ]
+   Downloading [ 49% of 77.3 MB ]
+   Downloading [ 50% of 77.3 MB ]
+   Downloading [ 51% of 77.3 MB ]
+   Downloading [ 53% of 77.3 MB ]
+   Downloading [ 54% of 77.3 MB ]
+   Downloading [ 55% of 77.3 MB ]
+   Downloading [ 56% of 77.3 MB ]
+   Downloading [ 57% of 77.3 MB ]
+   Downloading [ 58% of 77.3 MB ]
+   Downloading [ 59% of 77.3 MB ]
+   Downloading [ 61% of 77.3 MB ]
+   Downloading [ 62% of 77.3 MB ]
+   Downloading [ 63% of 77.3 MB ]
+   Downloading [ 64% of 77.3 MB ]
+   Downloading [ 65% of 77.3 MB ]
+   Downloading [ 66% of 77.3 MB ]
+   Downloading [ 67% of 77.3 MB ]
+   Downloading [ 69% of 77.3 MB ]
+   Downloading [ 70% of 77.3 MB ]
+   Downloading [ 71% of 77.3 MB ]
+   Downloading [ 71% of 77.3 MB ]
+   Downloading [ 73% of 77.3 MB ]
+   Downloading [ 74% of 77.3 MB ]
+   Downloading [ 75% of 77.3 MB ]
+   Downloading [ 76% of 77.3 MB ]
+   Downloading [ 77% of 77.3 MB ]
+   Downloading [ 78% of 77.3 MB ]
+   Downloading [ 79% of 77.3 MB ]
+   Downloading [ 80% of 77.3 MB ]
+   Downloading [ 81% of 77.3 MB ]
+   Downloading [ 82% of 77.3 MB ]
+   Downloading [ 84% of 77.3 MB ]
+   Downloading [ 85% of 77.3 MB ]
+   Downloading [ 86% of 77.3 MB ]
+   Downloading [ 87% of 77.3 MB ]
+   Downloading [ 88% of 77.3 MB ]
+   Downloading [ 89% of 77.3 MB ]
+   Downloading [ 90% of 77.3 MB ]
+   Downloading [ 92% of 77.3 MB ]
+   Downloading [ 93% of 77.3 MB ]
+   Downloading [ 94% of 77.3 MB ]
+   Downloading [ 95% of 77.3 MB ]
+   Downloading [ 96% of 77.3 MB ]
+   Downloading [ 98% of 77.3 MB ]
+   Downloading [ 99% of 77.3 MB ]
+   Downloading [ 100% of 77.3 MB ]
+   Downloaded!
+   Extracting...
+   Mounting...
+   Mounted!
+Processing addon 320: Star Wars Rakghoul Infection SWEP (617610563)...
+   Addon needs downloading...
+   Downloading [ 9% of 1.5 MB ]
+   Downloading [ 68% of 1.5 MB ]
+   Downloaded!
+   Extracting...
+   Mounting...
+   Mounted!
+Processing addon 319: Imperial Navy from Star Wars: Empire at War (638038270)...
+   Addon needs downloading...
+   Downloading [ 8% of 5.0 MB ]
+   Downloading [ 20% of 5.0 MB ]
+   Downloading [ 40% of 5.0 MB ]
+   Downloading [ 44% of 5.0 MB ]
+   Downloading [ 64% of 5.0 MB ]
+   Downloading [ 83% of 5.0 MB ]
+   Downloaded!
+   Extracting...
+   Mounting...
+   Mounted!
+Processing addon 318: HBOMBS Base Pack (668552230)...
+   Addon needs downloading...
+   Downloading [ 0% of 83.5 MB ]
+   Downloading [ 1% of 83.5 MB ]
+   Downloading [ 2% of 83.5 MB ]
+   Downloading [ 3% of 83.5 MB ]
+   Downloading [ 4% of 83.5 MB ]
+   Downloading [ 5% of 83.5 MB ]
+   Downloading [ 7% of 83.5 MB ]
+   Downloading [ 7% of 83.5 MB ]
+   Downloading [ 8% of 83.5 MB ]
+   Downloading [ 9% of 83.5 MB ]
+   Downloading [ 10% of 83.5 MB ]
+   Downloading [ 11% of 83.5 MB ]
+   Downloading [ 12% of 83.5 MB ]
+   Downloading [ 13% of 83.5 MB ]
+   Downloading [ 14% of 83.5 MB ]
+   Downloading [ 15% of 83.5 MB ]
+   Downloading [ 16% of 83.5 MB ]
+   Downloading [ 17% of 83.5 MB ]
+   Downloading [ 18% of 83.5 MB ]
+   Downloading [ 19% of 83.5 MB ]
+   Downloading [ 20% of 83.5 MB ]
+   Downloading [ 22% of 83.5 MB ]
+   Downloading [ 22% of 83.5 MB ]
+   Downloading [ 23% of 83.5 MB ]
+   Downloading [ 25% of 83.5 MB ]
+   Downloading [ 26% of 83.5 MB ]
+   Downloading [ 27% of 83.5 MB ]
+   Downloading [ 28% of 83.5 MB ]
+   Downloading [ 29% of 83.5 MB ]
+   Downloading [ 30% of 83.5 MB ]
+   Downloading [ 31% of 83.5 MB ]
+   Downloading [ 32% of 83.5 MB ]
+   Downloading [ 33% of 83.5 MB ]
+   Downloading [ 34% of 83.5 MB ]
+   Downloading [ 35% of 83.5 MB ]
+   Downloading [ 36% of 83.5 MB ]
+   Downloading [ 37% of 83.5 MB ]
+   Downloading [ 38% of 83.5 MB ]
+   Downloading [ 38% of 83.5 MB ]
+   Downloading [ 39% of 83.5 MB ]
+   Downloading [ 40% of 83.5 MB ]
+   Downloading [ 41% of 83.5 MB ]
+   Downloading [ 43% of 83.5 MB ]
+   Downloading [ 44% of 83.5 MB ]
+   Downloading [ 45% of 83.5 MB ]
+   Downloading [ 46% of 83.5 MB ]
+   Downloading [ 47% of 83.5 MB ]
+   Downloading [ 48% of 83.5 MB ]
+   Downloading [ 49% of 83.5 MB ]
+   Downloading [ 50% of 83.5 MB ]
+   Downloading [ 51% of 83.5 MB ]
+   Downloading [ 52% of 83.5 MB ]
+   Downloading [ 53% of 83.5 MB ]
+   Downloading [ 54% of 83.5 MB ]
+   Downloading [ 55% of 83.5 MB ]
+   Downloading [ 56% of 83.5 MB ]
+   Downloading [ 57% of 83.5 MB ]
+   Downloading [ 58% of 83.5 MB ]
+   Downloading [ 59% of 83.5 MB ]
+   Downloading [ 59% of 83.5 MB ]
+   Downloading [ 60% of 83.5 MB ]
+   Downloading [ 61% of 83.5 MB ]
+   Downloading [ 62% of 83.5 MB ]
+   Downloading [ 63% of 83.5 MB ]
+   Downloading [ 64% of 83.5 MB ]
+   Downloading [ 65% of 83.5 MB ]
+   Downloading [ 67% of 83.5 MB ]
+   Downloading [ 68% of 83.5 MB ]
+   Downloading [ 69% of 83.5 MB ]
+   Downloading [ 70% of 83.5 MB ]
+   Downloading [ 70% of 83.5 MB ]
+   Downloading [ 71% of 83.5 MB ]
+   Downloading [ 72% of 83.5 MB ]
+   Downloading [ 74% of 83.5 MB ]
+   Downloading [ 75% of 83.5 MB ]
+   Downloading [ 75% of 83.5 MB ]
+   Downloading [ 76% of 83.5 MB ]
+   Downloading [ 77% of 83.5 MB ]
+   Downloading [ 78% of 83.5 MB ]
+   Downloading [ 79% of 83.5 MB ]
+   Downloading [ 80% of 83.5 MB ]
+   Downloading [ 81% of 83.5 MB ]
+   Downloading [ 83% of 83.5 MB ]
+   Downloading [ 84% of 83.5 MB ]
+   Downloading [ 85% of 83.5 MB ]
+   Downloading [ 86% of 83.5 MB ]
+   Downloading [ 87% of 83.5 MB ]
+   Downloading [ 88% of 83.5 MB ]
+   Downloading [ 89% of 83.5 MB ]
+   Downloading [ 90% of 83.5 MB ]
+   Downloading [ 91% of 83.5 MB ]
+   Downloading [ 92% of 83.5 MB ]
+   Downloading [ 93% of 83.5 MB ]
+   Downloading [ 94% of 83.5 MB ]
+   Downloading [ 95% of 83.5 MB ]

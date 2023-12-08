@@ -1,0 +1,107 @@
+[00:30:59] New map: rp_vardos_bananakin_revamped
+[00:31:38] Client "Donald Trumps right testicle" connected.
+[00:32:29] Client "Donald Trumps right testicle" spawned in server <STEAM_0:1:76110013> (took 51 seconds).
+[00:34:15] Donald Trumps right testicle: !bwhitelist
+[00:35:05] Dropped "Donald Trumps right testicle" from server<STEAM_0:1:76110013>
+[01:09:46] Client "Dishwasher" connected.
+[01:11:24] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 98 seconds).
+[01:11:24] Client "Donald Trumps right testicle" connected.
+[01:12:46] Client "Donald Trumps right testicle" spawned in server <STEAM_0:1:76110013> (took 82 seconds).
+[01:12:56] Dishwasher: !gas
+[01:12:59] Dishwasher: !menu
+
+
+
+[01:16:01] New map: rp_vardos_bananakin_revamped
+[01:16:08] Client "Dishwasher" connected.
+[01:16:33] Client "Donald Trumps right testicle" connected.
+[01:17:03] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 55 seconds).
+[01:17:21] Client "Donald Trumps right testicle" spawned in server <STEAM_0:1:76110013> (took 48 seconds).
+[01:18:34] Dropped "Donald Trumps right testicle" from server<STEAM_0:1:76110013>
+[01:18:42] Client "Donald Trumps right testicle" connected.
+[01:19:34] Client "Donald Trumps right testicle" spawned in server <STEAM_0:1:76110013> (took 52 seconds).
+[01:20:46] Donald Trumps right testicle: !noclip
+[01:21:17] Donald Trumps right testicle: !noclip
+[01:21:23] Dishwasher: !noclip
+[01:21:39] Dishwasher: !noclip
+[01:21:44] Donald Trumps right testicle: !admin
+[01:21:49] Donald Trumps right testicle: !adminmode
+[01:21:51] Donald Trumps right testicle cloaked Themself by amount 0
+[01:21:51] Donald Trumps right testicle: !cloak
+[01:22:10] Donald Trumps right testicle uncloaked Themself
+[01:22:10] Donald Trumps right testicle: !uncloak
+[01:22:38] Dropped "Donald Trumps right testicle" from server<STEAM_0:1:76110013>
+[01:23:02] Dropped "Dishwasher" from server<STEAM_0:1:169781558>
+
+
+
+[16:02:00] New map: rp_vardos_bananakin_revamped
+
+
+
+[19:32:37] New map: rp_vardos_bananakin_revamped
+[19:32:56] Client "Dishwasher" connected.
+[19:33:51] Client "Kaiser" connected.
+[19:34:40] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 104 seconds).
+[19:35:14] Client "Kaiser" spawned in server <STEAM_0:1:76110013> (took 83 seconds).
+[19:35:42] Dishwasher: !menu
+[19:35:47] Kaiser: !menu
+[19:35:48] Dishwasher: !menu
+[19:37:03] Kaiser: !sam
+[19:37:11] Dishwasher: !menu
+[19:46:47] Dishwasher Has Reloaded the Map!
+[19:46:47] Dishwasher: !reload
+[19:46:47] Server is shutting down/changing levels.
+
+
+
+[19:47:03] New map: rp_vardos_bananakin_revamped
+[19:47:55] Client "Kaiser" spawned in server <STEAM_0:1:76110013> (took 60 seconds).
+[19:48:01] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 66 seconds).
+[19:50:21] Kaiser<STEAM_0:1:76110013> changed their name to Lucy is Bae
+[19:55:28] Lucy is Bae: !give
+[19:56:37] Dropped "Lucy is Bae" from server<STEAM_0:1:76110013>
+[19:56:48] Client "Lucy is Bae" connected.
+[19:57:39] Client "Lucy is Bae" spawned in server <STEAM_0:1:76110013> (took 51 seconds).
+[19:59:23] Dishwasher: !menu
+[20:40:10] Dishwasher Has Reloaded the Map!
+[20:40:10] Dishwasher: !reload
+[20:40:10] Server is shutting down/changing levels.
+
+
+
+[20:40:27] New map: rp_vardos_bananakin_revamped
+[20:41:16] Client "Lucy is Bae" spawned in server <STEAM_0:1:76110013> (took 57 seconds).
+[20:41:27] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 68 seconds).
+[20:46:43] Dropped "Dishwasher" from server<STEAM_0:1:169781558>
+[21:41:58] Dropped "Lucy is Bae" from server<STEAM_0:1:76110013>
+[21:42:15] Client "Lucy is Bae" connected.
+[21:43:12] Client "Lucy is Bae" spawned in server <STEAM_0:1:76110013> (took 57 seconds).
+
+
+
+[21:49:42] New map: rp_vardos_bananakin_revamped
+[21:49:48] Client "Lucy is Bae" connected.
+[21:50:39] Client "Dishwasher" connected.
+[21:51:05] Client "Lucy is Bae" spawned in server <STEAM_0:1:76110013> (took 77 seconds).
+[21:52:41] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 122 seconds).
+[21:53:22] Dishwasher: !menu
+[21:53:27] Dishwasher: !gas
+[21:55:04] Dishwasher: !menu
+[21:55:16] Dishwasher: !sam
+[21:55:23] Dishwasher Has Reloaded the Map!
+[21:55:23] Dishwasher: !reload
+[21:55:23] Server is shutting down/changing levels.
+
+
+
+[21:55:40] New map: rp_vardos_bananakin_revamped
+[21:56:34] Client "Lucy is Bae" spawned in server <STEAM_0:1:76110013> (took 62 seconds).
+[21:56:38] Client "Dishwasher" spawned in server <STEAM_0:1:169781558> (took 66 seconds).
+[21:57:05] Dishwasher: !gas
+[21:57:08] Lucy is Bae: !bwhitelist
+[21:57:50] Dishwasher: !bwhitelist
+[21:57:55] Dishwasher: !bwhitelist
+[21:58:00] Dishwasher: !gas
+[21:58:30] Dropped "Dishwasher" from server<STEAM_0:1:169781558>
+<Logging continued in "data/ulx_logs/12-04-23.txt">
