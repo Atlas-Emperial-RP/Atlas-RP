@@ -21,7 +21,7 @@ function meta:AnimationThinkInternal()
 	local systime = SysTime()
 
 	if ( self.Term and self.Term <= systime ) then self:Remove() return end
-	if ( self.m_AnimList == false ) then return end -- This can happen if we only have term
+	if ( self.m_AnimList == ( false or nil ) ) then return end -- This can happen if we only have term
 
 	for k, anim in pairs( self.m_AnimList ) do
 
