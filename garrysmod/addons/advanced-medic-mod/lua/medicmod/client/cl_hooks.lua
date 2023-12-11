@@ -31,12 +31,14 @@ local notifIcon = Material("materials/heart_attack_icon.png")
   
 local deathPanel = nil
  
-hook.Add("HUDPaint", "HUDPaint.MedicMod", function() 
+hook.Add("HUDPaint", "HUDPaint.MedicMod", function()
    
     if ConfigurationMedicMod.MedicTeams and table.HasValue(ConfigurationMedicMod.MedicTeams, LocalPlayer():Team()) then
         for k, v in pairs(ents.FindByClass("prop_ragdoll")) do
            
+
             if not v:IsDeathRagdoll() then return end        
+
            
             local pos = ( v:GetPos() + Vector(0,0,10) ):ToScreen()
             local dist = v:GetPos():Distance(LocalPlayer():GetPos())
@@ -47,9 +49,9 @@ hook.Add("HUDPaint", "HUDPaint.MedicMod", function()
            
             draw.SimpleTextOutlined( math.floor(math.sqrt(dist/3)).."m", "MedicModFont30", pos.x, pos.y + 50, Color( 255, 255, 255, 255 ), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color( 0, 0, 0, 255 ) )
 
-            end
+            
         end
-    end)
+    end
     
     local shouldDrawDeathPanel = hook.Run("HUDShouldDraw", "MedicMod_DeathPanel")
 
@@ -143,4 +145,5 @@ hook.Add("HUDPaint", "HUDPaint.MedicMod", function()
         draw.SimpleTextOutlined( ConfigurationMedicMod.Sentences["Fracture"][ConfigurationMedicMod.Language], "MedicModFont30", ScrW() - 240, ScrH() - 140 - 50 * nbStat, Color( 255, 255, 255, 255 ), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP, 1, Color( 0, 0, 0, 255 ) )
         nbStat = nbStat + 1
     end
+ 
 end)
