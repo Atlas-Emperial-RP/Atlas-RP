@@ -10,7 +10,6 @@ local function AddRecursive( pnl, folder, path, wildcard )
 
 		if ( not string.EndsWith( v, ".mdl" ) ) then return end
 
-		end
 	end
 
 	for k, v in ipairs( folders ) do

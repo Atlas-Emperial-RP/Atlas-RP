@@ -178,7 +178,7 @@ function PANEL:FillPanel()
                     end
                 
                     itemPanel.itemButton = itemButton
-                end
+                
             end
         end
     end
@@ -481,9 +481,8 @@ function PANEL:FillPanel()
             weaponButton:SetText( "" )
             weaponButton.Paint = function() end
             weaponButton.DoClick = function( self2 )
-                self:GetParent():SetActivePage( 2 ):OpenWeaponPage( k )
-            end
-
+            self:GetParent():SetActivePage( 2 ):OpenWeaponPage( k )
+            
             weaponEntry.coverButton = weaponButton
         end
 

@@ -142,8 +142,6 @@ function PANEL:DropAction_Normal( Drops, bDoDrop, Command, x, y )
 			v:MoveToAfter( closest )
 		end
 
-	end
-
 	self:OnModified()
 
 end

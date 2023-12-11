@@ -203,17 +203,13 @@ function PANEL:DrawNotches( level, x, y, w, h, range, value, min, max )
 		if ( val <= min + 0.001 ) then return end
 		if ( val >= max - 0.001 ) then return end
 
-				surface.SetDrawColor( 0, 0, 0, alpha * dist )
-				surface.SetTextColor( 0, 0, 0, alpha * dist )
-
-				surface.DrawRect( nx, y + top, 2, nh )
-
-				local tw, th = surface.GetTextSize( val )
-
-				surface.SetTextPos( nx - ( tw * 0.5 ), y + top - th )
-				surface.DrawText( val )
-			end
-		end
+		surface.SetDrawColor( 0, 0, 0, alpha * dist )
+		surface.SetTextColor( 0, 0, 0, alpha * dist )
+		surface.DrawRect( nx, y + top, 2, nh )
+		local tw, th = surface.GetTextSize( val )
+		surface.SetTextPos( nx - ( tw * 0.5 ), y + top - th )
+		surface.DrawText( val )
+			
 	end
 
 	surface.SetDrawColor( 0, 0, 0, alpha )

@@ -258,13 +258,11 @@ function ENT:SetRagdoll( ragdoll )
 
 				iSkipped = iSkipped + 1
 
-				if ( iSkipped > iMaxSkip ) then
-
-					ragdoll:RagdollStopControlling()
-					return
-
-				end
+			if ( iSkipped > iMaxSkip ) then
+				ragdoll:RagdollStopControlling()
+				return
 			end
+			
 		end
 
 		--

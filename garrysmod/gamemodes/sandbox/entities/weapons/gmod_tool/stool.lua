@@ -218,8 +218,7 @@ search.AddProvider( function( str )
 
 			if ( #list >= GetConVarNumber( "sbox_search_maxresults" ) / 32 ) then break end
 		end
-	end
-
+	
 	return list
 
 end )

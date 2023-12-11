@@ -124,7 +124,6 @@ local function SandboxSettings( pnl )
 		local cvar = GetConVar( "sbox_max" .. str )
 		if ( not cvar ) then return end
 
-		end
 	end
 
 	pnl:AddControl( "ComboBox", { MenuButton = 1, Folder = "util_sandbox", Options = { [ "#preset.default" ] = ConVarsDefault }, CVars = table.GetKeys( ConVarsDefault ) } )

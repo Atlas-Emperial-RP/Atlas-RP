@@ -250,11 +250,11 @@ local SCORE_BOARD = {
 
 			self.Scores:AddItem( pl.ScoreEntry )
 
-				pl.ScoreEntry = vgui.CreateFromTable( PLAYER_LINE, pl.ScoreEntry )
-				pl.ScoreEntry:Setup( pl )
+			pl.ScoreEntry = vgui.CreateFromTable( PLAYER_LINE, pl.ScoreEntry )
+			pl.ScoreEntry:Setup( pl )
 			
-				self.Scores:AddItem( pl.ScoreEntry )
-			end
+			self.Scores:AddItem( pl.ScoreEntry )
+			
 		end
 
 	end

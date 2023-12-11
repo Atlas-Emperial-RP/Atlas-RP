@@ -166,7 +166,7 @@ function PANEL:SetActiveToolText( str )
 		for id, item in ipairs( category:GetChildren() ) do
 			if ( item == category.Header ) then return end
 
-			end
+
 		end
 
 	end

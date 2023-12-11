@@ -382,10 +382,10 @@ function IsMounted( name )
 
 		if ( not v.mounted ) then return end
 
-			if ( v.depot == name ) then return true end
-			if ( v.folder == name ) then return true end
+		if ( v.depot == name ) then return true end
+		if ( v.folder == name ) then return true end
 
-		end
+		
 	end
 
 	return false

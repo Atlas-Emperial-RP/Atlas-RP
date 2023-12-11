@@ -247,26 +247,24 @@ function PANEL:Init()
         end
 
         for key, val in ipairs( configMeta:GetSortedVariables() ) do
-            if( val.Type ~= PROJECT0.TYPE.Table ) then return end
-
-                local page = vgui.Create( "Panel", self.contents )
-                page:Dock( FILL )
-                page:SetVisible( false )
-                page:SetAlpha( 0 )
-                
-                local customElement  = vgui.Create( val.VguiElement, page )
-                customElement:Dock( FILL )
-                customElement:SetSize( self.contents:GetSize() )
-                if( customElement.FillPanel ) then customElement:FillPanel() end
-                if( customElement.Refresh ) then 
-                    page.Refresh = function()
-                        customElement:Refresh()
-                    end
-                end
-
-                pageCategory:AddPage( page, val.Key, val.Name )
+        if( val.Type ~= PROJECT0.TYPE.Table ) then return end
+        local page = vgui.Create( "Panel", self.contents )
+        page:Dock( FILL )
+        page:SetVisible( false )
+        page:SetAlpha( 0 )
+        
+        local customElement  = vgui.Create( val.VguiElement, page )
+        customElement:Dock( FILL )
+        customElement:SetSize( self.contents:GetSize() )
+        if( customElement.FillPanel ) then customElement:FillPanel() end
+        if( customElement.Refresh ) then 
+            page.Refresh = function()
+                customElement:Refresh()
             end
         end
+        pageCategory:AddPage( page, val.Key, val.Name )
+         
+       
     end
 
     hook.Add( "Project0.Hooks.ConfigUpdated", "Project0.Hooks.ConfigUpdated.ConfigPage", function() self:Refresh() end )
@@ -417,9 +415,8 @@ function PANEL:OpenPageByID( id, variableKey )
     for k, v in ipairs( self.pages ) do
         if( v.ConfigID ~= id or (variableKey and v.VariableKey ~= variableKey) ) then return end
 
-            self:SetActivePage( k )
-            do return v end
-        end
+        self:SetActivePage( k )
+        return v 
     end
 end
 

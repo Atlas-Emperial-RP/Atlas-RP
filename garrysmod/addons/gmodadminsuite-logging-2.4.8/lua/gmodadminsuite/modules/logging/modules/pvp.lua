@@ -171,17 +171,15 @@ PVP_COMBAT_MODULE:Setup(function()
 			for _,event in ipairs(GAS.Logging.PvP.PlayerEvents[victim_id]) do
 				if (event == self) then return end
 
-					event.Properties[GAS.Logging.PvP_LINKED_EVENTS][self.Properties[GAS.Logging.PvP_EVENT_ID]] = true
-					self.Properties[GAS.Logging.PvP_LINKED_EVENTS][event.Properties[GAS.Logging.PvP_EVENT_ID]] = true
-
-					event.Properties[GAS.Logging.PvP_FLAGS][GAS.Logging.PvP_FLAG_LINKED] = true
-					self.Properties[GAS.Logging.PvP_FLAGS][GAS.Logging.PvP_FLAG_LINKED] = true
-				end
+				event.Properties[GAS.Logging.PvP_LINKED_EVENTS][self.Properties[GAS.Logging.PvP_EVENT_ID]] = true
+				self.Properties[GAS.Logging.PvP_LINKED_EVENTS][event.Properties[GAS.Logging.PvP_EVENT_ID]] = true
+				event.Properties[GAS.Logging.PvP_FLAGS][GAS.Logging.PvP_FLAG_LINKED] = true
+				self.Properties[GAS.Logging.PvP_FLAGS][GAS.Logging.PvP_FLAG_LINKED] = true
 			end
 		end
 
 		PVP_COMBAT_MODULE:LogPhrase("pvp_combat_begin", GAS.Logging:FormatPlayer(instigator), GAS.Logging:FormatPlayer(victim))
-	end
+
 	function GAS.Logging.PvP.PVP_EVENT:AddLog(logtbl)
 		self.Properties[GAS.Logging.PvP_EVENT_LOGS][#self.Properties[GAS.Logging.PvP_EVENT_LOGS] + 1] = logtbl
 		self.Properties[GAS.Logging.PvP_EVENT_LOGS_CHRONOLOGY][#self.Properties[GAS.Logging.PvP_EVENT_LOGS]] = SysTime() - self.Properties[GAS.Logging.PvP_PRECISE_CREATION_TIME]

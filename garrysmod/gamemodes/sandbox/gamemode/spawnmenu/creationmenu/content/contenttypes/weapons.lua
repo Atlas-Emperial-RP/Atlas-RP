@@ -13,10 +13,10 @@ hook.Add( "PopulateWeapons", "AddWeaponContent", function( pnlContent, tree, nod
 		local Category = weapon.Category or "Other2"
 		if ( not isstring( Category ) ) then Category = tostring( Category ) end
 
-			Categorised[ Category ] = Categorised[ Category ] or {}
-			table.insert( Categorised[ Category ], weapon )
+		Categorised[ Category ] = Categorised[ Category ] or {}
+		table.insert( Categorised[ Category ], weapon )
 
-		end
+
 	end
 
 	Weapons = nil

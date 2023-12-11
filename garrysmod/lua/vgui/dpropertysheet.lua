@@ -408,18 +408,16 @@ function PANEL:CloseTab( tab, bRemovePanelToo )
 
 		if ( v.Tab ~= tab ) then return end
 
-			table.remove( self.Items, k )
+		table.remove( self.Items, k )
 
-		end
 	end
 
 	for k, v in pairs( self.tabScroller.Panels ) do
 
 		if ( v ~= tab ) then return end
 
-			table.remove( self.tabScroller.Panels, k )
+		table.remove( self.tabScroller.Panels, k )
 
-		end
 	end
 
 	self.tabScroller:InvalidateLayout( true )

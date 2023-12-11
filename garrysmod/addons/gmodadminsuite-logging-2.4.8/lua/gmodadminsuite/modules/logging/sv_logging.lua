@@ -286,7 +286,6 @@ function GAS.Logging.ClassIDs:Init(callback)
 					GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name][row.class_type] = true
 				end
 			end
-		end
 		GAS.Logging.ClassIDs.NewClassID = max_id
 		GAS:print("[bLogs] " .. #rows .. " classes registered")
 		if (callback) then callback() end
@@ -641,7 +640,6 @@ GAS:hook("Tick", "logging:ExtraProcessingQueue", function()
 					end
 				end
 			end
-		end
 
 		local allow_livelog_send = false
 		if (GAS.Logging.Config.LiveLogsEnabled and not GAS.Logging.Modules:IsLiveLogsDisabled(module)) then
@@ -750,7 +748,6 @@ GAS:hook("Tick", "logging:ExtraProcessingQueue", function()
 		if (not GAS:table_IsEmpty(GAS.Logging.LogScanning.CurrentLogEntities)) then
 			GAS.Logging.LogScanning:CommitToRegistry(log_session_id)
 		end
-	end
 end)
 
 function GAS.Logging:CreateLog(module, custom_str, log_value, logtbl)

@@ -403,7 +403,7 @@ function PANEL:DoClick()
 		end
 
 		pvp_event_report:EnableUserResize()
-	end
+	
 end
 function PANEL:OnMousePressed(m)
 	self._pressed = m

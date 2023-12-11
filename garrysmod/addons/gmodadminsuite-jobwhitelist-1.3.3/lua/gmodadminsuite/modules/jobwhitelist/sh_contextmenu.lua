@@ -261,41 +261,37 @@ else
 
 		local data = {}
 		for category_index, category in pairs(DarkRP.getCategories().jobs) do
-			if (#category.members == 0) then return end
-			for _,job in ipairs(category.members) do
-				local job_index = job.team
-				if (job_index == (GM or GAMEMODE).DefaultTeam) then return end
-				if (not GAS.JobWhitelist:IsWhitelistEnabled(job_index)) then return end
-
-							local is_whitelisted = false
-							if (GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()]) then
-								if (GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()][job_index]) then
-									is_whitelisted = true
-								end
-							end
-							if (not is_operator) then
-								local job_id = OpenPermissions:GetTeamIdentifier(job_index)
-								if (not OpenPermissions:HasPermission(ply, {"gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/add_to/steamids", "gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/remove_from/steamids"})) then
-									break
-								end
-							end
-
-							data[category_index] = data[category_index] or {}
-							data[category_index][job_index] = is_whitelisted
+		if (#category.members == 0) then return end
+		for _,job in ipairs(category.members) do
+			local job_index = job.team
+			if (job_index == (GM or GAMEMODE).DefaultTeam) then return end
+			if (not GAS.JobWhitelist:IsWhitelistEnabled(job_index)) then return end
+					local is_whitelisted = false
+					if (GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()]) then
+						if (GAS.JobWhitelist.Whitelists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()][job_index]) then
+							is_whitelisted = true
 						end
 					end
-				end
-				if (not is_operator) then
-					local job_id = OpenPermissions:GetTeamIdentifier(job_index)
-					if (not OpenPermissions:HasPermission(ply, {"gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/add_to/steamids", "gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/remove_from/steamids"})) then
-						return
+					if (not is_operator) then
+						local job_id = OpenPermissions:GetTeamIdentifier(job_index)
+						if (not OpenPermissions:HasPermission(ply, {"gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/add_to/steamids", "gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/remove_from/steamids"})) then
+							break
+						end
 					end
+					data[category_index] = data[category_index] or {}
+					data[category_index][job_index] = is_whitelisted
 				end
-
-				data[category_index] = data[category_index] or {}
-				data[category_index][job_index] = is_whitelisted
 			end
-		end
+			
+			if (not is_operator) then
+				local job_id = OpenPermissions:GetTeamIdentifier(job_index)
+				if (not OpenPermissions:HasPermission(ply, {"gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/add_to/steamids", "gmodadminsuite_jobwhitelist/" .. job_id .. "/whitelist/remove_from/steamids"})) then
+					return
+				end
+			end
+			data[category_index] = data[category_index] or {}
+			data[category_index][job_index] = is_whitelisted
+
 
 		GAS:netStart("jobwhitelist:contextmenu:add_to_whitelist")
 			net.WriteUInt(transaction_id, 16)
@@ -310,8 +306,7 @@ else
 				end
 			end
 		net.Send(ply)
-	end)
-
+		
 	GAS:netInit("jobwhitelist:contextmenu:add_to_blacklist")
 	GAS:ReceiveNetworkTransaction("jobwhitelist:contextmenu:add_to_blacklist", function(transaction_id, ply)
 		local target_ply = net.ReadEntity()
@@ -327,24 +322,24 @@ else
 				if (job_index == (GM or GAMEMODE).DefaultTeam) then return end
 				if (not GAS.JobWhitelist:IsBlacklistEnabled(job_index)) then return end
 
-							local is_blacklisted = false
-							if (GAS.JobWhitelist.Blacklists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()]) then
-								if (GAS.JobWhitelist.Blacklists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()][job_index]) then
-									is_blacklisted = true
-								end
+						local is_blacklisted = false
+						if (GAS.JobWhitelist.Blacklists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()]) then
+							if (GAS.JobWhitelist.Blacklists[GAS.JobWhitelist.LIST_TYPE_STEAMID][target_ply:AccountID()][job_index]) then
+								is_blacklisted = true
 							end
-							if (not is_operator) then
-								local job_id = OpenPermissions:GetTeamIdentifier(job_index)
-								if (not OpenPermissions:HasPermission(ply, {"gmodadminsuite_jobwhitelist/" .. job_id .. "/blacklist/add_to/steamids", "gmodadminsuite_jobwhitelist/" .. job_id .. "/blacklist/remove_from/steamids"})) then
-									return
-								end
-							end
-						
-							data[category_index] = data[category_index] or {}
-							data[category_index][job_index] = is_blacklisted
 						end
+						if (not is_operator) then
+							local job_id = OpenPermissions:GetTeamIdentifier(job_index)
+							if (not OpenPermissions:HasPermission(ply, {"gmodadminsuite_jobwhitelist/" .. job_id .. "/blacklist/add_to/steamids", "gmodadminsuite_jobwhitelist/" .. job_id .. "/blacklist/remove_from/steamids"})) then
+								return
+							end
+						end
+					
+						data[category_index] = data[category_index] or {}
+						data[category_index][job_index] = is_blacklisted
 					end
 				end
+				
 				if (not is_operator) then
 					local job_id = OpenPermissions:GetTeamIdentifier(job_index)
 					if (not OpenPermissions:HasPermission(ply, {"gmodadminsuite_jobwhitelist/" .. job_id .. "/blacklist/add_to/steamids", "gmodadminsuite_jobwhitelist/" .. job_id .. "/blacklist/remove_from/steamids"})) then
@@ -354,13 +349,13 @@ else
 
 				data[category_index] = data[category_index] or {}
 				data[category_index][job_index] = is_blacklisted
-			end
-		end
 
-		GAS:netStart("jobwhitelist:contextmenu:add_to_blacklist")
-			net.WriteUInt(transaction_id, 16)
+		end,
 
-			net.WriteUInt(table.Count(data), 16)
+		GAS:netStart("jobwhitelist:contextmenu:add_to_blacklist"),
+			net.WriteUInt(transaction_id, 16),
+
+			net.WriteUInt(table.Count(data), 16))
 			for category_index, members in pairs(data) do
 				net.WriteUInt(category_index, 16)
 				net.WriteUInt(table.Count(members), 16)

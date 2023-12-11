@@ -182,17 +182,6 @@ function PANEL:OpenMenu( pControlOpener )
 				end
 			end
 		end
-	else
-		for k, v in pairs( self.Choices ) do
-			if( IsValid( self.textEntry ) and not string.find( string.lower( v ), string.lower( self.textEntry:GetValue() ) ) ) then return end
-
-				local option = self.Menu:AddOption( v, function() self:ChooseOption( v, k ) end )
-				if ( self.ChoiceIcons[ k ] ) then
-					option:SetIcon( self.ChoiceIcons[ k ] )
-				end
-			end
-		end
-	end
 
 	local x, y = self:LocalToScreen( 0, self:GetTall() )
 

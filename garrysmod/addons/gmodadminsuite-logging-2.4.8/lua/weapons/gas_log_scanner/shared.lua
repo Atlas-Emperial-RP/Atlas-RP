@@ -439,7 +439,7 @@ if (CLIENT) then
 				end
 			end
 		end
-	end
+
 
 	function SWEP:CreateModels(tab)
 		for k, v in pairs(tab) do
@@ -479,4 +479,3 @@ if (CLIENT) then
 			end
 		end
 	end
-end

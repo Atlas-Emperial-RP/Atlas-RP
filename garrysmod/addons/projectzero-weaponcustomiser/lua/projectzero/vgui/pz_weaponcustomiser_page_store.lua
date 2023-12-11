@@ -411,7 +411,7 @@ function PANEL:Refresh()
 
                 categoryPanel.slotCount = (categoryPanel.slotCount or 0)+1
                 categoryPanel:SetExtraHeight( math.ceil(categoryPanel.slotCount/slotsWide)*((self.slotSize*1.2)+spacing) )
-            end
+            
         end
     end
 end

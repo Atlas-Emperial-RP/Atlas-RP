@@ -39,7 +39,6 @@ function gmsave.PhysicsSaveList( ents )
 
 		if ( not IsValid( v ) ) then return end
 
-		end
 	end
 
 	return tabPhys
@@ -59,19 +58,16 @@ function gmsave.PhysicsLoad( t, ent )
 		local obj = ent:GetPhysicsObjectNum( k )
 		if ( not IsValid( obj ) ) then return end
 
-				obj:SetPos( Vector( tab.origin ) )
-				obj:SetAngles( Angle( tab.angles ) )
-				obj:SetMass( tab.mass )
-				obj:SetMaterial( tab.material )
+		obj:SetPos( Vector( tab.origin ) )
+		obj:SetAngles( Angle( tab.angles ) )
+		obj:SetMass( tab.mass )
+		obj:SetMaterial( tab.material )
 
-				if ( tab.frozen ) then obj:EnableMotion( false ) end
-				if ( tab.nocollide ) then obj:EnableCollisions( false ) end
-				if ( tab.nogravity ) then obj:EnableGravity( false ) end
-				if ( tab.nodrag ) then obj:EnableDrag( false ) end
+		if ( tab.frozen ) then obj:EnableMotion( false ) end
+		if ( tab.nocollide ) then obj:EnableCollisions( false ) end
+		if ( tab.nogravity ) then obj:EnableGravity( false ) end
+		if ( tab.nodrag ) then obj:EnableDrag( false ) end
 
-			end
-		end
-	end
 
 end
 

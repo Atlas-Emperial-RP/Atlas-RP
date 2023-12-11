@@ -108,7 +108,6 @@ net.Receive("EdgeHUD:RequestDoorOffsets", function( _, ply )
 		-- Add the offsets to the data that we should send.
 		toSend[v] = EdgeHUD.DoorOffsets[v:MapCreationID()]
 
-		end
 	end
 
 	-- Check if we have anything to send.

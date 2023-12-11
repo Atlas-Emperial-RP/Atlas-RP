@@ -98,10 +98,6 @@ local function updateViewmodelWeapon( viewmodel, weapon, weaponClass, isDelayed 
     
                 return
             end
-
-                else
-                    viewmodel:SetSubMaterial( v )
-                end
             end
         end
     end
@@ -112,18 +108,16 @@ local function updateViewmodelWeapon( viewmodel, weapon, weaponClass, isDelayed 
     local playerMeta = LocalPlayer():Project0()
     
     local equippedSkin = playerMeta:GetEquippedCosmetic( "Skin", weaponClass )
-    if( equippedSkin ~= 0 ) then
-        local skinMat = PROJECT0.DEVCONFIG.WeaponSkins[equippedSkin].Material
-        for k, v in ipairs( weaponCfg.Skin.ViewModelMats ) do
-            if( isstring( v ) ) then
-                if( not (weapon.Customization or {})[v] or not IsValid( weapon.Customization[v].m_Model ) ) then return end
+if( equippedSkin ~= 0 ) then
+    local skinMat = PROJECT0.DEVCONFIG.WeaponSkins[equippedSkin].Material
+    for k, v in ipairs( weaponCfg.Skin.ViewModelMats ) do
+        if( isstring( v ) ) then
+            if( not (weapon.Customization or {})[v] or not IsValid( weapon.Customization[v].m_Model ) ) then return end
 
-                end
-    
-                return
-            end
+            return
         end
     end
+    
 end
 
 hook.Add( "Project0.Hooks.CustomisedWeaponsUpdated", "Project0.Project0.Hooks.CustomisedWeaponsUpdated.ClientUpdate", function()

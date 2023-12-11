@@ -301,7 +301,6 @@ function PANEL:SetWeaponClass( weaponClass )
                     local configTable = PROJECT0.CONFIG.CUSTOMISER.Stickers[itemKey]
                     if( not configTable ) then return end
             
-                    end
                 end
 
                 return items
@@ -439,6 +438,6 @@ function PANEL:SetWeaponClass( weaponClass )
     end )
 
     self:UpdateModel()
-end
+
 
 vgui.Register( "pz_weaponcustomiser_page_armory_view", PANEL, "Panel" )

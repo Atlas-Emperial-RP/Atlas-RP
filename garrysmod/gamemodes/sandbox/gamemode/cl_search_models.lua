@@ -74,16 +74,15 @@ search.AddProvider( function( str )
 
 			if ( IsUselessModel( v ) ) then return end
 
-				local entry = {
-					text = v:GetFileFromFilename(),
-					func = function() RunConsoleCommand( "gm_spawn", v ) end,
-					icon = spawnmenu.CreateContentIcon( "model", g_SpawnMenu.SearchPropPanel, { model = v } ),
-					words = { v }
-				}
-
-				table.insert( models, entry )
-				if ( #models >= sbox_search_maxresults:GetInt() / 2 ) then break end
-			end
+			local entry = {
+				text = v:GetFileFromFilename(),
+				func = function() RunConsoleCommand( "gm_spawn", v ) end,
+				icon = spawnmenu.CreateContentIcon( "model", g_SpawnMenu.SearchPropPanel, { model = v } ),
+				words = { v }
+			}
+			table.insert( models, entry )
+			if ( #models >= sbox_search_maxresults:GetInt() / 2 ) then break end
+			
 		end
 	end
 
@@ -116,11 +115,11 @@ local function AddSearchProvider( listname, ctype, stype )
 		for k, v in pairs( list.Get( listname ) ) do
 			if ( listname == "Weapon" and not v.Spawnable ) then return end
 
-				v.ClassName = k
-				v.PrintName = v.PrintName or v.Name
-				v.ScriptedEntityType = ctype
-				table.insert( entities, v )
-			end
+			v.ClassName = k
+			v.PrintName = v.PrintName or v.Name
+			v.ScriptedEntityType = ctype
+			table.insert( entities, v )
+
 		end
 
 		for k, v in ipairs( entities ) do
@@ -131,24 +130,24 @@ local function AddSearchProvider( listname, ctype, stype )
 
 			if ( ( isstring( name ) and name:lower():find( str, nil, true ) ) or ( isstring( name_c ) and name_c:lower():find( str, nil, true ) ) ) then
 
-					local entry = {
-						text = v.PrintName or v.ClassName,
-						icon = spawnmenu.CreateContentIcon( v.ScriptedEntityType or "entity", nil, {
-							nicename = v.PrintName or v.ClassName,
-							spawnname = v.ClassName,
-							material = "entities/" .. v.ClassName .. ".png",
+				local entry = {
+					text = v.PrintName or v.ClassName,
+					icon = spawnmenu.CreateContentIcon( v.ScriptedEntityType or "entity", nil, {
+						nicename = v.PrintName or v.ClassName,
+						spawnname = v.ClassName,
+						material = "entities/" .. v.ClassName .. ".png",
 
-							admin = v.AdminOnly
-						} ),
-						words = { v }
-					}
+						admin = v.AdminOnly
+					} ),
+					words = { v }
+				}
 
-					table.insert( results, entry )
+				table.insert( results, entry )
 
-				end
-
-				if ( #results >= sbox_search_maxresults:GetInt() / 4 ) then break end
 			end
+
+			if ( #results >= sbox_search_maxresults:GetInt() / 4 ) then break end
+			
 		end
 
 		table.SortByMember( results, "text", true )

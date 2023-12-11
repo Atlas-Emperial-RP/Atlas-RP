@@ -106,7 +106,7 @@ function PermaProps.PPEntityFromTable( data, id )
 
 	local ent = ents.Create(data.Class)
 	if not ent then return false end
-	if not ent:IsVehicle() then if not ent:IsValid() then return false end end
+	if not ent:IsVehicle() then if not ent:IsValid() then return false end 
 	ent:SetPos( data.Pos or Vector(0, 0, 0) )
 	ent:SetAngles( data.Angle or Angle(0, 0, 0) )
 	ent:SetModel( data.Model or "models/error.mdl" )
@@ -175,7 +175,7 @@ function PermaProps.PPEntityFromTable( data, id )
 			if type(k) ~= "number" or type(v) ~= "string" then return end
 
 			ent:SetSubMaterial( k-1, v )
-			end
+			
 		end
 
 	end

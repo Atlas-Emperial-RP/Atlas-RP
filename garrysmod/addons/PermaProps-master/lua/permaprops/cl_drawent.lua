@@ -40,9 +40,6 @@ local function PermaPropsViewer()
 	        v:DrawModel()
 	    render.SetStencilEnable(false)
 		
-		else
-			LocalPlayer().DrawPPEnt[k] = nil
-		end
 	end
 
 end

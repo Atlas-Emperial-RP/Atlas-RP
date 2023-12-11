@@ -498,8 +498,6 @@ function meta:InstallDataTable()
 
 		end
 
-	end
-
 end
 
 if ( SERVER ) then

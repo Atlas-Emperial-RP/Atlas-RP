@@ -144,30 +144,22 @@ function AddPropsOfParent( pnlContent, node, parentid, customProps )
 
 		if ( parentid ~= Info.parentid ) then return end
 
-			local pnlnode = AddCustomizableNode( pnlContent, Info.name, Info.icon, node, Info.needsapp )
-			pnlnode:SetExpanded( true )
-			pnlnode.OnRemove = function( self ) if ( IsValid( self.PropPanel ) ) then self.PropPanel:Remove() end end
-			pnlnode.DoPopulate = function( self )
-
-				if ( IsValid( self.PropPanel ) ) then return end
-
-				self.PropPanel = vgui.Create( "ContentContainer", pnlContent )
-				self.PropPanel:SetVisible( false )
-				self.PropPanel:SetTriggerSpawnlistChange( true )
-				if ( node.AddonSpawnlist ) then self.PropPanel.IconList:SetReadOnly( true ) end
-
-				for i, object in SortedPairs( Info.contents ) do
-
-					local cp = spawnmenu.GetContentType( object.type )
-					if ( cp ) then cp( self.PropPanel, object ) end
-
-				end
-
+		local pnlnode = AddCustomizableNode( pnlContent, Info.name, Info.icon, node, Info.needsapp )
+		pnlnode:SetExpanded( true )
+		pnlnode.OnRemove = function( self ) if ( IsValid( self.PropPanel ) ) then self.PropPanel:Remove() end end
+		pnlnode.DoPopulate = function( self )
+			if ( IsValid( self.PropPanel ) ) then return end
+			self.PropPanel = vgui.Create( "ContentContainer", pnlContent )
+			self.PropPanel:SetVisible( false )
+			self.PropPanel:SetTriggerSpawnlistChange( true )
+			if ( node.AddonSpawnlist ) then self.PropPanel.IconList:SetReadOnly( true ) end
+			for i, object in SortedPairs( Info.contents ) do
+				local cp = spawnmenu.GetContentType( object.type )
+				if ( cp ) then cp( self.PropPanel, object ) end
 			end
-
-			AddPropsOfParent( pnlContent, pnlnode, Info.id, customProps )
-
 		end
+		AddPropsOfParent( pnlContent, pnlnode, Info.id, customProps )
+
 	end
 
 end

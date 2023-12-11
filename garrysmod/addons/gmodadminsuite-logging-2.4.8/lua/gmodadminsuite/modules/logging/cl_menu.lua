@@ -2921,7 +2921,7 @@ GAS:hook("gmodadminsuite:ModuleFrame:logging", "logging:menu", function(ModuleFr
 								LoadLogs()
 							end, module_data.Colour)
 						end
-					end
+					end)
 				end
 			end
 		end

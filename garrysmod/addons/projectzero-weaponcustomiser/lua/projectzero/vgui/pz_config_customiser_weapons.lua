@@ -403,7 +403,6 @@ function PANEL:Refresh()
             PROJECT0.FUNC.RequestConfigChange( "CUSTOMISER", "Weapons", values )
             self:Refresh()
         end )
-    end
 
     customCategoryPanel:SetExtraHeight( customCategoryPanel:GetExtraHeight()+addNewButton:GetTall()+PROJECT0.UI.Margin5 )
 end

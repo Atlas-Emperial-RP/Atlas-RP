@@ -139,9 +139,8 @@ function PANEL:Refresh()
                     local configTable = PROJECT0.CONFIG.CUSTOMISER.Charms[itemKey]
                     if( not configTable ) then return end
 
-                            table.insert( items, { configTable.Rarity, itemKey, configTable.Name } )
-                        end
-                    end
+                    table.insert( items, { configTable.Rarity, itemKey, configTable.Name } )
+    
                 end
 
                 return items

@@ -997,7 +997,7 @@ GAS:hook("gmodadminsuite:ModuleFrame:jobwhitelist", "jobwhitelist:menu", functio
 								end
 							end)
 						end
-					end
+					end)
 				end
 			end
 		end

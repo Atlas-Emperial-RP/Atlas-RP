@@ -438,6 +438,6 @@ else
 	GAS:netReceive("factions:Init", function()
 		GAS.JobWhitelist.Factions:ShowMenu()
 	end)
-end
+
 
 GAS:print("[JobWhitelist] Factions initialized")

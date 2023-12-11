@@ -488,8 +488,7 @@ function GM:PlayerSelectSpawn( pl, transiton )
 
 			end
 		end
-	end
-
+		
 	return ChosenSpawnPoint
 
 end

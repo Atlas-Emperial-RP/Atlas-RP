@@ -213,7 +213,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 
 					bgtab.Tab:SetVisible( true )
 				end
-			end
+		
 
 			sheet.tabScroller:InvalidateLayout()
 		end

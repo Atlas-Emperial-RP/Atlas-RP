@@ -22,11 +22,8 @@ spawnmenu.AddCreationTab( "#spawnmenu.category.dupes", function()
 			if ( k <= offset ) then return end
 			if ( k > offset + perpage ) then break end
 
-				table.insert( saves, entry )
+			table.insert( saves, entry )
 
-			elseif ( k > offset + perpage ) then 
-				break 
-			end
 		end
 
 		local results = {

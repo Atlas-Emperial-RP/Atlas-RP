@@ -12,16 +12,14 @@ function demo:FetchLocal( offset, perpage )
 		if ( k <= offset ) then return end
 		if ( k > offset + perpage ) then break end
 
-			local entry = {
-				file	= "demos/" .. v,
-				name	= v:StripExtension(),
-				preview	= "demos/" .. v:StripExtension() .. ".jpg",
-				description	= "Local demo stored on your computer. Local content can be deleted in the main menu."
-			}
-
-			table.insert( saves, entry )
-
-		end
+		local entry = {
+			file	= "demos/" .. v,
+			name	= v:StripExtension(),
+			preview	= "demos/" .. v:StripExtension() .. ".jpg",
+			description	= "Local demo stored on your computer. Local content can be deleted in the main menu."
+		}
+		table.insert( saves, entry )
+		
 	end
 
 	local results = {
