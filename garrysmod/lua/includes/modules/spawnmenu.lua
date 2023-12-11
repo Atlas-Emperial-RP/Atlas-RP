@@ -291,7 +291,7 @@ function GetContentType( name, func )
 	if ( not cp[ name ] ) then
 
 		cp[ name ] = function() end
-		Msg( "spawnmenu.GetContentType( ", name, " ) - not found!\n" )
+		Msg( "spawnmenu.GetContentType( ", name, " ) - not foundnot \n" )
 
 	end
 

@@ -106,6 +106,7 @@ hook.Add("HUDPaint", "MedicMod.HUDNotifications", function()
 			surface.SetTextPos( posx + 50 + 10, posy + 40/2-y/2 )
 			surface.SetTextColor( 0, 0, 0, 255 * alpha)
 			surface.DrawText( v.text )
+			
 		end
 	end	
 	

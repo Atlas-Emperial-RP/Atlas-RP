@@ -10,12 +10,7 @@ local function AddRecursive( pnl, folder, path, wildcard )
 
 		if ( not string.EndsWith( v, ".mdl" ) ) then return end
 
-		local cp = spawnmenu.GetContentType( "model" )
-		if ( cp ) then
-			cp( pnl, { model = folder .. v } )
-			added = true
 		end
-
 	end
 
 	for k, v in ipairs( folders ) do
@@ -51,27 +46,21 @@ local function RefreshAddons( MyNode )
 		if ( not addon.downloaded or not addon.mounted ) then return end
 		if ( addon.models <= 0 ) then return end
 
-		local models = MyNode:AddNode( addon.title .. " (" .. addon.models .. ")", "icon16/bricks.png" )
-		models.DoClick = function()
+			local models = MyNode:AddNode( addon.title .. " (" .. addon.models .. ")", "icon16/bricks.png" )
+			models.DoClick = function()
 
-			ViewPanel:Clear( true )
+				ViewPanel:Clear( true )
 
 			local anyAdded = AddRecursive( ViewPanel, "models/", addon.title, "*.mdl" )
 			if ( not anyAdded ) then
 				local cp = spawnmenu.GetContentType( "header" )
 				if ( cp ) then cp( ViewPanel, { text = "#spawnmenu.failedtofindmodels" } ) end
 
-				-- For debugging
-				local cp = spawnmenu.GetContentType( "header" )
-				if ( cp ) then cp( ViewPanel, { text = tostring( addon.title ) .. " (ID: " .. tostring( addon.wsid ) .. ")" } ) end
 			end
-
-			MyNode.pnlContent:SwitchPanel( ViewPanel )
+			models.DoRightClick = AddonsRightClick
+			models.wsid = addon.wsid
 
 		end
-		models.DoRightClick = AddonsRightClick
-		models.wsid = addon.wsid
-
 	end
 
 end

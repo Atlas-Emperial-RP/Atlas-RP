@@ -214,10 +214,10 @@ search.AddProvider( function( str )
 			words = { k }
 		}
 
-		table.insert( list, entry )
+			table.insert( list, entry )
 
-		if ( #list >= GetConVarNumber( "sbox_search_maxresults" ) / 32 ) then break end
-
+			if ( #list >= GetConVarNumber( "sbox_search_maxresults" ) / 32 ) then break end
+		end
 	end
 
 	return list

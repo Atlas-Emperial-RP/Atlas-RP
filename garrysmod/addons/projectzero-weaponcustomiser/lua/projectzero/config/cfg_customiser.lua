@@ -11,6 +11,8 @@ MODULE:AddVariable( "StoreCurrency", "Store Currency", "The currency used in the
     for k, v in pairs( PROJECT0.TEMP.Currencies ) do
         if( not v.IsInstalled() ) then return end
         options[v.ID] = v.Title
+
+        end
     end
 
     return options

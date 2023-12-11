@@ -147,20 +147,21 @@ function PANEL:DoClick()
 			for i,log in ipairs(pvp_event_report.data[GAS.Logging.PvP_EVENT_LOGS]) do
 				if (type(log[1]) == "table") then return end
 
-				local place = (log[1] / total_time) * (w * (total_time / timeline.Scale)) - timeline.BlipOffset
+					local place = (log[1] / total_time) * (w * (total_time / timeline.Scale)) - timeline.BlipOffset
 
-				local blip = {
-					{x = place, y = y_offset},
-					{x = place + blip_size, y = blip_size + y_offset},
-					{x = place, y = (blip_size * 2) + y_offset},
-					{x = place - blip_size, y = blip_size + y_offset},
-				}
-				if (log[3] == pvp_event_report.data[GAS.Logging.PvP_VICTIM] and log[4] == pvp_event_report.data[GAS.Logging.PvP_INSTIGATOR]) then
-					timeline.DmgEventBlips[i] = {true, blip}
-				elseif (log[3] == pvp_event_report.data[GAS.Logging.PvP_INSTIGATOR] and log[4] == pvp_event_report.data[GAS.Logging.PvP_VICTIM]) then
-					timeline.DmgEventBlips[i] = {false, blip}
-				else
-					timeline.DmgEventBlips[i] = {nil, blip}
+					local blip = {
+						{x = place, y = y_offset},
+						{x = place + blip_size, y = blip_size + y_offset},
+						{x = place, y = (blip_size * 2) + y_offset},
+						{x = place - blip_size, y = blip_size + y_offset},
+					}
+					if (log[3] == pvp_event_report.data[GAS.Logging.PvP_VICTIM] and log[4] == pvp_event_report.data[GAS.Logging.PvP_INSTIGATOR]) then
+						timeline.DmgEventBlips[i] = {true, blip}
+					elseif (log[3] == pvp_event_report.data[GAS.Logging.PvP_INSTIGATOR] and log[4] == pvp_event_report.data[GAS.Logging.PvP_VICTIM]) then
+						timeline.DmgEventBlips[i] = {false, blip}
+					else
+						timeline.DmgEventBlips[i] = {nil, blip}
+					end
 				end
 			end
 		end
@@ -274,7 +275,6 @@ function PANEL:DoClick()
 					else
 						surface.SetDrawColor(30, 30, 30)
 					end
-					surface.DrawLine((i - 1) * spacing,0,(i - 1) * spacing,h)
 				end
 			end
 

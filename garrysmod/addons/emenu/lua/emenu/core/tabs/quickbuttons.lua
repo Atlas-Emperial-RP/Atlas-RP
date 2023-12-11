@@ -4,9 +4,9 @@ function emenu.quick.cmds:Generate()
     local ply = LocalPlayer()
     self.list = {}
 
-    ---------------
-    -- GENERAL --
-    ---------------
+    --[[-------------
+    /// GENERAL ///
+    ---------------]]
     table.insert(self.list,{
         title = emenu.text["general_tab"]
     })
@@ -56,9 +56,9 @@ function emenu.quick.cmds:Generate()
         })
     end
 
-    -------------
-    -- MONEY --
-    -------------
+    --[[-----------
+    /// MONEY ///
+    -------------]]
     table.insert(self.list,{
         title = emenu.text["money_tab"],
         color = emenu.colors.default.green,
@@ -109,9 +109,9 @@ function emenu.quick.cmds:Generate()
         end
     })
 
-    --------------
-    -- POLICE --
-    --------------
+    --[[------------
+    /// POLICE ///
+    --------------]]
     if ply:isCP() then
         table.insert(self.list,{title = emenu.text["police_tab"],color = Color(3, 115, 206)})
 
@@ -164,10 +164,10 @@ function emenu.quick.cmds:Generate()
         })
     end
 
-    -------------
-    -- MAYOR --
-    -------------
-    if ply:getJobTable().mayor then
+    --[[-----------
+    /// MAYOR ///
+    -------------]]
+    --[[if ply:getJobTable().mayor then 
         table.insert(self.list,{title = emenu.text["mayor_tab"], color = Color(252, 29, 59)})
 
         table.insert(self.list,{
@@ -235,13 +235,13 @@ function emenu.quick.cmds:Generate()
                 ply:ConCommand("say /placelaws ")
             end
         })
-    end
+    end]]--
 end
 
 
-------------
--- MENU --
-------------
+--[[----------
+/// MENU ///
+------------]]
 function emenu.quick:GenQuickButtons(bg)
     self.cmds:Generate()
     local ply = LocalPlayer()

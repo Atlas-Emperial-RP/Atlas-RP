@@ -26,7 +26,7 @@ local function PermissionLoad()
 			if k == "superadmin" or k == "admin" or k == "user" then return end
 
 			PermaProps.Permissions[k] = { Physgun = false, Tool = false, Property = false, Save = false, Delete = false, Update = false, Menu = false, Permissions = false, Inherits = v.Inherits, Custom = false }
-
+			end
 		end
 		
 	end

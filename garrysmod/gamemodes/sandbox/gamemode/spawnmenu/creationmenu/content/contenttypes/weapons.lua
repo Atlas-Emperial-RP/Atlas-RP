@@ -13,9 +13,10 @@ hook.Add( "PopulateWeapons", "AddWeaponContent", function( pnlContent, tree, nod
 		local Category = weapon.Category or "Other2"
 		if ( not isstring( Category ) ) then Category = tostring( Category ) end
 
-		Categorised[ Category ] = Categorised[ Category ] or {}
-		table.insert( Categorised[ Category ], weapon )
+			Categorised[ Category ] = Categorised[ Category ] or {}
+			table.insert( Categorised[ Category ], weapon )
 
+		end
 	end
 
 	Weapons = nil
@@ -42,7 +43,7 @@ hook.Add( "PopulateWeapons", "AddWeaponContent", function( pnlContent, tree, nod
 				spawnmenu.CreateContentIcon( ent.ScriptedEntityType or "weapon", self.PropPanel, {
 					nicename	= ent.PrintName or ent.ClassName,
 					spawnname	= ent.ClassName,
-					material	= ent.IconOverride or "entities/" .. ent.ClassName .. ".png",
+					material	= (ent.IconOverride or "entities/") .. ent.ClassName .. ".png",
 					admin		= ent.AdminOnly
 				} )
 

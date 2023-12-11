@@ -123,16 +123,16 @@ function SWEP:DrawHUD()
 		if ( v.stage and v.stage ~= self:GetStage() ) then return end
 		if ( v.op and v.op ~= toolObject:GetOperation() ) then return end
 
-		local txt = "#tool." .. GetConVarString( "gmod_toolmode" ) .. "." .. name
-		if ( name == "info" ) then txt = toolObject:GetHelpText() end
+			local txt = "#tool." .. GetConVarString( "gmod_toolmode" ) .. "." .. name
+			if ( name == "info" ) then txt = toolObject:GetHelpText() end
 
-		TextTable.text = txt
-		TextTable.pos = { x + 21, y + h2 }
+			TextTable.text = txt
+			TextTable.pos = { x + 21, y + h2 }
 
-		w, h = draw.TextShadow( TextTable, 1 )
+			w, h = draw.TextShadow( TextTable, 1 )
 
-		local icon1 = v.icon
-		local icon2 = v.icon2
+			local icon1 = v.icon
+			local icon2 = v.icon2
 
 		if ( not icon1 ) then
 			if ( string.StartsWith( name, "info" ) ) then icon1 = "gui/info" end

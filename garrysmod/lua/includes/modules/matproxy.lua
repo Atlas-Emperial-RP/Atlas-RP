@@ -35,9 +35,10 @@ function Add( tbl )
 
 			if ( tbl.name ~= v.name ) then return end
 
-			Msg( "Reloading: ", v.Material, "\n" )
-			Init( tbl.name, k, v.Material, v.Values )
+				Msg( "Reloading: ", v.Material, "\n" )
+				Init( tbl.name, k, v.Material, v.Values )
 
+			end
 		end
 
 	end

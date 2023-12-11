@@ -90,12 +90,13 @@ function PANEL:Clear( bDelete )
 
 		if ( not IsValid( panel ) ) then return end
 
-		panel:SetVisible( false )
+			panel:SetVisible( false )
 
-		if ( bDelete ) then
-			panel:Remove()
+			if ( bDelete ) then
+				panel:Remove()
+			end
+
 		end
-
 	end
 
 	self.Items = {}

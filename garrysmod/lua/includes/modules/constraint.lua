@@ -463,7 +463,7 @@ duplicator.RegisterConstraint( "Weld", Weld, "Ent1", "Ent2", "Bone1", "Bone2", "
 
 --[[----------------------------------------------------------------------
 	Rope( ... )
-	Creates a rope constraint - with rope!
+	Creates a rope constraint - with rope! 
 ------------------------------------------------------------------------]]
 function Rope( Ent1, Ent2, Bone1, Bone2, LPos1, LPos2, length, addlength, forcelimit, width, material, rigid, color )
 

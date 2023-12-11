@@ -113,7 +113,6 @@ function PANEL:NetworkColorChange()
 		for id, p in ipairs( self:GetChildren() ) do
 			tab[ p:GetID() ] = p:GetColor()
 		end
-		pnl:SetColorButtons( tab )
 	end
 
 end

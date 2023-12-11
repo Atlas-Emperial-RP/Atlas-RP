@@ -16,7 +16,7 @@
 ]]
 
 -- Enter usergroups that should be Operators
-OpenPermissions.Operators.Usergroups = {"superadmin", "mod", "admin", "sadmin", "tmod", "Management", "Gamemaster"}
+OpenPermissions.Operators.Usergroups = {"superadmin", "operator", "developer", "owner", "founder"}
 
 -- Enter SteamIDs or SteamID64s of people who should be Operators
 OpenPermissions.Operators.SteamIDs = {"STEAM_0:1:40314158", "76561198040894045"}

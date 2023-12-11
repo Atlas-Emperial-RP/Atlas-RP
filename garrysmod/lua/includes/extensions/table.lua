@@ -570,7 +570,7 @@ end
 
 --[[---------------------------------------------------------
 	A Pairs function
-		Sorted by Member Value (All table entries must be a table!)
+		Sorted by Member Value (All table entries must be a tablenot )
 -----------------------------------------------------------]]
 function SortedPairsByMemberValue( pTable, pValueName, Desc )
 

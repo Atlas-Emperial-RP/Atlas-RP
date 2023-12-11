@@ -64,7 +64,7 @@ function PANEL:DoDoubleClick()
 	end
 
 	TextEdit:RequestFocus()
-	TextEdit:OnGetFocus() -- Because the keyboard input might not be enabled yet! (spawnmenu)
+	TextEdit:OnGetFocus() -- Because the keyboard input might not be enabled yetnot  (spawnmenu)
 	TextEdit:SelectAllText( true )
 
 	self._TextEdit = TextEdit

@@ -1,7 +1,7 @@
 
 module( "presets", package.seeall )
 
--- TODO: A function to check/replace invalid characters for filenames!
+-- TODO: A function to check/replace invalid characters for filenamesnot 
 
 local Presets = LoadPresets()
 

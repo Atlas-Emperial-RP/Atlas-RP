@@ -5,5 +5,5 @@ return {
 	Wiki = "https://gmodsto.re/blogs-wiki",
 	Icon = "icon16/database_lightning.png",
 	GmodStore = "6016",
-	License = '{"licensee":"76561198040894045","keys":{"xeon-de":"LXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX","xeon-us":"LXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"}}'
+	License = '{"licensee":"76561198112485755","keys":{"xeon-de":"LXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX","xeon-us":"LXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"}}'
 }

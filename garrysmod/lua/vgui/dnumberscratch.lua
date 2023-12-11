@@ -196,23 +196,24 @@ function PANEL:DrawNotches( level, x, y, w, h, range, value, min, max )
 
 		if ( nx > x + w or nx < x ) then return end
 
-		local dist = 1 - ( math.abs( halfw - nx + x ) / w )
+			local dist = 1 - ( math.abs( halfw - nx + x ) / w )
 
-		local val = ( nx - realmid ) / self:GetZoom()
+			local val = ( nx - realmid ) / self:GetZoom()
 
 		if ( val <= min + 0.001 ) then return end
 		if ( val >= max - 0.001 ) then return end
 
-		surface.SetDrawColor( 0, 0, 0, alpha * dist )
-		surface.SetTextColor( 0, 0, 0, alpha * dist )
+				surface.SetDrawColor( 0, 0, 0, alpha * dist )
+				surface.SetTextColor( 0, 0, 0, alpha * dist )
 
-		surface.DrawRect( nx, y + top, 2, nh )
+				surface.DrawRect( nx, y + top, 2, nh )
 
-		local tw, th = surface.GetTextSize( val )
+				local tw, th = surface.GetTextSize( val )
 
-		surface.SetTextPos( nx - ( tw * 0.5 ), y + top - th )
-		surface.DrawText( val )
-
+				surface.SetTextPos( nx - ( tw * 0.5 ), y + top - th )
+				surface.DrawText( val )
+			end
+		end
 	end
 
 	surface.SetDrawColor( 0, 0, 0, alpha )

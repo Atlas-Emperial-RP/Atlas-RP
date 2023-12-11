@@ -83,8 +83,6 @@ local function updateViewModelSkin( viewmodel, weaponCfg )
 
             return
         end
-
-        viewmodel:SetSubMaterial( v, "skins/gold" )
     end
 end
 

@@ -80,10 +80,12 @@ function OpenEntityMenu( ent, tr )
 		if ( not v.Filter ) then return end
 		if ( not v:Filter( ent, LocalPlayer() ) ) then return end
 
-		local option = AddOption( v, menu, ent, LocalPlayer(), tr )
+				local option = AddOption( v, menu, ent, LocalPlayer(), tr )
 
-		if ( v.OnCreate ) then v:OnCreate( menu, option ) end
+				if ( v.OnCreate ) then v:OnCreate( menu, option ) end
 
+			end
+		end
 	end
 
 	menu:Open()

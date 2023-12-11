@@ -161,12 +161,13 @@ function PANEL:PerformLayout()
 		if ( not IsValid( v ) ) then return end
 		if ( not v:IsVisible() ) then return end
 
-		v:SetPos( x, 0 )
-		v:SetTall( h )
-		if ( v.ApplySchemeSettings ) then v:ApplySchemeSettings() end
+			v:SetPos( x, 0 )
+			v:SetTall( h )
+			if ( v.ApplySchemeSettings ) then v:ApplySchemeSettings() end
 
-		x = x + v:GetWide() - self.m_iOverlap
+			x = x + v:GetWide() - self.m_iOverlap
 
+		end
 	end
 
 	self.pnlCanvas:SetWide( x + self.m_iOverlap )

@@ -64,22 +64,24 @@ local function ReloadClass( classname )
 
 		if ( not v.AllowAutoRefresh ) then return end
 
-		if ( v.PreAutoRefresh ) then
-			v:PreAutoRefresh()
-		end
+			if ( v.PreAutoRefresh ) then
+				v:PreAutoRefresh()
+			end
 
-		for name, func in pairs( ctrl ) do
+			for name, func in pairs( ctrl ) do
 
 			if ( not isfunction( func ) ) then return end
 
-			v[ name ] = func
+					v[ name ] = func
+
+				end
+			end
+
+			if ( v.PostAutoRefresh ) then
+				v:PostAutoRefresh()
+			end
 
 		end
-
-		if ( v.PostAutoRefresh ) then
-			v:PostAutoRefresh()
-		end
-
 	end
 
 end

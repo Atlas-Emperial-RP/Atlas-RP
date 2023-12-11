@@ -342,6 +342,7 @@ hook.Add( "CuffsCanHandcuff", "DayZCuffs SafezoneProtectCuffs", function( ply, t
 		end
 	end
 end)
+
 hook.Add("PlayerDisconnected", "DayZCuffs DieHandcuffs", function(ply)
 	if engine.ActiveGamemode() == "dayz" then
 		if ply:IsHandcuffed() then ply:Kill() end

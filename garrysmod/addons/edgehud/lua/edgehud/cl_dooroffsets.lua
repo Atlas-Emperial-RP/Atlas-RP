@@ -62,6 +62,7 @@ net.Receive("EdgeHUD:SendDoorOffsets", function(  )
 		-- Update the offsets.
 		k.EdgeHUD_DoorOffset = {Angles = Angle(v.pi,v.ya,v.ro), Position = Vector(v.x,v.y,v.z)}
 
+	
 	end
 
 end)

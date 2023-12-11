@@ -301,7 +301,7 @@ function PANEL:SetWeaponClass( weaponClass )
                     local configTable = PROJECT0.CONFIG.CUSTOMISER.Stickers[itemKey]
                     if( not configTable ) then return end
             
-                    table.insert( items, { configTable.Rarity, itemKey } )
+                    end
                 end
 
                 return items
@@ -359,66 +359,67 @@ function PANEL:SetWeaponClass( weaponClass )
                 return
             end
 
-            local startX = page:LocalToScreen( 0, 0 )
+                local items = v.GetOwnedItems()
+                table.sort( items, function(a, b) return PROJECT0.FUNC.GetRarityOrder( a[1] ) > PROJECT0.FUNC.GetRarityOrder( b[1] ) end )
 
-            local items = v.GetOwnedItems()
-            table.sort( items, function(a, b) return PROJECT0.FUNC.GetRarityOrder( a[1] ) > PROJECT0.FUNC.GetRarityOrder( b[1] ) end )
+                itemPanels[v.CosmeticKey] = {}
 
-            itemPanels[v.CosmeticKey] = {}
+                local equippedCosmetic = LocalPlayer():Project0():GetEquippedCosmetic( v.CosmeticKey, weaponClass )
+                for _, val in ipairs( items ) do
+                    local infoPanel = vgui.Create( "pz_cosmetic_item", page )
+                    infoPanel:Dock( LEFT )
+                    infoPanel:SetTall( customisePanel:GetTall()-customisePanel.navigation:GetTall()-(2*PROJECT0.UI.Margin25) )
+                    infoPanel:SetWide( infoPanel:GetTall()/1.2 )
+                    infoPanel:DockMargin( PROJECT0.UI.Margin25, PROJECT0.UI.Margin25, 0, PROJECT0.UI.Margin25 )
+                    infoPanel:SetRarity( val[1] )
+                    infoPanel:SetShadowBounds( startX, 0, startX+(page.actualW or 0), ScrH() )
+                    infoPanel.DoClick = function()
+                        v.OnItemClick( val )
+                    end
 
-            local equippedCosmetic = LocalPlayer():Project0():GetEquippedCosmetic( v.CosmeticKey, weaponClass )
-            for _, val in ipairs( items ) do
-                local infoPanel = vgui.Create( "pz_cosmetic_item", page )
-                infoPanel:Dock( LEFT )
-                infoPanel:SetTall( customisePanel:GetTall()-customisePanel.navigation:GetTall()-(2*PROJECT0.UI.Margin25) )
-                infoPanel:SetWide( infoPanel:GetTall()/1.2 )
-                infoPanel:DockMargin( PROJECT0.UI.Margin25, PROJECT0.UI.Margin25, 0, PROJECT0.UI.Margin25 )
-                infoPanel:SetRarity( val[1] )
-                infoPanel:SetShadowBounds( startX, 0, startX+(page.actualW or 0), ScrH() )
-                infoPanel.DoClick = function()
-                    v.OnItemClick( val )
+                    if( equippedCosmetic == val[2] ) then
+                        infoPanel:SetActive( true, true )
+                    end
+
+                    v.OnCreatePnl( infoPanel, val )
+
+                    table.insert( itemPanels[v.CosmeticKey], { infoPanel, val[2] } )
                 end
 
-                if( equippedCosmetic == val[2] ) then
-                    infoPanel:SetActive( true, true )
+                local unselectedPanel = vgui.Create( "pz_cosmetic_item", page )
+                unselectedPanel:Dock( LEFT )
+                unselectedPanel:SetTall( customisePanel:GetTall()-customisePanel.navigation:GetTall()-(2*PROJECT0.UI.Margin25) )
+                unselectedPanel:SetWide( unselectedPanel:GetTall()/1.2 )
+                unselectedPanel:DockMargin( PROJECT0.UI.Margin25, PROJECT0.UI.Margin25, 0, PROJECT0.UI.Margin25 )
+                unselectedPanel:SetShadowBounds( startX, 0, startX+(page.actualW or 0), ScrH() )
+                unselectedPanel.gradientAnim:SetColors( PROJECT0.FUNC.GetTheme( 3, 100 ) )
+                unselectedPanel.gradientAnim:StartAnim()
+                unselectedPanel.DoClick = function()
+                    v.OnItemClick( val, true )
                 end
 
-                v.OnCreatePnl( infoPanel, val )
-                
-                table.insert( itemPanels[v.CosmeticKey], { infoPanel, val[2] } )
-            end
+                if( equippedCosmetic == 0 ) then
+                    unselectedPanel:SetActive( true, true )
+                end
 
-            local unselectedPanel = vgui.Create( "pz_cosmetic_item", page )
-            unselectedPanel:Dock( LEFT )
-            unselectedPanel:SetTall( customisePanel:GetTall()-customisePanel.navigation:GetTall()-(2*PROJECT0.UI.Margin25) )
-            unselectedPanel:SetWide( unselectedPanel:GetTall()/1.2 )
-            unselectedPanel:DockMargin( PROJECT0.UI.Margin25, PROJECT0.UI.Margin25, 0, PROJECT0.UI.Margin25 )
-            unselectedPanel:SetShadowBounds( startX, 0, startX+(page.actualW or 0), ScrH() )
-            unselectedPanel.gradientAnim:SetColors( PROJECT0.FUNC.GetTheme( 3, 100 ) )
-            unselectedPanel.gradientAnim:StartAnim()
-            unselectedPanel.DoClick = function()
-                v.OnItemClick( val, true )
-            end
+                table.insert( itemPanels[v.CosmeticKey], { unselectedPanel, 0 } )
 
-            if( equippedCosmetic == 0 ) then
-                unselectedPanel:SetActive( true, true )
-            end
+                local unselectedIcon = vgui.Create( "Panel", unselectedPanel )
+                unselectedIcon:Dock( FILL )
+                local iconMat = Material( "project0/icons/blank.png" )
+                unselectedIcon.Paint = function( self2, w, h )
+                    surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 3, 25 ) )
+                    surface.SetMaterial( iconMat )
+                    local iconSize = PROJECT0.FUNC.ScreenScale( 64 )
+                    surface.DrawTexturedRect( w/2-iconSize/2, h/2-iconSize/2, iconSize, iconSize )
+                end
 
-            table.insert( itemPanels[v.CosmeticKey], { unselectedPanel, 0 } )
+                local spacingPanel = vgui.Create( "Panel", page )
+                spacingPanel:Dock( LEFT )
+                spacingPanel:SetWide( PROJECT0.UI.Margin25 )
+
             
-            local unselectedIcon = vgui.Create( "Panel", unselectedPanel )
-            unselectedIcon:Dock( FILL )
-            local iconMat = Material( "project0/icons/blank.png" )
-            unselectedIcon.Paint = function( self2, w, h )
-                surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 3, 25 ) )
-                surface.SetMaterial( iconMat )
-                local iconSize = PROJECT0.FUNC.ScreenScale( 64 )
-                surface.DrawTexturedRect( w/2-iconSize/2, h/2-iconSize/2, iconSize, iconSize )
             end
-
-            local spacingPanel = vgui.Create( "Panel", page )
-            spacingPanel:Dock( LEFT )
-            spacingPanel:SetWide( PROJECT0.UI.Margin25 )
         end
     end
     RefreshCosmetics()

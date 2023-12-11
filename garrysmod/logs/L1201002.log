@@ -1,0 +1,82 @@
+L 12/01/2023 - 10:19:30: Log file started (file "logs/L1201002.log") (game "/home/gmcgame/sammim/82/garrysmod") (version "9040")
+L 12/01/2023 - 10:19:30: server_cvar: "sv_password" "***PROTECTED***"
+L 12/01/2023 - 10:19:30: server_cvar: "sbox_maxprops" "100"
+L 12/01/2023 - 10:19:30: server_cvar: "sbox_maxnpcs" "5"
+L 12/01/2023 - 10:19:30: server_cvar: "sbox_maxballoons" "10"
+L 12/01/2023 - 10:19:30: server_cvar: "sbox_maxeffects" "10"
+L 12/01/2023 - 10:19:30: server_cvar: "sbox_maxdynamite" "2"
+L 12/01/2023 - 10:19:30: server_cvar: "sbox_maxlamps" "10"
+L 12/01/2023 - 10:19:30: server_cvar: "sbox_maxthrusters" "10"
+L 12/01/2023 - 10:19:30: server_cvar: "sbox_maxwheels" "20"
+L 12/01/2023 - 10:19:30: server_cvar: "sbox_maxhoverballs" "20"
+L 12/01/2023 - 10:19:30: server_cvar: "sbox_maxvehicles" "30"
+L 12/01/2023 - 10:19:30: server_cvar: "sbox_maxbuttons" "20"
+L 12/01/2023 - 10:19:30: server_cvar: "sbox_maxsents" "20"
+L 12/01/2023 - 10:19:30: server_cvar: "sbox_maxemitters" "5"
+L 12/01/2023 - 10:19:33: Connection to Steam servers successful.
+L 12/01/2023 - 10:19:33:    Public IP is 208.103.169.21.
+L 12/01/2023 - 10:19:33: Assigned anonymous gameserver Steam ID [A-1:1154421786(24767)].
+L 12/01/2023 - 10:19:33: VAC secure mode is activated.
+L 12/01/2023 - 10:20:12: "claire<2><STEAM_0:0:191399300><>" connected, address "67.176.12.197:27005"
+L 12/01/2023 - 10:20:13: "claire<2><STEAM_0:0:191399300>" STEAM USERID validated
+L 12/01/2023 - 10:20:28: Lua Error: 
+[ulib] addons/ulib/lua/ulib/server/ucl.lua:1115: attempt to call upvalue 'playerAuth' (a nil value)
+  1. fn - addons/ulib/lua/ulib/server/ucl.lua:1115
+   2. unknown - addons/ulib/lua/ulib/shared/hook.lua:109
+    3. UniqueID - [C]:-1
+     4. echoToAdmins - addons/ulx/lua/ulx/log.lua:164
+      5. fn - addons/ulx/lua/ulx/log.lua:202
+       6. unknown - addons/ulib/lua/ulib/shared/hook.lua:109
+
+
+L 12/01/2023 - 10:20:28: Lua Error: 
+[ulx] addons/ulx/lua/ulx/base.lua:78: [ULIB] Unauthed player
+  1. query - [C]:-1
+   2. fn - addons/ulx/lua/ulx/base.lua:78
+    3. unknown - addons/ulib/lua/ulib/shared/hook.lua:109
+
+
+L 12/01/2023 - 10:20:28: Lua Error: 
+[ulx] addons/ulx/lua/ulx/modules/uteam.lua:23: attempt to index a nil value
+  1. fn - addons/ulx/lua/ulx/modules/uteam.lua:23
+   2. unknown - addons/ulib/lua/ulib/shared/hook.lua:109
+
+
+L 12/01/2023 - 10:20:28: "claire<2><STEAM_0:0:191399300><>" entered the game
+L 12/01/2023 - 10:20:33: Lua Error: 
+[ulx] addons/ulx/lua/ulx/modules/xgui_server.lua:191: [ULIB] Unauthed player
+  1. query - [C]:-1
+   2. sendDataTable - addons/ulx/lua/ulx/modules/xgui_server.lua:191
+    3. unknown - addons/ulx/lua/ulx/modules/xgui_server.lua:106
+     4. unknown - addons/ulx/lua/ulx/modules/xgui_server.lua:73
+      5. unknown - lua/includes/modules/concommand.lua:54
+
+
+L 12/01/2023 - 10:23:19: rcon from "208.103.169.21:58032": command "ulx adduserid <76561198343064328> superadmin"
+L 12/01/2023 - 10:23:37: Lua Error: 
+[ulx] addons/ulx/lua/ulx/log.lua:354: [ULIB] Unauthed player
+  1. query - [C]:-1
+   2. makePlayerList - addons/ulx/lua/ulx/log.lua:354
+    3. unknown - addons/ulx/lua/ulx/log.lua:475
+     4. gsub - [C]:-1
+      5. fancyLogAdmin - addons/ulx/lua/ulx/log.lua:450
+       6. call - addons/ulx/lua/ulx/modules/sh/user.lua:80
+        7. __fn - addons/ulib/lua/ulib/shared/commands.lua:951
+         8. execute - addons/ulib/lua/ulib/shared/commands.lua:1331
+          9. unknown - addons/ulib/lua/ulib/shared/commands.lua:1358
+           10. unknown - lua/includes/modules/concommand.lua:54
+
+
+L 12/01/2023 - 10:23:37: rcon from "208.103.169.21:58104": command "ulx adduserid 76561198343064328 superadmin"
+L 12/01/2023 - 10:23:47: Lua Error: 
+[ulib] addons/ulib/lua/ulib/server/concommand.lua:62: [ULIB] Unauthed player
+  1. query - [C]:-1
+   2. fn - addons/ulib/lua/ulib/server/concommand.lua:62
+    3. unknown - addons/ulib/lua/ulib/shared/hook.lua:109
+
+
+L 12/01/2023 - 10:23:47: "claire<2><STEAM_0:0:191399300><Team>" say "!noclip"
+L 12/01/2023 - 10:23:48: Lua Error: 
+[ulib] addons/ulib/lua/ulib/server/concommand.lua:62: [ULIB] Unauthed player
+  1. query - [C]:-1
+   2.

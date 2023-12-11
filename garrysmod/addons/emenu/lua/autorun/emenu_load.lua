@@ -16,9 +16,9 @@ emenu = emenu or {}
 emenu.loader = {}
 
 
---[[---------------
-/// MATERIALS ///
------------------]]
+-----------------
+-- [[ MATERIALS ]] --
+-----------------
 emenu.Materials = {
     ["person"]      = Material("materials/emenu/tabs/person.png","smooth"),
     ["shop"]        = Material("materials/emenu/tabs/shop.png","smooth"),

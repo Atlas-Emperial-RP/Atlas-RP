@@ -72,10 +72,11 @@ function Render( entry )
 
 						if ( not IsValid( v ) or v:GetNoDraw() ) then return end
 
-						RenderEnt = v
+							RenderEnt = v
 
-						v:DrawModel()
+							v:DrawModel()
 
+						end
 					end
 
 					RenderEnt = NULL

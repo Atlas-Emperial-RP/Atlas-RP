@@ -1,0 +1,7 @@
+# Ignore everything
+/*
+
+# But don't ignore the garrysmod folder
+!/garrysmod/
+!/.gitignore
+

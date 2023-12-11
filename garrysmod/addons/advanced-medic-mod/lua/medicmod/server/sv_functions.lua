@@ -450,6 +450,7 @@ function IsBleedingDamage( dmg )
 		if dmg:IsDamageType( k ) then
             isdmg = true
         end
+        
     end
    
     return isdmg

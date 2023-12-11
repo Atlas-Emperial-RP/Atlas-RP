@@ -190,7 +190,6 @@ local function PrettifyName( name )
 				table.insert( newParts, toAdd )
 				wordStart = i
 			end
-
 		end
 
 		table.insert( newParts, str:sub(wordStart, str:len()))

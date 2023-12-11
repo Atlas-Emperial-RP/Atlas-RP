@@ -91,9 +91,10 @@ local EntityPhysics =
 			local obj = Entity:GetPhysicsObjectNum( objectid )
 			if ( not IsValid( obj ) ) then return end
 
-			data[ objectid ] = {}
-			PhysicsObject.Save( data[ objectid ], obj )
+				data[ objectid ] = {}
+				PhysicsObject.Save( data[ objectid ], obj )
 
+			end
 		end
 
 	end,
@@ -110,8 +111,9 @@ local EntityPhysics =
 			local Phys = Entity:GetPhysicsObjectNum( objectid )
 			if ( not IsValid( Phys ) ) then return end
 
-			PhysicsObject.Load( objectdata, Phys )
+				PhysicsObject.Load( objectdata, Phys )
 
+			end
 		end
 
 	end,
@@ -577,31 +579,33 @@ function WorkoutSize( Ents )
 		if ( not v.Mins or not v.Maxs ) then return end
 		if ( not v.Angle or not v.Pos ) then return end
 
-		--
-		-- Rotate according to the entity!
-		--
-		local mi = v.Mins
-		local ma = v.Maxs
+				--
+				-- Rotate according to the entitynot 
+				--
+				local mi = v.Mins
+				local ma = v.Maxs
 
-		-- There has to be a better way
-		local t1 = LocalToWorld( Vector( mi.x, mi.y, mi.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
-		local t2 = LocalToWorld( Vector( ma.x, mi.y, mi.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
-		local t3 = LocalToWorld( Vector( mi.x, ma.y, mi.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
-		local t4 = LocalToWorld( Vector( ma.x, ma.y, mi.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
+				-- There has to be a better way
+				local t1 = LocalToWorld( Vector( mi.x, mi.y, mi.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
+				local t2 = LocalToWorld( Vector( ma.x, mi.y, mi.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
+				local t3 = LocalToWorld( Vector( mi.x, ma.y, mi.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
+				local t4 = LocalToWorld( Vector( ma.x, ma.y, mi.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
 
-		local b1 = LocalToWorld( Vector( mi.x, mi.y, ma.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
-		local b2 = LocalToWorld( Vector( ma.x, mi.y, ma.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
-		local b3 = LocalToWorld( Vector( mi.x, ma.y, ma.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
-		local b4 = LocalToWorld( Vector( ma.x, ma.y, ma.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
+				local b1 = LocalToWorld( Vector( mi.x, mi.y, ma.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
+				local b2 = LocalToWorld( Vector( ma.x, mi.y, ma.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
+				local b3 = LocalToWorld( Vector( mi.x, ma.y, ma.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
+				local b4 = LocalToWorld( Vector( ma.x, ma.y, ma.z ), Angle( 0, 0, 0 ), v.Pos, v.Angle )
 
-		mins.x = math.min( mins.x, t1.x, t2.x, t3.x, t4.x, b1.x, b2.x, b3.x, b4.x )
-		mins.y = math.min( mins.y, t1.y, t2.y, t3.y, t4.y, b1.y, b2.y, b3.y, b4.y )
-		mins.z = math.min( mins.z, t1.z, t2.z, t3.z, t4.z, b1.z, b2.z, b3.z, b4.z )
+				mins.x = math.min( mins.x, t1.x, t2.x, t3.x, t4.x, b1.x, b2.x, b3.x, b4.x )
+				mins.y = math.min( mins.y, t1.y, t2.y, t3.y, t4.y, b1.y, b2.y, b3.y, b4.y )
+				mins.z = math.min( mins.z, t1.z, t2.z, t3.z, t4.z, b1.z, b2.z, b3.z, b4.z )
 
-		maxs.x = math.max( maxs.x, t1.x, t2.x, t3.x, t4.x, b1.x, b2.x, b3.x, b4.x )
-		maxs.y = math.max( maxs.y, t1.y, t2.y, t3.y, t4.y, b1.y, b2.y, b3.y, b4.y )
-		maxs.z = math.max( maxs.z, t1.z, t2.z, t3.z, t4.z, b1.z, b2.z, b3.z, b4.z )
+				maxs.x = math.max( maxs.x, t1.x, t2.x, t3.x, t4.x, b1.x, b2.x, b3.x, b4.x )
+				maxs.y = math.max( maxs.y, t1.y, t2.y, t3.y, t4.y, b1.y, b2.y, b3.y, b4.y )
+				maxs.z = math.max( maxs.z, t1.z, t2.z, t3.z, t4.z, b1.z, b2.z, b3.z, b4.z )
 
+			end
+		end
 	end
 
 	return mins, maxs
@@ -787,35 +791,36 @@ function Paste( Player, EntityList, ConstraintList )
 		local b = ProtectedCall( function() e = CreateEntityFromTable( Player, v ) end )
 		if ( not b ) then return end
 
-		if ( IsValid( e ) ) then
+			if ( IsValid( e ) ) then
 
-			--
-			-- Call this here ( as well as before :Spawn) because Spawn/Init might have stomped the values
-			--
-			if ( e.RestoreNetworkVars ) then
-				e:RestoreNetworkVars( v.DT )
+				--
+				-- Call this here ( as well as before :Spawn) because Spawn/Init might have stomped the values
+				--
+				if ( e.RestoreNetworkVars ) then
+					e:RestoreNetworkVars( v.DT )
+				end
+
+				if ( e.OnDuplicated ) then
+					e:OnDuplicated( v )
+				end
+
 			end
 
-			if ( e.OnDuplicated ) then
-				e:OnDuplicated( v )
+			CreatedEntities[ k ] = e
+
+			if ( CreatedEntities[ k ] ) then
+
+				CreatedEntities[ k ].BoneMods = table.Copy( v.BoneMods )
+				CreatedEntities[ k ].EntityMods = table.Copy( v.EntityMods )
+				CreatedEntities[ k ].PhysicsObjects = table.Copy( v.PhysicsObjects )
+
+			else
+
+				CreatedEntities[ k ] = nil
+
 			end
 
 		end
-
-		CreatedEntities[ k ] = e
-
-		if ( CreatedEntities[ k ] ) then
-
-			CreatedEntities[ k ].BoneMods = table.Copy( v.BoneMods )
-			CreatedEntities[ k ].EntityMods = table.Copy( v.EntityMods )
-			CreatedEntities[ k ].PhysicsObjects = table.Copy( v.PhysicsObjects )
-
-		else
-
-			CreatedEntities[ k ] = nil
-
-		end
-
 	end
 
 	--
@@ -892,17 +897,18 @@ function ApplyBoneModifiers( Player, Ent )
 		-- The physics object isn't valid, skip it.
 		if ( not Ent.PhysicsObjects[ Bone ] ) then return end
 
-		-- Loop through each modifier on this bone
-		for Type, Data in pairs( Types ) do
+			-- Loop through each modifier on this bone
+			for Type, Data in pairs( Types ) do
 
-			-- Find and all the function
-			local ModFunction = BoneModifiers[ Type ]
-			if ( ModFunction ) then
-				ModFunction( Player, Ent, Bone, Ent:GetPhysicsObjectNum( Bone ), Data )
+				-- Find and all the function
+				local ModFunction = BoneModifiers[ Type ]
+				if ( ModFunction ) then
+					ModFunction( Player, Ent, Bone, Ent:GetPhysicsObjectNum( Bone ), Data )
+				end
+
 			end
 
 		end
-
 	end
 
 end

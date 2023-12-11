@@ -176,18 +176,20 @@ function PANEL:OpenMenu( pControlOpener )
 		for k, v in SortedPairsByMemberValue( sorted, "label" ) do
 			if( IsValid( self.textEntry ) and not string.find( string.lower( v.data ), string.lower( self.textEntry:GetValue() ) ) ) then return end
 
-			local option = self.Menu:AddOption( v.data, function() self:ChooseOption( v.data, v.id ) end )
-			if ( self.ChoiceIcons[ v.id ] ) then
-				option:SetIcon( self.ChoiceIcons[ v.id ] )
+				local option = self.Menu:AddOption( v.data, function() self:ChooseOption( v.data, v.id ) end )
+				if ( self.ChoiceIcons[ v.id ] ) then
+					option:SetIcon( self.ChoiceIcons[ v.id ] )
+				end
 			end
 		end
 	else
 		for k, v in pairs( self.Choices ) do
 			if( IsValid( self.textEntry ) and not string.find( string.lower( v ), string.lower( self.textEntry:GetValue() ) ) ) then return end
 
-			local option = self.Menu:AddOption( v, function() self:ChooseOption( v, k ) end )
-			if ( self.ChoiceIcons[ k ] ) then
-				option:SetIcon( self.ChoiceIcons[ k ] )
+				local option = self.Menu:AddOption( v, function() self:ChooseOption( v, k ) end )
+				if ( self.ChoiceIcons[ k ] ) then
+					option:SetIcon( self.ChoiceIcons[ k ] )
+				end
 			end
 		end
 	end

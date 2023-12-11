@@ -32,14 +32,6 @@ function GetResults( str, types, maxResults )
 		elseif ( istable( types ) ) then
 			if ( not table.HasValue( types, k ) ) then return end
 		end
-
-		local tbl = v.func( str )
-		for _, e in pairs( tbl ) do
-			table.insert( results, e )
-		end
-
-		if ( #results >= maxResults ) then break end
-
 	end
 
 	-- Todo. Sort, weighted?

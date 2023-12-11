@@ -31,7 +31,9 @@ if ( SERVER ) then
 				for id, t in pairs( con ) do
 					if ( t.Ent1 ~= t.Ent2 or t.Ent1 ~= ent or t.Bone1 ~= 0 ) then return end
 
-					ent.StatueInfo[ t.Bone2 ] = t.Constraint
+						ent.StatueInfo[ t.Bone2 ] = t.Constraint
+
+					end
 				end
 
 				local numC = table.Count( ent.StatueInfo )

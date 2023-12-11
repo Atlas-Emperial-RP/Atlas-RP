@@ -68,7 +68,7 @@ end
 
 function PANEL:SetEnabled( b )
 	self.Knob:SetEnabled( b )
-	FindMetaTable( "Panel" ).SetEnabled( self, b ) -- There has to be a better way!
+	FindMetaTable( "Panel" ).SetEnabled( self, b ) -- There has to be a better waynot 
 end
 
 function PANEL:OnCursorMoved( x, y )

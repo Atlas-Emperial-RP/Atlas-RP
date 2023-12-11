@@ -104,6 +104,7 @@ function SWEP:PrimaryAttack()
 	
 	if CLIENT then return end
 	if self:GetCuffTime()>CurTime() then return end -- On cooldown
+	if self:GetCuffTime()>CurTime() then return end -- On cooldown
 	
 	local tr = self:TargetTrace()
 	if not tr then return end
@@ -321,6 +322,7 @@ function SWEP:ViewModelDrawn( vm )
 	-- Right
 	local fixed_rpos = rpos + (rang:Forward()*renderpos.right.pos.x) + (rang:Right()*renderpos.right.pos.y) + (rang:Up()*renderpos.right.pos.z)
 	self.cmdl_RightCuff:SetPos( fixed_rpos )
+	local u,r,f = rang:Up(), rang:Right(), rang:Forward() -- Prevents moving axes
 	local u,r,f = rang:Up(), rang:Right(), rang:Forward() -- Prevents moving axes
 	rang:RotateAroundAxis( u, renderpos.right.ang.y )
 	rang:RotateAroundAxis( r, renderpos.right.ang.p )

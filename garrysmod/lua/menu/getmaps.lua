@@ -296,12 +296,12 @@ local function RefreshMaps( skip )
 		-- Don't loop if it's already ignored
 		if ( Ignore ) then return end
 
-		for _, ignore in ipairs( IgnorePatterns ) do
-			if ( string.find( name, ignore ) ) then
-				Ignore = true
-				break
+			for _, ignore in ipairs( IgnorePatterns ) do
+				if ( string.find( name, ignore ) ) then
+					Ignore = true
+					break
+				end
 			end
-		end
 
 		-- Don't add useless maps
 		if ( Ignore ) then return end

@@ -285,15 +285,16 @@ function PANEL:DataLayout()
 
 		if ( not Line:IsVisible() ) then return end
 
-		Line:SetPos( 1, y )
-		Line:SetSize( self:GetWide() - 2, h )
-		Line:DataLayout( self )
+			Line:SetPos( 1, y )
+			Line:SetSize( self:GetWide() - 2, h )
+			Line:DataLayout( self )
 
 		Line:SetAltLine( alt )
 		alt = not alt
 
-		y = y + Line:GetTall()
+			y = y + Line:GetTall()
 
+		end
 	end
 
 	return y

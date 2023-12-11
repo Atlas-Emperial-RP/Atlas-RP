@@ -272,18 +272,19 @@ function GAS.Logging.ClassIDs:Init(callback)
 			end
 			if (row.class_type == nil or row.class_name == nil) then return end
 			
-			GAS.Logging.ClassIDs.Registry[row.class_type .. row.class_name] = tonumber(row.id)
-			GAS.Logging.ClassIDs.IDRegistry[tonumber(row.id)] = {row.class_type, row.class_name}
-			
-			if (GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name] == nil) then
-				GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name] = row.class_type
-			elseif (istable(GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name])) then
-				GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name][row.class_type] = true
-			elseif (GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name] ~= row.class_type) then
-				local stored_class_type = GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name]
-				GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name] = {}
-				GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name][stored_class_type] = true
-				GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name][row.class_type] = true
+				GAS.Logging.ClassIDs.Registry[row.class_type .. row.class_name] = tonumber(row.id)
+				GAS.Logging.ClassIDs.IDRegistry[tonumber(row.id)] = {row.class_type, row.class_name}
+
+				if (GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name] == nil) then
+					GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name] = row.class_type
+				elseif (istable(GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name])) then
+					GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name][row.class_type] = true
+				elseif (GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name] ~= row.class_type) then
+					local stored_class_type = GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name]
+					GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name] = {}
+					GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name][stored_class_type] = true
+					GAS.Logging.ClassIDs.AmbigiousRegistry[row.class_name][row.class_type] = true
+				end
 			end
 		end
 		GAS.Logging.ClassIDs.NewClassID = max_id
@@ -633,7 +634,9 @@ GAS:hook("Tick", "logging:ExtraProcessingQueue", function()
 							if (processed_pvp_events[i]) then return end
 							processed_pvp_events[i] = true
 
-							pvp_event:AddLog(logtbl)
+									pvp_event:AddLog(logtbl)
+								end
+							end
 						end
 					end
 				end
@@ -652,8 +655,6 @@ GAS:hook("Tick", "logging:ExtraProcessingQueue", function()
 								if (not OpenPermissions:HasPermission(ply, "gmodadminsuite/logging", false) or not OpenPermissions:HasPermission(ply, "gmodadminsuite_logging/see_live_logs", false)) then return end
 								if (not GAS.Logging.Permissions:CanAccessModule(ply, module, false)) then return end
 							end
-							GAS:netStart("logging:LiveLogAntispam")
-							net.Send(ply)
 						end
 					end
 				else
@@ -669,9 +670,6 @@ GAS:hook("Tick", "logging:ExtraProcessingQueue", function()
 					if (not OpenPermissions:HasPermission(ply, "gmodadminsuite/logging", false) or not OpenPermissions:HasPermission(ply, "gmodadminsuite_logging/see_live_logs", false)) then return end
 					if (not GAS.Logging.Permissions:CanAccessModule(ply, module, false)) then return end
 				end
-				GAS:netStart("logging:LiveLog")
-					net.WriteData(data, #data)
-				net.Send(ply)
 			end
 		end
 

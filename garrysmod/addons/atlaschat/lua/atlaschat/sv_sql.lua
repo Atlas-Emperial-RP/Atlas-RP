@@ -159,7 +159,7 @@ function atlaschat.sql.Query(query, callback_success, callback_failed)
 	else
 		local data = sql.Query(query)
 		
-		if (data == false) then
+		if (not data) then
 			ServerLog("[atlaschat] The query \"" .. query .. "\" failed: " .. sql.LastError() .. "\n")
 			
 			if (callback_failed) then

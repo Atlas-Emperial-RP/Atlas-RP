@@ -229,9 +229,9 @@ function PANEL:ShowFolder( path )
 		local files = file.Find( string.Trim( path .. "/" .. ( filter or "*.*" ), "/" ), self.m_strPath )
 		if ( not istable( files ) ) then return end
 
-		for _, v in ipairs( files ) do
+			for _, v in ipairs( files ) do
 
-			if ( self.m_bModels ) then
+				if ( self.m_bModels ) then
 
 				local icon = self.Files:Add( "SpawnIcon" )
 				icon:SetModel( path .. "/" .. v )
@@ -241,17 +241,16 @@ function PANEL:ShowFolder( path )
 					else
 						self:OnSelect( path .. "/" .. v, icon )
 					end
-					pnl.LastClickTime = SysTime()
+					icon.DoRightClick = function()
+						self:OnRightClick( path .. "/" .. v, icon )
+					end
+				else
+					self.Files:AddLine( v )
 				end
-				icon.DoRightClick = function()
-					self:OnRightClick( path .. "/" .. v, icon )
-				end
-			else
-				self.Files:AddLine( v )
+
 			end
 
 		end
-
 	end
 
 end

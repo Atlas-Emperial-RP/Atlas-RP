@@ -240,7 +240,7 @@ function WorkshopFileBase( namespace, requiredtags )
 					self.HTML:Call( namespace .. ".ReceiveFileInfo( \"" .. v .. "\", " .. json .. " )" )
 
 					--
-					-- Now we have the preview id - get the preview image!
+					-- Now we have the preview id - get the preview imagenot 
 					--
 					if ( not PreviewCache[ v ] and result.previewid ) then
 
@@ -258,7 +258,7 @@ function WorkshopFileBase( namespace, requiredtags )
 
 				end )
 			end
-
+			::continue::
 		end
 
 	end

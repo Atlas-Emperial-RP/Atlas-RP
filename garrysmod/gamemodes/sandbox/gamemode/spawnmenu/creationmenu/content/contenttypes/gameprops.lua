@@ -141,8 +141,9 @@ local function RefreshGames( MyNode )
 
 		if ( not game.mounted ) then return end
 
-		AddBrowseContent( MyNode.ViewPanel, MyNode, game.title, "games/16/" .. ( game.icon or game.folder ) .. ".png", "", game.folder, MyNode.pnlContent, game.depot )
+			AddBrowseContent( MyNode.ViewPanel, MyNode, game.title, "games/16/" .. ( game.icon or game.folder ) .. ".png", "", game.folder, MyNode.pnlContent, game.depot )
 
+		end
 	end
 
 end

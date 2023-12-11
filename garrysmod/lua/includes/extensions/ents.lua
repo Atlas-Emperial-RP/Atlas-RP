@@ -15,8 +15,11 @@ function ents.FindByClassAndParent( classname, entity )
 		if ( not IsValid(p) ) then return end
 		if ( p ~= entity ) then return end
 
-		table.insert( out, v )
+					table.insert( out, v )
+				end
+			end
 
+		end
 	end
 
 	if ( #out == 0 ) then return end

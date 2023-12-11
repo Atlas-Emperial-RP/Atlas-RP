@@ -162,7 +162,7 @@ function meta:PhysWake()
 
 end
 
-local GetColorOriginal4 = meta.GetColor4Part  -- Do not use me! I will be removed
+local GetColorOriginal4 = meta.GetColor4Part  -- Do not use menot  I will be removed
 local GetColorOriginal = meta.GetColor
 function meta:GetColor()
 
@@ -175,7 +175,7 @@ function meta:GetColor()
 
 end
 
-local SetColorOriginal4 = meta.SetColor4Part  -- Do not use me! I will be removed
+local SetColorOriginal4 = meta.SetColor4Part  -- Do not use menot  I will be removed
 local SetColorOriginal = meta.SetColor
 function meta:SetColor( col )
 
@@ -423,12 +423,7 @@ function meta:InstallDataTable()
 			-- Don't try to save entities (yet?)
 			if ( v.typename == "Entity" ) then return end
 
-			if ( v.element ) then
-				dt[ k ] = v.GetFunc( ent, v.index )[ v.element ]
-			else
-				dt[ k ] = v.GetFunc( ent, v.index )
 			end
-
 		end
 
 		--
@@ -457,14 +452,6 @@ function meta:InstallDataTable()
 			if ( v.element and ( isangle( tab[ k ] ) or isvector( tab[ k ] ) ) ) then
 				tab[ k ] = tab[ k ][ v.element ]
 			end
-
-			-- Set it.
-			if ( ent[ "Set" .. k ] ) then
-				ent[ "Set" .. k ]( ent, tab[ k ] )
-			else
-				v.SetFunc( ent, v.index, tab[ k ] )
-			end
-
 		end
 
 	end

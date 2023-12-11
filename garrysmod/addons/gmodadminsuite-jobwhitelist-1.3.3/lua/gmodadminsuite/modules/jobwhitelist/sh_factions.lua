@@ -385,26 +385,27 @@ else
 			if (not selection.ShowIfNotPermitted and not permitted) then return end
 			created_faction = true
 
-			local faction = vgui.Create("GAS.JobWhitelist.Faction", GAS.JobWhitelist.Factions.Menu.FactionContainer)
-			table.insert(faction_pnls, faction)
-			faction:SetImage(selection.Logo)
-			faction:SetName(selection.Name)
+				local faction = vgui.Create("GAS.JobWhitelist.Faction", GAS.JobWhitelist.Factions.Menu.FactionContainer)
+				table.insert(faction_pnls, faction)
+				faction:SetImage(selection.Logo)
+				faction:SetName(selection.Name)
 
-			if (permitted) then
-				faction:SetDescription(selection.Description)
-				function faction:DoClick()
-					GAS:netStart("factions:choose")
-						net.WriteUInt(index, 6)
-					net.SendToServer()
+				if (permitted) then
+					faction:SetDescription(selection.Description)
+					function faction:DoClick()
+						GAS:netStart("factions:choose")
+							net.WriteUInt(index, 6)
+						net.SendToServer()
 
-					surface.PlaySound(GAS.JobWhitelist.Factions.Config.OnSelectionSound)
+						surface.PlaySound(GAS.JobWhitelist.Factions.Config.OnSelectionSound)
 
-					GAS.JobWhitelist.Factions.Menu:Close()
-				end
-			else
-				faction:SetDescription(L"faction_not_permitted" .. "\n" .. selection.Description)
-				function faction:DoClick()
-					surface.PlaySound(GAS.JobWhitelist.Factions.Config.PermissionDeniedSound)
+						GAS.JobWhitelist.Factions.Menu:Close()
+					end
+				else
+					faction:SetDescription(L"faction_not_permitted" .. "\n" .. selection.Description)
+					function faction:DoClick()
+						surface.PlaySound(GAS.JobWhitelist.Factions.Config.PermissionDeniedSound)
+					end
 				end
 			end
 		end

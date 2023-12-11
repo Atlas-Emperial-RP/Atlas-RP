@@ -111,73 +111,75 @@ function PANEL:FillPanel()
         for k, v in ipairs( PROJECT0.CONFIG.CUSTOMISER.Store ) do
             if( not v.Featured ) then return end
 
-            totalH = totalH+itemPanelH+PROJECT0.UI.Margin25
-            if( totalH > self2:GetTall()-rightTopH-(2*PROJECT0.UI.Margin25) ) then break end
+                totalH = totalH+itemPanelH+PROJECT0.UI.Margin25
+                if( totalH > self2:GetTall()-rightTopH-(2*PROJECT0.UI.Margin25) ) then break end
 
             local itemInfo = cosmeticTypes[v.Type].GetItemInfo( v.ItemID )
             if( not itemInfo ) then return end
 
-            local borderH = PROJECT0.FUNC.ScreenScale( 5 )
+                    local borderH = PROJECT0.FUNC.ScreenScale( 5 )
 
-            local priceText = PROJECT0.FUNC.FormatStoreCurrency( v.Price )
-            surface.SetFont( "MontserratBold19" )
-            local textW, textH = surface.GetTextSize( priceText )
-            textW = textW+PROJECT0.FUNC.ScreenScale( 10 )
-            textH = textH+PROJECT0.FUNC.ScreenScale( 5 )
+                    local priceText = PROJECT0.FUNC.FormatStoreCurrency( v.Price )
+                    surface.SetFont( "MontserratBold19" )
+                    local textW, textH = surface.GetTextSize( priceText )
+                    textW = textW+PROJECT0.FUNC.ScreenScale( 10 )
+                    textH = textH+PROJECT0.FUNC.ScreenScale( 5 )
 
-            local itemPanel = vgui.Create( "Panel", self2 )
-            itemPanel:Dock( TOP )
-            itemPanel:SetTall( itemPanelH )
-            itemPanel:DockMargin( 0, 0, 0, PROJECT0.UI.Margin25 )
-            itemPanel.Paint = function( self2, w, h )
-                if( not IsValid( self2.itemButton ) ) then return end
-                self2.itemButton:CreateFadeAlpha( 0.1, 50 )
-
-                PROJECT0.FUNC.BeginShadow( "menu_weaponcustomiser_featured_" .. k )
-                local x, y = self2:LocalToScreen( 0, 0 )
-                surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 1 ) )
-                surface.DrawRect( x, y, w, h )
-                PROJECT0.FUNC.EndShadow( "menu_weaponcustomiser_featured_" .. k, x, y, 1, 1, 1, 155, 0, 0, false )
-
-                surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 2, 150+self2.itemButton.alpha ) )
-                surface.DrawRect( 0, 0, w, h )
-
-                surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 4 ) )
-                surface.DrawRect( 0, h-borderH, w, borderH )
-
-                draw.SimpleText( itemInfo[2], "MontserratBold25", h, h/2, PROJECT0.FUNC.GetTheme( 3, 200 ), 0, TEXT_ALIGN_BOTTOM )
-                draw.SimpleText( PROJECT0.FUNC.GetRarityName( itemInfo[1] ), "MontserratBold19", h, h/2, PROJECT0.FUNC.GetSolidColor( PROJECT0.FUNC.GetRarityColor( itemInfo[1] ) ), 0, 0 )
-            
-                -- Price
-                PROJECT0.FUNC.BeginShadow( "menu_weaponcustomiser_featured_price_" .. k )
-                local x, y = self2:LocalToScreen( w-PROJECT0.UI.Margin5-textW, PROJECT0.UI.Margin5 )
-                surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 4 ) )
-                surface.DrawRect( x, y, textW, textH )
-                PROJECT0.FUNC.EndShadow( "menu_weaponcustomiser_featured_price_" .. k, x, y, 1, 1, 1, 155, 0, 0, false )
-
-                draw.SimpleText( priceText, "MontserratBold19", w-PROJECT0.UI.Margin5-(textW/2), PROJECT0.UI.Margin5+(textH/2), PROJECT0.FUNC.GetTheme( 3 ), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER )
+                    local itemPanel = vgui.Create( "Panel", self2 )
+                    itemPanel:Dock( TOP )
+                    itemPanel:SetTall( itemPanelH )
+                    itemPanel:DockMargin( 0, 0, 0, PROJECT0.UI.Margin25 )
+                    itemPanel.Paint = function( self2, w, h )
+                        if( not IsValid( self2.itemButton ) ) then return end
+                        self2.itemButton:CreateFadeAlpha( 0.1, 50 )
+                    
+                        PROJECT0.FUNC.BeginShadow( "menu_weaponcustomiser_featured_" .. k )
+                        local x, y = self2:LocalToScreen( 0, 0 )
+                        surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 1 ) )
+                        surface.DrawRect( x, y, w, h )
+                        PROJECT0.FUNC.EndShadow( "menu_weaponcustomiser_featured_" .. k, x, y, 1, 1, 1, 155, 0, 0, false )
+                    
+                        surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 2, 150+self2.itemButton.alpha ) )
+                        surface.DrawRect( 0, 0, w, h )
+                    
+                        surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 4 ) )
+                        surface.DrawRect( 0, h-borderH, w, borderH )
+                    
+                        draw.SimpleText( itemInfo[2], "MontserratBold25", h, h/2, PROJECT0.FUNC.GetTheme( 3, 200 ), 0, TEXT_ALIGN_BOTTOM )
+                        draw.SimpleText( PROJECT0.FUNC.GetRarityName( itemInfo[1] ), "MontserratBold19", h, h/2, PROJECT0.FUNC.GetSolidColor( PROJECT0.FUNC.GetRarityColor( itemInfo[1] ) ), 0, 0 )
+                    
+                        -- Price
+                        PROJECT0.FUNC.BeginShadow( "menu_weaponcustomiser_featured_price_" .. k )
+                        local x, y = self2:LocalToScreen( w-PROJECT0.UI.Margin5-textW, PROJECT0.UI.Margin5 )
+                        surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 4 ) )
+                        surface.DrawRect( x, y, textW, textH )
+                        PROJECT0.FUNC.EndShadow( "menu_weaponcustomiser_featured_price_" .. k, x, y, 1, 1, 1, 155, 0, 0, false )
+                    
+                        draw.SimpleText( priceText, "MontserratBold19", w-PROJECT0.UI.Margin5-(textW/2), PROJECT0.UI.Margin5+(textH/2), PROJECT0.FUNC.GetTheme( 3 ), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER )
+                    end
+                
+                    local displayPanel = vgui.Create( "Panel", itemPanel )
+                    displayPanel:Dock( LEFT )
+                    displayPanel:SetWide( itemPanel:GetTall()-(2*PROJECT0.UI.Margin15)-borderH )
+                    displayPanel:DockMargin( PROJECT0.UI.Margin15, PROJECT0.UI.Margin15, 0, PROJECT0.UI.Margin15+borderH )
+                    displayPanel.Paint = function( self2, w, h )
+                        surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 1, 125 ) )
+                        surface.DrawRect( 0, 0, w, h )
+                    end
+                
+                    cosmeticTypes[v.Type].OnCreatePnl( displayPanel, v.ItemID )
+                
+                    local itemButton = vgui.Create( "DButton", itemPanel )
+                    itemButton:SetSize( self2:GetWide()-(2*PROJECT0.UI.Margin25), itemPanelH )
+                    itemButton:SetText( "" )
+                    itemButton.Paint = function() end
+                    itemButton.DoClick = function( self2 )
+                        self:GetParent():SetActivePage( 4 )
+                    end
+                
+                    itemPanel.itemButton = itemButton
+                end
             end
-
-            local displayPanel = vgui.Create( "Panel", itemPanel )
-            displayPanel:Dock( LEFT )
-            displayPanel:SetWide( itemPanel:GetTall()-(2*PROJECT0.UI.Margin15)-borderH )
-            displayPanel:DockMargin( PROJECT0.UI.Margin15, PROJECT0.UI.Margin15, 0, PROJECT0.UI.Margin15+borderH )
-            displayPanel.Paint = function( self2, w, h )
-                surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 1, 125 ) )
-                surface.DrawRect( 0, 0, w, h )
-            end
-
-            cosmeticTypes[v.Type].OnCreatePnl( displayPanel, v.ItemID )
-
-            local itemButton = vgui.Create( "DButton", itemPanel )
-            itemButton:SetSize( self2:GetWide()-(2*PROJECT0.UI.Margin25), itemPanelH )
-            itemButton:SetText( "" )
-            itemButton.Paint = function() end
-            itemButton.DoClick = function( self2 )
-                self:GetParent():SetActivePage( 4 )
-            end
-
-            itemPanel.itemButton = itemButton
         end
     end
     rightPanel:RefreshStore()

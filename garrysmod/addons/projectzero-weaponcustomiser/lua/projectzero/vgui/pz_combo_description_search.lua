@@ -73,7 +73,9 @@ function PANEL:Open()
                     return
                 end
 
-				v:PaintManual()
+				else
+					v:PainManual()
+				end
 			end
         end, false, false, true, true )
 	end

@@ -253,18 +253,18 @@ function ENT:SetRagdoll( ragdoll )
 			if ( math.abs( v.x ) > 0.05 ) then return end
 			if ( math.abs( v.y ) > 0.05 ) then return end
 
-			pos[k] = nil -- don't use this point to control the ragdoll
-			ang[k] = nil -- (use the ragdoll point)
+				pos[k] = nil -- don't use this point to control the ragdoll
+				ang[k] = nil -- (use the ragdoll point)
 
-			iSkipped = iSkipped + 1
+				iSkipped = iSkipped + 1
 
-			if ( iSkipped > iMaxSkip ) then
+				if ( iSkipped > iMaxSkip ) then
 
-				ragdoll:RagdollStopControlling()
-				return
+					ragdoll:RagdollStopControlling()
+					return
 
+				end
 			end
-
 		end
 
 		--

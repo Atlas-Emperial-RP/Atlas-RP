@@ -394,6 +394,7 @@ if CLIENT then
 			render.SetMaterial( cuff.RopeMat )
 			render.DrawBeam( kidPos, pos, 0.7, 0, 5, Col.Rope )
 			render.DrawBeam( pos, kidPos, -0.7, 0, 5, Col.Rope )
+
 		end
 	end)
 	

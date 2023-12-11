@@ -507,21 +507,21 @@ function PANEL:FillAnimations( ent )
 
 		if ( ent:GetBodygroupCount( k ) <= 1 ) then return end
 
-		local bgSlider = self.BodyList:Add( "DNumSlider" )
-		bgSlider:Dock( TOP )
-		bgSlider:DockMargin( 0, 0, 0, 3 )
-		bgSlider:SetDark( true )
-		bgSlider:SetDecimals( 0 )
-		bgSlider:SetText( ent:GetBodygroupName( k ) )
-		bgSlider:SetMinMax( 0, ent:GetBodygroupCount( k ) - 1 )
-		bgSlider:SetValue( ent:GetBodygroup( k ) )
-		bgSlider.BodyGroupID = k
-		bgSlider.OnValueChanged = function( s, newVal )
-			newVal = math.Round( newVal )
+			local bgSlider = self.BodyList:Add( "DNumSlider" )
+			bgSlider:Dock( TOP )
+			bgSlider:DockMargin( 0, 0, 0, 3 )
+			bgSlider:SetDark( true )
+			bgSlider:SetDecimals( 0 )
+			bgSlider:SetText( ent:GetBodygroupName( k ) )
+			bgSlider:SetMinMax( 0, ent:GetBodygroupCount( k ) - 1 )
+			bgSlider:SetValue( ent:GetBodygroup( k ) )
+			bgSlider.BodyGroupID = k
+			bgSlider.OnValueChanged = function( s, newVal )
+				newVal = math.Round( newVal )
 
-			ent:SetBodygroup( s.BodyGroupID, newVal )
+				ent:SetBodygroup( s.BodyGroupID, newVal )
 
-			if ( IsValid( self:GetOrigin() ) ) then self:GetOrigin():BodyGroupChanged( s.BodyGroupID, newVal ) end
+				if ( IsValid( self:GetOrigin() ) ) then self:GetOrigin():BodyGroupChanged( s.BodyGroupID, newVal ) end
 
 			-- If we're not using a custom, change our spawnicon
 			-- so we save the new skin in the right place...
@@ -529,9 +529,8 @@ function PANEL:FillAnimations( ent )
 				self.SpawnIcon:SetBodyGroup( s.BodyGroupID, newVal )
 				self.SpawnIcon:SetModel( self.SpawnIcon:GetModelName(), self.SpawnIcon:GetSkinID(), self.SpawnIcon:GetBodyGroup() )
 			end
+			newItems = newItems + 1
 		end
-		newItems = newItems + 1
-
 	end
 
 	if ( newItems > 0 ) then

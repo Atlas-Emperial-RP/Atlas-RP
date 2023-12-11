@@ -8,7 +8,6 @@ function GAS.Logging.LogScanning:CommitToRegistry(log_id)
         if (GAS.Logging.LogScanning.LogRegistry[ent] == nil) then
             GAS.Logging.LogScanning.LogRegistry[ent] = {}
         end
-        GAS.Logging.LogScanning.LogRegistry[ent][#GAS.Logging.LogScanning.LogRegistry[ent] + 1] = log_id
     end
     GAS.Logging.LogScanning.CurrentLogEntities = {}
 end

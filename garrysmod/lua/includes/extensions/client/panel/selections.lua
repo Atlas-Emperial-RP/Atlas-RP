@@ -173,12 +173,16 @@ function meta:GetChildrenInRect( x, y, w, h )
 		if ( v.x > x + w ) then return end
 		if ( v.y > y + h ) then return end
 
-		if ( v.m_bSelectable ) then
-			table.insert( tab, v )
+							if ( v.m_bSelectable ) then
+								table.insert( tab, v )
+							end
+						
+							table.Add( tab, v:GetChildrenInRect( x - v.x, y - v.y, w, h ) )
+						end
+					end
+				end
+			end
 		end
-
-		table.Add( tab, v:GetChildrenInRect( x - v.x, y - v.y, w, h ) )
-
 	end
 
 

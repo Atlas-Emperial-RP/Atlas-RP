@@ -384,11 +384,16 @@ if EdgeHUD.Configuration.GetConfigValue( "VehicleDisplay" ) then
 					local allowedCoOwner = Player(k)
 
 					--Make sure the player is valid.
+<<<<<<< HEAD
 					if not IsValid(allowedCoOwner) then return end
+=======
+					if IsValid(allowedCoOwner) then
+>>>>>>> main
 
 					--Add the player to the list.
 					table.insert(allowedCoOwners, allowedCoOwner:Name())
 
+					end
 				end
 
 			end
@@ -401,11 +406,16 @@ if EdgeHUD.Configuration.GetConfigValue( "VehicleDisplay" ) then
 					local CoOwner = Player(k)
 
 					--Make sure the player is valid.
+<<<<<<< HEAD
 					if not IsValid(CoOwner) then return end
+=======
+					if IsValid(CoOwner) then
+>>>>>>> main
 
 					--Add the player to the list.
 					table.insert(coOwners, CoOwner:Name())
-
+					
+					end
 				end
 
 			end
@@ -1259,7 +1269,11 @@ if VC and EdgeHUD.Configuration.GetConfigValue( "Vehicle_DamageIndicators" )  th
 			if not IsValid(veh) then return end
 
 			--Make sure VCMOd is loaded.
+<<<<<<< HEAD
 			if not veh.VC_getDamagedParts then return end
+=======
+			if  not veh.VC_getDamagedParts then return end
+>>>>>>> main
 
 			--Set isVisible to true.
 			isVisible = true
@@ -1337,13 +1351,18 @@ if VC and EdgeHUD.Configuration.GetConfigValue( "Vehicle_DamageIndicators" )  th
 			for k,v in pairs(indicators) do
 
 				--Check if the element is visible.
+<<<<<<< HEAD
 				if v.Element:IsVisible() == false then return end
+=======
+				if v.Element:IsVisible() ~= false then
+>>>>>>> main
 
 				--Set the position.
 				v.Element:SetPos(nextPos,screenHeight - VARS.ElementsMargin - VARS.WidgetHeight - EdgeHUD.BottomOffset)
 
 				nextPos = nextPos + VARS.ElementsMargin + VARS.WidgetHeight
 
+				end
 			end
 
 		end
@@ -1998,27 +2017,32 @@ if ItemPickups == "EdgeHUD Design" then
 			if v.alpha < 0.05 then
 				items[k] = nil
 				items = table.ClearKeys(items)
+<<<<<<< HEAD
 				return
+=======
+
+			else
+
+				--Lerp data.
+				v.lerpedYPos = Lerp(FrameTime() * 8, v.lerpedYPos, v.destination)
+				v.lerpedXPos = Lerp(FrameTime() * 12, v.lerpedXPos, itemPickupWidth - v.itemWidth)
+				
+				--Draw the background.
+				surface.SetDrawColor(ColorAlpha(COLORS["Black_Transparent"], v.alpha * COLORS["Black_Transparent"].a))
+				surface.DrawRect(math.Round(v.lerpedXPos),math.Round(v.lerpedYPos),v.itemWidth,itemHeight)
+				
+				--Draw the white outline.
+				surface.SetDrawColor(ColorAlpha(COLORS["White_Outline"], v.alpha * COLORS["White_Outline"].a))
+				surface.DrawOutlinedRect(math.Round(v.lerpedXPos),math.Round(v.lerpedYPos),v.itemWidth,itemHeight)
+				
+				--Draw the corners.
+				surface.SetDrawColor(ColorAlpha(COLORS["White_Corners"], v.alpha * COLORS["White_Corners"].a))
+				EdgeHUD.DrawEdges(math.Round(v.lerpedXPos),math.Round(v.lerpedYPos),v.itemWidth,itemHeight, 8)
+				
+				draw.SimpleText( v.text, "EdgeHUD:ItemPickup", math.Round(v.lerpedXPos) + v.itemWidth / 2, math.Round(v.lerpedYPos) + itemHeight / 2, ColorAlpha(COLORS["White"], v.alpha * COLORS["White"].a), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+			
+>>>>>>> main
 			end
-
-			--Lerp data.
-			v.lerpedYPos = Lerp(FrameTime() * 8, v.lerpedYPos, v.destination)
-			v.lerpedXPos = Lerp(FrameTime() * 12, v.lerpedXPos, itemPickupWidth - v.itemWidth)
-
-			--Draw the background.
-			surface.SetDrawColor(ColorAlpha(COLORS["Black_Transparent"], v.alpha * COLORS["Black_Transparent"].a))
-			surface.DrawRect(math.Round(v.lerpedXPos),math.Round(v.lerpedYPos),v.itemWidth,itemHeight)
-
-			--Draw the white outline.
-			surface.SetDrawColor(ColorAlpha(COLORS["White_Outline"], v.alpha * COLORS["White_Outline"].a))
-			surface.DrawOutlinedRect(math.Round(v.lerpedXPos),math.Round(v.lerpedYPos),v.itemWidth,itemHeight)
-
-			--Draw the corners.
-			surface.SetDrawColor(ColorAlpha(COLORS["White_Corners"], v.alpha * COLORS["White_Corners"].a))
-			EdgeHUD.DrawEdges(math.Round(v.lerpedXPos),math.Round(v.lerpedYPos),v.itemWidth,itemHeight, 8)
-
-			draw.SimpleText( v.text, "EdgeHUD:ItemPickup", math.Round(v.lerpedXPos) + v.itemWidth / 2, math.Round(v.lerpedYPos) + itemHeight / 2, ColorAlpha(COLORS["White"], v.alpha * COLORS["White"].a), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-
 		end
 
 	end
@@ -2200,6 +2224,10 @@ concommand.Add("edgehud_toggleannouncements",function(  )
 	local data = tobool(ply:GetPData("EdgeHUD_Announcements",true))
 	ply:SetPData("EdgeHUD_Announcements",not data)
 
+<<<<<<< HEAD
 	chat.AddText(Color(50,50,50,255),"[EdgeHUD] ", Color(255,255,255,255), "Developer announcements has been turned " .. (not data == false and "off. Sorry for any inconveniencenot " or "on.") .. "")
+=======
+	chat.AddText(Color(50,50,50,255),"[EdgeHUD] ", Color(255,255,255,255), "Developer announcements has been turned " .. (not data == false and "off. Sorry for any inconvenience!" or "on.") .. "")
+>>>>>>> main
 
 end)

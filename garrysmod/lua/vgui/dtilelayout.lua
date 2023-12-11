@@ -130,25 +130,26 @@ function PANEL:LayoutTiles()
 
 		if ( not v:IsVisible() ) then return end
 
-		local w = math.ceil( v:GetWide() / ( tilesize + self:GetSpaceX() ) )
-		local h = math.ceil( v:GetTall() / ( tilesize + self:GetSpaceY() ) )
+			local w = math.ceil( v:GetWide() / ( tilesize + self:GetSpaceX() ) )
+			local h = math.ceil( v:GetTall() / ( tilesize + self:GetSpaceY() ) )
 
-		if ( v.OwnLine ) then
-			w = MaxWidth
+			if ( v.OwnLine ) then
+				w = MaxWidth
+			end
+
+			local x, y = self:FindFreeTile( 1, StartLine, w, h )
+
+			v:SetPos( self:GetBorder() + ( x - 1 ) * ( tilesize + self:GetSpaceX() ), self:GetBorder() + ( y - 1 ) * ( tilesize + self:GetSpaceY() ) )
+
+			self:ConsumeTiles( x, y, w, h )
+
+			if ( v.OwnLine ) then
+				StartLine = y + 1
+			end
+
+			LastX = x
+
 		end
-
-		local x, y = self:FindFreeTile( 1, StartLine, w, h )
-
-		v:SetPos( self:GetBorder() + ( x - 1 ) * ( tilesize + self:GetSpaceX() ), self:GetBorder() + ( y - 1 ) * ( tilesize + self:GetSpaceY() ) )
-
-		self:ConsumeTiles( x, y, w, h )
-
-		if ( v.OwnLine ) then
-			StartLine = y + 1
-		end
-
-		LastX = x
-
 	end
 
 end

@@ -92,6 +92,9 @@ function dragndrop.StartDragging()
 
 			table.insert( dragndrop.m_Dragging, v )
 
+				table.insert( dragndrop.m_Dragging, v )
+			
+			end
 		end
 
 	end
@@ -100,8 +103,9 @@ function dragndrop.StartDragging()
 
 		if ( not IsValid( v ) ) then return end
 
-		v:OnStartDragging()
+			v:OnStartDragging()
 
+		end
 	end
 
 	dragndrop.m_DraggingMain = dragndrop.m_DragWatch
@@ -122,6 +126,7 @@ function dragndrop.StopDragging()
 		if ( not IsValid( v ) ) then return end
 		v:OnStopDragging()
 
+		end
 	end
 
 	dragndrop.Clear()
@@ -244,9 +249,10 @@ hook.Add( "DrawOverlay", "DragNDropPaint", function()
 
 		if ( not IsValid( v ) ) then return end
 
-		hold_offset_x = math.min( hold_offset_x, v.x )
-		hold_offset_y = math.min( hold_offset_y, v.y )
+			hold_offset_x = math.min( hold_offset_x, v.x )
+			hold_offset_y = math.min( hold_offset_y, v.y )
 
+		end
 	end
 
 	local wasEnabled = DisableClipping( true )
@@ -262,17 +268,18 @@ hook.Add( "DrawOverlay", "DragNDropPaint", function()
 
 				if ( not IsValid( v ) ) then return end
 
-				local dist = 512 - v:Distance( dragndrop.m_DraggingMain )
+					local dist = 512 - v:Distance( dragndrop.m_DraggingMain )
 
 				if ( dist < 0 ) then return end
 
-				dist = dist / 512
-				surface.SetAlphaMultiplier( Alpha * dist )
+						dist = dist / 512
+						surface.SetAlphaMultiplier( Alpha * dist )
 
 				v.PaintingDragging = true
 				v:PaintAt( ox + v.x - v:GetWide() / 2, oy + v.y - v:GetTall() / 2 ) -- fill the gap between the top left corner and the mouse position
 				v.PaintingDragging = nil
 
+				end
 			end
 
 		surface.SetAlphaMultiplier( 1.0 )
@@ -344,8 +351,10 @@ function meta:GetValidReceiverSlot()
 			local slot = dragndrop.m_DraggingMain.m_DragSlot[ k ]
 			if ( not slot ) then return end
 
-			return self, v
+					do return self, v end
 
+				end
+			end
 		end
 
 	end

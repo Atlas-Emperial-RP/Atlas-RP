@@ -39,7 +39,10 @@ local function PermaPropsViewer()
 	        cam.End3D2D()
 	        v:DrawModel()
 	    render.SetStencilEnable(false)
-
+		
+		else
+			LocalPlayer().DrawPPEnt[k] = nil
+		end
 	end
 
 end

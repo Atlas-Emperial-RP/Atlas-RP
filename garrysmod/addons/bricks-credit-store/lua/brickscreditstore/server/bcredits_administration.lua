@@ -26,6 +26,7 @@ concommand.Add( "brcs_savenpcpositions", function( ply, cmd, args )
 			}
 			
 			table.insert( Entities, EntTable )
+
 		end
 		
 		file.Write("brickscreditstore/saved_ents/".. string.lower(game.GetMap()) ..".txt", util.TableToJSON( Entities ), "DATA")

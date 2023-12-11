@@ -80,7 +80,7 @@ if EdgeHUD.Configuration.GetConfigValue( "PlayerOverhead" ) then
 			if ply:GetPos():DistToSqr( v:GetPos() ) < 300^2 or v:IsSpeaking() then
 				table.insert(playersToRender,v)
 			end
-
+	
 		end
 
 	end)
@@ -221,6 +221,7 @@ if EdgeHUD.Configuration.GetConfigValue( "PlayerOverhead" ) then
 
 			--End cam3d2d
 			cam.End3D2D()
+
 
 		end
 

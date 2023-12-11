@@ -74,9 +74,6 @@ function ENT:Draw()
 					PROJECT0.FUNC.DrawGradientBox( x, y, w, h, 2, PROJECT0.FUNC.GetTheme( isFirst and 3 or 4 ), PROJECT0.FUNC.GetTheme( isFirst and 4 or 3 ) )
 					return
 				end
-
-				surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 4 ) )
-				surface.DrawRect( x, y, w, h )
 			end
 		end
 

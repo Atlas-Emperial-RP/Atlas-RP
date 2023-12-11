@@ -125,8 +125,6 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 					nicename[i] = string.upper( string.sub( word, 1, 1 ) )
 					return
 				end
-				
-				nicename[i] = string.upper( string.sub( word, 1, 1 ) ) .. string.sub( word, 2 )
 			end
 
 			return table.concat( nicename, " " )
@@ -197,23 +195,24 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 			for k = 0, mdl.Entity:GetNumBodyGroups() - 1 do
 				if ( mdl.Entity:GetBodygroupCount( k ) <= 1 ) then return end
 
-				local bgroup = vgui.Create( "DNumSlider" )
-				bgroup:Dock( TOP )
-				bgroup:SetText( MakeNiceName( mdl.Entity:GetBodygroupName( k ) ) )
-				bgroup:SetDark( true )
-				bgroup:SetTall( 50 )
-				bgroup:SetDecimals( 0 )
-				bgroup.type = "bgroup"
-				bgroup.typenum = k
-				bgroup:SetMax( mdl.Entity:GetBodygroupCount( k ) - 1 )
-				bgroup:SetValue( groups[ k + 1 ] or 0 )
-				bgroup.OnValueChanged = UpdateBodyGroups
+					local bgroup = vgui.Create( "DNumSlider" )
+					bgroup:Dock( TOP )
+					bgroup:SetText( MakeNiceName( mdl.Entity:GetBodygroupName( k ) ) )
+					bgroup:SetDark( true )
+					bgroup:SetTall( 50 )
+					bgroup:SetDecimals( 0 )
+					bgroup.type = "bgroup"
+					bgroup.typenum = k
+					bgroup:SetMax( mdl.Entity:GetBodygroupCount( k ) - 1 )
+					bgroup:SetValue( groups[ k + 1 ] or 0 )
+					bgroup.OnValueChanged = UpdateBodyGroups
 
-				bdcontrolspanel:AddItem( bgroup )
+					bdcontrolspanel:AddItem( bgroup )
 
-				mdl.Entity:SetBodygroup( k, groups[ k + 1 ] or 0 )
+					mdl.Entity:SetBodygroup( k, groups[ k + 1 ] or 0 )
 
-				bgtab.Tab:SetVisible( true )
+					bgtab.Tab:SetVisible( true )
+				end
 			end
 
 			sheet.tabScroller:InvalidateLayout()

@@ -38,9 +38,17 @@ function PANEL:Init()
 			for id, item in ipairs( category:GetChildren() ) do
 				if ( item == category.Header ) then return end
 
-				local str = item.Text
-				if ( str:StartWith( "#" ) ) then str = str:sub( 2 ) end
-				str = language.GetPhrase( str )
+					local str = item.Text
+					if ( str:StartWith( "#" ) ) then str = str:sub( 2 ) end
+					str = language.GetPhrase( str )
+
+					if ( not category_matched and not string.find( str:lower(), text, nil, true ) ) then
+						item:SetVisible( false )
+					else
+						item:SetVisible( true )
+						count = count + 1
+					end
+					item:InvalidateLayout()
 
 				if ( not category_matched and not string.find( str:lower(), text, nil, true ) ) then
 					item:SetVisible( false )
@@ -48,7 +56,6 @@ function PANEL:Init()
 					item:SetVisible( true )
 					count = count + 1
 				end
-				item:InvalidateLayout()
 			end
 
 			if ( count < 1 and not category_matched ) then
@@ -159,10 +166,6 @@ function PANEL:SetActiveToolText( str )
 		for id, item in ipairs( category:GetChildren() ) do
 			if ( item == category.Header ) then return end
 
-			if ( item.Name == str ) then
-				self.List:UnselectAll()
-				item:SetSelected( true )
-				return
 			end
 		end
 

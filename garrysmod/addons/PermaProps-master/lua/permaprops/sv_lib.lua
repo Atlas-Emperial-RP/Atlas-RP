@@ -152,7 +152,7 @@ function PermaProps.PPEntityFromTable( data, id )
 			if ( data.DT[ k ] == nil ) then return end
 			if not isfunction(ent[ "Set" .. k ]) then return end
 			ent[ "Set" .. k ]( ent, data.DT[ k ] )
-
+			end
 		end
 
 	end
@@ -175,7 +175,7 @@ function PermaProps.PPEntityFromTable( data, id )
 			if type(k) ~= "number" or type(v) ~= "string" then return end
 
 			ent:SetSubMaterial( k-1, v )
-			
+			end
 		end
 
 	end

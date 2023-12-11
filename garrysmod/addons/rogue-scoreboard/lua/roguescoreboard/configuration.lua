@@ -243,7 +243,7 @@ Configuration.Administration = {}
 Configuration.Administration["ulx"] = {}
 Configuration.Administration["ulx"].go_to = function(cmdPly)
     RunConsoleCommand("ulx", "goto", cmdPly:Nick())
-end
+end -- todo: fix this
 
 Configuration.Administration["ulx"].bring = function(cmdPly)
     RunConsoleCommand("ulx", "bring", cmdPly:Nick())
@@ -279,7 +279,7 @@ end
 Configuration.Administration["sam"] = {}
 Configuration.Administration["sam"].go_to = function(cmdPly)
     RunConsoleCommand("sam", "goto", cmdPly:Nick())
-end
+end  -- todo: fix this
 
 Configuration.Administration["sam"].bring = function(cmdPly)
     RunConsoleCommand("sam", "bring", cmdPly:Nick())
@@ -315,7 +315,7 @@ end
 Configuration.Administration["fadmin"] = {}
 Configuration.Administration["fadmin"].go_to = function(cmdPly)
     RunConsoleCommand("fadmin", "goto", cmdPly:Nick())
-end
+end -- todo: fix this
 
 Configuration.Administration["fadmin"].bring = function(cmdPly)
     RunConsoleCommand("fadmin", "bring", cmdPly:Nick())
@@ -351,7 +351,7 @@ end
 Configuration.Administration["serverguard"] = {}
 Configuration.Administration["serverguard"].go_to = function(cmdPly)
     RunConsoleCommand("sg", "goto", cmdPly:Nick())
-end
+end -- todo: fix this
 
 Configuration.Administration["serverguard"].bring = function(cmdPly)
     RunConsoleCommand("sg", "bring", cmdPly:Nick())
@@ -387,7 +387,7 @@ end
 Configuration.Administration["xadmin2"] = {}
 Configuration.Administration["xadmin2"].go_to = function(cmdPly)
     RunConsoleCommand("xadmin", "goto", cmdPly:Nick())
-end
+end -- todo: fix this
 
 Configuration.Administration["xadmin2"].bring = function(cmdPly)
     RunConsoleCommand("xadmin", "bring", cmdPly:Nick())
@@ -423,7 +423,7 @@ end
 Configuration.Administration["xadmin"] = {}
 Configuration.Administration["xadmin"].go_to = function(cmdPly)
     RunConsoleCommand("xadmin_goto", "goto", cmdPly:Nick())
-end
+end -- todo: fix this
 
 Configuration.Administration["xadmin"].bring = function(cmdPly)
     RunConsoleCommand("xadmin_bring", "bring", cmdPly:Nick())

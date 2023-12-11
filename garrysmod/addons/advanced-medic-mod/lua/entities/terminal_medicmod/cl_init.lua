@@ -69,33 +69,33 @@ function ENT:CreateGUI( scale )
 
 		draw.DrawText( ConfigurationMedicMod.Entities[ActiveItem].price..ConfigurationMedicMod.MoneyUnit, "MedicModFont12", w*0.5, h*0.785, Color( 255, 255, 255 ), 1)
 
-		draw.RoundedBox( 0, w*0.2, h*0.75, w*0.6, 2, Color( 255, 255, 255 ))
-	end
+		end
 
 	--[[ SCROLL SYSTEM --]]
 
-	local ItemScrollPanel = vgui.Create("DScrollPanel", frame )
-	ItemScrollPanel:SetSize( frame:GetWide()*0.6, frame:GetTall()*0.45 )
-	ItemScrollPanel:SetPos( frame:GetWide()*0.2, frame:GetTall()*0.25 )
+		local ItemScrollPanel = vgui.Create("DScrollPanel", frame )
+		ItemScrollPanel:SetSize( frame:GetWide()*0.6, frame:GetTall()*0.45 )
+		ItemScrollPanel:SetPos( frame:GetWide()*0.2, frame:GetTall()*0.25 )
 
-	ItemScrollPanel:GetVBar().Paint = function()
-	end
+		ItemScrollPanel:GetVBar().Paint = function()
+		end
 
-	ItemScrollPanel:GetVBar().btnGrip.Paint = function()
-	end
+		ItemScrollPanel:GetVBar().btnGrip.Paint = function()
+		end
 
-	ItemScrollPanel:GetVBar().btnUp.Paint = function()
-	end
+		ItemScrollPanel:GetVBar().btnUp.Paint = function()
+		end
 
-	ItemScrollPanel:GetVBar().btnDown.Paint = function()
-	end
+		ItemScrollPanel:GetVBar().btnDown.Paint = function()
+		end
 
 	--[[ ITEM LIST --]]
 
-	local ItemsList = vgui.Create( "DIconLayout", ItemScrollPanel )
-	ItemsList:SetSize( ItemScrollPanel:GetWide(), ItemScrollPanel:GetTall() )
-	ItemsList:SetPos( 0, 0 )
-	ItemsList:SetSpaceY( 0 )
+		local ItemsList = vgui.Create( "DIconLayout", ItemScrollPanel )
+		ItemsList:SetSize( ItemScrollPanel:GetWide(), ItemScrollPanel:GetTall() )
+		ItemsList:SetPos( 0, 0 )
+		ItemsList:SetSpaceY( 0 )
+		ItemsList:SetSpaceX( 0 )
 	ItemsList:SetSpaceX( 0 )
 
 	ItemSlot = {}

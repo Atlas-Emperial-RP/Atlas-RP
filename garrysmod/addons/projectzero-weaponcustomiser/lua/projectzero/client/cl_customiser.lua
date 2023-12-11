@@ -99,7 +99,10 @@ local function updateViewmodelWeapon( viewmodel, weapon, weaponClass, isDelayed 
                 return
             end
 
-            viewmodel:SetSubMaterial( v )
+                else
+                    viewmodel:SetSubMaterial( v )
+                end
+            end
         end
     end
 
@@ -115,15 +118,10 @@ local function updateViewmodelWeapon( viewmodel, weapon, weaponClass, isDelayed 
             if( isstring( v ) ) then
                 if( not (weapon.Customization or {})[v] or not IsValid( weapon.Customization[v].m_Model ) ) then return end
 
-                local modelEnt = weapon.Customization[v].m_Model
-                for i = 0, #modelEnt:GetMaterials()-1 do
-                    modelEnt:SetSubMaterial( i, skinMat )
                 end
     
                 return
             end
-    
-            viewmodel:SetSubMaterial( v, skinMat )
         end
     end
 end

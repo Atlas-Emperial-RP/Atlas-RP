@@ -86,15 +86,16 @@ local function ScaleBone( ent, bone, scale, type )
 
 		if ( ent:TranslateBoneToPhysBone( i ) ~= physBone ) then return end
 
-		-- Some bones are scaled only in certain directions (like legs don't scale on length)
-		local v = GetNiceBoneScale( ent:GetBoneName( i ), scale ) * 0.1
-		local TargetScale = ent:GetManipulateBoneScale( i ) + v * 0.1
+			-- Some bones are scaled only in certain directions (like legs don't scale on length)
+			local v = GetNiceBoneScale( ent:GetBoneName( i ), scale ) * 0.1
+			local TargetScale = ent:GetManipulateBoneScale( i ) + v * 0.1
 
-		if ( TargetScale.x < 0 ) then TargetScale.x = 0 end
-		if ( TargetScale.y < 0 ) then TargetScale.y = 0 end
-		if ( TargetScale.z < 0 ) then TargetScale.z = 0 end
+			if ( TargetScale.x < 0 ) then TargetScale.x = 0 end
+			if ( TargetScale.y < 0 ) then TargetScale.y = 0 end
+			if ( TargetScale.z < 0 ) then TargetScale.z = 0 end
 
-		ent:ManipulateBoneScale( i, TargetScale )
+			ent:ManipulateBoneScale( i, TargetScale )
+		end
 	end
 
 end

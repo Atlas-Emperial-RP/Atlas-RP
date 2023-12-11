@@ -71,9 +71,6 @@ function PROJECT0.FUNC.LoadConfiguredWeapons()
 			return
 		end
 
-		for k, v in pairs( weaponData ) do
-			weaponsList[weaponClass][k] = v
-		end
 	end
 
 	PROJECT0.TEMP.ConfiguredWeapons = weaponsList

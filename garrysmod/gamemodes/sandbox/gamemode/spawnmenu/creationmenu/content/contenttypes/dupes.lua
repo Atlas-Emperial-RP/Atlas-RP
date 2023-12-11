@@ -22,15 +22,11 @@ spawnmenu.AddCreationTab( "#spawnmenu.category.dupes", function()
 			if ( k <= offset ) then return end
 			if ( k > offset + perpage ) then break end
 
-			local entry = {
-				file	= "dupes/" .. v,
-				name	= v:StripExtension(),
-				preview	= "dupes/" .. v:StripExtension() .. ".jpg",
-				description	= "Local duplication stored on your computer. Local content can be deleted in the main menu."
-			}
+				table.insert( saves, entry )
 
-			table.insert( saves, entry )
-
+			elseif ( k > offset + perpage ) then 
+				break 
+			end
 		end
 
 		local results = {

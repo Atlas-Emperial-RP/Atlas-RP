@@ -59,10 +59,11 @@ local function SpawnSavedEntities()
 
 			local transformData = string.Explode( ";", v.TranformData )
 			
-			local ent = ents.Create( v.Class )
-			ent:SetPos( Vector( transformData[1], transformData[2], transformData[3] ) )
-			ent:SetAngles( Angle( transformData[4], transformData[5], transformData[6] ) )
-			ent:Spawn()
+				local ent = ents.Create( v.Class )
+				ent:SetPos( Vector( transformData[1], transformData[2], transformData[3] ) )
+				ent:SetAngles( Angle( transformData[4], transformData[5], transformData[6] ) )
+				ent:Spawn()
+			end
 		end
 	end
 

@@ -6,5 +6,5 @@ return {
 	Icon = "icon16/vcard_edit.png",
 	DarkRP = true,
 	GmodStore = "6017",
-	License = '{"licensee":"76561198040894045","keys":{"xeon-de":"LXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX","xeon-us":"LXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"}}'
+	License = '{"licensee":"76561198112485755","keys":{"xeon-de":"LXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX","xeon-us":"LXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"}}'
 }

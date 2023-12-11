@@ -200,26 +200,24 @@ function emenu.shop:GenPanel(bg)
 					local canbuy, suppress, msg, price = emenu.shop:CanBuyEntity(item)
 					if not price then return end
 
-					if emenu.shop.favorite.list then
-						if emenu.shop.favorite.list[tabname] then
+								if self.ent_categories[emenu.text["favorite"]] == nil then
+									self.ent_categories[emenu.text["favorite"]] = {}
+								end
 
-							if self.ent_categories[emenu.text["favorite"]] == nil then
-								self.ent_categories[emenu.text["favorite"]] = {}
-							end
-
-							if emenu.shop.favorite.list[tabname][item.cmd] then
-								item.favorite = true
-								table.insert(self.ent_categories[emenu.text["favorite"]], item)
+								if emenu.shop.favorite.list[tabname][item.cmd] then
+									item.favorite = true
+									table.insert(self.ent_categories[emenu.text["favorite"]], item)
+								end
 							end
 						end
-					end
 
-					if self.ent_categories[item.category] == nil then
-						self.ent_categories[item.category] = {}
-					end
+						if self.ent_categories[item.category] == nil then
+							self.ent_categories[item.category] = {}
+						end
 
-					if price and not item.favorite then
-						table.insert(self.ent_categories[item.category], item)
+						if price and not item.favorite then
+							table.insert(self.ent_categories[item.category], item)
+						end
 					end
 				end
 			end
@@ -248,113 +246,113 @@ function emenu.shop:GenPanel(bg)
 
 					local price = item.price
 
-					if price then
-						local canafford = ply:canAfford(price)
-
-						local itempnl = categlist:Add("DButton")
-						itempnl:SetSize(categlist:GetWide()*0.5-categlist:GetSpaceX()*2,70)
-						itempnl:SetText("")
-
-						local modelpanel = itempnl:Add("DModelPanel")
-						modelpanel:SetSize(itempnl:GetTall(),itempnl:GetTall())
-						modelpanel:SetX(6)
-						modelpanel:SetModel(item.model)
-						modelpanel:SetMouseInputEnabled(false)
-						modelpanel.LayoutEntity = function() end
-						if (IsValid(modelpanel.Entity)) then
-							local renn, renx = modelpanel.Entity:GetRenderBounds()
-							local pos = 0
-							pos = math.max(pos, math.abs(renn.x) + math.abs(renx.x))
-							modelpanel:SetFOV(60)
-							modelpanel:SetCamPos(Vector(pos, pos, pos))
-							modelpanel:SetLookAt((renn + renx) * 0.5)
-							modelpanel.Entity:SetPos(Vector(0, 0, 0))
-						end
-
-						local maxtext = emenu.text["max"]..": "..(item.max ~= 0 and item.max or "∞")
-						local maxfont = "emenu_18_500"
-						local maxsize = emenu.util.GetTextSize(maxtext,maxfont)
-						local bordercol = emenu.util.color:Adjust(emenu.colors.shop.itembg,10)
-						function itempnl:Paint(w,h)
-							local hovered = self:IsHovered()
-							draw.RoundedBox(0,0,0,w,h,hovered and emenu.colors.shop.itembg_hover or emenu.colors.shop.itembg)
-
-							surface.SetDrawColor(bordercol:Unpack())
-							surface.DrawRect(0,h-2,w,2)
-							surface.DrawRect(w-2,0,2,h)
-
-							--NAME
-							draw.SimpleText(item.name,"emenu_24_500",modelpanel:GetWide()+12,13,emenu.colors.shop.text)
-
-							--PRICE
-							draw.SimpleText(DarkRP.formatMoney(item.price),"emenu_20_500",modelpanel:GetWide()+12,h-10,emenu.colors.shop.text2,TEXT_ALIGN_LEFT,TEXT_ALIGN_BOTTOM)
-
-							--MAXIMUM
-							if item.max and item.max > 0 then
-								draw.SimpleText(maxtext,maxfont,w-12,h*0.5,emenu.colors.shop.text2,TEXT_ALIGN_RIGHT,TEXT_ALIGN_CENTER)
-							end
-						end
-
-						function itempnl:DoClick()
+						if price then
 							local canafford = ply:canAfford(price)
 
-							if canafford then
-								RunConsoleCommand("darkrp",item.cmd)
-							else
-								emenu:Notify(emenu.text["cantafford"],4)
+							local itempnl = categlist:Add("DButton")
+							itempnl:SetSize(categlist:GetWide()*0.5-categlist:GetSpaceX()*2,70)
+							itempnl:SetText("")
+
+							local modelpanel = itempnl:Add("DModelPanel")
+							modelpanel:SetSize(itempnl:GetTall(),itempnl:GetTall())
+							modelpanel:SetX(6)
+							modelpanel:SetModel(item.model)
+							modelpanel:SetMouseInputEnabled(false)
+							modelpanel.LayoutEntity = function() end
+							if (IsValid(modelpanel.Entity)) then
+								local renn, renx = modelpanel.Entity:GetRenderBounds()
+								local pos = 0
+								pos = math.max(pos, math.abs(renn.x) + math.abs(renx.x))
+								modelpanel:SetFOV(60)
+								modelpanel:SetCamPos(Vector(pos, pos, pos))
+								modelpanel:SetLookAt((renn + renx) * 0.5)
+								modelpanel.Entity:SetPos(Vector(0, 0, 0))
 							end
 
-							-- emenu.shop:ContinueBuild()
-						end
+							local maxtext = emenu.text["max"]..": "..(item.max ~= 0 and item.max or "∞")
+							local maxfont = "emenu_18_500"
+							local maxsize = emenu.util.GetTextSize(maxtext,maxfont)
+							local bordercol = emenu.util.color:Adjust(emenu.colors.shop.itembg,10)
+							function itempnl:Paint(w,h)
+								local hovered = self:IsHovered()
+								draw.RoundedBox(0,0,0,w,h,hovered and emenu.colors.shop.itembg_hover or emenu.colors.shop.itembg)
 
-						local favor = itempnl:Add("DButton")
-						local size = itempnl:GetTall()*0.3
-						favor:SetText("")
-						favor:SetSize(size,size)
-						favor:CenterVertical()
-						favor:SetX(itempnl:GetWide() - favor:GetWide() - maxsize["w"] - 25)
-						function favor:Paint(w,h)
-							local hovered = self:IsHovered()
-							local liked = item.favorite
+								surface.SetDrawColor(bordercol:Unpack())
+								surface.DrawRect(0,h-2,w,2)
+								surface.DrawRect(w-2,0,2,h)
 
-							local col = hovered and emenu.colors.shop.favorite or emenu.colors.shop.text2
-							local mat = emenu.Materials["like"]
-							if liked then
-								col = hovered and emenu.colors.shop.text2 or emenu.colors.shop.favorite
-								mat = emenu.Materials["like_filled"]
+								--NAME
+								draw.SimpleText(item.name,"emenu_24_500",modelpanel:GetWide()+12,13,emenu.colors.shop.text)
+
+								--PRICE
+								draw.SimpleText(DarkRP.formatMoney(item.price),"emenu_20_500",modelpanel:GetWide()+12,h-10,emenu.colors.shop.text2,TEXT_ALIGN_LEFT,TEXT_ALIGN_BOTTOM)
+
+								--MAXIMUM
+								if item.max and item.max > 0 then
+									draw.SimpleText(maxtext,maxfont,w-12,h*0.5,emenu.colors.shop.text2,TEXT_ALIGN_RIGHT,TEXT_ALIGN_CENTER)
+								end
 							end
-							emenu.util:DrawMaterial(0,0,w,h,col,mat)
-						end
-						function favor:DoClick()
-							if not item.favorite then
-								emenu.shop.favorite:Add(tabname,item.cmd)
-								item.favorite = true
-								emenu.shop:ContinueBuild()
-							else
-								emenu.shop.favorite:Remove(tabname,item.cmd)
-								item.favorite = nil
-								emenu.shop:ContinueBuild()
+
+							function itempnl:DoClick()
+								local canafford = ply:canAfford(price)
+
+								if canafford then
+									RunConsoleCommand("darkrp",item.cmd)
+								else
+									emenu:Notify(emenu.text["cantafford"],4)
+								end
+
+								-- emenu.shop:ContinueBuild()
 							end
-						end
 
-						function itempnl:DoRightClick()
-							local context = vgui.Create("emenu.contextmenu",bg)
-		                	context:SetWide(bg:GetWide()*0.1)
-		                	context:AddHeader(emenu.text["actions"])
-		                	context:AddButton(emenu.text["buy"],function() itempnl:DoClick() end, emenu.Materials["next"])
+							local favor = itempnl:Add("DButton")
+							local size = itempnl:GetTall()*0.3
+							favor:SetText("")
+							favor:SetSize(size,size)
+							favor:CenterVertical()
+							favor:SetX(itempnl:GetWide() - favor:GetWide() - maxsize["w"] - 25)
+							function favor:Paint(w,h)
+								local hovered = self:IsHovered()
+								local liked = item.favorite
 
-		                	if item.favorite then
-			                	context:AddButton(emenu.text["unfavorite"],function() favor:DoClick() end, emenu.Materials["like_filled"])
-			                else
-			                	context:AddButton(emenu.text["favorite"],function() favor:DoClick() end, emenu.Materials["like"])
-			                end
+								local col = hovered and emenu.colors.shop.favorite or emenu.colors.shop.text2
+								local mat = emenu.Materials["like"]
+								if liked then
+									col = hovered and emenu.colors.shop.text2 or emenu.colors.shop.favorite
+									mat = emenu.Materials["like_filled"]
+								end
+								emenu.util:DrawMaterial(0,0,w,h,col,mat)
+							end
+							function favor:DoClick()
+								if not item.favorite then
+									emenu.shop.favorite:Add(tabname,item.cmd)
+									item.favorite = true
+									emenu.shop:ContinueBuild()
+								else
+									emenu.shop.favorite:Remove(tabname,item.cmd)
+									item.favorite = nil
+									emenu.shop:ContinueBuild()
+								end
+							end
 
-		                	local posx,posy = input.GetCursorPos()
-		                	context:SetPosClamped(posx+5,posy+5)
+							function itempnl:DoRightClick()
+								local context = vgui.Create("emenu.contextmenu",bg)
+		                		context:SetWide(bg:GetWide()*0.1)
+		                		context:AddHeader(emenu.text["actions"])
+		                		context:AddButton(emenu.text["buy"],function() itempnl:DoClick() end, emenu.Materials["next"])
+
+		                		if item.favorite then
+			                		context:AddButton(emenu.text["unfavorite"],function() favor:DoClick() end, emenu.Materials["like_filled"])
+			                	else
+			                		context:AddButton(emenu.text["favorite"],function() favor:DoClick() end, emenu.Materials["like"])
+			                	end
+
+		                		local posx,posy = input.GetCursorPos()
+		                		context:SetPosClamped(posx+5,posy+5)
+							end
 						end
 					end
 				end
-
 			end
 
 			return scroll
@@ -389,22 +387,23 @@ function emenu.shop:GenPanel(bg)
 				local canbuy, suppress, msg, price = emenu.shop:CanBuyEntity(item)
 				if not price then return end
 
-				if emenu.shop.favorite.list then
-					if emenu.shop.favorite.list[tabname] then
+					if emenu.shop.favorite.list then
+						if emenu.shop.favorite.list[tabname] then
 
-						if self.ent_categories[emenu.text["favorite"]] == nil then
-							self.ent_categories[emenu.text["favorite"]] = {}
-						end
+							if self.ent_categories[emenu.text["favorite"]] == nil then
+								self.ent_categories[emenu.text["favorite"]] = {}
+							end
 
-						if emenu.shop.favorite.list[tabname][item.name] then
-							item.favorite = true
-							table.insert(self.ent_categories[emenu.text["favorite"]], item)
+							if emenu.shop.favorite.list[tabname][item.name] then
+								item.favorite = true
+								table.insert(self.ent_categories[emenu.text["favorite"]], item)
+							end
 						end
 					end
-				end
 
-				if price and not item.favorite then
-					table.insert(self.ent_categories[tabname], item)
+					if price and not item.favorite then
+						table.insert(self.ent_categories[tabname], item)
+					end
 				end
 			end
 
@@ -415,130 +414,130 @@ function emenu.shop:GenPanel(bg)
 				local items = self.ent_categories[category]
 				if (#items == 0) then return end
 
-				local categlist = vgui.Create("DIconLayout",list)
-				categlist:SetSpaceX(3)
-				categlist:SetSpaceY(3)
-				categlist:SetBorder(3)
-				categlist:SetSize(list:GetWide()-categlist:GetSpaceX(),list:GetTall())
+					local categlist = vgui.Create("DIconLayout",list)
+					categlist:SetSpaceX(3)
+					categlist:SetSpaceY(3)
+					categlist:SetBorder(3)
+					categlist:SetSize(list:GetWide()-categlist:GetSpaceX(),list:GetTall())
 
-				local catpan = vgui.Create("DPanel",categlist)
-				local font = "emenu_30_500"
-				catpan:SetSize(categlist:GetWide()-9,draw.GetFontHeight(font)+6)
-				function catpan:Paint(w,h)
-					draw.SimpleText(category,font,5,h*0.5,emenu.colors.shop.text,TEXT_ALIGN_LEFT,TEXT_ALIGN_CENTER)
-				end
+					local catpan = vgui.Create("DPanel",categlist)
+					local font = "emenu_30_500"
+					catpan:SetSize(categlist:GetWide()-9,draw.GetFontHeight(font)+6)
+					function catpan:Paint(w,h)
+						draw.SimpleText(category,font,5,h*0.5,emenu.colors.shop.text,TEXT_ALIGN_LEFT,TEXT_ALIGN_CENTER)
+					end
 
-				for id, item in ipairs(items) do
+					for id, item in ipairs(items) do
 
-					local price = item.price
+						local price = item.price
 
-					if price then
-						local canafford = ply:canAfford(price)
-
-						local itempnl = categlist:Add("DButton")
-						itempnl:SetSize(categlist:GetWide()*0.5-categlist:GetSpaceX()*2,70)
-						itempnl:SetText("")
-
-						local modelpanel = itempnl:Add("DModelPanel")
-						modelpanel:SetSize(itempnl:GetTall(),itempnl:GetTall())
-						modelpanel:SetX(6)
-						modelpanel:SetModel(item.model)
-						modelpanel:SetMouseInputEnabled(false)
-						modelpanel.LayoutEntity = function() end
-						if (IsValid(modelpanel.Entity)) then
-							local renn, renx = modelpanel.Entity:GetRenderBounds()
-							local pos = 0
-							pos = math.max(pos, math.abs(renn.x) + math.abs(renx.x))
-							modelpanel:SetFOV(60)
-							modelpanel:SetCamPos(Vector(pos, pos, pos))
-							modelpanel:SetLookAt((renn + renx) * 0.5)
-							modelpanel.Entity:SetPos(Vector(0, 0, 0))
-						end
-
-						local maxtext = emenu.text["max"]..": "..(item.max ~= 0 and item.max or "∞")
-						local maxfont = "emenu_18_500"
-						local maxsize = emenu.util.GetTextSize(maxtext,maxfont)
-						local bordercol = emenu.util.color:Adjust(emenu.colors.shop.itembg,10)
-						function itempnl:Paint(w,h)
-							local hovered = self:IsHovered()
-							draw.RoundedBox(0,0,0,w,h,hovered and emenu.colors.shop.itembg_hover or emenu.colors.shop.itembg)
-
-							surface.SetDrawColor(bordercol:Unpack())
-							surface.DrawRect(0,h-2,w,2)
-							surface.DrawRect(w-2,0,2,h)
-
-							--NAME
-							draw.SimpleText(item.name,"emenu_24_500",modelpanel:GetWide()+12,13,emenu.colors.shop.text)
-
-							--PRICE
-							draw.SimpleText(DarkRP.formatMoney(item.price),"emenu_20_500",modelpanel:GetWide()+12,h-10,emenu.colors.shop.text2,TEXT_ALIGN_LEFT,TEXT_ALIGN_BOTTOM)
-
-							--MAXIMUM
-							if item.max and item.max > 0 then
-								draw.SimpleText(maxtext,maxfont,w-12,h*0.5,emenu.colors.shop.text2,TEXT_ALIGN_RIGHT,TEXT_ALIGN_CENTER)
-							end
-						end
-
-						function itempnl:DoClick()
+						if price then
 							local canafford = ply:canAfford(price)
 
-							if canafford then
-								RunConsoleCommand("darkrp","buyfood", item.name)
-							else
-								emenu:Notify(emenu.text["cantafford"],4)
+							local itempnl = categlist:Add("DButton")
+							itempnl:SetSize(categlist:GetWide()*0.5-categlist:GetSpaceX()*2,70)
+							itempnl:SetText("")
+
+							local modelpanel = itempnl:Add("DModelPanel")
+							modelpanel:SetSize(itempnl:GetTall(),itempnl:GetTall())
+							modelpanel:SetX(6)
+							modelpanel:SetModel(item.model)
+							modelpanel:SetMouseInputEnabled(false)
+							modelpanel.LayoutEntity = function() end
+							if (IsValid(modelpanel.Entity)) then
+								local renn, renx = modelpanel.Entity:GetRenderBounds()
+								local pos = 0
+								pos = math.max(pos, math.abs(renn.x) + math.abs(renx.x))
+								modelpanel:SetFOV(60)
+								modelpanel:SetCamPos(Vector(pos, pos, pos))
+								modelpanel:SetLookAt((renn + renx) * 0.5)
+								modelpanel.Entity:SetPos(Vector(0, 0, 0))
 							end
 
-							-- emenu.shop:ContinueBuild()
-						end
+							local maxtext = emenu.text["max"]..": "..(item.max ~= 0 and item.max or "∞")
+							local maxfont = "emenu_18_500"
+							local maxsize = emenu.util.GetTextSize(maxtext,maxfont)
+							local bordercol = emenu.util.color:Adjust(emenu.colors.shop.itembg,10)
+							function itempnl:Paint(w,h)
+								local hovered = self:IsHovered()
+								draw.RoundedBox(0,0,0,w,h,hovered and emenu.colors.shop.itembg_hover or emenu.colors.shop.itembg)
 
-						local favor = itempnl:Add("DButton")
-						local size = itempnl:GetTall()*0.3
-						favor:SetText("")
-						favor:SetSize(size,size)
-						favor:CenterVertical()
-						favor:SetX(itempnl:GetWide() - favor:GetWide() - maxsize["w"] - 25)
-						function favor:Paint(w,h)
-							local hovered = self:IsHovered()
-							local liked = item.favorite
+								surface.SetDrawColor(bordercol:Unpack())
+								surface.DrawRect(0,h-2,w,2)
+								surface.DrawRect(w-2,0,2,h)
 
-							local col = hovered and emenu.colors.shop.favorite or emenu.colors.shop.text2
-							local mat = emenu.Materials["like"]
-							if liked then
-								col = hovered and emenu.colors.shop.text2 or emenu.colors.shop.favorite
-								mat = emenu.Materials["like_filled"]
+								--NAME
+								draw.SimpleText(item.name,"emenu_24_500",modelpanel:GetWide()+12,13,emenu.colors.shop.text)
+
+								--PRICE
+								draw.SimpleText(DarkRP.formatMoney(item.price),"emenu_20_500",modelpanel:GetWide()+12,h-10,emenu.colors.shop.text2,TEXT_ALIGN_LEFT,TEXT_ALIGN_BOTTOM)
+
+								--MAXIMUM
+								if item.max and item.max > 0 then
+									draw.SimpleText(maxtext,maxfont,w-12,h*0.5,emenu.colors.shop.text2,TEXT_ALIGN_RIGHT,TEXT_ALIGN_CENTER)
+								end
 							end
-							emenu.util:DrawMaterial(0,0,w,h,col,mat)
-						end
-						function favor:DoClick()
-							if not item.favorite then
-								emenu.shop.favorite:Add(tabname,item.name)
-								item.favorite = true
-								emenu.shop:ContinueBuild()
-							else
-								emenu.shop.favorite:Remove(tabname,item.name)
-								item.favorite = nil
-								emenu.shop:ContinueBuild()
+
+							function itempnl:DoClick()
+								local canafford = ply:canAfford(price)
+
+								if canafford then
+									RunConsoleCommand("darkrp","buyfood", item.name)
+								else
+									emenu:Notify(emenu.text["cantafford"],4)
+								end
+
+								-- emenu.shop:ContinueBuild()
 							end
-						end
 
-						function itempnl:DoRightClick()
-							local context = vgui.Create("emenu.contextmenu",bg)
-		                	context:SetWide(bg:GetWide()*0.1)
-		                	context:AddHeader(emenu.text["actions"])
-		                	context:AddButton(emenu.text["buy"],function() itempnl:DoClick() end, emenu.Materials["next"])
+							local favor = itempnl:Add("DButton")
+							local size = itempnl:GetTall()*0.3
+							favor:SetText("")
+							favor:SetSize(size,size)
+							favor:CenterVertical()
+							favor:SetX(itempnl:GetWide() - favor:GetWide() - maxsize["w"] - 25)
+							function favor:Paint(w,h)
+								local hovered = self:IsHovered()
+								local liked = item.favorite
 
-		                	if item.favorite then
-			                	context:AddButton(emenu.text["unfavorite"],function() favor:DoClick() end, emenu.Materials["like_filled"])
-			                else
-			                	context:AddButton(emenu.text["favorite"],function() favor:DoClick() end, emenu.Materials["like"])
-			                end
+								local col = hovered and emenu.colors.shop.favorite or emenu.colors.shop.text2
+								local mat = emenu.Materials["like"]
+								if liked then
+									col = hovered and emenu.colors.shop.text2 or emenu.colors.shop.favorite
+									mat = emenu.Materials["like_filled"]
+								end
+								emenu.util:DrawMaterial(0,0,w,h,col,mat)
+							end
+							function favor:DoClick()
+								if not item.favorite then
+									emenu.shop.favorite:Add(tabname,item.name)
+									item.favorite = true
+									emenu.shop:ContinueBuild()
+								else
+									emenu.shop.favorite:Remove(tabname,item.name)
+									item.favorite = nil
+									emenu.shop:ContinueBuild()
+								end
+							end
 
-		                	local posx,posy = input.GetCursorPos()
-		                	context:SetPosClamped(posx+5,posy+5)
+							function itempnl:DoRightClick()
+								local context = vgui.Create("emenu.contextmenu",bg)
+		        	        	context:SetWide(bg:GetWide()*0.1)
+		        	        	context:AddHeader(emenu.text["actions"])
+		        	        	context:AddButton(emenu.text["buy"],function() itempnl:DoClick() end, emenu.Materials["next"])
+
+		        	        	if item.favorite then
+			    	            	context:AddButton(emenu.text["unfavorite"],function() favor:DoClick() end, emenu.Materials["like_filled"])
+			    	            else
+			    	            	context:AddButton(emenu.text["favorite"],function() favor:DoClick() end, emenu.Materials["like"])
+			    	            end
+
+		        	        	local posx,posy = input.GetCursorPos()
+		        	        	context:SetPosClamped(posx+5,posy+5)
+							end
 						end
 					end
 				end
-
 			end
 
 			return scroll
@@ -565,26 +564,27 @@ function emenu.shop:GenPanel(bg)
 
 				if not item.price then return end
 
-				if emenu.shop.favorite.list then
-					if emenu.shop.favorite.list[tabname] then
+					if emenu.shop.favorite.list then
+						if emenu.shop.favorite.list[tabname] then
 
-						if self.ent_categories[emenu.text["favorite"]] == nil then
-							self.ent_categories[emenu.text["favorite"]] = {}
-						end
+							if self.ent_categories[emenu.text["favorite"]] == nil then
+								self.ent_categories[emenu.text["favorite"]] = {}
+							end
 
-						if emenu.shop.favorite.list[tabname][item.id] then
-							item.favorite = true
-							table.insert(self.ent_categories[emenu.text["favorite"]], item)
+							if emenu.shop.favorite.list[tabname][item.id] then
+								item.favorite = true
+								table.insert(self.ent_categories[emenu.text["favorite"]], item)
+							end
 						end
 					end
-				end
 
-				if self.ent_categories[item.category] == nil then
-					self.ent_categories[item.category] = {}
-				end
+					if self.ent_categories[item.category] == nil then
+						self.ent_categories[item.category] = {}
+					end
 
-				if item.price and not item.favorite then
-					table.insert(self.ent_categories[item.category], item)
+					if item.price and not item.favorite then
+						table.insert(self.ent_categories[item.category], item)
+					end
 				end
 			end
 
@@ -595,125 +595,125 @@ function emenu.shop:GenPanel(bg)
 				local items = self.ent_categories[category]
 				if (#items == 0) then return end
 
-				local categlist = vgui.Create("DIconLayout",list)
-				categlist:SetSpaceX(3)
-				categlist:SetSpaceY(3)
-				categlist:SetBorder(3)
-				categlist:SetSize(list:GetWide()-categlist:GetSpaceX(),list:GetTall())
+					local categlist = vgui.Create("DIconLayout",list)
+					categlist:SetSpaceX(3)
+					categlist:SetSpaceY(3)
+					categlist:SetBorder(3)
+					categlist:SetSize(list:GetWide()-categlist:GetSpaceX(),list:GetTall())
 
-				local catpan = vgui.Create("DPanel",categlist)
-				local font = "emenu_30_500"
-				catpan:SetSize(categlist:GetWide()-9,draw.GetFontHeight(font)+6)
-				function catpan:Paint(w,h)
-					draw.SimpleText(category,font,5,h*0.5,emenu.colors.shop.text,TEXT_ALIGN_LEFT,TEXT_ALIGN_CENTER)
-				end
+					local catpan = vgui.Create("DPanel",categlist)
+					local font = "emenu_30_500"
+					catpan:SetSize(categlist:GetWide()-9,draw.GetFontHeight(font)+6)
+					function catpan:Paint(w,h)
+						draw.SimpleText(category,font,5,h*0.5,emenu.colors.shop.text,TEXT_ALIGN_LEFT,TEXT_ALIGN_CENTER)
+					end
 
-				for id, item in ipairs(items) do
+					for id, item in ipairs(items) do
 
-					local price = item.price
+						local price = item.price
 
-					if price then
+						if price then
 
-						local itempnl = categlist:Add("DButton")
-						itempnl:SetSize(categlist:GetWide()*0.5-categlist:GetSpaceX()*2,70)
-						itempnl:SetText("")
+							local itempnl = categlist:Add("DButton")
+							itempnl:SetSize(categlist:GetWide()*0.5-categlist:GetSpaceX()*2,70)
+							itempnl:SetText("")
 
-						local modelpanel = itempnl:Add("DModelPanel")
-						modelpanel:SetSize(itempnl:GetTall(),itempnl:GetTall())
-						modelpanel:SetX(6)
-						modelpanel:SetModel(item.model)
-						modelpanel:SetMouseInputEnabled(false)
-						modelpanel.LayoutEntity = function() end
-						if (IsValid(modelpanel.Entity)) then
-							local renn, renx = modelpanel.Entity:GetRenderBounds()
-							local pos = 0
-							pos = math.max(pos, math.abs(renn.x) + math.abs(renx.x))
-							modelpanel:SetFOV(100)
-							modelpanel:SetCamPos(Vector(pos, pos, pos))
-							modelpanel:SetLookAt((renn + renx) * 0.5)
-							modelpanel.Entity:SetPos(Vector(0, 0, 0))
-							local ang = modelpanel.Entity:GetAngles()
-							ang.y = 45
-							modelpanel.Entity:SetAngles(ang)
-						end
-
-						local bordercol = emenu.util.color:Adjust(emenu.colors.shop.itembg,10)
-						function itempnl:Paint(w,h)
-							local hovered = self:IsHovered()
-							draw.RoundedBox(0,0,0,w,h,hovered and emenu.colors.shop.itembg_hover or emenu.colors.shop.itembg)
-
-							surface.SetDrawColor(bordercol:Unpack())
-							surface.DrawRect(0,h-2,w,2)
-							surface.DrawRect(w-2,0,2,h)
-
-							--NAME
-							draw.SimpleText(item.name,"emenu_24_500",modelpanel:GetWide()+17,13,emenu.colors.shop.text)
-
-							--PRICE
-							draw.SimpleText(DarkRP.formatMoney(item.price).." / "..item.amountGiven,"emenu_20_500",modelpanel:GetWide()+17,h-10,emenu.colors.shop.text2,TEXT_ALIGN_LEFT,TEXT_ALIGN_BOTTOM)
-
-						end
-
-						function itempnl:DoClick()
-							local canafford = ply:canAfford(price)
-
-							if canafford then
-								RunConsoleCommand("darkrp", "buyammo", item.id)
-							else
-								emenu:Notify(emenu.text["cantafford"],4)
+							local modelpanel = itempnl:Add("DModelPanel")
+							modelpanel:SetSize(itempnl:GetTall(),itempnl:GetTall())
+							modelpanel:SetX(6)
+							modelpanel:SetModel(item.model)
+							modelpanel:SetMouseInputEnabled(false)
+							modelpanel.LayoutEntity = function() end
+							if (IsValid(modelpanel.Entity)) then
+								local renn, renx = modelpanel.Entity:GetRenderBounds()
+								local pos = 0
+								pos = math.max(pos, math.abs(renn.x) + math.abs(renx.x))
+								modelpanel:SetFOV(100)
+								modelpanel:SetCamPos(Vector(pos, pos, pos))
+								modelpanel:SetLookAt((renn + renx) * 0.5)
+								modelpanel.Entity:SetPos(Vector(0, 0, 0))
+								local ang = modelpanel.Entity:GetAngles()
+								ang.y = 45
+								modelpanel.Entity:SetAngles(ang)
 							end
 
-							-- emenu.shop:ContinueBuild()
-						end
+							local bordercol = emenu.util.color:Adjust(emenu.colors.shop.itembg,10)
+							function itempnl:Paint(w,h)
+								local hovered = self:IsHovered()
+								draw.RoundedBox(0,0,0,w,h,hovered and emenu.colors.shop.itembg_hover or emenu.colors.shop.itembg)
 
-						local favor = itempnl:Add("DButton")
-						local size = itempnl:GetTall()*0.3
-						favor:SetText("")
-						favor:SetSize(size,size)
-						favor:CenterVertical()
-						favor:SetX(itempnl:GetWide() - favor:GetWide() - 25)
-						function favor:Paint(w,h)
-							local hovered = self:IsHovered()
-							local liked = item.favorite
+								surface.SetDrawColor(bordercol:Unpack())
+								surface.DrawRect(0,h-2,w,2)
+								surface.DrawRect(w-2,0,2,h)
 
-							local col = hovered and emenu.colors.shop.favorite or emenu.colors.shop.text2
-							local mat = emenu.Materials["like"]
-							if liked then
-								col = hovered and emenu.colors.shop.text2 or emenu.colors.shop.favorite
-								mat = emenu.Materials["like_filled"]
+								--NAME
+								draw.SimpleText(item.name,"emenu_24_500",modelpanel:GetWide()+17,13,emenu.colors.shop.text)
+
+								--PRICE
+								draw.SimpleText(DarkRP.formatMoney(item.price).." / "..item.amountGiven,"emenu_20_500",modelpanel:GetWide()+17,h-10,emenu.colors.shop.text2,TEXT_ALIGN_LEFT,TEXT_ALIGN_BOTTOM)
+
 							end
-							emenu.util:DrawMaterial(0,0,w,h,col,mat)
-						end
-						function favor:DoClick()
-							if not item.favorite then
-								emenu.shop.favorite:Add(tabname,item.id)
-								item.favorite = true
-								emenu.shop:ContinueBuild()
-							else
-								emenu.shop.favorite:Remove(tabname,item.id)
-								item.favorite = nil
-								emenu.shop:ContinueBuild()
+
+							function itempnl:DoClick()
+								local canafford = ply:canAfford(price)
+
+								if canafford then
+									RunConsoleCommand("darkrp", "buyammo", item.id)
+								else
+									emenu:Notify(emenu.text["cantafford"],4)
+								end
+
+								-- emenu.shop:ContinueBuild()
 							end
-						end
 
-						function itempnl:DoRightClick()
-							local context = vgui.Create("emenu.contextmenu",bg)
-		                	context:SetWide(bg:GetWide()*0.1)
-		                	context:AddHeader(emenu.text["actions"])
-		                	context:AddButton(emenu.text["buy"],function() itempnl:DoClick() end, emenu.Materials["next"])
+							local favor = itempnl:Add("DButton")
+							local size = itempnl:GetTall()*0.3
+							favor:SetText("")
+							favor:SetSize(size,size)
+							favor:CenterVertical()
+							favor:SetX(itempnl:GetWide() - favor:GetWide() - 25)
+							function favor:Paint(w,h)
+								local hovered = self:IsHovered()
+								local liked = item.favorite
 
-		                	if item.favorite then
-			                	context:AddButton(emenu.text["unfavorite"],function() favor:DoClick() end, emenu.Materials["like_filled"])
-			                else
-			                	context:AddButton(emenu.text["favorite"],function() favor:DoClick() end, emenu.Materials["like"])
-			                end
+								local col = hovered and emenu.colors.shop.favorite or emenu.colors.shop.text2
+								local mat = emenu.Materials["like"]
+								if liked then
+									col = hovered and emenu.colors.shop.text2 or emenu.colors.shop.favorite
+									mat = emenu.Materials["like_filled"]
+								end
+								emenu.util:DrawMaterial(0,0,w,h,col,mat)
+							end
+							function favor:DoClick()
+								if not item.favorite then
+									emenu.shop.favorite:Add(tabname,item.id)
+									item.favorite = true
+									emenu.shop:ContinueBuild()
+								else
+									emenu.shop.favorite:Remove(tabname,item.id)
+									item.favorite = nil
+									emenu.shop:ContinueBuild()
+								end
+							end
 
-		                	local posx,posy = input.GetCursorPos()
-		                	context:SetPosClamped(posx+5,posy+5)
+							function itempnl:DoRightClick()
+								local context = vgui.Create("emenu.contextmenu",bg)
+		        	        	context:SetWide(bg:GetWide()*0.1)
+		        	        	context:AddHeader(emenu.text["actions"])
+		        	        	context:AddButton(emenu.text["buy"],function() itempnl:DoClick() end, emenu.Materials["next"])
+
+		        	        	if item.favorite then
+			    	            	context:AddButton(emenu.text["unfavorite"],function() favor:DoClick() end, emenu.Materials["like_filled"])
+			    	            else
+			    	            	context:AddButton(emenu.text["favorite"],function() favor:DoClick() end, emenu.Materials["like"])
+			    	            end
+
+		        	        	local posx,posy = input.GetCursorPos()
+		        	        	context:SetPosClamped(posx+5,posy+5)
+							end
 						end
 					end
 				end
-
 			end
 
 			return scroll
@@ -744,32 +744,30 @@ function emenu.shop:GenPanel(bg)
 					local canbuy, suppress, msg, price = emenu.shop:CanBuyWeapons(item)
 					if not price then return end
 
-					if emenu.shop.favorite.list then
-						if emenu.shop.favorite.list[tabname] then
+									if self.ent_categories[emenu.text["favorite"]] == nil then
+										self.ent_categories[emenu.text["favorite"]] = {}
+										self.ent_categories[emenu.text["favorite"]].members = {}
+										self.ent_categories[emenu.text["favorite"]].sortOrder = -1000
+									end
 
-							if self.ent_categories[emenu.text["favorite"]] == nil then
-								self.ent_categories[emenu.text["favorite"]] = {}
-								self.ent_categories[emenu.text["favorite"]].members = {}
-								self.ent_categories[emenu.text["favorite"]].sortOrder = -1000
+									if emenu.shop.favorite.list[tabname][item.name] then
+										item.favorite = true
+										table.insert(self.ent_categories[emenu.text["favorite"]].members, item)
+									end
+								end
 							end
 
-							if emenu.shop.favorite.list[tabname][item.name] then
-								item.favorite = true
-								table.insert(self.ent_categories[emenu.text["favorite"]].members, item)
+							if self.ent_categories[item.category] == nil then
+								self.ent_categories[item.category] = {}
+								self.ent_categories[item.category].members = {}
+								self.ent_categories[item.category].sortOrder = category.sortOrder
+							end
+
+							if price and not item.favorite then
+								table.insert(self.ent_categories[item.category].members, item)
 							end
 						end
 					end
-
-					if self.ent_categories[item.category] == nil then
-						self.ent_categories[item.category] = {}
-						self.ent_categories[item.category].members = {}
-						self.ent_categories[item.category].sortOrder = category.sortOrder
-					end
-
-					if price and not item.favorite then
-						table.insert(self.ent_categories[item.category].members, item)
-					end
-
 				end
 			end
 
@@ -785,124 +783,124 @@ function emenu.shop:GenPanel(bg)
 				local items = self.ent_categories[category].members
 				if (#items == 0) then return end
 
-				local categlist = vgui.Create("DIconLayout",list)
-				categlist:SetSpaceX(3)
-				categlist:SetSpaceY(3)
-				categlist:SetBorder(3)
-				categlist:SetSize(list:GetWide()-categlist:GetSpaceX(),list:GetTall())
-
-				local catpan = vgui.Create("DPanel",categlist)
-				local font = "emenu_30_500"
-				catpan:SetSize(categlist:GetWide()-9,draw.GetFontHeight(font)+6)
-				function catpan:Paint(w,h)
-					draw.SimpleText(category,font,5,h*0.5,emenu.colors.shop.text,TEXT_ALIGN_LEFT,TEXT_ALIGN_CENTER)
-				end
-
-				for id, item in ipairs(items) do
-
-					local price = item.pricesep
-
-					if price then
-						local canafford = ply:canAfford(price)
-
-						local itempnl = categlist:Add("DButton")
-						itempnl:SetSize(categlist:GetWide()*0.5-categlist:GetSpaceX()*2,70)
-						itempnl:SetText("")
-
-						local modelpanel = itempnl:Add("DModelPanel")
-						modelpanel:SetSize(itempnl:GetTall(),itempnl:GetTall())
-						modelpanel:SetX(6)
-						modelpanel:SetModel(item.model)
-						modelpanel:SetMouseInputEnabled(false)
-						modelpanel.LayoutEntity = function() end
-						if (IsValid(modelpanel.Entity)) then
-							local renn, renx = modelpanel.Entity:GetRenderBounds()
-							local pos = 0
-							pos = math.max(pos, math.abs(renn.x) + math.abs(renx.x))
-							modelpanel:SetFOV(60)
-							modelpanel:SetCamPos(Vector(pos, pos, pos))
-							modelpanel:SetLookAt((renn + renx) * 0.5)
-							modelpanel.Entity:SetPos(Vector(0, 0, 0))
-						end
-
-						local bordercol = emenu.util.color:Adjust(emenu.colors.shop.itembg,10)
-						function itempnl:Paint(w,h)
-							local hovered = self:IsHovered()
-							draw.RoundedBox(0,0,0,w,h,hovered and emenu.colors.shop.itembg_hover or emenu.colors.shop.itembg)
-
-							surface.SetDrawColor(bordercol:Unpack())
-							surface.DrawRect(0,h-2,w,2)
-							surface.DrawRect(w-2,0,2,h)
-
-							--NAME
-							draw.SimpleText(item.name,"emenu_24_500",modelpanel:GetWide()+12,13,emenu.colors.shop.text)
-
-							--PRICE
-							draw.SimpleText(DarkRP.formatMoney(price),"emenu_20_500",modelpanel:GetWide()+12,h-10,emenu.colors.shop.text2,TEXT_ALIGN_LEFT,TEXT_ALIGN_BOTTOM)
-
-						end
-
-						function itempnl:DoClick()
+					local categlist = vgui.Create("DIconLayout",list)
+					categlist:SetSpaceX(3)
+					categlist:SetSpaceY(3)
+					categlist:SetBorder(3)
+					categlist:SetSize(list:GetWide()-categlist:GetSpaceX(),list:GetTall())
+					
+					local catpan = vgui.Create("DPanel",categlist)
+					local font = "emenu_30_500"
+					catpan:SetSize(categlist:GetWide()-9,draw.GetFontHeight(font)+6)
+					function catpan:Paint(w,h)
+						draw.SimpleText(category,font,5,h*0.5,emenu.colors.shop.text,TEXT_ALIGN_LEFT,TEXT_ALIGN_CENTER)
+					end
+				
+					for id, item in ipairs(items) do
+					
+						local price = item.pricesep
+					
+						if price then
 							local canafford = ply:canAfford(price)
-
-							if canafford then
-								RunConsoleCommand("darkrp", "buy" ,item.name)
-							else
-								emenu:Notify(emenu.text["cantafford"],4)
+						
+							local itempnl = categlist:Add("DButton")
+							itempnl:SetSize(categlist:GetWide()*0.5-categlist:GetSpaceX()*2,70)
+							itempnl:SetText("")
+						
+							local modelpanel = itempnl:Add("DModelPanel")
+							modelpanel:SetSize(itempnl:GetTall(),itempnl:GetTall())
+							modelpanel:SetX(6)
+							modelpanel:SetModel(item.model)
+							modelpanel:SetMouseInputEnabled(false)
+							modelpanel.LayoutEntity = function() end
+							if (IsValid(modelpanel.Entity)) then
+								local renn, renx = modelpanel.Entity:GetRenderBounds()
+								local pos = 0
+								pos = math.max(pos, math.abs(renn.x) + math.abs(renx.x))
+								modelpanel:SetFOV(60)
+								modelpanel:SetCamPos(Vector(pos, pos, pos))
+								modelpanel:SetLookAt((renn + renx) * 0.5)
+								modelpanel.Entity:SetPos(Vector(0, 0, 0))
 							end
-
-							-- emenu.shop:ContinueBuild()
-						end
-
-						local favor = itempnl:Add("DButton")
-						local size = itempnl:GetTall()*0.3
-						favor:SetText("")
-						favor:SetSize(size,size)
-						favor:CenterVertical()
-						favor:SetX(itempnl:GetWide() - favor:GetWide() - 25)
-						function favor:Paint(w,h)
-							local hovered = self:IsHovered()
-							local liked = item.favorite
-
-							local col = hovered and emenu.colors.shop.favorite or emenu.colors.shop.text2
-							local mat = emenu.Materials["like"]
-							if liked then
-								col = hovered and emenu.colors.shop.text2 or emenu.colors.shop.favorite
-								mat = emenu.Materials["like_filled"]
+						
+							local bordercol = emenu.util.color:Adjust(emenu.colors.shop.itembg,10)
+							function itempnl:Paint(w,h)
+								local hovered = self:IsHovered()
+								draw.RoundedBox(0,0,0,w,h,hovered and emenu.colors.shop.itembg_hover or emenu.colors.shop.itembg)
+							
+								surface.SetDrawColor(bordercol:Unpack())
+								surface.DrawRect(0,h-2,w,2)
+								surface.DrawRect(w-2,0,2,h)
+							
+								--NAME
+								draw.SimpleText(item.name,"emenu_24_500",modelpanel:GetWide()+12,13,emenu.colors.shop.text)
+							
+								--PRICE
+								draw.SimpleText(DarkRP.formatMoney(price),"emenu_20_500",modelpanel:GetWide()+12,h-10,emenu.colors.shop.text2,TEXT_ALIGN_LEFT,TEXT_ALIGN_BOTTOM)
+							
 							end
-							emenu.util:DrawMaterial(0,0,w,h,col,mat)
-						end
-						function favor:DoClick()
-							if not item.favorite then
-								emenu.shop.favorite:Add(tabname,item.name)
-								item.favorite = true
-								emenu.shop:ContinueBuild()
-							else
-								emenu.shop.favorite:Remove(tabname,item.name)
-								item.favorite = nil
-								emenu.shop:ContinueBuild()
+						
+							function itempnl:DoClick()
+								local canafford = ply:canAfford(price)
+							
+								if canafford then
+									RunConsoleCommand("darkrp", "buy" ,item.name)
+								else
+									emenu:Notify(emenu.text["cantafford"],4)
+								end
+							
+								-- emenu.shop:ContinueBuild()
 							end
+						
+							local favor = itempnl:Add("DButton")
+							local size = itempnl:GetTall()*0.3
+							favor:SetText("")
+							favor:SetSize(size,size)
+							favor:CenterVertical()
+							favor:SetX(itempnl:GetWide() - favor:GetWide() - 25)
+							function favor:Paint(w,h)
+								local hovered = self:IsHovered()
+								local liked = item.favorite
+							
+								local col = hovered and emenu.colors.shop.favorite or emenu.colors.shop.text2
+								local mat = emenu.Materials["like"]
+								if liked then
+									col = hovered and emenu.colors.shop.text2 or emenu.colors.shop.favorite
+									mat = emenu.Materials["like_filled"]
+								end
+								emenu.util:DrawMaterial(0,0,w,h,col,mat)
+							end
+							function favor:DoClick()
+								if not item.favorite then
+									emenu.shop.favorite:Add(tabname,item.name)
+									item.favorite = true
+									emenu.shop:ContinueBuild()
+								else
+									emenu.shop.favorite:Remove(tabname,item.name)
+									item.favorite = nil
+									emenu.shop:ContinueBuild()
+								end
+							end
+						
+							function itempnl:DoRightClick()
+								local context = vgui.Create("emenu.contextmenu",bg)
+		        	        	context:SetWide(bg:GetWide()*0.1)
+		        	        	context:AddHeader(emenu.text["actions"])
+		        	        	context:AddButton(emenu.text["buy"],function() itempnl:DoClick() end, emenu.Materials["next"])
+							
+		        	        	if item.favorite then
+			    	            	context:AddButton(emenu.text["unfavorite"],function() favor:DoClick() end, emenu.Materials["like_filled"])
+			    	            else
+			    	            	context:AddButton(emenu.text["favorite"],function() favor:DoClick() end, emenu.Materials["like"])
+			    	            end
+							
+		        	        	local posx,posy = input.GetCursorPos()
+		        	        	context:SetPosClamped(posx+5,posy+5)
+							end
+						
 						end
-
-						function itempnl:DoRightClick()
-							local context = vgui.Create("emenu.contextmenu",bg)
-		                	context:SetWide(bg:GetWide()*0.1)
-		                	context:AddHeader(emenu.text["actions"])
-		                	context:AddButton(emenu.text["buy"],function() itempnl:DoClick() end, emenu.Materials["next"])
-
-		                	if item.favorite then
-			                	context:AddButton(emenu.text["unfavorite"],function() favor:DoClick() end, emenu.Materials["like_filled"])
-			                else
-			                	context:AddButton(emenu.text["favorite"],function() favor:DoClick() end, emenu.Materials["like"])
-			                end
-
-		                	local posx,posy = input.GetCursorPos()
-		                	context:SetPosClamped(posx+5,posy+5)
-						end
-
 					end
 				end
-
 			end
 
 			return scroll
@@ -933,32 +931,33 @@ function emenu.shop:GenPanel(bg)
 					local canbuy, suppress, msg, price = emenu.shop:CanBuyShipments(item)
 					if not price then return end
 
-					if emenu.shop.favorite.list then
-						if emenu.shop.favorite.list[tabname] then
+							if emenu.shop.favorite.list then
+								if emenu.shop.favorite.list[tabname] then
 
-							if self.ent_categories[emenu.text["favorite"]] == nil then
-								self.ent_categories[emenu.text["favorite"]] = {}
-								self.ent_categories[emenu.text["favorite"]].members = {}
-								self.ent_categories[emenu.text["favorite"]].sortOrder = -1000
+									if self.ent_categories[emenu.text["favorite"]] == nil then
+										self.ent_categories[emenu.text["favorite"]] = {}
+										self.ent_categories[emenu.text["favorite"]].members = {}
+										self.ent_categories[emenu.text["favorite"]].sortOrder = -1000
+									end
+
+									if emenu.shop.favorite.list[tabname][item.name] then
+										item.favorite = true
+										table.insert(self.ent_categories[emenu.text["favorite"]].members, item)
+									end
+								end
 							end
 
-							if emenu.shop.favorite.list[tabname][item.name] then
-								item.favorite = true
-								table.insert(self.ent_categories[emenu.text["favorite"]].members, item)
+							if self.ent_categories[item.category] == nil then
+								self.ent_categories[item.category] = {}
+								self.ent_categories[item.category].members = {}
+								self.ent_categories[item.category].sortOrder = category.sortOrder
+							end
+
+							if price and not item.favorite then
+								table.insert(self.ent_categories[item.category].members, item)
 							end
 						end
 					end
-
-					if self.ent_categories[item.category] == nil then
-						self.ent_categories[item.category] = {}
-						self.ent_categories[item.category].members = {}
-						self.ent_categories[item.category].sortOrder = category.sortOrder
-					end
-
-					if price and not item.favorite then
-						table.insert(self.ent_categories[item.category].members, item)
-					end
-
 				end
 			end
 
@@ -972,122 +971,122 @@ function emenu.shop:GenPanel(bg)
 				local items = self.ent_categories[category].members
 				if (#items == 0) then return end
 
-				local categlist = vgui.Create("DIconLayout",list)
-				categlist:SetSpaceX(3)
-				categlist:SetSpaceY(3)
-				categlist:SetBorder(3)
-				categlist:SetSize(list:GetWide()-categlist:GetSpaceX(),list:GetTall())
-
-				local catpan = vgui.Create("DPanel",categlist)
-				local font = "emenu_30_500"
-				catpan:SetSize(categlist:GetWide()-9,draw.GetFontHeight(font)+6)
-				function catpan:Paint(w,h)
-					draw.SimpleText(category,font,5,h*0.5,emenu.colors.shop.text,TEXT_ALIGN_LEFT,TEXT_ALIGN_CENTER)
-				end
-
-				for id, item in ipairs(items) do
-
-					local price = item.price
-
-					if price then
-
-						local itempnl = categlist:Add("DButton")
-						itempnl:SetSize(categlist:GetWide()*0.5-categlist:GetSpaceX()*2,70)
-						itempnl:SetText("")
-
-						local modelpanel = itempnl:Add("DModelPanel")
-						modelpanel:SetSize(itempnl:GetTall(),itempnl:GetTall())
-						modelpanel:SetX(6)
-						modelpanel:SetModel(item.model)
-						modelpanel:SetMouseInputEnabled(false)
-						modelpanel.LayoutEntity = function() end
-						if (IsValid(modelpanel.Entity)) then
-							local renn, renx = modelpanel.Entity:GetRenderBounds()
-							local pos = 0
-							pos = math.max(pos, math.abs(renn.x) + math.abs(renx.x))
-							modelpanel:SetFOV(60)
-							modelpanel:SetCamPos(Vector(pos, pos, pos))
-							modelpanel:SetLookAt((renn + renx) * 0.5)
-							modelpanel.Entity:SetPos(Vector(0, 0, 0))
-						end
-
-						local bordercol = emenu.util.color:Adjust(emenu.colors.shop.itembg,10)
-						function itempnl:Paint(w,h)
-							local hovered = self:IsHovered()
-							draw.RoundedBox(0,0,0,w,h,hovered and emenu.colors.shop.itembg_hover or emenu.colors.shop.itembg)
-
-							surface.SetDrawColor(bordercol:Unpack())
-							surface.DrawRect(0,h-2,w,2)
-							surface.DrawRect(w-2,0,2,h)
-
-							--NAME
-							draw.SimpleText(item.name,"emenu_24_500",modelpanel:GetWide()+12,13,emenu.colors.shop.text)
-
-							--PRICE
-							draw.SimpleText(DarkRP.formatMoney(item.price),"emenu_20_500",modelpanel:GetWide()+12,h-10,emenu.colors.shop.text2,TEXT_ALIGN_LEFT,TEXT_ALIGN_BOTTOM)
-
-						end
-
-						function itempnl:DoClick()
-							local canafford = ply:canAfford(price)
-
-							if canafford then
-								RunConsoleCommand("darkrp", "buyshipment" ,item.name)
-							else
-								emenu:Notify(emenu.text["cantafford"],4)
+					local categlist = vgui.Create("DIconLayout",list)
+					categlist:SetSpaceX(3)
+					categlist:SetSpaceY(3)
+					categlist:SetBorder(3)
+					categlist:SetSize(list:GetWide()-categlist:GetSpaceX(),list:GetTall())
+					
+					local catpan = vgui.Create("DPanel",categlist)
+					local font = "emenu_30_500"
+					catpan:SetSize(categlist:GetWide()-9,draw.GetFontHeight(font)+6)
+					function catpan:Paint(w,h)
+						draw.SimpleText(category,font,5,h*0.5,emenu.colors.shop.text,TEXT_ALIGN_LEFT,TEXT_ALIGN_CENTER)
+					end
+				
+					for id, item in ipairs(items) do
+					
+						local price = item.price
+					
+						if price then
+						
+							local itempnl = categlist:Add("DButton")
+							itempnl:SetSize(categlist:GetWide()*0.5-categlist:GetSpaceX()*2,70)
+							itempnl:SetText("")
+						
+							local modelpanel = itempnl:Add("DModelPanel")
+							modelpanel:SetSize(itempnl:GetTall(),itempnl:GetTall())
+							modelpanel:SetX(6)
+							modelpanel:SetModel(item.model)
+							modelpanel:SetMouseInputEnabled(false)
+							modelpanel.LayoutEntity = function() end
+							if (IsValid(modelpanel.Entity)) then
+								local renn, renx = modelpanel.Entity:GetRenderBounds()
+								local pos = 0
+								pos = math.max(pos, math.abs(renn.x) + math.abs(renx.x))
+								modelpanel:SetFOV(60)
+								modelpanel:SetCamPos(Vector(pos, pos, pos))
+								modelpanel:SetLookAt((renn + renx) * 0.5)
+								modelpanel.Entity:SetPos(Vector(0, 0, 0))
 							end
-
-							-- emenu.shop:ContinueBuild()
-						end
-
-						local favor = itempnl:Add("DButton")
-						local size = itempnl:GetTall()*0.3
-						favor:SetText("")
-						favor:SetSize(size,size)
-						favor:CenterVertical()
-						favor:SetX(itempnl:GetWide() - favor:GetWide() - 25)
-						function favor:Paint(w,h)
-							local hovered = self:IsHovered()
-							local liked = item.favorite
-
-							local col = hovered and emenu.colors.shop.favorite or emenu.colors.shop.text2
-							local mat = emenu.Materials["like"]
-							if liked then
-								col = hovered and emenu.colors.shop.text2 or emenu.colors.shop.favorite
-								mat = emenu.Materials["like_filled"]
+						
+							local bordercol = emenu.util.color:Adjust(emenu.colors.shop.itembg,10)
+							function itempnl:Paint(w,h)
+								local hovered = self:IsHovered()
+								draw.RoundedBox(0,0,0,w,h,hovered and emenu.colors.shop.itembg_hover or emenu.colors.shop.itembg)
+							
+								surface.SetDrawColor(bordercol:Unpack())
+								surface.DrawRect(0,h-2,w,2)
+								surface.DrawRect(w-2,0,2,h)
+							
+								--NAME
+								draw.SimpleText(item.name,"emenu_24_500",modelpanel:GetWide()+12,13,emenu.colors.shop.text)
+							
+								--PRICE
+								draw.SimpleText(DarkRP.formatMoney(item.price),"emenu_20_500",modelpanel:GetWide()+12,h-10,emenu.colors.shop.text2,TEXT_ALIGN_LEFT,TEXT_ALIGN_BOTTOM)
+							
 							end
-							emenu.util:DrawMaterial(0,0,w,h,col,mat)
-						end
-						function favor:DoClick()
-							if not item.favorite then
-								emenu.shop.favorite:Add(tabname,item.name)
-								item.favorite = true
-								emenu.shop:ContinueBuild()
-							else
-								emenu.shop.favorite:Remove(tabname,item.name)
-								item.favorite = nil
-								emenu.shop:ContinueBuild()
+						
+							function itempnl:DoClick()
+								local canafford = ply:canAfford(price)
+							
+								if canafford then
+									RunConsoleCommand("darkrp", "buyshipment" ,item.name)
+								else
+									emenu:Notify(emenu.text["cantafford"],4)
+								end
+							
+								-- emenu.shop:ContinueBuild()
 							end
-						end
-
-						function itempnl:DoRightClick()
-							local context = vgui.Create("emenu.contextmenu",bg)
-		                	context:SetWide(bg:GetWide()*0.1)
-		                	context:AddHeader(emenu.text["actions"])
-		                	context:AddButton(emenu.text["buy"],function() itempnl:DoClick() end, emenu.Materials["next"])
-
-		                	if item.favorite then
-			                	context:AddButton(emenu.text["unfavorite"],function() favor:DoClick() end, emenu.Materials["like_filled"])
-			                else
-			                	context:AddButton(emenu.text["favorite"],function() favor:DoClick() end, emenu.Materials["like"])
-			                end
-
-		                	local posx,posy = input.GetCursorPos()
-		                	context:SetPosClamped(posx+5,posy+5)
+						
+							local favor = itempnl:Add("DButton")
+							local size = itempnl:GetTall()*0.3
+							favor:SetText("")
+							favor:SetSize(size,size)
+							favor:CenterVertical()
+							favor:SetX(itempnl:GetWide() - favor:GetWide() - 25)
+							function favor:Paint(w,h)
+								local hovered = self:IsHovered()
+								local liked = item.favorite
+							
+								local col = hovered and emenu.colors.shop.favorite or emenu.colors.shop.text2
+								local mat = emenu.Materials["like"]
+								if liked then
+									col = hovered and emenu.colors.shop.text2 or emenu.colors.shop.favorite
+									mat = emenu.Materials["like_filled"]
+								end
+								emenu.util:DrawMaterial(0,0,w,h,col,mat)
+							end
+							function favor:DoClick()
+								if not item.favorite then
+									emenu.shop.favorite:Add(tabname,item.name)
+									item.favorite = true
+									emenu.shop:ContinueBuild()
+								else
+									emenu.shop.favorite:Remove(tabname,item.name)
+									item.favorite = nil
+									emenu.shop:ContinueBuild()
+								end
+							end
+						
+							function itempnl:DoRightClick()
+								local context = vgui.Create("emenu.contextmenu",bg)
+		        	        	context:SetWide(bg:GetWide()*0.1)
+		        	        	context:AddHeader(emenu.text["actions"])
+		        	        	context:AddButton(emenu.text["buy"],function() itempnl:DoClick() end, emenu.Materials["next"])
+							
+		        	        	if item.favorite then
+			    	            	context:AddButton(emenu.text["unfavorite"],function() favor:DoClick() end, emenu.Materials["like_filled"])
+			    	            else
+			    	            	context:AddButton(emenu.text["favorite"],function() favor:DoClick() end, emenu.Materials["like"])
+			    	            end
+							
+		        	        	local posx,posy = input.GetCursorPos()
+		        	        	context:SetPosClamped(posx+5,posy+5)
+							end
 						end
 					end
 				end
-
 			end
 
 			return scroll

@@ -430,7 +430,8 @@ function PANEL:Setup( ParentVGUI )
 							for k, v in pairs( player.GetHumans() ) do
 								if( v == LocalPlayer() ) then return end
 								Options[v:SteamID64()] = v:Nick()
-							end
+								end
+							end)
 
 							if( table.Count( Options ) <= 0 ) then
 								notification.AddLegacy( "There are no players online!", 1, 3 )
@@ -443,8 +444,8 @@ function PANEL:Setup( ParentVGUI )
 									net.WriteString( chosenK )
 								net.SendToServer()
 							end, "Cancel", function() end )
-						end )
-					end
+						end 
+					end)
 					self2.PopUp:AddOption( "Remove", function() 
 						BRCS_QueryRequest( "Are you sure you want to remove this?", "Locker", "Yes", function() 
 							net.Start( "BRCS_Net_Remove" )
@@ -454,7 +455,7 @@ function PANEL:Setup( ParentVGUI )
 					end )
 					local YPos = self2.YPos+(ItemSize/2)
 					self2.PopUp:SetPos( self2.XPos+ItemSize-5, YPos-(self2.PopUp:GetTall()/2) )
-				end )
+				end 
 			end
 			ItemEntryCover.OnCursorExited = function( self2 )
 				if( timer.Exists( tostring( self2 ) .. "_BRCS_TIMER" ) ) then 
@@ -499,9 +500,9 @@ function PANEL:Setup( ParentVGUI )
 	end
 
 	ParentVGUI:RefreshLocker()
-end
 
-function PANEL:Paint( w, h )
+
+	function PANEL:Paint( w, h )
 end
 
 vgui.Register( "brcs_vgui_locker", PANEL, "DPanel" )

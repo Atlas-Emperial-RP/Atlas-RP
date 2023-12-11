@@ -110,6 +110,7 @@ function PROJECT0.FUNC.DermaQuery( text, title, ... )
         if( k % 2 == 0 ) then return end
 
         createButton( v, buttonsToCreate[k+1] )
+        end
     end
 
 	popup:SetExtraHeight( textArea:GetTall()+25+buttonBack:GetTall()+10 )

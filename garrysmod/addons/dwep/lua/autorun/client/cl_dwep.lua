@@ -479,6 +479,7 @@ function OpenDWEPWeapon(class)
 				configInput:SetChecked(v)
 			end
 			ypos = ypos + 29 * 1.1
+
 		end
 	end
 end 

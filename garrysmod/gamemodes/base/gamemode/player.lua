@@ -478,16 +478,16 @@ function GM:PlayerSelectSpawn( pl, transiton )
 		if ( IsValid( ChosenSpawnPoint ) and ChosenSpawnPoint:IsInWorld() ) then
 			if ( ( ChosenSpawnPoint == pl:GetVar( "LastSpawnpoint" ) or ChosenSpawnPoint == self.LastSpawnPoint ) and Count > 1 ) then return end
 
-			if ( hook.Call( "IsSpawnpointSuitable", GAMEMODE, pl, ChosenSpawnPoint, i == Count ) ) then
+				if ( hook.Call( "IsSpawnpointSuitable", GAMEMODE, pl, ChosenSpawnPoint, i == Count ) ) then
 
-				self.LastSpawnPoint = ChosenSpawnPoint
-				pl:SetVar( "LastSpawnpoint", ChosenSpawnPoint )
-				return ChosenSpawnPoint
+					self.LastSpawnPoint = ChosenSpawnPoint
+					pl:SetVar( "LastSpawnpoint", ChosenSpawnPoint )
+					return ChosenSpawnPoint
+
+				end
 
 			end
-
 		end
-
 	end
 
 	return ChosenSpawnPoint
