@@ -7,7 +7,7 @@ win.active = {}
 win.widgets = win.widgets or {}
 
 -----------------------
-/// WINDOWS MANAGER ///
+--/ WINDOWS MANAGER ///
 -----------------------
 -- Name: unique name
 -- Desc: Button Hover Text
@@ -50,19 +50,19 @@ function win:Register(Name,Desc,Icon,Func,Pos)
 					local oldfunc = pnl.OnClose
 					function pnl:OnClose()
 						win.active[self.id] = nil
-						oldfunc()
+						oldfunc(self)
 					end
 
 					local oldfunc = pnl.OnPress
 					function pnl:OnPress()
 						self:SetZPos(2)
-						oldfunc()
+						oldfunc(self)
 					end
 
 					local oldfunc = pnl.OnUnpress
 					function pnl:OnUnpress()
 						self:SetZPos(1)
-						oldfunc()
+						oldfunc(self)
 					end
 
 					self.active[string.lower(Name)] = pnl
@@ -126,7 +126,7 @@ function win:HideAll(...)
 end
 
 ---------------
-/// WIDGETS ///
+--/ WIDGETS ///
 ---------------
 -- Used for example for custom panels or functions 
 -- that run before the opening animation or after
@@ -167,7 +167,7 @@ end
 
 
 ---------------------
-/// OTHER WINDOWS ///
+--/ OTHER WINDOWS ///
 ---------------------
 --NOTIFY
 function emenu:Notify(text,time,etype)

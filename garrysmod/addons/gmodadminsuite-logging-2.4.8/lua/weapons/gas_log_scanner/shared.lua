@@ -255,7 +255,7 @@ if (CLIENT) then
 							GAS.Logging.Modules = {}
 							GAS.Logging.IndexedModules = GAS:DeserializeTable(util.Decompress(net.ReadData(data_len)))
 							for module_id, module_data in pairs(GAS.Logging.IndexedModules) do
-								if (module_data.Offline) then continue end
+								if (module_data.Offline) then return end
 								GAS.Logging.Modules[module_data.Category] = GAS.Logging.Modules[module_data.Category] or {}
 								GAS.Logging.Modules[module_data.Category][module_data.Name] = module_data
 							end
@@ -382,7 +382,7 @@ if (CLIENT) then
 				self.wRenderOrder = nil
 				break
 			end
-			if (v.hide) then continue end
+			if (v.hide) then return end
 
 			local pos, ang
 
@@ -392,7 +392,7 @@ if (CLIENT) then
 				pos, ang = self:GetBoneOrientation(self.WElements, v, bone_ent, "ValveBiped.Bip01_R_Hand")
 			end
 
-			if (not pos) then continue end
+			if (not pos) then return end
 
 			local model = v.modelEnt
 

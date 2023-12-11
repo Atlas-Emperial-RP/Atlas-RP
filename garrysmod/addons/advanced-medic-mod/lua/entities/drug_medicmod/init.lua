@@ -40,7 +40,7 @@ function ENT:Touch( ent )
 		drug = k
 		for product, val in pairs( ConfigurationMedicMod.Drugs[k] ) do
 			if product == "func" or product == "price" or product == ent:GetProduct1() or product == ent:GetProduct2() or product == ent:GetProduct3() then
-				continue
+				return
 			else
 				drug = nil
 				break

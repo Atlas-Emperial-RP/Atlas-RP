@@ -208,7 +208,7 @@ function TOOL:UpdateGhostWheel( ent, ply )
 	if ( not IsValid( ent ) ) then return end
 
 	local trace = ply:GetEyeTrace()
-	if ( not trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:IsPlayer() /*or trace.Entity:GetClass() == "gmod_wheel"*/ ) ) then
+	if ( not trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:IsPlayer() --[[or trace.Entity:GetClass() == "gmod_wheel"--]] ) ) then
 
 		ent:SetNoDraw( true )
 		return
@@ -263,7 +263,7 @@ function TOOL.BuildCPanel( CPanel )
 
 end
 
-// Don't copy paste all of those ridiculous angles, just use one variable for all of them
+-- Don't copy paste all of those ridiculous angles, just use one variable for all of them
 local zero = { wheel_rx = 0, wheel_ry = 0, wheel_rz = 0 }
 local one = { wheel_rx = 90, wheel_ry = 0, wheel_rz = 0 }
 local two = { wheel_rx = 90, wheel_ry = 0, wheel_rz = 90 }

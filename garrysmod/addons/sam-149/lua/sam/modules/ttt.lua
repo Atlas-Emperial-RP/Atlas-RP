@@ -57,7 +57,7 @@ run(function()
 			local ply = players[i]
 
 			local slays = ply:sam_get_pdata("slays_amount")
-			if not slays then continue end
+			if not slays then return end
 
 			if not ply:IsSpec() then
 				ply:Kill()

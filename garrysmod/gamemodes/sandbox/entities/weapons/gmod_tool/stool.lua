@@ -179,8 +179,8 @@ hook.Add( "PopulateToolMenu", "AddSToolsToMenu", function()
 				TOOL.Tab or "Main",
 				TOOL.Category or "New Category",
 				ToolName,
-				TOOL.Name or "#" .. ToolName,
-				TOOL.Command or "gmod_tool " .. ToolName,
+				(TOOL.Name or "#") .. ToolName,
+				(TOOL.Command or "gmod_tool ") .. ToolName,
 				TOOL.ConfigName or ToolName,
 				TOOL.BuildCPanel
 			)
@@ -200,16 +200,16 @@ search.AddProvider( function( str )
 
 	for k, v in pairs( TOOLS_LIST ) do
 
-		local niceName = v.Name or "#" .. k
+		local niceName = (v.Name or "#") .. k
 		if ( niceName:StartWith( "#" ) ) then niceName = language.GetPhrase( niceName:sub( 2 ) ) end
 
-		if ( not k:lower():find( str, nil, true ) and not niceName:lower():find( str, nil, true ) ) then continue end
+		if ( not k:lower():find( str, nil, true ) and not niceName:lower():find( str, nil, true ) ) then return end
 
 		local entry = {
 			text = niceName,
 			icon = spawnmenu.CreateContentIcon( "tool", nil, {
 				spawnname = k,
-				nicename = v.Name or "#" .. k
+				nicename = (v.Name or "#") .. k
 			} ),
 			words = { k }
 		}
@@ -234,7 +234,7 @@ spawnmenu.AddContentType( "tool", function( container, obj )
 	local icon = vgui.Create( "ContentIcon", container )
 	icon:SetContentType( "tool" )
 	icon:SetSpawnName( obj.spawnname )
-	icon:SetName( obj.nicename or "#tool." .. obj.spawnname .. ".name" )
+	icon:SetName( (obj.nicename or "#tool.") .. obj.spawnname .. ".name" )
 	icon:SetMaterial( "gui/tool.png" )
 
 	icon.DoClick = function()

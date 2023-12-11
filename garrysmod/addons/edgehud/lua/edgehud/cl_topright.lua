@@ -226,7 +226,7 @@ if EdgeHUD.Configuration.GetConfigValue( "TopRight" ) then
 				curWidget:SetVisible(true)
 			else
 				curWidget:SetVisible(false)
-				continue
+				return
 			end
 
 			--Set the panel position.

@@ -36,7 +36,7 @@ hook.Add("HUDPaint", "HUDPaint.MedicMod", function()
     if ConfigurationMedicMod.MedicTeams and table.HasValue(ConfigurationMedicMod.MedicTeams, LocalPlayer():Team()) then
         for k, v in pairs(ents.FindByClass("prop_ragdoll")) do
            
-            if not v:IsDeathRagdoll() then continue end        
+            if not v:IsDeathRagdoll() then return end        
            
             local pos = ( v:GetPos() + Vector(0,0,10) ):ToScreen()
             local dist = v:GetPos():Distance(LocalPlayer():GetPos())

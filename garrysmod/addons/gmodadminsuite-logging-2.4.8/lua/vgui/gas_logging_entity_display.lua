@@ -186,7 +186,7 @@ function PANEL:SetVehicle(vehicle_class, mdl_str)
 		end
 	else
 		for _,spawnmenu_item in pairs(list.Get("Vehicles")) do
-			if (spawnmenu_item.Class ~= vehicle_class) then continue end
+			if (spawnmenu_item.Class ~= vehicle_class) then return end
 			if (spawnmenu_item.Name ~= nil and type(spawnmenu_item.Name) == "string") then
 				self.PrintName:SetText(spawnmenu_item.Name)
 				if (file.Exists("materials/entities/" .. spawnmenu_item.Name .. ".png", "GAME")) then
@@ -414,7 +414,7 @@ GAS:netReceive("logging:EntityDisplay:SENTModel", function()
 		local model = net.ReadString()
 		if (GAS_Logging_EntityDisplay_Networking[class_name] ~= nil) then
 			for pnl in pairs(GAS_Logging_EntityDisplay_Networking[class_name]) do
-				if (not IsValid(pnl)) then continue end
+				if (not IsValid(pnl)) then return end
 				GAS_Logging_EntityDisplay_Cache[class_name] = model
 				pnl.LoadingPanel:SetLoading(false)
 				pnl.ModelPanel:SetModel(model)
@@ -426,7 +426,7 @@ GAS:netReceive("logging:EntityDisplay:SENTModel", function()
 		GAS:PlaySound("error")
 		if (GAS_Logging_EntityDisplay_Networking[class_name] ~= nil) then
 			for pnl in pairs(GAS_Logging_EntityDisplay_Networking[class_name]) do
-				if (not IsValid(pnl)) then continue end
+				if (not IsValid(pnl)) then return end
 				pnl.LoadingPanel:SetLoading(false)
 				pnl.Shruggie:SetVisible(true)
 			end

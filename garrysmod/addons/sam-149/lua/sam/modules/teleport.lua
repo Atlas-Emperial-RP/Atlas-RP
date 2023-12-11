@@ -93,7 +93,7 @@ command.new("bring")
 				if not all then
 					ply:sam_send_message(target:sam_get_exclusive(ply))
 				end
-				continue
+				return
 			end
 
 			if not target:Alive() then

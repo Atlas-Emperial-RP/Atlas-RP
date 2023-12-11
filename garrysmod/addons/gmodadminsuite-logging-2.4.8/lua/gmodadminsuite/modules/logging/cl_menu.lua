@@ -65,7 +65,7 @@ function GAS.Logging:OpenLogsContextMenu(row)
 	local data_submenu, category_submenus
 	local duplicate_prevention = {}
 	for _,replacement in ipairs(row.Data[1]) do
-		if (replacement[1] == nil or (replacement[1] ~= GAS.Logging.FORMAT_STRING and replacement[1] ~= GAS.Logging.FORMAT_HIGHLIGHT and format_submenus[replacement[1]] == nil)) then continue end
+		if (replacement[1] == nil or (replacement[1] ~= GAS.Logging.FORMAT_STRING and replacement[1] ~= GAS.Logging.FORMAT_HIGHLIGHT and format_submenus[replacement[1]] == nil)) then return end
 		if (not data_submenu) then
 			local _data_submenu, __ = menu:AddSubMenu(L"data")
 			__:SetIcon("icon16/database_gear.png")
@@ -87,14 +87,14 @@ function GAS.Logging:OpenLogsContextMenu(row)
 
 		if (replacement[1] == GAS.Logging.FORMAT_TEAM) then
 			if (duplicate_prevention[GAS.Logging.FORMAT_TEAM] and duplicate_prevention[GAS.Logging.FORMAT_TEAM][replacement[3]]) then
-				continue
+				return
 			else
 				duplicate_prevention[GAS.Logging.FORMAT_TEAM] = duplicate_prevention[GAS.Logging.FORMAT_TEAM] or {}
 				duplicate_prevention[GAS.Logging.FORMAT_TEAM][replacement[3]] = true
 			end
 		else
 			if (duplicate_prevention[replacement[1]] and duplicate_prevention[replacement[1]][replacement[2]]) then
-				continue
+				return
 			else
 				duplicate_prevention[replacement[1]] = duplicate_prevention[replacement[1]] or {}
 				duplicate_prevention[replacement[1]][replacement[2]] = true
@@ -1256,11 +1256,11 @@ GAS:hook("gmodadminsuite:ModuleFrame:logging", "logging:menu", function(ModuleFr
 				local is_operator = OpenPermissions:IsOperator(LocalPlayer())
 				local menu = DermaMenu()
 				for category_name, modules in pairs(GAS.Logging.Modules) do
-					if (GAS:table_IsEmpty(modules)) then continue end
+					if (GAS:table_IsEmpty(modules)) then return end
 					local category_submenu, category_option
 					local colored_the_icon = false
 					for module_name, module_data in pairs(modules) do
-						if (not is_operator and OpenPermissions:GetPermission(LocalPlayer(), "gmodadminsuite_logging/" .. category_name .. "/" .. module_name) == OpenPermissions.CHECKBOX.CROSSED) then continue end
+						if (not is_operator and OpenPermissions:GetPermission(LocalPlayer(), "gmodadminsuite_logging/" .. category_name .. "/" .. module_name) == OpenPermissions.CHECKBOX.CROSSED) then return end
 						if (not category_submenu) then
 							category_submenu, category_option = menu:AddSubMenu(category_name)
 						end
@@ -2261,7 +2261,7 @@ GAS:hook("gmodadminsuite:ModuleFrame:logging", "logging:menu", function(ModuleFr
 												if (logging_config.Modules[category_name][module_name].DiscordWebhooks) then
 													if (logging_config.Modules[category_name][module_name].DiscordWebhooks[webhook.name] == true) then
 														table.insert(checked, true)
-														continue
+														return
 													end
 												end
 											end
@@ -2703,7 +2703,7 @@ GAS:hook("gmodadminsuite:ModuleFrame:logging", "logging:menu", function(ModuleFr
 		GAS.Logging.Modules = {}
 		GAS.Logging.IndexedModules = GAS:DeserializeTable(util.Decompress(net.ReadData(data_len)))
 		for module_id, module_data in pairs(GAS.Logging.IndexedModules) do
-			if (module_data.Offline) then continue end
+			if (module_data.Offline) then return end
 			GAS.Logging.Modules[module_data.Category] = GAS.Logging.Modules[module_data.Category] or {}
 			GAS.Logging.Modules[module_data.Category][module_data.Name] = module_data
 		end
@@ -2773,8 +2773,8 @@ GAS:hook("gmodadminsuite:ModuleFrame:logging", "logging:menu", function(ModuleFr
 			table.ClearKeys(sorted_modules)
 			table.SortByMember(sorted_modules, "Name", true)
 			for i, module_data in ipairs(sorted_modules) do
-				if (module_data.Disabled) then continue end
-				if (not is_operator and OpenPermissions:GetPermission(LocalPlayer(), "gmodadminsuite_logging/" .. category_name .. "/" .. module_data.Name) == OpenPermissions.CHECKBOX.CROSSED) then continue end
+				if (module_data.Disabled) then return end
+				if (not is_operator and OpenPermissions:GetPermission(LocalPlayer(), "gmodadminsuite_logging/" .. category_name .. "/" .. module_data.Name) == OpenPermissions.CHECKBOX.CROSSED) then return end
 				if (not category) then
 					category = ModuleFrame.logs_content.Categories:AddCategory(category_name, module_data.Colour)
 				end

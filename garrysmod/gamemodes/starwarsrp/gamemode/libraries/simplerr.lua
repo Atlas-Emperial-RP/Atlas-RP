@@ -398,7 +398,7 @@ local function translateMsg(msg, path, line, errs)
 
     for i = 1, #errs do
         local trans = errs[i]
-        if not string.find(msg, trans.match) then continue end
+        if not string.find(msg, trans.match) then return end
 
         -- translate <eof>
         msg = string.Replace(msg, "<eof>", "end of the file")

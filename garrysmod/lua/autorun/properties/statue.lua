@@ -29,7 +29,7 @@ if ( SERVER ) then
 
 				local con = constraint.FindConstraints( ent, "Weld" )
 				for id, t in pairs( con ) do
-					if ( t.Ent1 ~= t.Ent2 or t.Ent1 ~= ent or t.Bone1 ~= 0 ) then continue end
+					if ( t.Ent1 ~= t.Ent2 or t.Ent1 ~= ent or t.Bone1 ~= 0 ) then return end
 
 					ent.StatueInfo[ t.Bone2 ] = t.Constraint
 				end

@@ -236,7 +236,7 @@ function migrateDB(callback)
 
                 for i, row in pairs(oldData) do
                     local teamcmd = (RPExtraTeams[tonumber(row.team)] or {}).command
-                    if not teamcmd then continue end
+                    if not teamcmd then return end
 
                     MySQLite.queueQuery(string.format([[INSERT INTO darkrp_jobspawn(id, teamcmd) VALUES(%s, %s)]], row.id, MySQLite.SQLStr(teamcmd)))
                 end
@@ -402,7 +402,7 @@ function DarkRP.storeOfflineMoney(sid64, amount)
             "If you are a server owner, please look closely to the files mentioned in this error",
             "After all, these files will tell you WHICH addon is doing it",
             "This is NOT a DarkRP bug!",
-            "Your server will continue working normally",
+            "Your server will return working normally",
             "But whichever addon just tried to store an offline player's money",
             "Will NOT take effect!"
         })
@@ -504,7 +504,7 @@ function setUpNonOwnableDoors()
         for _, row in pairs(r) do
             local e = DarkRP.doorIndexToEnt(tonumber(row.idx))
 
-            if not IsValid(e) then continue end
+            if not IsValid(e) then return end
             if e:isKeysOwnable() then
                 if tobool(row.isDisabled) then
                     e:setKeysNonOwnable(tobool(row.isDisabled))
@@ -553,7 +553,7 @@ function setUpTeamOwnableDoors()
             row.idx = tonumber(row.idx)
 
             local e = DarkRP.doorIndexToEnt(row.idx)
-            if not IsValid(e) then continue end
+            if not IsValid(e) then return end
 
             local _, job = DarkRP.getJobByCommand(row.job)
 
@@ -589,10 +589,10 @@ function setUpGroupDoors()
             local ent = DarkRP.doorIndexToEnt(tonumber(row.idx))
 
             if not IsValid(ent) or not ent:isKeysOwnable() then
-                continue
+                return
             end
 
-            if not RPExtraTeamDoorIDs[row.doorgroup] then continue end
+            if not RPExtraTeamDoorIDs[row.doorgroup] then return end
             ent:setDoorGroup(row.doorgroup)
         end
     end)

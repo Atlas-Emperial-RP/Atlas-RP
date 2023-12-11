@@ -104,7 +104,7 @@ do
 
 		for k, v in next, tbl, predictedNumeric do
 			local tk, tv = type(k), type(v)
-			if not self[tk] or not self[tv] then continue end
+			if not self[tk] or not self[tv] then return end
 
 			-- WRITE KEY
 			if tk == 'string' then
@@ -292,7 +292,7 @@ do
 			-- READ THE KEY
 			index = index + 1
 			index, k = self[tk](self, index, str, cache)
-			if not k then continue end
+			if not k then return end
 			-- READ THE VALUE
 			tv = sub(str, index, index)
 			index = index + 1

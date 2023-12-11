@@ -87,7 +87,7 @@ if ( CLIENT ) then
 		if ( self:GetEffect() == "" or self:GetEffect() == "none" ) then return end
 
 		for id, t in pairs( list.GetForEdit( "ThrusterEffects" ) ) do
-			if ( t.thruster_effect ~= self:GetEffect() or not t.effectDraw ) then continue end
+			if ( t.thruster_effect ~= self:GetEffect() or not t.effectDraw ) then return end
 
 			t.effectDraw( self )
 
@@ -126,7 +126,7 @@ function ENT:Think()
 		if ( self:GetEffect() == "" or self:GetEffect() == "none" ) then return end
 
 		for id, t in pairs( list.GetForEdit( "ThrusterEffects" ) ) do
-			if ( t.thruster_effect ~= self:GetEffect() or not t.effectThink ) then continue end
+			if ( t.thruster_effect ~= self:GetEffect() or not t.effectThink ) then return end
 
 			t.effectThink( self )
 

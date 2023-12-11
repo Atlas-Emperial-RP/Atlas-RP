@@ -37,7 +37,7 @@ function gmsave.PhysicsSaveList( ents )
 
 	for k, v in pairs( ents ) do
 
-		if ( not IsValid( v ) ) then continue end
+		if ( not IsValid( v ) ) then return end
 
 		tabPhys[ v.GMSaveName ] = gmsave.PhysicsSave( v )
 		if ( tabPhys[ v.GMSaveName ] ) then
@@ -58,10 +58,10 @@ function gmsave.PhysicsLoad( t, ent )
 	for k = 0, ent:GetPhysicsObjectCount() - 1 do
 
 		local tab = t[ k ]
-		if ( not tab ) then continue end
+		if ( not tab ) then return end
 
 		local obj = ent:GetPhysicsObjectNum( k )
-		if ( not IsValid( obj ) ) then continue end
+		if ( not IsValid( obj ) ) then return end
 
 		obj:SetPos( Vector( tab.origin ) )
 		obj:SetAngles( Angle( tab.angles ) )
@@ -87,7 +87,7 @@ function gmsave.PhysicsLoadFromTable( tab, ents )
 	for k, v in pairs( tab ) do
 
 		local ent = ents[ k ]
-		if ( not IsValid( ent ) ) then continue end
+		if ( not IsValid( ent ) ) then return end
 
 		gmsave.PhysicsLoad( v, ent )
 

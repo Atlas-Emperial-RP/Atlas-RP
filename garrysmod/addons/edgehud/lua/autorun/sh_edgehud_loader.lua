@@ -50,7 +50,6 @@ local toHide = {
 	["CHudSecondaryAmmo"] = true,
 	["CHudPoisonDamageIndicator"] = true,
 	["CHudSquadStatus"] = true,
-	["CHudBattery"] = true
 }
 
 --Add a HUDShouldDraw hook to hide the original HUD.

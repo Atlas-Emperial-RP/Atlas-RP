@@ -810,7 +810,7 @@ end
 local function insertCategory(destination, tbl)
     -- Override existing category of applicable
     for k, cat in pairs(destination) do
-        if cat.name ~= tbl.name then continue end
+        if cat.name ~= tbl.name then return end
 
         destination[k] = tbl
         tbl.members = cat.members
@@ -852,7 +852,7 @@ function DarkRP.addToCategory(item, kind, cat)
     -- Post-merge: manual insertion into category
     local cats = categories[kind]
     for _, c in ipairs(cats) do
-        if c.name ~= cat then continue end
+        if c.name ~= cat then return end
 
         insertCategory(c.members, item)
         return
@@ -871,9 +871,9 @@ function DarkRP.removeFromCategory(item, kind)
     local cat = item.category
     if not cat then return end
     for _, v in pairs(cats) do
-        if v.name ~= item.category then continue end
+        if v.name ~= item.category then return end
         for k, mem in pairs(v.members) do
-            if mem ~= item then continue end
+            if mem ~= item then return end
             table.remove(v.members, k)
             break
         end

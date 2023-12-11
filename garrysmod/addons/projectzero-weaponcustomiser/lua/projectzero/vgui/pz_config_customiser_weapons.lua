@@ -193,7 +193,7 @@ function PANEL:Refresh()
         local function getEnabledWeapons()
             local enabledWeapons = 0
             for k, v in pairs( weaponPack.Weapons ) do
-                if( values[k] and values[k].Disabled ) then continue end
+                if( values[k] and values[k].Disabled ) then return end
                 enabledWeapons = enabledWeapons+1
             end
 
@@ -214,7 +214,7 @@ function PANEL:Refresh()
             end
         end )
 
-        if( categoryDisabled ) then continue end
+        if( categoryDisabled ) then return end
 
         for weaponClass, weaponData in pairs( weaponPack.Weapons ) do
             local weaponEntry = self:CreateWeaponPanel( categoryPanel, weaponData.Name, weaponClass, weaponData.Model )
@@ -268,7 +268,7 @@ function PANEL:Refresh()
     local customCategoryPanel = self:CreateCategoryPanel( "custom", "Custom" )
 
     for k, v in pairs( values ) do
-        if( weaponsList[k] ) then continue end
+        if( weaponsList[k] ) then return end
         weaponsList[k] = v
 
         local weaponEntry = self:CreateWeaponPanel( customCategoryPanel, v.Name, k, v.Model )
@@ -332,7 +332,7 @@ function PANEL:Refresh()
         
         local options = {}
         for k, v in ipairs( weapons.GetList() ) do
-            if( weaponsList[v.ClassName] ) then continue end
+            if( weaponsList[v.ClassName] ) then return end
             options[v.ClassName] = PROJECT0.FUNC.GetWeaponName( v.ClassName )
         end
 

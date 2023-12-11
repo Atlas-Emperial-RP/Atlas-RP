@@ -37,7 +37,7 @@ hook.Add("DatabaseInitialized", "InitializeFAdminGroups", function()
                     FAdmin.Access.Groups[v.NAME].immunity = tonumber(v.immunity)
                 end
 
-                if CAMI.GetUsergroup(v.NAME) then continue end
+                if CAMI.GetUsergroup(v.NAME) then return end
 
                 CAMI.RegisterUsergroup({
                     Name = v.NAME,
@@ -54,7 +54,7 @@ hook.Add("DatabaseInitialized", "InitializeFAdminGroups", function()
             -- FAdmin doesn't start listening immediately because the database might not have initialised.
             -- Besides, other admin mods might add usergroups before FAdmin's Lua files are even run
             for _, v in pairs(CAMI.GetUsergroups()) do
-                if FAdmin.Access.Groups[v.Name] then continue end
+                if FAdmin.Access.Groups[v.Name] then return end
 
                 FAdmin.Access.OnUsergroupRegistered(v,"")
             end
@@ -99,7 +99,7 @@ hook.Add("DatabaseInitialized", "InitializeFAdminGroups", function()
             end
 
             for priv, access in pairs(FAdmin.Access.Privileges) do
-                if privSet[priv] then continue end
+                if privSet[priv] then return end
 
                 for i = access + 1, #hasPrivs do
                     MySQLite.query(("REPLACE INTO FADMIN_PRIVILEGES VALUES(%s, %s);"):format(MySQLite.SQLStr(hasPrivs[i]), MySQLite.SQLStr(priv)))
@@ -119,7 +119,7 @@ function FAdmin.Access.RegisterCAMIPrivilege(priv)
     FAdmin.CAMIPrivs[priv.Name] = true
 
     for groupName, groupdata in pairs(FAdmin.Access.Groups) do
-        if FAdmin.Access.Privileges[priv.Name] - 1 > groupdata.ADMIN then continue end
+        if FAdmin.Access.Privileges[priv.Name] - 1 > groupdata.ADMIN then return end
         groupdata.PRIVS[priv.Name] = true
 
         MySQLite.query(string.format([[REPLACE INTO FADMIN_PRIVILEGES VALUES(%s, %s);]], MySQLite.SQLStr(groupName), MySQLite.SQLStr(priv.Name)))
@@ -139,11 +139,11 @@ function FAdmin.Access.RegisterCAMIPrivileges()
 
 
         for privName, _ in pairs(CAMI.GetPrivileges()) do
-            if FAdmin.CAMIPrivs[privName] then continue end
+            if FAdmin.CAMIPrivs[privName] then return end
             FAdmin.CAMIPrivs[privName] = true
 
             for groupName, groupdata in pairs(FAdmin.Access.Groups) do
-                if FAdmin.Access.Privileges[privName] - 1 > groupdata.ADMIN then continue end
+                if FAdmin.Access.Privileges[privName] - 1 > groupdata.ADMIN then return end
                 groupdata.PRIVS[privName] = true
 
                 MySQLite.query(string.format([[REPLACE INTO FADMIN_PRIVILEGES VALUES(%s, %s);]], MySQLite.SQLStr(groupName), MySQLite.SQLStr(privName)))
@@ -198,7 +198,7 @@ function FAdmin.Access.SetRoot(ply, cmd, args) -- FAdmin setroot player. Sets th
     end
 
     for _, target in pairs(targets) do
-        if not IsValid(target) then continue end
+        if not IsValid(target) then return end
 
         local target_previous_group = target:GetUserGroup()
         FAdmin.Access.PlayerSetGroup(target, "superadmin")
@@ -222,7 +222,7 @@ local function AddGroup(ply, cmd, args)
 
     for priv, am in SortedPairs(FAdmin.Access.Privileges) do
         -- The user cannot create groups with privileges they don't have
-        if not FAdmin.Access.PlayerHasPrivilege(ply, priv) then continue end
+        if not FAdmin.Access.PlayerHasPrivilege(ply, priv) then return end
         if am <= admin + 1 then privs[priv] = true end
     end
 
@@ -365,7 +365,7 @@ function FAdmin.Access.SetAccess(ply, cmd, args)
     end
 
     for _, target in pairs(targets) do
-        if not IsValid(target) then continue end
+        if not IsValid(target) then return end
 
         local target_previous_group = target:GetUserGroup()
         FAdmin.Access.PlayerSetGroup(target, args[2])

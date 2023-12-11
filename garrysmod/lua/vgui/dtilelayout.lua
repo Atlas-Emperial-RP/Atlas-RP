@@ -128,7 +128,7 @@ function PANEL:LayoutTiles()
 
 	for k, v in ipairs( self:GetChildren() ) do
 
-		if ( not v:IsVisible() ) then continue end
+		if ( not v:IsVisible() ) then return end
 
 		local w = math.ceil( v:GetWide() / ( tilesize + self:GetSpaceX() ) )
 		local h = math.ceil( v:GetTall() / ( tilesize + self:GetSpaceY() ) )

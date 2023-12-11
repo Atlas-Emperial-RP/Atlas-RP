@@ -81,7 +81,7 @@ function FPP.NewBuddy(um)
     local data = sql.Query("SELECT * FROM FPP_Buddies")
     for _, v in ipairs(data or {}) do
         -- make the player buddy if they're in your buddies list
-        if v.steamid ~= SteamID then continue end
+        if v.steamid ~= SteamID then return end
 
         RunConsoleCommand("FPP_SetBuddy", ply:UserID(), v.physgun, v.gravgun, v.toolgun, v.playeruse, v.entitydamage)
         -- update the name

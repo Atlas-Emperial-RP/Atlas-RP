@@ -24,9 +24,8 @@ SWEP.AdminSpawnable = true
 SWEP.Slot = 3
 SWEP.PrintName = "Plastic Handcuffs"
 
-//
-// Handcuff Vars
-SWEP.CuffTime = 1.0 // Seconds to handcuff
+-- Handcuff Vars
+SWEP.CuffTime = 1.0 -- Seconds to handcuff
 SWEP.CuffSound = Sound( "buttons/lever7.wav" )
 
 SWEP.CuffMaterial = "phoenix_storms/plastic"
@@ -39,5 +38,5 @@ SWEP.CuffReusable = false
 SWEP.CuffBlindfold = false
 SWEP.CuffGag = false
 
-SWEP.CuffStrengthVariance = 0.4 // Randomise strangth
-SWEP.CuffRegenVariance = 0.1 // Randomise regen
+SWEP.CuffStrengthVariance = 0.4 -- Randomise strangth
+SWEP.CuffRegenVariance = 0.1 -- Randomise regen

@@ -364,7 +364,7 @@ function GenerateFlag( server )
 	for ( var key in prefixes )
 	{
 		var s = server.name.toLowerCase().indexOf( "[" + key + "]" );
-		if ( s == -1 ) continue;
+		if ( s == -1 ) return;
 		server.name = server.name.replace( server.name.substring( s, s + key.length + 2 ), "" ).trim();
 		return prefixes[ key ];
 	}

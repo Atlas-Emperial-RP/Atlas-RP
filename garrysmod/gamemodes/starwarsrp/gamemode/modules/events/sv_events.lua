@@ -188,7 +188,7 @@ local function FireSpread(ent, chanceDiv)
     local en = ents.FindInSphere(ent:GetPos(), math.random(20, 90))
 
     for _, v in ipairs(en) do
-        if not IsFlammable(v) or v == ent then continue end
+        if not IsFlammable(v) or v == ent then return end
 
         if not v.burned then
             v:Ignite(math.random(5,180), 0)

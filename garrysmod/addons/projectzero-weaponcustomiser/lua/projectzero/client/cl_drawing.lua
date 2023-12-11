@@ -284,7 +284,7 @@ function PROJECT0.FUNC.DrawGradientBox(x, y, w, h, direction, ...)
 	
 	local previousPos = (horizontal and x or y)-secSize
 	for k, v in pairs( colors ) do
-		if( k % 2 == 0 ) then continue end
+		if( k % 2 == 0 ) then return end
 
 		previousPos = previousPos+secSize
 		surface.SetDrawColor( v )
@@ -293,7 +293,7 @@ function PROJECT0.FUNC.DrawGradientBox(x, y, w, h, direction, ...)
 
 	local previousGradPos = (horizontal and x or y)-secSize
 	for k, v in pairs( colors ) do
-		if( k % 2 ~= 0 ) then continue end
+		if( k % 2 ~= 0 ) then return end
 
 		previousGradPos = previousGradPos+secSize
 

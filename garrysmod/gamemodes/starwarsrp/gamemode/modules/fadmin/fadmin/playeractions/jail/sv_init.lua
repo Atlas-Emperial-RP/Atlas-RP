@@ -8,7 +8,7 @@ local function createJailTimer(target, jailTime)
         target:FAdmin_SetGlobal("fadmin_jailed", false)
 
         for k in pairs(target.FAdminJailProps) do
-            if not IsValid(k) then continue end
+            if not IsValid(k) then return end
             k:SetCanRemove(true)
             k:Remove()
         end
@@ -32,7 +32,7 @@ local function Jail(ply, cmd, args)
     local time = ""
 
     for _, target in pairs(targets) do
-        if not IsValid(target) then continue end
+        if not IsValid(target) then return end
         if not FAdmin.Access.PlayerHasPrivilege(ply, "Jail", target) then FAdmin.Messages.SendMessage(ply, 5, "No access!") return false end
 
         local jailDistance
@@ -43,7 +43,7 @@ local function Jail(ply, cmd, args)
         if JailType == "unjail" or string.lower(cmd) == "unjail" then
             if target.FAdminJailProps then
                 for k in pairs(target.FAdminJailProps) do
-                    if not IsValid(k) then continue end
+                    if not IsValid(k) then return end
                     k:SetCanRemove(true)
                     k:Remove()
                 end

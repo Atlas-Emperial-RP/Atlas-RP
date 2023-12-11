@@ -83,7 +83,7 @@ function DarkRP.toggleSleep(player, command)
             player:RemoveAllAmmo()
             for _, v in pairs(player.WeaponsForSleep) do
                 local wep = player:Give(v[1])
-                if not IsValid(wep) then continue end
+                if not IsValid(wep) then return end
 
                 player:GiveAmmo(v[2], v[3], true)
                 player:GiveAmmo(v[4], v[5], true)
@@ -210,7 +210,7 @@ local function DamageSleepers(ent, dmginfo)
     if not ownerint or ownerint == 0 then return end
 
     for _, v in ipairs(player.GetAll()) do
-        if v:EntIndex() ~= ownerint then continue end
+        if v:EntIndex() ~= ownerint then return end
 
         if attacker == game.GetWorld() then
             amount = 10

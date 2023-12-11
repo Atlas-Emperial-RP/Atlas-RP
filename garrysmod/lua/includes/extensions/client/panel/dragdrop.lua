@@ -88,7 +88,7 @@ function dragndrop.StartDragging()
 
 		for k, v in pairs( canvas:GetSelectedChildren() ) do
 
-			if ( not v.m_DragSlot ) then continue end
+			if ( not v.m_DragSlot ) then return end
 
 			table.insert( dragndrop.m_Dragging, v )
 
@@ -98,7 +98,7 @@ function dragndrop.StartDragging()
 
 	for k, v in pairs( dragndrop.m_Dragging ) do
 
-		if ( not IsValid( v ) ) then continue end
+		if ( not IsValid( v ) ) then return end
 
 		v:OnStartDragging()
 
@@ -119,7 +119,7 @@ function dragndrop.StopDragging()
 
 	for k, v in pairs( dragndrop.m_Dragging or {} ) do
 
-		if ( not IsValid( v ) ) then continue end
+		if ( not IsValid( v ) ) then return end
 		v:OnStopDragging()
 
 	end
@@ -242,7 +242,7 @@ hook.Add( "DrawOverlay", "DragNDropPaint", function()
 	-- Find the top, left most panel
 	for k, v in pairs( dragndrop.m_Dragging ) do
 
-		if ( not IsValid( v ) ) then continue end
+		if ( not IsValid( v ) ) then return end
 
 		hold_offset_x = math.min( hold_offset_x, v.x )
 		hold_offset_y = math.min( hold_offset_y, v.y )
@@ -260,17 +260,17 @@ hook.Add( "DrawOverlay", "DragNDropPaint", function()
 
 			for k, v in pairs( dragndrop.m_Dragging ) do
 
-				if ( not IsValid( v ) ) then continue end
+				if ( not IsValid( v ) ) then return end
 
 				local dist = 512 - v:Distance( dragndrop.m_DraggingMain )
 
-				if ( dist < 0 ) then continue end
+				if ( dist < 0 ) then return end
 
 				dist = dist / 512
 				surface.SetAlphaMultiplier( Alpha * dist )
 
 				v.PaintingDragging = true
-				v:PaintAt( ox + v.x - v:GetWide() / 2, oy + v.y - v:GetTall() / 2 ) // fill the gap between the top left corner and the mouse position
+				v:PaintAt( ox + v.x - v:GetWide() / 2, oy + v.y - v:GetTall() / 2 ) -- fill the gap between the top left corner and the mouse position
 				v.PaintingDragging = nil
 
 			end
@@ -339,10 +339,10 @@ function meta:GetValidReceiverSlot()
 		-- Find matching slot..
 		for k, v in pairs( self.m_ReceiverSlot ) do
 
-			if ( not dragndrop.m_DraggingMain.m_DragSlot ) then continue end
+			if ( not dragndrop.m_DraggingMain.m_DragSlot ) then return end
 
 			local slot = dragndrop.m_DraggingMain.m_DragSlot[ k ]
-			if ( not slot ) then continue end
+			if ( not slot ) then return end
 
 			return self, v
 
@@ -497,10 +497,8 @@ end
 -- Implement DragHoverClick in your panel class to get this functionality
 --
 function meta:DragHover( HoverTime )
+	-- Call DragHoverClick if we've been hovering for 0.1 seconds..
 
-	//
-	// Call DragHoverClick if we've been hovering for 0.1 seconds..
-	//
 	if ( HoverTime < 0.1 ) then dragndrop.m_bHoverClick = false end
 	if ( HoverTime > 0.1 and not dragndrop.m_bHoverClick ) then
 

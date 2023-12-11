@@ -113,7 +113,7 @@ function PANEL:RefreshResults( str )
 
 	local results = search.GetResults( str, self.m_strSearchType, GetConVarNumber( "sbox_search_maxresults" ) )
 	for id, result in ipairs( results ) do
-		if ( not IsValid( result.icon ) ) then ErrorNoHalt( "Failed to create icon for " .. ( result.words and isstring( result.words[ 1 ] ) and result.words[ 1 ] or result.text ).. "\n" ) continue end
+		if ( not IsValid( result.icon ) ) then ErrorNoHalt( "Failed to create icon for " .. ( result.words and isstring( result.words[ 1 ] ) and result.words[ 1 ] or result.text ).. "\n" ) return end
 		result.icon:SetParent( vgui.GetWorldPanel() ) -- Don't parent the icons to search panel prematurely
 	end
 

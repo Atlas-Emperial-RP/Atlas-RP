@@ -172,7 +172,7 @@ end
 
 function PANEL:removeTab(name)
     for _, v in pairs(self.Items) do
-        if v.Tab:GetText() ~= name then continue end
+        if v.Tab:GetText() ~= name then return end
         return self:CloseTab(v.Tab, true)
     end
 end

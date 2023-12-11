@@ -95,7 +95,7 @@ function GAS.AdminPhysgun:RainbowPhysgunInit(enabled)
 				colVec.z = col.b / 255
 		
 				for _, ply in ipairs(filter) do
-					if (not IsValid(ply) or IsDormant(ply)) then continue end
+					if (not IsValid(ply) or IsDormant(ply)) then return end
 		
 					local wep = GetActiveWeapon(ply)
 					if (IsValid(wep) and GetClass(wep) == "weapon_physgun") then
@@ -119,9 +119,9 @@ function GAS.AdminPhysgun:RainbowPhysgunInit(enabled)
 				local localPos = GetPos(localPly)
 		
 				for _, ply in ipairs(permitted) do
-					if (not IsValid(ply) or IsDormant(ply)) then continue end
+					if (not IsValid(ply) or IsDormant(ply)) then return end
 					
-					if (ply ~= localPly and DistToSqr(GetPos(ply), localPos) > 500000) then continue end
+					if (ply ~= localPly and DistToSqr(GetPos(ply), localPos) > 500000) then return end
 		
 					filter[#filter + 1] = ply
 				end

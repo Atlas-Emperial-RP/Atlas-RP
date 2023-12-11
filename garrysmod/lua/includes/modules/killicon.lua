@@ -62,7 +62,8 @@ function GetSize( name )
 		return t.size.w, t.size.h
 	end
 	
-	local w, h = 0
+	local w = 0
+	local h = 0
 	
 	if ( t.type == TYPE_FONT ) then
 	

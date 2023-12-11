@@ -1,11 +1,11 @@
-/*
+--[[
    ____          _          _   ____          __  __       _ _                     
   / ___|___   __| | ___  __| | | __ ) _   _  |  \/  | __ _| | |__   ___  _ __ ___  
  | |   / _ \ / _` |/ _ \/ _` | |  _ \| | | | | |\/| |/ _` | | '_ \ / _ \| '__/ _ \ 
  | |__| (_) | (_| |  __/ (_| | | |_) | |_| | | |  | | (_| | | |_) | (_) | | | (_) |
   \____\___/ \__,_|\___|\__,_| |____/ \__, | |_|  |_|\__,_|_|_.__/ \___/|_|  \___/ 
                                       |___/                                        
-*/
+--]]
 
 if not PermaProps then PermaProps = {} end
 
@@ -72,7 +72,7 @@ PermaProps.SpecialENTSSpawn["prop_ragdoll"] = function( ent, data )
 		for objectid, objectdata in pairs( data["Bones"] ) do
 
 			local Phys = ent:GetPhysicsObjectNum( objectid )
-			if not IsValid( Phys ) then continue end
+			if not IsValid( Phys ) then return end
 		
 			if ( isvector( objectdata.Pos ) and isangle( objectdata.Angle ) ) then
 
@@ -239,7 +239,7 @@ PermaProps.SpecialENTSSave["prop_ragdoll"] = function( ent )
 	for objectid = 0, num - 1 do
 
 		local obj = ent:GetPhysicsObjectNum( objectid )
-		if ( not obj:IsValid() ) then continue end
+		if ( not obj:IsValid() ) then return end
 
 		content.Other["Bones"][ objectid ] = {}
 

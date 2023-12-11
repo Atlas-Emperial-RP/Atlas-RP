@@ -59,10 +59,10 @@ hook.Add("PlayerInitialSpawn", "FAdmin_ChangelevelInfo", function(ply)
 
     for _, v in ipairs(maps) do
         local name = string.lower(string.gsub(v, "%.bsp$", ""))
-        if ignoreMaps[name] then continue end
+        if ignoreMaps[name] then return end
 
         local prefix = string.match(name, "^(.-_)")
-        if ignoreMaps[prefix] then continue end
+        if ignoreMaps[prefix] then return end
 
         for _, ignore in ipairs(ignorePatterns) do
             if string.find(name, ignore) then
@@ -86,7 +86,7 @@ hook.Add("PlayerInitialSpawn", "FAdmin_ChangelevelInfo", function(ply)
         mapCategory = mapCategory or "Other"
         -- Don't show CS:GO maps
         if mapCategory == "Counter-Strike" and not file.Exists("maps/" .. name .. ".bsp", "cstrike") then
-            continue
+            return
         end
 
         if not mapList[mapCategory] then

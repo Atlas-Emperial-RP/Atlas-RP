@@ -499,7 +499,7 @@ function meta:CopyBase( pnl )
 	self:CopyBounds( pnl )
 	self:Dock( pnl:GetDock() )
 
-	// TODO. More.
+	-- TODO. More.
 
 end
 

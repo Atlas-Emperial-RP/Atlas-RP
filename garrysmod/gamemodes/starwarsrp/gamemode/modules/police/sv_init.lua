@@ -344,7 +344,7 @@ function DarkRP.hooks:playerArrested(ply, time, arrester)
 
     local phrase = DarkRP.getPhrase("hes_arrested", ply:Nick(), time)
     for _, v in ipairs(player.GetAll()) do
-        if v == ply then continue end
+        if v == ply then return end
         v:PrintMessage(HUD_PRINTCENTER, phrase)
     end
 

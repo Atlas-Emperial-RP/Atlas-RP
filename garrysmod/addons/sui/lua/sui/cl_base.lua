@@ -459,7 +459,7 @@ sui.Material = Material
 
 local function prepare_theme(theme)
 	for k, v in pairs(theme) do
-		if IsColor(v) then continue end
+		if IsColor(v) then return end
 
 		if istable(v) then
 			prepare_theme(v)

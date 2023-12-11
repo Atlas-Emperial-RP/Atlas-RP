@@ -1,6 +1,6 @@
 local function onBought(ply, ent)
     for _, v in pairs(ent.Seats or {}) do
-        if not IsValid(v) or not v:isKeysOwnable() then continue end
+        if not IsValid(v) or not v:isKeysOwnable() then return end
         v:keysOwn(ply)
     end
 end

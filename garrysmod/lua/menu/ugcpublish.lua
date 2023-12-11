@@ -170,7 +170,7 @@ function PANEL:Setup( ugcType, file, imageFile, handler )
 				local num = 0
 				for k, v in pairs( s:GetParent():GetChildren() ) do
 					if ( v:GetChecked() ) then num = num + 1 end
-					if ( v == s or not val ) then continue end
+					if ( v == s or not val ) then return end
 					v:SetValue( false ) -- Validate that only 1 is selected
 				end
 				if ( not val and num == 0 ) then s:SetValue( true ) end -- Don't allow to unselect the only 1 selected

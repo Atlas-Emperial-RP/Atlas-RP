@@ -37,7 +37,7 @@ function ENT:BehaveUpdate( fInterval )
 	end
 
 	--
-	-- Continue RunBehaviour's execution
+	-- return RunBehaviour's execution
 	--
 	local ok, message = coroutine.resume( self.BehaveThread )
 	if ( ok == false ) then

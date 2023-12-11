@@ -110,12 +110,12 @@ function DarkRP.findPlayers(info)
                 players = players or {}
                 table.insert(players, Player(PlayerInfo))
             end
-            continue
+            return
         end
 
         for _, v in ipairs(pls) do
             -- Prevend duplicates
-            if found[v] then continue end
+            if found[v] then return end
 
             -- Find by Steam ID
             if (PlayerInfo == v:SteamID() or v:SteamID() == "UNKNOWN") or
@@ -149,14 +149,14 @@ function meta:getEyeSightHitEntity(searchDistance, hitDistance, filter)
     local foundEnt
 
     for _, ent in pairs(entities) do
-        if not IsValid(ent) or filter(ent) == false then continue end
+        if not IsValid(ent) or filter(ent) == false then return end
 
         local center = ent:GetPos()
 
         -- project the center vector on the aim vector
         local projected = shootPos + (center - shootPos):Dot(aimvec) * aimvec
 
-        if aimvec:Dot((projected - shootPos):GetNormalized()) < 0 then continue end
+        if aimvec:Dot((projected - shootPos):GetNormalized()) < 0 then return end
 
         -- the point on the model that has the smallest distance to your line of sight
         local nearestPoint = ent:NearestPoint(projected)
@@ -169,7 +169,7 @@ function meta:getEyeSightHitEntity(searchDistance, hitDistance, filter)
                 filter = {self, ent}
             }
             local traceLine = util.TraceLine(trace)
-            if traceLine.Hit then continue end
+            if traceLine.Hit then return end
 
             smallestDistance = distance
             foundEnt = ent
@@ -239,7 +239,7 @@ function DarkRP.explodeArg(arg)
             inQuotes = not inQuotes
             wasQuotes = true
 
-            continue
+            return
         end
 
         if c == ' ' and not inQuotes then
@@ -349,7 +349,7 @@ local function checkDatabase(ply)
     if MySQLite and MySQLite.isMySQL() then
         display(string.format([[WARNING: DarkRP is using MySQL. This only
     checks the local SQLite database stored in the %s file in the
-    garrysmod/ folder. The check will continue.]], dbFile))
+    garrysmod/ folder. The check will return.]], dbFile))
     end
 
     local check = sql.QueryValue("PRAGMA INTEGRITY_CHECK")

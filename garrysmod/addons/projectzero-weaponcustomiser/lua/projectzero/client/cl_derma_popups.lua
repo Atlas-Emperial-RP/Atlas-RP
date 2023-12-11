@@ -107,7 +107,7 @@ function PROJECT0.FUNC.DermaQuery( text, title, ... )
     end
 
     for k, v in ipairs( buttonsToCreate ) do
-        if( k % 2 == 0 ) then continue end
+        if( k % 2 == 0 ) then return end
 
         createButton( v, buttonsToCreate[k+1] )
     end

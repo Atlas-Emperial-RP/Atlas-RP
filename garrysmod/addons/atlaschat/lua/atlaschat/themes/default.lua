@@ -1175,7 +1175,7 @@ function theme:ParseExpressions(data, panel, player, title)
 					-- Did we find anything?
 					if (result and #result > 1) then
 						
-						-- If we found something then we want to continue the loop.
+						-- If we found something then we want to return the loop.
 						loop = true
 						
 						-- Set the first location where the expression is in the text.

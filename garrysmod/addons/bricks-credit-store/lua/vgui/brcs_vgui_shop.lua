@@ -337,7 +337,7 @@ function PANEL:Setup( ParentVGUI )
 				end
 			end
 
-			if( not Toggled[v[1] or ""] or not v[1] or not BRICKSCREDITSTORE.LOCKERTYPES[v[1] or ""] ) then continue end
+			if( not Toggled[v[1] or ""] or not v[1] or not BRICKSCREDITSTORE.LOCKERTYPES[v[1] or ""] ) then return end
 
 			local LockerType = BRICKSCREDITSTORE.LOCKERTYPES[v[1] or ""]
 			
@@ -428,7 +428,7 @@ function PANEL:Setup( ParentVGUI )
 						self2.PopUp:AddOption( "Transfer", function() 
 							local Options = {}
 							for k, v in pairs( player.GetHumans() ) do
-								if( v == LocalPlayer() ) then continue end
+								if( v == LocalPlayer() ) then return end
 								Options[v:SteamID64()] = v:Nick()
 							end
 
@@ -524,13 +524,13 @@ function PANEL:Init()
 			gui.OpenURL( BRICKSCREDITSTORE.LUACONFIG.DonationURL )
 		end
 	}
-	/*Buttons[2] = {
+	--[[Buttons[2] = {
 		Name = "Enter code",
 		Icon = "materials/brickscreditstore/donate.png",
 		doClick = function()
 			
 		end
-	}*/
+	}--]]
 
 	for k, v in pairs( Buttons ) do
 		local ButtonEntry = vgui.Create( "DButton", ToggleBar )

@@ -245,7 +245,7 @@ net.Receive("MedicMod.PlayerStartAnimation", function()
 
 		for k, v in pairs(player.GetAll()) do
 
-		if not v:GetMedicAnimation() then continue end
+		if not v:GetMedicAnimation() then return end
 
 			if v:GetMedicAnimation() ~= 0 then
 				StartMedicAnimation( v, v:GetMedicAnimation() )
@@ -811,7 +811,7 @@ local function OpenMedicinesPart(MainFrame)
 		
 		for a, b in pairs( v ) do
 		
-			if a == "func" or a == "price" then continue end
+			if a == "func" or a == "price" then return end
 			local panelM1Ing1 = venalib.Label( "● "..a, 15, sizex-160-100-20-100, 15, 60+15+5, 32 + 15 * ingnum, Color(255,255,255), panel1 )
 			panelM1Ing1:SetWrap( false )
 			

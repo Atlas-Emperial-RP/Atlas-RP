@@ -181,7 +181,7 @@ function ControllerAddons( $scope, $element, $rootScope, $location )
 
 		for ( var k in $scope.Files )
 		{
-			if ( parseInt( $scope.Files[ k ].id ) < 1 ) continue;
+			if ( parseInt( $scope.Files[ k ].id ) < 1 ) return;
 			$scope.SelectedItems[ $scope.Files[ k ].id ] = true;
 		}
 	}
@@ -194,7 +194,7 @@ function ControllerAddons( $scope, $element, $rootScope, $location )
 		for ( var k in $scope.FilesOther )
 		{
 			var wsid = $scope.FilesOther[ k ];
-			if ( parseInt( wsid ) < 1 ) continue;
+			if ( parseInt( wsid ) < 1 ) return;
 			$scope.SelectedItems[ wsid ] = true;
 		}
 	}
@@ -208,7 +208,7 @@ function ControllerAddons( $scope, $element, $rootScope, $location )
 	{
 		for ( var k in $scope.SelectedItems )
 		{
-			if ( !$scope.SelectedItems[ k ] || k < 1 ) continue;
+			if ( !$scope.SelectedItems[ k ] || k < 1 ) return;
 
 			subscriptions.SetShouldMountAddon( k, true );
 			$scope.SelectedItems[ k ] = false;
@@ -219,7 +219,7 @@ function ControllerAddons( $scope, $element, $rootScope, $location )
 	{
 		for ( var k in $scope.SelectedItems )
 		{
-			if ( !$scope.SelectedItems[ k ] || k < 1 ) continue;
+			if ( !$scope.SelectedItems[ k ] || k < 1 ) return;
 
 			subscriptions.SetShouldMountAddon( k, false );
 			$scope.SelectedItems[ k ] = false;
@@ -230,7 +230,7 @@ function ControllerAddons( $scope, $element, $rootScope, $location )
 	{
 		for ( var k in $scope.SelectedItems )
 		{
-			if ( !$scope.SelectedItems[ k ] ) continue;
+			if ( !$scope.SelectedItems[ k ] ) return;
 
 			subscriptions.Unsubscribe( k );
 			$scope.SelectedItems[ k ] = false;
@@ -250,7 +250,7 @@ function ControllerAddons( $scope, $element, $rootScope, $location )
 		var i = 0;
 		for ( var k in $scope.SelectedItems )
 		{
-			if ( !$scope.SelectedItems[ k ] ) continue;
+			if ( !$scope.SelectedItems[ k ] ) return;
 
 			i++;
 		}

@@ -90,7 +90,7 @@ Subscriptions.prototype.Update = function( json )
 	for ( k in json )
 	{
 		var wsid = String( json[k].wsid );
-		if ( wsid == "0" ) continue; // local .gma
+		if ( wsid == "0" ) return; // local .gma
 
 		this.Files[ wsid ] = json[ k ];
 	}

@@ -188,7 +188,7 @@ hook.Add( "SpawnlistOpenGenericMenu", "DragAndDropSelectionMenu", function( canv
 		icon:InternalAddResizeMenu( menu, function( w, h )
 
 			for id, pnl in pairs( selected ) do
-				if ( not pnl.InternalAddResizeMenu ) then continue end
+				if ( not pnl.InternalAddResizeMenu ) then return end
 				pnl:SetSize( w, h )
 				pnl:InvalidateLayout( true )
 				pnl:GetParent():OnModified()
@@ -200,7 +200,7 @@ hook.Add( "SpawnlistOpenGenericMenu", "DragAndDropSelectionMenu", function( canv
 
 		menu:AddOption( language.GetPhrase( "spawnmenu.menu.rerenderx" ):format( spawnicons ), function()
 			for id, pnl in pairs( selected ) do
-				if ( not pnl.RebuildSpawnIcon ) then continue end
+				if ( not pnl.RebuildSpawnIcon ) then return end
 				pnl:RebuildSpawnIcon()
 			end
 		end ):SetIcon( "icon16/picture.png" )

@@ -62,7 +62,7 @@ local import_ranks = function()
 				local data = sam.isstring(v.data) and util.JSONToTable(v.data)
 				local tools = sam.istable(data) and sam.istable(data.Restrictions) and sam.istable(data.Restrictions.Tools) and data.Restrictions.Tools
 
-				if not tools then continue end
+				if not tools then return end
 
 				for tool_name, value in pairs(tools) do
 					if value == false then
@@ -85,7 +85,7 @@ local import_expires = function(data)
 		local began = false
 		for _, v in ipairs(data) do
 			local ply_data = v.data and von.deserialize(v.data) or {}
-			if not sam.isnumber(tonumber(ply_data.groupExpire)) then continue end
+			if not sam.isnumber(tonumber(ply_data.groupExpire)) then return end
 
 			if not began then
 				began = true

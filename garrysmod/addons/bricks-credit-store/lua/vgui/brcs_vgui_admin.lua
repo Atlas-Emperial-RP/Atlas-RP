@@ -834,7 +834,7 @@ function PANEL:SetItemData( npcType, itemKey, newItem )
 						end
 					end
 					
-					if( not IsValid( EntryPanel ) ) then continue end
+					if( not IsValid( EntryPanel ) ) then return end
 
 					EntryPanel:Dock( TOP )
 					EntryPanel:DockMargin( 0, 0, 0, 10 )

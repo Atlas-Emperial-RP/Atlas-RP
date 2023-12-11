@@ -28,9 +28,9 @@ function GetResults( str, types, maxResults )
 
 	for k, v in pairs( Providers ) do
 		if ( isstring( types ) ) then
-			if ( types ~= k ) then continue end
+			if ( types ~= k ) then return end
 		elseif ( istable( types ) ) then
-			if ( not table.HasValue( types, k ) ) then continue end
+			if ( not table.HasValue( types, k ) ) then return end
 		end
 
 		local tbl = v.func( str )

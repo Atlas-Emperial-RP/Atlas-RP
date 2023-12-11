@@ -15,7 +15,7 @@ local function Freeze(ply, cmd, args)
             target:FAdmin_SetGlobal("FAdmin_frozen", true)
             target:Lock()
 
-            if time == 0 then continue end
+            if time == 0 then return end
 
             timer.Simple(time, function()
                 if not IsValid(target) or not target:FAdmin_GetGlobal("FAdmin_frozen") then return end

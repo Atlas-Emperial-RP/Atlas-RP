@@ -45,7 +45,7 @@ function EFFECT:Render()
 
 	-- Note: UpdateScreenEffectTexture fucks up the water, RefractTexture is lower quality
 	render.UpdateRefractTexture()
-	//render.UpdateScreenEffectTexture()
+	-- render.UpdateScreenEffectTexture()
 
 	local SpriteSize = ( self.spacing + self.offset ) * 8
 

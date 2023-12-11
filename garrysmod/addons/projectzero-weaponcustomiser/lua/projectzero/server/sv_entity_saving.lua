@@ -30,7 +30,7 @@ concommand.Add( "pz_clear_ents", function( ply, cmd, args )
 	end
 
 	for k, v in pairs( ents.GetAll() ) do
-		if( not PROJECT0.DEVCONFIG.EntityTypes[v:GetClass()] ) then continue end
+		if( not PROJECT0.DEVCONFIG.EntityTypes[v:GetClass()] ) then return end
 		v:Remove()
 	end
 
@@ -54,7 +54,7 @@ local function SpawnSavedEntities()
 			local devConfig = PROJECT0.DEVCONFIG.EntityTypes[v.Class]
 			if( not devConfig ) then
 				entities[k] = nil
-				continue
+				return
 			end
 
 			local transformData = string.Explode( ";", v.TranformData )

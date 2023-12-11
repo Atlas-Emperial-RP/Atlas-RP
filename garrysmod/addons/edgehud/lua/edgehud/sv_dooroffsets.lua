@@ -100,10 +100,10 @@ net.Receive("EdgeHUD:RequestDoorOffsets", function( _, ply )
 	for k,v in pairs(requiredEntities) do
 
 		-- Make sure the value is a entity and that it's valid.
-		if not IsValid(v) or not isentity(v) then continue end
+		if not IsValid(v) or not isentity(v) then return end
 
 		-- Check if we have any saved dooroffsets for the door.
-		if not EdgeHUD.DoorOffsets[v:MapCreationID()] then continue end
+		if not EdgeHUD.DoorOffsets[v:MapCreationID()] then return end
 
 		-- Add the offsets to the data that we should send.
 		toSend[v] = EdgeHUD.DoorOffsets[v:MapCreationID()]

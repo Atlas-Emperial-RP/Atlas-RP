@@ -234,7 +234,7 @@ WorkshopFiles.prototype.ReceiveFileInfo = function( id, data )
 {
 	for ( var k in this.Scope.Files )
 	{
-		if ( this.Scope.Files[k].id != id ) continue;
+		if ( this.Scope.Files[k].id != id ) return;
 
 		this.Scope.Files[k].filled	= true;
 		this.Scope.Files[k].info	= data;
@@ -250,7 +250,7 @@ WorkshopFiles.prototype.ReceiveUserName = function( id, data )
 {
 	for ( var k in this.Scope.Files )
 	{
-		if ( !this.Scope.Files[k].filled || !this.Scope.Files[k] || this.Scope.Files[k].info.owner != id ) continue;
+		if ( !this.Scope.Files[k].filled || !this.Scope.Files[k] || this.Scope.Files[k].info.owner != id ) return;
 
 		this.Scope.Files[k].filled	= true;
 		this.Scope.Files[k].info.ownername = data;
@@ -266,7 +266,7 @@ WorkshopFiles.prototype.ReceiveImage = function( id, url )
 {
 	for ( var k in this.Scope.Files )
 	{
-		if ( this.Scope.Files[k].id != id ) continue;
+		if ( this.Scope.Files[k].id != id ) return;
 
 		this.Scope.Files[k].background = url;
 		this.Changed();

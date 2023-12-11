@@ -1,11 +1,11 @@
-/*
+--[[
    ____          _          _   ____          __  __       _ _                     
   / ___|___   __| | ___  __| | | __ ) _   _  |  \/  | __ _| | |__   ___  _ __ ___  
  | |   / _ \ / _` |/ _ \/ _` | |  _ \| | | | | |\/| |/ _` | | '_ \ / _ \| '__/ _ \ 
  | |__| (_) | (_| |  __/ (_| | | |_) | |_| | | |  | | (_| | | |_) | (_) | | | (_) |
   \____\___/ \__,_|\___|\__,_| |____/ \__, | |_|  |_|\__,_|_|_.__/ \___/|_|  \___/ 
                                       |___/                                        
-*/
+--]]
 
 util.AddNetworkString("pp_open_menu")
 util.AddNetworkString("pp_info_send")
@@ -23,7 +23,7 @@ local function PermissionLoad()
 
 		for k, v in pairs(CAMI.GetUsergroups()) do
 
-			if k == "superadmin" or k == "admin" or k == "user" then continue end
+			if k == "superadmin" or k == "admin" or k == "user" then return end
 
 			PermaProps.Permissions[k] = { Physgun = false, Tool = false, Property = false, Save = false, Delete = false, Update = false, Menu = false, Permissions = false, Inherits = v.Inherits, Custom = false }
 

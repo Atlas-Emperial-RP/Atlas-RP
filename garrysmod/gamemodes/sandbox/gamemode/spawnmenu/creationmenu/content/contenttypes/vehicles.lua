@@ -44,7 +44,7 @@ hook.Add( "PopulateVehicles", "AddEntityContent", function( pnlContent, tree, no
 				spawnmenu.CreateContentIcon( ent.ScriptedEntityType or "entity", self.PropPanel, {
 					nicename	= ent.PrintName or ent.ClassName,
 					spawnname	= ent.ClassName,
-					material	= ent.IconOverride or "entities/" .. ent.ClassName .. ".png",
+					material	= (ent.IconOverride or "entities/") .. ent.ClassName .. ".png",
 					admin		= ent.AdminOnly
 				} )
 

@@ -384,7 +384,7 @@ if EdgeHUD.Configuration.GetConfigValue( "VehicleDisplay" ) then
 					local allowedCoOwner = Player(k)
 
 					--Make sure the player is valid.
-					if not IsValid(allowedCoOwner) then continue end
+					if not IsValid(allowedCoOwner) then return end
 
 					--Add the player to the list.
 					table.insert(allowedCoOwners, allowedCoOwner:Name())
@@ -401,7 +401,7 @@ if EdgeHUD.Configuration.GetConfigValue( "VehicleDisplay" ) then
 					local CoOwner = Player(k)
 
 					--Make sure the player is valid.
-					if not IsValid(CoOwner) then continue end
+					if not IsValid(CoOwner) then return end
 
 					--Add the player to the list.
 					table.insert(coOwners, CoOwner:Name())
@@ -1337,7 +1337,7 @@ if VC and EdgeHUD.Configuration.GetConfigValue( "Vehicle_DamageIndicators" )  th
 			for k,v in pairs(indicators) do
 
 				--Check if the element is visible.
-				if v.Element:IsVisible() == false then continue end
+				if v.Element:IsVisible() == false then return end
 
 				--Set the position.
 				v.Element:SetPos(nextPos,screenHeight - VARS.ElementsMargin - VARS.WidgetHeight - EdgeHUD.BottomOffset)
@@ -1998,7 +1998,7 @@ if ItemPickups == "EdgeHUD Design" then
 			if v.alpha < 0.05 then
 				items[k] = nil
 				items = table.ClearKeys(items)
-				continue
+				return
 			end
 
 			--Lerp data.

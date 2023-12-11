@@ -87,7 +87,7 @@ function ENT:DrawAnims(sysTime)
             anim = anim.nextDonateAnimation
             self.firstDonateAnimation = anim
 
-            continue
+            return
         end
 
         draw.SimpleText(

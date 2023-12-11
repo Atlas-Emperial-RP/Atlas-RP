@@ -24,9 +24,8 @@ SWEP.AdminSpawnable = true
 SWEP.Slot = 3
 SWEP.PrintName = "Shackles"
 
-//
-// Handcuff Vars
-SWEP.CuffTime = 1.0 // Seconds to handcuff
+-- Handcuff Vars
+SWEP.CuffTime = 1.0 -- Seconds to handcuff
 SWEP.CuffSound = Sound( "buttons/lever7.wav" )
 
 SWEP.CuffMaterial = "phoenix_storms/cube"
@@ -39,8 +38,8 @@ SWEP.CuffReusable = false
 SWEP.CuffBlindfold = false
 SWEP.CuffGag = false
 
-SWEP.CuffStrengthVariance = 0.4 // Randomise strangth
-SWEP.CuffRegenVariance = 0.1 // Randomise regen
+SWEP.CuffStrengthVariance = 0.4 -- Randomise strangth
+SWEP.CuffRegenVariance = 0.1 -- Randomise regen
 
-SWEP.CuffsCanArrest = true // Players in this restraint can be arrested. Has no effect if restrict arrest is disabled.
-SWEP.CuffsCanAutoArrest = true // This swep can be used to auto-arrest. Has no effect if auto arrest is disabled.
+SWEP.CuffsCanArrest = true -- Players in this restraint can be arrested. Has no effect if restrict arrest is disabled.
+SWEP.CuffsCanAutoArrest = true -- This swep can be used to auto-arrest. Has no effect if auto arrest is disabled.

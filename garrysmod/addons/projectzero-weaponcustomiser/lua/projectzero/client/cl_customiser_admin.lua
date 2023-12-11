@@ -63,7 +63,7 @@ local function updateViewModelSkin( viewmodel, weaponCfg )
 
     if( activeWeapon.Customization ) then
         for k, v in pairs( activeWeapon.Customization ) do
-            if( not IsValid( v.m_Model ) ) then continue end
+            if( not IsValid( v.m_Model ) ) then return end
             for i = 0, #v.m_Model:GetMaterials()-1 do
                 v.m_Model:SetSubMaterial( i )
             end
@@ -74,14 +74,14 @@ local function updateViewModelSkin( viewmodel, weaponCfg )
 
     for k, v in ipairs( weaponCfg.Skin.ViewModelMats ) do
         if( isstring( v ) ) then
-            if( not (activeWeapon.Customization or {})[v] or not IsValid( activeWeapon.Customization[v].m_Model ) ) then continue end
+            if( not (activeWeapon.Customization or {})[v] or not IsValid( activeWeapon.Customization[v].m_Model ) ) then return end
 
             local modelEnt = activeWeapon.Customization[v].m_Model
             for i = 0, #modelEnt:GetMaterials()-1 do
                 modelEnt:SetSubMaterial( i, "skins/gold" )
             end
 
-            continue
+            return
         end
 
         viewmodel:SetSubMaterial( v, "skins/gold" )

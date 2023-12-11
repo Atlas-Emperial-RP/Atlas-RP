@@ -89,14 +89,14 @@ local function updateViewmodelWeapon( viewmodel, weapon, weaponClass, isDelayed 
     if( oldWeaponCfg ) then
         for k, v in ipairs( oldWeaponCfg.Skin.ViewModelMats ) do
             if( isstring( v ) ) then
-                if( not (weapon.Customization or {})[v] or not IsValid( weapon.Customization[v].m_Model ) ) then continue end
+                if( not (weapon.Customization or {})[v] or not IsValid( weapon.Customization[v].m_Model ) ) then return end
 
                 local modelEnt = weapon.Customization[v].m_Model
                 for i = 0, #modelEnt:GetMaterials()-1 do
                     modelEnt:SetSubMaterial( i )
                 end
     
-                continue
+                return
             end
 
             viewmodel:SetSubMaterial( v )
@@ -113,14 +113,14 @@ local function updateViewmodelWeapon( viewmodel, weapon, weaponClass, isDelayed 
         local skinMat = PROJECT0.DEVCONFIG.WeaponSkins[equippedSkin].Material
         for k, v in ipairs( weaponCfg.Skin.ViewModelMats ) do
             if( isstring( v ) ) then
-                if( not (weapon.Customization or {})[v] or not IsValid( weapon.Customization[v].m_Model ) ) then continue end
+                if( not (weapon.Customization or {})[v] or not IsValid( weapon.Customization[v].m_Model ) ) then return end
 
                 local modelEnt = weapon.Customization[v].m_Model
                 for i = 0, #modelEnt:GetMaterials()-1 do
                     modelEnt:SetSubMaterial( i, skinMat )
                 end
     
-                continue
+                return
             end
     
             viewmodel:SetSubMaterial( v, skinMat )

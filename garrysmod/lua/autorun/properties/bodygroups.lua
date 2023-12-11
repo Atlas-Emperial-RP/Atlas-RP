@@ -49,7 +49,7 @@ properties.Add( "bodygroups", {
 		--
 		for k, v in pairs( options ) do
 
-			if ( v.num <= 1 ) then continue end
+			if ( v.num <= 1 ) then return end
 
 			--
 			-- If there's only 2 options, add it as a checkbox instead of a submenu

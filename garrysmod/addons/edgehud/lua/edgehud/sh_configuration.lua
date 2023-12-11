@@ -671,7 +671,7 @@ if SERVER then
 		local groupsAccess = string.Explode(";", configTxt)
 
 		--Check so the player is the owner of the addon.
-		if EdgeHUD.Owner not = ply:SteamID64() and not table.HasValue(groupsAccess, ply:GetUserGroup()) then return end
+		if EdgeHUD.Owner ~= ply:SteamID64() and not table.HasValue(groupsAccess, ply:GetUserGroup()) then return end
 
 		--Save the config.
 		EdgeHUD.Configuration.SaveConfiguration( net.ReadTable() )

@@ -20,8 +20,8 @@ local function CheckLimit( ply, key )
 
 	local found = false
 	for id, camera in ipairs( ents.FindByClass( "gmod_cameraprop" ) ) do
-		if ( not camera.controlkey or camera.controlkey ~= key ) then continue end
-		if ( IsValid( camera:GetPlayer() ) and ply ~= camera:GetPlayer() ) then continue end
+		if ( not camera.controlkey or camera.controlkey ~= key ) then return end
+		if ( IsValid( camera:GetPlayer() ) and ply ~= camera:GetPlayer() ) then return end
 		found = true
 		break
 	end
@@ -44,8 +44,8 @@ local function MakeCamera( ply, key, locked, toggle, Data )
 
 	if ( key ) then
 		for id, camera in ipairs( ents.FindByClass( "gmod_cameraprop" ) ) do
-			if ( not camera.controlkey or camera.controlkey ~= key ) then continue end
-			if ( IsValid( ply ) and IsValid( camera:GetPlayer() ) and ply ~= camera:GetPlayer() ) then continue end
+			if ( not camera.controlkey or camera.controlkey ~= key ) then return end
+			if ( IsValid( ply ) and IsValid( camera:GetPlayer() ) and ply ~= camera:GetPlayer() ) then return end
 			camera:Remove()
 		end
 

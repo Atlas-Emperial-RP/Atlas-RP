@@ -322,7 +322,7 @@ hook.Add("PlayerSay", "PlayerSay.MedicMod", function(ply, text)
        
         for k, v in pairs(ents.GetAll()) do
            
-            if not MedicModSavedEntities[v:GetClass()] then continue end
+            if not MedicModSavedEntities[v:GetClass()] then return end
            
             MedicPos[#MedicPos + 1] = {
                 pos = v:GetPos(),

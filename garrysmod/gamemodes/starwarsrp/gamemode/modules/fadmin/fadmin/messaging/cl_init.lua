@@ -141,14 +141,14 @@ local function showNotification(notification, instigator, targets, extraInfo)
     local res = {red, "[", white, "FAdmin", red, "] "}
 
     for _, text in pairs(notification.message) do
-        if modMessage[text] then modMessage[text](res, instigator, targets) continue end
+        if modMessage[text] then modMessage[text](res, instigator, targets) return end
 
         if string.sub(text, 1, 10) == "extraInfo." then
             local id = tonumber(string.sub(text, 11))
 
             table.insert(res, notification.extraInfoColors and notification.extraInfoColors[id] or white)
             table.insert(res, extraInfo[id])
-            continue
+            return
         end
 
         table.insert(res, white)
