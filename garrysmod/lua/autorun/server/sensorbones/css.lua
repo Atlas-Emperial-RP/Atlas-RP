@@ -86,7 +86,6 @@ local Builder =
 		[LCLF]	= { from_sensor = SENSORBONE.ANKLE_LEFT,	to_sensor = SENSORBONE.KNEE_LEFT, up_up = LTHY },
 		[RHND]	= { from_sensor = SENSORBONE.HAND_RIGHT,	to_sensor = SENSORBONE.WRIST_RIGHT, up_lft = RARM },
 		[LHND]	= { from_sensor = SENSORBONE.HAND_LEFT,		to_sensor = SENSORBONE.WRIST_LEFT, up_rgt = LARM },
-		[LWST]	= { from = LHND, to = LARM, up = "chest_dn" },
 	},
 
 	--

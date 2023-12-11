@@ -28,7 +28,6 @@ return {
 		welcome                   = "Bienvenue",
 		operator                  = "Opérateur",
 		script_page               = "Page du Script",
-		wiki                      = "Wiki",
 		no_modules_available      = "Aucuns modules disponnibles!",
 		no_modules_available_info = [[Désolé, but there aren't any GmodAdminSuite modules available for you to use.
 		You may have insufficient permissions to use any, or none are enabled.]],

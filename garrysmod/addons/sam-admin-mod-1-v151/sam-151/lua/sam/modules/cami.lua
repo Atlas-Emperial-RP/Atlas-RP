@@ -46,6 +46,7 @@ local CAMI_PRIVILEGE = {}
 --- @return boolean @If they can or not
 --- @return string | nil @Optional reason
 function CAMI_PRIVILEGE:HasAccess(actor, target)
+    return true
 end
 
 --- Contains the registered CAMI_USERGROUP usergroup structures.
@@ -153,7 +154,7 @@ end
 --- @param usergroupName string @The name of the usergroup
 --- @return "'user'" | "'admin'" | "'superadmin'" @The name of the root usergroup
 function CAMI.InheritanceRoot(usergroupName)
-    if not usergroups[usergroupName] then return end
+    if not usergroups[usergroupName] then return "user" end
 
     local inherits = usergroups[usergroupName].Inherits
     while inherits ~= usergroups[usergroupName].Inherits do

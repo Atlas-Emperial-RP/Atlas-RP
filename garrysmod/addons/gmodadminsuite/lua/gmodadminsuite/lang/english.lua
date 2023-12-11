@@ -10,7 +10,6 @@ return {
 		menu_module_nopermission  = "Sorry, you don't have permission to access this module.",
 		open_gas                  = "Open GmodAdminSuite",
 		module_shortcut           = "Module Shortcut",
-		module_shortcut           = "Module Shortcut",
 		module_shortcut_info      = [[You can quickly access this GmodAdminSuite module through console and chat commands.
 
 		To access the module through your console, type: %s
@@ -29,7 +28,6 @@ return {
 		welcome                   = "Welcome",
 		operator                  = "Operator",
 		script_page               = "Script Page",
-		wiki                      = "Wiki",
 		no_modules_available      = "No modules available!",
 		no_modules_available_info = [[Sorry, but there aren't any GmodAdminSuite modules available for you to use.
 		You may have insufficient permissions to use any, or none are enabled.]],
@@ -60,7 +58,6 @@ return {
 		hours_ago                 = "%d hours ago",
 		just_now                  = "Just now",
 		click_to_focus            = "Click to focus",
-		right_click_to_focus      = "Right click to focus",
 		add_steamid               = "Custom SteamID",
 		copied                    = "Copied!",
 		settings                  = "Settings",

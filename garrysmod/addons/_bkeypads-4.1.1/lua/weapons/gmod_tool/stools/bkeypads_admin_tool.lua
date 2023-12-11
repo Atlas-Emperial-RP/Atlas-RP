@@ -339,7 +339,9 @@ if CLIENT then
 
 	local UNSET = 42069
 	local fadeAnimStart, slideAnimStart, slideAnimFrom
-	local prevKeypad, prevDirectionID, prevOrigin = UNSET, UNSET
+	local prevKeypad = UNSET
+	local prevDirectionID = UNSET
+	local prevOrigin = UNSET
 	local sizeChanges
 	local function KeypadPropertiesPerformLayout(self, w, h)
 		DProperties.PerformLayout(self, w, h)

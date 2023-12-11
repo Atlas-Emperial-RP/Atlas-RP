@@ -260,7 +260,7 @@ end
 function Lerp( delta, from, to )
 
 	if ( delta > 1 ) then return to end
-	if ( delta < 0 ) then return from end
+	if ( delta <= 0 ) then return from end
 
 	return from + ( to - from ) * delta
 

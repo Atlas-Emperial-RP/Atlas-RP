@@ -139,7 +139,7 @@ local function ExtractParams( p1, p2, p3 )
 				local x = { "r", "g", "b", "a" }
 				local n = 1
 				for k, v in string.gmatch( p2, "(%d+),?" ) do
-					rgba[ x[ n ] ] = k
+					rgba[x[n]] = tonumber(k)
 					n = n + 1
 				end
 			end
@@ -307,7 +307,7 @@ function Parse( ml, maxwidth )
 		ml = ml .. "<nop>"
 	end
 
-	string.gsub( ml, "([^<>]*)(<[^>]+.)([^<>]*)", ProcessMatches )
+	local result = string.gsub( ml, "([^<>]*)(<[^>]+.)([^<>]*)", ProcessMatches )
 
 	local xOffset = 0
 	local yOffset = 0

@@ -262,7 +262,7 @@ end
 
 local sounds = {alert = "gmodadminsuite/alert.mp3"}
 function GAS:PlaySound(sound_name)
-	surface.PlaySound(sounds[sound_name] or "gmodadminsuite/" .. sound_name .. ".ogg")
+	surface.PlaySound((sounds[sound_name] or "gmodadminsuite/") .. sound_name .. ".ogg")
 end
 
 --######## MARKUP HELPERS ########--

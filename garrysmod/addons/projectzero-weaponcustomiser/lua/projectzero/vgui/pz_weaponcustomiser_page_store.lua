@@ -95,7 +95,8 @@ function PANEL:FillPanel()
     self.scrollPanel:Dock( FILL )
     self.scrollPanel:DockMargin( PROJECT0.UI.Margin50, PROJECT0.UI.Margin25, PROJECT0.UI.Margin50, PROJECT0.UI.Margin50 )
     self.scrollPanel:SetSize( self:GetWide()-(2*PROJECT0.UI.Margin50), self:GetTall()-(PROJECT0.FUNC.ScreenScale( 120 )+PROJECT0.UI.Margin50+topPanel:GetTall()+PROJECT0.UI.Margin25) )
-    self.scrollPanel.screenY = 0, 0
+    self.scrollPanel.screenY = 0
+    self.scrollPanel.screenX = 0
     self.scrollPanel.Paint = function( self2, w, h )
         local screenY = select( 2, self2:LocalToScreen( 0, 0 ) )
         if( self2.screenY == screenY ) then return end
