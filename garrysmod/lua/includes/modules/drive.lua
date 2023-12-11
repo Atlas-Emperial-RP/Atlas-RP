@@ -39,7 +39,7 @@ end
 function PlayerStartDriving( ply, ent, mode )
 
 	local method = Type[mode]
-	if ( not method ) then ErrorNoHalt( "Unknown drive type " .. ( mode ) .. "not \n" ) return end
+	if ( not method ) then ErrorNoHalt( "Unknown drive type " .. ( mode ) .. "!\n" ) return end
 
 	local id = util.NetworkStringToID( mode )
 

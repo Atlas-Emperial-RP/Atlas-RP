@@ -162,8 +162,6 @@ return {
 		remove_lua_function                   = "Usuń funkcję Lua",
 		convert_old_data                      = "Importuj dane starej Whitelisty",
 		offline                               = "Offline",
-		-- Remove the duplicate key "add_usergroup"
-		-- add_usergroup                         = "Dodaj Rangę",
 		no_permission_action                  = "Nie masz uprawnień do wykonania tej Akcji!",
 
 } end }

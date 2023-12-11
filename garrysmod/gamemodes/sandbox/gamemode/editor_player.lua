@@ -123,8 +123,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 			for i, word in ipairs( string.Explode( "_", str ) ) do
 				if ( #word == 1 ) then
 					nicename[i] = string.upper( string.sub( word, 1, 1 ) )
-				else
-					nicename[i] = string.upper( string.sub( word, 1, 1 ) ) .. string.sub( word, 2 )
+					return
 				end
 			end
 
@@ -194,7 +193,7 @@ list.Set( "DesktopWindows", "PlayerEditor", {
 
 			local groups = string.Explode( " ", GetConVarString( "cl_playerbodygroups" ) )
 			for k = 0, mdl.Entity:GetNumBodyGroups() - 1 do
-				if not ( mdl.Entity:GetBodygroupCount( k ) <= 1 ) then
+				if ( mdl.Entity:GetBodygroupCount( k ) <= 1 ) then return end
 
 					local bgroup = vgui.Create( "DNumSlider" )
 					bgroup:Dock( TOP )

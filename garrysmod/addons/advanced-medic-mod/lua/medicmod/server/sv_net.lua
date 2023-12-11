@@ -59,15 +59,12 @@ net.Receive("MedicMod.MedicStart", function( len, caller )
     local bed = nil
     local dist = -1
 	for k, v in pairs( ents.FindByClass("bed_medicmod") ) do
-        if not IsValid( v.ragdoll ) then
+        if IsValid( v.ragdoll ) then return end
 		
-			local ndist = v:GetPos():Distance( caller:GetPos() )
-
-			if dist == -1 or dist > ndist then
-				bed = v
-				dist = ndist
-			end
-
+		local ndist = v:GetPos():Distance( caller:GetPos() )
+		if dist == -1 or dist > ndist then
+			bed = v
+			dist = ndist
 		end
 		
 	end

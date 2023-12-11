@@ -70,7 +70,7 @@ function Render( entry )
 
 					for k, v in pairs( entry.Ents ) do
 
-						if ( IsValid( v ) or not v:GetNoDraw() ) then
+						if ( not IsValid( v ) or v:GetNoDraw() ) then return end
 
 							RenderEnt = v
 

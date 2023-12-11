@@ -476,7 +476,7 @@ function GM:PlayerSelectSpawn( pl, transiton )
 		ChosenSpawnPoint = table.Random( self.SpawnPoints )
 
 		if ( IsValid( ChosenSpawnPoint ) and ChosenSpawnPoint:IsInWorld() ) then
-			if ( ( ChosenSpawnPoint ~= pl:GetVar( "LastSpawnpoint" ) or ChosenSpawnPoint ~= self.LastSpawnPoint ) and not (Count > 1) ) then
+			if ( ( ChosenSpawnPoint == pl:GetVar( "LastSpawnpoint" ) or ChosenSpawnPoint == self.LastSpawnPoint ) and Count > 1 ) then return end
 
 				if ( hook.Call( "IsSpawnpointSuitable", GAMEMODE, pl, ChosenSpawnPoint, i == Count ) ) then
 
@@ -746,7 +746,7 @@ end
 function GM:PlayerCanSeePlayersChat( strText, bTeamOnly, pListener, pSpeaker )
 
 	if ( bTeamOnly ) then
-		if (  not IsValid( pSpeaker ) or not IsValid( pListener ) ) then return false end
+		if ( not IsValid( pSpeaker ) or not IsValid( pListener ) ) then return false end
 		if ( pListener:Team() ~= pSpeaker:Team() ) then return false end
 	end
 

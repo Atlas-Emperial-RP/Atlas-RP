@@ -1,11 +1,11 @@
---[[---
+--[[
    ____          _          _   ____          __  __       _ _                     
   / ___|___   __| | ___  __| | | __ ) _   _  |  \/  | __ _| | |__   ___  _ __ ___  
  | |   / _ \ / _` |/ _ \/ _` | |  _ \| | | | | |\/| |/ _` | | '_ \ / _ \| '__/ _ \ 
  | |__| (_) | (_| |  __/ (_| | | |_) | |_| | | |  | | (_| | | |_) | (_) | | | (_) |
   \____\___/ \__,_|\___|\__,_| |____/ \__, | |_|  |_|\__,_|_|_.__/ \___/|_|  \___/ 
                                       |___/                                        
-*/ --]]
+--]]
 
 local function PermaPropsViewer()
 
@@ -18,7 +18,7 @@ local function PermaPropsViewer()
 
     for k, v in pairs(LocalPlayer().DrawPPEnt) do
 
-    	if v or v:IsValid() then
+    	if not v or not v:IsValid() then LocalPlayer().DrawPPEnt[k] = nil return end
 
 	    render.ClearStencil()
 	    render.SetStencilEnable(true)

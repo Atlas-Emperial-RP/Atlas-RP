@@ -12,12 +12,13 @@
 AddCSLuaFile()
 
 
--- [[ Config ]] --
+-- Config
 local ProtectedJobs = {
 	"TEAM_ADMIN", "TEAM_MOD", "TEAM_MODERATOR",
 }
 
--- [[ Utility ]] --
+
+-- Utility
 local function GetTrace( ply )
 	local tr = util.TraceLine( {start=ply:EyePos(), endpos=ply:EyePos()+(ply:GetAimVector()*100), filter=ply} )
 	if IsValid(tr.Entity) and tr.Entity:IsPlayer() then
@@ -26,7 +27,7 @@ local function GetTrace( ply )
 	end
 end
 
--- [[ PLAYER extensions ]] --
+-- PLAYER extensions
 local PLAYER = FindMetaTable( "Player" )
 function PLAYER:IsHandcuffed()
 	local wep = self:GetWeapon( "weapon_handcuffed" )
@@ -37,7 +38,9 @@ function PLAYER:IsHandcuffed()
 	return false
 end
 
--- [[ Server Think ]] -- 
+
+
+-- Server Think //
 local ForceJump = {}
 if SERVER then
 	local NextTieHookCleanup = 0
@@ -56,7 +59,8 @@ if SERVER then
 	end)
 end
 
--- [[ Override Movement ]] --
+--
+-- Override Movement
 hook.Add( "SetupMove", "Cuffs Move Penalty", function(ply, mv, cmd)
 	local cuffed, cuffs = ply:IsHandcuffed()
 	if not (cuffed and IsValid(cuffs)) then return end
@@ -151,12 +155,12 @@ hook.Add( "OnPlayerHitGround", "Cuffs PlayerHitGround", function( ply, _, _, spe
 	end
 end)
 
--- [[ Vehicles ]] --
+-- Vehicles
 hook.Add( "CanPlayerEnterVehicle", "Cuffs PreventVehicle", function( ply )
 	if ply:IsHandcuffed() and cvars.Bool("cuffs_restrictvehicle") then return false end
 end)
 
--- [[ Internal Cuffs hooks ]] --
+-- Internal Cuffs hooks
 hook.Add( "CuffsCanHandcuff", "Cuff ProtectAdmin", function( ply, target )
 	if IsValid(target) and target:IsPlayer() and ProtectedJobs then
 		for i=1,#ProtectedJobs do
@@ -175,7 +179,7 @@ if CLIENT then
 	end
 	
 	
-	-- [[ HUD ]] --
+	-- HUD
 	local Col = {
 		Text = Color(255,255,255), TextShadow=Color(0,0,0), Rope = Color(255,255,255),
 		
@@ -278,7 +282,8 @@ if CLIENT then
 		end
 	end)
 	
-	-- [[ Bind hooks ]] --
+	
+	-- Bind hooks
 	hook.Add( "PlayerBindPress", "Cuffs CuffedInteract", function(ply, bind, pressed)
 		if ply~=LocalPlayer() then return end
 		
@@ -341,7 +346,7 @@ if CLIENT then
 		end
 	end)
 	
-	-- [[ Render ]] --
+	-- Render
 	local DragBone = "ValveBiped.Bip01_R_Hand"
 	local LeashBone = "ValveBiped.Bip01_Neck1"
 	local LeashAltBone = "Neck"
@@ -351,7 +356,7 @@ if CLIENT then
 		local allCuffs = ents.FindByClass( "weapon_handcuffed" )
 		for i=1,#allCuffs do
 			local cuff = allCuffs[i]
-			if IsValid(cuff) and IsValid(cuff.Owner) and cuff.GetRopeLength and cuff:GetRopeLength()>0 and cuff.GetKidnapper and IsValid(cuff:GetKidnapper()) then
+			if not (IsValid(cuff) and IsValid(cuff.Owner) and cuff.GetRopeLength and cuff:GetRopeLength()>0 and cuff.GetKidnapper and IsValid(cuff:GetKidnapper())) then return end
 			
 			local kidnapper = cuff:GetKidnapper()
 			local kidPos = (kidnapper:IsPlayer() and kidnapper:GetPos() + Vector(0,0,37)) or kidnapper:GetPos()
@@ -390,7 +395,6 @@ if CLIENT then
 			render.DrawBeam( kidPos, pos, 0.7, 0, 5, Col.Rope )
 			render.DrawBeam( pos, kidPos, -0.7, 0, 5, Col.Rope )
 
-			end
 		end
 	end)
 	

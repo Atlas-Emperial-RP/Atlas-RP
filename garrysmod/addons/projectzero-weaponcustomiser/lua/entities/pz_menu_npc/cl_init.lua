@@ -72,9 +72,7 @@ function ENT:Draw()
 				local isFirst = i == 1
 				if( isFirst or i == dashes ) then
 					PROJECT0.FUNC.DrawGradientBox( x, y, w, h, 2, PROJECT0.FUNC.GetTheme( isFirst and 3 or 4 ), PROJECT0.FUNC.GetTheme( isFirst and 4 or 3 ) )
-				else
-					surface.SetDrawColor( PROJECT0.FUNC.GetTheme( 4 ) )
-					surface.DrawRect( x, y, w, h )
+					return
 				end
 			end
 		end

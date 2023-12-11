@@ -65,7 +65,7 @@ SWEP.Spawnable = false
 SWEP.AdminSpawnable = false
 SWEP.AdminOnly = false
 
--- [[ Handcuff Vars ]] --
+-- Handcuff Vars
 SWEP.CuffTime = 1.0 -- Seconds to handcuff
 SWEP.CuffSound = Sound( "buttons/lever7.wav" )
 
@@ -88,14 +88,14 @@ SWEP.CuffRegenVariance = 0 -- Randomise regen
 SWEP.CuffsCanArrest = true -- Players in this restraint can be arrested. Has no effect if restrict arrest is disabled.
 SWEP.CuffsCanAutoArrest = false -- This swep can be used to auto-arrest. Has no effect if auto arrest is disabled.
 
--- [[ Network Vars ]] --
+-- Network Vars
 function SWEP:SetupDataTables()
 	self:NetworkVar( "Bool", 0, "IsCuffing" )
 	self:NetworkVar( "Entity", 0, "Cuffing" )
 	self:NetworkVar( "Float", 0, "CuffTime" )
 end
 
--- [[ Standard SWEP functions ]] --
+-- Standard SWEP functions
 function SWEP:PrimaryAttack()
 	if self:GetIsCuffing() then return end
 	
@@ -103,6 +103,7 @@ function SWEP:PrimaryAttack()
 	self:SetNextSecondaryFire( CurTime() + self.Primary.Delay )
 	
 	if CLIENT then return end
+	if self:GetCuffTime()>CurTime() then return end -- On cooldown
 	if self:GetCuffTime()>CurTime() then return end -- On cooldown
 	
 	local tr = self:TargetTrace()
@@ -138,7 +139,7 @@ function SWEP:Holster()
 end
 SWEP.OnRemove = SWEP.Holster
 
--- [[ Handcuff ]] --
+-- Handcuff
 function SWEP:DoHandcuff( target )
 	if not (target and IsValid(target)) then return end
 	if target:IsHandcuffed() then return end
@@ -201,7 +202,7 @@ function SWEP:DoHandcuff( target )
 	end
 end
 
--- [[ Think ]] --
+-- Think
 function SWEP:Think()
 	if SERVER then
 		if self:GetIsCuffing() then
@@ -221,7 +222,7 @@ function SWEP:Think()
 	end
 end
 
--- [[ Get Target ]] --
+-- Get Target
 function SWEP:TargetTrace()
 	if not IsValid(self.Owner) then return end
 	
@@ -232,7 +233,7 @@ function SWEP:TargetTrace()
 	end
 end
 
--- [[ HUD ]] --
+-- HUD
 local Col = {
 	Text = Color(255,255,255), TextShadow = Color(0,0,0),
 	
@@ -288,7 +289,7 @@ function SWEP:DrawHUD()
 	render.SetScissorRect( 0,0,0,0, false )
 end
 
--- [[ Rendering ]] --
+-- Rendering
 local renderpos = {
 	left = {pos=Vector(0,0,0), vel=Vector(0,0,0), gravity=1, ang=Angle(0,30,90)},
 	right = {bone = "ValveBiped.Bip01_R_Hand", pos=Vector(3.2,2.1,0.4), ang=Angle(-2,0,80), scale = Vector(0.045,0.045,0.03)},
@@ -318,9 +319,10 @@ function SWEP:ViewModelDrawn( vm )
 	local rpos, rang = self:GetBonePos( renderpos.right.bone, vm )
 	if not (rpos and rang) then return end
 	
-	-- [[ Right ]] --
+	-- Right
 	local fixed_rpos = rpos + (rang:Forward()*renderpos.right.pos.x) + (rang:Right()*renderpos.right.pos.y) + (rang:Up()*renderpos.right.pos.z)
 	self.cmdl_RightCuff:SetPos( fixed_rpos )
+	local u,r,f = rang:Up(), rang:Right(), rang:Forward() -- Prevents moving axes
 	local u,r,f = rang:Up(), rang:Right(), rang:Forward() -- Prevents moving axes
 	rang:RotateAroundAxis( u, renderpos.right.ang.y )
 	rang:RotateAroundAxis( r, renderpos.right.ang.p )
@@ -334,7 +336,7 @@ function SWEP:ViewModelDrawn( vm )
 	self.cmdl_RightCuff:SetMaterial( self.CuffMaterial )
 	self.cmdl_RightCuff:DrawModel()
 	
-	-- [[ Left ]] --
+	-- Left
 	if CurTime()>(renderpos.left.NextThink or 0) then
 		local dist = renderpos.left.pos:Distance( fixed_rpos )
 		if dist>100 then
@@ -373,7 +375,7 @@ function SWEP:ViewModelDrawn( vm )
 		self.cmdl_LeftCuff:DrawModel()
 	end
 	
-	-- [[ Rope ]] --
+	-- Rope
 	if not self.RopeMat then self.RopeMat = Material(self.CuffRope) end
 	
 	render.SetMaterial( self.RopeMat )
@@ -403,7 +405,7 @@ function SWEP:DrawWorldModel()
 	local rpos, rang = self:GetBonePos( wrender.right.bone, self.Owner )
 	if not (rpos and rang) then return end
 	
-	-- [[ Right ]] --
+	-- Right
 	local fixed_rpos = rpos + (rang:Forward()*wrender.right.pos.x) + (rang:Right()*wrender.right.pos.y) + (rang:Up()*wrender.right.pos.z)
 	self.cmdl_RightCuff:SetPos( fixed_rpos )
 	local u,r,f = rang:Up(), rang:Right(), rang:Forward() -- Prevents moving axes
@@ -419,7 +421,7 @@ function SWEP:DrawWorldModel()
 	self.cmdl_RightCuff:SetMaterial( self.CuffMaterial )
 	self.cmdl_RightCuff:DrawModel()
 	
-	-- [[ Left ]] --
+	-- Left
 	if CurTime()>(wrender.left.NextThink or 0) then
 		local dist = wrender.left.pos:Distance( fixed_rpos )
 		if dist>100 then
@@ -457,7 +459,7 @@ function SWEP:DrawWorldModel()
 		self.cmdl_LeftCuff:DrawModel()
 	end
 	
-	-- [[ Rope ]] --
+	-- Rope
 	if not self.RopeMat then self.RopeMat = Material(self.CuffRope) end
 	
 	render.SetMaterial( self.RopeMat )
@@ -466,7 +468,7 @@ function SWEP:DrawWorldModel()
 		0.7, 0, 5, RopeCol )
 end
 
--- [[ Bones ]] --
+-- Bones
 function SWEP:GetBonePos( bonename, vm )
 	local bone = vm:LookupBone( bonename )
 	if not bone then return end

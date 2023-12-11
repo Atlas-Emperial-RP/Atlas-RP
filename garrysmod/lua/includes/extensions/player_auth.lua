@@ -75,7 +75,7 @@ local SteamIDs = {}
 local function LoadUsersFile()
 
 	local txt = file.Read( "settings/users.txt", "GAME" )
-	if ( not txt ) then MsgN( "Failed to load settings/users.txt! " ) return end
+	if ( not txt ) then MsgN( "Failed to load settings/users.txt!" ) return end
 
 	-- Load the users file
 	local UsersKV = util.KeyValuesToTable( txt )

@@ -227,21 +227,19 @@ function PANEL:ShowFolder( path )
 	for _, filter in ipairs( string.Explode( " ", filters ) ) do
 
 		local files = file.Find( string.Trim( path .. "/" .. ( filter or "*.*" ), "/" ), self.m_strPath )
-		if ( istable( files ) ) then
+		if ( not istable( files ) ) then return end
 
 			for _, v in ipairs( files ) do
 
 				if ( self.m_bModels ) then
 
-					local icon = self.Files:Add( "SpawnIcon" )
-					icon:SetModel( path .. "/" .. v )
-					icon.DoClick = function( pnl )
-						if ( pnl.LastClickTime and SysTime() - pnl.LastClickTime < 0.3 ) then
-							self:OnDoubleClick( path .. "/" .. v, icon )
-						else
-							self:OnSelect( path .. "/" .. v, icon )
-						end
-						pnl.LastClickTime = SysTime()
+				local icon = self.Files:Add( "SpawnIcon" )
+				icon:SetModel( path .. "/" .. v )
+				icon.DoClick = function( pnl )
+					if ( pnl.LastClickTime and SysTime() - pnl.LastClickTime < 0.3 ) then
+						self:OnDoubleClick( path .. "/" .. v, icon )
+					else
+						self:OnSelect( path .. "/" .. v, icon )
 					end
 					icon.DoRightClick = function()
 						self:OnRightClick( path .. "/" .. v, icon )

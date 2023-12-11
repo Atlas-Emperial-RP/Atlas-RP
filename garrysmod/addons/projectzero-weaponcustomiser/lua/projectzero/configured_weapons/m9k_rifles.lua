@@ -1,4 +1,4 @@
---[[---
+--[[
     Modular system to add support for weapons. Weapons can still be configured in-game but adding them to the addon itself is easier for users.
     Configurations can be overriden using the config still, config has priority over this.
 --]]

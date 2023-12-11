@@ -8,13 +8,7 @@ local function AddRecursive( pnl, folder, path, wildcard )
 
 	for k, v in ipairs( files ) do
 
-		if ( string.EndsWith( v, ".mdl" ) ) then
-
-			local cp = spawnmenu.GetContentType( "model" )
-			if ( cp ) then
-				cp( pnl, { model = folder .. v } )
-				added = true
-			end
+		if ( not string.EndsWith( v, ".mdl" ) ) then return end
 
 		end
 	end
@@ -49,24 +43,18 @@ local function RefreshAddons( MyNode )
 
 	for _, addon in SortedPairsByMemberValue( engine.GetAddons(), "title" ) do
 
-		if ( addon.downloaded or addon.mounted ) and not ( addon.models <= 0) then
+		if ( not addon.downloaded or not addon.mounted ) then return end
+		if ( addon.models <= 0 ) then return end
 
 			local models = MyNode:AddNode( addon.title .. " (" .. addon.models .. ")", "icon16/bricks.png" )
 			models.DoClick = function()
 
 				ViewPanel:Clear( true )
 
-				local anyAdded = AddRecursive( ViewPanel, "models/", addon.title, "*.mdl" )
-				if ( not anyAdded ) then
-					local cp = spawnmenu.GetContentType( "header" )
-					if ( cp ) then cp( ViewPanel, { text = "#spawnmenu.failedtofindmodels" } ) end
-
-					-- For debugging
-					local cp = spawnmenu.GetContentType( "header" )
-					if ( cp ) then cp( ViewPanel, { text = tostring( addon.title ) .. " (ID: " .. tostring( addon.wsid ) .. ")" } ) end
-				end
-
-				MyNode.pnlContent:SwitchPanel( ViewPanel )
+			local anyAdded = AddRecursive( ViewPanel, "models/", addon.title, "*.mdl" )
+			if ( not anyAdded ) then
+				local cp = spawnmenu.GetContentType( "header" )
+				if ( cp ) then cp( ViewPanel, { text = "#spawnmenu.failedtofindmodels" } ) end
 
 			end
 			models.DoRightClick = AddonsRightClick

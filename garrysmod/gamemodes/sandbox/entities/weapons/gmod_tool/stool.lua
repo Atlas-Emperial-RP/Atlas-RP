@@ -203,16 +203,16 @@ search.AddProvider( function( str )
 		local niceName = (v.Name or "#") .. k
 		if ( niceName:StartWith( "#" ) ) then niceName = language.GetPhrase( niceName:sub( 2 ) ) end
 
-		if ( k:lower():find( str, nil, true ) and niceName:lower():find( str, nil, true ) ) then
+		if ( not k:lower():find( str, nil, true ) and not niceName:lower():find( str, nil, true ) ) then return end
 
-			local entry = {
-				text = niceName,
-				icon = spawnmenu.CreateContentIcon( "tool", nil, {
-					spawnname = k,
-					nicename = (v.Name or "#") .. k
-				} ),
-				words = { k }
-			}
+		local entry = {
+			text = niceName,
+			icon = spawnmenu.CreateContentIcon( "tool", nil, {
+				spawnname = k,
+				nicename = (v.Name or "#") .. k
+			} ),
+			words = { k }
+		}
 
 			table.insert( list, entry )
 

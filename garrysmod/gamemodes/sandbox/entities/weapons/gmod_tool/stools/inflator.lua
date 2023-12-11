@@ -84,7 +84,7 @@ local function ScaleBone( ent, bone, scale, type )
 	local physBone = ent:TranslateBoneToPhysBone( bone )
 	for i = 0, ent:GetBoneCount() do
 
-		if ( ent:TranslateBoneToPhysBone( i ) == physBone ) then
+		if ( ent:TranslateBoneToPhysBone( i ) ~= physBone ) then return end
 
 			-- Some bones are scaled only in certain directions (like legs don't scale on length)
 			local v = GetNiceBoneScale( ent:GetBoneName( i ), scale ) * 0.1
@@ -104,7 +104,7 @@ end
 function TOOL:LeftClick( trace, scale )
 
 	if ( not IsValid( trace.Entity ) ) then return false end
-	if ( not trace.Entity:IsNPC() and trace.Entity:GetClass() ~= "prop_ragdoll" and not trace.Entity:IsPlayer() ) then return false end
+	if ( not trace.Entity:IsNPC() and trace.Entity:GetClass() ~= "prop_ragdoll" --[[and not trace.Entity:IsPlayer()]] ) then return false end
 
 	local bone = trace.Entity:TranslatePhysBoneToBone( trace.PhysicsBone )
 	ScaleBone( trace.Entity, bone, scale or 1 )
@@ -129,7 +129,7 @@ end
 function TOOL:Reload( trace )
 
 	if ( not IsValid( trace.Entity ) ) then return false end
-	if ( not trace.Entity:IsNPC() and trace.Entity:GetClass() ~= "prop_ragdoll" and not trace.Entity:IsPlayer() ) then return false end
+	if ( not trace.Entity:IsNPC() and trace.Entity:GetClass() ~= "prop_ragdoll" --[[and not trace.Entity:IsPlayer()--]] ) then return false end
 
 	if ( CLIENT ) then return true end
 

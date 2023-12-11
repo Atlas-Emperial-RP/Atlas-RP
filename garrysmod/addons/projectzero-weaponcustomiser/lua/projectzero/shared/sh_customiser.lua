@@ -65,12 +65,10 @@ function PROJECT0.FUNC.LoadConfiguredWeapons()
 	for weaponClass, weaponData in pairs( table.Copy( (PROJECT0.CONFIG.CUSTOMISER or {}).Weapons or {} ) ) do
 		if( not weaponsList[weaponClass] ) then
 			weaponsList[weaponClass] = weaponData
+			return
 		elseif( weaponData.Disabled == true ) then
 			weaponsList[weaponClass] = nil
-		else
-			for k, v in pairs( weaponData ) do
-				weaponsList[weaponClass][k] = v
-			end
+			return
 		end
 
 	end

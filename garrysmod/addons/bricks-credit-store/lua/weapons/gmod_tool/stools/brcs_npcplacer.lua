@@ -17,7 +17,7 @@ function TOOL:LeftClick( trace )
 
 	local ply = self:GetOwner()
 	if( not BRICKSCREDITSTORE.HasAdminAccess( ply ) ) then
-		ply:NotifyBRCS( "You don't have permission to use this tool!" )
+		ply:NotifyBRCS( "You don't have permission to use this toolnot " )
 		return
 	end
 

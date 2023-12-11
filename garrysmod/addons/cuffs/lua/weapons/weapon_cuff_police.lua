@@ -24,7 +24,7 @@ SWEP.AdminSpawnable = true
 SWEP.Slot = 3
 SWEP.PrintName = "Police Handcuffs"
 
--- [[ Handcuff Vars ]] --
+-- Handcuff Vars
 SWEP.CuffTime = 1.0 -- Seconds to handcuff
 SWEP.CuffSound = Sound( "buttons/lever7.wav" )
 

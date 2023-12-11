@@ -9,11 +9,11 @@ local foreground = colors["foreground"]
 local inactiveClr = colors["inactiveClr"]
 local theme = colors["theme"] 
 local highlight = Color(theme.r, theme.g, theme.b, 10)
-surface.CreateFont( "dwep_24", { font = "Roboto", size = 24, weight = 600, bold = true, strikeout = false, shadow = false })
-surface.CreateFont( "dwep_22", { font = "Roboto", size = 22, weight = 600, bold = true, strikeout = false, shadow = false })
-surface.CreateFont( "dwep_20", { font = "Roboto", size = 20, weight = 600, bold = true, strikeout = false, shadow = false })
-surface.CreateFont( "dwep_18", { font = "Roboto", size = 18, weight = 600, bold = true, strikeout = false, shadow = false })
-surface.CreateFont( "dwep_16", { font = "Roboto", size = 16, weight = 600, bold = true, strikeout = false, shadow = false })
+surface.CreateFont( "dwep_24", { font = "Roboto", size = 24, weight = 600, bold = true, strikeout = false, outline = false, shadow = false,})
+surface.CreateFont( "dwep_22", { font = "Roboto", size = 22, weight = 600, bold = true, strikeout = false, outline = false, shadow = false,})
+surface.CreateFont( "dwep_20", { font = "Roboto", size = 20, weight = 600, bold = true, strikeout = false, outline = false, shadow = false,})
+surface.CreateFont( "dwep_18", { font = "Roboto", size = 18, weight = 600, bold = true, strikeout = false, outline = false, shadow = false,})
+surface.CreateFont( "dwep_16", { font = "Roboto", size = 16, weight = 600, bold = true, strikeout = false, outline = false, shadow = false,})
 DWEP.SearchData = DWEP.SearchData or {
 	["search"] = "",
 	["results"] = DWEP.Sweps,
@@ -415,7 +415,7 @@ function OpenDWEPWeapon(class)
 		local weaponData = formatWeapon(weapon) 
 		for k,v in orderedPairs(weaponData) do
 		local defaultValue = ""
-			if type(v) ~= "Vector" or type(v) ~= "Angle" then
+			if type(v) == "Vector" or type(v) == "Angle" then return end
 			--if type(v) == "table" then updateData[parentLayer][k] = {value = v, changed = true, parent = parentLayer} targetUpdate = updateData[parentLayer][k]  end 
 			local configOption = vgui.Create("DPanel", weaponScroll)
 			configOption:SetPos(offset, ypos)
@@ -480,7 +480,6 @@ function OpenDWEPWeapon(class)
 			end
 			ypos = ypos + 29 * 1.1
 
-			end
 		end
 	end
 end 

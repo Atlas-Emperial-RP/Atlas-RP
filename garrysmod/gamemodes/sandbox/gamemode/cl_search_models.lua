@@ -72,7 +72,7 @@ search.AddProvider( function( str )
 
 		if ( modelpath:find( str, nil, true ) ) then
 
-			if not ( IsUselessModel( v ) ) then
+			if ( IsUselessModel( v ) ) then return end
 
 				local entry = {
 					text = v:GetFileFromFilename(),
@@ -114,7 +114,7 @@ local function AddSearchProvider( listname, ctype, stype )
 		local entities = {}
 
 		for k, v in pairs( list.Get( listname ) ) do
-			if ( listname ~= "Weapon" and v.Spawnable ) then
+			if ( listname == "Weapon" and not v.Spawnable ) then return end
 
 				v.ClassName = k
 				v.PrintName = v.PrintName or v.Name
@@ -127,9 +127,9 @@ local function AddSearchProvider( listname, ctype, stype )
 
 			local name = v.PrintName
 			local name_c = v.ClassName
-			if ( isstring( name ) and isstring( name_c ) ) then
+			if ( not isstring( name ) and not isstring( name_c ) ) then return end
 
-				if ( ( isstring( name ) and name:lower():find( str, nil, true ) ) or ( isstring( name_c ) and name_c:lower():find( str, nil, true ) ) ) then
+			if ( ( isstring( name ) and name:lower():find( str, nil, true ) ) or ( isstring( name_c ) and name_c:lower():find( str, nil, true ) ) ) then
 
 					local entry = {
 						text = v.PrintName or v.ClassName,

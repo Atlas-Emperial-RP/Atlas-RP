@@ -119,7 +119,9 @@ function SWEP:DrawHUD()
 
 		local name = v.name
 
-		if ( name ) and ( not v.stage and v.stage == self:GetStage() ) and ( not v.op and v.op == toolObject:GetOperation() ) then
+		if ( not name ) then return end
+		if ( v.stage and v.stage ~= self:GetStage() ) then return end
+		if ( v.op and v.op ~= toolObject:GetOperation() ) then return end
 
 			local txt = "#tool." .. GetConVarString( "gmod_toolmode" ) .. "." .. name
 			if ( name == "info" ) then txt = toolObject:GetHelpText() end
@@ -132,35 +134,35 @@ function SWEP:DrawHUD()
 			local icon1 = v.icon
 			local icon2 = v.icon2
 
-			if ( not icon1 ) then
-				if ( string.StartsWith( name, "info" ) ) then icon1 = "gui/info" end
-				if ( string.StartsWith( name, "left" ) ) then icon1 = "gui/lmb.png" end
-				if ( string.StartsWith( name, "right" ) ) then icon1 = "gui/rmb.png" end
-				if ( string.StartsWith( name, "reload" ) ) then icon1 = "gui/r.png" end
-				if ( string.StartsWith( name, "use" ) ) then icon1 = "gui/e.png" end
-			end
-			if ( not icon2 and not string.StartsWith( name, "use" ) and string.EndsWith( name, "use" ) ) then icon2 = "gui/e.png" end
-
-			self.Icons = self.Icons or {}
-			if ( icon1 and not self.Icons[ icon1 ] ) then self.Icons[ icon1 ] = Material( icon1 ) end
-			if ( icon2 and not self.Icons[ icon2 ] ) then self.Icons[ icon2 ] = Material( icon2 ) end
-
-			if ( icon1 and self.Icons[ icon1 ] and not self.Icons[ icon1 ]:IsError() ) then
-				surface.SetDrawColor( 255, 255, 255, 255 )
-				surface.SetMaterial( self.Icons[ icon1 ] )
-				surface.DrawTexturedRect( x, y + h2, 16, 16 )
-			end
-
-			if ( icon2 and self.Icons[ icon2 ] and not self.Icons[ icon2 ]:IsError() ) then
-				surface.SetDrawColor( 255, 255, 255, 255 )
-				surface.SetMaterial( self.Icons[ icon2 ] )
-				surface.DrawTexturedRect( x - 25, y + h2, 16, 16 )
-
-				draw.SimpleText( "+", "default", x - 8, y + h2 + 2, color_white )
-			end
-
-			h2 = h2 + h
+		if ( not icon1 ) then
+			if ( string.StartsWith( name, "info" ) ) then icon1 = "gui/info" end
+			if ( string.StartsWith( name, "left" ) ) then icon1 = "gui/lmb.png" end
+			if ( string.StartsWith( name, "right" ) ) then icon1 = "gui/rmb.png" end
+			if ( string.StartsWith( name, "reload" ) ) then icon1 = "gui/r.png" end
+			if ( string.StartsWith( name, "use" ) ) then icon1 = "gui/e.png" end
 		end
+		if ( not icon2 and not string.StartsWith( name, "use" ) and string.EndsWith( name, "use" ) ) then icon2 = "gui/e.png" end
+
+		self.Icons = self.Icons or {}
+		if ( icon1 and not self.Icons[ icon1 ] ) then self.Icons[ icon1 ] = Material( icon1 ) end
+		if ( icon2 and not self.Icons[ icon2 ] ) then self.Icons[ icon2 ] = Material( icon2 ) end
+
+		if ( icon1 and self.Icons[ icon1 ] and not self.Icons[ icon1 ]:IsError() ) then
+			surface.SetDrawColor( 255, 255, 255, 255 )
+			surface.SetMaterial( self.Icons[ icon1 ] )
+			surface.DrawTexturedRect( x, y + h2, 16, 16 )
+		end
+
+		if ( icon2 and self.Icons[ icon2 ] and not self.Icons[ icon2 ]:IsError() ) then
+			surface.SetDrawColor( 255, 255, 255, 255 )
+			surface.SetMaterial( self.Icons[ icon2 ] )
+			surface.DrawTexturedRect( x - 25, y + h2, 16, 16 )
+
+			draw.SimpleText( "+", "default", x - 8, y + h2 + 2, color_white )
+		end
+
+		h2 = h2 + h
+
 	end
 
 	self.InfoBoxHeight = h2 + 8

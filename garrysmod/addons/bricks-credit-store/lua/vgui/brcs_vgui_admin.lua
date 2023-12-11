@@ -834,7 +834,7 @@ function PANEL:SetItemData( npcType, itemKey, newItem )
 						end
 					end
 					
-					if IsValid( EntryPanel ) then
+					if( not IsValid( EntryPanel ) ) then return end
 
 					EntryPanel:Dock( TOP )
 					EntryPanel:DockMargin( 0, 0, 0, 10 )
@@ -867,7 +867,6 @@ function PANEL:SetItemData( npcType, itemKey, newItem )
 					end
 
 					EntryPanels[k] = EntryPanel
-					end
 				end
 			end
 

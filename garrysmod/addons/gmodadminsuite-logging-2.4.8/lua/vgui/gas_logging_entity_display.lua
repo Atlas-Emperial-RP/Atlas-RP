@@ -186,13 +186,12 @@ function PANEL:SetVehicle(vehicle_class, mdl_str)
 		end
 	else
 		for _,spawnmenu_item in pairs(list.Get("Vehicles")) do
-			if (spawnmenu_item.Class == vehicle_class) then 
-				if (spawnmenu_item.Name ~= nil and type(spawnmenu_item.Name) == "string") then
-					self.PrintName:SetText(spawnmenu_item.Name)
-					if (file.Exists("materials/entities/" .. spawnmenu_item.Name .. ".png", "GAME")) then
-						self.SpawnIcon:SetImage("entities/" .. spawnmenu_item.Name .. ".png")
-						self.SpawnIcon:SetVisible(true)
-					end
+			if (spawnmenu_item.Class ~= vehicle_class) then return end
+			if (spawnmenu_item.Name ~= nil and type(spawnmenu_item.Name) == "string") then
+				self.PrintName:SetText(spawnmenu_item.Name)
+				if (file.Exists("materials/entities/" .. spawnmenu_item.Name .. ".png", "GAME")) then
+					self.SpawnIcon:SetImage("entities/" .. spawnmenu_item.Name .. ".png")
+					self.SpawnIcon:SetVisible(true)
 				end
 				if (mdl_str == nil or IsUselessModel(mdl_str)) then
 					if (spawnmenu_item.Model ~= nil and type(spawnmenu_item.Model) == "string") then
@@ -415,12 +414,11 @@ GAS:netReceive("logging:EntityDisplay:SENTModel", function()
 		local model = net.ReadString()
 		if (GAS_Logging_EntityDisplay_Networking[class_name] ~= nil) then
 			for pnl in pairs(GAS_Logging_EntityDisplay_Networking[class_name]) do
-				if (IsValid(pnl)) then 
-					GAS_Logging_EntityDisplay_Cache[class_name] = model
-					pnl.LoadingPanel:SetLoading(false)
-					pnl.ModelPanel:SetModel(model)
-					pnl:FixCamera()
-				end
+				if (not IsValid(pnl)) then return end
+				GAS_Logging_EntityDisplay_Cache[class_name] = model
+				pnl.LoadingPanel:SetLoading(false)
+				pnl.ModelPanel:SetModel(model)
+				pnl:FixCamera()
 			end
 			GAS_Logging_EntityDisplay_Networking[class_name] = nil
 		end
@@ -428,10 +426,9 @@ GAS:netReceive("logging:EntityDisplay:SENTModel", function()
 		GAS:PlaySound("error")
 		if (GAS_Logging_EntityDisplay_Networking[class_name] ~= nil) then
 			for pnl in pairs(GAS_Logging_EntityDisplay_Networking[class_name]) do
-				if (IsValid(pnl)) then
-					pnl.LoadingPanel:SetLoading(false)
-					pnl.Shruggie:SetVisible(true)
-				end
+				if (not IsValid(pnl)) then return end
+				pnl.LoadingPanel:SetLoading(false)
+				pnl.Shruggie:SetVisible(true)
 			end
 			GAS_Logging_EntityDisplay_Networking[class_name] = nil
 		end

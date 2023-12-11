@@ -19,13 +19,8 @@ spawnmenu.AddCreationTab( "#spawnmenu.category.dupes", function()
 
 		for k, v in ipairs( f ) do
 
-			if not ( k <= offset ) then
-				local entry = {
-					file	= "dupes/" .. v,
-					name	= v:StripExtension(),
-					preview	= "dupes/" .. v:StripExtension() .. ".jpg",
-					description	= "Local duplication stored on your computer. Local content can be deleted in the main menu."
-				}
+			if ( k <= offset ) then return end
+			if ( k > offset + perpage ) then break end
 
 				table.insert( saves, entry )
 
@@ -83,7 +78,7 @@ hook.Add( "DupeSaveAvailable", "UpdateDupeSpawnmenuAvailable", function()
 
 	DupeInClipboard = true
 
-	if ( notIsValid( HTML ) ) then return end
+	if ( not IsValid( HTML ) ) then return end
 
 	HTML:Call( "SetDupeSaveState( true );" )
 
@@ -93,7 +88,7 @@ hook.Add( "DupeSaveUnavailable", "UpdateDupeSpawnmenuUnavailable", function()
 
 	DupeInClipboard = false
 
-	if ( notIsValid( HTML ) ) then return end
+	if ( not IsValid( HTML ) ) then return end
 
 	HTML:Call( "SetDupeSaveState( false );" )
 

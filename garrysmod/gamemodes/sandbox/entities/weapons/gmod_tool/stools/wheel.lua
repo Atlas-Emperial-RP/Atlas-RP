@@ -208,7 +208,7 @@ function TOOL:UpdateGhostWheel( ent, ply )
 	if ( not IsValid( ent ) ) then return end
 
 	local trace = ply:GetEyeTrace()
-	if ( not trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:IsPlayer() ) ) then
+	if ( not trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:IsPlayer() --[[or trace.Entity:GetClass() == "gmod_wheel"--]] ) ) then
 
 		ent:SetNoDraw( true )
 		return

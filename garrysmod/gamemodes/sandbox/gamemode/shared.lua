@@ -26,7 +26,7 @@ GM.Website 	= "www.garrysmod.com"
 --[[
  Note: This is so that in addons you can do stuff like
 
- if ( !GAMEMODE.IsSandboxDerived ) then return end
+ if ( not GAMEMODE.IsSandboxDerived ) then return end
 
 --]]
 

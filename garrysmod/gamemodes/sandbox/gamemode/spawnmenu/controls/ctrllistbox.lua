@@ -88,7 +88,7 @@ end
 -----------------------------------------------------------]]
 function PANEL:CheckConVarChanges()
 
-	if ( not self:ConVarsChanged()) then return end
+	if (not self:ConVarsChanged()) then return end
 
 	for k, v in pairs( self.ConVars ) do
 		self[ k ] = GetConVarString( k )

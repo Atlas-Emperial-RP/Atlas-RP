@@ -239,16 +239,14 @@ if (SERVER) then
 			SetTeam = OpenPermissions:GetTeamIdentifier(SetTeam)
 		}
 		for _,t in ipairs(WhitelistTo) do
-			if (RPExtraTeams[t]) then 
-				faction_tbl.WhitelistTo[OpenPermissions:GetTeamIdentifier(t)] = true
-			end
+			if (not RPExtraTeams[t]) then return end
+			faction_tbl.WhitelistTo[OpenPermissions:GetTeamIdentifier(t)] = true
 		end
 		for _,t in ipairs(BlacklistFrom) do
-			if (RPExtraTeams[t]) then 
-				local id = OpenPermissions:GetTeamIdentifier(t)
-				faction_tbl.BlacklistFrom[id] = true
-				faction_tbl.WhitelistTo[id] = nil
-			end
+			if (not RPExtraTeams[t]) then return end
+			local id = OpenPermissions:GetTeamIdentifier(t)
+			faction_tbl.BlacklistFrom[id] = true
+			faction_tbl.WhitelistTo[id] = nil
 		end
 		faction_tbl.WhitelistTo[faction_tbl.SetTeam] = true
 		faction_tbl.BlacklistFrom[faction_tbl.SetTeam] = nil
@@ -384,8 +382,8 @@ else
 		local created_faction = false
 		for index, selection in ipairs(GAS.JobWhitelist.Factions.Config.Factions) do
 			local permitted = is_operator or OpenPermissions:HasPermission(LocalPlayer(), "gmodadminsuite_jobwhitelist_factions/" .. selection.ID)
-			if (selection.ShowIfNotPermitted and permitted) then
-				created_faction = true
+			if (not selection.ShowIfNotPermitted and not permitted) then return end
+			created_faction = true
 
 				local faction = vgui.Create("GAS.JobWhitelist.Faction", GAS.JobWhitelist.Factions.Menu.FactionContainer)
 				table.insert(faction_pnls, faction)

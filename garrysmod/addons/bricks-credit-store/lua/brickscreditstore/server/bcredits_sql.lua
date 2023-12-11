@@ -21,7 +21,7 @@ if( (BRICKSCREDITSTORE.LUACONFIG.UseMySQL or false) == true ) then
 			["locker"] = "string"	
 		}
 
-		-- [[ MYSQL CODE ]] --
+		-- MYSQL CODE
 		local player_meta = FindMetaTable("Player")
 		require( "mysqloo" )
 

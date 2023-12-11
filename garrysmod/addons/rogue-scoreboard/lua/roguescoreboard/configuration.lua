@@ -3,7 +3,8 @@ RogueScoreboard.Configuration = {}
 local Configuration = RogueScoreboard.Configuration
 
 
---[[ T I P S 
+-- T I P S 
+--[[ 
 
 1. I would suggest making your job colors more vibrant to suit the scoreboard better, for instance i used Color( 0,255,80 ) for my citizen job color. This can be done in your darkrpmodifications folder.
 
@@ -13,7 +14,10 @@ local Configuration = RogueScoreboard.Configuration
 
 4. Dont be a leaker, support the lads who do the hard work for you, we have to put up with the cost of living and bills too.
 
- M A I N   C O N F I G U R A T I O N S ]]
+]]
+
+
+-- M A I N   C O N F I G U R A T I O N S
 
 -- Server title
 Configuration.ServerTitle           = "A T L A S  I M P E R I A L  R P"
@@ -48,7 +52,7 @@ Configuration.ShowRank              = true
 -- Show players steamname rather than ingame Nick?
 Configuration.SteamName             = false
 
--- [[ R E P O R T  S Y S T E M ( N E W  ) ]] --
+-- R E P O R T  S Y S T E M ( N E W  )
 
 -- Set to false if you do not want the report system
 Configuration.ReportEnabled         = true
@@ -57,7 +61,7 @@ Configuration.ReportEnabled         = true
 Configuration.UsingReportAddon      = false
 Configuration.ReportAddonPrefix     = "/report" -- This can be /r or anything your report system requires the prefix to be to open the menu
 
--- [[ If you are not using a report addon this section of the report system is for you ]] --
+-- If you are not using a report addon this section of the report system is for you
 -- URL for your report button, Set to false if you are not using a website for report button, this will send messages to admins ingame instead
 Configuration.UsingReportSite       = false
 Configuration.ReportURL             = "www.google.com"
@@ -69,7 +73,7 @@ Configuration.ReportedText          = "I would like to report"
 
 
 
--- [[ T H E M E ]] --
+-- T H E M E
 
 Configuration.MainBackground        = Color( 19,20,21,246 )
 Configuration.PanelBackground       = Color( 24,25,26,210 )
@@ -93,7 +97,7 @@ Configuration.UndercoverIcon        = Color( 121,122,123 )
 Configuration.IsUndercoverIcon      = Color( 0,160,255 )
 
 
--- [[ L A N G U A G E ]] --
+-- L A N G U A G E
 
 -- Information bar
 Configuration.NameText              = "NAME" 
@@ -132,7 +136,7 @@ Configuration.CurrentPlayersText    = "Current Players"
 
 
 
--- [[ C U S T O M  T A G S ]] --
+-- C U S T O M  T A G S
 
 -- Customized tags use players steamID
 -- Configuration.CustomUserTag["STEAM_X:X:XXXXXXX"]      = { Tag = "TAG NAME", TagColor = Color( R,G,B ) }
@@ -143,7 +147,7 @@ Configuration.CustomUserTag["STEAM_0:0:29761241"]       = { Tag = "THE MAN, THE 
 
 
 
--- [[ R A N K   S E L E C T I O N ]] -- 
+-- R A N K   S E L E C T I O N 
 
 -- Rank Display Table
 -- Configuration.RankDisplay["rank"]         = { DisplayName = "Display name you want to see", TagName = "This is the tag name that will show if the player does not have a custom tag", DisplayColor = Color( R,G,B ), TagColor = Color( R,G,B ) }
@@ -163,7 +167,7 @@ Configuration.RankDisplay["OwnerDONTUSE"]          = { DisplayName = "OwnerDONTU
 
 
 
--- [[ C O M M A N D  C O N F I G U R A T I O N ]] --
+-- C O M M A N D  C O N F I G U R A T I O N
 
 -- Who has access to remove players props, this uses FPP system
 Configuration.PropAccess            = { "admin", "superadmin", "Owner" }
@@ -193,7 +197,7 @@ Configuration.CommandBanTime        = 120
 
 
 
--- [[ U N D E R  C O V E R  M O D E ]] --
+-- U N D E R  C O V E R  M O D E
 
 -- Who has access to go incognito?
 Configuration.IncognitoAccess       = { "admin", "superadmin", "Owner" }
@@ -227,13 +231,13 @@ Configuration.UndercoverNames       = {
 
 
 
--- [[ A D M I N I S T R A T I O N  P R E F I X ]] --
+-- A D M I N I S T R A T I O N  P R E F I X
 
--- [[ Below is administration prefix for commands, do not edit below unless you know what to do ]] --
+-- Below is administration prefix for commands, do not edit below unless you know what to do
 
------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
--- [[ U L X ]] --
+-- U L X
 
 Configuration.Administration = {}
 Configuration.Administration["ulx"] = {}
@@ -270,7 +274,7 @@ Configuration.Administration["ulx"].kick = function(cmdPly, reason)
     RunConsoleCommand("ulx", "kick", cmdPly:Nick(), reason)
 end
 
--- [[ S A M  A D M I N ]] --
+-- S A M  A D M I N
 
 Configuration.Administration["sam"] = {}
 Configuration.Administration["sam"].go_to = function(cmdPly)
@@ -306,7 +310,7 @@ Configuration.Administration["sam"].kick = function(cmdPly, reason)
     RunConsoleCommand("sam", "kick", cmdPly:Nick(), reason)
 end
 
--- [[ F A D M I N ]] --
+--  F  A D M I N
 
 Configuration.Administration["fadmin"] = {}
 Configuration.Administration["fadmin"].go_to = function(cmdPly)
@@ -342,10 +346,9 @@ Configuration.Administration["fadmin"].kick = function(cmdPly, reason)
     RunConsoleCommand("fadmin", "kick", cmdPly:Nick(), reason)
 end
 
--- [[ S E R V E R  G U A R D ]] --
+-- S E R V E R  G U A R D
 
 Configuration.Administration["serverguard"] = {}
-
 Configuration.Administration["serverguard"].go_to = function(cmdPly)
     RunConsoleCommand("sg", "goto", cmdPly:Nick())
 end -- todo: fix this
@@ -379,7 +382,7 @@ Configuration.Administration["serverguard"].kick = function(cmdPly, reason)
     RunConsoleCommand("sg", "kick", cmdPly:Nick(), reason)
 end
 
--- [[ X  A D M I N  2 ]] --
+-- X  A D M I N  2
 
 Configuration.Administration["xadmin2"] = {}
 Configuration.Administration["xadmin2"].go_to = function(cmdPly)
@@ -415,7 +418,7 @@ Configuration.Administration["xadmin2"].kick = function(cmdPly, reason)
     RunConsoleCommand("xadmin", "kick", cmdPly:Nick(), reason)
 end
 
--- [[ X  A D M I N  1 ]] --
+-- X  A D M I N  1
 
 Configuration.Administration["xadmin"] = {}
 Configuration.Administration["xadmin"].go_to = function(cmdPly)

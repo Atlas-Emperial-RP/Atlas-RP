@@ -1,11 +1,11 @@
---[[---
+--[[
    ____          _          _   ____          __  __       _ _                     
   / ___|___   __| | ___  __| | | __ ) _   _  |  \/  | __ _| | |__   ___  _ __ ___  
  | |   / _ \ / _` |/ _ \/ _` | |  _ \| | | | | |\/| |/ _` | | '_ \ / _ \| '__/ _ \ 
  | |__| (_) | (_| |  __/ (_| | | |_) | |_| | | |  | | (_| | | |_) | (_) | | | (_) |
   \____\___/ \__,_|\___|\__,_| |____/ \__, | |_|  |_|\__,_|_|_.__/ \___/|_|  \___/ 
                                       |___/                                        
-*/ -- ]]
+--]]
 
 if not PermaProps then PermaProps = {} end
 
@@ -149,7 +149,8 @@ function PermaProps.PPEntityFromTable( data, id )
 
 		for k, v in pairs( data.DT ) do
 
-			if ( data.DT[ k ] ~= nil ) and isfunction(ent[ "Set" .. k]) then
+			if ( data.DT[ k ] == nil ) then return end
+			if not isfunction(ent[ "Set" .. k ]) then return end
 			ent[ "Set" .. k ]( ent, data.DT[ k ] )
 			end
 		end
@@ -171,7 +172,7 @@ function PermaProps.PPEntityFromTable( data, id )
 
 		for k, v in pairs( data.SubMat ) do
 
-			if type(k) == "number" or type(v) == "string" then
+			if type(k) ~= "number" or type(v) ~= "string" then return end
 
 			ent:SetSubMaterial( k-1, v )
 			end
@@ -188,11 +189,11 @@ function PermaProps.PPEntityFromTable( data, id )
 
 	end
 
-	--[[--- if data.Table then
+	--[[if data.Table then
 
 		table.Merge(ent:GetTable(), data.Table)
 
-	end --]]
+	end--]]
 
 	ent.PermaProps_ID = id
 	ent.PermaProps = true
@@ -239,6 +240,8 @@ function PermaProps.ReloadPermaProps()
 		local data = util.JSONToTable(v.content)
 
 		local e = PermaProps.PPEntityFromTable(data, tonumber(v.id))
+		if not e or not e:IsValid() then return end
+
 	end
 
 end

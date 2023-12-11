@@ -46,7 +46,7 @@ net.Receive( "Project0.RequestSaveConfigChanges", function( len, ply )
 
     local variableCount = 0
     for k, v in pairs( changedConfig ) do
-        if( PROJECT0.CONFIG[k] ) then
+        if( not PROJECT0.CONFIG[k] ) then return end
 
             for key, val in pairs( v ) do
                 PROJECT0.CONFIG[k][key] = val

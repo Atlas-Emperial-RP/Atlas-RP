@@ -148,7 +148,7 @@ hook.Add( "OnLuaError", "MenuErrorLogger", function( str, realm, stack, addontit
 	end )
 
 	if ( not good ) then
-		print( "Failed to log a Lua errornot \n", err)
+		print( "Failed to log a Lua error!\n", err)
 	end
 
 end )

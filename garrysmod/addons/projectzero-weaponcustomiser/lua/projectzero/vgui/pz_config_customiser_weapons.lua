@@ -193,9 +193,8 @@ function PANEL:Refresh()
         local function getEnabledWeapons()
             local enabledWeapons = 0
             for k, v in pairs( weaponPack.Weapons ) do
-                if not ( values[k] and values[k].Disabled ) then
-                    enabledWeapons = enabledWeapons+1
-                end
+                if( values[k] and values[k].Disabled ) then return end
+                enabledWeapons = enabledWeapons+1
             end
 
             return enabledWeapons
@@ -215,7 +214,7 @@ function PANEL:Refresh()
             end
         end )
 
-        if not ( categoryDisabled ) then
+        if( categoryDisabled ) then return end
 
             for weaponClass, weaponData in pairs( weaponPack.Weapons ) do
                 local weaponEntry = self:CreateWeaponPanel( categoryPanel, weaponData.Name, weaponClass, weaponData.Model )
@@ -298,8 +297,42 @@ function PANEL:Refresh()
                 self.popup = popup
             end )
 
-            customCategoryPanel:SetExtraHeight( customCategoryPanel:GetExtraHeight()+weaponEntry:GetTall()+PROJECT0.UI.Margin5 )
-        end
+            categoryPanel:SetExtraHeight( categoryPanel:GetExtraHeight()+weaponEntry:GetTall()+PROJECT0.UI.Margin5 )
+		end
+	end
+
+    local customCategoryPanel = self:CreateCategoryPanel( "custom", "Custom" )
+
+    for k, v in pairs( values ) do
+        if( weaponsList[k] ) then return end
+        weaponsList[k] = v
+
+        local weaponEntry = self:CreateWeaponPanel( customCategoryPanel, v.Name, k, v.Model )
+        weaponEntry:AddButton( deleteMat, function()
+            PROJECT0.FUNC.DermaQuery( "Do you want to delete the configuration?", "WEAPON REMOVAL", "Confirm", function() 
+                values[k] = nil
+                PROJECT0.FUNC.RequestConfigChange( "CUSTOMISER", "Weapons", values )
+                self:Refresh()
+            end, "Cancel" )
+        end )
+        weaponEntry:AddButton( editMat, function()
+            local popup = vgui.Create( "pz_config_popup_weaponcfg" )
+            popup.OnClose = function( valueChanged )
+                if( not popup.valueChanged ) then 
+                    return
+                end
+
+                PROJECT0.FUNC.RequestConfigChange( "CUSTOMISER", "Weapons", values )
+                self:Refresh()
+            end
+            popup:FinishSetup( values[k], k )
+
+            PROJECT0.TEMP.WeaponCfgEditPopup = popup
+        
+            self.popup = popup
+        end )
+
+        customCategoryPanel:SetExtraHeight( customCategoryPanel:GetExtraHeight()+weaponEntry:GetTall()+PROJECT0.UI.Margin5 )
     end
 
     local addNewButton = customCategoryPanel:Add( "DButton" )
@@ -335,9 +368,8 @@ function PANEL:Refresh()
         
         local options = {}
         for k, v in ipairs( weapons.GetList() ) do
-            if( not weaponsList[v.ClassName] ) then
-                options[v.ClassName] = PROJECT0.FUNC.GetWeaponName( v.ClassName )
-            end
+            if( weaponsList[v.ClassName] ) then return end
+            options[v.ClassName] = PROJECT0.FUNC.GetWeaponName( v.ClassName )
         end
 
         PROJECT0.FUNC.DermaComboRequest( "What weapon would you like to add?", "WEAPON EDITOR", options, false, true, false, function( value, data )

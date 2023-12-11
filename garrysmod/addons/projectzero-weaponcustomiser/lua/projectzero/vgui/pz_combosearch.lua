@@ -167,15 +167,14 @@ function PANEL:OpenMenu( pControlOpener )
 	if ( self:GetSortItems() ) then
 		local sorted = {}
 		for k, v in pairs( self.Choices ) do
-			if( not IsValid( self.textEntry ) and string.find( string.lower( v ), string.lower( self.textEntry:GetValue() ) ) ) then
+			if( IsValid( self.textEntry ) and not string.find( string.lower( v ), string.lower( self.textEntry:GetValue() ) ) ) then return end
 
-				local val = tostring( v ) --tonumber( v ) || v -- This would make nicer number sorting, but SortedPairsByMemberValue doesn't seem to like number-string mixing
-				if ( string.len( val ) > 1 and not tonumber( val ) and val:StartWith( "#" ) ) then val = language.GetPhrase( val:sub( 2 ) ) end
-				table.insert( sorted, { id = k, data = v, label = val } )
-			end
+			local val = tostring( v ) --tonumber( v ) or v -- This would make nicer number sorting, but SortedPairsByMemberValue doesn't seem to like number-string mixing
+			if ( string.len( val ) > 1 and not tonumber( val ) and val:StartWith( "#" ) ) then val = language.GetPhrase( val:sub( 2 ) ) end
+			table.insert( sorted, { id = k, data = v, label = val } )
 		end
 		for k, v in SortedPairsByMemberValue( sorted, "label" ) do
-			if( not IsValid( self.textEntry ) and string.find( string.lower( v.data ), string.lower( self.textEntry:GetValue() ) ) ) then
+			if( IsValid( self.textEntry ) and not string.find( string.lower( v.data ), string.lower( self.textEntry:GetValue() ) ) ) then return end
 
 				local option = self.Menu:AddOption( v.data, function() self:ChooseOption( v.data, v.id ) end )
 				if ( self.ChoiceIcons[ v.id ] ) then
@@ -185,7 +184,7 @@ function PANEL:OpenMenu( pControlOpener )
 		end
 	else
 		for k, v in pairs( self.Choices ) do
-			if( not IsValid( self.textEntry ) and string.find( string.lower( v ), string.lower( self.textEntry:GetValue() ) ) ) then
+			if( IsValid( self.textEntry ) and not string.find( string.lower( v ), string.lower( self.textEntry:GetValue() ) ) ) then return end
 
 				local option = self.Menu:AddOption( v, function() self:ChooseOption( v, k ) end )
 				if ( self.ChoiceIcons[ k ] ) then

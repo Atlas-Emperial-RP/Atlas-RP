@@ -11,7 +11,7 @@ App.filter( 'mapFilter', function() {
 		var addonMaps = [];
 		for ( var addonName in gScope.AddonMapList )
 		{
-			if ( addonName.toLowerCase().indexOf( search.toLowerCase() ) == -1 ) continue;
+			if ( addonName.toLowerCase().indexOf( search.toLowerCase() ) == -1 ) return;
 
 			addonMaps = addonMaps.concat( gScope.AddonMapList[ addonName ] );
 		}

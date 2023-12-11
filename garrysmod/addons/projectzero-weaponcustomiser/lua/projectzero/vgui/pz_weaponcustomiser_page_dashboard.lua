@@ -14,9 +14,8 @@ function PANEL:FillPanel()
             GetValues = function()
                 local count = 0
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
-                    if( PROJECT0.FUNC.ReverseCosmeticKey( k ) == 1 ) then
-                        count = count+1
-                    end
+                    if( PROJECT0.FUNC.ReverseCosmeticKey( k ) ~= 1 ) then return end
+                    count = count+1
                 end
 
                 return count, table.Count( PROJECT0.CONFIG.CUSTOMISER.Charms )
@@ -40,9 +39,8 @@ function PANEL:FillPanel()
             GetValues = function()
                 local count = 0
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
-                    if( PROJECT0.FUNC.ReverseCosmeticKey( k ) == 2 ) then
-                        count = count+1
-                    end
+                    if( PROJECT0.FUNC.ReverseCosmeticKey( k ) ~= 2 ) then return end
+                    count = count+1
                 end
 
                 return count, table.Count( PROJECT0.CONFIG.CUSTOMISER.Stickers )
@@ -111,13 +109,13 @@ function PANEL:FillPanel()
         local totalH = 0
         local itemPanelH = PROJECT0.FUNC.ScreenScale( 100 )
         for k, v in ipairs( PROJECT0.CONFIG.CUSTOMISER.Store ) do
-            if( not v.Featured ) then
+            if( not v.Featured ) then return end
 
                 totalH = totalH+itemPanelH+PROJECT0.UI.Margin25
                 if( totalH > self2:GetTall()-rightTopH-(2*PROJECT0.UI.Margin25) ) then break end
 
-                local itemInfo = cosmeticTypes[v.Type].GetItemInfo( v.ItemID )
-                if( not itemInfo ) then
+            local itemInfo = cosmeticTypes[v.Type].GetItemInfo( v.ItemID )
+            if( not itemInfo ) then return end
 
                     local borderH = PROJECT0.FUNC.ScreenScale( 5 )
 

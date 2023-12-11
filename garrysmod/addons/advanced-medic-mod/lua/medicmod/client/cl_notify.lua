@@ -20,7 +20,7 @@
 		
 	-- for k, v in pairs( NotificationTable_Venatuss ) do
 		-- if v.type == "medic" then
-			-- if v.timeremove - CurTime() < 0 then table.remove(NotificationTable_Venatuss,k) continue end
+			-- if v.timeremove - CurTime() < 0 then table.remove(NotificationTable_Venatuss,k) return end
 			
 			-- local alpha = ( math.Clamp(CurTime() - v.apptime, 0 , 1) )
 			-- local posy = ScrH() - 200 - 60 * k - 40 * ( 1 - ( math.Clamp(CurTime() - v.apptime, 0 , 1) ) )
@@ -85,8 +85,7 @@ hook.Add("HUDPaint", "MedicMod.HUDNotifications", function()
 		
 	for k, v in pairs( NotificationTable_Venatuss ) do
 		if v.type == "medic" then
-			if v.timeremove - CurTime() < 0 then table.remove(NotificationTable_Venatuss,k)
-			else
+			if v.timeremove - CurTime() < 0 then table.remove(NotificationTable_Venatuss,k) return end
 		
 			local alpha = ( math.Clamp(CurTime() - v.apptime, 0 , 1) )
 			local posy = ScrH() - 200 - 60 * k - 40 * ( 1 - ( math.Clamp(CurTime() - v.apptime, 0 , 1) ) )
@@ -108,7 +107,6 @@ hook.Add("HUDPaint", "MedicMod.HUDNotifications", function()
 			surface.SetTextColor( 0, 0, 0, 255 * alpha)
 			surface.DrawText( v.text )
 			
-			end
 		end
 	end	
 	

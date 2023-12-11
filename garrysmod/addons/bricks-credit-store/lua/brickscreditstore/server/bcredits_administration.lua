@@ -15,7 +15,7 @@ concommand.Add( "brcs_savenpcpositions", function( ply, cmd, args )
 	if( BRICKSCREDITSTORE.HasAdminAccess( ply ) ) then
 		local Entities = {}
 		for key, ent in pairs( ents.FindByClass( "brickscreditstore_npc" ) ) do
-			if BRICKSCREDITSTORE.CONFIG.NPCs[ent:Getnpc_type() or ""] then 
+			if( not BRICKSCREDITSTORE.CONFIG.NPCs[ent:Getnpc_type() or ""] ) then return end
 
 			local EntVector = string.Explode(" ", tostring(ent:GetPos()))
 			local EntAngles = string.Explode(" ", tostring(ent:GetAngles()))
@@ -26,8 +26,6 @@ concommand.Add( "brcs_savenpcpositions", function( ply, cmd, args )
 			}
 			
 			table.insert( Entities, EntTable )
-
-			end
 
 		end
 		

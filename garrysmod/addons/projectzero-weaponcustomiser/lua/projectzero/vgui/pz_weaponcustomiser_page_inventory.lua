@@ -100,7 +100,6 @@ function PANEL:FillPanel()
     self.scrollPanel:DockMargin( PROJECT0.UI.Margin50, PROJECT0.UI.Margin25, PROJECT0.UI.Margin50, PROJECT0.UI.Margin50 )
     self.scrollPanel:SetSize( self:GetWide()-(2*PROJECT0.UI.Margin50), self:GetTall()-(PROJECT0.FUNC.ScreenScale( 120 )+PROJECT0.UI.Margin50+topPanel:GetTall()+PROJECT0.UI.Margin25) )
     self.scrollPanel.screenY = 0
-    self.scrollPanel.screenX = 0
     self.scrollPanel.Paint = function( self2, w, h )
         local screenY = select( 2, self2:LocalToScreen( 0, 0 ) )
         if( self2.screenY == screenY ) then return end
@@ -135,10 +134,10 @@ function PANEL:Refresh()
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
                     local type, itemKey = PROJECT0.FUNC.ReverseCosmeticKey( k )
-                    if( type == PROJECT0.COSMETIC_TYPES.CHARM ) then
+                    if( type ~= PROJECT0.COSMETIC_TYPES.CHARM ) then return end
             
-                        local configTable = PROJECT0.CONFIG.CUSTOMISER.Charms[itemKey]
-                        if( configTable ) then
+                    local configTable = PROJECT0.CONFIG.CUSTOMISER.Charms[itemKey]
+                    if( not configTable ) then return end
 
                             table.insert( items, { configTable.Rarity, itemKey, configTable.Name } )
                         end
@@ -164,14 +163,12 @@ function PANEL:Refresh()
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
                     local type, itemKey = PROJECT0.FUNC.ReverseCosmeticKey( k )
-                    if( type == PROJECT0.COSMETIC_TYPES.STICKER ) then
-                    
-                        local configTable = PROJECT0.CONFIG.CUSTOMISER.Stickers[itemKey]
-                        if( configTable ) then
-                    
-                            table.insert( items, { configTable.Rarity, itemKey, configTable.Name } )
-                        end
-                    end
+                    if( type ~= PROJECT0.COSMETIC_TYPES.STICKER ) then return end
+            
+                    local configTable = PROJECT0.CONFIG.CUSTOMISER.Stickers[itemKey]
+                    if( not configTable ) then return end
+            
+                    table.insert( items, { configTable.Rarity, itemKey, configTable.Name } )
                 end
 
                 return items
@@ -195,9 +192,9 @@ function PANEL:Refresh()
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetOwnedSkins() ) do
                     local devConfig = PROJECT0.DEVCONFIG.WeaponSkins[k]
-                    if( devConfig ) then
-                        table.insert( items, { PROJECT0.FUNC.GetSkinRarity( k ), k, devConfig.Name } )
-                    end
+                    if( not devConfig ) then return end
+
+                    table.insert( items, { PROJECT0.FUNC.GetSkinRarity( k ), k, devConfig.Name } )
                 end
 
                 return items
@@ -229,13 +226,12 @@ function PANEL:Refresh()
 
     local sortedItems = {}
     for type, cosmeticType in pairs( cosmeticTypes ) do
-        if( not self.unselectedTypes[type] ) then
+        if( self.unselectedTypes[type] ) then return end
 
-            for k, v in pairs( cosmeticType.GetOwnedItems() ) do
-                if( string.find( string.lower( v[3] ), string.lower( self.searchBar:GetValue() ) ) ) then
-                    table.insert( sortedItems, { type, v } )
-                end
-            end
+        for k, v in pairs( cosmeticType.GetOwnedItems() ) do
+            if( not string.find( string.lower( v[3] ), string.lower( self.searchBar:GetValue() ) ) ) then return end
+
+            table.insert( sortedItems, { type, v } )
         end
     end
 

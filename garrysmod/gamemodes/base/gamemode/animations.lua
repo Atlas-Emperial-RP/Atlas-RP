@@ -284,7 +284,7 @@ function GM:CalcMainActivity( ply, velocity )
 
 	self:HandlePlayerLanding( ply, velocity, ply.m_bWasOnGround )
 
-	if not (self:HandlePlayerNoClipping( ply, velocity ) or
+	if not ( self:HandlePlayerNoClipping( ply, velocity ) or
 		self:HandlePlayerDriving( ply ) or
 		self:HandlePlayerVaulting( ply, velocity ) or
 		self:HandlePlayerJumping( ply, velocity ) or

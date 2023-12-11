@@ -89,7 +89,7 @@ local EntityPhysics =
 		for objectid = 0, num-1 do
 
 			local obj = Entity:GetPhysicsObjectNum( objectid )
-			if ( IsValid( obj ) ) then
+			if ( not IsValid( obj ) ) then return end
 
 				data[ objectid ] = {}
 				PhysicsObject.Save( data[ objectid ], obj )
@@ -109,7 +109,7 @@ local EntityPhysics =
 		for objectid, objectdata in pairs( data ) do
 
 			local Phys = Entity:GetPhysicsObjectNum( objectid )
-			if ( IsValid( Phys ) ) then
+			if ( not IsValid( Phys ) ) then return end
 
 				PhysicsObject.Load( objectdata, Phys )
 
@@ -474,7 +474,7 @@ end
 function GenericDuplicatorFunction( Player, data )
 
 	if ( not IsAllowed( data.Class ) ) then
-		-- MsgN( "duplicator: ", data.Class, " isn't allowed to be duplicatednot " )
+		-- MsgN( "duplicator: ", data.Class, " isn't allowed to be duplicated!" )
 		return
 	end
 
@@ -576,8 +576,8 @@ function WorkoutSize( Ents )
 
 	for k, v in pairs( Ents ) do
 
-		if ( v.Mins or v.Maxs ) then
-			if ( v.Angle or v.Pos ) then
+		if ( not v.Mins or not v.Maxs ) then return end
+		if ( not v.Angle or not v.Pos ) then return end
 
 				--
 				-- Rotate according to the entitynot 
@@ -789,7 +789,7 @@ function Paste( Player, EntityList, ConstraintList )
 
 		local e = nil
 		local b = ProtectedCall( function() e = CreateEntityFromTable( Player, v ) end )
-		if ( b ) then
+		if ( not b ) then return end
 
 			if ( IsValid( e ) ) then
 
@@ -895,7 +895,7 @@ function ApplyBoneModifiers( Player, Ent )
 	for Bone, Types in pairs( Ent.BoneMods ) do
 
 		-- The physics object isn't valid, skip it.
-		if ( Ent.PhysicsObjects[ Bone ] ) then
+		if ( not Ent.PhysicsObjects[ Bone ] ) then return end
 
 			-- Loop through each modifier on this bone
 			for Type, Data in pairs( Types ) do

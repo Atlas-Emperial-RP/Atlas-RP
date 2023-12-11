@@ -283,14 +283,14 @@ function PANEL:DataLayout()
 	local alt = false
 	for k, Line in ipairs( self.Sorted ) do
 
-		if ( Line:IsVisible() ) then
+		if ( not Line:IsVisible() ) then return end
 
 			Line:SetPos( 1, y )
 			Line:SetSize( self:GetWide() - 2, h )
 			Line:DataLayout( self )
 
-			Line:SetAltLine( alt )
-			alt = not alt
+		Line:SetAltLine( alt )
+		alt = not alt
 
 			y = y + Line:GetTall()
 

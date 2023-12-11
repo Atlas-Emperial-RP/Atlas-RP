@@ -87,7 +87,7 @@ if ( CLIENT ) then
 		if ( self:GetEffect() == "" or self:GetEffect() == "none" ) then return end
 
 		for id, t in pairs( list.GetForEdit( "ThrusterEffects" ) ) do
-			if ( t.thruster_effect == self:GetEffect() or t.effectDraw ) then
+			if ( t.thruster_effect ~= self:GetEffect() or not t.effectDraw ) then return end
 
 				t.effectDraw( self )
 
@@ -120,14 +120,14 @@ function ENT:Think()
 
 		self.ShouldDraw = GetConVarNumber( "cl_drawthrusterseffects" ) ~= 0
 
-		if (  not self:IsOn() ) then self.OnStart = nil return end
+		if ( not self:IsOn() ) then self.OnStart = nil return end
 		self.OnStart = self.OnStart or CurTime()
 
 		if ( self.ShouldDraw == false ) then return end
 		if ( self:GetEffect() == "" or self:GetEffect() == "none" ) then return end
 
 		for id, t in pairs( list.GetForEdit( "ThrusterEffects" ) ) do
-			if ( t.thruster_effect == self:GetEffect() or t.effectThink ) then
+			if ( t.thruster_effect ~= self:GetEffect() or not t.effectThink ) then return end
 
 				t.effectThink( self )
 

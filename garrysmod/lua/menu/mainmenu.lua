@@ -166,13 +166,11 @@ function UpdateServerSettings()
 			array.settings = {}
 			for k, v in pairs( Settings.settings ) do
 				local cvar = GetConVar( v.name )
-				if ( cvar ) then
+				if ( not cvar ) then return end
 
-					array.settings[ k ] = v
-					array.settings[ k ].Value = cvar:GetString()
-					array.settings[ k ].Singleplayer = v.singleplayer and true or false
-
-				end
+				array.settings[ k ] = v
+				array.settings[ k ].Value = cvar:GetString()
+				array.settings[ k ].Singleplayer = v.singleplayer and true or false
 			end
 
 		end
@@ -339,7 +337,7 @@ function GetServers( category, id )
 
 		CallbackFailed = function( address )
 
-			if ( Servers[ category ] and Servers[ category ][ address ] ) then print( "Server Browser Errornot ", address, category ) return end
+			if ( Servers[ category ] and Servers[ category ][ address ] ) then print( "Server Browser Error!", address, category ) return end
 			Servers[ category ][ address ] = true
 
 			local version = string.JavascriptSafe( tostring( VERSION ) )

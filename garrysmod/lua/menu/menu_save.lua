@@ -9,8 +9,8 @@ function ws_save:FetchLocal( offset, perpage )
 
 	for k, v in ipairs( f ) do
 
-		if not ( k <= offset ) then
-			if ( k > offset + perpage ) then break end
+		if ( k <= offset ) then return end
+		if ( k > offset + perpage ) then break end
 
 			local entry = {
 				file	= "saves/" .. v,

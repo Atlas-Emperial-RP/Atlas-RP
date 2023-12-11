@@ -110,7 +110,7 @@ function ENT:Forward( onoff, mul )
 
 	if ( toggle and onoff ) then
 
-		self.ToggleState =  not self.ToggleState
+		self.ToggleState = not self.ToggleState
 
 		if ( not self.ToggleState ) then
 			Speed = 0

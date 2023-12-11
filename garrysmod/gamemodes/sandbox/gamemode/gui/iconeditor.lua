@@ -188,7 +188,7 @@ function PANEL:Init()
 			self.Scenes:SetSize( 200, 200 )
 			self.Scenes.DoClick = function( _, node )
 
-				if ( !node.FileName ) then return end
+				if ( not node.FileName ) then return end
 				local ext = string.GetExtensionFromFilename( node.FileName )
 				if( ext ~= "vcd" ) then return end
 
@@ -505,7 +505,7 @@ function PANEL:FillAnimations( ent )
 
 	for k = 0, ent:GetNumBodyGroups() - 1 do
 
-		if not ( ent:GetBodygroupCount( k ) <= 1 ) then
+		if ( ent:GetBodygroupCount( k ) <= 1 ) then return end
 
 			local bgSlider = self.BodyList:Add( "DNumSlider" )
 			bgSlider:Dock( TOP )
@@ -523,12 +523,11 @@ function PANEL:FillAnimations( ent )
 
 				if ( IsValid( self:GetOrigin() ) ) then self:GetOrigin():BodyGroupChanged( s.BodyGroupID, newVal ) end
 
-				-- If we're not using a custom, change our spawnicon
-				-- so we save the new skin in the right place...
-				if ( not self:GetCustomIcon() ) then
-					self.SpawnIcon:SetBodyGroup( s.BodyGroupID, newVal )
-					self.SpawnIcon:SetModel( self.SpawnIcon:GetModelName(), self.SpawnIcon:GetSkinID(), self.SpawnIcon:GetBodyGroup() )
-				end
+			-- If we're not using a custom, change our spawnicon
+			-- so we save the new skin in the right place...
+			if ( not self:GetCustomIcon() ) then
+				self.SpawnIcon:SetBodyGroup( s.BodyGroupID, newVal )
+				self.SpawnIcon:SetModel( self.SpawnIcon:GetModelName(), self.SpawnIcon:GetSkinID(), self.SpawnIcon:GetBodyGroup() )
 			end
 			newItems = newItems + 1
 		end

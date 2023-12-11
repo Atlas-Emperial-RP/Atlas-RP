@@ -29,14 +29,14 @@ var lua =
 					str += "\"";
 
 					arg++;
-					continue;
+					return;
 				}
 
 				if ( cmd[i] == 'i' )
 				{
 					str += arguments[arg];
 					arg++;
-					continue;
+					return;
 				}
 			}
 

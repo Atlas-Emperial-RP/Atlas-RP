@@ -12,7 +12,7 @@ local get_number = function(argument, input, gsub)
 
 	local number = tonumber(input)
 	if gsub ~= false and not isnumber(number) then
-		number = tonumber(input:gsub("%D", ""), 10 --[[gsub returns two args]])
+		number = tonumber(input:gsub("%D", ""), 10) --gsub returns two args
 	end
 
 	return number

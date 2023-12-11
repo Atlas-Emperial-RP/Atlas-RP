@@ -340,9 +340,14 @@ function PANEL:Refresh()
         local categoryPanel = categoryPanels[v.Category]
         if( not IsValid( categoryPanel ) ) then
             print( "[PROJECT0] Error, shop category does not exist for item ID: " .. k )
+            return
+        end
 
-        else
-            local itemInfo = cosmeticTypes[v.Type].GetItemInfo( v.ItemID )
+        local itemInfo = cosmeticTypes[v.Type].GetItemInfo( v.ItemID )
+        if( not itemInfo ) then
+            print( "[PROJECT0] Error, shop item info does not exist for item ID: " .. k )
+            return
+        end
 
             if( not itemInfo ) then
                 print( "[PROJECT0] Error, shop item info does not exist for item ID: " .. k )

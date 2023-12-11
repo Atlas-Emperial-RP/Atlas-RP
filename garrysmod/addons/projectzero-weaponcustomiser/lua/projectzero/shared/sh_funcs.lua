@@ -21,9 +21,8 @@ end
 function PROJECT0.FUNC.GetFirstRarity()
 	local lowest
 	for k, v in pairs( PROJECT0.CONFIG.GENERAL.Rarities ) do
-		if not ( lowest and PROJECT0.CONFIG.GENERAL.Rarities[lowest].Order <= v.Order ) then
-			lowest = k
-		end
+		if( lowest and PROJECT0.CONFIG.GENERAL.Rarities[lowest].Order <= v.Order ) then return end
+		lowest = k
 	end
 
 	return lowest

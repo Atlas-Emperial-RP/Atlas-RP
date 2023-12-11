@@ -337,7 +337,7 @@ function PANEL:Setup( ParentVGUI )
 				end
 			end
 
-			if Toggled[v[1] or ""] or not v[1] or not BRICKSCREDITSTORE.LOCKERTYPES[v[1] or ""] then
+			if( not Toggled[v[1] or ""] or not v[1] or not BRICKSCREDITSTORE.LOCKERTYPES[v[1] or ""] ) then return end
 
 			local LockerType = BRICKSCREDITSTORE.LOCKERTYPES[v[1] or ""]
 			
@@ -428,10 +428,10 @@ function PANEL:Setup( ParentVGUI )
 						self2.PopUp:AddOption( "Transfer", function() 
 							local Options = {}
 							for k, v in pairs( player.GetHumans() ) do
-								if ( v ~= LocalPlayer() ) then
+								if( v == LocalPlayer() ) then return end
 								Options[v:SteamID64()] = v:Nick()
 								end
-							end
+							end)
 
 							if( table.Count( Options ) <= 0 ) then
 								notification.AddLegacy( "There are no players online!", 1, 3 )
@@ -444,8 +444,8 @@ function PANEL:Setup( ParentVGUI )
 									net.WriteString( chosenK )
 								net.SendToServer()
 							end, "Cancel", function() end )
-						end )
-					end
+						end 
+					end)
 					self2.PopUp:AddOption( "Remove", function() 
 						BRCS_QueryRequest( "Are you sure you want to remove this?", "Locker", "Yes", function() 
 							net.Start( "BRCS_Net_Remove" )
@@ -455,7 +455,7 @@ function PANEL:Setup( ParentVGUI )
 					end )
 					local YPos = self2.YPos+(ItemSize/2)
 					self2.PopUp:SetPos( self2.XPos+ItemSize-5, YPos-(self2.PopUp:GetTall()/2) )
-				end )
+				end 
 			end
 			ItemEntryCover.OnCursorExited = function( self2 )
 				if( timer.Exists( tostring( self2 ) .. "_BRCS_TIMER" ) ) then 
@@ -494,16 +494,15 @@ function PANEL:Setup( ParentVGUI )
 					net.WriteInt( k, 32 )
 				net.SendToServer()
 			end
-			end
 		end
 		
 		IconLayout:SizeToContents()
 	end
 
 	ParentVGUI:RefreshLocker()
-end
 
-function PANEL:Paint( w, h )
+
+	function PANEL:Paint( w, h )
 end
 
 vgui.Register( "brcs_vgui_locker", PANEL, "DPanel" )
@@ -526,13 +525,13 @@ function PANEL:Init()
 			gui.OpenURL( BRICKSCREDITSTORE.LUACONFIG.DonationURL )
 		end
 	}
-	--[[---Buttons[2] = {
+	--[[Buttons[2] = {
 		Name = "Enter code",
 		Icon = "materials/brickscreditstore/donate.png",
 		doClick = function()
 			
 		end
-	}*/ ---]]
+	}--]]
 
 	for k, v in pairs( Buttons ) do
 		local ButtonEntry = vgui.Create( "DButton", ToggleBar )

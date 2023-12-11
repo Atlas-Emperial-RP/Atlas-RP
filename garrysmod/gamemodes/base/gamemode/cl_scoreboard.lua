@@ -243,7 +243,12 @@ local SCORE_BOARD = {
 		
 		for id, pl in ipairs( player.GetAll() ) do
 
-			if ( not IsValid( pl.ScoreEntry ) ) then
+			if ( IsValid( pl.ScoreEntry ) ) then return end
+
+			pl.ScoreEntry = vgui.CreateFromTable( PLAYER_LINE, pl.ScoreEntry )
+			pl.ScoreEntry:Setup( pl )
+
+			self.Scores:AddItem( pl.ScoreEntry )
 
 				pl.ScoreEntry = vgui.CreateFromTable( PLAYER_LINE, pl.ScoreEntry )
 				pl.ScoreEntry:Setup( pl )
@@ -264,7 +269,7 @@ SCORE_BOARD = vgui.RegisterTable( SCORE_BOARD, "EditablePanel" )
 function GM:ScoreboardShow()
 
 	if ( not IsValid( g_Scoreboard ) ) then
-		local g_Scoreboard = vgui.CreateFromTable( SCORE_BOARD )
+		g_Scoreboard = vgui.CreateFromTable( SCORE_BOARD )
 	end
 
 	if ( IsValid( g_Scoreboard ) ) then

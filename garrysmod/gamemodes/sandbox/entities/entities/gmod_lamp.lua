@@ -180,7 +180,7 @@ local matLight = Material( "sprites/light_ignorez" )
 function ENT:DrawEffects()
 
 	-- No glow if we're not switched on!
-	if (  not self:GetOn() ) then return end
+	if ( not self:GetOn() ) then return end
 
 	local LightNrm = self:GetAngles():Forward()
 	local ViewNormal = self:GetPos() - EyePos()

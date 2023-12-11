@@ -65,23 +65,152 @@ function GAS.Logging:OpenLogsContextMenu(row)
 	local data_submenu, category_submenus
 	local duplicate_prevention = {}
 	for _,replacement in ipairs(row.Data[1]) do
-		if (replacement[1] == nil or (replacement[1] == GAS.Logging.FORMAT_STRING and replacement[1] == GAS.Logging.FORMAT_HIGHLIGHT and format_submenus[replacement[1]] ~= nil)) then
-			if (not data_submenu) then
-				local _data_submenu, __ = menu:AddSubMenu(L"data")
-				__:SetIcon("icon16/database_gear.png")
-				data_submenu = _data_submenu
-				category_submenus = {}
+		if (replacement[1] == nil or (replacement[1] ~= GAS.Logging.FORMAT_STRING and replacement[1] ~= GAS.Logging.FORMAT_HIGHLIGHT and format_submenus[replacement[1]] == nil)) then return end
+		if (not data_submenu) then
+			local _data_submenu, __ = menu:AddSubMenu(L"data")
+			__:SetIcon("icon16/database_gear.png")
+			data_submenu = _data_submenu
+			category_submenus = {}
+		end
+		if (not category_submenus[replacement[1]]) then
+			if (replacement[1] == GAS.Logging.FORMAT_STRING or replacement[1] == GAS.Logging.FORMAT_HIGHLIGHT) then
+				local newsub,_ = data_submenu:AddSubMenu(L"strings")
+				_:SetIcon("icon16/style.png")
+				category_submenus[GAS.Logging.FORMAT_STRING] = newsub
+				category_submenus[GAS.Logging.FORMAT_HIGHLIGHT] = newsub
+			else
+				local newsub,_ = data_submenu:AddSubMenu(format_submenus[replacement[1]][1])
+				_:SetIcon(format_submenus[replacement[1]][2])
+				category_submenus[replacement[1]] = newsub
 			end
-			if (not category_submenus[replacement[1]]) then
-				if (replacement[1] == GAS.Logging.FORMAT_STRING or replacement[1] == GAS.Logging.FORMAT_HIGHLIGHT) then
-					local newsub,_ = data_submenu:AddSubMenu(L"strings")
-					_:SetIcon("icon16/style.png")
-					category_submenus[GAS.Logging.FORMAT_STRING] = newsub
-					category_submenus[GAS.Logging.FORMAT_HIGHLIGHT] = newsub
-				else
-					local newsub,_ = data_submenu:AddSubMenu(format_submenus[replacement[1]][1])
-					_:SetIcon(format_submenus[replacement[1]][2])
-					category_submenus[replacement[1]] = newsub
+		end
+
+		if (replacement[1] == GAS.Logging.FORMAT_TEAM) then
+			if (duplicate_prevention[GAS.Logging.FORMAT_TEAM] and duplicate_prevention[GAS.Logging.FORMAT_TEAM][replacement[3]]) then
+				return
+			else
+				duplicate_prevention[GAS.Logging.FORMAT_TEAM] = duplicate_prevention[GAS.Logging.FORMAT_TEAM] or {}
+				duplicate_prevention[GAS.Logging.FORMAT_TEAM][replacement[3]] = true
+			end
+		else
+			if (duplicate_prevention[replacement[1]] and duplicate_prevention[replacement[1]][replacement[2]]) then
+				return
+			else
+				duplicate_prevention[replacement[1]] = duplicate_prevention[replacement[1]] or {}
+				duplicate_prevention[replacement[1]][replacement[2]] = true
+			end
+		end
+
+		if (replacement[1] == GAS.Logging.FORMAT_PLAYER) then
+
+			local icon
+			if (replacement[2] == "CONSOLE") then
+				icon = "icon16/application_osx_terminal.png"
+			elseif (replacement[2] == "BOT") then
+				icon = "icon16/server.png"
+			else
+				icon = "icon16/" .. user_icons[user_icon_i]
+			end
+
+			local nick_label
+			if (replacement[3] ~= nil and replacement[3][1] ~= nil) then
+				nick_label = replacement[3][1]
+			elseif (replacement[2] == "CONSOLE" or replacement[2] == "BOT") then
+				nick_label = replacement[2]
+			elseif (replacement[2] == nil) then
+				nick_label = "UNKNOWN"
+			else
+				nick_label = GAS:AccountIDToSteamID(replacement[2])
+			end
+
+			if (replacement[2] == "CONSOLE" or replacement[2] == "BOT" or replacement[2] == nil) then
+				category_submenus[replacement[1]]:AddOption(nick_label):SetIcon(icon)
+			else
+				local option = category_submenus[replacement[1]]:AddOption(nick_label, function()
+					bVGUI.PlayerTooltip.Focus()
+				end)
+				option:SetIcon(icon)
+				
+				bVGUI.PlayerTooltip.Attach(option, {
+					account_id = tonumber(replacement[2]),
+					creator = option,
+					focustip = L"click_to_focus"
+				})
+			end
+
+			user_icon_i = user_icon_i + 1
+			if (user_icon_i > #user_icons) then user_icon_i = 1 end
+
+		elseif (replacement[1] == GAS.Logging.FORMAT_WEAPON) then
+
+			local option = category_submenus[replacement[1]]:AddOption(replacement[2], function()
+				GAS:SetClipboardText(replacement[2])
+			end)
+			option:SetIcon(format_submenus[replacement[1]][2])
+
+			GAS_Logging_DisplayEntity(function(pnl)
+				pnl:SetWeapon(replacement[2])
+			end, option, true)
+
+		elseif (replacement[1] == GAS.Logging.FORMAT_PROP) then
+
+			local option = category_submenus[replacement[1]]:AddOption(replacement[2], function()
+				GAS:SetClipboardText(replacement[2])
+			end)
+			option:SetIcon(format_submenus[replacement[1]][2])
+
+			GAS_Logging_DisplayEntity(function(pnl)
+				pnl:SetProp(replacement[2])
+			end, option, true)
+
+		elseif (replacement[1] == GAS.Logging.FORMAT_AMMO) then
+
+			local option = category_submenus[replacement[1]]:AddOption(replacement[2], function()
+				GAS:SetClipboardText(replacement[2])
+			end)
+			option:SetIcon(format_submenus[replacement[1]][2])
+
+			GAS_Logging_DisplayEntity(function(pnl)
+				pnl:SetAmmo(replacement[2])
+			end, option, true)
+
+		elseif (replacement[1] == GAS.Logging.FORMAT_VEHICLE) then
+			
+			local option = category_submenus[replacement[1]]:AddOption(replacement[2], function()
+				GAS:SetClipboardText(replacement[2])
+			end)
+			option:SetIcon(format_submenus[replacement[1]][2])
+
+			GAS_Logging_DisplayEntity(function(pnl)
+				pnl:SetVehicle(replacement[2], replacement[3])
+			end, option, true)
+
+		elseif (replacement[1] == GAS.Logging.FORMAT_ENTITY) then
+
+			local option = category_submenus[replacement[1]]:AddOption(replacement[2], function()
+				GAS:SetClipboardText(replacement[2] == "WORLD" and "worldspawn" or replacement[2])
+			end)
+			option:SetIcon(format_submenus[replacement[1]][2])
+
+			if (replacement[2] ~= "WORLD") then
+				GAS_Logging_DisplayEntity(function(pnl)
+					pnl:SetEntity(replacement[2], replacement[3])
+				end, option, true)
+			end
+			
+		elseif (replacement[1] == GAS.Logging.FORMAT_TEAM) then
+
+			bVGUI_DermaMenuOption_ColorIcon(category_submenus[replacement[1]]:AddOption(replacement[3], function()
+				GAS:SetClipboardText(replacement[3])
+			end), replacement[4])
+			
+		elseif (replacement[1] == GAS.Logging.FORMAT_COUNTRY) then
+
+			local icon = "icon16/world.png"
+			if (GAS.CountryCodesReverse[replacement[2]] ~= nil) then
+				local country_code = GAS.CountryCodesReverse[replacement[2]]:lower()
+				if (file.Exists("materials/flags16/" .. country_code .. ".png", "GAME")) then
+					icon = "flags16/" .. country_code .. ".png"
 				end
 			end
 
@@ -1256,27 +1385,13 @@ GAS:hook("gmodadminsuite:ModuleFrame:logging", "logging:menu", function(ModuleFr
 				local is_operator = OpenPermissions:IsOperator(LocalPlayer())
 				local menu = DermaMenu()
 				for category_name, modules in pairs(GAS.Logging.Modules) do
-					if (not GAS:table_IsEmpty(modules)) then 
-						local category_submenu, category_option
-						local colored_the_icon = false
-						for module_name, module_data in pairs(modules) do
-							if (is_operator and OpenPermissions:GetPermission(LocalPlayer(), "gmodadminsuite_logging/" .. category_name .. "/" .. module_name) ~= OpenPermissions.CHECKBOX.CROSSED) then 
-								if (not category_submenu) then
-									category_submenu, category_option = menu:AddSubMenu(category_name)
-								end
-								if (not colored_the_icon) then
-									colored_the_icon = true
-									bVGUI_DermaMenuOption_ColorIcon(category_option, module_data.Colour)
-								end
-								bVGUI_DermaMenuOption_ColorIcon(category_submenu:AddOption(module_name, function()
-									GAS:PlaySound("btn_heavy")
-									local item = vgui.Create("GAS.Logging.AdvancedSearchItem", content)
-									item:SetValue(module_data.ModuleID)
-									item:SetText(category_name .. " ➞ " .. module_name)
-									item:SetColor(module_data.Colour)
-									ModuleFrame.AdvancedSearch.Filters.AdvancedSearchItems:AddItem(1, item)
-								end), module_data.Colour)
-							end
+					if (GAS:table_IsEmpty(modules)) then return end
+					local category_submenu, category_option
+					local colored_the_icon = false
+					for module_name, module_data in pairs(modules) do
+						if (not is_operator and OpenPermissions:GetPermission(LocalPlayer(), "gmodadminsuite_logging/" .. category_name .. "/" .. module_name) == OpenPermissions.CHECKBOX.CROSSED) then return end
+						if (not category_submenu) then
+							category_submenu, category_option = menu:AddSubMenu(category_name)
 						end
 					end
 				end
@@ -2705,10 +2820,9 @@ GAS:hook("gmodadminsuite:ModuleFrame:logging", "logging:menu", function(ModuleFr
 		GAS.Logging.Modules = {}
 		GAS.Logging.IndexedModules = GAS:DeserializeTable(util.Decompress(net.ReadData(data_len)))
 		for module_id, module_data in pairs(GAS.Logging.IndexedModules) do
-			if (module_data.Offline) then 
-				GAS.Logging.Modules[module_data.Category] = GAS.Logging.Modules[module_data.Category] or {}
-				GAS.Logging.Modules[module_data.Category][module_data.Name] = module_data
-			end
+			if (module_data.Offline) then return end
+			GAS.Logging.Modules[module_data.Category] = GAS.Logging.Modules[module_data.Category] or {}
+			GAS.Logging.Modules[module_data.Category][module_data.Name] = module_data
 		end
 
 		ModuleFrame.logs_content.Categories:SetLoading(false)
@@ -2776,10 +2890,15 @@ GAS:hook("gmodadminsuite:ModuleFrame:logging", "logging:menu", function(ModuleFr
 			table.ClearKeys(sorted_modules)
 			table.SortByMember(sorted_modules, "Name", true)
 			for i, module_data in ipairs(sorted_modules) do
-				if (not module_data.Disabled) then 
-					if (is_operator and OpenPermissions:GetPermission(LocalPlayer(), "gmodadminsuite_logging/" .. category_name .. "/" .. module_data.Name) ~= OpenPermissions.CHECKBOX.CROSSED) then
-						if (not category) then
-							category = ModuleFrame.logs_content.Categories:AddCategory(category_name, module_data.Colour)
+				if (module_data.Disabled) then return end
+				if (not is_operator and OpenPermissions:GetPermission(LocalPlayer(), "gmodadminsuite_logging/" .. category_name .. "/" .. module_data.Name) == OpenPermissions.CHECKBOX.CROSSED) then return end
+				if (not category) then
+					category = ModuleFrame.logs_content.Categories:AddCategory(category_name, module_data.Colour)
+				end
+				if (category_name == "PvP" and module_data.Name == "Combat Events") then
+					damage_logs_category_item = ModuleFrame.logs_content.Categories:AddItem(L"player_combats", function()
+						if (GAS.Logging.Menu.QuickSearch.Open) then
+							GAS.Logging.Menu.SearchTab:OnMouseReleased(MOUSE_LEFT)
 						end
 						if (category_name == "PvP" and module_data.Name == "Combat Events") then
 							damage_logs_category_item = ModuleFrame.logs_content.Categories:AddItem(L"player_combats", function()

@@ -234,11 +234,12 @@ function PANEL:SetWeaponClass( weaponClass )
             GetOwnedItems = function()
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetOwnedSkins() ) do
-                    if( v["*"] and v[weaponClass] ) then
+                    if( not v["*"] and not v[weaponClass] ) then return end
             
                     local devConfig = PROJECT0.DEVCONFIG.WeaponSkins[k]
-                    if( not devConfig ) then table.insert( items, { PROJECT0.FUNC.GetSkinRarity( k ), k } ) end
-                    end
+                    if( not devConfig ) then return end
+
+                    table.insert( items, { PROJECT0.FUNC.GetSkinRarity( k ), k } )
                 end
 
                 return items
@@ -263,12 +264,12 @@ function PANEL:SetWeaponClass( weaponClass )
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
                     local type, itemKey = PROJECT0.FUNC.ReverseCosmeticKey( k )
-                    if( type == PROJECT0.COSMETIC_TYPES.CHARM ) then
+                    if( type ~= PROJECT0.COSMETIC_TYPES.CHARM ) then return end
             
                     local configTable = PROJECT0.CONFIG.CUSTOMISER.Charms[itemKey]
-                    if( configTable ) then table.insert( items, { configTable.Rarity, itemKey } ) end
-                    
-                    end
+                    if( not configTable ) then return end
+
+                    table.insert( items, { configTable.Rarity, itemKey } )
                 end
 
                 return items
@@ -295,10 +296,10 @@ function PANEL:SetWeaponClass( weaponClass )
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
                     local type, itemKey = PROJECT0.FUNC.ReverseCosmeticKey( k )
-                    if( type == PROJECT0.COSMETIC_TYPES.STICKER ) then
+                    if( type ~= PROJECT0.COSMETIC_TYPES.STICKER ) then return end
             
                     local configTable = PROJECT0.CONFIG.CUSTOMISER.Stickers[itemKey]
-                    if( configTable ) then table.insert( items, { configTable.Rarity, itemKey } ) end
+                    if( not configTable ) then return end
             
                     end
                 end
@@ -344,9 +345,8 @@ function PANEL:SetWeaponClass( weaponClass )
     
                 local startX = self2:LocalToScreen( 0, 0 )
                 for k, v in ipairs( self2.pnlCanvas:GetChildren() ) do
-                    if( v.SetShadowBounds ) then
-                        v:SetShadowBounds( startX, 0, startX+w, ScrH() )
-                    end
+                    if( not v.SetShadowBounds ) then return end
+                    v:SetShadowBounds( startX, 0, startX+w, ScrH() )
                 end
             end
 
@@ -356,8 +356,8 @@ function PANEL:SetWeaponClass( weaponClass )
                     draw.SimpleText( PROJECT0.L( "disabled_on_weapon", v.Name ), "MontserratBold21", w/2, h/2-2, PROJECT0.FUNC.GetTheme( 3, 100 ), TEXT_ALIGN_CENTER, 0 )
                 end
 
-            else
-                local startX = page:LocalToScreen( 0, 0 )
+                return
+            end
 
                 local items = v.GetOwnedItems()
                 table.sort( items, function(a, b) return PROJECT0.FUNC.GetRarityOrder( a[1] ) > PROJECT0.FUNC.GetRarityOrder( b[1] ) end )

@@ -167,11 +167,11 @@ function meta:GetChildrenInRect( x, y, w, h )
 
 		local vw, vh = v:GetSize()
 
-		if ( self:IsVisible() ) then
-			if  not ( x > v.x + vw ) then
-				if not ( y > v.y + vh ) then
-					if not ( v.x > x + w ) then
-						if not ( v.y > y + h ) then
+		if ( not self:IsVisible() ) then return end
+		if ( x > v.x + vw ) then return end
+		if ( y > v.y + vh ) then return end
+		if ( v.x > x + w ) then return end
+		if ( v.y > y + h ) then return end
 
 							if ( v.m_bSelectable ) then
 								table.insert( tab, v )

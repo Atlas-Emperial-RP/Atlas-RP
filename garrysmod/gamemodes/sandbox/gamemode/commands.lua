@@ -299,7 +299,7 @@ function DoPlayerEntitySpawn( ply, entity_name, model, iSkin, strBody )
 	local tr = util.TraceLine( trace )
 
 	-- Prevent spawning too close
-	--[[if ( !tr.Hit or tr.Fraction < 0.05 ) then
+	--[[if ( not tr.Hit or tr.Fraction < 0.05 ) then
 		return
 	end]]
 

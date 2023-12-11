@@ -231,6 +231,7 @@ if EdgeHUD.Configuration.GetConfigValue( "TopRight" ) then
 				detailsPos = detailsPos + VARS.ElementsMargin + detailWidgetsHeight
 			else
 				curWidget:SetVisible(false)
+				return
 			end
 
 			

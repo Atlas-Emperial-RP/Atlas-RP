@@ -56,7 +56,7 @@ end
 
 function ENT:Use( activator, caller, type, value )
 
-	if ( not activator:IsPlayer() ) then return end -- Who the frig is pressing this shit!?
+	if ( not activator:IsPlayer() ) then return end -- Who the frig is pressing this shitnot ?
 
 	if ( self:GetIsToggle() ) then
 

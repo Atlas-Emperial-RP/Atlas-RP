@@ -1,4 +1,4 @@
---[[---
+--[[
    ____          _          _   ____          __  __       _ _                     
   / ___|___   __| | ___  __| | | __ ) _   _  |  \/  | __ _| | |__   ___  _ __ ___  
  | |   / _ \ / _` |/ _ \/ _` | |  _ \| | | | | |\/| |/ _` | | '_ \ / _ \| '__/ _ \ 
@@ -13,7 +13,7 @@ if not PermaProps then PermaProps = {} end
 
 PermaProps.SQL = {}
 
---[[---                                                      NOT WORKS AT THE MOMENT
+--[[                                                                NOT WORKS AT THE MOMENT
 PermaProps.SQL.MySQL = false
 PermaProps.SQL.Host = "127.0.0.1"
 PermaProps.SQL.Username = "username"

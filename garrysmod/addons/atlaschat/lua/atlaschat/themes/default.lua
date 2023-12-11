@@ -94,7 +94,8 @@ atlaschat.messageFadeIn 		= atlaschat.config.New("Chat message fade in", 				"fa
 function atlaschat.font:OnChange(value)
 	local invalid = atlaschat.FixInvalidFont()
 	
-	if (not invalid) then atlaschat.fontHeight = draw.GetFontHeight(value)
+	if (not invalid) then
+		atlaschat.fontHeight = draw.GetFontHeight(value)
 		
 		atlaschat.BuildFontCache(" - ")
 		atlaschat.BuildFontCache("ACCEPTED")
@@ -1174,7 +1175,7 @@ function theme:ParseExpressions(data, panel, player, title)
 					-- Did we find anything?
 					if (result and #result > 1) then
 						
-						-- If we found something then we want to continue the loop.
+						-- If we found something then we want to return the loop.
 						loop = true
 						
 						-- Set the first location where the expression is in the text.
@@ -1801,7 +1802,7 @@ function theme:ParseText(list, ...)
 			end
 		end
 	
-	-- Murder support. || 2015-07-08 -> WHY THE HELL DID I ADD THIS??
+	-- Murder support. or 2015-07-08 -> WHY THE HELL DID I ADD THIS??
 	--elseif (GAMEMODE.SetAmMurderer) then
 	--	if (GetType(data[2]) == "string") then
 	--		local player = util.FindPlayerAtlaschat(data[2])

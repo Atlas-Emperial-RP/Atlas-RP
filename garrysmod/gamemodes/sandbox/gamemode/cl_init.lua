@@ -139,7 +139,7 @@ hook.Add( "PreDrawHalos", "AddPhysgunHalos", function()
 
 	for k, v in pairs( PhysgunHalos ) do
 
-		if ( IsValid( k ) ) then
+		if ( not IsValid( k ) ) then return end
 
 			local size = math.random( 1, 2 )
 			local colr = k:GetWeaponColor() + VectorRand() * 0.3
