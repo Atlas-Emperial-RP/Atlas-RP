@@ -77,7 +77,7 @@ end
 function PANEL:SetItemSize( pnl )
 
 	local maxW = self:GetWide()
-	if ( self.List.VBar && self.List.VBar.Enabled ) then maxW = maxW - self.List.VBar:GetWide() end
+	if ( self.List.VBar and self.List.VBar.Enabled ) then maxW = maxW - self.List.VBar:GetWide() end
 
 	local w = self.ItemWidth
 	if ( w < 1 ) then
@@ -166,7 +166,7 @@ function PANEL:PerformLayout()
 	self.List:InvalidateLayout( true ) -- Rebuild
 
 	local maxW = self:GetWide()
-	if ( self.List.VBar && self.List.VBar.Enabled ) then maxW = maxW - self.List.VBar:GetWide() end
+	if ( self.List.VBar and self.List.VBar.Enabled ) then maxW = maxW - self.List.VBar:GetWide() end
 
 	local h = self.ItemHeight
 	if ( h < 1 ) then
@@ -208,7 +208,7 @@ end
 function PANEL:TestForChanges()
 
 	local cvar = self:ConVar()
-	if ( !cvar ) then return end
+	if ( not cvar ) then return end
 
 	local Value = GetConVarString( cvar )
 	if ( Value == self.CurrentValue ) then return end

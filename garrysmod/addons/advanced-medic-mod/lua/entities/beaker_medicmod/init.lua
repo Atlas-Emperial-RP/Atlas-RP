@@ -32,9 +32,9 @@ function ENT:Touch( ent )
 	
 	self.NextTouch = CurTime() + 1
 	
-	if ent:GetClass() != "test_tube_medicmod" then return end
+	if ent:GetClass() ~= "test_tube_medicmod" then return end
 	
-	if self:GetProduct1() != ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] && self:GetProduct2() != ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] &&  self:GetProduct3() != ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] then
+	if self:GetProduct1() ~= ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] and self:GetProduct2() ~= ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] and  self:GetProduct3() ~= ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] then
 		return
 	end
 

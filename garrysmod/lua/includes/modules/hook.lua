@@ -27,11 +27,11 @@ end
 -----------------------------------------------------------]]
 function Add( event_name, name, func )
 
-	if ( !isstring( event_name ) ) then ErrorNoHaltWithStack( "bad argument #1 to 'Add' (string expected, got " .. type( event_name ) .. ")" ) return end
-	if ( !isfunction( func ) ) then ErrorNoHaltWithStack( "bad argument #3 to 'Add' (function expected, got " .. type( func ) .. ")" ) return end
+	if ( not isstring( event_name ) ) then ErrorNoHaltWithStack( "bad argument #1 to 'Add' (string expected, got " .. type( event_name ) .. ")" ) return end
+	if ( not isfunction( func ) ) then ErrorNoHaltWithStack( "bad argument #3 to 'Add' (function expected, got " .. type( func ) .. ")" ) return end
 
-	local notValid = name == nil || isnumber( name ) or isbool( name ) or isfunction( name ) or !name.IsValid or !IsValid( name )
-	if ( !isstring( name ) and notValid ) then ErrorNoHaltWithStack( "bad argument #2 to 'Add' (string expected, got " .. type( name ) .. ")" ) return end
+	local notValid = name == nil or isnumber( name ) or isbool( name ) or isfunction( name ) or not name.IsValid or not IsValid( name )
+	if ( not isstring( name ) and notValid ) then ErrorNoHaltWithStack( "bad argument #2 to 'Add' (string expected, got " .. type( name ) .. ")" ) return end
 
 	if ( Hooks[ event_name ] == nil ) then
 		Hooks[ event_name ] = {}
@@ -49,12 +49,12 @@ end
 -----------------------------------------------------------]]
 function Remove( event_name, name )
 
-	if ( !isstring( event_name ) ) then ErrorNoHaltWithStack( "bad argument #1 to 'Remove' (string expected, got " .. type( event_name ) .. ")" ) return end
+	if ( not isstring( event_name ) ) then ErrorNoHaltWithStack( "bad argument #1 to 'Remove' (string expected, got " .. type( event_name ) .. ")" ) return end
 
-	local notValid = isnumber( name ) or isbool( name ) or isfunction( name ) or !name.IsValid or !IsValid( name )
-	if ( !isstring( name ) and notValid ) then ErrorNoHaltWithStack( "bad argument #2 to 'Remove' (string expected, got " .. type( name ) .. ")" ) return end
+	local notValid = isnumber( name ) or isbool( name ) or isfunction( name ) or not name.IsValid or not IsValid( name )
+	if ( not isstring( name ) and notValid ) then ErrorNoHaltWithStack( "bad argument #2 to 'Remove' (string expected, got " .. type( name ) .. ")" ) return end
 
-	if ( !Hooks[ event_name ] ) then return end
+	if ( not Hooks[ event_name ] ) then return end
 
 	Hooks[ event_name ][ name ] = nil
 
@@ -82,7 +82,7 @@ function Call( name, gm, ... )
 	-- Run hooks
 	--
 	local HookTable = Hooks[ name ]
-	if ( HookTable != nil ) then
+	if ( HookTable ~= nil ) then
 
 		local a, b, c, d, e, f;
 
@@ -117,7 +117,7 @@ function Call( name, gm, ... )
 			--
 			-- Hook returned a value - it overrides the gamemode function
 			--
-			if ( a != nil ) then
+			if ( a ~= nil ) then
 				return a, b, c, d, e, f
 			end
 
@@ -127,7 +127,7 @@ function Call( name, gm, ... )
 	--
 	-- Call the gamemode function
 	--
-	if ( !gm ) then return end
+	if ( not gm ) then return end
 
 	local GamemodeFunction = gm[ name ]
 	if ( GamemodeFunction == nil ) then return end

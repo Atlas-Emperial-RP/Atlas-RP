@@ -247,7 +247,7 @@ function PANEL:Init()
         end
 
         for key, val in ipairs( configMeta:GetSortedVariables() ) do
-            if( val.Type != PROJECT0.TYPE.Table ) then continue end
+            if( val.Type ~= PROJECT0.TYPE.Table ) then continue end
 
             local page = vgui.Create( "Panel", self.contents )
             page:Dock( FILL )
@@ -414,7 +414,7 @@ end
 
 function PANEL:OpenPageByID( id, variableKey )
     for k, v in ipairs( self.pages ) do
-        if( v.ConfigID != id or (variableKey and v.VariableKey != variableKey) ) then continue end
+        if( v.ConfigID ~= id or (variableKey and v.VariableKey ~= variableKey) ) then continue end
 
         self:SetActivePage( k )
         return v

@@ -48,10 +48,10 @@ function PANEL:SetModel( strModelName )
 	end
 
 	-- Note: Not in menu dll
-	if ( !ClientsideModel ) then return end
+	if ( not ClientsideModel ) then return end
 
 	self.Entity = ClientsideModel( strModelName, RENDERGROUP_OTHER )
-	if ( !IsValid( self.Entity ) ) then return end
+	if ( not IsValid( self.Entity ) ) then return end
 
 	self.Entity:SetNoDraw( true )
 	self.Entity:SetIK( false )
@@ -67,7 +67,7 @@ end
 
 function PANEL:GetModel()
 
-	if ( !IsValid( self.Entity ) ) then return end
+	if ( not IsValid( self.Entity ) ) then return end
 
 	return self.Entity:GetModel()
 
@@ -78,7 +78,7 @@ function PANEL:DrawModel()
 	local curparent = self
 	local leftx, topy = self:LocalToScreen( 0, 0 )
 	local rightx, bottomy = self:LocalToScreen( self:GetWide(), self:GetTall() )
-	while ( curparent:GetParent() != nil ) do
+	while ( curparent:GetParent() ~= nil ) do
 		curparent = curparent:GetParent()
 
 		local x1, y1 = curparent:LocalToScreen( 0, 0 )
@@ -97,7 +97,7 @@ function PANEL:DrawModel()
 	render.SetScissorRect( leftx, topy, rightx, bottomy, true )
 
 	local ret = self:PreDrawModel( self.Entity )
-	if ( ret != false ) then
+	if ( ret ~= false ) then
 		self.Entity:DrawModel()
 		self:PostDrawModel( self.Entity )
 	end
@@ -116,14 +116,14 @@ end
 
 function PANEL:Paint( w, h )
 
-	if ( !IsValid( self.Entity ) ) then return end
+	if ( not IsValid( self.Entity ) ) then return end
 
 	local x, y = self:LocalToScreen( 0, 0 )
 
 	self:LayoutEntity( self.Entity )
 
 	local ang = self.aLookAngle
-	if ( !ang ) then
+	if ( not ang ) then
 		ang = ( self.vLookatPos - self.vCamPos ):Angle()
 	end
 

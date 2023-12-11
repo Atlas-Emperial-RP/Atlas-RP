@@ -338,7 +338,7 @@ end)
 
 hook.Add( "CuffsCanHandcuff", "DayZCuffs SafezoneProtectCuffs", function( ply, target )
 	if engine.ActiveGamemode() == "dayz" then
-		if target:GetSafeZone() or target:GetSafeZoneEdge() or target.Loading or !target.Ready then
+		if target:GetSafeZone() or target:GetSafeZoneEdge() or target.Loading or not target.Ready then
 			return false
 		end
 	end

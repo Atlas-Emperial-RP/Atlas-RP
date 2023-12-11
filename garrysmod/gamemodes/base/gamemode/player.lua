@@ -6,7 +6,7 @@
 function GM:OnPhysgunFreeze( weapon, phys, ent, ply )
 
 	-- Object is already frozen (!?)
-	if ( !phys:IsMoveable() ) then return false end
+	if ( not phys:IsMoveable() ) then return false end
 	if ( ent:GetUnFreezable() ) then return false end
 
 	phys:EnableMotion( false )
@@ -93,9 +93,9 @@ end
 -----------------------------------------------------------]]
 function GM:PlayerDeathThink( pl )
 
-	if ( pl.NextSpawnTime && pl.NextSpawnTime > CurTime() ) then return end
+	if ( pl.NextSpawnTime and pl.NextSpawnTime > CurTime() ) then return end
 
-	if ( pl:IsBot() || pl:KeyPressed( IN_ATTACK ) || pl:KeyPressed( IN_ATTACK2 ) || pl:KeyPressed( IN_JUMP ) ) then
+	if ( pl:IsBot() or pl:KeyPressed( IN_ATTACK ) or pl:KeyPressed( IN_ATTACK2 ) or pl:KeyPressed( IN_JUMP ) ) then
 
 		pl:Spawn()
 
@@ -140,23 +140,23 @@ function GM:PlayerDeath( ply, inflictor, attacker )
 	ply.NextSpawnTime = CurTime() + 2
 	ply.DeathTime = CurTime()
 
-	if ( IsValid( attacker ) && attacker:GetClass() == "trigger_hurt" ) then attacker = ply end
+	if ( IsValid( attacker ) and attacker:GetClass() == "trigger_hurt" ) then attacker = ply end
 
-	if ( IsValid( attacker ) && attacker:IsVehicle() && IsValid( attacker:GetDriver() ) ) then
+	if ( IsValid( attacker ) and attacker:IsVehicle() and IsValid( attacker:GetDriver() ) ) then
 		attacker = attacker:GetDriver()
 	end
 
-	if ( !IsValid( inflictor ) && IsValid( attacker ) ) then
+	if ( not IsValid( inflictor ) and IsValid( attacker ) ) then
 		inflictor = attacker
 	end
 
 	-- Convert the inflictor to the weapon that they're holding if we can.
 	-- This can be right or wrong with NPCs since combine can be holding a
 	-- pistol but kill you by hitting you with their arm.
-	if ( IsValid( inflictor ) && inflictor == attacker && ( inflictor:IsPlayer() || inflictor:IsNPC() ) ) then
+	if ( IsValid( inflictor ) and inflictor == attacker and ( inflictor:IsPlayer() or inflictor:IsNPC() ) ) then
 
 		inflictor = inflictor:GetActiveWeapon()
-		if ( !IsValid( inflictor ) ) then inflictor = attacker end
+		if ( not IsValid( inflictor ) ) then inflictor = attacker end
 
 	end
 
@@ -242,7 +242,7 @@ function GM:PlayerSpawn( pl, transiton )
 	-- If the player doesn't have a team in a TeamBased game
 	-- then spawn him as a spectator
 	--
-	if ( self.TeamBased && ( pl:Team() == TEAM_SPECTATOR || pl:Team() == TEAM_UNASSIGNED ) ) then
+	if ( self.TeamBased and ( pl:Team() == TEAM_SPECTATOR or pl:Team() == TEAM_UNASSIGNED ) ) then
 
 		self:PlayerSpawnAsSpectator( pl )
 		return
@@ -256,7 +256,7 @@ function GM:PlayerSpawn( pl, transiton )
 	player_manager.RunClass( pl, "Spawn" )
 
 	-- If we are in transition, do not touch player's weapons
-	if ( !transiton ) then
+	if ( not transiton ) then
 		-- Call item loadout function
 		hook.Call( "PlayerLoadout", GAMEMODE, pl )
 	end
@@ -285,7 +285,7 @@ end
 function GM:PlayerSetHandsModel( pl, ent )
 
 	local info = player_manager.RunClass( pl, "GetHandsModel" )
-	if ( !info ) then
+	if ( not info ) then
 		local playermodel = player_manager.TranslateToPlayerModelName( pl:GetModel() )
 		info = player_manager.TranslatePlayerHands( playermodel )
 	end
@@ -315,7 +315,7 @@ end
 function GM:PlayerSelectTeamSpawn( TeamID, pl )
 
 	local SpawnPoints = team.GetSpawnPoints( TeamID )
-	if ( !SpawnPoints || table.IsEmpty( SpawnPoints ) ) then return end
+	if ( not SpawnPoints or table.IsEmpty( SpawnPoints ) ) then return end
 
 	local ChosenSpawnPoint = nil
 
@@ -350,7 +350,7 @@ function GM:IsSpawnpointSuitable( pl, spawnpointent, bMakeSuitable )
 
 	local Blockers = 0
 	for k, v in ipairs( ents.FindInBox( Pos + spawnpointmin, Pos + spawnpointmax ) ) do
-		if ( IsValid( v ) && v != pl && v:GetClass() == "player" && v:Alive() ) then
+		if ( IsValid( v ) and v ~= pl and v:GetClass() == "player" and v:Alive() ) then
 
 			Blockers = Blockers + 1
 
@@ -385,7 +385,7 @@ function GM:PlayerSelectSpawn( pl, transiton )
 
 	-- Save information about all of the spawn points
 	-- in a team based game you'd split up the spawns
-	if ( !IsTableOfEntitiesValid( self.SpawnPoints ) ) then
+	if ( not IsTableOfEntitiesValid( self.SpawnPoints ) ) then
 
 		self.LastSpawnPoint = 0
 		self.SpawnPoints = ents.FindByClass( "info_player_start" )
@@ -462,7 +462,7 @@ function GM:PlayerSelectSpawn( pl, transiton )
 	-- This is needed for single player maps.
 	for k, v in pairs( self.SpawnPoints ) do
 
-		if ( v:HasSpawnFlags( 1 ) && hook.Call( "IsSpawnpointSuitable", GAMEMODE, pl, v, true ) ) then
+		if ( v:HasSpawnFlags( 1 ) and hook.Call( "IsSpawnpointSuitable", GAMEMODE, pl, v, true ) ) then
 			return v
 		end
 
@@ -475,8 +475,8 @@ function GM:PlayerSelectSpawn( pl, transiton )
 
 		ChosenSpawnPoint = table.Random( self.SpawnPoints )
 
-		if ( IsValid( ChosenSpawnPoint ) && ChosenSpawnPoint:IsInWorld() ) then
-			if ( ( ChosenSpawnPoint == pl:GetVar( "LastSpawnpoint" ) || ChosenSpawnPoint == self.LastSpawnPoint ) && Count > 1 ) then continue end
+		if ( IsValid( ChosenSpawnPoint ) and ChosenSpawnPoint:IsInWorld() ) then
+			if ( ( ChosenSpawnPoint == pl:GetVar( "LastSpawnpoint" ) or ChosenSpawnPoint == self.LastSpawnPoint ) and Count > 1 ) then continue end
 
 			if ( hook.Call( "IsSpawnpointSuitable", GAMEMODE, pl, ChosenSpawnPoint, i == Count ) ) then
 
@@ -516,10 +516,10 @@ function GM:ScalePlayerDamage( ply, hitgroup, dmginfo )
 	end
 
 	-- Less damage if we're shot in the arms or legs
-	if ( hitgroup == HITGROUP_LEFTARM ||
-		 hitgroup == HITGROUP_RIGHTARM ||
-		 hitgroup == HITGROUP_LEFTLEG ||
-		 hitgroup == HITGROUP_RIGHTLEG ||
+	if ( hitgroup == HITGROUP_LEFTARM or
+		 hitgroup == HITGROUP_RIGHTARM or
+		 hitgroup == HITGROUP_LEFTLEG or
+		 hitgroup == HITGROUP_RIGHTLEG or
 		 hitgroup == HITGROUP_GEAR ) then
 
 		dmginfo:ScaleDamage( 0.25 )
@@ -606,7 +606,7 @@ end
 function GM:PlayerCanJoinTeam( ply, teamid )
 
 	local TimeBetweenSwitches = GAMEMODE.SecondsBetweenTeamSwitches or 10
-	if ( ply.LastTeamSwitch && RealTime()-ply.LastTeamSwitch < TimeBetweenSwitches ) then
+	if ( ply.LastTeamSwitch and RealTime()-ply.LastTeamSwitch < TimeBetweenSwitches ) then
 		ply.LastTeamSwitch = ply.LastTeamSwitch + 1
 		ply:ChatPrint( Format( "Please wait %i more seconds before trying to change team again", ( TimeBetweenSwitches - ( RealTime() - ply.LastTeamSwitch ) ) + 1 ) )
 		return false
@@ -629,15 +629,15 @@ end
 function GM:PlayerRequestTeam( ply, teamid )
 
 	-- No changing teams if not teambased!
-	if ( !GAMEMODE.TeamBased ) then return end
+	if ( not GAMEMODE.TeamBased ) then return end
 
 	-- This team isn't joinable
-	if ( !team.Joinable( teamid ) ) then
+	if ( not team.Joinable( teamid ) ) then
 		ply:ChatPrint( "You can't join that team" )
 	return end
 
 	-- This team isn't joinable
-	if ( !GAMEMODE:PlayerCanJoinTeam( ply, teamid ) ) then
+	if ( not GAMEMODE:PlayerCanJoinTeam( ply, teamid ) ) then
 		-- Messages here should be outputted by this function
 	return end
 
@@ -654,7 +654,7 @@ function GM:PlayerJoinTeam( ply, teamid )
 	local iOldTeam = ply:Team()
 
 	if ( ply:Alive() ) then
-		if ( iOldTeam == TEAM_SPECTATOR || iOldTeam == TEAM_UNASSIGNED ) then
+		if ( iOldTeam == TEAM_SPECTATOR or iOldTeam == TEAM_UNASSIGNED ) then
 			ply:KillSilent()
 		else
 			ply:Kill()
@@ -746,8 +746,8 @@ end
 function GM:PlayerCanSeePlayersChat( strText, bTeamOnly, pListener, pSpeaker )
 
 	if ( bTeamOnly ) then
-		if ( !IsValid( pSpeaker ) || !IsValid( pListener ) ) then return false end
-		if ( pListener:Team() != pSpeaker:Team() ) then return false end
+		if ( not IsValid( pSpeaker ) or not IsValid( pListener ) ) then return false end
+		if ( pListener:Team() ~= pSpeaker:Team() ) then return false end
 	end
 
 	return true

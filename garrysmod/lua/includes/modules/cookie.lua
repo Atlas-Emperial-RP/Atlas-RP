@@ -1,5 +1,5 @@
 
-if ( !sql.TableExists( "cookies" ) ) then
+if ( not sql.TableExists( "cookies" ) ) then
 
 	sql.Query( "CREATE TABLE IF NOT EXISTS cookies ( key TEXT NOT NULL PRIMARY KEY, value TEXT );" )
 
@@ -17,11 +17,11 @@ local function GetCache( key )
 
 	local entry = CachedEntries[ key ]
 
-	if ( entry == nil || SysTime() > entry[ 1 ] ) then
+	if ( entry == nil or SysTime() > entry[ 1 ] ) then
 		local name = SQLStr( key )
 		local val = sql.QueryValue( "SELECT value FROM cookies WHERE key = " .. name )
 
-		if !val then
+		if not val then
 			return false
 		end
 
@@ -86,7 +86,7 @@ end
 function GetString( name, default )
 
 	local val = GetCache( name )
-	if ( !val ) then return default end
+	if ( not val ) then return default end
 
 	return val
 
@@ -96,7 +96,7 @@ end
 function GetNumber( name, default )
 
 	local val = GetCache( name )
-	if ( !val ) then return default end
+	if ( not val ) then return default end
 
 	return tonumber( val )
 
@@ -122,7 +122,7 @@ end
 
 hook.Add( "ShutDown", "SaveCookiesOnShutdown", CommitToSQLite )
 
-if ( !CLIENT_DLL ) then return end
+if ( not CLIENT_DLL ) then return end
 
 concommand.Add( "lua_cookieclear", function( ply, command, arguments )
 

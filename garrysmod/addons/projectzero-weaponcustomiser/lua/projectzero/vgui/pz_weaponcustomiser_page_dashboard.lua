@@ -14,7 +14,7 @@ function PANEL:FillPanel()
             GetValues = function()
                 local count = 0
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
-                    if( PROJECT0.FUNC.ReverseCosmeticKey( k ) != 1 ) then continue end
+                    if( PROJECT0.FUNC.ReverseCosmeticKey( k ) ~= 1 ) then continue end
                     count = count+1
                 end
 
@@ -39,7 +39,7 @@ function PANEL:FillPanel()
             GetValues = function()
                 local count = 0
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
-                    if( PROJECT0.FUNC.ReverseCosmeticKey( k ) != 2 ) then continue end
+                    if( PROJECT0.FUNC.ReverseCosmeticKey( k ) ~= 2 ) then continue end
                     count = count+1
                 end
 

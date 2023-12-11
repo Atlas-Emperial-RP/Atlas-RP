@@ -6,7 +6,7 @@ function PANEL:Init()
 	self.movePanel.Paint = function( self2, w, h )
 		local movePanelX, movePanelY = self2:GetPos()
 
-		if( self.direction != 1 ) then
+		if( self.direction ~= 1 ) then
 			PROJECT0.FUNC.DrawGradientBox( 0, 0, self.animSize, h, self.direction, unpack( self.colors ) )
 			PROJECT0.FUNC.DrawGradientBox( self.animSize, 0, self.animSize, h, self.direction, unpack( table.Reverse( self.colors ) ) )
 			PROJECT0.FUNC.DrawGradientBox( self.animSize*2, 0, self.animSize, h, self.direction, unpack( self.colors ) )
@@ -23,26 +23,26 @@ function PANEL:Init()
 end
 
 function PANEL:StartAnim()
-	self.movePanel:MoveTo( ((self.direction != 1 and -(self.animSize*2)) or 0), ((self.direction == 1 and -(self.animSize*2)) or 0), self.animTime, 0, 1, function()
+	self.movePanel:MoveTo( ((self.direction ~= 1 and -(self.animSize*2)) or 0), ((self.direction == 1 and -(self.animSize*2)) or 0), self.animTime, 0, 1, function()
 		self.movePanel:SetPos( 0, 0 )
 		self:StartAnim()
 	end )
 end
 
 function PANEL:OnSizeChanged( w, h )
-	if( self.direction != 1 ) then
+	if( self.direction ~= 1 ) then
 		self.movePanel:SetTall( h )
 	else
 		self.movePanel:SetWide( w )
 	end
 
-	self:SetAnimSize( (self.direction != 1 and w) or h )
+	self:SetAnimSize( (self.direction ~= 1 and w) or h )
 end
 
 function PANEL:SetAnimSize( animSize )
 	self.animSize = animSize
 	
-	if( self.direction != 1 ) then
+	if( self.direction ~= 1 ) then
 		self.movePanel:SetWide( self.animSize*3 )
 	else
 		self.movePanel:SetTall( self.animSize*3 )
@@ -59,7 +59,7 @@ end
 function PANEL:SetDirection( direction )
 	self.direction = direction
 
-	self:SetAnimSize( (self.direction != 1 and self:GetWide()) or self:GetTall() )
+	self:SetAnimSize( (self.direction ~= 1 and self:GetWide()) or self:GetTall() )
 end
 
 function PANEL:Paint( w, h )

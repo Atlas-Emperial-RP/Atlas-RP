@@ -22,7 +22,7 @@ end
 function PANEL:Paint()
 
 	local Mat = self.m_Material
-	if ( !Mat ) then return true end
+	if ( not Mat ) then return true end
 
 	surface.SetMaterial( Mat )
 	surface.SetDrawColor( self.m_Color.r, self.m_Color.g, self.m_Color.b, self.m_Color.a )

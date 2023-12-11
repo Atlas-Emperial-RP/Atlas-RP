@@ -15,11 +15,11 @@ local tableName = "atlaschat_remote"
 function atlaschat.sql.Initialize(callback_success, callback_failed)
 	local exists = sql.TableExists(tableName)
 	
-	if (!exists) then
+	if (not exists) then
 		sql.Query("CREATE TABLE " .. tableName .. "(address TEXT DEFAULT \"\" NOT NULL UNIQUE, port INTEGER DEFAULT 3306 NOT NULL UNIQUE, user TEXT DEFAULT \"\" NOT NULL UNIQUE, password TEXT DEFAULT \"\" NOT NULL UNIQUE, database TEXT DEFAULT \"atlaschat\" NOT NULL UNIQUE)")
 	else
 		-- Compatibility operations for sql tables are done here.
-		if (!ATLASCHAT_VERSION_PREVIOUS or ATLASCHAT_VERSION_PREVIOUS != ATLASCHAT_VERSION) then
+		if (not ATLASCHAT_VERSION_PREVIOUS or ATLASCHAT_VERSION_PREVIOUS ~= ATLASCHAT_VERSION) then
 			
 			if (ATLASCHAT_VERSION_PREVIOUS) then
 			
@@ -39,10 +39,10 @@ function atlaschat.sql.Initialize(callback_success, callback_failed)
 		
 		atlaschat.sql.remote = data
 		
-		if (!mysqloo) then
+		if (not mysqloo) then
 			local success, message = pcall(require, "mysqloo")
 			
-			if (!success) then
+			if (not success) then
 				ErrorNoHalt("[atlaschat] Could not find the mysqloo module: " .. tostring(message) .. "\n")
 			end
 		end
@@ -179,7 +179,7 @@ end
 ----------------------------------------------------------------------
 
 function atlaschat.sql.IsRemote()
-	return atlaschat.sql.remote.object != nil
+	return atlaschat.sql.remote.object ~= nil
 end
 
 ----------------------------------------------------------------------	
@@ -225,10 +225,10 @@ net.Receive("atlaschat.myin", function(bits, player)
 				sql.Query("INSERT INTO " .. tableName .. "(address, port, user, password, database) VALUES(" .. sql.SQLStr(address) .. ", " .. port .. ", " .. sql.SQLStr(username) .. ", " .. sql.SQLStr(password) .. ", " .. sql.SQLStr(database) .. ")")
 			end
 			
-			if (!mysqloo) then
+			if (not mysqloo) then
 				local success, message = pcall(require, "mysqloo")
 				
-				if (!success) then
+				if (not success) then
 					ErrorNoHalt("[atlaschat] Could not find the mysqloo module: " .. tostring(message) .. "\n")
 				end
 			end

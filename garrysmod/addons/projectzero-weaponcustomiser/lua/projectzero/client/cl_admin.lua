@@ -69,7 +69,7 @@ end
 concommand.Add( "project0", openAdminMenu )
 
 hook.Add( "OnPlayerChat", "Project0.OnPlayerChat.AdminMenu", function( ply, strText, bTeam, bDead ) 
-    if( ply != LocalPlayer() ) then return end
+    if( ply ~= LocalPlayer() ) then return end
 
 	strText = string.lower( strText )
 

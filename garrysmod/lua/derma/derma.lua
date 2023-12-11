@@ -37,7 +37,7 @@ local function FindPanelsByClass( SeekingClass )
 	local tbl = debug.getregistry()
 	for k, v in pairs( tbl ) do
 
-		if ( ispanel( v ) && v.ClassName && v.ClassName == SeekingClass ) then
+		if ( ispanel( v ) and v.ClassName and v.ClassName == SeekingClass ) then
 
 			table.insert( outtbl, v )
 
@@ -56,13 +56,13 @@ end
 local function ReloadClass( classname )
 
 	local ctrl = vgui.GetControlTable( classname )
-	if ( !ctrl ) then return end
+	if ( not ctrl ) then return end
 
 	local tbl = FindPanelsByClass( classname )
 
 	for k, v in pairs ( tbl ) do
 
-		if ( !v.AllowAutoRefresh ) then continue end
+		if ( not v.AllowAutoRefresh ) then continue end
 
 		if ( v.PreAutoRefresh ) then
 			v:PreAutoRefresh()
@@ -70,7 +70,7 @@ local function ReloadClass( classname )
 
 		for name, func in pairs( ctrl ) do
 
-			if ( !isfunction( func ) ) then continue end
+			if ( not isfunction( func ) ) then continue end
 
 			v[ name ] = func
 
@@ -98,7 +98,7 @@ end
 -----------------------------------------------------------]]
 function DefineControl( strName, strDescription, strTable, strBase )
 
-	local bReloading = Controls[ strName ] != nil
+	local bReloading = Controls[ strName ] ~= nil
 
 	-- Add Derma table to PANEL table.
 	strTable.Derma = {
@@ -135,7 +135,7 @@ function DefineSkin( strName, strDescription, strTable )
 	strTable.Description = strDescription
 	strTable.Base = strBase or "Default"
 
-	if ( strName != "Default" ) then
+	if ( strName ~= "Default" ) then
 		setmetatable( strTable, SkinMetaTable )
 	else
 		DefaultSkin = strTable
@@ -171,7 +171,7 @@ function GetDefaultSkin()
 	end
 
 	-- default
-	if ( !skin ) then skin = DefaultSkin end
+	if ( not skin ) then skin = DefaultSkin end
 
 	return skin
 
@@ -192,10 +192,10 @@ end
 function SkinHook( strType, strName, panel, w, h )
 
 	local Skin = panel:GetSkin()
-	if ( !Skin ) then return end
+	if ( not Skin ) then return end
 
 	local func = Skin[ strType .. strName ]
-	if ( !func ) then return end
+	if ( not func ) then return end
 
 	return func( Skin, panel, w, h )
 
@@ -207,10 +207,10 @@ end
 function SkinTexture( strName, panel, default )
 
 	local Skin = panel:GetSkin()
-	if ( !Skin ) then return default end
+	if ( not Skin ) then return default end
 
 	local Textures = Skin.tex
-	if ( !Textures ) then return default end
+	if ( not Textures ) then return default end
 
 	return Textures[ strName ] or default
 
@@ -222,7 +222,7 @@ end
 function Color( strName, panel, default )
 
 	local Skin = panel:GetSkin()
-	if ( !Skin ) then return default end
+	if ( not Skin ) then return default end
 
 	return Skin[ strName ] or default
 

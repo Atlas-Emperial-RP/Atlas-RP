@@ -28,7 +28,7 @@ end
 
 function meta:ToggleSelection()
 
-	self:SetSelected( !self.m_bSelected )
+	self:SetSelected( not self.m_bSelected )
 
 end
 
@@ -58,7 +58,7 @@ end
 
 function meta:IsSelected( bSet )
 
-	if ( !self:IsSelectable() ) then return false end
+	if ( not self:IsSelectable() ) then return false end
 	return self.m_bSelected == true
 
 end
@@ -71,7 +71,7 @@ end
 
 local function GetSelectionRect()
 
-	if ( !SelectionCanvas ) then
+	if ( not SelectionCanvas ) then
 		debug.Trace()
 		return
 	end
@@ -90,8 +90,8 @@ end
 
 function meta:DrawSelections()
 
-	if ( !self.m_bSelectable ) then return end
-	if ( !self.m_bSelected ) then return end
+	if ( not self.m_bSelectable ) then return end
+	if ( not self.m_bSelected ) then return end
 
 	local w, h = self:GetSize()
 
@@ -102,7 +102,7 @@ end
 
 local function PaintSelectionBox( self )
 
-	if ( !IsValid( SelectionCanvas ) ) then return end
+	if ( not IsValid( SelectionCanvas ) ) then return end
 	local x, y, w, h = GetSelectionRect()
 
 	surface.SetDrawColor( 255, 0, 255, 50 )
@@ -115,7 +115,7 @@ end
 
 function meta:GetSelectionCanvas()
 
-	if ( !self.m_bSelectionCanvas ) then
+	if ( not self.m_bSelectionCanvas ) then
 
 		local parent = self:GetParent()
 		if ( IsValid( parent ) ) then
@@ -133,7 +133,7 @@ end
 
 function meta:StartBoxSelection()
 
-	if ( !self.m_bSelectionCanvas ) then
+	if ( not self.m_bSelectionCanvas ) then
 
 		local parent = self:GetParent()
 		if ( IsValid( parent ) ) then
@@ -146,7 +146,7 @@ function meta:StartBoxSelection()
 
 	self:MouseCapture( true )
 
-	if ( !input.IsShiftDown() && !input.IsControlDown() ) then
+	if ( not input.IsShiftDown() and not input.IsControlDown() ) then
 		self:UnselectAll()
 	end
 
@@ -167,7 +167,7 @@ function meta:GetChildrenInRect( x, y, w, h )
 
 		local vw, vh = v:GetSize()
 
-		if ( !self:IsVisible() ) then continue end
+		if ( not self:IsVisible() ) then continue end
 		if ( x > v.x + vw ) then continue end
 		if ( y > v.y + vh ) then continue end
 		if ( v.x > x + w ) then continue end
@@ -222,7 +222,7 @@ end
 
 function meta:EndBoxSelection()
 
-	if ( SelectionCanvas != self ) then return false end
+	if ( SelectionCanvas ~= self ) then return false end
 
 	self:MouseCapture( false )
 

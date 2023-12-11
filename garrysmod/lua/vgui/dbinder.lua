@@ -15,7 +15,7 @@ end
 function PANEL:UpdateText()
 
 	local str = input.GetKeyName( self:GetSelectedNumber() )
-	if ( !str ) then str = "NONE" end
+	if ( not str ) then str = "NONE" end
 
 	str = language.GetPhrase( str )
 
@@ -49,7 +49,7 @@ end
 
 function PANEL:Think()
 
-	if ( input.IsKeyTrapping() && self.Trapping ) then
+	if ( input.IsKeyTrapping() and self.Trapping ) then
 
 		local code = input.CheckKeyTrapping()
 		if ( code ) then

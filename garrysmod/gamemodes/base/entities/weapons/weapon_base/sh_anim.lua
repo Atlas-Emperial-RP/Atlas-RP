@@ -78,7 +78,7 @@ function SWEP:TranslateActivity( act )
 		return -1
 	end
 
-	if ( self.ActivityTranslate[ act ] != nil ) then
+	if ( self.ActivityTranslate[ act ] ~= nil ) then
 		return self.ActivityTranslate[ act ]
 	end
 

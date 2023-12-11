@@ -88,7 +88,7 @@ local cfgModuleMeta = {
 			Name = name,
 			Description = description,
 			Type = type,
-			VguiElement = vguiElement or (type == PROJECT0.TYPE.Table && "DPanel"),
+			VguiElement = vguiElement or (type == PROJECT0.TYPE.Table and "DPanel"),
 			GetOptions = getOptions,
 			Default = default,
 			Order = table.Count( self.Variables )+1

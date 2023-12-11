@@ -37,7 +37,7 @@ if EdgeHUD.Configuration.GetConfigValue( "TopLeft" ) then
 	salaryWidget.UpdateInfo = function (  )
 
 		--CHeck if the data is changed.
-		if "+" .. DarkRP.formatMoney(ply:getDarkRPVar("salary") or 0) != salaryLabel:GetText() then
+		if "+" .. DarkRP.formatMoney(ply:getDarkRPVar("salary") or 0) ~= salaryLabel:GetText() then
 
 			--Update the label.
 			salaryLabel:SetText("+" .. DarkRP.formatMoney(ply:getDarkRPVar("salary") or 0))
@@ -97,7 +97,7 @@ if EdgeHUD.Configuration.GetConfigValue( "TopLeft" ) then
 		local curMoney = ply:getDarkRPVar("money") or 0
 
 		--Check if the money has changed.
-		if math.Round(lerpedMoney) != curMoney then
+		if math.Round(lerpedMoney) ~= curMoney then
 
 			--Lerp the money.
 			lerpedMoney = Lerp(FrameTime() * 8,lerpedMoney,curMoney)
@@ -199,7 +199,7 @@ if EdgeHUD.Configuration.GetConfigValue( "TopLeft" ) then
 
 			local userMsgs = usermessage.GetTable()
 
-			if !userMsgs["DoVote"] or !userMsgs["DoQuestion"] then return end
+			if not userMsgs["DoVote"] or not userMsgs["DoQuestion"] then return end
 
 			oldUsrMsgFunc_vote = userMsgs["DoVote"]["Function"]
 			oldUsrMsgFunc_question = userMsgs["DoQuestion"]["Function"]
@@ -237,7 +237,7 @@ if EdgeHUD.Configuration.GetConfigValue( "TopLeft" ) then
 				queueLabel:SizeToContents()
 				queueLabel:SetPos(queueWidget:GetWide() / 2 - queueLabel:GetWide() / 2, queueWidget:GetTall() / 2 - queueLabel:GetTall() / 2)
 
-				queueWidget:SetVisible(#voteQueue != 0)
+				queueWidget:SetVisible(#voteQueue ~= 0)
 
 			end
 
@@ -372,7 +372,7 @@ if EdgeHUD.Configuration.GetConfigValue( "TopLeft" ) then
 					local calcTime = math.max(math.floor(time - (CurTime() - voteStarted)),0)
 
 					--Check if the timeLabel needs to be updated.
-					if timeLabel:GetValue() != tostring(calcTime) then
+					if timeLabel:GetValue() ~= tostring(calcTime) then
 
 						timeLabel:SetText(string.Replace(EdgeHUD.GetPhrase("VOTE_EXPIRE"), "%T", EdgeHUD.FormatTime( calcTime )))
 						timeLabel:SizeToContents()

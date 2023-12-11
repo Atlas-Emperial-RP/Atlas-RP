@@ -25,10 +25,10 @@ function net.Incoming( len, client )
 	local i = net.ReadHeader()
 	local strName = util.NetworkIDToString( i )
 
-	if ( !strName ) then return end
+	if ( not strName ) then return end
 
 	local func = net.Receivers[ strName:lower() ]
-	if ( !func ) then return end
+	if ( not func ) then return end
 
 	--
 	-- len includes the 16 bit int which told us the message name
@@ -55,7 +55,7 @@ end
 --
 function net.WriteEntity( ent )
 
-	if ( !IsValid( ent ) ) then
+	if ( not IsValid( ent ) ) then
 		net.WriteUInt( 0, MAX_EDICT_BITS )
 	else
 		net.WriteUInt( ent:EntIndex(), MAX_EDICT_BITS )
@@ -66,7 +66,7 @@ end
 function net.ReadEntity()
 
 	local i = net.ReadUInt( MAX_EDICT_BITS )
-	if ( !i ) then return end
+	if ( not i ) then return end
 
 	return Entity( i )
 

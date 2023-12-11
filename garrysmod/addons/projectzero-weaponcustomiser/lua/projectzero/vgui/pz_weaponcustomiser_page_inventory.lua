@@ -134,7 +134,7 @@ function PANEL:Refresh()
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
                     local type, itemKey = PROJECT0.FUNC.ReverseCosmeticKey( k )
-                    if( type != PROJECT0.COSMETIC_TYPES.CHARM ) then continue end
+                    if( type ~= PROJECT0.COSMETIC_TYPES.CHARM ) then continue end
             
                     local configTable = PROJECT0.CONFIG.CUSTOMISER.Charms[itemKey]
                     if( not configTable ) then continue end
@@ -161,7 +161,7 @@ function PANEL:Refresh()
                 local items = {}
                 for k, v in pairs( LocalPlayer():Project0():GetCosmeticInventory() ) do
                     local type, itemKey = PROJECT0.FUNC.ReverseCosmeticKey( k )
-                    if( type != PROJECT0.COSMETIC_TYPES.STICKER ) then continue end
+                    if( type ~= PROJECT0.COSMETIC_TYPES.STICKER ) then continue end
             
                     local configTable = PROJECT0.CONFIG.CUSTOMISER.Stickers[itemKey]
                     if( not configTable ) then continue end
@@ -212,7 +212,7 @@ function PANEL:Refresh()
                         break
                     end
 
-                    weaponString = weaponString .. ((weaponString != "" and ", ") or "") .. PROJECT0.FUNC.GetWeaponName( k )
+                    weaponString = weaponString .. ((weaponString ~= "" and ", ") or "") .. PROJECT0.FUNC.GetWeaponName( k )
                 end
 
                 return {

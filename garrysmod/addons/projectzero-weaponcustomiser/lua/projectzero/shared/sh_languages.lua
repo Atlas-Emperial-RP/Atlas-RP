@@ -35,7 +35,7 @@ end
 
 local currentLanguage, languageStrings
 function PROJECT0.L( key, ... )
-	if( currentLanguage != PROJECT0.CONFIG.GENERAL.Language ) then
+	if( currentLanguage ~= PROJECT0.CONFIG.GENERAL.Language ) then
 		currentLanguage = PROJECT0.CONFIG.GENERAL.Language
 		languageStrings = PROJECT0.TEMP.Languages[PROJECT0.CONFIG.GENERAL.Language].Strings
 	end

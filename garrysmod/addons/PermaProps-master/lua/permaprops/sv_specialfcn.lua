@@ -39,7 +39,7 @@ PermaProps.SpecialENTSSpawn["prop_vehicle_jeep"] = function( ent, data)
 	if ( ent:GetModel() == "models/buggy.mdl" ) then ent:SetKeyValue( "vehiclescript", "scripts/vehicles/jeep_test.txt" ) end
 	if ( ent:GetModel() == "models/vehicle.mdl" ) then ent:SetKeyValue( "vehiclescript", "scripts/vehicles/jalopy.txt" ) end
 
-	if ( data["VehicleTable"] && data["VehicleTable"].KeyValues ) then
+	if ( data["VehicleTable"] and data["VehicleTable"].KeyValues ) then
 		for k, v in pairs( data["VehicleTable"].KeyValues ) do
 			ent:SetKeyValue( k, v )
 		end
@@ -62,7 +62,7 @@ PermaProps.SpecialENTSSpawn["prop_vehicle_prisoner_pod"] = PermaProps.SpecialENT
 
 PermaProps.SpecialENTSSpawn["prop_ragdoll"] = function( ent, data )
 
-	if !data or !istable( data ) then return end
+	if not data or not istable( data ) then return end
 
 	ent:Spawn()
 	ent:Activate()
@@ -72,9 +72,9 @@ PermaProps.SpecialENTSSpawn["prop_ragdoll"] = function( ent, data )
 		for objectid, objectdata in pairs( data["Bones"] ) do
 
 			local Phys = ent:GetPhysicsObjectNum( objectid )
-			if !IsValid( Phys ) then continue end
+			if not IsValid( Phys ) then continue end
 		
-			if ( isvector( objectdata.Pos ) && isangle( objectdata.Angle ) ) then
+			if ( isvector( objectdata.Pos ) and isangle( objectdata.Angle ) ) then
 
 				local pos, ang = LocalToWorld( objectdata.Pos, objectdata.Angle, Vector(0, 0, 0), Angle(0, 0, 0) )
 				Phys:SetPos( pos )
@@ -121,7 +121,7 @@ end
 
 PermaProps.SpecialENTSSpawn["sammyservers_textscreen"] = function( ent, data )
 
-	if !data or !istable( data ) then return end
+	if not data or not istable( data ) then return end
 
 	ent:Spawn()
 	ent:Activate()
@@ -151,7 +151,7 @@ PermaProps.SpecialENTSSpawn["NPC"] = function( ent, data )
 				if v.class == data["Equipment"] then valid = true break end
 			end
 
-			if ( data["Equipment"] && data["Equipment"] != "none" && valid ) then
+			if ( data["Equipment"] and data["Equipment"] ~= "none" and valid ) then
 				ent:SetKeyValue( "additionalequipment", data["Equipment"] )
 				ent.Equipment = data["Equipment"] 
 			end
@@ -239,13 +239,13 @@ PermaProps.SpecialENTSSave["prop_ragdoll"] = function( ent )
 	for objectid = 0, num - 1 do
 
 		local obj = ent:GetPhysicsObjectNum( objectid )
-		if ( !obj:IsValid() ) then continue end
+		if ( not obj:IsValid() ) then continue end
 
 		content.Other["Bones"][ objectid ] = {}
 
 		content.Other["Bones"][ objectid ].Pos = obj:GetPos()
 		content.Other["Bones"][ objectid ].Angle = obj:GetAngles()
-		content.Other["Bones"][ objectid ].Frozen = !obj:IsMoveable()
+		content.Other["Bones"][ objectid ].Frozen = not obj:IsMoveable()
 		if ( obj:IsAsleep() ) then content.Other["Bones"][ objectid ].Sleep = true end
 
 		content.Other["Bones"][ objectid ].Pos, content.Other["Bones"][ objectid ].Angle = WorldToLocal( content.Other["Bones"][ objectid ].Pos, content.Other["Bones"][ objectid ].Angle, Vector( 0, 0, 0 ), Angle( 0, 0, 0 ) )
@@ -264,9 +264,9 @@ PermaProps.SpecialENTSSave["prop_ragdoll"] = function( ent )
 			local a = ent:GetManipulateBoneAngles( i )
 			local p = ent:GetManipulateBonePosition( i )
 		
-			if ( s != Vector( 1, 1, 1 ) ) then t[ 's' ] = s end -- scale
-			if ( a != Angle( 0, 0, 0 ) ) then t[ 'a' ] = a end -- angle
-			if ( p != Vector( 0, 0, 0 ) ) then t[ 'p' ] = p end -- position
+			if ( s ~= Vector( 1, 1, 1 ) ) then t[ 's' ] = s end -- scale
+			if ( a ~= Angle( 0, 0, 0 ) ) then t[ 'a' ] = a end -- angle
+			if ( p ~= Vector( 0, 0, 0 ) ) then t[ 'p' ] = p end -- position
 	
 			if ( table.Count( t ) > 0 ) then
 				content.Other["BoneManip"][ i ] = t
@@ -280,7 +280,7 @@ PermaProps.SpecialENTSSave["prop_ragdoll"] = function( ent )
 	for i = 0, ent:GetFlexNum() do
 
 		local w = ent:GetFlexWeight( i )
-		if ( w != 0 ) then
+		if ( w ~= 0 ) then
 			content.Other["Flex"] = content.Other["Flex"] or {}
 			content.Other["Flex"][ i ] = w
 		end
@@ -314,7 +314,7 @@ PermaProps.SpecialENTSSave["pp_prop_effect"] = PermaProps.SpecialENTSSave["prop_
 
 PermaProps.SpecialENTSSave["NPC"] = function( ent )
 
-	if !ent.Equipment then return {} end
+	if not ent.Equipment then return {} end
 
 	local content = {}
 	content.Other = {}

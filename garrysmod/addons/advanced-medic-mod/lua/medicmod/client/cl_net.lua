@@ -247,7 +247,7 @@ net.Receive("MedicMod.PlayerStartAnimation", function()
 
 		if not v:GetMedicAnimation() then continue end
 
-			if v:GetMedicAnimation() != 0 then
+			if v:GetMedicAnimation() ~= 0 then
 				StartMedicAnimation( v, v:GetMedicAnimation() )
 			end
 			

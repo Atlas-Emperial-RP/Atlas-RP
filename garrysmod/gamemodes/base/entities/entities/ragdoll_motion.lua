@@ -100,7 +100,7 @@ function ENT:OnRemove()
 		if ( IsValid( ragdoll ) ) then
 			ragdoll:SetRagdollBuildFunction( nil )
 
-			if ( IsValid( ragdoll.MotionSensorController ) && ragdoll.MotionSensorController == self ) then
+			if ( IsValid( ragdoll.MotionSensorController ) and ragdoll.MotionSensorController == self ) then
 				ragdoll.MotionSensorController = nil
 			end
 		end
@@ -129,7 +129,7 @@ function ENT:DrawDebug( ragdoll, controller, pos, ang, rotation, scale, center, 
 	local UpdateTime = 0.1
 	local StayTime = 0.15
 
-	if ( self.LastDebugUpdate && CurTime() - self.LastDebugUpdate < UpdateTime ) then return end
+	if ( self.LastDebugUpdate and CurTime() - self.LastDebugUpdate < UpdateTime ) then return end
 
 	self.LastDebugUpdate = CurTime()
 
@@ -220,7 +220,7 @@ function ENT:SetRagdoll( ragdoll )
 	ragdoll:SetRagdollBuildFunction( function( ragdoll )
 
 		local controller = self:GetController()
-		if ( !IsValid( controller ) ) then return end
+		if ( not IsValid( controller ) ) then return end
 
 		local builder = list.Get( "SkeletonConvertor" )[ buildername ]
 		local scale = self:GetScale()
@@ -275,14 +275,14 @@ function ENT:SetRagdoll( ragdoll )
 			--
 			-- Set the bone angle
 			--
-			if ( ang[ k ] != nil ) then
+			if ( ang[ k ] ~= nil ) then
 				ragdoll:SetRagdollAng( k, ang[ k ] )
 			end
 
 			--
 			-- The root bone, we directly set the position of this one.
 			--
-			if ( k == 0 || !normalize ) then
+			if ( k == 0 or not normalize ) then
 
 				local new_position = center + v * scale
 				ragdoll:SetRagdollPos( k, new_position )

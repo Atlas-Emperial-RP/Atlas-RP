@@ -64,7 +64,7 @@ function PANEL:OnMousePressed( mcode )
 	if ( mcode == MOUSE_RIGHT ) then
 
 		-- This is probably the expected behaviour..
-		if ( !self:IsLineSelected() ) then
+		if ( not self:IsLineSelected() ) then
 
 			self:GetListView():OnClickLine( self, true )
 			self:OnSelect()
@@ -121,7 +121,7 @@ function PANEL:SetColumnText( i, strText )
 
 	end
 
-	if ( !IsValid( self.Columns[ i ] ) ) then
+	if ( not IsValid( self.Columns[ i ] ) ) then
 
 		self.Columns[ i ] = vgui.Create( "DListViewLabel", self )
 		self.Columns[ i ]:SetMouseInputEnabled( false )
@@ -137,7 +137,7 @@ PANEL.SetValue = PANEL.SetColumnText
 
 function PANEL:GetColumnText( i )
 
-	if ( !self.Columns[ i ] ) then return "" end
+	if ( not self.Columns[ i ] ) then return "" end
 
 	return self.Columns[ i ].Value
 

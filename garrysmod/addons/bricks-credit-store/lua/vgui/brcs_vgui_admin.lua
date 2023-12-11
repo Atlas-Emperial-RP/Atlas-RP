@@ -36,9 +36,9 @@ function PANEL:Init()
 		self.CloseButton:SetText( "" )
 		local CloseMat = Material( "materials/brickscreditstore/close.png", "noclamp smooth" )
 		self.CloseButton.Paint = function( self2, w, h )
-			if( self2:IsHovered() and !self2:IsDown() ) then
+			if( self2:IsHovered() and not self2:IsDown() ) then
 				surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
-			elseif( self2:IsDown() || self2.m_bSelected ) then
+			elseif( self2:IsDown() or self2.m_bSelected ) then
 				surface.SetDrawColor( BRICKSCREDITSTORE.LUACONFIG.Themes.Accent )
 			else
 				surface.SetDrawColor( 52, 55, 76 )
@@ -130,7 +130,7 @@ function PANEL:Init()
 			ChoiceEntry.Paint = function( self2, w, h )
 				draw.RoundedBox( 3, 0, 0, w, h, BRICKSCREDITSTORE.LUACONFIG.Themes.Secondary )
 		
-				if( self2:IsHovered() and !self2:IsDown() ) then
+				if( self2:IsHovered() and not self2:IsDown() ) then
 					surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
 					draw.SimpleText( k, "BRCS_MP_22", w/2, h/2, Color( 101*1.35, 107*1.35, 145*1.35 ), 1, 1 )
 				elseif( self2:IsDown() ) then
@@ -158,7 +158,7 @@ function PANEL:Init()
 		NewStore.Paint = function( self2, w, h )
 			draw.RoundedBox( 3, 0, 0, w, h, BRICKSCREDITSTORE.LUACONFIG.Themes.Secondary )
 	
-			if( self2:IsHovered() and !self2:IsDown() ) then
+			if( self2:IsHovered() and not self2:IsDown() ) then
 				surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
 				draw.SimpleText( "Create a new store", "BRCS_MP_22", w/2, h/2, Color( 101*1.35, 107*1.35, 145*1.35 ), 1, 1 )
 			elseif( self2:IsDown() ) then
@@ -193,14 +193,14 @@ function PANEL:Init()
 							NewStore.currency = value
 
 							BRCS_StringRequest( "What should the new command be? (blank for none)", "", "/examplestore", "Next", function( text ) 
-								if( string.Replace( text, " ", "" ) != "" ) then
+								if( string.Replace( text, " ", "" ) ~= "" ) then
 									NewStore.CMD = text
 								else
 									NewStore.CMD = nil
 								end
 
 								BRCS_ComboRequest( "What keybind should open the store?", "", BRICKSCREDITSTORE.KeyBinds, "Finish", function( key, value ) 
-									if( value != "None" ) then
+									if( value ~= "None" ) then
 										NewStore.Bind = key
 									else
 										NewStore.Bind = nil
@@ -467,9 +467,9 @@ function PANEL:Init()
 	self.CloseButton:SetText( "" )
 	local CloseMat = Material( "materials/brickscreditstore/close.png", "noclamp smooth" )
 	self.CloseButton.Paint = function( self2, w, h )
-		if( self2:IsHovered() and !self2:IsDown() ) then
+		if( self2:IsHovered() and not self2:IsDown() ) then
 			surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
-		elseif( self2:IsDown() || self2.m_bSelected ) then
+		elseif( self2:IsDown() or self2.m_bSelected ) then
 			surface.SetDrawColor( BRICKSCREDITSTORE.LUACONFIG.Themes.Accent )
 		else
 			surface.SetDrawColor( 52, 55, 76 )
@@ -517,7 +517,7 @@ function PANEL:SetNPCType( npcType )
 			draw.RoundedBox( 3, 0, 0, w, h, sColor or BRICKSCREDITSTORE.LUACONFIG.Themes.Secondary )
 			
 			if( not sColor ) then
-				if( self2:IsHovered() and !self2:IsDown() ) then
+				if( self2:IsHovered() and not self2:IsDown() ) then
 					surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
 					draw.SimpleText( label, "BRCS_MP_22", w/2, h/2, LabelHover, 1, 1 )
 				elseif( self2:IsDown() ) then
@@ -528,7 +528,7 @@ function PANEL:SetNPCType( npcType )
 					draw.SimpleText( label, "BRCS_MP_22", w/2, h/2, TextNorm, 1, 1 )
 				end
 			else
-				if( self2:IsHovered() and !self2:IsDown() ) then
+				if( self2:IsHovered() and not self2:IsDown() ) then
 					draw.RoundedBox( 3, 0, 0, w, h, Hover )
 				elseif( self2:IsDown() ) then
 					draw.RoundedBox( 3, 0, 0, w, h, Down )
@@ -579,7 +579,7 @@ function PANEL:SetNPCType( npcType )
 	end )
 	CreateButton( "Change Command", Material( "materials/brickscreditstore/command.png", "noclamp smooth" ), function() 
 		BRCS_StringRequest( "What should the new command be? (blank for none)", "", NPC.CMD or "/examplestore", "Confirm", function( text ) 
-			if( string.Replace( text, " ", "" ) != "" ) then
+			if( string.Replace( text, " ", "" ) ~= "" ) then
 				BRCS_ADMIN_CFG.NPCs[npcType].CMD = text
 			else
 				BRCS_ADMIN_CFG.NPCs[npcType].CMD = nil
@@ -589,7 +589,7 @@ function PANEL:SetNPCType( npcType )
 	end )
 	CreateButton( "Change Keybind", Material( "materials/brickscreditstore/keybind.png", "noclamp smooth" ), function() 
 		BRCS_ComboRequest( "What keybind should open the store?", "", BRICKSCREDITSTORE.KeyBinds, "Confirm", function( key, value ) 
-			if( value != "None" ) then
+			if( value ~= "None" ) then
 				BRCS_ADMIN_CFG.NPCs[npcType].Bind = key
 			else
 				BRCS_ADMIN_CFG.NPCs[npcType].Bind = nil
@@ -653,9 +653,9 @@ function PANEL:Init()
 	self.CloseButton:SetText( "" )
 	local CloseMat = Material( "materials/brickscreditstore/close.png", "noclamp smooth" )
 	self.CloseButton.Paint = function( self2, w, h )
-		if( self2:IsHovered() and !self2:IsDown() ) then
+		if( self2:IsHovered() and not self2:IsDown() ) then
 			surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
-		elseif( self2:IsDown() || self2.m_bSelected ) then
+		elseif( self2:IsDown() or self2.m_bSelected ) then
 			surface.SetDrawColor( BRICKSCREDITSTORE.LUACONFIG.Themes.Accent )
 		else
 			surface.SetDrawColor( 52, 55, 76 )
@@ -713,7 +713,7 @@ function PANEL:SetItemData( npcType, itemKey, newItem )
 			draw.RoundedBox( 3, 0, 0, w, h, sColor or BRICKSCREDITSTORE.LUACONFIG.Themes.Secondary )
 			
 			if( not sColor ) then
-				if( self2:IsHovered() and !self2:IsDown() and not (newItem and completed) ) then
+				if( self2:IsHovered() and not self2:IsDown() and not (newItem and completed) ) then
 					surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
 					draw.SimpleText( label, "BRCS_MP_22", w/2, h/2, LabelHover, 1, 1 )
 				elseif( self2:IsDown() or (newItem and completed) ) then
@@ -724,7 +724,7 @@ function PANEL:SetItemData( npcType, itemKey, newItem )
 					draw.SimpleText( label, "BRCS_MP_22", w/2, h/2, TextNorm, 1, 1 )
 				end
 			else
-				if( self2:IsHovered() and !self2:IsDown() ) then
+				if( self2:IsHovered() and not self2:IsDown() ) then
 					draw.RoundedBox( 3, 0, 0, w, h, Hover )
 				elseif( self2:IsDown() ) then
 					draw.RoundedBox( 3, 0, 0, w, h, Down )
@@ -1097,9 +1097,9 @@ function PANEL:Init()
 	self.CloseButton:SetText( "" )
 	local CloseMat = Material( "materials/brickscreditstore/close.png", "noclamp smooth" )
 	self.CloseButton.Paint = function( self2, w, h )
-		if( self2:IsHovered() and !self2:IsDown() ) then
+		if( self2:IsHovered() and not self2:IsDown() ) then
 			surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
-		elseif( self2:IsDown() || self2.m_bSelected ) then
+		elseif( self2:IsDown() or self2.m_bSelected ) then
 			surface.SetDrawColor( BRICKSCREDITSTORE.LUACONFIG.Themes.Accent )
 		else
 			surface.SetDrawColor( 52, 55, 76 )
@@ -1135,7 +1135,7 @@ function PANEL:Init()
 			draw.RoundedBox( 3, 0, 0, w, h, sColor or BRICKSCREDITSTORE.LUACONFIG.Themes.Secondary )
 			
 			if( not sColor ) then
-				if( self2:IsHovered() and !self2:IsDown() and not (newItem and completed) ) then
+				if( self2:IsHovered() and not self2:IsDown() and not (newItem and completed) ) then
 					surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
 					draw.SimpleText( label, "BRCS_MP_22", w/2, h/2, LabelHover, 1, 1 )
 				elseif( self2:IsDown() or (newItem and completed) ) then
@@ -1146,7 +1146,7 @@ function PANEL:Init()
 					draw.SimpleText( label, "BRCS_MP_22", w/2, h/2, TextNorm, 1, 1 )
 				end
 			else
-				if( self2:IsHovered() and !self2:IsDown() ) then
+				if( self2:IsHovered() and not self2:IsDown() ) then
 					draw.RoundedBox( 3, 0, 0, w, h, Hover )
 				elseif( self2:IsDown() ) then
 					draw.RoundedBox( 3, 0, 0, w, h, Down )
@@ -1216,7 +1216,7 @@ function PANEL:Init()
 
 		local GroupString = "Ranks: "
 		for k, v in pairs( BRCS_ADMIN_CFG.Groups[groupKey] ) do
-			if( GroupString != "Ranks: " ) then
+			if( GroupString ~= "Ranks: " ) then
 				GroupString = GroupString .. ", " .. k
 			else
 				GroupString = GroupString .. k
@@ -1273,7 +1273,7 @@ function PANEL:Init()
 
 		for k, v in pairs( BRCS_ADMIN_CFG.Categories ) do
 			local icon = BRICKSCREDITSTORE.GetImage( v )
-			if( not icon or type( icon ) != "IMaterial" ) then
+			if( not icon or type( icon ) ~= "IMaterial" ) then
 				icon = Material( "materials/brickscreditstore/other.png" )
 			end
 

@@ -35,7 +35,7 @@ function PANEL:Setup( vars )
 
 			self:SetEnabled( true )
 
-			if ( !IsValid( tr.Entity ) ) then return end
+			if ( not IsValid( tr.Entity ) ) then return end
 
 			-- TODO: Maybe this should be EntSerial()?
 			self:ValueChanged( tr.Entity:EntIndex(), true )

@@ -30,9 +30,9 @@ function ENT:Touch( ent )
 	
 	self.NextTouch = CurTime() + 1
 	
-	if ent:GetClass() != "beaker_medicmod" then return end
+	if ent:GetClass() ~= "beaker_medicmod" then return end
 	
-	if self:GetDrug() != ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] then return end
+	if self:GetDrug() ~= ConfigurationMedicMod.Sentences["Empty"][ConfigurationMedicMod.Language] then return end
 	
 	local drug
 	

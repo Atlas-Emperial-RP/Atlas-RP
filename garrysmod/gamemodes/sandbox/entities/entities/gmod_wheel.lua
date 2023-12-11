@@ -73,7 +73,7 @@ end
 function ENT:GetMotor()
 
 	-- Fuck knows why it's doing this here.
-	if ( !IsValid( self.Motor ) ) then
+	if ( not IsValid( self.Motor ) ) then
 
 		self.Motor = constraint.FindConstraintEntity( self, "Motor" )
 
@@ -90,10 +90,10 @@ function ENT:Forward( onoff, mul )
 	-- Is this entity invalid now?
 	-- If so return false to remove it
 	--
-	if ( !IsValid( self ) ) then return false end
+	if ( not IsValid( self ) ) then return false end
 
 	local Motor = self:GetMotor()
-	if ( !IsValid( Motor ) ) then return false end
+	if ( not IsValid( Motor ) ) then return false end
 
 	local toggle = self:GetToggle()
 
@@ -101,18 +101,18 @@ function ENT:Forward( onoff, mul )
 	-- If we're toggle mode and the key has been
 	-- released then just return.
 	--
-	if ( toggle && !onoff ) then return true end
+	if ( toggle and not onoff ) then return true end
 
 	mul = mul or 1
 	local Speed = Motor.direction * mul * self.TorqueScale
 
-	if ( !onoff ) then Speed = 0 end
+	if ( not onoff ) then Speed = 0 end
 
-	if ( toggle && onoff ) then
+	if ( toggle and onoff ) then
 
-		self.ToggleState = !self.ToggleState
+		self.ToggleState = not self.ToggleState
 
-		if ( !self.ToggleState ) then
+		if ( not self.ToggleState ) then
 			Speed = 0
 		end
 
@@ -136,7 +136,7 @@ if ( SERVER ) then
 
 	numpad.Register( "WheelForward", function( pl, ent, onoff )
 
-		if ( !IsValid( ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
 
 		return ent:Forward( onoff )
 
@@ -144,7 +144,7 @@ if ( SERVER ) then
 
 	numpad.Register( "WheelReverse", function( pl, ent, onoff )
 
-		if ( !IsValid( ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
 
 		return ent:Reverse( onoff )
 
@@ -160,7 +160,7 @@ function ENT:SetTorque( torque )
 	self.TorqueScale = torque / self.BaseTorque
 
 	local Motor = self:GetMotor()
-	if ( !IsValid( Motor ) ) then return end
+	if ( not IsValid( Motor ) ) then return end
 	Motor:Fire( "Scale", Motor.direction * Motor.forcescale * self.TorqueScale , 0 )
 
 	self:SetOverlayText( "Torque: " .. math.floor( torque ) )
@@ -172,7 +172,7 @@ function ENT:DoDirectionEffect()
 
 	local Motor = self:GetMotor()
 
-	if ( !IsValid( Motor ) ) then return end
+	if ( not IsValid( Motor ) ) then return end
 
 	local effectdata = EffectData()
 	effectdata:SetOrigin( self.Axis * 100 ) -- Ugly hack, but necessary due to network precision problems of EffectData()

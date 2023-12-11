@@ -1,6 +1,6 @@
 
 -- Return if there's nothing to add on to
-if ( !util ) then return end
+if ( not util ) then return end
 
 if ( CLIENT ) then
 	include( "util/worldpicker.lua" )
@@ -14,7 +14,7 @@ end
 function util.IsValidPhysicsObject( ent, num )
 
 	-- Make sure the entity is valid
-	if ( !ent || ( !ent:IsValid() && !ent:IsWorld() ) ) then return false end
+	if ( not ent or ( not ent:IsValid() and not ent:IsWorld() ) ) then return false end
 
 	-- This is to stop attaching to walking NPCs.
 	-- Although this is possible and `works', it can severly reduce the
@@ -22,7 +22,7 @@ function util.IsValidPhysicsObject( ent, num )
 	-- anyway - so we're not really losing anything.
 
 	local MoveType = ent:GetMoveType()
-	if ( !ent:IsWorld() && MoveType != MOVETYPE_VPHYSICS && !( ent:GetModel() && ent:GetModel():StartWith( "*" ) ) ) then return false end
+	if ( not ent:IsWorld() and MoveType ~= MOVETYPE_VPHYSICS and not ( ent:GetModel() and ent:GetModel():StartWith( "*" ) ) ) then return false end
 
 	local Phys = ent:GetPhysicsObjectNum( num )
 	return IsValid( Phys )
@@ -195,7 +195,7 @@ local T =
 	--
 	Started = function( self )
 
-		return self.endtime != nil
+		return self.endtime ~= nil
 
 	end,
 
@@ -204,7 +204,7 @@ local T =
 	--
 	Elapsed = function( self )
 
-		return self.endtime == nil || self.endtime <= CurTime()
+		return self.endtime == nil or self.endtime <= CurTime()
 
 	end
 }
@@ -239,7 +239,7 @@ local function PopStack( self, num )
 	local len = self[ 0 ]
 
 	if ( num > len ) then
-		error( string.format( "attempted to pop %u element%s in stack of length %u", num, num == 1 && "" || "s", len ), 3 )
+		error( string.format( "attempted to pop %u element%s in stack of length %u", num, num == 1 and "" or "s", len ), 3 )
 	end
 
 	return num, len
@@ -371,14 +371,14 @@ end
 	Desc: Returns whether a binary module with the given name is present on disk
 -----------------------------------------------------------]]
 local suffix = ({"osx64","osx","linux64","linux","win64","win32"})[
-	( system.IsWindows() && 4 || 0 )
-	+ ( system.IsLinux() && 2 || 0 )
-	+ ( jit.arch == "x86" && 1 || 0 )
+	( system.IsWindows() and 4 or 0 )
+	+ ( system.IsLinux() and 2 or 0 )
+	+ ( jit.arch == "x86" and 1 or 0 )
 	+ 1
 ]
-local fmt = "lua/bin/gm" .. ((CLIENT && !MENU_DLL) && "cl" || "sv") .. "_%s_%s.dll"
+local fmt = "lua/bin/gm" .. ((CLIENT and not MENU_DLL) and "cl" or "sv") .. "_%s_%s.dll"
 function util.IsBinaryModuleInstalled( name )
-	if ( !isstring( name ) ) then
+	if ( not isstring( name ) ) then
 		error( "bad argument #1 to 'IsBinaryModuleInstalled' (string expected, got " .. type( name ) .. ")" )
 	elseif ( #name == 0 ) then
 		error( "bad argument #1 to 'IsBinaryModuleInstalled' (string cannot be empty)" )
@@ -389,7 +389,7 @@ function util.IsBinaryModuleInstalled( name )
 	end
 
 	-- Edge case - on Linux 32-bit x86-64 branch, linux32 is also supported as a suffix
-	if ( jit.versionnum != 20004 && jit.arch == "x86" && system.IsLinux() ) then
+	if ( jit.versionnum ~= 20004 and jit.arch == "x86" and system.IsLinux() ) then
 		return file.Exists( string.format( fmt, name, "linux32" ), "GAME" )
 	end
 

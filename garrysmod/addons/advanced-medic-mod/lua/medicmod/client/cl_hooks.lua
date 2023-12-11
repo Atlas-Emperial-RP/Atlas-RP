@@ -1,5 +1,5 @@
 hook.Add( "CalcView", "CalcView.MedicMod", function( ply, pos, ang, fov )
-    if ( !IsValid( ply ) or !ply:Alive() or ply:GetViewEntity() != ply ) then return end
+    if ( not IsValid( ply ) or not ply:Alive() or ply:GetViewEntity() ~= ply ) then return end
     if ply:GetMedicAnimation() == 0 then return end
    
     local view = {}
@@ -53,7 +53,7 @@ hook.Add("HUDPaint", "HUDPaint.MedicMod", function()
     local shouldDrawDeathPanel = hook.Run("HUDShouldDraw", "MedicMod_DeathPanel")
 
     if not LocalPlayer():Alive() and not IsValid(deathPanel) and MedicMod.seconds and shouldDrawDeathPanel then
-		if MedicMod.seconds < CurTime() and MedicMod.seconds != -1 then return end
+		if MedicMod.seconds < CurTime() and MedicMod.seconds ~= -1 then return end
 		
         deathPanel = vgui.Create("DFrame")
         deathPanel:SetSize(ScrW()*0.25, ScrH()*0.125)

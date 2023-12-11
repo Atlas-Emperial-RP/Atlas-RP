@@ -11,7 +11,7 @@ hook.Add( "PopulatePostProcess", "AddPostProcess", function( pnlContent, tree, n
 		for k, v in pairs( PostProcess ) do
 
 			local Category = v.category or "Other"
-			if ( !isstring( Category ) ) then Category = tostring( Category ) end
+			if ( not isstring( Category ) ) then Category = tostring( Category ) end
 			Categorised[ Category ] = Categorised[ Category ] or {}
 
 			v.name = k

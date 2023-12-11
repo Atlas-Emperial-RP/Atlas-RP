@@ -105,7 +105,7 @@ end )
 --[[ CONFIG ]]--
 function BRICKSCREDITSTORE.SaveConfig()
 	local Config = BRICKSCREDITSTORE.CONFIG
-	if( Config != nil ) then
+	if( Config ~= nil ) then
 		if( not istable( Config ) ) then
 			BRICKSCREDITSTORE.LoadConfig()
 			return

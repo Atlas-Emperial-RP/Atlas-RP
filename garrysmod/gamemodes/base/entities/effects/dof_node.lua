@@ -20,12 +20,12 @@ function EFFECT:Think( )
 	self.offset = DOF_OFFSET
 
 	-- Just return if it hasn't
-	--if ( spacing == self.spacing && offset == self.offset ) then return true end
+	--if ( spacing == self.spacing and offset == self.offset ) then return true end
 
 	local pos = ply:EyePos()
 	local fwd = ply:EyeAngles():Forward()
 
-	if ( ply:GetViewEntity() != ply ) then
+	if ( ply:GetViewEntity() ~= ply ) then
 		pos = ply:GetViewEntity():GetPos()
 		fwd = ply:GetViewEntity():GetForward()
 	end

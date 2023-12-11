@@ -19,7 +19,7 @@ end
 
 function PANEL:Think()
 
-	if ( !self.m_strConVar ) then return end
+	if ( not self.m_strConVar ) then return end
 	local strValue = GetConVarString( self.m_strConVar )
 
 	self:SetChecked( strValue == self.m_strValueOn )
@@ -28,7 +28,7 @@ end
 
 function PANEL:OnChecked( b )
 
-	if ( !self.m_strConVar ) then return end
+	if ( not self.m_strConVar ) then return end
 
 	if ( b ) then
 		RunConsoleCommand( self.m_strConVar, self.m_strValueOn )

@@ -37,15 +37,15 @@ end
 
 hook.Add("DoPlayerDeath", "defibhandledeath", PlayerDied)
 hook.Add("PlayerSpawn", "defibhandlespawn", PlayerSpawned)
-hook.Add("PlayerDeathSound", "defibmakedeath", function() return !weapons.Get("weapon_defibrillator").DeathBeepEnabled end)
+hook.Add("PlayerDeathSound", "defibmakedeath", function() return not weapons.Get("weapon_defibrillator").DeathBeepEnabled end)
 net.Receive("defibgiveents", function(len, ply)
 	local weapon = ply:GetActiveWeapon()
 	local isRevive, otherPly, pos = net.ReadBool(), net.ReadEntity(), net.ReadVector()
 	local plyPos = ply:GetPos()
 	local eyetrace = ply:GetEyeTraceNoCursor()
-	if !otherPly:IsPlayer() then otherPly = otherPly.Owner end
-	if (!IsValid(ply) or !IsValid(otherPly) or !IsValid(weapon)) then return end
-	if (ply == otherPly or (isRevive and otherPly:Alive() and ply.DefibJustSpawned == nil) or (!isRevive and otherPly:GetPos():Distance(ply:GetPos()) > weapon.HitDistance) or (CurTime() > weapon.CanUse)) then
+	if not otherPly:IsPlayer() then otherPly = otherPly.Owner end
+	if (not IsValid(ply) or not IsValid(otherPly) or not IsValid(weapon)) then return end
+	if (ply == otherPly or (isRevive and otherPly:Alive() and ply.DefibJustSpawned == nil) or (not isRevive and otherPly:GetPos():Distance(ply:GetPos()) > weapon.HitDistance) or (CurTime() > weapon.CanUse)) then
 		for k,v in pairs(player.GetAll()) do
 			if v:IsAdmin() then
 				v:SendLua("chat.AddText(Color(255,0,0), 'WARNING! Player "..ply:Nick().." tried hacking the defib SWEP. SteamID: "..ply:SteamID().."')")
@@ -53,7 +53,7 @@ net.Receive("defibgiveents", function(len, ply)
 			end
 		end
 	end
-	if !ply:VisibleVec(pos) or weapon:GetClass() != "weapon_defibrillator" or (!isRevive and !weapon.AllowDamage) then return end
+	if not ply:VisibleVec(pos) or weapon:GetClass() ~= "weapon_defibrillator" or (not isRevive and not weapon.AllowDamage) then return end
 	weapon:EmitSound("weapons/physcannon/superphys_small_zap"..math.random(1,4)..".wav")
 	weapon.CanUse = 0
 	weapon:SendWeaponAnim(ACT_VM_PRIMARYATTACK)
@@ -66,10 +66,10 @@ net.Receive("defibgiveents", function(len, ply)
 			makefx(ply, Vector(0, 0, 0), "toolongdead", otherPly, false)
 			return
 		end
-		if weapon.GiveMedicRPCash != 0 and DarkRP != nil then
+		if weapon.GiveMedicRPCash ~= 0 and DarkRP ~= nil then
 			local isGood = true
 			local steamID = otherPly:SteamID64()
-			if ply.recentlyRevivedPeople != nil then
+			if ply.recentlyRevivedPeople ~= nil then
 				for k,v in pairs(ply.recentlyRevivedPeople) do 
 					if v == steamID then
 						isGood = false
@@ -84,7 +84,7 @@ net.Receive("defibgiveents", function(len, ply)
 				DarkRP.notify(ply, 3, 6, "You've received $"..weapon.GiveMedicRPCash)
 				table.insert(ply.recentlyRevivedPeople, otherPly:SteamID64())
 				timer.Simple(math.max(0.5, weapon.reviveCashTimeout), function()
-					if IsValid(ply) and ply.recentlyRevivedPeople != nil then
+					if IsValid(ply) and ply.recentlyRevivedPeople ~= nil then
 						table.RemoveByValue(ply.recentlyRevivedPeople, steamID)
 						if table.Count(ply.recentlyRevivedPeople) == 0 then
 							ply.recentlyRevivedPeople = nil
@@ -92,12 +92,12 @@ net.Receive("defibgiveents", function(len, ply)
 					end
 				end)
 			else
-				DarkRP.notify(ply, 3, 6, "You recently revived "..otherPly:Nick().."! No money received.")
+				DarkRP.notify(ply, 3, 6, "You recently revived "..otherPly:Nick().."not  No money received.")
 			end
 		end
 		makefx(otherPly, otherPly:GetPos(), "spark", otherPly, true)
 		timer.Simple(0.3, function()
-			if (!IsValid(otherPly)) then return end
+			if (not IsValid(otherPly)) then return end
 			otherPly:Spawn()
 			otherPly:SetCollisionGroup(COLLISION_GROUP_WEAPON)
 			otherPly:SetPos(eyetrace.HitPos + eyetrace.HitNormal*16)
@@ -109,7 +109,7 @@ net.Receive("defibgiveents", function(len, ply)
 			otherPly:SetColor(Color(255, 255, 255, 125))
 		end)
 		timer.Simple(weapon.GhostTime, function()
-			if (!IsValid(otherPly)) then return end
+			if (not IsValid(otherPly)) then return end
 			otherPly:SetCollisionGroup(COLLISION_GROUP_NONE)
 			otherPly:SetColor(Color(255, 255, 255, 255))
 		end)

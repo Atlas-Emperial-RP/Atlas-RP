@@ -19,9 +19,9 @@ widgets.Pressed = nil
 
 local function UpdateHovered( pl, mv )
 
-	if ( !IsValid( pl ) ) then return end
+	if ( not IsValid( pl ) ) then return end
 
-	if ( !pl:Alive() ) then
+	if ( not pl:Alive() ) then
 		pl:SetHoveredWidget( NULL )
 		return
 	end
@@ -40,7 +40,7 @@ local function UpdateHovered( pl, mv )
 		endpos	= aimVector,
 		filter	= function( ent )
 
-			return IsValid( ent ) && ent:IsWidget()
+			return IsValid( ent ) and ent:IsWidget()
 
 		end
 	}
@@ -51,13 +51,13 @@ local function UpdateHovered( pl, mv )
 	local tr = util.TraceLine( trace )
 	widgets.Tracing = false
 
-	if ( !IsValid( tr.Entity ) ) then return end
+	if ( not IsValid( tr.Entity ) ) then return end
 	if ( tr.Entity:IsWorld() ) then return end
-	if ( !tr.Entity:IsWidget() ) then return end
+	if ( not tr.Entity:IsWidget() ) then return end
 
 --	debugoverlay.Cross( tr.HitPos, 1, 60 )
 
-	if ( OldHovered != tr.Entity ) then
+	if ( OldHovered ~= tr.Entity ) then
 
 		-- On hover changed? why bother?
 
@@ -75,11 +75,11 @@ local function UpdateButton( pl, mv, btn, mousebutton )
 	local hvr = pl:GetHoveredWidget()
 	local prs = pl:GetPressedWidget()
 
-	if ( now && !was && IsValid( hvr ) ) then
+	if ( now and not was and IsValid( hvr ) ) then
 		hvr:OnPress( pl, mousebutton, mv )
 	end
 
-	if ( !now && was && IsValid( prs ) ) then
+	if ( not now and was and IsValid( prs ) ) then
 		prs:OnRelease( pl, mousebutton, mv )
 	end
 end
@@ -116,9 +116,9 @@ function widgets.RenderMe( ent )
 	--
 	-- The pressed widget gets to decide what should draw
 	--
-	if ( LocalPlayer() && IsValid(LocalPlayer():GetPressedWidget()) ) then
+	if ( LocalPlayer() and IsValid(LocalPlayer():GetPressedWidget()) ) then
 
-		if ( !LocalPlayer():GetPressedWidget():PressedShouldDraw( ent ) ) then
+		if ( not LocalPlayer():GetPressedWidget():PressedShouldDraw( ent ) ) then
 			return
 		end
 

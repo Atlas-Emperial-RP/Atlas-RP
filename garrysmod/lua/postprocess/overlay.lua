@@ -15,7 +15,7 @@ function DrawMaterialOverlay( texture, refractamount )
 		lastTexture = texture
 	end
 
-	if ( mat_Overlay == nil || mat_Overlay:IsError() ) then return end
+	if ( mat_Overlay == nil or mat_Overlay:IsError() ) then return end
 
 	render.UpdateScreenEffectTexture()
 
@@ -35,7 +35,7 @@ hook.Add( "RenderScreenspaceEffects", "RenderMaterialOverlay", function()
 	local overlay = pp_mat_overlay:GetString()
 
 	if ( overlay == "" ) then return end
-	if ( !GAMEMODE:PostProcessPermitted( "material overlay" ) ) then return end
+	if ( not GAMEMODE:PostProcessPermitted( "material overlay" ) ) then return end
 
 	DrawMaterialOverlay( overlay, pp_mat_overlay_refractamount:GetFloat() )
 

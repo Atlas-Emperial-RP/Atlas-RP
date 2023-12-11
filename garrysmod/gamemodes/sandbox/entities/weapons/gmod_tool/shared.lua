@@ -121,16 +121,16 @@ function SWEP:Think()
 
 	-- SWEP:Think is called one more time clientside
 	-- after holstering using Player:SelectWeapon in multiplayer
-	if ( CLIENT && self.m_uHolsterFrame == FrameNumber() ) then return end
+	if ( CLIENT and self.m_uHolsterFrame == FrameNumber() ) then return end
 
 	local owner = self:GetOwner()
-	if ( !owner:IsPlayer() ) then return end
+	if ( not owner:IsPlayer() ) then return end
 
 	local curmode = owner:GetInfo( "gmod_toolmode" )
 	self.Mode = curmode
 
 	local tool = self:GetToolObject( curmode )
-	if ( !tool ) then return end
+	if ( not tool ) then return end
 
 	tool:CheckObjects()
 
@@ -139,7 +139,7 @@ function SWEP:Think()
 	self.current_mode = curmode
 
 	-- Release ghost entities if we're not allowed to use this new mode?
-	if ( !tool:Allowed() ) then
+	if ( not tool:Allowed() ) then
 		if ( lastmode ) then
 			local lastmode_obj = self:GetToolObject( lastmode )
 
@@ -151,7 +151,7 @@ function SWEP:Think()
 		return
 	end
 
-	if ( lastmode && lastmode != curmode ) then
+	if ( lastmode and lastmode ~= curmode ) then
 		local lastmode_obj = self:GetToolObject( lastmode )
 
 		if ( lastmode_obj ) then
@@ -160,9 +160,9 @@ function SWEP:Think()
 		end
 	end
 
-	self.Primary.Automatic = tool.LeftClickAutomatic || false
-	self.Secondary.Automatic = tool.RightClickAutomatic || false
-	self.RequiresTraceHit = tool.RequiresTraceHit || true
+	self.Primary.Automatic = tool.LeftClickAutomatic or false
+	self.Secondary.Automatic = tool.RightClickAutomatic or false
+	self.RequiresTraceHit = tool.RequiresTraceHit or true
 
 	tool:Think()
 
@@ -180,7 +180,7 @@ function SWEP:DoShootEffect( hitpos, hitnormal, entity, physbone, bFirstTimePred
 	-- appear on everyone's screen when we fire this animation.
 	owner:SetAnimation( PLAYER_ATTACK1 ) -- 3rd Person Animation
 
-	if ( !bFirstTimePredicted ) then return end
+	if ( not bFirstTimePredicted ) then return end
 	if ( GetConVarNumber( "gmod_drawtooleffects" ) == 0 ) then return end
 
 	local effectdata = EffectData()
@@ -209,21 +209,21 @@ function SWEP:PrimaryAttack()
 	local tr = util.GetPlayerTrace( owner )
 	tr.mask = toolmask
 	local trace = util.TraceLine( tr )
-	if ( !trace.Hit ) then return end
+	if ( not trace.Hit ) then return end
 
 	local tool = self:GetToolObject()
-	if ( !tool ) then return end
+	if ( not tool ) then return end
 
 	tool:CheckObjects()
 
 	-- Does the server setting say it's ok?
-	if ( !tool:Allowed() ) then return end
+	if ( not tool:Allowed() ) then return end
 
 	-- Ask the gamemode if it's ok to do this
 	local mode = self:GetMode()
-	if ( !gamemode.Call( "CanTool", owner, trace, mode, tool, 1 ) ) then return end
+	if ( not gamemode.Call( "CanTool", owner, trace, mode, tool, 1 ) ) then return end
 
-	if ( !tool:LeftClick( trace ) ) then return end
+	if ( not tool:LeftClick( trace ) ) then return end
 
 	self:DoShootEffect( trace.HitPos, trace.HitNormal, trace.Entity, trace.PhysicsBone, IsFirstTimePredicted() )
 
@@ -236,21 +236,21 @@ function SWEP:SecondaryAttack()
 	local tr = util.GetPlayerTrace( owner )
 	tr.mask = toolmask
 	local trace = util.TraceLine( tr )
-	if ( !trace.Hit ) then return end
+	if ( not trace.Hit ) then return end
 
 	local tool = self:GetToolObject()
-	if ( !tool ) then return end
+	if ( not tool ) then return end
 
 	tool:CheckObjects()
 
 	-- Does the server setting say it's ok?
-	if ( !tool:Allowed() ) then return end
+	if ( not tool:Allowed() ) then return end
 
 	-- Ask the gamemode if it's ok to do this
 	local mode = self:GetMode()
-	if ( !gamemode.Call( "CanTool", owner, trace, mode, tool, 2 ) ) then return end
+	if ( not gamemode.Call( "CanTool", owner, trace, mode, tool, 2 ) ) then return end
 
-	if ( !tool:RightClick( trace ) ) then return end
+	if ( not tool:RightClick( trace ) ) then return end
 
 	self:DoShootEffect( trace.HitPos, trace.HitNormal, trace.Entity, trace.PhysicsBone, IsFirstTimePredicted() )
 
@@ -261,26 +261,26 @@ function SWEP:Reload()
 	local owner = self:GetOwner()
 
 	-- This makes the reload a semi-automatic thing rather than a continuous thing
-	if ( !owner:KeyPressed( IN_RELOAD ) ) then return end
+	if ( not owner:KeyPressed( IN_RELOAD ) ) then return end
 
 	local tr = util.GetPlayerTrace( owner )
 	tr.mask = bit.bor( CONTENTS_SOLID, CONTENTS_MOVEABLE, CONTENTS_MONSTER, CONTENTS_WINDOW, CONTENTS_DEBRIS, CONTENTS_GRATE, CONTENTS_AUX )
 	local trace = util.TraceLine( tr )
-	if ( !trace.Hit ) then return end
+	if ( not trace.Hit ) then return end
 
 	local tool = self:GetToolObject()
-	if ( !tool ) then return end
+	if ( not tool ) then return end
 
 	tool:CheckObjects()
 
 	-- Does the server setting say it's ok?
-	if ( !tool:Allowed() ) then return end
+	if ( not tool:Allowed() ) then return end
 
 	-- Ask the gamemode if it's ok to do this
 	local mode = self:GetMode()
-	if ( !gamemode.Call( "CanTool", owner, trace, mode, tool, 3 ) ) then return end
+	if ( not gamemode.Call( "CanTool", owner, trace, mode, tool, 3 ) ) then return end
 
-	if ( !tool:Reload( trace ) ) then return end
+	if ( not tool:Reload( trace ) ) then return end
 
 	self:DoShootEffect( trace.HitPos, trace.HitNormal, trace.Entity, trace.PhysicsBone, IsFirstTimePredicted() )
 
@@ -301,7 +301,7 @@ function SWEP:Holster()
 
 	-- Save the frame the weapon was holstered on to prevent
 	-- the extra Think call after calling Player:SelectWeapon in multiplayer
-	if ( CLIENT && CanHolster == true ) then self.m_uHolsterFrame = FrameNumber() end
+	if ( CLIENT and CanHolster == true ) then self.m_uHolsterFrame = FrameNumber() end
 
 	if ( CanHolster == true and toolobj ) then toolobj:ReleaseGhostEntity() end
 
@@ -312,7 +312,7 @@ end
 -- Delete ghosts here in case the weapon gets deleted all of a sudden somehow
 function SWEP:OnRemove()
 
-	if ( !self:GetToolObject() ) then return end
+	if ( not self:GetToolObject() ) then return end
 
 	self:GetToolObject():ReleaseGhostEntity()
 
@@ -322,7 +322,7 @@ end
 -- This will remove any ghosts when a player dies and drops the weapon
 function SWEP:OwnerChanged()
 
-	if ( !self:GetToolObject() ) then return end
+	if ( not self:GetToolObject() ) then return end
 
 	self:GetToolObject():ReleaseGhostEntity()
 
@@ -332,7 +332,7 @@ end
 function SWEP:Deploy()
 
 	-- Just do what the SWEP wants to do if there is no tool
-	if ( !self:GetToolObject() ) then return self.CanDeploy end
+	if ( not self:GetToolObject() ) then return self.CanDeploy end
 
 	self:GetToolObject():UpdateData()
 
@@ -347,14 +347,14 @@ function SWEP:GetToolObject( tool )
 
 	local mode = tool or self:GetMode()
 
-	if ( !mode ) then
+	if ( not mode ) then
 		local owner = self:GetOwner()
 		if ( IsValid( owner ) and owner:IsPlayer() and ( SERVER or owner == LocalPlayer() ) ) then
 			mode = owner:GetInfo( "gmod_toolmode" )
 		end
 	end
 
-	if ( !self.Tool[ mode ] ) then return false end
+	if ( not self.Tool[ mode ] ) then return false end
 
 	return self.Tool[ mode ]
 

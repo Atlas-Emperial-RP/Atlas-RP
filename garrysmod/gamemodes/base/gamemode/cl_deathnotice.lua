@@ -39,7 +39,7 @@ local function PlayerIDOrNameToString( var )
 
 	local ply = Entity( var )
 
-	if ( !IsValid( ply ) ) then return "NULL!" end
+	if ( not IsValid( ply ) ) then return "NULL!" end
 
 	return ply:Name()
 
@@ -52,8 +52,8 @@ local function RecvPlayerKilledByPlayer()
 	local inflictor	= net.ReadString()
 	local attacker	= net.ReadEntity()
 
-	if ( !IsValid( attacker ) ) then return end
-	if ( !IsValid( victim ) ) then return end
+	if ( not IsValid( attacker ) ) then return end
+	if ( not IsValid( victim ) ) then return end
 
 	GAMEMODE:AddDeathNotice( attacker:Name(), attacker:Team(), inflictor, victim:Name(), victim:Team() )
 
@@ -63,7 +63,7 @@ net.Receive( "PlayerKilledByPlayer", RecvPlayerKilledByPlayer )
 local function RecvPlayerKilledSelf()
 
 	local victim = net.ReadEntity()
-	if ( !IsValid( victim ) ) then return end
+	if ( not IsValid( victim ) ) then return end
 	GAMEMODE:AddDeathNotice( nil, 0, "suicide", victim:Name(), victim:Team() )
 
 end
@@ -72,7 +72,7 @@ net.Receive( "PlayerKilledSelf", RecvPlayerKilledSelf )
 local function RecvPlayerKilled()
 
 	local victim	= net.ReadEntity()
-	if ( !IsValid( victim ) ) then return end
+	if ( not IsValid( victim ) ) then return end
 	local inflictor	= net.ReadString()
 	local attacker	= "#" .. net.ReadString()
 
@@ -91,24 +91,24 @@ local function RecvPlayerKilledNPC()
 	--
 	-- For some reason the killer isn't known to us, so don't proceed.
 	--
-	if ( !IsValid( attacker ) ) then return end
+	if ( not IsValid( attacker ) ) then return end
 
 	GAMEMODE:AddDeathNotice( attacker:Name(), attacker:Team(), inflictor, victim, -1 )
 
-	local bIsLocalPlayer = ( IsValid(attacker) && attacker == LocalPlayer() )
+	local bIsLocalPlayer = ( IsValid(attacker) and attacker == LocalPlayer() )
 
 	local bIsEnemy = IsEnemyEntityName( victimtype )
 	local bIsFriend = IsFriendEntityName( victimtype )
 
-	if ( bIsLocalPlayer && bIsEnemy ) then
+	if ( bIsLocalPlayer and bIsEnemy ) then
 		achievements.IncBaddies()
 	end
 
-	if ( bIsLocalPlayer && bIsFriend ) then
+	if ( bIsLocalPlayer and bIsFriend ) then
 		achievements.IncGoodies()
 	end
 
-	if ( bIsLocalPlayer && ( !bIsFriend && !bIsEnemy ) ) then
+	if ( bIsLocalPlayer and ( not bIsFriend and not bIsEnemy ) ) then
 		achievements.IncBystander()
 	end
 
@@ -157,7 +157,7 @@ end
 local function DrawDeath( x, y, death, hud_deathnotice_time )
 
 	local w, h = killicon.GetSize( death.icon )
-	if ( !w || !h ) then return end
+	if ( not w or not h ) then return end
 
 	local fadeout = ( death.time + hud_deathnotice_time ) - CurTime()
 

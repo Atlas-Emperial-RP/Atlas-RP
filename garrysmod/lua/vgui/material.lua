@@ -14,7 +14,7 @@ end
 
 function PANEL:Paint()
 
-	if (!self.Material) then return true end
+	if (not self.Material) then return true end
 
 	surface.SetMaterial( self.Material )
 	surface.SetDrawColor( 255, 255, 255, self.Alpha )
@@ -50,8 +50,8 @@ end
 
 function PANEL:PerformLayout()
 
-	if ( !self.Material ) then return end
-	if ( !self.AutoSize ) then return end
+	if ( not self.Material ) then return end
+	if ( not self.AutoSize ) then return end
 
 	self:SetSize( self.Width, self.Height )
 

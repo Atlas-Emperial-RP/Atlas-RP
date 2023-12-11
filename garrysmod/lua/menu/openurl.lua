@@ -7,7 +7,7 @@ function PANEL_Browser:Init()
 
 	self.HTML = vgui.Create( "HTML", self )
 
-	if ( !self.HTML ) then
+	if ( not self.HTML ) then
 		print( "SteamOverlayReplace: Failed to create HTML element" )
 		self:Remove()
 		return
@@ -37,7 +37,7 @@ function GMOD_OpenURLNoOverlay( url )
 	BrowserInst:SetURL( url )
 
 	timer.Simple( 0, function()
-		if ( !gui.IsGameUIVisible() ) then gui.ActivateGameUI() end
+		if ( not gui.IsGameUIVisible() ) then gui.ActivateGameUI() end
 	end )
 
 end
@@ -109,7 +109,7 @@ function PANEL:Init()
 
 	hook.Add( "Think", self, self.AlwaysThink )
 
-	if ( !IsInGame() ) then self.Disconnect:SetVisible( false ) end
+	if ( not IsInGame() ) then self.Disconnect:SetVisible( false ) end
 
 end
 
@@ -120,9 +120,9 @@ function PANEL:LoadServerInfo()
 	self.CustomPanel:SizeToContents()
 
 	serverlist.PingServer( self:GetURL(), function( ping, name, desc, map, players, maxplayers, bot, pass, lp, ip, gamemode )
-		if ( !IsValid( self ) ) then return end
+		if ( not IsValid( self ) ) then return end
 
-		if ( !ping ) then
+		if ( not ping ) then
 			self.CustomPanel.Color = Color( 200, 50, 50 )
 			self.CustomPanel:SetText( "#askconnect.no_response" )
 		else
@@ -146,7 +146,7 @@ end
 function PANEL:AlwaysThink()
 
 	-- Ping the server for details
-	if ( SysTime() - self.StartTime > 0.1 && self.Type == "askconnect" && !self.CustomPanel:IsVisible() ) then
+	if ( SysTime() - self.StartTime > 0.1 and self.Type == "askconnect" and not self.CustomPanel:IsVisible() ) then
 		self:LoadServerInfo()
 	end
 
@@ -154,11 +154,11 @@ function PANEL:AlwaysThink()
 		return
 	end
 
-	if ( !self.Yes:IsEnabled() ) then
+	if ( not self.Yes:IsEnabled() ) then
 		self.Yes:SetEnabled( true )
 	end
 
-	if ( !gui.IsGameUIVisible() ) then
+	if ( not gui.IsGameUIVisible() ) then
 		self:Remove()
 	end
 
@@ -208,7 +208,7 @@ function PANEL:DoYes()
 	end
 
 	local saveYes = self.YesPerma:GetChecked()
-	self:DoYesAction( !saveYes )
+	self:DoYesAction( not saveYes )
 	self:Remove()
 	gui.HideGameUI()
 
@@ -236,7 +236,7 @@ function PANEL:SetType( t )
 	self:SetTitle( "#" .. t .. ".title" )
 	self.Garble:SetText( "#" .. t .. ".text" )
 
-	if ( self.Type == "permission" || self.Type == "askconnect" ) then
+	if ( self.Type == "permission" or self.Type == "askconnect" ) then
 		self.YesPerma:SetVisible( true )
 	end
 
@@ -245,14 +245,14 @@ end
 local PanelInst = nil
 local function OpenConfirmationDialog( address, confirm_type )
 
-	if ( IsValid( PanelInst ) && PanelInst:GetURL() == address ) then return end
-	if ( !IsValid( PanelInst ) ) then PanelInst = vgui.CreateFromTable( PANEL ) end
+	if ( IsValid( PanelInst ) and PanelInst:GetURL() == address ) then return end
+	if ( not IsValid( PanelInst ) ) then PanelInst = vgui.CreateFromTable( PANEL ) end
 
 	PanelInst:SetType( confirm_type )
 	PanelInst:SetURL( address )
 
 	timer.Simple( 0, function()
-		if ( !gui.IsGameUIVisible() ) then gui.ActivateGameUI() end
+		if ( not gui.IsGameUIVisible() ) then gui.ActivateGameUI() end
 	end )
 
 end

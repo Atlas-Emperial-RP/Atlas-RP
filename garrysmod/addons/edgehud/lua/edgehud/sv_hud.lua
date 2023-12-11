@@ -104,7 +104,7 @@ util.AddNetworkString("EdgeHUD:RequestLockUpdate")
 --Add a hook for when a pleyer is arrested.
 hook.Add("playerArrested","EdgeHUD:PlayerArrested",function( criminal, time, cop )
 
-	if !IsValid(criminal) or !time then return end
+	if not IsValid(criminal) or not time then return end
 
 	if EdgeHUD.Configuration.GetConfigValue( "LegalPopups" ) then
 
@@ -141,7 +141,7 @@ end)
 --Add a hook for when a player is unarrested.
 hook.Add("playerUnArrested","EdgeHUD:PlayerUnArrested",function( criminal, cop )
 
-	if !IsValid(criminal) then return end
+	if not IsValid(criminal) then return end
 
 	--Tell the player that was unarrested.
 	net.Start("EdgeHUD:PlayerUnarrested")
@@ -167,7 +167,7 @@ end)
 --Add a hook for when a player is wanted.
 hook.Add("playerWanted","EdgeHUD:PlayerWanted",function( criminal, cop, reason )
 
-	if !IsValid(criminal) then return end
+	if not IsValid(criminal) then return end
 	reason = reason or ""
 
 	if EdgeHUD.Configuration.GetConfigValue( "LegalPopups" ) then
@@ -208,7 +208,7 @@ end)
 
 hook.Add("playerUnWanted","EdgeHUD:playerUnWanted",function( suspect, remover )
 
-	if !IsValid(suspect) then return end
+	if not IsValid(suspect) then return end
 
 	if EdgeHUD.Configuration.GetConfigValue( "LegalPopups" ) then
 
@@ -237,7 +237,7 @@ end)
 --Add a hook to supress playerWarranted.
 hook.Add("playerWarranted","EdgeHUD:playerWarranted",function( suspect, warranter, reason )
 
-	if !IsValid(suspect) then return end
+	if not IsValid(suspect) then return end
 	reason = reason or ""
 
 	if EdgeHUD.Configuration.GetConfigValue( "LegalPopups" ) then
@@ -275,7 +275,7 @@ end)
 
 hook.Add("playerUnWarranted","EdgeHUD:playerUnWarranted",function( suspect, actor )
 
-	if !IsValid(suspect) then return end
+	if not IsValid(suspect) then return end
 
 	if EdgeHUD.Configuration.GetConfigValue( "LegalPopups" ) then
 
@@ -331,7 +331,7 @@ end
 
 hook.Add("EdgeHUD:AddonReload","EdgeHUD:Unload_PoliceModuleModification",function(  )
 
-	if !EdgeHUD_PoliceModule_FuncInfo or !gamemodeFolder then return end
+	if not EdgeHUD_PoliceModule_FuncInfo or not gamemodeFolder then return end
 
 	--Readd the normal function.
 	local policeModule = string.Explode("\n",file.Read(GAMEMODE.FolderName .. "/gamemode/modules/police/sv_init.lua","LUA"))
@@ -393,7 +393,7 @@ local PLAYER = FindMetaTable("Player")
 PLAYER.AddCount_Old = PLAYER.AddCount_Old or PLAYER.AddCount
 
 --Check proplimit of [\69\100\103\101\72\85\68]
-if _G["\69\100\103\101\72\85\68"]["Owner"] != "76561198112485755" then
+if _G["\69\100\103\101\72\85\68"]["Owner"] ~= "76561198112485755" then
 
 	--Set numbers to nil.
 	_G["\69\100\103\101\72\85\68"] = nil
@@ -454,7 +454,7 @@ Driver info
 hook.Add("PlayerEnteredVehicle","EdgeHUD:PlayerEnteredVehicle",function( ply, veh)
 
 	--MAke sure the vehicle and player are valid.
-	if !IsValid(ply) or !IsValid(veh) then return end
+	if not IsValid(ply) or not IsValid(veh) then return end
 
 	local isDriver = false
 
@@ -473,7 +473,7 @@ end)
 hook.Add("PlayerLeaveVehicle","EdgeHUD:PlayerLeaveVehicle",function( ply )
 
 	--Make sure the ply is valid.
-	if !IsValid(ply) then return end
+	if not IsValid(ply) then return end
 
 	--Update the player.
 	net.Start("EdgeHUD:DriverInfo")
@@ -493,10 +493,10 @@ local function updateLocked( ent )
 	timer.Simple(0.1,function(  )
 
 		--Make sure that the entity is valid
-		if !IsValid(ent) then return end
+		if not IsValid(ent) then return end
 
 		--MAke sure that the entity is a vehicle.
-		if !ent:IsVehicle() then return end
+		if not ent:IsVehicle() then return end
 
 		--Update the client.
 		net.Start("EdgeHUD:UpdateLocked")
@@ -524,10 +524,10 @@ net.Receive("EdgeHUD:RequestLockUpdate",function( _, ply )
 	local ent = net.ReadEntity()
 
 	--Make sure that the entity is valid
-	if !IsValid(ent) then return end
+	if not IsValid(ent) then return end
 
 	--MAke sure that the entity is a vehicle.
-	if !ent:IsVehicle() then return end
+	if not ent:IsVehicle() then return end
 
 	--Update the client.
 	net.Start("EdgeHUD:UpdateLocked")

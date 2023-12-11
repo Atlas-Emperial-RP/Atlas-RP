@@ -1,8 +1,8 @@
 
-if ( !engine.IsPlayingDemo() ) then return end
+if ( not engine.IsPlayingDemo() ) then return end
 
 local VideoSettings = engine.VideoSettings()
-if ( !VideoSettings ) then return end
+if ( not VideoSettings ) then return end
 
 PrintTable( VideoSettings )
 
@@ -45,10 +45,10 @@ hook.Add( "RenderScene", "RenderForDemo", function ( ViewOrigin, ViewAngles, Vie
 
 	end
 
-	if ( !SmoothedAng ) then SmoothedAng = ViewAngles * 1 end
-	if ( !SmoothedFOV ) then SmoothedFOV = ViewFOV end
-	if ( !SmoothedPos ) then SmoothedPos = ViewOrigin * 1 end
-	if ( !AutoFocusPoint ) then AutoFocusPoint = SmoothedPos * 1 end
+	if ( not SmoothedAng ) then SmoothedAng = ViewAngles * 1 end
+	if ( not SmoothedFOV ) then SmoothedFOV = ViewFOV end
+	if ( not SmoothedPos ) then SmoothedPos = ViewOrigin * 1 end
+	if ( not AutoFocusPoint ) then AutoFocusPoint = SmoothedPos * 1 end
 
 	if ( VideoSettings.viewsmooth > 0 ) then
 		SmoothedAng = LerpAngle( ( 1 - VideoSettings.viewsmooth ) / FramesPerFrame, SmoothedAng, ViewAngles )
@@ -78,7 +78,7 @@ hook.Add( "RenderScene", "RenderForDemo", function ( ViewOrigin, ViewAngles, Vie
 		drawmonitors	= true
 	}
 
-	if ( VideoSettings.dofsteps && VideoSettings.dofpasses ) then
+	if ( VideoSettings.dofsteps and VideoSettings.dofpasses ) then
 
 		local trace = util.TraceHull( {
 			start	= view.origin,

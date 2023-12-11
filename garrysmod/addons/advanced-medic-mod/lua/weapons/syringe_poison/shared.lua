@@ -75,7 +75,7 @@ function SWEP:PrimaryAttack()
 			timer.Simple(1, function() if not IsValid(self) then return end self:Remove() end)
 		end
 		
-	elseif IsValid(ent.ragdoll) && ent.ragdoll:IsDeathRagdoll() && not ent.ragdoll:GetOwner():IsPoisoned() then
+	elseif IsValid(ent.ragdoll) and ent.ragdoll:IsDeathRagdoll() and not ent.ragdoll:GetOwner():IsPoisoned() then
 		
 		self.Weapon:SendWeaponAnim( ACT_VM_PRIMARYATTACK )
 

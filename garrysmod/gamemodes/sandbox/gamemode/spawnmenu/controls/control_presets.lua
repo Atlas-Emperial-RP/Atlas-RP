@@ -21,7 +21,7 @@ function PANEL:Init()
 
 	self.AddButton = vgui.Create( "DImageButton", self )
 	self.AddButton.DoClick = function()
-		if ( !IsValid( self ) ) then return end
+		if ( not IsValid( self ) ) then return end
 
 		self:QuickSavePreset()
 	end
@@ -61,7 +61,7 @@ end
 
 function PANEL:OnSelect( index, value, data )
 
-	if ( !data ) then return end
+	if ( not data ) then return end
 
 	for k, v in pairs( data ) do
 		RunConsoleCommand( k, v )
@@ -81,7 +81,7 @@ end
 
 function PANEL:QuickSavePreset()
 	Derma_StringRequest( "#preset.saveas_title", "#preset.saveas_desc", "", function( text )
-		if ( !text || text:Trim() == "" ) then presets.BadNameAlert() return end
+		if ( not text or text:Trim() == "" ) then presets.BadNameAlert() return end
 
 		if ( presets.Exists( self.m_strPreset, text ) ) then
 			presets.OverwritePresetPrompt( function()
@@ -96,7 +96,7 @@ end
 
 function PANEL:OpenPresetEditor()
 
-	if ( !self.m_strPreset ) then return end
+	if ( not self.m_strPreset ) then return end
 
 	self.Window = vgui.Create( "PresetEditor" )
 	self.Window:MakePopup()

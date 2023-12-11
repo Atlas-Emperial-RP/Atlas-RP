@@ -39,8 +39,8 @@ function ENT:GetPlayerColor()
 	-- before trying to call it!
 	--
 	local owner = self:GetOwner()
-	if ( !IsValid( owner ) ) then return end
-	if ( !owner.GetPlayerColor ) then return end
+	if ( not IsValid( owner ) ) then return end
+	if ( not owner.GetPlayerColor ) then return end
 
 	return owner:GetPlayerColor()
 
@@ -49,7 +49,7 @@ end
 function ENT:ViewModelChanged( vm, old, new )
 
 	-- Ignore other peoples viewmodel changes!
-	if ( vm:GetOwner() != self:GetOwner() ) then return end
+	if ( vm:GetOwner() ~= self:GetOwner() ) then return end
 
 	self:AttachToViewmodel( vm )
 

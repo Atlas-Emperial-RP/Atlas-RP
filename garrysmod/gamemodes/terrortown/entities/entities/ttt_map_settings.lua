@@ -18,7 +18,7 @@ function ENT:KeyValue(k, v)
    elseif k == "cbar_other" then
       Dev(2, "ttt_map_settings: crowbar movelinear unlocking = " .. v)
       GAMEMODE.crowbar_unlocks[OPEN_NOTOGGLE] = (v == "1")
-   elseif k == "plymodel" and v != "" then -- can ignore if empty
+   elseif k == "plymodel" and v ~= "" then -- can ignore if empty
       if util.IsValidModel(v) then
          util.PrecacheModel(v)
          GAMEMODE.force_plymodel = v

@@ -2,14 +2,14 @@
 local meta = FindMetaTable( "Entity" )
 
 -- Return if there's nothing to add on to
-if ( !meta ) then return end
+if ( not meta ) then return end
 
 function meta:GetShouldPlayPickupSound()
-	return self.m_bPlayPickupSound || false
+	return self.m_bPlayPickupSound or false
 end
 
 function meta:SetShouldPlayPickupSound( bPlaySound )
-	self.m_bPlayPickupSound = tobool( bPlaySound ) || false
+	self.m_bPlayPickupSound = tobool( bPlaySound ) or false
 end
 
 --
@@ -21,7 +21,7 @@ function meta:__index( key )
 	-- Search the metatable. We can do this without dipping into C, so we do it first.
 	--
 	local val = meta[ key ]
-	if ( val != nil ) then return val end
+	if ( val ~= nil ) then return val end
 
 	--
 	-- Search the entity table
@@ -29,7 +29,7 @@ function meta:__index( key )
 	local tab = self:GetTable()
 	if ( tab ) then
 		local val = tab[ key ]
-		if ( val != nil ) then return val end
+		if ( val ~= nil ) then return val end
 	end
 
 	--
@@ -59,7 +59,7 @@ if ( SERVER ) then
 	function meta:SetCreator( ply --[[= NULL]] )
 		if ( ply == nil ) then
 			ply = NULL
-		elseif ( !isentity( ply ) ) then
+		elseif ( not isentity( ply ) ) then
 			error( "bad argument #1 to 'SetCreator' (Entity expected, got " .. type( ply ) .. ")", 2 )
 		end
 
@@ -67,7 +67,7 @@ if ( SERVER ) then
 	end
 
 	function meta:GetCreator()
-		return self.m_PlayerCreator || NULL
+		return self.m_PlayerCreator or NULL
 	end
 
 end
@@ -136,12 +136,12 @@ end
 -----------------------------------------------------------]]
 local function DoDieFunction( ent )
 
-	if ( !ent || !ent.OnDieFunctions ) then return end
+	if ( not ent or not ent.OnDieFunctions ) then return end
 
 	for k, v in pairs( ent.OnDieFunctions ) do
 
 		-- Functions aren't saved - so this could be nil if we loaded a game.
-		if ( v && v.Function ) then
+		if ( v and v.Function ) then
 
 			v.Function( ent, unpack( v.Args ) )
 
@@ -156,7 +156,7 @@ hook.Add( "EntityRemoved", "DoDieFunction", DoDieFunction )
 function meta:PhysWake()
 
 	local phys = self:GetPhysicsObject()
-	if ( !IsValid( phys ) ) then return end
+	if ( not IsValid( phys ) ) then return end
 
 	phys:Wake()
 
@@ -167,7 +167,7 @@ local GetColorOriginal = meta.GetColor
 function meta:GetColor()
 
 	-- Backwards comp slower method
-	if ( !GetColorOriginal4 ) then
+	if ( not GetColorOriginal4 ) then
 		return GetColorOriginal( self )
 	end
 
@@ -180,12 +180,12 @@ local SetColorOriginal = meta.SetColor
 function meta:SetColor( col )
 
 	-- Backwards comp slower method
-	if ( !SetColorOriginal4 ) then
+	if ( not SetColorOriginal4 ) then
 		return SetColorOriginal( self, col )
 	end
 
 	-- Even more backwards compat
-	if ( !col ) then
+	if ( not col ) then
 		return SetColorOriginal4( self, 255, 255, 255, 255 )
 	end
 
@@ -196,12 +196,12 @@ end
 function meta:GetChildBones( bone )
 
 	local bonecount = self:GetBoneCount()
-	if ( bonecount == 0 || bonecount < bone ) then return end
+	if ( bonecount == 0 or bonecount < bone ) then return end
 
 	local bones = {}
 
 	for k = 0, bonecount - 1 do
-		if ( self:GetBoneParent( k ) != bone ) then continue end
+		if ( self:GetBoneParent( k ) ~= bone ) then continue end
 		table.insert( bones, k )
 	end
 
@@ -246,7 +246,7 @@ function meta:InstallDataTable()
 		local SetFunc = ent[ "SetDT" .. typename ]
 		local GetFunc = ent[ "GetDT" .. typename ]
 
-		if ( !SetFunc || !GetFunc ) then
+		if ( not SetFunc or not GetFunc ) then
 			MsgN( "Couldn't addvar " , name, " - type ", typename," is invalid!" )
 			return
 		end
@@ -275,9 +275,9 @@ function meta:InstallDataTable()
 	--
 	self.SetupEditing = function( ent, name, keyname, data )
 
-		if ( !data ) then return end
+		if ( not data ) then return end
 
-		if ( !data.title ) then data.title = name end
+		if ( not data.title ) then data.title = name end
 
 		editing[ keyname ] = data
 
@@ -312,7 +312,7 @@ function meta:InstallDataTable()
 
 	self.CallDTVarProxies = function( ent, typename, index, newVal )
 		for name, t in pairs( datatable ) do
-			if ( t.index == index && t.typename == typename ) then
+			if ( t.index == index and t.typename == typename ) then
 				CallProxies( ent, t.Notify, name, self.dt[ name ], newVal )
 				break
 			end
@@ -332,7 +332,7 @@ function meta:InstallDataTable()
 			return self.dt[ name ]
 		end
 
-		if ( !other_data ) then return end
+		if ( not other_data ) then return end
 
 		-- This KeyName stuff is absolutely unnecessary, there's absolutely no reason for it to exist
 		-- But we cannot remove it now because dupes will break. It should've used the "name" variable
@@ -349,7 +349,7 @@ function meta:InstallDataTable()
 	--
 	self.NetworkVarNotify = function( ent, name, func )
 
-		if ( !datatable[ name ] ) then error( "calling NetworkVarNotify on missing network var " .. name ) end
+		if ( not datatable[ name ] ) then error( "calling NetworkVarNotify on missing network var " .. name ) end
 
 		table.insert( datatable[ name ].Notify, func )
 
@@ -374,7 +374,7 @@ function meta:InstallDataTable()
 			return self.dt[ name ][ element ]
 		end
 
-		if ( !other_data ) then return end
+		if ( not other_data ) then return end
 
 		-- This KeyName stuff is absolutely unnecessary, there's absolutely no reason for it to exist
 		-- But we cannot remove it now because dupes will break. It should've used the "name" variable
@@ -390,7 +390,7 @@ function meta:InstallDataTable()
 		key = key:lower()
 
 		local k = keytable[ key ]
-		if ( !k ) then return end
+		if ( not k ) then return end
 
 		local v = util.StringToType( value, k.Type )
 		if ( v == nil ) then return end
@@ -405,7 +405,7 @@ function meta:InstallDataTable()
 		key = key:lower()
 
 		local k = keytable[ key ]
-		if ( !k ) then return end
+		if ( not k ) then return end
 
 		return k.Get( self )
 
@@ -445,7 +445,7 @@ function meta:InstallDataTable()
 	--
 	self.RestoreNetworkVars = function( ent, tab )
 
-		if ( !tab ) then return end
+		if ( not tab ) then return end
 
 		-- Loop this entities data table
 		for k, v in pairs( datatable ) do
@@ -454,7 +454,7 @@ function meta:InstallDataTable()
 			if ( tab[ k ] == nil ) then continue end
 
 			-- Support old saves/dupes with incorrectly saved data
-			if ( v.element && ( isangle( tab[ k ] ) || isvector( tab[ k ] ) ) ) then
+			if ( v.element and ( isangle( tab[ k ] ) or isvector( tab[ k ] ) ) ) then
 				tab[ k ] = tab[ k ][ v.element ]
 			end
 
@@ -485,8 +485,8 @@ function meta:InstallDataTable()
 	--
 	self.EditValue = function( self, variable, value )
 
-		if ( !isstring( variable ) ) then return end
-		if ( !isstring( value ) ) then return end
+		if ( not isstring( variable ) ) then return end
+		if ( not isstring( value ) ) then return end
 
 		--
 		-- It can be called clientside to send a message to the server
@@ -523,15 +523,15 @@ if ( SERVER ) then
 
 		local ent = net.ReadEntity()
 
-		if ( !IsValid( ent ) ) then return end
-		if ( !isfunction( ent.GetEditingData ) ) then return end
-		if ( ent.AdminOnly && !( client:IsAdmin() || game.SinglePlayer() ) ) then return end
+		if ( not IsValid( ent ) ) then return end
+		if ( not isfunction( ent.GetEditingData ) ) then return end
+		if ( ent.AdminOnly and not ( client:IsAdmin() or game.SinglePlayer() ) ) then return end
 
 		local key = net.ReadString()
 
 		-- Is this key in our edit table?
 		local editor = ent:GetEditingData()[ key ]
-		if ( !istable( editor ) ) then return end
+		if ( not istable( editor ) ) then return end
 
 		local val = net.ReadString()
 		hook.Run( "VariableEdited", ent, client, key, val, editor )
@@ -539,11 +539,11 @@ if ( SERVER ) then
 	end )
 
 	function meta:GetUnFreezable()
-		return self.m_bUnFreezable || false
+		return self.m_bUnFreezable or false
 	end
 
 	function meta:SetUnFreezable( bFreeze )
-		self.m_bUnFreezable = tobool( bFreeze ) || false
+		self.m_bUnFreezable = tobool( bFreeze ) or false
 	end
 
 end
@@ -553,7 +553,7 @@ end
 --
 function meta:SetNetworked2VarProxy( name, func )
 
-	if ( !self.NWVarProxies ) then
+	if ( not self.NWVarProxies ) then
 		self.NWVarProxies = {}
 	end
 

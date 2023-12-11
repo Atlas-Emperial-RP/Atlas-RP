@@ -324,7 +324,7 @@ function PANEL:Refresh()
                         break
                     end
 
-                    weaponString = weaponString .. ((weaponString != "" and ", ") or "") .. PROJECT0.FUNC.GetWeaponName( v )
+                    weaponString = weaponString .. ((weaponString ~= "" and ", ") or "") .. PROJECT0.FUNC.GetWeaponName( v )
                 end
 
                 return {

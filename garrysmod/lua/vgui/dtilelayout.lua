@@ -64,7 +64,7 @@ function PANEL:FindFreeTile( x, y, w, h )
 			-- If we're on the first part
 			-- and the line is empty
 			-- add it. It might be too long to fit on anyway
-			if ( i == 1 && self:FitsInTile( i, y, w, h ) ) then
+			if ( i == 1 and self:FitsInTile( i, y, w, h ) ) then
 				return i, y
 			end
 
@@ -89,7 +89,7 @@ end
 
 function PANEL:GetTile( x, y )
 
-	if ( !self.Tiles[y] ) then
+	if ( not self.Tiles[y] ) then
 		return nil
 	end
 
@@ -99,7 +99,7 @@ end
 
 function PANEL:SetTile( x, y, val )
 
-	if ( !self.Tiles[y] ) then
+	if ( not self.Tiles[y] ) then
 		self.Tiles[y] = {}
 	end
 
@@ -128,7 +128,7 @@ function PANEL:LayoutTiles()
 
 	for k, v in ipairs( self:GetChildren() ) do
 
-		if ( !v:IsVisible() ) then continue end
+		if ( not v:IsVisible() ) then continue end
 
 		local w = math.ceil( v:GetWide() / ( tilesize + self:GetSpaceX() ) )
 		local h = math.ceil( v:GetTall() / ( tilesize + self:GetSpaceY() ) )
@@ -157,8 +157,8 @@ function PANEL:PerformLayout()
 
 	local ShouldLayout = false
 
-	if ( self.LastW != self:GetWide() ) then ShouldLayout = true end
-	if ( self.LastH != self:GetTall() ) then ShouldLayout = true end
+	if ( self.LastW ~= self:GetWide() ) then ShouldLayout = true end
+	if ( self.LastH ~= self:GetTall() ) then ShouldLayout = true end
 
 	self.LastW = self:GetWide()
 	self.LastH = self:GetTall()

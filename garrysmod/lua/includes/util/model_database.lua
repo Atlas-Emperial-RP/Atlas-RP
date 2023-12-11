@@ -1,14 +1,14 @@
 --=============================================================================--
 --  ___  ___   _   _   _    __   _   ___ ___ __ __
--- |_ _|| __| / \ | \_/ |  / _| / \ | o \ o \\ V /
---  | | | _| | o || \_/ | ( |_n| o ||   /   / \ / 
---  |_| |___||_n_||_| |_|  \__/|_n_||_|\\_|\\ |_|  2007
+-- |_ _or __| / \ | \_/ |  / _| / \ | o \ o \\ V /
+--  | | | _| | o or \_/ | ( |_n| o or   /   / \ / 
+--  |_| |___or_n_or_| |_|  \__/|_n_or_|\\_|\\ |_|  2007
 --										 
 --=============================================================================--
 
 local DatabasedModels = {}
 
-if ( !sql.TableExists( "modelinfo" ) ) then
+if ( not sql.TableExists( "modelinfo" ) ) then
 
 	sql.Query( [[CREATE TABLE IF NOT EXISTS modelinfo ( name TEXT NOT NULL PRIMARY KEY, 
 														poseparams INTEGER,
@@ -36,7 +36,7 @@ function OnModelLoaded( ModelName, NumPoseParams, NumSeq, NumAttachments, NumBon
 	
 	-- Just in case. Don't want errors spewing all over 
 	--  the place every time a model loads.
-	if ( !sql.TableExists( "modelinfo" ) ) then return end
+	if ( not sql.TableExists( "modelinfo" ) ) then return end
 	
 	local safeModelName = SQLStr( ModelName )
 	

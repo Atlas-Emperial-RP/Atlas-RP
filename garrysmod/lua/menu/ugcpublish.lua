@@ -121,7 +121,7 @@ end
 
 function PANEL:OnRowSelected( rowID, row )
 	-- Create new node, reset the fields
-	if ( !row.WorkshopData ) then
+	if ( not row.WorkshopData ) then
 		self.Publish:SetText( "#ugc_upload.publish" )
 		self.ChangeNotes:SetVisible( false )
 		self.ChangeNotesLabel:SetVisible( false )
@@ -170,10 +170,10 @@ function PANEL:Setup( ugcType, file, imageFile, handler )
 				local num = 0
 				for k, v in pairs( s:GetParent():GetChildren() ) do
 					if ( v:GetChecked() ) then num = num + 1 end
-					if ( v == s || !val ) then continue end
+					if ( v == s or not val ) then continue end
 					v:SetValue( false ) -- Validate that only 1 is selected
 				end
-				if ( !val && num == 0 ) then s:SetValue( true ) end -- Don't allow to unselect the only 1 selected
+				if ( not val and num == 0 ) then s:SetValue( true ) end -- Don't allow to unselect the only 1 selected
 			end
 
 			Derma_Hook( rb.Button, "Paint", "Paint", "RadioButton" )
@@ -207,7 +207,7 @@ function PANEL:UpdateWorkshopItems()
 				a.WorkshopID = id
 				a.WorkshopData = data
 				a.OnRightClick = function( s )
-					if ( !s.WorkshopID ) then return end
+					if ( not s.WorkshopID ) then return end
 
 					steamworks.ViewFile( s.WorkshopID )
 				end
@@ -232,7 +232,7 @@ function PANEL:GetChosenTag()
 end
 
 function PANEL:CheckInput()
-	if ( self.TagsPerType[ self.ugcType ] && !self:GetChosenTag() ) then return self.Publish:SetEnabled( false ) end
+	if ( self.TagsPerType[ self.ugcType ] and not self:GetChosenTag() ) then return self.Publish:SetEnabled( false ) end
 	if ( self.Title:GetText() == "" ) then return self.Publish:SetEnabled( false ) end
 
 	self.Publish:SetEnabled( true )
@@ -265,7 +265,7 @@ function PANEL:DisplayError( err )
 end
 
 function PANEL:OnPublishFinished( wsid, err )
-	if ( !wsid ) then
+	if ( not wsid ) then
 		self:DisplayError( err )
 		return
 	end
@@ -279,7 +279,7 @@ end
 function PANEL:DoPublish()
 	local ChosenTag = self:GetChosenTag()
 
-	if ( self.TagsPerType[ self.ugcType ] && ChosenTag == nil ) then
+	if ( self.TagsPerType[ self.ugcType ] and ChosenTag == nil ) then
 		self:DisplayError( "You must choose a tag!")
 		return
 	end

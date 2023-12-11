@@ -51,13 +51,13 @@ end
 --
 function PANEL:IsEditing()
 
-	return self.Dragging || self.Knob.Depressed
+	return self.Dragging or self.Knob.Depressed
 
 end
 
 function PANEL:SetBackground( img )
 
-	if ( !self.BGImage ) then
+	if ( not self.BGImage ) then
 		self.BGImage = vgui.Create( "DImage", self )
 	end
 
@@ -73,7 +73,7 @@ end
 
 function PANEL:OnCursorMoved( x, y )
 
-	if ( !self.Dragging && !self.Knob.Depressed ) then return end
+	if ( not self.Dragging and not self.Knob.Depressed ) then return end
 
 	local w, h = self:GetSize()
 	local iw, ih = self.Knob:GetSize()
@@ -105,7 +105,7 @@ end
 
 function PANEL:OnMousePressed( mcode )
 
-	if ( !self:IsEnabled() ) then return true end
+	if ( not self:IsEnabled() ) then return true end
 
 	-- When starting dragging with not pressing on the knob.
 	self.Knob.Hovered = true
@@ -137,11 +137,11 @@ function PANEL:PerformLayout()
 
 		w = w - iw
 		h = h - ih
-		self.Knob:SetPos( ( self.m_fSlideX || 0 ) * w, ( self.m_fSlideY || 0 ) * h )
+		self.Knob:SetPos( ( self.m_fSlideX or 0 ) * w, ( self.m_fSlideY or 0 ) * h )
 
 	else
 
-		self.Knob:SetPos( ( self.m_fSlideX || 0 ) * w - iw * 0.5, ( self.m_fSlideY || 0 ) * h - ih * 0.5 )
+		self.Knob:SetPos( ( self.m_fSlideX or 0 ) * w - iw * 0.5, ( self.m_fSlideY or 0 ) * h - ih * 0.5 )
 
 	end
 
@@ -174,7 +174,7 @@ function PANEL:SetSlideY( i )
 end
 
 function PANEL:GetDragging()
-	return self.Dragging || self.Knob.Depressed
+	return self.Dragging or self.Knob.Depressed
 end
 
 function PANEL:OnValueChanged( x, y )
@@ -206,7 +206,7 @@ function PANEL:SetConVarY( strConVar )
 end
 function PANEL:ConVarChanged( newValue, cvar )
 
-	if ( !cvar || cvar:len() < 2 ) then return end
+	if ( not cvar or cvar:len() < 2 ) then return end
 
 	GetConVar( cvar ):SetFloat( newValue )
 
@@ -217,12 +217,12 @@ function PANEL:ConVarChanged( newValue, cvar )
 end
 function PANEL:ConVarXNumberThink()
 
-	if ( !self.m_strConVarX || #self.m_strConVarX < 2 ) then return end
+	if ( not self.m_strConVarX or #self.m_strConVarX < 2 ) then return end
 
 	local numValue = GetConVarNumber( self.m_strConVarX )
 
 	-- In case the convar is a "nan"
-	if ( numValue != numValue ) then return end
+	if ( numValue ~= numValue ) then return end
 	if ( self.m_strConVarXValue == numValue ) then return end
 
 	self.m_strConVarXValue = numValue
@@ -231,12 +231,12 @@ function PANEL:ConVarXNumberThink()
 end
 function PANEL:ConVarYNumberThink()
 
-	if ( !self.m_strConVarY || #self.m_strConVarY < 2 ) then return end
+	if ( not self.m_strConVarY or #self.m_strConVarY < 2 ) then return end
 
 	local numValue = GetConVarNumber( self.m_strConVarY )
 
 	-- In case the convar is a "nan"
-	if ( numValue != numValue ) then return end
+	if ( numValue ~= numValue ) then return end
 	if ( self.m_strConVarYValue == numValue ) then return end
 
 	self.m_strConVarYValue = numValue
@@ -264,7 +264,7 @@ end
 
 function PANEL:GetNotchColor()
 
-	return self.m_cNotchClr || self:GetSkin().colNumSliderNotch
+	return self.m_cNotchClr or self:GetSkin().colNumSliderNotch
 
 end
 

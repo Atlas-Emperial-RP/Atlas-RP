@@ -39,19 +39,19 @@ end
 
 function PANEL:SetEnabled( bEnabled )
 
-	self:SetDisabled( !bEnabled )
+	self:SetDisabled( not bEnabled )
 
 end
 
 function PANEL:IsEnabled()
 
-	return !self:GetDisabled()
+	return not self:GetDisabled()
 
 end
 
 function PANEL:OnMousePressed( mousecode )
 
-	if ( self:IsSelectionCanvas() && !dragndrop.IsDragging() ) then
+	if ( self:IsSelectionCanvas() and not dragndrop.IsDragging() ) then
 		self:StartBoxSelection()
 		return
 	end

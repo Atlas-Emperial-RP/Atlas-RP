@@ -22,10 +22,10 @@ TOOL.Information = {
 
 function TOOL:LeftClick( trace )
 
-	if ( IsValid( trace.Entity ) && trace.Entity:IsPlayer() ) then return end
+	if ( IsValid( trace.Entity ) and trace.Entity:IsPlayer() ) then return end
 
 	-- If there's no physics object then we can't constraint it!
-	if ( SERVER && !util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
+	if ( SERVER and not util.IsValidPhysicsObject( trace.Entity, trace.PhysicsBone ) ) then return false end
 
 	local iNum = self:NumObjects()
 
@@ -40,7 +40,7 @@ function TOOL:LeftClick( trace )
 			return true
 		end
 
-		if ( ( !IsValid( self:GetEnt( 1 ) ) && !IsValid( self:GetEnt( 2 ) ) ) || iNum > 1 ) then
+		if ( ( not IsValid( self:GetEnt( 1 ) ) and not IsValid( self:GetEnt( 2 ) ) ) or iNum > 1 ) then
 
 			self:ClearObjects()
 			return true
@@ -126,28 +126,28 @@ function TOOL:RightClick( trace )
 	end
 
 	local tr = util.TraceLine( tr )
-	if ( !tr.Hit ) then
+	if ( not tr.Hit ) then
 		self:ClearObjects()
 		return false
 	end
 
 	-- Don't try to constrain world to world
-	if ( trace.HitWorld && tr.HitWorld ) then
+	if ( trace.HitWorld and tr.HitWorld ) then
 		self:ClearObjects()
 		return false
 	end
 
-	if ( IsValid( trace.Entity ) && trace.Entity:IsPlayer() ) then
+	if ( IsValid( trace.Entity ) and trace.Entity:IsPlayer() ) then
 		self:ClearObjects()
 		return false
 	end
-	if ( IsValid( tr.Entity ) && tr.Entity:IsPlayer() ) then
+	if ( IsValid( tr.Entity ) and tr.Entity:IsPlayer() ) then
 		self:ClearObjects()
 		return false
 	end
 
 	-- Check to see if the player can create a muscle constraint with the entity in the trace
-	if ( !hook.Run( "CanTool", self:GetOwner(), tr, "muscle", self, 2 ) ) then
+	if ( not hook.Run( "CanTool", self:GetOwner(), tr, "muscle", self, 2 ) ) then
 		self:ClearObjects()
 		return false
 	end
@@ -208,7 +208,7 @@ end
 
 function TOOL:Reload( trace )
 
-	if ( !IsValid( trace.Entity ) || trace.Entity:IsPlayer() ) then return false end
+	if ( not IsValid( trace.Entity ) or trace.Entity:IsPlayer() ) then return false end
 	if ( CLIENT ) then return true end
 
 	return constraint.RemoveConstraints( trace.Entity, "Muscle" )

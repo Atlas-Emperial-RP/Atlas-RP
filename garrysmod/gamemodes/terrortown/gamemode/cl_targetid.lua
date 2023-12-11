@@ -53,7 +53,7 @@ function GM:PostDrawTranslucentRenderables()
 
       for i=1, #plys do
          ply = plys[i]
-         if ply:IsActiveTraitor() and ply != client then
+         if ply:IsActiveTraitor() and ply ~= client then
             pos = ply:GetPos()
             pos.z = pos.z + 74
 
@@ -89,7 +89,7 @@ end
 ---- Spectator labels
 
 local function DrawPropSpecLabels(client)
-   if (not client:IsSpec()) and (GetRoundState() != ROUND_POST) then return end
+   if (not client:IsSpec()) and (GetRoundState() ~= ROUND_POST) then return end
 
    surface.SetFont("TabLarge")
 
@@ -342,7 +342,7 @@ function GM:HUDDrawTargetID()
    elseif target_detective then
       text = L.target_detective
       clr = COLOR_BLUE
-   elseif ent.sb_tag and ent.sb_tag.txt != nil then
+   elseif ent.sb_tag and ent.sb_tag.txt ~= nil then
       text = L[ ent.sb_tag.txt ]
       clr = ent.sb_tag.color
    elseif target_corpse and client:IsActiveTraitor() and CORPSE.GetCredits(ent, 0) > 0 then

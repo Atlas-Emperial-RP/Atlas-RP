@@ -5,7 +5,7 @@ EdgeHUD.RegistredLanguages = {}
 function EdgeHUD.RegisterLanguage( tbl )
 
 	--Check so we have all the required arguments.
-	if !tbl or !tbl.Name or !tbl.Author or !tbl.CompatibleVersion then
+	if not tbl or not tbl.Name or not tbl.Author or not tbl.CompatibleVersion then
 		ErrorNoHalt("Failed to register language. Missing language registration argument(s).\nRequired Arguments:\n	Name: Name of the language.\n	Author: Author of the language.\n	CompatibleVersion: Latest version that the language is compatible with.")
 		return
 	end
@@ -25,7 +25,7 @@ function EdgeHUD.AddPhrase( tbl, phraseID, phrase )
 	if phrase == nil then return end
 
 	--Check so we have all the required arguments.
-	if !tbl or !phraseID then
+	if not tbl or not phraseID then
 		ErrorNoHalt("Failed to add phrase. Missing argument(s).\nRequired Arguments:\n	1: Language table from language registration.\n	2: An phraseID.\n	3: The phrase itself.")
 		return
 	end
@@ -42,7 +42,7 @@ function EdgeHUD.GetPhrase( phraseID )
 	local curLang = EdgeHUD.Configuration.GetConfigValue( "Language" )
 
 	--Check if the phrase exists.
-	if !EdgeHUD.RegistredLanguages[curLang][phraseID] then
+	if not EdgeHUD.RegistredLanguages[curLang][phraseID] then
 		curLang = "English"
 	end
 

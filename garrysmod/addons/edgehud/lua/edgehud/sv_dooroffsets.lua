@@ -6,7 +6,7 @@ Data Management
 EdgeHUD.DoorOffsets = {}
 
 -- Check if the dooroffset folder exists.
-if !file.Exists("edgehud/dooroffsets","DATA") then
+if not file.Exists("edgehud/dooroffsets","DATA") then
 
 	-- Create the folder.
 	file.CreateDir("edgehud/dooroffsets")
@@ -42,7 +42,7 @@ function EdgeHUD.LoadDoorOffsets( )
 		data = util.JSONToTable(data)
 
 		-- Make sure that the conversion was successful.
-		if !data or !istable(data) then
+		if not data or not istable(data) then
 
 			--Print a error message.
 			print("[EdgeHUD] : [" .. EdgeHUD.Version .. "] : Failed to load overriden door-offsets for map. (" .. game.GetMap() .. ")")
@@ -100,10 +100,10 @@ net.Receive("EdgeHUD:RequestDoorOffsets", function( _, ply )
 	for k,v in pairs(requiredEntities) do
 
 		-- Make sure the value is a entity and that it's valid.
-		if !IsValid(v) or !isentity(v) then continue end
+		if not IsValid(v) or not isentity(v) then continue end
 
 		-- Check if we have any saved dooroffsets for the door.
-		if !EdgeHUD.DoorOffsets[v:MapCreationID()] then continue end
+		if not EdgeHUD.DoorOffsets[v:MapCreationID()] then continue end
 
 		-- Add the offsets to the data that we should send.
 		toSend[v] = EdgeHUD.DoorOffsets[v:MapCreationID()]
@@ -138,7 +138,7 @@ local groupsAccess = string.Explode(";", configTxt)
 local function hasAccess( target )
 
 	-- Check if we have access.
-	if EdgeHUD.Owner != target:SteamID64() and !table.HasValue(groupsAccess, target:GetUserGroup()) then
+	if EdgeHUD.Owner ~= target:SteamID64() and not table.HasValue(groupsAccess, target:GetUserGroup()) then
 		return false
 	end
 
@@ -156,7 +156,7 @@ util.AddNetworkString("EdgeHUD:DoorUpdated")
 net.Receive("EdgeHUD:SetDoorOffset",function( _, ply )
 
 	-- Make sure that the player has access.
-	if !hasAccess( ply ) then return end
+	if not hasAccess( ply ) then return end
 
 	-- Make sure the player has no cooldown.
 	if EdgeHUD.HasNetCooldown( ply ) then return end
@@ -166,7 +166,7 @@ net.Receive("EdgeHUD:SetDoorOffset",function( _, ply )
 	local receivedData = net.ReadTable() or {}
 
 	-- MAke sure that the door is valid and a door.
-	if !IsValid(door) or !IsEntity(door) or !door:isDoor() then return end
+	if not IsValid(door) or not IsEntity(door) or not door:isDoor() then return end
 
 	local allowedKeys = {"pi", "ya", "ro", "x", "y", "z"}
 
@@ -174,10 +174,10 @@ net.Receive("EdgeHUD:SetDoorOffset",function( _, ply )
 	for k,v in pairs(receivedData) do
 
 		-- Make sure the key is allowed.
-		if !table.HasValue(allowedKeys,k) then return end
+		if not table.HasValue(allowedKeys,k) then return end
 
 		-- Make sure that the value is a number.
-		if !isnumber(v) then return end
+		if not isnumber(v) then return end
 
 	end
 
@@ -194,7 +194,7 @@ net.Receive("EdgeHUD:SetDoorOffset",function( _, ply )
 		data = util.JSONToTable(data)
 
 		-- Make sure that the conversion was successful.
-		if !data or !istable(data) then return end
+		if not data or not istable(data) then return end
 
 	end
 
@@ -218,7 +218,7 @@ end)
 net.Receive("EdgeHUD:ResetDoorOffset",function( _, ply )
 
 	-- Make sure that the player has access.
-	if !hasAccess( ply ) then return end
+	if not hasAccess( ply ) then return end
 
 	-- Make sure the player has no cooldown.
 	if EdgeHUD.HasNetCooldown( ply ) then return end
@@ -227,10 +227,10 @@ net.Receive("EdgeHUD:ResetDoorOffset",function( _, ply )
 	local door = net.ReadEntity()
 
 	-- MAke sure that the door is valid and a door.
-	if !IsValid(door) or !IsEntity(door) or !door:isDoor() then return end
+	if not IsValid(door) or not IsEntity(door) or not door:isDoor() then return end
 
 	-- Check if we have any overriden values.
-	if !file.Exists(dataPath,"DATA") then return end
+	if not file.Exists(dataPath,"DATA") then return end
 
 	-- Read the overriden values.
 	local data = file.Read(dataPath,"DATA")
@@ -239,7 +239,7 @@ net.Receive("EdgeHUD:ResetDoorOffset",function( _, ply )
 	data = util.JSONToTable(data)
 
 	-- Make sure that the conversion was successful.
-	if !data or !istable(data) then return end
+	if not data or not istable(data) then return end
 
 	-- Remove the entity from the data.
 	data[door:MapCreationID()] = nil

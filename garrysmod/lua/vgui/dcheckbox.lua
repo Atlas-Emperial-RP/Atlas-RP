@@ -43,7 +43,7 @@ end
 
 function PANEL:Toggle()
 
-	self:SetValue( !self:GetChecked() )
+	self:SetValue( not self:GetChecked() )
 
 end
 
@@ -114,7 +114,7 @@ end
 
 function PANEL:PerformLayout()
 
-	local x = self.m_iIndent || 0
+	local x = self.m_iIndent or 0
 
 	self.Button:SetSize( 15, 15 )
 	self.Button:SetPos( x, math.floor( ( self:GetTall() - self.Button:GetTall() ) / 2 ) )

@@ -4,7 +4,7 @@ DermaAnimation.__index = DermaAnimation
 
 function DermaAnimation:Run()
 
-	if ( !self.Running ) then return end
+	if ( not self.Running ) then return end
 
 	local time = SysTime()
 	local delta = ( time - self.StartTime ) / self.Length
@@ -43,7 +43,7 @@ end
 
 function DermaAnimation:Stop()
 
-	if ( !self.Running ) then return end
+	if ( not self.Running ) then return end
 
 	self.Finished = true
 	self.Running = nil

@@ -39,7 +39,7 @@ end
 function PlayerStartDriving( ply, ent, mode )
 
 	local method = Type[mode]
-	if ( !method ) then ErrorNoHalt( "Unknown drive type " .. ( mode ) .. "!\n" ) return end
+	if ( not method ) then ErrorNoHalt( "Unknown drive type " .. ( mode ) .. "!\n" ) return end
 
 	local id = util.NetworkStringToID( mode )
 
@@ -58,7 +58,7 @@ function GetMethod( ply )
 	--
 	-- Not driving, return immediately
 	--
-	if ( !ply:IsDrivingEntity() ) then return end
+	if ( not ply:IsDrivingEntity() ) then return end
 
 	local ent = ply:GetDrivingEntity()
 	local modeid = ply:GetDrivingMode()
@@ -66,25 +66,25 @@ function GetMethod( ply )
 	--
 	-- Entity is invalid or mode isn't set - return out
 	--
-	if ( !IsValid( ent ) || modeid == 0 ) then return end
+	if ( not IsValid( ent ) or modeid == 0 ) then return end
 
 	--
 	-- Have we already got a drive method? If so then reuse.
 	--
 	local method = ply.m_CurrentDriverMethod
-	if ( method && method.Entity == ent && method.ModeID == modeid ) then return method end
+	if ( method and method.Entity == ent and method.ModeID == modeid ) then return method end
 
 	--
 	-- No method - lets create one. Get the string from the modeid.
 	--
 	local modename = util.NetworkIDToString( modeid )
-	if ( !modename ) then return end
+	if ( not modename ) then return end
 
 	--
 	-- Get that type. Fail if we don't have the type.
 	--
 	local type = Type[ modename ]
-	if ( !type ) then return end
+	if ( not type ) then return end
 
 	local method = {}
 	method.Entity = ent
@@ -102,7 +102,7 @@ end
 
 function DestroyMethod( pl )
 
-	if ( !IsValid( pl ) ) then return end
+	if ( not IsValid( pl ) ) then return end
 
 	pl.m_CurrentDriverMethod = nil
 
@@ -141,7 +141,7 @@ end
 function CreateMove( cmd )
 
 	local method = GetMethod( LocalPlayer() )
-	if ( !method ) then return end
+	if ( not method ) then return end
 
 	method:SetupControls( cmd )
 	return true
@@ -154,7 +154,7 @@ end
 function CalcView( ply, view )
 
 	local method = GetMethod( ply )
-	if ( !method ) then return end
+	if ( not method ) then return end
 
 	method:CalcView( view )
 	return true
@@ -169,7 +169,7 @@ end
 function StartMove( ply, mv, cmd )
 
 	local method = GetMethod( ply )
-	if ( !method ) then return end
+	if ( not method ) then return end
 
 	method:StartMove( mv, cmd )
 	return true
@@ -183,7 +183,7 @@ end
 function Move( ply, mv )
 
 	local method = GetMethod( ply )
-	if ( !method ) then return end
+	if ( not method ) then return end
 
 	method:Move( mv )
 	return true
@@ -196,7 +196,7 @@ end
 function FinishMove( ply, mv )
 
 	local method = GetMethod( ply )
-	if ( !method ) then return end
+	if ( not method ) then return end
 
 	method:FinishMove( mv )
 
@@ -216,14 +216,14 @@ function End( ply, ent )
 	--
 	-- If the player is valid then set the view entity to nil
 	--
-	if ( SERVER && IsValid( ply ) ) then
+	if ( SERVER and IsValid( ply ) ) then
 
-		if ( ply.m_PreDriveEyeAngles != nil ) then
+		if ( ply.m_PreDriveEyeAngles ~= nil ) then
 			ply:SetEyeAngles( ply.m_PreDriveEyeAngles )
 			ply.m_PreDriveEyeAngles = nil
 		end
 
-		if ( ply.m_PreDriveObserveMode != nil ) then
+		if ( ply.m_PreDriveObserveMode ~= nil ) then
 			ply:SetObserverMode( ply.m_PreDriveObserveMode )
 			ply.m_PreDriveObserveMode = nil
 		end

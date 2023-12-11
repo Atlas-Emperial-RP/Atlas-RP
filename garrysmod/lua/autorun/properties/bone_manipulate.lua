@@ -8,7 +8,7 @@ properties.Add( "bone_manipulate", {
 
 	Filter = function( self, ent, ply )
 
-		if ( !gamemode.Call( "CanProperty", ply, "bonemanipulate", ent ) ) then return false end
+		if ( not gamemode.Call( "CanProperty", ply, "bonemanipulate", ent ) ) then return false end
 		if ( IsValid( ent.AttachedEntity ) ) then ent = ent.AttachedEntity end -- If our ent has an attached entity, we want to use and modify its bones instead
 
 		local bonecount = ent:GetBoneCount()
@@ -31,9 +31,9 @@ properties.Add( "bone_manipulate", {
 	Receive = function( self, length, ply )
 
 		local ent = net.ReadEntity()
-		if ( !IsValid( ent ) ) then return end
-		if ( !properties.CanBeTargeted( ent, ply ) ) then return end
-		if ( !self:Filter( ent, ply ) ) then return end
+		if ( not IsValid( ent ) ) then return end
+		if ( not properties.CanBeTargeted( ent, ply ) ) then return end
+		if ( not self:Filter( ent, ply ) ) then return end
 
 		ent.widget = ents.Create( "widget_bones" )
 		ent.widget:Setup( ent )
@@ -79,7 +79,7 @@ properties.Add( "bone_manipulate_end", {
 
 		if ( IsValid( ent.AttachedEntity ) ) then ent = ent.AttachedEntity end -- If our ent has an attached entity, we want to use and modify its bones instead
 
-		return ents.FindByClassAndParent( "widget_bones", ent ) != nil
+		return ents.FindByClassAndParent( "widget_bones", ent ) ~= nil
 
 	end,
 
@@ -96,8 +96,8 @@ properties.Add( "bone_manipulate_end", {
 	Receive = function( self, length, ply )
 
 		local ent = net.ReadEntity()
-		if ( !IsValid( ent ) ) then return end
-		if ( !IsValid( ent.widget ) ) then return end
+		if ( not IsValid( ent ) ) then return end
+		if ( not IsValid( ent.widget ) ) then return end
 
 		ent.widget:Remove()
 
@@ -113,7 +113,7 @@ local widget_bonemanip_move = {
 		if ( CLIENT ) then return end
 
 		local ent = self:GetParent()
-		if ( !IsValid( ent ) ) then return end
+		if ( not IsValid( ent ) ) then return end
 
 		local bone = self:GetParentAttachment()
 		if ( bone <= 0 ) then return end
@@ -135,7 +135,7 @@ local widget_bonemanip_move = {
 	CalcAbsolutePosition = function( self, v, a )
 
 		local ent = self:GetParent()
-		if ( !IsValid( ent ) ) then return end
+		if ( not IsValid( ent ) ) then return end
 
 		local bone = ent:GetBoneParent( self:GetParentAttachment() )
 		if ( bone <= 0 ) then return end
@@ -158,7 +158,7 @@ local widget_bonemanip_rotate = {
 		if ( CLIENT ) then return end
 
 		local ent = self:GetParent()
-		if ( !IsValid( ent ) ) then return end
+		if ( not IsValid( ent ) ) then return end
 
 		local bone = self:GetParentAttachment()
 		if ( bone <= 0 ) then return end
@@ -185,7 +185,7 @@ local widget_bonemanip_scale = {
 		if ( CLIENT ) then return end
 
 		local ent = self:GetParent()
-		if ( !IsValid( ent ) ) then return end
+		if ( not IsValid( ent ) ) then return end
 
 		local bone = self:GetParentAttachment()
 		if ( bone <= 0 ) then return end
@@ -208,7 +208,7 @@ local widget_bonemanip_scale = {
 	CalcAbsolutePosition = function( self, v, a )
 
 		local ent = self:GetParent()
-		if ( !IsValid( ent ) ) then return end
+		if ( not IsValid( ent ) ) then return end
 
 		local bone = self:GetParentAttachment()
 		if ( bone <= 0 ) then return end

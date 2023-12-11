@@ -54,7 +54,7 @@ function ENT:OnTakeDamage( dmginfo )
 end
 
 function ENT:Toggle()
-	self:SetOn( !self:GetOn() )
+	self:SetOn( not self:GetOn() )
 end
 
 function ENT:Think()
@@ -63,7 +63,7 @@ function ENT:Think()
 
 	if ( CLIENT ) then
 
-		if ( !self:GetOn() ) then return end
+		if ( not self:GetOn() ) then return end
 
 		local noworld = self:GetLightWorld()
 		local dlight = DynamicLight( self:EntIndex(), noworld )
@@ -75,7 +75,7 @@ function ENT:Think()
 			local size = self:GetLightSize()
 			local brght = self:GetBrightness()
 			-- Clamp for multiplayer
-			if ( !game.SinglePlayer() ) then
+			if ( not game.SinglePlayer() ) then
 				size = math.Clamp( size, 0, 1024 )
 				brght = math.Clamp( brght, 0, 6 )
 			end
@@ -105,12 +105,12 @@ end
 local matLight = Material( "sprites/light_ignorez" )
 function ENT:DrawEffects()
 
-	if ( !self:GetOn() ) then return end
+	if ( not self:GetOn() ) then return end
 
 	local LightPos = self:GetPos()
 
 	local Visibile = util.PixelVisible( LightPos, 4, self.PixVis )
-	if ( !Visibile || Visibile < 0.1 ) then return end
+	if ( not Visibile or Visibile < 0.1 ) then return end
 
 	local c = self:GetColor()
 	local Alpha = 255 * Visibile

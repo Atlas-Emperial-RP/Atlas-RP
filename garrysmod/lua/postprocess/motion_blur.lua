@@ -38,7 +38,7 @@ function DrawMotionBlur( addalpha, drawalpha, delay )
 	mat_MotionBlur:SetFloat( "$alpha", drawalpha )
 	mat_MotionBlur:SetTexture( "$basetexture", tex_MotionBlur )
 
-	if ( NextDraw < CurTime() && addalpha > 0 ) then
+	if ( NextDraw < CurTime() and addalpha > 0 ) then
 
 		NextDraw = CurTime() + delay
 
@@ -62,8 +62,8 @@ end
 
 hook.Add( "RenderScreenspaceEffects", "RenderMotionBlur", function()
 
-	if ( !pp_motionblur:GetBool() ) then return end
-	if ( !GAMEMODE:PostProcessPermitted( "motion blur" ) ) then return end
+	if ( not pp_motionblur:GetBool() ) then return end
+	if ( not GAMEMODE:PostProcessPermitted( "motion blur" ) ) then return end
 
 	DrawMotionBlur( pp_motionblur_addalpha:GetFloat(), pp_motionblur_drawalpha:GetFloat(), pp_motionblur_delay:GetFloat() )
 

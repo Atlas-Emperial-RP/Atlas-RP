@@ -361,7 +361,7 @@ function PANEL:CreateConfigPopup( valueKey, values )
             weaponField:Remove() 
         end
 
-        if( configItem.Type != 3 ) then return end
+        if( configItem.Type ~= 3 ) then return end
 
         local weaponEntryH = PROJECT0.FUNC.ScreenScale( 30 )
 
@@ -501,7 +501,7 @@ function PANEL:CreateConfigPopup( valueKey, values )
         local items = cosmeticTypes[configItem.Type].GetItemList()
         ChangeItemVariable( "ItemID", items[1][1] )
 
-        if( index != 3 and configItem.Weapons ) then
+        if( index ~= 3 and configItem.Weapons ) then
             ChangeItemVariable( "Weapons", nil )
         elseif( index == 3 and not configItem.Weapons ) then
             ChangeItemVariable( "Weapons", {} )

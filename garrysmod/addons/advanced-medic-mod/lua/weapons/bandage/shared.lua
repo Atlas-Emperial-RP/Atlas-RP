@@ -66,7 +66,7 @@ function SWEP:PrimaryAttack()
 	
 	if not IsValid(ent) or ent:GetPos():Distance( self.Owner:GetPos() ) > 200 then return end
 	
-	if ent:IsPlayer() && ent:IsBleeding() then
+	if ent:IsPlayer() and ent:IsBleeding() then
 
 		self.Weapon:SendWeaponAnim( ACT_VM_PRIMARYATTACK )
 
@@ -79,7 +79,7 @@ function SWEP:PrimaryAttack()
 			timer.Simple(1.3, function() if not IsValid(self) then return end self:Remove() end)
 		end
 		
-	elseif ent:IsDeathRagdoll() && ent:GetOwner():IsBleeding() then
+	elseif ent:IsDeathRagdoll() and ent:GetOwner():IsBleeding() then
 		
 		self.Weapon:SendWeaponAnim( ACT_VM_PRIMARYATTACK )
 		
@@ -96,7 +96,7 @@ function SWEP:PrimaryAttack()
 			timer.Simple(1, function() if not IsValid(self) then return end self:Remove() end)
 		end
 		
-	elseif IsValid(ent.ragdoll) && ent.ragdoll:IsDeathRagdoll() && ent.ragdoll:GetOwner():IsBleeding() then
+	elseif IsValid(ent.ragdoll) and ent.ragdoll:IsDeathRagdoll() and ent.ragdoll:GetOwner():IsBleeding() then
 		
 		self.Weapon:SendWeaponAnim( ACT_VM_PRIMARYATTACK )
 		

@@ -253,7 +253,7 @@ if CLIENT then
 
    function SWEP:UpdateGhost(pos, c, a)
       if IsValid(self.Ghost) then
-         if self.Ghost:GetPos() != pos then
+         if self.Ghost:GetPos() ~= pos then
             self.Ghost:SetPos(pos)
             local ang = LocalPlayer():GetAimVector():Angle()
             ang:RotateAroundAxis(ang:Right(), 90)

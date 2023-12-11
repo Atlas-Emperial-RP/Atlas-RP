@@ -16,7 +16,7 @@ local C_Material = Material
 
 function Material( name, words )
 
-	if ( !words ) then return C_Material( name ) end
+	if ( not words ) then return C_Material( name ) end
 
 	local str = (words:find("vertexlitgeneric") and "1" or "0")
 	str = str .. (words:find("nocull") and "1" or "0")
@@ -35,10 +35,10 @@ end
 -----------------------------------------------------------]]
 function IsTableOfEntitiesValid( tab )
 
-	if ( !tab ) then return false end
+	if ( not tab ) then return false end
 
 	for k, v in pairs( tab ) do
-		if ( !IsValid( v ) ) then return false end
+		if ( not IsValid( v ) ) then return false end
 	end
 
 	return true
@@ -64,7 +64,7 @@ function PrintTable( t, indent, done )
 	local keys = table.GetKeys( t )
 
 	table.sort( keys, function( a, b )
-		if ( isnumber( a ) && isnumber( b ) ) then return a < b end
+		if ( isnumber( a ) and isnumber( b ) ) then return a < b end
 		return tostring( a ) < tostring( b )
 	end )
 
@@ -75,7 +75,7 @@ function PrintTable( t, indent, done )
 		local value = t[ key ]
 		Msg( string.rep( "\t", indent ) )
 
-		if  ( istable( value ) && !done[ value ] ) then
+		if  ( istable( value ) and not done[ value ] ) then
 
 			done[ value ] = true
 			Msg( key, ":\n" )
@@ -96,8 +96,8 @@ end
 	Returns a random vector
 -----------------------------------------------------------]]
 function VectorRand( min, max )
-	min = min || -1
-	max = max || 1
+	min = min or -1
+	max = max or 1
 	return Vector( math.Rand( min, max ), math.Rand( min, max ), math.Rand( min, max ) )
 end
 
@@ -105,7 +105,7 @@ end
 	Returns a random angle
 -----------------------------------------------------------]]
 function AngleRand( min, max )
-	return Angle( math.Rand( min || -90, max || 90 ), math.Rand( min || -180, max || 180 ), math.Rand( min || -180, max || 180 ) )
+	return Angle( math.Rand( min or -90, max or 90 ), math.Rand( min or -180, max or 180 ), math.Rand( min or -180, max or 180 ) )
 end
 
 --[[---------------------------------------------------------
@@ -180,7 +180,7 @@ FORCE_VECTOR	= 6
 -----------------------------------------------------------]]
 function AccessorFunc( tab, varname, name, iForce )
 
-	if ( !tab ) then debug.Trace() end
+	if ( not tab ) then debug.Trace() end
 
 	tab[ "Get" .. name ] = function( self ) return self[ varname ] end
 
@@ -223,10 +223,10 @@ end
 -----------------------------------------------------------]]
 function IsValid( object )
 
-	if ( !object ) then return false end
+	if ( not object ) then return false end
 
 	local isvalid = object.IsValid
-	if ( !isvalid ) then return false end
+	if ( not isvalid ) then return false end
 
 	return isvalid( object )
 
@@ -237,7 +237,7 @@ end
 -----------------------------------------------------------]]
 function SafeRemoveEntity( ent )
 
-	if ( !IsValid( ent ) || ent:IsPlayer() ) then return end
+	if ( not IsValid( ent ) or ent:IsPlayer() ) then return end
 
 	ent:Remove()
 
@@ -248,7 +248,7 @@ end
 -----------------------------------------------------------]]
 function SafeRemoveEntityDelayed( ent, timedelay )
 
-	if ( !IsValid( ent ) || ent:IsPlayer() ) then return end
+	if ( not IsValid( ent ) or ent:IsPlayer() ) then return end
 
 	timer.Simple( timedelay, function() SafeRemoveEntity( ent ) end )
 
@@ -270,7 +270,7 @@ end
 	Convert Var to Bool
 -----------------------------------------------------------]]
 function tobool( val )
-	if ( val == nil || val == false || val == 0 || val == "0" || val == "false" ) then return false end
+	if ( val == nil or val == false or val == 0 or val == "0" or val == "false" ) then return false end
 	return true
 end
 
@@ -286,7 +286,7 @@ function IsUselessModel( modelname )
 
 	local modelname = modelname:lower()
 
-	if ( !modelname:find( ".mdl", 1, true ) ) then return true end
+	if ( not modelname:find( ".mdl", 1, true ) ) then return true end
 
 	for k, v in ipairs( UselessModels ) do
 		if ( modelname:find( v, 1, true ) ) then
@@ -380,7 +380,7 @@ function IsMounted( name )
 
 	for k, v in pairs( games ) do
 
-		if ( !v.mounted ) then continue end
+		if ( not v.mounted ) then continue end
 
 		if ( v.depot == name ) then return true end
 		if ( v.folder == name ) then return true end
@@ -428,7 +428,7 @@ if ( CLIENT ) then
 		local x, y = gui.MousePos()
 
 		-- If the cursor isn't visible it will return 0,0 ignore it.
-		if ( x == 0 && y == 0 ) then return end
+		if ( x == 0 and y == 0 ) then return end
 
 		StoredCursorPos.x, StoredCursorPos.y = x, y
 
@@ -436,7 +436,7 @@ if ( CLIENT ) then
 
 	function RestoreCursorPosition()
 
-		if ( !StoredCursorPos.x || !StoredCursorPos.y ) then return end
+		if ( not StoredCursorPos.x or not StoredCursorPos.y ) then return end
 		input.SetCursorPos( StoredCursorPos.x, StoredCursorPos.y )
 
 	end
@@ -450,7 +450,7 @@ function CreateClientConVar( name, default, shouldsave, userdata, helptext, min,
 
 	local iFlags = 0
 
-	if ( shouldsave || shouldsave == nil ) then
+	if ( shouldsave or shouldsave == nil ) then
 		iFlags = bit.bor( iFlags, FCVAR_ARCHIVE )
 	end
 

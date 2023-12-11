@@ -10,7 +10,7 @@ ActiveList = {}
 --
 function ShouldOverrideProxy( name )
 
-	return ProxyList[ name ] != nil
+	return ProxyList[ name ] ~= nil
 
 end
 
@@ -19,10 +19,10 @@ end
 --
 function Add( tbl )
 
-	if ( !tbl.name ) then return; end
-	if ( !tbl.bind ) then return; end
+	if ( not tbl.name ) then return; end
+	if ( not tbl.bind ) then return; end
 
-	local bReloading = ProxyList[ tbl.name ] != nil
+	local bReloading = ProxyList[ tbl.name ] ~= nil
 
 	ProxyList[ tbl.name ] = tbl
 
@@ -33,7 +33,7 @@ function Add( tbl )
 
 		for k, v in pairs( ActiveList ) do
 
-			if ( tbl.name != v.name ) then continue end
+			if ( tbl.name ~= v.name ) then continue end
 
 			Msg( "Reloading: ", v.Material, "\n" )
 			Init( tbl.name, k, v.Material, v.Values )
@@ -50,8 +50,8 @@ end
 function Call( name, mat, ent )
 
 	local proxy = ActiveList[ name ]
-	if ( !proxy ) then return end
-	if ( !proxy.bind ) then return end
+	if ( not proxy ) then return end
+	if ( not proxy.bind ) then return end
 
 	proxy:bind( mat, ent )
 
@@ -63,12 +63,12 @@ end
 function Init( name, uname, mat, values )
 
 	local proxy = ProxyList[ name ]
-	if ( !proxy ) then return end
+	if ( not proxy ) then return end
 
 	ActiveList[ uname ] = table.Copy( proxy )
 	local proxy = ActiveList[ uname ];
 
-	if ( !proxy.init ) then return end
+	if ( not proxy.init ) then return end
 
 	proxy:init( mat, values )
 

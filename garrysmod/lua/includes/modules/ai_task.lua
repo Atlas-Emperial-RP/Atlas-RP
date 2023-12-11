@@ -66,7 +66,7 @@ function Task:Start( npc )
 
 	if ( self:IsEngineType() ) then
 
-		if ( !self.TaskID ) then self.TaskID = ai.GetTaskID( self.TaskName ) end
+		if ( not self.TaskID ) then self.TaskID = ai.GetTaskID( self.TaskName ) end
 
 		npc:StartEngineTask( self.TaskID, self.TaskData )
 	end
@@ -78,8 +78,8 @@ end
 -----------------------------------------------------------]]
 function Task:Start_FName( npc )
 
-	if ( !self.StartFunctionName ) then return end
-	--if ( !npc[ self.StartFunctionName ] ) then return end
+	if ( not self.StartFunctionName ) then return end
+	--if ( not npc[ self.StartFunctionName ] ) then return end
 
 	-- Run the start function. Safely.
 	npc[ self.StartFunctionName ]( npc, self.TaskData )
@@ -98,8 +98,8 @@ end
 
 function Task:Run_FName( npc )
 
-	if ( !self.FunctionName ) then return end
-	--if (!npc[ self.StartFunctionName ]) then return end
+	if ( not self.FunctionName ) then return end
+	--if (not npc[ self.StartFunctionName ]) then return end
 
 	-- Run the start function. Safely.
 	npc[ self.FunctionName ]( npc, self.TaskData )

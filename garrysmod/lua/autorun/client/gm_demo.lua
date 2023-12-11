@@ -17,9 +17,9 @@ local matRecording = nil
 local drawicon = CreateClientConVar( "gm_demo_icon", 1, true )
 hook.Add( "HUDPaint", "DrawRecordingIcon", function()
 
-	if ( !engine.IsRecordingDemo() || !drawicon:GetBool() ) then return end
+	if ( not engine.IsRecordingDemo() or not drawicon:GetBool() ) then return end
 
-	if ( !matRecording ) then
+	if ( not matRecording ) then
 		matRecording = Material( "gmod/recording.png" )
 	end
 

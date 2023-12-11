@@ -79,7 +79,7 @@ end
 
 function PANEL:OnMousePressed( mousecode )
 
-	if ( !self:IsEnabled() ) then return end
+	if ( not self:IsEnabled() ) then return end
 
 	if ( self:GetZoom() == 0 ) then self:SetZoom( self:IdealZoom() ) end
 
@@ -91,7 +91,7 @@ function PANEL:OnMousePressed( mousecode )
 	-- Temporary fix for Linux
 	-- Something keeps snapping the cursor to the center of the screen when it is invisible
 	-- and we definitely don't want that, let's keep the cursor visible for now
-	if ( !system.IsLinux() ) then
+	if ( not system.IsLinux() ) then
 		self:SetCursor( "none" )
 	end
 
@@ -120,7 +120,7 @@ end
 
 function PANEL:OnCursorMoved( x, y )
 
-	if ( !self:GetActive() ) then return end
+	if ( not self:GetActive() ) then return end
 
 	x = x - math.floor( self:GetWide() * 0.5 )
 	y = y - math.floor( self:GetTall() * 0.5 )
@@ -132,7 +132,7 @@ function PANEL:OnCursorMoved( x, y )
 	local maxzoom = 10 ^ ( 1 + self:GetDecimals() )
 
 	zoom = math.Clamp( zoom + ( ( y * -0.6 ) / ControlScale ), 0.01, maxzoom )
-	if ( !input.IsKeyDown( KEY_LSHIFT ) ) then self:SetZoom( zoom ) end
+	if ( not input.IsKeyDown( KEY_LSHIFT ) ) then self:SetZoom( zoom ) end
 
 	local oldValue = self:GetFloatValue()
 	local value = self:GetFloatValue()
@@ -141,7 +141,7 @@ function PANEL:OnCursorMoved( x, y )
 
 	self:LockCursor()
 
-	if ( oldValue != value ) then self:OnValueChanged( value ) end
+	if ( oldValue ~= value ) then self:OnValueChanged( value ) end
 	self:UpdateConVar()
 
 end
@@ -194,7 +194,7 @@ function PANEL:DrawNotches( level, x, y, w, h, range, value, min, max )
 
 		local nx = mid + n * size
 
-		if ( nx > x + w || nx < x ) then continue end
+		if ( nx > x + w or nx < x ) then continue end
 
 		local dist = 1 - ( math.abs( halfw - nx + x ) / w )
 
@@ -250,7 +250,7 @@ end
 
 function PANEL:Think()
 
-	if ( !self:GetActive() ) then
+	if ( not self:GetActive() ) then
 		self:ConVarNumberThink()
 	end
 
@@ -262,7 +262,7 @@ end
 
 function PANEL:DrawScreen( x, y, w, h )
 
-	if ( !self:GetShouldDrawScreen() ) then return end
+	if ( not self:GetShouldDrawScreen() ) then return end
 
 	local wasEnabled = DisableClipping( true )
 
@@ -323,7 +323,7 @@ end
 
 function PANEL:PaintScratchWindow()
 
-	if ( !self:GetActive() ) then return end
+	if ( not self:GetActive() ) then return end
 
 	if ( self:GetZoom() == 0 ) then self:SetZoom( self:IdealZoom() ) end
 
@@ -364,7 +364,7 @@ derma.DefineControl( "DNumberScratch", "", PANEL, "DImageButton" )
 
 hook.Add( "DrawOverlay", "DrawNumberScratch", function()
 
-	if ( !IsValid( g_Active ) ) then return end
+	if ( not IsValid( g_Active ) ) then return end
 
 	g_Active:PaintScratchWindow()
 

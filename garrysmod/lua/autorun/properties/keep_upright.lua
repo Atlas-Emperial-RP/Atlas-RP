@@ -8,10 +8,10 @@ properties.Add( "keepupright", {
 
 	Filter = function( self, ent, ply )
 
-		if ( !IsValid( ent ) ) then return false end
-		if ( ent:GetClass() != "prop_physics" ) then return false end
+		if ( not IsValid( ent ) ) then return false end
+		if ( ent:GetClass() ~= "prop_physics" ) then return false end
 		if ( ent:GetNWBool( "IsUpright" ) ) then return false end
-		if ( !gamemode.Call( "CanProperty", ply, "keepupright", ent ) ) then return false end
+		if ( not gamemode.Call( "CanProperty", ply, "keepupright", ent ) ) then return false end
 
 		return true
 	end,
@@ -28,15 +28,15 @@ properties.Add( "keepupright", {
 
 		local ent = net.ReadEntity()
 
-		if ( !IsValid( ent ) ) then return end
-		if ( !IsValid( ply ) ) then return end
-		if ( !properties.CanBeTargeted( ent, ply ) ) then return end
-		if ( ent:GetClass() != "prop_physics" ) then return end
+		if ( not IsValid( ent ) ) then return end
+		if ( not IsValid( ply ) ) then return end
+		if ( not properties.CanBeTargeted( ent, ply ) ) then return end
+		if ( ent:GetClass() ~= "prop_physics" ) then return end
 		if ( ent:GetNWBool( "IsUpright" ) ) then return end
-		if ( !self:Filter( ent, ply ) ) then return end
+		if ( not self:Filter( ent, ply ) ) then return end
 
 		local Phys = ent:GetPhysicsObjectNum( 0 )
-		if ( !IsValid( Phys ) ) then return end
+		if ( not IsValid( Phys ) ) then return end
 
 		local constraint = constraint.Keepupright( ent, Phys:GetAngles(), 0, 999999 )
 
@@ -64,9 +64,9 @@ properties.Add( "keepupright_stop", {
 	MenuIcon = "icon16/arrow_rotate_clockwise.png",
 
 	Filter = function( self, ent )
-		if ( !IsValid( ent ) ) then return false end
-		if ( ent:GetClass() != "prop_physics" ) then return false end
-		if ( !ent:GetNWBool( "IsUpright" ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
+		if ( ent:GetClass() ~= "prop_physics" ) then return false end
+		if ( not ent:GetNWBool( "IsUpright" ) ) then return false end
 		return true
 	end,
 
@@ -82,11 +82,11 @@ properties.Add( "keepupright_stop", {
 
 		local ent = net.ReadEntity()
 
-		if ( !IsValid( ent ) ) then return end
-		if ( !IsValid( ply ) ) then return end
-		if ( !properties.CanBeTargeted( ent, ply ) ) then return end
-		if ( ent:GetClass() != "prop_physics" ) then return end
-		if ( !ent:GetNWBool( "IsUpright" ) ) then return end
+		if ( not IsValid( ent ) ) then return end
+		if ( not IsValid( ply ) ) then return end
+		if ( not properties.CanBeTargeted( ent, ply ) ) then return end
+		if ( ent:GetClass() ~= "prop_physics" ) then return end
+		if ( not ent:GetNWBool( "IsUpright" ) ) then return end
 
 		constraint.RemoveConstraints( ent, "Keepupright" )
 

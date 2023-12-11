@@ -70,10 +70,10 @@ function SWEP:PrintWeaponInfo( x, y, alpha )
 		local text_color = "<color=150,150,150,255>"
 
 		str = "<font=HudSelectionText>"
-		if ( self.Author != "" ) then str = str .. title_color .. "Author:</color>\t" .. text_color .. self.Author .. "</color>\n" end
-		if ( self.Contact != "" ) then str = str .. title_color .. "Contact:</color>\t" .. text_color .. self.Contact .. "</color>\n\n" end
-		if ( self.Purpose != "" ) then str = str .. title_color .. "Purpose:</color>\n" .. text_color .. self.Purpose .. "</color>\n\n" end
-		if ( self.Instructions != "" ) then str = str .. title_color .. "Instructions:</color>\n" .. text_color .. self.Instructions .. "</color>\n" end
+		if ( self.Author ~= "" ) then str = str .. title_color .. "Author:</color>\t" .. text_color .. self.Author .. "</color>\n" end
+		if ( self.Contact ~= "" ) then str = str .. title_color .. "Contact:</color>\t" .. text_color .. self.Contact .. "</color>\n\n" end
+		if ( self.Purpose ~= "" ) then str = str .. title_color .. "Purpose:</color>\n" .. text_color .. self.Purpose .. "</color>\n\n" end
+		if ( self.Instructions ~= "" ) then str = str .. title_color .. "Instructions:</color>\n" .. text_color .. self.Instructions .. "</color>\n" end
 		str = str .. "</font>"
 
 		self.InfoMarkup = markup.Parse( str, 250 )
@@ -189,7 +189,7 @@ end
 -----------------------------------------------------------]]
 function SWEP:FireAnimationEvent( pos, ang, event, options )
 
-	if ( !self.CSMuzzleFlashes ) then return end
+	if ( not self.CSMuzzleFlashes ) then return end
 
 	-- CS Muzzle flashes
 	if ( event == 5001 or event == 5011 or event == 5021 or event == 5031 ) then

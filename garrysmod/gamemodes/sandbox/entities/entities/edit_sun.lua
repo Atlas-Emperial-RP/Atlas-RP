@@ -76,7 +76,7 @@ end
 --
 function ENT:OnVariableChanged()
 
-	if ( !IsValid( self.EnvSun ) ) then return end
+	if ( not IsValid( self.EnvSun ) ) then return end
 
 	self.EnvSun:SetKeyValue( "size", self:GetSunSize() )
 	self.EnvSun:SetKeyValue( "overlaysize", self:GetOverlaySize() )

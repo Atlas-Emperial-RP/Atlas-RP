@@ -110,13 +110,13 @@ end
 -- Covert identify concommand for traitors
 local function IdentifyCommand(ply, cmd, args)
    if not IsValid(ply) then return end
-   if #args != 2 then return end
+   if #args ~= 2 then return end
 
    local eidx = tonumber(args[1])
    local id = tonumber(args[2])
    if (not eidx) or (not id) then return end
 
-   if (not ply.search_id) or ply.search_id.id != id or ply.search_id.eidx != eidx then
+   if (not ply.search_id) or ply.search_id.id ~= id or ply.search_id.eidx ~= eidx then
       ply.search_id = nil
       return
    end
@@ -135,7 +135,7 @@ concommand.Add("ttt_confirm_death", IdentifyCommand)
 -- Call detectives to a corpse
 local function CallDetective(ply, cmd, args)
    if not IsValid(ply) then return end
-   if #args != 1 then return end
+   if #args ~= 1 then return end
    if not ply:IsActive() then return end
 
    local eidx = tonumber(args[1])
@@ -225,7 +225,7 @@ function CORPSE.ShowSearch(ply, rag, covert, long_range)
    end
 
    -- time of death relative to current time (saves bits)
-   if dtime != 0 then
+   if dtime ~= 0 then
       dtime = math.Round(CurTime() - dtime)
    end
 

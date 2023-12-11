@@ -29,7 +29,7 @@ end
 
 function TOOL:LeftClick( trace )
 
-	if ( IsValid( trace.Entity ) && trace.Entity:IsPlayer() ) then return false end
+	if ( IsValid( trace.Entity ) and trace.Entity:IsPlayer() ) then return false end
 	if ( CLIENT ) then return true end
 
 	local ply = self:GetOwner()
@@ -44,19 +44,19 @@ function TOOL:LeftClick( trace )
 	local fov = self:GetClientNumber( "fov" )
 	local distance = self:GetClientNumber( "distance" )
 	local bright = self:GetClientNumber( "brightness" )
-	local toggle = self:GetClientNumber( "toggle" ) != 1
+	local toggle = self:GetClientNumber( "toggle" ) ~= 1
 
 	local mat = Material( texture )
 	local texture = mat:GetString( "$basetexture" )
 
-	if ( IsValid( trace.Entity ) && trace.Entity:GetClass() == "gmod_lamp" && trace.Entity:GetPlayer() == ply ) then
+	if ( IsValid( trace.Entity ) and trace.Entity:GetClass() == "gmod_lamp" and trace.Entity:GetPlayer() == ply ) then
 
 		trace.Entity:SetColor( Color( r, g, b, 255 ) )
 		trace.Entity:SetFlashlightTexture( texture )
 		trace.Entity:SetLightFOV( fov )
 		trace.Entity:SetDistance( distance )
 		trace.Entity:SetBrightness( bright )
-		trace.Entity:SetToggle( !toggle )
+		trace.Entity:SetToggle( not toggle )
 		trace.Entity:UpdateLight()
 
 		numpad.Remove( trace.Entity.NumDown )
@@ -79,11 +79,11 @@ function TOOL:LeftClick( trace )
 
 	end
 
-	if ( !util.IsValidModel( mdl ) || !util.IsValidProp( mdl ) || !IsValidLampModel( mdl ) ) then return false end
-	if ( !self:GetSWEP():CheckLimit( "lamps" ) ) then return false end
+	if ( not util.IsValidModel( mdl ) or not util.IsValidProp( mdl ) or not IsValidLampModel( mdl ) ) then return false end
+	if ( not self:GetSWEP():CheckLimit( "lamps" ) ) then return false end
 
-	local lamp = MakeLamp( ply, r, g, b, key, toggle, texture, mdl, fov, distance, bright, !toggle, { Pos = pos, Angle = angle_zero } )
-	if ( !IsValid( lamp ) ) then return false end
+	local lamp = MakeLamp( ply, r, g, b, key, toggle, texture, mdl, fov, distance, bright, not toggle, { Pos = pos, Angle = angle_zero } )
+	if ( not IsValid( lamp ) ) then return false end
 
 	local CurPos = lamp:GetPos()
 	local NearestPoint = lamp:NearestPoint( CurPos - ( trace.HitNormal * 512 ) )
@@ -102,7 +102,7 @@ end
 
 function TOOL:RightClick( trace )
 
-	if ( !IsValid( trace.Entity ) || trace.Entity:GetClass() != "gmod_lamp" ) then return false end
+	if ( not IsValid( trace.Entity ) or trace.Entity:GetClass() ~= "gmod_lamp" ) then return false end
 	if ( CLIENT ) then return true end
 
 	local ent = trace.Entity
@@ -132,11 +132,11 @@ if ( SERVER ) then
 
 	function MakeLamp( pl, r, g, b, KeyDown, toggle, texture, model, fov, distance, brightness, on, Data )
 
-		if ( IsValid( pl ) && !pl:CheckLimit( "lamps" ) ) then return false end
-		if ( !IsValidLampModel( model ) ) then return false end
+		if ( IsValid( pl ) and not pl:CheckLimit( "lamps" ) ) then return false end
+		if ( not IsValidLampModel( model ) ) then return false end
 
 		local lamp = ents.Create( "gmod_lamp" )
-		if ( !IsValid( lamp ) ) then return false end
+		if ( not IsValid( lamp ) ) then return false end
 
 		lamp:SetModel( model )
 		lamp:SetFlashlightTexture( texture )
@@ -145,7 +145,7 @@ if ( SERVER ) then
 		lamp:SetDistance( distance )
 		lamp:SetBrightness( brightness )
 		lamp:Switch( on )
-		lamp:SetToggle( !toggle )
+		lamp:SetToggle( not toggle )
 
 		duplicator.DoGeneric( lamp, Data )
 
@@ -181,8 +181,8 @@ if ( SERVER ) then
 
 	numpad.Register( "LampToggle", function( pl, ent, onoff )
 
-		if ( !IsValid( ent ) ) then return false end
-		if ( !ent:GetToggle() ) then ent:Switch( onoff == 1 ) return end
+		if ( not IsValid( ent ) ) then return false end
+		if ( not ent:GetToggle() ) then ent:Switch( onoff == 1 ) return end
 
 		if ( numpad.FromButton() ) then
 
@@ -201,10 +201,10 @@ end
 
 function TOOL:UpdateGhostLamp( ent, ply )
 
-	if ( !IsValid( ent ) ) then return end
+	if ( not IsValid( ent ) ) then return end
 
 	local trace = ply:GetEyeTrace()
-	if ( !trace.Hit || IsValid( trace.Entity ) && ( trace.Entity:IsPlayer() || trace.Entity:GetClass() == "gmod_lamp" ) ) then
+	if ( not trace.Hit or IsValid( trace.Entity ) and ( trace.Entity:IsPlayer() or trace.Entity:GetClass() == "gmod_lamp" ) ) then
 
 		ent:SetNoDraw( true )
 		return
@@ -224,9 +224,9 @@ end
 function TOOL:Think()
 
 	local mdl = self:GetClientInfo( "model" )
-	if ( !IsValidLampModel( mdl ) ) then self:ReleaseGhostEntity() return end
+	if ( not IsValidLampModel( mdl ) ) then self:ReleaseGhostEntity() return end
 
-	if ( !IsValid( self.GhostEntity ) || self.GhostEntity:GetModel() != mdl ) then
+	if ( not IsValid( self.GhostEntity ) or self.GhostEntity:GetModel() ~= mdl ) then
 		self:MakeGhostEntity( mdl, vector_origin, angle_zero )
 	end
 

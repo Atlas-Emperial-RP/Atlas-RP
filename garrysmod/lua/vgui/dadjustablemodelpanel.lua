@@ -30,10 +30,10 @@ function PANEL:OnMousePressed( mousecode )
 	self.OrbitPoint = hit1
 
 	local hit2 = util.IntersectRayWithPlane( self.vCamPos, self.aLookAngle:Forward(), vector_origin, Vector( 0, 1, 0 ) )
-	if ( ( !hit1 && hit2 ) || hit2 && hit2:Distance( self.Entity:GetPos() ) < hit1:Distance( self.Entity:GetPos() ) ) then self.OrbitPoint = hit2 end
+	if ( ( not hit1 and hit2 ) or hit2 and hit2:Distance( self.Entity:GetPos() ) < hit1:Distance( self.Entity:GetPos() ) ) then self.OrbitPoint = hit2 end
 
 	local hit3 = util.IntersectRayWithPlane( self.vCamPos, self.aLookAngle:Forward(), vector_origin, Vector( 1, 0, 0 ) )
-	if ( ( ( !hit1 || !hit2 ) && hit3 ) || hit3 && hit3:Distance( self.Entity:GetPos() ) < hit2:Distance( self.Entity:GetPos() ) ) then self.OrbitPoint = hit3 end
+	if ( ( ( not hit1 or not hit2 ) and hit3 ) or hit3 and hit3:Distance( self.Entity:GetPos() ) < hit2:Distance( self.Entity:GetPos() ) ) then self.OrbitPoint = hit3 end
 
 	self.OrbitPoint = self.OrbitPoint or center
 	self.OrbitDistance = ( self.OrbitPoint - self.vCamPos ):Length()
@@ -42,7 +42,7 @@ end
 
 function PANEL:Think()
 
-	if ( !self.Capturing ) then return end
+	if ( not self.Capturing ) then return end
 
 	if ( self.m_bFirstPerson ) then
 		return self:FirstPersonControls()

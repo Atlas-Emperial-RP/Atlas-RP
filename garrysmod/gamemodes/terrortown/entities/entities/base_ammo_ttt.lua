@@ -47,7 +47,7 @@ function ENT:PlayerCanPickup(ply)
 
    local result = hook.Call("TTTCanPickupAmmo", nil, ply, self)
 
-   if result != nil then
+   if result ~= nil then
       return result
    end
 

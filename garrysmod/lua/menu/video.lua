@@ -38,7 +38,7 @@ concommand.Add( "gm_video", function()
 		lockfps   = true
 	} )
 
-	if ( !activeVideo ) then
+	if ( not activeVideo ) then
 		MsgN( "Couldn't record video: ", err )
 		return
 	end
@@ -53,7 +53,7 @@ end, nil, "Starts and stops the recording of a .webm (VP8/Vorbis) video. See vid
 
 hook.Add( "DrawOverlay", "CaptureFrames", function()
 
-	if ( !activeVideo ) then return end
+	if ( not activeVideo ) then return end
 
 	activeVideo:AddFrame( FrameTime(), true )
 

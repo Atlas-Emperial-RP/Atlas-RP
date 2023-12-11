@@ -9,9 +9,9 @@ properties.Add( "editentity", {
 
 	Filter = function( self, ent, ply )
 
-		if ( !IsValid( ent ) ) then return false end
-		if ( !ent.Editable ) then return false end
-		if ( !gamemode.Call( "CanProperty", ply, "editentity", ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
+		if ( not ent.Editable ) then return false end
+		if ( not gamemode.Call( "CanProperty", ply, "editentity", ent ) ) then return false end
 
 		return true
 

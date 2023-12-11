@@ -205,7 +205,7 @@ function PANEL:Paint( w, h )
 	draw.RoundedBox( 3, 0, 0, w, h, self.sColor or BRICKSCREDITSTORE.LUACONFIG.Themes.Secondary )
 	
 	if( not self.sColor ) then
-		if( self:IsHovered() and !self:IsDown() ) then
+		if( self:IsHovered() and not self:IsDown() ) then
 			surface.SetDrawColor( 52*1.35, 55*1.35, 76*1.35 )
 			draw.SimpleText( self.label, "BRCS_MP_22", w/2, h/2, LabelHover, 1, 1 )
 		elseif( self:IsDown() ) then
@@ -216,7 +216,7 @@ function PANEL:Paint( w, h )
 			draw.SimpleText( self.label, "BRCS_MP_22", w/2, h/2, TextNorm, 1, 1 )
 		end
 	else
-		if( self:IsHovered() and !self:IsDown() ) then
+		if( self:IsHovered() and not self:IsDown() ) then
 			draw.RoundedBox( 3, 0, 0, w, h, Hover )
 		elseif( self:IsDown() ) then
 			draw.RoundedBox( 3, 0, 0, w, h, Down )

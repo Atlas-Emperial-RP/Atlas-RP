@@ -65,7 +65,7 @@ function PANEL:SetID(id)
 		end
 
 		self.interactElement.DoClick = function(  )
-			self.interactElement.value = !self.interactElement.value
+			self.interactElement.value = not self.interactElement.value
 		end
 
 	elseif EdgeHUD.Configuration.ConfigOptions[id].TypeEnum == EDGEHUD_CONFIG_STRING then
@@ -105,7 +105,7 @@ function PANEL:SetID(id)
 
 			if value == nil then
 				self.interactElement:SetText(EdgeHUD.Configuration.ConfigOptions[id].Default)
-			elseif value % 1 != 0 then
+			elseif value % 1 ~= 0 then
 				self.interactElement:SetText(EdgeHUD.Configuration.ConfigOptions[id].Default)
 			elseif value > EdgeHUD.Configuration.ConfigOptions[id].maxNum then
 				self.interactElement:SetText(EdgeHUD.Configuration.ConfigOptions[id].maxNum)

@@ -37,7 +37,7 @@ function ws_save:DownloadAndLoad( id )
 
 	steamworks.DownloadUGC( id, function( name )
 
-		if ( !name ) then hook.Call( "LoadGModSaveFailed", nil, "Failed to download save from Steam Workshop!" ) return end
+		if ( not name ) then hook.Call( "LoadGModSaveFailed", nil, "Failed to download save from Steam Workshop!" ) return end
 
 		ws_save:Load( name )
 
@@ -54,7 +54,7 @@ end
 function ws_save:FinishPublish( filename, imagename, name, desc, chosenTag, other )
 
 	local info = GetSaveFileDetails( filename )
-	if ( !info ) then return "Couldn't get save information!" end
+	if ( not info ) then return "Couldn't get save information!" end
 
 	steamworks.Publish( filename, imagename, name, desc, { "save", info.map, chosenTag }, other.Callback, other.WorkshopID, other.ChangeNotes )
 

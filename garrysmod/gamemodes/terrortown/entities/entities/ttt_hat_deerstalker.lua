@@ -101,7 +101,7 @@ if SERVER then
       if not ttt_hats_reclaim:GetBool() then return end
       
       if IsValid(ply) and not self:GetBeingWorn() then
-         if GetRoundState() != ROUND_ACTIVE then
+         if GetRoundState() ~= ROUND_ACTIVE then
             SafeRemoveEntity(self)
             return
          elseif not CanEquipHat(ply) then

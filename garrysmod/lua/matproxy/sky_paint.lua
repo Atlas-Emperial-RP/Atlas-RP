@@ -9,7 +9,7 @@ matproxy.Add( {
 
 		local skyPaint = g_SkyPaint
 	
-		if ( !IsValid( skyPaint ) ) then return end
+		if ( not IsValid( skyPaint ) ) then return end
 
 		mat:SetVector( "$TOPCOLOR",		skyPaint:GetTopColor() )
 		mat:SetVector( "$BOTTOMCOLOR",	skyPaint:GetBottomColor() )

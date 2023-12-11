@@ -339,7 +339,7 @@ end
 
 -- Equipment buying
 local function OrderEquipment(ply, cmd, args)
-   if not IsValid(ply) or #args != 1 then return end
+   if not IsValid(ply) or #args ~= 1 then return end
 
    if not (ply:IsActiveTraitor() or ply:IsActiveDetective()) then return end
 
@@ -457,7 +457,7 @@ concommand.Add("ttt_cheat_credits", CheatCredits, nil, nil, FCVAR_CHEAT)
 
 local function TransferCredits(ply, cmd, args)
    if (not IsValid(ply)) or (not ply:IsActiveSpecial()) then return end
-   if #args != 2 then return end
+   if #args ~= 2 then return end
 
    local sid = tostring(args[1])
    local credits = tonumber(args[2])

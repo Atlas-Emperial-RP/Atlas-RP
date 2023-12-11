@@ -38,7 +38,7 @@ if EdgeHUD.Configuration.GetConfigValue( "PlayerOverhead" ) then
 
 	local hooksTbl = hook.GetTable()
 
-	if !hooksTbl["PostPlayerDraw"] or !hooksTbl["PostPlayerDraw"]["DarkRP_ChatIndicator"] then
+	if not hooksTbl["PostPlayerDraw"] or not hooksTbl["PostPlayerDraw"]["DarkRP_ChatIndicator"] then
 		darkrpSpeachBubbleFunc = function(  ) end
 	else
 		darkrpSpeachBubbleFunc = hooksTbl["PostPlayerDraw"]["DarkRP_ChatIndicator"]
@@ -59,7 +59,7 @@ if EdgeHUD.Configuration.GetConfigValue( "PlayerOverhead" ) then
 	timer.Create("EdgeHUD:UpdatePlayerOverhead",0.15,0,function(  )
 
 		--Check if we should draw.
-		if !EdgeHUD.shouldDraw then return end
+		if not EdgeHUD.shouldDraw then return end
 
 		--Reset playersToRender.
 		playersToRender = {}
@@ -71,7 +71,7 @@ if EdgeHUD.Configuration.GetConfigValue( "PlayerOverhead" ) then
 		for k,v in pairs(players) do
 
 			--Make sure the player is valid.
-			if !IsValid(v) then continue end
+			if not IsValid(v) then continue end
 
 			--Dont draw ourselves.
 			if v == ply then continue end
@@ -89,15 +89,15 @@ if EdgeHUD.Configuration.GetConfigValue( "PlayerOverhead" ) then
 	hook.Add("PostDrawTranslucentRenderables","EdgeHUD:PostPlayerDraw",function(  )
 
 		--Check if we should draw.
-		if !EdgeHUD.shouldDraw then return end
+		if not EdgeHUD.shouldDraw then return end
 
 		for k,v in pairs(playersToRender) do
 
 			--Make sure the player is valid.
-			if !IsValid(v) then continue end
+			if not IsValid(v) then continue end
 
 			--Check if the player is dead.
-			if !v:Alive() then continue end
+			if not v:Alive() then continue end
 
 			--Check so the player isn't dormant.
 			if v:IsDormant() then continue end
@@ -126,7 +126,7 @@ if EdgeHUD.Configuration.GetConfigValue( "PlayerOverhead" ) then
 			end
 
 			-- Check if we have EdgeScoreboard installed.
-			if EdgeScoreboard and EdgeScoreboard.GetConfigValue and EdgeScoreboard.GetConfigValue("FAKEONHUD") and EdgeScoreboard.GetFakeIdentity("Name",v) != nil then
+			if EdgeScoreboard and EdgeScoreboard.GetConfigValue and EdgeScoreboard.GetConfigValue("FAKEONHUD") and EdgeScoreboard.GetFakeIdentity("Name",v) ~= nil then
 				name = EdgeScoreboard.GetFakeIdentity("Name",v) .. (EdgeScoreboard.GetUsergroupConfigValue( LocalPlayer(), "FakeIdentity:SeeOriginal" ) and " (" .. name .. ")" or "")
 			end
 
@@ -152,7 +152,7 @@ if EdgeHUD.Configuration.GetConfigValue( "PlayerOverhead" ) then
 
 			local playerHeightOffset = 0
 
-			if !inVehicle then
+			if not inVehicle then
 				playerHeightOffset = eyePos.z - v:GetPos().z
 			end
 
@@ -166,7 +166,7 @@ if EdgeHUD.Configuration.GetConfigValue( "PlayerOverhead" ) then
 					surface.SetMaterial(v:IsSpeaking() and MAT_SPEAKER or v:IsTyping() and MAT_CHAT or v:getDarkRPVar("wanted") == true and MAT_WANTED or MAT_USER)
 					surface.DrawTexturedRect(- iconVehicleSize / 2,- iconVehicleSize / 2,iconVehicleSize,iconVehicleSize)
 
-				elseif !inVehicle then
+				elseif not inVehicle then
 
 					--Draw the gray square.
 					surface.SetDrawColor(COLORS["Black_Transparent"])
@@ -204,12 +204,12 @@ if EdgeHUD.Configuration.GetConfigValue( "PlayerOverhead" ) then
 
 					--Draw icon.
 					surface.SetDrawColor(COLORS["White"])
-					surface.SetMaterial(showMuted and MAT_MUTED or v:IsSpeaking() and !v:IsMuted() and MAT_SPEAKER or v:IsTyping() and MAT_CHAT or v:getDarkRPVar("wanted") == true and MAT_WANTED or hasLicense and MAT_LICENSE or MAT_USER)	
+					surface.SetMaterial(showMuted and MAT_MUTED or v:IsSpeaking() and not v:IsMuted() and MAT_SPEAKER or v:IsTyping() and MAT_CHAT or v:getDarkRPVar("wanted") == true and MAT_WANTED or hasLicense and MAT_LICENSE or MAT_USER)	
 					surface.DrawTexturedRect(boxPos + iconMargin,0 + iconMargin,iconSize,iconSize)
 
 					--Draw info.
 
-					if overheadTeamConfig != "Hidden" then
+					if overheadTeamConfig ~= "Hidden" then
 						draw.SimpleText(name,"EdgeHUD:3D2D:Large",boxPos + boxSize + margin,0,Color(200,200,200,255), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
 						draw.SimpleText(jobname,"EdgeHUD:3D2D:Small",boxPos + boxSize + margin,boxSize,jobcolor, TEXT_ALIGN_LEFT, TEXT_ALIGN_BOTTOM)
 					else
@@ -247,7 +247,7 @@ if EdgeHUD.Configuration.GetConfigValue( "DoorDisplay" ) then
 	local function draw3D2DDoor( door )
 
 		--Check if we should draw.
-		if !EdgeHUD.shouldDraw then return end
+		if not EdgeHUD.shouldDraw then return end
 
 		--[[-------------------------------------------------------------------------
 		Door Display - DisplayData
@@ -285,7 +285,7 @@ if EdgeHUD.Configuration.GetConfigValue( "DoorDisplay" ) then
 			local traceTbl = {
 				endpos = obbCenterToWorld,
 				filter = function( ent )
-					return !(ent:IsPlayer() or ent:IsWorld())
+					return not (ent:IsPlayer() or ent:IsWorld())
 				end
 			}
 
@@ -430,7 +430,7 @@ if EdgeHUD.Configuration.GetConfigValue( "DoorDisplay" ) then
 						doorData.allowedToOwn[k] = Player(k)
 
 						--Make sure that the player is valid.
-						if !IsValid(doorData.allowedToOwn[k]) then
+						if not IsValid(doorData.allowedToOwn[k]) then
 
 							--Remove the player.
 							doorData.allowedToOwn[k] = nil
@@ -468,7 +468,7 @@ if EdgeHUD.Configuration.GetConfigValue( "DoorDisplay" ) then
 
 						doorData.extraOwners[k] = Player(k)
 
-						if !IsValid(doorData.extraOwners[k]) then
+						if not IsValid(doorData.extraOwners[k]) then
 							doorData.extraOwners[k] = nil
 						end
 
@@ -560,7 +560,7 @@ if EdgeHUD.Configuration.GetConfigValue( "DoorDisplay" ) then
 			local curEnt = entities[i]
 
 			--Check so it's a door.
-			if curEnt:isDoor() and curEnt:GetClass() != "prop_dynamic" and !curEnt:GetNoDraw() then
+			if curEnt:isDoor() and curEnt:GetClass() ~= "prop_dynamic" and not curEnt:GetNoDraw() then
 				draw3D2DDoor( curEnt )
 			end
 

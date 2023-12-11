@@ -62,7 +62,7 @@ local function AddButton( panel, color, size, id )
 	-- If the cookie value exists, then use it
 	--
 	local col_saved = panel:GetCookie( "col." .. id, nil )
-	if ( col_saved != nil ) then
+	if ( col_saved ~= nil ) then
 		color = col_saved:ToColor()
 	end
 
@@ -103,12 +103,12 @@ end
 function PANEL:NetworkColorChange()
 
 	for id, pnl in pairs( g_ColorPalettePanels ) do
-		if ( !IsValid( pnl ) ) then table.remove( g_ColorPalettePanels, id ) end
+		if ( not IsValid( pnl ) ) then table.remove( g_ColorPalettePanels, id ) end
 	end
 
 	for id, pnl in pairs( g_ColorPalettePanels ) do
-		if ( !IsValid( pnl ) || pnl == self ) then continue end
-		if ( pnl:GetNumRows() != self:GetNumRows() || pnl:GetCookieName() != self:GetCookieName() ) then continue end
+		if ( not IsValid( pnl ) or pnl == self ) then continue end
+		if ( pnl:GetNumRows() ~= self:GetNumRows() or pnl:GetCookieName() ~= self:GetCookieName() ) then continue end
 		local tab = {}
 		for id, p in ipairs( self:GetChildren() ) do
 			tab[ p:GetID() ] = p:GetColor()
@@ -136,7 +136,7 @@ function PANEL:ResetSavedColors()
 
 	for i, color in pairs( tab ) do
 		local id = tonumber( i )
-		if ( !id ) then break end
+		if ( not id ) then break end
 
 		self:SetCookie( "col." .. id, nil )
 	end
@@ -168,7 +168,7 @@ function PANEL:SetColorButtons( tab )
 	for i, color in pairs( tab or {} ) do
 
 		local id = tonumber( i )
-		if ( !id ) then break end
+		if ( not id ) then break end
 
 		AddButton( self, color, self:GetButtonSize(), i )
 
@@ -192,7 +192,7 @@ end
 
 function PANEL:UpdateConVar( strName, strKey, color )
 
-	if ( !strName ) then return end
+	if ( not strName ) then return end
 
 	RunConsoleCommand( strName, tostring( color[ strKey ] ) )
 

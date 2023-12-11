@@ -6,10 +6,10 @@ local sensor_color_y = CreateConVar( "sensor_color_y", "-32", FCVAR_ARCHIVE )
 
 local function DrawColorBox()
 
-	if ( !sensor_color_show:GetBool() ) then return end
+	if ( not sensor_color_show:GetBool() ) then return end
 
 	local mat = motionsensor.GetColourMaterial()
-	if ( !mat ) then return end
+	if ( not mat ) then return end
 
 	local size = sensor_color_scale:GetFloat()
 	local w = 640 * size

@@ -20,7 +20,7 @@ local function ThrowHint( name )
 	local s, e, group = string.find( text, "%%([^%%]+)%%" )
 	while ( s ) do
 		local key = input.LookupBinding( group )
-		if ( !key ) then key = "<NOT BOUND>" end
+		if ( not key ) then key = "<NOT BOUND>" end
 
 		text = string.gsub( text, "%%([^%%]+)%%", "'" .. key:upper() .. "'" )
 		s, e, group = string.find( text, "%%([^%%]+)%%" )

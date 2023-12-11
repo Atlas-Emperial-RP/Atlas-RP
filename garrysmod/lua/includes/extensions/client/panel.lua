@@ -81,19 +81,19 @@ function meta:StretchToParent( l, u, r, d )
 
 	local w, h = self:GetParent():GetSize()
 
-	if ( l != nil ) then
+	if ( l ~= nil ) then
 		self.x = l
 	end
 
-	if ( u != nil ) then
+	if ( u ~= nil ) then
 		self.y = u
 	end
 
-	if ( r != nil ) then
+	if ( r ~= nil ) then
 		self:SetWide( w - self.x - r )
 	end
 
-	if ( d != nil ) then
+	if ( d ~= nil ) then
 		self:SetTall( h - self.y - d )
 	end
 
@@ -202,7 +202,7 @@ end
 function meta:GetCookieNumber( cookiename, default )
 
 	local name = self:GetCookieName()
-	if ( !name ) then return default end
+	if ( not name ) then return default end
 
 	return cookie.GetNumber( name .. "." .. cookiename, default )
 
@@ -214,7 +214,7 @@ end
 function meta:GetCookie( cookiename, default )
 
 	local name = self:GetCookieName()
-	if ( !name ) then return default end
+	if ( not name ) then return default end
 
 	return cookie.GetString( name .. "." .. cookiename, default )
 
@@ -226,7 +226,7 @@ end
 function meta:SetCookie( cookiename, value )
 
 	local name = self:GetCookieName()
-	if ( !name ) then return end
+	if ( not name ) then return end
 
 	return cookie.Set( name .. "." .. cookiename, value )
 
@@ -238,7 +238,7 @@ end
 function meta:DeleteCookie( cookiename )
 
 	local name = self:GetCookieName()
-	if ( !name ) then return end
+	if ( not name ) then return end
 
 	return cookie.Delete( name .. "." .. cookiename )
 
@@ -250,7 +250,7 @@ end
 function meta:InvalidateParent( layoutnow )
 
 	local parent = self:GetParent()
-	if ( !parent ) then return end
+	if ( not parent ) then return end
 	if ( self.LayingOutParent ) then return end
 
 	self.LayingOutParent = true
@@ -330,7 +330,7 @@ end
 function meta:SizeToContentsY( addval )
 
 	local w, h = self:GetContentSize()
-	if ( !w || !h ) then return end
+	if ( not w or not h ) then return end
 
 	self:SetTall( h + ( addval or 0 ) )
 
@@ -342,7 +342,7 @@ end
 function meta:SizeToContentsX( addval )
 
 	local w, h = self:GetContentSize()
-	if ( !w || !h ) then return end
+	if ( not w or not h ) then return end
 
 	self:SetWide( w + ( addval or 0 ) )
 
@@ -387,18 +387,18 @@ function meta:GetSkin()
 	end
 
 	-- We have a default skin
-	if ( !skin && self.m_ForceSkinName ) then
+	if ( not skin and self.m_ForceSkinName ) then
 		skin = derma.GetNamedSkin( self.m_ForceSkinName )
 	end
 
 	-- No skin, inherit from parent
 	local parent = self:GetParent()
-	if ( !skin && IsValid( parent ) ) then
+	if ( not skin and IsValid( parent ) ) then
 		skin = parent:GetSkin()
 	end
 
 	-- Parent had no skin, use default
-	if ( !skin ) then
+	if ( not skin ) then
 		skin = derma.GetDefaultSkin()
 	end
 
@@ -416,12 +416,12 @@ end
 	Name: ToggleVisible
 -----------------------------------------------------------]]
 function meta:ToggleVisible()
-	self:SetVisible( !self:IsVisible() )
+	self:SetVisible( not self:IsVisible() )
 end
 
 function meta:Distance( pnl )
 
-	if ( !IsValid( pnl ) ) then return 0 end
+	if ( not IsValid( pnl ) ) then return 0 end
 
 	return self:DistanceFrom( pnl.x + pnl:GetWide() * 0.5, pnl.y + pnl:GetTall() * 0.5 )
 
@@ -444,7 +444,7 @@ function meta:GetChildPosition( pnl )
 	local x = 0
 	local y = 0
 
-	while ( IsValid( pnl ) && pnl != self ) do
+	while ( IsValid( pnl ) and pnl ~= self ) do
 
 		x = x + pnl.x
 		y = y + pnl.y
@@ -464,7 +464,7 @@ end
 -----------------------------------------------------------]]
 function ValidPanel( pnl )
 
-	if ( !pnl ) then return false end
+	if ( not pnl ) then return false end
 
 	return pnl:IsValid()
 
@@ -488,7 +488,7 @@ end
 
 function meta:IsOurChild( child )
 
-	if ( !IsValid( child ) ) then return false end
+	if ( not IsValid( child ) ) then return false end
 
 	return child:HasParent( self )
 
@@ -610,7 +610,7 @@ end
 function meta:IsChildHovered( bImmediate )
 
 	local Hovered = vgui.GetHoveredPanel()
-	if ( !IsValid( Hovered ) ) then return false end
+	if ( not IsValid( Hovered ) ) then return false end
 	if ( Hovered == self ) then return false end
 
 	-- Check immediate child only (with support for old depth parameter)

@@ -15,7 +15,7 @@ local defaultPath2 = "lua/includes/modules/notification.lua"
 
 local isDefault = (addLegacyData.short_src == defaultPath and addProgressData.short_src == defaultPath and killData.short_src == defaultPath) or (addLegacyData.short_src == defaultPath2 and addProgressData.short_src == defaultPath2 and killData.short_src == defaultPath2)
 
-if isDefault or string.find(string.lower(addLegacyData.short_src),"edgehud") != nil then
+if isDefault or string.find(string.lower(addLegacyData.short_src),"edgehud") ~= nil then
 
 	--Override the notification functions.
 	function notification.AddLegacy(text,type,length)
@@ -42,7 +42,7 @@ timer.Simple(0,function(  )
 
 	hook.Add("HUDPaint","manolis:MVLevels:HUDPaintA",function(  )
 
-		if !EdgeHUD.Loaded3D2D then return end
+		if not EdgeHUD.Loaded3D2D then return end
 
 		EdgeHUD_MVLevels_HUDPaintA()
 

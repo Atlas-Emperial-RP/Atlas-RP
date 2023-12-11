@@ -20,7 +20,7 @@ end
 
 function dragndrop.IsDragging()
 
-	if ( dragndrop.m_Dragging != nil ) then return true end
+	if ( dragndrop.m_Dragging ~= nil ) then return true end
 
 	return false
 
@@ -29,8 +29,8 @@ end
 function dragndrop.HandleDroppedInGame()
 
 	local panel = vgui.GetHoveredPanel()
-	if ( !IsValid( panel ) ) then return end
-	if ( panel:GetClassName() != "CGModBase" ) then return end
+	if ( not IsValid( panel ) ) then return end
+	if ( panel:GetClassName() ~= "CGModBase" ) then return end
 
 end
 
@@ -42,7 +42,7 @@ function dragndrop.Drop()
 	end
 
 	-- Show the menu
-	if ( dragndrop.m_MouseCode == MOUSE_RIGHT && dragndrop.m_ReceiverSlot && dragndrop.m_ReceiverSlot.Menu ) then
+	if ( dragndrop.m_MouseCode == MOUSE_RIGHT and dragndrop.m_ReceiverSlot and dragndrop.m_ReceiverSlot.Menu ) then
 
 		local x, y = dragndrop.m_Receiver:LocalCursorPos()
 
@@ -77,7 +77,7 @@ end
 
 function dragndrop.StartDragging()
 
-	if ( !dragndrop.m_DragWatch:IsSelected() ) then
+	if ( not dragndrop.m_DragWatch:IsSelected() ) then
 
 		dragndrop.m_Dragging = { dragndrop.m_DragWatch }
 
@@ -88,7 +88,7 @@ function dragndrop.StartDragging()
 
 		for k, v in pairs( canvas:GetSelectedChildren() ) do
 
-			if ( !v.m_DragSlot ) then continue end
+			if ( not v.m_DragSlot ) then continue end
 
 			table.insert( dragndrop.m_Dragging, v )
 
@@ -98,7 +98,7 @@ function dragndrop.StartDragging()
 
 	for k, v in pairs( dragndrop.m_Dragging ) do
 
-		if ( !IsValid( v ) ) then continue end
+		if ( not IsValid( v ) ) then continue end
 
 		v:OnStartDragging()
 
@@ -119,7 +119,7 @@ function dragndrop.StopDragging()
 
 	for k, v in pairs( dragndrop.m_Dragging or {} ) do
 
-		if ( !IsValid( v ) ) then continue end
+		if ( not IsValid( v ) ) then continue end
 		v:OnStopDragging()
 
 	end
@@ -146,7 +146,7 @@ function dragndrop.UpdateReceiver()
 
 	end
 
-	if ( !IsValid( receiver ) ) then
+	if ( not IsValid( receiver ) ) then
 		dragndrop.m_Receiver = nil
 		dragndrop.m_ReceiverSlot = nil
 	end
@@ -161,12 +161,12 @@ end
 --
 function dragndrop.GetDroppable( name )
 
-	if ( !name ) then return dragndrop.m_Dragging end
-	if ( !dragndrop.m_Dragging ) then return end
+	if ( not name ) then return dragndrop.m_Dragging end
+	if ( not dragndrop.m_Dragging ) then return end
 
 	local t = {}
 	for id, pnl in pairs( dragndrop.m_Dragging ) do
-		if ( pnl.m_DragSlot && pnl.m_DragSlot[ name ] ) then table.insert( t, pnl ) end
+		if ( pnl.m_DragSlot and pnl.m_DragSlot[ name ] ) then table.insert( t, pnl ) end
 	end
 	return t
 
@@ -174,8 +174,8 @@ end
 
 function dragndrop.CallReceiverFunction( bDoDrop, command, mx, my )
 
-	if ( !dragndrop.m_ReceiverSlot ) then return end
-	if ( !IsValid( dragndrop.m_Receiver ) ) then return end
+	if ( not dragndrop.m_ReceiverSlot ) then return end
+	if ( not IsValid( dragndrop.m_Receiver ) ) then return end
 
 	local x, y = dragndrop.m_Receiver:LocalCursorPos()
 	if ( mx ) then x = mx end
@@ -199,7 +199,7 @@ function dragndrop.Think()
 	-- We're dragging but no mouse buttons are down..
 	-- So force the drop whereever it is!
 	--
-	if ( dragndrop.m_Dragging != nil && !input.IsMouseDown( MOUSE_LEFT ) && !input.IsMouseDown( MOUSE_RIGHT ) ) then
+	if ( dragndrop.m_Dragging ~= nil and not input.IsMouseDown( MOUSE_LEFT ) and not input.IsMouseDown( MOUSE_RIGHT ) ) then
 		--dragndrop.m_Dragging:DragMouseRelease( dragndrop.m_MouseCode )
 		--return
 	end
@@ -217,7 +217,7 @@ function dragndrop.Think()
 
 	end
 
-	if ( dragndrop.m_Dragging != nil ) then
+	if ( dragndrop.m_Dragging ~= nil ) then
 
 		dragndrop.HoverThink()
 		dragndrop.UpdateReceiver()
@@ -242,7 +242,7 @@ hook.Add( "DrawOverlay", "DragNDropPaint", function()
 	-- Find the top, left most panel
 	for k, v in pairs( dragndrop.m_Dragging ) do
 
-		if ( !IsValid( v ) ) then continue end
+		if ( not IsValid( v ) ) then continue end
 
 		hold_offset_x = math.min( hold_offset_x, v.x )
 		hold_offset_y = math.min( hold_offset_y, v.y )
@@ -260,7 +260,7 @@ hook.Add( "DrawOverlay", "DragNDropPaint", function()
 
 			for k, v in pairs( dragndrop.m_Dragging ) do
 
-				if ( !IsValid( v ) ) then continue end
+				if ( not IsValid( v ) ) then continue end
 
 				local dist = 512 - v:Distance( dragndrop.m_DraggingMain )
 
@@ -339,10 +339,10 @@ function meta:GetValidReceiverSlot()
 		-- Find matching slot..
 		for k, v in pairs( self.m_ReceiverSlot ) do
 
-			if ( !dragndrop.m_DraggingMain.m_DragSlot ) then continue end
+			if ( not dragndrop.m_DraggingMain.m_DragSlot ) then continue end
 
 			local slot = dragndrop.m_DraggingMain.m_DragSlot[ k ]
-			if ( !slot ) then continue end
+			if ( not slot ) then continue end
 
 			return self, v
 
@@ -350,7 +350,7 @@ function meta:GetValidReceiverSlot()
 
 	end
 
-	if ( !IsValid( self:GetParent() ) ) then
+	if ( not IsValid( self:GetParent() ) ) then
 		return false
 	end
 
@@ -360,13 +360,13 @@ end
 
 function meta:IsDraggable()
 
-	return self.m_DragSlot != nil
+	return self.m_DragSlot ~= nil
 
 end
 
 function meta:IsDragging()
 
-	if ( !self.m_DragSlot ) then return false end
+	if ( not self.m_DragSlot ) then return false end
 
 	return self.Dragging
 
@@ -397,7 +397,7 @@ function meta:OnStartDragging()
 
 		local canvas = self:GetSelectionCanvas()
 
-		if ( IsValid( canvas ) && !self:IsSelected() ) then
+		if ( IsValid( canvas ) and not self:IsSelected() ) then
 			canvas:UnselectAll()
 		end
 
@@ -418,7 +418,7 @@ function meta:DragMousePress( mcode )
 		return self.m_pDragParent:DragMousePress( mcode )
 	end
 
-	if ( !self.m_DragSlot ) then return end
+	if ( not self.m_DragSlot ) then return end
 
 	dragndrop.Clear()
 	dragndrop.m_MouseCode = mcode
@@ -442,13 +442,13 @@ function meta:DragMouseRelease( mcode )
 	if ( IsValid( dragndrop.m_DropMenu ) ) then return end
 
 	-- This wasn't the button we clicked with - so don't release drag
-	if ( dragndrop.IsDragging() && dragndrop.m_MouseCode != mcode ) then
+	if ( dragndrop.IsDragging() and dragndrop.m_MouseCode ~= mcode ) then
 
 		return self:DragClick( mcode )
 
 	end
 
-	if ( !dragndrop.IsDragging() ) then
+	if ( not dragndrop.IsDragging() ) then
 		dragndrop.Clear()
 		return false
 	end
@@ -467,7 +467,7 @@ end
 
 function meta:SetDropTarget( x, y, w, h )
 
-	if ( !self.m_bDrawingPaintOver ) then
+	if ( not self.m_bDrawingPaintOver ) then
 		self.m_OldPaintOver = self.PaintOver
 		self.m_bDrawingPaintOver = true
 	end
@@ -502,7 +502,7 @@ function meta:DragHover( HoverTime )
 	// Call DragHoverClick if we've been hovering for 0.1 seconds..
 	//
 	if ( HoverTime < 0.1 ) then dragndrop.m_bHoverClick = false end
-	if ( HoverTime > 0.1 && !dragndrop.m_bHoverClick ) then
+	if ( HoverTime > 0.1 and not dragndrop.m_bHoverClick ) then
 
 		self:DragHoverClick( HoverTime )
 		dragndrop.m_bHoverClick = true
@@ -530,7 +530,7 @@ end
 
 function meta:DragHoverEnd()
 
-	if ( !self.m_bDrawingPaintOver ) then return end
+	if ( not self.m_bDrawingPaintOver ) then return end
 
 	self.PaintOver = self.m_OldPaintOver
 	self.m_bDrawingPaintOver = false
@@ -561,7 +561,7 @@ function dragndrop.HoverThink()
 	local y = gui.MouseY()
 
 	-- Hovering a different panel
-	if ( LastHoverThink != hovered || x != LastX || y != LastY ) then
+	if ( LastHoverThink ~= hovered or x ~= LastX or y ~= LastY ) then
 
 		LastHoverChangeTime = SysTime()
 		LastHoverThink = hovered

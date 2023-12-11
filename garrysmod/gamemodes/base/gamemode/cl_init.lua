@@ -61,7 +61,7 @@ function GM:HUDShouldDraw( name )
 			if ( isfunction( fShouldDraw ) ) then
 
 				local ret = fShouldDraw( wep, name )
-				if ( ret != nil ) then return ret end
+				if ( ret ~= nil ) then return ret end
 
 			end
 
@@ -170,7 +170,7 @@ function GM:OnPlayerChat( player, strText, bTeamOnly, bPlayerIsDead )
 	end
 
 	local filter_context = TEXT_FILTER_GAME_CONTENT
-	if ( bit.band( GetConVarNumber( "cl_chatfilters" ), 64 ) != 0 ) then filter_context = TEXT_FILTER_CHAT end
+	if ( bit.band( GetConVarNumber( "cl_chatfilters" ), 64 ) ~= 0 ) then filter_context = TEXT_FILTER_CHAT end
 
 	table.insert( tab, color_white )
 	table.insert( tab, ": " .. util.FilterText( strText, filter_context, IsValid( player ) and player or nil ) )
@@ -200,7 +200,7 @@ function GM:OnChatTab( str )
 
 		local nickname = v:Nick()
 
-		if ( string.len( LastWord ) < string.len( nickname ) && string.find( string.lower( nickname ), string.lower( LastWord ), 0, true ) == 1 ) then
+		if ( string.len( LastWord ) < string.len( nickname ) and string.find( string.lower( nickname ), string.lower( LastWord ), 0, true ) == 1 ) then
 
 			str = string.sub( str, 1, ( string.len( LastWord ) * -1 ) - 1 )
 			str = str .. nickname
@@ -304,7 +304,7 @@ end
 -----------------------------------------------------------]]
 function GM:CalcVehicleView( Vehicle, ply, view )
 
-	if ( Vehicle.GetThirdPersonMode == nil || ply:GetViewEntity() != ply ) then
+	if ( Vehicle.GetThirdPersonMode == nil or ply:GetViewEntity() ~= ply ) then
 		-- This shouldn't ever happen.
 		return
 	end
@@ -312,7 +312,7 @@ function GM:CalcVehicleView( Vehicle, ply, view )
 	--
 	-- If we're not in third person mode - then get outa here stalker
 	--
-	if ( !Vehicle:GetThirdPersonMode() ) then return view end
+	if ( not Vehicle:GetThirdPersonMode() ) then return view end
 
 	-- Don't roll the camera
 	-- view.angles.roll = 0
@@ -330,7 +330,7 @@ function GM:CalcVehicleView( Vehicle, ply, view )
 		endpos = TargetOrigin,
 		filter = function( e )
 			local c = e:GetClass() -- Avoid contact with entities that can potentially be attached to the vehicle. Ideally, we should check if "e" is constrained to "Vehicle".
-			return !c:StartWith( "prop_physics" ) &&!c:StartWith( "prop_dynamic" ) && !c:StartWith( "phys_bone_follower" ) && !c:StartWith( "prop_ragdoll" ) && !e:IsVehicle() && !c:StartWith( "gmod_" )
+			return not c:StartWith( "prop_physics" ) and not c:StartWith( "prop_dynamic" ) and not c:StartWith( "phys_bone_follower" ) and not c:StartWith( "prop_ragdoll" ) and not e:IsVehicle() and not c:StartWith( "gmod_" )
 		end,
 		mins = Vector( -WallOffset, -WallOffset, -WallOffset ),
 		maxs = Vector( WallOffset, WallOffset, WallOffset ),
@@ -342,7 +342,7 @@ function GM:CalcVehicleView( Vehicle, ply, view )
 	--
 	-- If the trace hit something, put the camera there.
 	--
-	if ( tr.Hit && !tr.StartSolid) then
+	if ( tr.Hit and not tr.StartSolid) then
 		view.origin = view.origin + tr.HitNormal * WallOffset
 	end
 
@@ -418,10 +418,10 @@ end
 function GM:AdjustMouseSensitivity( fDefault )
 
 	local ply = LocalPlayer()
-	if ( !IsValid( ply ) ) then return -1 end
+	if ( not IsValid( ply ) ) then return -1 end
 
 	local wep = ply:GetActiveWeapon()
-	if ( wep && wep.AdjustMouseSensitivity ) then
+	if ( wep and wep.AdjustMouseSensitivity ) then
 		return wep:AdjustMouseSensitivity()
 	end
 
@@ -554,7 +554,7 @@ end
 -----------------------------------------------------------]]
 function GM:CalcViewModelView( Weapon, ViewModel, OldEyePos, OldEyeAng, EyePos, EyeAng )
 
-	if ( !IsValid( Weapon ) ) then return end
+	if ( not IsValid( Weapon ) ) then return end
 
 	local vm_origin, vm_angles = EyePos, EyeAng
 
@@ -584,7 +584,7 @@ end
 -----------------------------------------------------------]]
 function GM:PreDrawViewModel( ViewModel, Player, Weapon )
 
-	if ( !IsValid( Weapon ) ) then return false end
+	if ( not IsValid( Weapon ) ) then return false end
 
 	player_manager.RunClass( Player, "PreDrawViewModel", ViewModel, Weapon )
 
@@ -599,12 +599,12 @@ end
 -----------------------------------------------------------]]
 function GM:PostDrawViewModel( ViewModel, Player, Weapon )
 
-	if ( !IsValid( Weapon ) ) then return false end
+	if ( not IsValid( Weapon ) ) then return false end
 
-	if ( Weapon.UseHands || !Weapon:IsScripted() ) then
+	if ( Weapon.UseHands or not Weapon:IsScripted() ) then
 
 		local hands = Player:GetHands()
-		if ( IsValid( hands ) && IsValid( hands:GetParent() ) ) then
+		if ( IsValid( hands ) and IsValid( hands:GetParent() ) ) then
 
 			if ( not hook.Call( "PreDrawPlayerHands", self, hands, ViewModel, Player, Weapon ) ) then
 
@@ -698,7 +698,7 @@ function GM:PlayerClassChanged( ply, newID )
 
 	-- Invalid class ID?
 	local classname = util.NetworkIDToString( newID )
-	if ( !classname ) then return end
+	if ( not classname ) then return end
 
 	-- Initialize the class on client
 	player_manager.SetPlayerClass( ply, classname )

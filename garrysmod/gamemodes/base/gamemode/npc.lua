@@ -10,23 +10,23 @@ util.AddNetworkString( "NPCKilledNPC" )
 function GM:OnNPCKilled( ent, attacker, inflictor )
 
 	-- Don't spam the killfeed with scripted stuff
-	if ( ent:GetClass() == "npc_bullseye" || ent:GetClass() == "npc_launcher" ) then return end
+	if ( ent:GetClass() == "npc_bullseye" or ent:GetClass() == "npc_launcher" ) then return end
 
-	if ( IsValid( attacker ) && attacker:GetClass() == "trigger_hurt" ) then attacker = ent end
+	if ( IsValid( attacker ) and attacker:GetClass() == "trigger_hurt" ) then attacker = ent end
 	
-	if ( IsValid( attacker ) && attacker:IsVehicle() && IsValid( attacker:GetDriver() ) ) then
+	if ( IsValid( attacker ) and attacker:IsVehicle() and IsValid( attacker:GetDriver() ) ) then
 		attacker = attacker:GetDriver()
 	end
 
-	if ( !IsValid( inflictor ) && IsValid( attacker ) ) then
+	if ( not IsValid( inflictor ) and IsValid( attacker ) ) then
 		inflictor = attacker
 	end
 	
 	-- Convert the inflictor to the weapon that they're holding if we can.
-	if ( IsValid( inflictor ) && attacker == inflictor && ( inflictor:IsPlayer() || inflictor:IsNPC() ) ) then
+	if ( IsValid( inflictor ) and attacker == inflictor and ( inflictor:IsPlayer() or inflictor:IsNPC() ) ) then
 	
 		inflictor = inflictor:GetActiveWeapon()
-		if ( !IsValid( attacker ) ) then inflictor = attacker end
+		if ( not IsValid( attacker ) ) then inflictor = attacker end
 	
 	end
 	
@@ -39,7 +39,7 @@ function GM:OnNPCKilled( ent, attacker, inflictor )
 		AttackerClass = attacker:GetClass()
 
 		-- If there is no valid inflictor, use the attacker (i.e. manhacks)
-		if ( !IsValid( inflictor ) ) then InflictorClass = attacker:GetClass() end
+		if ( not IsValid( inflictor ) ) then InflictorClass = attacker:GetClass() end
 
 		if ( attacker:IsPlayer() ) then
 
@@ -82,10 +82,10 @@ function GM:ScaleNPCDamage( npc, hitgroup, dmginfo )
 	end
 	
 	-- Less damage if we're shot in the arms or legs
-	if ( hitgroup == HITGROUP_LEFTARM ||
-		 hitgroup == HITGROUP_RIGHTARM ||
-		 hitgroup == HITGROUP_LEFTLEG ||
-		 hitgroup == HITGROUP_RIGHTLEG ||
+	if ( hitgroup == HITGROUP_LEFTARM or
+		 hitgroup == HITGROUP_RIGHTARM or
+		 hitgroup == HITGROUP_LEFTLEG or
+		 hitgroup == HITGROUP_RIGHTLEG or
 		 hitgroup == HITGROUP_GEAR ) then
 	
 		dmginfo:ScaleDamage( 0.25 )

@@ -2,7 +2,7 @@
 function JS_Language( html )
 
 	html:AddFunction( "language", "Update", function( phrase )
-		if ( !phrase ) then return end
+		if ( not phrase ) then return end
 		return language.GetPhrase( phrase )
 	end )
 

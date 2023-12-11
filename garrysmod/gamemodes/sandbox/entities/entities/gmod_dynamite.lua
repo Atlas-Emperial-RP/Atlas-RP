@@ -52,9 +52,9 @@ end
 --
 function ENT:Explode( delay, ply )
 
-	if ( !IsValid( self ) ) then return end
+	if ( not IsValid( self ) ) then return end
 
-	if ( !IsValid( ply ) ) then ply = self end
+	if ( not IsValid( ply ) ) then ply = self end
 
 	local _delay = delay or self:GetDelay()
 
@@ -69,11 +69,11 @@ function ENT:Explode( delay, ply )
 		util.Effect( "Explosion", effectdata, true, true )
 
 		if ( self:GetShouldRemove() ) then self:Remove() return end
-		if ( self:GetMaxHealth() > 0 && self:Health() <= 0 ) then self:SetHealth( self:GetMaxHealth() ) end
+		if ( self:GetMaxHealth() > 0 and self:Health() <= 0 ) then self:SetHealth( self:GetMaxHealth() ) end
 
 	else
 
-		timer.Simple( _delay, function() if ( !IsValid( self ) ) then return end self:Explode( 0, ply ) end )
+		timer.Simple( _delay, function() if ( not IsValid( self ) ) then return end self:Explode( 0, ply ) end )
 
 	end
 

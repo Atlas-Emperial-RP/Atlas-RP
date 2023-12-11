@@ -8,16 +8,16 @@ properties.Add( "bodygroups", {
 
 	Filter = function( self, ent, ply )
 
-		if ( !IsValid( ent ) ) then return false end
+		if ( not IsValid( ent ) ) then return false end
 		if ( ent:IsPlayer() ) then return false end
-		if ( !gamemode.Call( "CanProperty", ply, "bodygroups", ent ) ) then return false end
+		if ( not gamemode.Call( "CanProperty", ply, "bodygroups", ent ) ) then return false end
 		if ( IsValid( ent.AttachedEntity ) ) then ent = ent.AttachedEntity end  -- If our ent has an attached entity, we want to use and modify its bodygroups instead
 
 		--
 		-- Get a list of bodygroups
 		--
 		local options = ent:GetBodyGroups();
-		if ( !options ) then return false end
+		if ( not options ) then return false end
 
 		--
 		-- If a bodygroup has more than one state - then we can configure it
@@ -74,7 +74,7 @@ properties.Add( "bodygroups", {
 
 				for i=1, v.num do
 					local modelname = "model #" .. i
-					if ( v.submodels && v.submodels[ i-1 ] != "" ) then modelname = v.submodels[ i-1 ] end
+					if ( v.submodels and v.submodels[ i-1 ] ~= "" ) then modelname = v.submodels[ i-1 ] end
 					local option = groups:AddOption( modelname, function() self:SetBodyGroup( ent, v.id, i-1 ) end )
 					if ( target:GetBodygroup( v.id ) == i-1 ) then
 						option:SetChecked( true )
@@ -109,8 +109,8 @@ properties.Add( "bodygroups", {
 		local body = net.ReadUInt( 8 )
 		local id = net.ReadUInt( 8 )
 
-		if ( !properties.CanBeTargeted( ent, ply ) ) then return end
-		if ( !self:Filter( ent, ply ) ) then return end
+		if ( not properties.CanBeTargeted( ent, ply ) ) then return end
+		if ( not self:Filter( ent, ply ) ) then return end
 
 		ent = IsValid( ent.AttachedEntity ) and ent.AttachedEntity or ent
 

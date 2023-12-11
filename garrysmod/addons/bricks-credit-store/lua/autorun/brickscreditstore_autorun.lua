@@ -22,7 +22,7 @@ function BRICKSCREDITSTORE.LoadConfig()
 		local FileTable = file.Read( "brickscreditstore/config.txt", "DATA" )
 		FileTable = util.JSONToTable( FileTable )
 		
-		if( FileTable != nil ) then
+		if( FileTable ~= nil ) then
 			if( istable( FileTable ) ) then
 				ConfigTable = FileTable
 			end

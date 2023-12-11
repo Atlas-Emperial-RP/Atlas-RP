@@ -128,7 +128,7 @@ function SWEP:DoHeal( ent )
 
 	local amount = self.HealAmount
 
-	if ( !self:CanHeal( ent ) ) then self:HealFail( ent ) return false end
+	if ( not self:CanHeal( ent ) ) then self:HealFail( ent ) return false end
 
 	local health, maxhealth = ent:Health(), ent:GetMaxHealth()
 	if ( health >= maxhealth ) then self:HealFail( ent ) return false end

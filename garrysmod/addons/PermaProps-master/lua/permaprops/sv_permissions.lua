@@ -10,7 +10,7 @@
 
 function PermaProps.HasPermission( ply, name )
 
-	if !PermaProps or !PermaProps.Permissions or !PermaProps.Permissions[ply:GetUserGroup()] then return false end
+	if not PermaProps or not PermaProps.Permissions or not PermaProps.Permissions[ply:GetUserGroup()] then return false end
 
 	if PermaProps.Permissions[ply:GetUserGroup()].Custom == false and PermaProps.Permissions[ply:GetUserGroup()].Inherits and PermaProps.Permissions[PermaProps.Permissions[ply:GetUserGroup()].Inherits] then
 

@@ -6,7 +6,7 @@ function StartMedicAnimation( ply, id )
 
 	if not IsValid(ply) then return end
 
-	if ply.mdlanim && IsValid( ply.mdlanim ) then print("model already exist, removed") ply.mdlanim:Remove() end
+	if ply.mdlanim and IsValid( ply.mdlanim ) then print("model already exist, removed") ply.mdlanim:Remove() end
 	
 	if ply:GetNWString("MedicPlayerModel") then
 
@@ -24,7 +24,7 @@ function StartMedicAnimation( ply, id )
 end
 
 function StopMedicAnimation( ply )
-	if IsValid( ply.mdlanim ) && ply:GetMedicAnimation() == 0 then
+	if IsValid( ply.mdlanim ) and ply:GetMedicAnimation() == 0 then
 		ply.mdlanim:Remove()
 	end
 end

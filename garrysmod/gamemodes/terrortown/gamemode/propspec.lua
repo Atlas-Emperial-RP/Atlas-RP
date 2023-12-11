@@ -36,7 +36,7 @@ function PROPSPEC.Target(ply, ent)
 
    local phys = ent:GetPhysicsObject()
 
-   if ent:GetName() != "" and (not GAMEMODE.propspec_allow_named) then return end
+   if ent:GetName() ~= "" and (not GAMEMODE.propspec_allow_named) then return end
    if (not IsValid(phys)) or (not phys:IsMoveable()) then return end
 
    -- normally only specific whitelisted ent classes can be possessed, but

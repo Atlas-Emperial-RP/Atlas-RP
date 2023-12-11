@@ -22,7 +22,7 @@ hook.Add( "DrawOverlay", "VGUIShowLayoutPaint", function()
 
 		end
 
-		if ( !panel:IsValid() || data.Time < SysTime() ) then
+		if ( not panel:IsValid() or data.Time < SysTime() ) then
 			Panels[ panel ] = nil
 		end
 

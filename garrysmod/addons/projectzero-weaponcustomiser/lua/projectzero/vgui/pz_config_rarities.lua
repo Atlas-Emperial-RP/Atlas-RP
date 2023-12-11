@@ -13,7 +13,7 @@ function PANEL:Refresh()
 
     local function GetRarityFromOrder( order )
         for k, v in pairs( values ) do
-            if( v.Order != order ) then continue end
+            if( v.Order ~= order ) then continue end
             return k
         end
 

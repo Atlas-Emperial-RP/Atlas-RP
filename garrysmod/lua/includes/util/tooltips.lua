@@ -8,7 +8,7 @@ local TooltippedPanel = nil
 -----------------------------------------------------------]]
 function RemoveTooltip()
 
-	if ( !IsValid( Tooltip ) ) then return true end
+	if ( not IsValid( Tooltip ) ) then return true end
 
 	Tooltip:Close()
 	Tooltip = nil
@@ -25,7 +25,7 @@ function FindTooltip( panel )
 	-- Look at the parent panel for tooltips.
 	while ( IsValid( panel ) ) do
 
-		if ( panel.strTooltipText || panel.pnlTooltipPanel || panel.pnlTooltipPanelOverride ) then
+		if ( panel.strTooltipText or panel.pnlTooltipPanel or panel.pnlTooltipPanelOverride ) then
 			return panel.strTooltipText, panel.pnlTooltipPanel, panel, panel.pnlTooltipPanelOverride
 		end
 
@@ -44,7 +44,7 @@ function ChangeTooltip( panel )
 	RemoveTooltip()
 
 	local Text, ContentPanel, PositionPanel, PanelOverride = FindTooltip( panel )
-	if ( !Text && !IsValid( ContentPanel ) && !PanelOverride ) then return end
+	if ( not Text and not IsValid( ContentPanel ) and not PanelOverride ) then return end
 
 	Tooltip = vgui.Create( PanelOverride or "DTooltip" )
 
@@ -73,7 +73,7 @@ function EndTooltip( panel )
 	-- which panel is currently being hovered in some very specific and unknown conditions
 
 	--if ( !IsValid( TooltippedPanel ) ) then return end
-	--if ( TooltippedPanel != panel ) then return end
+	--if ( TooltippedPanel ~= panel ) then return end
 
 	RemoveTooltip()
 

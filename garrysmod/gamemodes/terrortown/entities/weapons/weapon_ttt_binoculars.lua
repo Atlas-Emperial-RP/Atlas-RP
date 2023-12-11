@@ -135,7 +135,7 @@ function SWEP:IsTargetingCorpse()
    local ent = tr.Entity
 
    return (IsValid(ent) and ent:GetClass() == "prop_ragdoll" and
-           CORPSE.GetPlayerNick(ent, false) != false)
+           CORPSE.GetPlayerNick(ent, false) ~= false)
 end
 
 local confirm = Sound("npc/turret_floor/click1.wav")

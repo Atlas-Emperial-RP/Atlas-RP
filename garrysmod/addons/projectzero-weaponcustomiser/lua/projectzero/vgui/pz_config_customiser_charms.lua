@@ -233,7 +233,7 @@ function PANEL:CreateConfigPopup( valueKey, values )
     modelHint:SetTall( select( 2, surface.GetTextSize( "Press enter to update model." ) ) )
     modelHint.Paint = function( self2, w, h ) 
         local text = "Model loaded"
-        if( IsValid( modelEntry ) and modelEntry:GetValue() != configItem.Model ) then
+        if( IsValid( modelEntry ) and modelEntry:GetValue() ~= configItem.Model ) then
             text = "Press enter to update model"
         end
 

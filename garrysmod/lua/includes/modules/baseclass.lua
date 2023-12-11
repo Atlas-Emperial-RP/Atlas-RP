@@ -42,7 +42,7 @@ end
 
 function Set( name, tab )
 
-	if ( !BaseClassTable[name] ) then
+	if ( not BaseClassTable[name] ) then
 
 		BaseClassTable[name] =  tab
 

@@ -49,7 +49,7 @@ end
 
 local function Render( tbl )
 
-	if ( !tbl.mat ) then return end
+	if ( not tbl.mat ) then return end
 
 	surface.SetMaterial( tbl.mat )
 	surface.SetDrawColor( 255, 255, 255, tbl.Alpha )
@@ -66,7 +66,7 @@ end
 
 local function ShouldBackgroundUpdate()
 
-	return !IsInGame() && !IsInLoading()
+	return not IsInGame() and not IsInLoading()
 
 end
 
@@ -108,19 +108,19 @@ local LastGamemode = "none"
 
 function ChangeBackground( currentgm )
 
-	if ( !ShouldBackgroundUpdate() ) then return end -- Don't try to load new images while in-game or loading
+	if ( not ShouldBackgroundUpdate() ) then return end -- Don't try to load new images while in-game or loading
 
-	if ( currentgm && currentgm == LastGamemode ) then return end
+	if ( currentgm and currentgm == LastGamemode ) then return end
 	if ( currentgm ) then LastGamemode = currentgm end
 
 	local img = table.Random( Images )
-	if ( !img ) then
+	if ( not img ) then
 		print( "No main menu backgrounds found!" )
 		return
 	end
 
 	-- We just rolled the same image, no thank you, reroll
-	if ( Active && img == Active.Name && #Images > 1 ) then
+	if ( Active and img == Active.Name and #Images > 1 ) then
 		ChangeBackground()
 		return
 	end
@@ -136,7 +136,7 @@ function ChangeBackground( currentgm )
 	end
 
 	local mat = CreateBackgroundMaterial( img )
-	if ( !mat || mat:IsError() ) then
+	if ( not mat or mat:IsError() ) then
 		print( "Failed to create material for background ", img )
 		table.RemoveByValue( Images, img )
 		ChangeBackground()

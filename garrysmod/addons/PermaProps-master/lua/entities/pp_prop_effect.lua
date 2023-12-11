@@ -54,7 +54,7 @@ function ENT:Initialize()
 
 		-- Get the attached entity so that clientside functions like properties can interact with it
 		local tab = ents.FindByClassAndParent( "prop_dynamic", self )
-		if ( tab && IsValid( tab[ 1 ] ) ) then self.AttachedEntity = tab[ 1 ] end
+		if ( tab and IsValid( tab[ 1 ] ) ) then self.AttachedEntity = tab[ 1 ] end
 
 	end
 
@@ -82,7 +82,7 @@ function ENT:PhysicsUpdate( physobj )
 	if ( CLIENT ) then return end
 
 	-- Don't do anything if the player isn't holding us
-	if ( !self:IsPlayerHolding() && !self:IsConstrained() ) then
+	if ( not self:IsPlayerHolding() and not self:IsConstrained() ) then
 
 		physobj:SetVelocity( Vector( 0, 0, 0 ) )
 		physobj:Sleep()

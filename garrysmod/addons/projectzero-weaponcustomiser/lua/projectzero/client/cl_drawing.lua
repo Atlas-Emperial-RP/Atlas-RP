@@ -166,7 +166,7 @@ function PROJECT0.FUNC.NiceTrimText( text, font, w )
 		table.remove( splitText )
 	end
 
-	if( newText != text ) then
+	if( newText ~= text ) then
 		newText = newText .. "..."
 	end
 
@@ -279,7 +279,7 @@ end
 local gradientMatR, gradientMatU, gradientMatD = Material("gui/gradient"), Material("gui/gradient_up"), Material("gui/gradient_down")
 function PROJECT0.FUNC.DrawGradientBox(x, y, w, h, direction, ...)
 	local colors = {...}
-	local horizontal = direction != 1
+	local horizontal = direction ~= 1
 	local secSize = math.ceil( ((horizontal and w) or h)/math.ceil( #colors/2 ) )
 	
 	local previousPos = (horizontal and x or y)-secSize
@@ -293,7 +293,7 @@ function PROJECT0.FUNC.DrawGradientBox(x, y, w, h, direction, ...)
 
 	local previousGradPos = (horizontal and x or y)-secSize
 	for k, v in pairs( colors ) do
-		if( k % 2 != 0 ) then continue end
+		if( k % 2 ~= 0 ) then continue end
 
 		previousGradPos = previousGradPos+secSize
 

@@ -129,7 +129,7 @@ net.Receive("atlaschat.plload", function(bits, player)
 	
 	player.nextMessageAtlas = 0
 	
-	if (!loaded) then
+	if (not loaded) then
 		local steamID = sql.SQLStr(player:SteamID())
 		
 		atlaschat.sql.Query("SELECT * FROM atlaschat_players WHERE steamID=" .. steamID, function(data, query)
@@ -137,7 +137,7 @@ net.Receive("atlaschat.plload", function(bits, player)
 				if (data and #data > 0) then
 					data = data[1]
 		
-					if (data.title and data.title != "" and data.title != "NULL") then
+					if (data.title and data.title ~= "" and data.title ~= "NULL") then
 						player:SetNetworkedString("ac_title", data.title)
 					end
 				else
@@ -153,7 +153,7 @@ net.Receive("atlaschat.plload", function(bits, player)
 		end)
 		
 		for unique, data in pairs(atlaschat.ranks) do
-			local tag = data.tag != NULL and data.tag or ""
+			local tag = data.tag ~= NULL and data.tag or ""
 			
 			net.Start("atlaschat.crtrnkgt")
 				net.WriteString(unique)
@@ -222,7 +222,7 @@ net.Receive("atlaschat.crtrnk", function(bits, player)
 	if (isAdmin) then
 		local userGroup = net.ReadString()
 		
-		if (atlaschat.ranks[userGroup] != nil) then
+		if (atlaschat.ranks[userGroup] ~= nil) then
 			atlaschat.Notify(":exclamation: Could not create the usergroup: The usergroup already exist!", player)
 		else
 			atlaschat.ranks[userGroup] = {tag = "", icon = "icon16/user.png"}
@@ -378,7 +378,7 @@ net.Receive("atlaschat.stpm", function(bits, player)
 		end
 	end
 	
-	if (!key) then key = count +1 end
+	if (not key) then key = count +1 end
 	
 	privateMessages[key] = {players = {player}, creator = player}
 
@@ -497,7 +497,7 @@ net.Receive("atlaschat.jnpm", function(bits, player)
 			end
 		end
 		
-		if (!exists) then
+		if (not exists) then
 			table.insert(data.players, player)
 			
 			-- Send information about the chat room to the player.
@@ -587,11 +587,11 @@ util.AddNetworkString("atlaschat.rqclrcfg")
 net.Receive("atlaschat.rqclrcfg", function(bits, player)
 	local target = net.ReadString()
 	
-	if (target != "") then
+	if (target ~= "") then
 		target = util.FindPlayerAtlaschat(target, player)
 		
 		if (IsValid(target)) then
-			if (target != player and !player:IsAdmin()) then return end
+			if (target ~= player and not player:IsAdmin()) then return end
 			
 			net.Start("atlaschat.clrcfg")
 			net.Send(target)
@@ -644,7 +644,7 @@ net.Receive("atlaschat.chat", function(bits, player)
 	
 	text = string.sub(text, 0, 127)
 	
-	local newText = hook.Run("PlayerSay", player, text, team, !player:Alive())
+	local newText = hook.Run("PlayerSay", player, text, team, not player:Alive())
 	
 	-- A workaround for dumb coders that return a boolean in the PlayerSay hook.
 	if (isstring(newText)) then
@@ -653,7 +653,7 @@ net.Receive("atlaschat.chat", function(bits, player)
 		text = ""
 	end
 	
-	if (text != "") then
+	if (text ~= "") then
 		if (game.IsDedicated()) then
 			ServerLog(player:Nick() .. ": " .. text .. "\n")
 		end

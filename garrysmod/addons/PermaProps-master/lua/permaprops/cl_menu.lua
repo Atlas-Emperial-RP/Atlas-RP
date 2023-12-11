@@ -283,21 +283,21 @@ local function pp_open_menu()
 		CheckCustom:SetDisabled( false )
 		CheckCustom:SetChecked( Content.Permissions[value].Custom )
 
-		CheckBox1:SetDisabled( !Content.Permissions[value].Custom )
+		CheckBox1:SetDisabled( not Content.Permissions[value].Custom )
 		CheckBox1:SetChecked( Content.Permissions[value].Menu )
-		CheckBox2:SetDisabled( !Content.Permissions[value].Custom )
+		CheckBox2:SetDisabled( not Content.Permissions[value].Custom )
 		CheckBox2:SetChecked( Content.Permissions[value].Permissions )
-		CheckBox3:SetDisabled( !Content.Permissions[value].Custom )
+		CheckBox3:SetDisabled( not Content.Permissions[value].Custom )
 		CheckBox3:SetChecked( Content.Permissions[value].Physgun )
-		CheckBox4:SetDisabled( !Content.Permissions[value].Custom )
+		CheckBox4:SetDisabled( not Content.Permissions[value].Custom )
 		CheckBox4:SetChecked( Content.Permissions[value].Tool )
-		CheckBox5:SetDisabled( !Content.Permissions[value].Custom )
+		CheckBox5:SetDisabled( not Content.Permissions[value].Custom )
 		CheckBox5:SetChecked( Content.Permissions[value].Property )
-		CheckBox6:SetDisabled( !Content.Permissions[value].Custom )
+		CheckBox6:SetDisabled( not Content.Permissions[value].Custom )
 		CheckBox6:SetChecked( Content.Permissions[value].Save )
-		CheckBox7:SetDisabled( !Content.Permissions[value].Custom )
+		CheckBox7:SetDisabled( not Content.Permissions[value].Custom )
 		CheckBox7:SetChecked( Content.Permissions[value].Delete )
-		CheckBox8:SetDisabled( !Content.Permissions[value].Custom )
+		CheckBox8:SetDisabled( not Content.Permissions[value].Custom )
 		CheckBox8:SetChecked( Content.Permissions[value].Update )
 
 	end
@@ -310,14 +310,14 @@ local function pp_open_menu()
 
 	CheckCustom.OnChange = function(Self, Value)
 
-		CheckBox1:SetDisabled( !Value )
-		CheckBox2:SetDisabled( !Value )
-		CheckBox3:SetDisabled( !Value )
-		CheckBox4:SetDisabled( !Value )
-		CheckBox5:SetDisabled( !Value )
-		CheckBox6:SetDisabled( !Value )
-		CheckBox7:SetDisabled( !Value )
-		CheckBox8:SetDisabled( !Value )
+		CheckBox1:SetDisabled( not Value )
+		CheckBox2:SetDisabled( not Value )
+		CheckBox3:SetDisabled( not Value )
+		CheckBox4:SetDisabled( not Value )
+		CheckBox5:SetDisabled( not Value )
+		CheckBox6:SetDisabled( not Value )
+		CheckBox7:SetDisabled( not Value )
+		CheckBox8:SetDisabled( not Value )
 
 		net.Start("pp_info_send")
 			net.WriteTable({CMD = "VAR", Val = Value, Data = "Custom", Name = GroupsList:GetValue()})
@@ -398,7 +398,7 @@ local function pp_open_menu()
 
 		end
 
-		if LocalPlayer().DrawPPEnt != nil and istable(LocalPlayer().DrawPPEnt) and table.Count(LocalPlayer().DrawPPEnt) > 0 then
+		if LocalPlayer().DrawPPEnt ~= nil and istable(LocalPlayer().DrawPPEnt) and table.Count(LocalPlayer().DrawPPEnt) > 0 then
 
 			MenuButtonOptions:AddOption("Stop Drawing All", function() 
 
@@ -419,7 +419,7 @@ local function pp_open_menu()
 	    		net.WriteTable({CMD = "DEL", Val = PropsList:GetLine(line):GetValue(1)})
 	    	net.SendToServer()
 
-	    	if LocalPlayer().DrawPPEnt and LocalPlayer().DrawPPEnt[PropsList:GetLine(line):GetValue(1)] != nil then
+	    	if LocalPlayer().DrawPPEnt and LocalPlayer().DrawPPEnt[PropsList:GetLine(line):GetValue(1)] ~= nil then
 
 	    		LocalPlayer().DrawPPEnt[PropsList:GetLine(line):GetValue(1)]:Remove()
 				LocalPlayer().DrawPPEnt[PropsList:GetLine(line):GetValue(1)] = nil

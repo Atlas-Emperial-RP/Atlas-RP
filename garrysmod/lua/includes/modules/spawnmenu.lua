@@ -72,7 +72,7 @@ end
 function SwitchToolTab( id )
 
 	local Tab = g_SpawnMenu:GetToolMenu():GetToolPanel( id )
-	if ( !IsValid( Tab ) or !IsValid( Tab.PropertySheetTab ) ) then return end
+	if ( not IsValid( Tab ) or not IsValid( Tab.PropertySheetTab ) ) then return end
 
 	Tab.PropertySheetTab:DoClick()
 
@@ -81,7 +81,7 @@ end
 function ActivateToolPanel( tabId, ctrlPnl, toolName )
 
 	local Tab = g_SpawnMenu:GetToolMenu():GetToolPanel( tabId )
-	if ( !IsValid( Tab ) ) then return end
+	if ( not IsValid( Tab ) ) then return end
 
 	spawnmenu.SetActiveControlPanel( ctrlPnl )
 
@@ -91,7 +91,7 @@ function ActivateToolPanel( tabId, ctrlPnl, toolName )
 
 	SwitchToolTab( tabId )
 
-	if ( toolName && Tab.SetActiveToolText ) then
+	if ( toolName and Tab.SetActiveToolText ) then
 		Tab:SetActiveToolText( toolName )
 	end
 
@@ -105,14 +105,14 @@ function ActivateTool( strName, noCommand )
 		for _, items in pairs( v.Items ) do
 			for _, item in pairs( items ) do
 
-				if ( istable( item ) && item.ItemName && item.ItemName == strName ) then
+				if ( istable( item ) and item.ItemName and item.ItemName == strName ) then
 
-					if ( !noCommand && item.Command && string.len( item.Command ) > 1 ) then
+					if ( not noCommand and item.Command and string.len( item.Command ) > 1 ) then
 						RunConsoleCommand( unpack( string.Explode( " ", item.Command ) ) )
 					end
 
 					local cp = controlpanel.Get( strName )
-					if ( !cp:GetInitialized() ) then
+					if ( not cp:GetInitialized() ) then
 						cp:FillViaTable( { Text = item.Text, ControlPanelBuildFunction = item.CPanelFunction } )
 					end
 
@@ -150,11 +150,11 @@ function AddToolMenuOption( tab, category, itemname, text, command, controls, cp
 	local CategoryTable = nil
 
 	for k, v in ipairs( Menu ) do
-		if ( v.ItemName && v.ItemName == category ) then CategoryTable = v break end
+		if ( v.ItemName and v.ItemName == category ) then CategoryTable = v break end
 	end
 
 	-- No table found.. lets create one
-	if ( !CategoryTable ) then
+	if ( not CategoryTable ) then
 		CategoryTable = { Text = "#"..category, ItemName = category }
 		table.insert( Menu, CategoryTable )
 	end
@@ -198,7 +198,7 @@ end
 function SwitchCreationTab( id )
 
 	local tab = g_SpawnMenu:GetCreationMenu():GetCreationTab( id )
-	if ( !tab or !IsValid( tab.Tab ) ) then return end
+	if ( not tab or not IsValid( tab.Tab ) ) then return end
 
 	tab.Tab:DoClick()
 
@@ -232,7 +232,7 @@ function AddPropCategory( strFilename, strName, tabContents, icon, id, parentid,
 		needsapp = needsapp
 	}
 
-	if ( !id ) then ActiveSpawnlistID = ActiveSpawnlistID + 1 end
+	if ( not id ) then ActiveSpawnlistID = ActiveSpawnlistID + 1 end
 
 end
 
@@ -288,7 +288,7 @@ end
 
 function GetContentType( name, func )
 
-	if ( !cp[ name ] ) then
+	if ( not cp[ name ] ) then
 
 		cp[ name ] = function() end
 		Msg( "spawnmenu.GetContentType( ", name, " ) - not found!\n" )

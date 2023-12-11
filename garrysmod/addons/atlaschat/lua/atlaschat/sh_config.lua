@@ -28,7 +28,7 @@ function atlaschat.config.New(text, name, default, save, disableCommand, server,
 		object = {}
 	end
 	
-	if (!exists) then
+	if (not exists) then
 		setmetatable(object, config)
 	end
 	
@@ -42,7 +42,7 @@ function atlaschat.config.New(text, name, default, save, disableCommand, server,
 	
 	stored[name] = object
 	
-	if (!disableCommand) then
+	if (not disableCommand) then
 		concommand.Add("atlaschat_" .. name, function(player, command, arguments)
 			local value = arguments[1]
 			
@@ -66,15 +66,15 @@ function atlaschat.config.New(text, name, default, save, disableCommand, server,
 	end
 	
 	-- Load saved value.
-	if (!force) then
-		if (save and saved[name] != nil) then
+	if (not force) then
+		if (save and saved[name] ~= nil) then
 			object.value = saved[name]
 		end
 		
 		saved[name] = object.value
 	end
 	
-	if (!exists) then
+	if (not exists) then
 		object.index = table.insert(objects, object)
 	end
 	
@@ -128,7 +128,7 @@ local SetGet = function(object, type, mod)
 			self.value = argument
 		end
 		
-		if (!self.force and self.save and !noSave) then
+		if (not self.force and self.save and not noSave) then
 			saved[self.name] = self.value
 			
 			nextSave = CurTime() +0.5
@@ -223,7 +223,7 @@ if (SERVER) then
 			local object = stored[unique]
 			
 			if (object and object.server) then
-				object:SetValue(value, !game.IsDedicated())
+				object:SetValue(value, not game.IsDedicated())
 	
 				net.Start("atlaschat.sndcfg")
 					net.WriteString(unique)
@@ -240,7 +240,7 @@ if (SERVER) then
 	
 	function atlaschat.config.SyncVariables(player)
 		for unique, object in pairs(stored) do
-			if (object.server and !object.force) then
+			if (object.server and not object.force) then
 				local value = object:GetValue()
 				
 				net.Start("atlaschat.sndcfg")

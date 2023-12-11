@@ -7,7 +7,7 @@ hook.Add("PlayerDisconnected", "PlayerDisconnected.MedicMod", function( ply )
 	StopMedicAnimation( ply )
 	
 	if ply.RagdollHeartMassage then
-		 if IsValid( ply.RagdollHeartMassage ) && IsValid( ply.RagdollHeartMassage:GetOwner() ) then
+		 if IsValid( ply.RagdollHeartMassage ) and IsValid( ply.RagdollHeartMassage:GetOwner() ) then
             ply.RagdollHeartMassage:GetOwner().NextSpawnTime = CurTime() +  ply.RagdollHeartMassage:GetOwner().AddToSpawnTime
             ply.RagdollHeartMassage.IsHeartMassage = false
 			net.Start("MedicMod.Respawn")
@@ -103,7 +103,7 @@ hook.Add("DoPlayerDeath", "DoPlayerDeath.MedicMod", function( ply, att, dmg )
 
 	if ply.RagdollHeartMassage then
 
-		if IsValid( ply.RagdollHeartMassage ) && IsValid( ply.RagdollHeartMassage:GetOwner() ) then
+		if IsValid( ply.RagdollHeartMassage ) and IsValid( ply.RagdollHeartMassage:GetOwner() ) then
 
 			ply.RagdollHeartMassage:GetOwner().NextSpawnTime = CurTime() +  ply.RagdollHeartMassage:GetOwner().AddToSpawnTime
             ply.RagdollHeartMassage.IsHeartMassage = false
@@ -175,7 +175,7 @@ hook.Add("PlayerDeath", "PlayerDeath.MedicMod", function( victim, inf, att )
  
     -- Remove ragdoll ent
     timer.Simple(0.01, function()
-        if(victim:GetRagdollEntity() != nil and victim:GetRagdollEntity():IsValid()) then
+        if(victim:GetRagdollEntity() ~= nil and victim:GetRagdollEntity():IsValid()) then
             victim:GetRagdollEntity():Remove()
         end
     end)
@@ -213,7 +213,7 @@ hook.Add("PlayerSwitchWeapon", "PlayerSwitchWeapon.MedicMod", function( ply, old
     if not IsValid( old ) or not IsValid( ply ) then return end
    
     -- prevent switch weapon if the player is doing a heart massage
-    if old:GetClass() == "heart_massage" && ply:GetMedicAnimation() != 0 then
+    if old:GetClass() == "heart_massage" and ply:GetMedicAnimation() ~= 0 then
         return true
     end
     if ply.CantSwitchWeapon then
@@ -277,7 +277,7 @@ hook.Add("EntityRemoved", "EntityRemoved.MedicMod", function( ent )
 		
 	if not IsValid( stretch ) then return end
 	
-	if stretch.ragdoll && IsValid( stretch.ragdoll ) then return end
+	if stretch.ragdoll and IsValid( stretch.ragdoll ) then return end
 	
 	stretch:Remove()
 
@@ -423,7 +423,7 @@ end)
 hook.Add("playerCanChangeTeam", "playerCanChangeTeam.MedicMod", function(ply)
 	if ply.NextSpawnTime and ply.NextSpawnTime > CurTime() then return false end
 	if ply.NextSpawnTime and ply.NextSpawnTime == -1 then return false end
-	if ply:GetMedicAnimation() != 0 then return false end
+	if ply:GetMedicAnimation() ~= 0 then return false end
 end)
  
 -- if someone change job
