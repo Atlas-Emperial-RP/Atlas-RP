@@ -101,7 +101,7 @@ do
 			for _, level in ipairs(levels) do
 				teamLevels[level] = teamLevels[level] or {}
 				teamLevels[level][team_index] = true
-				keycards = keycards .. (((bKeypads.Keycards.Levels[level] or {Name="ERROR " .. level}).Name or "Level ") .. level) .. ", "
+				keycards = keycards .. ((bKeypads.Keycards.Levels[level] or {Name="ERROR " .. level}).Name or "Level " .. level) .. ", "
 			end
 
 			bKeypads:print("[" .. team.GetName(team_index) .. "] = (Found: " .. #levels .. ") " .. keycards:sub(1, -3), bKeypads.PRINT_TYPE_SPECIAL)
@@ -118,7 +118,7 @@ do
 				teamsCount = teamsCount + 1
 			end
 
-			bKeypads:print("[" .. (((bKeypads.Keycards.Levels[level] or {Name="ERROR " .. level}).Name or "Level ") .. level) .. "] = (Found: " .. teamsCount .. ") " .. teamsStr:sub(1, -3), bKeypads.PRINT_TYPE_SPECIAL)
+			bKeypads:print("[" .. ((bKeypads.Keycards.Levels[level] or {Name="ERROR " .. level}).Name or "Level " .. level) .. "] = (Found: " .. teamsCount .. ") " .. teamsStr:sub(1, -3), bKeypads.PRINT_TYPE_SPECIAL)
 		end
 		MsgC("\n")
 	end)
@@ -220,9 +220,8 @@ if SERVER then
 		--print("Assigned ID", id, droppedKeycard)
 	end
 	for _, droppedKeycard in ipairs(ents.GetAll()) do
-		if droppedKeycard:GetClass() == "bkeycard_pickup" then 
-			bKeypads.Keycards:AssignID(droppedKeycard)
-		end
+		if droppedKeycard:GetClass() ~= "bkeycard_pickup" then return end
+		bKeypads.Keycards:AssignID(droppedKeycard)
 	end
 end
 
@@ -390,11 +389,10 @@ if SERVER then
 		bKeypads.Keycards.Persistent = { ID = 0, Keycards = {} }
 
 		for _, v in ipairs(ents.GetAll()) do
-			if v:GetClass() == "bkeycard_pickup" then 
-				v.bKeypads_PersistID = nil
-				v:SetPersist(false)
-				v:Remove()
-			end
+			if v:GetClass() ~= "bkeycard_pickup" then return end
+			v.bKeypads_PersistID = nil
+			v:SetPersist(false)
+			v:Remove()
 		end
 
 		if not file.Exists("bkeypads/persistence/" .. game.GetMap() .. "/dropped_keycards.json", "DATA") then

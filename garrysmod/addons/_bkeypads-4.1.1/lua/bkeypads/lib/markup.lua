@@ -139,7 +139,7 @@ local function ExtractParams( p1, p2, p3 )
 				local x = { "r", "g", "b", "a" }
 				local n = 1
 				for k, v in string.gmatch( p2, "(%d+),?" ) do
-					rgba[x[n]] = tonumber(k)
+					rgba[ x[ n ] ] = k
 					n = n + 1
 				end
 			end
@@ -303,11 +303,11 @@ function Parse( ml, maxwidth )
 	font_stack = { "DermaDefault" }
 	blocks = {}
 
-	if ( not string.find( ml, "<" ) ) then
+	if ( !string.find( ml, "<" ) ) then
 		ml = ml .. "<nop>"
 	end
 
-	local result = string.gsub( ml, "([^<>]*)(<[^>]+.)([^<>]*)", ProcessMatches )
+	string.gsub( ml, "([^<>]*)(<[^>]+.)([^<>]*)", ProcessMatches )
 
 	local xOffset = 0
 	local yOffset = 0

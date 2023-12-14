@@ -3,12 +3,11 @@ bKeypads.Properties.Drawing = {}
 
 -- Remove any previous property sheets
 for _, keypad in ipairs(bKeypads.Keypads) do
-	if IsValid(keypad) then
-		if IsValid(keypad.m_pKeypadProperties) then
-			keypad.m_pKeypadProperties:Remove()
-		end
-		keypad.m_pKeypadProperties = nil
+	if not IsValid(keypad) then return end
+	if IsValid(keypad.m_pKeypadProperties) then
+		keypad.m_pKeypadProperties:Remove()
 	end
+	keypad.m_pKeypadProperties = nil
 end
 
 local propertiesW = 300
@@ -377,24 +376,23 @@ end
 local function ConVarPropertiesThink(self)
 	for _, category in ipairs(displayProps) do
 		for _, prop in ipairs(category[1]) do
-			if prop.SetValueConVar and prop.ConVar then 
-				local row = self.Props[category.NameRaw or category.Name][prop.NameRaw or prop.Name]
-				if prop.SetValueConVar then
-					row:SetValue(prop.SetValueConVar())
-				else
-					local ConVar = GetConVar(prop.ConVar)
-					local ConVarValue
-					if prop.Type == "Generic" then
-						ConVarValue = ConVar:GetString()
-					elseif prop.Type == "Boolean" then
-						ConVarValue = ConVar:GetBool()
-					elseif prop.Type == "Int" then
-						ConVarValue = ConVar:GetInt()
-					elseif prop.Type == "Float" then
-						ConVarValue = ConVar:GetFloat()
-					end
-					row:SetValue(ConVarValue)
+			if not prop.SetValueConVar and not prop.ConVar then return end
+			local row = self.Props[category.NameRaw or category.Name][prop.NameRaw or prop.Name]
+			if prop.SetValueConVar then
+				row:SetValue(prop.SetValueConVar())
+			else
+				local ConVar = GetConVar(prop.ConVar)
+				local ConVarValue
+				if prop.Type == "Generic" then
+					ConVarValue = ConVar:GetString()
+				elseif prop.Type == "Boolean" then
+					ConVarValue = ConVar:GetBool()
+				elseif prop.Type == "Int" then
+					ConVarValue = ConVar:GetInt()
+				elseif prop.Type == "Float" then
+					ConVarValue = ConVar:GetFloat()
 				end
+				row:SetValue(ConVarValue)
 			end
 		end
 	end
@@ -455,62 +453,61 @@ function bKeypads.Properties:CreatePropertiesPanel(keypad, use_convars)
 	for _, category in ipairs(displayProps) do
 		KeypadProperties.Props[category.Name] = {}
 		for _, prop in ipairs(category[1]) do
-			if use_convars and (prop.SetValueConVar and prop.ConVar) then 
+			if use_convars and (not prop.SetValueConVar and not prop.ConVar) then return end
 
-				local options
+			local options
 
-				if prop.Type == "Float" or prop.Type == "Int" then
-					options = {
-						min = -math.huge,
-						max = math.huge
-					}
-				end
-
-				local row = KeypadProperties:CreateRow(category.NameRaw or bKeypads.L(category.Name), prop.NameRaw or (bKeypads.L(prop.Name):gsub(":", "")))
-				row:Setup(prop.Type, options)
-
-				if prop.Type == "Generic" then
-					local function blockChange(self)
-						local actualVal
-						if use_convars then
-							if prop.SetValueConVar then
-								actualVal = prop.SetValueConVar()
-							else
-								actualVal = GetConVar(prop.ConVar):GetString()
-							end
-						elseif IsValid(keypad) then
-							actualVal = prop.SetValue(keypad)
-						else
-							return
-						end
-						if self:GetText() ~= actualVal then
-							self:SetText(actualVal)
-						end
-					end
-
-					local DTextEntry = row:Find("DTextEntry")
-					DTextEntry:SetUpdateOnType(true)
-					DTextEntry.OnValueChange = blockChange
-					DTextEntry.OnChange = blockChange
-					DTextEntry.OnTextChanged = blockChange
-					DTextEntry.OnEnter = blockChange
-					DTextEntry.OnFocusChanged = blockChange
-					DTextEntry.OnKeyCode = blockChange
-					DTextEntry.AllowInput = function() return true end
-				elseif prop.Type == "Boolean" then
-					row:Find("DCheckBox"):SetMouseInputEnabled(false)
-				elseif prop.Type == "VectorColor" then
-					row:Find("DButton"):SetMouseInputEnabled(false)
-				elseif prop.Type == "Int" then
-					local DNumSlider = row:Find("DNumSlider")
-					DNumSlider.Slider:SetVisible(false)
-					DNumSlider.Scratch:SetMouseInputEnabled(false)
-					DNumSlider:SetMouseInputEnabled(false)
-					row.Inner.Paint = nil
-				end
-
-				KeypadProperties.Props[category.NameRaw or category.Name][prop.NameRaw or prop.Name] = row
+			if prop.Type == "Float" or prop.Type == "Int" then
+				options = {
+					min = -math.huge,
+					max = math.huge
+				}
 			end
+
+			local row = KeypadProperties:CreateRow(category.NameRaw or bKeypads.L(category.Name), prop.NameRaw or (bKeypads.L(prop.Name):gsub(":", "")))
+			row:Setup(prop.Type, options)
+
+			if prop.Type == "Generic" then
+				local function blockChange(self)
+					local actualVal
+					if use_convars then
+						if prop.SetValueConVar then
+							actualVal = prop.SetValueConVar()
+						else
+							actualVal = GetConVar(prop.ConVar):GetString()
+						end
+					elseif IsValid(keypad) then
+						actualVal = prop.SetValue(keypad)
+					else
+						return
+					end
+					if self:GetText() ~= actualVal then
+						self:SetText(actualVal)
+					end
+				end
+
+				local DTextEntry = row:Find("DTextEntry")
+				DTextEntry:SetUpdateOnType(true)
+				DTextEntry.OnValueChange = blockChange
+				DTextEntry.OnChange = blockChange
+				DTextEntry.OnTextChanged = blockChange
+				DTextEntry.OnEnter = blockChange
+				DTextEntry.OnFocusChanged = blockChange
+				DTextEntry.OnKeyCode = blockChange
+				DTextEntry.AllowInput = function() return true end
+			elseif prop.Type == "Boolean" then
+				row:Find("DCheckBox"):SetMouseInputEnabled(false)
+			elseif prop.Type == "VectorColor" then
+				row:Find("DButton"):SetMouseInputEnabled(false)
+			elseif prop.Type == "Int" then
+				local DNumSlider = row:Find("DNumSlider")
+				DNumSlider.Slider:SetVisible(false)
+				DNumSlider.Scratch:SetMouseInputEnabled(false)
+				DNumSlider:SetMouseInputEnabled(false)
+				row.Inner.Paint = nil
+			end
+
+			KeypadProperties.Props[category.NameRaw or category.Name][prop.NameRaw or prop.Name] = row
 		end
 	end
 

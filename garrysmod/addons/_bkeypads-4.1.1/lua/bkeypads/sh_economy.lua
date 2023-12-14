@@ -45,26 +45,24 @@ if SERVER then
 		if requiresPaymentQueue[ply] then
 			local EyePos, AimVector = ply:EyePos(), ply:GetAimVector()
 			for keypad in pairs(requiresPaymentQueue[ply]) do
-				if not IsValid(keypad) then 
+				if not IsValid(keypad) then return end
 
-					local keypadCenter = keypad:WorldSpaceCenter()
+				local keypadCenter = keypad:WorldSpaceCenter()
 
-					local intersect = util.IntersectRayWithPlane(EyePos, AimVector, keypadCenter, (EyePos - keypadCenter):Angle():Forward())
-					if not intersect then return end
+				local intersect = util.IntersectRayWithPlane(EyePos, AimVector, keypadCenter, (EyePos - keypadCenter):Angle():Forward())
+				if not intersect then return end
 
-					local dist = intersect:Distance(keypadCenter)
+				local dist = intersect:Distance(keypadCenter)
 
-					local maxs, mins = keypad:OBBMaxs(), keypad:OBBMins()
-					local tolerance = math.max(maxs.x - mins.x, maxs.y - mins.y, maxs.z - mins.z) * 2
+				local maxs, mins = keypad:OBBMaxs(), keypad:OBBMins()
+				local tolerance = math.max(maxs.x - mins.x, maxs.y - mins.y, maxs.z - mins.z) * 2
 
-					if not (dist > tolerance) then 
+				if dist > tolerance then return end
 
-						net.Start("bKeypads.Economy.RequiresPayment")
-							net.WriteEntity(keypad)
-							net.WriteBool(keypad:PlayerRequiresPayment(ply))
-						net.Send(ply)
-					end
-				end
+				net.Start("bKeypads.Economy.RequiresPayment")
+					net.WriteEntity(keypad)
+					net.WriteBool(keypad:PlayerRequiresPayment(ply))
+				net.Send(ply)
 			end
 			requiresPaymentQueue[ply] = nil
 

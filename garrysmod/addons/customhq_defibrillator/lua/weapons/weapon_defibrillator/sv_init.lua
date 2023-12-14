@@ -92,7 +92,7 @@ net.Receive("defibgiveents", function(len, ply)
 					end
 				end)
 			else
-				DarkRP.notify(ply, 3, 6, "You recently revived "..otherPly:Nick().."not  No money received.")
+				DarkRP.notify(ply, 3, 6, "You recently revived "..otherPly:Nick().."! No money received.")
 			end
 		end
 		makefx(otherPly, otherPly:GetPos(), "spark", otherPly, true)

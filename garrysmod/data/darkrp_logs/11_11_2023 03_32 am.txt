@@ -1,5 +1,0 @@
-Sat Nov 11 03:32:54 2023	King Platypus (STEAM_0:0:197465498) has joined the game
-Sat Nov 11 03:32:54 2023	ISB Chief Grimjaw (STEAM_0:0:197465498) spawned
-Sat Nov 11 03:54:40 2023	John Reach (STEAM_0:1:147363270) has joined the game
-Sat Nov 11 03:54:40 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270) spawned
-Sat Nov 11 03:56:06 2023	ST PVT 3644 Hopper (STEAM_0:1:147363270) disconnected

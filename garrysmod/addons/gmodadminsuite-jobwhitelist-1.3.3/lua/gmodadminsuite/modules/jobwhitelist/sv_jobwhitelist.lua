@@ -949,11 +949,10 @@ GAS:netReceive("jobwhitelist:enable_all_whitelists", function(ply)
 		local job_index = job.team
 		if ((GM or GAMEMODE).DefaultTeam == job_index) then return end
 
-			GAS.JobWhitelist.EnabledWhitelists[job_index] = true
-			GAS.Database:Prepare("REPLACE INTO `" .. GAS.Database.ServerTablePrefix .. "gas_jobwhitelist_enabled_lists` (`blacklist`, `job_id`) VALUES(0, ?)", {OpenPermissions:GetTeamIdentifier(job_index)})
+		GAS.JobWhitelist.EnabledWhitelists[job_index] = true
+		GAS.Database:Prepare("REPLACE INTO `" .. GAS.Database.ServerTablePrefix .. "gas_jobwhitelist_enabled_lists` (`blacklist`, `job_id`) VALUES(0, ?)", {OpenPermissions:GetTeamIdentifier(job_index)})
 
-			hook.Run("bWhitelist:WhitelistEnabled", job_index)
-		end
+		hook.Run("bWhitelist:WhitelistEnabled", job_index)
 	end
 
 	GAS.Database:CommitTransaction(function()
@@ -973,11 +972,10 @@ GAS:netReceive("jobwhitelist:enable_all_blacklists", function(ply)
 		local job_index = job.team
 		if ((GM or GAMEMODE).DefaultTeam == job_index) then return end
 
-			GAS.JobWhitelist.EnabledWhitelists[job_index] = true
-			GAS.Database:Prepare("REPLACE INTO `" .. GAS.Database.ServerTablePrefix .. "gas_jobwhitelist_enabled_lists` (`blacklist`, `job_id`) VALUES(1, ?)", {OpenPermissions:GetTeamIdentifier(job_index)})
+		GAS.JobWhitelist.EnabledWhitelists[job_index] = true
+		GAS.Database:Prepare("REPLACE INTO `" .. GAS.Database.ServerTablePrefix .. "gas_jobwhitelist_enabled_lists` (`blacklist`, `job_id`) VALUES(1, ?)", {OpenPermissions:GetTeamIdentifier(job_index)})
 
-			hook.Run("bWhitelist:BlacklistEnabled", job_index)
-		end
+		hook.Run("bWhitelist:BlacklistEnabled", job_index)
 	end
 
 	GAS.Database:CommitTransaction(function()

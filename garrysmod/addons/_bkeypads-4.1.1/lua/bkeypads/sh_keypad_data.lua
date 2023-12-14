@@ -386,14 +386,13 @@ bKeypads:GMInitialize(function() if DarkRP then
 					bKeypads.DarkRP.Agendas.Teams[agenda.Title][team_index] = true
 				end
 
-				if agenda.Manager then 
-					if istable(agenda.Manager) then
-						for _, team_index in ipairs(agenda.Manager) do
-							bKeypads.DarkRP.Agendas.Teams[agenda.Title][team_index] = true
-						end
-					else
-						bKeypads.DarkRP.Agendas.Teams[agenda.Title][agenda.Manager] = true
+				if not agenda.Manager then return end
+				if istable(agenda.Manager) then
+					for _, team_index in ipairs(agenda.Manager) do
+						bKeypads.DarkRP.Agendas.Teams[agenda.Title][team_index] = true
 					end
+				else
+					bKeypads.DarkRP.Agendas.Teams[agenda.Title][agenda.Manager] = true
 				end
 			end
 		end
@@ -411,11 +410,10 @@ bKeypads:GMInitialize(function() if DarkRP then
 
 		if DarkRP.getDemoteGroups then
 			for _, demoteGroup in pairs(DarkRP.getDemoteGroups()) do
-				if demoteGroup.name then 
-					bKeypads.DarkRP.DemoteGroups[demoteGroup.name] = bKeypads.DarkRP.DemoteGroups[demoteGroup.name] or {}
-					bKeypads.DarkRP.DemoteGroups[demoteGroup.name][demoteGroup.value] = true
-				end
-			end	
+				if not demoteGroup.name then return end
+				bKeypads.DarkRP.DemoteGroups[demoteGroup.name] = bKeypads.DarkRP.DemoteGroups[demoteGroup.name] or {}
+				bKeypads.DarkRP.DemoteGroups[demoteGroup.name][demoteGroup.value] = true
+			end
 		end
 
 		if DarkRP.getCategories then
@@ -458,15 +456,14 @@ else
 	local SteamFriends = {}
 	timer.Create("bKeypads.SteamFriends", 10, 0, function()
 		for _, ply in ipairs(player.GetHumans()) do
-			if ply ~= LocalPlayer() then 
+			if ply == LocalPlayer() then return end
 			local status = ply:GetFriendStatus() == "friend"
-				if (status == true and not SteamFriends[ply]) or (status == false and SteamFriends[ply] == true) then
-					SteamFriends[ply] = status
-					net.Start("bKeypads.SteamFriends")
-						net.WriteEntity(ply)
-						net.WriteBool(status)
-					net.SendToServer()
-				end
+			if (status == true and not SteamFriends[ply]) or (status == false and SteamFriends[ply] == true) then
+				SteamFriends[ply] = status
+				net.Start("bKeypads.SteamFriends")
+					net.WriteEntity(ply)
+					net.WriteBool(status)
+				net.SendToServer()
 			end
 		end
 	end)

@@ -1,8 +1,0 @@
-Thu Aug 31 16:24:37 2023	im in graves' basement help (STEAM_0:0:631269172) has joined the game
-Thu Aug 31 16:24:37 2023	im in graves' basement help (STEAM_0:0:631269172) spawned
-Thu Aug 31 16:24:53 2023	im in graves' basement help (STEAM_0:0:631269172): !menu
-Thu Aug 31 16:28:31 2023	im in graves' basement help (STEAM_0:0:631269172): !menu
-Thu Aug 31 16:29:50 2023	im in graves' basement help (STEAM_0:0:631269172): !menu
-Thu Aug 31 16:30:02 2023	im in graves' basement help (STEAM_0:0:631269172): 
-Thu Aug 31 16:30:27 2023	im in graves' basement help (STEAM_0:0:631269172): !menu
-Thu Aug 31 16:32:08 2023	im in graves' basement help (STEAM_0:0:631269172) disconnected

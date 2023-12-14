@@ -186,12 +186,11 @@ function bKeypads.ESP:DrawKeypadNetwork(keypad, keypadNoDraw)
 		end
 
 		for keypad in pairs(parent:GetChildKeypads()) do
-			if keypad ~= keypadNoDraw then 
-				if not bKeypads.ESP.Halos.Dictionary[bKeypads.COLOR.GREEN][keypad] and not bKeypads.ESP.Halos.Dictionary[bKeypads.COLOR.RED][keypad] then
-					bKeypads.ESP.Halos:Add(keypad, bKeypads.COLOR.PINK)
-				end
-				table.insert(bKeypads.ESP.DataLinks, { parent, keypad, bKeypads.COLOR.PINK } )
+			if keypad == keypadNoDraw then return end
+			if not bKeypads.ESP.Halos.Dictionary[bKeypads.COLOR.GREEN][keypad] and not bKeypads.ESP.Halos.Dictionary[bKeypads.COLOR.RED][keypad] then
+				bKeypads.ESP.Halos:Add(keypad, bKeypads.COLOR.PINK)
 			end
+			table.insert(bKeypads.ESP.DataLinks, { parent, keypad, bKeypads.COLOR.PINK } )
 		end
 	end
 end
@@ -248,16 +247,15 @@ bKeypads.ESP.Watch = function(ply, origin, angles, fov, znear, zfar)
 						if fadingDoorLinks then
 							for ent, linkData in pairs(fadingDoorLinks) do
 								local access_mode, link = next(linkData)
-								if IsValid(link) then
+								if not IsValid(link) then return end
 
-									local espColor = access_mode_iter[access_mode]
+								local espColor = access_mode_iter[access_mode]
 
-									bKeypads.ESP.Halos:Add(ent, espColor)
-									table.insert(bKeypads.ESP.DataLinks, { tool.LinkingKeypad, ent, espColor, nil, true } )
+								bKeypads.ESP.Halos:Add(ent, espColor)
+								table.insert(bKeypads.ESP.DataLinks, { tool.LinkingKeypad, ent, espColor, nil, true } )
 
-									if tool.TargetEnt == ent or not isLinking then
-										bKeypads.ESP.Halos:Add(tool.LinkingKeypad, espColor)
-									end
+								if tool.TargetEnt == ent or not isLinking then
+									bKeypads.ESP.Halos:Add(tool.LinkingKeypad, espColor)
 								end
 							end
 						end
@@ -266,16 +264,15 @@ bKeypads.ESP.Watch = function(ply, origin, angles, fov, znear, zfar)
 						if mapLinks then
 							for ent, linkData in pairs(mapLinks) do
 								local access_mode, link = next(linkData)
-								if not IsValid(link) then 
+								if not IsValid(link) then return end
 
-									local espColor = access_mode_iter[access_mode]
+								local espColor = access_mode_iter[access_mode]
 
-									bKeypads.ESP.Halos:Add(ent, espColor)
-									table.insert(bKeypads.ESP.DataLinks, { tool.LinkingKeypad, ent, espColor, link:HasGeneralFlag(bKeypads.MapLinking.F_PSEUDOLINK) or nil, true } )
+								bKeypads.ESP.Halos:Add(ent, espColor)
+								table.insert(bKeypads.ESP.DataLinks, { tool.LinkingKeypad, ent, espColor, link:HasGeneralFlag(bKeypads.MapLinking.F_PSEUDOLINK) or nil, true } )
 
-									if tool.TargetEnt == ent then
-										bKeypads.ESP.Halos:Add(tool.LinkingKeypad, espColor)
-									end
+								if tool.TargetEnt == ent then
+									bKeypads.ESP.Halos:Add(tool.LinkingKeypad, espColor)
 								end
 							end
 						end
@@ -287,14 +284,13 @@ bKeypads.ESP.Watch = function(ply, origin, angles, fov, znear, zfar)
 							if fadingDoorLinks then
 								for keypad, linkData in pairs(fadingDoorLinks) do
 									local access_mode, link = next(linkData)
-									if IsValid(link) then 
+									if not IsValid(link) then return end
 
-										local espColor = access_mode_iter[access_mode]
+									local espColor = access_mode_iter[access_mode]
 
-										bKeypads.ESP.Halos:Add(keypad, espColor)
-										bKeypads.ESP.Halos:Add(tr.Entity, espColor)
-										table.insert(bKeypads.ESP.DataLinks, { keypad, tr.Entity, espColor, nil, true } )
-									end
+									bKeypads.ESP.Halos:Add(keypad, espColor)
+									bKeypads.ESP.Halos:Add(tr.Entity, espColor)
+									table.insert(bKeypads.ESP.DataLinks, { keypad, tr.Entity, espColor, nil, true } )
 								end
 							end
 						elseif bKeypads.MapLinking:IsLinkEntity(tr.Entity) then
@@ -302,14 +298,13 @@ bKeypads.ESP.Watch = function(ply, origin, angles, fov, znear, zfar)
 							if mapLinks then
 								for keypad, linkData in pairs(mapLinks) do
 									local access_mode, link = next(linkData)
-									if IsValid(link) then 
+									if not IsValid(link) then return end
 
 									local espColor = access_mode_iter[access_mode]
 
 									bKeypads.ESP.Halos:Add(keypad, espColor)
 									bKeypads.ESP.Halos:Add(tr.Entity, espColor)
 									table.insert(bKeypads.ESP.DataLinks, { keypad, tr.Entity, espColor, link:HasGeneralFlag(bKeypads.MapLinking.F_PSEUDOLINK) or nil, true } )
-									end
 								end
 							end
 						end
@@ -332,16 +327,15 @@ bKeypads.ESP.Watch = function(ply, origin, angles, fov, znear, zfar)
 						if fadingDoorLinks then
 							for keypad, linkData in pairs(fadingDoorLinks) do
 								local access_mode, link = next(linkData)
-								if IsValid(link) then
+								if not IsValid(link) then return end
 
-									local espColor = access_mode_iter[access_mode]
+								local espColor = access_mode_iter[access_mode]
 
-									bKeypads.ESP.Halos:Add(keypad, espColor)
-									table.insert(bKeypads.ESP.DataLinks, { keypad, tr.Entity, espColor, nil, true } )
+								bKeypads.ESP.Halos:Add(keypad, espColor)
+								table.insert(bKeypads.ESP.DataLinks, { keypad, tr.Entity, espColor, nil, true } )
 
-									-- Draw keypad networks
-									bKeypads.ESP:DrawKeypadNetwork(keypad)
-								end
+								-- Draw keypad networks
+								bKeypads.ESP:DrawKeypadNetwork(keypad)
 							end
 						end
 					elseif bKeypads.FadingDoors:CanFadingDoor(tr.Entity) then
@@ -354,16 +348,15 @@ bKeypads.ESP.Watch = function(ply, origin, angles, fov, znear, zfar)
 					if fadingDoorLinks then
 						for ent, linkData in pairs(fadingDoorLinks) do
 							local access_mode, link = next(linkData)
-							if IsValid(link) then 
+							if not IsValid(link) then return end
 
-								local espColor = access_mode_iter[access_mode]
+							local espColor = access_mode_iter[access_mode]
 
-								bKeypads.ESP.Halos:Add(ent, espColor)
-								table.insert(bKeypads.ESP.DataLinks, { tool.LinkingKeypad, ent, espColor, nil, true } )
+							bKeypads.ESP.Halos:Add(ent, espColor)
+							table.insert(bKeypads.ESP.DataLinks, { tool.LinkingKeypad, ent, espColor, nil, true } )
 
-								if tool.TargetEnt == ent or not isLinking then
-									bKeypads.ESP.Halos:Add(tool.LinkingKeypad, espColor)
-								end
+							if tool.TargetEnt == ent or not isLinking then
+								bKeypads.ESP.Halos:Add(tool.LinkingKeypad, espColor)
 							end
 						end
 					end
@@ -372,16 +365,15 @@ bKeypads.ESP.Watch = function(ply, origin, angles, fov, znear, zfar)
 					if mapLinks then
 						for ent, linkData in pairs(mapLinks) do
 							local access_mode, link = next(linkData)
-							if IsValid(link) then 
+							if not IsValid(link) then return end
 
-								local espColor = access_mode_iter[access_mode]
+							local espColor = access_mode_iter[access_mode]
 
-								bKeypads.ESP.Halos:Add(ent, espColor)
-								table.insert(bKeypads.ESP.DataLinks, { tool.LinkingKeypad, ent, espColor, link:HasGeneralFlag(bKeypads.MapLinking.F_PSEUDOLINK) or nil, true } )
+							bKeypads.ESP.Halos:Add(ent, espColor)
+							table.insert(bKeypads.ESP.DataLinks, { tool.LinkingKeypad, ent, espColor, link:HasGeneralFlag(bKeypads.MapLinking.F_PSEUDOLINK) or nil, true } )
 
-								if tool.TargetEnt == ent then
-									bKeypads.ESP.Halos:Add(tool.LinkingKeypad, espColor)
-								end
+							if tool.TargetEnt == ent then
+								bKeypads.ESP.Halos:Add(tool.LinkingKeypad, espColor)
 							end
 						end
 					end

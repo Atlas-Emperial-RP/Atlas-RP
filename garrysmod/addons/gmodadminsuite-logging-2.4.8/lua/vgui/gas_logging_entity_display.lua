@@ -193,16 +193,16 @@ function PANEL:SetVehicle(vehicle_class, mdl_str)
 					self.SpawnIcon:SetImage("entities/" .. spawnmenu_item.Name .. ".png")
 					self.SpawnIcon:SetVisible(true)
 				end
-				if (mdl_str == nil or IsUselessModel(mdl_str)) then
-					if (spawnmenu_item.Model ~= nil and type(spawnmenu_item.Model) == "string") then
-						self.ModelPanel:SetModel(spawnmenu_item.Model)
-						self:SetVisible(true)
-						self:FixCamera()
-						self.LoadingPanel:SetLoading(false)
-					end
-				end
-				break
 			end
+			if (mdl_str == nil or IsUselessModel(mdl_str)) then
+				if (spawnmenu_item.Model ~= nil and type(spawnmenu_item.Model) == "string") then
+					self.ModelPanel:SetModel(spawnmenu_item.Model)
+					self:SetVisible(true)
+					self:FixCamera()
+					self.LoadingPanel:SetLoading(false)
+				end
+			end
+			break
 		end
 	end
 end

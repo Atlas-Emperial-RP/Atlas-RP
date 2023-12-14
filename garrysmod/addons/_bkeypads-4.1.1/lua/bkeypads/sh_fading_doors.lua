@@ -505,13 +505,14 @@ function bKeypads.FadingDoors:BuildLinksTable()
 	bKeypads.FadingDoors.Links = {}
 
 	for link in pairs(bKeypads.FadingDoors.LinkEnts) do
-		if IsValid(link) then
-			local keypad, fading_door, accessType = link:GetKeypad(), link:GetLinkedEnt(), link:GetAccessType()
-			if IsValid(fading_door) and IsValid(keypad) then
-				bKeypads.FadingDoors:RegisterLink(link, keypad, fading_door, accessType)
-			end
-		else
+		if not IsValid(link) then
 			bKeypads.FadingDoors.LinkEnts[link] = nil
+			return
+		end
+
+		local keypad, fading_door, accessType = link:GetKeypad(), link:GetLinkedEnt(), link:GetAccessType()
+		if IsValid(fading_door) and IsValid(keypad) then
+			bKeypads.FadingDoors:RegisterLink(link, keypad, fading_door, accessType)
 		end
 	end
 
@@ -867,13 +868,13 @@ do
 			local tr = ply:GetEyeTrace()
 			local rayEnts = ents.FindAlongRay(ply:EyePos(), ply:EyePos() + ply:EyeAngles():Forward() * 16384)
 			for _, ent in ipairs(rayEnts) do
-				if ent ~= ply or not (IsValid(ent:GetParent()) and ent:GetParent() == ply) then
-
-					if bKeypads.FadingDoors:IsFadingDoor(ent) and bKeypads.FadingDoors:IsFaded(ent) and tr.HitPos:DistToSqr(tr.StartPos) >= ent:NearestPoint(tr.StartPos):DistToSqr(tr.StartPos) then
-						return ent
-					end
-					break
+				if ent == ply or (IsValid(ent:GetParent()) and ent:GetParent() == ply) then
+					return
 				end
+				if bKeypads.FadingDoors:IsFadingDoor(ent) and bKeypads.FadingDoors:IsFaded(ent) and tr.HitPos:DistToSqr(tr.StartPos) >= ent:NearestPoint(tr.StartPos):DistToSqr(tr.StartPos) then
+					return ent
+				end
+				break
 			end
 		end
 	end

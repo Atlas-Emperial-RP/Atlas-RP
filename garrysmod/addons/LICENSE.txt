@@ -2,24 +2,24 @@
 
 1. This Agreement, created on:
 
-    31st August 2023
+    30th August 2023
     (hereinafter: Effective Date)
 
     governs the relationship between
 
-    [Kaiser Wilhelm](https://www.gmodstore.com/users/76561198112485755)
+    [vogjin](https://www.gmodstore.com/users/76561199259145168)
 
     (hereinafter: Licensee)
 
     and
 
-    [Billy x Sterling](https://www.gmodstore.com/teams/4323)
+    [edev](https://www.gmodstore.com/teams/4483)
 
     (hereinafter: Licensor).
 
     This Agreement sets the terms, rights, restrictions and obligations on using
 
-    [🔐 Billy's Keypads & Keycards 💳 (bKeypads)](https://www.gmodstore.com/market/view/f6f9d15f-3946-4bb1-b82b-63dd2ceec8cf)
+    [EMENU - ⌨️ DarkRP F4 Addon](https://www.gmodstore.com/market/view/40193ef9-84f5-4038-8edc-ec7d14eadd5e)
 
     (hereinafter: The Software)
 
@@ -213,6 +213,3 @@ Agreement version: 2022-09-21
 ---
 
 ## Amendments
-## GmodAdminSuite Private License
-
-This software is also licensed under the [GmodAdminSuite Private License](https://gmodadminsuite.com/license/private).
