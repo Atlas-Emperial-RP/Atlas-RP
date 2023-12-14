@@ -262,7 +262,7 @@ function WorkshopFileBase( namespace, requiredtags )
 
 				end )
 			end
-			::continue::
+			
 		end
 
 	end
