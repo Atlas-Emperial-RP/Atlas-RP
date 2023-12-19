@@ -443,15 +443,16 @@ function TOOL.BuildCPanel(CPanel)
 				for _, checkbox in ipairs(checkboxes) do
 					local permission = permissions[checkbox]
 					if permission and not bKeypads.Permissions:Cached(LocalPlayer(), permission) then
-
-						local rule = rules[checkbox]
-						if checkbox:GetChecked() and rule then
-							for _, checkbox in ipairs(rule) do
-								disabled[checkbox] = true
-							end
-						end
-					else
 						disabled[checkbox] = true
+						continue
+					end
+
+					local rule = rules[checkbox]
+					if checkbox:GetChecked() and rule then
+						for _, checkbox in ipairs(rule) do
+							disabled[checkbox] = true
+						end
+						continue
 					end
 				end
 				for _, checkbox in ipairs(checkboxes) do

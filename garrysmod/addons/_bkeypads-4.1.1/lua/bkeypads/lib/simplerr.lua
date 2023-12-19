@@ -399,16 +399,15 @@ local function translateMsg(msg, path, line, errs)
 
     for i = 1, #errs do
         local trans = errs[i]
-        if  string.find(msg, trans.match) then
+        if not string.find(msg, trans.match) then continue end
 
-            -- translate <eof>
-            msg = string.Replace(msg, "<eof>", "end of the file")
+        -- translate <eof>
+        msg = string.Replace(msg, "<eof>", "end of the file")
 
-            res = string.format(trans.text, trans.format({string.match(msg, trans.match)}, line, path))
-            hints = trans.hints
+        res = string.format(trans.text, trans.format({string.match(msg, trans.match)}, line, path))
+        hints = trans.hints
 
-            break
-        end 
+        break
     end
 
     return res or msg, "\t- " .. table.concat(hints, "\n\t- ")

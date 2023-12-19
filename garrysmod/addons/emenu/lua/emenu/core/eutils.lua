@@ -9,7 +9,7 @@ emenu.iycoef = ScrH() / 1080
 
 
 -------------------------
---/ TEXT AND LANGUAGE ///
+/// TEXT AND LANGUAGE ///
 -------------------------
 emenu.text = emenu.text or {}
 local lang = emenu.config.language
@@ -46,7 +46,7 @@ end
 
 
 -------------
---/ UTILS ///
+/// UTILS ///
 -------------
 function emenu.util:CreateSequencedTable(tab,order)
 	local tab = table.Copy(tab)
@@ -248,7 +248,7 @@ end
 
 
 --------------
---/ COLORS ///
+/// COLORS ///
 --------------
 --nometa
 emenu.util.color = {}

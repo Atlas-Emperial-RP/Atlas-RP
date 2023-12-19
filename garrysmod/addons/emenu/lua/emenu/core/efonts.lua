@@ -1,5 +1,5 @@
 ------------
---[[ FONTS  --]]
+/* FONTS  */
 ------------
 -- All fonts are automatically added from the resource/efonts folder
 
@@ -19,7 +19,7 @@ end
 
 
 ----------------------
---/ CREATING FONTS ///
+/// CREATING FONTS ///
 ----------------------
 --12
 Font(12,500) -- emenu_12_500

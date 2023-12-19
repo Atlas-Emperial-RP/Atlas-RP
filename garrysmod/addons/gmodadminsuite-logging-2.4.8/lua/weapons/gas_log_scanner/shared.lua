@@ -255,7 +255,7 @@ if (CLIENT) then
 							GAS.Logging.Modules = {}
 							GAS.Logging.IndexedModules = GAS:DeserializeTable(util.Decompress(net.ReadData(data_len)))
 							for module_id, module_data in pairs(GAS.Logging.IndexedModules) do
-								if (module_data.Offline) then return end
+								if (module_data.Offline) then continue end
 								GAS.Logging.Modules[module_data.Category] = GAS.Logging.Modules[module_data.Category] or {}
 								GAS.Logging.Modules[module_data.Category][module_data.Name] = module_data
 							end
@@ -382,61 +382,59 @@ if (CLIENT) then
 				self.wRenderOrder = nil
 				break
 			end
-			if (v.hide) then return end
+			if (v.hide) then continue end
 
-				local pos, ang
+			local pos, ang
 
-				if (v.bone) then
-					pos, ang = self:GetBoneOrientation(self.WElements, v, bone_ent)
-				else
-					pos, ang = self:GetBoneOrientation(self.WElements, v, bone_ent, "ValveBiped.Bip01_R_Hand")
-				end
+			if (v.bone) then
+				pos, ang = self:GetBoneOrientation(self.WElements, v, bone_ent)
+			else
+				pos, ang = self:GetBoneOrientation(self.WElements, v, bone_ent, "ValveBiped.Bip01_R_Hand")
+			end
 
-			if (not pos) then return end
+			if (not pos) then continue end
 
-					local model = v.modelEnt
+			local model = v.modelEnt
 
-					model:SetPos(pos + ang:Forward() * v.pos.x + ang:Right() * v.pos.y + ang:Up() * v.pos.z)
-					ang:RotateAroundAxis(ang:Up(), v.angle.y)
-					ang:RotateAroundAxis(ang:Right(), v.angle.p)
-					ang:RotateAroundAxis(ang:Forward(), v.angle.r)
-					model:SetAngles(ang)
-					local matrix = Matrix()
-					matrix:Scale(v.size)
-					model:EnableMatrix("RenderMultiply", matrix)
+			model:SetPos(pos + ang:Forward() * v.pos.x + ang:Right() * v.pos.y + ang:Up() * v.pos.z)
+			ang:RotateAroundAxis(ang:Up(), v.angle.y)
+			ang:RotateAroundAxis(ang:Right(), v.angle.p)
+			ang:RotateAroundAxis(ang:Forward(), v.angle.r)
+			model:SetAngles(ang)
+			local matrix = Matrix()
+			matrix:Scale(v.size)
+			model:EnableMatrix("RenderMultiply", matrix)
 
-					if (v.material == "") then
-						model:SetMaterial("")
-					elseif (model:GetMaterial() ~= v.material) then
-						model:SetMaterial(v.material)
-					end
+			if (v.material == "") then
+				model:SetMaterial("")
+			elseif (model:GetMaterial() ~= v.material) then
+				model:SetMaterial(v.material)
+			end
 
-					if (v.skin and v.skin ~= model:GetSkin()) then
-						model:SetSkin(v.skin)
-					end
+			if (v.skin and v.skin ~= model:GetSkin()) then
+				model:SetSkin(v.skin)
+			end
 
-					if (v.bodygroup) then
-						for k, v in pairs(v.bodygroup) do
-							if (model:GetBodygroup(k) ~= v) then
-								model:SetBodygroup(k, v)
-							end
-						end
-					end
-
-					if (v.surpresslightning) then
-						render.SuppressEngineLighting(true)
-					end
-
-					render.SetColorModulation(v.color.r / 255, v.color.g / 255, v.color.b / 255)
-					render.SetBlend(v.color.a / 255)
-					model:DrawModel()
-					render.SetBlend(1)
-					render.SetColorModulation(1, 1, 1)
-
-					if (v.surpresslightning) then
-						render.SuppressEngineLighting(false)
+			if (v.bodygroup) then
+				for k, v in pairs(v.bodygroup) do
+					if (model:GetBodygroup(k) ~= v) then
+						model:SetBodygroup(k, v)
 					end
 				end
+			end
+
+			if (v.surpresslightning) then
+				render.SuppressEngineLighting(true)
+			end
+
+			render.SetColorModulation(v.color.r / 255, v.color.g / 255, v.color.b / 255)
+			render.SetBlend(v.color.a / 255)
+			model:DrawModel()
+			render.SetBlend(1)
+			render.SetColorModulation(1, 1, 1)
+
+			if (v.surpresslightning) then
+				render.SuppressEngineLighting(false)
 			end
 		end
 	end

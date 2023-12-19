@@ -193,7 +193,7 @@ local function CreateListingMenu(tab_content, job_index, is_blacklist)
 	function controls_container:PerformLayout()
 		add_remove_selector:SizeToButtons()
 		for i,v in ipairs(self:GetChildren()) do
-			if (i == 1) then return end
+			if (i == 1) then continue end
 			v:SetWide((self:GetWide() - add_remove_selector:GetWide() - 50) / (#self:GetChildren() - 1))
 		end
 	end
@@ -499,16 +499,16 @@ GAS:hook("gmodadminsuite:ModuleFrame:jobwhitelist", "jobwhitelist:menu", functio
 		local duplicate_job_names_check, duplicate_jobs = {}, {}
 		jobs_tab_content.Categories:SetLoading(false)
 		for _,category in ipairs(DarkRP.getCategories().jobs) do
-			if (#category.members == 0) then return end
+			if (#category.members == 0) then continue end
 			local category_vgui
 			for _,job in ipairs(category.members) do
 				local job_index = job.team
 				local perms_job_identifier = OpenPermissions:GetTeamIdentifier(job_index)
-				if (not GAS.JobWhitelist:CanAccessJob(LocalPlayer(), perms_job_identifier)) then return end
+				if (not GAS.JobWhitelist:CanAccessJob(LocalPlayer(), perms_job_identifier)) then continue end
 				category_vgui = category_vgui or jobs_tab_content.Categories:AddCategory(category.name, category.color)
 				if (duplicate_job_names_check[job.name]) then
 					duplicate_jobs[job.name] = true
-					return
+					continue
 				else
 					duplicate_job_names_check[job.name] = true
 				end
@@ -744,260 +744,24 @@ GAS:hook("gmodadminsuite:ModuleFrame:jobwhitelist", "jobwhitelist:menu", functio
 								end
 							end
 						else
-							duplicate_job_names_check[job.name] = true
-						end
-						category_vgui:AddItem(job.name, nil, job.color).ItemFunction = function()
-							GAS.JobWhitelist.Menu.RequiresRefresh = nil
-							jobs_tab_content:RemoveLogo()
-
-							if (IsValid(jobs_tab_content.Content)) then
-								jobs_tab_content.Content:Remove()
-							end
-
-							jobs_tab_content.Content = vgui.Create("bVGUI.LoadingPanel", jobs_tab_content)
-							jobs_tab_content.Content:Dock(FILL)
-							jobs_tab_content.Content:SetLoading(true)
-
-							jobs_tab_content.Content.Title = vgui.Create("bVGUI.Header", jobs_tab_content.Content)
-							jobs_tab_content.Content.Title:Dock(TOP)
-							jobs_tab_content.Content.Title:SetText(job.name)
-							jobs_tab_content.Content.Title:SetColor(job.color)
-
-							GAS.JobWhitelist:GetJobData(job_index, function(whitelist_enabled, blacklist_enabled, autoswitch_disabled, is_default_whitelisted, is_default_blacklisted, autoswitch_setting_enabled, spawn_as_job_enabled)
-								jobs_tab_content.Content:SetLoading(false)
-
-								local is_operator = OpenPermissions:IsOperator(LocalPlayer())
-								local can_enabledisable_whitelist = is_operator or OpenPermissions:HasPermission(LocalPlayer(), "gmodadminsuite_jobwhitelist/" .. perms_job_identifier .. "/whitelist/enable_disable")
-								local can_enabledisable_blacklist = is_operator or OpenPermissions:HasPermission(LocalPlayer(), "gmodadminsuite_jobwhitelist/" .. perms_job_identifier .. "/blacklist/enable_disable")
-								local can_modify_whitelist        = is_operator or GAS.JobWhitelist:CanModifyWhitelist(LocalPlayer(), perms_job_identifier)
-								local can_modify_blacklist        = is_operator or GAS.JobWhitelist:CanModifyBlacklist(LocalPlayer(), perms_job_identifier)
-
-								if ((GM or GAMEMODE).DefaultTeam ~= job_index and ((whitelist_enabled or can_enabledisable_whitelist) or (blacklist_enabled or can_enabledisable_blacklist))) then
-									jobs_tab_content.Content.Tabs = vgui.Create("bVGUI.Tabs", jobs_tab_content.Content)
-									jobs_tab_content.Content.Tabs:Dock(TOP)
-									jobs_tab_content.Content.Tabs:SetTall(40)
-
-									local whitelist_tab_content, whitelist_tab = jobs_tab_content.Content.Tabs:AddTab(L"whitelist", Color(76,218,100), can_modify_whitelist and whitelist_enabled)
-									local whitelist_pagination
-									if (whitelist_enabled) then
-										whitelist_pagination = CreateListingMenu(whitelist_tab_content, job_index, false)
-									end
-									whitelist_tab:SetFunction(function()
-										if (jobs_tab_content.Content.WhitelistTable) then
-											jobs_tab_content.Content.WhitelistTable:InvalidateLayout(true)
-										else
-											whitelist_pagination = CreateListingMenu(whitelist_tab_content, job_index, false)
-										end
-									end)
-
-									local blacklist_tab_content, blacklist_tab = jobs_tab_content.Content.Tabs:AddTab(L"blacklist", Color(216,75,75), can_modify_blacklist and blacklist_enabled)
-									local blacklist_pagination
-									if (blacklist_enabled) then
-										blacklist_pagination = CreateListingMenu(blacklist_tab_content, job_index, true)
-									end
-									blacklist_tab:SetFunction(function()
-										if (jobs_tab_content.Content.BlacklistTable) then
-											jobs_tab_content.Content.BlacklistTable:InvalidateLayout(true)
-										else
-											blacklist_pagination = CreateListingMenu(blacklist_tab_content, job_index, true)
-										end
-									end)
-
-									function jobs_tab_content.Content.Tabs:OnTabSelected(prev_tab, tab)
-										if (GAS.JobWhitelist.Menu.RequiresRefresh or (tab == whitelist_tab and prev_tab == whitelist_tab) or (tab == blacklist_tab and prev_tab == blacklist_tab)) then
-											local pagination
-											if (tab == whitelist_tab) then
-												pagination = whitelist_pagination
-											elseif (tab == blacklist_tab) then
-												pagination = blacklist_pagination
-											else
-												return
-											end
-											pagination:SetPage(1)
-											pagination:OnPageSelected(1)
-											GAS.JobWhitelist.Menu.RequiresRefresh = nil
-										end
-									end
-
-									if (can_enabledisable_whitelist or can_enabledisable_blacklist) then
-										local settings_tab_content = jobs_tab_content.Content.Tabs:AddTab(L"settings", bVGUI.COLOR_GMOD_BLUE)
-										settings_tab_content:DockPadding(10,10,10,10)
-
-										local default_whitelisted, default_blacklisted, clear_wlist, clear_blist
-
-										if (can_enabledisable_whitelist) then
-											local whitelist_checkbox = vgui.Create("bVGUI.Switch", settings_tab_content)
-											whitelist_checkbox:SetChecked(whitelist_enabled)
-											whitelist_checkbox:SetText(L"enable_whitelist")
-											whitelist_checkbox:Dock(TOP)
-											whitelist_checkbox:DockMargin(0,0,0,10)
-											function whitelist_checkbox:OnChange()
-												can_modify_whitelist = is_operator or GAS.JobWhitelist:CanModifyWhitelist(LocalPlayer(), perms_job_identifier)
-												if (can_modify_whitelist) then
-													whitelist_tab:SetEnabled(self:GetChecked())
-												end
-												GAS:netStart("jobwhitelist:enable_list")
-													net.WriteBool(false)
-													net.WriteBool(self:GetChecked())
-													net.WriteUInt(job_index, 16)
-												net.SendToServer()
-												if (default_whitelisted) then
-													default_whitelisted:SetDisabled(not self:GetChecked())
-												end
-												if (clear_wlist) then
-													clear_wlist:SetDisabled(not self:GetChecked())
-												end
-											end
-										end
-
-										if (can_enabledisable_blacklist) then
-											local blacklist_switch = vgui.Create("bVGUI.Switch", settings_tab_content)
-											blacklist_switch:SetChecked(blacklist_enabled)
-											blacklist_switch:SetText(L"enable_blacklist")
-											blacklist_switch:Dock(TOP)
-											blacklist_switch:DockMargin(0,0,0,10)
-											function blacklist_switch:OnChange()
-												can_modify_blacklist = is_operator or GAS.JobWhitelist:CanModifyBlacklist(LocalPlayer(), perms_job_identifier)
-												if (can_modify_blacklist) then
-													blacklist_tab:SetEnabled(self:GetChecked())
-												end
-												GAS:netStart("jobwhitelist:enable_list")
-													net.WriteBool(true)
-													net.WriteBool(self:GetChecked())
-													net.WriteUInt(job_index, 16)
-												net.SendToServer()
-												if (default_blacklisted) then
-													default_blacklisted:SetDisabled(not self:GetChecked())
-												end
-												if (clear_blist) then
-													clear_blist:SetDisabled(not self:GetChecked())
-												end
-											end
-										end
-
-										if (is_operator) then
-											default_whitelisted = vgui.Create("bVGUI.Switch", settings_tab_content)
-											default_whitelisted:SetChecked(is_default_whitelisted)
-											default_whitelisted:SetDisabled(not whitelist_enabled)
-											default_whitelisted:SetText(L"default_whitelisted")
-											default_whitelisted:Dock(TOP)
-											default_whitelisted:DockMargin(0,0,0,10)
-											function default_whitelisted:OnChange()
-												GAS:netStart("jobwhitelist:default_whitelisted")
-													net.WriteUInt(job_index, 16)
-													net.WriteBool(self:GetChecked())
-												net.SendToServer()
-											end
-
-											default_blacklisted = vgui.Create("bVGUI.Switch", settings_tab_content)
-											default_blacklisted:SetChecked(is_default_blacklisted)
-											default_blacklisted:SetDisabled(not blacklist_enabled)
-											default_blacklisted:SetText(L"default_blacklisted")
-											default_blacklisted:Dock(TOP)
-											default_blacklisted:DockMargin(0,0,0,10)
-											function default_blacklisted:OnChange()
-												GAS:netStart("jobwhitelist:default_blacklisted")
-													net.WriteUInt(job_index, 16)
-													net.WriteBool(self:GetChecked())
-												net.SendToServer()
-											end
-
-											local disable_autoswitch = vgui.Create("bVGUI.Switch", settings_tab_content)
-											disable_autoswitch:SetChecked(autoswitch_disabled)
-											disable_autoswitch:SetDisabled(not autoswitch_setting_enabled)
-											disable_autoswitch:SetText(L"disable_autoswitch")
-											disable_autoswitch:Dock(TOP)
-											disable_autoswitch:DockMargin(0,0,0,10)
-											function disable_autoswitch:OnChange()
-												GAS:netStart("jobwhitelist:disable_autoswitch")
-													net.WriteUInt(job_index, 16)
-													net.WriteBool(self:GetChecked())
-												net.SendToServer()
-											end
-
-											local spawn_as_job = vgui.Create("bVGUI.Switch", settings_tab_content)
-											spawn_as_job:SetChecked(spawn_as_job_enabled)
-											spawn_as_job:SetText(L"spawn_as_job")
-											spawn_as_job:Dock(TOP)
-											spawn_as_job:DockMargin(0,0,0,10)
-											function spawn_as_job:OnChange()
-												GAS:netStart("jobwhitelist:spawn_as_job")
-													net.WriteUInt(job_index, 16)
-													net.WriteBool(self:GetChecked())
-												net.SendToServer()
-											end
-											bVGUI.AttachTooltip(spawn_as_job.ClickableArea, {
-												Text = L"spawn_as_job_tip"
-											})
-
-											local clear_wlist_container = vgui.Create("bVGUI.BlankPanel", settings_tab_content)
-											clear_wlist_container:Dock(TOP)
-											clear_wlist_container:DockMargin(0,10,0,10)
-											clear_wlist_container:SetTall(25)
-
-											clear_wlist = vgui.Create("bVGUI.Button", clear_wlist_container)
-											clear_wlist:SetSize(120,25)
-											clear_wlist:SetText(L"clear_whitelist")
-											clear_wlist:SetColor(bVGUI.BUTTON_COLOR_RED)
-											function clear_wlist:DoClick()
-												GAS:PlaySound("flash")
-
-												ModuleFrame.CloseFrames = ModuleFrame.CloseFrames or {}
-												ModuleFrame.CloseFrames[
-													bVGUI.Query(L"clear_whitelist_confirm", L"clear_whitelist", L"yes", function()
-														GAS:PlaySound("delete")
-														GAS:netStart("jobwhitelist:clear_whitelist")
-															net.WriteUInt(job_index, 16)
-														net.SendToServer()
-													end, L"no")
-												] = true
-											end
-
-											local clear_blist_container = vgui.Create("bVGUI.BlankPanel", settings_tab_content)
-											clear_blist_container:Dock(TOP)
-											clear_blist_container:DockMargin(0,0,0,10)
-											clear_blist_container:SetTall(25)
-
-											clear_blist = vgui.Create("bVGUI.Button", clear_blist_container)
-											clear_blist:SetSize(120,25)
-											clear_blist:SetText(L"clear_blacklist")
-											clear_blist:SetColor(bVGUI.BUTTON_COLOR_RED)
-											function clear_blist:DoClick()
-												GAS:PlaySound("flash")
-
-												ModuleFrame.CloseFrames = ModuleFrame.CloseFrames or {}
-												ModuleFrame.CloseFrames[
-													bVGUI.Query(L"clear_blacklist_confirm", L"clear_blacklist", L"yes", function()
-														GAS:PlaySound("delete")
-														GAS:netStart("jobwhitelist:clear_blacklist")
-															net.WriteUInt(job_index, 16)
-														net.SendToServer()
-													end, L"no")
-												] = true
-											end
-										end
-									end
-								else
-									jobs_tab_content.Content.Info = vgui.Create("bVGUI.BlankPanel", jobs_tab_content.Content)
-									jobs_tab_content.Content.Info:Dock(FILL)
-									jobs_tab_content.Content.Info:DockMargin(0,0,0,24)
-									local font = bVGUI.FONT(bVGUI.FONT_RUBIK, "REGULAR", 16)
-									if ((GM or GAMEMODE).DefaultTeam == job_index) then
-										local phrase = L"default_team_error"
-										function jobs_tab_content.Content.Info:PaintOver(w,h)
-											draw.SimpleText(phrase, font, w / 2, h / 2 - 16 / 2, bVGUI.COLOR_WHITE, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP)
-										end
-									else
-										local phrase = string.Explode("\n", L"insufficient_permissions_jobwhitelist")
-										function jobs_tab_content.Content.Info:PaintOver(w,h)
-											draw.SimpleText(phrase[1], font, w / 2, h / 2 - 16 / 2, bVGUI.COLOR_WHITE, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-											draw.SimpleText(phrase[2], font, w / 2, h / 2 + 16 / 2, bVGUI.COLOR_WHITE, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-										end
-									end
+							jobs_tab_content.Content.Info = vgui.Create("bVGUI.BlankPanel", jobs_tab_content.Content)
+							jobs_tab_content.Content.Info:Dock(FILL)
+							jobs_tab_content.Content.Info:DockMargin(0,0,0,24)
+							local font = bVGUI.FONT(bVGUI.FONT_RUBIK, "REGULAR", 16)
+							if ((GM or GAMEMODE).DefaultTeam == job_index) then
+								local phrase = L"default_team_error"
+								function jobs_tab_content.Content.Info:PaintOver(w,h)
+									draw.SimpleText(phrase, font, w / 2, h / 2 - 16 / 2, bVGUI.COLOR_WHITE, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP)
 								end
-							end)
+							else
+								local phrase = string.Explode("\n", L"insufficient_permissions_jobwhitelist")
+								function jobs_tab_content.Content.Info:PaintOver(w,h)
+									draw.SimpleText(phrase[1], font, w / 2, h / 2 - 16 / 2, bVGUI.COLOR_WHITE, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+									draw.SimpleText(phrase[2], font, w / 2, h / 2 + 16 / 2, bVGUI.COLOR_WHITE, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+								end
+							end
 						end
-					end
+					end)
 				end
 			end
 		end
@@ -1754,7 +1518,7 @@ GAS:hook("gmodadminsuite:ModuleFrame:jobwhitelist", "jobwhitelist:menu", functio
 
 						local categories = {}
 						for i,c in ipairs(DarkRP.getCategories().jobs) do
-							if (GAS:table_IsEmpty(c.members)) then return end
+							if (GAS:table_IsEmpty(c.members)) then continue end
 							table.insert(categories, {members = c.members, name = c.name, color = c.color})
 						end
 						table.SortByMember(categories, "name", true)

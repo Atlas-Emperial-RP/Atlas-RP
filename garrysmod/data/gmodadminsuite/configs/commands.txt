@@ -1,1 +1,0 @@
-~'Commands":{~'!blogs":{~'help":'Opens GmodAdminSuite module Billy's Logs"'action":{~'type":n7;'module_name":'logging"}'hide_command":b1}'!bwhitelist":{~'help":'Opens GmodAdminSuite module Billy's Whitelist"'action":{~'type":n7;'module_name":'jobwhitelist"}'hide_command":b1}}'ModuleCommands":{~'jobwhitelist":b1'logging":b1}

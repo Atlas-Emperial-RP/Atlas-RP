@@ -140,7 +140,7 @@ function PANEL:PerformLayout(w,h)
 	self.Instance:SetSize(w,h)
 end
 
-local drawnMatrices = 0
+local drawnMatrices, frame = 0
 function PANEL:Paint(w,h)
 	if not self.Instance then
 		error("attempt to index field 'Instance' (a nil value)")

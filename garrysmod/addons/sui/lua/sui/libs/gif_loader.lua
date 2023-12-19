@@ -195,57 +195,56 @@ local GifReaderLZWOutputIndexStream = function(this, output, output_length)
 			code_mask = lshift(1, cur_code_size) - 1
 
 			prev_code = null
-			return
+			continue
 		elseif code == eoi_code then
 			break
-		else
-
-			local chase_code = code < next_code and code or prev_code
-			local chase_length = 0
-			local chase = chase_code
-			while chase > clear_code do
-				chase = rshift(code_table[chase], 8)
-				chase_length = chase_length + 1
-			end
-
-			local k = chase
-			local op_end = op + chase_length + (chase_code ~= code and 1 or 0)
-			if op_end > output_length then
-				Error("Warning, gif stream longer than expected.")
-				return
-			end
-
-			output[op] = k; op = op + 1
-			op = op + chase_length
-
-			local b = op
-
-			if chase_code ~= code then
-				output[op] = k; op = op + 1
-			end
-			chase = chase_code
-
-			while chase_length > 0 do
-				chase_length = chase_length - 1
-				chase = code_table[chase]
-				b = b - 1
-				output[b] = band(chase, 0xff)
-
-				chase = rshift(chase, 8)
-			end
-
-			if prev_code ~= nil and next_code < 4096 then
-				code_table[next_code] = bor(lshift(prev_code, 8), k)
-				next_code = next_code + 1
-
-				if next_code >= code_mask + 1 and cur_code_size < 12 then
-					cur_code_size = cur_code_size + 1
-					code_mask = bor(lshift(code_mask, 1), 1)
-				end
-			end
-
-			prev_code = code
 		end
+
+		local chase_code = code < next_code and code or prev_code
+		local chase_length = 0
+		local chase = chase_code
+		while chase > clear_code do
+			chase = rshift(code_table[chase], 8)
+			chase_length = chase_length + 1
+		end
+
+		local k = chase
+		local op_end = op + chase_length + (chase_code ~= code and 1 or 0)
+		if op_end > output_length then
+			Error("Warning, gif stream longer than expected.")
+			return
+		end
+
+		output[op] = k; op = op + 1
+		op = op + chase_length
+
+		local b = op
+
+		if chase_code ~= code then
+			output[op] = k; op = op + 1
+		end
+		chase = chase_code
+
+		while chase_length > 0 do
+			chase_length = chase_length - 1
+			chase = code_table[chase]
+			b = b - 1
+			output[b] = band(chase, 0xff)
+
+			chase = rshift(chase, 8)
+		end
+
+		if prev_code ~= nil and next_code < 4096 then
+			code_table[next_code] = bor(lshift(prev_code, 8), k)
+			next_code = next_code + 1
+
+			if next_code >= code_mask + 1 and cur_code_size < 12 then
+				cur_code_size = cur_code_size + 1
+				code_mask = bor(lshift(code_mask, 1), 1)
+			end
+		end
+
+		prev_code = code
 	end
 
 	if op ~= output_length then

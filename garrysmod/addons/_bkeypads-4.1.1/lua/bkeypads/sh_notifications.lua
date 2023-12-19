@@ -130,23 +130,20 @@ if CLIENT then
 			local stackSize = #bKeypads.Notifications.Stack
 			for i = stackSize, 1, -1 do
 				local notif = bKeypads.Notifications.Stack[i]
-				if IsValid(notif) then 
+				if not IsValid(notif) then ErrorNoHalt("Tried to remove a NULL notification\n") continue end
 
-					if ((stackSize - (i - 1)) > bKeypads.Settings:Get("notification_max")) then
-						notif:Expire()
-					end
-
-					y = y + notif:GetTall() + 20
-
-					notif:Stop()
-
-					local anim = notif:NewAnimation(animInDuration, 0, 1)
-					anim.Think = ShuffleAnim
-					anim.TargetX, anim.StartY = notif:GetPos()
-					anim.TargetY = ScrH() - y
-				else
-					ErrorNoHalt("Tried to remove a NULL notification\n") 
+				if ((stackSize - (i - 1)) > bKeypads.Settings:Get("notification_max")) then
+					notif:Expire()
 				end
+
+				y = y + notif:GetTall() + 20
+
+				notif:Stop()
+
+				local anim = notif:NewAnimation(animInDuration, 0, 1)
+				anim.Think = ShuffleAnim
+				anim.TargetX, anim.StartY = notif:GetPos()
+				anim.TargetY = ScrH() - y
 			end
 		end
 	end

@@ -21,7 +21,6 @@ local starting_scroll_speed = 3
 
 local vbar_OnMouseWheeled = function(s, delta)
 	s.scroll_speed = s.scroll_speed + 20 * 0.012 --[[ slowly increase scroll speed ]]
-	print(s.scroll_speed)
 	s:AddScroll(delta * -s.scroll_speed)
 end
 

@@ -312,21 +312,20 @@ if CLIENT then
 
 				local selectRow
 				for name, manifest in pairs(savedPicManifest) do
-					if manifest.hash or manifest.extension or  manifest.URL then
+					if not manifest.hash or not manifest.extension or not manifest.URL then continue end
 
-						local filename = "bkeypads/keypad_img/saved/" .. manifest.hash .. "." .. manifest.extension
+					local filename = "bkeypads/keypad_img/saved/" .. manifest.hash .. "." .. manifest.extension
 
-						local row = self:AddLine(name, os.date("%x %X", file.Time(filename, "DATA")), string.NiceSize(file.Size(filename, "DATA")))
-						row.Hash = manifest.hash
-						row.PicName = name
-						row.URL = manifest.URL
-						row.FileName = filename
+					local row = self:AddLine(name, os.date("%x %X", file.Time(filename, "DATA")), string.NiceSize(file.Size(filename, "DATA")))
+					row.Hash = manifest.hash
+					row.PicName = name
+					row.URL = manifest.URL
+					row.FileName = filename
 
-						picHashTable[manifest.hash] = name
+					picHashTable[manifest.hash] = name
 
-						if selectFile == name then
-							selectRow = row
-						end
+					if selectFile == name then
+						selectRow = row
 					end
 				end
 				if selectRow then self:SelectItem(selectRow) end

@@ -337,54 +337,52 @@ if CLIENT then
 				self.wRenderOrder = nil
 				break
 			end
-			if not v.hide then 
+			if v.hide then continue end
 
-				local pos, ang
+			local pos, ang
 
-				if v.bone then
-					pos, ang = self:GetBoneOrientation(self.WElements, v, bone_ent)
-				else
-					pos, ang = self:GetBoneOrientation(self.WElements, v, bone_ent, "ValveBiped.Bip01_R_Hand")
-				end
+			if v.bone then
+				pos, ang = self:GetBoneOrientation(self.WElements, v, bone_ent)
+			else
+				pos, ang = self:GetBoneOrientation(self.WElements, v, bone_ent, "ValveBiped.Bip01_R_Hand")
+			end
 
-				if pos then 
+			if not pos then continue end
 
-					local model = v.modelEnt
+			local model = v.modelEnt
 
-					model:SetPos(pos + ang:Forward() * v.pos.x + ang:Right() * v.pos.y + ang:Up() * v.pos.z)
-					ang:RotateAroundAxis(ang:Up(), v.angle.y)
-					ang:RotateAroundAxis(ang:Right(), v.angle.p)
-					ang:RotateAroundAxis(ang:Forward(), v.angle.r)
-					model:SetAngles(ang)
-					local matrix = Matrix()
-					matrix:Scale(v.size)
-					model:EnableMatrix("RenderMultiply", matrix)
+			model:SetPos(pos + ang:Forward() * v.pos.x + ang:Right() * v.pos.y + ang:Up() * v.pos.z)
+			ang:RotateAroundAxis(ang:Up(), v.angle.y)
+			ang:RotateAroundAxis(ang:Right(), v.angle.p)
+			ang:RotateAroundAxis(ang:Forward(), v.angle.r)
+			model:SetAngles(ang)
+			local matrix = Matrix()
+			matrix:Scale(v.size)
+			model:EnableMatrix("RenderMultiply", matrix)
 
-					if v.material == "" then
-						model:SetMaterial("")
-					elseif model:GetMaterial() ~= v.material then
-						model:SetMaterial(v.material)
+			if v.material == "" then
+				model:SetMaterial("")
+			elseif model:GetMaterial() ~= v.material then
+				model:SetMaterial(v.material)
+			end
+
+			if v.skin and v.skin ~= model:GetSkin() then
+				model:SetSkin(v.skin)
+			end
+
+			if v.bodygroup then
+				for k, v in pairs(v.bodygroup) do
+					if model:GetBodygroup(k) ~= v then
+						model:SetBodygroup(k, v)
 					end
-
-					if v.skin and v.skin ~= model:GetSkin() then
-						model:SetSkin(v.skin)
-					end
-
-					if v.bodygroup then
-						for k, v in pairs(v.bodygroup) do
-							if model:GetBodygroup(k) ~= v then
-								model:SetBodygroup(k, v)
-							end
-						end
-					end
-
-					render.SetColorModulation(v.color.r / 255, v.color.g / 255, v.color.b / 255)
-					render.SetBlend(v.color.a / 255)
-					model:DrawModel()
-					render.SetBlend(1)
-					render.SetColorModulation(1, 1, 1)
 				end
 			end
+
+			render.SetColorModulation(v.color.r / 255, v.color.g / 255, v.color.b / 255)
+			render.SetBlend(v.color.a / 255)
+			model:DrawModel()
+			render.SetBlend(1)
+			render.SetColorModulation(1, 1, 1)
 		end
 	end
 

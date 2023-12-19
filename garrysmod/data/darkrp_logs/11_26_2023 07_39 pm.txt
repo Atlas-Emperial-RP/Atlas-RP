@@ -1,8 +1,0 @@
-Sun Nov 26 19:39:07 2023	Spark (STEAM_0:1:460412980) has joined the game
-Sun Nov 26 19:39:07 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
-Sun Nov 26 19:44:17 2023	ST Commander Spark (STEAM_0:1:460412980): 
-Sun Nov 26 19:45:36 2023	ST Commander Spark (STEAM_0:1:460412980) disconnected
-Sun Nov 26 19:49:49 2023	Spark (STEAM_0:1:460412980) has joined the game
-Sun Nov 26 19:49:49 2023	ST Commander Spark (STEAM_0:1:460412980) spawned
-Sun Nov 26 19:52:09 2023	ST Commander Spark (STEAM_0:1:460412980): 
-Sun Nov 26 19:52:21 2023	ST Commander Spark (STEAM_0:1:460412980): 

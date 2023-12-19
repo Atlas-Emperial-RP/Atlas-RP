@@ -51,7 +51,7 @@ function SWEP:PrimaryAttack()
 	
 	if not IsValid(ent) or ent:GetPos():Distance( self.Owner:GetPos() ) > 200 then return end
 	
-	if ent:IsPlayer() and ent:GetHeartAttack() then
+	if ent:IsPlayer() && ent:GetHeartAttack() then
 		
 		self.Weapon:SendWeaponAnim( ACT_VM_PRIMARYATTACK )
 
@@ -66,7 +66,7 @@ function SWEP:PrimaryAttack()
 			ent:MedicNotif( ConfigurationMedicMod.Sentences["Your heart started to beat again"][ConfigurationMedicMod.Language], 5 )
 		end
 		
-	elseif ent:IsDeathRagdoll() and ent:GetOwner():GetHeartAttack() then
+	elseif ent:IsDeathRagdoll() && ent:GetOwner():GetHeartAttack() then
 		
 		self.Weapon:SendWeaponAnim( ACT_VM_PRIMARYATTACK )
 		
@@ -86,7 +86,7 @@ function SWEP:PrimaryAttack()
 			
 		end
 		
-	elseif IsValid(ent.ragdoll) and ent.ragdoll:IsDeathRagdoll() and ent.ragdoll:GetOwner():GetHeartAttack() then
+	elseif IsValid(ent.ragdoll) && ent.ragdoll:IsDeathRagdoll() && ent.ragdoll:GetOwner():GetHeartAttack() then
 		
 		self.Weapon:SendWeaponAnim( ACT_VM_PRIMARYATTACK )
 		

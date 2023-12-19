@@ -12,7 +12,7 @@ local cursorpos = {
 
 
 ---------------------------
---/ MAIN BUILD FUNCTION ///
+/// MAIN BUILD FUNCTION ///
 ---------------------------
 function emenu:Build()
     local scrw, scrh = ScrW(), ScrH()
@@ -93,7 +93,7 @@ function emenu:Build()
     end)
 
     -------------------------------
-    --/ FUNCTIONS LOAD (BEFORE) ///
+    /// FUNCTIONS LOAD (BEFORE) ///
     -------------------------------
     for name,functbl in pairs(emenu.windows:GetWidgets()) do
         if not functbl.loadafter then
@@ -155,7 +155,7 @@ function emenu:Build()
 
 
         ------------------------------
-        --/ FUNCTIONS LOAD (AFTER) ///
+        /// FUNCTIONS LOAD (AFTER) ///
         ------------------------------
         for name,functbl in pairs(emenu.windows:GetWidgets()) do
             if functbl.loadafter then
@@ -174,7 +174,7 @@ function emenu:Build()
         botlist:SetSpaceX(boffset)
 
         ---------------
-        --/ BUTTONS ///
+        /// BUTTONS ///
         ---------------
         for id,seq in ipairs(emenu.windows:GetSeqAll()) do
             local name = seq[1]
@@ -219,7 +219,7 @@ function emenu:Build()
             end
 
             ------------------------------
-            --/ CONTEXT MENU (buttons) ///
+            /// CONTEXT MENU (buttons) ///
             ------------------------------
             function button:DoRightClick()
                 local context = vgui.Create("emenu.contextmenu",bg)
@@ -264,7 +264,7 @@ function emenu:Build()
             end
 
             ------------
-            --/ ICON ///
+            /// ICON ///
             ------------
 
             local font = "emenu_20_500"
@@ -319,7 +319,7 @@ end
 
 
 -------------
---/ LINKS ///
+/// LINKS ///
 -------------
 for id,link in ipairs(emenu.config.links) do
     if link.type == "browser" then
@@ -361,7 +361,7 @@ end
 
 
 --------------------
---/ OPEN / CLOSE ///
+/// OPEN / CLOSE ///
 --------------------
 function emenu:IsValid()
     return IsValid(self.bg)
@@ -429,7 +429,7 @@ end
 
 
 ----------------
---/ COMMANDS ///
+/// COMMANDS ///
 ----------------
 concommand.Add("emenu_override", function()
     emenu:Override()
@@ -449,7 +449,7 @@ end)
 
 
 -------------
---/ HOOKS ///
+/// HOOKS ///
 -------------
 -- Open/Close hooks:
 -- • OnEMenuShow

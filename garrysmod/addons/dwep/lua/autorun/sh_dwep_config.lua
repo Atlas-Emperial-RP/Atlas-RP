@@ -30,7 +30,7 @@ function DWEP.AdjustValue(weapon, key, value)
 	local weapon = weapons.GetStored(weapon)
 	if #parents > 1 then 
 		for i = 1, #parents  do
-			if i ~= 1 and i < #parents then 
+			if i != 1 and i < #parents then 
 				curTable[parents[i]] = curTable[parents[i]] or {}
 				curTable = curTable[parents[i]] 
 			elseif i == 1 then

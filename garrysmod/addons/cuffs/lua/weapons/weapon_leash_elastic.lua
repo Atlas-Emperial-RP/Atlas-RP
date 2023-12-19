@@ -24,8 +24,9 @@ SWEP.AdminSpawnable = true
 SWEP.Slot = 3
 SWEP.PrintName = "Elastic Leash"
 
--- Handcuff Vars
-SWEP.CuffTime = 0.8 -- Seconds to handcuff
+//
+// Handcuff Vars
+SWEP.CuffTime = 0.8 // Seconds to handcuff
 SWEP.CuffSound = Sound( "buttons/lever7.wav" )
 
 SWEP.CuffMaterial = "models/props_pipes/GutterMetal01a"
@@ -38,5 +39,5 @@ SWEP.CuffReusable = false
 SWEP.CuffBlindfold = false
 SWEP.CuffGag = false
 
-SWEP.CuffStrengthVariance = 0.1 -- Randomise strength
-SWEP.CuffRegenVariance = 0.3 -- Randomise regen
+SWEP.CuffStrengthVariance = 0.1 // Randomise strength
+SWEP.CuffRegenVariance = 0.3 // Randomise regen

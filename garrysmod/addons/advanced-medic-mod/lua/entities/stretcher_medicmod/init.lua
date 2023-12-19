@@ -94,9 +94,9 @@ function ENT:Touch( ent )
 	
 	if ent:IsDeathRagdoll() then
 		rag = ent
-	elseif IsValid(ent.ragdoll) and ent.ragdoll:IsDeathRagdoll() then
+	elseif IsValid(ent.ragdoll) && ent.ragdoll:IsDeathRagdoll() then
 		rag = ent.ragdoll
-	elseif ent:IsVehicle() and ConfigurationMedicMod.Vehicles[ent:GetModel()] and not IsValid(ent.Stretcher) then
+	elseif ent:IsVehicle() && ConfigurationMedicMod.Vehicles[ent:GetModel()] && not IsValid(ent.Stretcher) then
 		if self:GetPos():Distance(ent:LocalToWorld(ConfigurationMedicMod.Vehicles[ent:GetModel()].backPos)) > 150 then return end
 		self:SetPos(ent:LocalToWorld(ConfigurationMedicMod.Vehicles[ent:GetModel()].stretcherPos))
 		self:SetAngles(ent:LocalToWorldAngles(ConfigurationMedicMod.Vehicles[ent:GetModel()].stretcherAngle))
@@ -113,7 +113,7 @@ function ENT:Touch( ent )
 		return
 	end
 	
-	if self.ragdoll and IsValid( self.ragdoll ) then return end
+	if self.ragdoll && IsValid( self.ragdoll ) then return end
 
 	if not IsValid( rag ) then return end
 	

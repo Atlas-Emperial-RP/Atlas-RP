@@ -10,7 +10,7 @@ function ENT:Initialize()
 	self:SetHullSizeNormal()
 	self:SetNPCState( NPC_STATE_SCRIPT )
 	self:SetSolid(  SOLID_BBOX )
-	self:CapabilitiesAdd( CAP_ANIMATEDFACE or CAP_TURN_HEAD )
+	self:CapabilitiesAdd( CAP_ANIMATEDFACE || CAP_TURN_HEAD )
 	self:SetUseType( SIMPLE_USE )
 	self:DropToFloor()
 	self.nextClick = CurTime() + 1
@@ -20,7 +20,7 @@ end
 
 function ENT:AcceptInput( event, a, p )
 
-	if( event == "Use" and p:IsPlayer() and self.nextClick < CurTime() )  then
+	if( event == "Use" && p:IsPlayer() && self.nextClick < CurTime() )  then
 	
 		self.nextClick = CurTime() + 2
 

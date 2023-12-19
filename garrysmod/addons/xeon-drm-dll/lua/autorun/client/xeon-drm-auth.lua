@@ -12,7 +12,7 @@ net.Receive("XEON.Auth", function(len)
 		XEON_AUTH = Derma_Query(
 			"You will now be prompted to open a URL in the Steam Overlay. Please click \"Yes\" when prompted.\n\nThe URL will redirect you to a Sign in through Steam page for https://xeon.network.\nYou won't need to enter a username or password, the Steam Overlay should already have you logged in.",
 			"XEON DRM",
-			"return", function()
+			"Continue", function()
 				gui.OpenURL(domain .. path)
 			end,
 			"Cancel"

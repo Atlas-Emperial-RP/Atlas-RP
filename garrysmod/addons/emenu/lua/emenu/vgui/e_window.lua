@@ -221,13 +221,13 @@ end
 function PANEL:OnMousePressed()
 	self:OnPress()
 	local screenX, screenY = self:LocalToScreen( 0, 0 )
-	if ( self.m_bSizable and gui.MouseX() > ( screenX + self:GetWide() - 20 ) and gui.MouseY() > ( screenY + self:GetTall() - 20 ) ) then
+	if ( self.m_bSizable && gui.MouseX() > ( screenX + self:GetWide() - 20 ) && gui.MouseY() > ( screenY + self:GetTall() - 20 ) ) then
 		self.Sizing = { gui.MouseX() - self:GetWide(), gui.MouseY() - self:GetTall() }
 		self:MouseCapture( true )
 		return
 	end
 
-	if ( self:GetDraggable() and gui.MouseY() < ( screenY + 24 ) ) then
+	if ( self:GetDraggable() && gui.MouseY() < ( screenY + 24 ) ) then
 		self.Dragging = { gui.MouseX() - self.x, gui.MouseY() - self.y }
 		self:MouseCapture( true )
 		self:OnStartDragging(self:GetX(),self:GetY())
@@ -297,8 +297,8 @@ function PANEL:Think()
 		local y = mousey - self.Sizing[2]
 		local px, py = self:GetPos()
 
-		if ( x < self.m_iMinWidth ) then x = self.m_iMinWidth elseif ( x > ScrW() - px and self:GetScreenLock() ) then x = ScrW() - px end
-		if ( y < self.m_iMinHeight ) then y = self.m_iMinHeight elseif ( y > ScrH() - py and self:GetScreenLock() ) then y = ScrH() - py end
+		if ( x < self.m_iMinWidth ) then x = self.m_iMinWidth elseif ( x > ScrW() - px && self:GetScreenLock() ) then x = ScrW() - px end
+		if ( y < self.m_iMinHeight ) then y = self.m_iMinHeight elseif ( y > ScrH() - py && self:GetScreenLock() ) then y = ScrH() - py end
 
 		self:SetSize( x, y )
 		return
@@ -306,12 +306,12 @@ function PANEL:Think()
 	end
 
 	local screenX, screenY = self:LocalToScreen( 0, 0 )
-	if ( self.Hovered and self.m_bSizable and mousex > ( screenX + self:GetWide() - 20 ) and mousey > ( screenY + self:GetTall() - 20 ) ) then
+	if ( self.Hovered && self.m_bSizable && mousex > ( screenX + self:GetWide() - 20 ) && mousey > ( screenY + self:GetTall() - 20 ) ) then
 		self:SetCursor( "sizenwse" )
 		return
 	end
 
-	if ( self.Hovered and self:GetDraggable() and mousey < ( screenY + 24 ) ) then
+	if ( self.Hovered && self:GetDraggable() && mousey < ( screenY + 24 ) ) then
 		self:SetCursor( "sizeall" )
 		return
 	end

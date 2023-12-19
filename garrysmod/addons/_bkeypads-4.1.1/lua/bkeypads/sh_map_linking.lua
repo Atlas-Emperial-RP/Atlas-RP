@@ -57,15 +57,13 @@ do
 			local links = bKeypads.MapLinking:GetLinks(ent)
 			if links then
 				for keypad, linkData in pairs(links) do
-					if IsValid(keypad) then
+					if not IsValid(keypad) then continue end
 
-						local link = select(2, next(linkData))
-						if IsValid(link) then
+					local link = select(2, next(linkData))
+					if not IsValid(link) then continue end
 
-							if link:HasGeneralFlag(bKeypads.MapLinking.F_DISABLE_ENT) or link:HasDoorFlag(bKeypads.MapLinking.F_DOOR_NOLOCKPICK) then
-								return false
-							end
-						end
+					if link:HasGeneralFlag(bKeypads.MapLinking.F_DISABLE_ENT) or link:HasDoorFlag(bKeypads.MapLinking.F_DOOR_NOLOCKPICK) then
+						return false
 					end
 				end
 			end
@@ -137,16 +135,17 @@ function bKeypads.MapLinking:BuildLinksTable()
 
 	for link in pairs(bKeypads.MapLinking.LinkEnts) do
 		if not IsValid(link) then
-			local keypad, ent, accessType = link:GetKeypad(), link:GetLinkedEnt(), link:GetAccessType()
-			if IsValid(ent) and IsValid(keypad) then
-				bKeypads.MapLinking:RegisterLink(link, keypad, ent, accessType)
-			end
-
-			if IsValid(ent) and link:HasButtonFlag(bKeypads.MapLinking.F_BUTTON_HIDE) then
-				bKeypads.MapLinking:Hide(ent)
-			end
-		else
 			bKeypads.MapLinking.LinkEnts[link] = nil
+			continue
+		end
+
+		local keypad, ent, accessType = link:GetKeypad(), link:GetLinkedEnt(), link:GetAccessType()
+		if IsValid(ent) and IsValid(keypad) then
+			bKeypads.MapLinking:RegisterLink(link, keypad, ent, accessType)
+		end
+
+		if IsValid(ent) and link:HasButtonFlag(bKeypads.MapLinking.F_BUTTON_HIDE) then
+			bKeypads.MapLinking:Hide(ent)
 		end
 	end
 
@@ -164,14 +163,13 @@ do
 			local closest_dist = math.huge
 			for ent, linkData in pairs(links) do
 				local link = select(2, next(linkData))
-				if IsValid(link) then
+				if not IsValid(link) then continue end
 
-					if link:HasGeneralFlag(bKeypads.MapLinking.F_REDIRECT_USE) and IsValid(link:GetKeypad()) then
-						local dist = link:GetKeypad():WorldSpaceCenter():DistToSqr(defaultEnt:WorldSpaceCenter())
-						if dist < closest_dist then
-							closest_dist = dist
-							redirectKeypad = link:GetKeypad()
-						end
+				if link:HasGeneralFlag(bKeypads.MapLinking.F_REDIRECT_USE) and IsValid(link:GetKeypad()) then
+					local dist = link:GetKeypad():WorldSpaceCenter():DistToSqr(defaultEnt:WorldSpaceCenter())
+					if dist < closest_dist then
+						closest_dist = dist
+						redirectKeypad = link:GetKeypad()
 					end
 				end
 			end

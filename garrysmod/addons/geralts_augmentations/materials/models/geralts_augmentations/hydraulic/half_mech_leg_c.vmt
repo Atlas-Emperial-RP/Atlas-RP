@@ -1,0 +1,25 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 				"models\geralts_augmentations\hydraulic\half_mech_leg"
+	"$bumpmap" 				"models\geralts_augmentations\hydraulic\half_mech_leg_n"
+	"$envmap" "models\geralts_augmentations\hydraulic\saxxy"
+	"$envmaptint"	"[0.25 0.15 0]"
+	"$normalmapalphaenvmapmask"	"1"
+
+	"$phong" "1"
+	"$phongexponent" "35"
+	"$phongboost" "10"	
+	"$phongfresnelranges" "[11 1 8]"
+
+	"$rimlight" "1"		
+	"$rimlightexponent" "11"
+	"$rimlightboost" "5"
+
+	"$half" "0.5"
+
+
+	$color2 "{ 150 110 50 }"
+
+	$blendtintbybasealpha 1
+
+}

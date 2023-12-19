@@ -469,10 +469,9 @@ function PANEL:SafePopulate()
 				bKeypads.ACCESS_GROUP.DARKRP_DOOR_GROUP,
 				bKeypads.ACCESS_GROUP.DARKRP_DEMOTE_GROUP
 			}) do
-				if AccessMatrix[AccessType][access_group] then 
-					for v in pairs(AccessMatrix[AccessType][access_group]) do
-						PopulateFunctions[access_group](self, AccessType, v)
-					end
+				if not AccessMatrix[AccessType][access_group] then continue end
+				for v in pairs(AccessMatrix[AccessType][access_group]) do
+					PopulateFunctions[access_group](self, AccessType, v)
 				end
 			end
 		else

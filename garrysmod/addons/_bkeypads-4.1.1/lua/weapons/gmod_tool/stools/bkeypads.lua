@@ -421,8 +421,7 @@ if CLIENT then
 
 		local propertiesH = ConVarProperties:GetTall()
 
-		local origin = center
-		local directionID
+		local origin, directionID = center
 
 		local viewDelta = (keypad:GetAngles() - LocalPlayer():GetAngles()):Forward()
 		if viewDelta.y >= -.33 and viewDelta.y <= .33 then
