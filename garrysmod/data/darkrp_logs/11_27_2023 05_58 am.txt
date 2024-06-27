@@ -1,6 +1,0 @@
-Mon Nov 27 05:58:35 2023	King Platypus (STEAM_0:0:197465498): shit is still broke
-Mon Nov 27 05:58:54 2023	Dishwasher (STEAM_0:1:169781558): /shadowcommand
-Mon Nov 27 05:59:02 2023	Dishwasher (STEAM_0:1:169781558): 
-Mon Nov 27 05:59:20 2023	Dishwasher (STEAM_0:1:169781558): it's dark rp/f4 menu
-Mon Nov 27 05:59:40 2023	Dishwasher (STEAM_0:1:169781558): 
-Mon Nov 27 06:00:01 2023	Dishwasher (STEAM_0:1:169781558): all of our jobs are missing bwhitelist

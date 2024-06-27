@@ -1,9 +1,0 @@
-{
-	"Stat4": 0.0,
-	"Name": "Dishwasher",
-	"Stat1": 0.0,
-	"Skill": [],
-	"Stat2": 0.0,
-	"Point": 10.0,
-	"Stat3": 0.0
-}
