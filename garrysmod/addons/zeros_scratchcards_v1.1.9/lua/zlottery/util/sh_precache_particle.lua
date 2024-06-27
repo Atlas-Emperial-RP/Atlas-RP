@@ -1,0 +1,13 @@
+/*
+    Addon id: 10f10c4a-96ac-41b8-b283-36bdee1a0e4b
+    Version: v1.1.9 (stable)
+*/
+
+game.AddParticles("particles/zlt_fx.pcf")
+PrecacheParticleSystem("zlt_scratch_explo01")
+PrecacheParticleSystem("zlt_scratch_test")
+                                                                                                                                                                                                                                                                                                                                                                                                                                                       /* 76561198165273585 */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                       -- ac450a252ccfd31cc7be3778c6daa6ea87f2d445b951d47a65e8d80a8bbab4ca
+                                                                                                                                                                                                                                                                                                                                                                                                                                                       /* bacc8689533f5250ce7da6945c7da3969bddbcd7163aacc2ce484e2e8a83c680 */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                       /* 1a23cccb34e84079339297d7fbc21097e13053705ffbe07f776f05f38858bb77 */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                       /* 1a23cccb34e84079339297d7fbc21097e13053705ffbe07f776f05f38858bb77 */
