@@ -2,6 +2,11 @@
 /*
 
 # But don't ignore the garrysmod folder
-!/garrysmod/
+!container/physgun.json
+!container/garrysmod/addons/
+!container/garrysmod/cfg/server.cfg
+!container/garrysmod/gamodes/
+!container/garrysmod/lua/
+!container/garrysmod/maps/
 !/.gitignore
 
