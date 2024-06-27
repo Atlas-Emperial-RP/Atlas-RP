@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 				"models\geralts_augmentations\myomere\mech2"
+	"$bumpmap" 				"models\geralts_augmentations\myomere\mech2_n"
+	"$envmap" "models\geralts_augmentations\hydraulic\saxxy"
+	"$envmaptint"	"[1 1 1]"
+	"$envmapsaturation"	"0"
+	"$normalmapalphaenvmapmask"	"1"
+
+	"$rimlight" "1"		
+	"$rimlightexponent" "11"
+	"$rimlightboost" "5"
+
+	"$half" "0.5"
+}
