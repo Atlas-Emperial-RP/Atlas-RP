@@ -6,15 +6,13 @@ function PANEL:SetMaterial(mat)
 
 	self.m_AspectRatio = self.m_Material:Height() / self.m_Material:Width()
 
-	self._w = nil
-	self._h = nil
+	self._w, self._h = nil
 end
 
 function PANEL:SetSquareMaterial(mat)
 	self.m_Material = mat
 	self.m_Square = true
-	self._w = nil
-	self._h = nil
+	self._w, self._h = nil
 end
 
 function PANEL:GetMaterial()
@@ -23,8 +21,7 @@ end
 
 function PANEL:SetAspectRatio(aspectRatio)
 	self.m_AspectRatio = aspectRatio
-	self._w = nil
-	self._h = nil
+	self._w, self._h = nil
 end
 
 function PANEL:Paint(w,h)

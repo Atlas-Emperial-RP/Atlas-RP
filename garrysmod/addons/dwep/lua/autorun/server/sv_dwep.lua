@@ -28,7 +28,7 @@ net.Receive("dwep_update_weapon", function(len,ply)
 
 	DWEP.SaveData(class)
 	for k,v in pairs(player.GetAll()) do
-		if v ~= ply then
+		if v != ply then
 			DWEP.SendData(v)
 		end 
 	end 

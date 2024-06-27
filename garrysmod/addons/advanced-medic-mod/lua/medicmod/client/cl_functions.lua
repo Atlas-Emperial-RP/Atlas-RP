@@ -6,7 +6,7 @@ function StartMedicAnimation( ply, id )
 
 	if not IsValid(ply) then return end
 
-	if ply.mdlanim and IsValid( ply.mdlanim ) then print("model already exist, removed") ply.mdlanim:Remove() end
+	if ply.mdlanim && IsValid( ply.mdlanim ) then print("model already exist, removed") ply.mdlanim:Remove() end
 	
 	if ply:GetNWString("MedicPlayerModel") then
 
@@ -24,7 +24,7 @@ function StartMedicAnimation( ply, id )
 end
 
 function StopMedicAnimation( ply )
-	if IsValid( ply.mdlanim ) and ply:GetMedicAnimation() == 0 then
+	if IsValid( ply.mdlanim ) && ply:GetMedicAnimation() == 0 then
 		ply.mdlanim:Remove()
 	end
 end
@@ -38,7 +38,7 @@ function MedicMod.TerminalMenu( ent )
 
 	local ActiveItem = 1
 
-	--[[ MAIN FRAME --]]
+	/* MAIN FRAME */
 
 	local _MainFrame = vgui.Create( "DPanel" )
 	_MainFrame:SetSize( 750, 500 )
@@ -47,7 +47,7 @@ function MedicMod.TerminalMenu( ent )
 
 	_MainFrame.Paint = function( pnl, w, h )
 
-		--[[ BACKGROUND --]]
+		/* BACKGROUND */
 
 		surface.SetDrawColor( 255, 255, 255 )
 		surface.SetMaterial( Background )
@@ -55,20 +55,20 @@ function MedicMod.TerminalMenu( ent )
 
 		draw.RoundedBox( 0, 0, 0, w, h, Color( 0, 0, 0, 225 ))
 
-		--[[ TOP --]]
+		/* TOP */
 
 		draw.RoundedBox( 0, 0, 0, w, h*0.2, Color( 255, 255, 255, 10 ))
 
 		draw.DrawText( "Terminal", "MedicModFont17", w*0.5, h*0.065, Color( 255, 255, 255 ), 1)
 
-		--[[ BOTTOM --]]
+		/* BOTTOM */
 
 		draw.DrawText( ConfigurationMedicMod.Entities[ActiveItem].price..ConfigurationMedicMod.MoneyUnit, "Aam::Normal", w*0.5, h*0.785, Color( 255, 255, 255 ), 1)
 
 		draw.RoundedBox( 0, w*0.2, h*0.75, w*0.6, 2, Color( 255, 255, 255 ))
 	end
 
-	--[[ SCROLL SYSTEM --]]
+	/* SCROLL SYSTEM */
 
 	local ItemScrollPanel = vgui.Create("DScrollPanel", _MainFrame )
 	ItemScrollPanel:SetSize( _MainFrame:GetWide()*0.6, _MainFrame:GetTall()*0.45 )
@@ -86,7 +86,7 @@ function MedicMod.TerminalMenu( ent )
 	ItemScrollPanel:GetVBar().btnDown.Paint = function()
 	end
 
-	--[[ ITEM LIST --]]
+	/* ITEM LIST */
 
 	local ItemsList = vgui.Create( "DIconLayout", ItemScrollPanel )
 	ItemsList:SetSize( ItemScrollPanel:GetWide(), ItemScrollPanel:GetTall() )
@@ -116,7 +116,7 @@ function MedicMod.TerminalMenu( ent )
 		
 	end
 
-	--[[ LEFT --]]
+	/* LEFT */
 
 	local _LeftArrow = vgui.Create( "DButton", _MainFrame )
 	_LeftArrow:SetSize( 50, 50 )
@@ -139,7 +139,7 @@ function MedicMod.TerminalMenu( ent )
 		ItemScrollPanel:ScrollToChild(ItemSlot[ActiveItem])
 	end
 
-	--[[ RIGHT --]]
+	/* RIGHT */
 
 	local _RightArrow = vgui.Create( "DButton", _MainFrame )
 	_RightArrow:SetSize( 50, 50 )
@@ -162,7 +162,7 @@ function MedicMod.TerminalMenu( ent )
 		ItemScrollPanel:ScrollToChild(ItemSlot[ActiveItem])
 	end
 
-	--[[ BUY --]]
+	/* BUY */
 
 	local _BuyButton = vgui.Create( "DButton", _MainFrame )
 	_BuyButton:SetSize( _MainFrame:GetWide()*0.15, _MainFrame:GetTall()*0.0725 )
@@ -210,7 +210,7 @@ function MedicMod.TerminalMenu( ent )
 		_MainFrame:Remove()
 	end
 
-	--[[ CLOSE BUTTON --]]
+	/* CLOSE BUTTON */
 
 	local _CloseButton = vgui.Create( "DButton", _MainFrame )
 	_CloseButton:SetSize( _MainFrame:GetWide()*0.05, _MainFrame:GetTall()*0.0725 )

@@ -1,12 +1,12 @@
---[[------------
+--------------
 /// COLORS ///
---------------]]
+--------------
 emenu.colors.jobs[emenu.text["favorite"]] = Color(255,107,129)
 emenu.colors.jobs[emenu.text["recent"]]   = Color(138,43,226)
 
---[[----------------
+------------------
 /// HL2 MODELS ///
-------------------]]
+------------------
 local halflife2 = {
 	["weapon_bugbait"] = { PrintName = "Bugbait", WorldModel = "models/weapons/w_bugbait.mdl" },
 	["weapon_357"] = { PrintName = ".357 Magnum", WorldModel = "models/weapons/w_357.mdl" },
@@ -24,17 +24,17 @@ local halflife2 = {
 }
 
 
---[[---------------
+-----------------
 /// FUNCTIONS ///
------------------]]
+-----------------
 emenu.jobs = emenu.jobs or {}
 emenu.jobs.needupdate = false
 emenu.jobs.list = {}
 
 
---[[--------------
+----------------
 /// FAVORITE ///
-----------------]]
+----------------
 emenu.jobs.favorite = emenu.jobs.favorite or {}
 emenu.jobs.favorite.list = emenu.jobs.favorite.list or {}
 local filename = "favorite_jobs"
@@ -78,9 +78,9 @@ end
 
 
 
---[[------------
+--------------
 /// RECENT ///
---------------]]
+--------------
 emenu.jobs.recent = emenu.jobs.recent or {}
 local function AddRecentJob(job)
 	if not DarkRP then return end
@@ -107,9 +107,9 @@ local function AddRecentJob(job)
 end
 
 
---[[------------------
+--------------------
 /// JOB LIST GEN ///
---------------------]]
+--------------------
 function emenu.jobs:GenerateJobs()
 	self.list.categories = {}
 	local ply = LocalPlayer()
@@ -119,9 +119,9 @@ function emenu.jobs:GenerateJobs()
 	if not istable(tbl) then return end
 	tbl = tbl["jobs"]
 
-	--[[--------------
+	----------------
 	/// FAVORITE ///
-	----------------]]
+	----------------
 	if istable(self.favorite.list) then
 		for id,bool in pairs(self.favorite.list) do
 			if not self.list.categories[emenu.text["favorite"]] then
@@ -140,19 +140,18 @@ function emenu.jobs:GenerateJobs()
 		end
 	end
 
-	--[[------------
+	--------------
 	/// RECENT ///
-	--------------]]
+	--------------
 	for _,v in ipairs(self.recent) do
 		local job = RPExtraTeams[v]
 		if job then
-			if not job.favorite then 
-				if not self.list.categories[emenu.text["recent"]] then
-					self.list.categories[emenu.text["recent"]] = {}
-				end
-
-				table.insert(self.list.categories[emenu.text["recent"]],job)
+			if job.favorite then continue end
+			if not self.list.categories[emenu.text["recent"]] then
+				self.list.categories[emenu.text["recent"]] = {}
 			end
+
+			table.insert(self.list.categories[emenu.text["recent"]],job)
 		end
 	end
 
@@ -160,9 +159,9 @@ function emenu.jobs:GenerateJobs()
 		table.insert(self.list.sequence,emenu.text["recent"])
 	end
 
-	--[[------------------
+	--------------------
 	/// CURRENT JOBS ///
-	--------------------]]
+	--------------------
 	for id, category in ipairs(tbl) do
 		local catname = category.name
 		local members = category.members
@@ -187,9 +186,9 @@ end
 
 
 
---[[-----------
+-------------
 /// PANEL ///
--------------]]
+-------------
 local function func(bg)
 	if not IsValid(bg) then return end
 	if not DarkRP then return end
@@ -235,162 +234,163 @@ local function func(bg)
 					customcheck = job.customCheck(ply)
 				end
 
-				if not job.private and customcheck then
+				if job.private and not customcheck then
+					continue
+				end
 
+				if not IsColor(job.color) then job.color = Color(255,255,255) end
+				local jobpan = vgui.Create("DButton",categlist)
+				jobpan.job = job
+				jobpan:SetText("")
+				jobpan:SetSize(categlist:GetWide()*0.5-categlist:GetSpaceX()*2,65)
+				table.insert(jobcolors,job.color) --average color
 
-					if not IsColor(job.color) then job.color = Color(255,255,255) end
-					local jobpan = vgui.Create("DButton",categlist)
-					jobpan.job = job
-					jobpan:SetText("")
-					jobpan:SetSize(categlist:GetWide()*0.5-categlist:GetSpaceX()*2,65)
-					table.insert(jobcolors,job.color) --average color
-
-					--RANKCHECK
-					local rankcheck = true
-					if job.ranks then
-						if istable(job.ranks) then
-							rankcheck = job.ranks[ply:GetUserGroup()] ~= nil
-						else
-							rankcheck = ply:GetUserGroup() == job.ranks
-						end
-					end
-
-					--JOBSLOTS
-					local numpl = team.NumPlayers( job.team )
-					local maxcheck = false
-					if numpl then
-						if job.max then
-
-							if job.max > 0 then
-
-								if (job.max <= numpl) then
-									maxcheck = true
-								end
-
-							end
-
-						end
-
-					end
-
-
-					--[[------------
-					/// MODELS ///
-					--------------]]
-					local models = job.model
-					local model = models
-					if istable(models) then
-						model = models[math.random( #models )]
-					elseif isstring(models) then
-						model = models
+				--RANKCHECK
+				local rankcheck = true
+				if job.ranks then
+					if istable(job.ranks) then
+						rankcheck = job.ranks[ply:GetUserGroup()] ~= nil
 					else
-						return
+						rankcheck = ply:GetUserGroup() == job.ranks
 					end
+				end
 
-					local jobModel = vgui.Create( "DModelPanel", jobpan )
-					local size = jobpan:GetTall()-6
-					jobModel:SetModel( model )
-					jobModel:SetSize( size, size )
-					jobModel:SetPos( 5, 3 )
-					jobModel.LayoutEntity = function() return end
-					jobModel:SetMouseInputEnabled(false)
-					jobModel:SetFOV( 46 )
-	            	jobModel:SetCamPos( Vector( 25, 0, 66 ) )
-	            	jobModel:SetLookAt( Vector( 10, 0, 65 ) )
-	            	jobModel.Color = job.color
-	            	local modelpaint = baseclass.Get("DModelPanel").Paint
+				--JOBSLOTS
+				local numpl = team.NumPlayers( job.team )
+				local maxcheck = false
+				if numpl then
+					if job.max then
 
-	            	local offset = 3
-	           		jobModel.Paint = function(self, w, h)
-	           			emenu.util:Mask(
-			            	function()
-			            		emenu.util:DrawPolyCircle(h * 0.5, h * 0.5, h * 0.5 - offset, emenu.colors.default.white, 32)
-							end,
-							function()
-								modelpaint(self,w,h)
-							end,
-							false
-						)
-	           		end
+						if job.max > 0 then
 
-	           		local wide = jobpan:GetWide()*0.1
-	           		local iconx,icony,iconw,iconh = jobModel:GetBounds()
-	           		local shadowcolor = emenu.util.color:Adjust(emenu.colors.jobs.bgjob,10)
-	           		local bgcola = emenu.util.color:Set(emenu.colors.jobs.bgjob,"a",255)
-					function jobpan:Paint(w,h)
-						local notcan = false
-						local numpl = team.NumPlayers( job.team )
-						local hovered = self:IsHovered()
-
-						--bg
-						if (ply:Team() == job.team) then
-							draw.RoundedBox(0,0,0,w,h,emenu.colors.jobs.bghover)
-						else
-							draw.RoundedBox(0,0,0,w,h,hovered and emenu.colors.jobs.bghover or emenu.colors.jobs.bgjob)
-						end
-						surface.SetDrawColor(shadowcolor:Unpack())
-						surface.DrawRect(0,h-2,w,2)
-						surface.DrawRect(w-2,0,2,h)
-
-						local textcolor = hovered and emenu.colors.jobs.text or emenu.colors.jobs.text2
-						if (not customcheck) or (not rankcheck) or (maxcheck) then
-							notcan = true
-						end
-
-						if notcan then
-							textcolor = emenu.colors.default.red
-							emenu.util:DrawMaterial(0,0,w,h,emenu.colors.jobs.texturecol,emenu.Materials["tr_texture"])
-						end
-
-						local x, y, h2 = iconx+iconw*0.5, icony+iconh*0.5, iconh*0.5 
-						if hovered then
-							emenu.util:DrawCircle(x,y,h2, jobModel.Color)
-						else
-							emenu.util:DrawCircle(x,y,h2-2,jobModel.Color)
-						end
-						emenu.util:DrawCircle(x,y,h2-3,bgcola)
-
-						draw.SimpleText(numpl .. "/" .. ( job.max == 0 and "∞" or job.max ),
-							"emenu_18_500",
-							w-10,
-							h*0.5,
-							textcolor,
-							TEXT_ALIGN_RIGHT,
-							TEXT_ALIGN_CENTER
-						)
-					end
-
-					if ply:Team() == job.team then
-						emenu:AddHelpText(jobpan,job.CustomCheckFailMsg or emenu.text["err_already"] ,nil,5,"bottom")
-					end
-
-					if not customcheck then
-						emenu:AddHelpText(jobpan,job.CustomCheckFailMsg or emenu.text["err_norights"] ,nil,5,"bottom")
-					end
-
-					if not rankcheck then
-						emenu:AddHelpText(jobpan,emenu.text["err_norights"] ,nil,5,"bottom")
-					end
-
-					if maxcheck then
-						emenu:AddHelpText(jobpan,emenu.text["err_noslots"] ,nil,5,"bottom")
-					end
-
-					function jobpan:Think()
-						if IsValid(self.helptext) then
-							if self:IsHovered() then
-								local posx,posy = input.GetCursorPos()
-								self.helptext:SetPos(posx+5,posy+5)
-							else
-								self.helptext:Remove()
+							if (job.max <= numpl) then
+								maxcheck = true
 							end
+
 						end
+
 					end
 
+				end
 
-				--[[-----------------
+
+				--------------
+				/// MODELS ///
+				--------------
+				local models = job.model
+				local model = models
+				if istable(models) then
+					model = models[math.random( #models )]
+				elseif isstring(models) then
+					model = models
+				else
+					return
+				end
+
+				local jobModel = vgui.Create( "DModelPanel", jobpan )
+				local size = jobpan:GetTall()-6
+				jobModel:SetModel( model )
+				jobModel:SetSize( size, size )
+				jobModel:SetPos( 5, 3 )
+				jobModel.LayoutEntity = function() return end
+				jobModel:SetMouseInputEnabled(false)
+				jobModel:SetFOV( 46 )
+	            jobModel:SetCamPos( Vector( 25, 0, 66 ) )
+	            jobModel:SetLookAt( Vector( 10, 0, 65 ) )
+	            jobModel.Color = job.color
+	            local modelpaint = baseclass.Get("DModelPanel").Paint
+
+	            local offset = 3
+	           	jobModel.Paint = function(self, w, h)
+	           		emenu.util:Mask(
+			            function()
+			            	emenu.util:DrawPolyCircle(h * 0.5, h * 0.5, h * 0.5 - offset, emenu.colors.default.white, 32)
+						end,
+						function()
+							modelpaint(self,w,h)
+						end,
+						false
+					)
+	           	end
+
+	           	local wide = jobpan:GetWide()*0.1
+	           	local iconx,icony,iconw,iconh = jobModel:GetBounds()
+	           	local shadowcolor = emenu.util.color:Adjust(emenu.colors.jobs.bgjob,10)
+	           	local bgcola = emenu.util.color:Set(emenu.colors.jobs.bgjob,"a",255)
+				function jobpan:Paint(w,h)
+					local notcan = false
+					local numpl = team.NumPlayers( job.team )
+					local hovered = self:IsHovered()
+
+					--bg
+					if (ply:Team() == job.team) then
+						draw.RoundedBox(0,0,0,w,h,emenu.colors.jobs.bghover)
+					else
+						draw.RoundedBox(0,0,0,w,h,hovered and emenu.colors.jobs.bghover or emenu.colors.jobs.bgjob)
+					end
+					surface.SetDrawColor(shadowcolor:Unpack())
+					surface.DrawRect(0,h-2,w,2)
+					surface.DrawRect(w-2,0,2,h)
+
+					local textcolor = hovered and emenu.colors.jobs.text or emenu.colors.jobs.text2
+					if (not customcheck) or (not rankcheck) or (maxcheck) then
+						notcan = true
+					end
+
+					if notcan then
+						textcolor = emenu.colors.default.red
+						emenu.util:DrawMaterial(0,0,w,h,emenu.colors.jobs.texturecol,emenu.Materials["tr_texture"])
+					end
+
+					local x, y, h2 = iconx+iconw*0.5, icony+iconh*0.5, iconh*0.5 
+					if hovered then
+						emenu.util:DrawCircle(x,y,h2, jobModel.Color)
+					else
+						emenu.util:DrawCircle(x,y,h2-2,jobModel.Color)
+					end
+					emenu.util:DrawCircle(x,y,h2-3,bgcola)
+
+					draw.SimpleText(numpl .. "/" .. ( job.max == 0 and "∞" or job.max ),
+						"emenu_18_500",
+						w-10,
+						h*0.5,
+						textcolor,
+						TEXT_ALIGN_RIGHT,
+						TEXT_ALIGN_CENTER
+					)
+				end
+
+				if ply:Team() == job.team then
+					emenu:AddHelpText(jobpan,job.CustomCheckFailMsg or emenu.text["err_already"] ,nil,5,"bottom")
+				end
+
+				if not customcheck then
+					emenu:AddHelpText(jobpan,job.CustomCheckFailMsg or emenu.text["err_norights"] ,nil,5,"bottom")
+				end
+
+				if not rankcheck then
+					emenu:AddHelpText(jobpan,emenu.text["err_norights"] ,nil,5,"bottom")
+				end
+
+				if maxcheck then
+					emenu:AddHelpText(jobpan,emenu.text["err_noslots"] ,nil,5,"bottom")
+				end
+
+				function jobpan:Think()
+					if IsValid(self.helptext) then
+						if self:IsHovered() then
+							local posx,posy = input.GetCursorPos()
+							self.helptext:SetPos(posx+5,posy+5)
+						else
+							self.helptext:Remove()
+						end
+					end
+				end
+
+
+				-------------------
 				/// DESCRIPTION ///
-				-------------------]]
+				-------------------
 				local descpnl = jobpan:Add("DPanel")
 				descpnl:SetSize(jobpan:GetWide()-5,jobModel:GetWide(),jobpan:GetTall())
 				descpnl:SetX(5+jobModel:GetX()+jobModel:GetWide())
@@ -439,9 +439,9 @@ local function func(bg)
 					end
 				end
 
-				--[[---------------
+				-----------------
 				/// JOB PANEL ///
-				-----------------]]
+				-----------------
 				function jobpan:DoClick()
 					if IsValid(content.slidebg) then
 						content.slidebg:Close()
@@ -861,81 +861,80 @@ local function func(bg)
 										function pnl:Paint(w,h)
 											draw.RoundedBox(0,0,0,w,h,bgcol)
 											draw.SimpleText(name,"emenu_20_500",6+modelpanel:GetWide()+5,h*0.5,mustdark and emenu.colors.text.dark or emenu.colors.text.white,TEXT_ALIGN_LEFT,TEXT_ALIGN_CENTER)
-											end
-										else
-											function pnl:Paint(w,h)
-												draw.RoundedBox(0,0,0,w,h,bgcol)
-												draw.SimpleText(emenu.text["unknown"],"emenu_20_500",w*0.5,h*0.5,mustdark and emenu.colors.text.dark or emenu.colors.text.white,TEXT_ALIGN_CENTER,TEXT_ALIGN_CENTER)
-											end
+										end
+									else
+										function pnl:Paint(w,h)
+											draw.RoundedBox(0,0,0,w,h,bgcol)
+											draw.SimpleText(emenu.text["unknown"],"emenu_20_500",w*0.5,h*0.5,mustdark and emenu.colors.text.dark or emenu.colors.text.white,TEXT_ALIGN_CENTER,TEXT_ALIGN_CENTER)
 										end
 									end
+								end
 
-									return scroll
-								end)
-							end
+								return scroll
+							end)
 						end
-
 					end
 
-					--[[------------------
-					/// CONTEXT MENU ///
-					--------------------]]
-					function jobpan:DoRightClick()
-						local context = vgui.Create("emenu.contextmenu",bg)
-                		context:SetWide(bg:GetWide()*0.1)
-                		context:AddHeader(emenu.text["actions"])
-                		context:AddButton(emenu.text["become"],function()
-                			if (job.vote or job.RequiresVote and job.RequiresVote(LocalPlayer(), job.team)) then
-								RunConsoleCommand("darkrp", "vote" .. job.command)
-							else
-								RunConsoleCommand("darkrp", job.command)
-							end
-                		end,emenu.Materials["person"])
-
-                		if job.favorite then
-	            	    	context:AddButton(emenu.text["unfavorite"],function()
-	            	    		emenu.jobs.favorite:Remove(job.team)
-								pnl:UpdateList()
-	            	    	end,emenu.Materials["like_filled"])
-	            	    else
-	            	    	context:AddButton(emenu.text["favorite"],function()
-	            	    		emenu.jobs.favorite:Add(job.team)
-								pnl:UpdateList()
-	            	    	end,emenu.Materials["like"])
-	            	    end
-
-                		local posx,posy = input.GetCursorPos()
-                		context:SetPosClamped(posx+5,posy+5)
-					end
 				end
 
-				local categorycolor = emenu.util.color:Adjust(emenu.util.color:Average(jobcolors),10)
-				if emenu.colors.jobs[category] ~= nil then
-					categorycolor = emenu.colors.jobs[category]
+				--------------------
+				/// CONTEXT MENU ///
+				--------------------
+				function jobpan:DoRightClick()
+					local context = vgui.Create("emenu.contextmenu",bg)
+                	context:SetWide(bg:GetWide()*0.1)
+                	context:AddHeader(emenu.text["actions"])
+                	context:AddButton(emenu.text["become"],function()
+                		if (job.vote or job.RequiresVote and job.RequiresVote(LocalPlayer(), job.team)) then
+							RunConsoleCommand("darkrp", "vote" .. job.command)
+						else
+							RunConsoleCommand("darkrp", job.command)
+						end
+                	end,emenu.Materials["person"])
+
+                	if job.favorite then
+	                	context:AddButton(emenu.text["unfavorite"],function()
+	                		emenu.jobs.favorite:Remove(job.team)
+							pnl:UpdateList()
+	                	end,emenu.Materials["like_filled"])
+	                else
+	                	context:AddButton(emenu.text["favorite"],function()
+	                		emenu.jobs.favorite:Add(job.team)
+							pnl:UpdateList()
+	                	end,emenu.Materials["like"])
+	                end
+
+                	local posx,posy = input.GetCursorPos()
+                	context:SetPosClamped(posx+5,posy+5)
 				end
-				function catpan:Paint(w,h)
-					draw.SimpleText(category or "None","emenu_30_500",w*0.5,h*0.5,emenu.colors.jobs.text,TEXT_ALIGN_CENTER,TEXT_ALIGN_CENTER)
-				end
-			
-				local bgcol = emenu.util.color:Set(categorycolor,"a",10)
-				local posy = 5
-				function categlist:Paint(w,h)
-				
-					surface.SetDrawColor(bgcol:Unpack())
-					surface.DrawRect(0,posy,w,h)
-				
-					surface.SetDrawColor(categorycolor:Unpack())
-					surface.DrawRect(0,posy,5,h)
-				end
+			end
+
+			local categorycolor = emenu.util.color:Adjust(emenu.util.color:Average(jobcolors),10)
+			if emenu.colors.jobs[category] ~= nil then
+				categorycolor = emenu.colors.jobs[category]
+			end
+			function catpan:Paint(w,h)
+				draw.SimpleText(category or "None","emenu_30_500",w*0.5,h*0.5,emenu.colors.jobs.text,TEXT_ALIGN_CENTER,TEXT_ALIGN_CENTER)
+			end
+
+			local bgcol = emenu.util.color:Set(categorycolor,"a",10)
+			local posy = 5
+			function categlist:Paint(w,h)
+
+				surface.SetDrawColor(bgcol:Unpack())
+				surface.DrawRect(0,posy,w,h)
+
+				surface.SetDrawColor(categorycolor:Unpack())
+				surface.DrawRect(0,posy,5,h)
 			end
 		end
 	end
 	CreateList()
 
 
-	--[[----------------------
+	------------------------
 	/// UPDATE FUNCTIONS ///
-	------------------------]]
+	------------------------
 	local oldscroll = 0 
 	function pnl:UpdateList()
 		if not emenu:IsActive() then return end

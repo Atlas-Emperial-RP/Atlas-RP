@@ -200,13 +200,12 @@ if CLIENT then
 		hook.Remove("PostDrawTranslucentRenderables", "bKeypads.AdminTool.DrawProperties")
 
 		for _, keypad in ipairs(bKeypads.Keypads) do
-			if IsValid(keypad) then 
+			if not IsValid(keypad) then continue end
 
-				if IsValid(keypad.m_pKeypadProperties) then
-					keypad.m_pKeypadProperties:Remove()
-				end
-				keypad.m_pKeypadProperties = nil
+			if IsValid(keypad.m_pKeypadProperties) then
+				keypad.m_pKeypadProperties:Remove()
 			end
+			keypad.m_pKeypadProperties = nil
 		end
 	end
 end
@@ -219,21 +218,19 @@ if CLIENT then
 		else
 			local nearestDist, nearestX, nearestY, nearestKeypad = math.huge
 			for _, keypad in ipairs(bKeypads.Keypads) do
-				if IsValid(keypad) then 
+				if not IsValid(keypad) then continue end
 
-					local ScreenPos = keypad:LocalToWorld(keypad:OBBCenter()):ToScreen()
-					if ScreenPos.visible then 
+				local ScreenPos = keypad:LocalToWorld(keypad:OBBCenter()):ToScreen()
+				if not ScreenPos.visible then continue end
 
-						local dist3D = keypad:GetPos():DistToSqr(EyePos())
+				local dist3D = keypad:GetPos():DistToSqr(EyePos())
 
-						local xDist = (ScrW() / 2) - ScreenPos.x
-						local yDist = (ScrH() / 2) - ScreenPos.y
-						local perceivedDist = (math.abs(xDist) + math.abs(yDist)) * dist3D
-						if perceivedDist < nearestDist then
-							nearestDist, nearestX, nearestY = perceivedDist, xDist, yDist
-							nearestKeypad = keypad
-						end
-					end
+				local xDist = (ScrW() / 2) - ScreenPos.x
+				local yDist = (ScrH() / 2) - ScreenPos.y
+				local perceivedDist = (math.abs(xDist) + math.abs(yDist)) * dist3D
+				if perceivedDist < nearestDist then
+					nearestDist, nearestX, nearestY = perceivedDist, xDist, yDist
+					nearestKeypad = keypad
 				end
 			end
 
@@ -339,9 +336,7 @@ if CLIENT then
 
 	local UNSET = 42069
 	local fadeAnimStart, slideAnimStart, slideAnimFrom
-	local prevKeypad = UNSET
-	local prevDirectionID = UNSET
-	local prevOrigin = UNSET
+	local prevKeypad, prevDirectionID, prevOrigin = UNSET, UNSET
 	local sizeChanges
 	local function KeypadPropertiesPerformLayout(self, w, h)
 		DProperties.PerformLayout(self, w, h)

@@ -24,9 +24,9 @@ function ENT:Draw()
 		local bloodqt = math.Clamp(blood/100,0,1)
 		
 		local round
-		if blood < 40 and blood > 20 then
+		if blood < 40 && blood > 20 then
 			round = 5
-		elseif blood <= 20 and blood > 10 then
+		elseif blood <= 20 && blood > 10 then
 			round = 3
 		elseif blood <= 10 then
 			round = 0

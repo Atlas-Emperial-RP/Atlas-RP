@@ -139,7 +139,7 @@ local function ExtractParams( p1, p2, p3 )
 				local x = { "r", "g", "b", "a" }
 				local n = 1
 				for k, v in string.gmatch( p2, "(%d+),?" ) do
-					rgba[x[n]] = tonumber(k)
+					rgba[ x[ n ] ] = k
 					n = n + 1
 				end
 			end
@@ -303,11 +303,11 @@ function Parse( ml, maxwidth )
 	font_stack = { "DermaDefault" }
 	blocks = {}
 
-	if ( not string.find( ml, "<" ) ) then
+	if ( !string.find( ml, "<" ) ) then
 		ml = ml .. "<nop>"
 	end
 
-	local result = string.gsub( ml, "([^<>]*)(<[^>]+.)([^<>]*)", ProcessMatches )
+	string.gsub( ml, "([^<>]*)(<[^>]+.)([^<>]*)", ProcessMatches )
 
 	local xOffset = 0
 	local yOffset = 0
@@ -434,7 +434,7 @@ function Parse( ml, maxwidth )
 						end
 
 						local previous_block = new_block_list[ #new_block_list ]
-						local wrap = lastSpacePos == string.len( curString ) and lastSpacePos > 0
+						local wrap = lastSpacePos == string.len( curString ) && lastSpacePos > 0
 						if ( previous_block and previous_block.text:match(" $") and wrap and surface.GetTextSize( blk.text ) < maxwidth ) then
 							-- If the block was preceded by a space, wrap the block onto the next line first, as we can probably fit it there
 							local trimmed, trimCharNum = previous_block.text:gsub(" +$", "")

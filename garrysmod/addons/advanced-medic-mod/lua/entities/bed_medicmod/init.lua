@@ -93,7 +93,7 @@ function ENT:Touch( ent )
 	
 	self.nexttouch = CurTime() + 1
 	
-	if self.ragdoll and IsValid( self.ragdoll ) then return end
+	if self.ragdoll && IsValid( self.ragdoll ) then return end
 	
 	local rag
 	local typer
@@ -101,7 +101,7 @@ function ENT:Touch( ent )
 	if ent:IsDeathRagdoll() then
 		rag = ent
 		typer = 1
-	elseif IsValid(ent.ragdoll) and ent.ragdoll:IsDeathRagdoll() then
+	elseif IsValid(ent.ragdoll) && ent.ragdoll:IsDeathRagdoll() then
 		rag = ent.ragdoll
 		typer = 2
 	else

@@ -162,6 +162,7 @@ return {
 		remove_lua_function                   = "Supprimer Fonction Lua",
 		convert_old_data                      = "Convertir anciennes données de bWhitelist",
 		offline                               = "Hors Ligne",
+		add_usergroup                         = "Ajouter Groupe d'Utilisateurs",
 		no_permission_action                  = "Vous n'avez pas la permission de faire cela !",
 
 } end }

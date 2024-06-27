@@ -59,11 +59,10 @@ local circleCamLag
 bKeypads.Tutorial.Shortcuts = {}
 hook.Add("bKeypads.TutorialScenes", "bKeypads.Tutorial.Shortcuts", function()
 	for _, category in ipairs(bKeypads.Tutorial.Categories) do
-		if category.Scenes then 
-			for _, scene in ipairs(category.Scenes) do
-				if istable(scene) and scene.Shortcut then
-					bKeypads.Tutorial.Shortcuts[scene.Shortcut] = scene
-				end
+		if not category.Scenes then continue end
+		for _, scene in ipairs(category.Scenes) do
+			if istable(scene) and scene.Shortcut then
+				bKeypads.Tutorial.Shortcuts[scene.Shortcut] = scene
 			end
 		end
 	end
@@ -317,19 +316,19 @@ function bKeypads.Tutorial:SetupFrame(frame)
 				pnl = pnlObj[1](bKeypads.Tutorial.Menu.Scene)
 			end
 
-			if IsValid(pnl) or ispanel(pnl) then
-
-				table.insert(sceneFramePanels, pnl)
-
-				if not pnlObj.SuppressFade then
-					pnl:SetAlpha(0)
-					pnl.bKeypads_FadeAlpha = true
-				end
-
-				if isfunction(pnlObj[2]) then pnlObj[2](pnl, bKeypads.Tutorial.Menu.Scene:GetWide(), bKeypads.Tutorial.Menu.Scene:GetTall()) end
-			else
+			if not IsValid(pnl) or not ispanel(pnl) then
 				ErrorNoHalt("Failed to create panel \"" .. tostring(pnlObj[1]) .. "\"!\n")
+				continue
 			end
+
+			table.insert(sceneFramePanels, pnl)
+
+			if not pnlObj.SuppressFade then
+				pnl:SetAlpha(0)
+				pnl.bKeypads_FadeAlpha = true
+			end
+
+			if isfunction(pnlObj[2]) then pnlObj[2](pnl, bKeypads.Tutorial.Menu.Scene:GetWide(), bKeypads.Tutorial.Menu.Scene:GetTall()) end
 		end
 	end
 
@@ -377,108 +376,109 @@ function bKeypads.Tutorial:SetupFrame(frame)
 				isClientsideSENT = true
 			end
 
-			if IsValid(ent) then
-
-				ent.bKeypads_Tutorial = true
-
-				ent.FrameObject = obj
-
-				ent:SetPredictable(false)
-				ent:SetLOD(0)
-				ent:SetNoDraw(true)
-
-				if obj.Sequence then
-					ent.Sequence = obj.Sequence
-					if obj.MasterSequence then
-						ent.MasterSequence = true
-						sceneFrameMasterSequence = {
-							ent = ent,
-							Sequence = ent.MasterSequence
-						}
-					end
-				end
-
-				if ent.MasterSequence then
-					table.insert(sceneFrameObjects, 1, ent)
-				else
-					table.insert(sceneFrameObjects, ent)
-				end
-				if obj.ID then
-					sceneFrameObjects[obj.ID] = ent
-				end
-
-				if obj.Class ~= "prop_physics" and obj.Model then
-					ent:SetModel(obj.Model)
-				end
-
-				if obj.Material then
-					ent:SetMaterial(obj.Material)
-				end
-
-				if obj.Class ~= "Player" then
-					local phys = ent:GetPhysicsObject()
-					if IsValid(phys) then
-						phys:EnableMotion(false)
-					end
-					ent:SetMoveType(MOVETYPE_NONE)
-				end
-
-				ent.OriginPos = ent:GetPos()
-
-				ent:Spawn()
-
-				local mins, maxs
-				for i = 1, 3 do
-					if i == 1 then
-						mins, maxs = ent:GetModelBounds()
-					elseif i == 2 then
-						mins, maxs = ent:GetCollisionBounds()
-					elseif i == 3 then
-						mins, maxs = ent:GetRenderBounds()
-					end
-					if mins and maxs then break end
-				end
-				if mins and maxs then
-					if obj.Class == "Player" then mins.z = 0 end
-
-					local center = (maxs + mins) / 2
-					center.z = mins.z
-					ent:SetPos(ent:GetPos() - ent:LocalToWorld(center))
-				end
-
-				if obj.Translate then
-					ent:SetPos(ent:GetPos() + obj.Translate)
-				end
-				if obj.Angle then
-					ent:SetAngles(obj.Angle)
-				end
-
-				if obj.Class == "Player" then
-					if ent.HoldType then
-						ent:ResetSequence("walk_" .. ent.HoldType)
-					else
-						local seq = ent:SelectWeightedSequence(ACT_WALK)
-						ent:ResetSequence(seq ~= -1 and seq or "walk_all")
-					end
-				end
-
-				if isClientsideSENT then
-					ent.Start3D2D = cam_Start3D2D
-					ent.End3D2D = cam_End3D2D
-					ent.Scissor2D = clip_Scissor2D
-					ent.m_ForceSupressEngineLighting = true
-					if ent.TutorialInitialize then
-						ent:TutorialInitialize()
-					end
-
-					if obj.NetworkVars then
-						for key, val in pairs(obj.NetworkVars) do
-							assert(isfunction(ent["Set" .. key]), "NetworkVar setter \"" .. tostring(key) .. "\" does not exist!")
-							ent["Set" .. key](ent, val)
-						end
-					end
-			else
+			if not IsValid(ent) then
 				ErrorNoHalt("Failed to create \"" .. obj.Class .. "\" (" .. tostring(ent) .. ") clientside!\n")
+				continue
+			end
+
+			ent.bKeypads_Tutorial = true
+
+			ent.FrameObject = obj
+
+			ent:SetPredictable(false)
+			ent:SetLOD(0)
+			ent:SetNoDraw(true)
+
+			if obj.Sequence then
+				ent.Sequence = obj.Sequence
+				if obj.MasterSequence then
+					ent.MasterSequence = true
+					sceneFrameMasterSequence = {
+						ent = ent,
+						Sequence = ent.MasterSequence
+					}
+				end
+			end
+
+			if ent.MasterSequence then
+				table.insert(sceneFrameObjects, 1, ent)
+			else
+				table.insert(sceneFrameObjects, ent)
+			end
+			if obj.ID then
+				sceneFrameObjects[obj.ID] = ent
+			end
+
+			if obj.Class ~= "prop_physics" and obj.Model then
+				ent:SetModel(obj.Model)
+			end
+
+			if obj.Material then
+				ent:SetMaterial(obj.Material)
+			end
+
+			if obj.Class ~= "Player" then
+				local phys = ent:GetPhysicsObject()
+				if IsValid(phys) then
+					phys:EnableMotion(false)
+				end
+				ent:SetMoveType(MOVETYPE_NONE)
+			end
+
+			ent.OriginPos = ent:GetPos()
+
+			ent:Spawn()
+
+			local mins, maxs
+			for i = 1, 3 do
+				if i == 1 then
+					mins, maxs = ent:GetModelBounds()
+				elseif i == 2 then
+					mins, maxs = ent:GetCollisionBounds()
+				elseif i == 3 then
+					mins, maxs = ent:GetRenderBounds()
+				end
+				if mins and maxs then break end
+			end
+			if mins and maxs then
+				if obj.Class == "Player" then mins.z = 0 end
+
+				local center = (maxs + mins) / 2
+				center.z = mins.z
+				ent:SetPos(ent:GetPos() - ent:LocalToWorld(center))
+			end
+
+			if obj.Translate then
+				ent:SetPos(ent:GetPos() + obj.Translate)
+			end
+			if obj.Angle then
+				ent:SetAngles(obj.Angle)
+			end
+
+			if obj.Class == "Player" then
+				if ent.HoldType then
+					ent:ResetSequence("walk_" .. ent.HoldType)
+				else
+					local seq = ent:SelectWeightedSequence(ACT_WALK)
+					ent:ResetSequence(seq ~= -1 and seq or "walk_all")
+				end
+			end
+
+			if isClientsideSENT then
+				ent.Start3D2D = cam_Start3D2D
+				ent.End3D2D = cam_End3D2D
+				ent.Scissor2D = clip_Scissor2D
+				ent.m_ForceSupressEngineLighting = true
+				if ent.TutorialInitialize then
+					ent:TutorialInitialize()
+				end
+
+				if obj.NetworkVars then
+					for key, val in pairs(obj.NetworkVars) do
+						assert(isfunction(ent["Set" .. key]), "NetworkVar setter \"" .. tostring(key) .. "\" does not exist!")
+						ent["Set" .. key](ent, val)
+					end
+				end
 			end
 		end
 	end
@@ -1290,30 +1290,19 @@ function bKeypads.Tutorial:OpenMenu()
 		local categoryPnl = menu.Categories:Add(I(category.Name))
 		categoryPnl.Category = category
 
-		if category.Scenes then 
-			for _, scene in ipairs(category.Scenes) do
-				if isstring(scene) then
-					scene = bKeypads.Tutorial.Shortcuts[scene]
-					if scene then 				
-						local scenePnl = categoryPnl:Add(I(scene.Name))
-						scenePnl.Category = category
-						scenePnl.Scene = scene
-						scenePnl.DoClick = SceneClicked
-						if scene.Tooltip then
-							bKeypads:RecursiveTooltip(I(scene.Tooltip), scenePnl)
-						end 
-					end
-				else
-					local scenePnl = categoryPnl:Add(I(scene.Name))
-					scenePnl.Category = category
-					scenePnl.Scene = scene
-					scenePnl.DoClick = SceneClicked
-					if scene.Tooltip then
-						bKeypads:RecursiveTooltip(I(scene.Tooltip), scenePnl)
-					end
-				end
-			end 
-		end
+		if category.Scenes then for _, scene in ipairs(category.Scenes) do
+			if isstring(scene) then
+				scene = bKeypads.Tutorial.Shortcuts[scene]
+				if not scene then continue end
+			end
+			local scenePnl = categoryPnl:Add(I(scene.Name))
+			scenePnl.Category = category
+			scenePnl.Scene = scene
+			scenePnl.DoClick = SceneClicked
+			if scene.Tooltip then
+				bKeypads:RecursiveTooltip(I(scene.Tooltip), scenePnl)
+			end
+		end end
 	end
 
 	--## SCENE ##--
@@ -1330,8 +1319,7 @@ end
 include("bkeypads/cl_tutorial_scenes.lua")
 
 hook.Add("bKeypads.TutorialScenes", "bKeypads.TutorialScenes.RefreshMenu", function()
-		if bKeypads and bKeypads.Tutorial and IsValid(bKeypads.Tutorial.Menu) then
-			bKeypads.Tutorial:OpenMenu() bKeypads.Tutorial:OpenMenu()
-		end
-	end)
-end
+	if bKeypads and bKeypads.Tutorial and IsValid(bKeypads.Tutorial.Menu) then
+		bKeypads.Tutorial:OpenMenu() bKeypads.Tutorial:OpenMenu()
+	end
+end)

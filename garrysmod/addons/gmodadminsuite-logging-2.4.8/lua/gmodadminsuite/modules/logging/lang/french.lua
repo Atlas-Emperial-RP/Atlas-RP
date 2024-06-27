@@ -94,6 +94,7 @@ return {
 		pvp_settings                = "Système de Log PvP",
 		live_logs_settings          = "Paramètres de Logs en Direct",
 		logging_settings            = "Paramètres de Logs",
+		settings                    = "Paramètres",
 		enabled_modules             = "Modules Activés",
 		permissions                 = "Permissions",
 		gamemode_modules            = "Modules de Mode de Jeu",

@@ -1,5 +1,5 @@
 hook.Add( "CalcView", "CalcView.MedicMod", function( ply, pos, ang, fov )
-    if ( not IsValid( ply ) or not ply:Alive() or ply:GetViewEntity() ~= ply ) then return end
+    if ( !IsValid( ply ) or !ply:Alive() or ply:GetViewEntity() != ply ) then return end
     if ply:GetMedicAnimation() == 0 then return end
    
     local view = {}
@@ -36,9 +36,7 @@ hook.Add("HUDPaint", "HUDPaint.MedicMod", function()
     if ConfigurationMedicMod.MedicTeams and table.HasValue(ConfigurationMedicMod.MedicTeams, LocalPlayer():Team()) then
         for k, v in pairs(ents.FindByClass("prop_ragdoll")) do
            
-
-            if not v:IsDeathRagdoll() then return end        
-
+            if not v:IsDeathRagdoll() then continue end        
            
             local pos = ( v:GetPos() + Vector(0,0,10) ):ToScreen()
             local dist = v:GetPos():Distance(LocalPlayer():GetPos())
@@ -48,15 +46,14 @@ hook.Add("HUDPaint", "HUDPaint.MedicMod", function()
             surface.DrawTexturedRect( pos.x - 25, pos.y, 50, 50 )
            
             draw.SimpleTextOutlined( math.floor(math.sqrt(dist/3)).."m", "MedicModFont30", pos.x, pos.y + 50, Color( 255, 255, 255, 255 ), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color( 0, 0, 0, 255 ) )
-
-            
+   
         end
     end
     
     local shouldDrawDeathPanel = hook.Run("HUDShouldDraw", "MedicMod_DeathPanel")
 
     if not LocalPlayer():Alive() and not IsValid(deathPanel) and MedicMod.seconds and shouldDrawDeathPanel then
-		if MedicMod.seconds < CurTime() and MedicMod.seconds ~= -1 then return end
+		if MedicMod.seconds < CurTime() and MedicMod.seconds != -1 then return end
 		
         deathPanel = vgui.Create("DFrame")
         deathPanel:SetSize(ScrW()*0.25, ScrH()*0.125)

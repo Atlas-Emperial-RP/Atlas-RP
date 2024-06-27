@@ -96,12 +96,11 @@ end
 
 local function mergemetatables(dest, source)
 	for k, v in pairs(source) do
-		if k ~= "__index" then 
-			if istable(v) and istable(dest[k]) then
-				table.Merge(dest[k], v)
-			else
-				dest[k] = v
-			end
+		if k == "__index" then continue end
+		if istable(v) and istable(dest[k]) then
+			table.Merge(dest[k], v)
+		else
+			dest[k] = v
 		end
 	end
 

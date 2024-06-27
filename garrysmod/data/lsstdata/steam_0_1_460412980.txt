@@ -1,9 +1,0 @@
-{
-	"Stat4": 0.0,
-	"Name": "Chimaera Overseer Spark",
-	"Stat1": 0.0,
-	"Point": 0.0,
-	"Stat2": 0.0,
-	"Skill": [],
-	"Stat3": 0.0
-}

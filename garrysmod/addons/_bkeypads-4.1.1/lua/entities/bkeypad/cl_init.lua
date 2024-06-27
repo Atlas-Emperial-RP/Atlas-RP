@@ -1439,17 +1439,16 @@ do
 		render.SetMaterial(wireframe)
 
 		for _, keypad in ipairs(bKeypads.Keypads) do
-			if IsValid(keypad) then 
+			if not IsValid(keypad) then continue end
 
-				local matrix = Matrix()
-				matrix:Translate(keypad:GetPos())
-				matrix:Rotate(keypad:GetAngles())
-				matrix:ScaleTranslation(keypad:GetModelScale())
+			local matrix = Matrix()
+			matrix:Translate(keypad:GetPos())
+			matrix:Rotate(keypad:GetAngles())
+			matrix:ScaleTranslation(keypad:GetModelScale())
 
-				cam.PushModelMatrix(matrix)
-					keypadModelMesh:Draw()
-				cam.PopModelMatrix()
-			end
+			cam.PushModelMatrix(matrix)
+				keypadModelMesh:Draw()
+			cam.PopModelMatrix()
 		end
 	end
 

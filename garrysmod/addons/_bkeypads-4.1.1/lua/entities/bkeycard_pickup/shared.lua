@@ -114,12 +114,11 @@ function ENT:UpdateKeycardData()
 		keycardData.Levels = {}
 		for _, level in ipairs(string.Explode(",", self:GetLevelsStr())) do
 			local level = tonumber(level)
-			if level then
+			if not level then continue end
 
-				table.insert(keycardData.Levels, level)
-				keycardData.LevelsDict[level] = true
-				keycardData.PrimaryLevel = math.max(keycardData.PrimaryLevel, level)
-			end
+			table.insert(keycardData.Levels, level)
+			keycardData.LevelsDict[level] = true
+			keycardData.PrimaryLevel = math.max(keycardData.PrimaryLevel, level)
 		end
 
 		table.sort(keycardData.Levels)

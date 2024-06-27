@@ -279,7 +279,7 @@ EdgeHUD.AddPhrase(LANG,"CHARGING_STARTED", "Your computer is now charging.")
 EdgeHUD.AddPhrase(LANG,"CHARGING_ABORTED", "Your computer is no longer charging.")
 
 --TAGS: %B = Battery precentage left.
-EdgeHUD.AddPhrase(LANG,"BATTERY_NOTICE", "You currently have %B% of battery left. Connect charger to return playing.")
+EdgeHUD.AddPhrase(LANG,"BATTERY_NOTICE", "You currently have %B% of battery left. Connect charger to continue playing.")
 
 --[[-------------------------------------------------------------------------
 Phrases - Level bar

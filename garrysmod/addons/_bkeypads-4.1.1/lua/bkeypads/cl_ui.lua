@@ -253,18 +253,16 @@ do
 
 	function bKeypads:OpenSettings()
 		for k, v in pairs(g_SpawnMenu:GetToolMenu().Items) do
-			if v.Name == "Options" then 
-				v.Tab:DoClick()
-				for k, v in pairs(v.Panel.List.pnlCanvas:GetChildren()) do
-					if v.Header:GetValue() == "Billy's Keypads" then
-						local btn = v:Find("DButton")
-						btn:DoClick()
-						btn:DoClickInternal()
-						return
-					end
-				end
+			if v.Name ~= "Options" then continue end
+			v.Tab:DoClick()
+			for k, v in pairs(v.Panel.List.pnlCanvas:GetChildren()) do
+				if v.Header:GetValue() ~= "Billy's Keypads" then continue end
+				local btn = v:Find("DButton")
+				btn:DoClick()
+				btn:DoClickInternal()
 				return
 			end
+			return
 		end
 	end
 
@@ -390,9 +388,8 @@ do
 		for _, pnl in ipairs({...}) do
 			pnl.bKeypads_Tooltip = tooltip
 			for _, c in ipairs(pnl:GetChildren()) do
-				if IsValid(c) then 
-					bKeypads:RecursiveTooltip(tooltip, c)
-				end
+				if not IsValid(c) then continue end
+				bKeypads:RecursiveTooltip(tooltip, c)
 			end
 		end
 		return ...

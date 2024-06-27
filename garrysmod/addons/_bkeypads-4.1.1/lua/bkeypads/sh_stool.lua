@@ -500,23 +500,22 @@ if CLIENT then
 
 			local added = {}
 			for _, agenda in SortedPairsByMemberValue(DarkRP.getAgendas(), "Title") do
-				if not added[agenda] then added[agenda] = true 
-					local opt = AddAgendaGroupCategory:AddOption(agenda.Title, function()
-						AccessTable:GetAccessMatrix()[AccessType][bKeypads.ACCESS_GROUP.DARKRP_AGENDA_GROUP][agenda.Title] = true
-						AccessTable:ResolveConflicts(AccessType)
-						AccessTable:Populate()
-						surface.PlaySound("garrysmod/ui_click.wav")
-					end)
-				
-					if isnumber(agenda.Manager) then
-						bKeypads.DermaMenuOption_Color(opt, team.GetColor(agenda.Manager))
+				if not added[agenda] then added[agenda] = true else continue end
+				local opt = AddAgendaGroupCategory:AddOption(agenda.Title, function()
+					AccessTable:GetAccessMatrix()[AccessType][bKeypads.ACCESS_GROUP.DARKRP_AGENDA_GROUP][agenda.Title] = true
+					AccessTable:ResolveConflicts(AccessType)
+					AccessTable:Populate()
+					surface.PlaySound("garrysmod/ui_click.wav")
+				end)
+
+				if isnumber(agenda.Manager) then
+					bKeypads.DermaMenuOption_Color(opt, team.GetColor(agenda.Manager))
+				else
+					local job = agenda.Manager[1] or agenda.Listeners[1]
+					if job then
+						bKeypads.DermaMenuOption_Color(opt, team.GetColor(job))
 					else
-						local job = agenda.Manager[1] or agenda.Listeners[1]
-						if job then
-							bKeypads.DermaMenuOption_Color(opt, team.GetColor(job))
-						else
-							opt:SetIcon("icon16/comments.png")
-						end
+						opt:SetIcon("icon16/comments.png")
 					end
 				end
 			end
@@ -528,16 +527,15 @@ if CLIENT then
 
 			local added = {}
 			for job, demoteGroup in SortedPairsByMemberValue(DarkRP.getDemoteGroups(), "name") do
-				if not added[demoteGroup] then added[demoteGroup] = true 
-					if demoteGroup.name then 
-						bKeypads.DermaMenuOption_Color(AddDemoteGroupCategory:AddOption(demoteGroup.name, function()
-							AccessTable:GetAccessMatrix()[AccessType][bKeypads.ACCESS_GROUP.DARKRP_DEMOTE_GROUP][demoteGroup.name] = true
-							AccessTable:ResolveConflicts(AccessType)
-							AccessTable:Populate()
-							surface.PlaySound("garrysmod/ui_click.wav")
-						end), team.GetColor(job))
-					end
-				end
+				if not added[demoteGroup] then added[demoteGroup] = true else continue end
+				if not demoteGroup.name then continue end
+
+				bKeypads.DermaMenuOption_Color(AddDemoteGroupCategory:AddOption(demoteGroup.name, function()
+					AccessTable:GetAccessMatrix()[AccessType][bKeypads.ACCESS_GROUP.DARKRP_DEMOTE_GROUP][demoteGroup.name] = true
+					AccessTable:ResolveConflicts(AccessType)
+					AccessTable:Populate()
+					surface.PlaySound("garrysmod/ui_click.wav")
+				end), team.GetColor(job))
 			end
 		end,
 
@@ -581,21 +579,22 @@ if CLIENT then
 			end
 
 			for rankGroup, rankGroupData in SortedPairs(MRS.Ranks) do
-				if not table.IsEmpty(rankGroupData.ranks) then
-			
-					local rankGroupCategory, _ = MRSSubmenu:AddSubMenu(rankGroup)
-					_:SetIcon("icon16/award_star_gold_1.png")
+				if table.IsEmpty(rankGroupData.ranks) then
+					continue
+				end
 
-					for rank, data in pairs(rankGroupData.ranks) do
-						local op = rankGroupCategory:AddOption(data.name, function()
-							AccessTable:GetAccessMatrix()[AccessType][bKeypads.ACCESS_GROUP.MRS_RANK][data.name .. "\n" .. rankGroup] = true
-							AccessTable:ResolveConflicts(AccessType)
-							AccessTable:Populate()
-							surface.PlaySound("garrysmod/ui_click.wav")
-						end)
-						op:SetIcon("icon16/award_star_gold_1.png")
-						op.bKeypads_Tooltip = data.description
-					end
+				local rankGroupCategory, _ = MRSSubmenu:AddSubMenu(rankGroup)
+				_:SetIcon("icon16/award_star_gold_1.png")
+
+				for rank, data in pairs(rankGroupData.ranks) do
+					local op = rankGroupCategory:AddOption(data.name, function()
+						AccessTable:GetAccessMatrix()[AccessType][bKeypads.ACCESS_GROUP.MRS_RANK][data.name .. "\n" .. rankGroup] = true
+						AccessTable:ResolveConflicts(AccessType)
+						AccessTable:Populate()
+						surface.PlaySound("garrysmod/ui_click.wav")
+					end)
+					op:SetIcon("icon16/award_star_gold_1.png")
+					op.bKeypads_Tooltip = data.description
 				end
 			end
 		end,

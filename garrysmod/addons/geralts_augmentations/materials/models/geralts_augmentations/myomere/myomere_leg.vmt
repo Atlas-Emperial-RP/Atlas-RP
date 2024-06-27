@@ -1,0 +1,27 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\geralts_augmentations\myomere\myomere_leg"
+	"$bumpmap" "models\geralts_augmentations\myomere\myomere_leg_n"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "2"
+	"$phongfresnelranges" "[1.5 1.5 1.5]"
+
+
+
+	"$envmap"	"env_cubemap"
+	"$envmaptint"	"[0.1 0.1 0.1]"
+	"$envmapfresnel" "1"
+	"$normalmapalphaenvmapmask"	"1"
+
+
+
+
+
+	$color2 "{ 255 255 255 }"
+
+	$blendtintbybasealpha 1
+
+
+}

@@ -168,164 +168,162 @@ function ENT:TestAccess(ply)
 					tests[test_active] = true
 					if IsValid(self:GetCreator()) and bKeypads:IsSteamFriends(self:GetCreator(), ply) then
 						tests[test] = true
-						return
+						continue
 					end
 				end
 
 				local bkeycard = authMode == bKeypads.AUTH_MODE.KEYCARD and IsValid(ply:GetWeapon("bkeycard")) and ply:GetWeapon("bkeycard") or nil
 
 				for access_type, data in pairs(list) do
-					if accessChecks[access_type] then 
-						tests[test_active] = true
+					if not accessChecks[access_type] then continue end
+					tests[test_active] = true
 
-						if access_type == bKeypads.ACCESS_GROUP.KEYCARD_LEVEL then
-							if authMode == bKeypads.AUTH_MODE.KEYCARD then 
+					if access_type == bKeypads.ACCESS_GROUP.KEYCARD_LEVEL then
+						if authMode ~= bKeypads.AUTH_MODE.KEYCARD then continue end
 
-								if IsValid(bkeycard) then
-									local primaryLevel, levels = bkeycard:GetPrimaryLevel(), bkeycard:GetLevels()
+						if IsValid(bkeycard) then
+							local primaryLevel, levels = bkeycard:GetPrimaryLevel(), bkeycard:GetLevels()
 
-									if (
-										(
-											list_type == bKeypads.ACCESS_TYPE.WHITELIST and
-											list[bKeypads.ACCESS_GROUP.SUPERIOR_KEYCARDS] ~= nil and
-											(#levels > 0 and levels[#levels] >= list[bKeypads.ACCESS_GROUP.SUPERIOR_KEYCARDS])
-										) or (
-											data[primaryLevel]
-										)
-									) then
-										tests[test] = true
-										break
-									end
-
-									if #levels > 1 then
-										for _, level in ipairs(levels) do
-											if data[level] then
-												tests[test] = true
-												break
-											end
-										end
-									end
-								end
-							end
-						elseif access_type == bKeypads.ACCESS_GROUP.PLAYER then
-							if data[ply:SteamID()] ~= nil then
+							if (
+								(
+									list_type == bKeypads.ACCESS_TYPE.WHITELIST and
+									list[bKeypads.ACCESS_GROUP.SUPERIOR_KEYCARDS] ~= nil and
+									(#levels > 0 and levels[#levels] >= list[bKeypads.ACCESS_GROUP.SUPERIOR_KEYCARDS])
+								) or (
+									data[primaryLevel]
+								)
+							) then
 								tests[test] = true
 								break
 							end
-						elseif access_type == bKeypads.ACCESS_GROUP.USERGROUP then
-							if OpenPermissions and OpenPermissions.GetUserGroups then
-								for usergroup in pairs(OpenPermissions:GetUserGroups(ply)) do
-									if data[usergroup] then
+
+							if #levels > 1 then
+								for _, level in ipairs(levels) do
+									if data[level] then
 										tests[test] = true
 										break
 									end
 								end
-							else
-								if data[ply:GetUserGroup()] then
-									tests[test] = true
-									break
-								end
 							end
-						elseif access_type == bKeypads.ACCESS_GROUP.TEAM then
-							if data[team.GetName(ply:Team())] then
-								tests[test] = true
-								break
-							end
-						elseif access_type == bKeypads.ACCESS_GROUP.CUSTOM_ADDON_FUNCTION then
-							for id in pairs(data) do
-								if bKeypads.CustomAccess.Addons.KeyTable[id] and bKeypads.CustomAccess.Addons.KeyTable[id].Function and bKeypads.CustomAccess.Addons.KeyTable[id].Function(self, ply, bkeycard) then
-									tests[test] = true
-									break
-								end
-							end
-						elseif access_type == bKeypads.ACCESS_GROUP.CUSTOM_LUA_FUNCTION then
-							for lua_func_name in pairs(data) do
-								if bKeypads.CustomAccess.UserConfig.LuaFunctions[lua_func_name] and bKeypads.CustomAccess.UserConfig.LuaFunctions[lua_func_name](self, ply, bkeycard) then
-									tests[test] = true
-									break
-								end
-							end
-						elseif access_type == bKeypads.ACCESS_GROUP.CUSTOM_TEAM_GROUP then
-							for team_group_name in pairs(data) do
-								if bKeypads.CustomAccess.UserConfig.TeamGroups[team_group_name] and bKeypads.CustomAccess.UserConfig.TeamGroups[team_group_name][ply:Team()] then
+						end
+					elseif access_type == bKeypads.ACCESS_GROUP.PLAYER then
+						if data[ply:SteamID()] ~= nil then
+							tests[test] = true
+							break
+						end
+					elseif access_type == bKeypads.ACCESS_GROUP.USERGROUP then
+						if OpenPermissions and OpenPermissions.GetUserGroups then
+							for usergroup in pairs(OpenPermissions:GetUserGroups(ply)) do
+								if data[usergroup] then
 									tests[test] = true
 									break
 								end
 							end
 						else
-							if DarkRP and RPExtraTeams then
-								if access_type == bKeypads.ACCESS_GROUP.DARKRP_JOB then
-									if data[RPExtraTeams[ply:Team()].command] then
+							if data[ply:GetUserGroup()] then
+								tests[test] = true
+								break
+							end
+						end
+					elseif access_type == bKeypads.ACCESS_GROUP.TEAM then
+						if data[team.GetName(ply:Team())] then
+							tests[test] = true
+							break
+						end
+					elseif access_type == bKeypads.ACCESS_GROUP.CUSTOM_ADDON_FUNCTION then
+						for id in pairs(data) do
+							if bKeypads.CustomAccess.Addons.KeyTable[id] and bKeypads.CustomAccess.Addons.KeyTable[id].Function and bKeypads.CustomAccess.Addons.KeyTable[id].Function(self, ply, bkeycard) then
+								tests[test] = true
+								break
+							end
+						end
+					elseif access_type == bKeypads.ACCESS_GROUP.CUSTOM_LUA_FUNCTION then
+						for lua_func_name in pairs(data) do
+							if bKeypads.CustomAccess.UserConfig.LuaFunctions[lua_func_name] and bKeypads.CustomAccess.UserConfig.LuaFunctions[lua_func_name](self, ply, bkeycard) then
+								tests[test] = true
+								break
+							end
+						end
+					elseif access_type == bKeypads.ACCESS_GROUP.CUSTOM_TEAM_GROUP then
+						for team_group_name in pairs(data) do
+							if bKeypads.CustomAccess.UserConfig.TeamGroups[team_group_name] and bKeypads.CustomAccess.UserConfig.TeamGroups[team_group_name][ply:Team()] then
+								tests[test] = true
+								break
+							end
+						end
+					else
+						if DarkRP and RPExtraTeams then
+							if access_type == bKeypads.ACCESS_GROUP.DARKRP_JOB then
+								if data[RPExtraTeams[ply:Team()].command] then
+									tests[test] = true
+									break
+								end
+							elseif access_type == bKeypads.ACCESS_GROUP.DARKRP_JOB_CATEGORY then
+								if data[RPExtraTeams[ply:Team()].category] then
+									tests[test] = true
+									break
+								end
+							elseif access_type == bKeypads.ACCESS_GROUP.DARKRP_DOOR_GROUP then
+								for doorGroup in pairs(data) do
+									if bKeypads.DarkRP.DoorGroups.Teams[doorGroup] and bKeypads.DarkRP.DoorGroups.Teams[doorGroup][ply:Team()] then
 										tests[test] = true
 										break
 									end
-								elseif access_type == bKeypads.ACCESS_GROUP.DARKRP_JOB_CATEGORY then
-									if data[RPExtraTeams[ply:Team()].category] then
+								end
+							elseif access_type == bKeypads.ACCESS_GROUP.DARKRP_DEMOTE_GROUP then
+								for demoteGroup in pairs(data) do
+									if bKeypads.DarkRP.DemoteGroups[demoteGroup] and bKeypads.DarkRP.DemoteGroups[demoteGroup][ply:Team()] then
 										tests[test] = true
 										break
 									end
-								elseif access_type == bKeypads.ACCESS_GROUP.DARKRP_DOOR_GROUP then
-									for doorGroup in pairs(data) do
-										if bKeypads.DarkRP.DoorGroups.Teams[doorGroup] and bKeypads.DarkRP.DoorGroups.Teams[doorGroup][ply:Team()] then
-											tests[test] = true
-											break
-										end
-									end
-								elseif access_type == bKeypads.ACCESS_GROUP.DARKRP_DEMOTE_GROUP then
-									for demoteGroup in pairs(data) do
-										if bKeypads.DarkRP.DemoteGroups[demoteGroup] and bKeypads.DarkRP.DemoteGroups[demoteGroup][ply:Team()] then
-											tests[test] = true
-											break
-										end
-									end
-								elseif access_type == bKeypads.ACCESS_GROUP.DARKRP_AGENDA_GROUP then
-									for agenda in pairs(data) do
-										if bKeypads.DarkRP.Agendas.Teams[agenda] and bKeypads.DarkRP.Agendas.Teams[agenda][ply:Team()] then
-											tests[test] = true
-											break
-										end
+								end
+							elseif access_type == bKeypads.ACCESS_GROUP.DARKRP_AGENDA_GROUP then
+								for agenda in pairs(data) do
+									if bKeypads.DarkRP.Agendas.Teams[agenda] and bKeypads.DarkRP.Agendas.Teams[agenda][ply:Team()] then
+										tests[test] = true
+										break
 									end
 								end
 							end
-							if ix then
-								if ix.flag and access_type == bKeypads.ACCESS_GROUP.HELIX_FLAG then
-									for flag in pairs(data) do
-										if ply:GetCharacter() and ply:GetCharacter():HasFlags(flag) then
-											tests[test] = true
-											break
-										end
+						end
+						if ix then
+							if ix.flag and access_type == bKeypads.ACCESS_GROUP.HELIX_FLAG then
+								for flag in pairs(data) do
+									if ply:GetCharacter() and ply:GetCharacter():HasFlags(flag) then
+										tests[test] = true
+										break
 									end
 								end
 							end
-							if MRS and MRS.Ranks and access_type == bKeypads.ACCESS_GROUP.MRS_RANK then
-								local nwGroup, nwRank = MRS.GetNWdata(ply, "Group"), MRS.GetNWdata(ply, "Rank")
-								if nwGroup and nwRank and MRS.Ranks[nwGroup] and MRS.Ranks[nwGroup].ranks[nwRank] then
-									local maxRankLevel = -math.huge
-									local checkSuperiorLevels = list_type == bKeypads.ACCESS_TYPE.WHITELIST and list[bKeypads.ACCESS_GROUP.MRS_SUPERIOR_RANKS] ~= nil
+						end
+						if MRS and MRS.Ranks and access_type == bKeypads.ACCESS_GROUP.MRS_RANK then
+							local nwGroup, nwRank = MRS.GetNWdata(ply, "Group"), MRS.GetNWdata(ply, "Rank")
+							if nwGroup and nwRank and MRS.Ranks[nwGroup] and MRS.Ranks[nwGroup].ranks[nwRank] then
+								local maxRankLevel = -math.huge
+								local checkSuperiorLevels = list_type == bKeypads.ACCESS_TYPE.WHITELIST and list[bKeypads.ACCESS_GROUP.MRS_SUPERIOR_RANKS] ~= nil
 
-									local nwRankName = MRS.Ranks[nwGroup].ranks[nwRank].name
-									for rank in pairs(data) do
-										local rank, group = rank:match("^(.-)\n(.-)$")
-										if rank and group then
-											if rank == nwRankName and group == nwGroup then
-												tests[test] = true
-												break
-											end
+								local nwRankName = MRS.Ranks[nwGroup].ranks[nwRank].name
+								for rank in pairs(data) do
+									local rank, group = rank:match("^(.-)\n(.-)$")
+									if rank and group then
+										if rank == nwRankName and group == nwGroup then
+											tests[test] = true
+											break
+										end
 
-											if checkSuperiorLevels then
-												for level, v in pairs(MRS.Ranks[nwGroup].ranks) do
-													if v.name == rank then
-														maxRankLevel = math.max(maxRankLevel, level)
-														break
-													end
+										if checkSuperiorLevels then
+											for level, v in pairs(MRS.Ranks[nwGroup].ranks) do
+												if v.name == rank then
+													maxRankLevel = math.max(maxRankLevel, level)
+													break
 												end
 											end
 										end
 									end
+								end
 
-									if checkSuperiorLevels and nwRank >= maxRankLevel and maxRankLevel ~= -math.huge then
-										tests[test] = true
-									end
+								if checkSuperiorLevels and nwRank >= maxRankLevel and maxRankLevel ~= -math.huge then
+									tests[test] = true
 								end
 							end
 						end
@@ -692,17 +690,16 @@ function ENT:ProcessLinks(granted)
 	if fadingDoors then
 		for _, linkData in pairs(fadingDoors) do
 			local link = linkData[granted]
-			if IsValid(link) then 
+			if not IsValid(link) then continue end
 
-				local fadingDoor = link:GetLinkedEnt()
-				if IsValid(fadingDoor) then
-					if fadingDoor.fadeToggle then
-						fadingDoor:fadeToggleActive()
-					else
-						fadingDoor:fadeActivate()
-						revert.fadingDoors = revert.fadingDoors or {}
-						table.insert(revert.fadingDoors, fadingDoor)
-					end
+			local fadingDoor = link:GetLinkedEnt()
+			if IsValid(fadingDoor) then
+				if fadingDoor.fadeToggle then
+					fadingDoor:fadeToggleActive()
+				else
+					fadingDoor:fadeActivate()
+					revert.fadingDoors = revert.fadingDoors or {}
+					table.insert(revert.fadingDoors, fadingDoor)
 				end
 			end
 		end
@@ -712,13 +709,12 @@ function ENT:ProcessLinks(granted)
 	if mapLinks then
 		for _, linkData in pairs(mapLinks) do
 			local link = linkData[granted]
-			if IsValid(link) then 
+			if not IsValid(link) then continue end
 
-				bKeypads.MapLinking:On(link, self:GetScanningPlayer())
+			bKeypads.MapLinking:On(link, self:GetScanningPlayer())
 
-				revert.links = revert.links or {}
-				table.insert(revert.links, link)
-			end
+			revert.links = revert.links or {}
+			table.insert(revert.links, link)
 		end
 	end
 
@@ -1031,15 +1027,14 @@ function ENT:SetAccessMatrix(am)
 	}
 	for access_type, registry in pairs(self.AccessRegistry) do
 		for access_group, values in pairs(self.AccessMatrix[access_type]) do
-			if not blockedAccessGroups[access_group] then 
-				if isbool(values) then
-					registry[access_group] = values or nil
-				elseif istable(values) and not table.IsEmpty(values) then
-					if not IsValid(self:GetCreator()) and access_group ~= bKeypads.ACCESS_GROUP.CUSTOM_LUA_FUNCTION and bKeypads.Permissions:Check(self:GetCreator(), "keypads/custom_lua_functions") then
-					
-						registry[access_group] = values
-					end
+			if blockedAccessGroups[access_group] then continue end
+			if isbool(values) then
+				registry[access_group] = values or nil
+			elseif istable(values) and not table.IsEmpty(values) then
+				if IsValid(self:GetCreator()) and access_group == bKeypads.ACCESS_GROUP.CUSTOM_LUA_FUNCTION and not bKeypads.Permissions:Check(self:GetCreator(), "keypads/custom_lua_functions") then
+					continue
 				end
+				registry[access_group] = values
 			end
 		end
 
