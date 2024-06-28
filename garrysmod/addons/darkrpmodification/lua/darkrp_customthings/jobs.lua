@@ -34,10 +34,10 @@ TEAM_RECRUIT = DarkRP.createJob("Recruit", {
     category = "Recruits",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(225)
-        ply:SetMaxHealth(225)
-        ply:SetArmor(25)
-        ply:SetMaxArmor(25)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(0)
+        ply:SetMaxArmor(0)
     end,
 })
 TEAM_STORMTROOPERSENL = DarkRP.createJob("Stormtrooper Enlisted", {
