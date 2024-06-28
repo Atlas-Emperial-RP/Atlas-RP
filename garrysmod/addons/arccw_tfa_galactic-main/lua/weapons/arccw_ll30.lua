@@ -32,13 +32,13 @@ SWEP.IconOverride = "materials/entities/rw_sw_ll30.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 30
-SWEP.RangeMin = 100
-SWEP.DamageMin = 14
-SWEP.Range = 320
-SWEP.Penetration = 1
+SWEP.Damage = 99999999
+SWEP.RangeMin = 99999999
+SWEP.DamageMin = 99999999
+SWEP.Range = 99999999
+SWEP.Penetration = 99999999
 SWEP.DamageType = DMG_BULLET
-SWEP.MuzzleVelocity = 400
+SWEP.MuzzleVelocity = 99999999
 
 
 SWEP.TraceNum = 1
@@ -61,16 +61,13 @@ SWEP.Delay = 60 / 145
 SWEP.Num = 1
 SWEP.Firemodes = {
 	{
-		Mode = 1
-	},
-    {
-        Mode = 0
-    },
+		Mode = 2
+	}
 }
 
-SWEP.AccuracyMOA = 0.22 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 530 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 50
+SWEP.AccuracyMOA = 0 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 0 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 0
 
 SWEP.NoFlash = nil -- disable light flash
 SWEP.MuzzleEffect = nil
@@ -188,7 +185,7 @@ SWEP.Attachments = {
     [4] = {
         PrintName = "Energization", -- print name
         DefaultAttName = "Standard Energization", -- used to display the "no attachment" text
-        Slot = "ammo",
+        Slot = {"ammo","sw_ammo", "ammo_rocket"} 
     },
     [5] = {
         PrintName = "Training/Perk", -- print name
