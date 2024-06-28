@@ -70,9 +70,6 @@ SWEP.Delay = 60 / 330 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemode = 2 -- 0: safe, 1: semi, 2: auto, negative: burst
 SWEP.Firemodes = {
-	{
-		Mode = 2,
-   	},
     {
 		Mode = 1,
     },
@@ -281,7 +278,7 @@ SWEP.Attachments = {
     [5] = {
         PrintName = "Energization", -- print name
         DefaultAttName = "Standard Energization", -- used to display the "no attachment" text
-        Slot = {"ammo", "sw_ammo"},
+        Slot = {"ammo"},
     },
     [6] = {
         PrintName = "Training/Perk", -- print name
