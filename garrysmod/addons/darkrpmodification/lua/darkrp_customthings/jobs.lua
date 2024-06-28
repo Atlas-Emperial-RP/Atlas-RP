@@ -23,9 +23,7 @@ TEAM_RECRUIT = DarkRP.createJob("Recruit", {
         Recruit 
     ]],
     weapons = {
-        "weapon_empty_hands",
-        "rw_sw_dh17",
-        "rw_sw_e11"
+        "weapon_empty_hands"
     },
     command = "recruit",
     max = 0,
