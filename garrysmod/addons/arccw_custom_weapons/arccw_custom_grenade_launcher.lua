@@ -2,11 +2,11 @@ AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
-SWEP.Category = "[ Atlas ] Costume Weapons"
+SWEP.Category = "[ ArcCW ] Custom Weapons"
 SWEP.Credits = { Author1 = "Meeks"}
-SWEP.PrintName = "DC-17m Launcher"
+SWEP.PrintName = "Grenade Launcher"
 SWEP.Trivia_Class = "Blaster Rifle"
-SWEP.Trivia_Desc = "High tech DC-17m Blaster Rifle, preffered for long-range combat and general allround usage."
+SWEP.Trivia_Desc = "High tech Grenade Launcher, preffered for mid to long-range combat and general allround usage."
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Medium Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"

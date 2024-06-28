@@ -18,4 +18,4 @@ att.Slot = "ammo_grenade_launcher"
 att.Mult_SightTime = 0.9
 att.Mult_MoveSpeed = 1.15
 
-att.Override_ShootEntity = "costum_grenade_roller"
+att.Override_ShootEntity = "custom_grenade_roller"
