@@ -1,9 +1,0 @@
-"AddonInfo"
-{
-	"name"		"Medals"
-	"version"	"1.0.6"
-	"up_date"	"2024"
-	"author_name"	"Crap-Head"
-	"author_url"	"https://www.gmodstore.com/users/crap-head"
-	"info"		"This addon allows you to give and take medals from any player on your server. Players can choose which medals to display above their head."
-}
