@@ -49,8 +49,8 @@ SWEP.Tracer = "tfa_tracer_red"
 SWEP.TracerCol = Color(255, 0, 0)
 SWEP.HullSize = 1.5
 
-SWEP.InfiniteAmmo = false -- weapon can reload for free
-SWEP.BottomlessClip = false
+SWEP.InfiniteAmmo = true -- weapon can reload for free
+SWEP.BottomlessClip = true
 
 SWEP.Recoil = 0
 SWEP.RecoilPunch = 0

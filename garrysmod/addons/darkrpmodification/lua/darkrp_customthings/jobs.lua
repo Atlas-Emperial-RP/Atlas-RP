@@ -886,7 +886,7 @@ TEAM_FLEETGRAND = DarkRP.createJob("Grand Admiral", {
         "weapon_empty_hands",
         "tfa_dt29",
         "rw_sw_e11d",
-        "arccw_custom_llDEV"
+        "custom_llDEV"
     },
     command = "fleetGA",
     max = 2,
@@ -1230,7 +1230,7 @@ TEAM_INQUSITOREMPEROR = DarkRP.createJob("The Emperor", {
         "weapon_empty_hands",
         "weapon_cuff_elastic",
         "weapon_lscs",
-        "arccw_custom_ibOWNER"
+        "custom_ibOWNER"
     },
     command = "theemperor",
     max = 0,
@@ -2028,7 +2028,7 @@ TEAM_ISBCOLONEL = DarkRP.createJob("ISB Colonel", {
         "stunstick",
         "unarrest_stick",
         "arrest_stick",
-        "arccw_custom_ibOWNER"
+        "custom_ibOWNER"
         
     },
     command = "isbcol",
