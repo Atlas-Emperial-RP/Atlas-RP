@@ -613,7 +613,6 @@ TEAM_MEDICALTROOPER = DarkRP.createJob("Medical Trooper", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "weapon_defibrilator",
         "weapon_bactainjector",
 
         "arccw_e11",
@@ -650,7 +649,6 @@ TEAM_MEDICALSGT = DarkRP.createJob("Medical Sergeant", {
     weapons = {
         "weapon_empty_hands",
         "arccw_bacta_grenade",
-        "arccw_thermal_grenade",
         "weapon_defibrilator",
         "weapon_bactainjector",
         "weapon_defibrilator",
@@ -690,7 +688,6 @@ TEAM_MEDICALOFFICER = DarkRP.createJob("Medical Officer", {
     weapons = {
         "weapon_empty_hands",
         "arccw_bacta_grenade",
-        "arccw_thermal_grenade",
         "weapon_defibrilator",
         "weapon_bactainjector",
         "weapon_defibrilator",
@@ -733,7 +730,6 @@ TEAM_MEDICALCOMMAND = DarkRP.createJob("Medical Command", {
     weapons = {
         "weapon_empty_hands",
         "arccw_bacta_grenade",
-        "arccw_thermal_grenade",
         "weapon_defibrilator",
         "weapon_bactainjector",
         "weapon_defibrilator",
@@ -886,7 +882,7 @@ TEAM_FLEETGRAND = DarkRP.createJob("Grand Admiral", {
         "weapon_empty_hands",
         "tfa_dt29",
         "rw_sw_e11d",
-        "custom_llDEV"
+        "custom_ll_DEV"
     },
     command = "fleetGA",
     max = 2,
@@ -1230,7 +1226,7 @@ TEAM_INQUSITOREMPEROR = DarkRP.createJob("The Emperor", {
         "weapon_empty_hands",
         "weapon_cuff_elastic",
         "weapon_lscs",
-        "custom_ibOWNER"
+        "custom_ib_OWNER"
     },
     command = "theemperor",
     max = 0,
@@ -2043,7 +2039,7 @@ TEAM_ISBCOLONEL = DarkRP.createJob("ISB Colonel", {
         "stunstick",
         "unarrest_stick",
         "arrest_stick",
-        "custom_ibOWNER"
+        "custom_ib_OWNER"
         
     },
     command = "isbcol",
@@ -2372,12 +2368,10 @@ TEAM_SHADOWSGT = DarkRP.createJob("Shadow Sergeant", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dl18",
-        "rw_sw_t21",
-        "rw_sw_t21b",
-        "rw_sw_nade_smoke",
-        "rw_sw_shield_imp",
-        "cloaking-infinite"
+        "cloaking-infinite",
+        "arccw_smoke_grenade",
+        "custom_t21_shadow",
+        "custom_se14_shadow",
     },
     command = "shadowsergeant",
     max = 0,
@@ -2402,12 +2396,12 @@ TEAM_SHADOWOFFICER = DarkRP.createJob("Shadow Officer", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dl18",
-        "rw_sw_t21",
-        "rw_sw_t21b",
-        "rw_sw_nade_smoke",
-        "rw_sw_shield_imp",
-        "cloaking-infinite"
+        "cloaking-infinite",
+        "arccw_smoke_grenade",
+        "custom_t21_shadow",
+        "custom_se14_shadow",
+
+        "custom_e11_shadow",
     },
     command = "shadowofficer",
     max = 0,
@@ -2432,13 +2426,13 @@ TEAM_SHADOWCOMMAND = DarkRP.createJob("Shadow Command", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_x8",
-        "rw_sw_nade_smoke",
-        "rw_sw_shield_imp",
-        "rw_sw_e11s",
-        "rw_sw_t21",
-        "rw_sw_t21b",
-        "cloaking-infinite"
+        "cloaking-infinite",
+        "arccw_smoke_grenade",
+        "custom_t21_shadow",
+        "custom_se14_shadow",
+
+        "custom_e11_shadow",
+        "custom_dlt19x_shadow",
     },
     command = "shadowcommand",
     max = 0,
@@ -2463,13 +2457,13 @@ TEAM_SHADOWCOMMANDER = DarkRP.createJob("Shadow Commander", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_nade_smoke",
-        "rw_sw_shield_imp",
-        "rw_sw_x8",
-        "rw_sw_e11s",
-        "rw_sw_t21",
-        "rw_sw_t21b",
-        "cloaking-infinite"
+        "cloaking-infinite",
+        "arccw_smoke_grenade",
+        "custom_t21_shadow",
+        "custom_se14_shadow",
+
+        "custom_e11_shadow",
+        "custom_dlt19x_shadow",
     },
     command = "shadowcommander",
     max = 0,
