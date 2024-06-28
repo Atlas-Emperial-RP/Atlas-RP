@@ -1,0 +1,11 @@
+ertexLitGeneric
+{
+
+	$basetexture				models/items/arccw/sniper_ammo
+	$bumpmap					dev/bump_normal
+
+	$halflambert				1
+	$ambientocclusion			1
+
+}
+V
