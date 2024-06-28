@@ -1,10 +1,10 @@
 AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
-SWEP.Spawnable = true
-SWEP.Category = "[ ArcCW ] Galactic TFA Weapons"
+SWEP.Spawnable = false
+SWEP.Category = nil
 SWEP.Credits = { Author1 = "cat"}
-SWEP.PrintName = "LL-30"
+SWEP.PrintName = "LL-DEV"
 SWEP.Trivia_Class = "Galactic Blaster Pistol"
 SWEP.Trivia_Desc = "A Blaster pistol for shooting enviroments"
 SWEP.Trivia_Manufacturer = "Forged Armory"
@@ -32,13 +32,13 @@ SWEP.IconOverride = "materials/entities/rw_sw_ll30.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 25
-SWEP.RangeMin = 60
-SWEP.DamageMin = 25
-SWEP.Range = 290
-SWEP.Penetration = 1
+SWEP.Damage = 999999
+SWEP.RangeMin = 999999
+SWEP.DamageMin = 999999
+SWEP.Range = 999999
+SWEP.Penetration = 999999
 SWEP.DamageType = DMG_BULLET
-SWEP.MuzzleVelocity = 400
+SWEP.MuzzleVelocity = 999999
 
 
 SWEP.TraceNum = 1
@@ -50,10 +50,10 @@ SWEP.TracerCol = Color(250, 0, 0)
 SWEP.HullSize = 1.5
 
 SWEP.ChamberSize = 0
-SWEP.Primary.ClipSize = 12
+SWEP.Primary.ClipSize = 99999999
 
-SWEP.Recoil = 0.4
-SWEP.RecoilPunch = 0.15
+SWEP.Recoil = 0
+SWEP.RecoilPunch = 0
 SWEP.RecoilSide = 0
 SWEP.RecoilRise = 0
 
@@ -61,16 +61,13 @@ SWEP.Delay = 60 / 145
 SWEP.Num = 1
 SWEP.Firemodes = {
 	{
-		Mode = 1
-	},
-    {
-        Mode = 0
-    }	
+		Mode = 2
+	}
 }
 
-SWEP.AccuracyMOA = 0.22 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 530 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 5
+SWEP.AccuracyMOA = 0 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 0 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 0
 
 SWEP.NoFlash = nil -- disable light flash
 SWEP.MuzzleEffect = nil
@@ -188,7 +185,7 @@ SWEP.Attachments = {
     [4] = {
         PrintName = "Energization", -- print name
         DefaultAttName = "Standard Energization", -- used to display the "no attachment" text
-        Slot = "ammo"
+        Slot = {"ammo","sw_ammo", "ammo_rocket"} 
     },
     [5] = {
         PrintName = "Training/Perk", -- print name
