@@ -4,7 +4,7 @@ SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = false
 SWEP.Category = nil
 SWEP.Credits = { Author1 = "cat"}
-SWEP.PrintName = "IB-94"
+SWEP.PrintName = "IB-OWNER"
 SWEP.Trivia_Class = "Galactic Blaster Pistol"
 SWEP.Trivia_Desc = "A Blaster pistol for shooting enviroments"
 SWEP.Trivia_Manufacturer = "Forged Armory"
@@ -49,17 +49,24 @@ SWEP.Tracer = "tfa_tracer_red"
 SWEP.TracerCol = Color(255, 0, 0)
 SWEP.HullSize = 1.5
 
-SWEP.ChamberSize = 0
-SWEP.Primary.ClipSize = 999999999999999999999999
+SWEP.InfiniteAmmo = false -- weapon can reload for free
+SWEP.BottomlessClip = false
 
 SWEP.Recoil = 0
 SWEP.RecoilPunch = 0
 SWEP.RecoilSide = 0
 SWEP.RecoilRise = 0.
 
-SWEP.Delay = 1 / 1
+SWEP.Delay = 1 / 100 -- Seconds / RPS = delay
 SWEP.Num = 1
 SWEP.Firemodes = {
+    {
+        {
+            Mode = -100,
+            RunawayBurst = true,
+            PostBurstDelay = 5, 
+        },
+	},
     {
 		Mode = 2
 	},
@@ -68,14 +75,7 @@ SWEP.Firemodes = {
 	},
     {
         Mode = 0
-    },
-    {
-        {
-            Mode = -100,
-            RunawayBurst = true,
-            PostBurstDelay = 0.4,
-        },
-	}
+    }
 }
 
 SWEP.AccuracyMOA = 0 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
