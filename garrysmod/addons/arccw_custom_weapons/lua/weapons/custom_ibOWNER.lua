@@ -64,9 +64,8 @@ SWEP.Firemodes = {
         {
             PrintName = "Burst",
             Mode = -100,
-            RunawayBurst = true,
-            RunAwayBurst = true,
-            AutoBurst = false,
+            RunAwayBurst = false,
+            AutoBurst = true,
             PostBurstDelay = 5, 
         },
 	},
