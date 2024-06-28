@@ -1250,7 +1250,10 @@ TEAM_INQUSITOREMPEROR = DarkRP.createJob("The Emperor", {
 TEAM_IMPERIALARMYENL = DarkRP.createJob("Imperial Army Enlisted", {
     color = Color(0, 148, 57),
    model = {
-        "models/strasser/swbf2/imp/Imperial_Adam_Trooper_pm.mdl",
+        "models/nada/MudTrooper_M.mdl",
+        "models/nada/MudTrooper_F.mdl",
+        "models/nada/ArmyTrooper_M.mdl",
+        "models/nada/ArmyTrooper_F.mdl"
     },
     description = [[
         You're an Enlisted in the Imperial Army
@@ -1279,7 +1282,10 @@ TEAM_IMPERIALARMYENL = DarkRP.createJob("Imperial Army Enlisted", {
 TEAM_IMPERIALARMYSGT = DarkRP.createJob("Imperial Army Sergeant", {
     color = Color(0, 148, 57),
    model = {
-        "models/strasser/swbf2/imp/Chr_Imperial_Charlie_Officer_Coat_pm.mdl",
+        "models/nada/MudTrooper_M.mdl",
+        "models/nada/MudTrooper_F.mdl",
+        "models/nada/ArmyTrooper_M.mdl",
+        "models/nada/ArmyTrooper_F.mdl"
     },
     description = [[
         You're a Sergeant in the Imperial Army
@@ -1311,7 +1317,10 @@ TEAM_IMPERIALARMYSGT = DarkRP.createJob("Imperial Army Sergeant", {
 TEAM_IMPERIALARMYOFFICER = DarkRP.createJob("Imperial Army Officer", {
     color = Color(0, 148, 57),
     model = {
-        "models/strasser/swbf2/imp/Chr_Imperial_Viktor_Officer_pm.mdl",
+        "models/nada/MudTrooper_M.mdl",
+        "models/nada/MudTrooper_F.mdl",
+        "models/nada/ArmyTrooper_M.mdl",
+        "models/nada/ArmyTrooper_F.mdl",
     },
     description = [[
         You're an Officer in the Imperial Army
@@ -1344,7 +1353,10 @@ TEAM_IMPERIALARMYOFFICER = DarkRP.createJob("Imperial Army Officer", {
 TEAM_IMPERIALARMYCOMMAND = DarkRP.createJob("Imperial Army Command", {
     color = Color(0, 148, 57),
    model = {
-        "models/strasser/swbf2/imp/Chr_Imperial_Viktor_Officer_pm.mdl",
+    "models/nada/MudTrooper_M.mdl",
+    "models/nada/MudTrooper_F.mdl",
+    "models/nada/ArmyTrooper_M.mdl",
+    "models/nada/ArmyTrooper_F.mdl"
     },
     description = [[
         You're a Command in the Imperial Army
@@ -1379,7 +1391,10 @@ TEAM_IMPERIALARMYCOMMAND = DarkRP.createJob("Imperial Army Command", {
 TEAM_IMPERIALARMYCOMMANDER = DarkRP.createJob("Imperial Army Commander", {
     color = Color(0, 148, 57),
     model = {
-        "models/strasser/swbf2/imp/Chr_Imperial_Viktor_Officer_pm.mdl",
+        "models/nada/MudTrooper_M.mdl",
+        "models/nada/MudTrooper_F.mdl",
+        "models/nada/ArmyTrooper_M.mdl",
+        "models/nada/ArmyTrooper_F.mdl"
     },
     description = [[
         You're a Commander in the Imperial Army
