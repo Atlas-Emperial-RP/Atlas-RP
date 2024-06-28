@@ -885,7 +885,8 @@ TEAM_FLEETGRAND = DarkRP.createJob("Grand Admiral", {
     weapons = {
         "weapon_empty_hands",
         "tfa_dt29",
-        "rw_sw_e11d"
+        "rw_sw_e11d",
+        "arccw_ll30"
     },
     command = "fleetGA",
     max = 2,
