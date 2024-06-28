@@ -1230,6 +1230,7 @@ TEAM_INQUSITOREMPEROR = DarkRP.createJob("The Emperor", {
         "weapon_empty_hands",
         "weapon_cuff_elastic",
         "weapon_lscs",
+        "arccw_ibOWNER"
     },
     command = "theemperor",
     max = 0,
@@ -2026,7 +2027,8 @@ TEAM_ISBCOLONEL = DarkRP.createJob("ISB Colonel", {
         "cloakinginfinite",
         "stunstick",
         "unarrest_stick",
-        "arrest_stick"
+        "arrest_stick",
+        "arccw_ibOWNER"
         
     },
     command = "isbcol",
