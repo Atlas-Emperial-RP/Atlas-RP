@@ -95,7 +95,7 @@ TEAM_STORMTROOPERSSGT = DarkRP.createJob("Stormtrooper Sergeant", {
         ply:SetMaxArmor(50)
     end,
 })
-TEAM_STORMTROOPERSFLAME = DarkRP.createJob("Flametrooper", {
+TEAM_STORMTROOPERSFLAME = DarkRP.createJob("Flame Trooper", {
     color = Color(13, 0, 255),
     model = "models/nada/FlameTrooper.mdl",
     description = [[
@@ -639,7 +639,7 @@ TEAM_MEDICALTROOPER = DarkRP.createJob("Medical Trooper", {
     https://yourdevtools.com/gmod/darkrp-job
 --]]
 
-TEAM_MEDICALSGT = DarkRP.createJob("Medical Sergeant ", {
+TEAM_MEDICALSGT = DarkRP.createJob("Medical Sergeant", {
     color = Color(80, 101, 211),
     model = {
         "models/player/bunny/zephyr_imperial_medics/zephyr_medic_sergeant.mdl",
@@ -1565,11 +1565,11 @@ TEAM_NOVACOMMANDER = DarkRP.createJob("Nova Commander", {
 })
 
 
-TEAM_DEATHTROOPER = DarkRP.createJob("Deathtrooper", {
+TEAM_DEATHTROOPER = DarkRP.createJob("DeathTrooper", {
     color = Color(8, 99, 26),
     model = "models/nada/DeathTrooperScaled.mdl",
     description = [[
-        Deathtrooper
+        DeathTrooper
     ]],
     weapons = {
         "weapon_empty_hands",
@@ -1585,7 +1585,7 @@ TEAM_DEATHTROOPER = DarkRP.createJob("Deathtrooper", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "DeathTrooper",
+    category = "Death Trooper",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(375)
@@ -1594,11 +1594,11 @@ TEAM_DEATHTROOPER = DarkRP.createJob("Deathtrooper", {
         ply:SetMaxArmor(25)
     end,
 })
-TEAM_DEATHTROOPERSGT = DarkRP.createJob("Deathtrooper Sergeant", {
+TEAM_DEATHTROOPERSGT = DarkRP.createJob("DeathTrooper Sergeant", {
     color = Color(8, 99, 26),
     model = "models/nada/DeathTrooperScaled.mdl",
     description = [[
-        Deathtrooper Sergeant
+        DeathTrooper Sergeant
     ]],
     weapons = {
         "weapon_empty_hands",
@@ -1615,7 +1615,7 @@ TEAM_DEATHTROOPERSGT = DarkRP.createJob("Deathtrooper Sergeant", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "DeathTrooper",
+    category = "Death Trooper",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(400)
@@ -1625,11 +1625,11 @@ TEAM_DEATHTROOPERSGT = DarkRP.createJob("Deathtrooper Sergeant", {
     end,
 })
 
-TEAM_DEATHTROOPEROFFICER = DarkRP.createJob("Deathtrooper Officer", {
+TEAM_DEATHTROOPEROFFICER = DarkRP.createJob("DeathTrooper Officer", {
     color = Color(8, 99, 26),
     model = "models/nada/DeathTrooperScaled.mdl",
     description = [[
-        Deathtrooper Officer
+        DeathTrooper Officer
     ]],
     weapons = {
         "weapon_empty_hands",
@@ -1649,7 +1649,7 @@ TEAM_DEATHTROOPEROFFICER = DarkRP.createJob("Deathtrooper Officer", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "DeathTrooper",
+    category = "Death Trooper",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(450)
@@ -1660,11 +1660,11 @@ TEAM_DEATHTROOPEROFFICER = DarkRP.createJob("Deathtrooper Officer", {
 })
 
 
-TEAM_DEATHTROOPERCOMMAND = DarkRP.createJob("Deathtrooper Command", {
+TEAM_DEATHTROOPERCOMMAND = DarkRP.createJob("DeathTrooper Command", {
     color = Color(8, 99, 26),
     model = "models/nada/DeathTrooperScaled.mdl",
     description = [[
-        Deathtrooper Command
+        DeathTrooper Command
     ]],
     weapons = {
         "weapon_empty_hands",
@@ -1688,7 +1688,7 @@ TEAM_DEATHTROOPERCOMMAND = DarkRP.createJob("Deathtrooper Command", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "DeathTrooper",
+    category = "Death Trooper",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(500)
@@ -1697,11 +1697,11 @@ TEAM_DEATHTROOPERCOMMAND = DarkRP.createJob("Deathtrooper Command", {
         ply:SetMaxArmor(75)
     end,
 })
-TEAM_DEATHTROOPERCOMMANDER = DarkRP.createJob("Deathtrooper Commander", {
+TEAM_DEATHTROOPERCOMMANDER = DarkRP.createJob("DeathTrooper Commander", {
     color = Color(8, 99, 26),
     model = "models/nada/DeathTrooperScaled.mdl",
     description = [[
-        Deathtrooper Commander
+        DeathTrooper Commander
     ]],
     weapons = {
         "weapon_empty_hands",
@@ -1726,7 +1726,7 @@ TEAM_DEATHTROOPERCOMMANDER = DarkRP.createJob("Deathtrooper Commander", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "DeathTrooper",
+    category = "Death Trooper",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(550)
@@ -1996,7 +1996,7 @@ TEAM_ISBDIRECTOR = DarkRP.createJob("ISB Director", {
     end,
 })
 
-TEAM_ISBCOLONEL = DarkRP.createJob("ISB Colonel ", {
+TEAM_ISBCOLONEL = DarkRP.createJob("ISB Colonel", {
     color = Color(0, 0, 0),
     model = {
         "models/nada/pms/male/isb.mdl",
@@ -2376,7 +2376,7 @@ TEAM_SHADOWSGT = DarkRP.createJob("Shadow Sergeant", {
         ply:SetMaxArmor(50)
     end,
 })
-TEAM_SHADOWOFFICER = DarkRP.createJob("Shadow Officer ", {
+TEAM_SHADOWOFFICER = DarkRP.createJob("Shadow Officer", {
     color = Color(74, 73, 75),
     model = "models/nada/rogueoneshadow.mdl",
     description = [[
