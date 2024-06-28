@@ -49,7 +49,7 @@ SWEP.Tracer = "tfa_tracer_red"
 SWEP.TracerCol = Color(255, 0, 0)
 SWEP.HullSize = 1.5
 
-SWEP.ChamberSize = 999999999999999999999999
+SWEP.ChamberSize = 0
 SWEP.Primary.ClipSize = 999999999999999999999999
 
 SWEP.Recoil = 0
@@ -57,7 +57,7 @@ SWEP.RecoilPunch = 0
 SWEP.RecoilSide = 0
 SWEP.RecoilRise = 0.
 
-SWEP.Delay = 60 / 300
+SWEP.Delay = 1 / 1
 SWEP.Num = 1
 SWEP.Firemodes = {
     {
@@ -73,7 +73,7 @@ SWEP.Firemodes = {
         {
             Mode = -100,
             RunawayBurst = true,
-            PostBurstDelay = 0,
+            PostBurstDelay = 0.4,
         },
 	}
 }
