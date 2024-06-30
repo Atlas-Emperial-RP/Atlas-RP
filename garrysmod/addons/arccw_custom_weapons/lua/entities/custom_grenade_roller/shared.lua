@@ -11,7 +11,7 @@ AddCSLuaFile()
 
 ENT.Model = "models/items/ar2_grenade.mdl"
 ENT.Ticks = 0
-ENT.FuseTime = 25
+ENT.FuseTime = 4.5
 
 if SERVER then
 
@@ -24,7 +24,7 @@ function ENT:Initialize()
     local phys = self:GetPhysicsObject()
     if phys:IsValid() then
         phys:Wake()
-        phys:EnableGravity(false)
+        phys:EnableGravity(true)
     end
 
     self.SpawnTime = CurTime()
@@ -57,31 +57,6 @@ function ENT:Think()
         if self.SpawnTime + self.FuseTime <= CurTime() then
             self:Detonate()
         end
-    else
-        if self.Ticks % 5 == 0 then
-            local emitter = ParticleEmitter(self:GetPos())
-
-            if !self:IsValid() or self:WaterLevel() > 2 then return end
-            if !IsValid(emitter) then return end
-
-            local smoke = emitter:Add("particle/particle_smokegrenade", self:GetPos())
-            smoke:SetVelocity( VectorRand() * 25 )
-            smoke:SetGravity( Vector(math.Rand(-5, 5), math.Rand(-5, 5), math.Rand(-20, -25)) )
-            smoke:SetDieTime( math.Rand(1.5, 2.0) )
-            smoke:SetStartAlpha( 255 )
-            smoke:SetEndAlpha( 0 )
-            smoke:SetStartSize( 0 )
-            smoke:SetEndSize( 100 )
-            smoke:SetRoll( math.Rand(-180, 180) )
-            smoke:SetRollDelta( math.Rand(-0.2,0.2) )
-            smoke:SetColor( 20, 20, 20 )
-            smoke:SetAirResistance( 5 )
-            smoke:SetPos( self:GetPos() )
-            smoke:SetLighting( false )
-            emitter:Finish()
-        end
-
-        self.Ticks = self.Ticks + 1
     end
 end
 
@@ -122,7 +97,9 @@ function ENT:Detonate()
 end
 
 function ENT:PhysicsCollide(colData, collider)
-    self:Detonate()
+    if self.FuseTime == 0 then
+        self:Detonate()
+    end
 end
 
 function ENT:Draw()

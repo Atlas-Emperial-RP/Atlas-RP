@@ -50,8 +50,8 @@ TEAM_STORMTROOPERSENL = DarkRP.createJob("Stormtrooper Enlisted", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dh17",
-        "rw_sw_e11",
+        "custom_e11_st",
+        "custom_dc17_st",
     },
     command = "stormenlisted",
     max = 0,
@@ -76,9 +76,9 @@ TEAM_STORMTROOPERSSGT = DarkRP.createJob("Stormtrooper Sergeant", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dh17",
-        "rw_sw_nade_thermal",
-        "rw_sw_e11"
+        "custom_e11_st",
+        "custom_dc17_st",
+        "arccw_thermal_grenade"
     },
     command = "stormsergeant",
     max = 0,
@@ -103,11 +103,9 @@ TEAM_STORMTROOPERSFLAME = DarkRP.createJob("Flame Trooper", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dh17",
-        "rw_sw_e11",
-        "rw_sw_nade_thermal",
-        "flamethrower_basic",
-        "rw_sw_nade_incendiary"
+        "custom_e11_st",
+        "weapon_imperial_flamethrower",
+        "arccw_nade_inc"
     },
     command = "flametrooper",
     max = 0,
@@ -133,11 +131,9 @@ TEAM_STORMTROOPERSSCOUT = DarkRP.createJob("Scout Trooper", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11",
-        "rw_sw_dlt19x",
-        "rw_sw_scoutblaster",
-        "realistic_hook",
-        "rw_sw_nade_smoke"
+        "custom_e11_st",
+        "custom_e11s_st",
+        "custom_ec17_st"
     },
     command = "scouttroopers",
     max = 0,
@@ -152,6 +148,88 @@ TEAM_STORMTROOPERSSCOUT = DarkRP.createJob("Scout Trooper", {
         ply:SetMaxHealth(225)
     end,
 })
+TEAM_STORMTROOPERSJT = DarkRP.createJob("Jump Trooper", {
+    color = Color(13, 0, 255),
+    model = "models/nada/rogueonetk.mdl",
+    description = [[
+        Stormtrooper
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "custom_t21_st",
+        "custom_dc17_st",
+        "",
+    },
+    command = "jumptrooper",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Storm Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+    end,
+})
+TEAM_STORMTROOPERSHEAVY = DarkRP.createJob("Heavy Trooper", {
+    color = Color(13, 0, 255),
+    model = "models/nada/rogueonetk.mdl",
+    description = [[
+        Stormtrooper
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "custom_dc17_st",
+        "custom_dlt19_st",
+        "arccw_thermal_grenade"
+    },
+    command = "heavytrooper",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Storm Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+    end,
+})
+TEAM_STORMTROOPERSMECHANIC = DarkRP.createJob("Stormtrooper Mechanic", {
+    color = Color(13, 0, 255),
+    model = "models/nada/rogueonetk.mdl",
+    description = [[
+        Stormtrooper
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "custom_e11_st",
+        "custom_dc17_st",
+        "alydus_fortificationbuildertablet",
+        "weapon_lvsrepair"
+    },
+    command = "stmechanic",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Storm Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+    end,
+})
 TEAM_STORMTROOPERSOFFICER = DarkRP.createJob("Stormtrooper Officer", {
     color = Color(13, 0, 255),
     model = "models/nada/rogueonetk.mdl",
@@ -160,11 +238,10 @@ TEAM_STORMTROOPERSOFFICER = DarkRP.createJob("Stormtrooper Officer", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dh17",
-        "rw_sw_nade_thermal",
-        "rw_sw_huntershotgun",
-        "rw_sw_nade_smoke",
-        "rw_sw_t21"
+        "custom_e11_st",
+        "custom_dc17_st",
+        "custom_dlt19_st",
+        "arccw_thermal_grenade"
     },
     command = "stormofficer",
     max = 0,
@@ -190,11 +267,12 @@ TEAM_STORMTROOPERSCOMMAND = DarkRP.createJob("Stormtrooper Command", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dual_dh17a",
-        "rw_sw_nade_thermal",
-        "rw_sw_t21",
-        "rw_sw_huntershotgun",
-        "rw_sw_nade_smoke"
+        "weapon_empty_hands",
+        "custom_e11_st",
+        "custom_dc17_st",
+        "custom_dlt19_st",
+        "custom_e11s_st",
+        "arccw_thermal_grenade"
     },
     command = "stormcommand",
     max = 0,
@@ -219,12 +297,13 @@ TEAM_STORMTROOPERSCOMMANDER = DarkRP.createJob("Stormtrooper Commander", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dual_dh17a",
-        "rw_sw_t21",
-        "rw_sw_nade_thermal",
-        "rw_sw_huntershotgun",
-        "rw_sw_nade_smoke",
-        "rw_sw_t21b"
+        "weapon_empty_hands",
+        "custom_e11_st",
+        "custom_dc17_st",
+        "custom_dlt19_st",
+        "custom_e11s_st",
+        "custom_dlt19x_st",
+        "arccw_thermal_grenade"
     },
     command = "stormcommander",
     max = 0,
@@ -282,9 +361,8 @@ TEAM_PURGEENL = DarkRP.createJob("Purge Enlisted", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11d",
-        "rw_sw_se14r",
-        "rw_sw_electrodagger"
+        "custom_dc15s_purge",
+        "custom_e11d_purge",
     },
     command = "purgeenlisted",
     max = 0,
@@ -310,13 +388,10 @@ TEAM_PURGESGT = DarkRP.createJob("Purge Sergeant", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11d",
-        "rw_sw_se14r",
-        "rw_sw_electrostaff",
-        "rw_sw_electrodagger",
-        "rw_sw_dual_dc17",
-        "rw_sw_nade_thermal",
-        "weapon_cuff_elastic"
+        "custom_dc15s_purge",
+        "custom_e11d_purge",
+        "custom_dc17_purge",
+        "arccw_thermal_grenade"
     },
     command = "purgesergeant",
     max = 0,
@@ -341,14 +416,11 @@ TEAM_PURGEOFFICER = DarkRP.createJob("Purge Officer", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11d",
-        "rw_sw_se14r",
-        "rw_sw_electrodagger",
-        "rw_sw_dual_dc17",
-        "rw_sw_nade_thermal",
-        "rw_sw_electrostaff",
-        "rw_sw_electrohammer",
-        "weapon_cuff_elastic"
+        "custom_dc15s_purge",
+        "custom_e11d_purge",
+        "custom_dc17_purge",
+        "arccw_thermal_grenade",
+        "sfw_estaff"
     },
     command = "purgeofficer",
     max = 0,
@@ -373,16 +445,12 @@ TEAM_PURGECOMMAND = DarkRP.createJob("Purge Command", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11d",
-        "rw_sw_se14r",
-        "rw_sw_electrodagger",
-        "rw_sw_dual_dc17",
-        "rw_sw_nade_thermal",
-        "rw_sw_electrostaff",
-        "rw_sw_electrohammer",
-        "flamethrower_basic",
-        "rw_sw_z6",
-        "weapon_cuff_elastic"
+        "custom_dc15s_purge",
+        "custom_e11d_purge",
+        "custom_dc17_purge",
+        "arccw_thermal_grenade",
+        "sfw_estaff",
+        "weapon_imperial_flamethrower"
     },
     command = "purgecommand",
     max = 0,
@@ -407,17 +475,12 @@ TEAM_PURGECOMMANDER = DarkRP.createJob("Purge Commander", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11d",
-        "rw_sw_se14r",
-        "rw_sw_electrodagger",
-        "rw_sw_dual_dc17",
-        "rw_sw_nade_thermal",
-        "rw_sw_electrostaff",
-        "rw_sw_electrohammer",
-        "flamethrower_basic",
-        "rw_sw_z6",
-        "rw_sw_dc15x",
-        "weapon_cuff_elastic"
+        "custom_dc15s_purge",
+        "custom_e11d_purge",
+        "custom_dc17_purge",
+        "arccw_thermal_grenade",
+        "sfw_estaff",
+        "weapon_imperial_flamethrower"
     },
     command = "purgecommander",
     max = 0,
@@ -647,13 +710,13 @@ TEAM_MEDICALSGT = DarkRP.createJob("Medical Sergeant", {
         Medical Sergeant
     ]],
     weapons = {
-        "weapon_empty_hands",
+        "custom_e11_medical",
+
         "arccw_bacta_grenade",
+
+        "weapon_empty_hands",
         "weapon_defibrilator",
         "weapon_bactainjector",
-        "weapon_defibrilator",
-
-        "arccw_e11",
         "weapon_squadshield_arm",
     },
     command = "medsergeant",
@@ -686,15 +749,15 @@ TEAM_MEDICALOFFICER = DarkRP.createJob("Medical Officer", {
         Medical Officer
     ]],
     weapons = {
-        "weapon_empty_hands",
+        "custom_e11_medical",
+        "custom_rk3_medical",
+
         "arccw_bacta_grenade",
+        
+        "weapon_empty_hands",
         "weapon_defibrilator",
         "weapon_bactainjector",
-        "weapon_defibrilator",
-
-        "arccw_e11",
         "weapon_squadshield_arm",
-        "arccw_rk3",
         "weapon_shield_activator",
     },
     command = "medofficer",
@@ -728,15 +791,15 @@ TEAM_MEDICALCOMMAND = DarkRP.createJob("Medical Command", {
         Medical Command 
     ]],
     weapons = {
-        "weapon_empty_hands",
+        "custom_e11_medical",
+        "custom_rk3_medical",
+
         "arccw_bacta_grenade",
+        
+        "weapon_empty_hands",
         "weapon_defibrilator",
         "weapon_bactainjector",
-        "weapon_defibrilator",
-
-        "arccw_e11",
         "weapon_squadshield_arm",
-        "arccw_rk3",
         "weapon_shield_activator",
     },
     command = "medcommand",
@@ -769,18 +832,17 @@ TEAM_MEDICALCOMMANDER = DarkRP.createJob("Medical Commander", {
         Medical Commander 
     ]],
     weapons = {
+        "custom_e11_medical",
+        "custom_rk3_medical",
+        "custom_t21_medical",
+
         "weapon_empty_hands",
         "arccw_bacta_grenade",
-        "arccw_thermal_grenade",
         "weapon_defibrilator",
         "weapon_bactainjector",
-        "weapon_defibrilator",
-
-        "arccw_e11",
         "weapon_squadshield_arm",
-        "arccw_rk3",
         "weapon_shield_activator",
-        "arccw_t21",
+
     },
     command = "medcommander",
     max = 0,
@@ -1045,8 +1107,8 @@ TEAM_INQUSITOR = DarkRP.createJob("Inquisitor", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "weapon_lightsaber",
-        "weapon_cuff_elastic"
+        "weapon_lscs", 
+        "weapon_r_handcuffs"
     },
     command = "inquisitor",
     max = 0,
@@ -1085,8 +1147,8 @@ TEAM_INQUSITORSENIOR = DarkRP.createJob("Senior Inquisitor", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "weapon_lscs",
-        "weapon_cuff_elastic"
+        "weapon_lscs", 
+        "weapon_r_handcuffs"
     },
     command = "srinquisitor",
     max = 0,
@@ -1111,8 +1173,8 @@ TEAM_INQUSITORSECOND = DarkRP.createJob("Second Sister", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "weapon_lscs",
-        "weapon_cuff_elastic"
+        "weapon_lscs", 
+        "weapon_r_handcuffs"
     },
     command = "secondsister",
     max = 0,
@@ -1138,8 +1200,8 @@ TEAM_INQUSITORGRAND = DarkRP.createJob("Grand Inquisitor", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "weapon_lscs",
-        "weapon_cuff_elastic"
+        "weapon_lscs", 
+        "weapon_r_handcuffs"
     },
     command = "grandinquisitor",
     max = 0,
@@ -1197,8 +1259,8 @@ TEAM_INQUSITORDARTH = DarkRP.createJob("Darth Vader", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "weapon_lscs",
-        "weapon_cuff_elastic"
+        "weapon_lscs", 
+        "weapon_r_handcuffs"
     },
     command = "darthvader",
     max = 1,
@@ -1224,8 +1286,8 @@ TEAM_INQUSITOREMPEROR = DarkRP.createJob("The Emperor", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "weapon_cuff_elastic",
-        "weapon_lscs",
+        "weapon_lscs", 
+        "weapon_r_handcuffs",
         "custom_ib_OWNER"
     },
     command = "theemperor",
@@ -1256,9 +1318,8 @@ TEAM_IMPERIALARMYENL = DarkRP.createJob("Imperial Army Enlisted", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dlt19s",
-        "rw_sw_e11",
-        "rw_sw_se14c"
+        "custom_e10_ia",
+        "custom_ec17_ia"
     },
     command = "imparmyenlisted",
     max = 0,
@@ -1288,11 +1349,10 @@ TEAM_IMPERIALARMYSGT = DarkRP.createJob("Imperial Army Sergeant", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dlt19s",
-        "rw_sw_e11",
-        "rw_sw_se14c",
-        "rw_sw_nade_smoke",
-        "rw_sw_nade_thermal"
+        "custom_e10_ia",
+        "custom_ec17_ia",
+        "arccw_thermal_grenade",
+        "custom_rk3_ia"
     },
     command = "imparmysergeant",
     max = 0,
@@ -1323,13 +1383,13 @@ TEAM_IMPERIALARMYOFFICER = DarkRP.createJob("Imperial Army Officer", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dlt19s",
-        "rw_sw_e11",
-        "rw_sw_se14c",
-        "rw_sw_nade_smoke",
-        "rw_sw_nade_thermal",
-        "rw_sw_dlt19x",
-        "rw_sw_dual_westar34"
+        "custom_e10_ia",
+        "custom_ec17_ia",
+        "arccw_thermal_grenade",
+        "custom_rk3_ia",
+        "custom_e11s_ia",
+        "custom_e11_ia",
+        "custom_t21_ia"
     },
     command = "imparmyofficer",
     max = 0,
@@ -1359,15 +1419,14 @@ TEAM_IMPERIALARMYCOMMAND = DarkRP.createJob("Imperial Army Command", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dlt19s",
-        "rw_sw_e11",
-        "rw_sw_se14c",
-        "rw_sw_nade_smoke",
-        "rw_sw_nade_thermal",
-        "rw_sw_dlt19x",
-        "rw_sw_dual_westar34",
+        "custom_e10_ia",
+        "custom_ec17_ia",
+        "arccw_thermal_grenade",
+        "custom_rk3_ia",
+        "custom_e11s_ia",
+        "custom_e11_ia",
+        "custom_t21_ia",
         "alydus_fortificationbuildertablet",
-        "alydus_fusioncutter"
     },
     command = "imparmycommand",
     max = 0,
@@ -1397,16 +1456,14 @@ TEAM_IMPERIALARMYCOMMANDER = DarkRP.createJob("Imperial Army Commander", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dlt19s",
-        "rw_sw_e11",
-        "rw_sw_se14c",
-        "rw_sw_nade_smoke",
-        "rw_sw_nade_thermal",
-        "rw_sw_dlt19x",
-        "rw_sw_dual_westar34",
+        "custom_e10_ia",
+        "custom_ec17_ia",
+        "arccw_thermal_grenade",
+        "custom_rk3_ia",
+        "custom_e11s_ia",
+        "custom_e11_ia",
+        "custom_t21_ia",
         "alydus_fortificationbuildertablet",
-        "alydus_fusioncutter",
-        "rw_sw_dual_e5bx"
     },
     command = "imparmycommander",
     max = 0,
@@ -1423,6 +1480,8 @@ TEAM_IMPERIALARMYCOMMANDER = DarkRP.createJob("Imperial Army Commander", {
         ply:SetMaxArmor(100)
     end,
 })
+
+-- Nova Corp
 TEAM_NOVATROOPER = DarkRP.createJob("Nova Trooper", {
     color = Color(255, 232, 82),
     model = "models/nada/rogueonenova.mdl",
@@ -1577,7 +1636,7 @@ TEAM_NOVACOMMANDER = DarkRP.createJob("Nova Commander", {
     end,
 })
 
-
+-- Death Trooper
 TEAM_DEATHTROOPER = DarkRP.createJob("DeathTrooper", {
     color = Color(8, 99, 26),
     model = "models/nada/DeathTrooperScaled.mdl",
@@ -1586,11 +1645,14 @@ TEAM_DEATHTROOPER = DarkRP.createJob("DeathTrooper", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11d",
-        "rw_sw_se14r",
-        "realistic_hook",
-        "rw_sw_nade_thermal",
-        "sc_tranceiver"
+        "custom_e11d_dt",
+        "custom_se14_dt",
+        "custom_dc17_dt",
+
+        "dt_encrypter",
+        "dt_decrypter",
+
+        "weapon_r_handcuffs",
     },
     command = "deathtrooper",
     max = 0,
@@ -1615,12 +1677,16 @@ TEAM_DEATHTROOPERSGT = DarkRP.createJob("DeathTrooper Sergeant", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11d",
-        "rw_sw_se14r",
-        "realistic_hook",
-        "rw_sw_nade_thermal",
-        "rw_sw_dlt19",
-        "sc_tranceiver"
+        "custom_e11d_dt",
+        "custom_se14_dt",
+        "custom_dc17_dt",
+        "weapon_r_handcuffs",
+
+        "dt_encrypter",
+        "dt_decrypter",
+
+        "arccw_thermal_grenade",
+        
     },
     command = "deathtroopersgt",
     max = 0,
@@ -1646,15 +1712,17 @@ TEAM_DEATHTROOPEROFFICER = DarkRP.createJob("DeathTrooper Officer", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11d",
-        "rw_sw_se14r",
-        "realistic_hook",
-        "rw_sw_nade_thermal",
-        "rw_sw_dlt19",
-        "rw_sw_dlt19x",
-        "rw_sw_pinglauncher",
-        "rw_sw_nade_dioxis",
-        "sc_tranceiver"
+        "custom_e11d_dt",
+        "custom_se14_dt",
+        "custom_dc17_dt",
+        "custom_dlt19_dt",
+        "custom_dlt19x_dt",
+        "weapon_r_handcuffs",
+
+        "dt_encrypter",
+        "dt_decrypter",
+
+        "arccw_thermal_grenade",
     },
     command = "deathtrooperof",
     max = 0,
@@ -1672,7 +1740,6 @@ TEAM_DEATHTROOPEROFFICER = DarkRP.createJob("DeathTrooper Officer", {
     end,
 })
 
-
 TEAM_DEATHTROOPERCOMMAND = DarkRP.createJob("DeathTrooper Command", {
     color = Color(8, 99, 26),
     model = "models/nada/DeathTrooperScaled.mdl",
@@ -1681,19 +1748,17 @@ TEAM_DEATHTROOPERCOMMAND = DarkRP.createJob("DeathTrooper Command", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11d",
-        "rw_sw_se14r",
-        "realistic_hook",
-        "rw_sw_nade_thermal",
-        "rw_sw_dlt19",
-        "rw_sw_dlt19x",
-        "rw_sw_pinglauncher",
-        "rw_sw_nade_dioxis",
-        "rw_sw_smartlauncher",
-        "rw_sw_nade_bacta",
-        "admin_defib",
-        "weapon_bactainjector",
-        "sc_tranceiver"
+        "custom_e11d_dt",
+        "custom_se14_dt",
+        "custom_dc17_dt",
+        "custom_dlt19_dt",
+        "custom_dlt19x_dt",
+        "weapon_r_handcuffs",
+
+        "dt_encrypter",
+        "dt_decrypter",
+
+        "arccw_thermal_grenade",
     },
     command = "deathtroopercom",
     max = 0,
@@ -1718,20 +1783,18 @@ TEAM_DEATHTROOPERCOMMANDER = DarkRP.createJob("DeathTrooper Commander", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11d",
-        "rw_sw_se14r",
-        "realistic_hook",
-        "rw_sw_nade_thermal",
-        "rw_sw_dlt19",
-        "rw_sw_dlt19x",
-        "rw_sw_pinglauncher",
-        "rw_sw_nade_dioxis",
-        "rw_sw_smartlauncher",
-        "rw_sw_nade_bacta",
-        "admin_defib",
-        "weapon_bactainjector",
-        "rw_sw_z4",
-        "sc_tranceiver"
+        "custom_e11d_dt",
+        "custom_se14_dt",
+        "custom_dc17_dt",
+        "custom_dlt19_dt",
+        "custom_dlt19x_dt",
+        "custom_z2_dt",
+        "weapon_r_handcuffs",
+
+        "dt_encrypter",
+        "dt_decrypter",
+
+        "arccw_thermal_grenade",
     },
     command = "deathtrooperco",
     max = 0,
@@ -1780,41 +1843,6 @@ TEAM_ISB = DarkRP.createJob("ISB Agent", {
     PlayerSpawn = function(ply)
         ply:SetHealth(300)
         ply:SetMaxHealth(300)
-    end,
-})
-
-TEAM_ISBCONSTABLE = DarkRP.createJob("ISB Constable", {
-    color = Color(10, 0, 194),
-    model = {
-        "models/nada/pms/female/isb.mdl",
-        "models/nada/pms/male/isb.mdl"
-    },
-    description = [[
-        You're an ISB Constable
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "rw_sw_rk3",
-        "rw_sw_stun_e11",
-        "weapon_cuff_elastic",
-        "arrest_stick",
-        "stunstick",
-        "unarrest_stick",
-        "rw_sw_shield_imp_rk3",
-        "rw_sw_e11d",
-        "realistic_hook"
-    },
-    command = "isbconstable",
-    max = 0,
-    salary = 150,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Imperial Security Bureau ",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(350)
-        ply:SetMaxHealth(350)
     end,
 })
 
@@ -2058,61 +2086,6 @@ TEAM_ISBCOLONEL = DarkRP.createJob("ISB Colonel", {
     end,
 })
 
-TEAM_GAMEMASTER = DarkRP.createJob("Gamemaster on Duty", {
-    color = Color(225, 0, 255),
-    model = "models/gonzo/stormtrooperjanitors/stormtrooperjanitor/stormtrooperjanitor.mdl",
-    description = [[
-        Gamemaster For Atlas Imperial RP
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "weapon_physgun",
-        "gmod_tool",
-        "voice_amplifier"
-    },
-    command = "gamemaster",
-    max = 2000,
-    salary = 2000,
-    admin = 1,
-    vote = false,
-    hasLicense = false,
-    category = "Staff",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(99999)
-        ply:SetMaxHealth(99999)
-        ply:SetArmor(0)
-        ply:SetMaxArmor(0)
-    end,
-})
-
-
-TEAM_STAFF = DarkRP.createJob("Staff on Duty", {
-    color = Color(225, 0, 255),
-    model = "models/gonzo/stormtrooperjanitors/stormtrooperjanitorco/stormtrooperjanitorco.mdl",
-    description = [[
-        Staff For Atlas Imperial RP
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "weapon_physgun",
-        "gmod_tool"
-    },
-    command = "staff",
-    max = 9000,
-    salary = 9000,
-    admin = 1,
-    vote = false,
-    hasLicense = false,
-    category = "Staff",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(99999)
-        ply:SetMaxHealth(99999)
-        ply:SetArmor(0)
-        ply:SetMaxArmor(0)
-    end,
-})
 TEAM_INFERNOSL = DarkRP.createJob("Inferno Squad Leader", {
     color = Color(126, 1, 1),
     model = {
@@ -2211,6 +2184,7 @@ TEAM_INFERNOMEMBER = DarkRP.createJob("Inferno Squad Member", {
         ply:SetMaxArmor(50)
     end,
 })
+
 TEAM_SHORETRA = DarkRP.createJob("Shore Trainee", {
     color = Color(255, 149, 0),
     model = "models/nada/ShoreTrooper_Andor.mdl",
@@ -2219,8 +2193,8 @@ TEAM_SHORETRA = DarkRP.createJob("Shore Trainee", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e22",
-        "rw_sw_rk3",
+        "custom_e22_shore",
+        "custom_rk3_shore",
 
     },
     command = "shoretrainee",
@@ -2246,11 +2220,11 @@ TEAM_SHORESGT = DarkRP.createJob("Shore Sergeant", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e22",
-        "rw_sw_shield_imp",
-        "rw_sw_rk3",
-        "rw_sw_nade_incendiary",
-        "rw_sw_nade_thermal"
+        "custom_e22_shore",
+        "custom_rk3_shore",
+
+        "arccw_nade_inc",
+
     },
     command = "shoresergeant",
     max = 0,
@@ -2275,12 +2249,13 @@ TEAM_SHOREOFFICER = DarkRP.createJob("Shore Officer", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e22",
-        "rw_sw_shield_imp",
-        "rw_sw_rk3",
-        "rw_sw_nade_incendiary",
-        "rw_sw_nade_thermal",
-        "rw_sw_tl50"
+        "custom_e22_shore",
+        "custom_rk3_shore",
+
+        "arccw_nade_inc",
+        "custom_tl50_shore",
+        "custom_e11s_shore",
+
     },
     command = "shoreofficer",
     max = 0,
@@ -2305,13 +2280,13 @@ TEAM_SHORECOMMAND = DarkRP.createJob("Shore Command", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e22",
-        "rw_sw_shield_imp",
-        "rw_sw_rk3",
-        "rw_sw_nade_incendiary",
-        "rw_sw_nade_thermal",
-        "rw_sw_dlt20a",
-        "rw_sw_tl50"
+        "custom_e22_shore",
+        "custom_rk3_shore",
+
+        "arccw_nade_inc",
+        "custom_tl50_shore",
+        "custom_e11s_shore",
+
     },
     command = "shorecommand",
     max = 0,
@@ -2336,14 +2311,13 @@ TEAM_SHORECOMMANDER = DarkRP.createJob("Shore Commander", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e22",
-        "rw_sw_shield_imp",
-        "rw_sw_rk3",
-        "rw_sw_nade_incendiary",
-        "rw_sw_nade_thermal",
-        "rw_sw_dlt20a",
-        "rw_sw_z6i",
-        "rw_sw_tl50"
+        "custom_e22_shore",
+        "custom_rk3_shore",
+
+        "arccw_nade_inc",
+        "custom_tl50_shore",
+        "custom_e11s_shore",
+
     },
     command = "shorecommander",
     max = 0,
@@ -2360,6 +2334,7 @@ TEAM_SHORECOMMANDER = DarkRP.createJob("Shore Commander", {
         ply:SetMaxArmor(100)
     end,
 })
+
 TEAM_SHADOWSGT = DarkRP.createJob("Shadow Sergeant", {
     color = Color(74, 73, 75),
     model = "models/nada/rogueoneshadow.mdl",
@@ -2431,7 +2406,7 @@ TEAM_SHADOWCOMMAND = DarkRP.createJob("Shadow Command", {
         "custom_t21_shadow",
         "custom_se14_shadow",
 
-        "custom_e11_shadow",
+        "custom_e11s_shadow",
         "custom_dlt19x_shadow",
     },
     command = "shadowcommand",
@@ -2462,7 +2437,7 @@ TEAM_SHADOWCOMMANDER = DarkRP.createJob("Shadow Commander", {
         "custom_t21_shadow",
         "custom_se14_shadow",
 
-        "custom_e11_shadow",
+        "custom_e11s_shadow",
         "custom_dlt19x_shadow",
     },
     command = "shadowcommander",
@@ -2478,6 +2453,61 @@ TEAM_SHADOWCOMMANDER = DarkRP.createJob("Shadow Commander", {
         ply:SetMaxHealth(450)
         ply:SetArmor(100)
         ply:SetMaxArmor(100)
+    end,
+})
+
+TEAM_STAFF = DarkRP.createJob("Staff on Duty", {
+    color = Color(225, 0, 255),
+    model = "models/gonzo/stormtrooperjanitors/stormtrooperjanitorco/stormtrooperjanitorco.mdl",
+    description = [[
+        Staff For Atlas Imperial RP
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "weapon_physgun",
+        "gmod_tool"
+    },
+    command = "staff",
+    max = 9000,
+    salary = 9000,
+    admin = 1,
+    vote = false,
+    hasLicense = false,
+    category = "Staff",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(99999)
+        ply:SetMaxHealth(99999)
+        ply:SetArmor(0)
+        ply:SetMaxArmor(0)
+    end,
+})
+
+TEAM_GAMEMASTER = DarkRP.createJob("Gamemaster on Duty", {
+    color = Color(225, 0, 255),
+    model = "models/gonzo/stormtrooperjanitors/stormtrooperjanitor/stormtrooperjanitor.mdl",
+    description = [[
+        Gamemaster For Atlas Imperial RP
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "weapon_physgun",
+        "gmod_tool",
+        "voice_amplifier"
+    },
+    command = "gamemaster",
+    max = 2000,
+    salary = 2000,
+    admin = 1,
+    vote = false,
+    hasLicense = false,
+    category = "Staff",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(99999)
+        ply:SetMaxHealth(99999)
+        ply:SetArmor(0)
+        ply:SetMaxArmor(0)
     end,
 })
 --[[---------------------------------------------------------------------------
