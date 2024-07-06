@@ -2,16 +2,16 @@ AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
-SWEP.Category = "[ ArcCW ] Imperial TFA Weapons"
-SWEP.Credits = { Author1 = "cat"}
-SWEP.PrintName = "RK-3"
+SWEP.Category = "[ Atlas ] Custom Weapons"
+SWEP.Credits = { Author1 = "Yairme"}
+SWEP.PrintName = "ISB Director RK-3"
 SWEP.Trivia_Class = "Imperial Blaster Pistol"
 SWEP.Trivia_Desc = "Imperial Blaster for CQB enviroments"
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Low Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
-SWEP.Trivia_Year = 2020
+SWEP.Trivia_Country = "Netherlands"
+SWEP.Trivia_Year = 2024
 
 SWEP.Slot = 1
 
@@ -32,7 +32,7 @@ SWEP.IconOverride = "materials/entities/rw_sw_rk3.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 30
+SWEP.Damage = 50
 SWEP.RangeMin = 40
 SWEP.DamageMin = 17
 SWEP.Range = 240
@@ -189,7 +189,7 @@ SWEP.Attachments = {
     [4] = {
         PrintName = "Energization", -- print name
         DefaultAttName = "Standard Energization", -- used to display the "no attachment" text
-        Slot = "ammo",
+        Slot = {"ammo", "sw_ammo"},
     },
     [5] = {
         PrintName = "Training/Perk", -- print name

@@ -2,16 +2,16 @@ AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
-SWEP.Category = "[ Atlas ] Shore Weapons"
-SWEP.Credits = { Author1 = "cat"}
-SWEP.PrintName = "TL-50"
+SWEP.Category = "[ Atlas ] Custom Weapons"
+SWEP.Credits = { Author1 = "Yairme"}
+SWEP.PrintName = "Shore TL-50"
 SWEP.Trivia_Class = "Imperial Heavy Blaster Rifle"
 SWEP.Trivia_Desc = "High tech TL-50 Purge Blaster Rifle, preffered for long-range combat and general allround usage."
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Medium Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
-SWEP.Trivia_Year = 2020
+SWEP.Trivia_Country = "Netherlands"
+SWEP.Trivia_Year = 2024
 
 SWEP.Slot = 3
 

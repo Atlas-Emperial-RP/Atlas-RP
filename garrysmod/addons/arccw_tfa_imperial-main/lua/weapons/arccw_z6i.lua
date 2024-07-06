@@ -10,7 +10,7 @@ SWEP.Trivia_Desc = "A powerful chain gun."
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Heavy Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
+SWEP.Trivia_Country = "Netherlands"
 SWEP.Trivia_Year = 2020
 
 SWEP.Slot = 3

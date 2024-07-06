@@ -2,16 +2,16 @@ AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
-SWEP.Category = "[ Atlas ] Storm Weapons"
-SWEP.Credits = { Author1 = "cat"}
-SWEP.PrintName = "DLT-19X"
+SWEP.Category = "[ Atlas ] Custom Weapons"
+SWEP.Credits = { Author1 = "Yairme"}
+SWEP.PrintName = "ST DLT-19X"
 SWEP.Trivia_Class = "Imperial Sniper Blaster Rifle"
 SWEP.Trivia_Desc = "High RPM DLT-19 Heavy Blaster Rifle"
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Medium Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
-SWEP.Trivia_Year = 2020
+SWEP.Trivia_Country = "Netherlands"
+SWEP.Trivia_Year = 2024
 
 SWEP.Slot = 3
 

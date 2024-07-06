@@ -2,16 +2,16 @@ AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
-SWEP.Category = "[ Atlas ] Purge Weapons"
-SWEP.Credits = { Author1 = "cat"}
-SWEP.PrintName = "DC-15S (Purge)"
+SWEP.Category = "[ Atlas ] Custom Weapons"
+SWEP.Credits = { Author1 = "Yairme"}
+SWEP.PrintName = "Purge DC-15S"
 SWEP.Trivia_Class = "Imperial Light Blaster Carbine"
 SWEP.Trivia_Desc = "High tech compact Imperial DC-15S Blaster Carbine, preffered for CQB enviroments and general allround usage."
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Medium Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
-SWEP.Trivia_Year = 2020
+SWEP.Trivia_Country = "Netherlands"
+SWEP.Trivia_Year = 2024
 
 SWEP.Slot = 3
 

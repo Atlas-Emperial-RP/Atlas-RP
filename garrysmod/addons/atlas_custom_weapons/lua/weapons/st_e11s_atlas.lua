@@ -2,16 +2,16 @@ AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
-SWEP.Category = "[ Atlas ] Storm Weapons"
-SWEP.Credits = { Author1 = "cat"}
-SWEP.PrintName = "E-11S"
+SWEP.Category = "[ Atlas ] Custom Weapons"
+SWEP.Credits = { Author1 = "Yairme"}
+SWEP.PrintName = "ST E-11S"
 SWEP.Trivia_Class = "Imperial Sniper Blaster"
 SWEP.Trivia_Desc = "Powerful Sniper blaster, preffered for long-range combat."
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Medium Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
-SWEP.Trivia_Year = 2020
+SWEP.Trivia_Country = "Netherlands"
+SWEP.Trivia_Year = 2024
 
 SWEP.Slot = 3
 

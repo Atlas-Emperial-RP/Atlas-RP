@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
-SWEP.Category = "[ Atlas ] Custom Weapons"
+SWEP.Category = "[ Atlas ] DEV Custom Weapons [ DO NOT TOUCH!! ]"
 SWEP.Credits = { Author1 = "Meeks"}
 SWEP.PrintName = "Grenade Launcher"
 SWEP.Trivia_Class = "Blaster Rifle"
@@ -10,8 +10,8 @@ SWEP.Trivia_Desc = "High tech Grenade Launcher, preffered for mid to long-range 
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Medium Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
-SWEP.Trivia_Year = 2020
+SWEP.Trivia_Country = "Netherlands"
+SWEP.Trivia_Year = 2024
 
 SWEP.Slot = 3
 
@@ -129,59 +129,8 @@ SWEP.AttachmentElements = {
 
 --SWEP.Attachments 
 SWEP.Attachments = {
+
     [1] = {
-        PrintName = "Optic", -- print name
-        DefaultAttName = "Iron Sights", -- used to display the "no attachment" text
-        Slot = "optic",
-        -- WMScale = Vector(111, 111, 111),
-        Bone = "dlt19_sight", -- relevant bone any attachments wwill be mostly referring to
-        Offset = {
-            vpos = Vector(0.05, 0.4, 3.15),
-            vang = Angle(90, 0, -90),
-            wpos = Vector(390, 0, -460),
-            wang = Angle(-15, 0, 180)
-        },
-        -- CorrectiveAng = Angle(-2.4, -0, 0)
-    },
-    [2] = {
-        PrintName = "Foregrip", -- print name
-        DefaultAttName = "No Attachment", -- used to display the "no attachment" text
-        Slot = {"foregrip"},
-        WMScale = Vector(111, 111, 111),
-        Bone = "dlt19_sight", -- relevant bone any attachments wwill be mostly referring to
-        Offset = {
-            vpos = Vector(-0.2, 4.8, 6.5),
-            vang = Angle(90, 0, -90),
-            wang = Angle(170, 180, 0),
-        },
-    },          
-    [3] = {
-        PrintName = "Tactical", -- print name
-        DefaultAttName = "No Attachment", -- used to display the "no attachment" text
-        Slot = {"tactical","tac_pistol","tac"},
-        WMScale = Vector(111, 111, 111),
-        Bone = "dlt19_sight", -- relevant bone any attachments will be mostly referring to
-        Offset = {
-            vpos = Vector(1.5, 0.75, 12),
-            vang = Angle(90, 0, 30),
-            wpos = Vector(3200, 120, -1100),
-            wang = Angle(-15, 0, -90)
-        },
-    },
-    [4] = {
-        PrintName = "Muzzle", -- print name
-        DefaultAttName = "No Attachment", -- used to display the "no attachment" text
-        WMScale = Vector(111, 111, 111),
-        Slot = {"muzzle","dlt19_muzzle", "dc15a_muzzle", "cr2_muzzle", "cr2c_muzzle", "stealth_muzzle", "b1120_muzzle"},
-        Bone = "dlt19_sight", -- relevant bone any attachments will be mostly referring to
-        Offset = {
-            vpos = Vector(0.05, 1.15, 19.45),
-            vang = Angle(90, 0, -90),
-            wpos = Vector(3650, 0, -1210),
-            wang = Angle(-15, 0, -90)
-        },
-    },    
-    [5] = {
         PrintName = "Magazine", -- print name
         DefaultAttName = "No Attachment", -- used to display the "no attachment" text
         WMScale = Vector(111, 111, 111),
@@ -194,17 +143,17 @@ SWEP.Attachments = {
             wang = Angle(-15, 90, -90)
         },
     },         
-    [6] = {
+    [2] = {
         PrintName = "Energization", -- print name
         DefaultAttName = "Standard Energization", -- used to display the "no attachment" text
         Slot = "ammo_grenade_launcher",
     },
-    [7] = {
+    [3] = {
         PrintName = "Training/Perk", -- print name
         DefaultAttName = "None", -- used to display the "no attachment" text
         Slot = "perk",
     },
-    [8] = {
+    [4] = {
         PrintName = "Charms", -- print name
         DefaultAttName = "No Charm", -- used to display the "no attachment" text
         Slot = {"charm"},
@@ -216,31 +165,9 @@ SWEP.Attachments = {
             wpos = Vector(900, 70, -470),
             wang = Angle(-10 , 0, 180)
         },
-    },    
-    [9] = {
-        PrintName = "Killcounter", -- print name
-        DefaultAttName = "None", -- used to display the "no attachment" text
-        Slot = {"killcounter"},
-        WMScale = Vector(111, 111, 111),
-        Bone = "dlt19_sight", -- relevant bone any attachments will be mostly referring to
-        Offset = {
-            vpos = Vector(1, 2, 2),
-            vang = Angle(90, 0, -90),
-            wpos = Vector(675, 90, -400),
-            wang = Angle(-15 , 0, 180)
-        },
-    },   
-    [10] = {
-        PrintName = "Grip", -- print name
-        DefaultAttName = "None", -- used to display the "no attachment" text
-        Slot = "grip",
-    },    
-    [11] = {
-        PrintName = "Internal Modifications", -- print name
-        DefaultAttName = "None", -- used to display the "no attachment" text
-        Slot = "uc_fg",
-    },   
+    }
 }
+
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle"

@@ -2,16 +2,16 @@ AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
-SWEP.Category = "[ Atlas ] Shadow Weapons"
-SWEP.Credits = { Author1 = "cat"}
-SWEP.PrintName = "SE-14"
+SWEP.Category = "[ Atlas ] Custom Weapons"
+SWEP.Credits = { Author1 = "Yairme"}
+SWEP.PrintName = "Shadow SE-14"
 SWEP.Trivia_Class = "Imperial Blaster Pistol"
 SWEP.Trivia_Desc = "Imperial Blaster for CQB enviroments"
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Low Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
-SWEP.Trivia_Year = 2020
+SWEP.Trivia_Country = "Netherlands"
+SWEP.Trivia_Year = 2024
 
 SWEP.Slot = 1
 
@@ -33,7 +33,7 @@ SWEP.IconOverride = "materials/entities/rw_sw_se14r.png"
 SWEP.DefaultBodygroups = "000000000000"
 
 SWEP.Damage = 20
-SWEP.MeleeDamage = 2000000
+SWEP.MeleeDamage = 5
 SWEP.RangeMin = 130
 SWEP.DamageMin = 17
 SWEP.Range = 330
@@ -58,7 +58,7 @@ SWEP.RecoilPunch = 0.8
 SWEP.RecoilSide = 0.22
 SWEP.RecoilRise = 0.24
 
-SWEP.Delay = 60 / 560
+SWEP.Delay = 60 / 240
 SWEP.Num = 1
 SWEP.Firemodes = {
     {

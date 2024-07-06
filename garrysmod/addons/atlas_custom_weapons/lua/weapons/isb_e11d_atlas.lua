@@ -2,16 +2,16 @@ AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
-SWEP.Category = "[ ArcCW ] Imperial TFA Weapons"
-SWEP.Credits = { Author1 = "cat"}
-SWEP.PrintName = "E-11D"
+SWEP.Category = "[ Atlas ] Custom Weapons"
+SWEP.Credits = { Author1 = "Yairme"}
+SWEP.PrintName = "ISB E-11D"
 SWEP.Trivia_Class = "Imperial Blaster Carbine"
 SWEP.Trivia_Desc = "High tech compact Imperial E-11D Blaster Carbine, preffered for CQB enviroments and general allround usage."
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Medium Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
-SWEP.Trivia_Year = 2020
+SWEP.Trivia_Country = "Netherlands"
+SWEP.Trivia_Year = 2024
 
 SWEP.Slot = 3
 
@@ -245,7 +245,7 @@ SWEP.Attachments = {
     [6] = {
         PrintName = "Energization", -- print name
         DefaultAttName = "Standard Energization", -- used to display the "no attachment" text
-        Slot = "ammo",
+        Slot = {"ammo", "sw_ammo"},
     },
     [7] = {
         PrintName = "Training/Perk", -- print name

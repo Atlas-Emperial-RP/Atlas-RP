@@ -2,16 +2,16 @@ AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = false
-SWEP.Category = nil
-SWEP.Credits = { Author1 = "cat"}
+SWEP.Category = "[ Atlas ] DEV Custom Weapons [ DO NOT TOUCH!! ]"
+SWEP.Credits = { Author1 = "Yairme"}
 SWEP.PrintName = "IB-OWNER"
 SWEP.Trivia_Class = "Galactic Blaster Pistol"
 SWEP.Trivia_Desc = "A Blaster pistol for shooting enviroments"
 SWEP.Trivia_Manufacturer = "Forged Armory"
 SWEP.Trivia_Calibre = "Low Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
-SWEP.Trivia_Year = 2020
+SWEP.Trivia_Country = "Netherlands"
+SWEP.Trivia_Year = 2024
 
 SWEP.Slot = 1
 

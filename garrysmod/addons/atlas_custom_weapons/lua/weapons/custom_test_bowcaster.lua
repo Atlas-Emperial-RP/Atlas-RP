@@ -2,16 +2,16 @@ AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
-SWEP.Category = "[ Atlas ] Custom Weapons"
-SWEP.Credits = { Author1 = "cat"}
+SWEP.Category = "[ Atlas ] DEV Custom Weapons [ DO NOT TOUCH!! ]"
+SWEP.Credits = { Author1 = "Yairme"}
 SWEP.PrintName = "Test Bowcaster"
 SWEP.Trivia_Class = "Laser test Crossbow"
 SWEP.Trivia_Desc = "preffered for long-range combat and general allround usage."
 SWEP.Trivia_Manufacturer = "Forged Industries"
 SWEP.Trivia_Calibre = "Medium Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
-SWEP.Trivia_Year = 2020
+SWEP.Trivia_Country = "Netherlands"
+SWEP.Trivia_Year = 2024
 
 SWEP.Slot = 3
 

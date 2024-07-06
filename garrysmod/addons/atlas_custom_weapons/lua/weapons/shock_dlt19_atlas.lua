@@ -4,9 +4,9 @@ SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
 SWEP.Category = "[ Atlas ] Custom Weapons"
 SWEP.Credits = { Author1 = "Yairme"}
-SWEP.PrintName = "DT E-11D"
-SWEP.Trivia_Class = "Imperial Blaster Carbine"
-SWEP.Trivia_Desc = "High tech compact Imperial E-11D Blaster Carbine, preffered for CQB enviroments and general allround usage."
+SWEP.PrintName = "Shock DLT-19"
+SWEP.Trivia_Class = "Imperial Heavy Blaster Rifle"
+SWEP.Trivia_Desc = "High RPM DLT-19 Heavy Blaster Rifle"
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Medium Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
@@ -17,8 +17,8 @@ SWEP.Slot = 3
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/arccw/bf2017/c_e11.mdl"
-SWEP.WorldModel = "models/arccw/bf2017/w_e11.mdl"
+SWEP.ViewModel = "models/arccw/bf2017/c_dlt19.mdl"
+SWEP.WorldModel = "models/arccw/bf2017/w_dlt19.mdl"
 SWEP.ViewModelFOV = 70
 SWEP.HideViewmodel = true
 SWEP.WorldModelOffset = {
@@ -28,14 +28,14 @@ SWEP.WorldModelOffset = {
     scale = 0.009
 }
 
-SWEP.IconOverride = "materials/entities/rw_sw_e11d.png"
+SWEP.IconOverride = "materials/entities/rw_sw_dlt19.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 45
-SWEP.RangeMin = 175
-SWEP.DamageMin = 24
-SWEP.Range = 500
+SWEP.Damage = 35
+SWEP.RangeMin = 150
+SWEP.DamageMin = 19
+SWEP.Range = 450
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BULLET
 SWEP.MuzzleVelocity = 400
@@ -46,35 +46,34 @@ SWEP.PhysTracerProfile = 1
 
 SWEP.TracerNum = 1
 SWEP.Tracer = "tfa_tracer_red"
-SWEP.TracerCol = Color(0, 0, 255)
+SWEP.TracerCol = Color(255,0,0)
 SWEP.HullSize = 1.5
 
 SWEP.ChamberSize = 0
-SWEP.Primary.ClipSize = 25
+SWEP.Primary.ClipSize = 50
 
-SWEP.Recoil = 0.33
-SWEP.RecoilSide = 0.2
-SWEP.RecoilRise = 0.2
+SWEP.Recoil = 0.41
+SWEP.RecoilSide = 0.19
+SWEP.RecoilRise = 0.24
 
-SWEP.Delay = 60 / 220
+SWEP.Delay = 60 / 440
 SWEP.Num = 1
 SWEP.Firemodes = {
-	{
-		Mode = 1
-	},
     {
         Mode = 2
     },
     {
         Mode = 0
-    },        
+    },         
 }
 
 SWEP.AccuracyMOA = 0.75 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 800 -- inaccuracy added by hip firing.
+SWEP.HipDispersion = 400 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 50
 
-
+SWEP.Bipod_Integral = true -- Integral bipod (ie, weapon model has one)
+SWEP.BipodDispersion = 0.5 -- Bipod dispersion for Integral bipods
+SWEP.BipodRecoil = 0.3 -- Bipod recoil for Integral bipods
 ----AMMO / stuff----
 
 SWEP.Primary.Ammo = "ar2"
@@ -82,21 +81,22 @@ SWEP.Primary.Ammo = "ar2"
 SWEP.ShootVol = 100
 SWEP.ShootPitch = 100
 
-SWEP.ShootSound = "w/e11d.wav"
+SWEP.ShootSound = "w/dlt19.wav"
+SWEP.ShootSoundSilenced = "w/dc19.wav"
 
 SWEP.NoFlash = nil -- disable light flash
 SWEP.MuzzleEffect = "wpn_muzzleflash_dc17_red"
 SWEP.FastMuzzleEffect = nil
 SWEP.GMMuzzleEffect = false
 
-SWEP.MuzzleFlashColor = Color(255, 0, 0)
+SWEP.MuzzleFlashColor = Color(250, 0, 0)
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.24, -8, 3),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-3.14, -10, 0.4),
+    Ang = Angle(1, 0, 0),
      Magnification = 1,
-     SwitchToSound = "zoom_in/gunfoley_zoomin_blasterrifle_08.mp3",
-     ViewModelFOV = 65,
+     SwitchToSound = "zoom_in/gunfoley_zoomin_blasterheavy_01.mp3",
+     ViewModelFOV = 70,
 }
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
@@ -104,30 +104,30 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(2.3, -2, .5)
+SWEP.ActivePos = Vector(2, .8, -2)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.SprintPos = Vector(7, -10, 0)
-SWEP.SprintAng = Angle(-10, 40, 0)
+SWEP.SprintPos = Vector(3, 0, 0)
+SWEP.SprintAng = Angle(-10, 40, -40)
 
-SWEP.HolsterPos = Vector(4, -3, 2)
+SWEP.HolsterPos = Vector(0.2, -1, 1)
 SWEP.HolsterAng = Vector(-15, 30, -15)
 
-SWEP.CustomizePos = Vector(12.824, -8, -3.897)
-SWEP.CustomizeAng = Angle(10.149, 34.547, 0)
+SWEP.CustomizePos = Vector(20.824, -10, 3.897)
+SWEP.CustomizeAng = Angle(12.149, 50.547, 45)
 
-SWEP.DefaultElements = {"e11d", "muzzle"}
+SWEP.DefaultElements = {"dlt19", "muzzle"}
 
 SWEP.AttachmentElements = {
-    ["e11d"] = {
+    ["dlt19"] = {
         VMElements = {
             {
-                Model = "models/arccw/banks/sw_battlefront/weapons/e11d_blaster_carbine.mdl",
-                Bone = "v_e11_reference001",
-                Scale = Vector(1.3, 1.3, 1.3),
+                Model = "models/arccw/kuro/sw_battlefront/weapons/bf1/dlt19.mdl",
+                Bone = "v_dlt19_reference001",
+                Scale = Vector(1.2, 1.2, 1.2),
                 Offset = {
-                    pos = Vector(-1.3, 3, 0),
-                    ang = Angle(0, 0, 0)
+                    pos = Vector(0.5, -1, -4),
+                    ang = Angle(0,-90, 0)
                 }
             }
         },
@@ -136,10 +136,10 @@ SWEP.AttachmentElements = {
         VMElements = {
            {
                Model = "models/hunter/plates/plate.mdl",
-               Bone = "e11_sight",
+               Bone = "dlt19_sight",
                Scale = Vector(0, 0, 0),                
                Offset = {
-                   pos = Vector(-0.8, 2.5, 11),
+                   pos = Vector(-0.5, 4, 27 ),
                    ang = Angle(-90, 180, 0)
                },
                IsMuzzleDevice = true
@@ -147,12 +147,12 @@ SWEP.AttachmentElements = {
        },
         WMElements = {
             {
-                Model = "models/arccw/banks/sw_battlefront/weapons/e11d_blaster_carbine.mdl",
+                Model = "models/arccw/kuro/sw_battlefront/weapons/bf1/dlt19.mdl",
                 Bone = "ValveBiped.Bip01_R_Hand",
                 Scale = Vector(1.1, 1.1, 1.1),
                 Offset = {
-                    pos = Vector(800, 100, -200.5),
-                    ang = Angle(-15, -90, 180)
+                    pos = Vector(3.75, 2.5, 500.5),
+                    ang = Angle(-15, 0, 180)
                 }
             },
             {
@@ -160,16 +160,15 @@ SWEP.AttachmentElements = {
                 Bone = "ValveBiped.Bip01_R_Hand",
                 Scale = Vector(0, 0, 0),
                 Offset = {
-                    pos = Vector(2600, 0, -900),
+                    pos = Vector(4100, 0, -1200),
                     ang = Angle(-15, 0, 180)
                 },
                 IsMuzzleDevice = true
-            },            
+            },
         }, -- change the world model to something else. Please make sure it's compatible with the last one.
     }
 }
-
-WMOverride = "models/arccw/banks/sw_battlefront/weapons/e11d_blaster_carbine.mdl"
+WMOverride = "models/arccw/kuro/sw_battlefront/weapons/bf1/dlt19.mdl"
 --SWEP.Attachments 
 SWEP.Attachments = {
     [1] = {
@@ -177,11 +176,11 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights", -- used to display the "no attachment" text
         Slot = "optic",
         WMScale = Vector(111, 111, 111),
-        Bone = "e11_sight", -- relevant bone any attachments wwill be mostly referring to
+        Bone = "dlt19_sight", -- relevant bone any attachments wwill be mostly referring to
         Offset = {
-            vpos = Vector(-0.09, 0.7, -2),
+            vpos = Vector(0, -1, -0.5),
             vang = Angle(90, 0, -90),
-            wpos = Vector(400, 130, -400),
+            wpos = Vector(390, 0, -590),
             wang = Angle(-15, 0, 180)
         },
     },
@@ -190,78 +189,65 @@ SWEP.Attachments = {
         DefaultAttName = "No Attachment", -- used to display the "no attachment" text
         Slot = {"tactical","tac_pistol"},
         WMScale = Vector(111, 111, 111),
-        Bone = "e11_sight", -- relevant bone any attachments will be mostly referring to
+        Bone = "dlt19_sight", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.5, 1.5, 12),
-            vang = Angle(90, 0, 15),
-            wpos = Vector(1700, 200, -700),
+            vpos = Vector(1, 0.8, 24),
+            vang = Angle(90, 0, 0),
+            wpos = Vector(3200, 120, -1100),
             wang = Angle(-15, 0, -90)
         },
-    },    
+    },
     [3] = {
         PrintName = "Foregrip", -- print name
         DefaultAttName = "No Attachment", -- used to display the "no attachment" text
         Slot = "foregrip",
         WMScale = Vector(111, 111, 111),
-        Bone = "e11_sight", -- relevant bone any attachments wwill be mostly referring to
+        Bone = "dlt19_sight", -- relevant bone any attachments wwill be mostly referring to
         Offset = {
-            vpos = Vector(0, 3.3, 8),
+            vpos = Vector(0, 2, 7),
             vang = Angle(90, 0, -90),
             wang = Angle(170, 180, 0),
         },
         SlideAmount = {
-            vmin = Vector(-0.2, 2.5, 5),
-            vmax = Vector(-0.2, 2.5, 8),
-            wmin = Vector(1600, 120, -440), 
-            wmax = Vector(1600, 120, -440) -- how far this attachment can slide in both directions.
-        },
+        vmin = Vector(-0, 2, 2),
+        vmax = Vector(-0, 2, 7),
+        wmin = Vector(1400, 0, -550), 
+        wmax = Vector(1400, 0, -550) -- how far this attachment can slide in both directions.
+        },        
     },
     [4] = {
         PrintName = "Muzzle", -- print name
         DefaultAttName = "No Attachment", -- used to display the "no attachment" text
-        Slot = {},
-        NoWM = true,
-        Bone = "e11_sight", -- relevant bone any attachments will be mostly referring to
+        WMScale = Vector(111, 111, 111),
+        Slot = {"muzzle","dlt19_muzzle", "dc15a_muzzle", "cr2_muzzle", "cr2c_muzzle", "stealth_muzzle", "b1120_muzzle"},
+        Bone = "dlt19_sight", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0, 2, 14),
+            vpos = Vector(0.1, 1.1, 35),
             vang = Angle(90, 0, -90),
-            wpos = Vector(1920, 120, -720),
+            wpos = Vector(4120, 0, -1370),
             wang = Angle(-15, 0, -90)
         },
-    },
+    },           
     [5] = {
-        PrintName = "Magazine", -- print name
-        DefaultAttName = "No Attachment", -- used to display the "no attachment" text
-        Slot = {},
-        WMScale = Vector(111, 111, 111),
-        Bone = "e11_sight", -- relevant bone any attachments will be mostly referring to
-        Offset = {
-            vpos = Vector(0.3, 2.3, 4),
-            vang = Angle(0, 0, 0),
-            wpos = Vector(650, 10, -300),
-            wang = Angle(-15, 90, -90)
-        },
-    },     
-    [6] = {
         PrintName = "Energization", -- print name
         DefaultAttName = "Standard Energization", -- used to display the "no attachment" text
         Slot = "ammo",
     },
-    [7] = {
+    [6] = {
         PrintName = "Training/Perk", -- print name
         DefaultAttName = "None", -- used to display the "no attachment" text
         Slot = "perk",
     },
-    [8] = {
+    [7] = {
         PrintName = "Charms", -- print name
         DefaultAttName = "No Charm", -- used to display the "no attachment" text
         Slot = {"charm"},
         WMScale = Vector(111, 111, 111),
-        Bone = "e11_sight", -- relevant bone any attachments will be mostly referring to
+        Bone = "dlt19_sight", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.8, 2, 0),
+            vpos = Vector(1, 2, 8),
             vang = Angle(90, 0, -90),
-            wpos = Vector(400, 200, -300),
+            wpos = Vector(900, 70, -470),
             wang = Angle(-10 , 0, 180)
         },
     },          
@@ -276,9 +262,10 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
+        Mult = 1.3,
         SoundTable = {
             {
-                s = "draw/sw01_characters_gunfoley_draw_blaster_var14.mp3", -- sound; can be string or table
+                s = "draw/gunfoley_blaster_draw_var_04.mp3", -- sound; can be string or table
                 p = 100, -- pitch
                 v = 75, -- volume
                 t = 0, -- time at which to play relative to Animations.Time
@@ -300,18 +287,18 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload", 
-        Time = 3.35,
+        Mult = 1.2,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         SoundTable = {
-            {s = "ArcCW_dc15a.reload2", t = 1 / 30}, --s sound file
+            {s = "ArcCW_dc15a.reload2", t = 4 / 30}, --s sound file
         },
     },
 
 
 sound.Add({
-    name =          "ArcCW_dc15s.reload2",
+    name =          "ArcCW_dc15a.reload2",
     channel =       CHAN_ITEM,
     volume =        1.0,
-    sound =             "weapons/bf3/pistols.wav"
+    sound =             "weapons/bf3/heavy.wav"
     }),
 }

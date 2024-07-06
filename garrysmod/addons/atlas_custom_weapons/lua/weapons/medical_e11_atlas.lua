@@ -2,16 +2,16 @@ AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
-SWEP.Category = "[ Atlas ] Medical Weapons"
-SWEP.Credits = { Author1 = "cat"}
-SWEP.PrintName = "E-11"
+SWEP.Category = "[ Atlas ] Custom Weapons"
+SWEP.Credits = { Author1 = "Yairme"}
+SWEP.PrintName = "MED E-11"
 SWEP.Trivia_Class = "Imperial Light Blaster Carbine"
 SWEP.Trivia_Desc = "High tech compact Imperial E-11 Blaster Carbine, preffered for CQB enviroments and general allround usage."
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Medium Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
-SWEP.Trivia_Year = 2020
+SWEP.Trivia_Country = "Netherlands"
+SWEP.Trivia_Year = 2024
 
 SWEP.Slot = 3
 
@@ -32,14 +32,13 @@ SWEP.IconOverride = "materials/entities/rw_sw_e11_noscope.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 35
+SWEP.Damage = 25
 SWEP.RangeMin = 150
 SWEP.DamageMin = 24
 SWEP.Range = 450
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BULLET
 SWEP.MuzzleVelocity = 400
-
 
 SWEP.TraceNum = 1
 SWEP.PhysTracerProfile = 1

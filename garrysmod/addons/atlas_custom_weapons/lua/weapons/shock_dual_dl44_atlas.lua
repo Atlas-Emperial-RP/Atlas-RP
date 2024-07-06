@@ -4,10 +4,10 @@ SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
 SWEP.Category = "[ Atlas ] Custom Weapons"
 SWEP.Credits = { Author1 = "Yairme"}
-SWEP.PrintName = "ISB Dual RK-3"
-SWEP.Trivia_Class = "Imperial Dual Blaster Pistol"
-SWEP.Trivia_Desc = "Dual RK-3 Blaster pistol, preffered for CQB enviroments."
-SWEP.Trivia_Manufacturer = "BlasTech Industries"
+SWEP.PrintName = "Shock Dual DL-44"
+SWEP.Trivia_Class = "Dual Blaster Pistol"
+SWEP.Trivia_Desc = "Dual Blaster pistols for shooting enviroments"
+SWEP.Trivia_Manufacturer = "Drearian Defense Conglomerate"
 SWEP.Trivia_Calibre = "Low Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
 SWEP.Trivia_Country = "Netherlands"
@@ -18,7 +18,7 @@ SWEP.Slot = 1
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/arccw/strasser/weapons/c_ddeagle.mdl"
-SWEP.WorldModel = "models/arccw/bf2017/w_scoutblaster.mdl"
+SWEP.WorldModel = "models/arccw/weapons/synbf3/w_scoutblaster.mdl"
 SWEP.ViewModelFOV = 90
 SWEP.HideViewmodel = true
 SWEP.WorldModelOffset = {
@@ -28,14 +28,14 @@ SWEP.WorldModelOffset = {
     scale = 0.09
 }
 
-SWEP.IconOverride = "materials/entities/rw_sw_dual_rk3.png"
+SWEP.IconOverride = "materials/entities/rw_sw_dual_dl44.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
 SWEP.Damage = 30
-SWEP.RangeMin = 90
+SWEP.RangeMin = 100
 SWEP.DamageMin = 17
-SWEP.Range = 210
+SWEP.Range = 330
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BULLET
 SWEP.MuzzleVelocity = 400
@@ -45,19 +45,19 @@ SWEP.TraceNum = 1
 SWEP.PhysTracerProfile = 1
 
 SWEP.TracerNum = 1
-SWEP.Tracer = "tfa_tracer_red"
-SWEP.TracerCol = Color(250, 0, 0)
+SWEP.Tracer = "tfa_tracer_yellow"
+SWEP.TracerCol = Color(255, 165, 18)
 SWEP.HullSize = 1.5
 
 SWEP.ChamberSize = 0
-SWEP.Primary.ClipSize = 40
+SWEP.Primary.ClipSize = 32
 
-SWEP.Recoil = 0.44
-SWEP.RecoilPunch = 0.4
-SWEP.RecoilSide = 0.14
-SWEP.RecoilRise = 0.22
+SWEP.Recoil = 0.7
+SWEP.RecoilPunch = 0.6
+SWEP.RecoilSide = 0.25
+SWEP.RecoilRise = 0.31
 
-SWEP.Delay = 60 / 300
+SWEP.Delay = 60 / 330
 SWEP.Num = 1
 SWEP.Firemodes = {
 	{
@@ -65,7 +65,7 @@ SWEP.Firemodes = {
 	},
     {
         Mode = 0
-    },    
+    },
 }
 
 SWEP.AccuracyMOA = 0.56 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
@@ -80,9 +80,9 @@ SWEP.Primary.Ammo = "ar2"
 SWEP.ShootVol = 100
 SWEP.ShootPitch = 100
 
-SWEP.ShootSound = "w/rk3.wav"
+SWEP.ShootSound = "w/dl44.wav"
 
-SWEP.MuzzleFlashColor = Color(255, 0, 0, 50)
+SWEP.MuzzleFlashColor = Color(255, 165, 18, 50)
 
 SWEP.IronSightStruct = {
     Pos = Vector(0, -4, 1),
@@ -91,7 +91,6 @@ SWEP.IronSightStruct = {
      SwitchToSound = "",
      ViewModelFOV = 90,
 }
-
 SWEP.HoldtypeHolstered = ""
 SWEP.HoldtypeActive = "duel"
 SWEP.HoldtypeSights = ""
@@ -120,74 +119,64 @@ SWEP.DrawCrosshair = true
 SWEP.BarrelLength = 60
 SWEP.BarrelOffsetSighted = Vector(0, 0, 0)
 SWEP.BarrelOffsetHip = Vector(3, 0, -3)
-SWEP.DefaultElements = {"rk3", "rk3+"}
+SWEP.DefaultElements = {"dl44", "dl44+"}
 
 SWEP.AttachmentElements = {
-    ["rk3"] = {
+    ["dl44"] = {
         VMElements = {
             {
-                Model = "models/arccw/markus/fo_rk3_blaster_pistol/fo_rk3_blaster_pistol.mdl",
+                Model = "models/arccw/sw_battlefront/weapons/dl44_pistol_ext.mdl",
                 Bone = "LeftHand_1stP",
                 Scale = Vector(1.1, 1.1, 1.1),
                 Offset = {
-                    pos = Vector(3.5, 2.2, -1.2),
-                    ang = Angle(-98, -2, 90)
+                    pos = Vector(3, 2, -0.7),
+                    ang = Angle(85, -2, 90)
                 }
             }
         },
     },
-    ["rk3+"] = {
+    ["dl44+"] = {
          VMElements = {
             {
-                Model = "models/arccw/markus/fo_rk3_blaster_pistol/fo_rk3_blaster_pistol.mdl",
+                Model = "models/arccw/sw_battlefront/weapons/dl44_pistol_ext.mdl",
                 Bone = "RightHand_1stP",
                 Scale = Vector(1.1, 1.1, 1.1),                
                 Offset = {
                     pos = Vector(-3.5, -2.2, 1.2),
-                    ang = Angle(90, 178, 90)
+                    ang = Angle(90, -2, -90)
                 }
             }
         }, 
         WMElements = {
             {
-                Model = "models/arccw/markus/fo_rk3_blaster_pistol/fo_rk3_blaster_pistol.mdl",
+                Model = "models/arccw/sw_battlefront/weapons/dl44_pistol_ext.mdl",
                 Bone = "ValveBiped.Bip01_R_Hand",
                 Scale = Vector(1.1, 1.1, 1.1),
                 Offset = {
-                    pos = Vector(30.5, 10, -15.75),
-                    ang = Angle(180, 90, 2)
+                    pos = Vector(30, 15, -10),
+                    ang = Angle(180, -90, 2)
                 }
             },
             {
-                Model = "models/arccw/markus/fo_rk3_blaster_pistol/fo_rk3_blaster_pistol.mdl",
+                Model = "models/arccw/sw_battlefront/weapons/dl44_pistol_ext.mdl",
                 Bone = "ValveBiped.Bip01_L_Hand",
                 Scale = Vector(1.1, 1.1, 1.1),
                 Offset = {
-                    pos = Vector(-55, 230, -60),
-                    ang = Angle(180, 90, 2)
+                    pos = Vector(-50, 230, -55),
+                    ang = Angle(180, -90, 2)
                 }
             },
         },            -- change the world model to something else. Please make sure it's compatible with the last one.
     }
 }
-WMOverride = "models/arccw/markus/fo_rk3_blaster_pistol/fo_rk3_blaster_pistol.mdl"
+WMOverride = "models/arccw/sw_battlefront/weapons/dl44_pistol_ext.mdl"
 
 --SWEP.Attachments 
 SWEP.Attachments = {
     [1] = {
-        PrintName = "Tactical", -- print name
-        DefaultAttName = "No Attachment", -- used to display the "no attachment" text
-        Slot = {"tactical","tac_pistol"},
-        Bone = "RightHand_1stP", -- relevant bone any attachments will be mostly referring to
-        Offset = {
-            vpos = Vector(-12, -4, 2.5),
-            vang = Angle(170, 0, 0),
-        },
-    },    
-    [2] = {
         PrintName = "Energization", -- print name
         DefaultAttName = "Standard Energization", -- used to display the "no attachment" text
-        Slot = {"ammo", "sw_ammo"},
+        Slot = "ammo",
     }
 }
 

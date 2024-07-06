@@ -24,8 +24,8 @@ TEAM_RECRUIT = DarkRP.createJob("Recruit", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "recruit_dc17_training_atlas",
-        "recruit_dc15s_training_atlas"
+        "arccw_dc17_training_v2",
+        "arccw_dc15s_training_v2"
     },
     command = "recruit",
     max = 0,
@@ -472,13 +472,14 @@ TEAM_SHOCKTROOPER = DarkRP.createJob("Shock Trooper Enlisted", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dlt19",
+        "shock_dlt19_atlas",
+        "shock_dl44_atlas",
+        "shock_rk3_atlas",
+
+        "weapon_r_handcuffs",
         "arrest_stick",
-        "stunstick",
         "unarrest_stick",
-        "rw_sw_stun_e11",
-        "rw_sw_se14r",
-        "weapon_cuff_elastic"
+
     },
     command = "shocktrooper",
     max = 0,
@@ -503,14 +504,14 @@ TEAM_SHOCKSGT = DarkRP.createJob("Shock Trooper Sergeant", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dlt19",
+        "shock_dlt19_atlas",
+        "shock_dl44_atlas",
+        "shock_rk3_atlas",
+
+        "weapon_r_handcuffs",
         "arrest_stick",
-        "stunstick",
         "unarrest_stick",
-        "rw_sw_stun_e11",
-        "rw_sw_se14r",
-        "rw_sw_shield_imp_rk3",
-        "weapon_cuff_elastic"
+        "arrcw_shock_grenade",
     },
     command = "shocksergeant",
     max = 0,
@@ -535,16 +536,14 @@ TEAM_SHOCKOFFICER = DarkRP.createJob("Shock Trooper Officer", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dlt19",
+        "shock_dlt19_atlas",
+        "shock_dl44_atlas",
+        "shock_rk3_atlas",
+
+        "weapon_r_handcuffs",
         "arrest_stick",
-        "stunstick",
         "unarrest_stick",
-        "rw_sw_stun_e11",
-        "rw_sw_se14r",
-        "rw_sw_shield_imp_rk3",
-        "rw_sw_nade_stun",
-        "rw_sw_e11t",
-        "weapon_cuff_elastic"
+        "arrcw_shock_grenade",
     },
     command = "shockofficer",
     max = 0,
@@ -569,18 +568,14 @@ TEAM_SHOCKCOMMAND = DarkRP.createJob("Shock Trooper Command", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dlt19",
+        "shock_dlt19_atlas",
+        "shock_dual_dl44_atlas",
+        "shock_rk3_atlas",
+
+        "weapon_r_handcuffs",
         "arrest_stick",
-        "stunstick",
         "unarrest_stick",
-        "rw_sw_stun_e11",
-        "rw_sw_se14r",
-        "rw_sw_shield_imp_rk3",
-        "rw_sw_nade_stun",
-        "rw_sw_e11t",
-        "rw_sw_shield_imp",
-        "rw_sw_nade_thermal",
-        "weapon_cuff_elastic"
+        "arrcw_shock_grenade",
     },
     command = "shockcommand",
     max = 0,
@@ -605,18 +600,14 @@ TEAM_SHOCKCOMMANDER = DarkRP.createJob("Shock Trooper Commander", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_dlt19",
+        "shock_commander_dlt19_atlas",
+        "shock_dual_dl44_atlas",
+        "shock_rk3_atlas",
+
+        "weapon_r_handcuffs",
         "arrest_stick",
-        "stunstick",
         "unarrest_stick",
-        "rw_sw_stun_e11",
-        "rw_sw_se14r",
-        "rw_sw_shield_imp_rk3",
-        "rw_sw_nade_stun",
-        "rw_sw_e11t",
-        "rw_sw_shield_imp",
-        "rw_sw_nade_thermal",
-        "weapon_cuff_elastic"
+        "arrcw_shock_grenade",
     },
     command = "shockcommander",
     max = 0,
@@ -642,10 +633,12 @@ TEAM_MEDICALENLISTED = DarkRP.createJob("Medical Trooper Enlisted", {
         Medical Trooper
     ]],
     weapons = {
-        "weapon_empty_hands",
         "weapon_bactainjector",
 
-        "arccw_e11",
+        "medical_e11_atlas",
+        "medical_rk3_atlas",
+
+        "weapon_empty_hands",
     },
     command = "medtrooper",
     max = 0,
@@ -1035,7 +1028,8 @@ TEAM_INQUSITORJUNIOR = DarkRP.createJob("Junior Inquisitor", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "weapon_lscs"
+        "weapon_lscs",
+        "inq_ec17_atlas"
     },
     command = "jrinquisitor",
     max = 0,
@@ -1075,7 +1069,8 @@ TEAM_INQUSITOR = DarkRP.createJob("Inquisitor", {
     weapons = {
         "weapon_empty_hands",
         "weapon_lscs", 
-        "weapon_r_handcuffs"
+        "weapon_r_handcuffs",
+        "inq_ec17_atlas"
     },
     command = "inquisitor",
     max = 0,
@@ -1115,7 +1110,8 @@ TEAM_INQUSITORSENIOR = DarkRP.createJob("Senior Inquisitor", {
     weapons = {
         "weapon_empty_hands",
         "weapon_lscs", 
-        "weapon_r_handcuffs"
+        "weapon_r_handcuffs",
+        "inq_ec17_atlas"
     },
     command = "srinquisitor",
     max = 0,
@@ -1141,7 +1137,8 @@ TEAM_INQUSITORSECOND = DarkRP.createJob("Second Sister", {
     weapons = {
         "weapon_empty_hands",
         "weapon_lscs", 
-        "weapon_r_handcuffs"
+        "weapon_r_handcuffs",
+        "inq_ec17_atlas"
     },
     command = "secondsister",
     max = 0,
@@ -1168,7 +1165,8 @@ TEAM_INQUSITORGRAND = DarkRP.createJob("Grand Inquisitor", {
     weapons = {
         "weapon_empty_hands",
         "weapon_lscs", 
-        "weapon_r_handcuffs"
+        "weapon_r_handcuffs",
+        "inq_ec17_atlas"
     },
     command = "grandinquisitor",
     max = 0,
@@ -1197,10 +1195,7 @@ TEAM_INQUISITORROYAL = DarkRP.createJob("Royal Guard", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_royal_staff",
-        "rw_sw_shield_rebel_dh17",
-        "rw_sw_dh17",
-        "rw_sw_tl40"
+
     },
     command = "royalguard",
     max = 0,
@@ -1227,6 +1222,7 @@ TEAM_INQUSITORDARTH = DarkRP.createJob("Darth Vader", {
     weapons = {
         "weapon_empty_hands",
         "weapon_lscs", 
+        "inq_ec17_atlas",
         "weapon_r_handcuffs"
     },
     command = "darthvader",
@@ -1255,6 +1251,7 @@ TEAM_INQUSITOREMPEROR = DarkRP.createJob("The Emperor", {
         "weapon_empty_hands",
         "weapon_lscs", 
         "weapon_r_handcuffs",
+        "inq_ec17_atlas",
         "custom_ib_OWNER"
     },
     command = "theemperor",
@@ -1604,7 +1601,37 @@ TEAM_NOVACOMMANDER = DarkRP.createJob("Nova Trooper Commander", {
 })
 
 -- Death Trooper
-TEAM_DEATHTROOPER = DarkRP.createJob("Death Trooper Enlisted", {
+TEAM_DEATHTROOPERTRA = DarkRP.createJob("Death Trooper Trainee", {
+    color = Color(8, 99, 26),
+    model = "models/nada/DeathTrooperScaled.mdl",
+    description = [[
+        DeathTrooper
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "dt_e11d_atlas",
+        "dt_dc17_atlas",
+
+        "dt_encrypter",
+        "dt_decrypter",
+
+    },
+    command = "deathtroopertra",
+    max = 0,
+    salary = 250,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Death Trooper",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(350)
+        ply:SetMaxHealth(350)
+        ply:SetArmor(25)
+        ply:SetMaxArmor(25)
+    end,
+})
+TEAM_DEATHTROOPEREN = DarkRP.createJob("Death Trooper Enlisted", {
     color = Color(8, 99, 26),
     model = "models/nada/DeathTrooperScaled.mdl",
     description = [[
@@ -1619,7 +1646,6 @@ TEAM_DEATHTROOPER = DarkRP.createJob("Death Trooper Enlisted", {
         "dt_encrypter",
         "dt_decrypter",
 
-        "weapon_r_handcuffs",
     },
     command = "deathtrooper",
     max = 0,
@@ -1647,10 +1673,11 @@ TEAM_DEATHTROOPERSGT = DarkRP.createJob("Death Trooper Sergeant", {
         "dt_e11d_atlas",
         "dt_se14_atlas",
         "dt_dc17_atlas",
-        "weapon_r_handcuffs",
 
         "dt_encrypter",
         "dt_decrypter",
+
+        "weapon_r_handcuffs",
 
         "arccw_thermal_grenade",
         
@@ -1684,10 +1711,11 @@ TEAM_DEATHTROOPEROFFICER = DarkRP.createJob("Death Trooper Officer", {
         "dt_dc17_atlas",
         "dt_dlt19_atlas",
         "dt_dlt19x_atlas",
-        "weapon_r_handcuffs",
 
         "dt_encrypter",
         "dt_decrypter",
+
+        "weapon_r_handcuffs",
 
         "arccw_thermal_grenade",
     },
@@ -2310,6 +2338,7 @@ TEAM_SHADOWSGT = DarkRP.createJob("Shadow Trooper Sergeant", {
         "weapon_empty_hands",
         "cloaking-infinite",
         "arccw_smoke_grenade",
+
         "shadow_t21_atlas",
         "shadow_se14_atlas",
     },
@@ -2338,10 +2367,9 @@ TEAM_SHADOWOFFICER = DarkRP.createJob("Shadow Trooper Officer", {
         "weapon_empty_hands",
         "cloaking-infinite",
         "arccw_smoke_grenade",
+
         "shadow_t21_atlas",
         "shadow_se14_atlas",
-
-        "shadow_e11_atlas",
     },
     command = "shadowofficer",
     max = 0,
@@ -2368,10 +2396,10 @@ TEAM_SHADOWCOMMAND = DarkRP.createJob("Shadow Trooper Command", {
         "weapon_empty_hands",
         "cloaking-infinite",
         "arccw_smoke_grenade",
-        "shadow_t21_atlas",
-        "shadow_se14_atlas",
 
-        "shadow_e11s_atlas",
+        "shadow_t21_atlas",
+        "shadow_dual_se14_atlas",
+
         "shadow_dlt19x_atlas",
     },
     command = "shadowcommand",
@@ -2399,10 +2427,10 @@ TEAM_SHADOWCOMMANDER = DarkRP.createJob("Shadow Trooper Commander", {
         "weapon_empty_hands",
         "cloaking-infinite",
         "arccw_smoke_grenade",
-        "shadow_t21_atlas",
-        "shadow_se14_atlas",
 
-        "shadow_e11s_atlas",
+        "shadow_t21_atlas",
+        "shadow_dual_se14_atlas",
+
         "shadow_dlt19x_atlas",
     },
     command = "shadowcommander",
@@ -2489,6 +2517,7 @@ TEAM_DEV = DarkRP.createJob("Dev on Duty", {
         "custom_ib_OWNER",
         "custom_test_bowcaster",
         "custom_grenade_launcher",
+        "shadow_dual_se14_atlas",
     },
     command = "dev",
     max = 9000,
@@ -2510,15 +2539,6 @@ Define which team joining players spawn into and what team you change to if demo
 ---------------------------------------------------------------------------]]
 GAMEMODE.DefaultTeam = TEAM_RECRUIT
 --[[---------------------------------------------------------------------------
-Define which teams belong to civil protection
-Civil protection can set warrants, make people wanted and do some other police related things
----------------------------------------------------------------------------]]
-GAMEMODE.CivilProtection = {
-    [TEAM_POLICE] = true,
-    [TEAM_CHIEF] = true,
-    [TEAM_MAYOR] = true,
-}
---[[---------------------------------------------------------------------------
 Jobs that are hitmen (enables the hitman menu)
 ---------------------------------------------------------------------------]]
-DarkRP.addHitmanTeam(TEAM_MOB)
+--[[ DarkRP.addHitmanTeam() ]]

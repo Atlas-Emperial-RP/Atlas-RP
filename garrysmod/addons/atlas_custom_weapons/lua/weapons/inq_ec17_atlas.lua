@@ -1,16 +1,16 @@
 AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
-SWEP.Spawnable = false
-SWEP.Category = "[ Atlas ] DEV Custom Weapons [ DO NOT TOUCH!! ]"
+SWEP.Spawnable = true
+SWEP.Category = "[ Atlas ] Custom Weapons"
 SWEP.Credits = { Author1 = "Yairme"}
-SWEP.PrintName = "LL-DEV"
-SWEP.Trivia_Class = "Galactic Blaster Pistol"
-SWEP.Trivia_Desc = "A Blaster pistol for shooting enviroments"
-SWEP.Trivia_Manufacturer = "Forged Armory"
+SWEP.PrintName = "INQ EC-17"
+SWEP.Trivia_Class = "Imperial Scout Blaster Pistol"
+SWEP.Trivia_Desc = "Imperial Scout Blaster for CQB enviroments"
+SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Low Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
+SWEP.Trivia_Country = "Netherlands"
 SWEP.Trivia_Year = 2024
 
 SWEP.Slot = 1
@@ -28,17 +28,17 @@ SWEP.WorldModelOffset = {
     scale = 0.09
 }
 
-SWEP.IconOverride = "materials/entities/rw_sw_ll30.png"
+SWEP.IconOverride = "materials/entities/rw_sw_scoutblaster.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 999999
-SWEP.RangeMin = 999999
-SWEP.DamageMin = 999999
-SWEP.Range = 999999
-SWEP.Penetration = 999999
+SWEP.Damage = 30
+SWEP.RangeMin = 65
+SWEP.DamageMin = 17
+SWEP.Range = 310
+SWEP.Penetration = 1
 SWEP.DamageType = DMG_BULLET
-SWEP.MuzzleVelocity = 999999
+SWEP.MuzzleVelocity = 400
 
 
 SWEP.TraceNum = 1
@@ -50,30 +50,33 @@ SWEP.TracerCol = Color(250, 0, 0)
 SWEP.HullSize = 1.5
 
 SWEP.ChamberSize = 0
-SWEP.Primary.ClipSize = 99999999
+SWEP.Primary.ClipSize = 12
 
-SWEP.Recoil = 0
-SWEP.RecoilPunch = 0
-SWEP.RecoilSide = 0
-SWEP.RecoilRise = 0
+SWEP.Recoil = 0.4
+SWEP.RecoilPunch = 0.4
+SWEP.RecoilSide = 0.22
+SWEP.RecoilRise = 0.19
 
-SWEP.Delay = 60 / 145
+SWEP.Delay = 60 / 200
 SWEP.Num = 1
 SWEP.Firemodes = {
 	{
-		Mode = 2
-	}
+		Mode = 1
+	},
+    {
+        Mode = 0
+    },
 }
 
-SWEP.AccuracyMOA = 0 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 0 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 0
+SWEP.AccuracyMOA = 0.49 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 410 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 50
 
 SWEP.NoFlash = nil -- disable light flash
 SWEP.MuzzleEffect = nil
 SWEP.FastMuzzleEffect = nil
 SWEP.GMMuzzleEffect = false --
-SWEP.MuzzleFlashColor = Color(250, 0, 0)
+SWEP.MuzzleFlashColor = Color(255, 0, 0)
 
 
 ----AMMO / stuff----
@@ -83,9 +86,11 @@ SWEP.Primary.Ammo = "ar2"
 SWEP.ShootVol = 100
 SWEP.ShootPitch = 100
 
-SWEP.ShootSound = "w/ll30.wav"
+SWEP.ShootSound = "w/scout.wav"
+SWEP.ShootSoundSilenced = "w/dc19.wav"
+
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.66, -8, 2.4),
+    Pos = Vector(-4, -8, 2.3),
     Ang = Angle(0, 0, 0),
      Magnification = 1,
      SwitchToSound = "",
@@ -109,35 +114,36 @@ SWEP.HolsterAng = Vector(-15, 0, 0)
 SWEP.CustomizePos = Vector(20.824, -16, 4.897)
 SWEP.CustomizeAng = Angle(12.149, 50.547, 45)
 
-SWEP.DefaultElements = {"ll30"}
+
+SWEP.DefaultElements = {"ec17"}
 
 SWEP.AttachmentElements = {
-    ["ll30"] = {
+    ["ec17"] = {
         VMElements = {
             {
-                Model = "models/arccw/weapons/ll30.mdl",
+                Model = "models/arccw/kuro/sw_battlefront/weapons/bf1/scouttrooper_pistol.mdl",
                 Bone = "v_scoutblaster_reference001",
-                Scale = Vector(1.05, 1.05, 1.05),
+                Scale = Vector(1.1, 1.1, 1.1),
                 Offset = {
-                    pos = Vector(-0.25, 0.5, -2.1),
-                    ang = Angle(0, 180, 0)
+                    pos = Vector(0, -0.2, -2.5),
+                    ang = Angle(0, 90, 0)
                 }
             }
         },
         WMElements = {
             {
-                Model = "models/arccw/weapons/ll30.mdl",
+                Model = "models/arccw/kuro/sw_battlefront/weapons/bf1/scouttrooper_pistol.mdl",
                 Bone = "ValveBiped.Bip01_R_Hand",
-                Scale = Vector(1, 1, 1),
+                Scale = Vector(1.2, 1.2, 1.2),
                 Offset = {
-                    pos = Vector(40, 20, 0.3),
-                    ang = Angle(-15, -90, 180)
+                    pos = Vector(50, 20, 10),
+                    ang = Angle(-15, 0, 180)
                 }
             }
         },
     },
 }
-WMOverride = "models/arccw/weapons/ll30.mdl" -- change the world model to something else. Please make sure it's compatible with the last one.
+WMOverride = "models/arccw/kuro/sw_battlefront/weapons/bf1/scouttrooper_pistol.mdl" -- change the world model to something else. Please make sure it's compatible with the last one.
 
 --SWEP.Attachments 
 SWEP.Attachments = {
@@ -145,47 +151,45 @@ SWEP.Attachments = {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights", -- used to display the "no attachment" text
         Slot = "swoptic_module",
-        VMScale = Vector(1, 1, 1),
-        WMScale = Vector(9, 9, 9),
+        WMScale = Vector(11, 11, 11),
         Bone = "v_scoutblaster_reference001", -- relevant bone any attachments wwill be mostly referring to
         Offset = {
-            vpos = Vector(-0.3, -2.2, 2.4),
+            vpos = Vector(0, -2, 2),
             vang = Angle(0, 180, 0),
-            wpos = Vector(70, 20, -50),
+            wpos = Vector(50, 20, -50),
             wang = Angle(-15, 90, 180)
         },
     },
     [2] = {
         PrintName = "Tactical", -- print name
-        DefaultAttName = "No Attachment",
-        VMScale = Vector(0.8, 0.8, 0.8),
-        WMScale = Vector(9, 9, 9), -- used to display the "no attachment" text
+        DefaultAttName = "No Attachment", -- used to display the "no attachment" text
         Slot = {"tactical","tac_pistol"},
+        WMScale = Vector(11, 11, 11),
         Bone = "v_scoutblaster_reference001", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(-0.3, -13, 1),
+            vpos = Vector(0, -4, 1),
             vang = Angle(0, 90, 0),
-            wpos = Vector(130, 20, -56),
+            wpos = Vector(80 , 20, -40),
             wang = Angle(-15, 0, 180)
         },
-    },    
+    },
     [3] = {
         PrintName = "Muzzle", -- print name
         DefaultAttName = "No Attachment", -- used to display the "no attachment" text
-        WMScale = Vector(10, 10, 10),
         Slot = {"muzzle", "cr2_muzzle", "cr2c_muzzle", "stealth_muzzle"},
+        WMScale = Vector(11, 11, 11),
         Bone = "scoutblaster_sight", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.25, 0.4, 18),
+            vpos = Vector(-.1, 0.6, 5.6),
             vang = Angle(90, 0, -90),
-            wpos = Vector(213, 20, -87),
+            wpos = Vector(90 , 20, -52),
             wang = Angle(-15, 0, 180)
         },
     },        
     [4] = {
         PrintName = "Energization", -- print name
         DefaultAttName = "Standard Energization", -- used to display the "no attachment" text
-        Slot = {"ammo","sw_ammo", "ammo_rocket"} 
+        Slot = "ammo",
     },
     [5] = {
         PrintName = "Training/Perk", -- print name
@@ -196,12 +200,12 @@ SWEP.Attachments = {
         PrintName = "Charms", -- print name
         DefaultAttName = "No Charm", -- used to display the "no attachment" text
         Slot = {"charm"},
-        WMScale = Vector(8, 8, 8),
+        WMScale = Vector(11, 11, 11),
         Bone = "scoutblaster_sight", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.8, 0.4, 4),
+            vpos = Vector(1, 0.7, 2),
             vang = Angle(90, 0, -90),
-            wpos = Vector(60, 22, -50),
+            wpos = Vector(70, 25, -40),
             wang = Angle(-10, 0, 180)
         },
     },          
@@ -241,10 +245,10 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL, 
  --       Time = 3.35,
         SoundTable = {
-            {s = "ArcCW_dc17.reload2", t = 1 / 30}, --s sound file
+            {s = "ArcCW_dc17.reload2", t = 4 / 30}, --s sound file
         },
     },
 

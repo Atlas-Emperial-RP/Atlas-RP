@@ -1,16 +1,16 @@
 AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
-SWEP.Spawnable = false
-SWEP.Category = "[ Atlas ] DEV Custom Weapons [ DO NOT TOUCH!! ]"
+SWEP.Spawnable = true
+SWEP.Category = "[ Atlas ] Custom Weapons"
 SWEP.Credits = { Author1 = "Yairme"}
-SWEP.PrintName = "LL-DEV"
+SWEP.PrintName = "Shock DL-44"
 SWEP.Trivia_Class = "Galactic Blaster Pistol"
 SWEP.Trivia_Desc = "A Blaster pistol for shooting enviroments"
 SWEP.Trivia_Manufacturer = "Forged Armory"
 SWEP.Trivia_Calibre = "Low Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "GAR"
+SWEP.Trivia_Country = "Netherlands"
 SWEP.Trivia_Year = 2024
 
 SWEP.Slot = 1
@@ -28,17 +28,17 @@ SWEP.WorldModelOffset = {
     scale = 0.09
 }
 
-SWEP.IconOverride = "materials/entities/rw_sw_ll30.png"
+SWEP.IconOverride = "materials/entities/rw_sw_dl44.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 999999
-SWEP.RangeMin = 999999
-SWEP.DamageMin = 999999
-SWEP.Range = 999999
-SWEP.Penetration = 999999
+SWEP.Damage = 30
+SWEP.RangeMin = 85
+SWEP.DamageMin = 14
+SWEP.Range = 312
+SWEP.Penetration = 1
 SWEP.DamageType = DMG_BULLET
-SWEP.MuzzleVelocity = 999999
+SWEP.MuzzleVelocity = 400
 
 
 SWEP.TraceNum = 1
@@ -46,28 +46,31 @@ SWEP.PhysTracerProfile = 1
 
 SWEP.TracerNum = 1
 SWEP.Tracer = "tfa_tracer_red"
-SWEP.TracerCol = Color(250, 0, 0)
+SWEP.TracerCol = Color(255, 0, 0)
 SWEP.HullSize = 1.5
 
 SWEP.ChamberSize = 0
-SWEP.Primary.ClipSize = 99999999
+SWEP.Primary.ClipSize = 16
 
-SWEP.Recoil = 0
-SWEP.RecoilPunch = 0
-SWEP.RecoilSide = 0
-SWEP.RecoilRise = 0
+SWEP.Recoil = 0.34
+SWEP.RecoilPunch = 0.4
+SWEP.RecoilSide = 0.2
+SWEP.RecoilRise = 0.17
 
-SWEP.Delay = 60 / 145
+SWEP.Delay = 60 / 300
 SWEP.Num = 1
 SWEP.Firemodes = {
 	{
-		Mode = 2
-	}
+		Mode = 1
+	},
+    {
+        Mode = 0
+    },    
 }
 
-SWEP.AccuracyMOA = 0 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 0 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 0
+SWEP.AccuracyMOA = 0.22 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 530 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 50
 
 SWEP.NoFlash = nil -- disable light flash
 SWEP.MuzzleEffect = nil
@@ -83,12 +86,12 @@ SWEP.Primary.Ammo = "ar2"
 SWEP.ShootVol = 100
 SWEP.ShootPitch = 100
 
-SWEP.ShootSound = "w/ll30.wav"
+SWEP.ShootSound = "w/dl44.wav"
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.66, -8, 2.4),
+    Pos = Vector(-3.94, -8, 1.85),
     Ang = Angle(0, 0, 0),
      Magnification = 1,
-     SwitchToSound = "",
+     SwitchToSound = "zoom_in/gunfoley_zoomin_blasterpistol_04.mp3",
      ViewModelFOV = 60,
 }
 SWEP.HoldtypeHolstered = "normal"
@@ -109,35 +112,35 @@ SWEP.HolsterAng = Vector(-15, 0, 0)
 SWEP.CustomizePos = Vector(20.824, -16, 4.897)
 SWEP.CustomizeAng = Angle(12.149, 50.547, 45)
 
-SWEP.DefaultElements = {"ll30"}
+SWEP.DefaultElements = {"dl44"}
 
 SWEP.AttachmentElements = {
-    ["ll30"] = {
+    ["dl44"] = {
         VMElements = {
             {
-                Model = "models/arccw/weapons/ll30.mdl",
+                Model = "models/arccw/sw_battlefront/weapons/dl44_pistol_ext.mdl",
                 Bone = "v_scoutblaster_reference001",
-                Scale = Vector(1.05, 1.05, 1.05),
+                Scale = Vector(1, 1, 1),
                 Offset = {
-                    pos = Vector(-0.25, 0.5, -2.1),
+                    pos = Vector(0, 0, 0),
                     ang = Angle(0, 180, 0)
                 }
             }
         },
         WMElements = {
             {
-                Model = "models/arccw/weapons/ll30.mdl",
+                Model = "models/arccw/sw_battlefront/weapons/dl44_pistol_ext.mdl",
                 Bone = "ValveBiped.Bip01_R_Hand",
                 Scale = Vector(1, 1, 1),
                 Offset = {
-                    pos = Vector(40, 20, 0.3),
+                    pos = Vector(40, 20, -15.3),
                     ang = Angle(-15, -90, 180)
                 }
             }
         },
     },
 }
-WMOverride = "models/arccw/weapons/ll30.mdl" -- change the world model to something else. Please make sure it's compatible with the last one.
+WMOverride = "models/arccw/sw_battlefront/weapons/dl44_pistol_ext.mdl" -- change the world model to something else. Please make sure it's compatible with the last one.
 
 --SWEP.Attachments 
 SWEP.Attachments = {
@@ -145,11 +148,11 @@ SWEP.Attachments = {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights", -- used to display the "no attachment" text
         Slot = "swoptic_module",
-        VMScale = Vector(1, 1, 1),
+        VMScale = Vector(0.8, 0.8, 0.8),
         WMScale = Vector(9, 9, 9),
         Bone = "v_scoutblaster_reference001", -- relevant bone any attachments wwill be mostly referring to
         Offset = {
-            vpos = Vector(-0.3, -2.2, 2.4),
+            vpos = Vector(0, -2.4, 2.9),
             vang = Angle(0, 180, 0),
             wpos = Vector(70, 20, -50),
             wang = Angle(-15, 90, 180)
@@ -163,29 +166,29 @@ SWEP.Attachments = {
         Slot = {"tactical","tac_pistol"},
         Bone = "v_scoutblaster_reference001", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(-0.3, -13, 1),
+            vpos = Vector(0.6, -8, 1.8),
             vang = Angle(0, 90, 0),
-            wpos = Vector(130, 20, -56),
+            wpos = Vector(115, 20, -56),
             wang = Angle(-15, 0, 180)
         },
-    },    
+    },
     [3] = {
         PrintName = "Muzzle", -- print name
         DefaultAttName = "No Attachment", -- used to display the "no attachment" text
-        WMScale = Vector(10, 10, 10),
-        Slot = {"muzzle", "cr2_muzzle", "cr2c_muzzle", "stealth_muzzle"},
+        NoWM = true,
+        Slot = {},
         Bone = "scoutblaster_sight", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.25, 0.4, 18),
+            vpos = Vector(0, 0.3, 8.6),
             vang = Angle(90, 0, -90),
-            wpos = Vector(213, 20, -87),
+            wpos = Vector(113, 20, -55),
             wang = Angle(-15, 0, 180)
         },
-    },        
+    },      
     [4] = {
         PrintName = "Energization", -- print name
         DefaultAttName = "Standard Energization", -- used to display the "no attachment" text
-        Slot = {"ammo","sw_ammo", "ammo_rocket"} 
+        Slot = "ammo",
     },
     [5] = {
         PrintName = "Training/Perk", -- print name
@@ -199,9 +202,9 @@ SWEP.Attachments = {
         WMScale = Vector(8, 8, 8),
         Bone = "scoutblaster_sight", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.8, 0.4, 4),
+            vpos = Vector(0.35, 0.9, 2.5),
             vang = Angle(90, 0, -90),
-            wpos = Vector(60, 22, -50),
+            wpos = Vector(60, 22, -35),
             wang = Angle(-10, 0, 180)
         },
     },          

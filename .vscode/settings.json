@@ -1,0 +1,12 @@
+{
+    "Lua.diagnostics.globals": [
+        "ENT",
+        "AddCSLuaFile",
+        "MOVETYPE_VPHYSICS",
+        "SOLID_VPHYSICS",
+        "Vector",
+        "SERVER",
+        "CurTime",
+        "timer"
+    ]
+}

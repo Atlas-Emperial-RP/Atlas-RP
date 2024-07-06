@@ -8,7 +8,7 @@ ENT.Spawnable 			= false
 
 AddCSLuaFile()
 
-ENT.Model = "models/items/ar2_grenade.mdl"
+ENT.Model = "models/arccw/thermal_detonator.mdl"
 ENT.FuseTime = 2
 ENT.ArmTime = 0
 ENT.ImpactFuse = true
@@ -33,7 +33,7 @@ function ENT:Initialize()
         self.SpawnTime = CurTime()
 
         timer.Simple(0.1, function()
-            if !IsValid(self) then return end
+            if not IsValid(self) then return end
             self:SetCollisionGroup(COLLISION_GROUP_PROJECTILE)
         end)
     end
@@ -46,7 +46,7 @@ function ENT:Think()
 end 
 function ENT:Detonate()
     if SERVER then
-        if !self:IsValid() then return end
+        if not self:IsValid() then return end
         local effectdata = EffectData()
             effectdata:SetOrigin( self:GetPos() )
 
@@ -64,7 +64,7 @@ function ENT:Detonate()
             attacker = self.Owner
         end
 
-        util.BlastDamage(self, attacker, self:GetPos(), 550, 550)
+        util.BlastDamage(self, attacker, self:GetPos(), 75, 200)
 
         self:Remove()
     end

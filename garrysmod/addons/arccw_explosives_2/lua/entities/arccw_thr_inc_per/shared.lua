@@ -139,4 +139,4 @@ function ENT:Draw()
            -- render.DrawSprite( self:GetPos(), math.random(75, 100), math.random(75, 100), Color(255, 255, 255) ) 
         --cam.End3D()
     end
-endI
+end

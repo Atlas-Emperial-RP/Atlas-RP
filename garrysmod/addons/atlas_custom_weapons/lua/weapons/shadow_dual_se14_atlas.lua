@@ -4,9 +4,9 @@ SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
 SWEP.Category = "[ Atlas ] Custom Weapons"
 SWEP.Credits = { Author1 = "Yairme"}
-SWEP.PrintName = "ISB Dual RK-3"
+SWEP.PrintName = "Shadow Dual SE-14"
 SWEP.Trivia_Class = "Imperial Dual Blaster Pistol"
-SWEP.Trivia_Desc = "Dual RK-3 Blaster pistol, preffered for CQB enviroments."
+SWEP.Trivia_Desc = "Dual SE-14 Blaster pistol, preffered for CQB enviroments."
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
 SWEP.Trivia_Calibre = "Low Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
@@ -19,7 +19,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/arccw/strasser/weapons/c_ddeagle.mdl"
 SWEP.WorldModel = "models/arccw/bf2017/w_scoutblaster.mdl"
-SWEP.ViewModelFOV = 90
+SWEP.ViewModelFOV = 1
 SWEP.HideViewmodel = true
 SWEP.WorldModelOffset = {
     pos = Vector(0, 0, 0),
@@ -28,11 +28,11 @@ SWEP.WorldModelOffset = {
     scale = 0.09
 }
 
-SWEP.IconOverride = "materials/entities/rw_sw_dual_rk3.png"
+SWEP.IconOverride = "materials/entities/rw_sw_dual_se14.png"
 
 SWEP.DefaultBodygroups = "000000000000"
-
-SWEP.Damage = 30
+SWEP.NoHideLeftHandInCustomization = true
+SWEP.Damage = 20
 SWEP.RangeMin = 90
 SWEP.DamageMin = 17
 SWEP.Range = 210
@@ -50,14 +50,14 @@ SWEP.TracerCol = Color(250, 0, 0)
 SWEP.HullSize = 1.5
 
 SWEP.ChamberSize = 0
-SWEP.Primary.ClipSize = 40
+SWEP.Primary.ClipSize = 32
 
-SWEP.Recoil = 0.44
+SWEP.Recoil = 0.55
 SWEP.RecoilPunch = 0.4
 SWEP.RecoilSide = 0.14
 SWEP.RecoilRise = 0.22
 
-SWEP.Delay = 60 / 300
+SWEP.Delay = 60 / 480
 SWEP.Num = 1
 SWEP.Firemodes = {
 	{
@@ -68,7 +68,7 @@ SWEP.Firemodes = {
     },    
 }
 
-SWEP.AccuracyMOA = 0.56 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 0.666 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 460 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 50
 
@@ -80,7 +80,7 @@ SWEP.Primary.Ammo = "ar2"
 SWEP.ShootVol = 100
 SWEP.ShootPitch = 100
 
-SWEP.ShootSound = "w/rk3.wav"
+SWEP.ShootSound = "w/se14c.wav"
 
 SWEP.MuzzleFlashColor = Color(255, 0, 0, 50)
 
@@ -120,57 +120,57 @@ SWEP.DrawCrosshair = true
 SWEP.BarrelLength = 60
 SWEP.BarrelOffsetSighted = Vector(0, 0, 0)
 SWEP.BarrelOffsetHip = Vector(3, 0, -3)
-SWEP.DefaultElements = {"rk3", "rk3+"}
+SWEP.DefaultElements = {"se14", "se14+"}
 
 SWEP.AttachmentElements = {
-    ["rk3"] = {
+    ["se14"] = {
         VMElements = {
             {
-                Model = "models/arccw/markus/fo_rk3_blaster_pistol/fo_rk3_blaster_pistol.mdl",
+                Model = "models/arccw/sw_battlefront/weapons/2019/se14_pistol.mdl",
                 Bone = "LeftHand_1stP",
                 Scale = Vector(1.1, 1.1, 1.1),
                 Offset = {
-                    pos = Vector(3.5, 2.2, -1.2),
-                    ang = Angle(-98, -2, 90)
+                    pos = Vector(0, 0, -3.5),
+                    ang = Angle(0, 90, 0)
                 }
             }
         },
     },
-    ["rk3+"] = {
+    ["se14+"] = {
          VMElements = {
             {
-                Model = "models/arccw/markus/fo_rk3_blaster_pistol/fo_rk3_blaster_pistol.mdl",
+                Model = "models/arccw/sw_battlefront/weapons/2019/se14_pistol.mdl",
                 Bone = "RightHand_1stP",
                 Scale = Vector(1.1, 1.1, 1.1),                
                 Offset = {
                     pos = Vector(-3.5, -2.2, 1.2),
-                    ang = Angle(90, 178, 90)
+                    ang = Angle(0, 90, 0)
                 }
             }
         }, 
         WMElements = {
             {
-                Model = "models/arccw/markus/fo_rk3_blaster_pistol/fo_rk3_blaster_pistol.mdl",
+                Model = "models/arccw/sw_battlefront/weapons/2019/se14_pistol.mdl",
                 Bone = "ValveBiped.Bip01_R_Hand",
-                Scale = Vector(1.1, 1.1, 1.1),
+                Scale = Vector(1.2, 1.2, 1.2),
                 Offset = {
-                    pos = Vector(30.5, 10, -15.75),
-                    ang = Angle(180, 90, 2)
+                    pos = Vector(40, 20, 40),
+                    ang = Angle(-15, 0, 180)
                 }
             },
             {
-                Model = "models/arccw/markus/fo_rk3_blaster_pistol/fo_rk3_blaster_pistol.mdl",
+                Model = "models/arccw/sw_battlefront/weapons/2019/se14_pistol.mdl",
                 Bone = "ValveBiped.Bip01_L_Hand",
-                Scale = Vector(1.1, 1.1, 1.1),
+                Scale = Vector(1.2, 1.2, 1.2),
                 Offset = {
-                    pos = Vector(-55, 230, -60),
-                    ang = Angle(180, 90, 2)
+                    pos = Vector(-55, 240, 40),
+                    ang = Angle(-15, 0, 180)
                 }
             },
         },            -- change the world model to something else. Please make sure it's compatible with the last one.
     }
 }
-WMOverride = "models/arccw/markus/fo_rk3_blaster_pistol/fo_rk3_blaster_pistol.mdl"
+WMOverride = "models/arccw/sw_battlefront/weapons/2019/se14_pistol.mdl"
 
 --SWEP.Attachments 
 SWEP.Attachments = {
@@ -187,7 +187,7 @@ SWEP.Attachments = {
     [2] = {
         PrintName = "Energization", -- print name
         DefaultAttName = "Standard Energization", -- used to display the "no attachment" text
-        Slot = {"ammo", "sw_ammo"},
+        Slot = "ammo",
     }
 }
 

@@ -49,7 +49,7 @@ table.insert(CSGOParticleEffects, #CSGOParticleEffects, "weapon_decoy_ground_eff
 table.insert(CSGOParticleEffects, #CSGOParticleEffects, "weapon_decoy_ground_effect_shot")
 table.insert(CSGOParticleEffects, #CSGOParticleEffects, "weapon_molotov_fp")
 table.insert(CSGOParticleEffects, #CSGOParticleEffects, "weapon_molotov_thrown")
-//EXPLOSION_FX
+-- [ EXPLOSION_FX ]
 table.insert(CSGOParticleEffects, #CSGOParticleEffects, "c4_timer_light")
 table.insert(CSGOParticleEffects, #CSGOParticleEffects, "c4_timer_light_trigger")
 table.insert(CSGOParticleEffects, #CSGOParticleEffects, "c4_timer_light_held")
@@ -63,7 +63,7 @@ table.insert(CSGOParticleEffects, #CSGOParticleEffects, "explosion_smoke_dispers
 table.insert(CSGOParticleEffects, #CSGOParticleEffects, "explosion_smokegrenade")
 table.insert(CSGOParticleEffects, #CSGOParticleEffects, "explosion_smokegrenade_fallback")
 table.insert(CSGOParticleEffects, #CSGOParticleEffects, "explosion_smokegrenade_CT")
-//INFERNO FX
+-- [ INFERNO FX ]
 table.insert(CSGOParticleEffects, #CSGOParticleEffects, "molotov_explosion")
 table.insert(CSGOParticleEffects, #CSGOParticleEffects, "molotov_fire01")
 table.insert(CSGOParticleEffects, #CSGOParticleEffects, "molotov_groundfire")
@@ -81,4 +81,4 @@ end
 
 for k, v in pairs(CSGOParticleEffects) do
 	PrecacheParticleSystem(v)
-endI
+end
