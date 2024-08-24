@@ -60,7 +60,7 @@ cfg.links = {
 		helptext = "Join our discord server!", -- text on hover
 		type = "link", -- link / browser
 		icon = emenu.Materials["discord"],--"https://discord.com/assets/3437c10597c1526c3dbd98c737c2bcae.svg", -- Material / iconlink
-		url = "https://discord.gg/atlasimperial", -- url to open
+		url = "https://discord.gg/RSbzKDRZT2", -- url to open
 	},
 	{
 		name = "Steam",

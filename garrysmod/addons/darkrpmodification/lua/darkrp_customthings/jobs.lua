@@ -16,11 +16,13 @@ https://darkrp.miraheze.org/wiki/DarkRP:CustomJobFields
 Add your custom jobs under the following line:
 ---------------------------------------------------------------------------]]
 
+--- [ATLAS IMPERIAL RP RECRUIT JOBS] ---
+
 TEAM_RECRUIT = DarkRP.createJob("Recruit", {
     color = Color(156, 143, 58),
     model = "models/nada/pms/male/ScienceOfficer.mdl",
     description = [[
-        Recruit 
+        Recruit of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
@@ -42,14 +44,235 @@ TEAM_RECRUIT = DarkRP.createJob("Recruit", {
         ply:SetMaxArmor(0)
     end,
 })
+
+--- [ATLAS IMPERIAL RP IMPERIAL ARMY JOBS] ---
+
+TEAM_IMPERIALARMYENGINEER =  DarkRP.createJob("Imperial Army Engineer", {
+    color = Color(0, 148, 57),
+   model = {
+        "models/nada/MudTrooper_M.mdl",
+        "models/nada/MudTrooper_F.mdl",
+        "models/nada/ArmyTrooper_M.mdl",
+        "models/nada/ArmyTrooper_F.mdl"
+    },
+    description = [[
+        Imperial Army of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "ia_e10_atlas",
+        "ia_ec17_atlas"
+    },
+    command = "imparmyengeneer",
+    max = 0,
+    salary = 25,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Army",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(25)
+        ply:SetMaxArmor(25)
+        ply:SetWalkSpeed(160)
+        ply:SetRunSpeed(240)
+    end,
+})
+TEAM_IMPERIALARMYENL = DarkRP.createJob("Imperial Army Enlisted", {
+    color = Color(0, 148, 57),
+   model = {
+        "models/nada/MudTrooper_M.mdl",
+        "models/nada/MudTrooper_F.mdl",
+        "models/nada/ArmyTrooper_M.mdl",
+        "models/nada/ArmyTrooper_F.mdl"
+    },
+    description = [[
+        Imperial Army of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "ia_e10_atlas",
+        "ia_ec17_atlas"
+    },
+    command = "imparmyenlisted",
+    max = 0,
+    salary = 25,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Army",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(25)
+        ply:SetMaxArmor(25)
+        ply:SetWalkSpeed(160)
+        ply:SetRunSpeed(240)
+    end,
+})
+TEAM_IMPERIALARMYSGT = DarkRP.createJob("Imperial Army Sergeant", {
+    color = Color(0, 148, 57),
+   model = {
+        "models/nada/MudTrooper_M.mdl",
+        "models/nada/MudTrooper_F.mdl",
+        "models/nada/ArmyTrooper_M.mdl",
+        "models/nada/ArmyTrooper_F.mdl"
+    },
+    description = [[
+        Imperial Army of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "ia_e10_atlas",
+        "ia_ec17_atlas",
+        "arccw_thermal_grenade",
+    },
+    command = "imparmysergeant",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Army",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(160)
+        ply:SetRunSpeed(240)
+    end,
+})
+TEAM_IMPERIALARMYOFFICER = DarkRP.createJob("Imperial Army Officer", {
+    color = Color(0, 148, 57),
+    model = {
+        "models/nada/MudTrooper_M.mdl",
+        "models/nada/MudTrooper_F.mdl",
+        "models/nada/ArmyTrooper_M.mdl",
+        "models/nada/ArmyTrooper_F.mdl",
+    },
+    description = [[
+        Imperial Army of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "ia_e10_atlas",
+        "ia_ec17_atlas",
+        "arccw_thermal_grenade",
+
+        "alydus_fortificationbuildertablet",
+    },
+    command = "imparmyofficer",
+    max = 0,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Army",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(75)
+        ply:SetMaxArmor(75)
+        ply:SetWalkSpeed(160)
+        ply:SetRunSpeed(240)
+    end,
+})
+TEAM_IMPERIALARMYCOMMAND = DarkRP.createJob("Imperial Army Command", {
+    color = Color(0, 148, 57),
+   model = {
+    "models/nada/MudTrooper_M.mdl",
+    "models/nada/MudTrooper_F.mdl",
+    "models/nada/ArmyTrooper_M.mdl",
+    "models/nada/ArmyTrooper_F.mdl"
+    },
+    description = [[
+        Imperial Army of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "ia_e11_atlas",
+        "ia_ec17_atlas",
+        "arccw_thermal_grenade",
+
+        "alydus_fortificationbuildertablet",
+    },
+    command = "imparmycommand",
+    max = 0,
+    salary = 200,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Army",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(100)
+        ply:SetMaxArmor(100)
+        ply:SetWalkSpeed(160)
+        ply:SetRunSpeed(240)
+    end,
+})
+TEAM_IMPERIALARMYCOMMANDER = DarkRP.createJob("Imperial Army Commander", {
+    color = Color(0, 148, 57),
+    model = {
+        "models/nada/MudTrooper_M.mdl",
+        "models/nada/MudTrooper_F.mdl",
+        "models/nada/ArmyTrooper_M.mdl",
+        "models/nada/ArmyTrooper_F.mdl"
+    },
+    description = [[
+        Imperial Army of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "ia_e11_atlas",
+        "ia_ec17_atlas",
+        "arccw_thermal_grenade",
+
+        "alydus_fortificationbuildertablet",
+    },
+    command = "imparmycommander",
+    max = 0,
+    salary = 250,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Army",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(125)
+        ply:SetMaxArmor(125)
+        ply:SetWalkSpeed(160)
+        ply:SetRunSpeed(240)
+    end,
+})
+
+--- [ATLAS IMPERIAL RP STORM TROOPER JOBS] ---
+
 TEAM_STORMTROOPERSENL = DarkRP.createJob("Storm Trooper Enlisted", {
     color = Color(13, 0, 255),
     model = "models/nada/rogueonetk.mdl",
     description = [[
-        Stormtrooper
+        Stormtrooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
+
         "st_e11_atlas",
         "st_dc17_atlas",
     },
@@ -62,22 +285,26 @@ TEAM_STORMTROOPERSENL = DarkRP.createJob("Storm Trooper Enlisted", {
     category = "Storm Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(250)
-        ply:SetMaxHealth(250)
-        ply:SetArmor(25)
-        ply:SetMaxArmor(25)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
     end,
 })
 TEAM_STORMTROOPERSSGT = DarkRP.createJob("Storm Trooper Sergeant", {
     color = Color(13, 0, 255),
     model = "models/nada/rogueonetk.mdl",
     description = [[
-        Stormtrooper
+        Stormtrooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
+
         "st_e11_atlas",
         "st_dc17_atlas",
+
         "arccw_thermal_grenade"
     },
     command = "stormsergeant",
@@ -89,22 +316,120 @@ TEAM_STORMTROOPERSSGT = DarkRP.createJob("Storm Trooper Sergeant", {
     category = "Storm Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(75)
+        ply:SetMaxArmor(75)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
     end,
 })
+TEAM_STORMTROOPERSOFFICER = DarkRP.createJob("Storm Trooper Officer", {
+    color = Color(13, 0, 255),
+    model = "models/nada/rogueonetk.mdl",
+    description = [[
+        Stormtrooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "st_e11_atlas",
+        "st_dc17_atlas",
+
+        "arccw_thermal_grenade"
+    },
+    command = "stormofficer",
+    max = 0,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Storm Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(100)
+        ply:SetMaxArmor(100)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
+    end,
+})
+TEAM_STORMTROOPERSCOMMAND = DarkRP.createJob("Storm Trooper Command", {
+    color = Color(13, 0, 255),
+    model = "models/nada/rogueonetk.mdl",
+    description = [[
+        Stormtrooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "st_e22_atlas",
+        "st_dc17_atlas",
+
+        "arccw_thermal_grenade"
+    },
+    command = "stormcommand",
+    max = 0,
+    salary = 200,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Storm Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(125)
+        ply:SetMaxArmor(125)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
+    end,
+})
+TEAM_STORMTROOPERSCOMMANDER = DarkRP.createJob("Storm Trooper Commander", {
+    color = Color(13, 0, 255),
+    model = "models/nada/rogueonetk.mdl",
+    description = [[
+        Stormtrooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "st_e22_atlas",
+        "st_hunter_shotgun_atlas", --- Replace with hunter shot
+
+        "arccw_thermal_grenade"
+    },
+    command = "stormcommander",
+    max = 0,
+    salary = 250,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Storm Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(150)
+        ply:SetMaxArmor(150)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
+    end,
+})
+
 TEAM_STORMTROOPERSFLAME = DarkRP.createJob("Flame Trooper", {
     color = Color(13, 0, 255),
     model = "models/nada/FlameTrooper.mdl",
     description = [[
-        FlameTrooper
+        Flame Trooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
+
         "st_e11_atlas",
         "weapon_imperial_flamethrower",
+
         "arccw_nade_inc"
     },
     command = "flametrooper",
@@ -116,8 +441,12 @@ TEAM_STORMTROOPERSFLAME = DarkRP.createJob("Flame Trooper", {
     category = "Storm Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(325)
-        ply:SetMaxHealth(325)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(25)
+        ply:SetMaxArmor(25)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
     end,
 })
 TEAM_STORMTROOPERSSCOUT = DarkRP.createJob("Scout Trooper", {
@@ -127,13 +456,16 @@ TEAM_STORMTROOPERSSCOUT = DarkRP.createJob("Scout Trooper", {
         "models/nada/ScoutTrooper_F.mdl"
     },
     description = [[
-        Scout Trooper
+        Scout Trooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
+
         "st_e11_atlas",
         "st_e11s_atlas",
-        "st_ec17_atlas"
+        "st_ec17_atlas",
+
+        "realistic_hook",
     },
     command = "scouttroopers",
     max = 0,
@@ -144,20 +476,26 @@ TEAM_STORMTROOPERSSCOUT = DarkRP.createJob("Scout Trooper", {
     category = "Storm Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(225)
-        ply:SetMaxHealth(225)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(25)
+        ply:SetMaxArmor(25)
+        ply:SetWalkSpeed(280)
+        ply:SetRunSpeed(420)
     end,
 })
 TEAM_STORMTROOPERSJT = DarkRP.createJob("Jump Trooper", {
     color = Color(13, 0, 255),
     model = "models/nada/rogueonetk.mdl",
     description = [[
-        Stormtrooper
+        Stormtrooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
+
         "st_t21_atlas",
         "st_dc17_atlas",
+
         "",
     },
     command = "jumptrooper",
@@ -173,45 +511,23 @@ TEAM_STORMTROOPERSJT = DarkRP.createJob("Jump Trooper", {
         ply:SetMaxHealth(100)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
     end,
 })
-TEAM_STORMTROOPERSHEAVY = DarkRP.createJob("Heavy Trooper", {
+TEAM_STORMTROOPERSENGINEER = DarkRP.createJob("Storm Trooper Engineer", {
     color = Color(13, 0, 255),
     model = "models/nada/rogueonetk.mdl",
     description = [[
-        Stormtrooper
+        Stormtrooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
-        "st_dc17_atlas",
-        "st_dlt19_atlas",
-        "arccw_thermal_grenade"
-    },
-    command = "heavytrooper",
-    max = 0,
-    salary = 100,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Storm Troopers",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(100)
-        ply:SetMaxHealth(100)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
-    end,
-})
-TEAM_STORMTROOPERSMECHANIC = DarkRP.createJob("Storm Trooper Mechanic", {
-    color = Color(13, 0, 255),
-    model = "models/nada/rogueonetk.mdl",
-    description = [[
-        Stormtrooper
-    ]],
-    weapons = {
-        "weapon_empty_hands",
+
         "st_e11_atlas",
         "st_dc17_atlas",
+        "st_dp23_atlas",
+
         "alydus_fortificationbuildertablet",
         "weapon_lvsrepair"
     },
@@ -226,257 +542,487 @@ TEAM_STORMTROOPERSMECHANIC = DarkRP.createJob("Storm Trooper Mechanic", {
     PlayerSpawn = function(ply)
         ply:SetHealth(100)
         ply:SetMaxHealth(100)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
-    end,
-})
-TEAM_STORMTROOPERSOFFICER = DarkRP.createJob("Storm Trooper Officer", {
-    color = Color(13, 0, 255),
-    model = "models/nada/rogueonetk.mdl",
-    description = [[
-        Stormtrooper
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "st_e11_atlas",
-        "st_dc17_atlas",
-        "st_dlt19_atlas",
-        "arccw_thermal_grenade"
-    },
-    command = "stormofficer",
-    max = 0,
-    salary = 150,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Storm Troopers",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(350)
-        ply:SetMaxHealth(350)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
-    end,
-})
-
-TEAM_STORMTROOPERSCOMMAND = DarkRP.createJob("Storm Trooper Command", {
-    color = Color(13, 0, 255),
-    model = "models/nada/rogueonetk.mdl",
-    description = [[
-        Stormtrooper 
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "weapon_empty_hands",
-        "st_e11_atlas",
-        "st_dc17_atlas",
-        "st_dlt19_atlas",
-        "st_e11s_atlas",
-        "arccw_thermal_grenade"
-    },
-    command = "stormcommand",
-    max = 0,
-    salary = 200,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Storm Troopers",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(400)
-        ply:SetMaxHealth(400)
         ply:SetArmor(75)
         ply:SetMaxArmor(75)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
     end,
 })
-TEAM_STORMTROOPERSCOMMANDER = DarkRP.createJob("Storm Trooper Commander", {
+TEAM_STORMTROOPERSHEAVY = DarkRP.createJob("Heavy Trooper", {
     color = Color(13, 0, 255),
     model = "models/nada/rogueonetk.mdl",
     description = [[
-        Stormtrooper
+        Stormtrooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
-        "weapon_empty_hands",
-        "st_e11_atlas",
-        "st_dc17_atlas",
-        "st_dlt19_atlas",
-        "st_e11s_atlas",
-        "st_dlt19x_atlas",
-        "arccw_thermal_grenade"
-    },
-    command = "stormcommander",
-    max = 0,
-    salary = 250,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Storm Troopers",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(450)
-        ply:SetMaxHealth(450)
-        ply:SetArmor(100)
-        ply:SetMaxArmor(100)
-    end,
-})
-TEAM_PURGEENL = DarkRP.createJob("Purge Trooper Enlisted", {
-    color = Color(170, 9, 9),
-    model = "models/nada/purgetrooperphase2.mdl",
-    description = [[
-        Purge Trooper
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "purge_dc15s_atlas",
-        "purge_e11d_atlas",
-    },
-    command = "purgeenlisted",
-    max = 0,
-    salary = 50,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Purge Troopers",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
-        ply:SetArmor(25)
-        ply:SetMaxArmor(25)
-    end,
-})
 
-TEAM_PURGESGT = DarkRP.createJob("Purge Trooper Sergeant", {
-    color = Color(170, 9, 9),
-    model = "models/nada/purgetrooperphase2.mdl",
-    description = [[
-        Purge Trooper
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "purge_dc15s_atlas",
-        "purge_e11d_atlas",
-        "purge_dc17_atlas",
-        "arccw_thermal_grenade"
+        "st_dlt19_atlas",
+
     },
-    command = "purgesergeant",
+    command = "heavytrooper",
     max = 0,
     salary = 100,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Purge Troopers",
+    category = "Storm Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(350)
-        ply:SetMaxHealth(350)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(400)
+        ply:SetMaxArmor(400)
+        ply:SetWalkSpeed(72)
+        ply:SetRunSpeed(108)
     end,
 })
-TEAM_PURGEOFFICER = DarkRP.createJob("Purge Trooper Officer", {
-    color = Color(170, 9, 9),
-    model = "models/nada/purgetrooperphase2.mdl",
+
+--- [ATLAS IMPERIAL RP SHORE TROOPER JOBS] ---
+
+TEAM_SHORESGT = DarkRP.createJob("Shore Trooper Sergeant", {
+    color = Color(255, 149, 0),
+    model = "models/nada/ShoreTrooper_Andor.mdl",
     description = [[
-        Purge Trooper
+        Shoretrooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
-        "purge_dc15s_atlas",
-        "purge_e11d_atlas",
-        "purge_dc17_atlas",
-        "arccw_thermal_grenade",
-        "sfw_estaff"
+
+        "shore_e22_atlas",
+        "shore_rk3_atlas",
+
+        "arccw_nade_inc",
     },
-    command = "purgeofficer",
+    command = "shoresergeant",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Shore Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+TEAM_SHOREOFFICER = DarkRP.createJob("Shore Trooper Officer", {
+    color = Color(255, 149, 0),
+    model = "models/nada/Shoretrooper_Captain.mdl",
+    description = [[
+        Shoretrooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "shore_e22_atlas",
+        "shore_rk3_atlas",
+
+        "arccw_nade_inc",
+    },
+    command = "shoreofficer",
     max = 0,
     salary = 150,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Purge Troopers",
+    category = "Shore Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(400)
-        ply:SetMaxHealth(400)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
     end,
 })
-TEAM_PURGECOMMAND = DarkRP.createJob("Purge Trooper Command", {
-    color = Color(170, 9, 9),
-    model = "models/nada/purgetrooperphase2.mdl",
+TEAM_SHORECOMMAND = DarkRP.createJob("Shore Trooper Command", {
+    color = Color(255, 149, 0),
+    model = "models/nada/Shoretrooper_Mortar.mdl",
     description = [[
-        Purge Trooper
+        Shoretrooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
-        "purge_dc15s_atlas",
-        "purge_e11d_atlas",
-        "purge_dc17_atlas",
-        "arccw_thermal_grenade",
-        "sfw_estaff",
-        "weapon_imperial_flamethrower"
+
+        "shore_e22_atlas",
+        "shore_dual_rk3_atlas",
+
+        "arccw_nade_inc",
     },
-    command = "purgecommand",
+    command = "shorecommand",
     max = 0,
     salary = 200,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Purge Troopers",
+    category = "Shore Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(450)
-        ply:SetMaxHealth(450)
-        ply:SetArmor(75)
-        ply:SetMaxArmor(75)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
     end,
 })
-TEAM_PURGECOMMANDER = DarkRP.createJob("Purge Trooper Commander", {
-    color = Color(170, 9, 9),
-    model = "models/nada/purgetrooperphase2.mdl",
+TEAM_SHORECOMMANDER = DarkRP.createJob("Shore Trooper Commander", {
+    color = Color(255, 149, 0),
+    model = "models/nada/Shoretrooper_SquadLeader.mdl",
     description = [[
-        Purge Trooper 
+        Shoretrooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
-        "purge_dc15s_atlas",
-        "purge_e11d_atlas",
-        "purge_dc17_atlas",
-        "arccw_thermal_grenade",
-        "sfw_estaff",
-        "weapon_imperial_flamethrower"
+
+        "shore_e22_atlas",
+        "shore_dual_rk3_atlas",
+
+        "arccw_nade_inc",
     },
-    command = "purgecommander",
+    command = "shorecommander",
     max = 0,
     salary = 250,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Purge Troopers",
+    category = "Shore Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(500)
-        ply:SetMaxHealth(500)
-        ply:SetArmor(100)
-        ply:SetMaxArmor(100)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
     end,
 })
+
+--- [ATLAS IMPERIAL RP NOVA TROOPER JOBS] ---
+
+TEAM_NOVASGT = DarkRP.createJob("Nova Trooper Sergeant", {
+    color = Color(255, 232, 82),
+    model = "models/nada/rogueonenova.mdl",
+    description = [[
+        Nova Corp of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "nova_t21_atlas",
+        "nova_rk3_atlas",
+
+        "arccw_flash_grenade",
+    },
+    command = "novasergeant",
+    max = 0,
+    salary = 50,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Nova Corp",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(75)
+        ply:SetMaxArmor(75)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
+    end,
+})
+TEAM_NOVAOFFICER = DarkRP.createJob("Nova Trooper Officer", {
+    color = Color(255, 232, 82),
+    model = "models/nada/rogueonenova.mdl",
+    description = [[
+        Nova Corp of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "nova_t21_atlas",
+        "nova_rk3_atlas",
+        "alydus_fusioncutter",
+
+        "arccw_flash_grenade",
+    },
+    command = "novaofficer",
+    max = 0,
+    salary = 50,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Nova Corp",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(100)
+        ply:SetMaxArmor(100)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
+    end,
+})
+TEAM_NOVACOMMAND = DarkRP.createJob("Nova Trooper Command", {
+    color = Color(255, 232, 82),
+    model = {
+        "models/nada/rogueonenova.mdl",
+        "models/nada/rogueonenovaelite.mdl"
+    },
+    description = [[
+        Nova Corp of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "nova_t21_command_atlas",
+        "nova_rk3_atlas",
+        "alydus_fusioncutter",
+
+        "arccw_flash_grenade",
+    },
+    command = "novacommand",
+    max = 0,
+    salary = 50,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Nova Corp",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(125)
+        ply:SetMaxArmor(125)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
+    end,
+})
+TEAM_NOVACOMMANDER = DarkRP.createJob("Nova Trooper Commander", {
+    color = Color(255, 232, 82),
+    model = {
+        "models/nada/rogueonenova.mdl",
+        "models/nada/rogueonenovaelite.mdl"
+    },
+    description = [[
+        Nova Corp of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "nova_t21_command_atlas",
+        "nova_rk3_atlas",
+        "alydus_fusioncutter",
+
+        "arccw_flash_grenade",
+    },
+    command = "novacommander",
+    max = 0,
+    salary = 50,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Nova Corp",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(150)
+        ply:SetMaxArmor(150)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
+    end,
+})
+TEAM_NOVAMEDIC = DarkRP.createJob("Nova Trooper Commander", {
+    color = Color(255, 232, 82),
+    model = {
+        "models/nada/rogueonenova.mdl",
+        "models/nada/rogueonenovaelite.mdl"
+    },
+    description = [[
+        Nova Corp of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "nova_t21_atlas",
+        "nova_rk3_atlas",
+
+        "weapon_bactainjector",
+    },
+    command = "novamedic",
+    max = 0,
+    salary = 50,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Nova Corp",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+
+--- [ATLAS IMPERIAL RP SHADOW TROOPER JOBS] ---
+
+TEAM_SHADOWSGT = DarkRP.createJob("Shadow Trooper Sergeant", {
+    color = Color(74, 73, 75),
+    model = "models/nada/rogueoneshadow.mdl",
+    description = [[
+        Shadow Corp of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "shadow_t21_atlas",
+        "shadow_se14_atlas",
+
+        "cloaking-infinite",
+        "arccw_smoke_grenade",
+    },
+    command = "shadowsergeant",
+    max = 0,
+    salary = 50,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Shadow Corp",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(25)
+        ply:SetMaxArmor(25)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+TEAM_SHADOWOFFICER = DarkRP.createJob("Shadow Trooper Officer", {
+    color = Color(74, 73, 75),
+    model = "models/nada/rogueoneshadow.mdl",
+    description = [[
+        Shadow Corp of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "shadow_t21_atlas",
+        "shadow_se14_atlas",
+
+        "cloaking-infinite",
+        "arccw_smoke_grenade",
+    },
+    command = "shadowofficer",
+    max = 0,
+    salary = 50,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Shadow Corp",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+TEAM_SHADOWCOMMAND = DarkRP.createJob("Shadow Trooper Command", {
+    color = Color(74, 73, 75),
+    model = "models/nada/rogueoneshadow.mdl",
+    description = [[
+        Shadow Corp of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "shadow_t21_atlas",
+        "arccw_dual_se14",
+
+        "cloaking-infinite",
+        "rw_sw_bino_dark",
+        "arccw_smoke_grenade",
+    },
+    command = "shadowcommand",
+    max = 0,
+    salary = 50,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Shadow Corp",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(75)
+        ply:SetMaxArmor(75)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+TEAM_SHADOWCOMMANDER = DarkRP.createJob("Shadow Trooper Commander", {
+    color = Color(74, 73, 75),
+    model = "models/nada/rogueoneshadow.mdl",
+    description = [[
+        Shadow Corp of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "shadow_t21_atlas",
+        "arccw_dual_se14",
+
+        "cloaking-infinite",
+        "rw_sw_bino_dark",
+        "arccw_smoke_grenade",
+    },
+    command = "shadowcommander",
+    max = 0,
+    salary = 50,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Shadow Corp",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(100)
+        ply:SetMaxArmor(100)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+
+--- [ATLAS IMPERIAL RP SHOCK TROOPER JOBS] ---
+
 TEAM_SHOCKTROOPER = DarkRP.createJob("Shock Trooper Enlisted", {
     color = Color(255, 0, 0),
     model = "models/nada/RogueOneShock.mdl",
     description = [[
-        You're a Shock Trooper
+        Shock Trooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
+
         "shock_dlt19_atlas",
         "shock_dl44_atlas",
         "shock_rk3_atlas",
 
-        "weapon_r_handcuffs",
         "arrest_stick",
         "unarrest_stick",
 
@@ -490,27 +1036,30 @@ TEAM_SHOCKTROOPER = DarkRP.createJob("Shock Trooper Enlisted", {
     category = "Shock Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
-        ply:SetArmor(25)
-        ply:SetMaxArmor(25)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(240)
+        ply:SetRunSpeed(360)
     end,
 })
 TEAM_SHOCKSGT = DarkRP.createJob("Shock Trooper Sergeant", {
     color = Color(255, 0, 0),
     model = "models/nada/RogueOneShock.mdl",
     description = [[
-        You're a Shock Sergeant
+        Shock Trooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
+
         "shock_dlt19_atlas",
         "shock_dl44_atlas",
         "shock_rk3_atlas",
 
-        "weapon_r_handcuffs",
         "arrest_stick",
         "unarrest_stick",
+
         "arrcw_shock_grenade",
     },
     command = "shocksergeant",
@@ -522,20 +1071,23 @@ TEAM_SHOCKSGT = DarkRP.createJob("Shock Trooper Sergeant", {
     category = "Shock Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(350)
-        ply:SetMaxHealth(350)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(75)
+        ply:SetMaxArmor(75)
+        ply:SetWalkSpeed(240)
+        ply:SetRunSpeed(360)
     end,
 })
 TEAM_SHOCKOFFICER = DarkRP.createJob("Shock Trooper Officer", {
     color = Color(255, 0, 0),
     model = "models/nada/RogueOneShock.mdl",
     description = [[
-        You're a Shock Officer
+        Shock Trooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
+
         "shock_dlt19_atlas",
         "shock_dl44_atlas",
         "shock_rk3_atlas",
@@ -543,6 +1095,7 @@ TEAM_SHOCKOFFICER = DarkRP.createJob("Shock Trooper Officer", {
         "weapon_r_handcuffs",
         "arrest_stick",
         "unarrest_stick",
+
         "arrcw_shock_grenade",
     },
     command = "shockofficer",
@@ -554,20 +1107,23 @@ TEAM_SHOCKOFFICER = DarkRP.createJob("Shock Trooper Officer", {
     category = "Shock Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(400)
-        ply:SetMaxHealth(400)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(100)
+        ply:SetMaxArmor(100)
+        ply:SetWalkSpeed(240)
+        ply:SetRunSpeed(360)
     end,
 })
 TEAM_SHOCKCOMMAND = DarkRP.createJob("Shock Trooper Command", {
     color = Color(255, 0, 0),
     model = "models/nada/RogueOneShock.mdl",
     description = [[
-        You're a Shock Command
+        Shock Trooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
+
         "shock_dlt19_atlas",
         "shock_dual_dl44_atlas",
         "shock_rk3_atlas",
@@ -575,6 +1131,7 @@ TEAM_SHOCKCOMMAND = DarkRP.createJob("Shock Trooper Command", {
         "weapon_r_handcuffs",
         "arrest_stick",
         "unarrest_stick",
+
         "arrcw_shock_grenade",
     },
     command = "shockcommand",
@@ -586,17 +1143,19 @@ TEAM_SHOCKCOMMAND = DarkRP.createJob("Shock Trooper Command", {
     category = "Shock Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(450)
-        ply:SetMaxHealth(450)
-        ply:SetArmor(75)
-        ply:SetMaxArmor(75)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(125)
+        ply:SetMaxArmor(125)
+        ply:SetWalkSpeed(240)
+        ply:SetRunSpeed(360)
     end,
 })
 TEAM_SHOCKCOMMANDER = DarkRP.createJob("Shock Trooper Commander", {
     color = Color(255, 0, 0),
     model = "models/nada/RogueOneShock.mdl",
     description = [[
-        You're a Shock Commander
+        Shock Commander of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
@@ -618,19 +1177,97 @@ TEAM_SHOCKCOMMANDER = DarkRP.createJob("Shock Trooper Commander", {
     category = "Shock Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(500)
-        ply:SetMaxHealth(500)
-        ply:SetArmor(100)
-        ply:SetMaxArmor(100)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(150)
+        ply:SetMaxArmor(150)
+        ply:SetWalkSpeed(240)
+        ply:SetRunSpeed(360)
     end,
 })
+
+TEAM_SHOCKRIOTCONTROL = DarkRP.createJob("Shock Trooper Commander", {
+    color = Color(255, 0, 0),
+    model = "models/nada/RogueOneShock.mdl",
+    description = [[
+        Shock Riot Control of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "shock_e11_atlas",
+        "shock_rk3_atlas",
+        "rw_sw_shield_imp",
+
+        "weapon_r_handcuffs",
+        "arrest_stick",
+        "unarrest_stick",
+        "",
+
+        "arrcw_shock_grenade",
+    },
+    command = "shockriotcontrol",
+    max = 0,
+    salary = 250,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Shock Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(75)
+        ply:SetMaxArmor(75)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+TEAM_SHOCKAIU = DarkRP.createJob("Shock Trooper Commander", {
+    color = Color(255, 0, 0),
+    model = "models/nada/RogueOneShock.mdl",
+    description = [[
+        Shock AIU of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "shock_rk3_atlas",
+
+        "weapon_r_handcuffs",
+        "dt_decrypter",
+        "dt_encrypter",
+        
+        "arrcw_shock_grenade",
+    },
+    command = "shockaiu",
+    max = 0,
+    salary = 250,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Shock Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(25)
+        ply:SetMaxArmor(25)
+        ply:SetWalkSpeed(240)
+        ply:SetRunSpeed(360)
+    end,
+})
+
+--- [ATLAS IMPERIAL RP MEDICAL TROOPER JOBS] ---
+
 TEAM_MEDICALENLISTED = DarkRP.createJob("Medical Trooper Enlisted", {
     color = Color(80, 101, 211),
     model = {
-        "models/player/bunny/zephyr_imperial_medics/zephyr_medic_trooper.mdl",
+        "models/nada/male/MedicalTrooper.mdl",
+        "models/nada/female/MedicalTrooper.mdl"
     },
     description = [[
-        Medical Trooper
+        Medical Trooper of the Empire
     ]],
     weapons = {
         "weapon_bactainjector",
@@ -649,25 +1286,22 @@ TEAM_MEDICALENLISTED = DarkRP.createJob("Medical Trooper Enlisted", {
     category = "Medical Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(225)
-        ply:SetMaxHealth(225)
-        ply:SetArmor(25)
-        ply:SetMaxArmor(25)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(75)
+        ply:SetMaxArmor(75)
+        ply:SetWalkSpeed(240)
+        ply:SetRunSpeed(360)
     end,
 })
---[[
-    Medical Sergeant  Job
-    Generated using: DarkRP | Job Generator
-    https://yourdevtools.com/gmod/darkrp-job
---]]
-
 TEAM_MEDICALSGT = DarkRP.createJob("Medical Trooper Sergeant", {
     color = Color(80, 101, 211),
     model = {
-        "models/player/bunny/zephyr_imperial_medics/zephyr_medic_sergeant.mdl",
+        "models/nada/male/MedicalTrooper.mdl",
+        "models/nada/female/MedicalTrooper.mdl"
     },
     description = [[
-        Medical Sergeant
+        Medical Trooper of the Empire
     ]],
     weapons = {
         "medical_e11_atlas",
@@ -677,6 +1311,7 @@ TEAM_MEDICALSGT = DarkRP.createJob("Medical Trooper Sergeant", {
         "weapon_empty_hands",
         "weapon_defibrilator",
         "weapon_bactainjector",
+
         "weapon_squadshield_arm",
     },
     command = "medsergeant",
@@ -688,25 +1323,22 @@ TEAM_MEDICALSGT = DarkRP.createJob("Medical Trooper Sergeant", {
     category = "Medical Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(250)
-        ply:SetMaxHealth(250)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(240)
+        ply:SetRunSpeed(360)
     end,
 })
---[[
-    Medical Officer Job
-    Generated using: DarkRP | Job Generator
-    https://yourdevtools.com/gmod/darkrp-job
---]]
-
 TEAM_MEDICALOFFICER = DarkRP.createJob("Medical Trooper Officer", {
     color = Color(80, 101, 211),
     model = {
-        "models/player/bunny/zephyr_imperial_medics/zephyr_medic_lieutenant.mdl",
+        "models/nada/male/MedicalTrooper.mdl",
+        "models/nada/female/MedicalTrooper.mdl"
     },
     description = [[
-        Medical Officer
+        Medical Trooper of the Empire
     ]],
     weapons = {
         "medical_e11_atlas",
@@ -718,6 +1350,7 @@ TEAM_MEDICALOFFICER = DarkRP.createJob("Medical Trooper Officer", {
         "weapon_defibrilator",
         "weapon_bactainjector",
         "weapon_squadshield_arm",
+
         "weapon_shield_activator",
     },
     command = "medofficer",
@@ -729,26 +1362,24 @@ TEAM_MEDICALOFFICER = DarkRP.createJob("Medical Trooper Officer", {
     category = "Medical Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(75)
+        ply:SetMaxArmor(75)
+        ply:SetWalkSpeed(240)
+        ply:SetRunSpeed(360)
     end,
 })
---[[
-    Medical Command Job
-    Generated using: DarkRP | Job Generator
-    https://yourdevtools.com/gmod/darkrp-job
---]]
-
 TEAM_MEDICALCOMMAND = DarkRP.createJob("Medical Trooper Command", {
     color = Color(80, 101, 211),
     model = {
-      "models/player/bunny/zephyr_imperial_medics/zephyr_medic_officer.mdl",
+        "models/nada/male/MedicalTrooper.mdl",
+        "models/nada/female/MedicalTrooper.mdl",
+        "models/nada/RogueOneMedic.mdl"
     },
 
     description = [[
-        Medical Command 
+        Medical Trooper of the Empire
     ]],
     weapons = {
         "medical_e11_atlas",
@@ -760,6 +1391,7 @@ TEAM_MEDICALCOMMAND = DarkRP.createJob("Medical Trooper Command", {
         "weapon_defibrilator",
         "weapon_bactainjector",
         "weapon_squadshield_arm",
+
         "weapon_shield_activator",
     },
     command = "medcommand",
@@ -771,25 +1403,23 @@ TEAM_MEDICALCOMMAND = DarkRP.createJob("Medical Trooper Command", {
     category = "Medical Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(350)
-        ply:SetMaxHealth(350)
-        ply:SetArmor(75)
-        ply:SetMaxArmor(75)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(100)
+        ply:SetMaxArmor(100)
+        ply:SetWalkSpeed(240)
+        ply:SetRunSpeed(360)
     end,
 })
---[[
-    Medical Commander Job
-    Generated using: DarkRP | Job Generator
-    https://yourdevtools.com/gmod/darkrp-job
---]]
-
 TEAM_MEDICALCOMMANDER = DarkRP.createJob("Medical Trooper Commander", {
     color = Color(80, 101, 211),
     model = {
-        "models/player/bunny/zephyr_imperial_medics/zephyr_medic_commander.mdl",
+        "models/nada/male/MedicalTrooper.mdl",
+        "models/nada/female/MedicalTrooper.mdl",
+        "models/nada/RogueOneMedic.mdl"
     },
     description = [[
-        Medical Commander 
+        Medical Trooper of the Empire
     ]],
     weapons = {
         "medical_e11_atlas",
@@ -801,6 +1431,7 @@ TEAM_MEDICALCOMMANDER = DarkRP.createJob("Medical Trooper Commander", {
         "weapon_defibrilator",
         "weapon_bactainjector",
         "weapon_squadshield_arm",
+
         "weapon_shield_activator",
 
     },
@@ -813,199 +1444,752 @@ TEAM_MEDICALCOMMANDER = DarkRP.createJob("Medical Trooper Commander", {
     category = "Medical Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(400)
-        ply:SetMaxHealth(400)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(125)
+        ply:SetMaxArmor(125)
+        ply:SetWalkSpeed(240)
+        ply:SetRunSpeed(360)
+    end,
+})
+
+--- [ATLAS IMPERIAL RP DEATH TROOPER JOBS] ---
+
+TEAM_DEATHTROOPEREN = DarkRP.createJob("Death Trooper Enlisted", {
+    color = Color(8, 99, 26),
+    model = "models/nada/DeathTrooperScaled.mdl",
+    description = [[
+        DeathTrooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "dt_e11d_atlas",
+        "dt_se14_atlas",
+
+        "dt_encrypter",
+        "dt_decrypter",
+    },
+    command = "deathtrooper",
+    max = 0,
+    salary = 250,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Death Trooper",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(75)
+        ply:SetMaxArmor(75)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
+    end,
+})
+TEAM_DEATHTROOPERSGT = DarkRP.createJob("Death Trooper Sergeant", {
+    color = Color(8, 99, 26),
+    model = "models/nada/DeathTrooperScaled.mdl",
+    description = [[
+        DeathTrooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "dt_e11d_atlas",
+        "dt_se14_atlas",
+
+        "dt_encrypter",
+        "dt_decrypter",
+
+        "weapon_r_handcuffs",
+        
+    },
+    command = "deathtroopersgt",
+    max = 0,
+    salary = 250,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Death Trooper",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
         ply:SetArmor(100)
         ply:SetMaxArmor(100)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
     end,
 })
---[[
-    Fleet Job
-    Generated using: DarkRP | Job Generator
-    https://yourdevtools.com/gmod/darkrp-job
---]]
+TEAM_DEATHTROOPEROFFICER = DarkRP.createJob("Death Trooper Officer", {
+    color = Color(8, 99, 26),
+    model = "models/nada/DeathTrooperScaled.mdl",
+    description = [[
+        DeathTrooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        
+        "dt_e11d_atlas",
+        "dt_se14_atlas",
 
-TEAM_FLEETENSIGN = DarkRP.createJob("Ensign/Lieutenant", {
-    color = Color(192, 193, 123),
-    model = {
-        "models/nada/pms/male/naval_officer.mdl",
-        "models/nada/pms/female/naval_officer.mdl"
-    },
-    description = [[
-        Fleet Ensign-Lieutenant-Post
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "tfa_dt29",
-        "rw_sw_e11d"
-    },
-    command = "fleetEL",
-    max = 0,
-    salary = 748,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Fleet",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(500)
-        ply:SetMaxHealth(500)
-    end,
-})
---[[
-    Fleet Job
-    Generated using: DarkRP | Job Generator
-    https://yourdevtools.com/gmod/darkrp-job
---]]
+        "dt_encrypter",
+        "dt_decrypter",
 
-TEAM_FLEETADMIRAL = DarkRP.createJob("Admiral/Fleet Admiral", {
-    color = Color(192, 193, 123),
-    model = {
-        "models/nada/pms/male/grey_admiral.mdl",
-        "models/nada/pms/female/grey_admiral.mdl"
-    },
-    description = [[
-        Fleet Admiral-Fleet Admiral 
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "tfa_dt29",
-        "rw_sw_e11d"
-    },
-    command = "fleetAF",
-    max = 0,
-    salary = 1000,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Fleet",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(900)
-        ply:SetMaxHealth(900)
-    end,
-})
---[[
-    Fleet Job
-    Generated using: DarkRP | Job Generator
-    https://yourdevtools.com/gmod/darkrp-job
---]]
+        "weapon_r_handcuffs",
 
-TEAM_FLEETGRAND = DarkRP.createJob("Grand Admiral", {
-    color = Color(192, 193, 123),
-    model = {
-        "models/nada/pms/male/grandadmiral.mdl",
-        "models/nada/pms/female/grandadmiral.mdl"
+        "zeus_flashbang",
     },
-    description = [[
-        Grand Admiral
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "tfa_dt29",
-        "rw_sw_e11d",
-        "custom_ll_DEV"
-    },
-    command = "fleetGA",
-    max = 2,
-    salary = 2500,
+    command = "deathtrooperof",
+    max = 0,
+    salary = 250,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "Death Trooper",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(1000)
-        ply:SetMaxHealth(1000)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(125)
+        ply:SetMaxArmor(125)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
     end,
 })
---[[
-    Fleet Job
-    Generated using: DarkRP | Job Generator
-    https://yourdevtools.com/gmod/darkrp-job
---]]
+TEAM_DEATHTROOPERCOMMAND = DarkRP.createJob("Death Trooper Command", {
+    color = Color(8, 99, 26),
+    model = "models/nada/DeathTrooperScaled.mdl",
+    description = [[
+        DeathTrooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
 
-TEAM_FLEETCAPTAIN = DarkRP.createJob("Captain/Major", {
-    color = Color(192, 193, 123),
-    model = {
-        "models/nada/pms/male/medic.mdl",
-        "models/nada/pms/female/medic.mdl"
+        "dt_e11d_atlas",
+        "arccw_dual_se14",
+
+        "weapon_r_handcuffs",
+
+        "dt_encrypter",
+        "dt_decrypter",
+
+        "zeus_flashbang",
     },
-    description = [[
-        Fleet Captain-Major
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "tfa_dt29",
-        "rw_sw_e11d"
-    },
-    command = "fleetCM",
+    command = "deathtroopercom",
     max = 0,
-    salary = 750,
+    salary = 250,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "Death Trooper",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(600)
-        ply:SetMaxHealth(600)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(125)
+        ply:SetMaxArmor(125)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
     end,
 })
-TEAM_FLEETCOLONEL = DarkRP.createJob("Colonel/Commodore", {
-    color = Color(192, 193, 123),
-    model = {
-        "models/defcon/repcomm/executiveofficer/executiveofficer.mdl"
-    },
+TEAM_DEATHTROOPERCOMMANDER = DarkRP.createJob("Death Trooper Commander", {
+    color = Color(8, 99, 26),
+    model = "models/nada/DeathTrooperScaled.mdl",
     description = [[
-        Fleet Colonel-Commadore
+        DeathTrooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
-        "tfa_dt29",
-        "rw_sw_e11d"
+
+        "dt_e11d_atlas",
+        "arccw_dual_se14",
+
+        "weapon_r_handcuffs",
+
+        "dt_encrypter",
+        "dt_decrypter",
+
+        "zeus_flashbang",
     },
-    command = "fleetCC",
+    command = "deathtrooperco",
     max = 0,
-    salary = 750,
+    salary = 250,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "Death Trooper",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(700)
-        ply:SetMaxHealth(700)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(150)
+        ply:SetMaxArmor(150)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
     end,
 })
 
-TEAM_FLEETREAR = DarkRP.createJob("Rear Admiral/Vice Admiral", {
-    color = Color(192, 193, 123),
-    model = {
-        "models/nada/pms/male/admiral.mdl",
-        "models/nada/pms/female/admiral.mdl"
-    },
+--- [ATLAS IMPERIAL RP PURGE TROOPER JOBS] ---
+
+TEAM_PURGEENL = DarkRP.createJob("Purge Trooper Enlisted", {
+    color = Color(170, 9, 9),
+    model = "models/nada/purgetrooperphase2.mdl",
     description = [[
-        Fleet Rear Admiral-Vice Admiral 
+        Purge Trooper of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
-        "tfa_dt29",
-        "rw_sw_e11d"
+
+        "purge_dc15s_atlas",
+        "purge_dc17_atlas",
+
+        "sfw_estaff",
     },
-    command = "fleetRV",
+    command = "purgeenlisted",
     max = 0,
-    salary = 750,
+    salary = 50,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "Purge Troopers",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(800)
-        ply:SetMaxHealth(800)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(75)
+        ply:SetMaxArmor(75)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
     end,
 })
+TEAM_PURGESGT = DarkRP.createJob("Purge Trooper Sergeant", {
+    color = Color(170, 9, 9),
+    model = "models/nada/purgetrooperphase2.mdl",
+    description = [[
+        Purge Trooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        
+        "purge_e11d_atlas",
+        "purge_dc17_atlas",
+
+        "sfw_estaff",
+
+        "arccw_thermal_grenade"
+    },
+    command = "purgesergeant",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Purge Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(100)
+        ply:SetMaxArmor(100)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
+    end,
+})
+TEAM_PURGEOFFICER = DarkRP.createJob("Purge Trooper Officer", {
+    color = Color(170, 9, 9),
+    model = "models/nada/purgetrooperphase2.mdl",
+    description = [[
+        Purge Trooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "purge_e11d_atlas",
+        "purge_dc17_atlas",
+
+        "arccw_thermal_grenade",
+        "sfw_estaff"
+    },
+    command = "purgeofficer",
+    max = 0,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Purge Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(125)
+        ply:SetMaxArmor(125)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
+    end,
+})
+TEAM_PURGECOMMAND = DarkRP.createJob("Purge Trooper Command", {
+    color = Color(170, 9, 9),
+    model = "models/nada/purgetrooperphase2.mdl",
+    description = [[
+        Purge Trooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "purge_e11d_atlas",
+        "purge_dc17_atlas",
+
+        "arccw_thermal_grenade",
+        "sfw_estaff",
+    },
+    command = "purgecommand",
+    max = 0,
+    salary = 200,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Purge Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(125)
+        ply:SetMaxArmor(125)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
+    end,
+})
+TEAM_PURGECOMMANDER = DarkRP.createJob("Purge Trooper Commander", {
+    color = Color(170, 9, 9),
+    model = "models/nada/purgetrooperphase2.mdl",
+    description = [[
+        Purge Trooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "purge_e11d_atlas",
+        "purge_dc17_atlas",
+
+        "arccw_thermal_grenade",
+        "sfw_estaff",
+    },
+    command = "purgecommander",
+    max = 0,
+    salary = 250,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Purge Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(150)
+        ply:SetMaxArmor(150)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
+    end,
+})
+TEAM_PURGEMEDIC = DarkRP.createJob("Purge Medic", {
+    color = Color(170, 9, 9),
+    model = "models/nada/purgetrooperphase2.mdl",
+    description = [[
+        Purge Trooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "purge_e11d_atlas",
+        "purge_dc17_atlas",
+
+        "weapon_bactainjector",
+    },
+    command = "purgemedic",
+    max = 0,
+    salary = 250,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Purge Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+TEAM_PURGEFLAMER = DarkRP.createJob("Purge Flamer", {
+    color = Color(170, 9, 9),
+    model = "models/nada/purgetrooperphase2.mdl",
+    description = [[
+        Purge Trooper of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "purge_e11d_atlas",
+        "purge_dc17_atlas",
+
+        "arccw_thermal_grenade",
+        "sfw_estaff",
+        "weapon_imperial_flamethrower"
+    },
+    command = "purgeflamer",
+    max = 0,
+    salary = 250,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Purge Troopers",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(100)
+        ply:SetMaxArmor(100)
+        ply:SetWalkSpeed(152)
+        ply:SetRunSpeed(228)
+    end,
+})
+
+--- [ATLAS IMPERIAL RP ISB JOBS] ---
+
+TEAM_ISB = DarkRP.createJob("ISB Agent", {
+    color = Color(10, 0, 194),
+    model = {
+        "models/nada/pms/female/isb.mdl",
+        "models/nada/pms/male/isb.mdl"
+    },
+    description = [[
+       ISB Agent of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "isb_rk3_atlas",
+        "isb_e11d_atlas",
+
+        "dt_decrypter",
+        "dt_encrypter",
+        "weapon_r_handcuffs",
+        "stunstick",
+        
+    },
+    command = "isbagent",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Security Bureau ",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(25)
+        ply:SetMaxArmor(25)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+TEAM_ISBWO = DarkRP.createJob("ISB Warrant Officer", {
+    color = Color(10, 0, 194),
+    model = {
+        "models/nada/pms/female/isb.mdl",
+        "models/nada/pms/male/isb.mdl"
+    },
+    description = [[
+        ISB Agent of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "isb_rk3_atlas",
+        "isb_e11d_atlas",
+
+        "dt_decrypter",
+        "dt_encrypter",
+        "weapon_r_handcuffs",
+        "stunstick",
+
+        "arrcw_shock_grenade"
+    },
+    command = "isbwo",
+    max = 0,
+    salary = 200,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Security Bureau ",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+TEAM_ISBOFFICER = DarkRP.createJob("ISB Officer", {
+    color = Color(10, 0, 194),
+    model = {
+        "models/nada/pms/female/isb.mdl",
+        "models/nada/pms/male/isb.mdl"
+    },
+    description = [[
+        ISB Agent of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "isb_rk3_atlas",
+        "isb_e11d_atlas",
+        "isb_e11s_atlas",
+
+        "dt_decrypter",
+        "dt_encrypter",
+        "weapon_r_handcuffs",
+        "stunstick",
+
+        "arrcw_shock_grenade"
+    },
+    command = "isbofficer",
+    max = 0,
+    salary = 250,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Security Bureau ",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(75)
+        ply:SetMaxArmor(75)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+TEAM_ISBCOMMAND = DarkRP.createJob("ISB Command", {
+    color = Color(10, 0, 194),
+    model = {
+        "models/nada/pms/female/isb.mdl",
+        "models/nada/pms/male/isb.mdl"
+    },
+    description = [[
+        ISB Agent of the Empire 
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "isb_duel_rk3_atlas",
+        "isb_e11d_atlas",
+        "isb_e11s_atlas",
+
+        "dt_decrypter",
+        "dt_encrypter",
+        "weapon_r_handcuffs",
+        "stunstick",
+
+        "arrcw_shock_grenade"
+    },
+    command = "isbcommand",
+    max = 0,
+    salary = 300,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Security Bureau ",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(100)
+        ply:SetMaxArmor(100)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+TEAM_ISBDEPUTYDIRECTOR = DarkRP.createJob("ISB Deputy Director", {
+    color = Color(10, 0, 194),
+    model = {
+        "models/nada/pms/female/isb.mdl",
+        "models/nada/pms/male/isb.mdl"
+    },
+    description = [[
+        ISB Agent of the Empire 
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "isb_duel_rk3_atlas",
+        "isb_e11d_atlas",
+        "isb_e11s_atlas",
+
+        "dt_decrypter",
+        "dt_encrypter",
+        "weapon_r_handcuffs",
+        "stunstick",
+
+        "arrcw_shock_grenade"
+    },
+    command = "isbdeputydirector",
+    max = 0,
+    salary = 350,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Security Bureau ",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(125)
+        ply:SetMaxArmor(125)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+TEAM_ISBDIRECTOR = DarkRP.createJob("ISB Director", {
+    color = Color(10, 0, 194),
+    model = {
+        "  models/nada/pms/female/isb.mdl",
+        "models/nada/pms/male/isb.mdl"
+    },
+    description = [[
+        ISB Agent of the Empire 
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "isb_director_rk3_atlas",
+        "isb_e11d_atlas",
+        "isb_e11s_atlas",
+
+        "dt_decrypter",
+        "dt_encrypter",
+        "weapon_r_handcuffs",
+        "stunstick",
+
+       "arrcw_shock_grenade"
+    },
+    command = "isbdirector",
+    max = 0,
+    salary = 350,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Security Bureau ",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(125)
+        ply:SetMaxArmor(125)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+
+TEAM_ISBCOLONEL = DarkRP.createJob("ISB Colonel", {
+    color = Color(0, 0, 0),
+    model = {
+        "models/nada/pms/male/imperialweapontechnician.mdl",
+        "models/nada/NavyCommando.mdl",
+        "models/nada/deathtrooper.mdl",
+        "models/nada/RogueOneTriton.mdl",
+    },
+    description = [[
+        ISB Colonel a jack of certain trades 
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "isb_duel_rk3_atlas",
+        "isb_e11d_atlas",
+        "isb_e11s_atlas",
+
+        "dt_decrypter",
+        "dt_encrypter",
+        "weapon_r_handcuffs",
+        
+        "arrest_stick",
+        "stunstick",
+        "unarrest_stick",
+
+        "arrcw_shock_grenade",
+        "arccw_btrs_41"
+        
+    },
+    command = "isbcol",
+    max = 1,
+    salary = 500,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Security Bureau ",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(125)
+        ply:SetMaxArmor(125)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+TEAM_ISBSECRETARY = DarkRP.createJob("ISB Secretary", {
+    color = Color(0, 0, 0),
+    model = {
+        "models/nada/pms/male/ISBAttendant.mdl",
+        "models/nada/pms/female/ISBAttendant.mdl",
+        "models/nada/pms/male/imperialweapontechnician.mdl",
+        "models/nada/NavyCommando.mdl",
+        "models/nada/deathtrooper.mdl",
+        "models/nada/RogueOneTriton.mdl",
+    },
+    description = [[
+        ISB Secretary a jack of certain trades 
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "isb_duel_rk3_atlas",
+        "isb_e11d_atlas",
+        "isb_e11s_atlas",
+
+        "dt_decrypter",
+        "dt_encrypter",
+        "weapon_r_handcuffs",
+        
+        "arrest_stick",
+        "stunstick",
+        "unarrest_stick",
+
+        "arrcw_shock_grenade",
+        "arccw_btrs_41"
+        
+    },
+    command = "isbsecretary",
+    max = 1,
+    salary = 500,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Security Bureau ",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(125)
+        ply:SetMaxArmor(125)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
+
+
+
+--- [ATLAS IMPERIAL RP INQUISITOR JOBS] ---
 
 TEAM_INQUSITORJUNIOR = DarkRP.createJob("Junior Inquisitor", {
     color = Color(204, 0, 0),
@@ -1024,7 +2208,7 @@ TEAM_INQUSITORJUNIOR = DarkRP.createJob("Junior Inquisitor", {
         "models/player/xozz/hydra/inquisitor/zabrakinquisitor.mdl"
     },
     description = [[
-        Acolyte/Apprentice of the Empire
+        Junior Inquisitor of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
@@ -1046,7 +2230,6 @@ TEAM_INQUSITORJUNIOR = DarkRP.createJob("Junior Inquisitor", {
         ply:SetMaxArmor(100)
     end,
 })
-
 TEAM_INQUSITOR = DarkRP.createJob("Inquisitor", {
     color = Color(204, 0, 0),
     model = {
@@ -1064,13 +2247,13 @@ TEAM_INQUSITOR = DarkRP.createJob("Inquisitor", {
         "models/player/xozz/hydra/inquisitor/zabrakinquisitor.mdl"
     },
     description = [[
-        Warrior/Master of the Empire
+        Inquisitor of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
         "weapon_lscs", 
         "weapon_r_handcuffs",
-        "inq_ec17_atlas"
+        "inq_se14_atlas"
     },
     command = "inquisitor",
     max = 0,
@@ -1087,7 +2270,6 @@ TEAM_INQUSITOR = DarkRP.createJob("Inquisitor", {
         ply:SetMaxArmor(150)
     end,
 })
-
 TEAM_INQUSITORSENIOR = DarkRP.createJob("Senior Inquisitor", {
     color = Color(204, 0, 0),
     model = {
@@ -1105,13 +2287,13 @@ TEAM_INQUSITORSENIOR = DarkRP.createJob("Senior Inquisitor", {
         "models/player/xozz/hydra/inquisitor/zabrakinquisitor.mdl"
     },
     description = [[
-        Lord of the Empire
+        Senior Inquisitor of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
         "weapon_lscs", 
         "weapon_r_handcuffs",
-        "inq_ec17_atlas"
+        "inq_se14_atlas"
     },
     command = "srinquisitor",
     max = 0,
@@ -1138,7 +2320,7 @@ TEAM_INQUSITORSECOND = DarkRP.createJob("Second Sister", {
         "weapon_empty_hands",
         "weapon_lscs", 
         "weapon_r_handcuffs",
-        "inq_ec17_atlas"
+        "inq_se14_atlas"
     },
     command = "secondsister",
     max = 0,
@@ -1155,7 +2337,6 @@ TEAM_INQUSITORSECOND = DarkRP.createJob("Second Sister", {
         ply:SetMaxArmor(200)
     end,
 })
-
 TEAM_INQUSITORGRAND = DarkRP.createJob("Grand Inquisitor", {
     color = Color(204, 0, 0),
     model = "models/epangelmatikes/grand_inquisitor.mdl",
@@ -1166,7 +2347,7 @@ TEAM_INQUSITORGRAND = DarkRP.createJob("Grand Inquisitor", {
         "weapon_empty_hands",
         "weapon_lscs", 
         "weapon_r_handcuffs",
-        "inq_ec17_atlas"
+        "inq_se14_atlas"
     },
     command = "grandinquisitor",
     max = 0,
@@ -1183,18 +2364,23 @@ TEAM_INQUSITORGRAND = DarkRP.createJob("Grand Inquisitor", {
         ply:SetMaxArmor(250)
     end,
 })
-
-
 TEAM_INQUISITORROYAL = DarkRP.createJob("Royal Guard", {
     color = Color(240, 0, 0),
     model = {
         "models/epangelmatikes/royalguard/royal_guard.mdl"
     },
     description = [[
-        A bounty hunter for hire
+        A Royal Guard of Emperor Palpatine
     ]],
     weapons = {
         "weapon_empty_hands",
+        "Arccw_cr2",
+        "Arccw_t21",
+        "Item_saberhilt_staffel",
+        "Weapon_squadshield_arm",
+        "Rw_sw_shield_imp",
+        "Arccw_thermal_grenade",
+        "arccw_shock_grenade"
 
     },
     command = "royalguard",
@@ -1212,7 +2398,6 @@ TEAM_INQUISITORROYAL = DarkRP.createJob("Royal Guard", {
         ply:SetMaxArmor(200)
     end,
 })
-
 TEAM_INQUSITORDARTH = DarkRP.createJob("Darth Vader", {
     color = Color(204, 0, 0),
     model = "models/konnie/starwars/darthvader.mdl",
@@ -1222,7 +2407,7 @@ TEAM_INQUSITORDARTH = DarkRP.createJob("Darth Vader", {
     weapons = {
         "weapon_empty_hands",
         "weapon_lscs", 
-        "inq_ec17_atlas",
+        "inq_se14_atlas",
         "weapon_r_handcuffs"
     },
     command = "darthvader",
@@ -1240,18 +2425,17 @@ TEAM_INQUSITORDARTH = DarkRP.createJob("Darth Vader", {
         ply:SetMaxArmor(300)
     end,
 })
-
 TEAM_INQUSITOREMPEROR = DarkRP.createJob("The Emperor", {
     color = Color(10, 0, 194),
     model = "models/player/emperor_palpatine.mdl",
     description = [[
-        the ruler of the empire and a sith lord
+        The Empire
     ]],
     weapons = {
         "weapon_empty_hands",
         "weapon_lscs", 
         "weapon_r_handcuffs",
-        "inq_ec17_atlas",
+        "inq_se14_atlas",
         "custom_ib_OWNER"
     },
     command = "theemperor",
@@ -1269,813 +2453,364 @@ TEAM_INQUSITOREMPEROR = DarkRP.createJob("The Emperor", {
         ply:SetMaxArmor(400)
     end,
 })
-TEAM_IMPERIALARMYENL = DarkRP.createJob("Imperial Army Enlisted", {
-    color = Color(0, 148, 57),
-   model = {
-        "models/nada/MudTrooper_M.mdl",
-        "models/nada/MudTrooper_F.mdl",
-        "models/nada/ArmyTrooper_M.mdl",
-        "models/nada/ArmyTrooper_F.mdl"
-    },
-    description = [[
-        You're an Enlisted in the Imperial Army
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "ia_e10_atlas",
-        "ia_ec17_atlas"
-    },
-    command = "imparmyenlisted",
-    max = 0,
-    salary = 25,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Imperial Army",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(200)
-        ply:SetMaxHealth(200)
-        ply:SetArmor(25)
-        ply:SetMaxArmor(25)
-    end,
-})
-TEAM_IMPERIALARMYSGT = DarkRP.createJob("Imperial Army Sergeant", {
-    color = Color(0, 148, 57),
-   model = {
-        "models/nada/MudTrooper_M.mdl",
-        "models/nada/MudTrooper_F.mdl",
-        "models/nada/ArmyTrooper_M.mdl",
-        "models/nada/ArmyTrooper_F.mdl"
-    },
-    description = [[
-        You're a Sergeant in the Imperial Army
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "ia_e10_atlas",
-        "ia_ec17_atlas",
-        "arccw_thermal_grenade",
-        "ia_rk3_atlas"
-    },
-    command = "imparmysergeant",
-    max = 0,
-    salary = 100,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Imperial Army",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(250)
-        ply:SetMaxHealth(250)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
-    end,
-})
 
-TEAM_IMPERIALARMYOFFICER = DarkRP.createJob("Imperial Army Officer", {
-    color = Color(0, 148, 57),
+
+--- [ATLAS IMPERIAL RP FLEET JOBS] ---
+
+TEAM_FLEETENSIGN = DarkRP.createJob("Ensign/Lieutenant", {
+    color = Color(192, 193, 123),
     model = {
-        "models/nada/MudTrooper_M.mdl",
-        "models/nada/MudTrooper_F.mdl",
-        "models/nada/ArmyTrooper_M.mdl",
-        "models/nada/ArmyTrooper_F.mdl",
+        "models/nada/pms/male/naval_officer.mdl",
+        "models/nada/pms/female/naval_officer.mdl"
     },
     description = [[
-        You're an Officer in the Imperial Army
+        Fleet of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
-        "ia_e10_atlas",
-        "ia_ec17_atlas",
-        "arccw_thermal_grenade",
-        "ia_rk3_atlas",
-        "ia_e11s_atlas",
-        "ia_e11_atlas",
-        "ia_t21_atlas"
+        "tfa_dt29",
+        "rw_sw_e11d"
     },
-    command = "imparmyofficer",
+    command = "fleetEL",
     max = 0,
-    salary = 150,
+    salary = 748,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Imperial Army",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
-    end,
-})
-TEAM_IMPERIALARMYCOMMAND = DarkRP.createJob("Imperial Army Command", {
-    color = Color(0, 148, 57),
-   model = {
-    "models/nada/MudTrooper_M.mdl",
-    "models/nada/MudTrooper_F.mdl",
-    "models/nada/ArmyTrooper_M.mdl",
-    "models/nada/ArmyTrooper_F.mdl"
-    },
-    description = [[
-        You're a Command in the Imperial Army
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "ia_e10_atlas",
-        "ia_ec17_atlas",
-        "arccw_thermal_grenade",
-        "ia_rk3_atlas",
-        "ia_e11s_atlas",
-        "ia_e11_atlas",
-        "ia_t21_atlas",
-        "alydus_fortificationbuildertablet",
-    },
-    command = "imparmycommand",
-    max = 0,
-    salary = 200,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Imperial Army",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(350)
-        ply:SetMaxHealth(350)
-        ply:SetArmor(75)
-        ply:SetMaxArmor(75)
-    end,
-})
-TEAM_IMPERIALARMYCOMMANDER = DarkRP.createJob("Imperial Army Commander", {
-    color = Color(0, 148, 57),
-    model = {
-        "models/nada/MudTrooper_M.mdl",
-        "models/nada/MudTrooper_F.mdl",
-        "models/nada/ArmyTrooper_M.mdl",
-        "models/nada/ArmyTrooper_F.mdl"
-    },
-    description = [[
-        You're a Commander in the Imperial Army
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "ia_e10_atlas",
-        "ia_ec17_atlas",
-        "arccw_thermal_grenade",
-        "ia_rk3_atlas",
-        "ia_e11s_atlas",
-        "ia_e11_atlas",
-        "ia_t21_atlas",
-        "alydus_fortificationbuildertablet",
-    },
-    command = "imparmycommander",
-    max = 0,
-    salary = 250,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Imperial Army",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(400)
-        ply:SetMaxHealth(400)
-        ply:SetArmor(100)
-        ply:SetMaxArmor(100)
-    end,
-})
-
--- Nova Corp
-TEAM_NOVATROOPER = DarkRP.createJob("Nova Trooper Enlisted", {
-    color = Color(255, 232, 82),
-    model = "models/nada/rogueonenova.mdl",
-    description = [[
-        Nova Corp 
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "rw_sw_t21",
-        "rw_sw_rk3"
-    },
-    command = "novatrooper",
-    max = 0,
-    salary = 50,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Nova Corp",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(275)
-        ply:SetMaxHealth(275)
-        ply:SetArmor(25)
-        ply:SetMaxArmor(25)
-    end,
-})
-TEAM_NOVASGT = DarkRP.createJob("Nova Trooper Sergeant", {
-    color = Color(255, 232, 82),
-    model = "models/nada/rogueonenova.mdl",
-    description = [[
-        Nova Corp
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "rw_sw_t21",
-        "rw_sw_rk3",
-        "alydus_fusioncutter"
-    },
-    command = "novasergeant",
-    max = 0,
-    salary = 50,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Nova Corp",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
-    end,
-})
-
-TEAM_NOVAOFFICER = DarkRP.createJob("Nova Trooper Officer", {
-    color = Color(255, 232, 82),
-    model = "models/nada/rogueonenova.mdl",
-    description = [[
-        Nova Corp
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "rw_sw_t21",
-        "rw_sw_hh12",
-        "rw_sw_nade_thermal",
-        "rw_sw_rk3",
-        "alydus_fusioncutter",
-        "rw_sw_cr2c"
-    },
-    command = "novaofficer",
-    max = 0,
-    salary = 50,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Nova Corp",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(350)
-        ply:SetMaxHealth(350)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
-    end,
-})
-
-TEAM_NOVACOMMAND = DarkRP.createJob("Nova Trooper Command", {
-    color = Color(255, 232, 82),
-    model = {
-        "models/nada/rogueonenova.mdl",
-        "models/nada/rogueonenovaelite.mdl"
-    },
-    description = [[
-        Nova Corp 
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "rw_sw_t21",
-        "rw_sw_hh12",
-        "rw_sw_nade_thermal",
-        "rw_sw_rk3",
-        "alydus_fusioncutter",
-        "rw_sw_cr2c",
-        "rw_sw_dp23"
-    },
-    command = "novacommand",
-    max = 0,
-    salary = 50,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Nova Corp",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(400)
-        ply:SetMaxHealth(400)
-        ply:SetArmor(75)
-        ply:SetMaxArmor(75)
-    end,
-})
-TEAM_NOVACOMMANDER = DarkRP.createJob("Nova Trooper Commander", {
-    color = Color(255, 232, 82),
-    model = {
-        "models/nada/rogueonenova.mdl",
-        "models/nada/rogueonenovaelite.mdl"
-    },
-    description = [[
-        Nova Corp 
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "rw_sw_t21",
-        "rw_sw_hh12",
-        "rw_sw_nade_thermal",
-        "alydus_fusioncutter",
-        "rw_sw_cr2c",
-        "rw_sw_dp23",
-        "rw_sw_ib94"
-    },
-    command = "novacommander",
-    max = 0,
-    salary = 50,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Nova Corp",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(450)
-        ply:SetMaxHealth(450)
-        ply:SetArmor(100)
-        ply:SetMaxArmor(100)
-    end,
-})
-
--- Death Trooper
-TEAM_DEATHTROOPERTRA = DarkRP.createJob("Death Trooper Trainee", {
-    color = Color(8, 99, 26),
-    model = "models/nada/DeathTrooperScaled.mdl",
-    description = [[
-        DeathTrooper
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "dt_e11d_atlas",
-        "dt_dc17_atlas",
-
-        "dt_encrypter",
-        "dt_decrypter",
-
-    },
-    command = "deathtroopertra",
-    max = 0,
-    salary = 250,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Death Trooper",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(350)
-        ply:SetMaxHealth(350)
-        ply:SetArmor(25)
-        ply:SetMaxArmor(25)
-    end,
-})
-TEAM_DEATHTROOPEREN = DarkRP.createJob("Death Trooper Enlisted", {
-    color = Color(8, 99, 26),
-    model = "models/nada/DeathTrooperScaled.mdl",
-    description = [[
-        DeathTrooper
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "dt_e11d_atlas",
-        "dt_se14_atlas",
-        "dt_dc17_atlas",
-
-        "dt_encrypter",
-        "dt_decrypter",
-
-    },
-    command = "deathtrooper",
-    max = 0,
-    salary = 250,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Death Trooper",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(375)
-        ply:SetMaxHealth(375)
-        ply:SetArmor(25)
-        ply:SetMaxArmor(25)
-    end,
-})
-TEAM_DEATHTROOPERSGT = DarkRP.createJob("Death Trooper Sergeant", {
-    color = Color(8, 99, 26),
-    model = "models/nada/DeathTrooperScaled.mdl",
-    description = [[
-        DeathTrooper Sergeant
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "dt_e11d_atlas",
-        "dt_se14_atlas",
-        "dt_dc17_atlas",
-
-        "dt_encrypter",
-        "dt_decrypter",
-
-        "weapon_r_handcuffs",
-
-        "arccw_thermal_grenade",
-        
-    },
-    command = "deathtroopersgt",
-    max = 0,
-    salary = 250,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Death Trooper",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(400)
-        ply:SetMaxHealth(400)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
-    end,
-})
-
-TEAM_DEATHTROOPEROFFICER = DarkRP.createJob("Death Trooper Officer", {
-    color = Color(8, 99, 26),
-    model = "models/nada/DeathTrooperScaled.mdl",
-    description = [[
-        DeathTrooper Officer
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "dt_e11d_atlas",
-        "dt_se14_atlas",
-        "dt_dc17_atlas",
-        "dt_dlt19_atlas",
-        "dt_dlt19x_atlas",
-
-        "dt_encrypter",
-        "dt_decrypter",
-
-        "weapon_r_handcuffs",
-
-        "arccw_thermal_grenade",
-    },
-    command = "deathtrooperof",
-    max = 0,
-    salary = 250,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Death Trooper",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(450)
-        ply:SetMaxHealth(450)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
-    end,
-})
-
-TEAM_DEATHTROOPERCOMMAND = DarkRP.createJob("Death Trooper Command", {
-    color = Color(8, 99, 26),
-    model = "models/nada/DeathTrooperScaled.mdl",
-    description = [[
-        DeathTrooper Command
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "dt_e11d_atlas",
-        "dt_se14_atlas",
-        "dt_dc17_atlas",
-        "dt_dlt19_atlas",
-        "dt_dlt19x_atlas",
-        "weapon_r_handcuffs",
-
-        "dt_encrypter",
-        "dt_decrypter",
-
-        "arccw_thermal_grenade",
-    },
-    command = "deathtroopercom",
-    max = 0,
-    salary = 250,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Death Trooper",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(500)
-        ply:SetMaxHealth(500)
-        ply:SetArmor(75)
-        ply:SetMaxArmor(75)
-    end,
-})
-TEAM_DEATHTROOPERCOMMANDER = DarkRP.createJob("Death Trooper Commander", {
-    color = Color(8, 99, 26),
-    model = "models/nada/DeathTrooperScaled.mdl",
-    description = [[
-        DeathTrooper Commander
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "dt_e11d_atlas",
-        "dt_se14_atlas",
-        "dt_dc17_atlas",
-        "dt_dlt19_atlas",
-        "dt_dlt19x_atlas",
-        "dt_z2_atlas",
-        "weapon_r_handcuffs",
-
-        "dt_encrypter",
-        "dt_decrypter",
-
-        "arccw_thermal_grenade",
-    },
-    command = "deathtrooperco",
-    max = 0,
-    salary = 250,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Death Trooper",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(550)
-        ply:SetMaxHealth(550)
-        ply:SetArmor(100)
-        ply:SetMaxArmor(100)
-    end,
-})
-
-TEAM_ISB = DarkRP.createJob("ISB Agent", {
-    color = Color(10, 0, 194),
-    model = {
-        "models/nada/pms/female/isb.mdl",
-        "models/nada/pms/male/isb.mdl"
-    },
-    description = [[
-       You're a Naval Agent
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "isb_rk3_atlas",
-        "isb_e11d_atlas",
-
-        "dt_decrypter",
-        "dt_encrypter",
-        "weapon_r_handcuffs",
-        
-        "arrest_stick",
-        "stunstick",
-        "unarrest_stick",
-    },
-    command = "isbagent",
-    max = 0,
-    salary = 100,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Imperial Security Bureau ",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
-    end,
-})
-
-TEAM_ISBWO = DarkRP.createJob("ISB Warrant Officer", {
-    color = Color(10, 0, 194),
-    model = {
-        "models/nada/pms/female/isb.mdl",
-        "models/nada/pms/male/isb.mdl"
-    },
-    description = [[
-        You're an ISB Warrant Officer
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "isb_rk3_atlas",
-        "isb_e11d_atlas",
-
-        "dt_decrypter",
-        "dt_encrypter",
-        "weapon_r_handcuffs",
-        
-        "arrest_stick",
-        "stunstick",
-        "unarrest_stick",
-
-        "arrcw_smoke_grenade"
-    },
-    command = "isbwo",
-    max = 0,
-    salary = 200,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Imperial Security Bureau ",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(400)
-        ply:SetMaxHealth(400)
-    end,
-})
-
-TEAM_ISBOFFICER = DarkRP.createJob("ISB Officer", {
-    color = Color(10, 0, 194),
-    model = {
-        "models/nada/pms/female/isb.mdl",
-        "models/nada/pms/male/isb.mdl"
-    },
-    description = [[
-        You're an ISB Officer
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "isb_rk3_atlas",
-        "isb_e11d_atlas",
-        "isb_e11s_atlas",
-
-        "dt_decrypter",
-        "dt_encrypter",
-        "weapon_r_handcuffs",
-        
-        "arrest_stick",
-        "stunstick",
-        "unarrest_stick",
-
-        "arrcw_smoke_grenade"
-    },
-    command = "isbofficer",
-    max = 0,
-    salary = 250,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Imperial Security Bureau ",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(450)
-        ply:SetMaxHealth(450)
-    end,
-})
-
-TEAM_ISBCOMMAND = DarkRP.createJob("ISB Command", {
-    color = Color(10, 0, 194),
-    model = {
-        "models/nada/pms/female/isb.mdl",
-        "models/nada/pms/male/isb.mdl"
-    },
-    description = [[
-        You're an ISB Command 
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "isb_duel_rk3_atlas",
-        "isb_e11d_atlas",
-        "isb_e11s_atlas",
-
-        "dt_decrypter",
-        "dt_encrypter",
-        "weapon_r_handcuffs",
-        
-        "arrest_stick",
-        "stunstick",
-        "unarrest_stick",
-
-        "arrcw_smoke_grenade"
-    },
-    command = "isbcommand",
-    max = 0,
-    salary = 300,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Imperial Security Bureau ",
+    category = "Fleet",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(500)
         ply:SetMaxHealth(500)
     end,
 })
-
-TEAM_ISBCHIEF = DarkRP.createJob("ISB Chief", {
-    color = Color(10, 0, 194),
+TEAM_FLEETADMIRAL = DarkRP.createJob("Admiral/Fleet Admiral", {
+    color = Color(192, 193, 123),
     model = {
-        "models/nada/pms/female/isb.mdl",
-        "models/nada/pms/male/isb.mdl"
+        "models/nada/pms/male/grey_admiral.mdl",
+        "models/nada/pms/female/grey_admiral.mdl"
     },
     description = [[
-        You're an ISB Chief 
+        Fleet of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
-        "isb_duel_rk3_atlas",
-        "isb_e11d_atlas",
-        "isb_e11s_atlas",
-
-        "dt_decrypter",
-        "dt_encrypter",
-        "weapon_r_handcuffs",
-        
-        "arrest_stick",
-        "stunstick",
-        "unarrest_stick",
-
-        "arrcw_smoke_grenade"
+        "tfa_dt29",
+        "rw_sw_e11d"
     },
-    command = "isbchief",
+    command = "fleetAF",
     max = 0,
-    salary = 350,
+    salary = 1000,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Imperial Security Bureau ",
+    category = "Fleet",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(550)
-        ply:SetMaxHealth(550)
+        ply:SetHealth(900)
+        ply:SetMaxHealth(900)
     end,
 })
-
-TEAM_ISBDIRECTOR = DarkRP.createJob("ISB Director", {
-    color = Color(10, 0, 194),
+TEAM_FLEETGRAND = DarkRP.createJob("Grand Admiral", {
+    color = Color(192, 193, 123),
     model = {
-        "  models/nada/pms/female/isb.mdl",
-        "models/nada/pms/male/isb.mdl"
+        "models/nada/pms/male/grandadmiral.mdl",
+        "models/nada/pms/female/grandadmiral.mdl"
     },
     description = [[
-        You're an ISB Director 
+        Grand Admiral of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
-        "isb_director_rk3_atlas",
-        "isb_e11d_atlas",
-        "isb_e11s_atlas",
-
-        "dt_decrypter",
-        "dt_encrypter",
-        "weapon_r_handcuffs",
-        
-        "arrest_stick",
-        "stunstick",
-        "unarrest_stick",
-
-        "arrcw_smoke_grenade"
+        "ttfa_dt29"
     },
-    command = "isbdirector",
-    max = 0,
-    salary = 350,
+    command = "fleetGA",
+    max = 2,
+    salary = 2500,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Imperial Security Bureau ",
+    category = "Fleet",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(1000)
+        ply:SetMaxHealth(1000)
+    end,
+})
+TEAM_FLEETCAPTAIN = DarkRP.createJob("Captain/Major", {
+    color = Color(192, 193, 123),
+    model = {
+        "models/nada/pms/male/medic.mdl",
+        "models/nada/pms/female/medic.mdl"
+    },
+    description = [[
+        Fleet of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "tfa_dt29",
+        "rw_sw_e11d"
+    },
+    command = "fleetCM",
+    max = 0,
+    salary = 750,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Fleet",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(600)
         ply:SetMaxHealth(600)
     end,
 })
-
-TEAM_ISBCOLONEL = DarkRP.createJob("ISB Colonel", {
-    color = Color(0, 0, 0),
+TEAM_FLEETCOLONEL = DarkRP.createJob("Colonel/Commodore", {
+    color = Color(192, 193, 123),
     model = {
-        "models/nada/pms/male/isb.mdl",
+        "models/defcon/repcomm/executiveofficer/executiveofficer.mdl"
     },
     description = [[
-        ISB Colonel a jack of certain trades 
+        Fleet of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
-        "isb_duel_rk3_atlas",
-        "isb_e11d_atlas",
-        "isb_e11s_atlas",
-
-        "dt_decrypter",
-        "dt_encrypter",
-        "weapon_r_handcuffs",
-        
-        "arrest_stick",
-        "stunstick",
-        "unarrest_stick",
-
-        "arrcw_smoke_grenade",
-        "custom_ib_OWNER"
-        
+        "tfa_dt29",
+        "rw_sw_e11d"
     },
-    command = "isbcol",
-    max = 1,
-    salary = 500,
+    command = "fleetCC",
+    max = 0,
+    salary = 750,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Imperial Security Bureau ",
+    category = "Fleet",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(700)
         ply:SetMaxHealth(700)
-        ply:SetArmor(149)
-        ply:SetMaxArmor(149)
+    end,
+})
+TEAM_FLEETREAR = DarkRP.createJob("Rear Admiral/Vice Admiral", {
+    color = Color(192, 193, 123),
+    model = {
+        "models/nada/pms/male/admiral.mdl",
+        "models/nada/pms/female/admiral.mdl"
+    },
+    description = [[
+        Fleet of the Empire 
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "tfa_dt29",
+        "rw_sw_e11d"
+    },
+    command = "fleetRV",
+    max = 0,
+    salary = 750,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Fleet",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(800)
+        ply:SetMaxHealth(800)
+    end,
+})
+
+
+--- [ATLAS IMPERIAL RP NAVY JOBS] ---
+
+TEAM_NAVAL = DarkRP.createJob("Naval Crewman", {
+    color = Color(10, 0, 194),
+    model = {
+        "models/nada/pms/male/navy_trooper.mdl",
+        "models/nada/pms/female/navy_trooper.mdl"
+    },
+    description = [[
+       Naval Crewman of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "arccw_rk3",
+        "arccw_cr2",
+        "weapon_r_handcuffs",
+        "arccw_thermal_grenade",
+        "arrest_stick",
+        "stunstick",
+        "unarrest_stick",
+    },
+    command = "navalcrewman",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Naval Agency",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(300)
+        ply:SetMaxHealth(300)
+    end,
+})
+TEAM_NAVALPO = DarkRP.createJob("Naval Petty Officer", {
+    color = Color(10, 0, 194),
+    model = {
+        "models/nada/pms/male/navy_trooper.mdl",
+        "models/nada/pms/female/navy_trooper.mdl"
+    },
+    description = [[
+       Naval Petty Officer of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "arccw_rk3",
+        "arccw_cr2",
+        "weapon_r_handcuffs",
+        "arccw_thermal_grenade",
+        "arrest_stick",
+        "stunstick",
+        "unarrest_stick",
+    },
+    command = "navalpo",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Naval Agency",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(300)
+        ply:SetMaxHealth(300)
+    end,
+})
+TEAM_NAVALWO = DarkRP.createJob("Naval Warrant Officer", {
+    color = Color(10, 0, 194),
+    model = {
+        "models/nada/pms/male/navy_trooper.mdl",
+        "models/nada/pms/female/navy_trooper.mdl"
+    },
+    description = [[
+       Naval Warrant Officer of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "arccw_rk3",
+        "arccw_cr2",
+        "weapon_r_handcuffs",
+        "arccw_thermal_grenade",
+        "arrest_stick",
+        "stunstick",
+        "unarrest_stick",
+    },
+    command = "navalofficer",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Naval Agency",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(300)
+        ply:SetMaxHealth(300)
+    end,
+})
+TEAM_NAVALDIRECTOR = DarkRP.createJob("Naval Director", {
+    color = Color(10, 0, 194),
+    model = {
+        "models/nada/pms/male/navy_trooper.mdl",
+        "models/nada/pms/female/navy_trooper.mdl"
+    },
+    description = [[
+       Naval Director of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "arccw_rk3",
+        "arccw_cr2",
+        "weapon_r_handcuffs",
+        "arccw_thermal_grenade",
+        "arrest_stick",
+        "stunstick",
+        "unarrest_stick",
+    },
+    command = "navalcommand",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Naval Agency",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(300)
+        ply:SetMaxHealth(300)
+    end,
+})
+TEAM_NAVALCAPTAIN = DarkRP.createJob("Naval Captain/Lieutenant", {
+    color = Color(10, 0, 194),
+    model = {
+        "models/nada/pms/male/navy_trooper.mdl",
+        "models/nada/pms/female/navy_trooper.mdl"
+    },
+    description = [[
+       Naval Captain/Lieutenant of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "arccw_rk3",
+        "arccw_cr2",
+        "weapon_r_handcuffs",
+        "arccw_thermal_grenade",
+        "arrest_stick",
+        "stunstick",
+        "unarrest_stick",
+    },
+    command = "navalcaptain",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Naval Agency",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(300)
+        ply:SetMaxHealth(300)
+    end,
+})
+TEAM_NAVALCHIEF = DarkRP.createJob("Naval Chief", {
+    color = Color(10, 0, 194),
+    model = {
+        "models/nada/pms/male/navy_trooper.mdl",
+        "models/nada/pms/female/navy_trooper.mdl"
+    },
+    description = [[
+       Naval Chief of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+        "arccw_rk3",
+        "arccw_cr2",
+        "weapon_r_handcuffs",
+        "arccw_thermal_grenade",
+        "arrest_stick",
+        "stunstick",
+        "unarrest_stick",
+    },
+    command = "navalchief",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Naval Agency",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(300)
+        ply:SetMaxHealth(300)
     end,
 })
 
@@ -2087,7 +2822,7 @@ TEAM_INFERNOSL = DarkRP.createJob("Inferno Squad Leader", {
     
     },
     description = [[
-        you are the leader of Inferno Squad an elite unit within the empire
+        Inferno Squad of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
@@ -2121,7 +2856,7 @@ TEAM_INFERNOSUB = DarkRP.createJob("Inferno Squad Sub Leader", {
     
     },
     description = [[
-        you are the Sub leader of Inferno Squad an elite unit within the empire
+        Inferno Squad of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
@@ -2153,7 +2888,7 @@ TEAM_INFERNOMEMBER = DarkRP.createJob("Inferno Squad Member", {
     
     },
     description = [[
-        you are a member of Inferno Squad an elite unit within the empire
+        Inferno Squad of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
@@ -2178,276 +2913,36 @@ TEAM_INFERNOMEMBER = DarkRP.createJob("Inferno Squad Member", {
     end,
 })
 
-TEAM_SHORETRA = DarkRP.createJob("Shore Trooper Enlisted", {
-    color = Color(255, 149, 0),
-    model = "models/nada/ShoreTrooper_Andor.mdl",
+
+--- [ATLAS IMPERIAL RP VIP JOBS] ---
+
+TEAM_BH = DarkRP.createJob("Bounty Hunter", {
+    color = Color(225, 0, 255),
+    model = "models/player/aussiwozzi/mandalorians/male_mando_red.mdl",
     description = [[
-        You're a Shore Trainee of Vardos!
+        Free lance Bounty Hunter
     ]],
     weapons = {
         "weapon_empty_hands",
-        "shore_e22_atlas",
-        "shore_rk3_atlas",
-
+        "arccw_e11"
     },
-    command = "shoretrainee",
-    max = 0,
-    salary = 50,
+    command = "bountyhunter",
+    max = 9000,
+    salary = 9000,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Shore Troopers",
+    category = "Miscellaneous",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(250)
-        ply:SetMaxHealth(250)
-        ply:SetArmor(25)
-        ply:SetMaxArmor(25)
-    end,
-})
-TEAM_SHORESGT = DarkRP.createJob("Shore Trooper Sergeant", {
-    color = Color(255, 149, 0),
-    model = "models/nada/ShoreTrooper_Andor.mdl",
-    description = [[
-        You're a Shore Sergeant of Vardos!
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "shore_e22_atlas",
-        "shore_rk3_atlas",
-
-        "arccw_nade_inc",
-
-    },
-    command = "shoresergeant",
-    max = 0,
-    salary = 100,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Shore Troopers",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
-    end,
-})
-TEAM_SHOREOFFICER = DarkRP.createJob("Shore Trooper Officer", {
-    color = Color(255, 149, 0),
-    model = "models/nada/Shoretrooper_Captain.mdl",
-    description = [[
-        You're a Shore Officer of Vardos!
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "shore_e22_atlas",
-        "shore_rk3_atlas",
-
-        "arccw_nade_inc",
-        "shore_tl50_atlas",
-        "shore_e11s_atlas",
-
-    },
-    command = "shoreofficer",
-    max = 0,
-    salary = 150,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Shore Troopers",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(350)
-        ply:SetMaxHealth(350)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
-    end,
-})
-TEAM_SHORECOMMAND = DarkRP.createJob("Shore Trooper Command", {
-    color = Color(255, 149, 0),
-    model = "models/nada/Shoretrooper_Mortar.mdl",
-    description = [[
-        You're a Shore Command of Vardos!
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "shore_e22_atlas",
-        "shore_rk3_atlas",
-
-        "arccw_nade_inc",
-        "shore_tl50_atlas",
-        "shore_e11s_atlas",
-
-    },
-    command = "shorecommand",
-    max = 0,
-    salary = 200,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Shore Troopers",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(400)
-        ply:SetMaxHealth(400)
-        ply:SetArmor(75)
-        ply:SetMaxArmor(75)
-    end,
-})
-TEAM_SHORECOMMANDER = DarkRP.createJob("Shore Trooper Commander", {
-    color = Color(255, 149, 0),
-    model = "models/nada/Shoretrooper_SquadLeader.mdl",
-    description = [[
-        You're a Shore Commander of Vardos!
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "shore_e22_atlas",
-        "shore_rk3_atlas",
-
-        "arccw_nade_inc",
-        "shore_tl50_atlas",
-        "shore_e11s_atlas",
-
-    },
-    command = "shorecommander",
-    max = 0,
-    salary = 250,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Shore Troopers",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(450)
-        ply:SetMaxHealth(450)
-        ply:SetArmor(100)
-        ply:SetMaxArmor(100)
+        ply:SetHealth(1000)
+        ply:SetMaxHealth(1000)
+        ply:SetArmor(0)
+        ply:SetMaxArmor(0)
     end,
 })
 
-TEAM_SHADOWSGT = DarkRP.createJob("Shadow Trooper Sergeant", {
-    color = Color(74, 73, 75),
-    model = "models/nada/rogueoneshadow.mdl",
-    description = [[
-        Shadow Corp of Vardos!
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "cloaking-infinite",
-        "arccw_smoke_grenade",
-
-        "shadow_t21_atlas",
-        "shadow_se14_atlas",
-    },
-    command = "shadowsergeant",
-    max = 0,
-    salary = 50,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Shadow Corp",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
-    end,
-})
-TEAM_SHADOWOFFICER = DarkRP.createJob("Shadow Trooper Officer", {
-    color = Color(74, 73, 75),
-    model = "models/nada/rogueoneshadow.mdl",
-    description = [[
-        Shadow Corp of Vardos!
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "cloaking-infinite",
-        "arccw_smoke_grenade",
-
-        "shadow_t21_atlas",
-        "shadow_se14_atlas",
-    },
-    command = "shadowofficer",
-    max = 0,
-    salary = 50,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Shadow Corp",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(350)
-        ply:SetMaxHealth(350)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
-    end,
-})
-TEAM_SHADOWCOMMAND = DarkRP.createJob("Shadow Trooper Command", {
-    color = Color(74, 73, 75),
-    model = "models/nada/rogueoneshadow.mdl",
-    description = [[
-        Shadow Corp of Vardos!
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "cloaking-infinite",
-        "arccw_smoke_grenade",
-
-        "shadow_t21_atlas",
-        "shadow_dual_se14_atlas",
-
-        "shadow_dlt19x_atlas",
-    },
-    command = "shadowcommand",
-    max = 0,
-    salary = 50,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Shadow Corp",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(400)
-        ply:SetMaxHealth(400)
-        ply:SetArmor(75)
-        ply:SetMaxArmor(75)
-    end,
-})
-TEAM_SHADOWCOMMANDER = DarkRP.createJob("Shadow Trooper Commander", {
-    color = Color(74, 73, 75),
-    model = "models/nada/rogueoneshadow.mdl",
-    description = [[
-        Shadow Corp of Vardos!
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "cloaking-infinite",
-        "arccw_smoke_grenade",
-
-        "shadow_t21_atlas",
-        "shadow_dual_se14_atlas",
-
-        "shadow_dlt19x_atlas",
-    },
-    command = "shadowcommander",
-    max = 0,
-    salary = 50,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Shadow Corp",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(450)
-        ply:SetMaxHealth(450)
-        ply:SetArmor(100)
-        ply:SetMaxArmor(100)
-    end,
-})
+--- [ATLAS IMPERIAL RP STAFF] ---
 
 TEAM_STAFF = DarkRP.createJob("Staff on Duty", {
     color = Color(225, 0, 255),
@@ -2475,7 +2970,6 @@ TEAM_STAFF = DarkRP.createJob("Staff on Duty", {
         ply:SetMaxArmor(0)
     end,
 })
-
 TEAM_GAMEMASTER = DarkRP.createJob("Gamemaster on Duty", {
     color = Color(225, 0, 255),
     model = "models/gonzo/stormtrooperjanitors/stormtrooperjanitor/stormtrooperjanitor.mdl",
@@ -2518,6 +3012,7 @@ TEAM_DEV = DarkRP.createJob("Dev on Duty", {
         "custom_test_bowcaster",
         "custom_grenade_launcher",
         "shadow_dual_se14_atlas",
+        "custom_rocket_jumper",
     },
     command = "dev",
     max = 9000,
@@ -2541,4 +3036,4 @@ GAMEMODE.DefaultTeam = TEAM_RECRUIT
 --[[---------------------------------------------------------------------------
 Jobs that are hitmen (enables the hitman menu)
 ---------------------------------------------------------------------------]]
---[[ DarkRP.addHitmanTeam() ]]
+DarkRP.addHitmanTeam(TEAM_BH)

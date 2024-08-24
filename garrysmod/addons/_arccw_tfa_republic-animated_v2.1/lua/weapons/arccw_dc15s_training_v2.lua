@@ -24,7 +24,7 @@ SWEP.DefaultWMSkin = 0
 
 SWEP.NoHideLeftHandInCustomization = false
 
-SWEP.Damage = 1
+SWEP.Damage = 27
 SWEP.DamageMin = 14 -- damage done at maximum range
 SWEP.DamageRand = 0 -- damage will vary randomly each shot by this fraction
 SWEP.RangeMin = 100 -- how far bullets will retain their maximum damage for
@@ -278,7 +278,7 @@ SWEP.Attachments = {
     [5] = {
         PrintName = "Energization", -- print name
         DefaultAttName = "Standard Energization", -- used to display the "no attachment" text
-        Slot = "ammo",
+        Slot = {"ammo"},
     },
     [6] = {
         PrintName = "Training/Perk", -- print name

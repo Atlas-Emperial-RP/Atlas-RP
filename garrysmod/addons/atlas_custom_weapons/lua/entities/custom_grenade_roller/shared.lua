@@ -23,6 +23,7 @@ function ENT:Initialize()
         local pb_hor = 1
         self:SetModel(self.Model)
         self:PhysicsInitBox( Vector(-pb_vert,-pb_hor,-pb_hor), Vector(pb_vert,pb_hor,pb_hor) )
+        self:SetSolid(SOLID_VPHYSICS)
 
         local phys = self:GetPhysicsObject()
         if phys:IsValid() then

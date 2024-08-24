@@ -33,9 +33,9 @@ function ENT:Draw()
 	cam.Start3D2D(TextPos, Angle(180, self.curRot + 180, -90), .1)
 		draw.SimpleText(Text, Font, 0, 0, self.TextColor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	cam.End3D2D()
-
+	self:SetAnimation(0)
 	self:DrawModel()	
 end
 
 function ENT:OnRemove( )
-end	
+end

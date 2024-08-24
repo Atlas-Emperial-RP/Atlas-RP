@@ -13,6 +13,13 @@ function ENT:Initialize()
 
 	self:SetFlexWeight( 10, 0 )
 	self:ResetSequence(3)
+
+	local phys = self:GetPhysicsObject()
+	if IsValid(phys) then
+		phys:EnableMotion(false)
+		phys:Wake()
+	end
+	self:Setanimation( 0 )
 end
 
 function ENT:Use( activator, caller )

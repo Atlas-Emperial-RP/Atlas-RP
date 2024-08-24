@@ -1,4 +1,3 @@
-
 --[[
 You can now disable attach system and restrict it to world surfaces only
 Bug fixes
@@ -28,47 +27,47 @@ russian
 turkish
 ]]
 RHandcuffsConfig.LanguageToUse = "english"
-//Who can access admin commands,menus etc
+-- Who can access admin commands,menus etc
 RHandcuffsConfig.AdminAccessCustomCheck = function(Player) return Player:IsAdmin() end
 
 RHandcuffsConfig.NPCData = {
-["rhc_bailer"] = {Text = "Bailer", Model = "models/Barney.mdl", TextFont = "rhc_npc_text", TextRotationSpeed = 80, TextColor = Color(255,255,255,255), TextBackgroundColor = Color(0,0,0,255)},
-["rhc_jailer"] = {Text = "Jailer", Model = "models/player/Group01/Female_01.mdl", TextFont = "rhc_npc_text", TextRotationSpeed = 80, TextColor = Color(255,255,255,255), TextBackgroundColor = Color(0,0,0,255)},
+["rhc_bailer"] = {Text = "Bailer", Model = "models/KingPommes/starwars/playermodels/astromech.mdl", TextFont = "rhc_npc_text", TextRotationSpeed = 80, TextColor = Color(255,255,255,255), TextBackgroundColor = Color(0,0,0,255)},
+["rhc_jailer"] = {Text = "Jailer", Model = "models/KingPommes/starwars/playermodels/astromech.mdl", TextFont = "rhc_npc_text", TextRotationSpeed = 80, TextColor = Color(255,255,255,255), TextBackgroundColor = Color(0,0,0,255)},
 }
 
 RHandcuffsConfig.CuffSound = "weapons/357/357_reload1.wav"
 
-//Displays if player is cuffed overhead while aiming at him
+-- Displays if player is cuffed overhead while aiming at him
 RHandcuffsConfig.DisplayOverheadCuffed = false
-//Calculates Movement/Penalty, so 2 would make player move half as fast
-//Moving penalty while cuffed
+-- Calculates Movement/Penalty, so 2 would make player move half as fast
+-- Moving penalty while cuffed
 RHandcuffsConfig.RestrainedMovePenalty = 3
-//Moving penalty while dragging
+-- Moving penalty while dragging
 RHandcuffsConfig.DraggingMovePenalty = 3
-//Setting this to true will cause the system to bonemanipulate clientside, might cause sync issues but won't require you to install all playermodels on the server
+-- Setting this to true will cause the system to bonemanipulate clientside, might cause sync issues but won't require you to install all playermodels on the server
 RHandcuffsConfig.BoneManipulateClientside = false
 
-//Key to drag a player
-//https://wiki.garrysmod.com/page/Enums/IN
+-- Key to drag a player
+-- https://wiki.garrysmod.com/page/Enums/IN
 RHandcuffsConfig.KEY = IN_USE
 
 RHandcuffsConfig.SurrenderEnabled = true
-//All keys can be found here -> https://wiki.garrysmod.com/page/Enums/KEY
-//Key for surrendering
+-- All keys can be found here -> https://wiki.garrysmod.com/page/Enums/KEY
+-- Key for surrendering
 RHandcuffsConfig.SurrenderKey = KEY_T
-//You can't surrender while holding these weapons
+-- You can't surrender while holding these weapons
 RHandcuffsConfig.SurrenderWeaponWhitelist = {
 ["weapon_arc_phone"] = true,
 }
 
-//Entities that you are allowed to interact with while cuffed (For example press plates)
-//Add within the brackets, ["ENTITYNAME"] = true,
+-- Entities that you are allowed to interact with while cuffed (For example press plates)
+-- Add within the brackets, ["ENTITYNAME"] = true,
 RHandcuffsConfig.WhitelistedEntitiesUse = {
 
 }
 
-//Entities that you aren't allowed to attatch players to
-//Add within the brackets, ["ENTITYNAME"] = true,
+-- Entities that you aren't allowed to attatch players to
+-- Add within the brackets, ["ENTITYNAME"] = true,
 RHandcuffsConfig.AttatchmentBlacklistEntities = {
 ["rhc_jailer"] = true,
 ["func_door"] = true,
@@ -76,18 +75,18 @@ RHandcuffsConfig.AttatchmentBlacklistEntities = {
 ["prop_door_rotating"] = true,
 }
 
-//On arrest configs
+-- On arrest configs
 RHandcuffsConfig.OnArrest = {
 	SetModel = false, --Set Model to config: .ArrestModel
 	CustomFunction = function(Player) end, --Custom lua function, ran upon arrest
 }
 
-//Model to set upon arrest
-RHandcuffsConfig.ArrestModel = {Model = "models/player/Group01/Female_01.mdl", Skin = 1}
+-- Model to set upon arrest
+RHandcuffsConfig.ArrestModel = {Model = "models/player/emperor_palpatine.mdl", Skin = 1}
 
 function RHC_InitJobsConfig()
 	timer.Simple(3, function()
-		//Don't touch this unless you want to change handcuff model (this is for the one drawn on the cuffed player)
+		-- Don't touch this unless you want to change handcuff model (this is for the one drawn on the cuffed player)
 		local EData = {
 			EID = "handcuffs", -- Don't change this
 			Name = "Handcuffs",
@@ -120,15 +119,15 @@ function RHC_InitJobsConfig()
 	end)
 end
 
-//Disables drawing player shadow
-//Only use this if the shadows are causing issues
-//This is a temp fix, will be fixed in the future
+-- Disables drawing player shadow
+-- Only use this if the shadows are causing issues
+-- This is a temp fix, will be fixed in the future
 RHandcuffsConfig.DisablePlayerShadow = false
 
-//If itemstore is installed, should confiscating illegal items be enabled?
+-- If itemstore is installed, should confiscating illegal items be enabled?
 RHandcuffsConfig.InventoryIllegalItemsEnabled = true
-//Items that are illegal, defined by the entity class
-//For bricks essentials, it uses the name of the item not the class
+-- Items that are illegal, defined by the entity class
+-- For bricks essentials, it uses the name of the item not the class
 RHandcuffsConfig.InventoryIllegalItems = {
 ["money_printer"] = true,
 ["weapon_ak472"] = true,
@@ -170,8 +169,8 @@ RHandcuffsConfig.BlackListedWeapons = {
 ["bricks_server_invpickup"] = true,
 }
 
-//Add all female models here or the handcuffs positioning will be weird
-//It's case sensitive, make sure all letters are lowercase
+-- Add all female models here or the handcuffs positioning will be weird
+-- It's case sensitive, make sure all letters are lowercase
 RHandcuffsConfig.FEMALE_MODELS = {
     "models/player/group01/female_01.mdl",
     "models/player/group01/female_02.mdl",

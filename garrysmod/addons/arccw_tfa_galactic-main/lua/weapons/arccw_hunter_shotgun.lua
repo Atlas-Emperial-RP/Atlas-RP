@@ -4,7 +4,7 @@ SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
 SWEP.Category = "[ ArcCW ] Galactic TFA Weapons"
 SWEP.Credits = { Author1 = "cat"}
-SWEP.PrintName = "'Hunter Shotgun'"
+SWEP.PrintName = "''"
 SWEP.Trivia_Class = "Blaster Shotgun"
 SWEP.Trivia_Desc = "High tech Blaster shotgun, built for piercing the enemy defenses."
 SWEP.Trivia_Manufacturer = "Forged Industries"

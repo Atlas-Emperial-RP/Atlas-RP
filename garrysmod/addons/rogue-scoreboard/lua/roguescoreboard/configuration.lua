@@ -25,14 +25,14 @@ Configuration.ServerTitle           = "A T L A S  N E T W O R K S"
 -- Are you using DarkRP?
 Configuration.DarkRP                = true
 -- Sort the menu by categories?
-Configuration.SortByCategories      = false
+Configuration.SortByCategories      = true
 
 -- Type your admin prefix. Currently supports: "ulx", "serverguard", "xadmin2", "xadmin", "fadmin", "sam" 
-Configuration.AdministrationMod     = "ulx"
+Configuration.AdministrationMod     = "sam"
 
 -- Allow ALL ranks to view players money and props. If false fill table below.
 Configuration.InformationViewAll    = true
-Configuration.InformationView       = { "Moderator", "admin", "superadmin", "Owner" }
+Configuration.InformationView       = {  "mod", "admin", "sadmin", "superadmin", "Management", "Owner" }
 
 -- Show the online count at the bottom of the scoreboard?
 Configuration.ShowOnlineCount       = true
@@ -55,7 +55,7 @@ Configuration.SteamName             = false
 // R E P O R T  S Y S T E M ( N E W  )
 
 -- Set to false if you do not want the report system
-Configuration.ReportEnabled         = true
+Configuration.ReportEnabled         = false
 
 -- Are you using a report addon that uses a chat prefix? example SH Report uses /report
 Configuration.UsingReportAddon      = false
@@ -142,7 +142,7 @@ Configuration.CurrentPlayersText    = "Current Players"
 -- Configuration.CustomUserTag["STEAM_X:X:XXXXXXX"]      = { Tag = "TAG NAME", TagColor = Color( R,G,B ) }
 
 Configuration.CustomUserTag = {}
-Configuration.CustomUserTag["STEAM_0:0:29761241"]       = { Tag = "THE MAN, THE MYTH, THE LEGEND", TagColor = Color( 121,122,123 ) }
+
 
 
 
@@ -172,27 +172,27 @@ Configuration.RankDisplay["OwnerDONTUSE"]          = { DisplayName = "OwnerDONTU
 // C O M M A N D  C O N F I G U R A T I O N
 
 -- Who has access to remove players props, this uses FPP system
-Configuration.PropAccess            = { "admin", "superadmin", "Owner" }
+Configuration.PropAccess            = { "superadmin", "Management" }
 
 -- Who can see the administrative buttons
-Configuration.MenuAccess            = { "Moderator", "admin", "superadmin", "Owner" }
+Configuration.MenuAccess            = { "tmod",  "mod", "admin", "sadmin", "superadmin", "Management", "Owner" }
 
 -- Allow precise control for commands, if true then set the tables below to what ranks have access otherwise Configuration.MenuAccess determines allowed ranks.
-Configuration.SeperateAccess        = false
+Configuration.SeperateAccess        = true
 
 -- If seperate access is true, configure below.
 -- Who has access to goto
-Configuration.AllowedGoto           = { "Moderator", "admin", "superadmin", "Owner" }
+Configuration.AllowedGoto           = { "tmod",  "mod", "admin", "sadmin", "superadmin", "Management", "Owner" }
 -- Who has access to bring
-Configuration.AllowedBring          = { "Moderator", "admin", "superadmin", "Owner" }
+Configuration.AllowedBring          = { "tmod",  "mod", "admin", "sadmin", "superadmin", "Management", "Owner" }
 -- Who has access to spectate
-Configuration.AllowedSpectate       = { "Moderator", "admin", "superadmin", "Owner" }
+Configuration.AllowedSpectate       = { "tmod",  "mod", "admin", "sadmin", "superadmin", "Management", "Owner" }
 -- Who has access to freeze
-Configuration.AllowedFreeze         = { "Moderator", "admin", "superadmin", "Owner" }
+Configuration.AllowedFreeze         = { "tmod",  "mod", "admin", "sadmin", "superadmin", "Management", "Owner" }
 -- Who has access to kick
-Configuration.AllowedKick           = { "Moderator", "admin", "superadmin", "Owner" }
+Configuration.AllowedKick           = {  "admin", "sadmin", "superadmin", "Management", "Owner" }
 -- Who has access to ban
-Configuration.AllowedBan            = { "Moderator", "admin", "superadmin", "Owner" }
+Configuration.AllowedBan            = {  "admin", "sadmin", "superadmin", "Management", "Owner" }
 
 -- Ban time
 Configuration.CommandBanTime        = 120
@@ -202,9 +202,9 @@ Configuration.CommandBanTime        = 120
 // U N D E R  C O V E R  M O D E
 
 -- Who has access to go incognito?
-Configuration.IncognitoAccess       = { "admin", "superadmin", "Owner" }
+Configuration.IncognitoAccess       = { "mod", "admin", "sadmin", "superadmin", "Management", "Owner" }
 -- Who can see who is incognito mode?
-Configuration.IncognitoVision       = { "admin", "superadmin", "Owner" }
+Configuration.IncognitoVision       = { "mod", "admin", "sadmin", "superadmin", "Management", "Owner" }
 -- Use the custom icon for profile picture, if false will use players original profile picture
 Configuration.UseCustomIcon         = true
 
@@ -226,8 +226,8 @@ Configuration.HighestDeaths         = 2
 -- List of names randomly selected for incognito
 Configuration.UndercoverNames       = { 
 
-"Trembled", "ROcky", "Stan8", "Danny 42", "Deeep", "Venomz", "Harrryyy", "Dimitri", "Corbs912", "Shapey Boi", "NewbS", "Statix", "Dreamin", "TrumpY", "Stackd",
-"Clappedd", "Shenzi", "Fatal", "Turbo12", "ExDee Hehe", "Never Get Dis", "BrokenKid1", "Dollars Plz", "SkippY", "EndeRRs", "Jimma 28", "Garry Newman", "Assa55inz", "SumBowdy Come Get ER"
+"Trembled", "ROcky", "Stan8", "Danny 42", "Flick", "Venomz", "Harrryyy", "Dimitri", "Corbs912", "Shapey Boi", "NewbS", "Statix", "Dreamin", "TrumpY", "Stackd",
+"Clappedd", "Shenzi", "Fatal", "Turbo12", "ExDee Hehe", "Never Get Dis", "BrokenKid1", "Dollars Plz", "SkippY", "EndeRRs", "Jimma 28", "Garry Newman", "Assa55inz", "mytankhasaflat"  
 
 }
 

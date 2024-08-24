@@ -22,13 +22,13 @@ GM.Config.AdminsCopWeapons              = true
 -- adminBypassJobCustomCheck - Enable/disable whether an admin can force set a job with whenever customCheck returns false.
 GM.Config.adminBypassJobRestrictions    = true
 -- Acts/Taunts - Enable/disable Taunts (e.g. act salute)
-GM.Config.allowActs                     = false
+GM.Config.allowActs                     = true
 -- allow people getting their own custom jobs.
 GM.Config.allowjobswitch                = true
 -- allowrpnames - Allow Players to Set their RP names using the /rpname command.
 GM.Config.allowrpnames                  = true
 -- allowsprays - Enable/disable the use of sprays on the server.
-GM.Config.allowsprays                   = true
+GM.Config.allowsprays                   = false
 -- allowvehicleowning - Enable/disable whether people can own vehicles.
 GM.Config.allowvehicleowning            = true
 -- allowvnocollide - Enable/disable the ability to no-collide a vehicle (for security).
@@ -56,7 +56,7 @@ GM.Config.copscanunweld                 = false
 -- cpcanarrestcp - Allow/Disallow CPs to arrest other CPs.
 GM.Config.cpcanarrestcp                 = true
 -- currencyLeft - The position of the currency symbol. true for left, false for right.
-GM.Config.currencyLeft                  = true
+GM.Config.currencyLeft                  = false
 -- customjobs - Enable/disable the /job command (personalized job names).
 GM.Config.customjobs                    = true
 -- customspawns - Enable/disable whether custom spawns should be used.
@@ -68,13 +68,13 @@ GM.Config.showdeaths                    = true
 -- deadtalk - Enable/disable whether people talk and use commands while dead.
 GM.Config.deadtalk                      = true
 -- deadvoice - Enable/disable whether people talk through the microphone while dead.
-GM.Config.deadvoice                     = true
+GM.Config.deadvoice                     = false
 -- deathpov - Enable/disable whether people see their death in first person view.
 GM.Config.deathpov                      = false
 -- decalcleaner - Enable/Disable clearing every player's decals.
 GM.Config.decalcleaner                  = false
 -- disallowClientsideScripts - Clientside scripts can be very useful for customizing the HUD or to aid in building. This option bans those scripts.
-GM.Config.disallowClientsideScripts     = false
+GM.Config.disallowClientsideScripts     = true
 -- doorwarrants - Enable/disable Warrant requirement to enter property.
 GM.Config.doorwarrants                  = true
 -- dropmoneyondeath - Enable/disable whether people drop money on death.
@@ -128,7 +128,7 @@ GM.Config.keepPickedUp                  = false
 -- instantjob - Enable/Disable instantly respawning when norespawn is false
 GM.Config.instantjob                    = true
 -- npcarrest - Enable/disable arresting npc's.
-GM.Config.npcarrest                     = true
+GM.Config.npcarrest                     = false
 -- ooc - Whether or not OOC tags are enabled.
 GM.Config.ooc                           = true
 -- propertytax - Enable/disable property tax.
@@ -267,7 +267,7 @@ GM.Config.respawntime                   = 1
 -- changejobtime - Minimum amount of seconds a player has to wait before changing job.
 GM.Config.changejobtime                 = 10
 -- runspeed - Sets the max running speed.
-GM.Config.runspeed                      = 240
+GM.Config.runspeed                      = 300
 -- runspeed - Sets the max running speed for CP teams.
 GM.Config.runspeedcp                    = 255
 -- searchtime - Number of seconds for which a search warrant is valid.
@@ -295,7 +295,7 @@ GM.Config.wallettaxtime                 = 600
 -- wantedtime - Number of seconds for which a player is wanted for.
 GM.Config.wantedtime                    = 120
 -- walkspeed - Sets the max walking speed.
-GM.Config.walkspeed                     = 160
+GM.Config.walkspeed                     = 200
 -- falldamagedamper - The damper on realistic fall damage. Default is 15. Decrease this for more damage.
 GM.Config.falldamagedamper              = 15
 -- falldamageamount - The base damage taken from falling for static fall damage. Default is 10.
@@ -330,7 +330,7 @@ GM.Config.lockdownsound = "npc/overwatch/cityvoice/f_confirmcivilstatus_1_spkr.w
 
 -- The skin DarkRP uses. Set to "default" to use the GMod default derma theme.
 GM.Config.DarkRPSkin = "DarkRP"
-GM.Config.currency = "$"
+GM.Config.currency = " Credits"
 GM.Config.currencyThousandSeparator = ","
 GM.Config.chatCommandPrefix = "/"
 GM.Config.F1MenuHelpPage = "https://darkrp.miraheze.org/wiki/Main_Page"
@@ -513,19 +513,19 @@ GM.Config.AFKDelay = 300
 Hitmenu module
 ---------------------------------------------------------------------------]]
 -- The minimum price for a hit.
-GM.Config.minHitPrice = 200
+GM.Config.minHitPrice = 5000
 -- The maximum price for a hit.
-GM.Config.maxHitPrice = 50000
+GM.Config.maxHitPrice = 1000000
 -- The minimum distance between a hitman and his customer when they make the deal.
 GM.Config.minHitDistance = 150
 -- The text that tells the player he can press use on the hitman to request a hit.
-GM.Config.hudText = "I am a hitman.\nPress E on me to request a hit!"
+GM.Config.hudText = "I am a Bounty Hunter.\nPress E on me to request a Bounty!"
 -- The text above a hitman when he's got a hit.
-GM.Config.hitmanText = "Hit\naccepted!"
+GM.Config.hitmanText = "Bounty\naccepted!"
 -- The cooldown time for a hit target (so they aren't spam killed).
-GM.Config.hitTargetCooldown = 120
+GM.Config.hitTargetCooldown = 300
 -- How long a customer has to wait to be able to buy another hit (from the moment the hit is accepted).
-GM.Config.hitCustomerCooldown = 240
+GM.Config.hitCustomerCooldown = 600
 
 --[[---------------------------------------------------------------------------
 Hungermod module
