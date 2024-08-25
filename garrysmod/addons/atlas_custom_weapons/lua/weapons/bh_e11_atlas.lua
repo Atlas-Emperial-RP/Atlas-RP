@@ -33,8 +33,8 @@ SWEP.IconOverride = "materials/entities/rw_sw_e11_noscope.png"
 SWEP.DefaultBodygroups = "000000000000"
 
 -- [Damage] --
-SWEP.Damage = 35
-SWEP.DamageMin = 24
+SWEP.Damage = 27
+SWEP.DamageMin = 19
 
 -- [Range] --
 SWEP.Range = 450
