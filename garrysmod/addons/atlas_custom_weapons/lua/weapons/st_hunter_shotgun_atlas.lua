@@ -3,7 +3,7 @@ AddCSLuaFile()
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
 SWEP.Category = "[ Atlas ] Custom Weapons"
-SWEP.Credits = { Author1 = "cat"}
+SWEP.Credits = { Author1 = "Yairme"}
 SWEP.PrintName = "ST Hunter Shotgun"
 SWEP.Trivia_Class = "ST Hunter Shotgun"
 SWEP.Trivia_Desc = "High tech Blaster shotgun, built for piercing the enemy defenses."
@@ -34,10 +34,23 @@ SWEP.IconOverride = "materials/entities/rw_sw_huntershotgun.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 33
-SWEP.RangeMin = 15
-SWEP.DamageMin = 11
+-- [Damage] --
+SWEP.Damage = 26
+SWEP.DamageMin = 9
+
+-- [Range] --
 SWEP.Range = 50
+SWEP.RangeMin = 15
+
+-- [Recoil] --
+SWEP.Recoil = 1.5
+SWEP.RecoilSide = 0.6
+SWEP.RecoilPunch = 0.8
+SWEP.RecoilRise = 1
+
+-- [Fire Rate M/R] --
+SWEP.Delay = 90 / 150
+
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
 SWEP.MuzzleVelocity = 400
@@ -53,12 +66,6 @@ SWEP.HullSize = 1.5
 SWEP.ChamberSize = 0
 SWEP.Primary.ClipSize = 8
 
-SWEP.Recoil = 1.5
-SWEP.RecoilSide = 0.6
-SWEP.RecoilPunch = 0.8
-SWEP.RecoilRise = 1
-
-SWEP.Delay = 90 / 150
 SWEP.Num = 5
 SWEP.Firemodes = {
 	{

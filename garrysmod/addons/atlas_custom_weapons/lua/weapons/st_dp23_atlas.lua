@@ -31,10 +31,23 @@ SWEP.IconOverride = "materials/entities/rw_sw_dp23.png"
 SWEP.NoHideLeftHandInCustomization = true
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 27
-SWEP.RangeMin = 20
-SWEP.DamageMin = 17
+-- [Damage] --
+SWEP.Damage = 21
+SWEP.DamageMin = 13
+
+-- [Range] --
 SWEP.Range = 50
+SWEP.RangeMin = 20
+
+-- [Recoil] --
+SWEP.Recoil = 1.5
+SWEP.RecoilSide = 0.6
+SWEP.RecoilPunch = 0.8
+SWEP.RecoilRise = 1
+
+-- [Fire Rate M/R] --
+SWEP.Delay = 90 / 240
+
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
 SWEP.MuzzleVelocity = 400
@@ -50,12 +63,6 @@ SWEP.HullSize = 1.5
 SWEP.ChamberSize = 0
 SWEP.Primary.ClipSize = 5
 
-SWEP.Recoil = 1.5
-SWEP.RecoilSide = 0.6
-SWEP.RecoilPunch = 0.8
-SWEP.RecoilRise = 1
-
-SWEP.Delay = 90 / 240
 SWEP.Num = 5
 SWEP.Firemodes = {
 	{

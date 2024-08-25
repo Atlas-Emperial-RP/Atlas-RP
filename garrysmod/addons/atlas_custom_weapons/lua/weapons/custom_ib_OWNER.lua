@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = false
-SWEP.Category = "[ Atlas ] DEV Custom Weapons [ DO NOT TOUCH!! ]"
+SWEP.Category = nil
 SWEP.Credits = { Author1 = "Yairme"}
 SWEP.PrintName = "IB-OWNER"
 SWEP.Trivia_Class = "Galactic Blaster Pistol"

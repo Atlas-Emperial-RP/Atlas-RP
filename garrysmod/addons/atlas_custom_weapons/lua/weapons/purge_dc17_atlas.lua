@@ -32,10 +32,23 @@ SWEP.IconOverride = "materials/entities/rw_sw_dc17_purge.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 30
-SWEP.RangeMin = 100
-SWEP.DamageMin = 19
+-- [Damage] --
+SWEP.Damage = 23
+SWEP.DamageMin = 15
+
+-- [Range] --
 SWEP.Range = 210
+SWEP.RangeMin = 100
+
+-- [Recoil] --
+SWEP.Recoil = 0.34
+SWEP.RecoilPunch = 0.4
+SWEP.RecoilSide = 0.2
+SWEP.RecoilRise = 0.17
+
+-- [Fire Rate M/R] --
+SWEP.Delay = 60 / 300
+
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BULLET
 SWEP.MuzzleVelocity = 1050
@@ -53,12 +66,6 @@ SWEP.HullSize = 1.5
 SWEP.ChamberSize = 0
 SWEP.Primary.ClipSize = 20
 
-SWEP.Recoil = 0.34
-SWEP.RecoilPunch = 0.4
-SWEP.RecoilSide = 0.2
-SWEP.RecoilRise = 0.17
-
-SWEP.Delay = 60 / 300
 SWEP.Num = 1
 SWEP.Firemodes = {
 	{

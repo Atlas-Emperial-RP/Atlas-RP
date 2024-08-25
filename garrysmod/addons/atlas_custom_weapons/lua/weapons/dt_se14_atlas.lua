@@ -32,10 +32,23 @@ SWEP.IconOverride = "materials/entities/rw_sw_se14r.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 30
-SWEP.RangeMin = 130
-SWEP.DamageMin = 17
+-- [Damage] --
+SWEP.Damage = 23
+SWEP.DamageMin = 13
+
+-- [Range] --
 SWEP.Range = 330
+SWEP.RangeMin = 130
+
+-- [Recoil] --
+SWEP.Recoil = 0.4
+SWEP.RecoilPunch = 0.8
+SWEP.RecoilSide = 0.22
+SWEP.RecoilRise = 0.24
+
+-- [Fire Rate M/R] --
+SWEP.Delay = 60 / 560
+
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BULLET
 SWEP.MuzzleVelocity = 400
@@ -52,12 +65,7 @@ SWEP.HullSize = 1.5
 SWEP.ChamberSize = 0
 SWEP.Primary.ClipSize = 32
 
-SWEP.Recoil = 0.4
-SWEP.RecoilPunch = 0.8
-SWEP.RecoilSide = 0.22
-SWEP.RecoilRise = 0.24
 
-SWEP.Delay = 60 / 560
 SWEP.Num = 1
 SWEP.Firemodes = {
     {

@@ -5,21 +5,21 @@ SWEP.Spawnable = true
 SWEP.Category = "[ Atlas ] Custom Weapons"
 SWEP.Credits = { Author1 = "Yairme"}
 SWEP.PrintName = "Shadow Dual SE-14"
-SWEP.Trivia_Class = "Imperial Dual Blaster Pistol"
-SWEP.Trivia_Desc = "Dual SE-14 Blaster pistol, preffered for CQB enviroments."
-SWEP.Trivia_Manufacturer = "BlasTech Industries"
-SWEP.Trivia_Calibre = "Low Density Bolt"
+SWEP.Trivia_Class = "CIS Dual Blaster Carbine"
+SWEP.Trivia_Desc = "High tech compact Dual SE-14 Blaster Carbine."
+SWEP.Trivia_Manufacturer = "Baktoid Combat Automata"
+SWEP.Trivia_Calibre = "Medium Density Bolt"
 SWEP.Trivia_Mechanism = "Energized Compressed Tibanna"
-SWEP.Trivia_Country = "Netherlands"
-SWEP.Trivia_Year = 2024
+SWEP.Trivia_Country = "GAR"
+SWEP.Trivia_Year = 2020
 
 SWEP.Slot = 1
 
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/arccw/strasser/weapons/c_ddeagle.mdl"
-SWEP.WorldModel = "models/arccw/bf2017/w_scoutblaster.mdl"
-SWEP.ViewModelFOV = 1
+SWEP.WorldModel = "models/arccw/weapons/synbf3/w_scoutblaster.mdl"
+SWEP.ViewModelFOV = 90
 SWEP.HideViewmodel = true
 SWEP.WorldModelOffset = {
     pos = Vector(0, 0, 0),
@@ -31,15 +31,29 @@ SWEP.WorldModelOffset = {
 SWEP.IconOverride = "materials/entities/rw_sw_dual_se14.png"
 
 SWEP.DefaultBodygroups = "000000000000"
-SWEP.NoHideLeftHandInCustomization = true
-SWEP.Damage = 20
-SWEP.RangeMin = 90
-SWEP.DamageMin = 17
-SWEP.Range = 210
+
+-- [Damage] --
+SWEP.Damage = 23
+SWEP.DamageMin = 13
+
+-- [Range] --
+SWEP.Range = 345
+SWEP.RangeMin = 120
+
+-- [Recoil] --
+SWEP.Recoil = 0.7
+SWEP.RecoilPunch = 1.4
+SWEP.RecoilSide = 0.25
+SWEP.RecoilRise = 0.31
+
+-- [Fire Rate M/R] --
+SWEP.Delay = 60 / 380
+
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BULLET
 SWEP.MuzzleVelocity = 400
 
+SWEP.NoHideLeftHandInCustomization = true
 
 SWEP.TraceNum = 1
 SWEP.PhysTracerProfile = 1
@@ -50,26 +64,23 @@ SWEP.TracerCol = Color(250, 0, 0)
 SWEP.HullSize = 1.5
 
 SWEP.ChamberSize = 0
-SWEP.Primary.ClipSize = 32
+SWEP.Primary.ClipSize = 20*2
 
-SWEP.Recoil = 0.55
-SWEP.RecoilPunch = 0.4
-SWEP.RecoilSide = 0.14
-SWEP.RecoilRise = 0.22
-
-SWEP.Delay = 60 / 480
 SWEP.Num = 1
 SWEP.Firemodes = {
 	{
-		Mode = 1
+		Mode = 2
 	},
+    {
+        Mode = 1
+    },
     {
         Mode = 0
     },    
 }
 
-SWEP.AccuracyMOA = 0.666 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 460 -- inaccuracy added by hip firing.
+SWEP.AccuracyMOA = 0.75 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 800 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 50
 
 
@@ -87,11 +98,10 @@ SWEP.MuzzleFlashColor = Color(255, 0, 0, 50)
 SWEP.IronSightStruct = {
     Pos = Vector(0, -4, 1),
     Ang = Angle(0, 0, 0),
-     Magnification = 1,
-     SwitchToSound = "",
+     Magnification = 1.2,
+     SwitchToSound = "zoom_in/gunfoley_zoomin_blasterheavy_01.mp3",
      ViewModelFOV = 90,
 }
-
 SWEP.HoldtypeHolstered = ""
 SWEP.HoldtypeActive = "duel"
 SWEP.HoldtypeSights = ""
@@ -99,7 +109,7 @@ SWEP.HoldtypeSights = ""
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(0, -5, -1)
+SWEP.ActivePos = Vector(0, -5, -4)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.SprintPos = Vector(0, -14,-10)
@@ -117,34 +127,34 @@ SWEP.InBipodPos = Vector(-8, 0, -4)
 SWEP.InBipodMult = Vector(2, 1, 1)
 SWEP.DrawCrosshair = true
 
-SWEP.BarrelLength = 60
+SWEP.BarrelLength = 44
 SWEP.BarrelOffsetSighted = Vector(0, 0, 0)
 SWEP.BarrelOffsetHip = Vector(3, 0, -3)
-SWEP.DefaultElements = {"se14", "se14+"}
+SWEP.DefaultElements = {"se14c", "se14c+"}
 
 SWEP.AttachmentElements = {
-    ["se14"] = {
+    ["se14c"] = {
         VMElements = {
             {
                 Model = "models/arccw/sw_battlefront/weapons/2019/se14_pistol.mdl",
                 Bone = "LeftHand_1stP",
                 Scale = Vector(1.1, 1.1, 1.1),
                 Offset = {
-                    pos = Vector(0, 0, -3.5),
-                    ang = Angle(0, 90, 0)
+                    pos = Vector(05, -1.5, -0.75),
+                    ang = Angle(-8, -2, 90)
                 }
             }
         },
     },
-    ["se14+"] = {
+    ["se14c+"] = {
          VMElements = {
             {
                 Model = "models/arccw/sw_battlefront/weapons/2019/se14_pistol.mdl",
                 Bone = "RightHand_1stP",
                 Scale = Vector(1.1, 1.1, 1.1),                
                 Offset = {
-                    pos = Vector(-3.5, -2.2, 1.2),
-                    ang = Angle(0, 90, 0)
+                    pos = Vector(-5, 1.5, 0.75),
+                    ang = Angle(4, 178, 90)
                 }
             }
         }, 
@@ -152,19 +162,19 @@ SWEP.AttachmentElements = {
             {
                 Model = "models/arccw/sw_battlefront/weapons/2019/se14_pistol.mdl",
                 Bone = "ValveBiped.Bip01_R_Hand",
-                Scale = Vector(1.2, 1.2, 1.2),
+                Scale = Vector(1.1, 1.1, 1.1),
                 Offset = {
-                    pos = Vector(40, 20, 40),
-                    ang = Angle(-15, 0, 180)
+                    pos = Vector(40.5, 10, 20.75),
+                    ang = Angle(180, -180, 2)
                 }
             },
             {
                 Model = "models/arccw/sw_battlefront/weapons/2019/se14_pistol.mdl",
                 Bone = "ValveBiped.Bip01_L_Hand",
-                Scale = Vector(1.2, 1.2, 1.2),
+                Scale = Vector(1.1, 1.1, 1.1),
                 Offset = {
-                    pos = Vector(-55, 240, 40),
-                    ang = Angle(-15, 0, 180)
+                    pos = Vector(-40, 230, -25),
+                    ang = Angle(180, -180, 2)
                 }
             },
         },            -- change the world model to something else. Please make sure it's compatible with the last one.

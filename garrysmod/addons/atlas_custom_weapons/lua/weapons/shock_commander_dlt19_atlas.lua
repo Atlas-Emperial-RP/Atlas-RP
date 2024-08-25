@@ -32,14 +32,26 @@ SWEP.IconOverride = "materials/entities/rw_sw_dlt19.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 50
-SWEP.RangeMin = 150
-SWEP.DamageMin = 19
+-- [Damage] --
+SWEP.Damage = 37
+SWEP.DamageMin = 25
+
+-- [Range] --
 SWEP.Range = 450
+SWEP.RangeMin = 150
+
+-- [Recoil] --
+SWEP.Recoil = 0.41
+SWEP.RecoilPunch = 0.8
+SWEP.RecoilSide = 0.19
+SWEP.RecoilRise = 0.24
+
+-- [Fire Rate M/R] --
+SWEP.Delay = 60 / 220
+
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BULLET
 SWEP.MuzzleVelocity = 400
-
 
 SWEP.TraceNum = 1
 SWEP.PhysTracerProfile = 1
@@ -52,11 +64,6 @@ SWEP.HullSize = 1.5
 SWEP.ChamberSize = 0
 SWEP.Primary.ClipSize = 50
 
-SWEP.Recoil = 0.41
-SWEP.RecoilSide = 0.19
-SWEP.RecoilRise = 0.24
-
-SWEP.Delay = 60 / 220
 SWEP.Num = 1
 SWEP.Firemodes = {
     {

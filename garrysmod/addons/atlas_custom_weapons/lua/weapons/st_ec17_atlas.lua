@@ -32,14 +32,26 @@ SWEP.IconOverride = "materials/entities/rw_sw_scoutblaster.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 30
-SWEP.RangeMin = 65
-SWEP.DamageMin = 17
+-- [Damage] --
+SWEP.Damage = 23
+SWEP.DamageMin = 13
+
+-- [Range] --
 SWEP.Range = 310
+SWEP.RangeMin = 65
+
+-- [Recoil] --
+SWEP.Recoil = 0.4
+SWEP.RecoilPunch = 0.4
+SWEP.RecoilSide = 0.22
+SWEP.RecoilRise = 0.19
+
+-- [Fire Rate M/R] --
+SWEP.Delay = 60 / 200
+
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BULLET
 SWEP.MuzzleVelocity = 400
-
 
 SWEP.TraceNum = 1
 SWEP.PhysTracerProfile = 1
@@ -52,12 +64,6 @@ SWEP.HullSize = 1.5
 SWEP.ChamberSize = 0
 SWEP.Primary.ClipSize = 12
 
-SWEP.Recoil = 0.4
-SWEP.RecoilPunch = 0.4
-SWEP.RecoilSide = 0.22
-SWEP.RecoilRise = 0.19
-
-SWEP.Delay = 60 / 200
 SWEP.Num = 1
 SWEP.Firemodes = {
 	{

@@ -32,14 +32,26 @@ SWEP.IconOverride = "materials/entities/rw_sw_e11_noscope.png"
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage = 35
-SWEP.RangeMin = 150
-SWEP.DamageMin = 24
+-- [Damage] --
+SWEP.Damage = 27
+SWEP.DamageMin = 19
+
+-- [Range] --
 SWEP.Range = 450
+SWEP.RangeMin = 150
+
+-- [Recoil] --
+SWEP.Recoil = 0.33
+SWEP.RecoilPunch = 0.6
+SWEP.RecoilSide = 0.19
+SWEP.RecoilRise = 0.23
+
+-- [Fire Rate M/R] --
+SWEP.Delay = 60 / 270
+
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BULLET
 SWEP.MuzzleVelocity = 400
-
 
 SWEP.TraceNum = 1
 SWEP.PhysTracerProfile = 1
@@ -52,11 +64,6 @@ SWEP.HullSize = 1.5
 SWEP.ChamberSize = 0
 SWEP.Primary.ClipSize = 25
 
-SWEP.Recoil = 0.33
-SWEP.RecoilSide = 0.19
-SWEP.RecoilRise = 0.23
-
-SWEP.Delay = 60 / 270
 SWEP.Num = 1
 SWEP.Firemodes = {
 	{
