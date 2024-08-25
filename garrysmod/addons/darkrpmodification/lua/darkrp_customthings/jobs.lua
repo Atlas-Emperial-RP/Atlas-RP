@@ -42,45 +42,13 @@ TEAM_RECRUIT = DarkRP.createJob("Recruit", {
         ply:SetMaxHealth(100)
         ply:SetArmor(0)
         ply:SetMaxArmor(0)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
     end,
 })
 
 --- [ATLAS IMPERIAL RP IMPERIAL ARMY JOBS] ---
 
-TEAM_IMPERIALARMYENGINEER =  DarkRP.createJob("Imperial Army Engineer", {
-    color = Color(0, 148, 57),
-   model = {
-        "models/nada/MudTrooper_M.mdl",
-        "models/nada/MudTrooper_F.mdl",
-        "models/nada/ArmyTrooper_M.mdl",
-        "models/nada/ArmyTrooper_F.mdl"
-    },
-    description = [[
-        Imperial Army of the Empire
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-
-        "ia_e10_atlas",
-        "ia_ec17_atlas"
-    },
-    command = "imparmyengeneer",
-    max = 0,
-    salary = 25,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Imperial Army",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(100)
-        ply:SetMaxHealth(100)
-        ply:SetArmor(25)
-        ply:SetMaxArmor(25)
-        ply:SetWalkSpeed(160)
-        ply:SetRunSpeed(240)
-    end,
-})
 TEAM_IMPERIALARMYENL = DarkRP.createJob("Imperial Army Enlisted", {
     color = Color(0, 148, 57),
    model = {
@@ -111,8 +79,8 @@ TEAM_IMPERIALARMYENL = DarkRP.createJob("Imperial Army Enlisted", {
         ply:SetMaxHealth(100)
         ply:SetArmor(25)
         ply:SetMaxArmor(25)
-        ply:SetWalkSpeed(160)
-        ply:SetRunSpeed(240)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
     end,
 })
 TEAM_IMPERIALARMYSGT = DarkRP.createJob("Imperial Army Sergeant", {
@@ -146,8 +114,8 @@ TEAM_IMPERIALARMYSGT = DarkRP.createJob("Imperial Army Sergeant", {
         ply:SetMaxHealth(100)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
-        ply:SetWalkSpeed(160)
-        ply:SetRunSpeed(240)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
     end,
 })
 TEAM_IMPERIALARMYOFFICER = DarkRP.createJob("Imperial Army Officer", {
@@ -183,8 +151,8 @@ TEAM_IMPERIALARMYOFFICER = DarkRP.createJob("Imperial Army Officer", {
         ply:SetMaxHealth(125)
         ply:SetArmor(75)
         ply:SetMaxArmor(75)
-        ply:SetWalkSpeed(160)
-        ply:SetRunSpeed(240)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
     end,
 })
 TEAM_IMPERIALARMYCOMMAND = DarkRP.createJob("Imperial Army Command", {
@@ -220,8 +188,8 @@ TEAM_IMPERIALARMYCOMMAND = DarkRP.createJob("Imperial Army Command", {
         ply:SetMaxHealth(125)
         ply:SetArmor(100)
         ply:SetMaxArmor(100)
-        ply:SetWalkSpeed(160)
-        ply:SetRunSpeed(240)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
     end,
 })
 TEAM_IMPERIALARMYCOMMANDER = DarkRP.createJob("Imperial Army Commander", {
@@ -257,11 +225,45 @@ TEAM_IMPERIALARMYCOMMANDER = DarkRP.createJob("Imperial Army Commander", {
         ply:SetMaxHealth(125)
         ply:SetArmor(125)
         ply:SetMaxArmor(125)
-        ply:SetWalkSpeed(160)
-        ply:SetRunSpeed(240)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
     end,
 })
 
+TEAM_IMPERIALARMYENGINEER =  DarkRP.createJob("Imperial Army Engineer", {
+    color = Color(0, 148, 57),
+   model = {
+        "models/nada/MudTrooper_M.mdl",
+        "models/nada/MudTrooper_F.mdl",
+        "models/nada/ArmyTrooper_M.mdl",
+        "models/nada/ArmyTrooper_F.mdl"
+    },
+    description = [[
+        Imperial Army of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "ia_e10_atlas",
+        "ia_ec17_atlas"
+    },
+    command = "imparmyengeneer",
+    max = 0,
+    salary = 25,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Imperial Army",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(25)
+        ply:SetMaxArmor(25)
+        ply:SetWalkSpeed(200)
+        ply:SetRunSpeed(300)
+    end,
+})
 --- [ATLAS IMPERIAL RP STORM TROOPER JOBS] ---
 
 TEAM_STORMTROOPERSENL = DarkRP.createJob("Storm Trooper Enlisted", {
@@ -289,8 +291,8 @@ TEAM_STORMTROOPERSENL = DarkRP.createJob("Storm Trooper Enlisted", {
         ply:SetMaxHealth(100)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_STORMTROOPERSSGT = DarkRP.createJob("Storm Trooper Sergeant", {
@@ -320,8 +322,8 @@ TEAM_STORMTROOPERSSGT = DarkRP.createJob("Storm Trooper Sergeant", {
         ply:SetMaxHealth(100)
         ply:SetArmor(75)
         ply:SetMaxArmor(75)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_STORMTROOPERSOFFICER = DarkRP.createJob("Storm Trooper Officer", {
@@ -351,8 +353,8 @@ TEAM_STORMTROOPERSOFFICER = DarkRP.createJob("Storm Trooper Officer", {
         ply:SetMaxHealth(125)
         ply:SetArmor(100)
         ply:SetMaxArmor(100)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_STORMTROOPERSCOMMAND = DarkRP.createJob("Storm Trooper Command", {
@@ -382,8 +384,8 @@ TEAM_STORMTROOPERSCOMMAND = DarkRP.createJob("Storm Trooper Command", {
         ply:SetMaxHealth(100)
         ply:SetArmor(125)
         ply:SetMaxArmor(125)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_STORMTROOPERSCOMMANDER = DarkRP.createJob("Storm Trooper Commander", {
@@ -413,8 +415,8 @@ TEAM_STORMTROOPERSCOMMANDER = DarkRP.createJob("Storm Trooper Commander", {
         ply:SetMaxHealth(125)
         ply:SetArmor(150)
         ply:SetMaxArmor(150)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 
@@ -445,8 +447,8 @@ TEAM_STORMTROOPERSFLAME = DarkRP.createJob("Flame Trooper", {
         ply:SetMaxHealth(100)
         ply:SetArmor(25)
         ply:SetMaxArmor(25)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_STORMTROOPERSSCOUT = DarkRP.createJob("Scout Trooper", {
@@ -480,8 +482,8 @@ TEAM_STORMTROOPERSSCOUT = DarkRP.createJob("Scout Trooper", {
         ply:SetMaxHealth(100)
         ply:SetArmor(25)
         ply:SetMaxArmor(25)
-        ply:SetWalkSpeed(280)
-        ply:SetRunSpeed(420)
+        ply:SetWalkSpeed(350)
+        ply:SetRunSpeed(525)
     end,
 })
 TEAM_STORMTROOPERSJT = DarkRP.createJob("Jump Trooper", {
@@ -511,8 +513,8 @@ TEAM_STORMTROOPERSJT = DarkRP.createJob("Jump Trooper", {
         ply:SetMaxHealth(100)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_STORMTROOPERSENGINEER = DarkRP.createJob("Storm Trooper Engineer", {
@@ -544,8 +546,8 @@ TEAM_STORMTROOPERSENGINEER = DarkRP.createJob("Storm Trooper Engineer", {
         ply:SetMaxHealth(100)
         ply:SetArmor(75)
         ply:SetMaxArmor(75)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_STORMTROOPERSHEAVY = DarkRP.createJob("Heavy Trooper", {
@@ -573,8 +575,8 @@ TEAM_STORMTROOPERSHEAVY = DarkRP.createJob("Heavy Trooper", {
         ply:SetMaxHealth(150)
         ply:SetArmor(400)
         ply:SetMaxArmor(400)
-        ply:SetWalkSpeed(72)
-        ply:SetRunSpeed(108)
+        ply:SetWalkSpeed(90)
+        ply:SetRunSpeed(135)
     end,
 })
 
@@ -607,8 +609,8 @@ TEAM_SHORESGT = DarkRP.createJob("Shore Trooper Sergeant", {
         ply:SetMaxHealth(100)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_SHOREOFFICER = DarkRP.createJob("Shore Trooper Officer", {
@@ -638,8 +640,8 @@ TEAM_SHOREOFFICER = DarkRP.createJob("Shore Trooper Officer", {
         ply:SetMaxHealth(125)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_SHORECOMMAND = DarkRP.createJob("Shore Trooper Command", {
@@ -669,8 +671,8 @@ TEAM_SHORECOMMAND = DarkRP.createJob("Shore Trooper Command", {
         ply:SetMaxHealth(125)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_SHORECOMMANDER = DarkRP.createJob("Shore Trooper Commander", {
@@ -700,8 +702,8 @@ TEAM_SHORECOMMANDER = DarkRP.createJob("Shore Trooper Commander", {
         ply:SetMaxHealth(125)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 
@@ -734,8 +736,8 @@ TEAM_NOVASGT = DarkRP.createJob("Nova Trooper Sergeant", {
         ply:SetMaxHealth(125)
         ply:SetArmor(75)
         ply:SetMaxArmor(75)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_NOVAOFFICER = DarkRP.createJob("Nova Trooper Officer", {
@@ -766,8 +768,8 @@ TEAM_NOVAOFFICER = DarkRP.createJob("Nova Trooper Officer", {
         ply:SetMaxHealth(150)
         ply:SetArmor(100)
         ply:SetMaxArmor(100)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_NOVACOMMAND = DarkRP.createJob("Nova Trooper Command", {
@@ -801,8 +803,8 @@ TEAM_NOVACOMMAND = DarkRP.createJob("Nova Trooper Command", {
         ply:SetMaxHealth(150)
         ply:SetArmor(125)
         ply:SetMaxArmor(125)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_NOVACOMMANDER = DarkRP.createJob("Nova Trooper Commander", {
@@ -836,8 +838,8 @@ TEAM_NOVACOMMANDER = DarkRP.createJob("Nova Trooper Commander", {
         ply:SetMaxHealth(150)
         ply:SetArmor(150)
         ply:SetMaxArmor(150)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_NOVAMEDIC = DarkRP.createJob("Nova Trooper Commander", {
@@ -870,8 +872,8 @@ TEAM_NOVAMEDIC = DarkRP.createJob("Nova Trooper Commander", {
         ply:SetMaxHealth(100)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 
@@ -905,8 +907,8 @@ TEAM_SHADOWSGT = DarkRP.createJob("Shadow Trooper Sergeant", {
         ply:SetMaxHealth(125)
         ply:SetArmor(25)
         ply:SetMaxArmor(25)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_SHADOWOFFICER = DarkRP.createJob("Shadow Trooper Officer", {
@@ -937,8 +939,8 @@ TEAM_SHADOWOFFICER = DarkRP.createJob("Shadow Trooper Officer", {
         ply:SetMaxHealth(150)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_SHADOWCOMMAND = DarkRP.createJob("Shadow Trooper Command", {
@@ -970,8 +972,8 @@ TEAM_SHADOWCOMMAND = DarkRP.createJob("Shadow Trooper Command", {
         ply:SetMaxHealth(150)
         ply:SetArmor(75)
         ply:SetMaxArmor(75)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_SHADOWCOMMANDER = DarkRP.createJob("Shadow Trooper Commander", {
@@ -1003,8 +1005,8 @@ TEAM_SHADOWCOMMANDER = DarkRP.createJob("Shadow Trooper Commander", {
         ply:SetMaxHealth(150)
         ply:SetArmor(100)
         ply:SetMaxArmor(100)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 
@@ -1040,8 +1042,8 @@ TEAM_SHOCKTROOPER = DarkRP.createJob("Shock Trooper Enlisted", {
         ply:SetMaxHealth(125)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
-        ply:SetWalkSpeed(240)
-        ply:SetRunSpeed(360)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_SHOCKSGT = DarkRP.createJob("Shock Trooper Sergeant", {
@@ -1075,8 +1077,8 @@ TEAM_SHOCKSGT = DarkRP.createJob("Shock Trooper Sergeant", {
         ply:SetMaxHealth(125)
         ply:SetArmor(75)
         ply:SetMaxArmor(75)
-        ply:SetWalkSpeed(240)
-        ply:SetRunSpeed(360)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_SHOCKOFFICER = DarkRP.createJob("Shock Trooper Officer", {
@@ -1111,8 +1113,8 @@ TEAM_SHOCKOFFICER = DarkRP.createJob("Shock Trooper Officer", {
         ply:SetMaxHealth(125)
         ply:SetArmor(100)
         ply:SetMaxArmor(100)
-        ply:SetWalkSpeed(240)
-        ply:SetRunSpeed(360)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_SHOCKCOMMAND = DarkRP.createJob("Shock Trooper Command", {
@@ -1147,8 +1149,8 @@ TEAM_SHOCKCOMMAND = DarkRP.createJob("Shock Trooper Command", {
         ply:SetMaxHealth(125)
         ply:SetArmor(125)
         ply:SetMaxArmor(125)
-        ply:SetWalkSpeed(240)
-        ply:SetRunSpeed(360)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_SHOCKCOMMANDER = DarkRP.createJob("Shock Trooper Commander", {
@@ -1181,8 +1183,8 @@ TEAM_SHOCKCOMMANDER = DarkRP.createJob("Shock Trooper Commander", {
         ply:SetMaxHealth(125)
         ply:SetArmor(150)
         ply:SetMaxArmor(150)
-        ply:SetWalkSpeed(240)
-        ply:SetRunSpeed(360)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 
@@ -1219,8 +1221,8 @@ TEAM_SHOCKRIOTCONTROL = DarkRP.createJob("Shock Trooper Commander", {
         ply:SetMaxHealth(125)
         ply:SetArmor(75)
         ply:SetMaxArmor(75)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_SHOCKAIU = DarkRP.createJob("Shock Trooper Commander", {
@@ -1253,8 +1255,8 @@ TEAM_SHOCKAIU = DarkRP.createJob("Shock Trooper Commander", {
         ply:SetMaxHealth(100)
         ply:SetArmor(25)
         ply:SetMaxArmor(25)
-        ply:SetWalkSpeed(240)
-        ply:SetRunSpeed(360)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 
@@ -1290,8 +1292,8 @@ TEAM_MEDICALENLISTED = DarkRP.createJob("Medical Trooper Enlisted", {
         ply:SetMaxHealth(100)
         ply:SetArmor(75)
         ply:SetMaxArmor(75)
-        ply:SetWalkSpeed(240)
-        ply:SetRunSpeed(360)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_MEDICALSGT = DarkRP.createJob("Medical Trooper Sergeant", {
@@ -1327,8 +1329,8 @@ TEAM_MEDICALSGT = DarkRP.createJob("Medical Trooper Sergeant", {
         ply:SetMaxHealth(100)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
-        ply:SetWalkSpeed(240)
-        ply:SetRunSpeed(360)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_MEDICALOFFICER = DarkRP.createJob("Medical Trooper Officer", {
@@ -1366,8 +1368,8 @@ TEAM_MEDICALOFFICER = DarkRP.createJob("Medical Trooper Officer", {
         ply:SetMaxHealth(125)
         ply:SetArmor(75)
         ply:SetMaxArmor(75)
-        ply:SetWalkSpeed(240)
-        ply:SetRunSpeed(360)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_MEDICALCOMMAND = DarkRP.createJob("Medical Trooper Command", {
@@ -1407,8 +1409,8 @@ TEAM_MEDICALCOMMAND = DarkRP.createJob("Medical Trooper Command", {
         ply:SetMaxHealth(125)
         ply:SetArmor(100)
         ply:SetMaxArmor(100)
-        ply:SetWalkSpeed(240)
-        ply:SetRunSpeed(360)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_MEDICALCOMMANDER = DarkRP.createJob("Medical Trooper Commander", {
@@ -1448,8 +1450,8 @@ TEAM_MEDICALCOMMANDER = DarkRP.createJob("Medical Trooper Commander", {
         ply:SetMaxHealth(125)
         ply:SetArmor(125)
         ply:SetMaxArmor(125)
-        ply:SetWalkSpeed(240)
-        ply:SetRunSpeed(360)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 
@@ -1483,8 +1485,8 @@ TEAM_DEATHTROOPEREN = DarkRP.createJob("Death Trooper Enlisted", {
         ply:SetMaxHealth(125)
         ply:SetArmor(75)
         ply:SetMaxArmor(75)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_DEATHTROOPERSGT = DarkRP.createJob("Death Trooper Sergeant", {
@@ -1518,8 +1520,8 @@ TEAM_DEATHTROOPERSGT = DarkRP.createJob("Death Trooper Sergeant", {
         ply:SetMaxHealth(125)
         ply:SetArmor(100)
         ply:SetMaxArmor(100)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_DEATHTROOPEROFFICER = DarkRP.createJob("Death Trooper Officer", {
@@ -1554,8 +1556,8 @@ TEAM_DEATHTROOPEROFFICER = DarkRP.createJob("Death Trooper Officer", {
         ply:SetMaxHealth(150)
         ply:SetArmor(125)
         ply:SetMaxArmor(125)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_DEATHTROOPERCOMMAND = DarkRP.createJob("Death Trooper Command", {
@@ -1590,8 +1592,8 @@ TEAM_DEATHTROOPERCOMMAND = DarkRP.createJob("Death Trooper Command", {
         ply:SetMaxHealth(150)
         ply:SetArmor(125)
         ply:SetMaxArmor(125)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_DEATHTROOPERCOMMANDER = DarkRP.createJob("Death Trooper Commander", {
@@ -1626,8 +1628,8 @@ TEAM_DEATHTROOPERCOMMANDER = DarkRP.createJob("Death Trooper Commander", {
         ply:SetMaxHealth(150)
         ply:SetArmor(150)
         ply:SetMaxArmor(150)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 
@@ -1660,8 +1662,8 @@ TEAM_PURGEENL = DarkRP.createJob("Purge Trooper Enlisted", {
         ply:SetMaxHealth(125)
         ply:SetArmor(75)
         ply:SetMaxArmor(75)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_PURGESGT = DarkRP.createJob("Purge Trooper Sergeant", {
@@ -1693,8 +1695,8 @@ TEAM_PURGESGT = DarkRP.createJob("Purge Trooper Sergeant", {
         ply:SetMaxHealth(125)
         ply:SetArmor(100)
         ply:SetMaxArmor(100)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_PURGEOFFICER = DarkRP.createJob("Purge Trooper Officer", {
@@ -1725,8 +1727,8 @@ TEAM_PURGEOFFICER = DarkRP.createJob("Purge Trooper Officer", {
         ply:SetMaxHealth(150)
         ply:SetArmor(125)
         ply:SetMaxArmor(125)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_PURGECOMMAND = DarkRP.createJob("Purge Trooper Command", {
@@ -1757,8 +1759,8 @@ TEAM_PURGECOMMAND = DarkRP.createJob("Purge Trooper Command", {
         ply:SetMaxHealth(150)
         ply:SetArmor(125)
         ply:SetMaxArmor(125)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_PURGECOMMANDER = DarkRP.createJob("Purge Trooper Commander", {
@@ -1789,8 +1791,8 @@ TEAM_PURGECOMMANDER = DarkRP.createJob("Purge Trooper Commander", {
         ply:SetMaxHealth(150)
         ply:SetArmor(150)
         ply:SetMaxArmor(150)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_PURGEMEDIC = DarkRP.createJob("Purge Medic", {
@@ -1820,8 +1822,8 @@ TEAM_PURGEMEDIC = DarkRP.createJob("Purge Medic", {
         ply:SetMaxHealth(100)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_PURGEFLAMER = DarkRP.createJob("Purge Flamer", {
@@ -1853,8 +1855,8 @@ TEAM_PURGEFLAMER = DarkRP.createJob("Purge Flamer", {
         ply:SetMaxHealth(100)
         ply:SetArmor(100)
         ply:SetMaxArmor(100)
-        ply:SetWalkSpeed(152)
-        ply:SetRunSpeed(228)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 
@@ -1893,8 +1895,8 @@ TEAM_ISB = DarkRP.createJob("ISB Agent", {
         ply:SetMaxHealth(125)
         ply:SetArmor(25)
         ply:SetMaxArmor(25)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_ISBWO = DarkRP.createJob("ISB Warrant Officer", {
@@ -1931,8 +1933,8 @@ TEAM_ISBWO = DarkRP.createJob("ISB Warrant Officer", {
         ply:SetMaxHealth(125)
         ply:SetArmor(50)
         ply:SetMaxArmor(50)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_ISBOFFICER = DarkRP.createJob("ISB Officer", {
@@ -1970,8 +1972,8 @@ TEAM_ISBOFFICER = DarkRP.createJob("ISB Officer", {
         ply:SetMaxHealth(150)
         ply:SetArmor(75)
         ply:SetMaxArmor(75)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_ISBCOMMAND = DarkRP.createJob("ISB Command", {
@@ -2009,8 +2011,8 @@ TEAM_ISBCOMMAND = DarkRP.createJob("ISB Command", {
         ply:SetMaxHealth(150)
         ply:SetArmor(100)
         ply:SetMaxArmor(100)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_ISBDEPUTYDIRECTOR = DarkRP.createJob("ISB Deputy Director", {
@@ -2048,8 +2050,8 @@ TEAM_ISBDEPUTYDIRECTOR = DarkRP.createJob("ISB Deputy Director", {
         ply:SetMaxHealth(150)
         ply:SetArmor(125)
         ply:SetMaxArmor(125)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_ISBDIRECTOR = DarkRP.createJob("ISB Director", {
@@ -2087,8 +2089,8 @@ TEAM_ISBDIRECTOR = DarkRP.createJob("ISB Director", {
         ply:SetMaxHealth(150)
         ply:SetArmor(125)
         ply:SetMaxArmor(125)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 
@@ -2134,8 +2136,8 @@ TEAM_ISBCOLONEL = DarkRP.createJob("ISB Colonel", {
         ply:SetMaxHealth(150)
         ply:SetArmor(125)
         ply:SetMaxArmor(125)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 TEAM_ISBSECRETARY = DarkRP.createJob("ISB Secretary", {
@@ -2182,12 +2184,10 @@ TEAM_ISBSECRETARY = DarkRP.createJob("ISB Secretary", {
         ply:SetMaxHealth(150)
         ply:SetArmor(125)
         ply:SetMaxArmor(125)
-        ply:SetWalkSpeed(200)
-        ply:SetRunSpeed(300)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
-
-
 
 --- [ATLAS IMPERIAL RP INQUISITOR JOBS] ---
 
@@ -2224,10 +2224,12 @@ TEAM_INQUSITORJUNIOR = DarkRP.createJob("Junior Inquisitor", {
     category = "Inquisition",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(500)
-        ply:SetMaxHealth(500)
-        ply:SetArmor(100)
-        ply:SetMaxArmor(100)
+        ply:SetHealth(750)
+        ply:SetMaxHealth(750)
+        ply:SetArmor(500)
+        ply:SetMaxArmor(500)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_INQUSITOR = DarkRP.createJob("Inquisitor", {
@@ -2266,8 +2268,10 @@ TEAM_INQUSITOR = DarkRP.createJob("Inquisitor", {
     PlayerSpawn = function(ply)
         ply:SetHealth(750)
         ply:SetMaxHealth(750)
-        ply:SetArmor(150)
-        ply:SetMaxArmor(150)
+        ply:SetArmor(500)
+        ply:SetMaxArmor(500)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_INQUSITORSENIOR = DarkRP.createJob("Senior Inquisitor", {
@@ -2304,10 +2308,12 @@ TEAM_INQUSITORSENIOR = DarkRP.createJob("Senior Inquisitor", {
     category = "Inquisition",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(1000)
-        ply:SetMaxHealth(1000)
-        ply:SetArmor(200)
-        ply:SetMaxArmor(200)
+        ply:SetHealth(750)
+        ply:SetMaxHealth(750)
+        ply:SetArmor(500)
+        ply:SetMaxArmor(500)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_INQUSITORSECOND = DarkRP.createJob("Second Sister", {
@@ -2331,10 +2337,12 @@ TEAM_INQUSITORSECOND = DarkRP.createJob("Second Sister", {
     category = "Inquisition",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(1500)
-        ply:SetMaxHealth(1500)
-        ply:SetArmor(200)
-        ply:SetMaxArmor(200)
+        ply:SetHealth(750)
+        ply:SetMaxHealth(750)
+        ply:SetArmor(500)
+        ply:SetMaxArmor(500)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_INQUSITORGRAND = DarkRP.createJob("Grand Inquisitor", {
@@ -2358,10 +2366,12 @@ TEAM_INQUSITORGRAND = DarkRP.createJob("Grand Inquisitor", {
     category = "Inquisition",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(2000)
-        ply:SetMaxHealth(2000)
-        ply:SetArmor(250)
-        ply:SetMaxArmor(250)
+        ply:SetHealth(750)
+        ply:SetMaxHealth(750)
+        ply:SetArmor(500)
+        ply:SetMaxArmor(500)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_INQUISITORROYAL = DarkRP.createJob("Royal Guard", {
@@ -2374,8 +2384,10 @@ TEAM_INQUISITORROYAL = DarkRP.createJob("Royal Guard", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "Arccw_cr2",
-        "Arccw_t21",
+
+        "inq_cr2_atlas",
+        "inq_t21_atlas",
+
         "Item_saberhilt_staffel",
         "Weapon_squadshield_arm",
         "Rw_sw_shield_imp",
@@ -2392,10 +2404,12 @@ TEAM_INQUISITORROYAL = DarkRP.createJob("Royal Guard", {
     category = "Inquisition",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(1000)
-        ply:SetMaxHealth(1000)
-        ply:SetArmor(200)
-        ply:SetMaxArmor(200)
+        ply:SetHealth(750)
+        ply:SetMaxHealth(750)
+        ply:SetArmor(500)
+        ply:SetMaxArmor(500)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_INQUSITORDARTH = DarkRP.createJob("Darth Vader", {
@@ -2419,10 +2433,12 @@ TEAM_INQUSITORDARTH = DarkRP.createJob("Darth Vader", {
     category = "Inquisition",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(5000)
-        ply:SetMaxHealth(5000)
-        ply:SetArmor(300)
-        ply:SetMaxArmor(300)
+        ply:SetHealth(1000)
+        ply:SetMaxHealth(1000)
+        ply:SetArmor(500)
+        ply:SetMaxArmor(500)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
 TEAM_INQUSITOREMPEROR = DarkRP.createJob("The Emperor", {
@@ -2435,7 +2451,9 @@ TEAM_INQUSITOREMPEROR = DarkRP.createJob("The Emperor", {
         "weapon_empty_hands",
         "weapon_lscs", 
         "weapon_r_handcuffs",
+
         "inq_se14_atlas",
+
         "custom_ib_OWNER"
     },
     command = "theemperor",
@@ -2447,177 +2465,14 @@ TEAM_INQUSITOREMPEROR = DarkRP.createJob("The Emperor", {
     category = "Inquisition",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(7000)
-        ply:SetMaxHealth(7000)
-        ply:SetArmor(400)
-        ply:SetMaxArmor(400)
+        ply:SetHealth(2000)
+        ply:SetMaxHealth(2000)
+        ply:SetArmor(1000)
+        ply:SetMaxArmor(1000)
+        ply:SetWalkSpeed(150)
+        ply:SetRunSpeed(225)
     end,
 })
-
-
---- [ATLAS IMPERIAL RP FLEET JOBS] ---
-
-TEAM_FLEETENSIGN = DarkRP.createJob("Ensign/Lieutenant", {
-    color = Color(192, 193, 123),
-    model = {
-        "models/nada/pms/male/naval_officer.mdl",
-        "models/nada/pms/female/naval_officer.mdl"
-    },
-    description = [[
-        Fleet of the Empire
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "tfa_dt29",
-        "rw_sw_e11d"
-    },
-    command = "fleetEL",
-    max = 0,
-    salary = 748,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Fleet",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(500)
-        ply:SetMaxHealth(500)
-    end,
-})
-TEAM_FLEETADMIRAL = DarkRP.createJob("Admiral/Fleet Admiral", {
-    color = Color(192, 193, 123),
-    model = {
-        "models/nada/pms/male/grey_admiral.mdl",
-        "models/nada/pms/female/grey_admiral.mdl"
-    },
-    description = [[
-        Fleet of the Empire
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "tfa_dt29",
-        "rw_sw_e11d"
-    },
-    command = "fleetAF",
-    max = 0,
-    salary = 1000,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Fleet",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(900)
-        ply:SetMaxHealth(900)
-    end,
-})
-TEAM_FLEETGRAND = DarkRP.createJob("Grand Admiral", {
-    color = Color(192, 193, 123),
-    model = {
-        "models/nada/pms/male/grandadmiral.mdl",
-        "models/nada/pms/female/grandadmiral.mdl"
-    },
-    description = [[
-        Grand Admiral of the Empire
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "ttfa_dt29"
-    },
-    command = "fleetGA",
-    max = 2,
-    salary = 2500,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Fleet",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(1000)
-        ply:SetMaxHealth(1000)
-    end,
-})
-TEAM_FLEETCAPTAIN = DarkRP.createJob("Captain/Major", {
-    color = Color(192, 193, 123),
-    model = {
-        "models/nada/pms/male/medic.mdl",
-        "models/nada/pms/female/medic.mdl"
-    },
-    description = [[
-        Fleet of the Empire
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "tfa_dt29",
-        "rw_sw_e11d"
-    },
-    command = "fleetCM",
-    max = 0,
-    salary = 750,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Fleet",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(600)
-        ply:SetMaxHealth(600)
-    end,
-})
-TEAM_FLEETCOLONEL = DarkRP.createJob("Colonel/Commodore", {
-    color = Color(192, 193, 123),
-    model = {
-        "models/defcon/repcomm/executiveofficer/executiveofficer.mdl"
-    },
-    description = [[
-        Fleet of the Empire
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "tfa_dt29",
-        "rw_sw_e11d"
-    },
-    command = "fleetCC",
-    max = 0,
-    salary = 750,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Fleet",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(700)
-        ply:SetMaxHealth(700)
-    end,
-})
-TEAM_FLEETREAR = DarkRP.createJob("Rear Admiral/Vice Admiral", {
-    color = Color(192, 193, 123),
-    model = {
-        "models/nada/pms/male/admiral.mdl",
-        "models/nada/pms/female/admiral.mdl"
-    },
-    description = [[
-        Fleet of the Empire 
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "tfa_dt29",
-        "rw_sw_e11d"
-    },
-    command = "fleetRV",
-    max = 0,
-    salary = 750,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Fleet",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(800)
-        ply:SetMaxHealth(800)
-    end,
-})
-
 
 --- [ATLAS IMPERIAL RP NAVY JOBS] ---
 
@@ -2649,8 +2504,10 @@ TEAM_NAVAL = DarkRP.createJob("Naval Crewman", {
     category = "Naval Agency",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_NAVALPO = DarkRP.createJob("Naval Petty Officer", {
@@ -2681,8 +2538,10 @@ TEAM_NAVALPO = DarkRP.createJob("Naval Petty Officer", {
     category = "Naval Agency",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
+        ply:SetHealth(125)
+        ply:SetMaxHealth(125)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_NAVALWO = DarkRP.createJob("Naval Warrant Officer", {
@@ -2713,40 +2572,10 @@ TEAM_NAVALWO = DarkRP.createJob("Naval Warrant Officer", {
     category = "Naval Agency",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
-    end,
-})
-TEAM_NAVALDIRECTOR = DarkRP.createJob("Naval Director", {
-    color = Color(10, 0, 194),
-    model = {
-        "models/nada/pms/male/navy_trooper.mdl",
-        "models/nada/pms/female/navy_trooper.mdl"
-    },
-    description = [[
-       Naval Director of the Empire
-    ]],
-    weapons = {
-        "weapon_empty_hands",
-        "arccw_rk3",
-        "arccw_cr2",
-        "weapon_r_handcuffs",
-        "arccw_thermal_grenade",
-        "arrest_stick",
-        "stunstick",
-        "unarrest_stick",
-    },
-    command = "navalcommand",
-    max = 0,
-    salary = 100,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Naval Agency",
-    canDemote = false,
-    PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 TEAM_NAVALCAPTAIN = DarkRP.createJob("Naval Captain/Lieutenant", {
@@ -2777,11 +2606,13 @@ TEAM_NAVALCAPTAIN = DarkRP.createJob("Naval Captain/Lieutenant", {
     category = "Naval Agency",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
-TEAM_NAVALCHIEF = DarkRP.createJob("Naval Chief", {
+TEAM_NAVALCHIEF = DarkRP.createJob("Naval Command", {
     color = Color(10, 0, 194),
     model = {
         "models/nada/pms/male/navy_trooper.mdl",
@@ -2809,77 +2640,233 @@ TEAM_NAVALCHIEF = DarkRP.createJob("Naval Chief", {
     category = "Naval Agency",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(300)
-        ply:SetMaxHealth(300)
+        ply:SetHealth(200)
+        ply:SetMaxHealth(200)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
-
-TEAM_INFERNOSL = DarkRP.createJob("Inferno Squad Leader", {
-    color = Color(126, 1, 1),
+TEAM_NAVALDIRECTOR = DarkRP.createJob("Naval Director", {
+    color = Color(10, 0, 194),
     model = {
-    "models/pilot/inferno_squad_pilot.mdl",
-    "models/crewman/inferno_squad_crewman.mdl"
-    
+        "models/nada/pms/male/navy_trooper.mdl",
+        "models/nada/pms/female/navy_trooper.mdl"
     },
     description = [[
-        Inferno Squad of the Empire
+       Naval Director of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11t",
-        "rw_sw_dual_westar35",
-        "rw_sw_nade_impact",
-        "rw_sw_nade_smoke",
-        "rw_sw_dlt20a"
+        "arccw_rk3",
+        "arccw_cr2",
+        "weapon_r_handcuffs",
+        "arccw_thermal_grenade",
+        "arrest_stick",
+        "stunstick",
+        "unarrest_stick",
     },
-    command = "infernosquadleader",
+    command = "navalcommand",
     max = 0,
-    salary = 500,
+    salary = 100,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Squads",
+    category = "Naval Agency",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(450)
-        ply:SetMaxHealth(450)
-        ply:SetArmor(100)
-        ply:SetMaxArmor(100)
+        ply:SetHealth(200)
+        ply:SetMaxHealth(200)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
 
-TEAM_INFERNOSUB = DarkRP.createJob("Inferno Squad Sub Leader", {
-    color = Color(126, 1, 1),
+--- [ATLAS IMPERIAL RP FLEET JOBS] ---
+
+TEAM_FLEETENSIGN = DarkRP.createJob("Ensign/Lieutenant", {
+    color = Color(192, 193, 123),
     model = {
-    "models/pilot/inferno_squad_pilot.mdl",
-    "models/crewman/inferno_squad_crewman.mdl"
-    
+        "models/nada/pms/male/naval_officer.mdl",
+        "models/nada/pms/female/naval_officer.mdl"
     },
     description = [[
-        Inferno Squad of the Empire
+        Fleet of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11t",
-        "rw_sw_dual_westar35",
-        "rw_sw_nade_impact",
-        "rw_sw_nade_smoke"
+        
+        "fleet_dt29_atlas",
+        "fleet_e11d_atlas"
     },
-    command = "infernosubleader",
+    command = "fleetEL",
     max = 0,
-    salary = 450,
+    salary = 748,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Squads",
+    category = "Fleet",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(300)
+        ply:SetMaxHealth(300)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
+    end,
+})
+TEAM_FLEETCAPTAIN = DarkRP.createJob("Captain/Major", {
+    color = Color(192, 193, 123),
+    model = {
+        "models/nada/pms/male/medic.mdl",
+        "models/nada/pms/female/medic.mdl"
+    },
+    description = [[
+        Fleet of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "fleet_dt29_atlas",
+        "fleet_e11d_atlas"
+    },
+    command = "fleetCM",
+    max = 0,
+    salary = 750,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Fleet",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(300)
+        ply:SetMaxHealth(300)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
+    end,
+})
+TEAM_FLEETCOLONEL = DarkRP.createJob("Colonel/Commodore", {
+    color = Color(192, 193, 123),
+    model = {
+        "models/defcon/repcomm/executiveofficer/executiveofficer.mdl"
+    },
+    description = [[
+        Fleet of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "fleet_dt29_atlas",
+        "fleet_e11d_atlas"
+    },
+    command = "fleetCC",
+    max = 0,
+    salary = 750,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Fleet",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(400)
         ply:SetMaxHealth(400)
-        ply:SetArmor(75)
-        ply:SetMaxArmor(75)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
     end,
 })
+TEAM_FLEETREAR = DarkRP.createJob("Rear Admiral/Vice Admiral", {
+    color = Color(192, 193, 123),
+    model = {
+        "models/nada/pms/male/admiral.mdl",
+        "models/nada/pms/female/admiral.mdl"
+    },
+    description = [[
+        Fleet of the Empire 
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "fleet_dt29_atlas",
+        "fleet_e11d_atlas"
+    },
+    command = "fleetRV",
+    max = 0,
+    salary = 750,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Fleet",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(400)
+        ply:SetMaxHealth(400)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
+    end,
+})
+TEAM_FLEETADMIRAL = DarkRP.createJob("Admiral/Fleet Admiral", {
+    color = Color(192, 193, 123),
+    model = {
+        "models/nada/pms/male/grey_admiral.mdl",
+        "models/nada/pms/female/grey_admiral.mdl"
+    },
+    description = [[
+        Fleet of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "fleet_dt29_atlas",
+        "fleet_e11d_atlas"
+    },
+    command = "fleetAF",
+    max = 0,
+    salary = 1000,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Fleet",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(500)
+        ply:SetMaxHealth(500)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
+    end,
+})
+TEAM_FLEETGRAND = DarkRP.createJob("Grand Admiral", {
+    color = Color(192, 193, 123),
+    model = {
+        "models/nada/pms/male/grandadmiral.mdl",
+        "models/nada/pms/female/grandadmiral.mdl"
+    },
+    description = [[
+        Grand Admiral of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "fleet_dt29_atlas",
+        "fleet_e11d_atlas"
+    },
+    command = "fleetGA",
+    max = 2,
+    salary = 2500,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Fleet",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(500)
+        ply:SetMaxHealth(500)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
+    end,
+})
+
+-- [ATLAS IMPERIAL RP SQUAD JOBS] ---
+
 TEAM_INFERNOMEMBER = DarkRP.createJob("Inferno Squad Member", {
     color = Color(126, 1, 1),
     model = {
@@ -2892,10 +2879,12 @@ TEAM_INFERNOMEMBER = DarkRP.createJob("Inferno Squad Member", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "rw_sw_e11t",
-        "rw_sw_nade_impact",
-        "rw_sw_nade_smoke",
-        "rw_sw_westar35"
+
+        "inferno_e11d_atlas",
+        "inferno_westar35_atlas",
+
+        "arccw_impact_grenade",
+        "arccw_smoke_grenade",
     },
     command = "infernosquadmember",
     max = 0,
@@ -2906,13 +2895,87 @@ TEAM_INFERNOMEMBER = DarkRP.createJob("Inferno Squad Member", {
     category = "Squads",
     canDemote = false,
     PlayerSpawn = function(ply)
-        ply:SetHealth(375)
-        ply:SetMaxHealth(375)
-        ply:SetArmor(50)
-        ply:SetMaxArmor(50)
+        ply:SetHealth(200)
+        ply:SetMaxHealth(200)
+        ply:SetArmor(100)
+        ply:SetMaxArmor(100)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
     end,
 })
+TEAM_INFERNOSUB = DarkRP.createJob("Inferno Squad Sub Leader", {
+    color = Color(126, 1, 1),
+    model = {
+    "models/pilot/inferno_squad_pilot.mdl",
+    "models/crewman/inferno_squad_crewman.mdl"
+    
+    },
+    description = [[
+        Inferno Squad of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
 
+        "inferno_e11d_atlas",
+        "inferno_dual_westar35_atlas",
+
+        "arccw_impact_grenade",
+        "arccw_smoke_grenade",
+    },
+    command = "infernosubleader",
+    max = 0,
+    salary = 450,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Squads",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(200)
+        ply:SetMaxHealth(200)
+        ply:SetArmor(150)
+        ply:SetMaxArmor(150)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
+    end,
+})
+TEAM_INFERNOSL = DarkRP.createJob("Inferno Squad Leader", {
+    color = Color(126, 1, 1),
+    model = {
+    "models/pilot/inferno_squad_pilot.mdl",
+    "models/crewman/inferno_squad_crewman.mdl"
+    
+    },
+    description = [[
+        Inferno Squad of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "inferno_e11d_atlas",
+        "inferno_dual_westar35_atlas",
+        "inferno_dlt20a_atlas",
+
+        "arccw_impact_grenade",
+        "arccw_smoke_grenade",
+    },
+    command = "infernosquadleader",
+    max = 0,
+    salary = 500,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Squads",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(200)
+        ply:SetMaxHealth(200)
+        ply:SetArmor(200)
+        ply:SetMaxArmor(200)
+        ply:SetWalkSpeed(190)
+        ply:SetRunSpeed(285)
+    end,
+})
 
 --- [ATLAS IMPERIAL RP VIP JOBS] ---
 
@@ -2939,6 +3002,8 @@ TEAM_BH = DarkRP.createJob("Bounty Hunter", {
         ply:SetMaxHealth(1000)
         ply:SetArmor(0)
         ply:SetMaxArmor(0)
+        ply:SetWalkSpeed(300)
+        ply:SetRunSpeed(450)
     end,
 })
 
