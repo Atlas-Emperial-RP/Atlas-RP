@@ -2987,7 +2987,7 @@ TEAM_BH = DarkRP.createJob("Bounty Hunter", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "arccw_e11"
+        "bh_e11_atlas"
     },
     command = "bountyhunter",
     max = 9000,
