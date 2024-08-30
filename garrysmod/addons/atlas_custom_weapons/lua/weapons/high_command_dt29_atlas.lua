@@ -33,7 +33,7 @@ SWEP.IconOverride = "materials/entities/rw_sw_dt29.png"
 SWEP.DefaultBodygroups = "000000000000"
 
 -- [Damage] --
-SWEP.Damage = 42
+SWEP.Damage = 2000
 SWEP.DamageMin = 17
 
 -- [Range] --

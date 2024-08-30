@@ -2421,7 +2421,10 @@ TEAM_INQUSITORDARTH = DarkRP.createJob("Darth Vader", {
     weapons = {
         "weapon_empty_hands",
         "weapon_lscs", 
+
         "inq_se14_atlas",
+        "high_command_dt29_atlas",
+
         "weapon_r_handcuffs"
     },
     command = "darthvader",
@@ -2453,6 +2456,7 @@ TEAM_INQUSITOREMPEROR = DarkRP.createJob("The Emperor", {
         "weapon_r_handcuffs",
 
         "inq_se14_atlas",
+        "high_command_dt29_atlas",
 
         "custom_ib_OWNER"
     },
@@ -2726,22 +2730,22 @@ TEAM_NAVALPILOT = DarkRP.createJob("Tie Pilot", {
     end,
 })
 
---- [ATLAS IMPERIAL RP FLEET JOBS] ---
+--- [ATLAS IMPERIAL RP HIGH COMMAND JOBS] ---
 
-TEAM_FLEETENSIGN = DarkRP.createJob("Ensign/Lieutenant", {
+TEAM_HIGHCOMMANDENSIGN = DarkRP.createJob("Ensign/Lieutenant", {
     color = Color(192, 193, 123),
     model = {
         "models/nada/pms/male/naval_officer.mdl",
         "models/nada/pms/female/naval_officer.mdl"
     },
     description = [[
-        Fleet of the Empire
+        High Command of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
         
-        "fleet_dt29_atlas",
-        "fleet_e11d_atlas"
+        "high_command_dt29_atlas",
+        "high_command_e11d_atlas"
     },
     command = "fleetEL",
     max = 0,
@@ -2749,7 +2753,7 @@ TEAM_FLEETENSIGN = DarkRP.createJob("Ensign/Lieutenant", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "High Command",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(300)
@@ -2758,20 +2762,20 @@ TEAM_FLEETENSIGN = DarkRP.createJob("Ensign/Lieutenant", {
         ply:SetRunSpeed(375)
     end,
 })
-TEAM_FLEETCAPTAIN = DarkRP.createJob("Captain/Major", {
+TEAM_HIGHCOMMANDCAPTAIN = DarkRP.createJob("Captain/Major", {
     color = Color(192, 193, 123),
     model = {
         "models/nada/pms/male/medic.mdl",
         "models/nada/pms/female/medic.mdl"
     },
     description = [[
-        Fleet of the Empire
+        High Command of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
 
-        "fleet_dt29_atlas",
-        "fleet_e11d_atlas"
+        "high_command_dt29_atlas",
+        "high_command_e11d_atlas"
     },
     command = "fleetCM",
     max = 0,
@@ -2779,7 +2783,7 @@ TEAM_FLEETCAPTAIN = DarkRP.createJob("Captain/Major", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "High Command",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(300)
@@ -2788,19 +2792,20 @@ TEAM_FLEETCAPTAIN = DarkRP.createJob("Captain/Major", {
         ply:SetRunSpeed(375)
     end,
 })
-TEAM_FLEETCOLONEL = DarkRP.createJob("Colonel/Commodore", {
+TEAM_HIGHCOMMANDCOLONEL = DarkRP.createJob("Colonel/Commodore", {
     color = Color(192, 193, 123),
     model = {
-        "models/defcon/repcomm/executiveofficer/executiveofficer.mdl"
+        "models/nada/pms/female/warlord.mdl",
+        "models/nada/pms/male/warlord.mdl"
     },
     description = [[
-        Fleet of the Empire
+        High Command of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
 
-        "fleet_dt29_atlas",
-        "fleet_e11d_atlas"
+        "high_command_dt29_atlas",
+        "high_command_e11d_atlas"
     },
     command = "fleetCC",
     max = 0,
@@ -2808,7 +2813,7 @@ TEAM_FLEETCOLONEL = DarkRP.createJob("Colonel/Commodore", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "High Command",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(400)
@@ -2817,20 +2822,20 @@ TEAM_FLEETCOLONEL = DarkRP.createJob("Colonel/Commodore", {
         ply:SetRunSpeed(375)
     end,
 })
-TEAM_FLEETREAR = DarkRP.createJob("Rear Admiral/Vice Admiral", {
+TEAM_HIGHCOMMANDREAR = DarkRP.createJob("Rear Admiral/Vice Admiral", {
     color = Color(192, 193, 123),
     model = {
         "models/nada/pms/male/admiral.mdl",
         "models/nada/pms/female/admiral.mdl"
     },
     description = [[
-        Fleet of the Empire 
+        High Command of the Empire 
     ]],
     weapons = {
         "weapon_empty_hands",
 
-        "fleet_dt29_atlas",
-        "fleet_e11d_atlas"
+        "high_command_dt29_atlas",
+        "high_command_e11d_atlas"
     },
     command = "fleetRV",
     max = 0,
@@ -2838,7 +2843,7 @@ TEAM_FLEETREAR = DarkRP.createJob("Rear Admiral/Vice Admiral", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "High Command",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(400)
@@ -2847,20 +2852,50 @@ TEAM_FLEETREAR = DarkRP.createJob("Rear Admiral/Vice Admiral", {
         ply:SetRunSpeed(375)
     end,
 })
-TEAM_FLEETADMIRAL = DarkRP.createJob("Admiral/Fleet Admiral", {
+TEAM_HIGHCOMMANBRIGADIER = DarkRP.createJob("Brigadier General/ Lieutenant General ", {
+    color = Color(192, 193, 123),
+    model = {
+        "models/nada/pms/male/grandgeneral.mdl",
+        "models/nada/pms/female/grandgeneral.mdl",
+    },
+    description = [[
+        High Command of the Empire 
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "high_command_dt29_atlas",
+        "high_command_e11d_atlas"
+    },
+    command = "armyBrigadier",
+    max = 0,
+    salary = 750,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "High Command",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(400)
+        ply:SetMaxHealth(400)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
+    end,
+})
+TEAM_HIGHCOMMANDADMIRAL = DarkRP.createJob("Admiral/High Command Admiral", {
     color = Color(192, 193, 123),
     model = {
         "models/nada/pms/male/grey_admiral.mdl",
         "models/nada/pms/female/grey_admiral.mdl"
     },
     description = [[
-        Fleet of the Empire
+        High Command of the Empire
     ]],
     weapons = {
         "weapon_empty_hands",
 
-        "fleet_dt29_atlas",
-        "fleet_e11d_atlas"
+        "high_command_dt29_atlas",
+        "high_command_e11d_atlas"
     },
     command = "fleetAF",
     max = 0,
@@ -2868,7 +2903,7 @@ TEAM_FLEETADMIRAL = DarkRP.createJob("Admiral/Fleet Admiral", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "High Command",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(500)
@@ -2877,11 +2912,42 @@ TEAM_FLEETADMIRAL = DarkRP.createJob("Admiral/Fleet Admiral", {
         ply:SetRunSpeed(375)
     end,
 })
-TEAM_FLEETGRAND = DarkRP.createJob("Grand Admiral", {
+TEAM_HIGHCOMMANDGENERAL = DarkRP.createJob("General/High General", {
+    color = Color(192, 193, 123),
+    model = {
+        "models/nada/pms/male/commandant.mdl",
+        "models/nada/pms/female/commandant.mdl",
+
+    },
+    description = [[
+        High Command of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "high_command_dt29_atlas",
+        "high_command_e11d_atlas"
+    },
+    command = "armyGeneral",
+    max = 0,
+    salary = 1000,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "High Command",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(500)
+        ply:SetMaxHealth(500)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
+    end,
+})
+TEAM_HIGHCOMMANDGRANDADMIRAL = DarkRP.createJob("Grand Admiral/Grand General", {
     color = Color(192, 193, 123),
     model = {
         "models/nada/pms/male/grandadmiral.mdl",
-        "models/nada/pms/female/grandadmiral.mdl"
+        "models/nada/pms/female/grandadmiral.mdl",
     },
     description = [[
         Grand Admiral of the Empire
@@ -2889,8 +2955,8 @@ TEAM_FLEETGRAND = DarkRP.createJob("Grand Admiral", {
     weapons = {
         "weapon_empty_hands",
 
-        "fleet_dt29_atlas",
-        "fleet_e11d_atlas"
+        "high_command_dt29_atlas",
+        "high_command_e11d_atlas"
     },
     command = "fleetGA",
     max = 2,
@@ -2898,7 +2964,37 @@ TEAM_FLEETGRAND = DarkRP.createJob("Grand Admiral", {
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "High Command",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(500)
+        ply:SetMaxHealth(500)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
+    end,
+})
+TEAM_HIGHCOMMANDGRANDGENERAL = DarkRP.createJob("Grand General", {
+    color = Color(192, 193, 123),
+    model = {
+        "models/nada/pms/female/warlord.mdl", 
+        "models/nada/pms/male/warlord.mdl"
+    },
+    description = [[
+        Grand Admiral of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "high_command_dt29_atlas",
+        "high_command_e11d_atlas"
+    },
+    command = "armyGrandGeneral",
+    max = 2,
+    salary = 2500,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "High Command",
     canDemote = false,
     PlayerSpawn = function(ply)
         ply:SetHealth(500)

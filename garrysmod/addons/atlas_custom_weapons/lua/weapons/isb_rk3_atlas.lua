@@ -196,7 +196,7 @@ SWEP.Attachments = {
     [4] = {
         PrintName = "Energization", -- print name
         DefaultAttName = "Standard Energization", -- used to display the "no attachment" text
-        Slot = "ammo",
+        Slot = {"ammo", "sw_ammo"},
     },
     [5] = {
         PrintName = "Training/Perk", -- print name
