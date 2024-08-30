@@ -299,7 +299,7 @@ GM.Config.walkspeed                     = 200
 -- falldamagedamper - The damper on realistic fall damage. Default is 15. Decrease this for more damage.
 GM.Config.falldamagedamper              = 15
 -- falldamageamount - The base damage taken from falling for static fall damage. Default is 10.
-GM.Config.falldamageamount              = 10
+GM.Config.falldamageamount              = 3
 -- printeroverheatchance - The likelyhood of a printer overheating. The higher this number, the less likely (minimum 3, default 22).
 GM.Config.printeroverheatchance         = 22
 -- printerreward - Reward for destroying a money printer.

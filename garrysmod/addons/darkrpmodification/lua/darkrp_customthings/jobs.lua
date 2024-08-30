@@ -2487,8 +2487,10 @@ TEAM_NAVAL = DarkRP.createJob("Naval Crewman", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "arccw_rk3",
-        "arccw_cr2",
+
+        "naval_rk3_atlas",
+        "naval_cr2_atlas",
+
         "weapon_r_handcuffs",
         "arccw_thermal_grenade",
         "arrest_stick",
@@ -2521,8 +2523,10 @@ TEAM_NAVALPO = DarkRP.createJob("Naval Petty Officer", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "arccw_rk3",
-        "arccw_cr2",
+
+        "naval_rk3_atlas",
+        "naval_cr2_atlas",
+
         "weapon_r_handcuffs",
         "arccw_thermal_grenade",
         "arrest_stick",
@@ -2555,8 +2559,10 @@ TEAM_NAVALWO = DarkRP.createJob("Naval Warrant Officer", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "arccw_rk3",
-        "arccw_cr2",
+
+        "naval_rk3_atlas",
+        "naval_cr2_atlas",
+
         "weapon_r_handcuffs",
         "arccw_thermal_grenade",
         "arrest_stick",
@@ -2589,8 +2595,10 @@ TEAM_NAVALCAPTAIN = DarkRP.createJob("Naval Captain/Lieutenant", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "arccw_rk3",
-        "arccw_cr2",
+
+        "naval_rk3_atlas",
+        "naval_cr2_atlas",
+
         "weapon_r_handcuffs",
         "arccw_thermal_grenade",
         "arrest_stick",
@@ -2623,8 +2631,10 @@ TEAM_NAVALCHIEF = DarkRP.createJob("Naval Command", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "arccw_rk3",
-        "arccw_cr2",
+
+        "naval_rk3_atlas",
+        "naval_cr2_atlas",
+
         "weapon_r_handcuffs",
         "arccw_thermal_grenade",
         "arrest_stick",
@@ -2657,8 +2667,10 @@ TEAM_NAVALDIRECTOR = DarkRP.createJob("Naval Director", {
     ]],
     weapons = {
         "weapon_empty_hands",
-        "arccw_rk3",
-        "arccw_cr2",
+
+        "naval_rk3_atlas",
+        "naval_cr2_atlas",
+        
         "weapon_r_handcuffs",
         "arccw_thermal_grenade",
         "arrest_stick",
@@ -3078,6 +3090,7 @@ TEAM_DEV = DarkRP.createJob("Dev on Duty", {
         "custom_grenade_launcher",
         "shadow_dual_se14_atlas",
         "custom_rocket_jumper",
+        "custom_z2_atlas",
     },
     command = "dev",
     max = 9000,
