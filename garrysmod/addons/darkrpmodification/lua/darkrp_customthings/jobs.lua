@@ -2795,8 +2795,7 @@ TEAM_HIGHCOMMANDCAPTAIN = DarkRP.createJob("Captain/Major", {
 TEAM_HIGHCOMMANDCOLONEL = DarkRP.createJob("Colonel/Commodore", {
     color = Color(192, 193, 123),
     model = {
-        "models/nada/pms/female/warlord.mdl",
-        "models/nada/pms/male/warlord.mdl"
+        "models/nada/pms/male/army.mdl", "models/nada/pms/female/army.mdl"
     },
     description = [[
         High Command of the Empire
