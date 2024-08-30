@@ -11,8 +11,8 @@ DWEP.Config.Colors ={
 DWEP.Config.AccessGroups = {
 	"superadmin",
 	"founder",
+	"developer"
 }
-
 
 --No configuration below this line: DO NOT TOUCH
  

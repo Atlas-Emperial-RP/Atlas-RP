@@ -4,7 +4,7 @@ SWEP.Base = "arccw_meeks_sw_base"
 SWEP.Spawnable = true
 SWEP.Category = "[ Atlas ] Custom Weapons"
 SWEP.Credits = { Author1 = "Yairme"}
-SWEP.PrintName = "E-11D"
+SWEP.PrintName = "High Command E-11D"
 SWEP.Trivia_Class = "Imperial Blaster Carbine"
 SWEP.Trivia_Desc = "High tech compact Imperial E-11D Blaster Carbine, preffered for CQB enviroments and general allround usage."
 SWEP.Trivia_Manufacturer = "BlasTech Industries"
