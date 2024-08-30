@@ -40,6 +40,61 @@ SWEP.Penetration = 1
 SWEP.DamageType = DMG_BULLET
 SWEP.MuzzleVelocity = 400
 
+function SWEP:DoImpactEffect(tr, dmgtype)
+    if tr.HitSky then return true end
+
+    util.Decal("fadingscorch", tr.HitPos + tr.HitNormal, tr.HitPos - tr.HitNormal);
+    if( game.SinglePlayer() or SERVER or not self:IsCarriedByLocalPlayer() or IsFirstTimePredicted() ) then
+        local soundToPlay = "impacts/sw752_hit_1.wav"
+        local randomSound = math.random(1,14)
+        if randomSound == 1 then
+            soundToPlay = "impacts/sw752_hit_4.wav"
+        elseif randomSound == 2 then
+            soundToPlay = "impacts/sw752_hit_5.wav"
+        elseif randomSound == 3 then
+            soundToPlay = "impacts/.wav"
+        elseif randomSound == 4 then
+            soundToPlay = "impacts/sw752_hit_9.wav"
+        elseif randomSound == 5 then
+            soundToPlay = "impacts/sw752_hit_10.wav"
+        elseif randomSound == 6 then
+            soundToPlay = "impacts/sw752_hit_12.wav"
+        elseif randomSound == 7 then
+            soundToPlay = "impacts/sw752_hit_13.wav"
+        elseif randomSound == 8 then
+            soundToPlay = "impacts/sw752_hit_14.wav"
+        elseif randomSound == 9 then
+            soundToPlay = "impacts/sw752_hit_19.wav"
+        elseif randomSound == 10 then
+            soundToPlay = "impacts/sw752_hit_27.wav"
+        elseif randomSound == 11 then
+            soundToPlay = "impacts/sw752_hit_28.wav"
+        elseif randomSound == 12 then
+            soundToPlay = "impacts/sw752_hit_30.wav"
+        elseif randomSound == 13 then
+            soundToPlay = "impacts/sw752_hit_31.wav"
+        elseif randomSound == 14 then
+            soundToPlay = "impacts/sw752_hit_17.wav"
+        end
+    
+        local effect = EffectData()
+        effect:SetOrigin(tr.HitPos)
+        effect:SetNormal(tr.HitNormal)
+
+        -- util.Effect( "effect_astw2_swbf_impact", effect );
+        sound.Play( soundToPlay, tr.HitPos, 75, 100, 1 );
+
+        local effect = EffectData()
+        effect:SetOrigin(tr.HitPos)
+        effect:SetStart(tr.StartPos)
+        effect:SetDamageType(dmgtype)
+
+        util.Effect("RagdollImpact", effect)
+    end
+
+    return true;
+end
+
 SWEP.PhysTracerProfile = 1
 
 SWEP.TracerNum = 1

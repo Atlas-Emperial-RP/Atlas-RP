@@ -81,7 +81,6 @@ function SWEP:DoImpactEffect(tr, dmgtype)
         elseif randomSound == 14 then
             soundToPlay = "impacts/sw752_hit_17.wav"
         end
-
     
         local effect = EffectData()
         effect:SetOrigin(tr.HitPos)
