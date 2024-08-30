@@ -2692,6 +2692,39 @@ TEAM_NAVALDIRECTOR = DarkRP.createJob("Naval Director", {
         ply:SetRunSpeed(375)
     end,
 })
+TEAM_NAVALPILOT = DarkRP.createJob("Tie Pilot", {
+    color = Color(10, 0, 194),
+    model = {
+        "models/nada/pms/male/navy_trooper.mdl",
+        "models/nada/pms/female/navy_trooper.mdl"
+    },
+    description = [[
+       Naval Director of the Empire
+    ]],
+    weapons = {
+        "weapon_empty_hands",
+
+        "naval_rk3_atlas",
+        
+        "weapon_r_handcuffs",
+    },
+    command = "navaltiepilot",
+    max = 0,
+    salary = 100,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Naval Agency",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
+        ply:SetArmor(50)
+        ply:SetMaxArmor(50)
+        ply:SetWalkSpeed(250)
+        ply:SetRunSpeed(375)
+    end,
+})
 
 --- [ATLAS IMPERIAL RP FLEET JOBS] ---
 
@@ -2721,8 +2754,6 @@ TEAM_FLEETENSIGN = DarkRP.createJob("Ensign/Lieutenant", {
     PlayerSpawn = function(ply)
         ply:SetHealth(300)
         ply:SetMaxHealth(300)
-        ply:SetWalkSpeed(250)
-        ply:SetRunSpeed(375)
         ply:SetWalkSpeed(250)
         ply:SetRunSpeed(375)
     end,
